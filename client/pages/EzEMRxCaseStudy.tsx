@@ -1,912 +1,454 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, X, ZoomIn } from "lucide-react";
 
 export default function EzEMRxCaseStudy() {
-  const [isImageEnlarged, setIsImageEnlarged] = useState(false);
-
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       {/* Navigation */}
       <nav className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-4 sm:py-5 md:py-6 gap-4 md:gap-0 animate-in fade-in-0 slide-in-from-top-4 duration-700">
         <div className="flex flex-col">
-          <h1 className="text-[20px] font-medium text-[#131417] leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
+          <h1 className="text-base sm:text-lg md:text-xl font-medium text-[#131417] leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
             Sean Smith
           </h1>
-          <p className="text-[16px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.16px] transition-colors duration-300 hover:text-[#131417]">
+          <p className="text-xs sm:text-sm md:text-base font-medium text-[#9FA0A3] leading-normal tracking-[-0.16px] transition-colors duration-300 hover:text-[#131417]">
             San Francisco, CA
           </p>
         </div>
 
-        <div className="bg-white rounded-[50px] p-[5px] flex items-center flex-wrap gap-1 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+        <div className="bg-white rounded-[25px] sm:rounded-[35px] md:rounded-[50px] p-[3px] sm:p-[4px] md:p-[5px] flex items-center flex-wrap gap-1 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] w-full sm:w-auto justify-center">
           <Link
             to="/"
-            className="text-[#131417] px-4 sm:px-[25px] py-[13px] text-sm sm:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
+            className="text-[#131417] px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
           >
             Home
           </Link>
           <Link
             to="/case-studies"
-            className="bg-[#131417] text-white px-4 sm:px-[25px] py-[13px] rounded-[50px] text-sm sm:text-[18px] font-medium tracking-[-0.18px] transition-all duration-300 hover:bg-[#2a2a2a] hover:scale-105"
+            className="text-[#131417] px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
           >
             Case Studies
           </Link>
           <Link
             to="/about"
-            className="text-[#131417] px-4 sm:px-[25px] py-[13px] text-sm sm:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
+            className="text-[#131417] px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
           >
-            About
+            About  
           </Link>
         </div>
       </nav>
 
-      {/* Back Button */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
-        <Link
-          to="/case-studies"
-          className="inline-flex items-center gap-2 text-[18px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.18px] hover:text-[#131417] transition-all duration-300 hover:scale-105 group"
-        >
-          <ArrowLeft className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" />
-          Back to Case Studies
-        </Link>
-      </div>
-
-      {/* Hero Section */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
-        <div className="mb-8">
-          <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[25px] text-[14px] font-medium tracking-[-0.14px] mb-6 transition-all duration-300 hover:scale-105">
-            UX Case Study
-          </span>
-          <h1 className="text-4xl sm:text-6xl lg:text-[72px] font-medium text-[#131417] leading-[120%] tracking-[-1.44px] mb-6 transition-all duration-500 hover:tracking-[-1.2px]">
+      {/* Case Study Header */}
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-300">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[94px] font-medium text-[#131417] leading-[110%] sm:leading-[115%] md:leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.5px] xl:tracking-[-1.88px] mb-4 sm:mb-6 md:mb-8 transition-all duration-500 hover:tracking-[-1.3px]">
             ezEMRx – Redesigning EHR for Real-World Public Health
           </h1>
-          <p className="text-xl sm:text-2xl lg:text-[28px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.28px] max-w-[900px] transition-all duration-300 hover:text-[#131417]">
-            Transforming a legacy EHR system into an AI-augmented platform for compliance, collaboration, and efficiency
+          <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[600px] sm:max-w-[700px] md:max-w-[800px] mx-auto transition-all duration-300 hover:text-[#131417] px-4">
+            Transforming Electronic Health Records for improved public health workflows and patient care management
           </p>
         </div>
-      </div>
 
-      {/* Hero Image Placeholder */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
-        <figure className="relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-gradient-to-br from-blue-50 via-white to-green-50 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] group">
-          <div className="aspect-video w-full flex items-center justify-center bg-gradient-to-br from-blue-100/50 to-green-100/50 backdrop-blur-sm">
-            <div className="text-center space-y-4 p-8">
-              {/* Healthcare/EHR Icon */}
-              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-blue-500 to-green-500 rounded-full mx-auto flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
+        {/* Hero Image Placeholder */}
+        <figure className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
+          <div className="relative bg-gradient-to-br from-blue-50 via-green-50 to-teal-50 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] border border-gray-200 shadow-sm hover:shadow-md transition-all duration-500 hover:scale-[1.01] aspect-video overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-green-500/5 to-teal-500/5 group-hover:from-blue-500/10 group-hover:via-green-500/10 group-hover:to-teal-500/10 transition-all duration-500"></div>
+            <div className="relative h-full flex flex-col items-center justify-center p-6 sm:p-8 md:p-12">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-green-500 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-all duration-300">
                 <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              
-              {/* Placeholder Text */}
-              <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 tracking-tight">
-                  Hero Image Placeholder
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 max-w-md mx-auto leading-relaxed">
-                  ezEMRx EHR System Dashboard - Public Health Interface Design
-                </p>
-                <div className="text-xs sm:text-sm text-gray-500 font-mono bg-white/70 backdrop-blur-sm rounded-lg px-3 py-1 inline-block">
-                  1920 × 1080px
-                </div>
-              </div>
-              
-              {/* Loading Animation */}
-              <div className="flex items-center justify-center space-x-1">
-                <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-                <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Actual placeholder image - hidden for now */}
-          <img
-            src="/api/placeholder/1920/1080"
-            alt="ezEMRx Electronic Health Records system dashboard showing public health interface design with patient management, data visualization, and clinical workflow optimization features"
-            className="w-full h-full object-cover absolute inset-0 opacity-0"
-            width={1920}
-            height={1080}
-            loading="eager"
-            decoding="async"
-          />
-          
-          <figcaption className="sr-only">
-            Hero image showcasing the ezEMRx Electronic Health Records system redesign, featuring the main dashboard interface optimized for public health workflows, patient data management, and clinical decision support.
-          </figcaption>
-        </figure>
-      </div>
-
-      {/* Content Sections */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
-        {/* TL;DR Summary */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                TL;DR Summary
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Role</p>
-                  <p className="text-[18px] font-medium text-[#131417]">Lead UX/Product Designer</p>
-                </div>
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Company</p>
-                  <p className="text-[18px] font-medium text-[#131417]">Custom Data Processing Inc.</p>
-                </div>
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Platform</p>
-                  <p className="text-[18px] font-medium text-[#131417]">Web-based EHR SaaS</p>
-                </div>
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Duration</p>
-                  <p className="text-[18px] font-medium text-[#131417]">12 months</p>
-                </div>
-              </div>
-              
-              <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                <p className="text-[14px] font-medium text-[#9FA0A3] mb-4">Tools & Team</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-[16px] font-medium text-[#131417] mb-2">Tools:</p>
-                    <p className="text-[16px] text-[#131417]">Figma, Miro, Jira, Confluence, Zoom, Google Forms</p>
-                  </div>
-                  <div>
-                    <p className="text-[16px] font-medium text-[#131417] mb-2">Team:</p>
-                    <p className="text-[16px] text-[#131417]">PM, AI Strategist, Engineering Lead, Clinical QA, UX Researcher</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 hover:border-green-300 transition-all duration-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">✅ Outcomes</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600 font-bold">↓ 20%</span>
-                    <span className="text-[16px] text-[#131417]">average daily documentation time</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-blue-600 font-bold">↑ 70%</span>
-                    <span className="text-[16px] text-[#131417]">compliance checklist pass rate</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-purple-600 font-bold">↑ 2.3×</span>
-                    <span className="text-[16px] text-[#131417]">collaborative notes per patient</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-orange-600 font-bold">↓ 35%</span>
-                    <span className="text-[16px] text-[#131417]">referral generation time</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Project Overview */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-900">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Project Overview
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-red-50 p-6 rounded-[25px] border border-red-200 transition-all duration-300 hover:border-red-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">❗ The Problem</h3>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px]">
-                  ezEMRx served public health departments, immunization clinics, and WIC programs — but its outdated interface, inconsistent documentation workflows, and lack of mobile optimization led to clinician burnout and audit anxiety.
-                </p>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">🎯 The Opportunity</h3>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px]">
-                  As public health demands grew (WIC modernization, pandemic response, integrated care), there was a clear need for an intelligent, user-friendly platform that minimized manual overhead and increased compliance readiness.
-                </p>
-              </div>
-
-              <blockquote className="bg-[#131417] text-white p-8 rounded-[25px] italic text-[20px] leading-[150%] tracking-[-0.2px] transition-all duration-300 hover:scale-[1.02]">
-                "How might we reduce documentation fatigue while building trust in AI-assisted compliance and referrals for real-world public health?"
-              </blockquote>
-            </div>
-          </div>
-        </section>
-
-        {/* Strategic Design Goals */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1100">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Strategic Design Goals
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <ul className="space-y-3">
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  <strong>Empower clinicians</strong> with auto-suggestions and override control
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  <strong>Simplify compliance</strong> with real-time, color-coded audits
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  <strong>Unify workflows</strong> with cross-role collaborative notes
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  <strong>Streamline referrals</strong> using AI-based logic and historical outcomes
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* My Role & Responsibilities */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1300">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                My Role & Responsibilities
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <p className="text-[18px] font-medium text-[#131417] mb-4">Title: Lead UX/Product Designer</p>
-                <p className="text-[16px] font-normal text-[#131417] mb-4">Scope: UX strategy, information architecture, full UI design, and dev handoff</p>
-              </div>
-
-              <ul className="space-y-3">
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  Led stakeholder workshops and contextual interviews across 3 states
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  Re-architected platform IA and user flows
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  Designed 40+ responsive screens for 3 user roles
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  Built design system with accessibility tokens and documentation
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  Delivered QA specs, accessibility reports, and redline assets
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Problem & Opportunity */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1500">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Problem & Opportunity
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Initial State</h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Complex, repetitive charting for every patient type
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    No referral suggestion logic — prone to misrouting
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Manual compliance reviews before audits
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Siloed case notes with no version history
-                  </li>
-                </ul>
-              </div>
-
-              {/* EHR Screenshot Container */}
-              <div className="relative mb-8 sm:mb-10 md:mb-12 lg:mb-16 animate-in fade-in-0 zoom-in-95 duration-1000 delay-700">
-                <div 
-                  className="relative group cursor-pointer overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] bg-white border border-gray-200"
-                  onClick={() => setIsImageEnlarged(true)}
-                >
-                  <img
-                    src="/old_2.png"
-                    alt="Original EHR interface showing complex navigation, outdated design patterns, and inefficient data entry workflows that healthcare professionals struggled with daily"
-                    className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-105"
-                  />
-                  
-                  {/* Overlay with zoom indicator */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 flex items-center justify-center">
-                    <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white/90 backdrop-blur-sm rounded-full p-3 sm:p-4">
-                      <ZoomIn className="w-5 h-5 sm:w-6 sm:h-6 text-[#131417]" />
-                    </div>
-                  </div>
-                  
-                  {/* Visual indicator text */}
-                  <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <span className="bg-white/90 backdrop-blur-sm text-[#131417] px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium">
-                      Click to enlarge
-                    </span>
-                  </div>
-                </div>
-                
-                {/* Caption */}
-                <p className="text-sm sm:text-base text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] mt-4 text-center transition-all duration-300 hover:text-[#131417]">
-                  Original EHR interface showing complex navigation and outdated design patterns
-                </p>
-              </div>
-
-              <div className="bg-red-50 p-6 rounded-[25px] border border-red-200 transition-all duration-300 hover:border-red-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Real Problem Faced</h3>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] mb-4">
-                  Clinicians struggled with decision fatigue from duplicative forms, while administrators lacked real-time oversight into audit readiness. AI was distrusted unless its logic was made transparent.
-                </p>
-                <p className="text-[16px] font-medium text-[#131417] mb-2">Resolution:</p>
-                <p className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px]">
-                  We introduced smart charting with AI-assist fields, confidence badges, and hover-to-explain tooltips. A collapsible compliance drawer tracked real-time audit flags, and collaborative case notes gave admins context without interrupting care.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Timeline */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Timeline
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
-                <table className="w-full min-w-[600px]">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Phase</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Duration</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Activities</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Discovery</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Month 1–2</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Interviews, usability audit, workflow analysis</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Define</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Month 2–3</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Personas, journey mapping, IA schema</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Design</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Months 3–6</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">High-fidelity UI design, prototyping, accessibility</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Validate</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Months 5–7</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Multi-site usability testing, iterative updates</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Delivery</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Months 7–12</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Dev handoff, QA support, training & rollout assets</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Research & Insights */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1900">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Research & Insights
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Research Methods</h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    1:1 interviews (WIC & public health clinic staff)
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Observation of live patient sessions
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Survey feedback from 4 different public health agency types
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Legacy system analytics (field usage, form abandonment)
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Key Insights</h3>
-                <ul className="space-y-3">
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    <strong>Documentation fatigue</strong> was driven by duplicated inputs and low discoverability
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    <strong>Referrals often failed</strong> due to lack of real-time decision support
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    <strong>Compliance concerns</strong> increased anxiety during audits
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    <strong>Collaboration needed context</strong>, not just shared access
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* User Personas */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2100">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                User Personas
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="grid grid-cols-1 gap-6">
-                <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                  <h3 className="text-[20px] font-medium text-[#131417] mb-4">👩 Claire – WIC Clinician</h3>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="text-[16px] font-medium text-[#131417] mb-1">Goals:</p>
-                      <p className="text-[16px] text-[#131417]">Reduce charting effort, ensure WIC compliance</p>
-                    </div>
-                    <div>
-                      <p className="text-[16px] font-medium text-[#131417] mb-1">Pain Points:</p>
-                      <p className="text-[16px] text-[#131417]">Repetitive data entry, confusing audit logic</p>
-                    </div>
-                    <div>
-                      <p className="text-[16px] font-medium text-[#131417] mb-1">Needs:</p>
-                      <p className="text-[16px] text-[#131417]">Smart charting, AI explainability, single-patient timeline</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 transition-all duration-300 hover:border-green-300 hover:scale-[1.02]">
-                  <h3 className="text-[20px] font-medium text-[#131417] mb-4">👨 Mark – Program Administrator</h3>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="text-[16px] font-medium text-[#131417] mb-1">Goals:</p>
-                      <p className="text-[16px] text-[#131417]">Track compliance across clinics, manage quality</p>
-                    </div>
-                    <div>
-                      <p className="text-[16px] font-medium text-[#131417] mb-1">Pain Points:</p>
-                      <p className="text-[16px] text-[#131417]">Blind spots into clinic activity, no version control</p>
-                    </div>
-                    <div>
-                      <p className="text-[16px] font-medium text-[#131417] mb-1">Needs:</p>
-                      <p className="text-[16px] text-[#131417]">Case note visibility, compliance dashboards, referral analytics</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* User Journey Map */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2300">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                User Journey Map
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Claire's Daily Flow</h3>
-                <table className="w-full min-w-[500px]">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Stage</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">UX Opportunity</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Patient Visit</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">AI-assist + confidence indicators</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Charting</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Auto-prefill + inline explainability</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Referrals</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Suggested routing based on success rates</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Audit Check</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Real-time compliance checklist</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Follow-up</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Access to shared threaded case notes</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Mark's Admin Flow</h3>
-                <table className="w-full min-w-[500px]">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Stage</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">UX Opportunity</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Oversight</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Dashboard of clinic activities</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Audit Prep</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Checklist history + red flag logs</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Case Review</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Note versions + staff comment trail</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Competitive Analysis */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2500">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Competitive Analysis
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
-                <table className="w-full min-w-[600px]">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Feature</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">ezEMRx (New)</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Legacy EHR</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Competitors</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Smart Charting</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">AI Referral Suggestions</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Real-Time Compliance Checks</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Threaded Case Notes</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Role-Specific Dashboards</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Key Differentiators:</h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Inline AI with explainability, not automation-only
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Real-time audit tools designed for field staff
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Patient-first timeline spanning charting, visits, and referrals
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Core Features & Innovations */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2700">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Core Features & Innovations
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <ul className="space-y-3">
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  <strong>Smart Charting:</strong> Auto-suggest fields with badge-level confidence
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  <strong>AI Referral Builder:</strong> Suggests destinations based on logic + overrides
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  <strong>Real-Time Compliance Drawer:</strong> Checklist with flag severity + notes
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  <strong>Threaded Case Notes:</strong> Comments, history, and role-based visibility
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  <strong>Patient Timeline:</strong> Chronological summary with inline preview
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Results & Impact */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2900">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Results & Impact
-              </h2>
-            </div>
-            <div className="flex-1 space-y-8">
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Metrics</h3>
-                <table className="w-full min-w-[500px]">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Metric</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Change</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Documentation Time</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-green-600">↓ 20%</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Compliance Pass Rate</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-blue-600">↑ 70%</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Case Notes per Patient</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-purple-600">↑ 2.3×</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Referral Time</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-orange-600">↓ 35%</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">AI Transparency Clarity</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-indigo-600">92% positive user feedback</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-[20px] font-medium text-[#131417]">Qualitative Feedback</h3>
-                <blockquote className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-[25px] italic text-[18px] leading-[150%] tracking-[-0.18px] transition-all duration-300 hover:scale-[1.02]">
-                  "The referral suggestions saved me so much time — I finally trust it."<br />
-                  <span className="text-[14px] font-medium text-[#9FA0A3] not-italic">– WIC Clinician</span>
-                </blockquote>
-                <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-[25px] italic text-[18px] leading-[150%] tracking-[-0.18px] transition-all duration-300 hover:scale-[1.02]">
-                  "Audit prep doesn't feel like a fire drill anymore."<br />
-                  <span className="text-[14px] font-medium text-[#9FA0A3] not-italic">– Program Director</span>
-                </blockquote>
-                <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-r-[25px] italic text-[18px] leading-[150%] tracking-[-0.18px] transition-all duration-300 hover:scale-[1.02]">
-                  "I know what the AI is doing — and I can overrule it."<br />
-                  <span className="text-[14px] font-medium text-[#9FA0A3] not-italic">– Public Health Nurse</span>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Final Reflections */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-3100">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Final Reflections
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">What I Learned</h3>
-                <ul className="space-y-3">
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    <strong>Design earns trust:</strong> Audit-ready design is about transparency, not control
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    <strong>AI ≠ automation:</strong> Users want augmentation with override
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    <strong>Simplicity scales:</strong> Reusable flows help serve multiple programs
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    <strong>Clinician time is precious:</strong> Microcopy and layout save minutes that matter
-                  </li>
-                </ul>
-              </div>
-
-              <blockquote className="bg-[#131417] text-white p-8 rounded-[25px] italic text-[20px] leading-[150%] tracking-[-0.2px] transition-all duration-300 hover:scale-[1.02]">
-                "Design isn't just what it looks like — it's how a clinician trusts an EHR to document care, reduce audits, and get referrals right."
-              </blockquote>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      {/* Image Enlargement Modal */}
-      {isImageEnlarged && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in-0 duration-300">
-          <div className="relative max-w-7xl max-h-full overflow-auto animate-in zoom-in-95 duration-300">
-            <button
-              onClick={() => setIsImageEnlarged(false)}
-              className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm hover:bg-white text-[#131417] rounded-full p-2 transition-all duration-300 hover:scale-110"
-              aria-label="Close enlarged image"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            
-            <img
-              src="/old_2.png"
-              alt="Original EHR interface showing complex navigation, outdated design patterns, and inefficient data entry workflows that healthcare professionals struggled with daily"
-              className="max-w-full max-h-full object-contain rounded-[12px] shadow-2xl"
-            />
-            
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-              <p className="bg-white/90 backdrop-blur-sm text-[#131417] px-4 py-2 rounded-full text-sm font-medium">
-                Original EHR interface - Click outside to close
+              <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-gray-600 text-center mb-2">
+                ezEMRx Dashboard Interface
+              </h3>
+              <p className="text-sm sm:text-base text-gray-500 text-center max-w-md">
+                Electronic Health Records system designed for public health workflows and patient management
               </p>
             </div>
+            <img
+              src="/api/placeholder/1920/1080"
+              alt="ezEMRx Electronic Health Records dashboard interface showing patient management system, clinical workflows, and public health data visualization designed for healthcare providers"
+              className="absolute inset-0 w-full h-full object-cover opacity-0"
+              loading="eager"
+              decoding="async"
+              width="1920"
+              height="1080"
+            />
           </div>
+          <figcaption className="text-sm text-gray-600 text-center mt-4 italic">
+            ezEMRx dashboard interface showcasing streamlined EHR workflows for public health management
+          </figcaption>
+        </figure>
+
+        {/* TL;DR Summary */}
+        <div className="bg-white rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 shadow-sm hover:shadow-md transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-300 hover:tracking-[-0.7px]">
+            TL;DR Summary
+          </h2>
           
-          {/* Click outside to close */}
-          <div 
-            className="absolute inset-0 -z-10"
-            onClick={() => setIsImageEnlarged(false)}
-          />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20">
+            <div className="space-y-6 sm:space-y-8">
+              <div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-3 sm:mb-4 tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
+                  The Challenge
+                </h3>
+                <p className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
+                  Public health organizations struggled with outdated EHR systems that didn't support complex patient workflows, population health tracking, or real-time data sharing between departments.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-3 sm:mb-4 tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
+                  The Solution
+                </h3>
+                <p className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
+                  Redesigned the entire EHR interface with focus on public health workflows, streamlined patient management, and integrated population health analytics to improve care coordination.
+                </p>
+              </div>
+            </div>
+            
+            <div className="space-y-6 sm:space-y-8">
+              <div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-3 sm:mb-4 tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
+                  Key Results
+                </h3>
+                <ul className="space-y-2 sm:space-y-3">
+                  <li className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
+                    <span className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px]">40% reduction in patient data entry time</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
+                    <span className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px]">60% increase in workflow efficiency</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
+                    <span className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px]">95% user satisfaction rating</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-3 sm:mb-4 tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
+                  Timeline & Role
+                </h3>
+                <p className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] mb-2 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <strong>Duration:</strong> 8 months (2023)
+                </p>
+                <p className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
+                  <strong>Role:</strong> Lead UX Designer, User Research, Prototyping
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      )}
+
+        {/* User Journey Grid */}
+        <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-900">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            EHR Redesign Process
+          </h2>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-6 xl:gap-8">
+            {/* Research Phase */}
+            <div className="bg-blue-50 border-2 border-blue-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-blue-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-blue-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
+                Research
+              </h3>
+              
+              <div className="flex-1 space-y-3 sm:space-y-4">
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">User interviews with healthcare providers</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">Current system workflow analysis</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">Legacy system pain points identification</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-3">Competitive analysis of EHR solutions</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Design Phase */}
+            <div className="bg-green-50 border-2 border-green-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-green-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-green-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                </svg>
+              </div>
+              
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
+                Design
+              </h3>
+              
+              <div className="flex-1 space-y-3 sm:space-y-4">
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">User-centered information architecture</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">Wireframes for core workflows</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 011 1v1a1 1 0 01-1 1h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7H3a1 1 0 01-1-1V5a1 1 0 011-1h4z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">Visual design system creation</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-3">High-fidelity interactive prototypes</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Testing Phase */}
+            <div className="bg-purple-50 border-2 border-purple-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-purple-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-purple-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
+                Testing
+              </h3>
+              
+              <div className="flex-1 space-y-3 sm:space-y-4">
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-purple-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">Usability testing with clinicians</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">A/B testing of critical flows</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">Accessibility compliance testing</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-purple-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-3">Performance & workflow metrics</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Implementation Phase */}
+            <div className="bg-orange-50 border-2 border-orange-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-orange-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
+                Implementation
+              </h3>
+              
+              <div className="flex-1 space-y-3 sm:space-y-4">
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-orange-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">Phased rollout strategy</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">Staff training programs</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">Change management support</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-orange-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-3">Performance monitoring & optimization</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Results Phase */}
+            <div className="bg-teal-50 border-2 border-teal-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-teal-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
+              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-teal-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              
+              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
+                Results
+              </h3>
+              
+              <div className="flex-1 space-y-3 sm:space-y-4">
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-teal-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">40% faster patient data entry</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">60% workflow efficiency increase</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-2">95% user satisfaction rating</span>
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 text-teal-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                  </svg>
+                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
+                    <span className="line-clamp-3">30% reduction in training time</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Footer */}
-      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-3300">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] py-16 lg:py-[134px]">
-          {/* Footer Header */}
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-16 lg:mb-[270px] gap-4 sm:gap-0">
-            <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
-              Portfolio 2024-2025
-            </span>
-            <span className="text-[20px] font-semibold leading-[20px] tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] hover:scale-105">
-              Sean Smith
-            </span>
-            <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] text-center sm:text-right transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
-              37.7749° N, 122.4194° W
-            </span>
-          </div>
+      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-24 xl:py-[134px]">
+          <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24 xl:mb-[270px]"></div>
 
-          {/* Get in Touch */}
-          <div className="text-center mb-16 lg:mb-[270px]">
-            <p className="text-[18px] font-medium text-[#9FA0A3] leading-[20px] tracking-[-0.18px] mb-[20px] transition-all duration-300 hover:text-white">
-              Have a nice project?
-            </p>
-            <h2 className="text-3xl sm:text-5xl lg:text-[72px] font-medium leading-[72px] tracking-[-0.72px] transition-all duration-500 hover:tracking-[-0.5px] hover:scale-105 cursor-pointer">
-              Get in Touch
-            </h2>
-          </div>
-
-          {/* Footer Bottom */}
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
-            <span className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] order-3 lg:order-1 transition-all duration-300 hover:text-[#9FA0A3]">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 lg:gap-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-2100">
+            <span className="text-xs sm:text-sm md:text-base lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] order-3 lg:order-1 transition-all duration-300 hover:text-[#9FA0A3]">
               © All rights reserved.
             </span>
 
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-[44px] order-1 lg:order-2">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-[44px] order-1 lg:order-2">
               <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
-              >
-                Twitter
-              </a>
-              <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
+                href="https://www.behance.net/ssmit129"
+                className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
               >
                 Behance
               </a>
               <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
+                href="https://github.com/ssmith129"
+                className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
               >
-                Instagram
+                GitHub
               </a>
               <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
+                href="https://www.linkedin.com/in/sean-smith-sf/"
+                className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
               >
-                Dribble
+                LinkedIn
               </a>
             </div>
 
-            <div className="flex gap-4 sm:gap-8 lg:gap-[40px] order-2 lg:order-3">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-[40px] order-2 lg:order-3">
               <a
                 href="#"
-                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
+                className="text-xs sm:text-sm md:text-base lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
               >
                 License
               </a>
               <a
                 href="#"
-                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
+                className="text-xs sm:text-sm md:text-base lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
               >
                 Terms of Use
               </a>
