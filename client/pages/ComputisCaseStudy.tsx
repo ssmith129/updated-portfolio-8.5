@@ -64,53 +64,9 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Image Placeholder */}
-      <figure className="relative w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
-        <div className="relative w-full aspect-video rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] overflow-hidden bg-gradient-to-br from-purple-50 via-blue-50 to-orange-50 border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-500 group">
-          <img
-            src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-            alt="Computis crypto tax engine dashboard interface showing transaction categorization and automated tax calculation workflows"
-            className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
-            width={1920}
-            height={1080}
-            loading="eager"
-            decoding="async"
-          />
-          
-          {/* Overlay gradient for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          
-          {/* Hero content overlay */}
-          <div className="absolute bottom-6 sm:bottom-8 left-6 sm:left-8 right-6 sm:right-8 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-            <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 sm:p-6">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-medium leading-tight mb-2">
-                Crypto Tax Engine Dashboard
-              </h2>
-              <p className="text-sm sm:text-base opacity-90 leading-relaxed">
-                Streamlined interface for automated transaction categorization and tax calculation
-              </p>
-            </div>
-          </div>
-          
-          {/* Loading state placeholder icon */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-0 transition-opacity duration-300">
-            <svg className="w-16 h-16 sm:w-20 sm:h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-          </div>
-        </div>
-        
-        <figcaption className="text-center mt-4 sm:mt-6 text-sm sm:text-base text-[#9FA0A3] leading-relaxed transition-all duration-300 hover:text-[#131417]">
-          Computis platform interface showcasing the automated crypto tax calculation workflow and user-friendly dashboard design
-        </figcaption>
-      </figure>
-
-      {/* Hero Image Placeholder */}
-      <figure className="w-full max-w-6xl mx-auto mb-12 sm:mb-16 md:mb-20 lg:mb-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
-        <div className="relative aspect-video w-full bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-          {/* Placeholder Content */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4 bg-gray-300 rounded-full flex items-center justify-center">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
+        <figure className="relative group overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02]">
+          <div className="aspect-video bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center relative">
                 <svg 
                   className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-gray-500" 
                   fill="none" 
