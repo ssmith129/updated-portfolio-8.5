@@ -56,7 +56,7 @@ export default function Index() {
             </h2>
             
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[28px] font-normal text-[#131417] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] xl:tracking-[-0.28px] mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] transition-all duration-300 hover:text-[#2a2a2a] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-900">
-              6+ years creating intuitive, scalable UX for complex SaaS platforms. I specialize in AI-integrated systems that streamline workflows and drive decisions. <Link to="/about" className="text-[#131417] hover:text-[#9FA0A3] transition-colors duration-300 underline underline-offset-2 decoration-1 hover:decoration-2">Learn more about my background</Link> or explore <Link to="/case-studies" className=\"text-[#131417] hover:text-[#9FA0A3] transition-colors duration-300 underline underline-offset-2 decoration-1 hover:decoration-2">detailed case studies</Link>.
+              6+ years creating intuitive, scalable UX for complex SaaS platforms. I specialize in AI-integrated systems that streamline workflows and drive decisions.
             </p>
 
           </div>

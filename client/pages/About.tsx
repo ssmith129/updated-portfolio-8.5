@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import InternalLink from "@/components/InternalLink";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       {/* Navigation */}
       <nav className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-4 sm:py-5 md:py-6 gap-4 md:gap-0 animate-in fade-in-0 slide-in-from-top-4 duration-700">
-        
-        {/* Breadcrumbs */}
-        <div className="w-full">
-          <Breadcrumbs />
-        </div>
         <div className="flex flex-col">
           <h1 className="text-base sm:text-lg md:text-xl font-medium text-[#131417] leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
             Sean Smith
@@ -98,11 +91,11 @@ export default function About() {
 
             <div className="space-y-6 sm:space-y-8">
               <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Product Designer with 6+ years of experience delivering intuitive, high-impact experiences across crypto, fintech, and B2B SaaS platforms. I specialize in AI-integrated systems that streamline workflows, simplify data, and drive decisions. View examples in my <InternalLink href="/case-studies">detailed case studies</InternalLink>.
+                Product Designer with 6+ years of experience delivering intuitive, high-impact experiences across crypto, fintech, and B2B SaaS platforms. I specialize in AI-integrated systems that streamline workflows, simplify data, and drive decisions.
               </p>
 
               <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Proven ability to simplify complexity through thoughtful UX and rapid prototyping — from backend scripts to trusted enterprise SaaS. See this approach demonstrated in projects like <InternalLink href="/case-studies/computis-crypto-tax-engine">Computis</InternalLink> and <InternalLink href="/case-studies/ezemrx-redesigning-ehr">ezEMRx</InternalLink>. Comfortable owning ambiguous problems from concept to launch and working directly with founders, engineers, and legal teams to ship production-ready features in weekly cycles.
+                Proven ability to simplify complexity through thoughtful UX and rapid prototyping — from backend scripts to trusted enterprise SaaS. Comfortable owning ambiguous problems from concept to launch and working directly with founders, engineers, and legal teams to ship production-ready features in weekly cycles.
               </p>
 
               <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
