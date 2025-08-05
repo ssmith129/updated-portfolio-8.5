@@ -40,26 +40,26 @@ export default function EzEMRxCaseStudy() {
         <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-300">
           <div className="mb-6 sm:mb-8 md:mb-12">
             <span className="inline-flex px-3 sm:px-4 py-1 sm:py-2 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 hover:bg-blue-200">
-              Healthcare • EHR Platform
+              UX Case Study • Healthcare • Public Health • AI • EHR
             </span>
           </div>
           
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] font-medium text-[#131417] leading-[110%] sm:leading-[115%] md:leading-[120%] tracking-[-1px] sm:tracking-[-1.5px] md:tracking-[-2px] lg:tracking-[-2.5px] xl:tracking-[-2.88px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-500 hover:tracking-[-2px]">
-            ezEMRx – Redesigning EHR for Real-World Public Health
+            ezEMRx – Public Health EHR Platform
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl lg:text-[24px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] max-w-[600px] lg:max-w-[800px] transition-all duration-300 hover:text-[#131417]">
-            Transforming electronic health records for public health agencies with streamlined workflows, better patient data management, and intuitive clinical interfaces.
+            Transforming a legacy EHR into an AI-augmented platform that boosts efficiency, compliance, and collaboration for clinics and health agencies
           </p>
         </div>
 
-        {/* Hero Image Placeholder - Added before TL;DR Summary */}
+        {/* Hero Image Placeholder */}
         <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
           <figure className="relative w-full max-w-[1200px] mx-auto group">
             <div className="relative aspect-video bg-gradient-to-br from-blue-50 via-green-50 to-blue-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-blue-100">
               <img
                 src="/api/placeholder/1920/1080"
-                alt="ezEMRx EHR dashboard showing patient management interface, clinical workflows, and public health data visualization"
+                alt="ezEMRx public health EHR platform dashboard showing AI-powered patient management and clinical workflow interfaces"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
                 width={1920}
                 height={1080}
@@ -78,7 +78,7 @@ export default function EzEMRxCaseStudy() {
             </div>
             
             <figcaption className="text-center mt-4 sm:mt-6 text-sm sm:text-base text-[#9FA0A3] transition-all duration-300 hover:text-[#131417]">
-              ezEMRx dashboard interface showcasing streamlined patient management and clinical workflows
+              ezEMRx platform interface showcasing AI-powered patient management and clinical workflows
             </figcaption>
           </figure>
         </div>
@@ -95,495 +95,373 @@ export default function EzEMRxCaseStudy() {
                 
                 <div className="space-y-3 sm:space-y-4">
                   <h3 className="text-base sm:text-lg md:text-xl lg:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.2px] sm:tracking-[-0.3px] md:tracking-[-0.4px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.3px]">
-                    The Challenge
+                    Project Details
                   </h3>
-                  <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                    Public health agencies struggling with outdated EHR systems that hindered patient care, required extensive training, and created data silos between departments.
-                  </p>
+                  <div className="space-y-2 text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
+                    <p><strong>Role:</strong> Lead UX/Product Designer</p>
+                    <p><strong>Company:</strong> Custom Data Processing Inc.</p>
+                    <p><strong>Type:</strong> Public Health EHR – Enterprise SaaS</p>
+                    <p><strong>Duration:</strong> 9 months</p>
+                    <p><strong>Tools:</strong> Figma, Miro, Jira, Notion, Confluence</p>
+                    <p><strong>Team:</strong> PM, AI Strategist, 3 Engineers, Clinical Informatics Lead</p>
+                  </div>
                 </div>
 
                 <div className="space-y-3 sm:space-y-4">
                   <h3 className="text-base sm:text-lg md:text-xl lg:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.2px] sm:tracking-[-0.3px] md:tracking-[-0.4px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.3px]">
-                    The Solution
+                    ✅ Outcomes
                   </h3>
-                  <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                    Complete UX redesign focusing on intuitive workflows, streamlined patient data entry, integrated clinical tools, and responsive design for mobile healthcare delivery.
-                  </p>
+                  <div className="space-y-2 text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
+                    <p>↓ 20% clinician documentation time</p>
+                    <p>↑ 70% compliance checklist pass rate</p>
+                    <p>↑ 130% shared case-notes volume</p>
+                    <p>↓ 35% referral processing time</p>
+                    <p>📄 5 modules launched with end-to-end audit trails</p>
+                  </div>
                 </div>
 
                 <div className="space-y-3 sm:space-y-4">
                   <h3 className="text-base sm:text-lg md:text-xl lg:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.2px] sm:tracking-[-0.3px] md:tracking-[-0.4px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.3px]">
-                    The Impact
+                    Key Innovation
                   </h3>
                   <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                    60% reduction in data entry time, 45% faster patient processing, improved clinical decision-making, and enhanced interoperability across health departments.
+                    AI-augmented, role-based platform that streamlines charting, audits, referrals, and collaboration in one unified interface for public health clinics and agencies.
                   </p>
                 </div>
-              </div>
-
-              <div className="flex flex-wrap gap-3 sm:gap-4 md:gap-5 lg:gap-6">
-                <span className="bg-[#131417] text-white px-3 sm:px-4 py-2 rounded-[15px] sm:rounded-[20px] text-xs sm:text-sm md:text-base font-medium transition-all duration-300 hover:bg-[#2a2a2a] hover:scale-105">
-                  ↓ 60% Data Entry Time
-                </span>
-                <span className="bg-[#131417] text-white px-3 sm:px-4 py-2 rounded-[15px] sm:rounded-[20px] text-xs sm:text-sm md:text-base font-medium transition-all duration-300 hover:bg-[#2a2a2a] hover:scale-105">
-                  ↑ 45% Processing Speed
-                </span>
-                <span className="bg-[#131417] text-white px-3 sm:px-4 py-2 rounded-[15px] sm:rounded-[20px] text-xs sm:text-sm md:text-base font-medium transition-all duration-300 hover:bg-[#2a2a2a] hover:scale-105">
-                  ↑ 70% User Satisfaction
-                </span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* User Journey Workflow */}
+        {/* Project Overview */}
         <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
-          <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2.4px] mb-4 sm:mb-6 md:mb-8 transition-all duration-500 hover:tracking-[-1.8px]">
-              Clinical Workflow Journey
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              Project Overview
             </h2>
-            <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] max-w-[600px] lg:max-w-[800px] mx-auto transition-all duration-300 hover:text-[#131417]">
-              Streamlining patient care from initial registration through clinical documentation and treatment planning
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 justify-items-center">
             
-            {/* Patient Registration */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-6 sm:p-8 md:p-10 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[260px] xl:max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-700">
-              <div className="bg-blue-500 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:scale-110">
-                <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-                </svg>
-              </div>
-              
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.3px]">
-                Patient Registration
-              </h3>
-              
-              <div className="flex-1 space-y-4 sm:space-y-5 md:space-y-6">
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#131417] leading-tight tracking-[-0.14px] sm:tracking-[-0.16px] line-clamp-2">
-                      Streamlined patient intake with auto-populated demographics
-                    </p>
-                  </div>
-                </div>
+            <p className="text-base sm:text-lg md:text-xl lg:text-[24px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] mb-6 sm:mb-8 md:mb-10 transition-all duration-300 hover:text-[#2a2a2a]">
+              ezEMRx was a legacy EHR used by WIC clinics, immunization sites, and local health departments—plagued by manual data entry, siloed notes, and compliance bottlenecks. We reimagined it as an AI-augmented, role-based platform that streamlines charting, audits, referrals, and collaboration in one unified interface.
+            </p>
 
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Simplified
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Duplicate entry prevention
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Mobile-first intake forms
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Insurance verification automation
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Clinical Assessment */}
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-6 sm:p-8 md:p-10 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[260px] xl:max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-900">
-              <div className="bg-green-500 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:scale-110">
-                <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                </svg>
-              </div>
-              
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.3px]">
-                Clinical Assessment
-              </h3>
-              
-              <div className="flex-1 space-y-4 sm:space-y-5 md:space-y-6">
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#131417] leading-tight tracking-[-0.14px] sm:tracking-[-0.16px] line-clamp-2">
-                      Guided clinical workflows with smart templates
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Confident
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Missing vital signs alerts
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Integrated vitals monitoring
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Care plan recommendations
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Documentation */}
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-6 sm:p-8 md:p-10 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[260px] xl:max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation animate-in fade-in-0 slide-in-from-top-8 duration-1000 delay-1100">
-              <div className="bg-purple-500 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:scale-110">
-                <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                </svg>
-              </div>
-              
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.3px]">
-                Documentation
-              </h3>
-              
-              <div className="flex-1 space-y-4 sm:space-y-5 md:space-y-6">
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                    </svg>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#131417] leading-tight tracking-[-0.14px] sm:tracking-[-0.16px] line-clamp-2">
-                      Voice-to-text clinical notes with smart formatting
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Satisfied
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Time-consuming manual entry
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Template-based documentation
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Auto-save and recovery features
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Care Coordination */}
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-6 sm:p-8 md:p-10 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[260px] xl:max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-1300">
-              <div className="bg-orange-500 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:scale-110">
-                <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-1.5-2.6M9 20h5V7a3 3 0 00-3-3H7a3 3 0 00-3 3v13h5zM9 7a3 3 0 00-3 3v3a3 3 0 003 3h3a3 3 0 003-3v-3a3 3 0 00-3-3H9z" />
-                </svg>
-              </div>
-              
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.3px]">
-                Care Coordination
-              </h3>
-              
-              <div className="flex-1 space-y-4 sm:space-y-5 md:space-y-6">
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-orange-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
-                    </svg>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#131417] leading-tight tracking-[-0.14px] sm:tracking-[-0.16px] line-clamp-2">
-                      Seamless referral management across departments
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Delighted
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Fragmented care communication
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Real-time team messaging
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Automated follow-up scheduling
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Quality Reporting */}
-            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-6 sm:p-8 md:p-10 lg:p-8 xl:p-10 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[260px] xl:max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-1500">
-              <div className="bg-indigo-500 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:scale-110">
-                <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.3px]">
-                Quality Reporting
-              </h3>
-              
-              <div className="flex-1 space-y-4 sm:space-y-5 md:space-y-6">
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-indigo-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#131417] leading-tight tracking-[-0.14px] sm:tracking-[-0.16px] line-clamp-2">
-                      Real-time quality metrics and compliance tracking
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Relieved
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Manual report compilation
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#131417] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-2">
-                      Automated dashboard generation
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-2 sm:space-y-3">
-                  <div className="flex items-center gap-2 sm:gap-3">
-                    <svg className="w-3 h-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-xs sm:text-sm font-normal text-[#9FA0A3] leading-tight tracking-[-0.12px] sm:tracking-[-0.14px] line-clamp-3">
-                      Regulatory compliance alerts
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <blockquote className="border-l-4 border-blue-500 pl-6 sm:pl-8 md:pl-10 bg-blue-50 py-4 sm:py-6 md:py-8 rounded-r-lg">
+              <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] italic transition-all duration-300 hover:text-[#2a2a2a]">
+                "We weren't just updating forms—we were embedding trust and efficiency into every workflow."
+              </p>
+            </blockquote>
           </div>
         </div>
 
-        {/* Key Improvements */}
+        {/* My Role */}
         <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2.4px] mb-4 sm:mb-6 md:mb-8 transition-all duration-500 hover:tracking-[-1.8px]">
-              Key Healthcare UX Improvements
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              My Role
             </h2>
-            <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] max-w-[600px] lg:max-w-[800px] mx-auto transition-all duration-300 hover:text-[#131417]">
-              Design solutions that transformed clinical workflows and improved patient outcomes
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20">
             
-            <div className="space-y-6 sm:space-y-8 md:space-y-10 animate-in fade-in-0 slide-in-from-left-6 duration-1000 delay-1300">
-              <div className="bg-white rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-6 sm:p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02]">
-                <div className="flex items-start gap-4 sm:gap-6">
-                  <div className="bg-blue-100 rounded-full p-3 sm:p-4 flex-shrink-0">
-                    <svg className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.3px]">
-                      Streamlined Clinical Workflows
-                    </h3>
-                    <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                      Redesigned patient intake, assessment, and documentation processes to reduce clicks by 40% and eliminate redundant data entry. Implemented smart templates and context-aware forms that adapt to patient conditions.
-                    </p>
-                  </div>
-                </div>
+            <ul className="space-y-3 sm:space-y-4 md:space-y-5 text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] transition-all duration-300 hover:text-[#2a2a2a]">
+              <li className="flex items-start gap-3 sm:gap-4">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                Defined UX strategy, information architecture, and AI explainability flow
+              </li>
+              <li className="flex items-start gap-3 sm:gap-4">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                Designed low- to high-fidelity screens and interactive AI prototypes in Figma
+              </li>
+              <li className="flex items-start gap-3 sm:gap-4">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                Facilitated stakeholder workshops and multisite usability tests
+              </li>
+              <li className="flex items-start gap-3 sm:gap-4">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                Built WCAG-compliant design system; delivered annotated redlines and QA specs
+              </li>
+              <li className="flex items-start gap-3 sm:gap-4">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                Led dev handoff and iterative QA collaboration
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Problem & Opportunity */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              Problem & Opportunity
+            </h2>
+            
+            <div className="overflow-x-auto mb-6 sm:mb-8 md:mb-10">
+              <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="border border-gray-300 px-4 py-3 text-left text-sm sm:text-base md:text-lg font-medium text-[#131417]">Problem</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left text-sm sm:text-base md:text-lg font-medium text-[#131417]">Impact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Manual, repetitive charting</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">↑ documentation time & error risk</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">No automated compliance checks</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Audit anxiety & regulatory risk</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Siloed case notes</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Poor cross-team collaboration</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Complex referral workflows</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Delayed patient care and follow-up</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="bg-blue-50 p-6 sm:p-8 md:p-10 rounded-lg">
+              <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] transition-all duration-300 hover:text-[#2a2a2a]">
+                <strong>Design Opportunity:</strong> Create an AI-powered EHR that automates charting, simplifies compliance, and fosters seamless collaboration.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Research & Insights */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              Research & Insights
+            </h2>
+            
+            <div className="space-y-6 sm:space-y-8 md:space-y-10">
+              <div>
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-4 sm:mb-6 transition-all duration-300 hover:tracking-[-0.3px]">
+                  Methods:
+                </h3>
+                <ul className="space-y-2 sm:space-y-3 text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] transition-all duration-300 hover:text-[#2a2a2a]">
+                  <li className="flex items-start gap-3 sm:gap-4">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></span>
+                    1:1 interviews with clinicians & program admins
+                  </li>
+                  <li className="flex items-start gap-3 sm:gap-4">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></span>
+                    Workflow shadowing across five clinics
+                  </li>
+                  <li className="flex items-start gap-3 sm:gap-4">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></span>
+                    Analytics review (GA, Mixpanel)
+                  </li>
+                  <li className="flex items-start gap-3 sm:gap-4">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></span>
+                    Prototype testing via Maze
+                  </li>
+                </ul>
               </div>
 
-              <div className="bg-white rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-6 sm:p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02]">
-                <div className="flex items-start gap-4 sm:gap-6">
-                  <div className="bg-green-100 rounded-full p-3 sm:p-4 flex-shrink-0">
-                    <svg className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.3px]">
-                      Enhanced Data Security & Privacy
-                    </h3>
-                    <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                      Implemented HIPAA-compliant design patterns with role-based access controls, audit trails, and secure patient data handling. Created clear privacy indicators and user permissions management.
-                    </p>
-                  </div>
+              <div>
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-4 sm:mb-6 transition-all duration-300 hover:tracking-[-0.3px]">
+                  Insights → Features:
+                </h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                    <thead>
+                      <tr className="bg-gray-50">
+                        <th className="border border-gray-300 px-4 py-3 text-left text-sm sm:text-base md:text-lg font-medium text-[#131417]">Insight</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left text-sm sm:text-base md:text-lg font-medium text-[#131417]">Design Response</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Charting fatigue from redundant forms</td>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Smart Charting: AI pre-fill with confidence badges</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Manual compliance audits</td>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">One-click audit drawer with color-coded checklist</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Notes siloed by department</td>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Collaborative case notes with threading & versioning</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Referral ambiguity</td>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Smart Referral Routing with contextual suggestions</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div className="space-y-6 sm:space-y-8 md:space-y-10 animate-in fade-in-0 slide-in-from-right-6 duration-1000 delay-1500">
-              <div className="bg-white rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-6 sm:p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02]">
-                <div className="flex items-start gap-4 sm:gap-6">
-                  <div className="bg-purple-100 rounded-full p-3 sm:p-4 flex-shrink-0">
-                    <svg className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.3px]">
-                      Mobile-First Clinical Experience
-                    </h3>
-                    <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                      Designed responsive interfaces optimized for tablets and mobile devices used in field healthcare. Implemented offline capabilities and touch-friendly interactions for clinical staff working in various environments.
-                    </p>
-                  </div>
-                </div>
+        {/* Market & Competitor Analysis */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              Market & Competitor Analysis
+            </h2>
+            
+            <div className="space-y-6 sm:space-y-8 md:space-y-10">
+              <div>
+                <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] mb-4 sm:mb-6 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <strong>Users:</strong> Clinicians, Program Administrators, Public Health Agencies
+                </p>
+                
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-4 sm:mb-6 transition-all duration-300 hover:tracking-[-0.3px]">
+                  Trends:
+                </h3>
+                <ul className="space-y-2 sm:space-y-3 text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] transition-all duration-300 hover:text-[#2a2a2a]">
+                  <li className="flex items-start gap-3 sm:gap-4">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></span>
+                    Shift toward interoperable, digital records
+                  </li>
+                  <li className="flex items-start gap-3 sm:gap-4">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></span>
+                    Rising demand for AI-driven efficiency
+                  </li>
+                  <li className="flex items-start gap-3 sm:gap-4">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></span>
+                    Increased regulatory and audit pressures
+                  </li>
+                </ul>
               </div>
 
-              <div className="bg-white rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-6 sm:p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02]">
-                <div className="flex items-start gap-4 sm:gap-6">
-                  <div className="bg-orange-100 rounded-full p-3 sm:p-4 flex-shrink-0">
-                    <svg className="w-6 h-6 sm:w-8 sm:h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
+              <div>
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-4 sm:mb-6 transition-all duration-300 hover:tracking-[-0.3px]">
+                  Competitive Differentiator:
+                </h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                    <thead>
+                      <tr className="bg-gray-50">
+                        <th className="border border-gray-300 px-4 py-3 text-left text-sm sm:text-base md:text-lg font-medium text-[#131417]">Feature</th>
+                        <th className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-[#131417]">ezEMRx (New)</th>
+                        <th className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-[#131417]">Legacy EHR</th>
+                        <th className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-[#131417]">Other Solutions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">AI Smart Charting</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">✅</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">❌</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">⚠</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Real-Time Compliance Audit</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">✅</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">❌</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">⚠</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Collaborative Case Notes</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">✅</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">❌</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">⚠</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Smart Referral Routing</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">✅</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">❌</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">❌</td>
+                      </tr>
+                      <tr>
+                        <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Patient Timeline Overview</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">✅</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">❌</td>
+                        <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg">❌</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* User Flows */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              User Flows
+            </h2>
+            
+            <div className="space-y-6 sm:space-y-8 md:space-y-10">
+              <div className="bg-blue-50 p-6 sm:p-8 md:p-10 rounded-lg">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-4 sm:mb-6 transition-all duration-300 hover:tracking-[-0.3px]">
+                  Claire (Clinician):
+                </h3>
+                <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] mb-4 transition-all duration-300 hover:text-[#2a2a2a]">
+                  Intake → Smart Charting → Compliance Audit → Referral Routing → Case Notes → Patient Timeline
+                </p>
+                <p className="text-sm sm:text-base md:text-lg text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
+                  → Needs AI pre-fill, real-time audit checks, and clear referral guidance.
+                </p>
+              </div>
+
+              <div className="bg-green-50 p-6 sm:p-8 md:p-10 rounded-lg">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-4 sm:mb-6 transition-all duration-300 hover:tracking-[-0.3px]">
+                  Mark (Program Admin):
+                </h3>
+                <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] mb-4 transition-all duration-300 hover:text-[#2a2a2a]">
+                  Dashboard → Audit Overview → Notes Review → Reporting
+                </p>
+                <p className="text-sm sm:text-base md:text-lg text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
+                  → Needs high-level compliance insights and collaboration oversight.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Design Concepts */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              Design Concepts
+            </h2>
+            
+            <div className="space-y-6 sm:space-y-8 md:space-y-10">
+              <ul className="space-y-4 sm:space-y-5 md:space-y-6 text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] transition-all duration-300 hover:text-[#2a2a2a]">
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                  AI-augmented charting with hover-to-explain confidence badges
+                </li>
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                  Transparent referral routing using patient context filters
+                </li>
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                  Color-coded audit drawer for instant compliance feedback
+                </li>
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                  Threaded, taggable case notes for real-time team collaboration
+                </li>
+              </ul>
+
+              <div className="bg-gradient-to-r from-blue-50 to-green-50 p-6 sm:p-8 md:p-10 rounded-lg">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-4 sm:mb-6 transition-all duration-300 hover:tracking-[-0.3px]">
+                  Design Principles:
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                  <div className="text-center">
+                    <p className="text-base sm:text-lg md:text-xl lg:text-[20px] font-medium text-[#131417] transition-all duration-300 hover:scale-105">
+                      Clarity > Clutter
+                    </p>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.48px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.3px]">
-                      Integrated Analytics & Reporting
-                    </h3>
-                    <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                      Built comprehensive dashboards for population health monitoring, quality metrics tracking, and regulatory compliance reporting. Automated data visualization and alert systems for proactive healthcare management.
+                  <div className="text-center">
+                    <p className="text-base sm:text-lg md:text-xl lg:text-[20px] font-medium text-[#131417] transition-all duration-300 hover:scale-105">
+                      Trust through Transparency
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-base sm:text-lg md:text-xl lg:text-[20px] font-medium text-[#131417] transition-all duration-300 hover:scale-105">
+                      Efficiency with AI
                     </p>
                   </div>
                 </div>
@@ -592,111 +470,174 @@ export default function EzEMRxCaseStudy() {
           </div>
         </div>
 
-        {/* Technologies Used */}
-        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
-          <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2.4px] mb-4 sm:mb-6 md:mb-8 transition-all duration-500 hover:tracking-[-1.8px]">
-              Healthcare Technology Stack
+        {/* Prototyping & System Design */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              Prototyping & System Design
             </h2>
-            <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] max-w-[600px] lg:max-w-[800px] mx-auto transition-all duration-300 hover:text-[#131417]">
-              Modern tools and frameworks used to build the ezEMRx healthcare platform
-            </p>
+            
+            <ul className="space-y-3 sm:space-y-4 md:space-y-5 text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] transition-all duration-300 hover:text-[#2a2a2a]">
+              <li className="flex items-start gap-3 sm:gap-4">
+                <span className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></span>
+                5 modules & 25+ wireframes covering desktop and tablet
+              </li>
+              <li className="flex items-start gap-3 sm:gap-4">
+                <span className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></span>
+                Figma component library with WCAG 2.1 AA tokens
+              </li>
+              <li className="flex items-start gap-3 sm:gap-4">
+                <span className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></span>
+                12-column responsive grid for desktop & tablet
+              </li>
+              <li className="flex items-start gap-3 sm:gap-4">
+                <span className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></span>
+                Interactive prototypes tested with 30 clinicians via Maze
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8">
-            <span className="bg-white border border-[#131417] text-[#131417] px-4 sm:px-6 py-2 sm:py-3 rounded-[20px] sm:rounded-[25px] text-sm sm:text-base md:text-lg font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
-              React Native
-            </span>
-            <span className="bg-white border border-[#131417] text-[#131417] px-4 sm:px-6 py-2 sm:py-3 rounded-[20px] sm:rounded-[25px] text-sm sm:text-base md:text-lg font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
-              Node.js
-            </span>
-            <span className="bg-white border border-[#131417] text-[#131417] px-4 sm:px-6 py-2 sm:py-3 rounded-[20px] sm:rounded-[25px] text-sm sm:text-base md:text-lg font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
-              PostgreSQL
-            </span>
-            <span className="bg-white border border-[#131417] text-[#131417] px-4 sm:px-6 py-2 sm:py-3 rounded-[20px] sm:rounded-[25px] text-sm sm:text-base md:text-lg font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
-              AWS Healthcare
-            </span>
-            <span className="bg-white border border-[#131417] text-[#131417] px-4 sm:px-6 py-2 sm:py-3 rounded-[20px] sm:rounded-[25px] text-sm sm:text-base md:text-lg font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
-              FHIR API
-            </span>
-            <span className="bg-white border border-[#131417] text-[#131417] px-4 sm:px-6 py-2 sm:py-3 rounded-[20px] sm:rounded-[25px] text-sm sm:text-base md:text-lg font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
-              HL7 Integration
-            </span>
-            <span className="bg-white border border-[#131417] text-[#131417] px-4 sm:px-6 py-2 sm:py-3 rounded-[20px] sm:rounded-[25px] text-sm sm:text-base md:text-lg font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
-              Redis Cache
-            </span>
-            <span className="bg-white border border-[#131417] text-[#131417] px-4 sm:px-6 py-2 sm:py-3 rounded-[20px] sm:rounded-[25px] text-sm sm:text-base md:text-lg font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
-              Elasticsearch
-            </span>
+        {/* Core Features & UI */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2500">
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              Core Features & UI
+            </h2>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="border border-gray-300 px-4 py-3 text-left text-sm sm:text-base md:text-lg font-medium text-[#131417]">Module</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left text-sm sm:text-base md:text-lg font-medium text-[#131417]">Key Feature</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg font-medium text-[#131417]">Smart Charting</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">AI pre-fill fields with confidence badges & explain tooltips</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg font-medium text-[#131417]">Compliance Audit</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Real-time color-coded checklist drawer & PDF export</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg font-medium text-[#131417]">Collaborative Case Notes</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Threaded notes with tags, version history, and approval workflows</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg font-medium text-[#131417]">Smart Referral Routing</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Contextual suggestions based on condition, coverage, and location</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg font-medium text-[#131417]">Patient Timeline Overview</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#9FA0A3]">Unified feed of visits, labs, immunizations, and notes for context</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
         {/* Results & Impact */}
-        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2700">
           <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
-            <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2.4px] mb-4 sm:mb-6 md:mb-8 transition-all duration-500 hover:tracking-[-1.8px]">
-                Healthcare Impact Results
-              </h2>
-              <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] max-w-[600px] lg:max-w-[800px] mx-auto transition-all duration-300 hover:text-[#131417]">
-                Measurable improvements in clinical efficiency and patient care quality
-              </p>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              Results & Impact
+            </h2>
+            
+            <div className="space-y-6 sm:space-y-8 md:space-y-10">
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-gray-300 rounded-lg overflow-hidden">
+                  <thead>
+                    <tr className="bg-gray-50">
+                      <th className="border border-gray-300 px-4 py-3 text-left text-sm sm:text-base md:text-lg font-medium text-[#131417]">Metric</th>
+                      <th className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-[#131417]">Before</th>
+                      <th className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-[#131417]">After</th>
+                      <th className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-[#131417]">Change</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Documentation Time</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg text-[#9FA0A3]">45 min/patient</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg text-[#9FA0A3]">36 min/patient</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-green-600">↓ 20%</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Compliance Pass Rate</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg text-[#9FA0A3]">50%</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg text-[#9FA0A3]">85%</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-green-600">↑ 70%</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Case-Notes Shared Volume</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg text-[#9FA0A3]">1 share/note</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg text-[#9FA0A3]">2.3 shares/note</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-green-600">↑ 130%</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-3 text-sm sm:text-base md:text-lg text-[#131417]">Referral Processing Time</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg text-[#9FA0A3]">20 hrs/week</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg text-[#9FA0A3]">13 hrs/week</td>
+                      <td className="border border-gray-300 px-4 py-3 text-center text-sm sm:text-base md:text-lg font-medium text-green-600">↓ 35%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
+                <blockquote className="border-l-4 border-blue-500 pl-6 sm:pl-8 bg-blue-50 py-4 sm:py-6 rounded-r-lg">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] italic transition-all duration-300 hover:text-[#2a2a2a]">
+                    "ezEMRx feels intuitive—it knows what I need before I do."
+                  </p>
+                </blockquote>
+
+                <blockquote className="border-l-4 border-green-500 pl-6 sm:pl-8 bg-green-50 py-4 sm:py-6 rounded-r-lg">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] italic transition-all duration-300 hover:text-[#2a2a2a]">
+                    "The audit drawer saved me hours each week."
+                  </p>
+                </blockquote>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 mb-8 sm:mb-10 md:mb-12 lg:mb-16">
-              
-              <div className="text-center animate-in fade-in-0 zoom-in-95 duration-1000 delay-1700">
-                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] font-medium text-[#131417] leading-[120%] tracking-[-1px] sm:tracking-[-1.5px] md:tracking-[-2px] lg:tracking-[-2.5px] xl:tracking-[-3.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 hover:scale-110">
-                  60%
-                </div>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] lg:tracking-[-0.2px] transition-all duration-300 hover:text-[#131417]">
-                  Reduction in Data Entry Time
-                </p>
-              </div>
+        {/* Final Takeaways */}
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2900">
+          <div className="bg-white rounded-[25px] sm:rounded-[30px] md:rounded-[35px] lg:rounded-[40px] xl:rounded-[45px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 transition-all duration-500 hover:tracking-[-1.5px]">
+              Final Takeaways
+            </h2>
+            
+            <div className="space-y-6 sm:space-y-8 md:space-y-10">
+              <ul className="space-y-3 sm:space-y-4 md:space-y-5 text-base sm:text-lg md:text-xl lg:text-[22px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.22px] transition-all duration-300 hover:text-[#2a2a2a]">
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                  AI transparency builds clinician trust
+                </li>
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                  Modular architecture scales across diverse agencies
+                </li>
+                <li className="flex items-start gap-3 sm:gap-4">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                  Human-in-the-loop automation reduces manual burden
+                </li>
+              </ul>
 
-              <div className="text-center animate-in fade-in-0 zoom-in-95 duration-1000 delay-1900">
-                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] font-medium text-[#131417] leading-[120%] tracking-[-1px] sm:tracking-[-1.5px] md:tracking-[-2px] lg:tracking-[-2.5px] xl:tracking-[-3.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 hover:scale-110">
-                  45%
-                </div>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] lg:tracking-[-0.2px] transition-all duration-300 hover:text-[#131417]">
-                  Faster Patient Processing
+              <blockquote className="border-l-4 border-purple-500 pl-6 sm:pl-8 md:pl-10 bg-purple-50 py-6 sm:py-8 md:py-10 rounded-r-lg">
+                <p className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-medium text-[#131417] leading-[150%] tracking-[-0.18px] sm:tracking-[-0.2px] md:tracking-[-0.28px] italic transition-all duration-300 hover:text-[#2a2a2a]">
+                  "Design is about empowering users, not replacing them."
                 </p>
-              </div>
-
-              <div className="text-center animate-in fade-in-0 zoom-in-95 duration-1000 delay-2100">
-                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] font-medium text-[#131417] leading-[120%] tracking-[-1px] sm:tracking-[-1.5px] md:tracking-[-2px] lg:tracking-[-2.5px] xl:tracking-[-3.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 hover:scale-110">
-                  70%
-                </div>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] lg:tracking-[-0.2px] transition-all duration-300 hover:text-[#131417]">
-                  Increase in User Satisfaction
-                </p>
-              </div>
-
-              <div className="text-center animate-in fade-in-0 zoom-in-95 duration-1000 delay-2300">
-                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] font-medium text-[#131417] leading-[120%] tracking-[-1px] sm:tracking-[-1.5px] md:tracking-[-2px] lg:tracking-[-2.5px] xl:tracking-[-3.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 hover:scale-110">
-                  85%
-                </div>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] lg:tracking-[-0.2px] transition-all duration-300 hover:text-[#131417]">
-                  Reduction in Training Time
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-2500">
-              <p className="text-base sm:text-lg md:text-xl lg:text-[24px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] max-w-[800px] mx-auto transition-all duration-300 hover:text-[#2a2a2a]">
-                "The ezEMRx redesign transformed our clinical workflows and significantly improved both staff efficiency and patient care quality. Our providers can now focus more on patient care instead of fighting with the system."
-              </p>
-              <div className="mt-4 sm:mt-6 md:mt-8">
-                <p className="text-sm sm:text-base md:text-lg font-medium text-[#9FA0A3] transition-all duration-300 hover:text-[#131417]">
-                  Dr. Sarah Chen, Chief Medical Officer
-                </p>
-              </div>
+              </blockquote>
             </div>
           </div>
         </div>
 
         {/* Next Steps */}
-        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
+        <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-3100">
           <div className="text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.6px] xl:tracking-[-2.4px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-500 hover:tracking-[-1.8px]">
               Interested in Healthcare UX?
@@ -722,9 +663,9 @@ export default function EzEMRxCaseStudy() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2100">
+      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-3300">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-24 xl:py-[134px]">
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 lg:gap-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-2300">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 lg:gap-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-3500">
             <span className="text-xs sm:text-sm md:text-base lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] order-3 lg:order-1 transition-all duration-300 hover:text-[#9FA0A3]">
               © All rights reserved.
             </span>
@@ -751,9 +692,18 @@ export default function EzEMRxCaseStudy() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-[40px] order-2 lg:order-3">
-              <span className="text-sm sm:text-base md:text-lg lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] transition-all duration-300 hover:text-[#9FA0A3] min-h-[44px] flex items-center">
-                37.7749° N, 122.4194° W
-              </span>
+              <a
+                href="#"
+                className="text-sm sm:text-base md:text-lg lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center touch-manipulation"
+              >
+                License
+              </a>
+              <a
+                href="#"
+                className="text-sm sm:text-base md:text-lg lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center touch-manipulation"
+              >
+                Terms of Use
+              </a>
             </div>
           </div>
         </div>
