@@ -451,7 +451,7 @@ export default function EzEMRxCaseStudy() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                   <div className="text-center">
                     <p className="text-base sm:text-lg md:text-xl lg:text-[20px] font-medium text-[#131417] transition-all duration-300 hover:scale-105">
-                      Clarity > Clutter
+                      Clarity {'>'} Clutter
                     </p>
                   </div>
                   <div className="text-center">
