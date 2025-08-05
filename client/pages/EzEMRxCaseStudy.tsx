@@ -66,6 +66,57 @@ export default function EzEMRxCaseStudy() {
         </div>
       </div>
 
+      {/* Hero Image Placeholder */}
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+        <figure className="relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-gradient-to-br from-blue-50 via-white to-green-50 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] group">
+          <div className="aspect-video w-full flex items-center justify-center bg-gradient-to-br from-blue-100/50 to-green-100/50 backdrop-blur-sm">
+            <div className="text-center space-y-4 p-8">
+              {/* Healthcare/EHR Icon */}
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-blue-500 to-green-500 rounded-full mx-auto flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              
+              {/* Placeholder Text */}
+              <div className="space-y-2">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 tracking-tight">
+                  Hero Image Placeholder
+                </h3>
+                <p className="text-sm sm:text-base text-gray-600 max-w-md mx-auto leading-relaxed">
+                  ezEMRx EHR System Dashboard - Public Health Interface Design
+                </p>
+                <div className="text-xs sm:text-sm text-gray-500 font-mono bg-white/70 backdrop-blur-sm rounded-lg px-3 py-1 inline-block">
+                  1920 × 1080px
+                </div>
+              </div>
+              
+              {/* Loading Animation */}
+              <div className="flex items-center justify-center space-x-1">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Actual placeholder image - hidden for now */}
+          <img
+            src="/api/placeholder/1920/1080"
+            alt="ezEMRx Electronic Health Records system dashboard showing public health interface design with patient management, data visualization, and clinical workflow optimization features"
+            className="w-full h-full object-cover absolute inset-0 opacity-0"
+            width={1920}
+            height={1080}
+            loading="eager"
+            decoding="async"
+          />
+          
+          <figcaption className="sr-only">
+            Hero image showcasing the ezEMRx Electronic Health Records system redesign, featuring the main dashboard interface optimized for public health workflows, patient data management, and clinical decision support.
+          </figcaption>
+        </figure>
+      </div>
+
       {/* Content Sections */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
         {/* TL;DR Summary */}
