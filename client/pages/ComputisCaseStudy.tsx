@@ -694,7 +694,7 @@ export default function ComputisCaseStudy() {
                       {/* Connection Line */}
                       <div className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-yellow-400 via-green-400 via-purple-400 to-orange-400 rounded-full opacity-30 hidden lg:block"></div>
                       
-                      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4">
+                      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-6 min-h-[400px] lg:min-h-[450px]">
                         {[
                           { 
                             stage: 'Upload', 
