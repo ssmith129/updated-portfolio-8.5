@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function CaseStudies() {
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       {/* Navigation */}
       <nav className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-4 sm:py-5 md:py-6 gap-4 md:gap-0">
+        
+        {/* Breadcrumbs */}
+        <div className="w-full">
+          <Breadcrumbs />
+        </div>
         <div className="flex flex-col">
           <h1 className="text-base sm:text-lg md:text-xl font-medium text-[#131417] leading-normal tracking-[-0.2px]">
             Sean Smith
@@ -41,7 +47,7 @@ export default function CaseStudies() {
             Case Studies
           </h1>
           <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[400px] sm:max-w-[500px] md:max-w-[600px] mx-auto transition-all duration-300 hover:text-[#131417] px-4">
-            Explore detailed breakdowns of my design process, challenges, and solutions across various projects.
+            Explore detailed breakdowns of my design process, challenges, and solutions across various projects. Each case study demonstrates <Link to="/about" className="text-[#131417] hover:text-[#9FA0A3] transition-colors duration-300 underline underline-offset-2">my expertise</Link> in creating intuitive experiences for complex systems.
           </p>
         </div>
 

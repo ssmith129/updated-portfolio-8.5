@@ -1,11 +1,20 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedCaseStudies from "@/components/RelatedCaseStudies";
+import InternalLink from "@/components/InternalLink";
 
 export default function ComputisCaseStudy() {
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       {/* Navigation */}
       <nav className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-4 sm:py-5 md:py-6 gap-4 md:gap-0 animate-in fade-in-0 slide-in-from-top-4 duration-700">
+        
+        {/* Breadcrumbs */}
+        <div className="w-full">
+          <Breadcrumbs />
+        </div>
+
         <div className="flex flex-col">
           <h1 className="text-[20px] font-medium text-[#131417] leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
             Sean Smith
@@ -1194,6 +1203,13 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
+
+        {/* Related Case Studies */}
+        <RelatedCaseStudies 
+          currentHref="/case-studies/computis-crypto-tax-engine"
+          maxItems={2}
+          title="Similar Projects"
+        />
       </div>
 
       {/* Footer */}
