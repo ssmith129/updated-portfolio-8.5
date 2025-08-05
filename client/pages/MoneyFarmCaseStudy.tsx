@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 export default function MoneyFarmCaseStudy() {
   return (
@@ -6,620 +7,856 @@ export default function MoneyFarmCaseStudy() {
       {/* Navigation */}
       <nav className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-4 sm:py-5 md:py-6 gap-4 md:gap-0 animate-in fade-in-0 slide-in-from-top-4 duration-700">
         <div className="flex flex-col">
-          <h1 className="text-base sm:text-lg md:text-xl font-medium text-[#131417] leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
+          <h1 className="text-[20px] font-medium text-[#131417] leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
             Sean Smith
           </h1>
-          <p className="text-xs sm:text-sm md:text-base font-medium text-[#9FA0A3] leading-normal tracking-[-0.16px] transition-colors duration-300 hover:text-[#131417]">
+          <p className="text-[16px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.16px] transition-colors duration-300 hover:text-[#131417]">
             San Francisco, CA
           </p>
         </div>
 
-        <div className="bg-white rounded-[25px] sm:rounded-[35px] md:rounded-[50px] p-[3px] sm:p-[4px] md:p-[5px] flex items-center flex-wrap gap-1 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] w-full sm:w-auto justify-center">
+        <div className="bg-white rounded-[50px] p-[5px] flex items-center flex-wrap gap-1 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
           <Link
             to="/"
-            className="text-[#131417] px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
+            className="text-[#131417] px-4 sm:px-[25px] py-[13px] text-sm sm:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
           >
             Home
           </Link>
           <Link
             to="/case-studies"
-            className="text-[#131417] px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
+            className="bg-[#131417] text-white px-4 sm:px-[25px] py-[13px] rounded-[50px] text-sm sm:text-[18px] font-medium tracking-[-0.18px] transition-all duration-300 hover:bg-[#2a2a2a] hover:scale-105"
           >
             Case Studies
           </Link>
           <Link
             to="/about"
-            className="text-[#131417] px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
+            className="text-[#131417] px-4 sm:px-[25px] py-[13px] text-sm sm:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
           >
             About
           </Link>
         </div>
       </nav>
 
+      {/* Back Button */}
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
+        <Link
+          to="/case-studies"
+          className="inline-flex items-center gap-2 text-[18px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.18px] hover:text-[#131417] transition-all duration-300 hover:scale-105 group"
+        >
+          <ArrowLeft className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" />
+          Back to Case Studies
+        </Link>
+      </div>
+
       {/* Hero Section */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] pt-8 sm:pt-12 md:pt-16 lg:pt-24 xl:pt-[150px] animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-300">
-        <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24 xl:mb-[160px]">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-[150%] sm:leading-[160%] md:leading-[170%] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-500 hover:tracking-[-0.6px]">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+        <div className="mb-8">
+          <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[25px] text-[14px] font-medium tracking-[-0.14px] mb-6 transition-all duration-300 hover:scale-105">
+            UX Case Study
+          </span>
+          <h1 className="text-4xl sm:text-6xl lg:text-[72px] font-medium text-[#131417] leading-[120%] tracking-[-1.44px] mb-6 transition-all duration-500 hover:tracking-[-1.2px]">
             MoneyFarm – AI-Powered Personal Finance Manager
           </h1>
-          
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-            Revolutionizing personal finance management through AI-driven insights and automated budgeting. Designed an intelligent platform that helps users achieve financial goals through personalized recommendations and smart spending analysis.
+          <p className="text-xl sm:text-2xl lg:text-[28px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.28px] max-w-[900px] transition-all duration-300 hover:text-[#131417]">
+            Transforming a fragmented budgeting experience into an AI-first personal finance platform that builds habits, reduces anxiety, and improves user confidence through behavioral nudges and transparent insights
           </p>
         </div>
       </div>
 
-      {/* Hero Image Placeholder */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
-        <figure className="relative w-full">
-          <div className="relative bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] border-2 border-dashed border-green-200 hover:border-green-300 transition-all duration-500 hover:shadow-lg group">
-            <div className="aspect-video flex flex-col items-center justify-center p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16">
-              {/* Finance Icon */}
-              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 bg-green-500 rounded-full flex items-center justify-center mb-4 sm:mb-6 md:mb-8 transition-all duration-500 group-hover:scale-110 group-hover:bg-green-600">
-                <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+      {/* Content Sections */}
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
+        {/* TL;DR Summary */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                TL;DR Summary
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Role</p>
+                  <p className="text-[18px] font-medium text-[#131417]">Lead Product Designer</p>
+                </div>
+                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Company</p>
+                  <p className="text-[18px] font-medium text-[#131417]">Independent Project</p>
+                </div>
+                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Type</p>
+                  <p className="text-[18px] font-medium text-[#131417]">AI-Powered Personal Finance Platform</p>
+                </div>
+                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Duration</p>
+                  <p className="text-[18px] font-medium text-[#131417]">10 weeks</p>
+                </div>
               </div>
               
-              {/* Placeholder Content */}
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 text-center leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] transition-all duration-300">
-                MoneyFarm Dashboard Hero Image
-              </h3>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#9FA0A3] text-center max-w-lg leading-relaxed tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 group-hover:text-[#131417]">
-                Personal finance dashboard showing AI-powered insights, budget tracking, and investment recommendations
-              </p>
-            </div>
-            
-            {/* Placeholder Image */}
-            <img 
-              src="/api/placeholder/1920/1080" 
-              alt="MoneyFarm Personal Finance Dashboard - AI-powered financial management interface showing budget tracking, spending analysis, investment recommendations, and automated savings goals with intelligent insights"
-              className="absolute inset-0 w-full h-full object-cover rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] opacity-0"
-              width="1920"
-              height="1080"
-              loading="eager"
-              decoding="async"
-            />
-          </div>
-          
-          <figcaption className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-[#9FA0A3] text-center italic leading-relaxed tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-            MoneyFarm AI-powered personal finance dashboard with intelligent budgeting and investment insights
-          </figcaption>
-        </figure>
-      </div>
-
-      {/* TL;DR Summary */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-        <div className="bg-white rounded-[20px] sm:rounded-[25px] md:rounded-[30px] lg:rounded-[35px] xl:rounded-[40px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-sm hover:shadow-md transition-all duration-300">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-6 sm:mb-8 md:mb-10 transition-all duration-300 hover:tracking-[-0.4px]">
-            TL;DR Summary
-          </h2>
-          
-          <div className="space-y-4 sm:space-y-6 md:space-y-8">
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 md:gap-12">
-              <div className="w-full sm:w-[200px] flex-shrink-0">
-                <h3 className="text-sm sm:text-base md:text-lg font-medium text-[#9FA0A3] leading-normal tracking-[-0.16px] sm:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                  Challenge
-                </h3>
+              <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                <p className="text-[14px] font-medium text-[#9FA0A3] mb-4">Tools & Team</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-[16px] font-medium text-[#131417] mb-2">Tools:</p>
+                    <p className="text-[16px] text-[#131417]">Figma, Miro, Maze, Notion</p>
+                  </div>
+                  <div>
+                    <p className="text-[16px] font-medium text-[#131417] mb-2">Team:</p>
+                    <p className="text-[16px] text-[#131417]">PM, Engineers, AI Researcher</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex-1">
-                <p className="text-base sm:text-lg md:text-xl lg:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                  Users struggled with fragmented financial tools, lack of personalized insights, and difficulty achieving long-term financial goals due to complex budgeting processes and reactive money management approaches.
+
+              <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 hover:border-green-300 transition-all duration-300 hover:scale-[1.02]">
+                <h3 className="text-[20px] font-medium text-[#131417] mb-4">✅ Outcomes</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="flex items-center gap-2">
+                    <span className="text-green-600 font-bold">↓ 45%</span>
+                    <span className="text-[16px] text-[#131417]">perceived effort to manage finances</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-blue-600 font-bold">↑ 92%</span>
+                    <span className="text-[16px] text-[#131417]">weekly engagement in MVP testing</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-purple-600 font-bold">↓ 75%</span>
+                    <span className="text-[16px] text-[#131417]">drop in user-reported anxiety around money</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-orange-600 font-bold">↑ 5/5</span>
+                    <span className="text-[16px] text-[#131417]">satisfaction on dashboard usability</span>
+                  </div>
+                </div>
+                <div className="mt-4 flex items-center gap-2">
+                  <span className="text-indigo-600 font-bold">📈</span>
+                  <span className="text-[16px] text-[#131417]">Designed for automated insights, gamified habits, and goal-based financial coaching</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Project Overview */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-900">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Project Overview
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
+                MoneyFarm reimagines personal finance as a habit-building journey. Unlike traditional budgeting tools that feel cold or punitive, MoneyFarm uses explainable AI, behavioral psychology, and a warm visual design to help users develop better money habits over time.
+              </p>
+              <blockquote className="bg-[#131417] text-white p-8 rounded-[25px] italic text-[20px] leading-[150%] tracking-[-0.2px] transition-all duration-300 hover:scale-[1.02]">
+                "It's not just a tracker—it's a coach that helps me *feel better* about my money."
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        {/* My Role */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1100">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                My Role
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <ul className="space-y-3">
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  Led product discovery and UX strategy
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  Designed the full UX system: flows, UI, and component library
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  Ran usability tests and onboarding iterations
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  Collaborated with an AI researcher on explainability
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  Delivered responsive handoff specs with dev-ready documentation
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Problem & Opportunity */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1300">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Problem & Opportunity
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <div className="bg-red-50 p-6 rounded-[25px] border border-red-200 transition-all duration-300 hover:border-red-300 hover:scale-[1.02]">
+                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Pain Points:</h3>
+                <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
+                  <table className="w-full min-w-[500px]">
+                    <thead>
+                      <tr className="border-b border-gray-200">
+                        <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Problem</th>
+                        <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Impact</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                        <td className="py-4 px-4 text-[16px] text-[#131417]">Users feel overwhelmed by money</td>
+                        <td className="py-4 px-4 text-[16px] text-[#131417]">Avoidance, disengagement, and emotional burnout</td>
+                      </tr>
+                      <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                        <td className="py-4 px-4 text-[16px] text-[#131417]">Budgeting tools feel punitive</td>
+                        <td className="py-4 px-4 text-[16px] text-[#131417]">Reduced retention and frustration</td>
+                      </tr>
+                      <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                        <td className="py-4 px-4 text-[16px] text-[#131417]">No feedback on progress</td>
+                        <td className="py-4 px-4 text-[16px] text-[#131417]">Users don't see value in small positive actions</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50 transition-colors duration-300">
+                        <td className="py-4 px-4 text-[16px] text-[#131417]">Generic advice</td>
+                        <td className="py-4 px-4 text-[16px] text-[#131417]">Fails to motivate or build trust</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
+                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Design Opportunity:</h3>
+                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px]">
+                  Build a platform that replaces guilt with growth—one that nudges users toward smarter money decisions using clear visuals, human-centered AI, and positive feedback loops.
                 </p>
               </div>
             </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 md:gap-12">
-              <div className="w-full sm:w-[200px] flex-shrink-0">
-                <h3 className="text-sm sm:text-base md:text-lg font-medium text-[#9FA0A3] leading-normal tracking-[-0.16px] sm:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                  Solution
-                </h3>
-              </div>
-              <div className="flex-1">
-                <p className="text-base sm:text-lg md:text-xl lg:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                  Designed an AI-powered personal finance platform that provides intelligent budgeting, automated savings recommendations, investment insights, and proactive financial coaching through machine learning algorithms.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 md:gap-12">
-              <div className="w-full sm:w-[200px] flex-shrink-0">
-                <h3 className="text-sm sm:text-base md:text-lg font-medium text-[#9FA0A3] leading-normal tracking-[-0.16px] sm:tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
-                  Impact
-                </h3>
-              </div>
-              <div className="flex-1">
-                <p className="text-base sm:text-lg md:text-xl lg:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                  65% increase in user savings rate, 45% improvement in budget adherence, and 80% user retention rate with users achieving financial goals 3x faster than traditional methods.
-                </p>
-              </div>
-            </div>
           </div>
-        </div>
-      </div>
+        </section>
 
-      {/* User Journey Workflow Grid */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
-        <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-4 sm:mb-6 md:mb-8 transition-all duration-300 hover:tracking-[-0.4px]">
-            Financial Management Workflow
-          </h2>
-          <p className="text-base sm:text-lg md:text-xl lg:text-[20px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[800px] transition-all duration-300 hover:text-[#131417]">
-            An intelligent system that automates financial planning while providing personalized insights to help users build wealth and achieve their financial objectives.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 justify-items-center">
-          {/* Account Setup */}
-          <div className="bg-white rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 w-full max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-            <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-blue-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:bg-blue-600">
-              <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
-              </svg>
+        {/* Process & Timeline */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1500">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Process & Timeline
+              </h2>
             </div>
-            <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.2px] sm:tracking-[-0.25px] md:tracking-[-0.3px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.25px]">
-              Account Setup
-            </h3>
-            
-            <div className="flex-1 flex flex-col justify-between space-y-4 sm:space-y-6">
-              <div className="space-y-3 sm:space-y-4">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">✏️</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      User Action
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      Connect bank accounts and set financial goals with security verification
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-green-500 text-sm sm:text-base">😊</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Emotion
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] transition-all duration-300 hover:text-[#131417]">
-                      Optimistic
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-red-500 text-sm sm:text-base">●</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Pain Point
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      Security concerns and complexity of financial data aggregation
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">📱</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Touchpoint
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      Secure onboarding flow with bank-grade encryption
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-green-500 text-sm sm:text-base">⭐</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Opportunity
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      One-click account linking with transparent security measures
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* AI Analysis */}
-          <div className="bg-white rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 w-full max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-            <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-orange-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:bg-orange-600">
-              <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-            </div>
-            <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.2px] sm:tracking-[-0.25px] md:tracking-[-0.3px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.25px]">
-              AI Analysis
-            </h3>
-            
-            <div className="flex-1 flex flex-col justify-between space-y-4 sm:space-y-6">
-              <div className="space-y-3 sm:space-y-4">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">✏️</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      User Action
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      System analyzes spending patterns and generates personalized insights
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-yellow-500 text-sm sm:text-base">🤔</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Emotion
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] transition-all duration-300 hover:text-[#131417]">
-                      Curious
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-red-500 text-sm sm:text-base">●</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Pain Point
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      Overwhelming data and difficulty understanding financial patterns
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">📱</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Touchpoint
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      Interactive dashboard with visual spending analytics
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-green-500 text-sm sm:text-base">⭐</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Opportunity
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      Simplified insights with actionable recommendations
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Budget Creation */}
-          <div className="bg-white rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 w-full max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-            <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:bg-green-600">
-              <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-            </div>
-            <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.2px] sm:tracking-[-0.25px] md:tracking-[-0.3px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.25px]">
-              Smart Budgeting
-            </h3>
-            
-            <div className="flex-1 flex flex-col justify-between space-y-4 sm:space-y-6">
-              <div className="space-y-3 sm:space-y-4">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">✏️</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      User Action
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      Create automated budgets with AI-suggested allocations and limits
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-green-500 text-sm sm:text-base">😊</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Emotion
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] transition-all duration-300 hover:text-[#131417]">
-                      Confident
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-red-500 text-sm sm:text-base">●</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Pain Point
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      Traditional budgeting tools are rigid and don't adapt to lifestyle changes
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">📱</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Touchpoint
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      Dynamic budget interface with smart category suggestions
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-green-500 text-sm sm:text-base">⭐</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Opportunity
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      Adaptive budgets that learn and adjust to user behavior
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Investment Insights */}
-          <div className="bg-white rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 w-full max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-            <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-purple-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:bg-purple-600">
-              <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-              </svg>
-            </div>
-            <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.2px] sm:tracking-[-0.25px] md:tracking-[-0.3px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.25px]">
-              Investment Insights
-            </h3>
-            
-            <div className="flex-1 flex flex-col justify-between space-y-4 sm:space-y-6">
-              <div className="space-y-3 sm:space-y-4">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">✏️</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      User Action
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      Receive personalized investment recommendations based on risk profile
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-green-500 text-sm sm:text-base">😍</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Emotion
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] transition-all duration-300 hover:text-[#131417]">
-                      Excited
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-red-500 text-sm sm:text-base">●</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Pain Point
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      Complex investment options and fear of making wrong decisions
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">📱</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Touchpoint
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      Educational investment platform with risk assessment tools
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-green-500 text-sm sm:text-base">⭐</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Opportunity
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      AI-powered portfolio optimization with clear explanations
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Goal Tracking */}
-          <div className="bg-white rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 w-full max-w-[280px] min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-            <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-teal-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 transition-all duration-300 hover:bg-teal-600">
-              <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-              </svg>
-            </div>
-            <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] leading-tight tracking-[-0.2px] sm:tracking-[-0.25px] md:tracking-[-0.3px] mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 hover:tracking-[-0.25px]">
-              Goal Achievement
-            </h3>
-            
-            <div className="flex-1 flex flex-col justify-between space-y-4 sm:space-y-6">
-              <div className="space-y-3 sm:space-y-4">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">✏️</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      User Action
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      Track progress toward financial goals with automated milestone celebrations
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-green-500 text-sm sm:text-base">😍</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Emotion
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] transition-all duration-300 hover:text-[#131417]">
-                      Accomplished
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-red-500 text-sm sm:text-base">●</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Pain Point
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      Lack of motivation and difficulty seeing long-term progress
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-blue-500 text-sm sm:text-base">📱</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Touchpoint
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-2 transition-all duration-300 hover:text-[#131417]">
-                      Gamified progress tracking with achievement rewards
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <span className="text-green-500 text-sm sm:text-base">⭐</span>
-                  <div>
-                    <p className="text-sm sm:text-base md:text-lg font-medium text-[#131417] leading-normal tracking-[-0.15px] sm:tracking-[-0.18px] transition-all duration-300 hover:tracking-[-0.12px]">
-                      Opportunity
-                    </p>
-                    <p className="text-xs sm:text-sm md:text-base font-normal text-[#9FA0A3] leading-normal tracking-[-0.12px] sm:tracking-[-0.15px] line-clamp-3 transition-all duration-300 hover:text-[#131417]">
-                      Social sharing and community challenges for motivation
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Results Section */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-        <div className="bg-white rounded-[20px] sm:rounded-[25px] md:rounded-[30px] lg:rounded-[35px] xl:rounded-[40px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 shadow-sm hover:shadow-md transition-all duration-300">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium text-[#131417] leading-tight tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-6 sm:mb-8 md:mb-10 transition-all duration-300 hover:tracking-[-0.4px]">
-            Impact & Results
-          </h2>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
-            <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1300">
-              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
-                65%
-              </div>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] transition-all duration-300 group-hover:text-[#131417]">
-                Increase in User Savings Rate
+            <div className="flex-1 space-y-6">
+              <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
+                A structured 10-month design process focused on user-centered discovery, iterative design, and continuous validation to ensure MoneyFarm met real user needs.
               </p>
-            </div>
-
-            <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1500">
-              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
-                45%
+              
+              {/* Timeline Visualization */}
+              <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-[20px] font-medium text-[#131417] mb-6">Project Timeline</h3>
+                
+                {/* Timeline Container */}
+                <div className="space-y-4">
+                  {/* Month Labels */}
+                  <div className="flex justify-between text-[12px] font-medium text-[#9FA0A3] mb-2">
+                    <span>Month 1</span>
+                    <span>Month 2</span>
+                    <span>Month 3</span>
+                    <span>Month 4</span>
+                    <span>Month 5</span>
+                    <span>Month 6</span>
+                    <span>Month 7</span>
+                    <span>Month 8</span>
+                    <span>Month 9</span>
+                    <span>Month 10</span>
+                  </div>
+                  
+                  {/* Timeline Grid */}
+                  <div className="relative h-[200px] bg-gray-50 rounded-lg p-4">
+                    {/* Grid Lines */}
+                    <div className="absolute inset-4 flex justify-between">
+                      {Array.from({ length: 10 }, (_, i) => (
+                        <div key={i} className="w-px bg-gray-200 h-full" />
+                      ))}
+                    </div>
+                    
+                    {/* Discovery Phase - Month 1 */}
+                    <div className="absolute top-4 left-4 w-[8%] h-6 bg-blue-500 rounded-md flex items-center justify-center">
+                      <span className="text-white text-[10px] font-medium">Discovery</span>
+                    </div>
+                    
+                    {/* Define Phase - Month 2 */}
+                    <div className="absolute top-12 left-[12%] w-[8%] h-6 bg-green-500 rounded-md flex items-center justify-center">
+                      <span className="text-white text-[10px] font-medium">Define</span>
+                    </div>
+                    
+                    {/* Design Phase - Months 3-6 */}
+                    <div className="absolute top-20 left-[20%] w-[32%] h-6 bg-purple-500 rounded-md flex items-center justify-center">
+                      <span className="text-white text-[12px] font-medium">Design</span>
+                    </div>
+                    
+                    {/* Validate Phase - Months 5-7 */}
+                    <div className="absolute top-28 left-[36%] w-[24%] h-6 bg-orange-500 rounded-md flex items-center justify-center">
+                      <span className="text-white text-[11px] font-medium">Validate</span>
+                    </div>
+                    
+                    {/* Delivery Phase - Months 7-10 */}
+                    <div className="absolute top-36 left-[60%] w-[32%] h-6 bg-red-500 rounded-md flex items-center justify-center">
+                      <span className="text-white text-[12px] font-medium">Delivery</span>
+                    </div>
+                  </div>
+                  
+                  {/* Phase Legend */}
+                  <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mt-6">
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 bg-blue-500 rounded-sm"></div>
+                      <span className="text-[14px] text-[#131417]">Discovery</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 bg-green-500 rounded-sm"></div>
+                      <span className="text-[14px] text-[#131417]">Define</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 bg-purple-500 rounded-sm"></div>
+                      <span className="text-[14px] text-[#131417]">Design</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 bg-orange-500 rounded-sm"></div>
+                      <span className="text-[14px] text-[#131417]">Validate</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 bg-red-500 rounded-sm"></div>
+                      <span className="text-[14px] text-[#131417]">Delivery</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] transition-all duration-300 group-hover:text-[#131417]">
-                Improvement in Budget Adherence
-              </p>
-            </div>
-
-            <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1700">
-              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
-                80%
+              
+              {/* Phase Details */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-200 transition-all duration-300 hover:border-blue-300">
+                  <h4 className="text-[16px] font-medium text-[#131417] mb-2 flex items-center gap-2">
+                    <div className="w-3 h-3 bg-blue-500 rounded-sm"></div>
+                    Discovery
+                  </h4>
+                  <p className="text-[14px] text-[#131417]">User interviews, market research, competitive analysis</p>
+                </div>
+                
+                <div className="bg-green-50 p-4 rounded-[15px] border border-green-200 transition-all duration-300 hover:border-green-300">
+                  <h4 className="text-[16px] font-medium text-[#131417] mb-2 flex items-center gap-2">
+                    <div className="w-3 h-3 bg-green-500 rounded-sm"></div>
+                    Define
+                  </h4>
+                  <p className="text-[14px] text-[#131417]">Problem definition, user personas, feature prioritization</p>
+                </div>
+                
+                <div className="bg-purple-50 p-4 rounded-[15px] border border-purple-200 transition-all duration-300 hover:border-purple-300">
+                  <h4 className="text-[16px] font-medium text-[#131417] mb-2 flex items-center gap-2">
+                    <div className="w-3 h-3 bg-purple-500 rounded-sm"></div>
+                    Design
+                  </h4>
+                  <p className="text-[14px] text-[#131417]">Wireframing, prototyping, visual design, component library</p>
+                </div>
+                
+                <div className="bg-orange-50 p-4 rounded-[15px] border border-orange-200 transition-all duration-300 hover:border-orange-300">
+                  <h4 className="text-[16px] font-medium text-[#131417] mb-2 flex items-center gap-2">
+                    <div className="w-3 h-3 bg-orange-500 rounded-sm"></div>
+                    Validate
+                  </h4>
+                  <p className="text-[14px] text-[#131417]">User testing, iterations, stakeholder feedback</p>
+                </div>
+                
+                <div className="bg-red-50 p-4 rounded-[15px] border border-red-200 transition-all duration-300 hover:border-red-300 sm:col-span-2 lg:col-span-1">
+                  <h4 className="text-[16px] font-medium text-[#131417] mb-2 flex items-center gap-2">
+                    <div className="w-3 h-3 bg-red-500 rounded-sm"></div>
+                    Delivery
+                  </h4>
+                  <p className="text-[14px] text-[#131417]">Handoff documentation, developer collaboration, launch</p>
+                </div>
               </div>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] transition-all duration-300 group-hover:text-[#131417]">
-                User Retention Rate
-              </p>
-            </div>
-
-            <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1900">
-              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
-                3x
-              </div>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] transition-all duration-300 group-hover:text-[#131417]">
-                Faster Goal Achievement
-              </p>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Research & Insights */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Research & Insights
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
+                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Methods Used:</h3>
+                <ul className="space-y-2">
+                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                    12 interviews across financial literacy levels
+                  </li>
+                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                    87-person survey on money habits and blockers
+                  </li>
+                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                    Competitive analysis of Cleo, Copilot, Mint, YNAB, Monarch
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
+                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Key Insights:</h3>
+                <table className="w-full min-w-[600px]">
+                  <thead>
+                    <tr className="border-b border-gray-200">
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Insight</th>
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Design Response</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">"Budgeting apps make me feel guilty."</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Friendly tone, encouraging language, and micro-celebrations</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">"Small changes don't feel impactful."</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Goal simulations that visualize long-term gains</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">"Tools don't understand how I earn/spend."</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Personalized AI tips based on behavior</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">"Money apps are hard to understand."</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Simplified UI and goal-based navigation</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Market & Competitive Analysis */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Market & Competitive Analysis
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="text-[18px] font-medium text-[#131417] mb-3">Target Audience:</h3>
+                    <p className="text-[16px] text-[#131417]">Young professionals and freelancers (ages 22–38) with fluctuating income and moderate financial stress</p>
+                  </div>
+                  <div>
+                    <h3 className="text-[18px] font-medium text-[#131417] mb-3">Trends:</h3>
+                    <ul className="space-y-1">
+                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
+                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                        Growing demand for financial automation and AI
+                      </li>
+                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
+                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                        Decreasing engagement with spreadsheet-style dashboards
+                      </li>
+                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
+                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                        More users seeking emotionally intelligent tools
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
+                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Feature Comparison:</h3>
+                <table className="w-full min-w-[600px]">
+                  <thead>
+                    <tr className="border-b border-gray-200">
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Feature</th>
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">MoneyFarm</th>
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Mint</th>
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Copilot</th>
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Monarch</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">AI-Powered Insights</td>
+                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
+                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
+                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
+                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Habit Loop & Streak Tracking</td>
+                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
+                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
+                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
+                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Visual Goal Simulations</td>
+                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
+                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
+                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
+                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Non-Judgmental UX Tone</td>
+                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
+                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
+                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠️</td>
+                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Gamified Engagement</td>
+                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
+                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
+                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
+                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* User Flows */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1900">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                User Flows
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <div className="grid grid-cols-1 gap-6">
+                <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
+                  <h3 className="text-[20px] font-medium text-[#131417] mb-4">Alicia (Early Career User):</h3>
+                  <p className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] mb-3">
+                    <strong>Flow:</strong> Connect accounts → Set goal → Receive AI insights → Build habit streak → Celebrate milestones
+                  </p>
+                  <p className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px]">
+                    <strong>Needs:</strong> Empathetic onboarding, motivating visualizations, and clear goal tracking
+                  </p>
+                </div>
+                <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 transition-all duration-300 hover:border-green-300 hover:scale-[1.02]">
+                  <h3 className="text-[20px] font-medium text-[#131417] mb-4">Nico (Freelancer):</h3>
+                  <p className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] mb-3">
+                    <strong>Flow:</strong> Track income → View monthly outlook → Nudge savings → Receive daily reminders
+                  </p>
+                  <p className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px]">
+                    <strong>Needs:</strong> Flexibility, daily check-ins, behavior-based reminders
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Design Concepts */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2100">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Design Concepts
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <ul className="space-y-3">
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="text-green-600 text-[20px] mt-1">✅</span>
+                  <div>
+                    <strong>Gamified Habits</strong> — Weekly streaks, badges, nudges
+                  </div>
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="text-green-600 text-[20px] mt-1">✅</span>
+                  <div>
+                    <strong>Explainable AI</strong> — Confidence levels and rationale for tips
+                  </div>
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="text-green-600 text-[20px] mt-1">✅</span>
+                  <div>
+                    <strong>Simulation Previews</strong> — "Save $3/day = $1,000/year" type visualizations
+                  </div>
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="text-green-600 text-[20px] mt-1">✅</span>
+                  <div>
+                    <strong>Mood-Aware UI</strong> — Soft gradients, dark mode, encouraging messages
+                  </div>
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="text-green-600 text-[20px] mt-1">✅</span>
+                  <div>
+                    <strong>Non-Judgmental Language</strong> — No "you failed," only "here's how we can adjust"
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Prototyping & System Design */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2300">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Prototyping & System Design
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <ul className="space-y-3">
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  25+ annotated flows covering dashboard, goal setup, and insights
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  Figma component library with mobile and desktop variants
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  Edge cases and error states defined in handoff docs
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  Maze-tested onboarding and dashboard variants
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  Design tokens for theming, spacing, and responsiveness
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Core Features & UI */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2500">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Core Features & UI
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
+                <table className="w-full min-w-[600px]">
+                  <thead>
+                    <tr className="border-b border-gray-200">
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Module</th>
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Key Feature</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Unified Dashboard</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Shows net worth, spending categories, and savings goals</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Smart Goals</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">AI-suggested plans with automated transfers</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Insight Engine</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Personalized tips and breakdowns</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Habit Tracker</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Daily check-ins, progress streaks, positive nudges</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] font-medium text-[#131417]">Goal Simulator</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Shows long-term impact of daily financial habits</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Results & Impact */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2700">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Results & Impact
+              </h2>
+            </div>
+            <div className="flex-1 space-y-8">
+              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
+                <table className="w-full min-w-[500px]">
+                  <thead>
+                    <tr className="border-b border-gray-200">
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Metric</th>
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Baseline (Typical Tools)</th>
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">With MoneyFarm</th>
+                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Change</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Weekly Engagement</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">28%</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">92%</td>
+                      <td className="py-4 px-4 text-[16px] font-medium text-green-600">↑ 228%</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Reported Money Anxiety</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">7.3 / 10</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">3.2 / 10</td>
+                      <td className="py-4 px-4 text-[16px] font-medium text-blue-600">↓ 56%</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Onboarding Completion Rate</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">62%</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">88%</td>
+                      <td className="py-4 px-4 text-[16px] font-medium text-purple-600">↑ 42%</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Dashboard Clarity Score</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">3.4 / 5</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">5 / 5</td>
+                      <td className="py-4 px-4 text-[16px] font-medium text-orange-600">↑ 47%</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors duration-300">
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">Intent to Continue Use</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">45%</td>
+                      <td className="py-4 px-4 text-[16px] text-[#131417]">87%</td>
+                      <td className="py-4 px-4 text-[16px] font-medium text-indigo-600">↑ 93%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="space-y-4">
+                <blockquote className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-[25px] italic text-[18px] leading-[150%] tracking-[-0.18px] transition-all duration-300 hover:scale-[1.02]">
+                  "I actually *want* to open this app now. That's never happened with my bank."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final Takeaways */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2900">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
+            <div className="w-full lg:w-[200px]">
+              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+                Final Takeaways
+              </h2>
+            </div>
+            <div className="flex-1 space-y-6">
+              <ul className="space-y-3">
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  <strong>Behavioral finance needs coaching, not just tracking</strong>
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  <strong>AI should empower, not overwhelm</strong>
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  <strong>Design must reduce fear and friction in emotional domains like money</strong>
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
+                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
+                  <strong>Success is a platform that users *want* to return to—not just one that works</strong>
+                </li>
+              </ul>
+
+              <blockquote className="bg-[#131417] text-white p-8 rounded-[25px] italic text-[20px] leading-[150%] tracking-[-0.2px] transition-all duration-300 hover:scale-[1.02]">
+                "MoneyFarm didn't just redesign a UI—it reimagined how people *feel* about money."
+              </blockquote>
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2100">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-24 xl:py-[134px]">
-          <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24 xl:mb-[270px]"></div>
+      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-3100">
+        <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] py-16 lg:py-[134px]">
+          {/* Footer Header */}
+          <div className="flex flex-col sm:flex-row justify-between items-center mb-16 lg:mb-[270px] gap-4 sm:gap-0">
+            <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
+              Portfolio 2023 - 2024
+            </span>
+            <span className="text-[20px] font-semibold leading-[20px] tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] hover:scale-105">
+              Sean Smith
+            </span>
+            <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] text-center sm:text-right transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
+              37.7749° N, 122.4194° W
+            </span>
+          </div>
 
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 lg:gap-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-2300">
-            <span className="text-xs sm:text-sm md:text-base lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] order-3 lg:order-1 transition-all duration-300 hover:text-[#9FA0A3]">
-              <span className="font-normal">37.7749° N, 122.4194° W</span>
+          {/* Get in Touch */}
+          <div className="text-center mb-16 lg:mb-[270px]">
+            <p className="text-[18px] font-medium text-[#9FA0A3] leading-[20px] tracking-[-0.18px] mb-[20px] transition-all duration-300 hover:text-white">
+              Have a nice project?
+            </p>
+            <h2 className="text-3xl sm:text-5xl lg:text-[72px] font-medium leading-[72px] tracking-[-0.72px] transition-all duration-500 hover:tracking-[-0.5px] hover:scale-105 cursor-pointer">
+              Get in Touch
+            </h2>
+          </div>
+
+          {/* Footer Bottom */}
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
+            <span className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] order-3 lg:order-1 transition-all duration-300 hover:text-[#9FA0A3]">
+              © All rights reserved.
             </span>
 
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-[44px] order-1 lg:order-2">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-[44px] order-1 lg:order-2">
               <a
-                href="https://www.behance.net/ssmit129"
-                className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px] min-h-[44px] flex items-center touch-manipulation"
+                href="#"
+                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
+              >
+                Twitter
+              </a>
+              <a
+                href="#"
+                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
               >
                 Behance
               </a>
               <a
-                href="https://github.com/ssmith129"
-                className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px] min-h-[44px] flex items-center touch-manipulation"
+                href="#"
+                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
               >
-                GitHub
+                Instagram
               </a>
               <a
-                href="https://www.linkedin.com/in/sean-smith-sf/"
-                className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px] min-h-[44px] flex items-center touch-manipulation"
+                href="#"
+                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
               >
-                LinkedIn
+                Dribble
               </a>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-[40px] order-2 lg:order-3">
+            <div className="flex gap-4 sm:gap-8 lg:gap-[40px] order-2 lg:order-3">
               <a
                 href="#"
-                className="text-sm sm:text-base md:text-lg lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center touch-manipulation"
+                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
               >
                 License
               </a>
               <a
                 href="#"
-                className="text-sm sm:text-base md:text-lg lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105 min-h-[44px] flex items-center touch-manipulation"
+                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
               >
                 Terms of Use
               </a>
