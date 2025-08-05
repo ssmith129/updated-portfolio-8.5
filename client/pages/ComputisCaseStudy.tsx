@@ -63,6 +63,52 @@ export default function ComputisCaseStudy() {
         </div>
       </div>
 
+      {/* Hero Image Placeholder */}
+      <figure className="w-full max-w-6xl mx-auto mb-12 sm:mb-16 md:mb-20 lg:mb-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
+        <div className="relative aspect-video w-full bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+          {/* Placeholder Content */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4 bg-gray-300 rounded-full flex items-center justify-center">
+                <svg 
+                  className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-gray-500" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <p className="text-sm sm:text-base md:text-lg text-gray-500 font-medium">
+                Hero Image Placeholder
+              </p>
+              <p className="text-xs sm:text-sm text-gray-400 mt-2">
+                1920 × 1080 recommended
+              </p>
+            </div>
+          </div>
+          
+          {/* Placeholder Image Element for Future Integration */}
+          <img 
+            src="/api/placeholder/1920/1080" 
+            alt="Computis crypto tax platform hero image showcasing the main dashboard interface and user workflow"
+            className="w-full h-full object-cover opacity-0"
+            width="1920"
+            height="1080"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+        
+        {/* Optional Caption */}
+        <figcaption className="text-center mt-4 sm:mt-6">
+          <p className="text-sm sm:text-base text-gray-600 italic">
+            Computis platform overview - transforming complex crypto tax workflows into intuitive user experiences
+          </p>
+        </figcaption>
+      </figure>
+
       {/* Content Sections */}
       <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
         {/* TL;DR Summary */}
