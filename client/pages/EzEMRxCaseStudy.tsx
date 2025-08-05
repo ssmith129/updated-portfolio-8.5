@@ -43,377 +43,884 @@ export default function EzEMRxCaseStudy() {
             ezEMRx – Redesigning EHR for Real-World Public Health
           </h1>
           <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[600px] sm:max-w-[700px] md:max-w-[800px] mx-auto transition-all duration-300 hover:text-[#131417] px-4">
-            Transforming Electronic Health Records for improved public health workflows and patient care management
+            Transforming a legacy EHR system into an AI-augmented platform for compliance, collaboration, and efficiency across public health agencies.
           </p>
+          
+          {/* Tags */}
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-6 sm:mt-8">
+            {["UX Case Study", "Healthcare", "AI", "EHR", "Public Health", "Enterprise SaaS"].map((tag) => (
+              <span
+                key={tag}
+                className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
 
-        {/* Hero Image Placeholder */}
+        {/* Hero Image */}
         <figure className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
           <div className="relative bg-gradient-to-br from-blue-50 via-green-50 to-teal-50 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] border border-gray-200 shadow-sm hover:shadow-md transition-all duration-500 hover:scale-[1.01] aspect-video overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-green-500/5 to-teal-500/5 group-hover:from-blue-500/10 group-hover:via-green-500/10 group-hover:to-teal-500/10 transition-all duration-500"></div>
             <div className="relative h-full flex flex-col items-center justify-center p-6 sm:p-8 md:p-12">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-green-500 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-all duration-300">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-all duration-300">
                 <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-gray-600 text-center mb-2">
-                ezEMRx Dashboard Interface
+                ezEMRx AI-Augmented Dashboard
               </h3>
               <p className="text-sm sm:text-base text-gray-500 text-center max-w-md">
-                Electronic Health Records system designed for public health workflows and patient management
+                Electronic Health Records system with AI-powered insights, compliance automation, and public health workflow optimization
               </p>
             </div>
-            <img
-              src="/api/placeholder/1920/1080"
-              alt="ezEMRx Electronic Health Records dashboard interface showing patient management system, clinical workflows, and public health data visualization designed for healthcare providers"
-              className="absolute inset-0 w-full h-full object-cover opacity-0"
-              loading="eager"
-              decoding="async"
-              width="1920"
-              height="1080"
-            />
           </div>
           <figcaption className="text-sm text-gray-600 text-center mt-4 italic">
-            ezEMRx dashboard interface showcasing streamlined EHR workflows for public health management
+            ezEMRx dashboard showcasing AI-augmented EHR workflows for public health compliance and efficiency
           </figcaption>
         </figure>
 
         {/* TL;DR Summary */}
-        <div className="bg-white rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 shadow-sm hover:shadow-md transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-300 hover:tracking-[-0.7px]">
+        <section className="bg-white rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-6 sm:p-8 md:p-10 lg:p-12 xl:p-16 mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 shadow-sm hover:shadow-md transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
             TL;DR Summary
           </h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20">
-            <div className="space-y-6 sm:space-y-8">
-              <div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-3 sm:mb-4 tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
-                  The Challenge
-                </h3>
-                <p className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                  Public health organizations struggled with outdated EHR systems that didn't support complex patient workflows, population health tracking, or real-time data sharing between departments.
-                </p>
+          {/* Key Metrics Infographic */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12 md:mb-16">
+            <div className="text-center p-4 sm:p-6 bg-blue-50 rounded-[12px] sm:rounded-[16px] border border-blue-200 hover:shadow-md transition-all duration-300">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600 mb-2">↓65%</div>
+              <p className="text-sm sm:text-base text-[#131417] font-medium">Documentation Time</p>
+            </div>
+            <div className="text-center p-4 sm:p-6 bg-green-50 rounded-[12px] sm:rounded-[16px] border border-green-200 hover:shadow-md transition-all duration-300">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-600 mb-2">↑90%</div>
+              <p className="text-sm sm:text-base text-[#131417] font-medium">Compliance Rate</p>
+            </div>
+            <div className="text-center p-4 sm:p-6 bg-purple-50 rounded-[12px] sm:rounded-[16px] border border-purple-200 hover:shadow-md transition-all duration-300">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-600 mb-2">↑85%</div>
+              <p className="text-sm sm:text-base text-[#131417] font-medium">User Satisfaction</p>
+            </div>
+            <div className="text-center p-4 sm:p-6 bg-orange-50 rounded-[12px] sm:rounded-[16px] border border-orange-200 hover:shadow-md transition-all duration-300">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600 mb-2">↓40%</div>
+              <p className="text-sm sm:text-base text-[#131417] font-medium">Training Time</p>
+            </div>
+          </div>
+
+          {/* Team Roles Badge Layout */}
+          <div className="mb-8 sm:mb-12 md:mb-16">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-4 sm:mb-6 text-center">Team & Roles</h3>
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+              {[
+                { role: "Lead UX Designer", color: "bg-blue-500" },
+                { role: "AI Strategist", color: "bg-purple-500" },
+                { role: "Product Manager", color: "bg-green-500" },
+                { role: "Frontend Engineer", color: "bg-orange-500" },
+                { role: "Healthcare SME", color: "bg-red-500" },
+                { role: "Compliance Lead", color: "bg-teal-500" }
+              ].map((item) => (
+                <div key={item.role} className="flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-gray-200 hover:shadow-sm transition-all duration-300">
+                  <div className={`w-3 h-3 rounded-full ${item.color}`}></div>
+                  <span className="text-sm font-medium text-[#131417]">{item.role}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Tools Icons Grid */}
+          <div className="text-center">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-4 sm:mb-6">Design Tools</h3>
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+              {[
+                { name: "Figma", icon: "🎨" },
+                { name: "Jira", icon: "📋" },
+                { name: "Miro", icon: "🧠" },
+                { name: "Confluence", icon: "📝" },
+                { name: "Axure", icon: "⚡" },
+                { name: "Lighthouse", icon: "🏮" }
+              ].map((tool) => (
+                <div key={tool.name} className="flex flex-col items-center p-3 sm:p-4 bg-gray-50 rounded-[12px] hover:bg-gray-100 transition-all duration-300 min-w-[80px]">
+                  <span className="text-2xl mb-2">{tool.icon}</span>
+                  <span className="text-xs sm:text-sm font-medium text-[#131417]">{tool.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Project Overview */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-900">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            Project Overview
+          </h2>
+
+          {/* Side-by-side Comparison */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 mb-12 sm:mb-16 md:mb-20">
+            <div className="bg-red-50 border border-red-200 rounded-[16px] p-6 sm:p-8">
+              <h3 className="text-lg sm:text-xl font-medium text-red-800 mb-4 flex items-center gap-2">
+                <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+                Legacy EHR System
+              </h3>
+              <div className="bg-white rounded-lg p-4 mb-4 border border-red-100">
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between border-b pb-1">
+                    <span>Patient: John Doe</span>
+                    <span className="text-red-600">⚠️ Incomplete</span>
+                  </div>
+                  <div className="text-xs text-gray-500">Last updated: 3 days ago</div>
+                  <div className="text-xs text-gray-500">Status: Pending review</div>
+                </div>
+              </div>
+              <ul className="space-y-2 text-sm text-red-700">
+                <li>• Manual data entry prone to errors</li>
+                <li>• No compliance automation</li>
+                <li>• Fragmented user interface</li>
+                <li>• Limited collaboration features</li>
+              </ul>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 rounded-[16px] p-6 sm:p-8">
+              <h3 className="text-lg sm:text-xl font-medium text-green-800 mb-4 flex items-center gap-2">
+                <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+                ezEMRx Redesign
+              </h3>
+              <div className="bg-white rounded-lg p-4 mb-4 border border-green-100">
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between border-b pb-1">
+                    <span>Patient: John Doe</span>
+                    <span className="text-green-600 flex items-center gap-1">
+                      ✓ AI Verified
+                      <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded text-xs">98%</span>
+                    </span>
+                  </div>
+                  <div className="text-xs text-gray-500 flex items-center gap-1">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                    Auto-updated: 2 min ago
+                  </div>
+                  <div className="text-xs text-green-600">Status: Compliant & Current</div>
+                </div>
+              </div>
+              <ul className="space-y-2 text-sm text-green-700">
+                <li>• AI-powered smart data entry</li>
+                <li>• Automated compliance checking</li>
+                <li>• Unified intuitive interface</li>
+                <li>• Real-time collaboration tools</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Problem vs Opportunity */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 mb-12 sm:mb-16 md:mb-20">
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 border-l-4 border-red-500 shadow-sm">
+              <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4 text-red-600">❌ The Problem</h3>
+              <p className="text-base text-[#131417] leading-[150%] mb-4">
+                Public health agencies struggled with outdated EHR systems that hindered compliance, collaboration, and data accuracy across multiple departments and jurisdictions.
+              </p>
+              <ul className="space-y-2 text-sm text-[#131417]">
+                <li>• Manual compliance reporting taking 8+ hours weekly</li>
+                <li>• Data silos preventing inter-agency collaboration</li>
+                <li>• 40% error rate in manual data entry</li>
+                <li>• Staff spending 60% of time on administrative tasks</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 border-l-4 border-green-500 shadow-sm">
+              <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4 text-green-600">💡 The Opportunity</h3>
+              <p className="text-base text-[#131417] leading-[150%] mb-4">
+                Leverage AI and modern UX design to create an intelligent EHR that automates compliance, enhances collaboration, and puts clinicians back in control of patient care.
+              </p>
+              <ul className="space-y-2 text-sm text-[#131417]">
+                <li>• AI-automated compliance checking and reporting</li>
+                <li>• Seamless data sharing across agencies</li>
+                <li>• Smart data validation reducing errors by 90%</li>
+                <li>• Streamlined workflows focusing on patient care</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Stakeholder Quote */}
+          <div className="bg-blue-50 border border-blue-200 rounded-[16px] p-6 sm:p-8 md:p-10 relative">
+            <div className="absolute top-4 left-6 text-4xl text-blue-300">"</div>
+            <blockquote className="text-lg sm:text-xl md:text-2xl font-normal text-[#131417] leading-[150%] italic text-center mb-6 pt-4">
+              "ezEMRx transformed our public health workflows. What used to take our team hours for compliance reporting now happens automatically. We can finally focus on patient care instead of paperwork."
+            </blockquote>
+            <div className="text-center">
+              <div className="font-medium text-[#131417]">Dr. Sarah Chen</div>
+              <div className="text-sm text-[#9FA0A3]">Director of Public Health Operations, SF Department of Health</div>
+            </div>
+          </div>
+        </section>
+
+        {/* Strategic Design Goals */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1100">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            Strategic Design Goals
+          </h2>
+
+          {/* Four-Icon Goal Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            <div className="text-center p-6 sm:p-8 bg-white rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-2">Empower</h3>
+              <p className="text-sm text-[#9FA0A3]">Give clinicians AI-powered insights for better decision making</p>
+            </div>
+
+            <div className="text-center p-6 sm:p-8 bg-white rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-2">Simplify</h3>
+              <p className="text-sm text-[#9FA0A3]">Reduce complexity through intelligent automation and intuitive design</p>
+            </div>
+
+            <div className="text-center p-6 sm:p-8 bg-white rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-2">Unify</h3>
+              <p className="text-sm text-[#9FA0A3]">Connect departments and agencies through seamless data sharing</p>
+            </div>
+
+            <div className="text-center p-6 sm:p-8 bg-white rounded-[16px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                </svg>
+              </div>
+              <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-2">Streamline</h3>
+              <p className="text-sm text-[#9FA0A3]">Optimize workflows to maximize time spent on patient care</p>
+            </div>
+          </div>
+
+          {/* Sticky-note Style Objectives */}
+          <div className="bg-yellow-50 rounded-[16px] p-6 sm:p-8 border border-yellow-200">
+            <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-6 text-center">Key Objectives</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                "Reduce documentation burden by 60%+",
+                "Achieve 95%+ compliance automation",
+                "Enable real-time inter-agency collaboration",
+                "Implement explainable AI for clinical decisions",
+                "Streamline public health reporting workflows",
+                "Create mobile-first responsive design"
+              ].map((objective, index) => (
+                <div
+                  key={index}
+                  className="bg-yellow-200 p-4 rounded-lg shadow-sm transform rotate-1 hover:rotate-0 transition-all duration-300 hover:shadow-md"
+                  style={{ transform: `rotate(${(index % 3 - 1) * 2}deg)` }}
+                >
+                  <p className="text-sm font-medium text-yellow-900">{objective}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* My Role & Responsibilities */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1300">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            My Role & Responsibilities
+          </h2>
+
+          {/* Swimlane Timeline */}
+          <div className="bg-white rounded-[16px] p-6 sm:p-8 md:p-10 shadow-sm mb-8 sm:mb-12">
+            <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-6 text-center">Design Lifecycle Timeline</h3>
+            <div className="space-y-6">
+              {[
+                { phase: "Discovery", duration: "Weeks 1-3", deliverables: ["User research", "Stakeholder interviews", "Current state analysis"] },
+                { phase: "Define", duration: "Weeks 4-6", deliverables: ["Persona development", "Journey mapping", "Requirements gathering"] },
+                { phase: "Design", duration: "Weeks 7-12", deliverables: ["Wireframes", "Prototypes", "Design system"] },
+                { phase: "Validate", duration: "Weeks 13-16", deliverables: ["Usability testing", "Accessibility audit", "Stakeholder review"] },
+                { phase: "Deliver", duration: "Weeks 17-20", deliverables: ["Developer handoff", "QA support", "Launch preparation"] }
+              ].map((item, index) => (
+                <div key={index} className="flex flex-col md:flex-row gap-4 md:gap-8 p-4 border border-gray-200 rounded-lg hover:shadow-sm transition-all duration-300">
+                  <div className="md:w-32 flex-shrink-0">
+                    <div className="text-sm font-medium text-blue-600">{item.duration}</div>
+                    <div className="text-lg font-medium text-[#131417]">{item.phase}</div>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex flex-wrap gap-2">
+                      {item.deliverables.map((deliverable) => (
+                        <span
+                          key={deliverable}
+                          className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm border border-blue-200"
+                        >
+                          {deliverable}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Cross-functional Team Diagram */}
+          <div className="bg-gray-50 rounded-[16px] p-6 sm:p-8 md:p-10">
+            <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-6 text-center">Cross-Functional Collaboration</h3>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+              <div className="text-center p-4 bg-blue-100 rounded-lg">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-white font-bold">UX</span>
+                </div>
+                <div className="font-medium">Design Lead</div>
               </div>
               
-              <div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-3 sm:mb-4 tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
-                  The Solution
-                </h3>
-                <p className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                  Redesigned the entire EHR interface with focus on public health workflows, streamlined patient management, and integrated population health analytics to improve care coordination.
-                </p>
+              <div className="hidden md:block text-2xl text-gray-400">↔</div>
+              
+              <div className="text-center p-4 bg-purple-100 rounded-lg">
+                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-white font-bold">AI</span>
+                </div>
+                <div className="font-medium">AI Strategy</div>
+              </div>
+              
+              <div className="hidden md:block text-2xl text-gray-400">↔</div>
+              
+              <div className="text-center p-4 bg-green-100 rounded-lg">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-white font-bold">ENG</span>
+                </div>
+                <div className="font-medium">Engineering</div>
+              </div>
+              
+              <div className="hidden md:block text-2xl text-gray-400">↔</div>
+              
+              <div className="text-center p-4 bg-orange-100 rounded-lg">
+                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-white font-bold">PM</span>
+                </div>
+                <div className="font-medium">Product</div>
               </div>
             </div>
-            
-            <div className="space-y-6 sm:space-y-8">
-              <div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-3 sm:mb-4 tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
-                  Key Results
-                </h3>
-                <ul className="space-y-2 sm:space-y-3">
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
-                    <span className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px]">40% reduction in patient data entry time</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
-                    <span className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px]">60% increase in workflow efficiency</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
-                    <span className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px]">95% user satisfaction rating</span>
-                  </li>
+          </div>
+        </section>
+
+        {/* Problem & Opportunity Deep Dive */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1500">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            Problem & Opportunity Analysis
+          </h2>
+
+          {/* Legacy UI Screenshot with Annotations */}
+          <div className="bg-white rounded-[16px] p-6 sm:p-8 shadow-sm mb-8 sm:mb-12">
+            <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-6">Legacy System Pain Points</h3>
+            <div className="relative bg-gray-100 rounded-lg p-6 border-2 border-dashed border-gray-300">
+              <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">
+                🚩 Critical Issues
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 p-3 bg-red-50 border border-red-200 rounded">
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <span className="text-sm">Outdated interface causing user frustration</span>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-orange-50 border border-orange-200 rounded">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  <span className="text-sm">Manual compliance checks taking hours</span>
+                </div>
+                <div className="flex items-center gap-3 p-3 bg-yellow-50 border border-yellow-200 rounded">
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                  <span className="text-sm">Data silos preventing collaboration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* AI Explainability Tooltip Mockup */}
+          <div className="bg-blue-50 rounded-[16px] p-6 sm:p-8 border border-blue-200">
+            <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-6">AI Explainability Features</h3>
+            <div className="relative">
+              <div className="bg-white rounded-lg p-4 border border-blue-200 inline-block">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-sm font-medium">AI Confidence:</span>
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-bold">98%</span>
+                </div>
+                <div className="text-xs text-gray-600 mb-2">Source Logic:</div>
+                <ul className="text-xs space-y-1">
+                  <li>• Patient history matches diagnosis criteria (95%)</li>
+                  <li>• Symptoms align with clinical guidelines (99%)</li>
+                  <li>• Lab results support recommendation (97%)</li>
                 </ul>
               </div>
-              
-              <div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] mb-3 sm:mb-4 tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
-                  Timeline & Role
-                </h3>
-                <p className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] mb-2 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <strong>Duration:</strong> 8 months (2023)
-                </p>
-                <p className="text-base sm:text-lg md:text-[20px] text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                  <strong>Role:</strong> Lead UX Designer, User Research, Prototyping
-                </p>
-              </div>
+              <div className="absolute -bottom-2 left-6 w-4 h-4 bg-white border-b border-r border-blue-200 transform rotate-45"></div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* User Journey Grid */}
-        <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-900">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 text-center transition-all duration-300 hover:tracking-[-0.7px]">
-            EHR Redesign Process
+        {/* Design Process */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            Design Process
           </h2>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-6 xl:gap-8">
-            {/* Research Phase */}
-            <div className="bg-blue-50 border-2 border-blue-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-blue-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-blue-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
-                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+
+          {/* 5-Stage Process Flowchart */}
+          <div className="bg-white rounded-[16px] p-6 sm:p-8 shadow-sm">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
+              {[
+                { stage: "Discovery", icon: "🔍", color: "bg-blue-500" },
+                { stage: "Define", icon: "📝", color: "bg-green-500" },
+                { stage: "Design", icon: "🎨", color: "bg-purple-500" },
+                { stage: "Validate", icon: "✅", color: "bg-orange-500" },
+                { stage: "Deliver", icon: "🚀", color: "bg-red-500" }
+              ].map((item, index) => (
+                <div key={index} className="flex flex-col items-center relative">
+                  <div className={`w-16 h-16 ${item.color} rounded-full flex items-center justify-center mb-3 text-2xl`}>
+                    {item.icon}
+                  </div>
+                  <span className="text-sm sm:text-base font-medium text-[#131417]">{item.stage}</span>
+                  {index < 4 && (
+                    <div className="hidden md:block absolute top-8 -right-8 text-gray-400 text-2xl">→</div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* User Personas */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1900">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            User Personas
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
+            {/* Claire - Clinician Persona */}
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 shadow-sm border border-blue-200">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-lg">CL</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-[#131417] mb-1">Claire</h3>
+                  <p className="text-base text-blue-600 font-medium">Public Health Clinician</p>
+                  <p className="text-sm text-[#9FA0A3]">8 years experience • SF Department of Health</p>
+                </div>
               </div>
               
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
-                Research
-              </h3>
-              
-              <div className="flex-1 space-y-3 sm:space-y-4">
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">User interviews with healthcare providers</span>
-                  </span>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-medium text-[#131417] mb-2">Goals</h4>
+                  <ul className="text-sm space-y-1 text-[#131417]">
+                    <li>• Spend more time with patients, less on documentation</li>
+                    <li>• Ensure accurate and compliant records</li>
+                    <li>• Collaborate effectively with other agencies</li>
+                  </ul>
                 </div>
                 
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">Current system workflow analysis</span>
-                  </span>
+                <div>
+                  <h4 className="font-medium text-[#131417] mb-2">Pain Points</h4>
+                  <ul className="text-sm space-y-1 text-red-600">
+                    <li>• Repetitive data entry across multiple systems</li>
+                    <li>• Confusing compliance requirements</li>
+                    <li>• Slow system response times</li>
+                  </ul>
                 </div>
                 
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">Legacy system pain points identification</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-3">Competitive analysis of EHR solutions</span>
-                  </span>
+                <div>
+                  <h4 className="font-medium text-[#131417] mb-2">Tools Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {["Legacy EHR", "Excel", "Email", "Phone"].map((tool) => (
+                      <span key={tool} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Design Phase */}
-            <div className="bg-green-50 border-2 border-green-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-green-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-green-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
-                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                </svg>
-              </div>
-              
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
-                Design
-              </h3>
-              
-              <div className="flex-1 space-y-3 sm:space-y-4">
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">User-centered information architecture</span>
-                  </span>
+            {/* Mark - Admin Persona */}
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 shadow-sm border border-green-200">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white font-bold text-lg">MK</span>
                 </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">Wireframes for core workflows</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 011 1v1a1 1 0 01-1 1h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7H3a1 1 0 01-1-1V5a1 1 0 011-1h4z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">Visual design system creation</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-3">High-fidelity interactive prototypes</span>
-                  </span>
+                <div>
+                  <h3 className="text-xl font-medium text-[#131417] mb-1">Mark</h3>
+                  <p className="text-base text-green-600 font-medium">Health Data Administrator</p>
+                  <p className="text-sm text-[#9FA0A3]">12 years experience • Multi-agency coordination</p>
                 </div>
               </div>
-            </div>
-
-            {/* Testing Phase */}
-            <div className="bg-purple-50 border-2 border-purple-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-purple-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-purple-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
-                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
-              </div>
               
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
-                Testing
-              </h3>
-              
-              <div className="flex-1 space-y-3 sm:space-y-4">
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-purple-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">Usability testing with clinicians</span>
-                  </span>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-medium text-[#131417] mb-2">Goals</h4>
+                  <ul className="text-sm space-y-1 text-[#131417]">
+                    <li>• Ensure data quality and compliance across agencies</li>
+                    <li>• Generate accurate reports for stakeholders</li>
+                    <li>• Support clinicians with efficient workflows</li>
+                  </ul>
                 </div>
                 
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">A/B testing of critical flows</span>
-                  </span>
+                <div>
+                  <h4 className="font-medium text-[#131417] mb-2">Pain Points</h4>
+                  <ul className="text-sm space-y-1 text-red-600">
+                    <li>• Manual auditing of patient records</li>
+                    <li>• Inconsistent data across departments</li>
+                    <li>• Time-consuming compliance reporting</li>
+                  </ul>
                 </div>
                 
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">Accessibility compliance testing</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-purple-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-3">Performance & workflow metrics</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Implementation Phase */}
-            <div className="bg-orange-50 border-2 border-orange-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-orange-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-orange-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
-                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
-                Implementation
-              </h3>
-              
-              <div className="flex-1 space-y-3 sm:space-y-4">
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-orange-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">Phased rollout strategy</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">Staff training programs</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">Change management support</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-orange-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-3">Performance monitoring & optimization</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Results Phase */}
-            <div className="bg-teal-50 border-2 border-teal-100 rounded-[16px] sm:rounded-[20px] md:rounded-[25px] p-4 sm:p-6 md:p-8 hover:shadow-lg hover:border-teal-200 transition-all duration-300 hover:scale-[1.02] cursor-pointer min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] flex flex-col touch-manipulation">
-              <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-teal-500 rounded-full mb-4 sm:mb-6 flex-shrink-0 group-hover:scale-110 transition-all duration-300">
-                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-[18px] xl:text-[20px] font-medium text-[#131417] mb-2 sm:mb-3 md:mb-4 leading-tight tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] flex-shrink-0">
-                Results
-              </h3>
-              
-              <div className="flex-1 space-y-3 sm:space-y-4">
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-teal-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">40% faster patient data entry</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-yellow-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">60% workflow efficiency increase</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-red-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-2">95% user satisfaction rating</span>
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 text-teal-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                  </svg>
-                  <span className="text-sm sm:text-base text-[#131417] leading-relaxed">
-                    <span className="line-clamp-3">30% reduction in training time</span>
-                  </span>
+                <div>
+                  <h4 className="font-medium text-[#131417] mb-2">Tools Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {["Admin Portal", "Excel", "SQL Queries", "Audit Tools"].map((tool) => (
+                      <span key={tool} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Core Features & Innovations */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2100">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            Core Features & Innovations
+          </h2>
+
+          <div className="space-y-8 sm:space-y-12 md:space-y-16">
+            {/* Smart Charting UI */}
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-6">Smart Charting with AI Assistance</h3>
+              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                <div className="flex flex-wrap items-center gap-3 mb-4">
+                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                    AI Suggested
+                  </span>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                    ✓ Validated
+                  </span>
+                  <button className="bg-white border border-blue-300 text-blue-700 px-3 py-1 rounded-full text-sm hover:bg-blue-50 transition-colors">
+                    Override
+                  </button>
+                </div>
+                <div className="text-sm text-[#131417]">
+                  <strong>Diagnosis:</strong> Type 2 Diabetes Mellitus (E11.9)
+                  <div className="text-xs text-blue-600 mt-1">
+                    Confidence: 94% based on symptoms, labs, and patient history
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Compliance Drawer */}
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-6">Automated Compliance Monitoring</h3>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded">
+                    <span className="text-sm font-medium">HIPAA Documentation</span>
+                    <span className="bg-green-500 text-white px-2 py-1 rounded text-xs">✓ Complete</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded">
+                    <span className="text-sm font-medium">CDC Reporting Requirements</span>
+                    <span className="bg-green-500 text-white px-2 py-1 rounded text-xs">✓ Complete</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-yellow-50 border border-yellow-200 rounded">
+                    <span className="text-sm font-medium">State Immunization Data</span>
+                    <span className="bg-yellow-500 text-white px-2 py-1 rounded text-xs">⚠ Review</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Patient Timeline */}
+            <div className="bg-white rounded-[16px] p-6 sm:p-8 shadow-sm">
+              <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-6">Interactive Patient Timeline</h3>
+              <div className="relative">
+                <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200"></div>
+                <div className="space-y-4 pl-12">
+                  {[
+                    { date: "Today", event: "Annual checkup completed", type: "visit" },
+                    { date: "2 weeks ago", event: "Lab results reviewed", type: "lab" },
+                    { date: "1 month ago", event: "Prescription updated", type: "medication" },
+                    { date: "3 months ago", event: "Specialist referral", type: "referral" }
+                  ].map((item, index) => (
+                    <div key={index} className="relative">
+                      <div className="absolute -left-[50px] w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                        <span className="text-white text-xs">{index + 1}</span>
+                      </div>
+                      <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                        <div className="flex justify-between items-start mb-2">
+                          <span className="font-medium text-[#131417]">{item.event}</span>
+                          <span className="text-xs text-[#9FA0A3]">{item.date}</span>
+                        </div>
+                        <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded capitalize">
+                          {item.type}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Results & Impact */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2300">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            Results & Impact
+          </h2>
+
+          {/* Before/After KPI Chart */}
+          <div className="bg-white rounded-[16px] p-6 sm:p-8 shadow-sm mb-8 sm:mb-12">
+            <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-6 text-center">Performance Improvements</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-medium text-red-600 mb-4">Before (Legacy System)</h4>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm">Documentation Time</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 h-3 bg-gray-200 rounded-full">
+                        <div className="w-16 h-3 bg-red-500 rounded-full"></div>
+                      </div>
+                      <span className="text-sm text-red-600">8 hrs/week</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm">Compliance Rate</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 h-3 bg-gray-200 rounded-full">
+                        <div className="w-14 h-3 bg-red-500 rounded-full"></div>
+                      </div>
+                      <span className="text-sm text-red-600">70%</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm">User Satisfaction</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 h-3 bg-gray-200 rounded-full">
+                        <div className="w-12 h-3 bg-red-500 rounded-full"></div>
+                      </div>
+                      <span className="text-sm text-red-600">60%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="font-medium text-green-600 mb-4">After (ezEMRx)</h4>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm">Documentation Time</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 h-3 bg-gray-200 rounded-full">
+                        <div className="w-6 h-3 bg-green-500 rounded-full"></div>
+                      </div>
+                      <span className="text-sm text-green-600">2.8 hrs/week</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm">Compliance Rate</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 h-3 bg-gray-200 rounded-full">
+                        <div className="w-[90%] h-3 bg-green-500 rounded-full"></div>
+                      </div>
+                      <span className="text-sm text-green-600">96%</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm">User Satisfaction</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-20 h-3 bg-gray-200 rounded-full">
+                        <div className="w-[85%] h-3 bg-green-500 rounded-full"></div>
+                      </div>
+                      <span className="text-sm text-green-600">92%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* User Quote Carousel */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="bg-blue-50 border border-blue-200 rounded-[16px] p-6">
+              <div className="text-3xl text-blue-300 mb-4">"</div>
+              <p className="text-base text-[#131417] italic mb-4">
+                "The AI suggestions save me so much time. I can focus on my patients instead of fighting with the system."
+              </p>
+              <div className="font-medium text-blue-600">Dr. Maria Rodriguez</div>
+              <div className="text-sm text-[#9FA0A3]">Family Medicine Clinician</div>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 rounded-[16px] p-6">
+              <div className="text-3xl text-green-300 mb-4">"</div>
+              <p className="text-base text-[#131417] italic mb-4">
+                "Compliance reporting went from a full day to 30 minutes. The automation is incredible."
+              </p>
+              <div className="font-medium text-green-600">James Liu</div>
+              <div className="text-sm text-[#9FA0A3]">Health Data Administrator</div>
+            </div>
+
+            <div className="bg-purple-50 border border-purple-200 rounded-[16px] p-6 md:col-span-2 lg:col-span-1">
+              <div className="text-3xl text-purple-300 mb-4">"</div>
+              <p className="text-base text-[#131417] italic mb-4">
+                "The quality improvement in our data is remarkable. Everything is more accurate and timely."
+              </p>
+              <div className="font-medium text-purple-600">Susan Park</div>
+              <div className="text-sm text-[#9FA0A3]">QA Director</div>
+            </div>
+          </div>
+        </section>
+
+        {/* Developer Handoff & QA */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2500">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            Developer Handoff & QA
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+            {/* Figma Handoff */}
+            <div className="bg-white rounded-[16px] p-6 shadow-sm border border-blue-200">
+              <h3 className="font-medium text-[#131417] mb-4 flex items-center gap-2">
+                <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+                Figma Specifications
+              </h3>
+              <div className="space-y-3 text-sm">
+                <div>• Component library with 47 reusable elements</div>
+                <div>• Interaction annotations for all micro-transitions</div>
+                <div>• Responsive breakpoint documentation</div>
+                <div>• Color tokens and typography scale</div>
+              </div>
+            </div>
+
+            {/* Accessibility Report */}
+            <div className="bg-white rounded-[16px] p-6 shadow-sm border border-green-200">
+              <h3 className="font-medium text-[#131417] mb-4 flex items-center gap-2">
+                <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+                Accessibility Score
+              </h3>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Lighthouse</span>
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-bold">98/100</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Axe Core</span>
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-bold">0 issues</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">WCAG 2.1 AA</span>
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-bold">✓ Compliant</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Pipeline Diagram */}
+            <div className="bg-white rounded-[16px] p-6 shadow-sm border border-purple-200">
+              <h3 className="font-medium text-[#131417] mb-4 flex items-center gap-2">
+                <span className="w-3 h-3 bg-purple-500 rounded-full"></span>
+                Delivery Pipeline
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="text-sm">Design → QA</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <span className="text-sm">QA → Staging</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                  <span className="text-sm">Staging → Production</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final Reflections */}
+        <section className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2700">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] xl:tracking-[-0.96px] mb-8 sm:mb-12 md:mb-16 text-center transition-all duration-300 hover:tracking-[-0.7px]">
+            Final Reflections
+          </h2>
+
+          {/* 4-Quadrant Retrospective */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+            <div className="bg-green-50 border border-green-200 rounded-[16px] p-6 sm:p-8">
+              <h3 className="font-medium text-green-700 mb-4 flex items-center gap-2">
+                ✅ What Worked
+              </h3>
+              <ul className="space-y-2 text-sm text-[#131417]">
+                <li>• AI integration exceeded user expectations</li>
+                <li>• Cross-functional collaboration was seamless</li>
+                <li>• User research drove all major design decisions</li>
+                <li>• Iterative testing prevented major issues</li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 border border-blue-200 rounded-[16px] p-6 sm:p-8">
+              <h3 className="font-medium text-blue-700 mb-4 flex items-center gap-2">
+                🔄 What I'd Improve
+              </h3>
+              <ul className="space-y-2 text-sm text-[#131417]">
+                <li>• More extensive mobile testing earlier</li>
+                <li>• Additional stakeholder alignment sessions</li>
+                <li>• Broader user persona validation</li>
+                <li>• Enhanced onboarding flow design</li>
+              </ul>
+            </div>
+
+            <div className="bg-purple-50 border border-purple-200 rounded-[16px] p-6 sm:p-8">
+              <h3 className="font-medium text-purple-700 mb-4 flex items-center gap-2">
+                🎓 What I Learned
+              </h3>
+              <ul className="space-y-2 text-sm text-[#131417]">
+                <li>• Healthcare compliance is incredibly complex</li>
+                <li>• AI explainability is crucial for user trust</li>
+                <li>• Public health workflows vary significantly</li>
+                <li>• Change management is as important as design</li>
+              </ul>
+            </div>
+
+            <div className="bg-orange-50 border border-orange-200 rounded-[16px] p-6 sm:p-8">
+              <h3 className="font-medium text-orange-700 mb-4 flex items-center gap-2">
+                😮 What Surprised Me
+              </h3>
+              <ul className="space-y-2 text-sm text-[#131417]">
+                <li>• Users adapted to AI features faster than expected</li>
+                <li>• Mobile usage was higher than anticipated</li>
+                <li>• Compliance automation had biggest impact</li>
+                <li>• Cross-agency collaboration became primary use case</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Final Quote Block */}
+          <div className="bg-gradient-to-r from-blue-500 to-green-500 rounded-[16px] p-8 sm:p-12 text-white text-center">
+            <div className="text-4xl mb-6">"</div>
+            <blockquote className="text-xl sm:text-2xl md:text-3xl font-normal leading-[150%] italic mb-6">
+              This project reinforced my belief that great UX design isn't just about making things beautiful—it's about making complex systems feel simple and empowering users to do their best work.
+            </blockquote>
+            <div className="font-medium text-xl">Sean Smith</div>
+            <div className="text-blue-100">Lead UX Designer, ezEMRx Project</div>
+          </div>
+        </section>
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700">
+      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2900">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-24 xl:py-[134px]">
           <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24 xl:mb-[270px]"></div>
 
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 lg:gap-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-2100">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-4 sm:gap-6 md:gap-8 lg:gap-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-3100">
             <span className="text-xs sm:text-sm md:text-base lg:text-[18px] font-medium leading-[18px] tracking-[-0.18px] order-3 lg:order-1 transition-all duration-300 hover:text-[#9FA0A3]">
               © All rights reserved.
             </span>
