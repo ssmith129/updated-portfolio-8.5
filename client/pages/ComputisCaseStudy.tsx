@@ -64,9 +64,12 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Image Placeholder */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
-        <figure className="relative group overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02]">
-          <div className="aspect-video bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center relative">
+      <figure className="w-full max-w-6xl mx-auto mb-12 sm:mb-16 md:mb-20 lg:mb-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
+        <div className="relative aspect-video w-full bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+          {/* Placeholder Content */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4 bg-gray-300 rounded-full flex items-center justify-center">
                 <svg 
                   className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-gray-500" 
                   fill="none" 
