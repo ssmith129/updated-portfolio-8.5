@@ -11,12 +11,17 @@ export default defineConfig(() => ({
       allow: ["./client", "./shared"],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**"],
     },
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true,
-        secure: false,
-      },
+    configureServer(server) {
+      server.middlewares.use('/api', async (req, res, next) => {
+        try {
+          const { createServer } = await import('./server/index.ts');
+          const app = createServer();
+          app(req, res, next);
+        } catch (error) {
+          console.error('API middleware error:', error);
+          next();
+        }
+      });
     },
   },
   build: {
