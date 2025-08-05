@@ -1360,27 +1360,5 @@ export default function ComputisCaseStudy() {
         </div>
       </footer>
     </div>
-
-    {/* Footer */}
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="flex space-x-6">
-            <a href="https://github.com/ssmith129" className="hover:text-gray-300 transition-colors">
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/sean-smith-sf/" className="hover:text-gray-300 transition-colors">
-              LinkedIn
-            </a>
-            <a href="https://www.behance.net/ssmit129" className="hover:text-gray-300 transition-colors">
-              Behance
-            </a>
-          </div>
-          <p className="text-sm text-gray-400">
-            © 2024 Sean Smith. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
   );
 }
