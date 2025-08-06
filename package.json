@@ -11,7 +11,7 @@
     ]
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"npm run dev:server\" \"vite\"",
     "dev:server": "tsx server/node-build.ts",
     "build": "npm run build:client && npm run build:server",
     "build:vercel": "npm run build:client",
