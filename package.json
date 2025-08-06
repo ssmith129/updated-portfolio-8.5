@@ -12,6 +12,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:server": "tsx server/node-build.ts",
     "build": "npm run build:client && npm run build:server",
     "build:vercel": "npm run build:client",
     "build:client": "vite build",
