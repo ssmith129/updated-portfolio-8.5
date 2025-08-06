@@ -24,8 +24,10 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.56.2",
+    "@types/express": "^5.0.3",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
+    "express": "^5.1.0",
     "react-router-dom": "^6.26.2",
     "serverless-http": "^3.2.0",
     "zod": "^3.23.8"
