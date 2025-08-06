@@ -1,6 +1,6 @@
 import path from "path";
 import { createServer } from "./index";
-import * as express from "express";
+import express from "express";
 
 const app = createServer();
 const port = process.env.PORT || 3000;
@@ -26,6 +26,12 @@ app.listen(port, () => {
   console.log(`🚀 Fusion Starter server running on port ${port}`);
   console.log(`📱 Frontend: http://localhost:${port}`);
   console.log(`🔧 API: http://localhost:${port}/api`);
+}).on('error', (err) => {
+  console.error('❌ Failed to start server:', err);
+  if (err.code === 'EADDRINUSE') {
+    console.error(`❌ Port ${port} is already in use. Please free the port or change the PORT environment variable.`);
+  }
+  process.exit(1);
 });
 
 // Graceful shutdown
