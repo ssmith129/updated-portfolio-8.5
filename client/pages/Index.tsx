@@ -41,9 +41,13 @@ export default function Index() {
           <div className="flex-shrink-0 order-1 lg:order-2 animate-in fade-in-0 zoom-in-95 duration-1000 delay-500">
             <div className="relative group">
               <img
-                src="/6796fa1806617a432bd2b97b-HeadshotPro_Original.PNG"
-                alt="Sean Smith - Senior Product Designer headshot"
+                src="/sean-smith-product-designer-headshot.webp"
+                alt="Sean Smith - Senior Product Designer professional headshot, UX designer specializing in AI-integrated systems and crypto fintech platforms"
                 className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 object-cover rounded-[20px] sm:rounded-[25px] md:rounded-[30px] shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 border-2 border-white/20"
+                width="384"
+                height="384"
+                loading="eager"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/5 rounded-[20px] sm:rounded-[25px] md:rounded-[30px] group-hover:to-black/10 transition-all duration-500"></div>
             </div>
@@ -85,9 +89,12 @@ export default function Index() {
             <div className="aspect-square overflow-hidden relative">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4?width=1900"
-                alt="Computis - Crypto Tax Engine Dashboard"
+                alt="Computis crypto tax automation platform dashboard interface showing transaction analysis and tax calculation features designed by Sean Smith"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
                 loading="lazy"
+                width="600"
+                height="600"
+                decoding="async"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
@@ -109,10 +116,13 @@ export default function Index() {
           >
             <div className="aspect-square overflow-hidden relative">
               <img
-                src="/ipad.png"
-                alt="ezEMRx - Electronic Health Records System"
+                src="/ezemrx-ehr-ipad-interface-mockup.webp"
+                alt="ezEMRx Electronic Health Records iPad interface mockup showing patient management and clinical workflow features designed for public health"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
                 loading="lazy"
+                width="600"
+                height="600"
+                decoding="async"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
@@ -135,9 +145,12 @@ export default function Index() {
             <div className="aspect-square overflow-hidden relative">
               <img
                 src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Medico - Hospital Management System"
+                alt="Medico hospital management system interface design showing healthcare workflow optimization and patient data management features"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
                 loading="lazy"
+                width="600"
+                height="600"
+                decoding="async"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
@@ -160,9 +173,12 @@ export default function Index() {
             <div className="aspect-square overflow-hidden relative">
               <img
                 src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="MoneyFarm - AI-Powered Personal Finance Manager"
+                alt="MoneyFarm AI-powered personal finance management application interface showing smart budgeting and investment recommendation features"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
                 loading="lazy"
+                width="600"
+                height="600"
+                decoding="async"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">

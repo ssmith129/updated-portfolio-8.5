@@ -51,11 +51,16 @@ export default function CaseStudies() {
           <Link
             to="/case-studies/computis-crypto-tax-engine"
             className="group relative animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-700 w-full max-w-[600px]"
+            aria-label="View Computis crypto tax engine case study"
           >
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4?width=1900"
-              alt="Computis - Crypto Tax Engine"
+              alt="Computis crypto tax automation platform case study thumbnail showing dashboard interface and tax calculation features designed by Sean Smith"
               className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
+              width="600"
+              height="600"
+              loading="lazy"
+              decoding="async"
             />
             {/* Title Overlay */}
             <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
@@ -77,11 +82,16 @@ export default function CaseStudies() {
           <Link
             to="/case-studies/ezemrx-redesigning-ehr"
             className="group relative animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-900 w-full max-w-[600px]"
+            aria-label="View ezEMRx Electronic Health Records redesign case study"
           >
             <img
-              src="/ipad.png"
-              alt="ezEMRx - EHR for Public Health"
+              src="/ezemrx-ehr-ipad-interface-mockup.webp"
+              alt="ezEMRx Electronic Health Records iPad interface case study showing patient management system redesign for public health organizations"
               className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
+              width="600"
+              height="600"
+              loading="lazy"
+              decoding="async"
             />
             {/* Title Overlay */}
             <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
@@ -104,11 +114,16 @@ export default function CaseStudies() {
           <Link
             to="/case-studies/medico-hospital-management-system"
             className="group relative animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-1300 w-full max-w-[600px]"
+            aria-label="View Medico hospital management system case study"
           >
             <img
               src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Medico - Hospital Management System"
+              alt="Medico hospital management system case study showing healthcare workflow optimization and patient data management interface design"
               className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
+              width="600"
+              height="600"
+              loading="lazy"
+              decoding="async"
             />
             {/* Title Overlay */}
             <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
@@ -130,11 +145,16 @@ export default function CaseStudies() {
           <Link
             to="/case-studies/moneyfarm-ai-powered-personal-finance"
             className="group relative animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-1500 w-full max-w-[600px]"
+            aria-label="View MoneyFarm AI-powered personal finance app case study"
           >
             <img
               src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="MoneyFarm - AI-Powered Personal Finance Manager"
+              alt="MoneyFarm AI-powered personal finance management application case study showing smart budgeting and investment recommendation features"
               className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
+              width="600"
+              height="600"
+              loading="lazy"
+              decoding="async"
             />
             {/* Title Overlay */}
             <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
