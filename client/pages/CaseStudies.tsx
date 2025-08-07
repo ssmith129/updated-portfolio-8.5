@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { SimpleThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function CaseStudies() {
   return (
@@ -15,7 +14,7 @@ export default function CaseStudies() {
           </p>
         </div>
 
-        <div className="bg-background rounded-[25px] sm:rounded-[35px] md:rounded-[50px] p-[3px] sm:p-[4px] md:p-[5px] flex items-center flex-wrap gap-1 w-full sm:w-auto justify-center border border-border">
+        <div className="bg-white rounded-[25px] sm:rounded-[35px] md:rounded-[50px] p-[3px] sm:p-[4px] md:p-[5px] flex items-center flex-wrap gap-1 w-full sm:w-auto justify-center">
           <Link
             to="/"
             className="text-[#131417] px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-colors"
@@ -31,7 +30,6 @@ export default function CaseStudies() {
           >
             About
           </Link>
-          <SimpleThemeToggle className="text-[#131417] hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800 rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300" />
         </div>
       </nav>
 
