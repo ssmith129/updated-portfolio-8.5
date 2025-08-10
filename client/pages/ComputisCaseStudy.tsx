@@ -316,7 +316,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">��� Reframed Opportunity:</h3>
+                <h3 className="text-[20px] font-medium text-[#131417] mb-4">🔁 Reframed Opportunity:</h3>
                 <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] mb-4">
                   This wasn't just a UI problem — it was a control handoff problem.
                 </p>
@@ -727,8 +727,8 @@ export default function ComputisCaseStudy() {
                   
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 lg:p-12 rounded-[30px] border border-gray-200">
                     {/* Journey Flow Header */}
-                    <div className="flex flex-row mb-12 ml-0 mr-auto">
-                      <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-left justify-start">
+                    <div className="text-center mb-12">
+                      <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200">
                         <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                         <span className="text-sm font-medium text-[#131417]">Complete Crypto Tax Processing Journey</span>
                         <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -740,7 +740,7 @@ export default function ComputisCaseStudy() {
                       {/* Connection Line */}
                       <div className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-yellow-400 via-green-400 via-purple-400 to-orange-400 rounded-full opacity-30 hidden lg:block"></div>
                       
-                      <div className="flex flex-row gap-4 overflow-auto">
+                      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4">
                         {[
                           { 
                             stage: 'Upload', 
