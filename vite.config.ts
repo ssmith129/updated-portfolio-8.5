@@ -1,22 +1,22 @@
 import { defineConfig, Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import { createServer as createExpressServer } from "./server/index";
 
 // https://vitejs.dev/config/
 export default defineConfig(() => ({
   server: {
     host: "::",
     port: 8080,
+    proxy: {
+      "/api": {
+        target: "http://localhost:8080",
+        changeOrigin: true,
+      },
+    },
     fs: {
       allow: ["./client", "./shared"],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**"],
-    },
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true,
-        secure: false,
-      },
     },
   },
   build: {
@@ -24,6 +24,10 @@ export default defineConfig(() => ({
     chunkSizeWarningLimit: 1000,
   },
   plugins: [react()],
+  configureServer(server) {
+    const expressApp = createExpressServer();
+    server.middlewares.use('/api', expressApp);
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),
