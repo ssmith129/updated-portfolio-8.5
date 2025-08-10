@@ -1803,15 +1803,6 @@ export default function ComputisCaseStudy() {
           <div className="text-center mb-16 lg:mb-[270px]">
           </div>
 
-          <div className="group bg-white/60 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden">
-            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-              <img
-                src="/Rule Builder.png"
-                alt="Rule Builder Interface"
-                className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
-              />
-            </div>
-          </div>
 
           <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
             <span className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] order-3 lg:order-1 transition-all duration-300 hover:text-[#9FA0A3]">
