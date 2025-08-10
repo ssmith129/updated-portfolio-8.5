@@ -1836,30 +1836,8 @@ export default function ComputisCaseStudy() {
               </a>
             </div>
 
-            <div className="flex gap-4 sm:gap-8 lg:gap-[40px] order-2 lg:order-3">
-              <a
-                href="#"
-                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
-              >
-                License
-              </a>
-
-              <div className="group bg-white/20 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-                  <img
-                    src="/Audit Trail Drawer.png"
-                    alt="Audit Log Timeline Interface"
-                    className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
-                  />
-                </div>
-              </div>
-
-              <a
-                href="#"
-                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
-              >
-                Terms of Use
-              </a>
+            <div className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 gap-[40px] order-2 lg:order-3">
+              License
             </div>
           </div>
 
