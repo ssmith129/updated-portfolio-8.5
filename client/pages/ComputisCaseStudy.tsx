@@ -727,8 +727,8 @@ export default function ComputisCaseStudy() {
                   
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 lg:p-12 rounded-[30px] border border-gray-200">
                     {/* Journey Flow Header */}
-                    <div className="text-center mb-12">
-                      <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200">
+                    <div className="flex flex-row mb-12 ml-0 mr-auto">
+                      <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-left justify-start">
                         <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                         <span className="text-sm font-medium text-[#131417]">Complete Crypto Tax Processing Journey</span>
                         <div className="w-3 h-3 bg-green-500 rounded-full"></div>
