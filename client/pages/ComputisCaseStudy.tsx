@@ -727,8 +727,8 @@ export default function ComputisCaseStudy() {
                   
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 lg:p-12 rounded-[30px] border border-gray-200">
                     {/* Journey Flow Header */}
-                    <div className="text-center mb-12">
-                      <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200">
+                    <div className="flex flex-row mb-12 ml-0 mr-auto">
+                      <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-left justify-start">
                         <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                         <span className="text-sm font-medium text-[#131417]">Complete Crypto Tax Processing Journey</span>
                         <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -740,7 +740,7 @@ export default function ComputisCaseStudy() {
                       {/* Connection Line */}
                       <div className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-yellow-400 via-green-400 via-purple-400 to-orange-400 rounded-full opacity-30 hidden lg:block"></div>
                       
-                      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4">
+                      <div className="flex flex-row gap-4 overflow-auto">
                         {[
                           { 
                             stage: 'Upload', 
@@ -824,8 +824,9 @@ export default function ComputisCaseStudy() {
                           }
                         ].map((item, index) => (
                           <div key={index} className="relative group">
-                            {/* Stage Card */}
-                            <div className={`${item.bgColor} ${item.borderColor} border-2 p-6 lg:p-8 rounded-[25px] hover:shadow-xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 group-hover:shadow-2xl`}>
+                            <div className="flex flex-col">
+                              {/* Stage Card */}
+                              <div className={`${item.bgColor} ${item.borderColor} border-2 p-6 lg:p-8 rounded-[25px] hover:shadow-xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 group-hover:shadow-2xl`}>
                               {/* Stage Header */}
                               <div className="text-center mb-6">
                                 <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300`}>
@@ -913,7 +914,7 @@ export default function ComputisCaseStudy() {
                                 </div>
                               </div>
                             </div>
-                            
+
                             {/* Arrow Connector (Desktop only) */}
                             {index < 4 && (
                               <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
@@ -924,6 +925,7 @@ export default function ComputisCaseStudy() {
                                 </div>
                               </div>
                             )}
+                            </div>
                           </div>
                         ))}
                       </div>
