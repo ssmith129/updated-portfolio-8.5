@@ -805,7 +805,7 @@ export default function EzEMRxCaseStudy() {
                         Threaded Case Notes
                       </td>
                       <td className="py-4 px-4 text-green-600 text-[18px]">
-                        ✅
+                        ���
                       </td>
                       <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
                       <td className="py-4 px-4 text-yellow-500 text-[18px]">
@@ -1076,7 +1076,7 @@ export default function EzEMRxCaseStudy() {
 
       {/* Footer */}
       <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-3300">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] py-16 lg:py-[134px]">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] py-16" style={{ paddingTop: "135px", paddingBottom: "134px" }}>
           {/* Footer Header */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-16 lg:mb-[270px] gap-4 sm:gap-0">
             <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
@@ -1090,15 +1090,7 @@ export default function EzEMRxCaseStudy() {
             </span>
           </div>
 
-          {/* Get in Touch */}
-          <div className="text-center mb-16 lg:mb-[270px]">
-            <p className="text-[18px] font-medium text-[#9FA0A3] leading-[20px] tracking-[-0.18px] mb-[20px] transition-all duration-300 hover:text-white">
-              Have a nice project?
-            </p>
-            <h2 className="text-3xl sm:text-5xl lg:text-[72px] font-medium leading-[72px] tracking-[-0.72px] transition-all duration-500 hover:tracking-[-0.5px] hover:scale-105 cursor-pointer">
-              Get in Touch
-            </h2>
-          </div>
+          <div className="text-center mb-16 lg:mb-[270px]"></div>
 
           {/* Footer Bottom */}
           <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
@@ -1133,19 +1125,8 @@ export default function EzEMRxCaseStudy() {
               </a>
             </div>
 
-            <div className="flex gap-4 sm:gap-8 lg:gap-[40px] order-2 lg:order-3">
-              <a
-                href="#"
-                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
-              >
-                License
-              </a>
-              <a
-                href="#"
-                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
-              >
-                Terms of Use
-              </a>
+            <div className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 gap-[40px] order-2 lg:order-3">
+              License
             </div>
           </div>
         </div>
