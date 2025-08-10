@@ -316,7 +316,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">🔁 Reframed Opportunity:</h3>
+                <h3 className="text-[20px] font-medium text-[#131417] mb-4">��� Reframed Opportunity:</h3>
                 <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] mb-4">
                   This wasn't just a UI problem — it was a control handoff problem.
                 </p>
@@ -740,7 +740,7 @@ export default function ComputisCaseStudy() {
                       {/* Connection Line */}
                       <div className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-yellow-400 via-green-400 via-purple-400 to-orange-400 rounded-full opacity-30 hidden lg:block"></div>
                       
-                      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4">
+                      <div className="flex flex-row gap-4 overflow-auto">
                         {[
                           { 
                             stage: 'Upload', 
