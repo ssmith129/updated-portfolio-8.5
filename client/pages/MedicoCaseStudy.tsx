@@ -74,18 +74,18 @@ export default function MedicoCaseStudy() {
               </h2>
             </div>
             <div className="flex-1 space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="flex flex-row flex-wrap gap-6">
                 <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Platform</p>
+                  <p className="text-[18px] font-medium text-[#131417]">Web & Mobile SaaS</p>
+                </div>
+                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] flex flex-col items-start justify-start flex-grow-0 h-auto">
                   <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Role</p>
                   <p className="text-[18px] font-medium text-[#131417]">Lead Product Designer</p>
                 </div>
                 <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
                   <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Company</p>
                   <p className="text-[18px] font-medium text-[#131417]">Confidential Healthcare Client</p>
-                </div>
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Platform</p>
-                  <p className="text-[18px] font-medium text-[#131417]">Web & Mobile SaaS</p>
                 </div>
                 <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
                   <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Duration</p>
