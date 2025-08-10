@@ -1799,16 +1799,6 @@ export default function ComputisCaseStudy() {
             </span>
           </div>
 
-          <div className="group bg-white/80 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden">
-            {/* Screenshot overlay that appears on hover */}
-            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-              <img
-                src="/Transactions Grid.png"
-                alt="Classification Grid Interface"
-                className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
-              />
-            </div>
-          </div>
 
           {/* Get in Touch */}
           <div className="text-center mb-16 lg:mb-[270px]">
