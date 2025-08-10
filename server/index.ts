@@ -19,5 +19,12 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
 
+  // Handle placeholder image requests
+  app.get("/api/placeholder/:width/:height", (req, res) => {
+    const { width, height } = req.params;
+    // Redirect to a placeholder image service
+    res.redirect(`https://picsum.photos/${width}/${height}`);
+  });
+
   return app;
 }
