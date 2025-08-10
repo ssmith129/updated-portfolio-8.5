@@ -1800,14 +1800,7 @@ export default function ComputisCaseStudy() {
           </div>
 
 
-          {/* Get in Touch */}
           <div className="text-center mb-16 lg:mb-[270px]">
-            <p className="text-[18px] font-medium text-[#9FA0A3] leading-[20px] tracking-[-0.18px] mb-[20px] transition-all duration-300 hover:text-white">
-              Have a nice project?
-            </p>
-            <h2 className="text-3xl sm:text-5xl lg:text-[72px] font-medium leading-[72px] tracking-[-0.72px] transition-all duration-500 hover:tracking-[-0.5px] hover:scale-105 cursor-pointer">
-              Get in Touch
-            </h2>
           </div>
 
           <div className="group bg-white/60 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden">
