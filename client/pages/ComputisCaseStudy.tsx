@@ -771,6 +771,16 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* Embed Placeholder */}
+        <div className="flex flex-col relative mt-12">
+          <div
+            className="p-5 text-center"
+            dangerouslySetInnerHTML={{
+              __html: '<div style="padding: 20px; text-align: center">(Choose an embed URL)<div>'
+            }}
+          />
+        </div>
+
         {/* Results & Impact */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
