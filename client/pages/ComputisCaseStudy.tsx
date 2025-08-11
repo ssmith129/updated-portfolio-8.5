@@ -1224,7 +1224,7 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 className="relative mt-5 group cursor-pointer"
                 onClick={() =>
                   setEnlargedImage({
-                    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc1c336fd9de14b71a1bfda3140ba1a8e",
+                    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc8bdc181750941cd9d9d725a2a335427",
                     alt: "Audit-Ready Exports",
                   })
                 }
