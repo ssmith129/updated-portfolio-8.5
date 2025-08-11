@@ -1312,21 +1312,21 @@ export default function ComputisCaseStudy() {
                   Quantitative Results
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">CPA onboarding time</span>
                     <span className="font-medium text-green-600">
                       <p>45%</p>
                     </span>
                   </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">Demo conversion rate</span>
                     <span className="font-medium text-blue-600">↑32%</span>
                   </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">Bounce rate</span>
                     <span className="font-medium text-purple-600">↓18%</span>
                   </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">
                       Manual dev dependency
                     </span>
