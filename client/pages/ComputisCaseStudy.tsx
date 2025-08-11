@@ -710,30 +710,13 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-lg font-medium text-[#131417] mb-3">AI Suggestions + Override</h3>
                 <p className="text-[#9FA0A3] text-sm mb-3">Confidence badges with tooltips</p>
                 <p className="text-sm text-green-600 font-medium">→ Built trust, increased classification speed by 60%</p>
-                <div
-                  className="relative group cursor-pointer mt-5"
-                  onClick={() => setEnlargedImage({
-                    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=2000",
-                    alt: "AI Suggestions + Override"
-                  })}
-                >
+                <div className="relative mt-5">
                   <img
                     loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a"
-                    className="w-full aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F72f9dfdb999c492192c2505917138ad5"
+                    className="w-full aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300"
                     alt="AI Suggestions + Override"
                   />
-                  <div
-                    className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center"
-                    style={{
-                      backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F72f9dfdb999c492192c2505917138ad5)",
-                      backgroundRepeat: "no-repeat",
-                      backgroundPosition: "center",
-                      backgroundSize: "cover"
-                    }}
-                  >
-                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
                 </div>
               </div>
             </div>
