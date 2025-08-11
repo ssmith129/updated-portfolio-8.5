@@ -367,7 +367,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200">
+                <div style={{backgroundColor: '#fff7ed'}} className="p-4 rounded-[16px] border border-green-200">
                   <h4 className="text-sm font-medium text-green-800 mb-2">Needs</h4>
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>• Audit logs for compliance</li>
@@ -376,7 +376,7 @@ export default function ComputisCaseStudy() {
                   </ul>
                 </div>
 
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200">
+                <div style={{backgroundColor: '#fef2f2'}} className="p-4 rounded-[16px] border border-red-200">
                   <h4 className="text-sm font-medium text-red-800 mb-2">Pain Points</h4>
                   <p className="text-sm text-red-700">No visibility into classifications or logic - creates audit anxiety and compliance risk</p>
                 </div>
@@ -702,7 +702,7 @@ export default function ComputisCaseStudy() {
             <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
               <h3 className="text-lg font-medium text-[#131417] mb-3">AI Suggestions + Override</h3>
               <p className="text-[#9FA0A3] text-sm mb-3">Confidence badges with tooltips</p>
-              <p className="text-sm text-green-600 font-medium">��� Built trust, increased classification speed by 60%</p>
+              <p className="text-sm text-green-600 font-medium">→ Built trust, increased classification speed by 60%</p>
               <img
                 loading="lazy"
                 srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
