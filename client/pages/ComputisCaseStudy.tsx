@@ -578,13 +578,13 @@ export default function ComputisCaseStudy() {
 
         {/* User Personas */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
             User Personas
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* David (CPA) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
                   <svg
@@ -641,7 +641,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Mya (Analyst) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
                   <svg
