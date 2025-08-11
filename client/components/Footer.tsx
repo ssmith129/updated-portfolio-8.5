@@ -7,57 +7,83 @@ interface FooterProps {
 
 const quickLinks = [
   { label: "Home", href: "/", description: "Portfolio homepage" },
-  { label: "Case Studies", href: "/case-studies", description: "UX design projects" },
-  { label: "About", href: "/about", description: "Professional background" }
+  {
+    label: "Case Studies",
+    href: "/case-studies",
+    description: "UX design projects",
+  },
+  { label: "About", href: "/about", description: "Professional background" },
 ];
 
 const caseStudyLinks = [
-  { label: "Computis", href: "/case-studies/computis-crypto-tax-engine", description: "Crypto Tax Engine" },
-  { label: "ezEMRx", href: "/case-studies/ezemrx-redesigning-ehr", description: "EHR Redesign" },
-  { label: "Medico", href: "/case-studies/medico-hospital-management-system", description: "Hospital Management" },
-  { label: "MoneyFarm", href: "/case-studies/moneyfarm-ai-powered-personal-finance", description: "AI Personal Finance" }
+  {
+    label: "Computis",
+    href: "/case-studies/computis-crypto-tax-engine",
+    description: "Crypto Tax Engine",
+  },
+  {
+    label: "ezEMRx",
+    href: "/case-studies/ezemrx-redesigning-ehr",
+    description: "EHR Redesign",
+  },
+  {
+    label: "Medico",
+    href: "/case-studies/medico-hospital-management-system",
+    description: "Hospital Management",
+  },
+  {
+    label: "MoneyFarm",
+    href: "/case-studies/moneyfarm-ai-powered-personal-finance",
+    description: "AI Personal Finance",
+  },
 ];
 
 const socialLinks = [
   {
     label: "Behance",
     href: "https://www.behance.net/ssmit129",
-    description: "View Sean's design portfolio on Behance"
+    description: "View Sean's design portfolio on Behance",
   },
   {
     label: "GitHub",
     href: "https://github.com/ssmith129",
-    description: "Explore Sean's code repositories on GitHub"
+    description: "Explore Sean's code repositories on GitHub",
   },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/sean-smith-sf/",
-    description: "Connect with Sean on LinkedIn"
-  }
+    description: "Connect with Sean on LinkedIn",
+  },
 ];
 
 const legalLinks = [
   { label: "License", href: "#", description: "Usage license information" },
-  { label: "Terms of Use", href: "#", description: "Website terms and conditions" },
-  { label: "Privacy Policy", href: "#", description: "Privacy and data policy" }
+  {
+    label: "Terms of Use",
+    href: "#",
+    description: "Website terms and conditions",
+  },
+  {
+    label: "Privacy Policy",
+    href: "#",
+    description: "Privacy and data policy",
+  },
 ];
 
 export default function Footer({ className = "" }: FooterProps) {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <footer 
+    <footer
       className={`bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700 ${className}`}
       role="contentinfo"
       aria-label="Site footer"
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-24 xl:py-[60px]">
-        
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 lg:mb-16">
-          
           {/* Brand & Contact */}
           <div className="lg:col-span-1">
             <div className="mb-6">
@@ -65,10 +91,11 @@ export default function Footer({ className = "" }: FooterProps) {
                 Sean Smith
               </h3>
               <p className="text-sm text-[#9FA0A3] mb-4 leading-[150%]">
-                UX/Product Designer specializing in AI-integrated systems and complex SaaS platforms.
+                UX/Product Designer specializing in AI-integrated systems and
+                complex SaaS platforms.
               </p>
             </div>
-            
+
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-[#9FA0A3] hover:text-white transition-colors duration-300">
                 <MapPin className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
@@ -165,7 +192,6 @@ export default function Footer({ className = "" }: FooterProps) {
 
         {/* Bottom Footer */}
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0">
-          
           {/* Copyright */}
           <div className="order-3 lg:order-1">
             <p className="text-xs sm:text-sm text-[#9FA0A3] font-medium leading-[18px] tracking-[-0.14px] transition-all duration-300 hover:text-white">

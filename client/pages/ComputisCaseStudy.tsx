@@ -39,7 +39,23 @@ export default function ComputisCaseStudy() {
           </h1>
           <p className="text-xl sm:text-2xl lg:text-[28px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.28px] max-w-[900px] transition-all duration-300 hover:text-[#131417]">
             Transforming a backend crypto tax script into an enterprise-grade,
-            CPA-first SaaS platform. This project demonstrates <Link to="/about" className="text-[#9FA0A3] hover:text-[#131417] underline underline-offset-2 decoration-1 transition-all duration-300" aria-label="Learn about Sean's expertise in AI integration">AI integration expertise</Link> and complex <Link to="/case-studies" className="text-[#9FA0A3] hover:text-[#131417] underline underline-offset-2 decoration-1 transition-all duration-300" aria-label="View other fintech design projects">fintech platform design</Link>.
+            CPA-first SaaS platform. This project demonstrates{" "}
+            <Link
+              to="/about"
+              className="text-[#9FA0A3] hover:text-[#131417] underline underline-offset-2 decoration-1 transition-all duration-300"
+              aria-label="Learn about Sean's expertise in AI integration"
+            >
+              AI integration expertise
+            </Link>{" "}
+            and complex{" "}
+            <Link
+              to="/case-studies"
+              className="text-[#9FA0A3] hover:text-[#131417] underline underline-offset-2 decoration-1 transition-all duration-300"
+              aria-label="View other fintech design projects"
+            >
+              fintech platform design
+            </Link>
+            .
           </p>
         </div>
       </div>

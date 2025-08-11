@@ -18,20 +18,20 @@ const navigationItems: NavItem[] = [
     label: "Home",
     href: "/",
     description: "Sean Smith's UX/Product Designer Portfolio",
-    ariaLabel: "Go to homepage - Sean Smith's portfolio"
+    ariaLabel: "Go to homepage - Sean Smith's portfolio",
   },
   {
     label: "Case Studies",
     href: "/case-studies",
     description: "UX Design Projects & Case Studies",
-    ariaLabel: "View UX design case studies and project portfolio"
+    ariaLabel: "View UX design case studies and project portfolio",
   },
   {
     label: "About",
     href: "/about",
     description: "About Sean Smith - UX Designer",
-    ariaLabel: "Learn about Sean Smith's background and experience"
-  }
+    ariaLabel: "Learn about Sean Smith's background and experience",
+  },
 ];
 
 export default function Navigation({ className = "" }: NavigationProps) {
@@ -50,7 +50,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
   };
 
   return (
-    <nav 
+    <nav
       className={`flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-4 sm:py-5 md:py-6 gap-4 md:gap-0 animate-in fade-in-0 slide-in-from-top-4 duration-700 ${className}`}
       role="navigation"
       aria-label="Main navigation"
@@ -77,7 +77,9 @@ export default function Navigation({ className = "" }: NavigationProps) {
         onClick={toggleMobileMenu}
         aria-expanded={isMobileMenuOpen}
         aria-controls="mobile-menu"
-        aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-label={
+          isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"
+        }
       >
         {isMobileMenuOpen ? (
           <X className="w-6 h-6 text-[#131417]" />
@@ -90,7 +92,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
       <div className="hidden md:flex bg-white rounded-[25px] sm:rounded-[35px] md:rounded-[50px] p-[3px] sm:p-[4px] md:p-[5px] items-center flex-wrap gap-1 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] touch-manipulation">
         {navigationItems.map((item) => {
           const current = isCurrentPage(item.href);
-          
+
           return current ? (
             <div
               key={item.href}
@@ -118,8 +120,8 @@ export default function Navigation({ className = "" }: NavigationProps) {
       <div
         id="mobile-menu"
         className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-lg rounded-b-[20px] transition-all duration-300 ${
-          isMobileMenuOpen 
-            ? "opacity-100 visible translate-y-0" 
+          isMobileMenuOpen
+            ? "opacity-100 visible translate-y-0"
             : "opacity-0 invisible -translate-y-4"
         }`}
         style={{ zIndex: 50 }}
@@ -127,7 +129,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
         <div className="px-4 py-6 space-y-3">
           {navigationItems.map((item) => {
             const current = isCurrentPage(item.href);
-            
+
             return current ? (
               <div
                 key={item.href}

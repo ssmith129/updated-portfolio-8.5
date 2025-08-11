@@ -12,13 +12,20 @@ interface BreadcrumbsProps {
   className?: string;
 }
 
-export default function Breadcrumbs({ items, className = "" }: BreadcrumbsProps) {
+export default function Breadcrumbs({
+  items,
+  className = "",
+}: BreadcrumbsProps) {
   return (
     <nav
       aria-label="Breadcrumb navigation"
       className={`flex items-center space-x-2 text-sm ${className}`}
     >
-      <ol className="flex items-center space-x-2" itemScope itemType="https://schema.org/BreadcrumbList">
+      <ol
+        className="flex items-center space-x-2"
+        itemScope
+        itemType="https://schema.org/BreadcrumbList"
+      >
         {items.map((item, index) => (
           <li
             key={item.href}
@@ -28,12 +35,12 @@ export default function Breadcrumbs({ items, className = "" }: BreadcrumbsProps)
             itemType="https://schema.org/ListItem"
           >
             {index > 0 && (
-              <ChevronRight 
-                className="w-4 h-4 text-[#9FA0A3] mx-2 flex-shrink-0" 
+              <ChevronRight
+                className="w-4 h-4 text-[#9FA0A3] mx-2 flex-shrink-0"
                 aria-hidden="true"
               />
             )}
-            
+
             {item.current ? (
               <span
                 className="font-medium text-[#131417] tracking-[-0.16px] transition-colors duration-300"
@@ -62,7 +69,7 @@ export default function Breadcrumbs({ items, className = "" }: BreadcrumbsProps)
                 </span>
               </Link>
             )}
-            
+
             <meta itemProp="position" content={String(index + 1)} />
           </li>
         ))}
@@ -73,9 +80,7 @@ export default function Breadcrumbs({ items, className = "" }: BreadcrumbsProps)
 
 // Utility function to generate breadcrumbs based on current path
 export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
-  const breadcrumbs: BreadcrumbItem[] = [
-    { label: "Home", href: "/" }
-  ];
+  const breadcrumbs: BreadcrumbItem[] = [{ label: "Home", href: "/" }];
 
   if (pathname === "/") {
     breadcrumbs[0].current = true;
@@ -84,7 +89,7 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
 
   if (pathname.startsWith("/case-studies")) {
     breadcrumbs.push({ label: "Case Studies", href: "/case-studies" });
-    
+
     if (pathname === "/case-studies") {
       breadcrumbs[1].current = true;
       return breadcrumbs;
@@ -92,15 +97,22 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
 
     // Individual case study pages
     const caseStudyTitles: Record<string, string> = {
-      "/case-studies/computis-crypto-tax-engine": "Computis – Crypto Tax Engine",
+      "/case-studies/computis-crypto-tax-engine":
+        "Computis – Crypto Tax Engine",
       "/case-studies/ezemrx-redesigning-ehr": "ezEMRx – EHR Redesign",
-      "/case-studies/medico-hospital-management-system": "Medico – Hospital Management",
-      "/case-studies/moneyfarm-ai-powered-personal-finance": "MoneyFarm – AI Finance"
+      "/case-studies/medico-hospital-management-system":
+        "Medico – Hospital Management",
+      "/case-studies/moneyfarm-ai-powered-personal-finance":
+        "MoneyFarm – AI Finance",
     };
 
     const caseStudyTitle = caseStudyTitles[pathname];
     if (caseStudyTitle) {
-      breadcrumbs.push({ label: caseStudyTitle, href: pathname, current: true });
+      breadcrumbs.push({
+        label: caseStudyTitle,
+        href: pathname,
+        current: true,
+      });
     }
   } else if (pathname === "/about") {
     breadcrumbs.push({ label: "About", href: "/about", current: true });

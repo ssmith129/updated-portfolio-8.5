@@ -18,10 +18,12 @@ const allCaseStudies: CaseStudy[] = [
     title: "Computis",
     subtitle: "Crypto Tax Engine",
     href: "/case-studies/computis-crypto-tax-engine",
-    image: "https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4?width=1900",
+    image:
+      "https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4?width=1900",
     category: "Fintech",
     duration: "12 months",
-    description: "Enterprise-grade crypto tax automation platform for CPAs and accountants"
+    description:
+      "Enterprise-grade crypto tax automation platform for CPAs and accountants",
   },
   {
     id: "ezemrx",
@@ -31,28 +33,33 @@ const allCaseStudies: CaseStudy[] = [
     image: "/ipad.png",
     category: "Healthcare",
     duration: "8 months",
-    description: "Electronic health records system redesign for public health organizations"
+    description:
+      "Electronic health records system redesign for public health organizations",
   },
   {
     id: "medico",
     title: "Medico",
     subtitle: "Hospital Management System",
     href: "/case-studies/medico-hospital-management-system",
-    image: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image:
+      "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: "Healthcare",
     duration: "6 months",
-    description: "Comprehensive hospital management platform for healthcare providers"
+    description:
+      "Comprehensive hospital management platform for healthcare providers",
   },
   {
     id: "moneyfarm",
     title: "MoneyFarm",
     subtitle: "AI-Powered Personal Finance",
     href: "/case-studies/moneyfarm-ai-powered-personal-finance",
-    image: "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image:
+      "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: "Fintech",
     duration: "10 months",
-    description: "AI-driven personal finance management platform for individual users"
-  }
+    description:
+      "AI-driven personal finance management platform for individual users",
+  },
 ];
 
 interface RelatedCaseStudiesProps {
@@ -61,16 +68,18 @@ interface RelatedCaseStudiesProps {
   className?: string;
 }
 
-export default function RelatedCaseStudies({ 
-  currentCaseStudyId, 
+export default function RelatedCaseStudies({
+  currentCaseStudyId,
   maxItems = 3,
-  className = ""
+  className = "",
 }: RelatedCaseStudiesProps) {
-  const currentCase = allCaseStudies.find(cs => cs.id === currentCaseStudyId);
-  
+  const currentCase = allCaseStudies.find((cs) => cs.id === currentCaseStudyId);
+
   // Filter out current case study and prioritize same category
-  const otherCaseStudies = allCaseStudies.filter(cs => cs.id !== currentCaseStudyId);
-  
+  const otherCaseStudies = allCaseStudies.filter(
+    (cs) => cs.id !== currentCaseStudyId,
+  );
+
   // Sort by same category first, then by others
   const sortedCaseStudies = otherCaseStudies.sort((a, b) => {
     const currentCategory = currentCase?.category || "";
@@ -128,7 +137,7 @@ export default function RelatedCaseStudies({
               <h3 className="text-lg sm:text-xl font-medium text-[#131417] leading-[120%] tracking-[-0.2px] mb-2 transition-all duration-300 group-hover:tracking-[-0.1px]">
                 {caseStudy.title}
               </h3>
-              
+
               <p className="text-sm sm:text-base text-[#9FA0A3] leading-[120%] tracking-[-0.14px] mb-4 transition-all duration-300 group-hover:text-[#131417]">
                 {caseStudy.subtitle}
               </p>
