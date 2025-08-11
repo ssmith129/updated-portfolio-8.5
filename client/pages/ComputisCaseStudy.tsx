@@ -1111,22 +1111,12 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 <p className="text-sm text-green-600 font-medium">
                   → Reduced ingestion errors, freed analysts from manual triage
                 </p>
-                <div
-                  className="relative mt-5 group cursor-pointer"
-                  onClick={() =>
-                    setEnlargedImage({
-                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c61e887b42d4a24a166e3e99fc084a0",
-                      alt: "Smart Wallet Upload",
-                    })
-                  }
-                >
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c61e887b42d4a24a166e3e99fc084a0"
-                    className="w-full aspect-[1.17] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
-                    alt="Smart Wallet Upload"
-                  />
-                </div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c61e887b42d4a24a166e3e99fc084a0"
+                  className="w-full aspect-[1.17] object-contain object-center min-h-5 min-w-5 overflow-hidden mt-5"
+                  alt="Smart Wallet Upload"
+                />
               </div>
             </div>
 
@@ -1141,22 +1131,12 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 <p className="text-sm text-green-600 font-medium">
                   → Built trust, increased classification speed by 60%
                 </p>
-                <div
-                  className="relative mt-5 group cursor-pointer"
-                  onClick={() =>
-                    setEnlargedImage({
-                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fbdb57e2882e64f629c7174df0e398e38",
-                      alt: "AI Suggestions + Override",
-                    })
-                  }
-                >
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fbdb57e2882e64f629c7174df0e398e38"
-                    className="w-full aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
-                    alt="AI Suggestions + Override"
-                  />
-                </div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fbdb57e2882e64f629c7174df0e398e38"
+                  className="w-full aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden mt-5"
+                  alt="AI Suggestions + Override"
+                />
               </div>
             </div>
 
