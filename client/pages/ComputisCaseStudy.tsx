@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import Navigation, { SkipLink } from "../components/Navigation";
+import { SkipLink } from "../components/Navigation";
 import Breadcrumbs, { generateBreadcrumbs } from "../components/Breadcrumbs";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
@@ -12,7 +12,6 @@ export default function ComputisCaseStudy() {
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       <SkipLink />
-      <Navigation />
 
       {/* Breadcrumbs and Back Button */}
       <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 space-y-4 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
