@@ -131,6 +131,14 @@ export default function ComputisCaseStudy() {
         </div>
       </header>
 
+      {/* Hero Image */}
+      <img
+        loading="lazy"
+        srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a"
+        className="w-full aspect-[1.85] object-cover object-center mt-5 min-h-5 min-w-5 overflow-hidden max-w-[1357px]"
+        alt="Computis Platform Overview"
+      />
+
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
         {/* Executive Summary */}
@@ -996,7 +1004,7 @@ export default function ComputisCaseStudy() {
                     </td>
                     <td className="py-4 px-4 text-center">
                       <span className="inline-flex items-center justify-center w-6 h-6 bg-red-100 text-red-600 rounded-full">
-                        ��
+                        ✗
                       </span>
                     </td>
                   </tr>
