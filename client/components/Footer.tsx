@@ -203,8 +203,8 @@ export default function Footer({ className = "" }: FooterProps) {
           <div className="order-1 lg:order-2">
             <nav aria-label="Legal links">
               <ul className="flex flex-wrap justify-center gap-6 lg:gap-8">
-                {legalLinks.map((link) => (
-                  <li key={link.href}>
+                {legalLinks.map((link, index) => (
+                  <li key={`${link.label}-${index}`}>
                     <a
                       href={link.href}
                       className="text-xs sm:text-sm text-[#9FA0A3] hover:text-white font-medium leading-[18px] tracking-[-0.14px] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-md px-1 py-0.5"
