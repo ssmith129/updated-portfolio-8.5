@@ -542,7 +542,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="bg-green-50 rounded-[20px] p-6 border border-green-200">
+            <div className="bg-green-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
               <h3 className="text-lg font-medium text-green-800 mb-4">
                 Feature Outcomes from Research
               </h3>
