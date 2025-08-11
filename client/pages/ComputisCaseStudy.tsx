@@ -1115,7 +1115,7 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                   className="relative mt-5 group cursor-pointer"
                   onClick={() =>
                     setEnlargedImage({
-                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5d15cb6bf471422a997024518aeb607b",
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c61e887b42d4a24a166e3e99fc084a0",
                       alt: "Smart Wallet Upload",
                     })
                   }
