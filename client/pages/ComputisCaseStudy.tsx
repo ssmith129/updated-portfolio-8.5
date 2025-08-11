@@ -1175,7 +1175,7 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                   className="relative mt-5 group cursor-pointer"
                   onClick={() =>
                     setEnlargedImage({
-                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F716cbd6dbd754d8b87b94426b7431fed",
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F82c089e277614fbeaf18ed687002142f",
                       alt: "Visual Rule Builder",
                     })
                   }
