@@ -447,7 +447,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="border-l-4 border-orange-500 pl-6 mt-6 transition-all duration-300 hover:bg-orange-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
-                <h4 className="font-semibold text-[#131417] mb-2 text-lg">
+                <h4 className="font-semibold text-[#131417] mb-2 text-lg transition-colors duration-300 group-hover:text-orange-600">
                   Validate
                 </h4>
                 <p className="text-[#4a4a4a]">
@@ -1037,7 +1037,7 @@ export default function ComputisCaseStudy() {
                     </td>
                     <td className="py-4 px-4 text-center">
                       <span className="inline-flex items-center justify-center w-6 h-6 bg-red-100 text-red-600 rounded-full">
-                        ✗
+                        ��
                       </span>
                     </td>
                   </tr>
