@@ -140,7 +140,7 @@ export default function ComputisCaseStudy() {
       {/* Hero Image */}
       <img
         loading="lazy"
-src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa25b385f35f4ff9abcdbb6c182d1367"
+        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa25b385f35f4ff9abcdbb6c182d1367"
         className="w-full aspect-[1.85] object-cover object-center min-h-0 min-w-5 overflow-hidden rounded-lg h-auto flex-grow-0"
         alt="Computis Platform Overview"
       />
