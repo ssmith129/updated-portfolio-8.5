@@ -242,29 +242,27 @@ export default function ComputisCaseStudy() {
               Design Process
             </h2>
             
-            <div className="mb-8">
-              <h3 className="text-2xl font-normal text-[#9013fe] mb-4 pb-4">Discovery → Define → Design → Validate → Deliver</h3>
-            </div>
+            <div className="mb-8" />
 
             <div className="space-y-6">
               <div className="border-l-4 border-blue-500 pl-6">
-                <h4 className="font-semibold text-[#131417] mb-2">Discovery</h4>
+                <h4 className="font-semibold text-[#131417] mb-2 text-lg">Discovery</h4>
                 <p className="text-[#4a4a4a]">1:1 CPA interviews, workflow shadowing, analytics review, competitive teardown (TaxBit, Cryptio, CoinTracker)</p>
               </div>
               <div className="border-l-4 border-green-500 pl-6 mt-6">
-                <h4 className="font-semibold text-[#131417] mb-2">Define</h4>
+                <h4 className="font-semibold text-[#131417] mb-2 text-lg">Define</h4>
                 <p className="text-[#4a4a4a]">Personas, journey maps, service blueprints, modular IA (Clients → Wallets → Transactions → Rules → Reports → Exports)</p>
               </div>
               <div className="border-l-4 border-purple-500 pl-6 mt-6">
-                <h4 className="font-semibold text-[#131417] mb-2">Design</h4>
+                <h4 className="font-semibold text-[#131417] mb-2 text-lg">Design</h4>
                 <p className="text-[#4a4a4a]">30+ responsive screens, variant-driven component library, WCAG 2.1 AA compliance, AI + anomaly UI patterns</p>
               </div>
               <div className="border-l-4 border-orange-500 pl-6 mt-6">
-                <h4 className="font-semibold text-[#131417] mb-2">Validate</h4>
+                <h4 className="font-semibold text-[#131417] mb-2 text-lg">Validate</h4>
                 <p className="text-[#4a4a4a]">Usability tests with CPAs & analysts, Maze heatmaps, microcopy refinements for trust-building</p>
               </div>
               <div className="border-l-4 border-red-500 pl-6 mt-6">
-                <h4 className="font-semibold text-[#131417] mb-2">Deliver</h4>
+                <h4 className="font-semibold text-[#131417] mb-2 text-lg">Deliver</h4>
                 <p className="text-[#4a4a4a]">Annotated Figma specs, dev story links in Jira, QA checklists, responsive testing, accessibility validation</p>
               </div>
             </div>
