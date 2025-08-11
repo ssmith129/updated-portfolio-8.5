@@ -1145,7 +1145,7 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                   className="relative mt-5 group cursor-pointer"
                   onClick={() =>
                     setEnlargedImage({
-                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F72f9dfdb999c492192c2505917138ad5",
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fbdb57e2882e64f629c7174df0e398e38",
                       alt: "AI Suggestions + Override",
                     })
                   }
