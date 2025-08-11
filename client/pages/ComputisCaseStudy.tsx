@@ -141,7 +141,7 @@ export default function ComputisCaseStudy() {
       <img
         loading="lazy"
         srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a"
-        className="w-full aspect-[1.85] object-cover object-center mt-5 min-h-5 min-w-5 overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer rounded-lg"
+        className="w-full aspect-[1.85] object-cover object-center mt-5 min-h-0 min-w-5 overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer rounded-lg h-auto flex-grow-0"
         alt="Computis Platform Overview"
       />
 
