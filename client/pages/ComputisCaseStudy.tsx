@@ -455,7 +455,7 @@ export default function ComputisCaseStudy() {
                   refinements for trust-building
                 </p>
               </div>
-              <div className="border-l-4 border-red-500 pl-6 mt-6">
+              <div className="border-l-4 border-red-500 pl-6 mt-6 transition-all duration-300 hover:bg-red-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
                 <h4 className="font-semibold text-[#131417] mb-2 text-lg">
                   Deliver
                 </h4>
