@@ -793,12 +793,23 @@ export default function ComputisCaseStudy() {
               <h3 className="text-lg font-medium text-[#131417] mb-3">Audit-Ready Exports</h3>
               <p className="text-[#9FA0A3] text-sm mb-3">IRS 8949, QBO, CSV with embedded audit logs</p>
               <p className="text-sm text-green-600 font-medium">→ Cut reporting prep time by 45%</p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521"
-                className="w-full mt-5 aspect-[0.78] object-contain object-center min-h-5 min-w-5 overflow-hidden"
-                alt="Audit-Ready Exports"
-              />
+              <div
+                className="relative group cursor-pointer mt-5"
+                onClick={() => setEnlargedImage({
+                  src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=2000",
+                  alt: "Audit-Ready Exports"
+                })}
+              >
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521"
+                  className="w-full aspect-[0.78] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                  alt="Audit-Ready Exports"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                  <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
             </div>
 
             <div className="flex flex-col">
