@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, CheckCircle, TrendingUp, Users, Clock, Target, X, ZoomIn } from "lucide-react";
+import { ArrowLeft, CheckCircle, TrendingUp, Users, Clock, Target, X } from "lucide-react";
 import { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 
 export default function ComputisCaseStudy() {
-  const [enlargedImage, setEnlargedImage] = useState<{src: string, alt: string} | null>(null);
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
@@ -907,29 +906,6 @@ export default function ComputisCaseStudy() {
 
       <Footer />
 
-      {/* Image Modal Overlay */}
-      {enlargedImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
-          onClick={() => setEnlargedImage(null)}
-        >
-          <div className="relative max-w-[90vw] max-h-[90vh] w-full h-full flex items-center justify-center">
-            <button
-              onClick={() => setEnlargedImage(null)}
-              className="absolute top-4 right-4 z-60 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 transition-all duration-200"
-              aria-label="Close enlarged image"
-            >
-              <X className="w-6 h-6" />
-            </button>
-            <img
-              src={enlargedImage.src}
-              alt={enlargedImage.alt}
-              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 }
