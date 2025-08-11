@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Navigation, { SkipLink } from "../components/Navigation";
 
 const NotFound = () => {
   const location = useLocation();
