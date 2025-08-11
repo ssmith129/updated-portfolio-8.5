@@ -399,7 +399,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200">
+                <div style={{backgroundColor: '#fff7ed'}} className="p-4 rounded-[16px] border border-green-200">
                   <h4 className="text-sm font-medium text-green-800 mb-2">Needs</h4>
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>• Diagnostics for quick error resolution</li>
@@ -408,7 +408,7 @@ export default function ComputisCaseStudy() {
                   </ul>
                 </div>
 
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200">
+                <div style={{backgroundColor: '#fef2f2'}} className="p-4 rounded-[16px] border border-red-200">
                   <h4 className="text-sm font-medium text-red-800 mb-2">Pain Points</h4>
                   <p className="text-sm text-red-700">Manual fixes with no traceability, FMV gaps causing delays in processing</p>
                 </div>
