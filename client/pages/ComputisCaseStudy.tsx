@@ -1111,12 +1111,25 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 <p className="text-sm text-green-600 font-medium">
                   → Reduced ingestion errors, freed analysts from manual triage
                 </p>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c61e887b42d4a24a166e3e99fc084a0"
-                  className="w-full aspect-[1.17] object-contain object-center min-h-5 min-w-5 overflow-hidden mt-5"
-                  alt="Smart Wallet Upload"
-                />
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c61e887b42d4a24a166e3e99fc084a0",
+                      alt: "Smart Wallet Upload",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c61e887b42d4a24a166e3e99fc084a0"
+                    className="w-full aspect-[1.17] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="Smart Wallet Upload"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1131,12 +1144,25 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 <p className="text-sm text-green-600 font-medium">
                   → Built trust, increased classification speed by 60%
                 </p>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fbdb57e2882e64f629c7174df0e398e38"
-                  className="w-full aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden mt-5"
-                  alt="AI Suggestions + Override"
-                />
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fbdb57e2882e64f629c7174df0e398e38",
+                      alt: "AI Suggestions + Override",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fbdb57e2882e64f629c7174df0e398e38"
+                    className="w-full aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="AI Suggestions + Override"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
               </div>
             </div>
 
