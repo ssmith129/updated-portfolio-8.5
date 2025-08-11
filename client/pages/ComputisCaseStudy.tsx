@@ -587,7 +587,7 @@ export default function ComputisCaseStudy() {
                   style={{ backgroundColor: "#fef2f2" }}
                   className="p-4 rounded-[16px] border border-red-200"
                 >
-                  <h4 className="text-sm font-medium text-red-800 mb-2">
+                  <h4 className="text-sm font-semibold text-red-800 mb-2">
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
