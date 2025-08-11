@@ -1134,7 +1134,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="flex flex-col">
-              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm">
                 <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
                   AI Suggestions + Override
                 </h3>
@@ -1167,7 +1167,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="flex flex-col">
-              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm">
                 <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
                   Visual Rule Builder
                 </h3>
@@ -1200,7 +1200,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="flex flex-col">
-              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm">
                 <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
                   FMV Dashboard & Anomaly Detection
                 </h3>
