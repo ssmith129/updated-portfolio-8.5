@@ -610,7 +610,7 @@ export default function ComputisCaseStudy() {
             <div className="space-y-12">
               {/* David's Journey */}
               <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6 flex items-center gap-3">
+                <h3 className="text-xl font-medium text-[#131417] mb-8 flex items-center gap-3">
                   <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                     <span className="text-sm font-medium text-blue-600">D</span>
                   </div>
