@@ -726,7 +726,7 @@ export default function ComputisCaseStudy() {
               <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
                 <h3 className="text-lg font-medium text-[#131417] mb-3">AI Suggestions + Override</h3>
                 <p className="text-[#9FA0A3] text-sm mb-3">Confidence badges with tooltips</p>
-                <p className="text-sm text-green-600 font-medium">��� Built trust, increased classification speed by 60%</p>
+                <p className="text-sm text-green-600 font-medium">→ Built trust, increased classification speed by 60%</p>
                 <div
                   className="relative group cursor-pointer mt-5"
                   onClick={() => setEnlargedImage({
@@ -805,7 +805,14 @@ export default function ComputisCaseStudy() {
                     className="w-full aspect-[0.74] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
                     alt="FMV Dashboard & Anomaly Detection"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                  <div
+                    className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center"
+                    style={{
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "center",
+                      backgroundSize: "cover"
+                    }}
+                  >
                     <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                 </div>
