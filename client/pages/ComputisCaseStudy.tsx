@@ -365,7 +365,7 @@ export default function ComputisCaseStudy() {
 
         {/* Design Principles */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
-          <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] cursor-pointer">
+          <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-6">
               Design Principles & North Star
             </h2>
@@ -1358,7 +1358,7 @@ export default function ComputisCaseStudy() {
                   "AI suggestions cut our triage work in half, and I still
                   feel in control."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — CPA Stakeholder
+                      �� CPA Stakeholder
                     </cite>
                   </blockquote>
 
