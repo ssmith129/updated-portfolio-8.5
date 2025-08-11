@@ -727,6 +727,12 @@ export default function ComputisCaseStudy() {
               <h3 className="text-lg font-medium text-[#131417] mb-3">FMV Dashboard & Anomaly Detection</h3>
               <p className="text-[#9FA0A3] text-sm mb-3">Severity flags & hover explanations</p>
               <p className="text-sm text-green-600 font-medium">→ Increased anomaly coverage by 150%</p>
+              <img
+                loading="lazy"
+                srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
+                className="w-full mt-5 aspect-[1.42] object-cover object-center min-h-5 min-w-5 overflow-hidden"
+                alt="FMV Dashboard & Anomaly Detection"
+              />
             </div>
             
             <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
