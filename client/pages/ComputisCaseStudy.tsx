@@ -672,7 +672,7 @@ export default function ComputisCaseStudy() {
               <div className="space-y-4">
                 <div
                   style={{ backgroundColor: "#fff7ed" }}
-                  className="p-4 rounded-[16px] border border-green-200"
+                  className="p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer"
                 >
                   <h4 className="text-sm font-semibold text-green-800 mb-2">
                     Needs
@@ -686,7 +686,7 @@ export default function ComputisCaseStudy() {
 
                 <div
                   style={{ backgroundColor: "#fef2f2" }}
-                  className="p-4 rounded-[16px] border border-red-200"
+                  className="p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer"
                 >
                   <h4 className="text-sm font-semibold text-red-800 mb-2">
                     Pain Points
