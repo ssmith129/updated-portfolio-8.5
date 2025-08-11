@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, CheckCircle, TrendingUp, Users, Clock, Target, X } from "lucide-react";
+import { ArrowLeft, CheckCircle, TrendingUp, Users, Clock, Target, X, ZoomIn } from "lucide-react";
 import { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
