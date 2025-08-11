@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import Navigation, { SkipLink } from "../components/Navigation";
 
 export default function MoneyFarmCaseStudy() {
   return (
