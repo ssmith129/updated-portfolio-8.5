@@ -14,6 +14,59 @@ import { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 
+// Custom hook for counting animation
+const useCountAnimation = (end: number, duration: number = 2000, startAnimation: boolean = false) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!startAnimation) return;
+
+    let startTime: number;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+
+      // Easing function for smooth animation
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      const currentCount = Math.floor(easeOut * end);
+
+      setCount(currentCount);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        setCount(end);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [end, duration, startAnimation]);
+
+  return count;
+};
+
+// Animated Counter Component
+const AnimatedCounter = ({
+  value,
+  suffix = "%",
+  className,
+  startAnimation
+}: {
+  value: number;
+  suffix?: string;
+  className: string;
+  startAnimation: boolean;
+}) => {
+  const animatedValue = useCountAnimation(value, 2000, startAnimation);
+
+  return (
+    <div className={className}>
+      {animatedValue}{suffix}
+    </div>
+  );
+};
+
 export default function ComputisCaseStudy() {
   const [enlargedImage, setEnlargedImage] = useState<{
     src: string;
