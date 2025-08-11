@@ -94,7 +94,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="text-center">
                   <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">32%</div>
-                  <p className="text-sm text-[#9FA0A3]">↑ demo-to-conversion rate</p>
+                  <p className="text-sm text-[#9FA0A3]">��� demo-to-conversion rate</p>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">85%</div>
@@ -719,12 +719,23 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-lg font-medium text-[#131417] mb-3">AI Suggestions + Override</h3>
                 <p className="text-[#9FA0A3] text-sm mb-3">Confidence badges with tooltips</p>
                 <p className="text-sm text-green-600 font-medium">→ Built trust, increased classification speed by 60%</p>
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a"
-                  className="w-full mt-5 aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden"
-                  alt="AI Suggestions + Override"
-                />
+                <div
+                  className="relative group cursor-pointer mt-5"
+                  onClick={() => setEnlargedImage({
+                    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=2000",
+                    alt: "AI Suggestions + Override"
+                  })}
+                >
+                  <img
+                    loading="lazy"
+                    srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a"
+                    className="w-full aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="AI Suggestions + Override"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
               </div>
             </div>
 
