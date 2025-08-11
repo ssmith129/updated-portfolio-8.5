@@ -72,6 +72,8 @@ export default function ComputisCaseStudy() {
     src: string;
     alt: string;
   } | null>(null);
+  const [startMetricsAnimation, setStartMetricsAnimation] = useState(false);
+  const metricsRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
