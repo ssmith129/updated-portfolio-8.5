@@ -1,10 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, CheckCircle, TrendingUp, Users, Clock, Target } from "lucide-react";
+import { ArrowLeft, CheckCircle, TrendingUp, Users, Clock, Target, X, ZoomIn } from "lucide-react";
 import { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 
 export default function ComputisCaseStudy() {
+  const [enlargedImage, setEnlargedImage] = useState<{src: string, alt: string} | null>(null);
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
