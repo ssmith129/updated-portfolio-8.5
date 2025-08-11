@@ -1101,10 +1101,10 @@ export default function ComputisCaseStudy() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col">
-              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-lg font-medium text-[#131417] mb-3">
-                  Smart Wallet Upload
-                </h3>
+              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
+              Smart Wallet Upload
+            </h3>
                 <p className="text-[#9FA0A3] text-sm mb-3">
                   Error diagnostics & schema preview
                 </p>
@@ -1346,25 +1346,25 @@ export default function ComputisCaseStudy() {
                   Qualitative Feedback
                 </h3>
                 <div className="space-y-4">
-                  <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic">
-                    "It finally feels like a product we can sell to
-                    institutions."
+                  <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                  "It finally feels like a product we can sell to
+                  institutions."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Product Owner
                     </cite>
                   </blockquote>
 
-                  <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic">
-                    "AI suggestions cut our triage work in half, and I still
-                    feel in control."
+                  <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                  "AI suggestions cut our triage work in half, and I still
+                  feel in control."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — CPA Stakeholder
                     </cite>
                   </blockquote>
 
-                  <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-[16px] italic">
-                    "The clarity of your design handoff made engineering 10x
-                    faster."
+                  <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                  "The clarity of your design handoff made engineering 10x
+                  faster."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Lead Frontend Developer
                     </cite>
