@@ -1,0 +1,209 @@
+{
+  "sitemap": {
+    "created": "2024-01-15",
+    "lastModified": "2024-01-15",
+    "pages": [
+      {
+        "url": "/",
+        "title": "Sean Smith - UX/Product Designer Portfolio",
+        "description": "Senior UX/Product Designer with 6+ years creating intuitive, scalable experiences for AI-integrated SaaS platforms",
+        "keywords": ["UX designer", "product designer", "AI integration", "SaaS design", "San Francisco"],
+        "lastModified": "2024-01-15",
+        "changeFrequency": "monthly",
+        "priority": 1.0,
+        "internalLinks": [
+          "/case-studies",
+          "/about",
+          "/case-studies/computis-crypto-tax-engine",
+          "/case-studies/ezemrx-redesigning-ehr",
+          "/case-studies/medico-hospital-management-system",
+          "/case-studies/moneyfarm-ai-powered-personal-finance"
+        ],
+        "externalLinks": [
+          "https://www.behance.net/ssmit129",
+          "https://github.com/ssmith129",
+          "https://www.linkedin.com/in/sean-smith-sf/"
+        ]
+      },
+      {
+        "url": "/about",
+        "title": "About Sean Smith - Senior UX/Product Designer",
+        "description": "Learn about Sean Smith's 6+ years of experience in UX design, AI integration, and SaaS platform development",
+        "keywords": ["UX designer background", "product design experience", "AI-integrated systems", "design process"],
+        "lastModified": "2024-01-15",
+        "changeFrequency": "quarterly",
+        "priority": 0.8,
+        "internalLinks": [
+          "/",
+          "/case-studies"
+        ],
+        "sections": [
+          "Professional Summary",
+          "Work Experience",
+          "Education",
+          "Skills & Expertise",
+          "Design Approach"
+        ]
+      },
+      {
+        "url": "/case-studies",
+        "title": "UX Design Case Studies - Sean Smith Portfolio",
+        "description": "Explore detailed UX design case studies from crypto, fintech, and healthcare platforms",
+        "keywords": ["UX case studies", "design portfolio", "crypto UX", "fintech design", "healthcare UX"],
+        "lastModified": "2024-01-15",
+        "changeFrequency": "monthly",
+        "priority": 0.9,
+        "internalLinks": [
+          "/",
+          "/about",
+          "/case-studies/computis-crypto-tax-engine",
+          "/case-studies/ezemrx-redesigning-ehr",
+          "/case-studies/medico-hospital-management-system",
+          "/case-studies/moneyfarm-ai-powered-personal-finance"
+        ]
+      },
+      {
+        "url": "/case-studies/computis-crypto-tax-engine",
+        "title": "Computis Case Study - Crypto Tax Engine UX Design",
+        "description": "Enterprise crypto tax automation platform design - transforming backend scripts into CPA-first SaaS",
+        "keywords": ["crypto tax UX", "fintech design", "enterprise SaaS", "AI integration", "tax automation"],
+        "lastModified": "2024-01-15",
+        "changeFrequency": "rarely",
+        "priority": 0.7,
+        "category": "fintech",
+        "industry": "cryptocurrency",
+        "duration": "12 months",
+        "internalLinks": [
+          "/",
+          "/case-studies",
+          "/about",
+          "/case-studies/ezemrx-redesigning-ehr",
+          "/case-studies/moneyfarm-ai-powered-personal-finance"
+        ],
+        "sections": [
+          "Project Overview",
+          "User Research",
+          "Problem Definition",
+          "User Journey Mapping",
+          "Ideation & Concepting",
+          "Wireframes & Prototyping",
+          "Final Designs & Outcome"
+        ],
+        "outcomes": {
+          "onboardingTimeReduction": "45%",
+          "bounceRateReduction": "18%",
+          "conversionIncrease": "32%",
+          "devDependencyReduction": "85%"
+        }
+      },
+      {
+        "url": "/case-studies/ezemrx-redesigning-ehr",
+        "title": "ezEMRx Case Study - EHR System Redesign for Public Health",
+        "description": "Electronic health records system redesign focused on public health organizations and workflow optimization",
+        "keywords": ["EHR design", "healthcare UX", "public health", "medical software", "workflow optimization"],
+        "lastModified": "2024-01-15",
+        "changeFrequency": "rarely",
+        "priority": 0.7,
+        "category": "healthcare",
+        "industry": "healthcare",
+        "duration": "8 months",
+        "internalLinks": [
+          "/",
+          "/case-studies",
+          "/about",
+          "/case-studies/computis-crypto-tax-engine",
+          "/case-studies/medico-hospital-management-system"
+        ]
+      },
+      {
+        "url": "/case-studies/medico-hospital-management-system",
+        "title": "Medico Case Study - Hospital Management System UX Design",
+        "description": "Comprehensive hospital management platform design for healthcare providers and administrative staff",
+        "keywords": ["hospital management UX", "healthcare design", "medical administration", "healthcare platform"],
+        "lastModified": "2024-01-15",
+        "changeFrequency": "rarely",
+        "priority": 0.7,
+        "category": "healthcare",
+        "industry": "healthcare",
+        "duration": "6 months",
+        "internalLinks": [
+          "/",
+          "/case-studies",
+          "/about",
+          "/case-studies/ezemrx-redesigning-ehr"
+        ]
+      },
+      {
+        "url": "/case-studies/moneyfarm-ai-powered-personal-finance",
+        "title": "MoneyFarm Case Study - AI-Powered Personal Finance Platform",
+        "description": "AI-driven personal finance management platform design focusing on user-friendly financial planning",
+        "keywords": ["fintech UX", "AI finance", "personal finance app", "financial planning UX", "AI-powered design"],
+        "lastModified": "2024-01-15",
+        "changeFrequency": "rarely",
+        "priority": 0.7,
+        "category": "fintech",
+        "industry": "financial technology",
+        "duration": "10 months",
+        "internalLinks": [
+          "/",
+          "/case-studies",
+          "/about",
+          "/case-studies/computis-crypto-tax-engine"
+        ]
+      }
+    ],
+    "internalLinkingStrategy": {
+      "primaryNavigation": [
+        {"label": "Home", "url": "/", "description": "Portfolio homepage"},
+        {"label": "Case Studies", "url": "/case-studies", "description": "UX design projects"},
+        {"label": "About", "url": "/about", "description": "Professional background"}
+      ],
+      "breadcrumbStrategy": {
+        "enabled": true,
+        "schemaMarkup": true,
+        "autoGeneration": true
+      },
+      "relatedContentStrategy": {
+        "byCategory": ["fintech", "healthcare"],
+        "byIndustry": ["cryptocurrency", "healthcare", "financial technology"],
+        "maxRelatedItems": 3
+      },
+      "anchorTextVariations": {
+        "primary": [
+          "UX design case studies",
+          "product designer portfolio",
+          "AI-integrated systems design"
+        ],
+        "secondary": [
+          "crypto tax platform design",
+          "healthcare UX projects",
+          "fintech design work"
+        ],
+        "branded": [
+          "Sean Smith's portfolio",
+          "Sean's UX work",
+          "design projects by Sean"
+        ]
+      }
+    },
+    "seoOptimization": {
+      "titlePatterns": {
+        "homepage": "[Name] - [Role] Portfolio",
+        "about": "About [Name] - [Role]",
+        "caseStudies": "[Project] Case Study - [Category] UX Design",
+        "listing": "UX Design Case Studies - [Name] Portfolio"
+      },
+      "metaDescriptionPatterns": {
+        "homepage": "[Role] with [Experience] creating [Specialization] for [Industry]",
+        "about": "Learn about [Name]'s [Experience] in [Specialization]",
+        "caseStudies": "[Project description] - [Outcome metrics]",
+        "listing": "Explore detailed UX design case studies from [Industries]"
+      },
+      "keywordStrategy": {
+        "primary": ["UX designer", "product designer", "AI integration"],
+        "secondary": ["SaaS design", "fintech UX", "healthcare design"],
+        "longtail": ["crypto tax platform UX", "EHR system redesign", "AI-powered finance app"]
+      }
+    }
+  }
+}
