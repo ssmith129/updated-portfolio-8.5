@@ -694,12 +694,23 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-lg font-medium text-[#131417] mb-3">Smart Wallet Upload</h3>
                 <p className="text-[#9FA0A3] text-sm mb-3">Error diagnostics & schema preview</p>
                 <p className="text-sm text-green-600 font-medium">→ Reduced ingestion errors, freed analysts from manual triage</p>
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad"
-                  className="w-full mt-5 aspect-[1.17] object-contain object-center min-h-5 min-w-5 overflow-hidden"
-                  alt="Smart Wallet Upload"
-                />
+                <div
+                  className="relative group cursor-pointer mt-5"
+                  onClick={() => setEnlargedImage({
+                    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=2000",
+                    alt: "Smart Wallet Upload"
+                  })}
+                >
+                  <img
+                    loading="lazy"
+                    srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad"
+                    className="w-full aspect-[1.17] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="Smart Wallet Upload"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
               </div>
             </div>
 
