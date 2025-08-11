@@ -125,13 +125,13 @@ export default function ComputisCaseStudy() {
       {/* Hero Section */}
       <header className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
         <div className="mb-8">
-          <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[20px] text-[14px] font-medium tracking-[-0.14px] mb-6 transition-all duration-300 hover:scale-105 hover:bg-gray-800 cursor-pointer">
+          <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[20px] text-[14px] font-medium tracking-[-0.14px] mb-6">
             Product Design Case Study
           </span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#131417] leading-[110%] tracking-[-1.2px] mb-6 transition-all duration-500 hover:text-blue-600 cursor-pointer">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#131417] leading-[110%] tracking-[-1.2px] mb-6">
             Computis – Crypto Tax Engine
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px] transition-all duration-300 hover:text-[#131417] hover:scale-105 cursor-pointer">
+          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px]">
             From Dev-Only Script to Scalable, CPA-First SaaS Platform
           </p>
         </div>
