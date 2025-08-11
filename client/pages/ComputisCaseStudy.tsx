@@ -318,7 +318,7 @@ export default function ComputisCaseStudy() {
 
         {/* Problem Statement */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.01] cursor-pointer">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               Problem & Opportunity
             </h2>
@@ -1358,7 +1358,7 @@ export default function ComputisCaseStudy() {
                   "AI suggestions cut our triage work in half, and I still
                   feel in control."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      �� CPA Stakeholder
+                      — CPA Stakeholder
                     </cite>
                   </blockquote>
 
