@@ -75,6 +75,31 @@ export default function ComputisCaseStudy() {
   const [startMetricsAnimation, setStartMetricsAnimation] = useState(false);
   const metricsRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting && !startMetricsAnimation) {
+          setStartMetricsAnimation(true);
+        }
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the element is visible
+        rootMargin: '0px 0px -50px 0px' // Start animation a bit before element is fully visible
+      }
+    );
+
+    if (metricsRef.current) {
+      observer.observe(metricsRef.current);
+    }
+
+    return () => {
+      if (metricsRef.current) {
+        observer.unobserve(metricsRef.current);
+      }
+    };
+  }, [startMetricsAnimation]);
+
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       <SkipLink />
