@@ -232,9 +232,11 @@ export default function ComputisCaseStudy() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1">
-                    18%
-                  </div>
+                  <AnimatedCounter
+                    value={18}
+                    className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
                   <p className="text-sm text-[#9FA0A3]">↓ bounce rate</p>
                 </div>
                 <div className="text-center">
@@ -665,7 +667,7 @@ export default function ComputisCaseStudy() {
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>• Diagnostics for quick error resolution</li>
                     <li>• Anomaly detection for quality assurance</li>
-                    <li>��� Tagging workflows for organization</li>
+                    <li>• Tagging workflows for organization</li>
                   </ul>
                 </div>
 
@@ -1064,7 +1066,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-4 h-4 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-xs">
-                    ��
+                    ✗
                   </span>
                   <span className="text-[#9FA0A3]">No Support</span>
                 </div>
