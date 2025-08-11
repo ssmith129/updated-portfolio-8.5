@@ -573,7 +573,7 @@ export default function ComputisCaseStudy() {
                   style={{ backgroundColor: "#fff7ed" }}
                   className="p-4 rounded-[16px] border border-green-200"
                 >
-                  <h4 className="text-sm font-medium text-green-800 mb-2">
+                  <h4 className="text-sm font-semibold text-green-800 mb-2">
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
