@@ -687,76 +687,86 @@ export default function ComputisCaseStudy() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <h3 className="text-lg font-medium text-[#131417] mb-3">Smart Wallet Upload</h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">Error diagnostics & schema preview</p>
-              <p className="text-sm text-green-600 font-medium">→ Reduced ingestion errors, freed analysts from manual triage</p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
-                className="w-full mt-5 aspect-[1.42] object-contain object-center min-h-[55px] min-w-5 overflow-hidden"
-                alt="Smart Wallet Upload"
-              />
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-lg font-medium text-[#131417] mb-3">Smart Wallet Upload</h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">Error diagnostics & schema preview</p>
+                <p className="text-sm text-green-600 font-medium">→ Reduced ingestion errors, freed analysts from manual triage</p>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4998981e281b4d759adf901106718cad"
+                  className="w-full mt-5 aspect-[1.17] object-contain object-center min-h-5 min-w-5 overflow-hidden"
+                  alt="Smart Wallet Upload"
+                />
+              </div>
             </div>
-            
-            <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <h3 className="text-lg font-medium text-[#131417] mb-3">AI Suggestions + Override</h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">Confidence badges with tooltips</p>
-              <p className="text-sm text-green-600 font-medium">→ Built trust, increased classification speed by 60%</p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
-                className="w-full mt-5 aspect-[1.42] object-cover object-center min-h-5 min-w-5 overflow-hidden"
-                alt="AI Suggestions + Override"
-              />
+
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-lg font-medium text-[#131417] mb-3">AI Suggestions + Override</h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">Confidence badges with tooltips</p>
+                <p className="text-sm text-green-600 font-medium">→ Built trust, increased classification speed by 60%</p>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dad69805cd24aeb993d1a56bc1a6e4a"
+                  className="w-full mt-5 aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden"
+                  alt="AI Suggestions + Override"
+                />
+              </div>
             </div>
-            
-            <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <h3 className="text-lg font-medium text-[#131417] mb-3">Visual Rule Builder</h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">Before/after previews & real-time error flags</p>
-              <p className="text-sm text-green-600 font-medium">→ Enabled CPAs to self-manage classification logic</p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
-                className="w-full mt-5 aspect-[1.42] object-cover object-center min-h-5 min-w-5 overflow-hidden"
-                alt="Visual Rule Builder"
-              />
+
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-lg font-medium text-[#131417] mb-3">Visual Rule Builder</h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">Before/after previews & real-time error flags</p>
+                <p className="text-sm text-green-600 font-medium">→ Enabled CPAs to self-manage classification logic</p>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffe480aa1f3b241a3908740205edd8463?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffe480aa1f3b241a3908740205edd8463?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffe480aa1f3b241a3908740205edd8463?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffe480aa1f3b241a3908740205edd8463?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffe480aa1f3b241a3908740205edd8463?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffe480aa1f3b241a3908740205edd8463?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffe480aa1f3b241a3908740205edd8463?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffe480aa1f3b241a3908740205edd8463"
+                  className="w-full mt-5 aspect-[0.65] object-contain object-center min-h-5 min-w-5 overflow-hidden"
+                  alt="Visual Rule Builder"
+                />
+              </div>
             </div>
-            
-            <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <h3 className="text-lg font-medium text-[#131417] mb-3">FMV Dashboard & Anomaly Detection</h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">Severity flags & hover explanations</p>
-              <p className="text-sm text-green-600 font-medium">→ Increased anomaly coverage by 150%</p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
-                className="w-full mt-5 aspect-[1.42] object-cover object-center min-h-5 min-w-5 overflow-hidden"
-                alt="FMV Dashboard & Anomaly Detection"
-              />
+
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-lg font-medium text-[#131417] mb-3">FMV Dashboard & Anomaly Detection</h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">Severity flags & hover explanations</p>
+                <p className="text-sm text-green-600 font-medium">→ Increased anomaly coverage by 150%</p>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7a0a927023a04ee2b83854cb505411a6?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7a0a927023a04ee2b83854cb505411a6?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7a0a927023a04ee2b83854cb505411a6?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7a0a927023a04ee2b83854cb505411a6?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7a0a927023a04ee2b83854cb505411a6?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7a0a927023a04ee2b83854cb505411a6?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7a0a927023a04ee2b83854cb505411a6?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7a0a927023a04ee2b83854cb505411a6"
+                  className="w-full mt-5 aspect-[0.74] object-contain object-center min-h-5 min-w-5 overflow-hidden"
+                  alt="FMV Dashboard & Anomaly Detection"
+                />
+              </div>
             </div>
-            
+
             <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
               <h3 className="text-lg font-medium text-[#131417] mb-3">Audit-Ready Exports</h3>
               <p className="text-[#9FA0A3] text-sm mb-3">IRS 8949, QBO, CSV with embedded audit logs</p>
               <p className="text-sm text-green-600 font-medium">→ Cut reporting prep time by 45%</p>
               <img
                 loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
-                className="w-full mt-5 aspect-[1.42] object-cover object-center min-h-5 min-w-5 overflow-hidden"
+                srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe6129f7dd3c242c9889faf75ebd7d521"
+                className="w-full mt-5 aspect-[0.78] object-contain object-center min-h-5 min-w-5 overflow-hidden"
                 alt="Audit-Ready Exports"
               />
             </div>
-            
-            <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <h3 className="text-lg font-medium text-[#131417] mb-3">Role-Based Dashboards</h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">CPA, Analyst, Admin views with permissions</p>
-              <p className="text-sm text-green-600 font-medium">→ Improved workflow clarity & security</p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
-                className="w-full mt-5 aspect-[1.42] object-cover object-center min-h-5 min-w-5 overflow-hidden"
-                alt="Role-Based Dashboards"
-              />
+
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                <h3 className="text-lg font-medium text-[#131417] mb-3">Role-Based Dashboards</h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">CPA, Analyst, Admin views with permissions</p>
+                <p className="text-sm text-green-600 font-medium">→ Improved workflow clarity & security</p>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc"
+                  className="w-full mt-5 aspect-[0.72] object-contain object-center min-h-5 min-w-5 overflow-hidden"
+                  alt="Role-Based Dashboards"
+                />
+              </div>
             </div>
           </div>
         </section>
