@@ -855,7 +855,7 @@ export default function ComputisCaseStudy() {
                   Industry Trends
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3 p-4 bg-orange-50 rounded-[16px] border border-orange-200">
+                  <div className="flex items-start gap-3 p-4 bg-orange-50 rounded-[16px] border border-orange-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
                     <div>
                       <p className="font-medium text-orange-800 mb-1">
@@ -866,7 +866,7 @@ export default function ComputisCaseStudy() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 p-4 bg-blue-50 rounded-[16px] border border-blue-200">
+                  <div className="flex items-start gap-3 p-4 bg-blue-50 rounded-[16px] border border-blue-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <div>
                       <p className="font-medium text-blue-800 mb-1">
@@ -877,7 +877,7 @@ export default function ComputisCaseStudy() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 p-4 bg-green-50 rounded-[16px] border border-green-200">
+                  <div className="flex items-start gap-3 p-4 bg-green-50 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
                     <div>
                       <p className="font-medium text-green-800 mb-1">
