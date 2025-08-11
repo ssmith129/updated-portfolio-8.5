@@ -428,7 +428,7 @@ export default function ComputisCaseStudy() {
                   competitive teardown (TaxBit, Cryptio, CoinTracker)
                 </p>
               </div>
-              <div className="border-l-4 border-green-500 pl-6 mt-6">
+              <div className="border-l-4 border-green-500 pl-6 mt-6 transition-all duration-300 hover:bg-green-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
                 <h4 className="font-semibold text-[#131417] mb-2 text-lg">
                   Define
                 </h4>
