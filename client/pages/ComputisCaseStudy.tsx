@@ -1763,65 +1763,12 @@ export default function ComputisCaseStudy() {
         </section>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2900">
-        <div
-          className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] py-16"
-          style={{ paddingTop: "135px", paddingBottom: "134px" }}
-        >
-          {/* Footer Header */}
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-16 lg:mb-[270px] gap-4 sm:gap-0">
-            <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
-              Portfolio 2023 - 2024
-            </span>
-            <span className="text-[20px] font-semibold leading-[20px] tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] hover:scale-105">
-              Sean Smith
-            </span>
-            <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] text-center sm:text-right transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
-              37.7749° N, 122.4194° W
-            </span>
-          </div>
+      {/* Related Case Studies */}
+      <section className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] py-16 sm:py-20 md:py-24 lg:py-32">
+        <RelatedCaseStudies currentCaseStudyId="computis" />
+      </section>
 
-          <div className="text-center mb-16 lg:mb-[270px]"></div>
-
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
-            <span className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] order-3 lg:order-1 transition-all duration-300 hover:text-[#9FA0A3]">
-              © All rights reserved.
-            </span>
-
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-[44px] order-1 lg:order-2">
-              <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
-              >
-                Twitter
-              </a>
-              <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
-              >
-                Behance
-              </a>
-              <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
-              >
-                Instagram
-              </a>
-              <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
-              >
-                Dribble
-              </a>
-            </div>
-
-            <div className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 gap-[40px] order-2 lg:order-3">
-              License
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
