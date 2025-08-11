@@ -324,7 +324,7 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="space-y-8">
-              <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500">
+              <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                 <h3 className="text-xl font-medium text-[#131417] mb-4 flex items-center gap-2">
                   <Target className="w-5 h-5 text-orange-600" />
                   Core Problem
@@ -336,7 +336,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
+              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                 <h3 className="text-xl font-medium text-[#131417] mb-4">
                   Opportunity
                 </h3>
