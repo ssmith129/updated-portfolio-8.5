@@ -1300,7 +1300,7 @@ export default function ComputisCaseStudy() {
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
                     <span className="text-[#9FA0A3]">CPA onboarding time</span>
                     <span className="font-medium text-green-600">
-                      2.5hrs → 1.4hrs (↓45%)
+                      <p>45%</p>
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100">
