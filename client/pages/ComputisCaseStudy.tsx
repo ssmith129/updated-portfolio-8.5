@@ -195,16 +195,18 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-[20px] p-6 sm:p-8">
+            <div ref={metricsRef} className="bg-gradient-to-r from-green-50 to-blue-50 rounded-[20px] p-6 sm:p-8">
               <h3 className="text-xl font-medium text-[#131417] mb-6 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-green-600" />
                 Key Impact Metrics
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-green-600 mb-1">
-                    45%
-                  </div>
+                  <AnimatedCounter
+                    value={45}
+                    className="text-2xl sm:text-3xl font-bold text-green-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
                   <p className="text-sm text-[#9FA0A3]">
                     ↓ CPA onboarding time
                   </p>
