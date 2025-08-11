@@ -6,6 +6,7 @@ import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 
 export default function ComputisCaseStudy() {
+  const [enlargedImage, setEnlargedImage] = useState<{src: string, alt: string} | null>(null);
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
