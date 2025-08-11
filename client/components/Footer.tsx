@@ -102,12 +102,12 @@ export default function Footer({ className = "" }: FooterProps) {
                 <span>San Francisco, CA</span>
               </div>
               <a
-                href="mailto:hello@seansmith.design"
+                href="mailto:sean@smithdesign.live"
                 className="flex items-center gap-3 text-sm text-[#9FA0A3] hover:text-white transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 rounded-md p-1 -m-1"
                 aria-label="Send email to Sean Smith"
               >
                 <Mail className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-                <span>hello@seansmith.design</span>
+                <span>sean@smithdesign.live</span>
               </a>
             </div>
           </div>
