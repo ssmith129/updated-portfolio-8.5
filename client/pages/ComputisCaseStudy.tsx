@@ -584,7 +584,7 @@ export default function ComputisCaseStudy() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* David (CPA) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-white rounded-[25px] p-8 shadow-sm">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
                   <svg
@@ -641,7 +641,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Mya (Analyst) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-white rounded-[25px] p-8 shadow-sm">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
                   <svg
