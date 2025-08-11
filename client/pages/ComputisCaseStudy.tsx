@@ -374,7 +374,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-xl font-medium mb-4">North Star</h3>
               <blockquote className="text-lg italic leading-[150%]">
                 "Design a platform where a CPA can explain any audit report to a
-                regulator — without needing a developer in the room."
+                regulator �� without needing a developer in the room."
               </blockquote>
             </div>
 
@@ -1332,7 +1332,7 @@ export default function ComputisCaseStudy() {
                     </span>
                     <span className="font-medium text-orange-600">↓85%</span>
                   </div>
-                  <div className="flex justify-between items-center py-2">
+                  <div className="flex justify-between items-center py-2 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">
                       Anomaly detection coverage
                     </span>
