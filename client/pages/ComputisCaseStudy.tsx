@@ -846,7 +846,7 @@ export default function ComputisCaseStudy() {
                       <h2><b>Feature</b></h2><h3></h3>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
-                      Computis
+                      <b>Computis</b>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
                       TaxBit
