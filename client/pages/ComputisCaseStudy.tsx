@@ -843,7 +843,7 @@ export default function ComputisCaseStudy() {
                 <thead>
                   <tr className="border-b-2 border-gray-200">
                     <th className="text-left py-4 px-4 font-medium text-[#131417]">
-                      Feature
+                      <h2><b>Feature</b></h2><h3></h3>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
                       Computis
