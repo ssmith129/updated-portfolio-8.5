@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, X, ZoomIn } from "lucide-react";
+import Navigation, { SkipLink } from "../components/Navigation";
 
 export default function EzEMRxCaseStudy() {
   const [isImageEnlarged, setIsImageEnlarged] = useState(false);
