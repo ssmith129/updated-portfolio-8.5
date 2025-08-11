@@ -1177,12 +1177,25 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 <p className="text-sm text-green-600 font-medium">
                   → Enabled CPAs to self-manage classification logic
                 </p>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F82c089e277614fbeaf18ed687002142f"
-                  className="w-full aspect-[0.65] object-contain object-center min-h-5 min-w-5 overflow-hidden mt-5"
-                  alt="Visual Rule Builder"
-                />
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F82c089e277614fbeaf18ed687002142f",
+                      alt: "Visual Rule Builder",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F82c089e277614fbeaf18ed687002142f"
+                    className="w-full aspect-[0.65] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="Visual Rule Builder"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
               </div>
             </div>
 
