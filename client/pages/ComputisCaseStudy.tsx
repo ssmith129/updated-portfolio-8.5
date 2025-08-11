@@ -1242,12 +1242,25 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
               <p className="text-sm text-green-600 font-medium">
                 → Cut reporting prep time by 45%
               </p>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc8bdc181750941cd9d9d725a2a335427"
-                className="w-full aspect-[0.78] object-contain object-center min-h-5 min-w-5 overflow-hidden mt-5"
-                alt="Audit-Ready Exports"
-              />
+              <div
+                className="relative mt-5 group cursor-pointer"
+                onClick={() =>
+                  setEnlargedImage({
+                    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc8bdc181750941cd9d9d725a2a335427",
+                    alt: "Audit-Ready Exports",
+                  })
+                }
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc8bdc181750941cd9d9d725a2a335427"
+                  className="w-full aspect-[0.78] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                  alt="Audit-Ready Exports"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                  <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
             </div>
 
             <div className="flex flex-col">
@@ -1261,12 +1274,25 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 <p className="text-sm text-green-600 font-medium">
                   → Improved workflow clarity & security
                 </p>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F34d1c0bd6afb4334b331333d058ccc63"
-                  className="aspect-[0.91] object-cover object-center w-full min-h-5 min-w-5 overflow-hidden mt-5"
-                  alt="Role-Based Dashboards"
-                />
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F34d1c0bd6afb4334b331333d058ccc63",
+                      alt: "Role-Based Dashboards",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F34d1c0bd6afb4334b331333d058ccc63"
+                    className="aspect-[0.91] object-cover object-center w-full min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="Role-Based Dashboards"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
                 <div className="relative mt-5" />
               </div>
             </div>
