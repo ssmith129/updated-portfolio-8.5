@@ -446,7 +446,7 @@ export default function ComputisCaseStudy() {
                   2.1 AA compliance, AI + anomaly UI patterns
                 </p>
               </div>
-              <div className="border-l-4 border-orange-500 pl-6 mt-6">
+              <div className="border-l-4 border-orange-500 pl-6 mt-6 transition-all duration-300 hover:bg-orange-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
                 <h4 className="font-semibold text-[#131417] mb-2 text-lg">
                   Validate
                 </h4>
