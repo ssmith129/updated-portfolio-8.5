@@ -248,24 +248,24 @@ export default function ComputisCaseStudy() {
 
             <div className="space-y-6">
               <div className="border-l-4 border-blue-500 pl-6">
-                <h4 className="font-medium text-[#131417] mb-2">Discovery</h4>
-                <p className="text-[#9FA0A3]">1:1 CPA interviews, workflow shadowing, analytics review, competitive teardown (TaxBit, Cryptio, CoinTracker)</p>
+                <h4 className="font-semibold text-[#131417] mb-2">Discovery</h4>
+                <p className="text-[#4a4a4a]">1:1 CPA interviews, workflow shadowing, analytics review, competitive teardown (TaxBit, Cryptio, CoinTracker)</p>
               </div>
-              <div className="border-l-4 border-green-500 pl-6">
-                <h4 className="font-medium text-[#131417] mb-2">Define</h4>
-                <p className="text-[#9FA0A3]">Personas, journey maps, service blueprints, modular IA (Clients → Wallets → Transactions → Rules → Reports → Exports)</p>
+              <div className="border-l-4 border-green-500 pl-6 mt-6">
+                <h4 className="font-semibold text-[#131417] mb-2">Define</h4>
+                <p className="text-[#4a4a4a]">Personas, journey maps, service blueprints, modular IA (Clients → Wallets → Transactions → Rules → Reports → Exports)</p>
               </div>
-              <div className="border-l-4 border-purple-500 pl-6">
-                <h4 className="font-medium text-[#131417] mb-2">Design</h4>
-                <p className="text-[#9FA0A3]">30+ responsive screens, variant-driven component library, WCAG 2.1 AA compliance, AI + anomaly UI patterns</p>
+              <div className="border-l-4 border-purple-500 pl-6 mt-6">
+                <h4 className="font-semibold text-[#131417] mb-2">Design</h4>
+                <p className="text-[#4a4a4a]">30+ responsive screens, variant-driven component library, WCAG 2.1 AA compliance, AI + anomaly UI patterns</p>
               </div>
-              <div className="border-l-4 border-orange-500 pl-6">
-                <h4 className="font-medium text-[#131417] mb-2">Validate</h4>
-                <p className="text-[#9FA0A3]">Usability tests with CPAs & analysts, Maze heatmaps, microcopy refinements for trust-building</p>
+              <div className="border-l-4 border-orange-500 pl-6 mt-6">
+                <h4 className="font-semibold text-[#131417] mb-2">Validate</h4>
+                <p className="text-[#4a4a4a]">Usability tests with CPAs & analysts, Maze heatmaps, microcopy refinements for trust-building</p>
               </div>
-              <div className="border-l-4 border-red-500 pl-6">
-                <h4 className="font-medium text-[#131417] mb-2">Deliver</h4>
-                <p className="text-[#9FA0A3]">Annotated Figma specs, dev story links in Jira, QA checklists, responsive testing, accessibility validation</p>
+              <div className="border-l-4 border-red-500 pl-6 mt-6">
+                <h4 className="font-semibold text-[#131417] mb-2">Deliver</h4>
+                <p className="text-[#4a4a4a]">Annotated Figma specs, dev story links in Jira, QA checklists, responsive testing, accessibility validation</p>
               </div>
             </div>
           </div>
