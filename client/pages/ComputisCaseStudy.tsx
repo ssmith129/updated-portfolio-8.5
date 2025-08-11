@@ -1210,12 +1210,25 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 <p className="text-sm text-green-600 font-medium">
                   → Increased anomaly coverage by 150%
                 </p>
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2"
-                  className="aspect-[0.74] object-contain object-center w-full min-h-5 min-w-5 overflow-hidden mt-5"
-                  alt="FMV Dashboard & Anomaly Detection"
-                />
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2",
+                      alt: "FMV Dashboard & Anomaly Detection",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2"
+                    className="aspect-[0.74] object-contain object-center w-full min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="FMV Dashboard & Anomaly Detection"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
               </div>
             </div>
 
