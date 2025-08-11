@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Navigation, { SkipLink } from "../components/Navigation";
 
 export default function About() {
   return (
