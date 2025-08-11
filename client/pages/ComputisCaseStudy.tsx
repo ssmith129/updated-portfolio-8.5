@@ -243,7 +243,7 @@ export default function ComputisCaseStudy() {
             </h2>
             
             <div className="mb-8">
-              <h3 className="text-xl font-medium text-[#131417] mb-4">Framework: Discovery → Define → Design → Validate → Deliver</h3>
+              <h3 className="text-2xl font-normal text-[#9013fe] mb-4 pb-4">Discovery → Define → Design → Validate → Deliver</h3>
             </div>
 
             <div className="space-y-6">
