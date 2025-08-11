@@ -7,7 +7,6 @@ export default function EzEMRxCaseStudy() {
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
-
       {/* Back Button */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
         <Link
@@ -1044,7 +1043,10 @@ export default function EzEMRxCaseStudy() {
 
       {/* Footer */}
       <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-3300">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] py-16" style={{ paddingTop: "135px", paddingBottom: "134px" }}>
+        <div
+          className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] py-16"
+          style={{ paddingTop: "135px", paddingBottom: "134px" }}
+        >
           {/* Footer Header */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-16 lg:mb-[270px] gap-4 sm:gap-0">
             <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
