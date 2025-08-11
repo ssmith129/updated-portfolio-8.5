@@ -855,7 +855,7 @@ export default function ComputisCaseStudy() {
                       <b>Cryptio</b>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
-                      CoinTracker
+                      <b>CoinTracker</b>
                     </th>
                   </tr>
                 </thead>
@@ -1236,7 +1236,7 @@ export default function ComputisCaseStudy() {
                       Manual dev dependency
                     </span>
                     <span className="font-medium text-orange-600">
-                      100% → 15% (↓85%)
+                      100% ��� 15% (↓85%)
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2">
