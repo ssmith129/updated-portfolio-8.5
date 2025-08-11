@@ -1316,7 +1316,7 @@ export default function ComputisCaseStudy() {
                       Manual dev dependency
                     </span>
                     <span className="font-medium text-orange-600">
-                      100% ��� 15% (↓85%)
+                      ↓85%
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2">
