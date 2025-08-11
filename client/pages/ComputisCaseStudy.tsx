@@ -15,7 +15,11 @@ import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 
 // Custom hook for counting animation
-const useCountAnimation = (end: number, duration: number = 2000, startAnimation: boolean = false) => {
+const useCountAnimation = (
+  end: number,
+  duration: number = 2000,
+  startAnimation: boolean = false,
+) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -51,7 +55,7 @@ const AnimatedCounter = ({
   value,
   suffix = "%",
   className,
-  startAnimation
+  startAnimation,
 }: {
   value: number;
   suffix?: string;
@@ -62,7 +66,8 @@ const AnimatedCounter = ({
 
   return (
     <div className={className}>
-      {animatedValue}{suffix}
+      {animatedValue}
+      {suffix}
     </div>
   );
 };
@@ -85,8 +90,8 @@ export default function ComputisCaseStudy() {
       },
       {
         threshold: 0.5, // Trigger when 50% of the element is visible
-        rootMargin: '0px 0px -50px 0px' // Start animation a bit before element is fully visible
-      }
+        rootMargin: "0px 0px -50px 0px", // Start animation a bit before element is fully visible
+      },
     );
 
     if (metricsRef.current) {
@@ -197,7 +202,10 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div ref={metricsRef} className="bg-gradient-to-r from-green-50 to-blue-50 rounded-[20px] p-6 sm:p-8">
+            <div
+              ref={metricsRef}
+              className="bg-gradient-to-r from-green-50 to-blue-50 rounded-[20px] p-6 sm:p-8"
+            >
               <h3 className="text-xl font-medium text-[#131417] mb-6 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-green-600" />
                 Key Impact Metrics
@@ -891,7 +899,7 @@ export default function ComputisCaseStudy() {
                     <strong className="text-[#131417]">
                       Competitors Reviewed:
                     </strong>{" "}
-                     Cryptio, TaxBit, CoinTracker, ZenLedger
+                    Cryptio, TaxBit, CoinTracker, ZenLedger
                   </div>
 
                   <div className="bg-green-50 rounded-[16px] p-4 border border-green-200">
@@ -935,13 +943,18 @@ export default function ComputisCaseStudy() {
                 <thead>
                   <tr className="border-b-2 border-gray-200">
                     <th className="text-left py-4 px-4 font-medium text-[#131417]">
-                      <h2><b>Feature</b></h2><h3></h3>
+                      <h2>
+                        <b>Feature</b>
+                      </h2>
+                      <h3></h3>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
                       <b>Computis</b>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
-                      <p><strong>TaxBit</strong></p>
+                      <p>
+                        <strong>TaxBit</strong>
+                      </p>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
                       <b>Cryptio</b>
@@ -1285,7 +1298,6 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-
         {/* Results & Impact */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
@@ -1317,9 +1329,7 @@ export default function ComputisCaseStudy() {
                     <span className="text-[#9FA0A3]">
                       Manual dev dependency
                     </span>
-                    <span className="font-medium text-orange-600">
-                      ↓85%
-                    </span>
+                    <span className="font-medium text-orange-600">↓85%</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-[#9FA0A3]">
