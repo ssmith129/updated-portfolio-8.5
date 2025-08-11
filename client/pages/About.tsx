@@ -26,9 +26,11 @@ export default function About() {
           {/* Header Text */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-[150%] sm:leading-[160%] md:leading-[170%] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
-              Senior Product Designer with 6+ years of experience creating intuitive, scalable UX for complex SaaS and enterprise platforms.
-              <br /><br />
-              I specialize in AI-integrated systems that streamline workflows, simplify data, and drive decisions.
+              Senior Product Designer with 6+ years of experience creating
+              intuitive, scalable UX for complex SaaS and enterprise platforms.
+              <br />
+              <br />I specialize in AI-integrated systems that streamline
+              workflows, simplify data, and drive decisions.
             </h1>
           </div>
         </div>
@@ -36,7 +38,6 @@ export default function About() {
 
       {/* Main Content */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] pb-8 sm:pb-12 md:pb-16 space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-24 xl:space-y-[150px]">
-        
         {/* Professional Summary Section */}
         <section className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-24 xl:gap-[440px] animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
           <div className="w-full lg:w-[200px]">
@@ -65,15 +66,24 @@ export default function About() {
 
             <div className="space-y-6 sm:space-y-8">
               <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Product Designer with 6+ years of experience delivering intuitive, high-impact experiences across crypto, fintech, and B2B SaaS platforms. I specialize in AI-integrated systems that streamline workflows, simplify data, and drive decisions.
+                Product Designer with 6+ years of experience delivering
+                intuitive, high-impact experiences across crypto, fintech, and
+                B2B SaaS platforms. I specialize in AI-integrated systems that
+                streamline workflows, simplify data, and drive decisions.
               </p>
 
               <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Proven ability to simplify complexity through thoughtful UX and rapid prototyping — from backend scripts to trusted enterprise SaaS. Comfortable owning ambiguous problems from concept to launch and working directly with founders, engineers, and legal teams to ship production-ready features in weekly cycles.
+                Proven ability to simplify complexity through thoughtful UX and
+                rapid prototyping — from backend scripts to trusted enterprise
+                SaaS. Comfortable owning ambiguous problems from concept to
+                launch and working directly with founders, engineers, and legal
+                teams to ship production-ready features in weekly cycles.
               </p>
 
               <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Passionate about building magical interfaces that make cutting-edge technology accessible to everyday users. I believe the best design is invisible — it just works.
+                Passionate about building magical interfaces that make
+                cutting-edge technology accessible to everyday users. I believe
+                the best design is invisible — it just works.
               </p>
             </div>
           </div>
@@ -102,7 +112,10 @@ export default function About() {
                 Computis • Custom Data Processing, Inc.
               </p>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[600px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Spearheaded end-to-end UX for regulated sectors using tools for complex blockchain and financial data. Designed explainable AI features and self-serve workflows for CPAs, DAOs, and crypto hedge funds.
+                Spearheaded end-to-end UX for regulated sectors using tools for
+                complex blockchain and financial data. Designed explainable AI
+                features and self-serve workflows for CPAs, DAOs, and crypto
+                hedge funds.
               </p>
               <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 mt-3 sm:mt-4">
                 <span className="bg-[#131417] text-white px-2 sm:px-3 py-1 rounded-[12px] sm:rounded-[15px] text-[10px] sm:text-[11px] md:text-[12px] font-medium transition-all duration-300 hover:bg-[#2a2a2a] hover:scale-105">
@@ -131,7 +144,11 @@ export default function About() {
                 Computis
               </p>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[600px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Led product design for a crypto tax automation platform, translating technical financial rules into clear, consumer-facing UX. Designed and launched $1M+ SaaS features for accountants, analysts, and legal teams working with blockchain data.
+                Led product design for a crypto tax automation platform,
+                translating technical financial rules into clear,
+                consumer-facing UX. Designed and launched $1M+ SaaS features for
+                accountants, analysts, and legal teams working with blockchain
+                data.
               </p>
             </div>
 
@@ -149,7 +166,9 @@ export default function About() {
                 Various Startups
               </p>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[600px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Partnered directly with founders, engineers, and executive leadership to drive product decisions and execute go-to-market launches across fintech, healthcare, and productivity tools.
+                Partnered directly with founders, engineers, and executive
+                leadership to drive product decisions and execute go-to-market
+                launches across fintech, healthcare, and productivity tools.
               </p>
             </div>
           </div>
@@ -219,7 +238,10 @@ export default function About() {
                 </span>
               </div>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[573px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Expert in translating complex technical requirements into intuitive user experiences. Built tokenized Figma systems that reduced design and dev cycle times by 40% across multiple product surfaces.
+                Expert in translating complex technical requirements into
+                intuitive user experiences. Built tokenized Figma systems that
+                reduced design and dev cycle times by 40% across multiple
+                product surfaces.
               </p>
             </div>
 
@@ -243,7 +265,10 @@ export default function About() {
                 </span>
               </div>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[573px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Proven track record designing consumer-friendly interfaces around complex blockchain and financial systems. Comfortable working ambiguous problems from concept to launch and collaborating tightly with founders and engineers.
+                Proven track record designing consumer-friendly interfaces
+                around complex blockchain and financial systems. Comfortable
+                working ambiguous problems from concept to launch and
+                collaborating tightly with founders and engineers.
               </p>
             </div>
 
@@ -270,7 +295,10 @@ export default function About() {
                 </span>
               </div>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[573px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Builds and scales reusable UI patterns to support fast-moving teams and maintain visual consistency. Developed scalable design systems and modular components in Figma, enabling rapid iteration and polished releases.
+                Builds and scales reusable UI patterns to support fast-moving
+                teams and maintain visual consistency. Developed scalable design
+                systems and modular components in Figma, enabling rapid
+                iteration and polished releases.
               </p>
             </div>
           </div>
@@ -290,7 +318,10 @@ export default function About() {
                 User-Centered Discovery
               </h3>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[573px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Conducting continuous user research and testing to uncover insights about user preferences and pain points. I believe in validating assumptions early and often through user interviews, usability testing, and data analysis.
+                Conducting continuous user research and testing to uncover
+                insights about user preferences and pain points. I believe in
+                validating assumptions early and often through user interviews,
+                usability testing, and data analysis.
               </p>
             </div>
 
@@ -299,7 +330,10 @@ export default function About() {
                 Rapid Prototyping
               </h3>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[573px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Rapidly creating interactive prototypes and production-ready designs; familiar with React, Next.js, and Tailwind CSS. This allows me to work shoulder-to-shoulder with developers and iterate quickly on live features.
+                Rapidly creating interactive prototypes and production-ready
+                designs; familiar with React, Next.js, and Tailwind CSS. This
+                allows me to work shoulder-to-shoulder with developers and
+                iterate quickly on live features.
               </p>
             </div>
 
@@ -308,7 +342,10 @@ export default function About() {
                 Design Systems Leadership
               </h3>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[573px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Building tokenized Figma systems that reduce design and dev cycle times by 40% across multiple product surfaces. I focus on creating scalable, maintainable design systems that grow with the product.
+                Building tokenized Figma systems that reduce design and dev
+                cycle times by 40% across multiple product surfaces. I focus on
+                creating scalable, maintainable design systems that grow with
+                the product.
               </p>
             </div>
           </div>

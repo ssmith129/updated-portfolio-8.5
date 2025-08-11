@@ -15,7 +15,8 @@ export default function CaseStudies() {
             Case Studies
           </h1>
           <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[400px] sm:max-w-[500px] md:max-w-[600px] mx-auto transition-all duration-300 hover:text-[#131417] px-4">
-            Explore detailed breakdowns of my design process, challenges, and solutions across various projects.
+            Explore detailed breakdowns of my design process, challenges, and
+            solutions across various projects.
           </p>
         </div>
 
@@ -72,7 +73,6 @@ export default function CaseStudies() {
               </div>
             </div>
           </Link>
-
 
           {/* Medico Case Study */}
           <Link
