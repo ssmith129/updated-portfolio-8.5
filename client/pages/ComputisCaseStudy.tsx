@@ -265,12 +265,12 @@ export default function ComputisCaseStudy() {
 
         {/* Before/After Transformation */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
             Before/After Transformation
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-red-50 rounded-[20px] p-6 sm:p-8 border border-red-100">
+            <div className="bg-red-50 rounded-[20px] p-6 sm:p-8 border border-red-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-medium text-red-800 mb-4">
                 Before: CLI-based Python Scripts
               </h3>
@@ -290,7 +290,7 @@ export default function ComputisCaseStudy() {
               </ul>
             </div>
 
-            <div className="bg-green-50 rounded-[20px] p-6 sm:p-8 border border-green-100">
+            <div className="bg-green-50 rounded-[20px] p-6 sm:p-8 border border-green-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-medium text-green-800 mb-4">
                 After: Enterprise-Grade SaaS
               </h3>
