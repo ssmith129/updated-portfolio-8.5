@@ -849,7 +849,7 @@ export default function ComputisCaseStudy() {
                       <b>Computis</b>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
-                      TaxBit
+                      <p><strong>TaxBit</strong></p>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
                       Cryptio
