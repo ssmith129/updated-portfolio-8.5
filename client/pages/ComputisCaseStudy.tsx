@@ -851,7 +851,7 @@ export default function ComputisCaseStudy() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
               <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
+                <h3 className="text-xl font-medium text-[#131417] mb-6 transition-all duration-300 hover:text-blue-600 cursor-pointer">
                   Industry Trends
                 </h3>
                 <div className="space-y-4">
@@ -892,7 +892,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
+                <h3 className="text-xl font-medium text-[#131417] mb-6 transition-all duration-300 hover:text-blue-600 cursor-pointer">
                   Competitive Landscape
                 </h3>
                 <div className="space-y-3">
@@ -903,7 +903,7 @@ export default function ComputisCaseStudy() {
                     Cryptio, TaxBit, CoinTracker, ZenLedger
                   </div>
 
-                  <div className="bg-green-50 rounded-[16px] p-4 border border-green-200">
+                  <div className="bg-green-50 rounded-[16px] p-4 border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <h4 className="text-sm font-medium text-green-800 mb-3">
                       Computis Differentiators
                     </h4>
