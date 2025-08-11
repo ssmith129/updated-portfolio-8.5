@@ -5,6 +5,9 @@ import Navigation, { SkipLink } from "../components/Navigation";
 export default function MoneyFarmCaseStudy() {
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
+      <SkipLink />
+      <Navigation />
+
       {/* Back Button */}
       <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
         <Link
