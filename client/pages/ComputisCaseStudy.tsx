@@ -852,7 +852,7 @@ export default function ComputisCaseStudy() {
                       <p><strong>TaxBit</strong></p>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
-                      Cryptio
+                      <b>Cryptio</b>
                     </th>
                     <th className="text-center py-4 px-4 font-medium text-[#131417]">
                       CoinTracker
