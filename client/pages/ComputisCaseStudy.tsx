@@ -10,7 +10,7 @@ import {
   X,
   ZoomIn,
 } from "lucide-react";
-import { SkipLink } from "../components/Navigation";
+import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 
