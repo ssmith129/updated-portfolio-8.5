@@ -420,7 +420,7 @@ export default function ComputisCaseStudy() {
 
             <div className="space-y-6">
               <div className="border-l-4 border-blue-500 pl-6 transition-all duration-300 hover:bg-blue-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
-                <h4 className="font-semibold text-[#131417] mb-2 text-lg">
+                <h4 className="font-semibold text-[#131417] mb-2 text-lg transition-colors duration-300 group-hover:text-blue-600">
                   Discovery
                 </h4>
                 <p className="text-[#4a4a4a]">
