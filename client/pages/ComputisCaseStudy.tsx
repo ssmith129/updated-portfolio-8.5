@@ -816,13 +816,24 @@ export default function ComputisCaseStudy() {
               <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
                 <h3 className="text-lg font-medium text-[#131417] mb-3">Role-Based Dashboards</h3>
                 <p className="text-[#9FA0A3] text-sm mb-3">CPA, Analyst, Admin views with permissions</p>
-                <p className="text-sm text-green-600 font-medium">→ Improved workflow clarity & security</p>
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc"
-                  className="w-full mt-5 aspect-[0.72] object-contain object-center min-h-5 min-w-5 overflow-hidden"
-                  alt="Role-Based Dashboards"
-                />
+                <p className="text-sm text-green-600 font-medium">��� Improved workflow clarity & security</p>
+                <div
+                  className="relative group cursor-pointer mt-5"
+                  onClick={() => setEnlargedImage({
+                    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=2000",
+                    alt: "Role-Based Dashboards"
+                  })}
+                >
+                  <img
+                    loading="lazy"
+                    srcSet="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F95d27347e0e94edf84d1b7c5ec4c54cc"
+                    className="w-full aspect-[0.72] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="Role-Based Dashboards"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
