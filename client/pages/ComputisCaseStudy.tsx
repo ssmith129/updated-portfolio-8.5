@@ -1209,22 +1209,12 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 <p className="text-sm text-green-600 font-medium">
                   → Improved workflow clarity & security
                 </p>
-                <div
-                  className="relative mt-5 group cursor-pointer"
-                  onClick={() =>
-                    setEnlargedImage({
-                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F34d1c0bd6afb4334b331333d058ccc63",
-                      alt: "Role-Based Dashboards",
-                    })
-                  }
-                >
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F34d1c0bd6afb4334b331333d058ccc63"
-                    className="aspect-[0.91] object-cover object-center w-full min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
-                    alt="Role-Based Dashboards"
-                  />
-                </div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F34d1c0bd6afb4334b331333d058ccc63"
+                  className="aspect-[0.91] object-cover object-center w-full min-h-5 min-w-5 overflow-hidden mt-5"
+                  alt="Role-Based Dashboards"
+                />
                 <div className="relative mt-5" />
               </div>
             </div>
