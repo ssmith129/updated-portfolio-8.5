@@ -117,7 +117,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <header className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-16 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+      <header className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
         <div className="mb-8">
           <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[20px] text-[14px] font-medium tracking-[-0.14px] mb-6 transition-all duration-300 hover:scale-105">
             Product Design Case Study
@@ -996,7 +996,7 @@ export default function ComputisCaseStudy() {
                     </td>
                     <td className="py-4 px-4 text-center">
                       <span className="inline-flex items-center justify-center w-6 h-6 bg-red-100 text-red-600 rounded-full">
-                        ✗
+                        ��
                       </span>
                     </td>
                   </tr>
