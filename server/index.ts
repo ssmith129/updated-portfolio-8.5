@@ -1,5 +1,5 @@
 import "dotenv/config";
-import express from "express";
+const express = require("express");
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
 
