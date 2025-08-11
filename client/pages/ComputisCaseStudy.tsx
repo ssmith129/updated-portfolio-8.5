@@ -513,7 +513,7 @@ export default function ComputisCaseStudy() {
                   Key Insights
                 </h3>
                 <div className="space-y-4">
-                  <div className="bg-red-50 rounded-[16px] p-4 border-l-4 border-red-500">
+                  <div className="bg-red-50 rounded-[16px] p-4 border-l-4 border-red-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-red-800 mb-1">
                       Trust Barrier
                     </p>
@@ -521,7 +521,7 @@ export default function ComputisCaseStudy() {
                       CPAs distrust automation → Needed override tools
                     </p>
                   </div>
-                  <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500">
+                  <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-orange-800 mb-1">
                       Error Overwhelm
                     </p>
@@ -530,7 +530,7 @@ export default function ComputisCaseStudy() {
                       diagnostics
                     </p>
                   </div>
-                  <div className="bg-yellow-50 rounded-[16px] p-4 border-l-4 border-yellow-500">
+                  <div className="bg-yellow-50 rounded-[16px] p-4 border-l-4 border-yellow-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-yellow-800 mb-1">
                       Audit Anxiety
                     </p>
