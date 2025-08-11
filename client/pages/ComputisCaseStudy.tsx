@@ -150,12 +150,12 @@ export default function ComputisCaseStudy() {
         {/* Executive Summary */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-md transition-all duration-300 mt-12">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
               Executive Summary
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-              <div className="space-y-2">
+              <div className="space-y-2 transition-all duration-300 hover:scale-105 hover:bg-gray-50 p-2 rounded-lg cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Role
                 </h3>
@@ -163,7 +163,7 @@ export default function ComputisCaseStudy() {
                   Lead Product Designer
                 </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 transition-all duration-300 hover:scale-105 hover:bg-gray-50 p-2 rounded-lg cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Company
                 </h3>
@@ -171,7 +171,7 @@ export default function ComputisCaseStudy() {
                   Computis Inc.
                 </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 transition-all duration-300 hover:scale-105 hover:bg-gray-50 p-2 rounded-lg cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Platform
                 </h3>
@@ -179,13 +179,13 @@ export default function ComputisCaseStudy() {
                   Web-based SaaS
                 </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 transition-all duration-300 hover:scale-105 hover:bg-gray-50 p-2 rounded-lg cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Duration
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">10 months</p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 transition-all duration-300 hover:scale-105 hover:bg-gray-50 p-2 rounded-lg cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Team
                 </h3>
@@ -193,7 +193,7 @@ export default function ComputisCaseStudy() {
                   CTO, PM, 2 Engineers
                 </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 transition-all duration-300 hover:scale-105 hover:bg-gray-50 p-2 rounded-lg cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Tools
                 </h3>
