@@ -1182,13 +1182,10 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                 >
                   <img
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F716cbd6dbd754d8b87b94426b7431fed"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F82c089e277614fbeaf18ed687002142f"
                     className="w-full aspect-[0.65] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
                     alt="Visual Rule Builder"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
-                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
                 </div>
               </div>
             </div>
