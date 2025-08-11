@@ -365,12 +365,12 @@ export default function ComputisCaseStudy() {
 
         {/* Design Principles */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
-          <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12">
+          <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-6">
               Design Principles & North Star
             </h2>
 
-            <div className="bg-white/10 rounded-[20px] p-6 mb-8">
+            <div className="bg-white/10 rounded-[20px] p-6 mb-8 transition-all duration-300 hover:bg-white/20 cursor-pointer">
               <h3 className="text-xl font-medium mb-4">North Star</h3>
               <blockquote className="text-lg italic leading-[150%]">
                 "Design a platform where a CPA can explain any audit report to a
@@ -379,7 +379,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white/5 rounded-[16px] p-6">
+              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
                 <h4 className="font-medium mb-2">
                   Make Automation Explainable
                 </h4>
@@ -387,19 +387,19 @@ export default function ComputisCaseStudy() {
                   AI suggestions must surface logic, not hide it.
                 </p>
               </div>
-              <div className="bg-white/5 rounded-[16px] p-6">
+              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
                 <h4 className="font-medium mb-2">Design for Audit Clarity</h4>
                 <p className="text-sm text-white/80">
                   Every change traceable, export-ready, regulator-proof.
                 </p>
               </div>
-              <div className="bg-white/5 rounded-[16px] p-6">
+              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
                 <h4 className="font-medium mb-2">Empower Without Overwhelm</h4>
                 <p className="text-sm text-white/80">
                   Progressive disclosure for complex workflows.
                 </p>
               </div>
-              <div className="bg-white/5 rounded-[16px] p-6">
+              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
                 <h4 className="font-medium mb-2">Architect for Scale</h4>
                 <p className="text-sm text-white/80">
                   Modular IA for multi-client, multi-role workflows.
