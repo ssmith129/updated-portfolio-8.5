@@ -318,13 +318,13 @@ export default function ComputisCaseStudy() {
 
         {/* Problem Statement */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.01] cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               Problem & Opportunity
             </h2>
 
             <div className="space-y-8">
-              <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500">
+              <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                 <h3 className="text-xl font-medium text-[#131417] mb-4 flex items-center gap-2">
                   <Target className="w-5 h-5 text-orange-600" />
                   Core Problem
@@ -336,7 +336,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
+              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                 <h3 className="text-xl font-medium text-[#131417] mb-4">
                   Opportunity
                 </h3>
