@@ -240,9 +240,11 @@ export default function ComputisCaseStudy() {
                   <p className="text-sm text-[#9FA0A3]">↓ bounce rate</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-red-600 mb-1">
-                    150%
-                  </div>
+                  <AnimatedCounter
+                    value={150}
+                    className="text-2xl sm:text-3xl font-bold text-red-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
                   <p className="text-sm text-[#9FA0A3]">↑ anomaly detection</p>
                 </div>
               </div>
