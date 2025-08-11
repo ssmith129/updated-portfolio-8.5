@@ -816,7 +816,7 @@ export default function ComputisCaseStudy() {
               <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
                 <h3 className="text-lg font-medium text-[#131417] mb-3">Role-Based Dashboards</h3>
                 <p className="text-[#9FA0A3] text-sm mb-3">CPA, Analyst, Admin views with permissions</p>
-                <p className="text-sm text-green-600 font-medium">��� Improved workflow clarity & security</p>
+                <p className="text-sm text-green-600 font-medium">→ Improved workflow clarity & security</p>
                 <div
                   className="relative group cursor-pointer mt-5"
                   onClick={() => setEnlargedImage({
@@ -961,6 +961,30 @@ export default function ComputisCaseStudy() {
       </section>
 
       <Footer />
+
+      {/* Image Modal Overlay */}
+      {enlargedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={() => setEnlargedImage(null)}
+        >
+          <div className="relative max-w-[90vw] max-h-[90vh] w-full h-full flex items-center justify-center">
+            <button
+              onClick={() => setEnlargedImage(null)}
+              className="absolute top-4 right-4 z-60 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 transition-all duration-200"
+              aria-label="Close enlarged image"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <img
+              src={enlargedImage.src}
+              alt={enlargedImage.alt}
+              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
