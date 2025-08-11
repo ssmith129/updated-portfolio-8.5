@@ -108,6 +108,7 @@ export default function ComputisCaseStudy() {
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       <SkipLink />
+      <Navigation />
 
       {/* Back Button */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
