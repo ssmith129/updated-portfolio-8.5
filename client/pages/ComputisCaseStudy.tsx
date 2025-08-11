@@ -1,13 +1,10 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, TrendingUp, Users, Clock, Target } from "lucide-react";
 import { SkipLink } from "../components/Navigation";
-import Breadcrumbs, { generateBreadcrumbs } from "../components/Breadcrumbs";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 
 export default function ComputisCaseStudy() {
-  const location = useLocation();
-  const breadcrumbs = generateBreadcrumbs(location.pathname);
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
