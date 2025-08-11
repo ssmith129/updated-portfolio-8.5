@@ -799,7 +799,7 @@ export default function ComputisCaseStudy() {
                     <strong className="text-[#131417]">
                       Competitors Reviewed:
                     </strong>{" "}
-                    Cryptio, TaxBit, CoinTracker, ZenLedger
+                     Cryptio, TaxBit, CoinTracker, ZenLedger
                   </div>
 
                   <div className="bg-green-50 rounded-[16px] p-4 border border-green-200">
