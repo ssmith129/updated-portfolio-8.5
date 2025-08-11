@@ -767,13 +767,22 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-lg font-medium text-[#131417] mb-3">FMV Dashboard & Anomaly Detection</h3>
                 <p className="text-[#9FA0A3] text-sm mb-3">Severity flags & hover explanations</p>
                 <p className="text-sm text-green-600 font-medium">→ Increased anomaly coverage by 150%</p>
-                <div className="relative mt-5">
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() => setEnlargedImage({
+                    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F41ddcf592c24499aa68a9c6d979b9632",
+                    alt: "FMV Dashboard & Anomaly Detection"
+                  })}
+                >
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F41ddcf592c24499aa68a9c6d979b9632"
-                    className="w-full aspect-[0.74] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300"
+                    className="w-full aspect-[0.74] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
                     alt="FMV Dashboard & Anomaly Detection"
                   />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
                 </div>
               </div>
             </div>
