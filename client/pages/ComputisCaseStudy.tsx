@@ -322,20 +322,20 @@ export default function ComputisCaseStudy() {
 
             <div className="bg-green-50 rounded-[20px] p-6 border border-green-200">
               <h3 className="text-lg font-medium text-green-800 mb-4">Feature Outcomes from Research</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-start gap-3">
+              <div className="flex flex-row justify-start gap-4 w-auto">
+                <div className="flex items-start gap-3 w-auto">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
                   <span className="text-sm text-green-700">AI confidence tooltips + Accept/Reject</span>
                 </div>
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-3 w-auto">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
                   <span className="text-sm text-green-700">Rule logic builder</span>
                 </div>
-                <div className="flex items-start gap-3">
+                <div className="flex items-center gap-3 w-auto justify-start">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
                   <span className="text-sm text-green-700">Smart wallet upload with schema preview</span>
                 </div>
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-3 w-auto">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
                   <span className="text-sm text-green-700">Audit trail drawer</span>
                 </div>
@@ -702,7 +702,7 @@ export default function ComputisCaseStudy() {
             <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
               <h3 className="text-lg font-medium text-[#131417] mb-3">AI Suggestions + Override</h3>
               <p className="text-[#9FA0A3] text-sm mb-3">Confidence badges with tooltips</p>
-              <p className="text-sm text-green-600 font-medium">→ Built trust, increased classification speed by 60%</p>
+              <p className="text-sm text-green-600 font-medium">��� Built trust, increased classification speed by 60%</p>
               <img
                 loading="lazy"
                 srcSet="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
