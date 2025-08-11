@@ -212,9 +212,11 @@ export default function ComputisCaseStudy() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">
-                    32%
-                  </div>
+                  <AnimatedCounter
+                    value={32}
+                    className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
                   <p className="text-sm text-[#9FA0A3]">
                     ↑ demo-to-conversion rate
                   </p>
