@@ -1253,7 +1253,7 @@ src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272
                   className="relative mt-5 group cursor-pointer"
                   onClick={() =>
                     setEnlargedImage({
-                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fba5d6a2f47694afca03931b56fb98fea",
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F34d1c0bd6afb4334b331333d058ccc63",
                       alt: "Role-Based Dashboards",
                     })
                   }
