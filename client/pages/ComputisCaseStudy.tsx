@@ -280,7 +280,7 @@ export default function ComputisCaseStudy() {
                 src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F87aaef24d96e41deaae4159d24d71925?alt=media&token=906b3f7a-143e-4ffb-abfa-8e1cacd68fcc&apiKey=ba69a23156414a589de97341511272c9"
               />
             </video>
-            <div className="w-full pt-[70.04%] pointer-events-none text-[0]" />
+            <div className="w-full pointer-events-none text-[0]" />
           </div>
         </div>
 
