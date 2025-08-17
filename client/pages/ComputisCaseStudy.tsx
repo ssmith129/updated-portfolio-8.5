@@ -404,7 +404,7 @@ export default function ComputisCaseStudy() {
                 <h4 className="font-medium mb-2">
                   Make Automation Explainable
                 </h4>
-                <p className="text-sm text-white/80">
+                <p className="text-sm text-gray-400 italic">
                   AI suggestions must surface logic, not hide it.
                 </p>
               </div>
