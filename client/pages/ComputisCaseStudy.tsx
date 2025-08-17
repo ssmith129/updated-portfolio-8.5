@@ -395,7 +395,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-xl font-medium mb-4">North Star</h3>
               <blockquote className="text-lg italic leading-[150%]">
                 "Design a platform where a CPA can explain any audit report to a
-                regulator ��� without needing a developer in the room."
+                regulator without needing a developer in the room."
               </blockquote>
             </div>
 
