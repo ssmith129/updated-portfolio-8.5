@@ -273,7 +273,7 @@ export default function ComputisCaseStudy() {
               controls={false}
               playsInline={true}
               loop={true}
-              className="w-full h-full object-cover object-center rounded relative flex flex-col mt-5 min-h-5 min-w-5"
+              className="w-full h-full object-cover object-center rounded relative flex flex-col min-h-5 min-w-5 mt-5 shadow-[0_0_3px_0_rgba(0,0,0,1)]"
             >
               <source
                 type="video/mp4"
