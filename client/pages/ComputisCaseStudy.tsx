@@ -358,7 +358,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xl font-medium text-[#131417] mb-4">
+                <h3 className="text-xl font-bold text-[#131417] mb-4">
                   Opportunity
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%] mb-4">
