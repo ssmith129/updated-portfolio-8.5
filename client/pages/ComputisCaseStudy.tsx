@@ -292,7 +292,7 @@ export default function ComputisCaseStudy() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-red-50 rounded-[20px] p-6 sm:p-8 border border-red-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-xl font-medium text-red-800 mb-4">
+              <h3 className="text-xl font-bold text-red-800 mb-4">
                 Before: CLI-based Python Scripts
               </h3>
               <ul className="space-y-3">
