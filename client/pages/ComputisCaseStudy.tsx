@@ -263,13 +263,25 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* YouTube Video */}
-        <div className="flex flex-col relative mt-5">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: '<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/7KL4gmheYC0?rel=0" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no" allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *; web-share *;"></iframe></div>'
-            }}
-          />
+        {/* Video */}
+        <div className="flex flex-col relative mt-5 min-h-5 min-w-5 w-full">
+          <div className="relative">
+            <video
+              poster="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a"
+              autoPlay={true}
+              muted={true}
+              controls={false}
+              playsInline={true}
+              loop={true}
+              className="w-full h-full object-cover object-center rounded relative flex flex-col mt-5 min-h-5 min-w-5"
+            >
+              <source
+                type="video/mp4"
+                src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F87aaef24d96e41deaae4159d24d71925?alt=media&token=906b3f7a-143e-4ffb-abfa-8e1cacd68fcc&apiKey=ba69a23156414a589de97341511272c9"
+              />
+            </video>
+            <div className="w-full pt-[70.04%] pointer-events-none text-[0]" />
+          </div>
         </div>
 
         {/* Before/After Transformation */}
