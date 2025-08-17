@@ -410,7 +410,7 @@ export default function ComputisCaseStudy() {
               </div>
               <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
                 <h4 className="font-medium mb-2">Design for Audit Clarity</h4>
-                <p className="text-sm text-white/80">
+                <p className="text-sm text-gray-400 italic">
                   Every change traceable, export-ready, regulator-proof.
                 </p>
               </div>
