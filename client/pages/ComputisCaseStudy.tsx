@@ -312,7 +312,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="bg-green-50 rounded-[20px] p-6 sm:p-8 border border-green-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-xl font-medium text-green-800 mb-4">
+              <h3 className="text-xl font-bold text-green-800 mb-4">
                 After: Enterprise-Grade SaaS
               </h3>
               <ul className="space-y-3">
