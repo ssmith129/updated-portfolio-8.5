@@ -263,6 +263,15 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* YouTube Video */}
+        <div className="flex flex-col relative mt-5">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: '<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/7KL4gmheYC0?rel=0" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no" allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *; web-share *;"></iframe></div>'
+            }}
+          />
+        </div>
+
         {/* Before/After Transformation */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
