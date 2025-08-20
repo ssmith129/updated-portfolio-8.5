@@ -13,6 +13,7 @@ import {
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
+import { useIntersectionAnimation } from "../hooks/use-page-animations";
 
 // Custom hook for counting animation
 const useCountAnimation = (
