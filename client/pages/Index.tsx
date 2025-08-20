@@ -127,36 +127,10 @@ export default function Index() {
             </div>
           </Link>
 
-          {/* ezEMRx Project */}
-          <Link
-            to="/case-studies/ezemrx-redesigning-ehr"
-            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-right-6 duration-1000 delay-1100 touch-manipulation w-full max-w-[600px] mx-auto"
-            aria-label="View ezEMRx EHR redesign case study - healthcare platform for public health"
-          >
-            <div className="aspect-square overflow-hidden relative">
-              <img
-                src="/ipad.png"
-                alt="ezEMRx - Electronic Health Records System"
-                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
-              <div className="text-white">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-2 transition-all duration-300">
-                  ezEMRx
-                </h3>
-                <p className="text-sm sm:text-base md:text-lg font-normal opacity-90 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px]">
-                  EHR for Public Health
-                </p>
-              </div>
-            </div>
-          </Link>
-
           {/* Medico Project */}
           <Link
             to="/case-studies/medico-hospital-management-system"
-            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-left-6 duration-1000 delay-1300 touch-manipulation w-full max-w-[600px] mx-auto"
+            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-right-6 duration-1000 delay-1100 touch-manipulation w-full max-w-[600px] mx-auto"
             aria-label="View Medico hospital management system case study - comprehensive healthcare platform"
           >
             <div className="aspect-square overflow-hidden relative">
@@ -174,6 +148,32 @@ export default function Index() {
                 </h3>
                 <p className="text-sm sm:text-base md:text-lg font-normal opacity-90 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px]">
                   Hospital Management System
+                </p>
+              </div>
+            </div>
+          </Link>
+
+          {/* ezEMRx Project */}
+          <Link
+            to="/case-studies/ezemrx-redesigning-ehr"
+            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-left-6 duration-1000 delay-1300 touch-manipulation w-full max-w-[600px] mx-auto"
+            aria-label="View ezEMRx EHR redesign case study - healthcare platform for public health"
+          >
+            <div className="aspect-square overflow-hidden relative">
+              <img
+                src="/ipad.png"
+                alt="ezEMRx - Electronic Health Records System"
+                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
+                loading="lazy"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
+              <div className="text-white">
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-2 transition-all duration-300">
+                  ezEMRx
+                </h3>
+                <p className="text-sm sm:text-base md:text-lg font-normal opacity-90 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px]">
+                  EHR for Public Health
                 </p>
               </div>
             </div>
