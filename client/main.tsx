@@ -52,8 +52,16 @@ function getRoot() {
 // Get or create the root
 const root = getRoot();
 
-// Render the app
-root.render(<App />);
+// Render the app with error handling
+try {
+  root.render(<App />);
+  if (import.meta.env.DEV) {
+    console.log('App rendered successfully');
+  }
+} catch (error) {
+  console.error('Failed to render app:', error);
+  throw error;
+}
 
 // Handle HMR updates in development
 if (import.meta.hot) {
