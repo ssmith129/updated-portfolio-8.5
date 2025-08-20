@@ -161,7 +161,7 @@ export default function Index() {
           >
             <div className="aspect-square overflow-hidden relative">
               <img
-                src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F36b7682859c14dd1b07433f39f2c1c11?format=webp&width=800"
                 alt="Medico - Hospital Management System"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
                 loading="lazy"
