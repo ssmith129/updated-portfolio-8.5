@@ -156,9 +156,7 @@ export default function MedicoCaseStudy() {
         >
           <div className="text-center">
             <Heart className="w-16 h-16 text-blue-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
-            <p className="text-blue-600 font-medium">
-              Medico Platform Preview
-            </p>
+            <p className="text-blue-600 font-medium">Medico Platform Preview</p>
             <p className="text-sm text-blue-400 mt-1">
               Click to view full interface
             </p>
@@ -394,8 +392,8 @@ export default function MedicoCaseStudy() {
             <div className="bg-white/10 rounded-[20px] p-6 mb-8 transition-all duration-300 hover:bg-white/20 cursor-pointer">
               <h3 className="text-xl font-medium mb-4">North Star</h3>
               <blockquote className="text-lg italic leading-[150%]">
-                "Design a platform where medical staff can focus on patient care,
-                not system navigation — making technology invisible while 
+                "Design a platform where medical staff can focus on patient
+                care, not system navigation — making technology invisible while
                 healthcare outcomes visible."
               </blockquote>
             </div>
@@ -565,7 +563,9 @@ export default function MedicoCaseStudy() {
                   <h3 className="text-xl font-medium text-[#131417] mb-1">
                     Dr. Sarah
                   </h3>
-                  <p className="text-[#9FA0A3] font-medium">Attending Physician</p>
+                  <p className="text-[#9FA0A3] font-medium">
+                    Attending Physician
+                  </p>
                   <p className="text-sm text-[#9FA0A3]">8+ years experience</p>
                 </div>
               </div>
@@ -604,7 +604,9 @@ export default function MedicoCaseStudy() {
                   <h3 className="text-xl font-medium text-[#131417] mb-1">
                     Lisa
                   </h3>
-                  <p className="text-[#9FA0A3] font-medium">Hospital Administrator</p>
+                  <p className="text-[#9FA0A3] font-medium">
+                    Hospital Administrator
+                  </p>
                   <p className="text-sm text-[#9FA0A3]">12+ years experience</p>
                 </div>
               </div>
@@ -665,7 +667,8 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Information silos causing delays in patient care coordination
+                    Information silos causing delays in patient care
+                    coordination
                   </p>
                 </div>
               </div>
@@ -689,7 +692,8 @@ export default function MedicoCaseStudy() {
                 ML-driven shift allocations & demand forecasting
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → Reduced manual scheduling time by 60%, improved coverage by 25%
+                → Reduced manual scheduling time by 60%, improved coverage by
+                25%
               </p>
               <div className="mt-5 h-32 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg flex items-center justify-center">
                 <Calendar className="w-8 h-8 text-blue-600" />
@@ -760,7 +764,9 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Admin scheduling time</span>
+                    <span className="text-[#9FA0A3]">
+                      Admin scheduling time
+                    </span>
                     <span className="font-medium text-green-600">↓38%</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
@@ -768,7 +774,9 @@ export default function MedicoCaseStudy() {
                     <span className="font-medium text-blue-600">↑27%</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Diagnosis workflow delays</span>
+                    <span className="text-[#9FA0A3]">
+                      Diagnosis workflow delays
+                    </span>
                     <span className="font-medium text-purple-600">↓22%</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
@@ -788,15 +796,15 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Finally, a system that thinks like we do. I can focus on patients, 
-                    not screens."
+                    "Finally, a system that thinks like we do. I can focus on
+                    patients, not screens."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Dr. Sarah, Attending Physician
                     </cite>
                   </blockquote>
 
                   <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "The AI predictions help us stay ahead of staffing needs. 
+                    "The AI predictions help us stay ahead of staffing needs.
                     We're more proactive than reactive now."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Lisa, Hospital Administrator
@@ -804,8 +812,8 @@ export default function MedicoCaseStudy() {
                   </blockquote>
 
                   <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "I wish every healthcare tech company designed 
-                    with this level of understanding."
+                    "I wish every healthcare tech company designed with this
+                    level of understanding."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Chief Medical Officer
                     </cite>
@@ -832,7 +840,8 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Healthcare UX requires deep empathy for life-critical workflows
+                      Healthcare UX requires deep empathy for life-critical
+                      workflows
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -844,7 +853,8 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Mobile-first design is essential for point-of-care workflows
+                      Mobile-first design is essential for point-of-care
+                      workflows
                     </span>
                   </li>
                 </ul>
@@ -908,7 +918,8 @@ export default function MedicoCaseStudy() {
                   Medico Platform Preview
                 </h3>
                 <p className="text-gray-600">
-                  Comprehensive hospital management interface with AI-driven insights
+                  Comprehensive hospital management interface with AI-driven
+                  insights
                 </p>
               </div>
             </div>
