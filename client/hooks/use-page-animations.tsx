@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect, useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 /**
  * Hook to manage page animations and fix refresh/navigation issues
@@ -44,7 +44,7 @@ export function usePageAnimations() {
  */
 export function useIntersectionAnimation(
   threshold: number = 0.1,
-  rootMargin: string = '0px 0px -50px 0px'
+  rootMargin: string = "0px 0px -50px 0px",
 ) {
   const [isVisible, setIsVisible] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -65,7 +65,7 @@ export function useIntersectionAnimation(
       {
         threshold,
         rootMargin,
-      }
+      },
     );
 
     observer.observe(element);
@@ -92,20 +92,20 @@ export function useIntersectionAnimation(
  */
 export function useStaggeredAnimations(
   baseDelay: number = 300,
-  increment: number = 200
+  increment: number = 200,
 ) {
   const { animationsReady } = usePageAnimations();
   const [animationStates, setAnimationStates] = useState<boolean[]>([]);
 
   const getAnimationDelay = (index: number) => {
-    return animationsReady ? baseDelay + (index * increment) : 0;
+    return animationsReady ? baseDelay + index * increment : 0;
   };
 
-  const getAnimationClass = (index: number, baseClasses: string = '') => {
+  const getAnimationClass = (index: number, baseClasses: string = "") => {
     if (!animationsReady) {
       return baseClasses;
     }
-    
+
     return `${baseClasses} animate-in fade-in-0 slide-in-from-bottom-6 duration-1000`;
   };
 

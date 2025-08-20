@@ -117,7 +117,10 @@
   }
 
   /* Improved touch targets for mobile */
-  button, a, input[type="button"], input[type="submit"] {
+  button,
+  a,
+  input[type="button"],
+  input[type="submit"] {
     @apply min-h-[44px] min-w-[44px];
   }
 

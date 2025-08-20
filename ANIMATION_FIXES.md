@@ -55,18 +55,18 @@
 ## Usage Examples
 
 ### Using the Intersection Animation Hook
+
 ```tsx
-import { useIntersectionAnimation } from '../hooks/use-page-animations';
+import { useIntersectionAnimation } from "../hooks/use-page-animations";
 
 const { elementRef, isVisible } = useIntersectionAnimation(0.5);
 
 // In JSX
-<div ref={elementRef}>
-  {isVisible && <AnimatedComponent />}
-</div>
+<div ref={elementRef}>{isVisible && <AnimatedComponent />}</div>;
 ```
 
 ### Using Staggered Animations
+
 ```tsx
 import { useStaggeredAnimations } from '../hooks/use-page-animations';
 

@@ -1,6 +1,10 @@
-import { useEffect, ReactNode } from 'react';
-import { useLocation } from 'react-router-dom';
-import { resetPageAnimations, initializePageAnimations, applyReducedMotion } from '../lib/animation-utils';
+import { useEffect, ReactNode } from "react";
+import { useLocation } from "react-router-dom";
+import {
+  resetPageAnimations,
+  initializePageAnimations,
+  applyReducedMotion,
+} from "../lib/animation-utils";
 
 interface PageAnimationWrapperProps {
   children: ReactNode;
@@ -16,7 +20,7 @@ interface PageAnimationWrapperProps {
  */
 export default function PageAnimationWrapper({
   children,
-  className = ''
+  className = "",
 }: PageAnimationWrapperProps) {
   const location = useLocation();
 
@@ -40,22 +44,20 @@ export default function PageAnimationWrapper({
 
   // Listen for motion preference changes
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     const handleMotionChange = () => {
       applyReducedMotion();
     };
 
-    mediaQuery.addEventListener('change', handleMotionChange);
+    mediaQuery.addEventListener("change", handleMotionChange);
 
     return () => {
-      mediaQuery.removeEventListener('change', handleMotionChange);
+      mediaQuery.removeEventListener("change", handleMotionChange);
     };
   }, []);
 
   return (
-    <div className={`page-animation-wrapper ${className}`}>
-      {children}
-    </div>
+    <div className={`page-animation-wrapper ${className}`}>{children}</div>
   );
 }

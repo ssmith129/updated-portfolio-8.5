@@ -80,7 +80,8 @@ export default function ComputisCaseStudy() {
   } | null>(null);
 
   // Use the new animation hook for metrics animation
-  const { elementRef: metricsRef, isVisible: startMetricsAnimation } = useIntersectionAnimation(0.5, "0px 0px -50px 0px");
+  const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
+    useIntersectionAnimation(0.5, "0px 0px -50px 0px");
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
@@ -423,9 +424,8 @@ export default function ComputisCaseStudy() {
                 </h4>
                 <p className="text-[#4a4a4a]">
                   <span>
-                    ● 1:1 CPA interviews ● Workflow Shadowing
-                    ● Analytics Review competitive teardown (TaxBit,
-                    Cryptio, CoinTracker)
+                    ● 1:1 CPA interviews ● Workflow Shadowing ● Analytics Review
+                    competitive teardown (TaxBit, Cryptio, CoinTracker)
                   </span>
                 </p>
               </div>

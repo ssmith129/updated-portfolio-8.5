@@ -29,10 +29,22 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/about" element={<About />} />
-            <Route path="/case-studies/computis-crypto-tax-engine" element={<ComputisCaseStudy />} />
-            <Route path="/case-studies/ezemrx-redesigning-ehr" element={<EzEMRxCaseStudy />} />
-            <Route path="/case-studies/medico-hospital-management-system" element={<MedicoCaseStudy />} />
-            <Route path="/case-studies/moneyfarm-ai-powered-personal-finance" element={<MoneyFarmCaseStudy />} />
+            <Route
+              path="/case-studies/computis-crypto-tax-engine"
+              element={<ComputisCaseStudy />}
+            />
+            <Route
+              path="/case-studies/ezemrx-redesigning-ehr"
+              element={<EzEMRxCaseStudy />}
+            />
+            <Route
+              path="/case-studies/medico-hospital-management-system"
+              element={<MedicoCaseStudy />}
+            />
+            <Route
+              path="/case-studies/moneyfarm-ai-powered-personal-finance"
+              element={<MoneyFarmCaseStudy />}
+            />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

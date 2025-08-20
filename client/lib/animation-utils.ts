@@ -8,17 +8,17 @@
  */
 export function resetPageAnimations(): void {
   const animatedElements = document.querySelectorAll('[class*="animate-in"]');
-  
+
   animatedElements.forEach((element) => {
     const htmlElement = element as HTMLElement;
     const originalClasses = htmlElement.className;
-    
+
     // Temporarily remove animation classes
-    htmlElement.className = originalClasses.replace(/animate-in[^\s]*/g, '');
-    
+    htmlElement.className = originalClasses.replace(/animate-in[^\s]*/g, "");
+
     // Force reflow
     htmlElement.offsetHeight;
-    
+
     // Restore animation classes
     requestAnimationFrame(() => {
       htmlElement.className = originalClasses;
@@ -35,13 +35,13 @@ export function resetPageAnimations(): void {
 export function addStaggeredDelays(
   selector: string,
   baseDelay: number = 300,
-  increment: number = 200
+  increment: number = 200,
 ): void {
   const elements = document.querySelectorAll(selector);
-  
+
   elements.forEach((element, index) => {
     const htmlElement = element as HTMLElement;
-    const delay = baseDelay + (index * increment);
+    const delay = baseDelay + index * increment;
     htmlElement.style.animationDelay = `${delay}ms`;
   });
 }
@@ -50,7 +50,7 @@ export function addStaggeredDelays(
  * Check if animations should be reduced based on user preferences
  */
 export function shouldReduceMotion(): boolean {
-  return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
 /**
@@ -58,14 +58,14 @@ export function shouldReduceMotion(): boolean {
  */
 export function applyReducedMotion(): void {
   if (!shouldReduceMotion()) return;
-  
+
   const animatedElements = document.querySelectorAll('[class*="animate-in"]');
-  
+
   animatedElements.forEach((element) => {
     const htmlElement = element as HTMLElement;
-    htmlElement.style.animationDuration = '0.01ms';
-    htmlElement.style.animationDelay = '0s';
-    htmlElement.style.transitionDuration = '0.01ms';
+    htmlElement.style.animationDuration = "0.01ms";
+    htmlElement.style.animationDelay = "0s";
+    htmlElement.style.transitionDuration = "0.01ms";
   });
 }
 
@@ -75,7 +75,7 @@ export function applyReducedMotion(): void {
 export function initializePageAnimations(): void {
   // Apply reduced motion if needed
   applyReducedMotion();
-  
+
   // Reset any stale animation states
   setTimeout(() => {
     resetPageAnimations();
