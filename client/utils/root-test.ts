@@ -11,15 +11,15 @@ export function testRootManagement() {
       return;
     }
 
-    const ROOT_KEY = '__react_root__';
+    const ROOT_KEY = "__react_root__";
     const hasStoredRoot = !!(container as any)[ROOT_KEY];
     const hasChildren = container.hasChildNodes();
-    
-    console.log('Root Management Debug:', {
+
+    console.log("Root Management Debug:", {
       hasStoredRoot,
       hasChildren,
       childrenCount: container.children.length,
-      containerHTML: container.innerHTML.slice(0, 100) + '...'
+      containerHTML: container.innerHTML.slice(0, 100) + "...",
     });
   }
 }

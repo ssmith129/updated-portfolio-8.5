@@ -9,34 +9,35 @@ if (!container) {
 }
 
 // Enhanced root management to prevent duplicate createRoot calls
-const ROOT_KEY = '__react_root__';
+const ROOT_KEY = "__react_root__";
 
 // Function to get or create root
 function getRoot() {
   // Check if root already exists on the container
   if ((container as any)[ROOT_KEY]) {
     if (import.meta.env.DEV) {
-      console.log('Reusing existing React root');
+      console.log("Reusing existing React root");
     }
     return (container as any)[ROOT_KEY];
   }
 
   // Check if container already has React content (from previous createRoot)
-  const hasReactContent = container.hasChildNodes() &&
+  const hasReactContent =
+    container.hasChildNodes() &&
     container.firstChild &&
     (container.firstChild as any)._reactInternalInstance;
 
   if (hasReactContent) {
     if (import.meta.env.DEV) {
-      console.warn('Found existing React content, clearing container');
+      console.warn("Found existing React content, clearing container");
     }
     // Clear existing content if it exists but no stored root
-    container.innerHTML = '';
+    container.innerHTML = "";
   }
 
   // Create new root and store it
   if (import.meta.env.DEV) {
-    console.log('Creating new React root');
+    console.log("Creating new React root");
   }
 
   try {
@@ -44,7 +45,7 @@ function getRoot() {
     (container as any)[ROOT_KEY] = root;
     return root;
   } catch (error) {
-    console.error('Failed to create React root:', error);
+    console.error("Failed to create React root:", error);
     throw error;
   }
 }
@@ -56,10 +57,10 @@ const root = getRoot();
 try {
   root.render(<App />);
   if (import.meta.env.DEV) {
-    console.log('App rendered successfully');
+    console.log("App rendered successfully");
   }
 } catch (error) {
-  console.error('Failed to render app:', error);
+  console.error("Failed to render app:", error);
   throw error;
 }
 
