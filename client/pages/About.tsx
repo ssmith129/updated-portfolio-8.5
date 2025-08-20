@@ -25,12 +25,17 @@ export default function About() {
 
           {/* Header Text */}
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-[150%] sm:leading-[160%] md:leading-[170%] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
-              Senior Product Designer with 6+ years of experience creating
-              intuitive, scalable UX for complex SaaS and enterprise platforms.
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-[150%] sm:leading-[160%] md:leading-[170%] xl:leading-[54px] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
+              <span className="xl:leading-[54px]">
+                Senior Product Designer with 6+ years of experience creating
+                intuitive, scalable UX for complex SaaS and enterprise platforms.
+              </span>
               <br />
-              <br />I specialize in AI-integrated systems that streamline
-              workflows, simplify data, and drive decisions.
+              <br />
+              <span className="xl:leading-[54px]">
+                I specialize in AI-integrated systems that streamline
+                workflows, simplify data, and drive decisions.
+              </span>
             </h1>
           </div>
         </div>
@@ -152,25 +157,6 @@ export default function About() {
               </p>
             </div>
 
-            {/* Earlier Role */}
-            <div className="border-b border-[#9FA0A3] pb-4 sm:pb-6 lg:pb-8 xl:pb-[50px] transition-all duration-300 hover:border-[#131417]">
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2 sm:gap-0">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] transition-all duration-300 hover:tracking-[-0.2px]">
-                  UX Designer
-                </h3>
-                <span className="text-base sm:text-lg md:text-[20px] font-normal text-[#9FA0A3] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#131417]">
-                  2016 - 2018
-                </span>
-              </div>
-              <p className="text-sm sm:text-base md:text-[16px] font-medium text-[#9FA0A3] mb-3 transition-all duration-300 hover:text-[#131417]">
-                Various Startups
-              </p>
-              <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[600px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Partnered directly with founders, engineers, and executive
-                leadership to drive product decisions and execute go-to-market
-                launches across fintech, healthcare, and productivity tools.
-              </p>
-            </div>
           </div>
         </section>
 
