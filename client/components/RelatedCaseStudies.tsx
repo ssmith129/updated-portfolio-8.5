@@ -42,7 +42,7 @@ const allCaseStudies: CaseStudy[] = [
     subtitle: "Hospital Management System",
     href: "/case-studies/medico-hospital-management-system",
     image:
-      "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F92a209bf2a4040b697546cef331aa6b0?format=webp&width=800",
     category: "Healthcare",
     duration: "6 months",
     description:
