@@ -181,7 +181,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div
-              ref={metricsRef}
+              ref={metricsRef as React.RefObject<HTMLDivElement>}
               className="bg-gradient-to-r from-green-50 to-blue-50 rounded-[20px] p-6 sm:p-8"
             >
               <h3 className="text-xl font-medium text-[#131417] mb-6 flex items-center gap-2">
