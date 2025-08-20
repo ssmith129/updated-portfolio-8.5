@@ -8,30 +8,53 @@ if (!container) {
   throw new Error("Root container not found");
 }
 
-// Create root only once and reuse it for HMR
-let root: ReturnType<typeof createRoot>;
+// Enhanced root management to prevent duplicate createRoot calls
+const ROOT_KEY = '__react_root__';
 
-// Check if we're in development and handle HMR properly
-if (import.meta.hot) {
-  // In development with HMR, check if root already exists
-  if (!(container as any)._reactRoot) {
-    root = createRoot(container);
-    (container as any)._reactRoot = root;
-  } else {
-    root = (container as any)._reactRoot;
+// Function to get or create root
+function getRoot() {
+  // Check if root already exists on the container
+  if ((container as any)[ROOT_KEY]) {
+    return (container as any)[ROOT_KEY];
   }
-} else {
-  // In production, create root normally
-  root = createRoot(container);
+
+  // Check if container already has React content (from previous createRoot)
+  const hasReactContent = container.hasChildNodes() &&
+    container.firstChild &&
+    (container.firstChild as any)._reactInternalInstance;
+
+  if (hasReactContent) {
+    // Clear existing content if it exists but no stored root
+    container.innerHTML = '';
+  }
+
+  // Create new root and store it
+  const root = createRoot(container);
+  (container as any)[ROOT_KEY] = root;
+
+  return root;
 }
 
+// Get or create the root
+const root = getRoot();
+
+// Render the app
 root.render(<App />);
 
-// Handle HMR updates
+// Handle HMR updates in development
 if (import.meta.hot) {
   import.meta.hot.accept("./App", (newApp) => {
     if (newApp) {
-      root.render(<newApp.default />);
+      // Reuse the existing root for HMR updates
+      const currentRoot = (container as any)[ROOT_KEY];
+      if (currentRoot) {
+        currentRoot.render(<newApp.default />);
+      }
     }
+  });
+
+  // Clean up on HMR dispose
+  import.meta.hot.dispose(() => {
+    // Don't unmount, just let HMR handle the update
   });
 }
