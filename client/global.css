@@ -117,7 +117,10 @@
   }
 
   /* Improved touch targets for mobile */
-  button, a, input[type="button"], input[type="submit"] {
+  button,
+  a,
+  input[type="button"],
+  input[type="submit"] {
     @apply min-h-[44px] min-w-[44px];
   }
 
@@ -131,5 +134,40 @@
   /* Improved focus states for accessibility */
   *:focus-visible {
     @apply outline-2 outline-offset-2 outline-blue-500;
+  }
+
+  /* Animation fixes for page refresh and navigation */
+  .page-animation-wrapper {
+    /* Ensure animations are ready to restart */
+    animation-fill-mode: both;
+  }
+
+  /* Prevent animation flicker on page load */
+  [class*="animate-in"] {
+    animation-fill-mode: both;
+    animation-play-state: running;
+  }
+
+  /* Ensure proper animation reset on page changes */
+  .page-animation-wrapper * {
+    animation-duration: inherit;
+    animation-timing-function: inherit;
+  }
+
+  /* Fix for stale animation states */
+  @media (prefers-reduced-motion: no-preference) {
+    [class*="animate-in"] {
+      will-change: transform, opacity;
+    }
+  }
+
+  /* Respect reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    [class*="animate-in"] {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      animation-delay: 0s !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }

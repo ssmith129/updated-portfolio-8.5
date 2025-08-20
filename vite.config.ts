@@ -1,7 +1,6 @@
 import { defineConfig, Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { createServer as createExpressServer } from "./server/index";
 
 // https://vitejs.dev/config/
 export default defineConfig(() => ({
@@ -18,7 +17,8 @@ export default defineConfig(() => ({
     chunkSizeWarningLimit: 1000,
   },
   plugins: [react()],
-  configureServer(server) {
+  async configureServer(server) {
+    const { createServer: createExpressServer } = await import("./server/index");
     const expressApp = createExpressServer();
     server.middlewares.use('/api', expressApp);
   },

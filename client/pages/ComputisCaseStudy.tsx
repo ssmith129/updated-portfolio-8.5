@@ -1,47 +1,99 @@
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import {
+  ArrowLeft,
+  CheckCircle,
+  TrendingUp,
+  Users,
+  Clock,
+  Target,
+  X,
+  ZoomIn,
+} from "lucide-react";
+import Navigation, { SkipLink } from "../components/Navigation";
+import RelatedCaseStudies from "../components/RelatedCaseStudies";
+import Footer from "../components/Footer";
+import { useIntersectionAnimation } from "../hooks/use-page-animations";
+
+// Custom hook for counting animation
+const useCountAnimation = (
+  end: number,
+  duration: number = 2000,
+  startAnimation: boolean = false,
+) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!startAnimation) return;
+
+    let startTime: number;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+
+      // Easing function for smooth animation
+      const easeOut = 1 - Math.pow(1 - progress, 3);
+      const currentCount = Math.floor(easeOut * end);
+
+      setCount(currentCount);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        setCount(end);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [end, duration, startAnimation]);
+
+  return count;
+};
+
+// Animated Counter Component
+const AnimatedCounter = ({
+  value,
+  suffix = "%",
+  className,
+  startAnimation,
+}: {
+  value: number;
+  suffix?: string;
+  className: string;
+  startAnimation: boolean;
+}) => {
+  const animatedValue = useCountAnimation(value, 2000, startAnimation);
+
+  return (
+    <div className={className}>
+      {animatedValue}
+      {suffix}
+    </div>
+  );
+};
 
 export default function ComputisCaseStudy() {
+  const [enlargedImage, setEnlargedImage] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
+
+  // Use the new animation hook for metrics animation
+  const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
+    useIntersectionAnimation(0.5, "0px 0px -50px 0px");
+
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
-      {/* Navigation */}
-      <nav className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-4 sm:py-5 md:py-6 gap-4 md:gap-0 animate-in fade-in-0 slide-in-from-top-4 duration-700">
-        <div className="flex flex-col">
-          <h1 className="text-[20px] font-medium text-[#131417] leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px]">
-            Sean Smith
-          </h1>
-          <p className="text-[16px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.16px] transition-colors duration-300 hover:text-[#131417]">
-            San Francisco, CA
-          </p>
-        </div>
-
-        <div className="bg-white rounded-[50px] p-[5px] flex items-center flex-wrap gap-1 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-          <Link
-            to="/"
-            className="text-[#131417] px-4 sm:px-[25px] py-[13px] text-sm sm:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
-          >
-            Home
-          </Link>
-          <Link
-            to="/case-studies"
-            className="bg-[#131417] text-white px-4 sm:px-[25px] py-[13px] rounded-[50px] text-sm sm:text-[18px] font-medium tracking-[-0.18px] transition-all duration-300 hover:bg-[#2a2a2a] hover:scale-105"
-          >
-            Case Studies
-          </Link>
-          <Link
-            to="/about"
-            className="text-[#131417] px-4 sm:px-[25px] py-[13px] text-sm sm:text-[18px] font-medium tracking-[-0.18px] hover:bg-gray-50 rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px]"
-          >
-            About
-          </Link>
-        </div>
-      </nav>
+      <SkipLink />
+      <Navigation />
 
       {/* Back Button */}
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-[18px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.18px] hover:text-[#131417] transition-all duration-300 hover:scale-105 group"
+          aria-label="Return to case studies overview page"
         >
           <ArrowLeft className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" />
           Back to Case Studies
@@ -49,1316 +101,1367 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+      <header className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
         <div className="mb-8">
-          <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[25px] text-[14px] font-medium tracking-[-0.14px] mb-6 transition-all duration-300 hover:scale-105">
-            UX Case Study
+          <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[20px] text-[14px] font-medium tracking-[-0.14px] mb-6">
+            Product Design Case Study
           </span>
-          <h1 className="text-4xl sm:text-6xl lg:text-[72px] font-medium text-[#131417] leading-[120%] tracking-[-1.44px] mb-6 transition-all duration-500 hover:tracking-[-1.2px]">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#131417] leading-[110%] tracking-[-1.2px] mb-6">
             Computis – Crypto Tax Engine
           </h1>
-          <p className="text-xl sm:text-2xl lg:text-[28px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.28px] max-w-[900px] transition-all duration-300 hover:text-[#131417]">
-            Transforming a backend crypto tax script into an enterprise-grade, CPA-first SaaS platform
+          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px]">
+            From Dev-Only Script to Scalable, CPA-First SaaS Platform
           </p>
         </div>
-      </div>
+      </header>
 
-      {/* Hero Image Placeholder */}
-      <figure className="w-full max-w-6xl mx-auto mb-12 sm:mb-16 md:mb-20 lg:mb-24 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
-        <div className="relative aspect-video w-full bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-          {/* Placeholder Content */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4 bg-gray-300 rounded-full flex items-center justify-center">
-                <svg 
-                  className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-gray-500" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <p className="text-sm sm:text-base md:text-lg text-gray-500 font-medium">
-                Hero Image Placeholder
-              </p>
-              <p className="text-xs sm:text-sm text-gray-400 mt-2">
-                1920 × 1080 recommended
-              </p>
-            </div>
-          </div>
-          
-          {/* Placeholder Image Element for Future Integration */}
-          <img 
-            src="/api/placeholder/1920/1080" 
-            alt="Computis crypto tax platform hero image showcasing the main dashboard interface and user workflow"
-            className="w-full h-full object-cover opacity-0"
-            width="1920"
-            height="1080"
-            loading="eager"
-            decoding="async"
-          />
-        </div>
-        
-        {/* Optional Caption */}
-        <figcaption className="text-center mt-4 sm:mt-6">
-          <p className="text-sm sm:text-base text-gray-600 italic">
-            Computis platform overview - transforming complex crypto tax workflows into intuitive user experiences
-          </p>
-        </figcaption>
-      </figure>
+      {/* Main Content */}
+      <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
+        {/* Executive Summary */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-md transition-all duration-300 mt-12">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
+              Executive Summary
+            </h2>
 
-      {/* Content Sections */}
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
-        {/* TL;DR Summary */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                TL;DR Summary
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Role</p>
-                  <p className="text-[18px] font-medium text-[#131417]">Lead Product Designer</p>
-                </div>
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Company</p>
-                  <p className="text-[18px] font-medium text-[#131417]">Computis Inc.</p>
-                </div>
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Type</p>
-                  <p className="text-[18px] font-medium text-[#131417]">Crypto Tax Automation – B2B Enterprise SaaS</p>
-                </div>
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">Duration</p>
-                  <p className="text-[18px] font-medium text-[#131417]">10 months</p>
-                </div>
-              </div>
-              
-              <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                <p className="text-[14px] font-medium text-[#9FA0A3] mb-4">Tools & Team</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-[16px] font-medium text-[#131417] mb-2">Tools:</p>
-                    <p className="text-[16px] text-[#131417]">Figma, Miro, Jira, Notion, Webflow, GA</p>
-                  </div>
-                  <div>
-                    <p className="text-[16px] font-medium text-[#131417] mb-2">Team:</p>
-                    <p className="text-[16px] text-[#131417]">CTO, PM, 2 Engineers, Selecto (Design/Dev Agency)</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 hover:border-green-300 transition-all duration-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">✅ Outcomes</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="flex items-center gap-2">
-                    <span className="text-green-600 font-bold">↓ 45%</span>
-                    <span className="text-[16px] text-[#131417]">CPA onboarding time</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-blue-600 font-bold">↑ 32%</span>
-                    <span className="text-[16px] text-[#131417]">demo-to-conversion</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-purple-600 font-bold">↓ 85%</span>
-                    <span className="text-[16px] text-[#131417]">reliance on engineers</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-orange-600 font-bold">↑ 150%</span>
-                    <span className="text-[16px] text-[#131417]">anomaly detection coverage</span>
-                  </div>
-                </div>
-                <div className="mt-4 flex items-center gap-2">
-                  <span className="text-indigo-600 font-bold">📄 6</span>
-                  <span className="text-[16px] text-[#131417]">core modules launched with full audit trail UX</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Context & Overview */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-900">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Context & Overview
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
-                When I joined, Computis was a Python script tool that required devs to manually ingest crypto data and produce IRS forms.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-red-50 p-6 rounded-[25px] border border-red-200 transition-all duration-300 hover:border-red-300 hover:scale-[1.02]">
-                  <p className="text-[18px] font-medium text-[#131417] mb-2">📉 Before:</p>
-                  <p className="text-[16px] text-[#131417]">No UI, no classification logic for CPAs, and no audit-ready visibility.</p>
-                </div>
-                <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 transition-all duration-300 hover:border-green-300 hover:scale-[1.02]">
-                  <p className="text-[18px] font-medium text-[#131417] mb-2">📈 Opportunity:</p>
-                  <p className="text-[16px] text-[#131417]">The IRS crackdown on crypto made demand for transparent tax tooling skyrocket.</p>
-                </div>
-              </div>
-              <blockquote className="bg-[#131417] text-white p-8 rounded-[25px] italic text-[20px] leading-[150%] tracking-[-0.2px] transition-all duration-300 hover:scale-[1.02]">
-                "We weren't just building a UI — we were replacing engineering dependence with user trust."
-              </blockquote>
-            </div>
-          </div>
-        </section>
-
-        {/* My Role & Responsibilities */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1100">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                My Role & Responsibilities
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <p className="text-[18px] font-medium text-[#131417] mb-4">Title: Lead Product Designer</p>
-                <p className="text-[16px] font-medium text-[#131417] mb-3">Scope:</p>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    UX Strategy & Product Direction
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Stakeholder Interviews (CPAs, Analysts, CTO)
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Design System Architecture (WCAG 2.1 AA)
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Full UI Design: 30+ Screens + Edge Cases
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Developer Handoff + QA Workflows
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                <h3 className="text-[18px] font-medium text-[#131417] mb-3">🤝 Cross-functional Coordination:</h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></span>
-                    Held async Figma walkthroughs per module
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></span>
-                    Wrote detailed component behavior annotations
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></span>
-                    Created handoff bundles linked to Jira epics
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></span>
-                    Ran weekly QA validation alongside engineers
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Problem Statement & Opportunity */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1300">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Problem Statement & Opportunity
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Initial State</h3>
-                <table className="w-full min-w-[500px]">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Pain Point</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Consequence</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">No UI</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">CPAs couldn't self-serve</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Hardcoded rules</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Engineers had to triage all data</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">No audit trail</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">IRS compliance risk</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">No FMV diagnostics</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Frequent data mismatches</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">CSV-only exports</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Manual work for QBO</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">🔁 Reframed Opportunity:</h3>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] mb-4">
-                  This wasn't just a UI problem — it was a control handoff problem.
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+              <div className="space-y-2">
+                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                  Role
+                </h3>
+                <p className="text-lg font-medium text-[#131417]">
+                  Lead Product Designer
                 </p>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px]">
-                  We needed to shift trust from developers to CPAs by exposing logic, version history, and override control.
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                  Company
+                </h3>
+                <p className="text-lg font-medium text-[#131417]">
+                  Computis Inc.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                  Platform
+                </h3>
+                <p className="text-lg font-medium text-[#131417]">
+                  Web-based SaaS
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                  Duration
+                </h3>
+                <p className="text-lg font-medium text-[#131417]">10 months</p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                  Team
+                </h3>
+                <p className="text-lg font-medium text-[#131417]">
+                  CTO, PM, 2 Engineers
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                  Tools
+                </h3>
+                <p className="text-lg font-medium text-[#131417]">
+                  Figma, Miro, Jira
+                </p>
+              </div>
+            </div>
+
+            <div
+              ref={metricsRef as React.RefObject<HTMLDivElement>}
+              className="bg-gradient-to-r from-green-50 to-blue-50 rounded-[20px] p-6 sm:p-8"
+            >
+              <h3 className="text-xl font-medium text-[#131417] mb-6 flex items-center gap-2">
+                <TrendingUp className="w-5 h-5 text-green-600" />
+                Key Impact Metrics
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <AnimatedCounter
+                    value={45}
+                    className="text-2xl sm:text-3xl font-bold text-green-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
+                  <p className="text-sm text-[#9FA0A3]">
+                    ↓ CPA onboarding time
+                  </p>
+                </div>
+                <div className="text-center">
+                  <AnimatedCounter
+                    value={32}
+                    className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
+                  <p className="text-sm text-[#9FA0A3]">
+                    ↑ demo-to-conversion rate
+                  </p>
+                </div>
+                <div className="text-center">
+                  <AnimatedCounter
+                    value={85}
+                    className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
+                  <p className="text-sm text-[#9FA0A3]">
+                    ↓ engineering dependency
+                  </p>
+                </div>
+                <div className="text-center">
+                  <AnimatedCounter
+                    value={18}
+                    className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
+                  <p className="text-sm text-[#9FA0A3]">↓ bounce rate</p>
+                </div>
+                <div className="text-center">
+                  <AnimatedCounter
+                    value={150}
+                    className="text-2xl sm:text-3xl font-bold text-red-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
+                  <p className="text-sm text-[#9FA0A3]">↑ anomaly detection</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Video */}
+        <div className="flex flex-col relative mt-5 min-h-5 min-w-5 w-full">
+          <div className="relative">
+            <video
+              poster="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcff650be583f4e079a2ddeab9b814c9a"
+              autoPlay={true}
+              muted={true}
+              controls={false}
+              playsInline={true}
+              loop={true}
+              className="w-full h-full object-cover object-center rounded relative flex flex-col min-h-5 min-w-5 mt-5 shadow-[0_0_3px_0_rgba(0,0,0,1)]"
+            >
+              <source
+                type="video/mp4"
+                src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F87aaef24d96e41deaae4159d24d71925?alt=media&token=906b3f7a-143e-4ffb-abfa-8e1cacd68fcc&apiKey=ba69a23156414a589de97341511272c9"
+              />
+            </video>
+            <div className="w-full pointer-events-none text-[0]" />
+          </div>
+        </div>
+
+        {/* Before/After Transformation */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
+          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
+            Before/After Transformation
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-red-50 rounded-[20px] p-6 sm:p-8 border border-red-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+              <h3 className="text-xl font-bold text-red-800 mb-4">
+                Before: CLI-based Python Scripts
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3 text-red-700">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                  No UI, no audit trail
+                </li>
+                <li className="flex items-start gap-3 text-red-700">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                  100% dev-dependent for every task
+                </li>
+                <li className="flex items-start gap-3 text-red-700">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                  Manual CSV formatting & classification
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-green-50 rounded-[20px] p-6 sm:p-8 border border-green-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+              <h3 className="text-xl font-bold text-green-800 mb-4">
+                After: Enterprise-Grade SaaS
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3 text-green-700">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                  Modular, role-based dashboards
+                </li>
+                <li className="flex items-start gap-3 text-green-700">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                  AI-enhanced classification with confidence badges
+                </li>
+                <li className="flex items-start gap-3 text-green-700">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                  One-click IRS 8949 & QuickBooks exports
+                </li>
+                <li className="flex items-start gap-3 text-green-700">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                  Full audit traceability
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Problem Statement */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Problem & Opportunity
+            </h2>
+
+            <div className="space-y-8">
+              <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-xl font-bold text-[#131417] mb-4 flex items-center gap-2">
+                  <Target className="w-5 h-5 text-orange-600" />
+                  Core Problem
+                </h3>
+                <p className="text-lg text-[#131417] leading-[150%]">
+                  CPAs had zero autonomy in crypto tax workflows. Every
+                  classification, export, or audit scenario required engineering
+                  intervention, blocking scalability and eroding trust.
                 </p>
               </div>
 
-              <blockquote className="bg-[#131417] text-white p-8 rounded-[25px] italic text-[20px] leading-[150%] tracking-[-0.2px] transition-all duration-300 hover:scale-[1.02]">
-                <p className="text-[16px] font-medium text-[#9FA0A3] mb-2">🎯 Design North Star:</p>
-                "Enable any CPA to confidently explain their crypto tax report to a regulator — without needing a developer."
+              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-xl font-bold text-[#131417] mb-4">
+                  Opportunity
+                </h3>
+                <p className="text-lg text-[#131417] leading-[150%] mb-4">
+                  Build a CPA-first platform that:
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                    Empowers accountants to classify, reconcile, and export
+                    without dev help
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                    Builds trust via transparency in AI logic
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
+                    Supports compliance through audit-first design
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Design Principles */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
+          <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl cursor-pointer">
+            <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-6">
+              Design Principles
+            </h2>
+
+            <div className="bg-white/10 rounded-[20px] p-6 mb-8 transition-all duration-300 hover:bg-white/20 cursor-pointer">
+              <h3 className="text-xl font-medium mb-4">North Star</h3>
+              <blockquote className="text-lg italic leading-[150%]">
+                "Design a platform where a CPA can explain any audit report to a
+                regulator without needing a developer in the room."
               </blockquote>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
+                <h4 className="font-medium mb-2">
+                  Make Automation Explainable
+                </h4>
+                <p className="text-sm text-gray-400 italic">
+                  AI suggestions must surface logic, not hide it.
+                </p>
+              </div>
+              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
+                <h4 className="font-medium mb-2">Design for Audit Clarity</h4>
+                <p className="text-sm text-gray-400 italic">
+                  Every change traceable, export-ready, regulator-proof.
+                </p>
+              </div>
+              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
+                <h4 className="font-medium mb-2">Empower Without Overwhelm</h4>
+                <p className="text-sm text-gray-400 italic">
+                  Progressive disclosure for complex workflows.
+                </p>
+              </div>
+              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
+                <h4 className="font-medium mb-2">Architect for Scale</h4>
+                <p className="text-sm text-gray-400 italic">
+                  Modular IA for multi-client, multi-role workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Design Process */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Design Process
+            </h2>
+
+            <div className="mb-8" />
+
+            <div className="space-y-6">
+              <div className="border-l-4 border-blue-500 pl-6 transition-all duration-300 hover:bg-blue-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
+                <h4 className="font-semibold text-[#131417] mb-2 text-xl transition-colors duration-300 group-hover:text-blue-600">
+                  Discovery
+                </h4>
+                <p className="text-[#4a4a4a]">
+                  <span>
+                    ● 1:1 CPA interviews ● Workflow Shadowing ● Analytics Review
+                    competitive teardown (TaxBit, Cryptio, CoinTracker)
+                  </span>
+                </p>
+              </div>
+              <div className="border-l-4 border-green-500 pl-6 mt-6 transition-all duration-300 hover:bg-green-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
+                <h4 className="font-semibold text-[#131417] mb-2 text-xl transition-colors duration-300 group-hover:text-green-600">
+                  Define
+                </h4>
+                <p className="text-[#4a4a4a]">
+                  Personas, journey maps, service blueprints, modular IA
+                  (Clients → Wallets → Transactions → Rules → Reports → Exports)
+                </p>
+              </div>
+              <div className="border-l-4 border-purple-500 pl-6 mt-6 transition-all duration-300 hover:bg-purple-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
+                <h4 className="font-semibold text-[#131417] mb-2 text-xl transition-colors duration-300 group-hover:text-purple-600">
+                  Design
+                </h4>
+                <p className="text-[#4a4a4a]">
+                  30+ responsive screens, variant-driven component library, WCAG
+                  2.1 AA compliance, AI + anomaly UI patterns
+                </p>
+              </div>
+              <div className="border-l-4 border-orange-500 pl-6 mt-6 transition-all duration-300 hover:bg-orange-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
+                <h4 className="font-semibold text-[#131417] mb-2 text-xl transition-colors duration-300 group-hover:text-orange-600">
+                  Validate
+                </h4>
+                <p className="text-[#4a4a4a]">
+                  Usability tests with CPAs & analysts, Maze heatmaps, microcopy
+                  refinements for trust-building
+                </p>
+              </div>
+              <div className="border-l-4 border-red-500 pl-6 mt-6 transition-all duration-300 hover:bg-red-50 hover:border-l-6 hover:pl-5 hover:py-3 hover:-ml-1 hover:rounded-r-lg cursor-pointer group">
+                <h4 className="font-semibold text-[#131417] mb-2 text-xl transition-colors duration-300 group-hover:text-red-600">
+                  Deliver
+                </h4>
+                <p className="text-[#4a4a4a]">
+                  Annotated Figma specs, dev story links in Jira, QA checklists,
+                  responsive testing, accessibility validation
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Research & Insights */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1500">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Research & Insights
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Methods Used:</h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    1:1 interviews with CPAs and Ops Analysts
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Workflow shadowing of ingestion → audit exports
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    GA + Mixpanel analysis
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Competitor UX teardown (TaxBit, Cryptio, CoinTracker)
-                  </li>
-                </ul>
-              </div>
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Research & Insights
+            </h2>
 
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">💡 Key Insights:</h3>
-                <table className="w-full min-w-[600px]">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Insight</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Design Impact</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">CPAs distrust automation</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Add AI confidence badges + override tools</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Analysts lack upload diagnostics</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Build ingestion preview + error flagging</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Teams want visibility</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Enable audit logs and tagging workflows</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">FMV reconciliation is manual</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Create anomaly dashboards and severity indicators</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Market & Competitive Analysis */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Market & Competitive Analysis
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="text-[18px] font-medium text-[#131417] mb-3">Target Segments:</h3>
-                    <ul className="space-y-1">
-                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
-                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                        CPA Firms & Crypto Accounting Pros
-                      </li>
-                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
-                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                        DAO Treasurers
-                      </li>
-                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
-                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                        Crypto Hedge Funds
-                      </li>
-                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
-                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                        Exchanges & Aggregators
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="text-[18px] font-medium text-[#131417] mb-3">Trend Signals:</h3>
-                    <ul className="space-y-1">
-                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
-                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                        IRS scrutiny is increasing
-                      </li>
-                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
-                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                        CPAs want override logic — not hidden AI
-                      </li>
-                      <li className="text-[16px] text-[#131417] flex items-start gap-2">
-                        <span className="w-1 h-1 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                        Bulk data ingestion is a bottleneck
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Competitive Matrix:</h3>
-                <table className="w-full min-w-[600px]">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Feature</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Computis</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">TaxBit</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Cryptio</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">CoinTracker</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Rule Engine</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">AI Confidence Scores</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Audit Logs</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Bulk Tagging</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                      <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">QuickBooks Exports</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠</td>
-                      <td className="py-4 px-4 text-green-600 text-[18px]">✅</td>
-                      <td className="py-4 px-4 text-yellow-500 text-[18px]">⚠</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">🧠 Differentiator:</h3>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px]">
-                  Computis was the only platform with a drag-and-drop rule engine, AI transparency, audit logs, and FMV dashboards — all built into a modular, white-labeled interface.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* User Flows & Journey Mapping */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1900">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                User Flows & Journey Mapping
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="space-y-16 lg:space-y-20">
-                {/* Persona Cards */}
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-medium text-[#131417] mb-8 lg:mb-12">User Personas</h3>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {/* David - CPA Persona */}
-                    <div className="bg-white p-8 lg:p-10 rounded-[25px] border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] group">
-                      <div className="flex items-center gap-6 mb-8">
-                        {/* Professional Avatar */}
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                          <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <h4 className="text-2xl font-semibold text-[#131417] mb-1">David</h4>
-                          <p className="text-[#9FA0A3] text-lg font-medium">Senior CPA</p>
-                          <p className="text-[#666] text-sm mt-1">8+ years experience</p>
-                        </div>
-                      </div>
-                      
-                      <div className="space-y-6">
-                        {/* Goals */}
-                        <div className="bg-blue-50 p-6 rounded-[20px] border border-blue-100">
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                              </svg>
-                            </div>
-                            <h5 className="font-semibold text-[#131417]">Primary Goals</h5>
-                          </div>
-                          <ul className="text-sm text-[#555] space-y-2">
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Efficient transaction processing for 50+ crypto clients
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Ensure 100% compliance with evolving tax regulations
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Reduce manual categorization by 80%
-                            </li>
-                          </ul>
-                        </div>
-                        
-                        {/* Pain Points */}
-                        <div className="bg-red-50 p-6 rounded-[20px] border border-red-100">
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                              </svg>
-                            </div>
-                            <h5 className="font-semibold text-[#131417]">Key Pain Points</h5>
-                          </div>
-                          <ul className="text-sm text-[#555] space-y-2">
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Manual categorization takes 4+ hours per client
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Time-consuming compliance reviews and audits
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Complex crypto tax regulation changes
-                            </li>
-                          </ul>
-                        </div>
-                        
-                        {/* Key Needs */}
-                        <div className="bg-green-50 p-6 rounded-[20px] border border-green-100">
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                              </svg>
-                            </div>
-                            <h5 className="font-semibold text-[#131417]">Essential Needs</h5>
-                          </div>
-                          <ul className="text-sm text-[#555] space-y-2">
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                              <strong>Drag-and-drop rule builder</strong> for custom categorization
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                              <strong>Bulk processing capabilities</strong> for large datasets
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                              <strong>Real-time compliance validation</strong> with tax rules
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Mya - Analyst Persona */}
-                    <div className="bg-white p-8 lg:p-10 rounded-[25px] border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] group">
-                      <div className="flex items-center gap-6 mb-8">
-                        {/* Professional Avatar */}
-                        <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                          <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <h4 className="text-2xl font-semibold text-[#131417] mb-1">Mya</h4>
-                          <p className="text-[#9FA0A3] text-lg font-medium">Senior Data Analyst</p>
-                          <p className="text-[#666] text-sm mt-1">5+ years fintech experience</p>
-                        </div>
-                      </div>
-                      
-                      <div className="space-y-6">
-                        {/* Goals */}
-                        <div className="bg-purple-50 p-6 rounded-[20px] border border-purple-100">
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
-                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                              </svg>
-                            </div>
-                            <h5 className="font-semibold text-[#131417]">Analytical Goals</h5>
-                          </div>
-                          <ul className="text-sm text-[#555] space-y-2">
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Generate accurate financial reports within SLA
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Maintain 99.9% data accuracy across platforms
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Streamline reporting workflows by 60%
-                            </li>
-                          </ul>
-                        </div>
-                        
-                        {/* Pain Points */}
-                        <div className="bg-orange-50 p-6 rounded-[20px] border border-orange-100">
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                              </svg>
-                            </div>
-                            <h5 className="font-semibold text-[#131417]">Key Pain Points</h5>
-                          </div>
-                          <ul className="text-sm text-[#555] space-y-2">
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Data inconsistencies across 8+ platforms
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Complex workflows requiring manual oversight
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                              Limited real-time collaboration capabilities
-                            </li>
-                          </ul>
-                        </div>
-                        
-                        {/* Key Needs */}
-                        <div className="bg-teal-50 p-6 rounded-[20px] border border-teal-100">
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center">
-                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                              </svg>
-                            </div>
-                            <h5 className="font-semibold text-[#131417]">Essential Needs</h5>
-                          </div>
-                          <ul className="text-sm text-[#555] space-y-2">
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
-                              <strong>Advanced filtering options</strong> with saved queries
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
-                              <strong>Real-time collaboration tools</strong> for team workflows
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
-                              <strong>Automated report generation</strong> with custom templates
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* User Journey Map */}
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-medium text-[#131417] mb-8 lg:mb-12">User Journey Map</h3>
-                  
-                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-8 lg:p-12 rounded-[30px] border border-gray-200">
-                    {/* Journey Flow Header */}
-                    <div className="text-center mb-12">
-                      <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200">
-                        <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                        <span className="text-sm font-medium text-[#131417]">Complete Crypto Tax Processing Journey</span>
-                        <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                      </div>
-                    </div>
-
-                    {/* Journey Stages Flow */}
-                    <div className="relative">
-                      {/* Connection Line */}
-                      <div className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-yellow-400 via-green-400 via-purple-400 to-orange-400 rounded-full opacity-30 hidden lg:block"></div>
-                      
-                      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4">
-                        {[
-                          { 
-                            stage: 'Upload', 
-                            color: 'from-blue-500 to-blue-600',
-                            bgColor: 'bg-blue-50',
-                            borderColor: 'border-blue-200',
-                            icon: (
-                              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                              </svg>
-                            ),
-                            action: 'Import CSV/API data from exchanges',
-                            emotion: '😰 Cautious',
-                            pain: 'File format compatibility issues',
-                            touchpoint: 'Drag & drop interface',
-                            opportunity: 'Auto-detect file formats'
-                          },
-                          { 
-                            stage: 'Classify', 
-                            color: 'from-yellow-500 to-yellow-600',
-                            bgColor: 'bg-yellow-50',
-                            borderColor: 'border-yellow-200',
-                            icon: (
-                              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-                              </svg>
-                            ),
-                            action: 'Auto-categorize transactions using ML',
-                            emotion: '🤔 Focused',
-                            pain: 'Complex DeFi transaction rules',
-                            touchpoint: 'Smart categorization engine',
-                            opportunity: 'Learning from user corrections'
-                          },
-                          { 
-                            stage: 'Review', 
-                            color: 'from-green-500 to-green-600',
-                            bgColor: 'bg-green-50',
-                            borderColor: 'border-green-200',
-                            icon: (
-                              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                              </svg>
-                            ),
-                            action: 'Validate accuracy with bulk editing',
-                            emotion: '😌 Confident',
-                            pain: 'Time-consuming manual reviews',
-                            touchpoint: 'Review dashboard',
-                            opportunity: 'Smart exception highlighting'
-                          },
-                          { 
-                            stage: 'Export', 
-                            color: 'from-purple-500 to-purple-600',
-                            bgColor: 'bg-purple-50',
-                            borderColor: 'border-purple-200',
-                            icon: (
-                              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                              </svg>
-                            ),
-                            action: 'Generate tax forms and reports',   
-                            emotion: '😊 Satisfied',
-                            pain: 'Limited output format options',
-                            touchpoint: 'Export wizard',
-                            opportunity: 'Custom report templates'
-                          },
-                          { 
-                            stage: 'Audit', 
-                            color: 'from-orange-500 to-orange-600',
-                            bgColor: 'bg-orange-50',
-                            borderColor: 'border-orange-200',
-                            icon: (
-                              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                              </svg>
-                            ),
-                            action: 'Final compliance verification',
-                            emotion: '😅 Relieved',
-                            pain: 'Regulatory complexity and changes',
-                            touchpoint: 'Audit trail system',
-                            opportunity: 'Proactive compliance alerts'
-                          }
-                        ].map((item, index) => (
-                          <div key={index} className="relative group">
-                            {/* Stage Card */}
-                            <div className={`${item.bgColor} ${item.borderColor} border-2 p-6 lg:p-8 rounded-[25px] hover:shadow-xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 group-hover:shadow-2xl`}>
-                              {/* Stage Header */}
-                              <div className="text-center mb-6">
-                                <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-full flex items-center justify-center mb-4 mx-auto shadow-lg group-hover:shadow-xl transition-all duration-300`}>
-                                  {item.icon}
-                                </div>
-                                <h4 className="text-xl font-bold text-[#131417] mb-2">{item.stage}</h4>
-                                <div className="w-8 h-1 bg-gradient-to-r from-gray-300 to-gray-400 rounded-full mx-auto opacity-50"></div>
-                              </div>
-                              
-                              {/* Stage Details */}
-                              <div className="space-y-4 text-sm">
-                                {/* User Action */}
-                                <div className="bg-white/80 p-4 rounded-[15px] border border-white/50">
-                                  <div className="flex items-start gap-3">
-                                    <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                      <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
-                                      </svg>
-                                    </div>
-                                    <div>
-                                      <p className="font-semibold text-[#131417] mb-1">User Action</p>
-                                      <p className="text-[#666]">{item.action}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                                {/* Emotion */}
-                                <div className="bg-white/80 p-4 rounded-[15px] border border-white/50">
-                                  <div className="flex items-start gap-3">
-                                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                      <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-                                      </svg>
-                                    </div>
-                                    <div>
-                                      <p className="font-semibold text-[#131417] mb-1">Emotion</p>
-                                      <p className="text-[#666]">{item.emotion}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                                {/* Pain Point */}
-                                <div className="bg-red-50/80 p-4 rounded-[15px] border border-red-100/50">
-                                  <div className="flex items-start gap-3">
-                                    <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                      <svg className="w-3 h-3 text-red-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                                      </svg>
-                                    </div>
-                                    <div>
-                                      <p className="font-semibold text-[#131417] mb-1">Pain Point</p>
-                                      <p className="text-[#666]">{item.pain}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                                {/* Touchpoint */}
-                                <div className="bg-blue-50/80 p-4 rounded-[15px] border border-blue-100/50">
-                                  <div className="flex items-start gap-3">
-                                    <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                      <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                      </svg>
-                                    </div>
-                                    <div>
-                                      <p className="font-semibold text-[#131417] mb-1">Touchpoint</p>
-                                      <p className="text-[#666]">{item.touchpoint}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                                {/* Opportunity */}
-                                <div className="bg-green-50/80 p-4 rounded-[15px] border border-green-100/50">
-                                  <div className="flex items-start gap-3">
-                                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                                      <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                      </svg>
-                                    </div>
-                                    <div>
-                                      <p className="font-semibold text-[#131417] mb-1">Opportunity</p>
-                                      <p className="text-[#666]">{item.opportunity}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            
-                            {/* Arrow Connector (Desktop only) */}
-                            {index < 4 && (
-                              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                                <div className="w-8 h-8 bg-white rounded-full shadow-md border border-gray-200 flex items-center justify-center group-hover:scale-110 transition-all duration-300">
-                                  <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                  </svg>
-                                </div>
-                              </div>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    {/* Journey Insights */}
-                    <div className="mt-12 pt-8 border-t border-gray-300">
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div className="bg-white p-6 rounded-[20px] border border-gray-200 text-center">
-                          <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                          </div>
-                          <h4 className="font-semibold text-[#131417] mb-2">Time Saved</h4>
-                          <p className="text-2xl font-bold text-blue-600 mb-1">85%</p>
-                          <p className="text-sm text-[#666]">Reduction in processing time</p>
-                        </div>
-                        
-                        <div className="bg-white p-6 rounded-[20px] border border-gray-200 text-center">
-                          <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                          </div>
-                          <h4 className="font-semibold text-[#131417] mb-2">Accuracy</h4>
-                          <p className="text-2xl font-bold text-green-600 mb-1">99.7%</p>
-                          <p className="text-sm text-[#666]">Classification accuracy rate</p>
-                        </div>
-                        
-                        <div className="bg-white p-6 rounded-[20px] border border-gray-200 text-center">
-                          <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                            </svg>
-                          </div>
-                          <h4 className="font-semibold text-[#131417] mb-2">User Satisfaction</h4>
-                          <p className="text-2xl font-bold text-purple-600 mb-1">4.8/5</p>
-                          <p className="text-sm text-[#666]">Average user rating</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">🔍 UX Frictions Solved:</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6">
+                  Research Methods
+                </h3>
                 <ul className="space-y-3">
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    Lack of feedback → Introduced step-based upload & status chips
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Interviews with CPAs & Analysts
+                    </span>
                   </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    No version control → Inline audit trail
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Shadowing ingestion/report flows
+                    </span>
                   </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    Manual classification → AI + Bulk rules
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Mixpanel + GA usage drop-off audit
+                    </span>
                   </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    No ingestion diagnostics → Schema validation preview
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Ideation & Concepting */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2100">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Ideation & Concepting
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">Design Concepts Explored:</h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Glass-box AI interface (vs. black-box)
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Rule preview sandbox with before/after logic
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Tooltip-on-hover for explainability
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Status indicators for classification trust
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Teardowns: CoinTracker, TaxBit, Cryptio
+                    </span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-[#131417] text-white p-8 rounded-[25px] transition-all duration-300 hover:scale-[1.02]">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[20px] font-medium text-white mb-3 sm:mb-4 leading-tight transition-all duration-300">💡 Design Principles:</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="text-center">
-                    <p className="text-[18px] font-medium text-white">Trust = Transparency</p>
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6">
+                  Key Insights
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-red-50 rounded-[16px] p-4 border-l-4 border-red-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <p className="text-sm font-medium text-red-800 mb-1">
+                      Trust Barrier
+                    </p>
+                    <p className="text-sm text-red-700">
+                      CPAs distrust automation → Needed override tools
+                    </p>
                   </div>
-                  <div className="text-center">
-                    <p className="text-[18px] font-medium text-white">Control {'>'} Automation</p>
+                  <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <p className="text-sm font-medium text-orange-800 mb-1">
+                      Error Overwhelm
+                    </p>
+                    <p className="text-sm text-orange-700">
+                      Analysts overwhelmed by ingestion errors → Needed flags +
+                      diagnostics
+                    </p>
                   </div>
-                  <div className="text-center">
-                    <p className="text-[18px] font-medium text-white">Progressive Disclosure</p>
+                  <div className="bg-yellow-50 rounded-[16px] p-4 border-l-4 border-yellow-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <p className="text-sm font-medium text-yellow-800 mb-1">
+                      Audit Anxiety
+                    </p>
+                    <p className="text-sm text-yellow-700">
+                      No audit trail = lost trust
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* Wireframes & Prototyping */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2300">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Wireframes & Prototyping
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <ul className="space-y-3">
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  Low–Mid Fidelity wireframes for all 6 modules
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  Component-driven UI with atomic architecture
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  Edge case flows (FMV missing, duplicate txs, empty uploads)
-                </li>
-                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                  <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                  Prototypes tested via Maze + moderated sessions
-                </li>
-              </ul>
-
-              <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">✅ Design System:</h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></span>
-                    Based on Ant Design 5.0
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></span>
-                    WCAG 2.1 AA compliant
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2.5 flex-shrink-0"></span>
-                    Responsive 1440px grid + tokenized variables
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Final Designs & Outcome */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2500">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Final Designs & Outcome
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">🧩 Core Modules:</h3>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] mb-4">
-                  Clients → Wallets → Transactions → Rules → Reports → Exports
-                </p>
-                
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">🚀 Core Features Delivered:</h3>
-                <ul className="space-y-3">
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    Smart Upload Mapping + Error Flagging
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    Visual Rule Builder + Sandbox
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    AI Confidence Chips + Override UI
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    FMV Dashboard + Anomaly Detection
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3 transition-all duration-300 hover:text-[#2a2a2a]">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-3 flex-shrink-0"></span>
-                    Audit-Ready Exports (IRS 8949, QBO, CSV)
-                  </li>
-                </ul>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-purple-50 p-6 rounded-[25px] border border-purple-200 transition-all duration-300 hover:border-purple-300 hover:scale-[1.02]">
-                  <h4 className="text-[18px] font-medium text-[#131417] mb-2">Classification Grid</h4>
-                  <p className="text-[16px] text-[#131417]">w/ AI confidence</p>
+            <div className="bg-green-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
+              <h3 className="text-lg font-medium text-green-800 mb-4">
+                Feature Outcomes from Research
+              </h3>
+              <div className="flex flex-row justify-start gap-4 w-auto">
+                <div className="flex items-start gap-3 w-auto">
+                  <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-sm text-green-700">
+                    AI confidence tooltips + Accept/Reject
+                  </span>
                 </div>
-                <div className="bg-orange-50 p-6 rounded-[25px] border border-orange-200 transition-all duration-300 hover:border-orange-300 hover:scale-[1.02]">
-                  <h4 className="text-[18px] font-medium text-[#131417] mb-2">Rule Builder</h4>
-                  <p className="text-[16px] text-[#131417]">Drag-Drop UI</p>
+                <div className="flex items-start gap-3 w-auto">
+                  <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-sm text-green-700">
+                    Rule logic builder
+                  </span>
                 </div>
-                <div className="bg-red-50 p-6 rounded-[25px] border border-red-200 transition-all duration-300 hover:border-red-300 hover:scale-[1.02]">
-                  <h4 className="text-[18px] font-medium text-[#131417] mb-2">FMV Dashboard</h4>
-                  <p className="text-[16px] text-[#131417]">w/ Red-Yellow-Gray Flags</p>
+                <div className="flex items-center gap-3 w-auto justify-start">
+                  <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-sm text-green-700">
+                    Smart wallet upload with schema preview
+                  </span>
                 </div>
-                <div className="bg-teal-50 p-6 rounded-[25px] border border-teal-200 transition-all duration-300 hover:border-teal-300 hover:scale-[1.02]">
-                  <h4 className="text-[18px] font-medium text-[#131417] mb-2">Audit Log</h4>
-                  <p className="text-[16px] text-[#131417]">Timeline Drawer</p>
+                <div className="flex items-start gap-3 w-auto">
+                  <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-sm text-green-700">
+                    Audit trail drawer
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Results, Learnings & Next Steps */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2700">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
-                Results, Learnings & Next Steps
-              </h2>
-            </div>
-            <div className="flex-1 space-y-8">
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-x-auto">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">📊 Outcomes:</h3>
-                <table className="w-full min-w-[500px]">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Metric</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Before</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">After</th>
-                      <th className="text-left py-4 px-4 text-[16px] font-medium text-[#131417]">Change</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">CPA Onboarding Time</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">2.5h</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">1.4h</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-green-600">↓ 45%</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Bounce Rate</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">26%</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">8%</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-green-600">↓ 18%</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Demo Conversions</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">–</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">↑ 32%</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-blue-600">↑</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Dev Dependency</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">100%</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">15%</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-purple-600">↓ 85%</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-300">
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Anomaly Coverage</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">Baseline</td>
-                      <td className="py-4 px-4 text-[16px] text-[#131417]">↑ 150%</td>
-                      <td className="py-4 px-4 text-[16px] font-medium text-orange-600">↑</td>
-                    </tr>
-                  </tbody>
-                </table>
+        {/* User Personas */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
+          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
+            User Personas
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* David (CPA) Persona */}
+            <div className="bg-white rounded-[25px] p-8 shadow-sm">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-8 h-8 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-[#131417] mb-1">
+                    David
+                  </h3>
+                  <p className="text-[#9FA0A3] font-medium">Senior CPA</p>
+                  <p className="text-sm text-[#9FA0A3]">8+ years experience</p>
+                </div>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-[20px] font-medium text-[#131417]">💬 Stakeholder Feedback:</h3>
-                <blockquote className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-[25px] italic text-[18px] leading-[150%] tracking-[-0.18px] transition-all duration-300 hover:scale-[1.02]">
-                  "Finally feels like a product we can sell to institutions."
-                </blockquote>
-                <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-[25px] italic text-[18px] leading-[150%] tracking-[-0.18px] transition-all duration-300 hover:scale-[1.02]">
-                  "AI helped us work faster — without giving up control."
-                </blockquote>
+                <div
+                  style={{ backgroundColor: "#fff7ed" }}
+                  className="p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer"
+                >
+                  <h4 className="text-sm font-semibold text-green-800 mb-2">
+                    Needs
+                  </h4>
+                  <ul className="text-sm text-green-700 space-y-1">
+                    <li>• Audit logs for compliance</li>
+                    <li>�� Rule overrides for edge cases</li>
+                    <li>• QuickBooks export integration</li>
+                  </ul>
+                </div>
+
+                <div
+                  style={{ backgroundColor: "#fef2f2" }}
+                  className="p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer"
+                >
+                  <h4 className="text-sm font-semibold text-red-800 mb-2">
+                    Pain Points
+                  </h4>
+                  <p className="text-sm text-red-700">
+                    No visibility into classifications or logic - creates audit
+                    anxiety and compliance risk
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mya (Analyst) Persona */}
+            <div className="bg-white rounded-[25px] p-8 shadow-sm">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-8 h-8 text-purple-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-[#131417] mb-1">
+                    Mya
+                  </h3>
+                  <p className="text-[#9FA0A3] font-medium">
+                    Operations Analyst
+                  </p>
+                  <p className="text-sm text-[#9FA0A3]">3+ years experience</p>
+                </div>
               </div>
 
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">📍 What I'd Improve:</h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Build deeper permission tiers
+              <div className="space-y-4">
+                <div
+                  style={{ backgroundColor: "#fff7ed" }}
+                  className="p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer"
+                >
+                  <h4 className="text-sm font-semibold text-green-800 mb-2">
+                    Needs
+                  </h4>
+                  <ul className="text-sm text-green-700 space-y-1">
+                    <li>• Diagnostics for quick error resolution</li>
+                    <li>• Anomaly detection for quality assurance</li>
+                    <li>• Tagging workflows for organization</li>
+                  </ul>
+                </div>
+
+                <div
+                  style={{ backgroundColor: "#fef2f2" }}
+                  className="p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer"
+                >
+                  <h4 className="text-sm font-semibold text-red-800 mb-2">
+                    Pain Points
+                  </h4>
+                  <p className="text-sm text-red-700">
+                    Manual fixes with no traceability, FMV gaps causing delays
+                    in processing
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Journey Mapping */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              User Journey Mapping
+            </h2>
+
+            <div className="space-y-12">
+              {/* David's Journey */}
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-8 flex items-center gap-3">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span className="text-sm font-medium text-blue-600">D</span>
+                  </div>
+                  David's CPA Workflow
+                </h3>
+
+                <div className="relative">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex-1 text-center">
+                      <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-medium">
+                        1
+                      </div>
+                      <p className="text-sm font-medium text-[#131417]">
+                        Upload
+                      </p>
+                    </div>
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                    <div className="flex-1 text-center">
+                      <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-medium">
+                        2
+                      </div>
+                      <p className="text-sm font-medium text-[#131417]">
+                        Classify
+                      </p>
+                    </div>
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                    <div className="flex-1 text-center">
+                      <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-medium">
+                        3
+                      </div>
+                      <p className="text-sm font-medium text-[#131417]">
+                        Review
+                      </p>
+                    </div>
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                    <div className="flex-1 text-center">
+                      <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-medium">
+                        4
+                      </div>
+                      <p className="text-sm font-medium text-[#131417]">
+                        Export
+                      </p>
+                    </div>
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                    <div className="flex-1 text-center">
+                      <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-medium">
+                        5
+                      </div>
+                      <p className="text-sm font-medium text-[#131417]">
+                        Audit
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 rounded-[16px] p-4 mt-6">
+                  <h4 className="text-base font-semibold text-blue-800 mb-2">
+                    Tools Used
+                  </h4>
+                  <p className="text-sm text-blue-700">
+                    Visual Rule Builder, AI override, IRS/QBO export, audit log
+                    per transaction
+                  </p>
+                </div>
+              </div>
+
+              {/* Mya's Journey */}
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6 flex items-center gap-3">
+                  <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                    <span className="text-sm font-medium text-purple-600">
+                      M
+                    </span>
+                  </div>
+                  Mya's Analyst Workflow
+                </h3>
+
+                <div className="relative">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex-1 text-center">
+                      <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-medium">
+                        1
+                      </div>
+                      <p className="text-sm font-medium text-[#131417]">
+                        Ingest
+                      </p>
+                    </div>
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                    <div className="flex-1 text-center">
+                      <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-medium">
+                        2
+                      </div>
+                      <p className="text-sm font-medium text-[#131417]">
+                        Review Anomalies
+                      </p>
+                    </div>
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                    <div className="flex-1 text-center">
+                      <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-medium">
+                        3
+                      </div>
+                      <p className="text-sm font-medium text-[#131417]">
+                        Tag/Fix
+                      </p>
+                    </div>
+                    <div className="w-8 h-0.5 bg-gray-300"></div>
+                    <div className="flex-1 text-center">
+                      <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-medium">
+                        4
+                      </div>
+                      <p className="text-sm font-medium text-[#131417]">
+                        Support Export
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-purple-50 rounded-[16px] p-4 mt-6">
+                  <h4 className="text-base font-semibold text-purple-800 mb-2">
+                    Tools Used
+                  </h4>
+                  <p className="text-sm text-purple-700">
+                    Anomaly flags, comment trails, FMV dashboard
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Market Research */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Market Research
+            </h2>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6 transition-all duration-300 hover:text-blue-600 cursor-pointer">
+                  Industry Trends
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3 p-4 bg-orange-50 rounded-[16px] border border-orange-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <div>
+                      <p className="font-medium text-orange-800 mb-1">
+                        IRS Pressure Increasing
+                      </p>
+                      <p className="text-sm text-orange-700">
+                        Regulatory scrutiny demanding better compliance tools
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 p-4 bg-blue-50 rounded-[16px] border border-blue-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <div>
+                      <p className="font-medium text-blue-800 mb-1">
+                        Multi-wallet Complexity Rising
+                      </p>
+                      <p className="text-sm text-blue-700">
+                        Users managing 5+ wallets across different protocols
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 p-4 bg-green-50 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <div>
+                      <p className="font-medium text-green-800 mb-1">
+                        Traceability Over Automation
+                      </p>
+                      <p className="text-sm text-green-700">
+                        Firms need explainable processes, not black boxes
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6 transition-all duration-300 hover:text-blue-600 cursor-pointer">
+                  Competitive Landscape
+                </h3>
+                <div className="space-y-3">
+                  <div className="text-sm text-[#9FA0A3] mb-4">
+                    <strong className="text-[#131417]">
+                      Competitors Reviewed:
+                    </strong>{" "}
+                    Cryptio, TaxBit, CoinTracker, ZenLedger
+                  </div>
+
+                  <div className="bg-green-50 rounded-[16px] p-4 border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <h4 className="text-sm font-medium text-green-800 mb-3">
+                      Computis Differentiators
+                    </h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-center gap-2 text-sm text-green-700">
+                        <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                        Visual rule logic builder
+                      </li>
+                      <li className="flex items-center gap-2 text-sm text-green-700">
+                        <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                        Fully embedded audit trail
+                      </li>
+                      <li className="flex items-center gap-2 text-sm text-green-700">
+                        <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                        Role-based interfaces
+                      </li>
+                      <li className="flex items-center gap-2 text-sm text-green-700">
+                        <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                        Explainable AI with confidence scores
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Competitive Analysis */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2500">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Competitive Feature Analysis
+            </h2>
+
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[600px] border-collapse">
+                <thead>
+                  <tr className="border-b-2 border-gray-200">
+                    <th className="text-left py-4 px-4 font-medium text-[#131417]">
+                      <h2>
+                        <b>Feature</b>
+                      </h2>
+                      <h3></h3>
+                    </th>
+                    <th className="text-center py-4 px-4 font-medium text-[#131417]">
+                      <b>Computis</b>
+                    </th>
+                    <th className="text-center py-4 px-4 font-medium text-[#131417]">
+                      <p>
+                        <strong>TaxBit</strong>
+                      </p>
+                    </th>
+                    <th className="text-center py-4 px-4 font-medium text-[#131417]">
+                      <b>Cryptio</b>
+                    </th>
+                    <th className="text-center py-4 px-4 font-medium text-[#131417]">
+                      <b>CoinTracker</b>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <td className="py-4 px-4 font-medium text-[#131417]">
+                      CPA Rule Engine
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-green-100 text-green-600 rounded-full">
+                        ✓
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-red-100 text-red-600 rounded-full">
+                        ✗
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-red-100 text-red-600 rounded-full">
+                        ✗
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-red-100 text-red-600 rounded-full">
+                        ✗
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <td className="py-4 px-4 font-medium text-[#131417]">
+                      AI Suggestions
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-green-100 text-green-600 rounded-full">
+                        ✓
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-yellow-100 text-yellow-600 rounded-full">
+                        ~
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-yellow-100 text-yellow-600 rounded-full">
+                        ~
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-red-100 text-red-600 rounded-full">
+                        ✗
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <td className="py-4 px-4 font-medium text-[#131417]">
+                      Audit Logs
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-green-100 text-green-600 rounded-full">
+                        ✓
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-green-100 text-green-600 rounded-full">
+                        ✓
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-yellow-100 text-yellow-600 rounded-full">
+                        ~
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-red-100 text-red-600 rounded-full">
+                        ✗
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="py-4 px-4 font-medium text-[#131417]">
+                      QBO/IRS Export
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-green-100 text-green-600 rounded-full">
+                        ✓
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-yellow-100 text-yellow-600 rounded-full">
+                        ~
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-green-100 text-green-600 rounded-full">
+                        ✓
+                      </span>
+                    </td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="inline-flex items-center justify-center w-6 h-6 bg-yellow-100 text-yellow-600 rounded-full">
+                        ~
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div className="flex items-center gap-6 mt-6 text-sm">
+                <div className="flex items-center gap-2">
+                  <span className="w-4 h-4 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs">
+                    ✓
+                  </span>
+                  <span className="text-[#9FA0A3]">Full Support</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-4 h-4 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-xs">
+                    ~
+                  </span>
+                  <span className="text-[#9FA0A3]">Partial Support</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-4 h-4 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-xs">
+                    ✗
+                  </span>
+                  <span className="text-[#9FA0A3]">No Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Features */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2700">
+          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+            Key Features & Why They Mattered
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm">
+                <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
+                  Smart Wallet Upload
+                </h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">
+                  Error diagnostics & schema preview
+                </p>
+                <p className="text-sm text-green-600 font-medium">
+                  → Reduced ingestion errors, freed analysts from manual triage
+                </p>
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c61e887b42d4a24a166e3e99fc084a0",
+                      alt: "Smart Wallet Upload",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c61e887b42d4a24a166e3e99fc084a0"
+                    className="w-full aspect-[1.17] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="Smart Wallet Upload"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm">
+                <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
+                  AI Suggestions + Override
+                </h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">
+                  Confidence badges with tooltips
+                </p>
+                <p className="text-sm text-green-600 font-medium">
+                  → Built trust, increased classification speed by 60%
+                </p>
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fbdb57e2882e64f629c7174df0e398e38",
+                      alt: "AI Suggestions + Override",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fbdb57e2882e64f629c7174df0e398e38"
+                    className="w-full aspect-[1.1] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="AI Suggestions + Override"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm">
+                <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
+                  Visual Rule Builder
+                </h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">
+                  Before/after previews & real-time error flags
+                </p>
+                <p className="text-sm text-green-600 font-medium">
+                  → Enabled CPAs to self-manage classification logic
+                </p>
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F82c089e277614fbeaf18ed687002142f",
+                      alt: "Visual Rule Builder",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F82c089e277614fbeaf18ed687002142f"
+                    className="w-full aspect-[0.65] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="Visual Rule Builder"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm">
+                <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
+                  FMV Dashboard & Anomaly Detection
+                </h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">
+                  Severity flags & hover explanations
+                </p>
+                <p className="text-sm text-green-600 font-medium">
+                  → Increased anomaly coverage by 150%
+                </p>
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2",
+                      alt: "FMV Dashboard & Anomaly Detection",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F30a27bb067a841099dc176ad10fcaab2"
+                    className="aspect-[0.74] object-contain object-center w-full min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="FMV Dashboard & Anomaly Detection"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-[20px] p-6 shadow-sm">
+              <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
+                Audit-Ready Exports
+              </h3>
+              <p className="text-[#9FA0A3] text-sm mb-3">
+                IRS 8949, QBO, CSV with embedded audit logs
+              </p>
+              <p className="text-sm text-green-600 font-medium">
+                → Cut reporting prep time by 45%
+              </p>
+              <div
+                className="relative mt-5 group cursor-pointer"
+                onClick={() =>
+                  setEnlargedImage({
+                    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc8bdc181750941cd9d9d725a2a335427",
+                    alt: "Audit-Ready Exports",
+                  })
+                }
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc8bdc181750941cd9d9d725a2a335427"
+                  className="w-full aspect-[0.78] object-contain object-center min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                  alt="Audit-Ready Exports"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                  <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm flex flex-col justify-start items-start">
+                <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600">
+                  Role-Based Dashboards
+                </h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">
+                  CPA, Analyst, Admin views with permissions
+                </p>
+                <p className="text-sm text-green-600 font-medium">
+                  → Improved workflow clarity & security
+                </p>
+                <div
+                  className="relative mt-5 group cursor-pointer"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F34d1c0bd6afb4334b331333d058ccc63",
+                      alt: "Role-Based Dashboards",
+                    })
+                  }
+                >
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F34d1c0bd6afb4334b331333d058ccc63"
+                    className="aspect-[0.91] object-cover object-center w-full min-h-5 min-w-5 overflow-hidden transition-transform duration-300 group-hover:scale-105"
+                    alt="Role-Based Dashboards"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
+                <div className="relative mt-5" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Results & Impact */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Results & Impact
+            </h2>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6">
+                  Quantitative Results
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
+                    <span className="text-[#9FA0A3]">CPA onboarding time</span>
+                    <span className="font-medium text-green-600">
+                      <p>45%</p>
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
+                    <span className="text-[#9FA0A3]">Demo conversion rate</span>
+                    <span className="font-medium text-blue-600">↑32%</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
+                    <span className="text-[#9FA0A3]">Bounce rate</span>
+                    <span className="font-medium text-purple-600">↓18%</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
+                    <span className="text-[#9FA0A3]">
+                      Manual dev dependency
+                    </span>
+                    <span className="font-medium text-orange-600">↓85%</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
+                    <span className="text-[#9FA0A3]">
+                      Anomaly detection coverage
+                    </span>
+                    <span className="font-medium text-red-600">↑150%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6">
+                  Qualitative Feedback
+                </h3>
+                <div className="space-y-4">
+                  <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    "It finally feels like a product we can sell to
+                    institutions."
+                    <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
+                      — Product Owner
+                    </cite>
+                  </blockquote>
+
+                  <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    "AI suggestions cut our triage work in half, and I still
+                    feel in control."
+                    <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
+                      — CPA Stakeholder
+                    </cite>
+                  </blockquote>
+
+                  <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    "The clarity of your design handoff made engineering 10x
+                    faster."
+                    <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
+                      — Lead Frontend Developer
+                    </cite>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Reflections */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Reflections & Future Roadmap
+            </h2>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6">
+                  What I Learned
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Trust is the UX currency in regulated fintech
+                    </span>
                   </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Layer on LLM-backed transaction labeling
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Explainable AI wins over "magic" AI
+                    </span>
                   </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Expand multi-entity white-label dashboards
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Modular architecture is the key to scalability
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6">
+                  Next Steps
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      AI-powered rule suggestions
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Granular permission tiers for large firms
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Deeper DeFi integrations
+                    </span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
-      </div>
+      </main>
 
-      {/* Footer */}
-      <footer className="bg-[#131417] text-white animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-2900">
-        <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] py-16 lg:py-[134px]">
-          {/* Footer Header */}
-          <div className="flex flex-col sm:flex-row justify-between items-center mb-16 lg:mb-[270px] gap-4 sm:gap-0">
-            <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
-              Portfolio 2023 - 2024
-            </span>
-            <span className="text-[20px] font-semibold leading-[20px] tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] hover:scale-105">
-              Sean Smith
-            </span>
-            <span className="text-[18px] font-medium leading-[20px] tracking-[-0.18px] text-center sm:text-right transition-all duration-300 hover:text-[#9FA0A3] hover:tracking-[-0.1px]">
-              37.7749° N, 122.4194° W
-            </span>
-          </div>
+      {/* Related Case Studies */}
+      <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 sm:py-20 md:py-24 lg:py-32">
+        <RelatedCaseStudies currentCaseStudyId="computis" />
+      </section>
 
-          <div className="group bg-white/80 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden">
-            {/* Screenshot overlay that appears on hover */}
-            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-              <img 
-                src="/Transactions Grid.png" 
-                alt="Classification Grid Interface"
-                className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
-              />
-            </div>
-          </div>
+      <Footer />
 
-          {/* Get in Touch */}
-          <div className="text-center mb-16 lg:mb-[270px]">
-            <p className="text-[18px] font-medium text-[#9FA0A3] leading-[20px] tracking-[-0.18px] mb-[20px] transition-all duration-300 hover:text-white">
-              Have a nice project?
-            </p>
-            <h2 className="text-3xl sm:text-5xl lg:text-[72px] font-medium leading-[72px] tracking-[-0.72px] transition-all duration-500 hover:tracking-[-0.5px] hover:scale-105 cursor-pointer">
-              Get in Touch
-            </h2>
-          </div>
-
-          <div className="group bg-white/60 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden">
-            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-              <img 
-                src="/Rule Builder.png" 
-                alt="Rule Builder Interface"
-                className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
-            <span className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] order-3 lg:order-1 transition-all duration-300 hover:text-[#9FA0A3]">
-              © All rights reserved.
-            </span>
-
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-[44px] order-1 lg:order-2">
-              <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
-              >
-                Twitter
-              </a>
-              <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
-              >
-                Behance
-              </a>
-              <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
-              >
-                Instagram
-              </a>
-              <a
-                href="#"
-                className="text-lg sm:text-[20px] font-medium leading-[20px] tracking-[-0.2px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-110 hover:tracking-[-0.1px]"
-              >
-                Dribble
-              </a>
-            </div>
-
-            <div className="flex gap-4 sm:gap-8 lg:gap-[40px] order-2 lg:order-3">
-              <a
-                href="#"
-                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
-              >
-                License
-              </a>
-
-              <div className="group bg-white/20 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-                  <img 
-                    src="/Audit Trail Drawer.png" 
-                    alt="Audit Log Timeline Interface"
-                    className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
-                  />
-                </div>
-              </div>
-
-              <a
-                href="#"
-                className="text-[18px] font-medium leading-[18px] tracking-[-0.18px] hover:text-[#9FA0A3] transition-all duration-300 hover:scale-105"
-              >
-                Terms of Use
-              </a>
-            </div>
-          </div>
-
-          <div className="group bg-white/40 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden">
-            <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-              <img 
-                src="/Homepage Dashboard.png" 
-                alt="FMV Dashboard Interface"
-                className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
-              />
-            </div>
+      {/* Image Modal Overlay */}
+      {enlargedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={() => setEnlargedImage(null)}
+        >
+          <div className="relative max-w-[90vw] max-h-[90vh] w-full h-full flex items-center justify-center">
+            <button
+              onClick={() => setEnlargedImage(null)}
+              className="absolute top-4 right-4 z-60 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-2 transition-all duration-200"
+              aria-label="Close enlarged image"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <img
+              src={enlargedImage.src}
+              alt={enlargedImage.alt}
+              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
           </div>
         </div>
-      </footer>
+      )}
     </div>
   );
 }
