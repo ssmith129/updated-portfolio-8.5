@@ -145,9 +145,7 @@ export default function MedicoCaseStudy() {
 
       {/* Hero Image */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
-        <div
-          className="w-full aspect-[1.85] bg-gradient-to-br from-blue-50 to-green-50 rounded-lg flex items-center justify-center border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group"
-        >
+        <div className="w-full aspect-[1.85] bg-gradient-to-br from-blue-50 to-green-50 rounded-lg flex items-center justify-center border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group">
           <a
             href="https://medico-2ftf.vercel.app/index.html"
             target="_blank"

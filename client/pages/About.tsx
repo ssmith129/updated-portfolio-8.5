@@ -28,13 +28,14 @@ export default function About() {
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-[150%] sm:leading-[160%] md:leading-[170%] xl:leading-[54px] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
               <span className="xl:leading-[54px]">
                 Senior Product Designer with 6+ years of experience creating
-                intuitive, scalable UX for complex SaaS and enterprise platforms.
+                intuitive, scalable UX for complex SaaS and enterprise
+                platforms.
               </span>
               <br />
               <br />
               <span className="xl:leading-[54px]">
-                I specialize in AI-integrated systems that streamline
-                workflows, simplify data, and drive decisions.
+                I specialize in AI-integrated systems that streamline workflows,
+                simplify data, and drive decisions.
               </span>
             </h1>
           </div>
@@ -156,7 +157,6 @@ export default function About() {
                 data.
               </p>
             </div>
-
           </div>
         </section>
 
