@@ -15,6 +15,9 @@ const ROOT_KEY = '__react_root__';
 function getRoot() {
   // Check if root already exists on the container
   if ((container as any)[ROOT_KEY]) {
+    if (import.meta.env.DEV) {
+      console.log('Reusing existing React root');
+    }
     return (container as any)[ROOT_KEY];
   }
 
@@ -24,15 +27,26 @@ function getRoot() {
     (container.firstChild as any)._reactInternalInstance;
 
   if (hasReactContent) {
+    if (import.meta.env.DEV) {
+      console.warn('Found existing React content, clearing container');
+    }
     // Clear existing content if it exists but no stored root
     container.innerHTML = '';
   }
 
   // Create new root and store it
-  const root = createRoot(container);
-  (container as any)[ROOT_KEY] = root;
+  if (import.meta.env.DEV) {
+    console.log('Creating new React root');
+  }
 
-  return root;
+  try {
+    const root = createRoot(container);
+    (container as any)[ROOT_KEY] = root;
+    return root;
+  } catch (error) {
+    console.error('Failed to create React root:', error);
+    throw error;
+  }
 }
 
 // Get or create the root
