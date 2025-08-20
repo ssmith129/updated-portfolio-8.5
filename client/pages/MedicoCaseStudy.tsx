@@ -147,20 +147,19 @@ export default function MedicoCaseStudy() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
         <div
           className="w-full aspect-[1.85] bg-gradient-to-br from-blue-50 to-green-50 rounded-lg flex items-center justify-center border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group"
-          onClick={() =>
-            setEnlargedImage({
-              src: "/placeholder.svg",
-              alt: "Medico Platform Overview",
-            })
-          }
         >
-          <div className="text-center">
+          <a
+            href="https://medico-2ftf.vercel.app/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center cursor-pointer flex flex-col"
+          >
             <Heart className="w-16 h-16 text-blue-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
             <p className="text-blue-600 font-medium">Medico Platform Preview</p>
             <p className="text-sm text-blue-400 mt-1">
               Click to view full interface
             </p>
-          </div>
+          </a>
         </div>
       </div>
 
