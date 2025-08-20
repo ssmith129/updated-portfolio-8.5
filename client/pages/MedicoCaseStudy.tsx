@@ -197,7 +197,7 @@ export default function MedicoCaseStudy() {
             </div>
 
             <div
-              ref={metricsRef}
+              ref={metricsRef as React.RefObject<HTMLDivElement>}
               className="bg-gradient-to-r from-blue-50 to-green-50 rounded-[20px] p-6 sm:p-8"
             >
               <h3 className="text-xl font-medium text-[#131417] mb-6 flex items-center gap-2">
