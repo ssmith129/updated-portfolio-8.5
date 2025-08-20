@@ -78,33 +78,9 @@ export default function ComputisCaseStudy() {
     src: string;
     alt: string;
   } | null>(null);
-  const [startMetricsAnimation, setStartMetricsAnimation] = useState(false);
-  const metricsRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries;
-        if (entry.isIntersecting && !startMetricsAnimation) {
-          setStartMetricsAnimation(true);
-        }
-      },
-      {
-        threshold: 0.5, // Trigger when 50% of the element is visible
-        rootMargin: "0px 0px -50px 0px", // Start animation a bit before element is fully visible
-      },
-    );
-
-    if (metricsRef.current) {
-      observer.observe(metricsRef.current);
-    }
-
-    return () => {
-      if (metricsRef.current) {
-        observer.unobserve(metricsRef.current);
-      }
-    };
-  }, [startMetricsAnimation]);
+  // Use the new animation hook for metrics animation
+  const { elementRef: metricsRef, isVisible: startMetricsAnimation } = useIntersectionAnimation(0.5, "0px 0px -50px 0px");
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
@@ -645,7 +621,7 @@ export default function ComputisCaseStudy() {
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>• Audit logs for compliance</li>
-                    <li>• Rule overrides for edge cases</li>
+                    <li>�� Rule overrides for edge cases</li>
                     <li>• QuickBooks export integration</li>
                   </ul>
                 </div>
