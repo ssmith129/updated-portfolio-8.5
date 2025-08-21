@@ -9,7 +9,7 @@ import { useLocation } from "react-router-dom";
  */
 export function usePageAnimations() {
   const location = useLocation();
-  const [animationsReady, setAnimationsReady] = useState(false);
+  const [animationsReady, setAnimationsReady] = useState(true);
   const animationTimeoutRef = useRef<NodeJS.Timeout>();
 
   // Reset animations on route change
@@ -19,13 +19,13 @@ export function usePageAnimations() {
       clearTimeout(animationTimeoutRef.current);
     }
 
-    // Reset animation state
+    // Temporarily disable animations during route change
     setAnimationsReady(false);
 
-    // Force a small delay to ensure DOM is ready
+    // Re-enable animations after a brief delay
     animationTimeoutRef.current = setTimeout(() => {
       setAnimationsReady(true);
-    }, 50);
+    }, 150);
 
     return () => {
       if (animationTimeoutRef.current) {
