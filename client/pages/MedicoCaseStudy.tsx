@@ -206,20 +206,34 @@ export default function MedicoCaseStudy() {
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div className="text-center">
-                      <p className="text-xl font-bold text-green-600 mb-1">↓ 35%</p>
+                      <p className="text-xl font-bold text-green-600 mb-1">
+                        ↓ 35%
+                      </p>
                       <p className="text-sm text-[#9FA0A3]">admin overhead</p>
                     </div>
                     <div className="text-center">
-                      <p className="text-xl font-bold text-blue-600 mb-1">↑ 22%</p>
-                      <p className="text-sm text-[#9FA0A3]">patient throughput</p>
+                      <p className="text-xl font-bold text-blue-600 mb-1">
+                        ↑ 22%
+                      </p>
+                      <p className="text-sm text-[#9FA0A3]">
+                        patient throughput
+                      </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-xl font-bold text-purple-600 mb-1">↓ 18%</p>
-                      <p className="text-sm text-[#9FA0A3]">missed follow-ups</p>
+                      <p className="text-xl font-bold text-purple-600 mb-1">
+                        ↓ 18%
+                      </p>
+                      <p className="text-sm text-[#9FA0A3]">
+                        missed follow-ups
+                      </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-xl font-bold text-orange-600 mb-1">↑</p>
-                      <p className="text-sm text-[#9FA0A3]">Staff satisfaction</p>
+                      <p className="text-xl font-bold text-orange-600 mb-1">
+                        ↑
+                      </p>
+                      <p className="text-sm text-[#9FA0A3]">
+                        Staff satisfaction
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -229,8 +243,12 @@ export default function MedicoCaseStudy() {
                     💡 Why It Matters
                   </h3>
                   <p className="text-base text-[#131417] leading-[150%]">
-                    Transformed siloed hospital workflows into a real-time, mobile-first platform with AI features for{" "}
-                    <span className="font-medium">staffing optimization, inbox triage, and diagnosis support</span>.
+                    Transformed siloed hospital workflows into a real-time,
+                    mobile-first platform with AI features for{" "}
+                    <span className="font-medium">
+                      staffing optimization, inbox triage, and diagnosis support
+                    </span>
+                    .
                   </p>
                 </div>
               </div>
