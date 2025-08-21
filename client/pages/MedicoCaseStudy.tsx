@@ -142,6 +142,103 @@ export default function MedicoCaseStudy() {
         </div>
       </div>
 
+      {/* Summary Card */}
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-8">
+        <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
+          <button
+            onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
+            className="w-full flex items-center justify-between group"
+            aria-expanded={isSummaryExpanded}
+            aria-controls="summary-content"
+          >
+            <h2 className="text-xl sm:text-2xl font-medium text-[#131417] leading-[120%] tracking-[-0.24px] group-hover:text-blue-600 transition-colors duration-300">
+              Summary
+            </h2>
+            {isSummaryExpanded ? (
+              <ChevronUp className="w-5 h-5 text-[#9FA0A3] group-hover:text-blue-600 transition-colors duration-300" />
+            ) : (
+              <ChevronDown className="w-5 h-5 text-[#9FA0A3] group-hover:text-blue-600 transition-colors duration-300" />
+            )}
+          </button>
+
+          {isSummaryExpanded && (
+            <div
+              id="summary-content"
+              className="mt-6 animate-in fade-in-0 slide-in-from-top-4 duration-500"
+            >
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4">
+                    AI-powered SaaS unifying hospital operations
+                  </h3>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div className="space-y-2">
+                      <p className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                        Role
+                      </p>
+                      <p className="text-base font-medium text-[#131417]">
+                        Lead UX/Product Designer
+                      </p>
+                    </div>
+                    <div className="space-y-2">
+                      <p className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                        Platform
+                      </p>
+                      <p className="text-base font-medium text-[#131417]">
+                        Web + Mobile SaaS
+                      </p>
+                    </div>
+                    <div className="space-y-2">
+                      <p className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                        Duration
+                      </p>
+                      <p className="text-base font-medium text-[#131417]">
+                        8 months
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-[16px] p-6">
+                  <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
+                    🚑 Impact at a Glance
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div className="text-center">
+                      <p className="text-xl font-bold text-green-600 mb-1">↓ 35%</p>
+                      <p className="text-sm text-[#9FA0A3]">admin overhead</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-xl font-bold text-blue-600 mb-1">↑ 22%</p>
+                      <p className="text-sm text-[#9FA0A3]">patient throughput</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-xl font-bold text-purple-600 mb-1">↓ 18%</p>
+                      <p className="text-sm text-[#9FA0A3]">missed follow-ups</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-xl font-bold text-orange-600 mb-1">↑</p>
+                      <p className="text-sm text-[#9FA0A3]">Staff satisfaction</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 rounded-[16px] p-6 border-l-4 border-blue-500">
+                  <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
+                    💡 Why It Matters
+                  </h3>
+                  <p className="text-base text-[#131417] leading-[150%]">
+                    Transformed siloed hospital workflows into a real-time, mobile-first platform with AI features for{" "}
+                    <span className="font-medium">staffing optimization, inbox triage, and diagnosis support</span>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
         {/* Executive Summary */}
