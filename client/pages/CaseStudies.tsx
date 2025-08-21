@@ -103,7 +103,7 @@ export default function CaseStudies() {
           {/* MoneyFarm Case Study */}
           <Link
             to="/case-studies/moneyfarm-ai-powered-personal-finance"
-            className="group relative animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-1500 w-full max-w-[600px]"
+            className="group relative animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-1300 w-full max-w-[600px]"
           >
             <img
               src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
