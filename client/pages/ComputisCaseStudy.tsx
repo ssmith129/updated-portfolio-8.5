@@ -420,7 +420,7 @@ export default function ComputisCaseStudy() {
             <div className="bg-amber-50 rounded-[20px] p-6 border-l-4 border-amber-500">
               <h3 className="text-xl font-bold text-[#131417] mb-4">Core Design Principle</h3>
               <p className="text-lg text-[#131417] leading-[150%] mb-4">
-                <span className="font-semibold">Transparency > Automation.</span>
+                <span className="font-semibold">Transparency &gt; Automation.</span>
               </p>
               <p className="text-[#131417]">
                 Automation had to <em>support human expertise</em>, not replace it.
@@ -966,7 +966,7 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <strong>System design > screens:</strong> modular IA unlocked scalability
+                      <strong>System design &gt; screens:</strong> modular IA unlocked scalability
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
