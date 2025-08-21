@@ -73,9 +73,4 @@ export function applyReducedMotion(): void {
 export function initializePageAnimations(): void {
   // Apply reduced motion if needed
   applyReducedMotion();
-
-  // Reset any stale animation states
-  setTimeout(() => {
-    resetPageAnimations();
-  }, 50);
 }
