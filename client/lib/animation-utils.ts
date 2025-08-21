@@ -14,13 +14,13 @@ export function resetPageAnimations(): void {
 
     // Simply reset animation by triggering a reflow
     // Remove animation classes temporarily
-    htmlElement.style.animation = 'none';
+    htmlElement.style.animation = "none";
 
     // Force reflow to reset the animation
     htmlElement.offsetHeight;
 
     // Re-enable animations
-    htmlElement.style.animation = '';
+    htmlElement.style.animation = "";
   });
 }
 
