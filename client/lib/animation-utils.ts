@@ -11,18 +11,16 @@ export function resetPageAnimations(): void {
 
   animatedElements.forEach((element) => {
     const htmlElement = element as HTMLElement;
-    const originalClasses = htmlElement.className;
 
-    // Temporarily remove animation classes
-    htmlElement.className = originalClasses.replace(/animate-in[^\s]*/g, "");
+    // Simply reset animation by triggering a reflow
+    // Remove animation classes temporarily
+    htmlElement.style.animation = 'none';
 
-    // Force reflow
+    // Force reflow to reset the animation
     htmlElement.offsetHeight;
 
-    // Restore animation classes
-    requestAnimationFrame(() => {
-      htmlElement.className = originalClasses;
-    });
+    // Re-enable animations
+    htmlElement.style.animation = '';
   });
 }
 
