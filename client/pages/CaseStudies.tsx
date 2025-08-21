@@ -48,36 +48,10 @@ export default function CaseStudies() {
             </div>
           </Link>
 
-          {/* ezEMRx Case Study */}
-          <Link
-            to="/case-studies/ezemrx-redesigning-ehr"
-            className="group relative animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-900 w-full max-w-[600px]"
-          >
-            <img
-              src="/ipad.png"
-              alt="ezEMRx - EHR for Public Health"
-              className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
-            />
-            {/* Title Overlay */}
-            <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
-              <div className="text-center text-white transform transition-all duration-500">
-                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium mb-1 sm:mb-2 tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px]">
-                  ezEMRx
-                </h3>
-                <p className="text-xs sm:text-sm md:text-base font-normal opacity-90 tracking-[-0.15px] sm:tracking-[-0.2px]">
-                  EHR for Public Health
-                </p>
-                <div className="mt-1 sm:mt-2 text-xs font-medium opacity-75">
-                  Click to view case study →
-                </div>
-              </div>
-            </div>
-          </Link>
-
           {/* Medico Case Study */}
           <Link
             to="/case-studies/medico-hospital-management-system"
-            className="group relative animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-1300 w-full max-w-[600px]"
+            className="group relative animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-900 w-full max-w-[600px]"
           >
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fadf782ed456e4ee188c3992a86747eef"
@@ -92,6 +66,32 @@ export default function CaseStudies() {
                 </h3>
                 <p className="text-xs sm:text-sm md:text-base font-normal opacity-90 tracking-[-0.15px] sm:tracking-[-0.2px]">
                   Hospital Management System
+                </p>
+                <div className="mt-1 sm:mt-2 text-xs font-medium opacity-75">
+                  Click to view case study →
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          {/* ezEMRx Case Study */}
+          <Link
+            to="/case-studies/ezemrx-redesigning-ehr"
+            className="group relative animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-1100 w-full max-w-[600px]"
+          >
+            <img
+              src="/ipad.png"
+              alt="ezEMRx - EHR for Public Health"
+              className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
+            />
+            {/* Title Overlay */}
+            <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
+              <div className="text-center text-white transform transition-all duration-500">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium mb-1 sm:mb-2 tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px]">
+                  ezEMRx
+                </h3>
+                <p className="text-xs sm:text-sm md:text-base font-normal opacity-90 tracking-[-0.15px] sm:tracking-[-0.2px]">
+                  EHR for Public Health
                 </p>
                 <div className="mt-1 sm:mt-2 text-xs font-medium opacity-75">
                   Click to view case study →
