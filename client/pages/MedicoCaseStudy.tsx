@@ -14,6 +14,8 @@ import {
   Clock,
   ZoomIn,
   X,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
