@@ -1,8 +1,7 @@
-import { useEffect, ReactNode } from "react";
+import { useEffect, ReactNode, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import {
   resetPageAnimations,
-  initializePageAnimations,
   applyReducedMotion,
 } from "../lib/animation-utils";
 
@@ -23,38 +22,37 @@ export default function PageAnimationWrapper({
   className = "",
 }: PageAnimationWrapperProps) {
   const location = useLocation();
+  const timeoutRef = useRef<NodeJS.Timeout>();
 
-  // Initialize animations on mount
+  // Reset animations on route change only
   useEffect(() => {
-    initializePageAnimations();
-  }, []);
+    // Clear any existing timeout to prevent multiple resets
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
 
-  // Reset animations on route change
-  useEffect(() => {
     // Small delay to ensure route has fully changed
-    const timeoutId = setTimeout(() => {
+    timeoutRef.current = setTimeout(() => {
       resetPageAnimations();
-      applyReducedMotion(); // Reapply motion preferences
-    }, 50);
+      applyReducedMotion();
+    }, 100);
 
     return () => {
-      clearTimeout(timeoutId);
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
     };
   }, [location.pathname]);
 
-  // Listen for motion preference changes
+  // One-time setup for motion preferences
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    applyReducedMotion();
 
-    const handleMotionChange = () => {
-      applyReducedMotion();
-    };
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const handleMotionChange = () => applyReducedMotion();
 
     mediaQuery.addEventListener("change", handleMotionChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMotionChange);
-    };
+    return () => mediaQuery.removeEventListener("change", handleMotionChange);
   }, []);
 
   return (
