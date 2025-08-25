@@ -134,9 +134,7 @@ export default function MedicoCaseStudy() {
         >
           <div className="text-center cursor-pointer flex flex-col">
             <Heart className="w-16 h-16 text-blue-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
-            <p className="text-blue-600 font-medium">
-              View Live Platform
-            </p>
+            <p className="text-blue-600 font-medium">View Live Platform</p>
             <p className="text-sm text-blue-400 mt-1">
               Click to preview medico-2ftf.vercel.app
             </p>
