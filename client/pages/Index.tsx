@@ -264,7 +264,7 @@ export default function Index() {
 
           <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1500">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
-              $1M+
+              $18M+
             </div>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] transition-all duration-300 group-hover:text-[#131417]">
               SaaS Revenue Impact

@@ -152,7 +152,7 @@ export default function About() {
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[600px] transition-all duration-300 hover:text-[#2a2a2a]">
                 Led product design for a crypto tax automation platform,
                 translating technical financial rules into clear,
-                consumer-facing UX. Designed and launched $1M+ SaaS features for
+                consumer-facing UX. Designed and launched $18M+ SaaS features for
                 accountants, analysts, and legal teams working with blockchain
                 data.
               </p>
