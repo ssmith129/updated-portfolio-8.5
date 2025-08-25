@@ -138,9 +138,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="text-center cursor-pointer flex flex-col">
             <Coins className="w-16 h-16 text-amber-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
-            <p className="text-amber-600 font-medium">
-              View Live Platform
-            </p>
+            <p className="text-amber-600 font-medium">View Live Platform</p>
             <p className="text-sm text-amber-400 mt-1">
               Click to preview computis.netlify.app
             </p>
@@ -1168,9 +1166,7 @@ export default function ComputisCaseStudy() {
                   <h3 className="text-lg font-medium text-gray-900">
                     Computis Platform
                   </h3>
-                  <p className="text-sm text-gray-600">
-                    computis.netlify.app
-                  </p>
+                  <p className="text-sm text-gray-600">computis.netlify.app</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
