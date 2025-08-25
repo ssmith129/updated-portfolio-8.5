@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation, { SkipLink } from "../components/Navigation";
+import Footer from "../components/Footer";
 
 export default function CaseStudies() {
   return (
@@ -127,6 +128,8 @@ export default function CaseStudies() {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
