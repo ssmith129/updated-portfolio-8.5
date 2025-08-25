@@ -131,17 +131,25 @@ export default function ComputisCaseStudy() {
 
       {/* Hero Image */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
-        <div className="w-full aspect-[1.85] bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg flex items-center justify-center border border-amber-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group">
+        <button
+          onClick={() => setIsPreviewOpen(true)}
+          className="w-full aspect-[1.85] bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg flex items-center justify-center border border-amber-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group"
+          aria-label="Open Computis platform preview"
+        >
           <div className="text-center cursor-pointer flex flex-col">
             <Coins className="w-16 h-16 text-amber-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
             <p className="text-amber-600 font-medium">
-              Computis Platform Preview
+              View Live Platform
             </p>
             <p className="text-sm text-amber-400 mt-1">
-              Crypto tax automation platform
+              Click to preview computis.netlify.app
             </p>
+            <div className="mt-3 flex items-center justify-center gap-2 text-xs text-amber-500">
+              <ZoomIn className="w-4 h-4" />
+              <span>Click to open preview</span>
+            </div>
           </div>
-        </div>
+        </button>
       </div>
 
       {/* Summary Card */}
