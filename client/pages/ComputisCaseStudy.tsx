@@ -1154,6 +1154,54 @@ export default function ComputisCaseStudy() {
 
       <Footer />
 
+      {/* Website Preview Modal */}
+      {isPreviewOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={() => setIsPreviewOpen(false)}
+        >
+          <div className="relative w-full h-full max-w-7xl max-h-[90vh] bg-white rounded-lg shadow-2xl overflow-hidden">
+            <div className="flex items-center justify-between p-4 bg-gray-50 border-b">
+              <div className="flex items-center gap-3">
+                <Coins className="w-6 h-6 text-amber-600" />
+                <div>
+                  <h3 className="text-lg font-medium text-gray-900">
+                    Computis Platform
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    computis.netlify.app
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://computis.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1 text-sm bg-amber-600 text-white rounded-md hover:bg-amber-700 transition-colors duration-200"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Open in new tab
+                </a>
+                <button
+                  onClick={() => setIsPreviewOpen(false)}
+                  className="bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full p-2 transition-all duration-200"
+                  aria-label="Close preview"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+            <iframe
+              src="https://computis.netlify.app"
+              className="w-full h-full border-0"
+              title="Computis Platform Preview"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
+
       {/* Image Modal Overlay */}
       {enlargedImage && (
         <div
