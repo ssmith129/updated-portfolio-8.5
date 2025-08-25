@@ -90,6 +90,7 @@ export default function ComputisCaseStudy() {
     alt: string;
   } | null>(null);
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   // Use the new animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
