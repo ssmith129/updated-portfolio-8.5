@@ -477,7 +477,8 @@ export default function ComputisCaseStudy() {
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               <span className="flex items-center gap-2">
-                Research <ChevronRight className="w-4 h-4" /> Insights <ChevronRight className="w-4 h-4" /> Design
+                Research <ChevronRight className="w-4 h-4" /> Insights{" "}
+                <ChevronRight className="w-4 h-4" /> Design
               </span>
             </h2>
 
@@ -497,7 +498,9 @@ export default function ComputisCaseStudy() {
                     <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
                       <span className="flex items-center gap-1 flex-wrap">
-                        Workflow shadowing of ingestion <ChevronRight className="w-4 h-4" /> tagging <ChevronRight className="w-4 h-4" /> reporting
+                        Workflow shadowing of ingestion{" "}
+                        <ChevronRight className="w-4 h-4" /> tagging{" "}
+                        <ChevronRight className="w-4 h-4" /> reporting
                       </span>
                     </span>
                   </li>
@@ -609,7 +612,10 @@ export default function ComputisCaseStudy() {
                   </h4>
                   <p className="text-sm text-blue-700">
                     <span className="flex items-center gap-1 flex-wrap">
-                      Upload <ChevronRight className="w-3 h-3" /> Classify <ChevronRight className="w-3 h-3" /> Review <ChevronRight className="w-3 h-3" /> Export <ChevronRight className="w-3 h-3" /> Audit
+                      Upload <ChevronRight className="w-3 h-3" /> Classify{" "}
+                      <ChevronRight className="w-3 h-3" /> Review{" "}
+                      <ChevronRight className="w-3 h-3" /> Export{" "}
+                      <ChevronRight className="w-3 h-3" /> Audit
                     </span>
                   </p>
                 </div>
@@ -658,7 +664,9 @@ export default function ComputisCaseStudy() {
                   </h4>
                   <p className="text-sm text-purple-700">
                     <span className="flex items-center gap-1 flex-wrap">
-                      Ingest <ChevronRight className="w-3 h-3" /> Review <ChevronRight className="w-3 h-3" /> Classify <ChevronRight className="w-3 h-3" /> Export
+                      Ingest <ChevronRight className="w-3 h-3" /> Review{" "}
+                      <ChevronRight className="w-3 h-3" /> Classify{" "}
+                      <ChevronRight className="w-3 h-3" /> Export
                     </span>
                   </p>
                 </div>
@@ -1124,10 +1132,11 @@ export default function ComputisCaseStudy() {
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
                       <strong className="flex items-center gap-1">
-                        Design <ChevronRight className="w-4 h-4" /> Business linkage:
-                      </strong> every UX
-                      choice tied to churn reduction, higher conversions, and
-                      fewer support costs
+                        Design <ChevronRight className="w-4 h-4" /> Business
+                        linkage:
+                      </strong>{" "}
+                      every UX choice tied to churn reduction, higher
+                      conversions, and fewer support costs
                     </span>
                   </li>
                 </ul>
