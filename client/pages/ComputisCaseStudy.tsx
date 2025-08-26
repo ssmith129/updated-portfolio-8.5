@@ -476,7 +476,9 @@ export default function ComputisCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              Research → Insights → Design
+              <span className="flex items-center gap-2">
+                Research <ChevronRight className="w-4 h-4" /> Insights <ChevronRight className="w-4 h-4" /> Design
+              </span>
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -494,7 +496,9 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Workflow shadowing of ingestion → tagging → reporting
+                      <span className="flex items-center gap-1 flex-wrap">
+                        Workflow shadowing of ingestion <ChevronRight className="w-4 h-4" /> tagging <ChevronRight className="w-4 h-4" /> reporting
+                      </span>
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -604,7 +608,9 @@ export default function ComputisCaseStudy() {
                     Journey
                   </h4>
                   <p className="text-sm text-blue-700">
-                    Upload → Classify → Review → Export → Audit
+                    <span className="flex items-center gap-1 flex-wrap">
+                      Upload <ChevronRight className="w-3 h-3" /> Classify <ChevronRight className="w-3 h-3" /> Review <ChevronRight className="w-3 h-3" /> Export <ChevronRight className="w-3 h-3" /> Audit
+                    </span>
                   </p>
                 </div>
               </div>
@@ -651,7 +657,9 @@ export default function ComputisCaseStudy() {
                     Journey
                   </h4>
                   <p className="text-sm text-purple-700">
-                    Ingest → Review → Classify → Export
+                    <span className="flex items-center gap-1 flex-wrap">
+                      Ingest <ChevronRight className="w-3 h-3" /> Review <ChevronRight className="w-3 h-3" /> Classify <ChevronRight className="w-3 h-3" /> Export
+                    </span>
                   </p>
                 </div>
               </div>
@@ -826,7 +834,7 @@ export default function ComputisCaseStudy() {
                       <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
                     </td>
                     <td className="text-center p-4">
-                      <span className="text-amber-500">��️</span>
+                      <span className="text-amber-500">⚠️</span>
                     </td>
                     <td className="text-center p-4">
                       <X className="w-5 h-5 text-red-500 mx-auto" />
