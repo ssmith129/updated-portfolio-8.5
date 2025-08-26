@@ -16,6 +16,7 @@ import {
   X,
   ChevronDown,
   ChevronUp,
+  ChevronRight,
   Coins,
   FileText,
   Search,
@@ -825,7 +826,7 @@ export default function ComputisCaseStudy() {
                       <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
                     </td>
                     <td className="text-center p-4">
-                      <span className="text-amber-500">⚠️</span>
+                      <span className="text-amber-500">��️</span>
                     </td>
                     <td className="text-center p-4">
                       <X className="w-5 h-5 text-red-500 mx-auto" />
