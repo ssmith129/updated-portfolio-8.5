@@ -683,23 +683,23 @@ export default function ComputisCaseStudy() {
                   <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-medium">
                     Clients
                   </span>
-                  <span className="text-slate-400">→</span>
+                  <ChevronRight className="w-5 h-5 text-slate-400" />
                   <span className="bg-green-100 text-green-800 px-4 py-2 rounded-lg font-medium">
                     Wallets
                   </span>
-                  <span className="text-slate-400">→</span>
+                  <ChevronRight className="w-5 h-5 text-slate-400" />
                   <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-lg font-medium">
                     Transactions
                   </span>
-                  <span className="text-slate-400">→</span>
+                  <ChevronRight className="w-5 h-5 text-slate-400" />
                   <span className="bg-amber-100 text-amber-800 px-4 py-2 rounded-lg font-medium">
                     Rules
                   </span>
-                  <span className="text-slate-400">→</span>
+                  <ChevronRight className="w-5 h-5 text-slate-400" />
                   <span className="bg-orange-100 text-orange-800 px-4 py-2 rounded-lg font-medium">
                     Reports
                   </span>
-                  <span className="text-slate-400">→</span>
+                  <ChevronRight className="w-5 h-5 text-slate-400" />
                   <span className="bg-red-100 text-red-800 px-4 py-2 rounded-lg font-medium">
                     Exports
                   </span>
@@ -1005,7 +1005,9 @@ export default function ComputisCaseStudy() {
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">CPA onboarding time</span>
                     <span className="font-medium text-green-600">
-                      ↓45% (2.5h → 1.4h)
+                      <span className="flex items-center gap-1">
+                        ↓45% (2.5h <ChevronRight className="w-3 h-3" /> 1.4h)
+                      </span>
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
@@ -1121,7 +1123,9 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <strong>Design → Business linkage:</strong> every UX
+                      <strong className="flex items-center gap-1">
+                        Design <ChevronRight className="w-4 h-4" /> Business linkage:
+                      </strong> every UX
                       choice tied to churn reduction, higher conversions, and
                       fewer support costs
                     </span>
