@@ -664,9 +664,9 @@ export default function MedicoCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Quick patient data access at bedside</li>
-                    <li>• AI diagnosis support tools</li>
-                    <li>• Mobile-optimized interfaces</li>
+                    <li>• Review inbox → confirm appointments</li>
+                    <li>• Update patient charts efficiently</li>
+                    <li>• AI-assisted decision support</li>
                   </ul>
                 </div>
 
@@ -675,8 +675,7 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Fragmented systems requiring multiple logins and interfaces
-                    during patient rounds
+                    Switching between multiple systems wastes time that could be spent on patient care
                   </p>
                 </div>
               </div>
@@ -705,9 +704,9 @@ export default function MedicoCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Automated scheduling & staffing</li>
-                    <li>• Financial forecasting tools</li>
-                    <li>• Compliance reporting automation</li>
+                    <li>• Manage staffing schedules efficiently</li>
+                    <li>• Monitor revenue dashboard in real-time</li>
+                    <li>• Oversee hospital operations</li>
                   </ul>
                 </div>
 
@@ -716,8 +715,7 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Manual report generation across multiple systems with no
-                    predictive insights
+                    Relying on static spreadsheets with limited forecasting insights
                   </p>
                 </div>
               </div>
@@ -744,9 +742,9 @@ export default function MedicoCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Real-time patient status updates</li>
-                    <li>• Task prioritization assistance</li>
-                    <li>• Quick medication verification</li>
+                    <li>• Track vitals → update charts</li>
+                    <li>• Triage patient messages efficiently</li>
+                    <li>• Seamless handoffs to doctors</li>
                   </ul>
                 </div>
 
@@ -755,8 +753,7 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Information silos causing delays in patient care
-                    coordination
+                    Fragmented inboxes leading to missed handoffs and care delays
                   </p>
                 </div>
               </div>
