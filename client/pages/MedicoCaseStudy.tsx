@@ -440,10 +440,7 @@ export default function MedicoCaseStudy() {
                   Core Problem
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%]">
-                  Hospital staff lose efficiency in fragmented systems — admins
-                  juggle reporting across HR, billing, and schedules while
-                  doctors waste time navigating multiple interfaces, reducing
-                  patient care quality.
+                  Hospital staff juggled multiple disjointed tools. Doctors tracked appointments separately from nurses' patient records. Admins had limited forecasting insights, relying on spreadsheets. Critical messages often went unread, creating care bottlenecks.
                 </p>
               </div>
 
@@ -452,20 +449,20 @@ export default function MedicoCaseStudy() {
                   Opportunity
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%] mb-4">
-                  Design a unified SaaS hub that:
+                  How might we unify these workflows into one adaptive platform that:
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
-                    Consolidates workflows into one intelligent platform
+                    Reduces friction and anticipates hospital needs
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
-                    Provides predictive AI for proactive healthcare management
+                    Provides role-specific dashboards for clarity
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
-                    Enables mobile-first care delivery
+                    Enables AI-powered decision support
                   </li>
                 </ul>
               </div>
