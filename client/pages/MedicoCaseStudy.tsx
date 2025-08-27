@@ -328,42 +328,38 @@ export default function MedicoCaseStudy() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
-                    value={38}
+                    value={35}
                     className="text-2xl sm:text-3xl font-bold text-green-600 mb-1"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#9FA0A3]">
-                    ↓ admin time spent on scheduling
+                    ↓ patient appointment delays
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
-                    value={27}
+                    value={28}
                     className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#9FA0A3]">
-                    ↑ doctor-patient face time
+                    ↑ faster inbox resolution
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <AnimatedCounter
-                    value={22}
-                    className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1"
-                    startAnimation={startMetricsAnimation}
-                  />
+                  <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">
+                    AI
+                  </div>
                   <p className="text-sm text-[#9FA0A3]">
-                    ↓ delays in diagnosis workflows
+                    Smart Scheduling
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <AnimatedCounter
-                    value={83}
-                    className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1"
-                    startAnimation={startMetricsAnimation}
-                  />
+                  <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1">
+                    Real-time
+                  </div>
                   <p className="text-sm text-[#9FA0A3]">
-                    staff adoption preference
+                    Revenue forecasting
                   </p>
                 </div>
               </div>
