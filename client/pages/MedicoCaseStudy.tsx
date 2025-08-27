@@ -119,7 +119,8 @@ export default function MedicoCaseStudy() {
             Symplify – Hospital Management System
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px]">
-            Transforming siloed hospital workflows into a unified, AI-powered SaaS platform
+            Transforming siloed hospital workflows into a unified, AI-powered
+            SaaS platform
           </p>
         </div>
       </header>
@@ -212,7 +213,9 @@ export default function MedicoCaseStudy() {
                       <p className="text-xl font-bold text-green-600 mb-1">
                         ↓ 35%
                       </p>
-                      <p className="text-sm text-[#9FA0A3]">appointment delays</p>
+                      <p className="text-sm text-[#9FA0A3]">
+                        appointment delays
+                      </p>
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-blue-600 mb-1">
@@ -226,9 +229,7 @@ export default function MedicoCaseStudy() {
                       <p className="text-xl font-bold text-purple-600 mb-1">
                         AI
                       </p>
-                      <p className="text-sm text-[#9FA0A3]">
-                        Smart Scheduling
-                      </p>
+                      <p className="text-sm text-[#9FA0A3]">Smart Scheduling</p>
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-orange-600 mb-1">
@@ -246,7 +247,8 @@ export default function MedicoCaseStudy() {
                     💡 Why It Matters
                   </h3>
                   <p className="text-base text-[#131417] leading-[150%]">
-                    Transformed fragmented hospital workflows into a real-time, role-specific SaaS platform with AI features for{" "}
+                    Transformed fragmented hospital workflows into a real-time,
+                    role-specific SaaS platform with AI features for{" "}
                     <span className="font-medium">
                       smart scheduling, inbox triage, and revenue forecasting
                     </span>
@@ -289,7 +291,9 @@ export default function MedicoCaseStudy() {
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Duration
                 </h3>
-                <p className="text-lg font-medium text-[#131417]">0→1 product design initiative</p>
+                <p className="text-lg font-medium text-[#131417]">
+                  0→1 product design initiative
+                </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
@@ -350,17 +354,13 @@ export default function MedicoCaseStudy() {
                   <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">
                     AI
                   </div>
-                  <p className="text-sm text-[#9FA0A3]">
-                    Smart Scheduling
-                  </p>
+                  <p className="text-sm text-[#9FA0A3]">Smart Scheduling</p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1">
                     Real-time
                   </div>
-                  <p className="text-sm text-[#9FA0A3]">
-                    Revenue forecasting
-                  </p>
+                  <p className="text-sm text-[#9FA0A3]">Revenue forecasting</p>
                 </div>
               </div>
             </div>
@@ -382,11 +382,13 @@ export default function MedicoCaseStudy() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Doctors tracked appointments separately from nurses' patient records
+                  Doctors tracked appointments separately from nurses' patient
+                  records
                 </li>
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Admins had limited forecasting insights, relying on spreadsheets
+                  Admins had limited forecasting insights, relying on
+                  spreadsheets
                 </li>
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
@@ -440,7 +442,11 @@ export default function MedicoCaseStudy() {
                   Core Problem
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%]">
-                  Hospital staff juggled multiple disjointed tools. Doctors tracked appointments separately from nurses' patient records. Admins had limited forecasting insights, relying on spreadsheets. Critical messages often went unread, creating care bottlenecks.
+                  Hospital staff juggled multiple disjointed tools. Doctors
+                  tracked appointments separately from nurses' patient records.
+                  Admins had limited forecasting insights, relying on
+                  spreadsheets. Critical messages often went unread, creating
+                  care bottlenecks.
                 </p>
               </div>
 
@@ -449,7 +455,8 @@ export default function MedicoCaseStudy() {
                   Opportunity
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%] mb-4">
-                  How might we unify these workflows into one adaptive platform that:
+                  How might we unify these workflows into one adaptive platform
+                  that:
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-3 text-[#131417]">
@@ -549,7 +556,8 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Workflow audits of appointment scheduling and patient intake
+                      Workflow audits of appointment scheduling and patient
+                      intake
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -561,7 +569,8 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Analysis of Epic and Cerner limitations for mid-sized clinics
+                      Analysis of Epic and Cerner limitations for mid-sized
+                      clinics
                     </span>
                   </li>
                 </ul>
@@ -577,7 +586,8 @@ export default function MedicoCaseStudy() {
                       Data Re-entry
                     </p>
                     <p className="text-sm text-red-700">
-                      Doctors spent ~30% of their time re-entering data across systems
+                      Doctors spent ~30% of their time re-entering data across
+                      systems
                     </p>
                   </div>
                   <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
@@ -585,7 +595,8 @@ export default function MedicoCaseStudy() {
                       Missed Handoffs
                     </p>
                     <p className="text-sm text-orange-700">
-                      Nurses highlighted missed handoffs due to fragmented inboxes
+                      Nurses highlighted missed handoffs due to fragmented
+                      inboxes
                     </p>
                   </div>
                   <div className="bg-yellow-50 rounded-[16px] p-4 border-l-4 border-yellow-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
@@ -593,7 +604,8 @@ export default function MedicoCaseStudy() {
                       Financial Visibility
                     </p>
                     <p className="text-sm text-yellow-700">
-                      Admins demanded real-time financial visibility beyond static Excel
+                      Admins demanded real-time financial visibility beyond
+                      static Excel
                     </p>
                   </div>
                 </div>
@@ -675,7 +687,8 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Switching between multiple systems wastes time that could be spent on patient care
+                    Switching between multiple systems wastes time that could be
+                    spent on patient care
                   </p>
                 </div>
               </div>
@@ -715,7 +728,8 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Relying on static spreadsheets with limited forecasting insights
+                    Relying on static spreadsheets with limited forecasting
+                    insights
                   </p>
                 </div>
               </div>
@@ -753,7 +767,8 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Fragmented inboxes leading to missed handoffs and care delays
+                    Fragmented inboxes leading to missed handoffs and care
+                    delays
                   </p>
                 </div>
               </div>
@@ -806,7 +821,8 @@ export default function MedicoCaseStudy() {
                 Smart Scheduling
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                AI analyzes historical data to recommend optimal scheduling blocks
+                AI analyzes historical data to recommend optimal scheduling
+                blocks
               </p>
               <p className="text-sm text-green-600 font-medium">
                 → Reduced bottlenecks and ↓ 35% appointment delays
@@ -822,7 +838,8 @@ export default function MedicoCaseStudy() {
                 AI Inbox Triage
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                Auto-sorts patient communications by urgency, flagging critical follow-ups
+                Auto-sorts patient communications by urgency, flagging critical
+                follow-ups
               </p>
               <p className="text-sm text-green-600 font-medium">
                 → ↑ 28% faster inbox resolution via AI triage
@@ -854,22 +871,30 @@ export default function MedicoCaseStudy() {
                     <span className="font-medium text-green-600">↓35%</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Inbox resolution speed</span>
+                    <span className="text-[#9FA0A3]">
+                      Inbox resolution speed
+                    </span>
                     <span className="font-medium text-blue-600">↑28%</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">
                       Revenue forecasting accuracy
                     </span>
-                    <span className="font-medium text-purple-600">Real-time</span>
+                    <span className="font-medium text-purple-600">
+                      Real-time
+                    </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">Staff satisfaction</span>
-                    <span className="font-medium text-orange-600">↑ All roles</span>
+                    <span className="font-medium text-orange-600">
+                      ↑ All roles
+                    </span>
                   </div>
                   <div className="flex justify-between items-center py-2 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">AI transparency</span>
-                    <span className="font-medium text-green-600">Built trust</span>
+                    <span className="font-medium text-green-600">
+                      Built trust
+                    </span>
                   </div>
                 </div>
               </div>
@@ -880,21 +905,24 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Transparency in AI outputs (showing why a message was flagged or schedule changed) built trust with our staff."
+                    "Transparency in AI outputs (showing why a message was
+                    flagged or schedule changed) built trust with our staff."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Product Team Learning
                     </cite>
                   </blockquote>
 
                   <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Role-based dashboarding outperformed 'one size fits all' layouts across all user types."
+                    "Role-based dashboarding outperformed 'one size fits all'
+                    layouts across all user types."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Design Research Insight
                     </cite>
                   </blockquote>
 
                   <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Symplify reframed hospital operations from siloed systems into one adaptive platform."
+                    "Symplify reframed hospital operations from siloed systems
+                    into one adaptive platform."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Project Impact Summary
                     </cite>
@@ -921,19 +949,22 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Transparency in AI outputs (showing why a message was flagged or schedule changed) built trust
+                      Transparency in AI outputs (showing why a message was
+                      flagged or schedule changed) built trust
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Role-based dashboarding outperformed "one size fits all" layouts
+                      Role-based dashboarding outperformed "one size fits all"
+                      layouts
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Healthcare UX requires deep empathy for life-critical workflows
+                      Healthcare UX requires deep empathy for life-critical
+                      workflows
                     </span>
                   </li>
                 </ul>
@@ -947,7 +978,8 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Expand AI modules into staffing optimization (predictive nurse shift planning)
+                      Expand AI modules into staffing optimization (predictive
+                      nurse shift planning)
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -959,7 +991,8 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Add patient sentiment analysis to capture feedback at scale
+                      Add patient sentiment analysis to capture feedback at
+                      scale
                     </span>
                   </li>
                 </ul>
@@ -1019,7 +1052,8 @@ export default function MedicoCaseStudy() {
                   Symplify Platform Preview
                 </h3>
                 <p className="text-gray-600 max-w-md">
-                  This is a conceptual case study. The live platform is not publicly available for demonstration.
+                  This is a conceptual case study. The live platform is not
+                  publicly available for demonstration.
                 </p>
               </div>
             </div>
@@ -1048,7 +1082,8 @@ export default function MedicoCaseStudy() {
                   Symplify Platform Preview
                 </h3>
                 <p className="text-gray-600">
-                  Unified hospital management interface with role-specific dashboards and AI-driven insights
+                  Unified hospital management interface with role-specific
+                  dashboards and AI-driven insights
                 </p>
               </div>
             </div>
