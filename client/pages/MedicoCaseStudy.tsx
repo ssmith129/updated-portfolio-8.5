@@ -129,13 +129,13 @@ export default function MedicoCaseStudy() {
         <button
           onClick={() => setIsPreviewOpen(true)}
           className="w-full aspect-[1.85] bg-gradient-to-br from-blue-50 to-green-50 rounded-lg flex items-center justify-center border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group"
-          aria-label="Open Medico platform preview"
+          aria-label="Open Symplify platform preview"
         >
           <div className="text-center cursor-pointer flex flex-col">
             <Heart className="w-16 h-16 text-blue-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
             <p className="text-blue-600 font-medium">View Live Platform</p>
             <p className="text-sm text-blue-400 mt-1">
-              Click to preview medico-2ftf.vercel.app
+              Click to preview symplify platform
             </p>
             <div className="mt-3 flex items-center justify-center gap-2 text-xs text-blue-500">
               <ZoomIn className="w-4 h-4" />
@@ -172,7 +172,7 @@ export default function MedicoCaseStudy() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4">
-                    AI-powered SaaS unifying hospital operations
+                    Unified AI-powered SaaS platform
                   </h3>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -197,7 +197,7 @@ export default function MedicoCaseStudy() {
                         Duration
                       </p>
                       <p className="text-base font-medium text-[#131417]">
-                        8 months
+                        0→1 product design
                       </p>
                     </div>
                   </div>
@@ -212,30 +212,30 @@ export default function MedicoCaseStudy() {
                       <p className="text-xl font-bold text-green-600 mb-1">
                         ↓ 35%
                       </p>
-                      <p className="text-sm text-[#9FA0A3]">admin overhead</p>
+                      <p className="text-sm text-[#9FA0A3]">appointment delays</p>
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-blue-600 mb-1">
-                        ↑ 22%
+                        ↑ 28%
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
-                        patient throughput
+                        faster inbox resolution
                       </p>
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-purple-600 mb-1">
-                        ↓ 18%
+                        AI
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
-                        missed follow-ups
+                        Smart Scheduling
                       </p>
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-orange-600 mb-1">
-                        ↑
+                        Real-time
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
-                        Staff satisfaction
+                        Revenue forecasting
                       </p>
                     </div>
                   </div>
