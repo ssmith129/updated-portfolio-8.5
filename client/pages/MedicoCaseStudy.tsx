@@ -246,10 +246,9 @@ export default function MedicoCaseStudy() {
                     💡 Why It Matters
                   </h3>
                   <p className="text-base text-[#131417] leading-[150%]">
-                    Transformed siloed hospital workflows into a real-time,
-                    mobile-first platform with AI features for{" "}
+                    Transformed fragmented hospital workflows into a real-time, role-specific SaaS platform with AI features for{" "}
                     <span className="font-medium">
-                      staffing optimization, inbox triage, and diagnosis support
+                      smart scheduling, inbox triage, and revenue forecasting
                     </span>
                     .
                   </p>
@@ -283,21 +282,21 @@ export default function MedicoCaseStudy() {
                   Platform
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  SaaS Hospital Management (Web + Mobile)
+                  Mobile-first SaaS Platform
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Duration
                 </h3>
-                <p className="text-lg font-medium text-[#131417]">12 months</p>
+                <p className="text-lg font-medium text-[#131417]">0→1 product design initiative</p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Team
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  CTO, PM, 3 Engineers, Medical Advisor
+                  Product team + Engineering
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -305,7 +304,7 @@ export default function MedicoCaseStudy() {
                   Users
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Clinic Admins, Doctors, Nurses
+                  Doctors, nurses, admins
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -313,7 +312,7 @@ export default function MedicoCaseStudy() {
                   Tools
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Figma, Miro, Azure DevOps
+                  Figma, Notion, Jira, Miro
                 </p>
               </div>
             </div>
