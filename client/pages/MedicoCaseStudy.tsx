@@ -921,21 +921,19 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Healthcare UX requires deep empathy for life-critical
-                      workflows
+                      Transparency in AI outputs (showing why a message was flagged or schedule changed) built trust
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      AI should augment clinical judgment, never replace it
+                      Role-based dashboarding outperformed "one size fits all" layouts
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Mobile-first design is essential for point-of-care
-                      workflows
+                      Healthcare UX requires deep empathy for life-critical workflows
                     </span>
                   </li>
                 </ul>
@@ -949,19 +947,19 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      AI diagnosis support with medical imaging integration
+                      Expand AI modules into staffing optimization (predictive nurse shift planning)
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Patient sentiment analysis for care quality insights
+                      Integrate with national EHR standards (HL7, FHIR)
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Expanded interoperability with legacy EHR systems
+                      Add patient sentiment analysis to capture feedback at scale
                     </span>
                   </li>
                 </ul>
