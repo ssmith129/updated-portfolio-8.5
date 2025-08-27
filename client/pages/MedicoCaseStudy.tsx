@@ -116,11 +116,10 @@ export default function MedicoCaseStudy() {
             Healthcare UX Case Study
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#131417] leading-[110%] tracking-[-1.2px] mb-6">
-            Medico – Hospital Management System
+            Symplify – Hospital Management System
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px]">
-            Transforming siloed hospital workflows into a real-time, AI-driven
-            clinical operations platform
+            Transforming siloed hospital workflows into a unified, AI-powered SaaS platform
           </p>
         </div>
       </header>
