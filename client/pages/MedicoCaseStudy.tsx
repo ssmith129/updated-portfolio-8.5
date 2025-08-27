@@ -849,27 +849,27 @@ export default function MedicoCaseStudy() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">
-                      Admin scheduling time
+                      Patient appointment delays
                     </span>
-                    <span className="font-medium text-green-600">↓38%</span>
+                    <span className="font-medium text-green-600">↓35%</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Doctor-patient time</span>
-                    <span className="font-medium text-blue-600">↑27%</span>
+                    <span className="text-[#9FA0A3]">Inbox resolution speed</span>
+                    <span className="font-medium text-blue-600">↑28%</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">
-                      Diagnosis workflow delays
+                      Revenue forecasting accuracy
                     </span>
-                    <span className="font-medium text-purple-600">↓22%</span>
+                    <span className="font-medium text-purple-600">Real-time</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Staff adoption rate</span>
-                    <span className="font-medium text-orange-600">83%</span>
+                    <span className="text-[#9FA0A3]">Staff satisfaction</span>
+                    <span className="font-medium text-orange-600">↑ All roles</span>
                   </div>
                   <div className="flex justify-between items-center py-2 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">System response time</span>
-                    <span className="font-medium text-red-600">↓45%</span>
+                    <span className="text-[#9FA0A3]">AI transparency</span>
+                    <span className="font-medium text-green-600">Built trust</span>
                   </div>
                 </div>
               </div>
@@ -880,26 +880,23 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Finally, a system that thinks like we do. I can focus on
-                    patients, not screens."
+                    "Transparency in AI outputs (showing why a message was flagged or schedule changed) built trust with our staff."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Dr. Sarah, Attending Physician
+                      — Product Team Learning
                     </cite>
                   </blockquote>
 
                   <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "The AI predictions help us stay ahead of staffing needs.
-                    We're more proactive than reactive now."
+                    "Role-based dashboarding outperformed 'one size fits all' layouts across all user types."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Lisa, Hospital Administrator
+                      — Design Research Insight
                     </cite>
                   </blockquote>
 
                   <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "I wish every healthcare tech company designed with this
-                    level of understanding."
+                    "Symplify reframed hospital operations from siloed systems into one adaptive platform."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Chief Medical Officer
+                      — Project Impact Summary
                     </cite>
                   </blockquote>
                 </div>
