@@ -771,14 +771,13 @@ export default function MedicoCaseStudy() {
             <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
               <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
                 <Brain className="w-5 h-5 text-blue-600" />
-                AI Staffing Optimizer
+                Unified Dashboards
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                ML-driven shift allocations & demand forecasting
+                Role-specific panels that prioritize daily tasks, reducing noise
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → Reduced manual scheduling time by 60%, improved coverage by
-                25%
+                → Reduced navigation time and improved task clarity
               </p>
               <div className="mt-5 h-32 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg flex items-center justify-center">
                 <Calendar className="w-8 h-8 text-blue-600" />
@@ -788,13 +787,13 @@ export default function MedicoCaseStudy() {
             <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
               <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
                 <Activity className="w-5 h-5 text-green-600" />
-                Mobile Patient Rounds
+                Smart Notifications
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                Touch-optimized, offline-ready bedside interface
+                AI-powered scoring ranks tasks by priority with risk detection
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → Increased doctor-patient interaction time by 27%
+                → Improved response times and reduced missed communications
               </p>
               <div className="mt-5 h-32 bg-gradient-to-br from-green-50 to-blue-50 rounded-lg flex items-center justify-center">
                 <Heart className="w-8 h-8 text-green-600" />
@@ -804,13 +803,13 @@ export default function MedicoCaseStudy() {
             <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
               <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-purple-600" />
-                Predictive Analytics Dashboard
+                Smart Scheduling
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                Revenue forecasts & anomaly detection
+                AI analyzes historical data to recommend optimal scheduling blocks
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → Improved financial planning accuracy by 40%
+                → Reduced bottlenecks and ↓ 35% appointment delays
               </p>
               <div className="mt-5 h-32 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg flex items-center justify-center">
                 <TrendingUp className="w-8 h-8 text-purple-600" />
@@ -820,13 +819,13 @@ export default function MedicoCaseStudy() {
             <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
               <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
                 <Shield className="w-5 h-5 text-orange-600" />
-                Smart Inbox with NLP Triage
+                AI Inbox Triage
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                AI-powered message prioritization & routing
+                Auto-sorts patient communications by urgency, flagging critical follow-ups
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → Reduced communication delays by 35%, improved response times
+                → ↑ 28% faster inbox resolution via AI triage
               </p>
               <div className="mt-5 h-32 bg-gradient-to-br from-orange-50 to-yellow-50 rounded-lg flex items-center justify-center">
                 <Shield className="w-8 h-8 text-orange-600" />
