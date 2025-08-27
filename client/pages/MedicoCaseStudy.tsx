@@ -543,25 +543,25 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Shadowing doctors and nurses during shifts
+                      12 staff interviews (admins, doctors, nurses)
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Interviews with hospital administrators
+                      Workflow audits of appointment scheduling and patient intake
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Analysis of Epic & Cerner workflow inefficiencies
+                      Usability tests of prototype flows
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Time & motion studies of administrative tasks
+                      Analysis of Epic and Cerner limitations for mid-sized clinics
                     </span>
                   </li>
                 </ul>
@@ -574,26 +574,26 @@ export default function MedicoCaseStudy() {
                 <div className="space-y-4">
                   <div className="bg-red-50 rounded-[16px] p-4 border-l-4 border-red-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-red-800 mb-1">
-                      Context Switching Fatigue
+                      Data Re-entry
                     </p>
                     <p className="text-sm text-red-700">
-                      Doctors waste 30+ minutes daily switching between systems
+                      Doctors spent ~30% of their time re-entering data across systems
                     </p>
                   </div>
                   <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-orange-800 mb-1">
-                      Administrative Burden
+                      Missed Handoffs
                     </p>
                     <p className="text-sm text-orange-700">
-                      60% of admin time lost to manual reporting & scheduling
+                      Nurses highlighted missed handoffs due to fragmented inboxes
                     </p>
                   </div>
                   <div className="bg-yellow-50 rounded-[16px] p-4 border-l-4 border-yellow-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-yellow-800 mb-1">
-                      Mobile Dependency
+                      Financial Visibility
                     </p>
                     <p className="text-sm text-yellow-700">
-                      72% of clinical decisions happen away from desktop
+                      Admins demanded real-time financial visibility beyond static Excel
                     </p>
                   </div>
                 </div>
@@ -608,25 +608,25 @@ export default function MedicoCaseStudy() {
                 <div className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
                   <span className="text-sm text-green-700">
-                    AI-powered staffing optimizer with shift predictions
+                    Role-specific dashboards that prioritize daily tasks
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
                   <span className="text-sm text-green-700">
-                    Mobile-first patient rounds dashboard
+                    AI inbox triage with explainable recommendations
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
                   <span className="text-sm text-green-700">
-                    Smart inbox with NLP-powered triage
+                    Smart scheduling assistant with confidence badges
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
                   <span className="text-sm text-green-700">
-                    Predictive revenue & cost forecasting
+                    Smart notifications with priority grouping
                   </span>
                 </div>
               </div>
