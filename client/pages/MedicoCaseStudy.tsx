@@ -382,19 +382,19 @@ export default function MedicoCaseStudy() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Multiple disconnected systems for EHR, HR, billing
+                  Doctors tracked appointments separately from nurses' patient records
                 </li>
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Manual scheduling & duplicate data entry
+                  Admins had limited forecasting insights, relying on spreadsheets
                 </li>
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  No mobile accessibility for doctors
+                  Critical messages often went unread, creating care bottlenecks
                 </li>
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Delayed reporting and analytics
+                  Duplicate data entry across multiple systems
                 </li>
               </ul>
             </div>
@@ -402,24 +402,24 @@ export default function MedicoCaseStudy() {
             <div className="bg-green-50 rounded-[20px] p-6 sm:p-8 border border-green-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
               <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
                 <CheckCircle className="w-5 h-5" />
-                After: Unified AI-Driven Platform
+                After: Unified Role-Specific Platform
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3 text-green-700">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  Consolidated workflows in one cloud-native hub
+                  Role-specific dashboards with prioritized tasks
                 </li>
                 <li className="flex items-start gap-3 text-green-700">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  AI-driven staffing forecasts & revenue predictions
+                  AI-powered inbox triage and scheduling
                 </li>
                 <li className="flex items-start gap-3 text-green-700">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  Mobile-first accessibility for bedside care
+                  Real-time revenue forecasting dashboards
                 </li>
                 <li className="flex items-start gap-3 text-green-700">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  Real-time dashboards & audit traceability
+                  Smart notifications with priority grouping
                 </li>
               </ul>
             </div>
