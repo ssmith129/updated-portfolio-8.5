@@ -40,7 +40,7 @@
 
 ### 5. Component Updates
 
-- **MedicoCaseStudy**: Updated to use new intersection animation hook
+- **SymplifyCaseStudy**: Updated to use new intersection animation hook
 - **ComputisCaseStudy**: Updated to use new intersection animation hook
 - **App.tsx**: Wrapped routes with PageAnimationWrapper
 
