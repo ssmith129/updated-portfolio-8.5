@@ -136,7 +136,7 @@ export default function MedicoCaseStudy() {
             href="https://medico-2ftf.vercel.app/"
             target="_blank"
             className="text-center cursor-pointer flex flex-col"
-            style={{ pointerEvents: 'auto' }}
+            style={{ pointerEvents: "auto" }}
           >
             <Heart className="w-16 h-16 text-blue-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
             <p className="text-blue-600 font-medium">View Live Platform</p>
@@ -804,9 +804,9 @@ export default function MedicoCaseStudy() {
                 srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9"
                 className="w-full mt-5 object-cover object-center overflow-hidden"
                 style={{
-                  aspectRatio: '1.11',
-                  minHeight: '20px',
-                  minWidth: '20px'
+                  aspectRatio: "1.11",
+                  minHeight: "20px",
+                  minWidth: "20px",
                 }}
                 alt="Unified Dashboards feature"
               />
@@ -828,9 +828,9 @@ export default function MedicoCaseStudy() {
                 srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9"
                 className="w-full mt-5 object-cover object-center overflow-hidden"
                 style={{
-                  aspectRatio: '1.47',
-                  minHeight: '20px',
-                  minWidth: '20px'
+                  aspectRatio: "1.47",
+                  minHeight: "20px",
+                  minWidth: "20px",
                 }}
                 alt="Smart Notifications feature"
               />
@@ -853,9 +853,9 @@ export default function MedicoCaseStudy() {
                 srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9"
                 className="w-full mt-5 object-cover object-center overflow-hidden"
                 style={{
-                  aspectRatio: '1.42',
-                  minHeight: '20px',
-                  minWidth: '20px'
+                  aspectRatio: "1.42",
+                  minHeight: "20px",
+                  minWidth: "20px",
                 }}
                 alt="Smart Scheduling feature"
               />
@@ -878,9 +878,9 @@ export default function MedicoCaseStudy() {
                 srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9"
                 className="w-full mt-5 object-cover object-center overflow-hidden"
                 style={{
-                  aspectRatio: '1.57',
-                  minHeight: '20px',
-                  minWidth: '20px'
+                  aspectRatio: "1.57",
+                  minHeight: "20px",
+                  minWidth: "20px",
                 }}
                 alt="AI Inbox Triage feature"
               />
