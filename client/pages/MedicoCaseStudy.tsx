@@ -132,7 +132,12 @@ export default function MedicoCaseStudy() {
           className="w-full aspect-[1.85] bg-gradient-to-br from-blue-50 to-green-50 rounded-lg flex items-center justify-center border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group"
           aria-label="Open Symplify platform preview"
         >
-          <div className="text-center cursor-pointer flex flex-col">
+          <a
+            href="https://medico-2ftf.vercel.app/"
+            target="_blank"
+            className="text-center cursor-pointer flex flex-col"
+            style={{ pointerEvents: 'auto' }}
+          >
             <Heart className="w-16 h-16 text-blue-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
             <p className="text-blue-600 font-medium">View Live Platform</p>
             <p className="text-sm text-blue-400 mt-1">
@@ -142,7 +147,7 @@ export default function MedicoCaseStudy() {
               <ZoomIn className="w-4 h-4" />
               <span>Click to open preview</span>
             </div>
-          </div>
+          </a>
         </button>
       </div>
 
