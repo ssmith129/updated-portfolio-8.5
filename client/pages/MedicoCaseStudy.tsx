@@ -1128,16 +1128,15 @@ export default function MedicoCaseStudy() {
             >
               <X className="w-6 h-6" />
             </button>
-            <div className="max-w-full max-h-full object-contain rounded-lg shadow-2xl bg-white flex items-center justify-center p-8">
-              <div className="text-center">
-                <Heart className="w-24 h-24 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-medium text-gray-800 mb-2">
-                  Symplify Platform Preview
-                </h3>
-                <p className="text-gray-600">
-                  Unified hospital management interface with role-specific
-                  dashboards and AI-driven insights
-                </p>
+            <div className="max-w-full max-h-full">
+              <img
+                src={enlargedImage.src}
+                alt={enlargedImage.alt}
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                onClick={(e) => e.stopPropagation()}
+              />
+              <div className="absolute bottom-4 left-4 right-4 bg-black bg-opacity-60 text-white p-3 rounded-lg">
+                <p className="text-sm font-medium">{enlargedImage.alt}</p>
               </div>
             </div>
           </div>
