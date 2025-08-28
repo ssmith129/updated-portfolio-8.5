@@ -809,10 +809,12 @@ export default function MedicoCaseStudy() {
                   minWidth: "20px",
                 }}
                 alt="Unified Dashboards feature"
-                onClick={() => setEnlargedImage({
-                  src: 'https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1200',
-                  alt: 'Unified Dashboards feature - Role-specific panels that prioritize daily tasks'
-                })}
+                onClick={() =>
+                  setEnlargedImage({
+                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1200",
+                    alt: "Unified Dashboards feature - Role-specific panels that prioritize daily tasks",
+                  })
+                }
               />
             </div>
 
@@ -837,10 +839,12 @@ export default function MedicoCaseStudy() {
                   minWidth: "20px",
                 }}
                 alt="Smart Notifications feature"
-                onClick={() => setEnlargedImage({
-                  src: 'https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1200',
-                  alt: 'Smart Notifications feature - AI-powered scoring ranks tasks by priority with risk detection'
-                })}
+                onClick={() =>
+                  setEnlargedImage({
+                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1200",
+                    alt: "Smart Notifications feature - AI-powered scoring ranks tasks by priority with risk detection",
+                  })
+                }
               />
             </div>
 
@@ -866,10 +870,12 @@ export default function MedicoCaseStudy() {
                   minWidth: "20px",
                 }}
                 alt="Smart Scheduling feature"
-                onClick={() => setEnlargedImage({
-                  src: 'https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1200',
-                  alt: 'Smart Scheduling feature - AI analyzes historical data to recommend optimal scheduling blocks'
-                })}
+                onClick={() =>
+                  setEnlargedImage({
+                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1200",
+                    alt: "Smart Scheduling feature - AI analyzes historical data to recommend optimal scheduling blocks",
+                  })
+                }
               />
             </div>
 
@@ -895,10 +901,12 @@ export default function MedicoCaseStudy() {
                   minWidth: "20px",
                 }}
                 alt="AI Inbox Triage feature"
-                onClick={() => setEnlargedImage({
-                  src: 'https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1200',
-                  alt: 'AI Inbox Triage feature - Auto-sorts patient communications by urgency, flagging critical follow-ups'
-                })}
+                onClick={() =>
+                  setEnlargedImage({
+                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1200",
+                    alt: "AI Inbox Triage feature - Auto-sorts patient communications by urgency, flagging critical follow-ups",
+                  })
+                }
               />
             </div>
           </div>
