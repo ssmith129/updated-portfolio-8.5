@@ -127,16 +127,16 @@ export default function Index() {
             </div>
           </Link>
 
-          {/* Medico Project */}
+          {/* Symplify Project */}
           <Link
             to="/case-studies/medico-hospital-management-system"
             className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-right-6 duration-1000 delay-1100 touch-manipulation w-full max-w-[600px] mx-auto"
-            aria-label="View Medico hospital management system case study - comprehensive healthcare platform"
+            aria-label="View Symplify hospital management system case study - comprehensive healthcare platform"
           >
             <div className="aspect-square overflow-hidden relative">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F36b7682859c14dd1b07433f39f2c1c11?format=webp&width=800"
-                alt="Medico - Hospital Management System"
+                alt="Symplify - Hospital Management System"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
                 loading="lazy"
               />

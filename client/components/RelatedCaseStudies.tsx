@@ -38,7 +38,7 @@ const allCaseStudies: CaseStudy[] = [
   },
   {
     id: "medico",
-    title: "Medico",
+    title: "Symplify",
     subtitle: "Hospital Management System",
     href: "/case-studies/medico-hospital-management-system",
     image:

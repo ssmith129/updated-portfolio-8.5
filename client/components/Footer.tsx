@@ -27,7 +27,7 @@ const caseStudyLinks = [
     description: "EHR Redesign",
   },
   {
-    label: "Medico",
+    label: "Symplify",
     href: "/case-studies/medico-hospital-management-system",
     description: "Hospital Management",
   },
