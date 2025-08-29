@@ -133,7 +133,7 @@ export default function MedicoCaseStudy() {
           aria-label="Open Symplify platform preview"
         >
           <a
-            href="https://medico-2ftf.vercel.app/"
+            href="https://symplify-preview.vercel.app/"
             target="_blank"
             className="text-center cursor-pointer flex flex-col"
             style={{ pointerEvents: "auto" }}
