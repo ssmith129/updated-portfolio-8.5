@@ -1079,7 +1079,9 @@ export default function MedicoCaseStudy() {
                   <h3 className="text-lg font-medium text-gray-900">
                     Symplify Platform
                   </h3>
-                  <p className="text-sm text-gray-600">symplify-preview.vercel.app</p>
+                  <p className="text-sm text-gray-600">
+                    symplify-preview.vercel.app
+                  </p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
