@@ -22,7 +22,7 @@
           "/about",
           "/case-studies/computis-crypto-tax-engine",
           "/case-studies/ezemrx-redesigning-ehr",
-          "/case-studies/medico-hospital-management-system",
+          "/case-studies/symplify-hospital-management-system",
           "/case-studies/moneyfarm-ai-powered-personal-finance"
         ],
         "externalLinks": [
@@ -72,7 +72,7 @@
           "/about",
           "/case-studies/computis-crypto-tax-engine",
           "/case-studies/ezemrx-redesigning-ehr",
-          "/case-studies/medico-hospital-management-system",
+          "/case-studies/symplify-hospital-management-system",
           "/case-studies/moneyfarm-ai-powered-personal-finance"
         ]
       },
@@ -138,11 +138,11 @@
           "/case-studies",
           "/about",
           "/case-studies/computis-crypto-tax-engine",
-          "/case-studies/medico-hospital-management-system"
+          "/case-studies/symplify-hospital-management-system"
         ]
       },
       {
-        "url": "/case-studies/medico-hospital-management-system",
+        "url": "/case-studies/symplify-hospital-management-system",
         "title": "Symplify Case Study - Hospital Management System UX Design",
         "description": "Comprehensive hospital management platform design for healthcare providers and administrative staff",
         "keywords": [

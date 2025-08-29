@@ -100,7 +100,7 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
       "/case-studies/computis-crypto-tax-engine":
         "Computis – Crypto Tax Engine",
       "/case-studies/ezemrx-redesigning-ehr": "ezEMRx – EHR Redesign",
-      "/case-studies/medico-hospital-management-system":
+      "/case-studies/symplify-hospital-management-system":
         "Symplify – Hospital Management",
       "/case-studies/moneyfarm-ai-powered-personal-finance":
         "MoneyFarm – AI Finance",

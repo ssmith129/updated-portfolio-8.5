@@ -40,7 +40,7 @@ const allCaseStudies: CaseStudy[] = [
     id: "medico",
     title: "Symplify",
     subtitle: "Hospital Management System",
-    href: "/case-studies/medico-hospital-management-system",
+    href: "/case-studies/symplify-hospital-management-system",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F92a209bf2a4040b697546cef331aa6b0?format=webp&width=800",
     category: "Healthcare",

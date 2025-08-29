@@ -51,7 +51,7 @@ export default function CaseStudies() {
 
           {/* Symplify Case Study */}
           <Link
-            to="/case-studies/medico-hospital-management-system"
+            to="/case-studies/symplify-hospital-management-system"
             className="group relative animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-900 w-full max-w-[600px]"
           >
             <img

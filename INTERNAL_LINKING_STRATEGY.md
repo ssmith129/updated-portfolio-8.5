@@ -13,7 +13,7 @@ Home (/)
 ├── Case Studies (/case-studies)
 │   ├── Computis (/case-studies/computis-crypto-tax-engine)
 │   ├── ezEMRx (/case-studies/ezemrx-redesigning-ehr)
-│   ├── Symplify (/case-studies/medico-hospital-management-system)
+│   ├── Symplify (/case-studies/symplify-hospital-management-system)
 │   └── MoneyFarm (/case-studies/moneyfarm-ai-powered-personal-finance)
 └── About (/about)
 ```

@@ -37,7 +37,7 @@ const App = () => (
               element={<EzEMRxCaseStudy />}
             />
             <Route
-              path="/case-studies/medico-hospital-management-system"
+              path="/case-studies/symplify-hospital-management-system"
               element={<MedicoCaseStudy />}
             />
             <Route

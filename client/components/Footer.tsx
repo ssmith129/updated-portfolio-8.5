@@ -28,7 +28,7 @@ const caseStudyLinks = [
   },
   {
     label: "Symplify",
-    href: "/case-studies/medico-hospital-management-system",
+    href: "/case-studies/symplify-hospital-management-system",
     description: "Hospital Management",
   },
   {
