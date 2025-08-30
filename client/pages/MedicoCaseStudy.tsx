@@ -551,7 +551,7 @@ export default function MedicoCaseStudy() {
                       billing — focused only on forecasting dashboards
                     </li>
                     <li className="text-[#131417]">
-                      ❌ Did <span className="font-medium">not</span> tackle
+                      ��� Did <span className="font-medium">not</span> tackle
                       patient-facing portals in v1 — prioritized staff workflows
                     </li>
                   </ul>
@@ -1134,11 +1134,11 @@ export default function MedicoCaseStudy() {
                             (double entry in EHR + spreadsheets)
                           </span>
                         </li>
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-start gap-2 justify-start">
                           <span className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0 mt-2"></span>
                           Update patient chart
                         </li>
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-start gap-2 justify-start">
                           <span className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0 mt-2"></span>
                           Billing close
                         </li>
