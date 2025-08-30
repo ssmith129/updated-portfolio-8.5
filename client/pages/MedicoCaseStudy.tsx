@@ -681,9 +681,9 @@ export default function MedicoCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Review inbox → confirm appointments</li>
-                    <li>• Update patient charts efficiently</li>
-                    <li>�� AI-assisted decision support</li>
+                    <li>• Review inbox → Confirm appts</li>
+                    <li>• Update chart efficiently</li>
+                    <li>• AI-assisted decision support</li>
                   </ul>
                 </div>
 
