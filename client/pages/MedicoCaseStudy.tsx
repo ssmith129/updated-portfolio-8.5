@@ -759,9 +759,9 @@ export default function MedicoCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Track vitals → update charts</li>
-                    <li>• Triage patient messages efficiently</li>
-                    <li>• Seamless handoffs to doctors</li>
+                    <li>• Track vitals → Triage msgs</li>
+                    <li>• Shift handoff coordination</li>
+                    <li>• Monitor care continuity</li>
                   </ul>
                 </div>
 
