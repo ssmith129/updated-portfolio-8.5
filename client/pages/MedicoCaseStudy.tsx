@@ -1081,8 +1081,10 @@ export default function MedicoCaseStudy() {
 
             <div className="mb-10">
               <p className="text-lg text-[#131417] leading-[150%] mb-8">
-                To connect our research insights directly to staff workflows, we
-                mapped out the{" "}
+                <div style={{ marginLeft: "1px" }}>
+                  To connect our research insights directly to staff workflows, we
+                  mapped out the
+                </div>
                 <span className="font-semibold">
                   daily journeys of three key roles
                 </span>{" "}
