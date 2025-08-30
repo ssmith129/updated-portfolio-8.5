@@ -881,11 +881,10 @@ export default function MedicoCaseStudy() {
                 AI Inbox Triage
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                Auto-sorts patient communications by urgency, flagging critical
-                follow-ups
+                SLA + risk scoring with explainable AI recommendations
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → ↑ 28% faster inbox resolution via AI triage
+                → ↓ 42% inbox triage time (2m15s → 1m18s)
               </p>
               <img
                 loading="lazy"
