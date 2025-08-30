@@ -1831,8 +1831,8 @@ export default function MedicoCaseStudy() {
                   <span className="w-3 h-3 bg-blue-500 rounded-full mt-1 flex-shrink-0"></span>
                   <span className="text-lg text-[#131417] leading-[150%]">
                     <span className="font-semibold">
-                      Trust &gt; Automation:
-                    </span>{" "}
+                      Trust &gt; Automation:&nbsp;
+                    </span>
                     Explainability (chips, overrides) was as critical as model
                     accuracy.
                   </span>
