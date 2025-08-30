@@ -934,22 +934,22 @@ export default function MedicoCaseStudy() {
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">
-                      Revenue forecasting accuracy
+                      No-show rate
                     </span>
                     <span className="font-medium text-purple-600">
-                      Real-time
+                      ↓2.4pts (9.8% → 7.4%)
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Staff satisfaction</span>
+                    <span className="text-[#9FA0A3]">Admin overtime hrs/wk</span>
                     <span className="font-medium text-orange-600">
-                      ↑ All roles
+                      ↓4.4hrs (12.5 → 8.1)
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">AI transparency</span>
+                    <span className="text-[#9FA0A3]">Clinician override of AI</span>
                     <span className="font-medium text-green-600">
-                      Built trust
+                      11% (below guardrail)
                     </span>
                   </div>
                 </div>
