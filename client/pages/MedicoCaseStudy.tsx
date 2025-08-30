@@ -1849,8 +1849,8 @@ export default function MedicoCaseStudy() {
                 <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <span className="w-3 h-3 bg-purple-500 rounded-full mt-1 flex-shrink-0"></span>
                   <span className="text-lg text-[#131417] leading-[150%]">
-                    <span className="font-semibold">Systems thinking:</span>{" "}
-                    Success hinged not just on UI polish, but on{" "}
+                    <span className="font-semibold">Systems thinking:</span>
+                    &nbsp;Success hinged not just on UI polish, but on&nbsp;
                     <span className="font-semibold">
                       data flows, HIPAA boundaries, and auditability.
                     </span>
