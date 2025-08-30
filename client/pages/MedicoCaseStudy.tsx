@@ -543,7 +543,7 @@ export default function MedicoCaseStudy() {
                   </h4>
                   <ul className="space-y-2">
                     <li className="text-[#131417]">
-                      ❌ Did <span className="font-medium">not</span> replace
+                      ❌&nbsp; Did <span className="font-extrabold">not</span> replace
                       full EHR stack — only layered workflows on top
                     </li>
                     <li className="text-[#131417]">
@@ -1308,7 +1308,7 @@ export default function MedicoCaseStudy() {
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-600 font-bold mt-1">
-                            ✓
+                            ���
                           </span>
                           <div>
                             <span className="font-semibold">
