@@ -119,8 +119,7 @@ export default function MedicoCaseStudy() {
             Symplify – Hospital Management System
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px]">
-            Transforming siloed hospital workflows into a unified, AI-powered
-            SaaS platform
+            Transforming siloed hospital workflows into a unified, AI-powered SaaS platform
           </p>
         </div>
       </header>
@@ -173,7 +172,7 @@ export default function MedicoCaseStudy() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4">
-                    Unified AI-powered SaaS platform
+                    📌 TL;DR — Outcomes & Why It Matters
                   </h3>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -182,23 +181,23 @@ export default function MedicoCaseStudy() {
                         Role
                       </p>
                       <p className="text-base font-medium text-[#131417]">
-                        Lead UX/Product Designer
+                        Lead Product Designer
                       </p>
                     </div>
                     <div className="space-y-2">
                       <p className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                        Platform
+                        Scope
                       </p>
                       <p className="text-base font-medium text-[#131417]">
-                        Web + Mobile SaaS
+                        0→1 SaaS platform
                       </p>
                     </div>
                     <div className="space-y-2">
                       <p className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                        Duration
+                        Constraints
                       </p>
                       <p className="text-base font-medium text-[#131417]">
-                        0→1 product design
+                        HIPAA, legacy EHRs, 10-week delivery
                       </p>
                     </div>
                   </div>
@@ -206,37 +205,37 @@ export default function MedicoCaseStudy() {
 
                 <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-[16px] p-6">
                   <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
-                    🚑 Impact at a Glance
+                    🚑 Key Outcomes
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div className="text-center">
                       <p className="text-xl font-bold text-green-600 mb-1">
-                        ↓ 35%
+                        ↓ 42%
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
-                        appointment delays
+                        inbox triage time
                       </p>
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-blue-600 mb-1">
-                        ↑ 28%
+                        ↑ 18%
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
-                        faster inbox resolution
+                        on-time follow-ups
                       </p>
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-purple-600 mb-1">
-                        AI
+                        ↓ 2.4pts
                       </p>
-                      <p className="text-sm text-[#9FA0A3]">Smart Scheduling</p>
+                      <p className="text-sm text-[#9FA0A3]">no-show rate</p>
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-orange-600 mb-1">
-                        Real-time
+                        ↓ 4.4hrs
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
-                        Revenue forecasting
+                        admin overtime/week
                       </p>
                     </div>
                   </div>
@@ -247,10 +246,13 @@ export default function MedicoCaseStudy() {
                     💡 Why It Matters
                   </h3>
                   <p className="text-base text-[#131417] leading-[150%]">
-                    Transformed fragmented hospital workflows into a real-time,
-                    role-specific SaaS platform with AI features for{" "}
+                    Mid-sized clinics faced an{" "}
+                    <span className="font-medium">operational tax</span> from juggling three disconnected systems.
+                    Clinics were losing <span className="font-medium">5-8 hours per week per clinician</span> to inbox triage
+                    across fragmented tools. Symplify consolidated these workflows into one adaptive, AI-assisted platform
+                    — delivering{" "}
                     <span className="font-medium">
-                      smart scheduling, inbox triage, and revenue forecasting
+                      measurable time savings, safer workflows, and future-ready compliance
                     </span>
                     .
                   </p>
