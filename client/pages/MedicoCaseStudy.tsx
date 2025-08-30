@@ -851,11 +851,10 @@ export default function MedicoCaseStudy() {
                 Smart Scheduling
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                AI analyzes historical data to recommend optimal scheduling
-                blocks
+                AI with confidence badges predicts optimal appointment slots
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → Reduced bottlenecks and ↓ 35% appointment delays
+                → ↓ 2.4pts no-show rate and improved throughput
               </p>
               <img
                 loading="lazy"
