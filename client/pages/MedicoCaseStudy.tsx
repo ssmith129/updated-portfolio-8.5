@@ -742,7 +742,7 @@ export default function MedicoCaseStudy() {
                     <h4 className="font-semibold text-blue-800 mb-2">Inputs</h4>
                     <ul className="text-sm text-blue-700 space-y-1">
                       <li>• Patient data (EHR via FHIR APIs)</li>
-                      <li>• Appt history</li>
+                      <li>�� Appt history</li>
                       <li>• Billing exports</li>
                     </ul>
                   </div>
@@ -1255,86 +1255,87 @@ export default function MedicoCaseStudy() {
           </div>
         </section>
 
-        {/* Reflections */}
+        {/* Learnings & Reflections */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              Reflections & Future Roadmap
+              📚 Learnings & Reflections
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  What I Learned
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <span className="font-medium">
-                        Trust &gt; Automation:
-                      </span>{" "}
-                      Explainability (chips, overrides) was as critical as model
-                      accuracy
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <span className="font-medium">
-                        Role-based design &gt; one-size-fits-all:
-                      </span>{" "}
-                      Doctors, nurses, and admins each needed tailored
-                      dashboards
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <span className="font-medium">Systems thinking:</span>{" "}
-                      Success hinged not just on UI polish, but on data flows,
-                      HIPAA boundaries, and auditability
-                    </span>
-                  </li>
-                </ul>
+            <div className="mb-12">
+              <ul className="space-y-6">
+                <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <span className="w-3 h-3 bg-blue-500 rounded-full mt-1 flex-shrink-0"></span>
+                  <span className="text-lg text-[#131417] leading-[150%]">
+                    <span className="font-semibold">Trust &gt; Automation:</span> Explainability (chips, overrides) was as critical as model accuracy.
+                  </span>
+                </li>
+                <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <span className="w-3 h-3 bg-green-500 rounded-full mt-1 flex-shrink-0"></span>
+                  <span className="text-lg text-[#131417] leading-[150%]">
+                    <span className="font-semibold">Role-based design &gt; one-size-fits-all:</span> Doctors, nurses, and admins each needed tailored dashboards.
+                  </span>
+                </li>
+                <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <span className="w-3 h-3 bg-purple-500 rounded-full mt-1 flex-shrink-0"></span>
+                  <span className="text-lg text-[#131417] leading-[150%]">
+                    <span className="font-semibold">Systems thinking:</span> Success hinged not just on UI polish, but on <span className="font-semibold">data flows, HIPAA boundaries, and auditability.</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-t border-gray-200 pt-12">
+              <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+                🚀 What I'd Do Next
+              </h2>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+                <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                  <div className="flex items-start gap-3">
+                    <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">1</span>
+                    <div>
+                      <h4 className="font-semibold text-blue-800 mb-2">Predictive Staffing Optimization</h4>
+                      <p className="text-blue-700 text-sm">→ AI shift planning to cut overtime 15–20%</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                  <div className="flex items-start gap-3">
+                    <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">2</span>
+                    <div>
+                      <h4 className="font-semibold text-green-800 mb-2">HL7/FHIR Integration</h4>
+                      <p className="text-green-700 text-sm">→ expand interoperability across EHR vendors</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-purple-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                  <div className="flex items-start gap-3">
+                    <span className="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">3</span>
+                    <div>
+                      <h4 className="font-semibold text-purple-800 mb-2">Sentiment Analysis</h4>
+                      <p className="text-purple-700 text-sm">→ real-time patient feedback loops</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                  <div className="flex items-start gap-3">
+                    <span className="bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">4</span>
+                    <div>
+                      <h4 className="font-semibold text-orange-800 mb-2">Scenario Planning</h4>
+                      <p className="text-orange-700 text-sm">→ financial what-if models for hospital admins</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  What I'd Do Next
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <span className="font-medium">
-                        Predictive Staffing Optimization
-                      </span>{" "}
-                      → AI shift planning to cut overtime 15–20%
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <span className="font-medium">HL7/FHIR Integration</span>{" "}
-                      → expand interoperability across EHR vendors
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <span className="font-medium">Sentiment Analysis</span> →
-                      real-time patient feedback loops
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <span className="font-medium">Scenario Planning</span> →
-                      financial what-if models for hospital admins
-                    </span>
-                  </li>
-                </ul>
+              <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-[20px] p-8 border border-blue-200 text-center">
+                <p className="text-lg text-[#131417] leading-[150%] font-medium">
+                  📌 <span className="font-semibold">Symplify reframed hospital operations from three disjointed systems into one adaptive, AI-assisted platform — measurable time savings, safer workflows, and future-ready compliance.</span>
+                </p>
               </div>
             </div>
           </div>
