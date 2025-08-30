@@ -258,7 +258,7 @@ export default function MedicoCaseStudy() {
                     </span>{" "}
                     to inbox triage across fragmented tools. Symplify
                     consolidated these workflows into one adaptive, AI-assisted
-                    platform �� delivering{" "}
+                    platform — delivering{" "}
                     <span className="font-medium">
                       measurable time savings, safer workflows, and future-ready
                       compliance
@@ -1118,7 +1118,7 @@ export default function MedicoCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              Validation & Impact
+              📈 Validation & Impact
             </h2>
 
             <div className="mb-10">
