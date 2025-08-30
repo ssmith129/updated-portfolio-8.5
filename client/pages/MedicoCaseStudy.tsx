@@ -483,13 +483,13 @@ export default function MedicoCaseStudy() {
                   </h4>
                   <ul className="space-y-2">
                     <li className="text-[#131417]">
-                      - ❌ Did <span className="font-medium">not</span> replace full EHR stack — only layered workflows on top
+                      ❌ Did <span className="font-medium">not</span> replace full EHR stack — only layered workflows on top
                     </li>
                     <li className="text-[#131417]">
-                      - ❌ Did <span className="font-medium">not</span> rebuild billing — focused only on forecasting dashboards
+                      ❌ Did <span className="font-medium">not</span> rebuild billing — focused only on forecasting dashboards
                     </li>
                     <li className="text-[#131417]">
-                      - ❌ Did <span className="font-medium">not</span> tackle patient-facing portals in v1 — prioritized staff workflows
+                      ❌ Did <span className="font-medium">not</span> tackle patient-facing portals in v1 — prioritized staff workflows
                     </li>
                   </ul>
                 </div>
@@ -628,7 +628,7 @@ export default function MedicoCaseStudy() {
                     <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
                       <td className="py-3 px-4">Inbox triage = ~5–8 hrs/wk per clinician</td>
                       <td className="py-3 px-4 font-semibold text-blue-600">AI Inbox Triage (SLA + risk sorting)</td>
-                      <td className="py-3 px-4">↓ triage time ~40%</td>
+                      <td className="py-3 px-4">�� triage time ~40%</td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
                       <td className="py-3 px-4">Nurses missed 18% of urgent handoffs</td>
