@@ -1014,22 +1014,19 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Transparency in AI outputs (showing why a message was
-                      flagged or schedule changed) built trust
+                      <span className="font-medium">Trust &gt; Automation:</span> Explainability (chips, overrides) was as critical as model accuracy
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Role-based dashboarding outperformed "one size fits all"
-                      layouts
+                      <span className="font-medium">Role-based design &gt; one-size-fits-all:</span> Doctors, nurses, and admins each needed tailored dashboards
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Healthcare UX requires deep empathy for life-critical
-                      workflows
+                      <span className="font-medium">Systems thinking:</span> Success hinged not just on UI polish, but on data flows, HIPAA boundaries, and auditability
                     </span>
                   </li>
                 </ul>
