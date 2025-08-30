@@ -1273,7 +1273,7 @@ export default function MedicoCaseStudy() {
                             (scheduling conflicts, no predictive insight)
                           </span>
                         </li>
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-start gap-2 justify-start">
                           <span className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0 mt-2"></span>
                           Monitor hospital operations
                         </li>
@@ -1670,7 +1670,7 @@ export default function MedicoCaseStudy() {
               <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
                 <ul className="text-base text-[#131417] space-y-2">
                   <li>
-                    • Pilot across{" "}
+                    ��� Pilot across{" "}
                     <span className="font-semibold">
                       3 clinics, n=65 staff, 6 weeks
                     </span>
