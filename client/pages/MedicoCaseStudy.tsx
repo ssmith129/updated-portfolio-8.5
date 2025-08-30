@@ -957,7 +957,7 @@ export default function MedicoCaseStudy() {
 
               <div>
                 <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Qualitative Feedback
+                  Key Learnings
                 </h3>
                 <div className="space-y-4">
                   <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
