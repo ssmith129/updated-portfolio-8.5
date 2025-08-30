@@ -1034,27 +1034,31 @@ export default function MedicoCaseStudy() {
 
               <div>
                 <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Next Steps
+                  What I'd Do Next
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Expand AI modules into staffing optimization (predictive
-                      nurse shift planning)
+                      <span className="font-medium">Predictive Staffing Optimization</span> → AI shift planning to cut overtime 15–20%
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Integrate with national EHR standards (HL7, FHIR)
+                      <span className="font-medium">HL7/FHIR Integration</span> → expand interoperability across EHR vendors
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Add patient sentiment analysis to capture feedback at
-                      scale
+                      <span className="font-medium">Sentiment Analysis</span> → real-time patient feedback loops
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      <span className="font-medium">Scenario Planning</span> → financial what-if models for hospital admins
                     </span>
                   </li>
                 </ul>
