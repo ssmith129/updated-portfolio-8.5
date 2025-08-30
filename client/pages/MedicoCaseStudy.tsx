@@ -482,20 +482,14 @@ export default function MedicoCaseStudy() {
                     Non-Goals (Deliberate Trade-offs):
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-start gap-3 text-[#131417]">
-                      <span className="text-red-500">❌</span>
-                      Did <span className="font-medium">not</span> replace full
-                      EHR stack — only layered workflows on top
+                    <li className="text-[#131417]">
+                      - ❌ Did <span className="font-medium">not</span> replace full EHR stack — only layered workflows on top
                     </li>
-                    <li className="flex items-start gap-3 text-[#131417]">
-                      <span className="text-red-500">❌</span>
-                      Did <span className="font-medium">not</span> rebuild
-                      billing — focused only on forecasting dashboards
+                    <li className="text-[#131417]">
+                      - ❌ Did <span className="font-medium">not</span> rebuild billing — focused only on forecasting dashboards
                     </li>
-                    <li className="flex items-start gap-3 text-[#131417]">
-                      <span className="text-red-500">❌</span>
-                      Did <span className="font-medium">not</span> tackle
-                      patient-facing portals in v1 — prioritized staff workflows
+                    <li className="text-[#131417]">
+                      - ❌ Did <span className="font-medium">not</span> tackle patient-facing portals in v1 — prioritized staff workflows
                     </li>
                   </ul>
                 </div>
