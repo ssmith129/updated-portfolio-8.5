@@ -1334,7 +1334,7 @@ export default function MedicoCaseStudy() {
               <p className="text-base text-[#131417] leading-[150%]">
                 This mapping shows how{" "}
                 <span className="font-semibold">
-                  insight-driven interventions
+                  &nbsp;insight-driven interventions&nbsp;
                 </span>{" "}
                 translated into measurable outcomes: faster triage, fewer missed
                 follow-ups, reduced overtime, and more accurate forecasting.
