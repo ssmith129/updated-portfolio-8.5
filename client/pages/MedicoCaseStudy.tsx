@@ -1842,8 +1842,8 @@ export default function MedicoCaseStudy() {
                   <span className="text-lg text-[#131417] leading-[150%]">
                     <span className="font-semibold">
                       Role-based design &gt; one-size-fits-all:
-                    </span>{" "}
-                    Doctors, nurses, and admins each needed tailored dashboards.
+                    </span>
+                    &nbsp;Doctors, nurses, and admins each needed tailored dashboards.
                   </span>
                 </li>
                 <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
