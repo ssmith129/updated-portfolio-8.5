@@ -721,9 +721,9 @@ export default function MedicoCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Manage staffing schedules efficiently</li>
+                    <li>• Manage staffing → Generate reports</li>
                     <li>• Monitor revenue dashboard in real-time</li>
-                    <li>• Oversee hospital operations</li>
+                    <li>• Oversee forecasting and operations</li>
                   </ul>
                 </div>
 
