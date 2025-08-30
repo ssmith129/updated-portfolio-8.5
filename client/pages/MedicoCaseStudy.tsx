@@ -922,15 +922,15 @@ export default function MedicoCaseStudy() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">
-                      Patient appointment delays
+                      Avg triage time/item
                     </span>
-                    <span className="font-medium text-green-600">↓35%</span>
+                    <span className="font-medium text-green-600">↓42% (2m15s → 1m18s)</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">
-                      Inbox resolution speed
+                      On-time follow-ups
                     </span>
-                    <span className="font-medium text-blue-600">↑28%</span>
+                    <span className="font-medium text-blue-600">↑18% (72% → 85.3%)</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
                     <span className="text-[#9FA0A3]">
