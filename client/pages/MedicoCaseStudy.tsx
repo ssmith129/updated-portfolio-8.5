@@ -232,7 +232,7 @@ export default function MedicoCaseStudy() {
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-orange-600 mb-1">
-                        ��� 4.4hrs
+                        - 4.4hrs
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
                         admin overtime/week
