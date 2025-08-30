@@ -956,6 +956,18 @@ export default function MedicoCaseStudy() {
               </div>
 
               <div>
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 mb-8">
+                  <h3 className="text-lg font-medium text-[#131417] mb-4">
+                    Measurement Framework
+                  </h3>
+                  <p className="text-sm text-[#131417] mb-3">
+                    Pilot across <span className="font-medium">3 clinics, n=65 staff, 6 weeks</span>
+                  </p>
+                  <p className="text-sm text-[#131417]">
+                    Guardrails: ≤10% false positives, override &lt;15%, fairness audits
+                  </p>
+                </div>
+
                 <h3 className="text-xl font-medium text-[#131417] mb-6">
                   Key Learnings
                 </h3>
