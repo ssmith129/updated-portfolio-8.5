@@ -258,7 +258,7 @@ export default function MedicoCaseStudy() {
                     </span>{" "}
                     to inbox triage across fragmented tools. Symplify
                     consolidated these workflows into one adaptive, AI-assisted
-                    platform — delivering{" "}
+                    platform �� delivering{" "}
                     <span className="font-medium">
                       measurable time savings, safer workflows, and future-ready
                       compliance
@@ -910,7 +910,7 @@ export default function MedicoCaseStudy() {
         {/* Key Design Decisions Matrix */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1800">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
-            Key Design Decisions Matrix
+            🔑 Key Design Decisions
           </h2>
 
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
@@ -1306,7 +1306,7 @@ export default function MedicoCaseStudy() {
                     <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">2</span>
                     <div>
                       <h4 className="font-semibold text-green-800 mb-2">HL7/FHIR Integration</h4>
-                      <p className="text-green-700 text-sm">�� expand interoperability across EHR vendors</p>
+                      <p className="text-green-700 text-sm">→ expand interoperability across EHR vendors</p>
                     </div>
                   </div>
                 </div>
