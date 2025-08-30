@@ -119,7 +119,8 @@ export default function MedicoCaseStudy() {
             Symplify – Hospital Management System
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px]">
-            Transforming siloed hospital workflows into a unified, AI-powered SaaS platform
+            Transforming siloed hospital workflows into a unified, AI-powered
+            SaaS platform
           </p>
         </div>
       </header>
@@ -247,12 +248,17 @@ export default function MedicoCaseStudy() {
                   </h3>
                   <p className="text-base text-[#131417] leading-[150%]">
                     Mid-sized clinics faced an{" "}
-                    <span className="font-medium">operational tax</span> from juggling three disconnected systems.
-                    Clinics were losing <span className="font-medium">5-8 hours per week per clinician</span> to inbox triage
-                    across fragmented tools. Symplify consolidated these workflows into one adaptive, AI-assisted platform
-                    — delivering{" "}
+                    <span className="font-medium">operational tax</span> from
+                    juggling three disconnected systems. Clinics were losing{" "}
                     <span className="font-medium">
-                      measurable time savings, safer workflows, and future-ready compliance
+                      5-8 hours per week per clinician
+                    </span>{" "}
+                    to inbox triage across fragmented tools. Symplify
+                    consolidated these workflows into one adaptive, AI-assisted
+                    platform — delivering{" "}
+                    <span className="font-medium">
+                      measurable time savings, safer workflows, and future-ready
+                      compliance
                     </span>
                     .
                   </p>
@@ -356,7 +362,9 @@ export default function MedicoCaseStudy() {
                   <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">
                     −2.4pts
                   </div>
-                  <p className="text-sm text-[#9FA0A3]">no-show rate (9.8% → 7.4%)</p>
+                  <p className="text-sm text-[#9FA0A3]">
+                    no-show rate (9.8% → 7.4%)
+                  </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1">
@@ -442,11 +450,16 @@ export default function MedicoCaseStudy() {
                   Core Problem
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%]">
-                  Clinics faced an <span className="font-medium">operational tax</span> from juggling three disconnected systems.
-                  Clinics were losing <span className="font-medium">5–8 hours per week per clinician</span> to inbox triage
-                  across fragmented tools (EHR, spreadsheets, sticky notes).
-                  Missed handoffs risked HIPAA violations and delayed care.
-                  Forecasting was manual and lagging, making proactive staffing impossible.
+                  Clinics faced an{" "}
+                  <span className="font-medium">operational tax</span> from
+                  juggling three disconnected systems. Clinics were losing{" "}
+                  <span className="font-medium">
+                    5–8 hours per week per clinician
+                  </span>{" "}
+                  to inbox triage across fragmented tools (EHR, spreadsheets,
+                  sticky notes). Missed handoffs risked HIPAA violations and
+                  delayed care. Forecasting was manual and lagging, making
+                  proactive staffing impossible.
                 </p>
               </div>
 
@@ -455,22 +468,31 @@ export default function MedicoCaseStudy() {
                   Opportunity
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%] mb-4">
-                  <span className="font-medium">How might we consolidate triage, scheduling, and forecasting into a single, explainable workflow — reducing staff burden while protecting compliance?</span>
+                  <span className="font-medium">
+                    How might we consolidate triage, scheduling, and forecasting
+                    into a single, explainable workflow — reducing staff burden
+                    while protecting compliance?
+                  </span>
                 </p>
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium text-[#131417] mb-2">Non-Goals (Deliberate Trade-offs):</h4>
+                  <h4 className="font-medium text-[#131417] mb-2">
+                    Non-Goals (Deliberate Trade-offs):
+                  </h4>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-3 text-[#131417]">
                       <span className="text-red-500">❌</span>
-                      Did <span className="font-medium">not</span> replace full EHR stack — only layered workflows on top
+                      Did <span className="font-medium">not</span> replace full
+                      EHR stack — only layered workflows on top
                     </li>
                     <li className="flex items-start gap-3 text-[#131417]">
                       <span className="text-red-500">❌</span>
-                      Did <span className="font-medium">not</span> rebuild billing — focused only on forecasting dashboards
+                      Did <span className="font-medium">not</span> rebuild
+                      billing — focused only on forecasting dashboards
                     </li>
                     <li className="flex items-start gap-3 text-[#131417]">
                       <span className="text-red-500">❌</span>
-                      Did <span className="font-medium">not</span> tackle patient-facing portals in v1 — prioritized staff workflows
+                      Did <span className="font-medium">not</span> tackle
+                      patient-facing portals in v1 — prioritized staff workflows
                     </li>
                   </ul>
                 </div>
@@ -552,10 +574,18 @@ export default function MedicoCaseStudy() {
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="border-b border-gray-200">
-                        <th className="text-left py-2 text-[#131417] font-medium">Method</th>
-                        <th className="text-left py-2 text-[#131417] font-medium">Sample</th>
-                        <th className="text-left py-2 text-[#131417] font-medium">Duration</th>
-                        <th className="text-left py-2 text-[#131417] font-medium">Focus</th>
+                        <th className="text-left py-2 text-[#131417] font-medium">
+                          Method
+                        </th>
+                        <th className="text-left py-2 text-[#131417] font-medium">
+                          Sample
+                        </th>
+                        <th className="text-left py-2 text-[#131417] font-medium">
+                          Duration
+                        </th>
+                        <th className="text-left py-2 text-[#131417] font-medium">
+                          Focus
+                        </th>
                       </tr>
                     </thead>
                     <tbody className="text-[#131417]">
@@ -563,25 +593,33 @@ export default function MedicoCaseStudy() {
                         <td className="py-2">Interviews</td>
                         <td className="py-2">14 staff (5 MD, 6 RN, 3 Admin)</td>
                         <td className="py-2">2 wks</td>
-                        <td className="py-2">Pain points in triage, scheduling, forecasting</td>
+                        <td className="py-2">
+                          Pain points in triage, scheduling, forecasting
+                        </td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2">Contextual inquiry</td>
                         <td className="py-2">11 live clinic sessions</td>
                         <td className="py-2">3 days</td>
-                        <td className="py-2">Task handoffs, interruptions, downtime</td>
+                        <td className="py-2">
+                          Task handoffs, interruptions, downtime
+                        </td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="py-2">Diary study</td>
                         <td className="py-2">9 staff (mixed roles)</td>
                         <td className="py-2">2 wks</td>
-                        <td className="py-2">Daily frustrations + time sinks</td>
+                        <td className="py-2">
+                          Daily frustrations + time sinks
+                        </td>
                       </tr>
                       <tr>
                         <td className="py-2">Workflow audits</td>
                         <td className="py-2">1,200 inbox items, 150 appts</td>
                         <td className="py-2">4 wks</td>
-                        <td className="py-2">Handling time, delay %, no-show rate</td>
+                        <td className="py-2">
+                          Handling time, delay %, no-show rate
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -598,7 +636,8 @@ export default function MedicoCaseStudy() {
                       Inbox Triage = ~5–8 hrs/wk per clinician
                     </p>
                     <p className="text-sm text-blue-700">
-                      → <span className="font-medium">AI Inbox Triage</span> (SLA + risk sorting)
+                      → <span className="font-medium">AI Inbox Triage</span>{" "}
+                      (SLA + risk sorting)
                     </p>
                   </div>
                   <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
@@ -606,7 +645,10 @@ export default function MedicoCaseStudy() {
                       Nurses missed 18% of urgent handoffs
                     </p>
                     <p className="text-sm text-orange-700">
-                      → <span className="font-medium">Unified inbox + handoff flags</span>
+                      →{" "}
+                      <span className="font-medium">
+                        Unified inbox + handoff flags
+                      </span>
                     </p>
                   </div>
                   <div className="bg-purple-50 rounded-[16px] p-4 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
@@ -614,7 +656,10 @@ export default function MedicoCaseStudy() {
                       Admins reliant on Excel; monthly lag
                     </p>
                     <p className="text-sm text-purple-700">
-                      → <span className="font-medium">Real-time forecasting dashboard</span>
+                      →{" "}
+                      <span className="font-medium">
+                        Real-time forecasting dashboard
+                      </span>
                     </p>
                   </div>
                   <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
@@ -622,7 +667,10 @@ export default function MedicoCaseStudy() {
                       Staff wary of "black box AI"
                     </p>
                     <p className="text-sm text-green-700">
-                      → <span className="font-medium">Confidence badges + override toggles</span>
+                      →{" "}
+                      <span className="font-medium">
+                        Confidence badges + override toggles
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -635,16 +683,25 @@ export default function MedicoCaseStudy() {
               </h3>
               <div className="space-y-3">
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "Half my inbox is reminders I don't need today — I just want the urgent ones."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">— MD, Clinic A</cite>
+                  "Half my inbox is reminders I don't need today — I just want
+                  the urgent ones."
+                  <cite className="block text-xs text-green-600 mt-1 not-italic">
+                    — MD, Clinic A
+                  </cite>
                 </blockquote>
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "When shifts overlap, I'm never sure if a message was handled already."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">— RN, Clinic B</cite>
+                  "When shifts overlap, I'm never sure if a message was handled
+                  already."
+                  <cite className="block text-xs text-green-600 mt-1 not-italic">
+                    — RN, Clinic B
+                  </cite>
                 </blockquote>
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "Forecasting is basically a guess until month close — then it's too late."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">— Admin, Clinic C</cite>
+                  "Forecasting is basically a guess until month close — then
+                  it's too late."
+                  <cite className="block text-xs text-green-600 mt-1 not-italic">
+                    — Admin, Clinic C
+                  </cite>
                 </blockquote>
               </div>
             </div>
@@ -732,7 +789,8 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Forecasts updated monthly via Excel exports — lagging insights
+                    Forecasts updated monthly via Excel exports — lagging
+                    insights
                   </p>
                 </div>
               </div>
@@ -770,7 +828,8 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Missed urgent handoffs due to paper logs and fragmented systems
+                    Missed urgent handoffs due to paper logs and fragmented
+                    systems
                   </p>
                 </div>
               </div>
@@ -791,7 +850,8 @@ export default function MedicoCaseStudy() {
                 Unified Dashboards
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                Role-specific dashboards with prioritized tasks and unified workflow
+                Role-specific dashboards with prioritized tasks and unified
+                workflow
               </p>
               <p className="text-sm text-green-600 font-medium">
                 → Reduced friction and anticipates hospital needs
@@ -921,33 +981,35 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">
-                      Avg triage time/item
+                    <span className="text-[#9FA0A3]">Avg triage time/item</span>
+                    <span className="font-medium text-green-600">
+                      ↓42% (2m15s → 1m18s)
                     </span>
-                    <span className="font-medium text-green-600">↓42% (2m15s → 1m18s)</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">
-                      On-time follow-ups
+                    <span className="text-[#9FA0A3]">On-time follow-ups</span>
+                    <span className="font-medium text-blue-600">
+                      ↑18% (72% → 85.3%)
                     </span>
-                    <span className="font-medium text-blue-600">↑18% (72% → 85.3%)</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">
-                      No-show rate
-                    </span>
+                    <span className="text-[#9FA0A3]">No-show rate</span>
                     <span className="font-medium text-purple-600">
                       ↓2.4pts (9.8% → 7.4%)
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Admin overtime hrs/wk</span>
+                    <span className="text-[#9FA0A3]">
+                      Admin overtime hrs/wk
+                    </span>
                     <span className="font-medium text-orange-600">
                       ↓4.4hrs (12.5 → 8.1)
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Clinician override of AI</span>
+                    <span className="text-[#9FA0A3]">
+                      Clinician override of AI
+                    </span>
                     <span className="font-medium text-green-600">
                       11% (below guardrail)
                     </span>
@@ -961,10 +1023,14 @@ export default function MedicoCaseStudy() {
                     Measurement Framework
                   </h3>
                   <p className="text-sm text-[#131417] mb-3">
-                    Pilot across <span className="font-medium">3 clinics, n=65 staff, 6 weeks</span>
+                    Pilot across{" "}
+                    <span className="font-medium">
+                      3 clinics, n=65 staff, 6 weeks
+                    </span>
                   </p>
                   <p className="text-sm text-[#131417]">
-                    Guardrails: ≤10% false positives, override &lt;15%, fairness audits
+                    Guardrails: ≤10% false positives, override &lt;15%, fairness
+                    audits
                   </p>
                 </div>
 
@@ -973,21 +1039,24 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Trust &gt; Automation: Explainability (chips, overrides) was as critical as model accuracy."
+                    "Trust &gt; Automation: Explainability (chips, overrides)
+                    was as critical as model accuracy."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Key Learning
                     </cite>
                   </blockquote>
 
                   <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Role-based design &gt; one-size-fits-all: Doctors, nurses, and admins each needed tailored dashboards."
+                    "Role-based design &gt; one-size-fits-all: Doctors, nurses,
+                    and admins each needed tailored dashboards."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Design Insight
                     </cite>
                   </blockquote>
 
                   <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Systems thinking: Success hinged not just on UI polish, but on data flows, HIPAA boundaries, and auditability."
+                    "Systems thinking: Success hinged not just on UI polish, but
+                    on data flows, HIPAA boundaries, and auditability."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
                       — Architectural Learning
                     </cite>
@@ -1014,19 +1083,29 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <span className="font-medium">Trust &gt; Automation:</span> Explainability (chips, overrides) was as critical as model accuracy
+                      <span className="font-medium">
+                        Trust &gt; Automation:
+                      </span>{" "}
+                      Explainability (chips, overrides) was as critical as model
+                      accuracy
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <span className="font-medium">Role-based design &gt; one-size-fits-all:</span> Doctors, nurses, and admins each needed tailored dashboards
+                      <span className="font-medium">
+                        Role-based design &gt; one-size-fits-all:
+                      </span>{" "}
+                      Doctors, nurses, and admins each needed tailored
+                      dashboards
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <span className="font-medium">Systems thinking:</span> Success hinged not just on UI polish, but on data flows, HIPAA boundaries, and auditability
+                      <span className="font-medium">Systems thinking:</span>{" "}
+                      Success hinged not just on UI polish, but on data flows,
+                      HIPAA boundaries, and auditability
                     </span>
                   </li>
                 </ul>
@@ -1040,25 +1119,31 @@ export default function MedicoCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <span className="font-medium">Predictive Staffing Optimization</span> → AI shift planning to cut overtime 15–20%
+                      <span className="font-medium">
+                        Predictive Staffing Optimization
+                      </span>{" "}
+                      → AI shift planning to cut overtime 15–20%
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <span className="font-medium">HL7/FHIR Integration</span> → expand interoperability across EHR vendors
+                      <span className="font-medium">HL7/FHIR Integration</span>{" "}
+                      → expand interoperability across EHR vendors
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <span className="font-medium">Sentiment Analysis</span> → real-time patient feedback loops
+                      <span className="font-medium">Sentiment Analysis</span> →
+                      real-time patient feedback loops
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <span className="font-medium">Scenario Planning</span> → financial what-if models for hospital admins
+                      <span className="font-medium">Scenario Planning</span> →
+                      financial what-if models for hospital admins
                     </span>
                   </li>
                 </ul>
