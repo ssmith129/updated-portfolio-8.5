@@ -791,10 +791,10 @@ export default function MedicoCaseStudy() {
                 Unified Dashboards
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                Role-specific panels that prioritize daily tasks, reducing noise
+                Role-specific dashboards with prioritized tasks and unified workflow
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → Reduced navigation time and improved task clarity
+                → Reduced friction and anticipates hospital needs
               </p>
               <img
                 loading="lazy"
