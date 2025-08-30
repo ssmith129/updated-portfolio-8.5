@@ -138,10 +138,9 @@ export default function MedicoCaseStudy() {
             backgroundSize: 'cover'
           }}
         >
-          <div className="flex flex-col relative h-auto mt-5 px-5 pb-8">
-            <Heart className="w-16 h-16 text-blue-600 mx-auto transition-transform duration-300 group-hover:scale-110" />
-            <div className="flex flex-col relative h-auto mt-5 px-5 pb-8">
-              <button className="bg-black text-white rounded px-6 py-4 text-center cursor-pointer">
+          <div className="flex flex-col relative justify-center items-center my-5 py-8 px-5">
+            <div className="flex flex-col relative justify-center items-center mt-5 py-8 px-5">
+              <button className="bg-black text-white rounded px-6 py-4 text-center cursor-pointer shadow-lg">
                 View Live Platform
               </button>
             </div>
