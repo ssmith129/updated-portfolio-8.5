@@ -1015,7 +1015,7 @@ export default function MedicoCaseStudy() {
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>• Manage staffing → Generate reports</li>
                     <li>• Monitor revenue dashboard in real-time</li>
-                    <li>• Oversee forecasting and operations</li>
+                    <li>�� Oversee forecasting and operations</li>
                   </ul>
                 </div>
 
@@ -1631,7 +1631,7 @@ export default function MedicoCaseStudy() {
               <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
                 <ul className="text-base text-[#131417] space-y-2">
                   <li>
-                    ��� Pilot across{" "}
+                    •&nbsp;Pilot across{" "}
                     <span className="font-semibold">
                       3 clinics, n=65 staff, 6 weeks
                     </span>
@@ -1789,7 +1789,7 @@ export default function MedicoCaseStudy() {
                     <p className="text-sm text-blue-700">
                       Extend scheduling AI into{" "}
                       <span className="font-medium">staffing optimization</span>{" "}
-                      (shift prediction → cut overtime)
+                      (shift prediction ��� cut overtime)
                     </p>
                   </div>
                   <div className="bg-purple-50 rounded-[16px] p-4 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
