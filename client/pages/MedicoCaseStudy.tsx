@@ -232,7 +232,7 @@ export default function MedicoCaseStudy() {
                     </div>
                     <div className="text-center">
                       <p className="text-xl font-bold text-orange-600 mb-1">
-                        ↓ 4.4hrs
+                        ��� 4.4hrs
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
                         admin overtime/week
@@ -818,13 +818,13 @@ export default function MedicoCaseStudy() {
             <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
               <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
                 <Activity className="w-5 h-5 text-green-600" />
-                Real-time Forecasting
+                Smart Notifications
               </h3>
               <p className="text-[#9FA0A3] text-sm mb-3">
-                Live dashboard replacing Excel sheets with predictive insights
+                AI-powered scoring ranks tasks by priority with risk detection
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → Proactive staffing and revenue visibility
+                → Improved response times and reduced missed communications
               </p>
               <img
                 loading="lazy"
