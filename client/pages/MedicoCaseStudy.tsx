@@ -732,8 +732,7 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Relying on static spreadsheets with limited forecasting
-                    insights
+                    Forecasts updated monthly via Excel exports — lagging insights
                   </p>
                 </div>
               </div>
