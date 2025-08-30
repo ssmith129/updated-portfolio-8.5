@@ -278,31 +278,31 @@ export default function MedicoCaseStudy() {
                   Role
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Lead UX/Product Designer
+                  Lead Product Designer
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Platform
+                  Scope
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Mobile-first SaaS Platform
+                  0→1 SaaS platform
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Duration
+                  Constraints
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  0→1 product design initiative
+                  HIPAA, legacy EHRs, 10-week delivery
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Team
+                  Baseline
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Product team + Engineering
+                  ~1,200 patient messages/month
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -315,10 +315,10 @@ export default function MedicoCaseStudy() {
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Tools
+                  Method
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Figma, Notion, Jira, Miro
+                  Controlled pilot (3 clinics, 65 staff, 6 weeks)
                 </p>
               </div>
             </div>
@@ -334,35 +334,35 @@ export default function MedicoCaseStudy() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
-                    value={35}
+                    value={42}
                     className="text-2xl sm:text-3xl font-bold text-green-600 mb-1"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#9FA0A3]">
-                    ↓ patient appointment delays
+                    ↓ inbox triage time (2m15s → 1m18s)
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
-                    value={28}
+                    value={18}
                     className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#9FA0A3]">
-                    ↑ faster inbox resolution
+                    ↑ on-time follow-ups (72% → 85.3%)
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">
-                    AI
+                    −2.4pts
                   </div>
-                  <p className="text-sm text-[#9FA0A3]">Smart Scheduling</p>
+                  <p className="text-sm text-[#9FA0A3]">no-show rate (9.8% → 7.4%)</p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1">
-                    Real-time
+                    −4.4hrs
                   </div>
-                  <p className="text-sm text-[#9FA0A3]">Revenue forecasting</p>
+                  <p className="text-sm text-[#9FA0A3]">admin overtime/week</p>
                 </div>
               </div>
             </div>
