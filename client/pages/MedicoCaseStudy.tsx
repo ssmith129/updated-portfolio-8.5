@@ -129,18 +129,21 @@ export default function MedicoCaseStudy() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
         <button
           onClick={() => setIsPreviewOpen(true)}
-          className="w-full aspect-[1.85] bg-gradient-to-br from-blue-50 to-green-50 rounded-lg flex items-center justify-center border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group"
+          className="w-full aspect-[1.85] rounded-lg flex items-center justify-center border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group"
           aria-label="Open Symplify platform preview"
+          style={{
+            backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fadf782ed456e4ee188c3992a86747eef)',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+          }}
         >
-          <div className="text-center cursor-pointer flex flex-col">
-            <Heart className="w-16 h-16 text-blue-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
-            <p className="text-blue-600 font-medium">View Live Platform</p>
-            <p className="text-sm text-blue-400 mt-1">
-              Click to preview symplify-preview.vercel.app
-            </p>
-            <div className="mt-3 flex items-center justify-center gap-2 text-xs text-blue-500">
-              <ZoomIn className="w-4 h-4" />
-              <span>Click to open preview</span>
+          <div className="flex flex-col relative h-auto mt-5 px-5 pb-8">
+            <Heart className="w-16 h-16 text-blue-600 mx-auto transition-transform duration-300 group-hover:scale-110" />
+            <div className="flex flex-col relative h-auto mt-5 px-5 pb-8">
+              <button className="bg-black text-white rounded px-6 py-4 text-center cursor-pointer">
+                View Live Platform
+              </button>
             </div>
           </div>
         </button>
