@@ -416,7 +416,7 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <ul className="space-y-2 text-[#131417]">
                   <li>• ~1,200 patient messages/month</li>
-                  <li>• Avg triage time: 2m15s/item</li>
+                  <li>��� Avg triage time: 2m15s/item</li>
                   <li>• SLA breaches: 14% of messages delayed &gt;24h</li>
                   <li>• No-show rate: ~10%</li>
                   <li>• Admin overtime: 12+ hrs/wk</li>
@@ -515,11 +515,11 @@ export default function MedicoCaseStudy() {
                 <p className="text-lg text-[#131417] leading-[150%]">
                   <span className="font-semibold">The Problem:</span>
                   <br />
-                  Clinics were losing{" "}
+                  Clinics were losing&nbsp;
                   <span className="font-medium">
                     5–8 hours per week per clinician
-                  </span>{" "}
-                  to inbox triage across fragmented tools (EHR, spreadsheets,
+                  </span>
+                  &nbsp;to inbox triage across fragmented tools (EHR, spreadsheets,
                   sticky notes). Missed handoffs risked HIPAA violations and
                   delayed care. Forecasting was manual and lagging, making
                   proactive staffing impossible.
@@ -1889,7 +1889,7 @@ export default function MedicoCaseStudy() {
                         HL7/FHIR Integration
                       </h4>
                       <p className="text-green-700 text-sm">
-                        → expand interoperability across EHR vendors
+                        �� expand interoperability across EHR vendors
                       </p>
                     </div>
                   </div>
