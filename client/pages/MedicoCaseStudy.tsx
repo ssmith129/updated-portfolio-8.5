@@ -1326,47 +1326,6 @@ export default function MedicoCaseStudy() {
               </div>
             </div>
 
-            <div className="mb-10">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Visualization
-              </h3>
-
-              <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-[20px] p-6 border border-gray-200">
-                <p className="text-base text-[#131417] leading-[150%] mb-6">
-                  The swimlane map (Doctor, Nurse, Admin) highlights:
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-white rounded-[16px] p-4 border border-red-200">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-red-500 font-bold text-xl">❗</span>
-                      <h4 className="font-semibold text-red-800">
-                        Pain Points (Before Symplify)
-                      </h4>
-                    </div>
-                    <p className="text-sm text-red-700">
-                      Red exclamation marks where research revealed workflow
-                      breakdowns — e.g., missed handoffs, duplicated scheduling,
-                      manual reports.
-                    </p>
-                  </div>
-
-                  <div className="bg-white rounded-[16px] p-4 border border-green-200">
-                    <div className="flex items-center gap-3 mb-3">
-                      <CheckCircle className="w-5 h-5 text-green-600" />
-                      <h4 className="font-semibold text-green-800">
-                        AI Interventions (With Symplify)
-                      </h4>
-                    </div>
-                    <p className="text-sm text-green-700">
-                      Green labels where Symplify now assists — auto-triage,
-                      predictive scheduling, real-time forecasting.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
               <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
                 <TrendingUp className="w-5 h-5 text-blue-600" />
