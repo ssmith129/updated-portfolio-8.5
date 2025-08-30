@@ -443,7 +443,7 @@ export default function MedicoCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              Problem & Opportunity
+              🧠  Problem & Opportunity
             </h2>
 
             <div className="space-y-8">
