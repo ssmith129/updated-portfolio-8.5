@@ -1932,7 +1932,6 @@ export default function MedicoCaseStudy() {
 
               <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-[20px] p-8 border border-blue-200 text-center">
                 <p className="text-lg text-[#131417] leading-[150%] font-medium">
-                  📌{" "}
                   <span className="font-semibold">
                     Symplify reframed hospital operations from three disjointed
                     systems into one adaptive, AI-assisted platform — measurable
