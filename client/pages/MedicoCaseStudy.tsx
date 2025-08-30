@@ -390,7 +390,9 @@ export default function MedicoCaseStudy() {
             <div className="space-y-8">
               <div>
                 <p className="text-lg text-[#131417] leading-[150%] mb-6">
-                  Mid-sized clinics faced an <span className="font-semibold">operational tax</span> from juggling three disconnected systems:
+                  Mid-sized clinics faced an{" "}
+                  <span className="font-semibold">operational tax</span> from
+                  juggling three disconnected systems:
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-[#131417]">
@@ -428,7 +430,10 @@ export default function MedicoCaseStudy() {
                 <ul className="space-y-2 text-[#131417]">
                   <li>• HIPAA compliance required masking and audit logs</li>
                   <li>• Legacy EHRs couldn't be replaced, only extended</li>
-                  <li>• Staffing shortages → adoption needed to reduce workload, not add to it</li>
+                  <li>
+                    • Staffing shortages → adoption needed to reduce workload,
+                    not add to it
+                  </li>
                 </ul>
               </div>
             </div>
@@ -498,7 +503,7 @@ export default function MedicoCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🧠  Problem & Opportunity
+              🧠 Problem & Opportunity
             </h2>
 
             <div className="space-y-8">
@@ -538,13 +543,16 @@ export default function MedicoCaseStudy() {
                   </h4>
                   <ul className="space-y-2">
                     <li className="text-[#131417]">
-                      ❌ Did <span className="font-medium">not</span> replace full EHR stack — only layered workflows on top
+                      ❌ Did <span className="font-medium">not</span> replace
+                      full EHR stack — only layered workflows on top
                     </li>
                     <li className="text-[#131417]">
-                      ❌ Did <span className="font-medium">not</span> rebuild billing — focused only on forecasting dashboards
+                      ❌ Did <span className="font-medium">not</span> rebuild
+                      billing — focused only on forecasting dashboards
                     </li>
                     <li className="text-[#131417]">
-                      ❌ Did <span className="font-medium">not</span> tackle patient-facing portals in v1 — prioritized staff workflows
+                      ❌ Did <span className="font-medium">not</span> tackle
+                      patient-facing portals in v1 — prioritized staff workflows
                     </li>
                   </ul>
                 </div>
@@ -625,40 +633,68 @@ export default function MedicoCaseStudy() {
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Method</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Sample</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Duration</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Focus</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Bias Controls</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Method
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Sample
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Duration
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Focus
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Bias Controls
+                      </th>
                     </tr>
                   </thead>
                   <tbody className="text-[#131417]">
                     <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
                       <td className="py-3 px-4 font-medium">Interviews</td>
-                      <td className="py-3 px-4">14 staff (5 MD, 6 RN, 3 Admin)</td>
+                      <td className="py-3 px-4">
+                        14 staff (5 MD, 6 RN, 3 Admin)
+                      </td>
                       <td className="py-3 px-4">2 wks</td>
-                      <td className="py-3 px-4">Pain points in triage, scheduling, forecasting</td>
-                      <td className="py-3 px-4">Balanced roles, avoided leading questions</td>
+                      <td className="py-3 px-4">
+                        Pain points in triage, scheduling, forecasting
+                      </td>
+                      <td className="py-3 px-4">
+                        Balanced roles, avoided leading questions
+                      </td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">Contextual inquiry</td>
+                      <td className="py-3 px-4 font-medium">
+                        Contextual inquiry
+                      </td>
                       <td className="py-3 px-4">11 live clinic sessions</td>
                       <td className="py-3 px-4">3 days</td>
-                      <td className="py-3 px-4">Task handoffs, interruptions, downtime</td>
-                      <td className="py-3 px-4">Observed at different times of day</td>
+                      <td className="py-3 px-4">
+                        Task handoffs, interruptions, downtime
+                      </td>
+                      <td className="py-3 px-4">
+                        Observed at different times of day
+                      </td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
                       <td className="py-3 px-4 font-medium">Diary study</td>
                       <td className="py-3 px-4">9 staff (mixed roles)</td>
                       <td className="py-3 px-4">2 wks</td>
-                      <td className="py-3 px-4">Daily frustrations + time sinks</td>
+                      <td className="py-3 px-4">
+                        Daily frustrations + time sinks
+                      </td>
                       <td className="py-3 px-4">Compared with baseline logs</td>
                     </tr>
                     <tr className="hover:bg-orange-50 transition-colors duration-200">
                       <td className="py-3 px-4 font-medium">Workflow audits</td>
-                      <td className="py-3 px-4">1,200 inbox items, 150 appts</td>
+                      <td className="py-3 px-4">
+                        1,200 inbox items, 150 appts
+                      </td>
                       <td className="py-3 px-4">4 wks</td>
-                      <td className="py-3 px-4">Handling time, delay %, no-show rate</td>
+                      <td className="py-3 px-4">
+                        Handling time, delay %, no-show rate
+                      </td>
                       <td className="py-3 px-4">Controlled for seasonality</td>
                     </tr>
                   </tbody>
@@ -674,35 +710,63 @@ export default function MedicoCaseStudy() {
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Insight</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Design Move</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Expected Effect</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Insight
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Design Move
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Expected Effect
+                      </th>
                     </tr>
                   </thead>
                   <tbody className="text-[#131417]">
                     <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                      <td className="py-3 px-4">Inbox triage = ~5–8 hrs/wk per clinician</td>
-                      <td className="py-3 px-4 font-semibold text-blue-600">AI Inbox Triage (SLA + risk sorting)</td>
+                      <td className="py-3 px-4">
+                        Inbox triage = ~5–8 hrs/wk per clinician
+                      </td>
+                      <td className="py-3 px-4 font-semibold text-blue-600">
+                        AI Inbox Triage (SLA + risk sorting)
+                      </td>
                       <td className="py-3 px-4">↓ triage time ~40%</td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                      <td className="py-3 px-4">Nurses missed 18% of urgent handoffs</td>
-                      <td className="py-3 px-4 font-semibold text-green-600">Unified inbox + handoff flags</td>
+                      <td className="py-3 px-4">
+                        Nurses missed 18% of urgent handoffs
+                      </td>
+                      <td className="py-3 px-4 font-semibold text-green-600">
+                        Unified inbox + handoff flags
+                      </td>
                       <td className="py-3 px-4">↑ on-time follow-ups</td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
-                      <td className="py-3 px-4">Admins reliant on Excel; monthly lag</td>
-                      <td className="py-3 px-4 font-semibold text-purple-600">Real-time forecasting dashboard</td>
-                      <td className="py-3 px-4">↑ visibility, proactive staffing</td>
+                      <td className="py-3 px-4">
+                        Admins reliant on Excel; monthly lag
+                      </td>
+                      <td className="py-3 px-4 font-semibold text-purple-600">
+                        Real-time forecasting dashboard
+                      </td>
+                      <td className="py-3 px-4">
+                        ↑ visibility, proactive staffing
+                      </td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
-                      <td className="py-3 px-4">Doctors manually slotting patients → 10% no-shows</td>
-                      <td className="py-3 px-4 font-semibold text-orange-600">Smart Scheduling (predictive slotting)</td>
+                      <td className="py-3 px-4">
+                        Doctors manually slotting patients → 10% no-shows
+                      </td>
+                      <td className="py-3 px-4 font-semibold text-orange-600">
+                        Smart Scheduling (predictive slotting)
+                      </td>
                       <td className="py-3 px-4">↓ no-shows, ↑ throughput</td>
                     </tr>
                     <tr className="hover:bg-yellow-50 transition-colors duration-200">
-                      <td className="py-3 px-4">Staff wary of "black box AI"</td>
-                      <td className="py-3 px-4 font-semibold text-yellow-600">Confidence badges + override toggles</td>
+                      <td className="py-3 px-4">
+                        Staff wary of "black box AI"
+                      </td>
+                      <td className="py-3 px-4 font-semibold text-yellow-600">
+                        Confidence badges + override toggles
+                      </td>
                       <td className="py-3 px-4">↑ adoption + trust</td>
                     </tr>
                   </tbody>
@@ -716,16 +780,25 @@ export default function MedicoCaseStudy() {
               </h3>
               <div className="space-y-3">
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "Half my inbox is reminders I don't need today — I just want the urgent ones."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">— MD, Clinic A</cite>
+                  "Half my inbox is reminders I don't need today — I just want
+                  the urgent ones."
+                  <cite className="block text-xs text-green-600 mt-1 not-italic">
+                    — MD, Clinic A
+                  </cite>
                 </blockquote>
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "When shifts overlap, I'm never sure if a message was handled already."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">— RN, Clinic B</cite>
+                  "When shifts overlap, I'm never sure if a message was handled
+                  already."
+                  <cite className="block text-xs text-green-600 mt-1 not-italic">
+                    — RN, Clinic B
+                  </cite>
                 </blockquote>
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "Forecasting is basically a guess until month close — then it's too late."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">— Admin, Clinic C</cite>
+                  "Forecasting is basically a guess until month close — then
+                  it's too late."
+                  <cite className="block text-xs text-green-600 mt-1 not-italic">
+                    — Admin, Clinic C
+                  </cite>
                 </blockquote>
               </div>
             </div>
@@ -747,34 +820,68 @@ export default function MedicoCaseStudy() {
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tl-lg">Role</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Actions</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Supporting Systems</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Bottlenecks (Before)</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tr-lg">Symplify Intervention</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tl-lg">
+                        Role
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Actions
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Supporting Systems
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Bottlenecks (Before)
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tr-lg">
+                        Symplify Intervention
+                      </th>
                     </tr>
                   </thead>
                   <tbody className="text-[#131417]">
                     <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium text-blue-600">Doctor</td>
-                      <td className="py-3 px-4">Review inbox → Confirm appts → Update chart</td>
+                      <td className="py-3 px-4 font-medium text-blue-600">
+                        Doctor
+                      </td>
+                      <td className="py-3 px-4">
+                        Review inbox → Confirm appts → Update chart
+                      </td>
                       <td className="py-3 px-4">EHR, spreadsheets</td>
-                      <td className="py-3 px-4 text-red-600">2m triage/item, duplicate entries</td>
-                      <td className="py-3 px-4 font-semibold text-green-600">AI triage + Smart Scheduling</td>
+                      <td className="py-3 px-4 text-red-600">
+                        2m triage/item, duplicate entries
+                      </td>
+                      <td className="py-3 px-4 font-semibold text-green-600">
+                        AI triage + Smart Scheduling
+                      </td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium text-green-600">Nurse</td>
-                      <td className="py-3 px-4">Track vitals → Triage msgs → Shift handoff</td>
+                      <td className="py-3 px-4 font-medium text-green-600">
+                        Nurse
+                      </td>
+                      <td className="py-3 px-4">
+                        Track vitals → Triage msgs → Shift handoff
+                      </td>
                       <td className="py-3 px-4">Paper logs, EHR</td>
-                      <td className="py-3 px-4 text-red-600">Missed urgent handoffs</td>
-                      <td className="py-3 px-4 font-semibold text-green-600">Unified inbox + flags</td>
+                      <td className="py-3 px-4 text-red-600">
+                        Missed urgent handoffs
+                      </td>
+                      <td className="py-3 px-4 font-semibold text-green-600">
+                        Unified inbox + flags
+                      </td>
                     </tr>
                     <tr className="hover:bg-purple-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium text-purple-600">Admin</td>
-                      <td className="py-3 px-4">Manage staffing → Generate reports</td>
+                      <td className="py-3 px-4 font-medium text-purple-600">
+                        Admin
+                      </td>
+                      <td className="py-3 px-4">
+                        Manage staffing → Generate reports
+                      </td>
                       <td className="py-3 px-4">Excel, exports</td>
-                      <td className="py-3 px-4 text-red-600">Forecasts updated monthly</td>
-                      <td className="py-3 px-4 font-semibold text-green-600">Real-time forecasting dashboards</td>
+                      <td className="py-3 px-4 text-red-600">
+                        Forecasts updated monthly
+                      </td>
+                      <td className="py-3 px-4 font-semibold text-green-600">
+                        Real-time forecasting dashboards
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -796,7 +903,9 @@ export default function MedicoCaseStudy() {
                     </ul>
                   </div>
                   <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500">
-                    <h4 className="font-semibold text-green-800 mb-2">Processing</h4>
+                    <h4 className="font-semibold text-green-800 mb-2">
+                      Processing
+                    </h4>
                     <ul className="text-sm text-green-700 space-y-1">
                       <li>• AI modules (triage, scheduling, forecasting)</li>
                       <li>• Model versioning & logging</li>
@@ -805,7 +914,9 @@ export default function MedicoCaseStudy() {
                 </div>
                 <div className="space-y-4">
                   <div className="bg-purple-50 rounded-[16px] p-4 border-l-4 border-purple-500">
-                    <h4 className="font-semibold text-purple-800 mb-2">Outputs</h4>
+                    <h4 className="font-semibold text-purple-800 mb-2">
+                      Outputs
+                    </h4>
                     <ul className="text-sm text-purple-700 space-y-1">
                       <li>• Role-based dashboards</li>
                       <li>• Alerts</li>
@@ -813,9 +924,14 @@ export default function MedicoCaseStudy() {
                     </ul>
                   </div>
                   <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500">
-                    <h4 className="font-semibold text-orange-800 mb-2">Security</h4>
+                    <h4 className="font-semibold text-orange-800 mb-2">
+                      Security
+                    </h4>
                     <ul className="text-sm text-orange-700 space-y-1">
-                      <li>• PHI boundary maintained (only metadata pulled into Symplify)</li>
+                      <li>
+                        • PHI boundary maintained (only metadata pulled into
+                        Symplify)
+                      </li>
                       <li>• Role + Org-unit RBAC</li>
                       <li>• TLS in transit, AES-256 at rest</li>
                       <li>• Immutable audit logs for AI actions + overrides</li>
@@ -965,11 +1081,19 @@ export default function MedicoCaseStudy() {
 
             <div className="mb-10">
               <p className="text-lg text-[#131417] leading-[150%] mb-8">
-                To connect our research insights directly to staff workflows, we mapped out the{" "}
-                <span className="font-semibold">daily journeys of three key roles</span> — Doctor, Nurse, and Admin.
-                This role-based swimlane visualization reveals where delays, errors, and inefficiencies occurred{" "}
-                <span className="font-semibold">before Symplify</span>, and how{" "}
-                <span className="font-semibold">AI interventions resolved them</span>.
+                To connect our research insights directly to staff workflows, we
+                mapped out the{" "}
+                <span className="font-semibold">
+                  daily journeys of three key roles
+                </span>{" "}
+                — Doctor, Nurse, and Admin. This role-based swimlane
+                visualization reveals where delays, errors, and inefficiencies
+                occurred <span className="font-semibold">before Symplify</span>,
+                and how{" "}
+                <span className="font-semibold">
+                  AI interventions resolved them
+                </span>
+                .
               </p>
             </div>
 
@@ -985,20 +1109,30 @@ export default function MedicoCaseStudy() {
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                       <Heart className="w-6 h-6 text-blue-600" />
                     </div>
-                    <h4 className="text-lg font-semibold text-blue-800">Doctor</h4>
+                    <h4 className="text-lg font-semibold text-blue-800">
+                      Doctor
+                    </h4>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <h5 className="font-medium text-blue-800 mb-3">Daily Workflow</h5>
+                      <h5 className="font-medium text-blue-800 mb-3">
+                        Daily Workflow
+                      </h5>
                       <ul className="space-y-2 text-blue-700">
                         <li className="flex items-center gap-2">
                           <span className="text-red-500 font-bold">❗</span>
-                          Review inbox <span className="text-sm italic">(manual triage ~2m/item, high backlog)</span>
+                          Review inbox{" "}
+                          <span className="text-sm italic">
+                            (manual triage ~2m/item, high backlog)
+                          </span>
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="text-red-500 font-bold">❗</span>
-                          Confirm appointments <span className="text-sm italic">(double entry in EHR + spreadsheets)</span>
+                          Confirm appointments{" "}
+                          <span className="text-sm italic">
+                            (double entry in EHR + spreadsheets)
+                          </span>
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0 mt-2"></span>
@@ -1018,17 +1152,29 @@ export default function MedicoCaseStudy() {
                       </h5>
                       <ul className="space-y-2 text-green-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <span className="text-green-600 font-bold mt-1">
+                            ✓
+                          </span>
                           <div>
-                            <span className="font-semibold">AI Inbox Triage</span>
-                            <span className="block text-sm">sorts by clinical risk + SLA urgency</span>
+                            <span className="font-semibold">
+                              AI Inbox Triage
+                            </span>
+                            <span className="block text-sm">
+                              sorts by clinical risk + SLA urgency
+                            </span>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <span className="text-green-600 font-bold mt-1">
+                            ✓
+                          </span>
                           <div>
-                            <span className="font-semibold">Smart Scheduling</span>
-                            <span className="block text-sm">predicts no-shows, optimizes appointment slots</span>
+                            <span className="font-semibold">
+                              Smart Scheduling
+                            </span>
+                            <span className="block text-sm">
+                              predicts no-shows, optimizes appointment slots
+                            </span>
                           </div>
                         </li>
                       </ul>
@@ -1042,12 +1188,16 @@ export default function MedicoCaseStudy() {
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                       <Activity className="w-6 h-6 text-green-600" />
                     </div>
-                    <h4 className="text-lg font-semibold text-green-800">Nurse</h4>
+                    <h4 className="text-lg font-semibold text-green-800">
+                      Nurse
+                    </h4>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <h5 className="font-medium text-green-800 mb-3">Daily Workflow</h5>
+                      <h5 className="font-medium text-green-800 mb-3">
+                        Daily Workflow
+                      </h5>
                       <ul className="space-y-2 text-green-700">
                         <li className="flex items-center gap-2">
                           <span className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
@@ -1059,11 +1209,17 @@ export default function MedicoCaseStudy() {
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="text-red-500 font-bold">❗</span>
-                          Triage patient messages <span className="text-sm italic">(handoffs missed at shift change)</span>
+                          Triage patient messages{" "}
+                          <span className="text-sm italic">
+                            (handoffs missed at shift change)
+                          </span>
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="text-red-500 font-bold">❗</span>
-                          Handoff to doctor <span className="text-sm italic">(no clear ownership)</span>
+                          Handoff to doctor{" "}
+                          <span className="text-sm italic">
+                            (no clear ownership)
+                          </span>
                         </li>
                       </ul>
                     </div>
@@ -1075,10 +1231,17 @@ export default function MedicoCaseStudy() {
                       </h5>
                       <ul className="space-y-2 text-green-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <span className="text-green-600 font-bold mt-1">
+                            ✓
+                          </span>
                           <div>
-                            <span className="font-semibold">Unified Inbox + Handoff Flags</span>
-                            <span className="block text-sm">ensure urgent items are surfaced, ownership is visible</span>
+                            <span className="font-semibold">
+                              Unified Inbox + Handoff Flags
+                            </span>
+                            <span className="block text-sm">
+                              ensure urgent items are surfaced, ownership is
+                              visible
+                            </span>
                           </div>
                         </li>
                       </ul>
@@ -1092,16 +1255,23 @@ export default function MedicoCaseStudy() {
                     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
                       <Users className="w-6 h-6 text-purple-600" />
                     </div>
-                    <h4 className="text-lg font-semibold text-purple-800">Admin</h4>
+                    <h4 className="text-lg font-semibold text-purple-800">
+                      Admin
+                    </h4>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <h5 className="font-medium text-purple-800 mb-3">Daily Workflow</h5>
+                      <h5 className="font-medium text-purple-800 mb-3">
+                        Daily Workflow
+                      </h5>
                       <ul className="space-y-2 text-purple-700">
                         <li className="flex items-center gap-2">
                           <span className="text-red-500 font-bold">❗</span>
-                          Manage staffing <span className="text-sm italic">(scheduling conflicts, no predictive insight)</span>
+                          Manage staffing{" "}
+                          <span className="text-sm italic">
+                            (scheduling conflicts, no predictive insight)
+                          </span>
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0 mt-2"></span>
@@ -1109,7 +1279,10 @@ export default function MedicoCaseStudy() {
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="text-red-500 font-bold">❗</span>
-                          Generate revenue reports <span className="text-sm italic">(monthly Excel exports, lagging visibility)</span>
+                          Generate revenue reports{" "}
+                          <span className="text-sm italic">
+                            (monthly Excel exports, lagging visibility)
+                          </span>
                         </li>
                       </ul>
                     </div>
@@ -1121,17 +1294,29 @@ export default function MedicoCaseStudy() {
                       </h5>
                       <ul className="space-y-2 text-green-700">
                         <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <span className="text-green-600 font-bold mt-1">
+                            ✓
+                          </span>
                           <div>
-                            <span className="font-semibold">Revenue Forecasting Dashboard</span>
-                            <span className="block text-sm">real-time projections from intake + billing</span>
+                            <span className="font-semibold">
+                              Revenue Forecasting Dashboard
+                            </span>
+                            <span className="block text-sm">
+                              real-time projections from intake + billing
+                            </span>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <span className="text-green-600 font-bold mt-1">
+                            ✓
+                          </span>
                           <div>
-                            <span className="font-semibold">Staffing Optimization (planned)</span>
-                            <span className="block text-sm">predict demand and reduce overtime</span>
+                            <span className="font-semibold">
+                              Staffing Optimization (planned)
+                            </span>
+                            <span className="block text-sm">
+                              predict demand and reduce overtime
+                            </span>
                           </div>
                         </li>
                       </ul>
@@ -1155,21 +1340,27 @@ export default function MedicoCaseStudy() {
                   <div className="bg-white rounded-[16px] p-4 border border-red-200">
                     <div className="flex items-center gap-3 mb-3">
                       <span className="text-red-500 font-bold text-xl">❗</span>
-                      <h4 className="font-semibold text-red-800">Pain Points (Before Symplify)</h4>
+                      <h4 className="font-semibold text-red-800">
+                        Pain Points (Before Symplify)
+                      </h4>
                     </div>
                     <p className="text-sm text-red-700">
-                      Red exclamation marks where research revealed workflow breakdowns — e.g., missed handoffs,
-                      duplicated scheduling, manual reports.
+                      Red exclamation marks where research revealed workflow
+                      breakdowns — e.g., missed handoffs, duplicated scheduling,
+                      manual reports.
                     </p>
                   </div>
 
                   <div className="bg-white rounded-[16px] p-4 border border-green-200">
                     <div className="flex items-center gap-3 mb-3">
                       <CheckCircle className="w-5 h-5 text-green-600" />
-                      <h4 className="font-semibold text-green-800">AI Interventions (With Symplify)</h4>
+                      <h4 className="font-semibold text-green-800">
+                        AI Interventions (With Symplify)
+                      </h4>
                     </div>
                     <p className="text-sm text-green-700">
-                      Green labels where Symplify now assists — auto-triage, predictive scheduling, real-time forecasting.
+                      Green labels where Symplify now assists — auto-triage,
+                      predictive scheduling, real-time forecasting.
                     </p>
                   </div>
                 </div>
@@ -1182,8 +1373,12 @@ export default function MedicoCaseStudy() {
                 Impact
               </h3>
               <p className="text-base text-[#131417] leading-[150%]">
-                This mapping shows how <span className="font-semibold">insight-driven interventions</span> translated into measurable outcomes:
-                faster triage, fewer missed follow-ups, reduced overtime, and more accurate forecasting.
+                This mapping shows how{" "}
+                <span className="font-semibold">
+                  insight-driven interventions
+                </span>{" "}
+                translated into measurable outcomes: faster triage, fewer missed
+                follow-ups, reduced overtime, and more accurate forecasting.
               </p>
             </div>
           </div>
@@ -1198,7 +1393,8 @@ export default function MedicoCaseStudy() {
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
             <div className="mb-6">
               <p className="text-lg text-[#9FA0A3] leading-[150%]">
-                Critical design choices that shaped the platform — showing not just what we chose, but why.
+                Critical design choices that shaped the platform — showing not
+                just what we chose, but why.
               </p>
             </div>
 
@@ -1206,48 +1402,108 @@ export default function MedicoCaseStudy() {
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="border-b-2 border-gray-200">
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50 rounded-tl-lg">Decision</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">Options</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">Trade-offs</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">Final Choice</th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50 rounded-tr-lg">Risk & Mitigation</th>
+                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50 rounded-tl-lg">
+                      Decision
+                    </th>
+                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">
+                      Options
+                    </th>
+                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">
+                      Trade-offs
+                    </th>
+                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">
+                      Final Choice
+                    </th>
+                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50 rounded-tr-lg">
+                      Risk & Mitigation
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">Inbox prioritization</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Last-in; Manual flags; Risk+SLA score</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Simplicity vs consistency vs impact</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-blue-600">Risk+SLA scoring</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Added "why ranked" chips + overrides</td>
+                    <td className="py-4 px-4 font-medium text-[#131417]">
+                      Inbox prioritization
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Last-in; Manual flags; Risk+SLA score
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Simplicity vs consistency vs impact
+                    </td>
+                    <td className="py-4 px-4 text-sm font-semibold text-blue-600">
+                      Risk+SLA scoring
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Added "why ranked" chips + overrides
+                    </td>
                   </tr>
                   <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">Scheduling</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Manual; Historical only; Historical+provider patterns</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Simplicity vs accuracy</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-green-600">Historical+provider patterns</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Monthly backtests; alert on drift</td>
+                    <td className="py-4 px-4 font-medium text-[#131417]">
+                      Scheduling
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Manual; Historical only; Historical+provider patterns
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Simplicity vs accuracy
+                    </td>
+                    <td className="py-4 px-4 text-sm font-semibold text-green-600">
+                      Historical+provider patterns
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Monthly backtests; alert on drift
+                    </td>
                   </tr>
                   <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">Forecasting</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Monthly Excel; Daily batch; Real-time</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Lag vs integration effort</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-purple-600">Real-time dashboard</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">API fallback to daily export</td>
+                    <td className="py-4 px-4 font-medium text-[#131417]">
+                      Forecasting
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Monthly Excel; Daily batch; Real-time
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Lag vs integration effort
+                    </td>
+                    <td className="py-4 px-4 text-sm font-semibold text-purple-600">
+                      Real-time dashboard
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      API fallback to daily export
+                    </td>
                   </tr>
                   <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">Permissions</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Global; Role; Role+Org</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Speed vs safety</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-orange-600">Role+Org</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Provisioning checklist; quarterly audits</td>
+                    <td className="py-4 px-4 font-medium text-[#131417]">
+                      Permissions
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Global; Role; Role+Org
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Speed vs safety
+                    </td>
+                    <td className="py-4 px-4 text-sm font-semibold text-orange-600">
+                      Role+Org
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Provisioning checklist; quarterly audits
+                    </td>
                   </tr>
                   <tr className="hover:bg-yellow-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">AI transparency</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Opaque; Confidence only; Confidence+Why+Override</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Speed vs trust vs complexity</td>
-                    <td className="py-4 px-4 text-sm font-semibold text-yellow-600">Confidence+Why+Override</td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">Concise chips, inline tooltips</td>
+                    <td className="py-4 px-4 font-medium text-[#131417]">
+                      AI transparency
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Opaque; Confidence only; Confidence+Why+Override
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Speed vs trust vs complexity
+                    </td>
+                    <td className="py-4 px-4 text-sm font-semibold text-yellow-600">
+                      Confidence+Why+Override
+                    </td>
+                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
+                      Concise chips, inline tooltips
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -1258,9 +1514,13 @@ export default function MedicoCaseStudy() {
                 🎯 Decision Philosophy
               </h3>
               <p className="text-base text-[#131417] leading-[150%]">
-                Each choice balanced <span className="font-medium">user needs</span>, <span className="font-medium">technical constraints</span>,
-                and <span className="font-medium">regulatory requirements</span>. We prioritized explainability and user trust over pure automation,
-                ensuring clinical staff remained in control while gaining AI assistance.
+                Each choice balanced{" "}
+                <span className="font-medium">user needs</span>,{" "}
+                <span className="font-medium">technical constraints</span>, and{" "}
+                <span className="font-medium">regulatory requirements</span>. We
+                prioritized explainability and user trust over pure automation,
+                ensuring clinical staff remained in control while gaining AI
+                assistance.
               </p>
             </div>
           </div>
@@ -1409,9 +1669,17 @@ export default function MedicoCaseStudy() {
               </h3>
               <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
                 <ul className="text-base text-[#131417] space-y-2">
-                  <li>• Pilot across <span className="font-semibold">3 clinics, n=65 staff, 6 weeks</span></li>
+                  <li>
+                    • Pilot across{" "}
+                    <span className="font-semibold">
+                      3 clinics, n=65 staff, 6 weeks
+                    </span>
+                  </li>
                   <li>• Baselines pulled from logs + payroll</li>
-                  <li>• Guardrails: ≤10% false positives, override &lt;15%, fairness audits</li>
+                  <li>
+                    • Guardrails: ≤10% false positives, override &lt;15%,
+                    fairness audits
+                  </li>
                 </ul>
               </div>
             </div>
@@ -1424,55 +1692,95 @@ export default function MedicoCaseStudy() {
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tl-lg">KPI</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Baseline</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Post-Launch</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Delta</th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tr-lg">Notes</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tl-lg">
+                        KPI
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Baseline
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Post-Launch
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                        Delta
+                      </th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tr-lg">
+                        Notes
+                      </th>
                     </tr>
                   </thead>
                   <tbody className="text-[#131417]">
                     <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">Avg triage time/item</td>
+                      <td className="py-3 px-4 font-medium">
+                        Avg triage time/item
+                      </td>
                       <td className="py-3 px-4">2m15s</td>
                       <td className="py-3 px-4">1m18s</td>
-                      <td className="py-3 px-4 font-semibold text-green-600">↓42%</td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">n=1,200 items</td>
+                      <td className="py-3 px-4 font-semibold text-green-600">
+                        ↓42%
+                      </td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
+                        n=1,200 items
+                      </td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">On-time follow-ups</td>
+                      <td className="py-3 px-4 font-medium">
+                        On-time follow-ups
+                      </td>
                       <td className="py-3 px-4">72%</td>
                       <td className="py-3 px-4">85.3%</td>
-                      <td className="py-3 px-4 font-semibold text-blue-600">↑18%</td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">SLA adherence</td>
+                      <td className="py-3 px-4 font-semibold text-blue-600">
+                        ↑18%
+                      </td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
+                        SLA adherence
+                      </td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
                       <td className="py-3 px-4 font-medium">No-show rate</td>
                       <td className="py-3 px-4">9.8%</td>
                       <td className="py-3 px-4">7.4%</td>
-                      <td className="py-3 px-4 font-semibold text-purple-600">↓2.4 pts</td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">Seasonal variance</td>
+                      <td className="py-3 px-4 font-semibold text-purple-600">
+                        ↓2.4 pts
+                      </td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
+                        Seasonal variance
+                      </td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">Admin overtime hrs/wk</td>
+                      <td className="py-3 px-4 font-medium">
+                        Admin overtime hrs/wk
+                      </td>
                       <td className="py-3 px-4">12.5</td>
                       <td className="py-3 px-4">8.1</td>
-                      <td className="py-3 px-4 font-semibold text-orange-600">↓4.4 hrs</td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">Payroll data</td>
+                      <td className="py-3 px-4 font-semibold text-orange-600">
+                        ↓4.4 hrs
+                      </td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
+                        Payroll data
+                      </td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-yellow-50 transition-colors duration-200">
                       <td className="py-3 px-4 font-medium">SLA breach risk</td>
                       <td className="py-3 px-4">14.2%</td>
                       <td className="py-3 px-4">7.9%</td>
-                      <td className="py-3 px-4 font-semibold text-red-600">↓44%</td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">Rule engine flags</td>
+                      <td className="py-3 px-4 font-semibold text-red-600">
+                        ↓44%
+                      </td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
+                        Rule engine flags
+                      </td>
                     </tr>
                     <tr className="hover:bg-gray-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">Clinician override of AI</td>
+                      <td className="py-3 px-4 font-medium">
+                        Clinician override of AI
+                      </td>
                       <td className="py-3 px-4">—</td>
                       <td className="py-3 px-4">11%</td>
                       <td className="py-3 px-4">—</td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">Below guardrail (&lt;15%)</td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
+                        Below guardrail (&lt;15%)
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -1486,17 +1794,23 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500">
-                    <h4 className="font-semibold text-green-800 mb-3">✅ What Worked</h4>
+                    <h4 className="font-semibold text-green-800 mb-3">
+                      ✅ What Worked
+                    </h4>
                     <ul className="text-sm text-green-700 space-y-2">
                       <li>• SLA breaches halved, overtime reduced ~35%</li>
                       <li>• Backlog cleared 2× faster</li>
                     </ul>
                   </div>
                   <div className="bg-red-50 rounded-[16px] p-4 border-l-4 border-red-500">
-                    <h4 className="font-semibold text-red-800 mb-3">❌ What Didn't</h4>
+                    <h4 className="font-semibold text-red-800 mb-3">
+                      ❌ What Didn't
+                    </h4>
                     <ul className="text-sm text-red-700 space-y-2">
                       <li>• Weekend call volumes unchanged (outside scope)</li>
-                      <li>• Some admins still reverted to Excel → training needed</li>
+                      <li>
+                        • Some admins still reverted to Excel → training needed
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -1512,7 +1826,9 @@ export default function MedicoCaseStudy() {
                       Staffing Optimization
                     </p>
                     <p className="text-sm text-blue-700">
-                      Extend scheduling AI into <span className="font-medium">staffing optimization</span> (shift prediction → cut overtime)
+                      Extend scheduling AI into{" "}
+                      <span className="font-medium">staffing optimization</span>{" "}
+                      (shift prediction → cut overtime)
                     </p>
                   </div>
                   <div className="bg-purple-50 rounded-[16px] p-4 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
@@ -1520,7 +1836,9 @@ export default function MedicoCaseStudy() {
                       What-if Scenarios
                     </p>
                     <p className="text-sm text-purple-700">
-                      Add <span className="font-medium">"what-if" scenarios</span> in forecasting dashboards
+                      Add{" "}
+                      <span className="font-medium">"what-if" scenarios</span>{" "}
+                      in forecasting dashboards
                     </p>
                   </div>
                   <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
@@ -1528,7 +1846,9 @@ export default function MedicoCaseStudy() {
                       Adoption Nudges
                     </p>
                     <p className="text-sm text-green-700">
-                      <span className="font-medium">Adoption nudges</span> → inline tooltips + confidence indicators to reduce Excel fallback
+                      <span className="font-medium">Adoption nudges</span> →
+                      inline tooltips + confidence indicators to reduce Excel
+                      fallback
                     </p>
                   </div>
                 </div>
@@ -1549,19 +1869,30 @@ export default function MedicoCaseStudy() {
                 <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <span className="w-3 h-3 bg-blue-500 rounded-full mt-1 flex-shrink-0"></span>
                   <span className="text-lg text-[#131417] leading-[150%]">
-                    <span className="font-semibold">Trust &gt; Automation:</span> Explainability (chips, overrides) was as critical as model accuracy.
+                    <span className="font-semibold">
+                      Trust &gt; Automation:
+                    </span>{" "}
+                    Explainability (chips, overrides) was as critical as model
+                    accuracy.
                   </span>
                 </li>
                 <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <span className="w-3 h-3 bg-green-500 rounded-full mt-1 flex-shrink-0"></span>
                   <span className="text-lg text-[#131417] leading-[150%]">
-                    <span className="font-semibold">Role-based design &gt; one-size-fits-all:</span> Doctors, nurses, and admins each needed tailored dashboards.
+                    <span className="font-semibold">
+                      Role-based design &gt; one-size-fits-all:
+                    </span>{" "}
+                    Doctors, nurses, and admins each needed tailored dashboards.
                   </span>
                 </li>
                 <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <span className="w-3 h-3 bg-purple-500 rounded-full mt-1 flex-shrink-0"></span>
                   <span className="text-lg text-[#131417] leading-[150%]">
-                    <span className="font-semibold">Systems thinking:</span> Success hinged not just on UI polish, but on <span className="font-semibold">data flows, HIPAA boundaries, and auditability.</span>
+                    <span className="font-semibold">Systems thinking:</span>{" "}
+                    Success hinged not just on UI polish, but on{" "}
+                    <span className="font-semibold">
+                      data flows, HIPAA boundaries, and auditability.
+                    </span>
                   </span>
                 </li>
               </ul>
@@ -1575,40 +1906,64 @@ export default function MedicoCaseStudy() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
                 <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
                   <div className="flex items-start gap-3">
-                    <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">1</span>
+                    <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
+                      1
+                    </span>
                     <div>
-                      <h4 className="font-semibold text-blue-800 mb-2">Predictive Staffing Optimization</h4>
-                      <p className="text-blue-700 text-sm">→ AI shift planning to cut overtime 15–20%</p>
+                      <h4 className="font-semibold text-blue-800 mb-2">
+                        Predictive Staffing Optimization
+                      </h4>
+                      <p className="text-blue-700 text-sm">
+                        → AI shift planning to cut overtime 15–20%
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
                   <div className="flex items-start gap-3">
-                    <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">2</span>
+                    <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
+                      2
+                    </span>
                     <div>
-                      <h4 className="font-semibold text-green-800 mb-2">HL7/FHIR Integration</h4>
-                      <p className="text-green-700 text-sm">→ expand interoperability across EHR vendors</p>
+                      <h4 className="font-semibold text-green-800 mb-2">
+                        HL7/FHIR Integration
+                      </h4>
+                      <p className="text-green-700 text-sm">
+                        → expand interoperability across EHR vendors
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-purple-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
                   <div className="flex items-start gap-3">
-                    <span className="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">3</span>
+                    <span className="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
+                      3
+                    </span>
                     <div>
-                      <h4 className="font-semibold text-purple-800 mb-2">Sentiment Analysis</h4>
-                      <p className="text-purple-700 text-sm">→ real-time patient feedback loops</p>
+                      <h4 className="font-semibold text-purple-800 mb-2">
+                        Sentiment Analysis
+                      </h4>
+                      <p className="text-purple-700 text-sm">
+                        → real-time patient feedback loops
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
                   <div className="flex items-start gap-3">
-                    <span className="bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">4</span>
+                    <span className="bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
+                      4
+                    </span>
                     <div>
-                      <h4 className="font-semibold text-orange-800 mb-2">Scenario Planning</h4>
-                      <p className="text-orange-700 text-sm">→ financial what-if models for hospital admins</p>
+                      <h4 className="font-semibold text-orange-800 mb-2">
+                        Scenario Planning
+                      </h4>
+                      <p className="text-orange-700 text-sm">
+                        → financial what-if models for hospital admins
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1616,7 +1971,12 @@ export default function MedicoCaseStudy() {
 
               <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-[20px] p-8 border border-blue-200 text-center">
                 <p className="text-lg text-[#131417] leading-[150%] font-medium">
-                  📌 <span className="font-semibold">Symplify reframed hospital operations from three disjointed systems into one adaptive, AI-assisted platform — measurable time savings, safer workflows, and future-ready compliance.</span>
+                  📌{" "}
+                  <span className="font-semibold">
+                    Symplify reframed hospital operations from three disjointed
+                    systems into one adaptive, AI-assisted platform — measurable
+                    time savings, safer workflows, and future-ready compliance.
+                  </span>
                 </p>
               </div>
             </div>
