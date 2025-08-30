@@ -770,8 +770,7 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Fragmented inboxes leading to missed handoffs and care
-                    delays
+                    Missed urgent handoffs due to paper logs and fragmented systems
                   </p>
                 </div>
               </div>
