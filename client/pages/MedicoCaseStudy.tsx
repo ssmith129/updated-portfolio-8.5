@@ -692,8 +692,7 @@ export default function MedicoCaseStudy() {
                     Pain Points
                   </h4>
                   <p className="text-sm text-red-700">
-                    Switching between multiple systems wastes time that could be
-                    spent on patient care
+                    2m triage/item, duplicate entries across multiple systems
                   </p>
                 </div>
               </div>
