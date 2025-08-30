@@ -508,9 +508,9 @@ export default function MedicoCaseStudy() {
                   Core Problem
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%]">
-                  Clinics faced an{" "}
-                  <span className="font-medium">operational tax</span> from
-                  juggling three disconnected systems. Clinics were losing{" "}
+                  <span className="font-semibold">The Problem:</span>
+                  <br />
+                  Clinics were losing{" "}
                   <span className="font-medium">
                     5–8 hours per week per clinician
                   </span>{" "}
