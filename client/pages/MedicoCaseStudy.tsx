@@ -742,7 +742,7 @@ export default function MedicoCaseStudy() {
                     <h4 className="font-semibold text-blue-800 mb-2">Inputs</h4>
                     <ul className="text-sm text-blue-700 space-y-1">
                       <li>• Patient data (EHR via FHIR APIs)</li>
-                      <li>• Appt history</li>
+                      <li>• Appt History</li>
                       <li>• Billing exports</li>
                     </ul>
                   </div>
