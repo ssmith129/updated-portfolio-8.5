@@ -568,143 +568,115 @@ export default function MedicoCaseStudy() {
               Research & Insights
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Research Methods
-                </h3>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="border-b border-gray-200">
-                        <th className="text-left py-2 text-[#131417] font-medium">
-                          Method
-                        </th>
-                        <th className="text-left py-2 text-[#131417] font-medium">
-                          Sample
-                        </th>
-                        <th className="text-left py-2 text-[#131417] font-medium">
-                          Duration
-                        </th>
-                        <th className="text-left py-2 text-[#131417] font-medium">
-                          Focus
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-[#131417]">
-                      <tr className="border-b border-gray-100">
-                        <td className="py-2">Interviews</td>
-                        <td className="py-2">14 staff (5 MD, 6 RN, 3 Admin)</td>
-                        <td className="py-2">2 wks</td>
-                        <td className="py-2">
-                          Pain points in triage, scheduling, forecasting
-                        </td>
-                      </tr>
-                      <tr className="border-b border-gray-100">
-                        <td className="py-2">Contextual inquiry</td>
-                        <td className="py-2">11 live clinic sessions</td>
-                        <td className="py-2">3 days</td>
-                        <td className="py-2">
-                          Task handoffs, interruptions, downtime
-                        </td>
-                      </tr>
-                      <tr className="border-b border-gray-100">
-                        <td className="py-2">Diary study</td>
-                        <td className="py-2">9 staff (mixed roles)</td>
-                        <td className="py-2">2 wks</td>
-                        <td className="py-2">
-                          Daily frustrations + time sinks
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="py-2">Workflow audits</td>
-                        <td className="py-2">1,200 inbox items, 150 appts</td>
-                        <td className="py-2">4 wks</td>
-                        <td className="py-2">
-                          Handling time, delay %, no-show rate
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+            <div className="mb-10">
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
+                Methods
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-gray-200">
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Method</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Sample</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Duration</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Focus</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Bias Controls</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-[#131417]">
+                    <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">Interviews</td>
+                      <td className="py-3 px-4">14 staff (5 MD, 6 RN, 3 Admin)</td>
+                      <td className="py-3 px-4">2 wks</td>
+                      <td className="py-3 px-4">Pain points in triage, scheduling, forecasting</td>
+                      <td className="py-3 px-4">Balanced roles, avoided leading questions</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">Contextual inquiry</td>
+                      <td className="py-3 px-4">11 live clinic sessions</td>
+                      <td className="py-3 px-4">3 days</td>
+                      <td className="py-3 px-4">Task handoffs, interruptions, downtime</td>
+                      <td className="py-3 px-4">Observed at different times of day</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">Diary study</td>
+                      <td className="py-3 px-4">9 staff (mixed roles)</td>
+                      <td className="py-3 px-4">2 wks</td>
+                      <td className="py-3 px-4">Daily frustrations + time sinks</td>
+                      <td className="py-3 px-4">Compared with baseline logs</td>
+                    </tr>
+                    <tr className="hover:bg-orange-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">Workflow audits</td>
+                      <td className="py-3 px-4">1,200 inbox items, 150 appts</td>
+                      <td className="py-3 px-4">4 wks</td>
+                      <td className="py-3 px-4">Handling time, delay %, no-show rate</td>
+                      <td className="py-3 px-4">Controlled for seasonality</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+            </div>
 
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Key Insights
-                </h3>
-                <div className="space-y-4">
-                  <div className="bg-blue-50 rounded-[16px] p-4 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-medium text-blue-800 mb-1">
-                      Inbox Triage = ~5–8 hrs/wk per clinician
-                    </p>
-                    <p className="text-sm text-blue-700">
-                      → <span className="font-medium">AI Inbox Triage</span>{" "}
-                      (SLA + risk sorting)
-                    </p>
-                  </div>
-                  <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-medium text-orange-800 mb-1">
-                      Nurses missed 18% of urgent handoffs
-                    </p>
-                    <p className="text-sm text-orange-700">
-                      →{" "}
-                      <span className="font-medium">
-                        Unified inbox + handoff flags
-                      </span>
-                    </p>
-                  </div>
-                  <div className="bg-purple-50 rounded-[16px] p-4 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-medium text-purple-800 mb-1">
-                      Admins reliant on Excel; monthly lag
-                    </p>
-                    <p className="text-sm text-purple-700">
-                      →{" "}
-                      <span className="font-medium">
-                        Real-time forecasting dashboard
-                      </span>
-                    </p>
-                  </div>
-                  <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-medium text-green-800 mb-1">
-                      Staff wary of "black box AI"
-                    </p>
-                    <p className="text-sm text-green-700">
-                      →{" "}
-                      <span className="font-medium">
-                        Confidence badges + override toggles
-                      </span>
-                    </p>
-                  </div>
-                </div>
+            <div className="mb-10">
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
+                Insights → Design Moves
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-gray-200">
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Insight</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Design Move</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Expected Effect</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-[#131417]">
+                    <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
+                      <td className="py-3 px-4">Inbox triage = ~5–8 hrs/wk per clinician</td>
+                      <td className="py-3 px-4 font-semibold text-blue-600">AI Inbox Triage (SLA + risk sorting)</td>
+                      <td className="py-3 px-4">↓ triage time ~40%</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
+                      <td className="py-3 px-4">Nurses missed 18% of urgent handoffs</td>
+                      <td className="py-3 px-4 font-semibold text-green-600">Unified inbox + handoff flags</td>
+                      <td className="py-3 px-4">↑ on-time follow-ups</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
+                      <td className="py-3 px-4">Admins reliant on Excel; monthly lag</td>
+                      <td className="py-3 px-4 font-semibold text-purple-600">Real-time forecasting dashboard</td>
+                      <td className="py-3 px-4">↑ visibility, proactive staffing</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
+                      <td className="py-3 px-4">Doctors manually slotting patients → 10% no-shows</td>
+                      <td className="py-3 px-4 font-semibold text-orange-600">Smart Scheduling (predictive slotting)</td>
+                      <td className="py-3 px-4">↓ no-shows, ↑ throughput</td>
+                    </tr>
+                    <tr className="hover:bg-yellow-50 transition-colors duration-200">
+                      <td className="py-3 px-4">Staff wary of "black box AI"</td>
+                      <td className="py-3 px-4 font-semibold text-yellow-600">Confidence badges + override toggles</td>
+                      <td className="py-3 px-4">↑ adoption + trust</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
 
             <div className="bg-green-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
               <h3 className="text-lg font-medium text-green-800 mb-4">
-                Key Quotes from Research
+                Quotes
               </h3>
               <div className="space-y-3">
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "Half my inbox is reminders I don't need today — I just want
-                  the urgent ones."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">
-                    — MD, Clinic A
-                  </cite>
+                  "Half my inbox is reminders I don't need today — I just want the urgent ones."
+                  <cite className="block text-xs text-green-600 mt-1 not-italic">— MD, Clinic A</cite>
                 </blockquote>
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "When shifts overlap, I'm never sure if a message was handled
-                  already."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">
-                    — RN, Clinic B
-                  </cite>
+                  "When shifts overlap, I'm never sure if a message was handled already."
+                  <cite className="block text-xs text-green-600 mt-1 not-italic">— RN, Clinic B</cite>
                 </blockquote>
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "Forecasting is basically a guess until month close — then
-                  it's too late."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">
-                    — Admin, Clinic C
-                  </cite>
+                  "Forecasting is basically a guess until month close — then it's too late."
+                  <cite className="block text-xs text-green-600 mt-1 not-italic">— Admin, Clinic C</cite>
                 </blockquote>
               </div>
             </div>
