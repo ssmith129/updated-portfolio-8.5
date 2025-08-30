@@ -1114,100 +1114,141 @@ export default function MedicoCaseStudy() {
           </div>
         </section>
 
-        {/* Results & Impact */}
+        {/* Validation & Impact */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              Results & Impact
+              Validation & Impact
             </h2>
+
+            <div className="mb-10">
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
+                Measurement Framework
+              </h3>
+              <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
+                <ul className="text-base text-[#131417] space-y-2">
+                  <li>• Pilot across <span className="font-semibold">3 clinics, n=65 staff, 6 weeks</span></li>
+                  <li>• Baselines pulled from logs + payroll</li>
+                  <li>• Guardrails: ≤10% false positives, override &lt;15%, fairness audits</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mb-10">
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
+                Scorecard
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-gray-200">
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tl-lg">KPI</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Baseline</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Post-Launch</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Delta</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tr-lg">Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-[#131417]">
+                    <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">Avg triage time/item</td>
+                      <td className="py-3 px-4">2m15s</td>
+                      <td className="py-3 px-4">1m18s</td>
+                      <td className="py-3 px-4 font-semibold text-green-600">↓42%</td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">n=1,200 items</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">On-time follow-ups</td>
+                      <td className="py-3 px-4">72%</td>
+                      <td className="py-3 px-4">85.3%</td>
+                      <td className="py-3 px-4 font-semibold text-blue-600">↑18%</td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">SLA adherence</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">No-show rate</td>
+                      <td className="py-3 px-4">9.8%</td>
+                      <td className="py-3 px-4">7.4%</td>
+                      <td className="py-3 px-4 font-semibold text-purple-600">↓2.4 pts</td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">Seasonal variance</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">Admin overtime hrs/wk</td>
+                      <td className="py-3 px-4">12.5</td>
+                      <td className="py-3 px-4">8.1</td>
+                      <td className="py-3 px-4 font-semibold text-orange-600">↓4.4 hrs</td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">Payroll data</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-yellow-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">SLA breach risk</td>
+                      <td className="py-3 px-4">14.2%</td>
+                      <td className="py-3 px-4">7.9%</td>
+                      <td className="py-3 px-4 font-semibold text-red-600">↓44%</td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">Rule engine flags</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium">Clinician override of AI</td>
+                      <td className="py-3 px-4">—</td>
+                      <td className="py-3 px-4">11%</td>
+                      <td className="py-3 px-4">—</td>
+                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">Below guardrail (&lt;15%)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
               <div>
                 <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Quantitative Results
+                  What Moved vs What Didn't
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Avg triage time/item</span>
-                    <span className="font-medium text-green-600">
-                      ↓42% (2m15s → 1m18s)
-                    </span>
+                  <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500">
+                    <h4 className="font-semibold text-green-800 mb-3">✅ What Worked</h4>
+                    <ul className="text-sm text-green-700 space-y-2">
+                      <li>• SLA breaches halved, overtime reduced ~35%</li>
+                      <li>• Backlog cleared 2× faster</li>
+                    </ul>
                   </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">On-time follow-ups</span>
-                    <span className="font-medium text-blue-600">
-                      ↑18% (72% → 85.3%)
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">No-show rate</span>
-                    <span className="font-medium text-purple-600">
-                      ↓2.4pts (9.8% → 7.4%)
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">
-                      Admin overtime hrs/wk
-                    </span>
-                    <span className="font-medium text-orange-600">
-                      ↓4.4hrs (12.5 → 8.1)
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">
-                      Clinician override of AI
-                    </span>
-                    <span className="font-medium text-green-600">
-                      11% (below guardrail)
-                    </span>
+                  <div className="bg-red-50 rounded-[16px] p-4 border-l-4 border-red-500">
+                    <h4 className="font-semibold text-red-800 mb-3">❌ What Didn't</h4>
+                    <ul className="text-sm text-red-700 space-y-2">
+                      <li>• Weekend call volumes unchanged (outside scope)</li>
+                      <li>• Some admins still reverted to Excel → training needed</li>
+                    </ul>
                   </div>
                 </div>
               </div>
 
               <div>
-                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 mb-8">
-                  <h3 className="text-lg font-medium text-[#131417] mb-4">
-                    Measurement Framework
-                  </h3>
-                  <p className="text-sm text-[#131417] mb-3">
-                    Pilot across{" "}
-                    <span className="font-medium">
-                      3 clinics, n=65 staff, 6 weeks
-                    </span>
-                  </p>
-                  <p className="text-sm text-[#131417]">
-                    Guardrails: ≤10% false positives, override &lt;15%, fairness
-                    audits
-                  </p>
-                </div>
-
                 <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Key Learnings
+                  Iteration Backlog
                 </h3>
                 <div className="space-y-4">
-                  <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Trust &gt; Automation: Explainability (chips, overrides)
-                    was as critical as model accuracy."
-                    <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Key Learning
-                    </cite>
-                  </blockquote>
-
-                  <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Role-based design &gt; one-size-fits-all: Doctors, nurses,
-                    and admins each needed tailored dashboards."
-                    <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Design Insight
-                    </cite>
-                  </blockquote>
-
-                  <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Systems thinking: Success hinged not just on UI polish, but
-                    on data flows, HIPAA boundaries, and auditability."
-                    <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Architectural Learning
-                    </cite>
-                  </blockquote>
+                  <div className="bg-blue-50 rounded-[16px] p-4 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <p className="text-sm font-medium text-blue-800 mb-1">
+                      Staffing Optimization
+                    </p>
+                    <p className="text-sm text-blue-700">
+                      Extend scheduling AI into <span className="font-medium">staffing optimization</span> (shift prediction → cut overtime)
+                    </p>
+                  </div>
+                  <div className="bg-purple-50 rounded-[16px] p-4 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <p className="text-sm font-medium text-purple-800 mb-1">
+                      What-if Scenarios
+                    </p>
+                    <p className="text-sm text-purple-700">
+                      Add <span className="font-medium">"what-if" scenarios</span> in forecasting dashboards
+                    </p>
+                  </div>
+                  <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <p className="text-sm font-medium text-green-800 mb-1">
+                      Adoption Nudges
+                    </p>
+                    <p className="text-sm text-green-700">
+                      <span className="font-medium">Adoption nudges</span> → inline tooltips + confidence indicators to reduce Excel fallback
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
