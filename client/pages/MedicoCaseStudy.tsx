@@ -1199,11 +1199,11 @@ export default function MedicoCaseStudy() {
                         Daily Workflow
                       </h5>
                       <ul className="space-y-2 text-green-700">
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-start gap-2 justify-start">
                           <span className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
                           Track vitals
                         </li>
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-start gap-2 justify-start">
                           <span className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
                           Update patient chart
                         </li>
