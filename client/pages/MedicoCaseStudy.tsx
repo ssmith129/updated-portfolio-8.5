@@ -384,21 +384,19 @@ export default function MedicoCaseStudy() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Doctors tracked appointments separately from nurses' patient
-                  records
+                  Doctors → appointment scheduling inside EHRs
                 </li>
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Admins had limited forecasting insights, relying on
-                  spreadsheets
+                  Nurses → paper logs + shift notes
                 </li>
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Critical messages often went unread, creating care bottlenecks
+                  Admins → Excel sheets for revenue forecasting
                 </li>
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Duplicate data entry across multiple systems
+                  Avg triage time: 2m15s/item, 14% of messages delayed &gt;24h
                 </li>
               </ul>
             </div>
@@ -411,19 +409,19 @@ export default function MedicoCaseStudy() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3 text-green-700">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  Role-specific dashboards with prioritized tasks
+                  AI Inbox Triage (SLA + risk sorting)
                 </li>
                 <li className="flex items-start gap-3 text-green-700">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  AI-powered inbox triage and scheduling
+                  Unified inbox + handoff flags
                 </li>
                 <li className="flex items-start gap-3 text-green-700">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  Real-time revenue forecasting dashboards
+                  Real-time forecasting dashboard
                 </li>
                 <li className="flex items-start gap-3 text-green-700">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  Smart notifications with priority grouping
+                  Smart Scheduling (predictive slotting)
                 </li>
               </ul>
             </div>
@@ -444,11 +442,11 @@ export default function MedicoCaseStudy() {
                   Core Problem
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%]">
-                  Hospital staff juggled multiple disjointed tools. Doctors
-                  tracked appointments separately from nurses' patient records.
-                  Admins had limited forecasting insights, relying on
-                  spreadsheets. Critical messages often went unread, creating
-                  care bottlenecks.
+                  Clinics faced an <span className="font-medium">operational tax</span> from juggling three disconnected systems.
+                  Clinics were losing <span className="font-medium">5–8 hours per week per clinician</span> to inbox triage
+                  across fragmented tools (EHR, spreadsheets, sticky notes).
+                  Missed handoffs risked HIPAA violations and delayed care.
+                  Forecasting was manual and lagging, making proactive staffing impossible.
                 </p>
               </div>
 
@@ -457,23 +455,25 @@ export default function MedicoCaseStudy() {
                   Opportunity
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%] mb-4">
-                  How might we unify these workflows into one adaptive platform
-                  that:
+                  <span className="font-medium">How might we consolidate triage, scheduling, and forecasting into a single, explainable workflow — reducing staff burden while protecting compliance?</span>
                 </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-3 text-[#131417]">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
-                    Reduces friction and anticipates hospital needs
-                  </li>
-                  <li className="flex items-start gap-3 text-[#131417]">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
-                    Provides role-specific dashboards for clarity
-                  </li>
-                  <li className="flex items-start gap-3 text-[#131417]">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></span>
-                    Enables AI-powered decision support
-                  </li>
-                </ul>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <h4 className="font-medium text-[#131417] mb-2">Non-Goals (Deliberate Trade-offs):</h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-3 text-[#131417]">
+                      <span className="text-red-500">❌</span>
+                      Did <span className="font-medium">not</span> replace full EHR stack — only layered workflows on top
+                    </li>
+                    <li className="flex items-start gap-3 text-[#131417]">
+                      <span className="text-red-500">❌</span>
+                      Did <span className="font-medium">not</span> rebuild billing — focused only on forecasting dashboards
+                    </li>
+                    <li className="flex items-start gap-3 text-[#131417]">
+                      <span className="text-red-500">❌</span>
+                      Did <span className="font-medium">not</span> tackle patient-facing portals in v1 — prioritized staff workflows
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
