@@ -380,6 +380,61 @@ export default function MedicoCaseStudy() {
           </div>
         </section>
 
+        {/* Context & Stakes */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              🔍 Context & Stakes
+            </h2>
+
+            <div className="space-y-8">
+              <div>
+                <p className="text-lg text-[#131417] leading-[150%] mb-6">
+                  Mid-sized clinics faced an <span className="font-semibold">operational tax</span> from juggling three disconnected systems:
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Doctors → appointment scheduling inside EHRs</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Nurses → paper logs + shift notes</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Admins → Excel sheets for revenue forecasting</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
+                <h3 className="text-lg font-medium text-[#131417] mb-4">
+                  <span className="font-semibold">Operational baseline:</span>
+                </h3>
+                <ul className="space-y-2 text-[#131417]">
+                  <li>• ~1,200 patient messages/month</li>
+                  <li>• Avg triage time: 2m15s/item</li>
+                  <li>• SLA breaches: 14% of messages delayed &gt;24h</li>
+                  <li>• No-show rate: ~10%</li>
+                  <li>• Admin overtime: 12+ hrs/wk</li>
+                </ul>
+              </div>
+
+              <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500">
+                <h3 className="text-lg font-medium text-[#131417] mb-4">
+                  <span className="font-semibold">Constraints:</span>
+                </h3>
+                <ul className="space-y-2 text-[#131417]">
+                  <li>• HIPAA compliance required masking and audit logs</li>
+                  <li>• Legacy EHRs couldn't be replaced, only extended</li>
+                  <li>• Staffing shortages → adoption needed to reduce workload, not add to it</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Before/After Transformation */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
@@ -628,7 +683,7 @@ export default function MedicoCaseStudy() {
                     <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
                       <td className="py-3 px-4">Inbox triage = ~5–8 hrs/wk per clinician</td>
                       <td className="py-3 px-4 font-semibold text-blue-600">AI Inbox Triage (SLA + risk sorting)</td>
-                      <td className="py-3 px-4">�� triage time ~40%</td>
+                      <td className="py-3 px-4">↓ triage time ~40%</td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
                       <td className="py-3 px-4">Nurses missed 18% of urgent handoffs</td>
