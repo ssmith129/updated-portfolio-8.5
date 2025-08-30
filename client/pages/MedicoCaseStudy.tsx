@@ -956,6 +956,239 @@ export default function MedicoCaseStudy() {
           </div>
         </section>
 
+        {/* User Flows & Journey Mapping */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1750">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              🛤️ User Flows &amp; Journey Mapping
+            </h2>
+
+            <div className="mb-10">
+              <p className="text-lg text-[#131417] leading-[150%] mb-8">
+                To connect our research insights directly to staff workflows, we mapped out the{" "}
+                <span className="font-semibold">daily journeys of three key roles</span> — Doctor, Nurse, and Admin.
+                This role-based swimlane visualization reveals where delays, errors, and inefficiencies occurred{" "}
+                <span className="font-semibold">before Symplify</span>, and how{" "}
+                <span className="font-semibold">AI interventions resolved them</span>.
+              </p>
+            </div>
+
+            <div className="mb-12">
+              <h3 className="text-xl font-medium text-[#131417] mb-8">
+                Role-Based User Journey Map
+              </h3>
+
+              <div className="space-y-8">
+                {/* Doctor Journey */}
+                <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                      <Heart className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-blue-800">Doctor</h4>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 className="font-medium text-blue-800 mb-3">Daily Workflow</h5>
+                      <ul className="space-y-2 text-blue-700">
+                        <li className="flex items-center gap-2">
+                          <span className="text-red-500 font-bold">❗</span>
+                          Review inbox <span className="text-sm italic">(manual triage ~2m/item, high backlog)</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-red-500 font-bold">❗</span>
+                          Confirm appointments <span className="text-sm italic">(double entry in EHR + spreadsheets)</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0 mt-2"></span>
+                          Update patient chart
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0 mt-2"></span>
+                          Billing close
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h5 className="font-medium text-green-800 mb-3 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-600" />
+                        AI Intervention
+                      </h5>
+                      <ul className="space-y-2 text-green-700">
+                        <li className="flex items-start gap-2">
+                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <div>
+                            <span className="font-semibold">AI Inbox Triage</span>
+                            <span className="block text-sm">sorts by clinical risk + SLA urgency</span>
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <div>
+                            <span className="font-semibold">Smart Scheduling</span>
+                            <span className="block text-sm">predicts no-shows, optimizes appointment slots</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Nurse Journey */}
+                <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                      <Activity className="w-6 h-6 text-green-600" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-green-800">Nurse</h4>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 className="font-medium text-green-800 mb-3">Daily Workflow</h5>
+                      <ul className="space-y-2 text-green-700">
+                        <li className="flex items-center gap-2">
+                          <span className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+                          Track vitals
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+                          Update patient chart
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-red-500 font-bold">❗</span>
+                          Triage patient messages <span className="text-sm italic">(handoffs missed at shift change)</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-red-500 font-bold">❗</span>
+                          Handoff to doctor <span className="text-sm italic">(no clear ownership)</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h5 className="font-medium text-green-800 mb-3 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-600" />
+                        AI Intervention
+                      </h5>
+                      <ul className="space-y-2 text-green-700">
+                        <li className="flex items-start gap-2">
+                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <div>
+                            <span className="font-semibold">Unified Inbox + Handoff Flags</span>
+                            <span className="block text-sm">ensure urgent items are surfaced, ownership is visible</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Admin Journey */}
+                <div className="bg-purple-50 rounded-[20px] p-6 border-l-4 border-purple-500">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                      <Users className="w-6 h-6 text-purple-600" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-purple-800">Admin</h4>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 className="font-medium text-purple-800 mb-3">Daily Workflow</h5>
+                      <ul className="space-y-2 text-purple-700">
+                        <li className="flex items-center gap-2">
+                          <span className="text-red-500 font-bold">❗</span>
+                          Manage staffing <span className="text-sm italic">(scheduling conflicts, no predictive insight)</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0 mt-2"></span>
+                          Monitor hospital operations
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="text-red-500 font-bold">❗</span>
+                          Generate revenue reports <span className="text-sm italic">(monthly Excel exports, lagging visibility)</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h5 className="font-medium text-green-800 mb-3 flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-600" />
+                        AI Intervention
+                      </h5>
+                      <ul className="space-y-2 text-green-700">
+                        <li className="flex items-start gap-2">
+                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <div>
+                            <span className="font-semibold">Revenue Forecasting Dashboard</span>
+                            <span className="block text-sm">real-time projections from intake + billing</span>
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-green-600 font-bold mt-1">✓</span>
+                          <div>
+                            <span className="font-semibold">Staffing Optimization (planned)</span>
+                            <span className="block text-sm">predict demand and reduce overtime</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mb-10">
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
+                Visualization
+              </h3>
+
+              <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-[20px] p-6 border border-gray-200">
+                <p className="text-base text-[#131417] leading-[150%] mb-6">
+                  The swimlane map (Doctor, Nurse, Admin) highlights:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-[16px] p-4 border border-red-200">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-red-500 font-bold text-xl">❗</span>
+                      <h4 className="font-semibold text-red-800">Pain Points (Before Symplify)</h4>
+                    </div>
+                    <p className="text-sm text-red-700">
+                      Red exclamation marks where research revealed workflow breakdowns — e.g., missed handoffs,
+                      duplicated scheduling, manual reports.
+                    </p>
+                  </div>
+
+                  <div className="bg-white rounded-[16px] p-4 border border-green-200">
+                    <div className="flex items-center gap-3 mb-3">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      <h4 className="font-semibold text-green-800">AI Interventions (With Symplify)</h4>
+                    </div>
+                    <p className="text-sm text-green-700">
+                      Green labels where Symplify now assists — auto-triage, predictive scheduling, real-time forecasting.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
+              <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
+                <TrendingUp className="w-5 h-5 text-blue-600" />
+                Impact
+              </h3>
+              <p className="text-base text-[#131417] leading-[150%]">
+                This mapping shows how <span className="font-semibold">insight-driven interventions</span> translated into measurable outcomes:
+                faster triage, fewer missed follow-ups, reduced overtime, and more accurate forecasting.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Key Design Decisions Matrix */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1800">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
