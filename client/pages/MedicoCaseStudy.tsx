@@ -547,7 +547,7 @@ export default function MedicoCaseStudy() {
                       full EHR stack — only layered workflows on top
                     </li>
                     <li className="text-[#131417]">
-                      ❌ Did <span className="font-medium">not</span> rebuild
+                      ❌&nbsp; Did <span className="font-extrabold">not</span> rebuild
                       billing — focused only on forecasting dashboards
                     </li>
                     <li className="text-[#131417]">
@@ -794,7 +794,7 @@ export default function MedicoCaseStudy() {
                   </cite>
                 </blockquote>
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "Forecasting is basically a guess until month close — then
+                  "Forecasting is basically a guess until month close ��� then
                   it's too late."
                   <cite className="block text-xs text-green-600 mt-1 not-italic">
                     — Admin, Clinic C
@@ -1308,7 +1308,7 @@ export default function MedicoCaseStudy() {
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-600 font-bold mt-1">
-                            ���
+                            ✓
                           </span>
                           <div>
                             <span className="font-semibold">
