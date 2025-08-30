@@ -683,6 +683,101 @@ export default function MedicoCaseStudy() {
           </div>
         </section>
 
+        {/* System & Workflow */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              System & Workflow
+            </h2>
+
+            <div className="mb-10">
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
+                Service Blueprint
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-gray-200">
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tl-lg">Role</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Actions</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Supporting Systems</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Bottlenecks (Before)</th>
+                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tr-lg">Symplify Intervention</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-[#131417]">
+                    <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium text-blue-600">Doctor</td>
+                      <td className="py-3 px-4">Review inbox → Confirm appts → Update chart</td>
+                      <td className="py-3 px-4">EHR, spreadsheets</td>
+                      <td className="py-3 px-4 text-red-600">2m triage/item, duplicate entries</td>
+                      <td className="py-3 px-4 font-semibold text-green-600">AI triage + Smart Scheduling</td>
+                    </tr>
+                    <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium text-green-600">Nurse</td>
+                      <td className="py-3 px-4">Track vitals → Triage msgs → Shift handoff</td>
+                      <td className="py-3 px-4">Paper logs, EHR</td>
+                      <td className="py-3 px-4 text-red-600">Missed urgent handoffs</td>
+                      <td className="py-3 px-4 font-semibold text-green-600">Unified inbox + flags</td>
+                    </tr>
+                    <tr className="hover:bg-purple-50 transition-colors duration-200">
+                      <td className="py-3 px-4 font-medium text-purple-600">Admin</td>
+                      <td className="py-3 px-4">Manage staffing → Generate reports</td>
+                      <td className="py-3 px-4">Excel, exports</td>
+                      <td className="py-3 px-4 text-red-600">Forecasts updated monthly</td>
+                      <td className="py-3 px-4 font-semibold text-green-600">Real-time forecasting dashboards</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
+                Architecture Overview
+              </h3>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="bg-blue-50 rounded-[16px] p-4 border-l-4 border-blue-500">
+                    <h4 className="font-semibold text-blue-800 mb-2">Inputs</h4>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Patient data (EHR via FHIR APIs)</li>
+                      <li>• Appt history</li>
+                      <li>• Billing exports</li>
+                    </ul>
+                  </div>
+                  <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500">
+                    <h4 className="font-semibold text-green-800 mb-2">Processing</h4>
+                    <ul className="text-sm text-green-700 space-y-1">
+                      <li>• AI modules (triage, scheduling, forecasting)</li>
+                      <li>• Model versioning & logging</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-purple-50 rounded-[16px] p-4 border-l-4 border-purple-500">
+                    <h4 className="font-semibold text-purple-800 mb-2">Outputs</h4>
+                    <ul className="text-sm text-purple-700 space-y-1">
+                      <li>• Role-based dashboards</li>
+                      <li>• Alerts</li>
+                      <li>• Forecast reports</li>
+                    </ul>
+                  </div>
+                  <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500">
+                    <h4 className="font-semibold text-orange-800 mb-2">Security</h4>
+                    <ul className="text-sm text-orange-700 space-y-1">
+                      <li>• PHI boundary maintained (only metadata pulled into Symplify)</li>
+                      <li>• Role + Org-unit RBAC</li>
+                      <li>• TLS in transit, AES-256 at rest</li>
+                      <li>• Immutable audit logs for AI actions + overrides</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* User Personas */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
@@ -996,7 +1091,7 @@ export default function MedicoCaseStudy() {
                 SLA + risk scoring with explainable AI recommendations
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → ↓ 42% inbox triage time (2m15s → 1m18s)
+                �� ↓ 42% inbox triage time (2m15s → 1m18s)
               </p>
               <img
                 loading="lazy"
