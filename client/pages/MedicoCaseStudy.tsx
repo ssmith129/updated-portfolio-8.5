@@ -551,7 +551,7 @@ export default function MedicoCaseStudy() {
                       billing — focused only on forecasting dashboards
                     </li>
                     <li className="text-[#131417]">
-                      ��� Did <span className="font-medium">not</span> tackle
+                      ❌&nbsp;&nbsp;Did <span className="font-extrabold">not</span> tackle
                       patient-facing portals in v1 — prioritized staff workflows
                     </li>
                   </ul>
@@ -1754,7 +1754,7 @@ export default function MedicoCaseStudy() {
                 <div className="space-y-4">
                   <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500">
                     <h4 className="font-semibold text-green-800 mb-3">
-                      ✅ What Worked
+                      �� What Worked
                     </h4>
                     <ul className="text-sm text-green-700 space-y-2">
                       <li>• SLA breaches halved, overtime reduced ~35%</li>
