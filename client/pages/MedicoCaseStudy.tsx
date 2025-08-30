@@ -973,26 +973,23 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Transparency in AI outputs (showing why a message was
-                    flagged or schedule changed) built trust with our staff."
+                    "Trust &gt; Automation: Explainability (chips, overrides) was as critical as model accuracy."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Product Team Learning
+                      — Key Learning
                     </cite>
                   </blockquote>
 
                   <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Role-based dashboarding outperformed 'one size fits all'
-                    layouts across all user types."
+                    "Role-based design &gt; one-size-fits-all: Doctors, nurses, and admins each needed tailored dashboards."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Design Research Insight
+                      — Design Insight
                     </cite>
                   </blockquote>
 
                   <blockquote className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Symplify reframed hospital operations from siloed systems
-                    into one adaptive platform."
+                    "Systems thinking: Success hinged not just on UI polish, but on data flows, HIPAA boundaries, and auditability."
                     <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Project Impact Summary
+                      — Architectural Learning
                     </cite>
                   </blockquote>
                 </div>
