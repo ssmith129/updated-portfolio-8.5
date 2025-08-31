@@ -70,7 +70,32 @@ const AnimatedCounter = ({
   className: string;
   startAnimation: boolean;
 }) => {
-  const animatedValue = useCountAnimation(value, 2000, startAnimation);
+  const [fallbackTimer, setFallbackTimer] = useState<NodeJS.Timeout | null>(null);
+  const [shouldAnimate, setShouldAnimate] = useState(startAnimation);
+
+  // Fallback timer to ensure animation starts even if intersection observer fails
+  useEffect(() => {
+    if (!startAnimation && !fallbackTimer) {
+      const timer = setTimeout(() => {
+        setShouldAnimate(true);
+      }, 1000);
+      setFallbackTimer(timer);
+    } else if (startAnimation) {
+      setShouldAnimate(true);
+      if (fallbackTimer) {
+        clearTimeout(fallbackTimer);
+        setFallbackTimer(null);
+      }
+    }
+
+    return () => {
+      if (fallbackTimer) {
+        clearTimeout(fallbackTimer);
+      }
+    };
+  }, [startAnimation, fallbackTimer]);
+
+  const animatedValue = useCountAnimation(value, 2000, shouldAnimate);
 
   return (
     <div className={className}>
