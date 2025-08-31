@@ -1893,7 +1893,10 @@ export default function MedicoCaseStudy() {
                         HL7/FHIR Integration
                       </h4>
                       <p className="text-green-700 text-sm">
-                        �� expand interoperability across EHR vendors
+                        <span style={{ color: "rgb(29, 78, 216)", backgroundColor: "rgb(239, 246, 255)" }}>
+                          →
+                        </span>
+                        &nbsp;expand interoperability across EHR vendors
                       </p>
                     </div>
                   </div>
