@@ -33,6 +33,10 @@ const App = () => (
               element={<ComputisCaseStudy />}
             />
             <Route
+              path="/ComputisCaseStudy"
+              element={<Navigate to="/case-studies/computis-crypto-tax-engine" replace />}
+            />
+            <Route
               path="/case-studies/ezemrx-redesigning-ehr"
               element={<EzEMRxCaseStudy />}
             />
