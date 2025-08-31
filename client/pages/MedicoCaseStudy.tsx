@@ -176,7 +176,7 @@ export default function MedicoCaseStudy() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4">
-                    📌 TL;DR — Outcomes & Why It Matters
+                    📌 TL;DR
                   </h3>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -278,7 +278,7 @@ export default function MedicoCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-md transition-all duration-300 mt-12">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
-              📌 TL;DR — Outcomes & Why It Matters
+              📌 TL;DR
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
