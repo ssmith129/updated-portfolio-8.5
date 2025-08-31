@@ -794,8 +794,10 @@ export default function MedicoCaseStudy() {
                   </cite>
                 </blockquote>
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "Forecasting is basically a guess until month close ��� then
-                  it's too late."
+                  <div style={{ width: "100%" }}>
+                    "Forecasting is basically a guess until month close
+                    --then it's too late."
+                  </div>
                   <cite className="block text-xs text-green-600 mt-1 not-italic">
                     — Admin, Clinic C
                   </cite>
@@ -1534,7 +1536,7 @@ export default function MedicoCaseStudy() {
                 AI-powered scoring ranks tasks by priority with risk detection
               </p>
               <p className="text-sm text-green-600 font-medium">
-                → Improved response times and reduced missed communications
+                �� Improved response times and reduced missed communications
               </p>
               <img
                 loading="lazy"
