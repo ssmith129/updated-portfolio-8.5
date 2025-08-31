@@ -1112,7 +1112,8 @@ export default function MedicoCaseStudy() {
             <div className="mb-10">
               <p className="text-lg text-[#131417] leading-[150%] mb-8">
                 <span style={{ marginLeft: "1px", display: "inline-block" }}>
-                  To connect our research insights directly to staff workflows, we mapped out the
+                  To connect our research insights directly to staff workflows,
+                  we mapped out the
                 </span>
                 <span className="font-semibold">
                   daily journeys of three key roles
