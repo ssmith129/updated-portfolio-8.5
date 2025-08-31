@@ -416,7 +416,7 @@ export default function MedicoCaseStudy() {
                 </h3>
                 <ul className="space-y-2 text-[#131417]">
                   <li>• ~1,200 patient messages/month</li>
-                  <li>��� Avg triage time: 2m15s/item</li>
+                  <li>•&nbsp;Avg triage time: 2m15s/item</li>
                   <li>• SLA breaches: 14% of messages delayed &gt;24h</li>
                   <li>• No-show rate: ~10%</li>
                   <li>• Admin overtime: 12+ hrs/wk</li>
