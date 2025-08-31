@@ -25,6 +25,7 @@ import {
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
+import ErrorBoundary from "../components/ErrorBoundary";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
 
 // Custom hook for counting animation with improved error handling and constraints
@@ -149,7 +150,8 @@ export default function MedicoCaseStudy() {
   }, [enlargedImage, handleCloseModal]);
 
   return (
-    <div className="min-h-screen bg-[#F5F5F5]">
+    <ErrorBoundary>
+      <div className="min-h-screen bg-[#F5F5F5]">
       <SkipLink />
       <Navigation />
 
@@ -560,5 +562,6 @@ export default function MedicoCaseStudy() {
         </div>
       )}
     </div>
+    </ErrorBoundary>
   );
 }
