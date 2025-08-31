@@ -168,9 +168,9 @@ export default function MedicoCaseStudy() {
         >
           <div className="flex flex-col relative justify-center items-center my-5 py-8 px-5">
             <div className="flex flex-col relative justify-center items-center mt-5 py-8 px-5">
-              <button className="bg-black text-white rounded px-6 py-4 text-center cursor-pointer shadow-lg">
+              <span className="bg-black text-white rounded px-6 py-4 text-center cursor-pointer shadow-lg inline-block">
                 View Live Platform
-              </button>
+              </span>
             </div>
           </div>
         </button>
@@ -1111,10 +1111,9 @@ export default function MedicoCaseStudy() {
 
             <div className="mb-10">
               <p className="text-lg text-[#131417] leading-[150%] mb-8">
-                <div style={{ marginLeft: "1px" }}>
-                  To connect our research insights directly to staff workflows,
-                  we mapped out the
-                </div>
+                <span style={{ marginLeft: "1px", display: "inline-block" }}>
+                  To connect our research insights directly to staff workflows, we mapped out the
+                </span>
                 <span className="font-semibold">
                   daily journeys of three key roles
                 </span>{" "}
