@@ -1633,7 +1633,7 @@ export default function MedicoCaseStudy() {
               <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
                 <ul className="text-base text-[#131417] space-y-2">
                   <li>
-                    •&nbsp;Pilot across{" "}
+                    •&nbsp;Pilot across&nbsp;
                     <span className="font-semibold">
                       3 clinics, n=65 staff, 6 weeks
                     </span>
