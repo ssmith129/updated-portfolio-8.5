@@ -70,7 +70,9 @@ const AnimatedCounter = ({
   className: string;
   startAnimation: boolean;
 }) => {
-  const [fallbackTimer, setFallbackTimer] = useState<NodeJS.Timeout | null>(null);
+  const [fallbackTimer, setFallbackTimer] = useState<NodeJS.Timeout | null>(
+    null,
+  );
   const [shouldAnimate, setShouldAnimate] = useState(startAnimation);
 
   // Fallback timer to ensure animation starts even if intersection observer fails
