@@ -1537,7 +1537,7 @@ export default function MedicoCaseStudy() {
                 AI-powered scoring ranks tasks by priority with risk detection
               </p>
               <p className="text-sm text-green-600 font-medium">
-                �� Improved response times and reduced missed communications
+                →&nbsp;Improved response times and reduced missed communications
               </p>
               <img
                 loading="lazy"
@@ -1597,7 +1597,7 @@ export default function MedicoCaseStudy() {
                 SLA + risk scoring with explainable AI recommendations
               </p>
               <p className="text-sm text-green-600 font-medium">
-                �� ↓ 42% inbox triage time (2m15s → 1m18s)
+                → ↓ 42% inbox triage time (2m15s → 1m18s)
               </p>
               <img
                 loading="lazy"
