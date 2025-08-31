@@ -90,7 +90,7 @@ export default function MedicoCaseStudy() {
 
   // Use the new animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
-    useIntersectionAnimation(0.5, "0px 0px -50px 0px");
+    useIntersectionAnimation(0.3, "0px 0px -100px 0px");
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
