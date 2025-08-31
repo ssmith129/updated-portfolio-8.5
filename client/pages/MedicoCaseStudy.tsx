@@ -519,10 +519,10 @@ export default function MedicoCaseStudy() {
                   <span className="font-medium">
                     5–8 hours per week per clinician
                   </span>
-                  &nbsp;to inbox triage across fragmented tools (EHR, spreadsheets,
-                  sticky notes). Missed handoffs risked HIPAA violations and
-                  delayed care. Forecasting was manual and lagging, making
-                  proactive staffing impossible.
+                  &nbsp;to inbox triage across fragmented tools (EHR,
+                  spreadsheets, sticky notes). Missed handoffs risked HIPAA
+                  violations and delayed care. Forecasting was manual and
+                  lagging, making proactive staffing impossible.
                 </p>
               </div>
 
@@ -543,15 +543,16 @@ export default function MedicoCaseStudy() {
                   </h4>
                   <ul className="space-y-2">
                     <li className="text-[#131417]">
-                      ❌&nbsp; Did <span className="font-extrabold">not</span> replace
-                      full EHR stack — only layered workflows on top
+                      ❌&nbsp; Did <span className="font-extrabold">not</span>{" "}
+                      replace full EHR stack — only layered workflows on top
                     </li>
                     <li className="text-[#131417]">
-                      ❌&nbsp; Did <span className="font-extrabold">not</span> rebuild
-                      billing — focused only on forecasting dashboards
+                      ❌&nbsp; Did <span className="font-extrabold">not</span>{" "}
+                      rebuild billing — focused only on forecasting dashboards
                     </li>
                     <li className="text-[#131417]">
-                      ❌&nbsp;&nbsp;Did <span className="font-extrabold">not</span> tackle
+                      ❌&nbsp;&nbsp;Did{" "}
+                      <span className="font-extrabold">not</span> tackle
                       patient-facing portals in v1 — prioritized staff workflows
                     </li>
                   </ul>
@@ -795,8 +796,8 @@ export default function MedicoCaseStudy() {
                 </blockquote>
                 <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
                   <div style={{ width: "100%" }}>
-                    "Forecasting is basically a guess until month close
-                    --then it's too late."
+                    "Forecasting is basically a guess until month close --then
+                    it's too late."
                   </div>
                   <cite className="block text-xs text-green-600 mt-1 not-italic">
                     — Admin, Clinic C
@@ -1084,8 +1085,8 @@ export default function MedicoCaseStudy() {
             <div className="mb-10">
               <p className="text-lg text-[#131417] leading-[150%] mb-8">
                 <div style={{ marginLeft: "1px" }}>
-                  To connect our research insights directly to staff workflows, we
-                  mapped out the
+                  To connect our research insights directly to staff workflows,
+                  we mapped out the
                 </div>
                 <span className="font-semibold">
                   daily journeys of three key roles
@@ -1845,7 +1846,8 @@ export default function MedicoCaseStudy() {
                     <span className="font-semibold">
                       Role-based design &gt; one-size-fits-all:
                     </span>
-                    &nbsp;Doctors, nurses, and admins each needed tailored dashboards.
+                    &nbsp;Doctors, nurses, and admins each needed tailored
+                    dashboards.
                   </span>
                 </li>
                 <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -1893,7 +1895,12 @@ export default function MedicoCaseStudy() {
                         HL7/FHIR Integration
                       </h4>
                       <p className="text-green-700 text-sm">
-                        <span style={{ color: "rgb(29, 78, 216)", backgroundColor: "rgb(239, 246, 255)" }}>
+                        <span
+                          style={{
+                            color: "rgb(29, 78, 216)",
+                            backgroundColor: "rgb(239, 246, 255)",
+                          }}
+                        >
                           →
                         </span>
                         &nbsp;expand interoperability across EHR vendors
