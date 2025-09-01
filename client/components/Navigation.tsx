@@ -71,22 +71,6 @@ export default function Navigation({ className = "" }: NavigationProps) {
         </Link>
       </div>
 
-      {/* Mobile Menu Button */}
-      <button
-        className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-opacity-50"
-        onClick={toggleMobileMenu}
-        aria-expanded={isMobileMenuOpen}
-        aria-controls="mobile-menu"
-        aria-label={
-          isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"
-        }
-      >
-        {isMobileMenuOpen ? (
-          <X className="w-6 h-6 text-[#131417]" />
-        ) : (
-          <Menu className="w-6 h-6 text-[#131417]" />
-        )}
-      </button>
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex bg-white rounded-[25px] sm:rounded-[35px] md:rounded-[50px] p-[3px] sm:p-[4px] md:p-[5px] items-center flex-wrap gap-1 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] touch-manipulation">
