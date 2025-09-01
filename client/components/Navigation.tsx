@@ -71,7 +71,6 @@ export default function Navigation({ className = "" }: NavigationProps) {
         </Link>
       </div>
 
-
       {/* Desktop Navigation */}
       <div className="hidden md:flex bg-white rounded-[25px] sm:rounded-[35px] md:rounded-[50px] p-[3px] sm:p-[4px] md:p-[5px] items-center flex-wrap gap-1 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] touch-manipulation">
         {navigationItems.map((item) => {
