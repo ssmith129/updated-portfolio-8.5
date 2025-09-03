@@ -138,14 +138,14 @@ export default function MedicoCaseStudy() {
 
       {/* Hero Section */}
       <header className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
-        <div className="mb-8">
+        <div className="mb-8 flex flex-col lg:block">
           <span className="inline-block bg-[#0ea5e9] text-white px-4 py-2 rounded-[20px] text-[14px] font-medium tracking-[-0.14px] mb-6">
             Healthcare UX Case Study
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#131417] leading-[110%] tracking-[-1.2px] mb-6">
             Symplify – Hospital Management System
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px]">
+          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px] md:max-w-[952px] w-full text-center lg:text-left mx-auto md:pr-px">
             Transforming siloed hospital workflows into a unified, AI-powered
             SaaS platform
           </p>
@@ -219,7 +219,7 @@ export default function MedicoCaseStudy() {
 
                 <div>
                   <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-2">🌟 Hero Visual</h3>
-                  <p className="text-sm text-[#9FA0A3] mb-3">[Insert Visual: <span className="font-medium">Before vs After Workflow Diagram</span>]</p>
+                  <p className="text-sm text-[#9FA0A3] mb-3" />
                   <ul className="list-disc pl-5 space-y-2 text-[#131417]">
                     <li><span className="font-semibold">Before:</span> Doctors in EHR, nurses in paper logs, admins in Excel — siloed, slow, error-prone</li>
                     <li><span className="font-semibold">After:</span> Unified Symplify Hub — role-specific dashboards with AI chat inbox triage, predictive scheduling, smart notifications, and AI-enhanced email</li>
@@ -406,7 +406,7 @@ export default function MedicoCaseStudy() {
                   <li>• HIPAA compliance required masking and audit logs</li>
                   <li>• Legacy EHRs couldn't be replaced, only extended</li>
                   <li>
-                    • Staffing shortages → adoption needed to reduce workload,
+                    • Staffing shortages ��� adoption needed to reduce workload,
                     not add to it
                   </li>
                 </ul>
