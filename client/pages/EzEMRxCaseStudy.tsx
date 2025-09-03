@@ -777,7 +777,7 @@ export default function EzEMRxCaseStudy() {
                         Threaded Case Notes
                       </td>
                       <td className="py-4 px-4 text-green-600 text-[18px]">
-                        ���
+                        →
                       </td>
                       <td className="py-4 px-4 text-red-500 text-[18px]">❌</td>
                       <td className="py-4 px-4 text-yellow-500 text-[18px]">
