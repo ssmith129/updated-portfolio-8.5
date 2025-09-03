@@ -186,7 +186,7 @@ export default function MedicoCaseStudy() {
             aria-controls="summary-content"
           >
             <h2 className="text-xl sm:text-2xl font-medium text-[#131417] leading-[120%] tracking-[-0.24px] group-hover:text-blue-600 transition-colors duration-300">
-              Summary
+              Quick View
             </h2>
             {isSummaryExpanded ? (
               <ChevronUp className="w-5 h-5 text-[#9FA0A3] group-hover:text-blue-600 transition-colors duration-300" />
