@@ -202,33 +202,74 @@ export default function MedicoCaseStudy() {
             >
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4">📌 TL;DR — Outcomes</h3>
+                  <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4">
+                    📌 TL;DR — Outcomes
+                  </h3>
                   <ul className="list-disc pl-5 space-y-2 text-[#131417]">
-                    <li><span className="font-semibold">Inbox triage ↓ 42%</span> → freed ~6.5 hrs/clinician/month</li>
-                    <li><span className="font-semibold">On-time follow-ups ↑ 18%</span> → fewer SLA breaches, faster care delivery</li>
-                    <li><span className="font-semibold">No-show rate ↓ 2.4 pts</span> → improved appointment utilization</li>
-                    <li><span className="font-semibold">Admin overtime ↓ 4.4 hrs/wk</span> → reduced staffing costs</li>
-                    <li><span className="font-semibold">SLA breach risk ↓ 44%</span> → safer, more compliant workflows</li>
+                    <li>
+                      <span className="font-semibold">Inbox triage ↓ 42%</span>{" "}
+                      → freed ~6.5 hrs/clinician/month
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        On-time follow-ups ↑ 18%
+                      </span>{" "}
+                      → fewer SLA breaches, faster care delivery
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        No-show rate ↓ 2.4 pts
+                      </span>{" "}
+                      → improved appointment utilization
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        Admin overtime ↓ 4.4 hrs/wk
+                      </span>{" "}
+                      → reduced staffing costs
+                    </li>
+                    <li>
+                      <span className="font-semibold">
+                        SLA breach risk ↓ 44%
+                      </span>{" "}
+                      → safer, more compliant workflows
+                    </li>
                   </ul>
                   <p className="mt-4 text-[#131417]">
-                    <span className="font-semibold">My Role:</span> Lead Product Designer → led 0→1 platform design under HIPAA + legacy EHR constraints
+                    <span className="font-semibold">My Role:</span> Lead Product
+                    Designer → led 0→1 platform design under HIPAA + legacy EHR
+                    constraints
                   </p>
                 </div>
 
                 <div className="border-t border-gray-200"></div>
 
                 <div>
-                  <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-2">🌟 Hero Visual</h3>
+                  <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-2">
+                    🌟 Hero Visual
+                  </h3>
                   <p className="text-sm text-[#9FA0A3] mb-3" />
                   <ul className="list-disc pl-5 space-y-2 text-[#131417]">
-                    <li><span className="font-semibold">Before:</span> Doctors in EHR, nurses in paper logs, admins in Excel — siloed, slow, error-prone</li>
-                    <li><span className="font-semibold">After:</span> Unified Symplify Hub — role-specific dashboards with AI chat inbox triage, predictive scheduling, smart notifications, and AI-enhanced email</li>
+                    <li>
+                      <span className="font-semibold">Before:</span> Doctors in
+                      EHR, nurses in paper logs, admins in Excel — siloed, slow,
+                      error-prone
+                    </li>
+                    <li>
+                      <span className="font-semibold">After:</span> Unified
+                      Symplify Hub — role-specific dashboards with AI chat inbox
+                      triage, predictive scheduling, smart notifications, and
+                      AI-enhanced email
+                    </li>
                   </ul>
                 </div>
 
                 <div className="bg-blue-50 rounded-[12px] p-4 border-l-4 border-blue-500">
                   <p className="text-[#131417] italic">
-                    Symplify reframed hospital operations from fragmented workflows into one adaptive, AI-assisted platform — delivering measurable time savings, safer workflows, and future-ready compliance.
+                    Symplify reframed hospital operations from fragmented
+                    workflows into one adaptive, AI-assisted platform —
+                    delivering measurable time savings, safer workflows, and
+                    future-ready compliance.
                   </p>
                 </div>
               </div>
