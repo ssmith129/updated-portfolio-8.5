@@ -408,7 +408,9 @@ export default function MedicoCaseStudy() {
                     className="text-2xl sm:text-3xl font-bold text-teal-600 mb-1"
                     startAnimation={startMetricsAnimation}
                   />
-                  <p className="text-sm text-[#9FA0A3]">↓ SLA breach risk (14.2% → 7.9%)</p>
+                  <p className="text-sm text-[#9FA0A3]">
+                    ↓ SLA breach risk (14.2% → 7.9%)
+                  </p>
                 </div>
               </div>
             </div>
@@ -783,9 +785,7 @@ export default function MedicoCaseStudy() {
                       <td className="py-3 px-4 font-semibold text-purple-600">
                         Smart Unified Email + Notifications
                       </td>
-                      <td className="py-3 px-4">
-                        ↑ operational visibility
-                      </td>
+                      <td className="py-3 px-4">↑ operational visibility</td>
                     </tr>
                     <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
                       <td className="py-3 px-4">
@@ -1864,10 +1864,15 @@ export default function MedicoCaseStudy() {
             </h2>
 
             <div className="mb-8">
-              <h3 className="text-xl font-medium text-[#131417] mb-4">Measurement Framework</h3>
+              <h3 className="text-xl font-medium text-[#131417] mb-4">
+                Measurement Framework
+              </h3>
               <ul className="list-disc pl-5 space-y-1 text-[#131417]">
                 <li>Pilot: 3 clinics (n=65 staff, 6 weeks)</li>
-                <li>Guardrails: ≤10% false positives, ≤15% overrides, fairness audits</li>
+                <li>
+                  Guardrails: ≤10% false positives, ≤15% overrides, fairness
+                  audits
+                </li>
               </ul>
             </div>
 
@@ -1875,11 +1880,21 @@ export default function MedicoCaseStudy() {
               <table className="w-full text-sm border-collapse">
                 <thead>
                   <tr className="border-b-2 border-gray-200">
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">KPI</th>
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Baseline</th>
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Post-Launch</th>
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Δ</th>
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">Notes</th>
+                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                      KPI
+                    </th>
+                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                      Baseline
+                    </th>
+                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                      Post-Launch
+                    </th>
+                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                      Δ
+                    </th>
+                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
+                      Notes
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="text-[#131417]">
@@ -1930,10 +1945,19 @@ export default function MedicoCaseStudy() {
             </div>
 
             <div className="mt-8 bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-              <h3 className="text-lg font-medium text-[#131417] mb-2">What Moved</h3>
-              <p className="text-[#131417]">SLA breaches halved, backlog cleared 2× faster, OT ↓ ~35%.</p>
-              <h3 className="text-lg font-medium text-[#131417] mt-4 mb-2">What Didn’t</h3>
-              <p className="text-[#131417]">Weekend call volume unchanged; some admins reverted to Excel → solved with adoption nudges.</p>
+              <h3 className="text-lg font-medium text-[#131417] mb-2">
+                What Moved
+              </h3>
+              <p className="text-[#131417]">
+                SLA breaches halved, backlog cleared 2× faster, OT ↓ ~35%.
+              </p>
+              <h3 className="text-lg font-medium text-[#131417] mt-4 mb-2">
+                What Didn’t
+              </h3>
+              <p className="text-[#131417]">
+                Weekend call volume unchanged; some admins reverted to Excel →
+                solved with adoption nudges.
+              </p>
             </div>
           </div>
         </section>
