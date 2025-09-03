@@ -406,7 +406,7 @@ export default function MedicoCaseStudy() {
                   <li>• HIPAA compliance required masking and audit logs</li>
                   <li>• Legacy EHRs couldn't be replaced, only extended</li>
                   <li>
-                    • Staffing shortages ��� adoption needed to reduce workload,
+                    • Staffing shortages → adoption needed to reduce workload,
                     not add to it
                   </li>
                 </ul>
