@@ -192,21 +192,24 @@ export default function MedicoCaseStudy() {
 
       {/* Section Navigation - horizontal pills for quick access */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-6">
-        <nav aria-label="Case study sections" className="flex items-center gap-2 md:gap-3 overflow-x-auto py-2">
+        <nav
+          aria-label="Case study sections"
+          className="flex items-center gap-2 md:gap-3 overflow-x-auto py-2"
+        >
           {[
-            { href: '#tldr', label: 'TL;DR' },
-            { href: '#context', label: 'Context' },
-            { href: '#transformation', label: 'Before/After' },
-            { href: '#problem', label: 'Problem' },
-            { href: '#principles', label: 'Principles' },
-            { href: '#research', label: 'Research' },
-            { href: '#workflow', label: 'Workflow' },
-            { href: '#personas', label: 'Personas' },
-            { href: '#journeys', label: 'Journeys' },
-            { href: '#decisions', label: 'Decisions' },
-            { href: '#features', label: 'Features' },
-            { href: '#impact', label: 'Impact' },
-            { href: '#learnings', label: 'Learnings' },
+            { href: "#tldr", label: "TL;DR" },
+            { href: "#context", label: "Context" },
+            { href: "#transformation", label: "Before/After" },
+            { href: "#problem", label: "Problem" },
+            { href: "#principles", label: "Principles" },
+            { href: "#research", label: "Research" },
+            { href: "#workflow", label: "Workflow" },
+            { href: "#personas", label: "Personas" },
+            { href: "#journeys", label: "Journeys" },
+            { href: "#decisions", label: "Decisions" },
+            { href: "#features", label: "Features" },
+            { href: "#impact", label: "Impact" },
+            { href: "#learnings", label: "Learnings" },
           ].map((item) => (
             <a
               key={item.href}
@@ -324,7 +327,10 @@ export default function MedicoCaseStudy() {
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
         {/* Executive Summary */}
-        <section id="tldr" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
+        <section
+          id="tldr"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col"
+        >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-md transition-all duration-300 mt-12">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
               📌 TL;DR
@@ -440,7 +446,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Context & Stakes */}
-        <section id="context" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
+        <section
+          id="context"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800"
+        >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               🔍 Context & Stakes
@@ -500,7 +509,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Before/After Transformation */}
-        <section id="transformation" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
+        <section
+          id="transformation"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900"
+        >
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
             Before/After Transformation
           </h2>
@@ -559,7 +571,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Problem & Opportunity */}
-        <section id="problem" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
+        <section
+          id="problem"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100"
+        >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               �� Problem & Opportunity
@@ -622,7 +637,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Design Principles */}
-        <section id="principles" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
+        <section
+          id="principles"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300"
+        >
           <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-6">
               Design Principles
@@ -679,7 +697,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Research & Insights */}
-        <section id="research" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
+        <section
+          id="research"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500"
+        >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               🧪 Research & Insights
@@ -867,7 +888,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* System & Workflow */}
-        <section id="workflow" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600">
+        <section
+          id="workflow"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600"
+        >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               🛠 System & Workflow
@@ -1005,7 +1029,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* User Personas */}
-        <section id="personas" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
+        <section
+          id="personas"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700"
+        >
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
             User Personas
           </h2>
@@ -1134,7 +1161,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* User Flows & Journey Mapping */}
-        <section id="journeys" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1750">
+        <section
+          id="journeys"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1750"
+        >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               🛤️ User Flows &amp; Journey Mapping
@@ -1407,7 +1437,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Key Design Decisions Matrix */}
-        <section id="decisions" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1800">
+        <section
+          id="decisions"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1800"
+        >
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
             🔑 Key Design Decisions
           </h2>
@@ -1549,7 +1582,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Key Features */}
-        <section id="features" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
+        <section
+          id="features"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900"
+        >
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
             Key Features & Why They Mattered
           </h2>
@@ -1679,7 +1715,10 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Validation & Impact */}
-        <section id="impact" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+        <section
+          id="impact"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100"
+        >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               📈 Validation & Impact
@@ -1879,9 +1918,11 @@ export default function MedicoCaseStudy() {
           </div>
         </section>
 
-  
         {/* Learnings & Reflections */}
-        <section id="learnings" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
+        <section
+          id="learnings"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300"
+        >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               📚 Learnings & Reflections
@@ -2005,8 +2046,9 @@ export default function MedicoCaseStudy() {
                 <p className="text-lg text-[#131417] leading-[150%] font-medium">
                   <span className="font-semibold">
                     Symplify reframed hospital operations from three disjointed
-                    systems into one adaptive, AI-assisted platform �� measurable
-                    time savings, safer workflows, and future-ready compliance.
+                    systems into one adaptive, AI-assisted platform ��
+                    measurable time savings, safer workflows, and future-ready
+                    compliance.
                   </span>
                 </p>
               </div>
