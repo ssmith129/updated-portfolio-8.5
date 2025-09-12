@@ -685,11 +685,12 @@ export default function MedicoCaseStudy() {
               🧪 Research & Insights
             </h2>
 
-            <div className="mb-10">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
+            <details className="mb-10 group">
+              <summary className="list-none inline-flex items-center gap-2 text-xl font-medium text-[#131417] mb-2 cursor-pointer select-none">
                 Methods
-              </h3>
-              <div className="overflow-x-auto">
+                <ChevronDown className="w-4 h-4 text-[#9FA0A3] transition-transform duration-300 group-open:rotate-180" />
+              </summary>
+              <div className="mt-4 overflow-x-auto">
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="border-b-2 border-gray-200">
@@ -760,7 +761,7 @@ export default function MedicoCaseStudy() {
                   </tbody>
                 </table>
               </div>
-            </div>
+            </details>
 
             <div className="mb-10">
               <h3 className="text-xl font-medium text-[#131417] mb-6">
