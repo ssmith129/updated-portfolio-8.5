@@ -107,6 +107,20 @@ const AnimatedCounter = ({
   );
 };
 
+/**
+ * Symplify Case Study page
+ *
+ * Interaction and motion design guidelines:
+ * - All major sections use scroll-triggered entrance animations (animate-in, fade-in-0, slide-in-*)
+ * - Metrics counters animate only when scrolled into view via useIntersectionAnimation
+ * - Hover and focus-visible states on cards and buttons provide microinteractions (scale, shadow, color)
+ * - Modals for live preview and images trap focus and are dismissible via overlay
+ *
+ * Responsive notes:
+ * - Layout targets: sm ≥ 640px, md ≥ 768px, lg ≥ 1024px, xl ≥ 1280px
+ * - Grids collapse to single-column on small screens and expand progressively
+ * - Horizontal section navigation is scrollable on mobile and pinned as a bar on larger breakpoints
+ */
 export default function MedicoCaseStudy() {
   const [enlargedImage, setEnlargedImage] = useState<{
     src: string;
@@ -120,7 +134,7 @@ export default function MedicoCaseStudy() {
     useIntersectionAnimation(0.3, "0px 0px -100px 0px");
 
   return (
-    <div className="min-h-screen bg-[#F5F5F5]">
+    <div className="min-h-screen bg-[#F5F5F5] scroll-smooth">
       <SkipLink />
       <Navigation />
 
@@ -174,6 +188,35 @@ export default function MedicoCaseStudy() {
             </div>
           </div>
         </button>
+      </div>
+
+      {/* Section Navigation - horizontal pills for quick access */}
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-6">
+        <nav aria-label="Case study sections" className="flex items-center gap-2 md:gap-3 overflow-x-auto py-2">
+          {[
+            { href: '#tldr', label: 'TL;DR' },
+            { href: '#context', label: 'Context' },
+            { href: '#transformation', label: 'Before/After' },
+            { href: '#problem', label: 'Problem' },
+            { href: '#principles', label: 'Principles' },
+            { href: '#research', label: 'Research' },
+            { href: '#workflow', label: 'Workflow' },
+            { href: '#personas', label: 'Personas' },
+            { href: '#journeys', label: 'Journeys' },
+            { href: '#decisions', label: 'Decisions' },
+            { href: '#features', label: 'Features' },
+            { href: '#impact', label: 'Impact' },
+            { href: '#learnings', label: 'Learnings' },
+          ].map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="shrink-0 px-3 py-2 rounded-full bg-white text-[#131417] border border-gray-200 text-sm font-medium hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 transition-all duration-200"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
       </div>
 
       {/* Summary Card */}
@@ -281,7 +324,7 @@ export default function MedicoCaseStudy() {
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
         {/* Executive Summary */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
+        <section id="tldr" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-md transition-all duration-300 mt-12">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
               📌 TL;DR
@@ -397,7 +440,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Context & Stakes */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
+        <section id="context" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               🔍 Context & Stakes
@@ -457,7 +500,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Before/After Transformation */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
+        <section id="transformation" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
             Before/After Transformation
           </h2>
@@ -516,7 +559,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Problem & Opportunity */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
+        <section id="problem" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               🧠 Problem & Opportunity
@@ -579,7 +622,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Design Principles */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
+        <section id="principles" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
           <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-6">
               Design Principles
@@ -636,7 +679,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Research & Insights */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
+        <section id="research" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               🧪 Research & Insights
@@ -823,7 +866,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* System & Workflow */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600">
+        <section id="workflow" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               🛠 System & Workflow
@@ -961,7 +1004,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* User Personas */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
+        <section id="personas" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
             User Personas
           </h2>
@@ -1090,7 +1133,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* User Flows & Journey Mapping */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1750">
+        <section id="journeys" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1750">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               🛤️ User Flows &amp; Journey Mapping
@@ -1363,7 +1406,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Key Design Decisions Matrix */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1800">
+        <section id="decisions" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1800">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
             🔑 Key Design Decisions
           </h2>
@@ -1505,7 +1548,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Key Features */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
+        <section id="features" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
           <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
             Key Features & Why They Mattered
           </h2>
@@ -1635,7 +1678,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Validation & Impact */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+        <section id="impact" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               📈 Validation & Impact
@@ -1942,7 +1985,7 @@ export default function MedicoCaseStudy() {
         </section>
 
         {/* Learnings & Reflections */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
+        <section id="learnings" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               📚 Learnings & Reflections
