@@ -562,7 +562,7 @@ export default function MedicoCaseStudy() {
         <section id="problem" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🧠 Problem & Opportunity
+              �� Problem & Opportunity
             </h2>
 
             <div className="space-y-8">
@@ -1878,112 +1878,7 @@ export default function MedicoCaseStudy() {
           </div>
         </section>
 
-        {/* 📈 Validation & Impact */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2200">
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              📈 Validation & Impact
-            </h2>
-
-            <div className="mb-8">
-              <h3 className="text-xl font-medium text-[#131417] mb-4">
-                Measurement Framework
-              </h3>
-              <ul className="list-disc pl-5 space-y-1 text-[#131417]">
-                <li>Pilot: 3 clinics (n=65 staff, 6 weeks)</li>
-                <li>
-                  Guardrails: ≤10% false positives, ≤15% overrides, fairness
-                  audits
-                </li>
-              </ul>
-            </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="border-b-2 border-gray-200">
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                      KPI
-                    </th>
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                      Baseline
-                    </th>
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                      Post-Launch
-                    </th>
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                      Δ
-                    </th>
-                    <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                      Notes
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="text-[#131417]">
-                  <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                    <td className="py-3 px-4">Avg triage time/item</td>
-                    <td className="py-3 px-4">2m15s</td>
-                    <td className="py-3 px-4">1m18s</td>
-                    <td className="py-3 px-4">↓42%</td>
-                    <td className="py-3 px-4">n=1,200 items</td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                    <td className="py-3 px-4">On-time follow-ups</td>
-                    <td className="py-3 px-4">72%</td>
-                    <td className="py-3 px-4">85.3%</td>
-                    <td className="py-3 px-4">↑18%</td>
-                    <td className="py-3 px-4">SLA adherence</td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
-                    <td className="py-3 px-4">No-show rate</td>
-                    <td className="py-3 px-4">9.8%</td>
-                    <td className="py-3 px-4">7.4%</td>
-                    <td className="py-3 px-4">↓2.4 pts</td>
-                    <td className="py-3 px-4">Seasonal variance</td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
-                    <td className="py-3 px-4">Admin overtime</td>
-                    <td className="py-3 px-4">12.5 h/wk</td>
-                    <td className="py-3 px-4">8.1 h/wk</td>
-                    <td className="py-3 px-4">↓4.4 hrs</td>
-                    <td className="py-3 px-4">Payroll export</td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-teal-50 transition-colors duration-200">
-                    <td className="py-3 px-4">SLA breach risk</td>
-                    <td className="py-3 px-4">14.2%</td>
-                    <td className="py-3 px-4">7.9%</td>
-                    <td className="py-3 px-4">↓44%</td>
-                    <td className="py-3 px-4">Rule engine flags</td>
-                  </tr>
-                  <tr className="hover:bg-yellow-50 transition-colors duration-200">
-                    <td className="py-3 px-4">Clinician override</td>
-                    <td className="py-3 px-4">—</td>
-                    <td className="py-3 px-4">11%</td>
-                    <td className="py-3 px-4">—</td>
-                    <td className="py-3 px-4">Within guardrail</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-8 bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-              <h3 className="text-lg font-medium text-[#131417] mb-2">
-                What Moved
-              </h3>
-              <p className="text-[#131417]">
-                SLA breaches halved, backlog cleared 2× faster, OT ↓ ~35%.
-              </p>
-              <h3 className="text-lg font-medium text-[#131417] mt-4 mb-2">
-                What Didn’t
-              </h3>
-              <p className="text-[#131417]">
-                Weekend call volume unchanged; some admins reverted to Excel →
-                solved with adoption nudges.
-              </p>
-            </div>
-          </div>
-        </section>
-
+  
         {/* Learnings & Reflections */}
         <section id="learnings" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
@@ -2109,7 +2004,7 @@ export default function MedicoCaseStudy() {
                 <p className="text-lg text-[#131417] leading-[150%] font-medium">
                   <span className="font-semibold">
                     Symplify reframed hospital operations from three disjointed
-                    systems into one adaptive, AI-assisted platform — measurable
+                    systems into one adaptive, AI-assisted platform �� measurable
                     time savings, safer workflows, and future-ready compliance.
                   </span>
                 </p>
