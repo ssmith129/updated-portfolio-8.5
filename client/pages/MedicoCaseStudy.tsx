@@ -2046,9 +2046,8 @@ export default function MedicoCaseStudy() {
                 <p className="text-lg text-[#131417] leading-[150%] font-medium">
                   <span className="font-semibold">
                     Symplify reframed hospital operations from three disjointed
-                    systems into one adaptive, AI-assisted platform —
-                    measurable time savings, safer workflows, and future-ready
-                    compliance.
+                    systems into one adaptive, AI-assisted platform — measurable
+                    time savings, safer workflows, and future-ready compliance.
                   </span>
                 </p>
               </div>
