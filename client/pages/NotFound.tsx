@@ -1,6 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Navigation, { SkipLink } from "../components/Navigation";
+import { useLocation, Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const NotFound = () => {
   const location = useLocation();
@@ -25,14 +27,15 @@ const NotFound = () => {
           <p className="text-lg sm:text-xl text-[#9FA0A3] mb-6 sm:mb-8">
             Oops! Page not found
           </p>
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-[#131417] hover:text-[#2a2a2a] underline text-base sm:text-lg transition-colors duration-200 font-medium"
           >
             Return to Home
-          </a>
+          </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
