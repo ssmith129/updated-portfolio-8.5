@@ -37,7 +37,7 @@ const allCaseStudies: CaseStudy[] = [
       "Electronic health records system redesign for public health organizations",
   },
   {
-    id: "medico",
+    id: "symplify",
     title: "Symplify",
     subtitle: "Hospital Management System",
     href: "/case-studies/symplify-hospital-management-system",
