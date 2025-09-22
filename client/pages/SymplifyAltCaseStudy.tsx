@@ -746,14 +746,25 @@ export default function SymplifyAltCaseStudy() {
               </div>
 
               <div className="space-y-4">
-                <div className="aspect-[4/3] rounded-[16px] overflow-hidden border border-gray-200 shadow-sm">
+                <button
+                  type="button"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src:
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F00168d90a81e4a8ab610cb1a95f87244?format=webp&width=1600",
+                      alt: "Mid-fi wireframes: Symplify dashboard overview",
+                    })
+                  }
+                  aria-label="Open mid‑fi wireframes full size"
+                  className="group aspect-[4/3] rounded-[16px] overflow-hidden border border-gray-200 shadow-sm w-full h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 cursor-zoom-in"
+                >
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F00168d90a81e4a8ab610cb1a95f87244?format=webp&width=800"
                     alt="Mid-fi wireframes: Symplify dashboard overview"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                     loading="lazy"
                   />
-                </div>
+                </button>
                 <div className="text-center">
                   <h3 className="font-semibold text-[#131417] mb-2">
                     Refined Interactions
