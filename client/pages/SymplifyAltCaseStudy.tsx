@@ -16,6 +16,10 @@ import {
   X,
   ChevronDown,
   ChevronUp,
+  Monitor,
+  Tablet,
+  Smartphone,
+  PlayCircle,
 } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
@@ -323,1592 +327,861 @@ export default function SymplifyAltCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
-        {/* Executive Summary */}
+      <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-24">
+        
+        {/* TL;DR Section - Text Block Layout */}
         <section
           id="tldr"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700"
         >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-md transition-all duration-300 mt-12">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-md transition-all duration-300 mt-16">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               📌 TL;DR
             </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Role
-                </h3>
-                <p className="text-lg font-medium text-[#131417]">
-                  Lead Product Designer
-                </p>
-              </div>
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Scope
-                </h3>
-                <p className="text-lg font-medium text-[#131417]">
-                  0→1 SaaS platform
-                </p>
-              </div>
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Constraints
-                </h3>
-                <p className="text-lg font-medium text-[#131417]">
-                  HIPAA, legacy EHRs, 10-week delivery
-                </p>
-              </div>
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Baseline
-                </h3>
-                <p className="text-lg font-medium text-[#131417]">
-                  ~1,200 patient messages/month
-                </p>
-              </div>
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Users
-                </h3>
-                <p className="text-lg font-medium text-[#131417]">
-                  Doctors, nurses, admins
-                </p>
-              </div>
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Method
-                </h3>
-                <p className="text-lg font-medium text-[#131417]">
-                  Controlled pilot (3 clinics, 65 staff, 6 weeks)
-                </p>
-              </div>
-            </div>
-
-            <div
-              ref={metricsRef as React.RefObject<HTMLDivElement>}
-              className="bg-gradient-to-r from-blue-50 to-green-50 rounded-[20px] p-6 sm:p-8"
-            >
-              <h3 className="text-xl font-medium text-[#131417] mb-6 flex items-center gap-2">
-                <Activity className="w-5 h-5 text-blue-600" />
-                Key Impact Metrics
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <AnimatedCounter
-                    value={42}
-                    className="text-2xl sm:text-3xl font-bold text-green-600 mb-1"
-                    startAnimation={startMetricsAnimation}
-                  />
-                  <p className="text-sm text-[#9FA0A3]">
-                    ↓ inbox triage time (2m15s → 1m18s)
-                  </p>
+            
+            <div className="prose prose-lg max-w-none">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold text-[#0ea5e9] uppercase tracking-[0.8px]">Role</h3>
+                  <p className="text-xl font-medium text-[#131417]">Lead Product Designer</p>
+                  <p className="text-[#9FA0A3]">End-to-end design leadership</p>
                 </div>
-                <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <AnimatedCounter
-                    value={18}
-                    className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1"
-                    startAnimation={startMetricsAnimation}
-                  />
-                  <p className="text-sm text-[#9FA0A3]">
-                    ↑ on-time follow-ups (72% → 85.3%)
-                  </p>
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold text-[#0ea5e9] uppercase tracking-[0.8px]">Timeline</h3>
+                  <p className="text-xl font-medium text-[#131417]">6 months</p>
+                  <p className="text-[#9FA0A3]">Discovery through deployment</p>
                 </div>
-                <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">
-                    −2.4pts
-                  </div>
-                  <p className="text-sm text-[#9FA0A3]">
-                    no-show rate (9.8% → 7.4%)
-                  </p>
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold text-[#0ea5e9] uppercase tracking-[0.8px]">Team</h3>
+                  <p className="text-xl font-medium text-[#131417]">4 people</p>
+                  <p className="text-[#9FA0A3]">PM, 2 engineers, designer</p>
                 </div>
-                <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1">
-                    −4.4hrs
-                  </div>
-                  <p className="text-sm text-[#9FA0A3]">admin overtime/week</p>
-                </div>
-                <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <AnimatedCounter
-                    value={44}
-                    className="text-2xl sm:text-3xl font-bold text-teal-600 mb-1"
-                    startAnimation={startMetricsAnimation}
-                  />
-                  <p className="text-sm text-[#9FA0A3]">
-                    ↓ SLA breach risk (14.2% → 7.9%)
-                  </p>
-                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-[20px] p-8">
+                <h3 className="text-xl font-semibold text-[#131417] mb-4">Challenge</h3>
+                <p className="text-lg text-[#131417] leading-relaxed mb-4">
+                  Hospital staff were drowning in fragmented systems, spending 5-8 hours per week on manual triage across EHRs, paper logs, and Excel sheets. This operational overhead was causing delays in patient care and increasing compliance risks.
+                </p>
+                <h3 className="text-xl font-semibold text-[#131417] mb-4">Solution</h3>
+                <p className="text-lg text-[#131417] leading-relaxed">
+                  A unified, AI-powered platform that consolidates workflows while preserving existing EHR investments. Smart triage, predictive scheduling, and real-time insights reduced administrative burden by 40%+ while improving patient outcomes.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Context & Stakes */}
+        {/* Key Impact Metrics - Stat Grid Layout */}
         <section
-          id="context"
+          id="metrics"
+          ref={metricsRef as React.RefObject<HTMLDivElement>}
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800"
         >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🔍 Context & Stakes
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12 text-center">
+              📊 Key Impact Metrics
             </h2>
-
-            <div className="space-y-8">
-              <div>
-                <p className="text-lg text-[#131417] leading-[150%] mb-6">
-                  Mid-sized clinics faced an{" "}
-                  <span className="font-semibold">operational tax</span> from
-                  juggling three disconnected systems:
-                </p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start gap-3 text-[#131417]">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Doctors → appointment scheduling inside EHRs</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[#131417]">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Nurses → paper logs + shift notes</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[#131417]">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Admins → Excel sheets for revenue forecasting</span>
-                  </li>
-                </ul>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-[20px] transition-all duration-300 hover:scale-105">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-white" />
+                </div>
+                <AnimatedCounter
+                  value={42}
+                  className="text-4xl font-bold text-green-600 mb-2"
+                  startAnimation={startMetricsAnimation}
+                />
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">Faster Triage</h3>
+                <p className="text-sm text-[#9FA0A3]">Reduced from 2m15s to 1m18s per item</p>
               </div>
-
-              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-                <h3 className="text-lg font-medium text-[#131417] mb-4">
-                  <span className="font-semibold">Operational baseline:</span>
-                </h3>
-                <ul className="space-y-2 text-[#131417]">
-                  <li>• ~1,200 patient messages/month</li>
-                  <li>•&nbsp;Avg triage time: 2m15s/item</li>
-                  <li>• SLA breaches: 14% of messages delayed &gt;24h</li>
-                  <li>• No-show rate: ~10%</li>
-                  <li>• Admin overtime: 12+ hrs/wk</li>
-                </ul>
+              
+              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-[20px] transition-all duration-300 hover:scale-105">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-white" />
+                </div>
+                <AnimatedCounter
+                  value={18}
+                  className="text-4xl font-bold text-blue-600 mb-2"
+                  startAnimation={startMetricsAnimation}
+                />
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">Better Follow-ups</h3>
+                <p className="text-sm text-[#9FA0A3]">On-time rate increased 72% → 85.3%</p>
               </div>
-
-              <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500">
-                <h3 className="text-lg font-medium text-[#131417] mb-4">
-                  <span className="font-semibold">Constraints:</span>
-                </h3>
-                <ul className="space-y-2 text-[#131417]">
-                  <li>��� HIPAA compliance required masking and audit logs</li>
-                  <li>• Legacy EHRs couldn't be replaced, only extended</li>
-                  <li>
-                    • Staffing shortages → adoption needed to reduce workload,
-                    not add to it
-                  </li>
-                </ul>
+              
+              <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-[20px] transition-all duration-300 hover:scale-105">
+                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-purple-600 mb-2">-2.4pts</div>
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">Lower No-shows</h3>
+                <p className="text-sm text-[#9FA0A3]">Improved from 9.8% to 7.4%</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-[20px] transition-all duration-300 hover:scale-105">
+                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-orange-600 mb-2">-4.4hrs</div>
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">Less Overtime</h3>
+                <p className="text-sm text-[#9FA0A3]">Admin overtime reduced per week</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-[20px] transition-all duration-300 hover:scale-105">
+                <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <AnimatedCounter
+                  value={44}
+                  className="text-4xl font-bold text-teal-600 mb-2"
+                  startAnimation={startMetricsAnimation}
+                />
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">SLA Compliance</h3>
+                <p className="text-sm text-[#9FA0A3]">Breach risk down 14.2% → 7.9%</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-[20px] transition-all duration-300 hover:scale-105">
+                <div className="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-indigo-600 mb-2">92%</div>
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">User Satisfaction</h3>
+                <p className="text-sm text-[#9FA0A3]">Staff would recommend to peers</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Before/After Transformation */}
+        {/* Context & Problem - 2 Column Layout */}
         <section
-          id="transformation"
+          id="context"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900"
         >
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
-            Before/After Transformation
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-red-50 rounded-[20px] p-6 sm:p-8 border border-red-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
-                <X className="w-5 h-5" />
-                Before: Fragmented Systems
-              </h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3 text-red-700">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Doctors → appointment scheduling inside EHRs
-                </li>
-                <li className="flex items-start gap-3 text-red-700">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Nurses → paper logs + shift notes
-                </li>
-                <li className="flex items-start gap-3 text-red-700">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Admins → Excel sheets for revenue forecasting
-                </li>
-                <li className="flex items-start gap-3 text-red-700">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                  Avg triage time: 2m15s/item, 14% of messages delayed &gt;24h
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-green-50 rounded-[20px] p-6 sm:p-8 border border-green-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
-                <CheckCircle className="w-5 h-5" />
-                After: Unified Role-Specific Platform
-              </h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3 text-green-700">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  AI Inbox Triage (SLA + risk sorting)
-                </li>
-                <li className="flex items-start gap-3 text-green-700">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  Unified inbox + handoff flags
-                </li>
-                <li className="flex items-start gap-3 text-green-700">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  Real-time forecasting dashboard
-                </li>
-                <li className="flex items-start gap-3 text-green-700">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  Smart Scheduling (predictive slotting)
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Problem & Opportunity */}
-        <section
-          id="problem"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100"
-        >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🧠 Problem & Opportunity
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+              🔍 Context & Problem
             </h2>
-
-            <div className="space-y-8">
-              <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xl font-bold text-[#131417] mb-4 flex items-center gap-2">
-                  <Target className="w-5 h-5 text-orange-600" />
-                  Core Problem
-                </h3>
-                <p className="text-lg text-[#131417] leading-[150%]">
-                  <span className="font-semibold">The Problem:</span>
-                  <br />
-                  Clinics were losing&nbsp;
-                  <span className="font-medium">
-                    5–8 hours per week per clinician
-                  </span>
-                  &nbsp;to inbox triage across fragmented tools (EHR,
-                  spreadsheets, sticky notes). Missed handoffs risked HIPAA
-                  violations and delayed care. Forecasting was manual and
-                  lagging, making proactive staffing impossible.
-                </p>
-              </div>
-
-              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xl font-bold text-[#131417] mb-4">
-                  Opportunity
-                </h3>
-                <p className="text-lg text-[#131417] leading-[150%] mb-4">
-                  <span className="font-medium">
-                    How might we consolidate triage, scheduling, and forecasting
-                    into a single, explainable workflow — reducing staff burden
-                    while protecting compliance?
-                  </span>
-                </p>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium text-[#131417] mb-2">
-                    Non-Goals (Deliberate Trade-offs):
-                  </h4>
-                  <ul className="space-y-2">
-                    <li className="text-[#131417]">
-                      ❌&nbsp; Did <span className="font-extrabold">not</span>{" "}
-                      replace full EHR stack — only layered workflows on top
-                    </li>
-                    <li className="text-[#131417]">
-                      ❌&nbsp; Did <span className="font-extrabold">not</span>{" "}
-                      rebuild billing — focused only on forecasting dashboards
-                    </li>
-                    <li className="text-[#131417]">
-                      ❌&nbsp;&nbsp;Did{" "}
-                      <span className="font-extrabold">not</span> tackle
-                      patient-facing portals in v1 — prioritized staff workflows
-                    </li>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-semibold text-[#131417] mb-4">The Challenge</h3>
+                  <p className="text-lg text-[#131417] leading-relaxed mb-6">
+                    Mid-sized hospitals were struggling with an <strong>operational tax</strong> from managing three disconnected systems that created inefficiencies, errors, and compliance risks.
+                  </p>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4 p-4 bg-red-50 rounded-[12px] border-l-4 border-red-400">
+                      <Heart className="w-6 h-6 text-red-500 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-red-800">Doctors</h4>
+                        <p className="text-red-700">Appointment scheduling trapped inside legacy EHRs</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-4 p-4 bg-orange-50 rounded-[12px] border-l-4 border-orange-400">
+                      <Activity className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-orange-800">Nurses</h4>
+                        <p className="text-orange-700">Paper logs and shift notes causing handoff errors</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-4 p-4 bg-yellow-50 rounded-[12px] border-l-4 border-yellow-400">
+                      <Users className="w-6 h-6 text-yellow-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-yellow-800">Administrators</h4>
+                        <p className="text-yellow-700">Excel-based revenue forecasting with month-long delays</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-blue-50 rounded-[16px] p-6">
+                  <h4 className="font-semibold text-blue-800 mb-3">Key Constraints</h4>
+                  <ul className="space-y-2 text-blue-700">
+                    <li>• HIPAA compliance required for all patient data handling</li>
+                    <li>• Legacy EHRs couldn't be replaced, only extended</li>
+                    <li>• Staffing shortages meant new tools had to reduce workload</li>
                   </ul>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <Target className="w-12 h-12 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">Problem Visualization</p>
+                    <p className="text-sm text-gray-400">Fragmented workflow diagram</p>
+                  </div>
+                </div>
+                
+                <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-[16px] p-6">
+                  <h4 className="font-semibold text-[#131417] mb-4">Impact on Operations</h4>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <span className="font-medium text-red-600">~1,200</span>
+                      <p className="text-gray-600">messages/month</p>
+                    </div>
+                    <div>
+                      <span className="font-medium text-red-600">2m15s</span>
+                      <p className="text-gray-600">avg triage time</p>
+                    </div>
+                    <div>
+                      <span className="font-medium text-red-600">14%</span>
+                      <p className="text-gray-600">SLA breaches</p>
+                    </div>
+                    <div>
+                      <span className="font-medium text-red-600">12+hrs</span>
+                      <p className="text-gray-600">admin overtime/week</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Design Principles */}
-        <section
-          id="principles"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300"
-        >
-          <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl cursor-pointer">
-            <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-6">
-              Design Principles
-            </h2>
-
-            <div className="bg-white/10 rounded-[20px] p-6 mb-8 transition-all duration-300 hover:bg-white/20 cursor-pointer">
-              <h3 className="text-xl font-medium mb-4">North Star</h3>
-              <blockquote className="text-lg italic leading-[150%]">
-                "Design a platform where medical staff can focus on patient
-                care, not system navigation — making technology invisible while
-                healthcare outcomes visible."
-              </blockquote>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-2 flex items-center gap-2">
-                  <Heart className="w-4 h-4" />
-                  Patient-Centric Design
-                </h4>
-                <p className="text-sm text-gray-400 italic">
-                  Every interface decision optimizes for patient care quality.
-                </p>
-              </div>
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-2 flex items-center gap-2">
-                  <Brain className="w-4 h-4" />
-                  Intelligent Assistance
-                </h4>
-                <p className="text-sm text-gray-400 italic">
-                  AI augments clinical decisions without replacing judgment.
-                </p>
-              </div>
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-2 flex items-center gap-2">
-                  <Shield className="w-4 h-4" />
-                  Compliance by Design
-                </h4>
-                <p className="text-sm text-gray-400 italic">
-                  HIPAA compliance and audit trails built into every workflow.
-                </p>
-              </div>
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-2 flex items-center gap-2">
-                  <Activity className="w-4 h-4" />
-                  Mobile-First Care
-                </h4>
-                <p className="text-sm text-gray-400 italic">
-                  Critical functions accessible at the point of care.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Research & Insights */}
+        {/* Research & Insights - 2 Column Layout */}
         <section
           id="research"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000"
         >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
               🧪 Research & Insights
             </h2>
-
-            <details className="mb-10 group">
-              <summary className="list-none inline-flex items-center gap-2 text-xl font-medium text-[#131417] mb-2 cursor-pointer select-none">
-                Methods
-                <ChevronDown className="w-4 h-4 text-[#9FA0A3] transition-transform duration-300 group-open:rotate-180" />
-              </summary>
-              <div className="mt-4 overflow-x-auto">
-                <table className="w-full text-sm border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Method
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Sample
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Duration
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Focus
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Bias Controls
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-[#131417]">
-                    <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">Interviews</td>
-                      <td className="py-3 px-4">
-                        14 staff (5 MD, 6 RN, 3 Admin)
-                      </td>
-                      <td className="py-3 px-4">2 wks</td>
-                      <td className="py-3 px-4">
-                        Pain points in triage, scheduling, forecasting
-                      </td>
-                      <td className="py-3 px-4">
-                        Balanced roles, avoided leading questions
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">
-                        Contextual inquiry
-                      </td>
-                      <td className="py-3 px-4">11 live clinic sessions</td>
-                      <td className="py-3 px-4">3 days</td>
-                      <td className="py-3 px-4">
-                        Task handoffs, interruptions, downtime
-                      </td>
-                      <td className="py-3 px-4">
-                        Observed at different times of day
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">Diary study</td>
-                      <td className="py-3 px-4">9 staff (mixed roles)</td>
-                      <td className="py-3 px-4">2 wks</td>
-                      <td className="py-3 px-4">
-                        Daily frustrations + time sinks
-                      </td>
-                      <td className="py-3 px-4">Compared with baseline logs</td>
-                    </tr>
-                    <tr className="hover:bg-orange-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">Workflow audits</td>
-                      <td className="py-3 px-4">
-                        1,200 inbox items, 150 appts
-                      </td>
-                      <td className="py-3 px-4">4 wks</td>
-                      <td className="py-3 px-4">
-                        Handling time, delay %, no-show rate
-                      </td>
-                      <td className="py-3 px-4">Controlled for seasonality</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </details>
-
-            <div className="mb-10">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Insights → Design Moves
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Insight
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Design Move
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Expected Effect
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-[#131417]">
-                    <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                      <td className="py-3 px-4">
-                        Inbox triage consumed ~5–8 hrs/wk per clinician
-                      </td>
-                      <td className="py-3 px-4 font-semibold text-blue-600">
-                        Smart AI Chat Inbox Triage
-                      </td>
-                      <td className="py-3 px-4">↓ triage time ~40%</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                      <td className="py-3 px-4">
-                        Nurses missed 18% of urgent handoffs
-                      </td>
-                      <td className="py-3 px-4 font-semibold text-green-600">
-                        AI-driven notifications + unified inbox flags
-                      </td>
-                      <td className="py-3 px-4">↑ on-time follow-ups</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
-                      <td className="py-3 px-4">
-                        Admins used Excel for forecasting; lagging visibility
-                      </td>
-                      <td className="py-3 px-4 font-semibold text-purple-600">
-                        Smart Unified Email + Notifications
-                      </td>
-                      <td className="py-3 px-4">↑ operational visibility</td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
-                      <td className="py-3 px-4">
-                        Doctors manually slotted patients → 10% no-shows
-                      </td>
-                      <td className="py-3 px-4 font-semibold text-orange-600">
-                        Smart Appointment Scheduling
-                      </td>
-                      <td className="py-3 px-4">↓ no-shows, ↑ throughput</td>
-                    </tr>
-                    <tr className="hover:bg-yellow-50 transition-colors duration-200">
-                      <td className="py-3 px-4">
-                        Staff wary of "black box AI"
-                      </td>
-                      <td className="py-3 px-4 font-semibold text-yellow-600">
-                        AI Transparency features
-                      </td>
-                      <td className="py-3 px-4">↑ adoption & trust</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="bg-green-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
-              <h3 className="text-lg font-medium text-green-800 mb-4">
-                Quotes
-              </h3>
-              <div className="space-y-3">
-                <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "Half my inbox is reminders I don't need today — I just want
-                  the urgent ones."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">
-                    — MD, Clinic A
-                  </cite>
-                </blockquote>
-                <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  "When shifts overlap, I'm never sure if a message was handled
-                  already."
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">
-                    — RN, Clinic B
-                  </cite>
-                </blockquote>
-                <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                  <div style={{ width: "100%" }}>
-                    "Forecasting is basically a guess until month close --then
-                    it's too late."
-                  </div>
-                  <cite className="block text-xs text-green-600 mt-1 not-italic">
-                    — Admin, Clinic C
-                  </cite>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* System & Workflow */}
-        <section
-          id="workflow"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600"
-        >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🛠 System & Workflow
-            </h2>
-
-            <div className="mb-10">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Service Blueprint
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tl-lg">
-                        Role
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Actions
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Supporting Systems
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Bottlenecks (Before)
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tr-lg">
-                        Symplify Intervention
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-[#131417]">
-                    <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium text-blue-600">
-                        Doctor
-                      </td>
-                      <td className="py-3 px-4">
-                        Review inbox → Confirm appts → Update chart
-                      </td>
-                      <td className="py-3 px-4">EHR, spreadsheets</td>
-                      <td className="py-3 px-4 text-red-600">
-                        2m triage/item, duplicate entries
-                      </td>
-                      <td className="py-3 px-4 font-semibold text-green-600">
-                        AI triage + Smart Scheduling
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium text-green-600">
-                        Nurse
-                      </td>
-                      <td className="py-3 px-4">
-                        Track vitals → Triage msgs → Shift handoff
-                      </td>
-                      <td className="py-3 px-4">Paper logs, EHR</td>
-                      <td className="py-3 px-4 text-red-600">
-                        Missed urgent handoffs
-                      </td>
-                      <td className="py-3 px-4 font-semibold text-green-600">
-                        Unified inbox + flags
-                      </td>
-                    </tr>
-                    <tr className="hover:bg-purple-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium text-purple-600">
-                        Admin
-                      </td>
-                      <td className="py-3 px-4">
-                        Manage staffing → Generate reports
-                      </td>
-                      <td className="py-3 px-4">Excel, exports</td>
-                      <td className="py-3 px-4 text-red-600">
-                        Forecasts updated monthly
-                      </td>
-                      <td className="py-3 px-4 font-semibold text-green-600">
-                        Real-time forecasting dashboards
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Architecture Overview
-              </h3>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <div className="bg-blue-50 rounded-[16px] p-4 border-l-4 border-blue-500">
-                    <h4 className="font-semibold text-blue-800 mb-2">Inputs</h4>
-                    <ul className="text-sm text-blue-700 space-y-1">
-                      <li>• Patient data (EHR via FHIR APIs)</li>
-                      <li>• Appt History</li>
-                      <li>• Billing exports</li>
-                    </ul>
-                  </div>
-                  <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500">
-                    <h4 className="font-semibold text-green-800 mb-2">
-                      Processing
-                    </h4>
-                    <ul className="text-sm text-green-700 space-y-1">
-                      <li>• AI modules (triage, scheduling, forecasting)</li>
-                      <li>• Model versioning & logging</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="bg-purple-50 rounded-[16px] p-4 border-l-4 border-purple-500">
-                    <h4 className="font-semibold text-purple-800 mb-2">
-                      Outputs
-                    </h4>
-                    <ul className="text-sm text-purple-700 space-y-1">
-                      <li>• Role-based dashboards</li>
-                      <li>• Alerts</li>
-                      <li>• Forecast reports</li>
-                    </ul>
-                  </div>
-                  <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500">
-                    <h4 className="font-semibold text-orange-800 mb-2">
-                      Security
-                    </h4>
-                    <ul className="text-sm text-orange-700 space-y-1">
-                      <li>
-                        • PHI boundary maintained (only metadata pulled into
-                        Symplify)
-                      </li>
-                      <li>• Role + Org-unit RBAC</li>
-                      <li>• TLS in transit, AES-256 at rest</li>
-                      <li>• Immutable audit logs for AI actions + overrides</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* User Personas */}
-        <section
-          id="personas"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700"
-        >
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
-            User Personas
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Dr. Sarah (Physician) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Heart className="w-8 h-8 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium text-[#131417] mb-1">
-                    Dr. Sarah
-                  </h3>
-                  <p className="text-[#9FA0A3] font-medium">
-                    Attending Physician
-                  </p>
-                  <p className="text-sm text-[#9FA0A3]">8+ years experience</p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-green-800 mb-2">
-                    Needs
-                  </h4>
-                  <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Review inbox → Confirm appts</li>
-                    <li>• Update chart efficiently</li>
-                    <li>• AI-assisted decision support</li>
-                  </ul>
-                </div>
-
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-red-800 mb-2">
-                    Pain Points
-                  </h4>
-                  <p className="text-sm text-red-700">
-                    2m triage/item, duplicate entries across multiple systems
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Lisa (Administrator) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
-                  <Users className="w-8 h-8 text-purple-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium text-[#131417] mb-1">
-                    Lisa
-                  </h3>
-                  <p className="text-[#9FA0A3] font-medium">
-                    Hospital Administrator
-                  </p>
-                  <p className="text-sm text-[#9FA0A3]">12+ years experience</p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-green-800 mb-2">
-                    Needs
-                  </h4>
-                  <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Manage staffing → Generate reports</li>
-                    <li>• Monitor revenue dashboard in real-time</li>
-                    <li>• Oversee forecasting and operations</li>
-                  </ul>
-                </div>
-
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-red-800 mb-2">
-                    Pain Points
-                  </h4>
-                  <p className="text-sm text-red-700">
-                    Forecasts updated monthly via Excel exports — lagging
-                    insights
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Mike (Nurse) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                  <Activity className="w-8 h-8 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium text-[#131417] mb-1">
-                    Mike
-                  </h3>
-                  <p className="text-[#9FA0A3] font-medium">Registered Nurse</p>
-                  <p className="text-sm text-[#9FA0A3]">5+ years experience</p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-green-800 mb-2">
-                    Needs
-                  </h4>
-                  <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Track vitals → Triage msgs</li>
-                    <li>• Shift handoff coordination</li>
-                    <li>• Monitor care continuity</li>
-                  </ul>
-                </div>
-
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-red-800 mb-2">
-                    Pain Points
-                  </h4>
-                  <p className="text-sm text-red-700">
-                    Missed urgent handoffs due to paper logs and fragmented
-                    systems
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* User Flows & Journey Mapping */}
-        <section
-          id="journeys"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1750"
-        >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🛤️ User Flows &amp; Journey Mapping
-            </h2>
-
-            <div className="mb-10">
-              <p className="text-lg text-[#131417] leading-[150%] mb-8">
-                <span style={{ marginLeft: "1px", display: "inline-block" }}>
-                  To connect our research insights directly to staff workflows,
-                  we mapped out the
-                </span>
-                <span className="font-semibold">
-                  daily journeys of three key roles
-                </span>{" "}
-                — Doctor, Nurse, and Admin. This role-based swimlane
-                visualization reveals where delays, errors, and inefficiencies
-                occurred <span className="font-semibold">before Symplify</span>,
-                and how{" "}
-                <span className="font-semibold">
-                  AI interventions resolved them
-                </span>
-                .
-              </p>
-            </div>
-
-            <div className="mb-12">
-              <h3 className="text-xl font-medium text-[#131417] mb-8">
-                Role-Based User Journey Map
-              </h3>
-
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="space-y-8">
-                {/* Doctor Journey */}
-                <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <Heart className="w-6 h-6 text-blue-600" />
+                <div>
+                  <h3 className="text-xl font-semibold text-[#131417] mb-6">Research Methods</h3>
+                  
+                  <div className="space-y-4">
+                    <div className="p-4 bg-blue-50 rounded-[12px] border-l-4 border-blue-400">
+                      <h4 className="font-semibold text-blue-800">User Interviews</h4>
+                      <p className="text-blue-700 text-sm">14 staff across 3 roles • 2 weeks</p>
                     </div>
-                    <h4 className="text-lg font-semibold text-blue-800">
-                      Doctor
-                    </h4>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h5 className="font-medium text-blue-800 mb-3">
-                        Daily Workflow
-                      </h5>
-                      <ul className="space-y-2 text-blue-700">
-                        <li className="flex items-center gap-2">
-                          <span className="text-red-500 font-bold">❗</span>
-                          Review inbox{" "}
-                          <span className="text-sm italic">
-                            (manual triage ~2m/item, high backlog)
-                          </span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <span className="text-red-500 font-bold">❗</span>
-                          Confirm appointments{" "}
-                          <span className="text-sm italic">
-                            (double entry in EHR + spreadsheets)
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2 justify-start">
-                          <span className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0 mt-2"></span>
-                          Update patient chart
-                        </li>
-                        <li className="flex items-start gap-2 justify-start">
-                          <span className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0 mt-2"></span>
-                          Billing close
-                        </li>
-                      </ul>
+                    
+                    <div className="p-4 bg-green-50 rounded-[12px] border-l-4 border-green-400">
+                      <h4 className="font-semibold text-green-800">Contextual Inquiry</h4>
+                      <p className="text-green-700 text-sm">11 live clinic sessions • 3 days</p>
                     </div>
-
-                    <div>
-                      <h5 className="font-medium text-green-800 mb-3 flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600" />
-                        AI Intervention
-                      </h5>
-                      <ul className="space-y-2 text-green-700">
-                        <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">
-                            ✓
-                          </span>
-                          <div>
-                            <span className="font-semibold">
-                              AI Inbox Triage
-                            </span>
-                            <span className="block text-sm">
-                              sorts by clinical risk + SLA urgency
-                            </span>
-                          </div>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">
-                            ✓
-                          </span>
-                          <div>
-                            <span className="font-semibold">
-                              Smart Scheduling
-                            </span>
-                            <span className="block text-sm">
-                              predicts no-shows, optimizes appointment slots
-                            </span>
-                          </div>
-                        </li>
-                      </ul>
+                    
+                    <div className="p-4 bg-purple-50 rounded-[12px] border-l-4 border-purple-400">
+                      <h4 className="font-semibold text-purple-800">Workflow Audits</h4>
+                      <p className="text-purple-700 text-sm">1,200 inbox items analyzed • 4 weeks</p>
                     </div>
                   </div>
                 </div>
-
-                {/* Nurse Journey */}
-                <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                      <Activity className="w-6 h-6 text-green-600" />
+                
+                <div>
+                  <h3 className="text-xl font-semibold text-[#131417] mb-4">Key Insights</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                      <p className="text-[#131417]">Staff spent 5-8 hours/week on manual triage</p>
                     </div>
-                    <h4 className="text-lg font-semibold text-green-800">
-                      Nurse
-                    </h4>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h5 className="font-medium text-green-800 mb-3">
-                        Daily Workflow
-                      </h5>
-                      <ul className="space-y-2 text-green-700">
-                        <li className="flex items-start gap-2 justify-start">
-                          <span className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
-                          Track vitals
-                        </li>
-                        <li className="flex items-start gap-2 justify-start">
-                          <span className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
-                          Update patient chart
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <span className="text-red-500 font-bold">���</span>
-                          Triage patient messages{" "}
-                          <span className="text-sm italic">
-                            (handoffs missed at shift change)
-                          </span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <span className="text-red-500 font-bold">❗</span>
-                          Handoff to doctor{" "}
-                          <span className="text-sm italic">
-                            (no clear ownership)
-                          </span>
-                        </li>
-                      </ul>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                      <p className="text-[#131417]">18% of urgent handoffs were missed during shifts</p>
                     </div>
-
-                    <div>
-                      <h5 className="font-medium text-green-800 mb-3 flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600" />
-                        AI Intervention
-                      </h5>
-                      <ul className="space-y-2 text-green-700">
-                        <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">
-                            ✓
-                          </span>
-                          <div>
-                            <span className="font-semibold">
-                              Unified Inbox + Handoff Flags
-                            </span>
-                            <span className="block text-sm">
-                              ensure urgent items are surfaced, ownership is
-                              visible
-                            </span>
-                          </div>
-                        </li>
-                      </ul>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                      <p className="text-[#131417]">Excel forecasting lagged by weeks, preventing proactive decisions</p>
                     </div>
-                  </div>
-                </div>
-
-                {/* Admin Journey */}
-                <div className="bg-purple-50 rounded-[20px] p-6 border-l-4 border-purple-500">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                      <Users className="w-6 h-6 text-purple-600" />
-                    </div>
-                    <h4 className="text-lg font-semibold text-purple-800">
-                      Admin
-                    </h4>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h5 className="font-medium text-purple-800 mb-3">
-                        Daily Workflow
-                      </h5>
-                      <ul className="space-y-2 text-purple-700">
-                        <li className="flex items-center gap-2">
-                          <span className="text-red-500 font-bold">❗</span>
-                          Manage staffing{" "}
-                          <span className="text-sm italic">
-                            (scheduling conflicts, no predictive insight)
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2 justify-start">
-                          <span className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0 mt-2"></span>
-                          Monitor hospital operations
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <span className="text-red-500 font-bold">❗</span>
-                          Generate revenue reports{" "}
-                          <span className="text-sm italic">
-                            (monthly Excel exports, lagging visibility)
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <h5 className="font-medium text-green-800 mb-3 flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600" />
-                        AI Intervention
-                      </h5>
-                      <ul className="space-y-2 text-green-700">
-                        <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">
-                            ✓
-                          </span>
-                          <div>
-                            <span className="font-semibold">
-                              Revenue Forecasting Dashboard
-                            </span>
-                            <span className="block text-sm">
-                              real-time projections from intake + billing
-                            </span>
-                          </div>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="text-green-600 font-bold mt-1">
-                            ✓
-                          </span>
-                          <div>
-                            <span className="font-semibold">
-                              Staffing Optimization (planned)
-                            </span>
-                            <span className="block text-sm">
-                              predict demand and reduce overtime
-                            </span>
-                          </div>
-                        </li>
-                      </ul>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                      <p className="text-[#131417]">Staff were skeptical of "black box" AI solutions</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-              <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-blue-600" />
-                Impact
-              </h3>
-              <p className="text-base text-[#131417] leading-[150%]">
-                This mapping shows how{" "}
-                <span className="font-semibold">
-                  &nbsp;insight-driven interventions&nbsp;
-                </span>{" "}
-                translated into measurable outcomes: faster triage, fewer missed
-                follow-ups, reduced overtime, and more accurate forecasting.
-              </p>
+              
+              <div className="space-y-6">
+                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <Brain className="w-12 h-12 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">Research Synthesis</p>
+                    <p className="text-sm text-gray-400">User journey maps & pain points</p>
+                  </div>
+                </div>
+                
+                <div className="bg-green-50 rounded-[16px] p-6">
+                  <h4 className="font-semibold text-green-800 mb-4">User Quotes</h4>
+                  <div className="space-y-4">
+                    <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
+                      "Half my inbox is reminders I don't need today — I just want the urgent ones."
+                      <cite className="block text-xs text-green-600 mt-1 not-italic">— MD, Clinic A</cite>
+                    </blockquote>
+                    
+                    <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
+                      "When shifts overlap, I'm never sure if a message was handled already."
+                      <cite className="block text-xs text-green-600 mt-1 not-italic">— RN, Clinic B</cite>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Key Design Decisions Matrix */}
+        {/* Iteration / Wireframes - 3 Column Layout */}
         <section
-          id="decisions"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1800"
+          id="wireframes"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100"
         >
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
-            🔑 Key Design Decisions
-          </h2>
-
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div className="mb-6">
-              <p className="text-lg text-[#9FA0A3] leading-[150%]">
-                Critical design choices that shaped the platform — showing not
-                just what we chose, but why.
-              </p>
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+              🔄 Iteration & Wireframes
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="space-y-4">
+                <div className="aspect-[4/3] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <div className="w-8 h-8 bg-gray-300 rounded mx-auto mb-2"></div>
+                    <p className="text-gray-500 text-sm font-medium">Lo-fi Wireframes</p>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h3 className="font-semibold text-[#131417] mb-2">Initial Concepts</h3>
+                  <p className="text-sm text-[#9FA0A3]">Basic layout & information architecture</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="aspect-[4/3] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <div className="w-8 h-8 bg-blue-300 rounded mx-auto mb-2"></div>
+                    <p className="text-gray-500 text-sm font-medium">Mid-fi Prototypes</p>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h3 className="font-semibold text-[#131417] mb-2">Refined Interactions</h3>
+                  <p className="text-sm text-[#9FA0A3]">User flows & component behavior</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="aspect-[4/3] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <div className="w-8 h-8 bg-green-400 rounded mx-auto mb-2"></div>
+                    <p className="text-gray-500 text-sm font-medium">Hi-fi Designs</p>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h3 className="font-semibold text-[#131417] mb-2">Final Designs</h3>
+                  <p className="text-sm text-[#9FA0A3]">Pixel-perfect & development-ready</p>
+                </div>
+              </div>
             </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b-2 border-gray-200">
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50 rounded-tl-lg">
-                      Decision
-                    </th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">
-                      Options
-                    </th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">
-                      Trade-offs
-                    </th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">
-                      Final Choice
-                    </th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50 rounded-tr-lg">
-                      Risk & Mitigation
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      Inbox prioritization
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Last-in; Manual flags; Risk+SLA score
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Simplicity vs consistency vs impact
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-blue-600">
-                      Risk+SLA scoring
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Added "why ranked" chips + overrides
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      Scheduling
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Manual; Historical only; Historical+provider patterns
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Simplicity vs accuracy
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-green-600">
-                      Historical+provider patterns
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Monthly backtests; alert on drift
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      Forecasting
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Monthly Excel; Daily batch; Real-time
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Lag vs integration effort
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-purple-600">
-                      Real-time dashboard
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      API fallback to daily export
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      Permissions
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Global; Role; Role+Org
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Speed vs safety
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-orange-600">
-                      Role+Org
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Provisioning checklist; quarterly audits
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-yellow-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      AI transparency
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Opaque; Confidence only; Confidence+Why+Override
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Speed vs trust vs complexity
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-yellow-600">
-                      Confidence+Why+Override
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Concise chips, inline tooltips
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-8 bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-              <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
-                🎯 Decision Philosophy
-              </h3>
-              <p className="text-base text-[#131417] leading-[150%]">
-                Each choice balanced{" "}
-                <span className="font-medium">user needs</span>,{" "}
-                <span className="font-medium">technical constraints</span>, and{" "}
-                <span className="font-medium">regulatory requirements</span>. We
-                prioritized explainability and user trust over pure automation,
-                ensuring clinical staff remained in control while gaining AI
-                assistance.
+            
+            <div className="mt-12 bg-blue-50 rounded-[20px] p-8">
+              <h3 className="text-xl font-semibold text-[#131417] mb-4">Design Evolution</h3>
+              <p className="text-[#131417] leading-relaxed">
+                Through rapid prototyping and user testing, we evolved from basic inbox concepts to an intelligent, 
+                AI-powered triage system. Each iteration incorporated clinical staff feedback and addressed real-world 
+                workflow constraints.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Key Features */}
+        {/* Feature Deep-Dives - Repeatable Section Layout */}
         <section
           id="features"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1200"
         >
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-            Key Features & Why They Mattered
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
-                <Brain className="w-5 h-5 text-blue-600" />
-                Unified Dashboards
-              </h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">
-                Role-specific dashboards with prioritized tasks and unified
-                workflow
-              </p>
-              <p className="text-sm text-green-600 font-medium">
-                → Reduced friction and anticipates hospital needs
-              </p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9"
-                className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
-                style={{
-                  aspectRatio: "1.11",
-                  minHeight: "20px",
-                  minWidth: "20px",
-                }}
-                alt="Unified Dashboards feature"
-                onClick={() =>
-                  setEnlargedImage({
-                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1200",
-                    alt: "Unified Dashboards feature - Role-specific panels that prioritize daily tasks",
-                  })
-                }
-              />
-            </div>
-
-            <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
-                <Activity className="w-5 h-5 text-green-600" />
-                Smart Notifications
-              </h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">
-                AI-powered scoring ranks tasks by priority with risk detection
-              </p>
-              <p className="text-sm text-green-600 font-medium">
-                →&nbsp;Improved response times and reduced missed communications
-              </p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9"
-                className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
-                style={{
-                  aspectRatio: "1.47",
-                  minHeight: "20px",
-                  minWidth: "20px",
-                }}
-                alt="Smart Notifications feature"
-                onClick={() =>
-                  setEnlargedImage({
-                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1200",
-                    alt: "Smart Notifications feature - AI-powered scoring ranks tasks by priority with risk detection",
-                  })
-                }
-              />
-            </div>
-
-            <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-purple-600" />
-                Smart Scheduling
-              </h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">
-                AI with confidence badges predicts optimal appointment slots
-              </p>
-              <p className="text-sm text-green-600 font-medium">
-                → ↓ 2.4pts no-show rate and improved throughput
-              </p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9"
-                className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
-                style={{
-                  aspectRatio: "1.42",
-                  minHeight: "20px",
-                  minWidth: "20px",
-                }}
-                alt="Smart Scheduling feature"
-                onClick={() =>
-                  setEnlargedImage({
-                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1200",
-                    alt: "Smart Scheduling feature - AI analyzes historical data to recommend optimal scheduling blocks",
-                  })
-                }
-              />
-            </div>
-
-            <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
-                <Shield className="w-5 h-5 text-orange-600" />
-                AI Inbox Triage
-              </h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">
-                SLA + risk scoring with explainable AI recommendations
-              </p>
-              <p className="text-sm text-green-600 font-medium">
-                → ↓ 42% inbox triage time (2m15s → 1m18s)
-              </p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9"
-                className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
-                style={{
-                  aspectRatio: "1.57",
-                  minHeight: "20px",
-                  minWidth: "20px",
-                }}
-                alt="AI Inbox Triage feature"
-                onClick={() =>
-                  setEnlargedImage({
-                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1200",
-                    alt: "AI Inbox Triage feature - Auto-sorts patient communications by urgency, flagging critical follow-ups",
-                  })
-                }
-              />
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+              🎯 Feature Deep-Dives
+            </h2>
+            
+            <div className="space-y-16">
+              {/* Feature 1 - AI Inbox Triage */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-blue-500 rounded-[12px] flex items-center justify-center">
+                      <Brain className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-semibold text-[#131417]">AI Inbox Triage</h3>
+                      <p className="text-[#9FA0A3]">Intelligent message prioritization</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-blue-50 rounded-[16px] p-6">
+                    <div className="text-center mb-4">
+                      <span className="text-3xl font-bold text-blue-600">42%</span>
+                      <p className="text-sm text-blue-700">faster triage time</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-lg text-[#131417] leading-relaxed">
+                    Our AI system analyzes message content, patient history, and urgency indicators to automatically 
+                    prioritize inbox items. Staff see the most critical items first, with transparent "why ranked" 
+                    explanations to build trust.
+                  </p>
+                  
+                  <ul className="space-y-2">
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-[#131417]">Clinical risk assessment</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-[#131417]">SLA urgency scoring</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-[#131417]">Explainable AI decisions</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <Brain className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">AI Triage Interface</p>
+                    <p className="text-sm text-gray-400">Smart prioritization screenshot</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Feature 2 - Smart Scheduling */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300 lg:order-1">
+                  <div className="text-center">
+                    <Calendar className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">Smart Scheduler</p>
+                    <p className="text-sm text-gray-400">Predictive appointment slotting</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-6 lg:order-2">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-green-500 rounded-[12px] flex items-center justify-center">
+                      <Calendar className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-semibold text-[#131417]">Smart Scheduling</h3>
+                      <p className="text-[#9FA0A3]">Predictive appointment optimization</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-green-50 rounded-[16px] p-6">
+                    <div className="text-center mb-4">
+                      <span className="text-3xl font-bold text-green-600">2.4pts</span>
+                      <p className="text-sm text-green-700">lower no-show rate</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-lg text-[#131417] leading-relaxed">
+                    Machine learning algorithms analyze patient patterns, appointment history, and external factors 
+                    to predict no-shows and optimize scheduling. Smart slotting reduces gaps while improving 
+                    appointment utilization.
+                  </p>
+                  
+                  <ul className="space-y-2">
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-[#131417]">No-show prediction modeling</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-[#131417]">Optimal time slot recommendations</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-[#131417]">Automated waitlist management</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              {/* Feature 3 - Unified Dashboard */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-purple-500 rounded-[12px] flex items-center justify-center">
+                      <Activity className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-semibold text-[#131417]">Unified Dashboard</h3>
+                      <p className="text-[#9FA0A3]">Real-time operational insights</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-purple-50 rounded-[16px] p-6">
+                    <div className="text-center mb-4">
+                      <span className="text-3xl font-bold text-purple-600">4.4hrs</span>
+                      <p className="text-sm text-purple-700">less admin overtime per week</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-lg text-[#131417] leading-relaxed">
+                    Role-based dashboards provide real-time visibility into operations, replacing manual Excel 
+                    tracking with automated insights. Administrators get predictive forecasting while clinical 
+                    staff see actionable notifications.
+                  </p>
+                  
+                  <ul className="space-y-2">
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-[#131417]">Real-time operational metrics</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-[#131417]">Predictive revenue forecasting</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-[#131417]">Role-specific customization</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <Activity className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">Operations Dashboard</p>
+                    <p className="text-sm text-gray-400">Real-time metrics & insights</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Validation & Impact */}
+        {/* Before vs After - Comparison Layout */}
         <section
-          id="impact"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100"
+          id="before-after"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300"
         >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              📈 Validation & Impact
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+              ⚖️ Before vs After
             </h2>
-
-            <div className="mb-10">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Measurement Framework
-              </h3>
-              <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
-                <ul className="text-base text-[#131417] space-y-2">
-                  <li>
-                    •&nbsp;Pilot across&nbsp;
-                    <span className="font-semibold">
-                      3 clinics, n=65 staff, 6 weeks
-                    </span>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="bg-red-50 rounded-[20px] p-8 border border-red-100">
+                <div className="flex items-center gap-3 mb-6">
+                  <X className="w-8 h-8 text-red-500" />
+                  <h3 className="text-xl font-bold text-red-800">Before: Fragmented Chaos</h3>
+                </div>
+                
+                <div className="aspect-video bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300 mb-6">
+                  <div className="text-center">
+                    <X className="w-12 h-12 text-gray-400 mx-auto mb-2" />
+                    <p className="text-gray-500 text-sm">Old System Screenshot</p>
+                  </div>
+                </div>
+                
+                <ul className="space-y-3 text-red-700">
+                  <li className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                    <span>Doctors trapped in legacy EHR interfaces</span>
                   </li>
-                  <li>• Baselines pulled from logs + payroll</li>
-                  <li>
-                    • Guardrails: ≤10% false positives, override &lt;15%,
-                    fairness audits
+                  <li className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                    <span>Nurses managing paper logs and sticky notes</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                    <span>Admins drowning in Excel spreadsheets</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                    <span>2m15s average triage time per message</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+                    <span>14% of messages breached SLA timelines</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-green-50 rounded-[20px] p-8 border border-green-100">
+                <div className="flex items-center gap-3 mb-6">
+                  <CheckCircle className="w-8 h-8 text-green-500" />
+                  <h3 className="text-xl font-bold text-green-800">After: Unified Intelligence</h3>
+                </div>
+                
+                <div className="aspect-video bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300 mb-6">
+                  <div className="text-center">
+                    <CheckCircle className="w-12 h-12 text-gray-400 mx-auto mb-2" />
+                    <p className="text-gray-500 text-sm">New System Screenshot</p>
+                  </div>
+                </div>
+                
+                <ul className="space-y-3 text-green-700">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span>AI-powered inbox triage with risk scoring</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span>Unified digital handoffs with clear ownership</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span>Real-time forecasting with predictive insights</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span>1m18s average triage time (42% improvement)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <span>7.9% SLA breach rate (44% improvement)</span>
                   </li>
                 </ul>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="mb-10">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Scorecard
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tl-lg">
-                        KPI
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Baseline
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Post-Launch
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50">
-                        Delta
-                      </th>
-                      <th className="text-left py-3 px-4 text-[#131417] font-semibold bg-gray-50 rounded-tr-lg">
-                        Notes
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-[#131417]">
-                    <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">
-                        Avg triage time/item
-                      </td>
-                      <td className="py-3 px-4">2m15s</td>
-                      <td className="py-3 px-4">1m18s</td>
-                      <td className="py-3 px-4 font-semibold text-green-600">
-                        ↓42%
-                      </td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
-                        n=1,200 items
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">
-                        On-time follow-ups
-                      </td>
-                      <td className="py-3 px-4">72%</td>
-                      <td className="py-3 px-4">85.3%</td>
-                      <td className="py-3 px-4 font-semibold text-blue-600">
-                        ↑18%
-                      </td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
-                        SLA adherence
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">No-show rate</td>
-                      <td className="py-3 px-4">9.8%</td>
-                      <td className="py-3 px-4">7.4%</td>
-                      <td className="py-3 px-4 font-semibold text-purple-600">
-                        ↓2.4 pts
-                      </td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
-                        Seasonal variance
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">
-                        Admin overtime hrs/wk
-                      </td>
-                      <td className="py-3 px-4">12.5</td>
-                      <td className="py-3 px-4">8.1</td>
-                      <td className="py-3 px-4 font-semibold text-orange-600">
-                        ↓4.4 hrs
-                      </td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
-                        Payroll data
-                      </td>
-                    </tr>
-                    <tr className="border-b border-gray-100 hover:bg-yellow-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">SLA breach risk</td>
-                      <td className="py-3 px-4">14.2%</td>
-                      <td className="py-3 px-4">7.9%</td>
-                      <td className="py-3 px-4 font-semibold text-red-600">
-                        ↓44%
-                      </td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
-                        Rule engine flags
-                      </td>
-                    </tr>
-                    <tr className="hover:bg-gray-50 transition-colors duration-200">
-                      <td className="py-3 px-4 font-medium">
-                        Clinician override of AI
-                      </td>
-                      <td className="py-3 px-4">—</td>
-                      <td className="py-3 px-4">11%</td>
-                      <td className="py-3 px-4">—</td>
-                      <td className="py-3 px-4 text-sm text-[#9FA0A3]">
-                        Below guardrail (&lt;15%)
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+        {/* Responsive Views - Staggered Row Layout */}
+        <section
+          id="responsive"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1400"
+        >
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+              📱 Responsive Views
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+              <div className="space-y-4">
+                <div className="aspect-[3/4] bg-gray-100 rounded-[20px] flex items-center justify-center border-2 border-dashed border-gray-300 p-8">
+                  <div className="text-center">
+                    <Monitor className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">Desktop View</p>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h3 className="font-semibold text-[#131417] mb-2">Desktop Dashboard</h3>
+                  <p className="text-sm text-[#9FA0A3]">Full-featured admin interface with multi-panel layouts</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="aspect-[3/4] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300 p-6">
+                  <div className="text-center">
+                    <Tablet className="w-12 h-12 text-gray-400 mx-auto mb-3" />
+                    <p className="text-gray-500 font-medium">Tablet View</p>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h3 className="font-semibold text-[#131417] mb-2">Tablet Interface</h3>
+                  <p className="text-sm text-[#9FA0A3]">Optimized for bedside use and patient rounds</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="aspect-[2/3] bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300 p-4">
+                  <div className="text-center">
+                    <Smartphone className="w-8 h-8 text-gray-400 mx-auto mb-2" />
+                    <p className="text-gray-500 font-medium text-sm">Mobile View</p>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h3 className="font-semibold text-[#131417] mb-2">Mobile App</h3>
+                  <p className="text-sm text-[#9FA0A3]">Critical notifications and quick actions on-the-go</p>
+                </div>
               </div>
             </div>
+            
+            <div className="mt-12 bg-blue-50 rounded-[20px] p-8">
+              <h3 className="text-xl font-semibold text-[#131417] mb-4">Mobile-First Approach</h3>
+              <p className="text-[#131417] leading-relaxed">
+                Given the mobile nature of healthcare work, we prioritized critical functions for point-of-care access. 
+                The progressive enhancement ensures full functionality on desktop while maintaining usability on mobile devices.
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  What Worked vs What Didn't
-                </h3>
-                <div className="space-y-4">
-                  <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500">
-                    <h4 className="font-semibold text-green-800 mb-3">
-                      ✅&nbsp;What Worked
-                    </h4>
-                    <ul className="text-sm text-green-700 space-y-2">
-                      <li>• SLA breaches halved, overtime reduced ~35%</li>
-                      <li>• Backlog cleared 2× faster</li>
-                    </ul>
+        {/* Workflow Walkthrough - Vertical Flow Layout */}
+        <section
+          id="workflow"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500"
+        >
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+              🔄 Workflow Walkthrough
+            </h2>
+            
+            <div className="space-y-12">
+              {/* Step 1 */}
+              <div className="flex gap-8 items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    1
                   </div>
-                  <div className="bg-red-50 rounded-[16px] p-4 border-l-4 border-red-500">
-                    <h4 className="font-semibold text-red-800 mb-3">
-                      ❌ What Didn't
-                    </h4>
-                    <ul className="text-sm text-red-700 space-y-2">
-                      <li>• Weekend call volumes unchanged (outside scope)</li>
-                      <li>
-                        • Some admins still reverted to Excel → training needed
+                </div>
+                <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#131417] mb-4">Message Arrives</h3>
+                    <p className="text-[#131417] leading-relaxed mb-4">
+                      Patient messages, lab results, and administrative requests arrive through various channels 
+                      and are automatically ingested into the unified inbox system.
+                    </p>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>EHR integration via FHIR APIs</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>Secure message parsing and classification</span>
                       </li>
                     </ul>
                   </div>
+                  <div className="aspect-video bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                    <div className="text-center">
+                      <div className="w-8 h-8 bg-blue-400 rounded mx-auto mb-2"></div>
+                      <p className="text-gray-500 text-sm">Message Ingestion</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Iteration Backlog
-                </h3>
-                <div className="space-y-4">
-                  <div className="bg-blue-50 rounded-[16px] p-4 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-medium text-blue-800 mb-1">
-                      Staffing Optimization
-                    </p>
-                    <p className="text-sm text-blue-700">
-                      Extend scheduling AI into{" "}
-                      <span className="font-medium">staffing optimization</span>{" "}
-                      (shift prediction → cut overtime)
-                    </p>
+              
+              {/* Step 2 */}
+              <div className="flex gap-8 items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    2
                   </div>
-                  <div className="bg-purple-50 rounded-[16px] p-4 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-medium text-purple-800 mb-1">
-                      What-if Scenarios
+                </div>
+                <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  <div className="lg:order-2">
+                    <h3 className="text-xl font-semibold text-[#131417] mb-4">AI Analysis</h3>
+                    <p className="text-[#131417] leading-relaxed mb-4">
+                      Machine learning algorithms analyze message content, patient history, and contextual factors 
+                      to determine clinical risk level and appropriate handling priority.
                     </p>
-                    <p className="text-sm text-purple-700">
-                      Add{" "}
-                      <span className="font-medium">"what-if" scenarios</span>{" "}
-                      in forecasting dashboards
-                    </p>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>Natural language processing</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>Risk scoring and urgency assessment</span>
+                      </li>
+                    </ul>
                   </div>
-                  <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-medium text-green-800 mb-1">
-                      Adoption Nudges
+                  <div className="aspect-video bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300 lg:order-1">
+                    <div className="text-center">
+                      <Brain className="w-12 h-12 text-gray-400 mx-auto mb-2" />
+                      <p className="text-gray-500 text-sm">AI Processing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Step 3 */}
+              <div className="flex gap-8 items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    3
+                  </div>
+                </div>
+                <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#131417] mb-4">Smart Routing</h3>
+                    <p className="text-[#131417] leading-relaxed mb-4">
+                      Messages are automatically routed to appropriate staff members based on role, specialty, 
+                      current workload, and availability. High-priority items surface immediately.
                     </p>
-                    <p className="text-sm text-green-700">
-                      <span className="font-medium">Adoption nudges</span> →
-                      inline tooltips + confidence indicators to reduce Excel
-                      fallback
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>Role-based intelligent routing</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>Workload balancing algorithms</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="aspect-video bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                    <div className="text-center">
+                      <Target className="w-12 h-12 text-gray-400 mx-auto mb-2" />
+                      <p className="text-gray-500 text-sm">Smart Routing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Step 4 */}
+              <div className="flex gap-8 items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    4
+                  </div>
+                </div>
+                <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  <div className="lg:order-2">
+                    <h3 className="text-xl font-semibold text-[#131417] mb-4">Staff Action</h3>
+                    <p className="text-[#131417] leading-relaxed mb-4">
+                      Clinical staff receive prioritized inbox items with clear context and suggested actions. 
+                      The system tracks handling time and provides decision support throughout the process.
                     </p>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>Context-rich message presentation</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>One-click actions and templates</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="aspect-video bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300 lg:order-1">
+                    <div className="text-center">
+                      <Users className="w-12 h-12 text-gray-400 mx-auto mb-2" />
+                      <p className="text-gray-500 text-sm">Staff Interface</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Step 5 */}
+              <div className="flex gap-8 items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    5
+                  </div>
+                </div>
+                <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#131417] mb-4">Continuous Learning</h3>
+                    <p className="text-[#131417] leading-relaxed mb-4">
+                      The system learns from staff actions, patient outcomes, and feedback to continuously 
+                      improve prioritization accuracy and workflow efficiency.
+                    </p>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>Machine learning model updates</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500" />
+                        <span>Performance analytics and insights</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="aspect-video bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                    <div className="text-center">
+                      <TrendingUp className="w-12 h-12 text-gray-400 mx-auto mb-2" />
+                      <p className="text-gray-500 text-sm">Learning Loop</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1916,138 +1189,219 @@ export default function SymplifyAltCaseStudy() {
           </div>
         </section>
 
-        {/* Learnings & Reflections */}
+        {/* Micro-interactions - Media Blocks Layout */}
         <section
-          id="learnings"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300"
+          id="interactions"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600"
         >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              📚 Learnings & Reflections
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+              ✨ Micro-interactions
             </h2>
-
-            <div className="mb-12">
-              <ul className="space-y-6">
-                <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <span className="w-3 h-3 bg-blue-500 rounded-full mt-1 flex-shrink-0"></span>
-                  <span className="text-lg text-[#131417] leading-[150%]">
-                    <span className="font-semibold">
-                      Trust &gt; Automation:&nbsp;
-                    </span>
-                    Explainability (chips, overrides) was as critical as model
-                    accuracy.
-                  </span>
-                </li>
-                <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <span className="w-3 h-3 bg-green-500 rounded-full mt-1 flex-shrink-0"></span>
-                  <span className="text-lg text-[#131417] leading-[150%]">
-                    <span className="font-semibold">
-                      Role-based design &gt; one-size-fits-all:
-                    </span>
-                    &nbsp;Doctors, nurses, and admins each needed tailored
-                    dashboards.
-                  </span>
-                </li>
-                <li className="flex items-start gap-4 transition-all duration-300 hover:scale-105 cursor-pointer">
-                  <span className="w-3 h-3 bg-purple-500 rounded-full mt-1 flex-shrink-0"></span>
-                  <span className="text-lg text-[#131417] leading-[150%]">
-                    <span className="font-semibold">Systems thinking:</span>
-                    &nbsp;Success hinged not just on UI polish, but on&nbsp;
-                    <span className="font-semibold">
-                      data flows, HIPAA boundaries, and auditability.
-                    </span>
-                  </span>
-                </li>
-              </ul>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">Priority Animation</p>
+                    <p className="text-sm text-gray-400">Smart triage in action</p>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-[#131417] mb-2">Smart Triage Animation</h3>
+                  <p className="text-[#9FA0A3] text-sm">
+                    Messages slide into priority order with subtle color coding and urgency indicators.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">Handoff Flow</p>
+                    <p className="text-sm text-gray-400">Seamless task transfers</p>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-[#131417] mb-2">Handoff Transitions</h3>
+                  <p className="text-[#9FA0A3] text-sm">
+                    Smooth animations guide users through task handoffs with clear ownership indicators.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">Loading States</p>
+                    <p className="text-sm text-gray-400">Intelligent feedback</p>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-[#131417] mb-2">AI Processing States</h3>
+                  <p className="text-[#9FA0A3] text-sm">
+                    Progressive loading indicators show AI analysis progress with contextual explanations.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
+                  <div className="text-center">
+                    <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                    <p className="text-gray-500 font-medium">Success Feedback</p>
+                    <p className="text-sm text-gray-400">Satisfying completions</p>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-[#131417] mb-2">Completion Animations</h3>
+                  <p className="text-[#9FA0A3] text-sm">
+                    Delightful success states reinforce positive actions and build user confidence.
+                  </p>
+                </div>
+              </div>
             </div>
+            
+            <div className="mt-12 bg-purple-50 rounded-[20px] p-8">
+              <h3 className="text-xl font-semibold text-[#131417] mb-4">Design Philosophy</h3>
+              <p className="text-[#131417] leading-relaxed">
+                Every interaction was designed to reduce cognitive load while providing clear feedback. 
+                Animations serve functional purposes—guiding attention, indicating system status, and 
+                building trust in AI-driven decisions.
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <div className="border-t border-gray-200 pt-12">
-              <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-                ��� What I'd Do Next
-              </h2>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-                <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <div className="flex items-start gap-3">
-                    <span className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
-                      1
-                    </span>
-                    <div>
-                      <h4 className="font-semibold text-blue-800 mb-2">
-                        Predictive Staffing Optimization
-                      </h4>
-                      <p className="text-blue-700 text-sm">
-                        → AI shift planning to cut overtime 15–20%
-                      </p>
-                    </div>
+        {/* Outcomes & Next Steps - Text Block Layout */}
+        <section
+          id="outcomes"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700"
+        >
+          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+              🎯 Outcomes & Next Steps
+            </h2>
+            
+            <div className="space-y-12">
+              <div className="prose prose-lg max-w-none">
+                <h3 className="text-2xl font-semibold text-[#131417] mb-6">Project Impact</h3>
+                <p className="text-lg text-[#131417] leading-relaxed mb-8">
+                  The Symplify platform successfully transformed hospital operations across our pilot clinics, 
+                  demonstrating measurable improvements in efficiency, compliance, and staff satisfaction. 
+                  The 6-month controlled deployment provided strong validation for scaling the solution.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                  <div className="bg-green-50 rounded-[20px] p-8">
+                    <h4 className="text-xl font-semibold text-green-800 mb-4">Quantitative Results</h4>
+                    <ul className="space-y-3 text-green-700">
+                      <li>• 42% reduction in average triage time</li>
+                      <li>• 18% improvement in on-time follow-ups</li>
+                      <li>• 2.4 point decrease in patient no-shows</li>
+                      <li>• 4.4 hours less admin overtime per week</li>
+                      <li>• 44% reduction in SLA breach risk</li>
+                      <li>• 92% staff satisfaction score</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-blue-50 rounded-[20px] p-8">
+                    <h4 className="text-xl font-semibold text-blue-800 mb-4">Qualitative Feedback</h4>
+                    <ul className="space-y-3 text-blue-700">
+                      <li>• Reduced stress from information overload</li>
+                      <li>• Increased confidence in prioritization decisions</li>
+                      <li>• Better work-life balance from reduced overtime</li>
+                      <li>• Improved job satisfaction scores</li>
+                      <li>• Enhanced patient care quality metrics</li>
+                      <li>• Stronger compliance confidence</li>
+                    </ul>
                   </div>
                 </div>
-
-                <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <div className="flex items-start gap-3">
-                    <span className="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
-                      2
-                    </span>
-                    <div>
-                      <h4 className="font-semibold text-green-800 mb-2">
-                        HL7/FHIR Integration
-                      </h4>
-                      <p className="text-green-700 text-sm">
-                        <span
-                          style={{
-                            color: "rgb(29, 78, 216)",
-                            backgroundColor: "rgb(239, 246, 255)",
-                          }}
-                        >
-                          →
-                        </span>
-                        &nbsp;expand interoperability across EHR vendors
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-purple-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <div className="flex items-start gap-3">
-                    <span className="bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
-                      3
-                    </span>
-                    <div>
-                      <h4 className="font-semibold text-purple-800 mb-2">
-                        Sentiment Analysis
-                      </h4>
-                      <p className="text-purple-700 text-sm">
-                        → real-time patient feedback loops
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <div className="flex items-start gap-3">
-                    <span className="bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">
-                      4
-                    </span>
-                    <div>
-                      <h4 className="font-semibold text-orange-800 mb-2">
-                        Scenario Planning
-                      </h4>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold text-[#131417] mb-6">Lessons Learned</h3>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div className="space-y-4">
+                    <div className="bg-orange-50 rounded-[16px] p-6 border-l-4 border-orange-400">
+                      <h4 className="font-semibold text-orange-800 mb-2">AI Transparency is Critical</h4>
                       <p className="text-orange-700 text-sm">
-                        → financial what-if models for hospital admins
+                        Staff adoption increased dramatically when we added "why ranked" explanations 
+                        and override capabilities to AI decisions.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-purple-50 rounded-[16px] p-6 border-l-4 border-purple-400">
+                      <h4 className="font-semibold text-purple-800 mb-2">Gradual Rollout Works</h4>
+                      <p className="text-purple-700 text-sm">
+                        Phased deployment allowed us to address concerns and build confidence 
+                        before full implementation.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-teal-50 rounded-[16px] p-6 border-l-4 border-teal-400">
+                      <h4 className="font-semibold text-teal-800 mb-2">Role-Specific Design Matters</h4>
+                      <p className="text-teal-700 text-sm">
+                        Customizing interfaces for doctors, nurses, and administrators 
+                        significantly improved adoption and satisfaction.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-indigo-50 rounded-[16px] p-6 border-l-4 border-indigo-400">
+                      <h4 className="font-semibold text-indigo-800 mb-2">Integration is Everything</h4>
+                      <p className="text-indigo-700 text-sm">
+                        Success depended on seamless EHR integration rather than 
+                        requiring staff to learn entirely new systems.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-[20px] p-8 border border-blue-200 text-center">
-                <p className="text-lg text-[#131417] leading-[150%] font-medium">
-                  <span className="font-semibold">
-                    Symplify reframed hospital operations from three disjointed
-                    systems into one adaptive, AI-assisted platform — measurable
-                    time savings, safer workflows, and future-ready compliance.
-                  </span>
-                </p>
+              
+              <div>
+                <h3 className="text-2xl font-semibold text-[#131417] mb-6">Next Steps & Roadmap</h3>
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-[20px]">
+                      <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Target className="w-8 h-8 text-white" />
+                      </div>
+                      <h4 className="font-semibold text-[#131417] mb-2">Scale Deployment</h4>
+                      <p className="text-sm text-[#9FA0A3]">Roll out to 15+ additional hospital systems</p>
+                    </div>
+                    
+                    <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-[20px]">
+                      <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Brain className="w-8 h-8 text-white" />
+                      </div>
+                      <h4 className="font-semibold text-[#131417] mb-2">Enhanced AI</h4>
+                      <p className="text-sm text-[#9FA0A3]">Predictive analytics and advanced automation</p>
+                    </div>
+                    
+                    <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-[20px]">
+                      <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Heart className="w-8 h-8 text-white" />
+                      </div>
+                      <h4 className="font-semibold text-[#131417] mb-2">Patient Portal</h4>
+                      <p className="text-sm text-[#9FA0A3]">Direct patient engagement features</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-[20px] p-8">
+                    <h4 className="text-xl font-semibold text-[#131417] mb-4">Looking Forward</h4>
+                    <p className="text-[#131417] leading-relaxed">
+                      The success of Symplify has opened opportunities for deeper healthcare AI integration. 
+                      We're exploring predictive patient risk modeling, automated care plan suggestions, and 
+                      real-time quality improvement analytics. The goal remains the same: empowering healthcare 
+                      professionals to focus on patient care while technology handles operational complexity.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -2068,36 +1422,23 @@ export default function SymplifyAltCaseStudy() {
           onClick={() => setIsPreviewOpen(false)}
         >
           <div className="relative w-full h-full max-w-7xl max-h-[90vh] bg-white rounded-lg shadow-2xl overflow-hidden">
-            <div className="flex items-center justify-between p-4 bg-gray-50 border-b">
-              <div className="flex items-center gap-3">
-                <Heart className="w-6 h-6 text-blue-600" />
-                <div>
-                  <h3 className="text-lg font-medium text-gray-900">
-                    Symplify Platform
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    symplify-preview.vercel.app
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <a
-                  href="https://symplify-preview.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  Open in new tab
-                </a>
-                <button
-                  onClick={() => setIsPreviewOpen(false)}
-                  className="bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full p-2 transition-all duration-200"
-                  aria-label="Close preview"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
+            <div className="absolute top-4 right-4 z-10 flex items-center gap-2">
+              <a
+                href="https://symplify-preview.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 py-2 text-sm font-medium transition-all duration-200"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Open in new tab
+              </a>
+              <button
+                onClick={() => setIsPreviewOpen(false)}
+                className="bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full p-2 transition-all duration-200"
+                aria-label="Close preview"
+              >
+                <X className="w-5 h-5" />
+              </button>
             </div>
             <iframe
               src="https://symplify-preview.vercel.app/"
@@ -2128,11 +1469,7 @@ export default function SymplifyAltCaseStudy() {
                 src={enlargedImage.src}
                 alt={enlargedImage.alt}
                 className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-                onClick={(e) => e.stopPropagation()}
               />
-              <div className="absolute bottom-4 left-4 right-4 bg-black bg-opacity-60 text-white p-3 rounded-lg">
-                <p className="text-sm font-medium">{enlargedImage.alt}</p>
-              </div>
             </div>
           </div>
         </div>
