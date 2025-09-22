@@ -78,7 +78,7 @@ export default function Index() {
               className="text-[#9FA0A3] hover:text-[#131417] underline underline-offset-2 decoration-1 transition-all duration-300"
               aria-label="View crypto platform design case study"
             >
-              crypto
+              healthcare
             </Link>
             ,{" "}
             <Link
