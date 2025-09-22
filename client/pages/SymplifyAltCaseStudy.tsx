@@ -727,14 +727,25 @@ export default function SymplifyAltCaseStudy() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="space-y-4">
-                <div className="aspect-[4/3] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <div className="w-8 h-8 bg-gray-300 rounded mx-auto mb-2"></div>
-                    <p className="text-gray-500 text-sm font-medium">
-                      Lo-fi Wireframes
-                    </p>
-                  </div>
-                </div>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src:
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffb1e6d82a6084e31a2fac073f5c2a294?format=webp&width=1600",
+                      alt: "Lo-fi wireframes: Symplify dashboard overview",
+                    })
+                  }
+                  aria-label="Open lo‑fi wireframes full size"
+                  className="group rounded-[16px] overflow-hidden border border-gray-200 shadow-sm w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 cursor-zoom-in"
+                >
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffb1e6d82a6084e31a2fac073f5c2a294?format=webp&width=800"
+                    alt="Lo-fi wireframes: Symplify dashboard overview"
+                    className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                    loading="lazy"
+                  />
+                </button>
                 <div className="text-center">
                   <h3 className="font-semibold text-[#131417] mb-2">
                     Initial Concepts
