@@ -505,12 +505,12 @@ export default function SymplifyAltCaseStudy() {
           id="context"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900"
         >
-          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
-            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+          <div className="bg-white rounded-[25px] p-6 sm:p-8 lg:p-10 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-6">
               🔍 Context & Problem
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
               <div className="space-y-8">
                 <div>
                   <h3 className="text-xl font-semibold text-[#131417] mb-4">
@@ -560,7 +560,7 @@ export default function SymplifyAltCaseStudy() {
                   </div>
                 </div>
 
-                <div className="bg-blue-50 rounded-[16px] p-6">
+                <div className="bg-blue-50 rounded-[16px] p-4">
                   <h4 className="font-semibold text-blue-800 mb-3">
                     Key Constraints
                   </h4>
@@ -578,11 +578,11 @@ export default function SymplifyAltCaseStudy() {
               </div>
 
               <div className="space-y-6">
-                <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-[16px] p-6">
+                <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-[16px] p-4">
                   <h4 className="font-semibold text-[#131417] mb-4">
                     Impact on Operations
                   </h4>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div className="grid grid-cols-2 gap-3 text-sm">
                     <div>
                       <span className="font-medium text-red-600">~1,200</span>
                       <p className="text-gray-600">messages/month</p>
@@ -611,15 +611,15 @@ export default function SymplifyAltCaseStudy() {
           id="research"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000"
         >
-          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
-            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
+          <div className="bg-white rounded-[25px] p-6 sm:p-8 lg:p-10 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-6">
               🧪 Research & Insights
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-[#131417] mb-6">
+                  <h3 className="text-xl font-semibold text-[#131417] mb-4">
                     Research Methods
                   </h3>
 
