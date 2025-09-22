@@ -327,7 +327,6 @@ export default function SymplifyAltCaseStudy() {
 
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-24">
-        
         {/* TL;DR Section - Text Block Layout */}
         <section
           id="tldr"
@@ -337,34 +336,53 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               📌 TL;DR
             </h2>
-            
+
             <div className="prose prose-lg max-w-none">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 <div className="space-y-3">
-                  <h3 className="text-sm font-semibold text-[#0ea5e9] uppercase tracking-[0.8px]">Role</h3>
-                  <p className="text-xl font-medium text-[#131417]">Lead Product Designer</p>
+                  <h3 className="text-sm font-semibold text-[#0ea5e9] uppercase tracking-[0.8px]">
+                    Role
+                  </h3>
+                  <p className="text-xl font-medium text-[#131417]">
+                    Lead Product Designer
+                  </p>
                   <p className="text-[#9FA0A3]">End-to-end design leadership</p>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-sm font-semibold text-[#0ea5e9] uppercase tracking-[0.8px]">Timeline</h3>
+                  <h3 className="text-sm font-semibold text-[#0ea5e9] uppercase tracking-[0.8px]">
+                    Timeline
+                  </h3>
                   <p className="text-xl font-medium text-[#131417]">6 months</p>
                   <p className="text-[#9FA0A3]">Discovery through deployment</p>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-sm font-semibold text-[#0ea5e9] uppercase tracking-[0.8px]">Team</h3>
+                  <h3 className="text-sm font-semibold text-[#0ea5e9] uppercase tracking-[0.8px]">
+                    Team
+                  </h3>
                   <p className="text-xl font-medium text-[#131417]">4 people</p>
                   <p className="text-[#9FA0A3]">PM, 2 engineers, designer</p>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-[20px] p-8">
-                <h3 className="text-xl font-semibold text-[#131417] mb-4">Challenge</h3>
+                <h3 className="text-xl font-semibold text-[#131417] mb-4">
+                  Challenge
+                </h3>
                 <p className="text-lg text-[#131417] leading-relaxed mb-4">
-                  Hospital staff were drowning in fragmented systems, spending 5-8 hours per week on manual triage across EHRs, paper logs, and Excel sheets. This operational overhead was causing delays in patient care and increasing compliance risks.
+                  Hospital staff were drowning in fragmented systems, spending
+                  5-8 hours per week on manual triage across EHRs, paper logs,
+                  and Excel sheets. This operational overhead was causing delays
+                  in patient care and increasing compliance risks.
                 </p>
-                <h3 className="text-xl font-semibold text-[#131417] mb-4">Solution</h3>
+                <h3 className="text-xl font-semibold text-[#131417] mb-4">
+                  Solution
+                </h3>
                 <p className="text-lg text-[#131417] leading-relaxed">
-                  A unified, AI-powered platform that consolidates workflows while preserving existing EHR investments. Smart triage, predictive scheduling, and real-time insights reduced administrative burden by 40%+ while improving patient outcomes.
+                  A unified, AI-powered platform that consolidates workflows
+                  while preserving existing EHR investments. Smart triage,
+                  predictive scheduling, and real-time insights reduced
+                  administrative burden by 40%+ while improving patient
+                  outcomes.
                 </p>
               </div>
             </div>
@@ -381,7 +399,7 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12 text-center">
               📊 Key Impact Metrics
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-[20px] transition-all duration-300 hover:scale-105">
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -392,10 +410,14 @@ export default function SymplifyAltCaseStudy() {
                   className="text-4xl font-bold text-green-600 mb-2"
                   startAnimation={startMetricsAnimation}
                 />
-                <h3 className="text-lg font-semibold text-[#131417] mb-2">Faster Triage</h3>
-                <p className="text-sm text-[#9FA0A3]">Reduced from 2m15s to 1m18s per item</p>
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                  Faster Triage
+                </h3>
+                <p className="text-sm text-[#9FA0A3]">
+                  Reduced from 2m15s to 1m18s per item
+                </p>
               </div>
-              
+
               <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-[20px] transition-all duration-300 hover:scale-105">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-8 h-8 text-white" />
@@ -405,28 +427,44 @@ export default function SymplifyAltCaseStudy() {
                   className="text-4xl font-bold text-blue-600 mb-2"
                   startAnimation={startMetricsAnimation}
                 />
-                <h3 className="text-lg font-semibold text-[#131417] mb-2">Better Follow-ups</h3>
-                <p className="text-sm text-[#9FA0A3]">On-time rate increased 72% → 85.3%</p>
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                  Better Follow-ups
+                </h3>
+                <p className="text-sm text-[#9FA0A3]">
+                  On-time rate increased 72% → 85.3%
+                </p>
               </div>
-              
+
               <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-[20px] transition-all duration-300 hover:scale-105">
                 <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-purple-600 mb-2">-2.4pts</div>
-                <h3 className="text-lg font-semibold text-[#131417] mb-2">Lower No-shows</h3>
-                <p className="text-sm text-[#9FA0A3]">Improved from 9.8% to 7.4%</p>
+                <div className="text-4xl font-bold text-purple-600 mb-2">
+                  -2.4pts
+                </div>
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                  Lower No-shows
+                </h3>
+                <p className="text-sm text-[#9FA0A3]">
+                  Improved from 9.8% to 7.4%
+                </p>
               </div>
-              
+
               <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-[20px] transition-all duration-300 hover:scale-105">
                 <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-orange-600 mb-2">-4.4hrs</div>
-                <h3 className="text-lg font-semibold text-[#131417] mb-2">Less Overtime</h3>
-                <p className="text-sm text-[#9FA0A3]">Admin overtime reduced per week</p>
+                <div className="text-4xl font-bold text-orange-600 mb-2">
+                  -4.4hrs
+                </div>
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                  Less Overtime
+                </h3>
+                <p className="text-sm text-[#9FA0A3]">
+                  Admin overtime reduced per week
+                </p>
               </div>
-              
+
               <div className="text-center p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-[20px] transition-all duration-300 hover:scale-105">
                 <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-white" />
@@ -436,17 +474,27 @@ export default function SymplifyAltCaseStudy() {
                   className="text-4xl font-bold text-teal-600 mb-2"
                   startAnimation={startMetricsAnimation}
                 />
-                <h3 className="text-lg font-semibold text-[#131417] mb-2">SLA Compliance</h3>
-                <p className="text-sm text-[#9FA0A3]">Breach risk down 14.2% → 7.9%</p>
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                  SLA Compliance
+                </h3>
+                <p className="text-sm text-[#9FA0A3]">
+                  Breach risk down 14.2% → 7.9%
+                </p>
               </div>
-              
+
               <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-[20px] transition-all duration-300 hover:scale-105">
                 <div className="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-indigo-600 mb-2">92%</div>
-                <h3 className="text-lg font-semibold text-[#131417] mb-2">User Satisfaction</h3>
-                <p className="text-sm text-[#9FA0A3]">Staff would recommend to peers</p>
+                <div className="text-4xl font-bold text-indigo-600 mb-2">
+                  92%
+                </div>
+                <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                  User Satisfaction
+                </h3>
+                <p className="text-sm text-[#9FA0A3]">
+                  Staff would recommend to peers
+                </p>
               </div>
             </div>
           </div>
@@ -461,56 +509,79 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
               🔍 Context & Problem
             </h2>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-[#131417] mb-4">The Challenge</h3>
+                  <h3 className="text-xl font-semibold text-[#131417] mb-4">
+                    The Challenge
+                  </h3>
                   <p className="text-lg text-[#131417] leading-relaxed mb-6">
-                    Mid-sized hospitals were struggling with an <strong>operational tax</strong> from managing three disconnected systems that created inefficiencies, errors, and compliance risks.
+                    Mid-sized hospitals were struggling with an{" "}
+                    <strong>operational tax</strong> from managing three
+                    disconnected systems that created inefficiencies, errors,
+                    and compliance risks.
                   </p>
-                  
+
                   <div className="space-y-4">
                     <div className="flex items-start gap-4 p-4 bg-red-50 rounded-[12px] border-l-4 border-red-400">
                       <Heart className="w-6 h-6 text-red-500 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-red-800">Doctors</h4>
-                        <p className="text-red-700">Appointment scheduling trapped inside legacy EHRs</p>
+                        <p className="text-red-700">
+                          Appointment scheduling trapped inside legacy EHRs
+                        </p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-start gap-4 p-4 bg-orange-50 rounded-[12px] border-l-4 border-orange-400">
                       <Activity className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-orange-800">Nurses</h4>
-                        <p className="text-orange-700">Paper logs and shift notes causing handoff errors</p>
+                        <h4 className="font-semibold text-orange-800">
+                          Nurses
+                        </h4>
+                        <p className="text-orange-700">
+                          Paper logs and shift notes causing handoff errors
+                        </p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-start gap-4 p-4 bg-yellow-50 rounded-[12px] border-l-4 border-yellow-400">
                       <Users className="w-6 h-6 text-yellow-600 mt-1 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-yellow-800">Administrators</h4>
-                        <p className="text-yellow-700">Excel-based revenue forecasting with month-long delays</p>
+                        <h4 className="font-semibold text-yellow-800">
+                          Administrators
+                        </h4>
+                        <p className="text-yellow-700">
+                          Excel-based revenue forecasting with month-long delays
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="bg-blue-50 rounded-[16px] p-6">
-                  <h4 className="font-semibold text-blue-800 mb-3">Key Constraints</h4>
+                  <h4 className="font-semibold text-blue-800 mb-3">
+                    Key Constraints
+                  </h4>
                   <ul className="space-y-2 text-blue-700">
-                    <li>• HIPAA compliance required for all patient data handling</li>
+                    <li>
+                      • HIPAA compliance required for all patient data handling
+                    </li>
                     <li>• Legacy EHRs couldn't be replaced, only extended</li>
-                    <li>• Staffing shortages meant new tools had to reduce workload</li>
+                    <li>
+                      • Staffing shortages meant new tools had to reduce
+                      workload
+                    </li>
                   </ul>
                 </div>
               </div>
-              
+
               <div className="space-y-6">
-               
                 <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-[16px] p-6">
-                  <h4 className="font-semibold text-[#131417] mb-4">Impact on Operations</h4>
+                  <h4 className="font-semibold text-[#131417] mb-4">
+                    Impact on Operations
+                  </h4>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
                       <span className="font-medium text-red-600">~1,200</span>
@@ -544,66 +615,98 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
               🧪 Research & Insights
             </h2>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-[#131417] mb-6">Research Methods</h3>
-                  
+                  <h3 className="text-xl font-semibold text-[#131417] mb-6">
+                    Research Methods
+                  </h3>
+
                   <div className="space-y-4">
                     <div className="p-4 bg-blue-50 rounded-[12px] border-l-4 border-blue-400">
-                      <h4 className="font-semibold text-blue-800">User Interviews</h4>
-                      <p className="text-blue-700 text-sm">14 staff across 3 roles • 2 weeks</p>
+                      <h4 className="font-semibold text-blue-800">
+                        User Interviews
+                      </h4>
+                      <p className="text-blue-700 text-sm">
+                        14 staff across 3 roles • 2 weeks
+                      </p>
                     </div>
-                    
+
                     <div className="p-4 bg-green-50 rounded-[12px] border-l-4 border-green-400">
-                      <h4 className="font-semibold text-green-800">Contextual Inquiry</h4>
-                      <p className="text-green-700 text-sm">11 live clinic sessions • 3 days</p>
+                      <h4 className="font-semibold text-green-800">
+                        Contextual Inquiry
+                      </h4>
+                      <p className="text-green-700 text-sm">
+                        11 live clinic sessions • 3 days
+                      </p>
                     </div>
-                    
+
                     <div className="p-4 bg-purple-50 rounded-[12px] border-l-4 border-purple-400">
-                      <h4 className="font-semibold text-purple-800">Workflow Audits</h4>
-                      <p className="text-purple-700 text-sm">1,200 inbox items analyzed • 4 weeks</p>
+                      <h4 className="font-semibold text-purple-800">
+                        Workflow Audits
+                      </h4>
+                      <p className="text-purple-700 text-sm">
+                        1,200 inbox items analyzed • 4 weeks
+                      </p>
                     </div>
                   </div>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-xl font-semibold text-[#131417] mb-4">Key Insights</h3>
+                  <h3 className="text-xl font-semibold text-[#131417] mb-4">
+                    Key Insights
+                  </h3>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                      <p className="text-[#131417]">Staff spent 5-8 hours/week on manual triage</p>
+                      <p className="text-[#131417]">
+                        Staff spent 5-8 hours/week on manual triage
+                      </p>
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                      <p className="text-[#131417]">18% of urgent handoffs were missed during shifts</p>
+                      <p className="text-[#131417]">
+                        18% of urgent handoffs were missed during shifts
+                      </p>
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                      <p className="text-[#131417]">Excel forecasting lagged by weeks, preventing proactive decisions</p>
+                      <p className="text-[#131417]">
+                        Excel forecasting lagged by weeks, preventing proactive
+                        decisions
+                      </p>
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                      <p className="text-[#131417]">Staff were skeptical of "black box" AI solutions</p>
+                      <p className="text-[#131417]">
+                        Staff were skeptical of "black box" AI solutions
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div className="space-y-6">
-               
                 <div className="bg-green-50 rounded-[16px] p-6">
-                  <h4 className="font-semibold text-green-800 mb-4">User Quotes</h4>
+                  <h4 className="font-semibold text-green-800 mb-4">
+                    User Quotes
+                  </h4>
                   <div className="space-y-4">
                     <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                      "Half my inbox is reminders I don't need today — I just want the urgent ones."
-                      <cite className="block text-xs text-green-600 mt-1 not-italic">— MD, Clinic A</cite>
+                      "Half my inbox is reminders I don't need today — I just
+                      want the urgent ones."
+                      <cite className="block text-xs text-green-600 mt-1 not-italic">
+                        — MD, Clinic A
+                      </cite>
                     </blockquote>
-                    
+
                     <blockquote className="text-sm text-green-700 italic border-l-2 border-green-400 pl-3">
-                      "When shifts overlap, I'm never sure if a message was handled already."
-                      <cite className="block text-xs text-green-600 mt-1 not-italic">— RN, Clinic B</cite>
+                      "When shifts overlap, I'm never sure if a message was
+                      handled already."
+                      <cite className="block text-xs text-green-600 mt-1 not-italic">
+                        — RN, Clinic B
+                      </cite>
                     </blockquote>
                   </div>
                 </div>
@@ -621,54 +724,75 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
               🔄 Iteration & Wireframes
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="space-y-4">
                 <div className="aspect-[4/3] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
                   <div className="text-center">
                     <div className="w-8 h-8 bg-gray-300 rounded mx-auto mb-2"></div>
-                    <p className="text-gray-500 text-sm font-medium">Lo-fi Wireframes</p>
+                    <p className="text-gray-500 text-sm font-medium">
+                      Lo-fi Wireframes
+                    </p>
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-semibold text-[#131417] mb-2">Initial Concepts</h3>
-                  <p className="text-sm text-[#9FA0A3]">Basic layout & information architecture</p>
+                  <h3 className="font-semibold text-[#131417] mb-2">
+                    Initial Concepts
+                  </h3>
+                  <p className="text-sm text-[#9FA0A3]">
+                    Basic layout & information architecture
+                  </p>
                 </div>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="aspect-[4/3] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
                   <div className="text-center">
                     <div className="w-8 h-8 bg-blue-300 rounded mx-auto mb-2"></div>
-                    <p className="text-gray-500 text-sm font-medium">Mid-fi Prototypes</p>
+                    <p className="text-gray-500 text-sm font-medium">
+                      Mid-fi Prototypes
+                    </p>
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-semibold text-[#131417] mb-2">Refined Interactions</h3>
-                  <p className="text-sm text-[#9FA0A3]">User flows & component behavior</p>
+                  <h3 className="font-semibold text-[#131417] mb-2">
+                    Refined Interactions
+                  </h3>
+                  <p className="text-sm text-[#9FA0A3]">
+                    User flows & component behavior
+                  </p>
                 </div>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="aspect-[4/3] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
                   <div className="text-center">
                     <div className="w-8 h-8 bg-green-400 rounded mx-auto mb-2"></div>
-                    <p className="text-gray-500 text-sm font-medium">Hi-fi Designs</p>
+                    <p className="text-gray-500 text-sm font-medium">
+                      Hi-fi Designs
+                    </p>
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-semibold text-[#131417] mb-2">Final Designs</h3>
-                  <p className="text-sm text-[#9FA0A3]">Pixel-perfect & development-ready</p>
+                  <h3 className="font-semibold text-[#131417] mb-2">
+                    Final Designs
+                  </h3>
+                  <p className="text-sm text-[#9FA0A3]">
+                    Pixel-perfect & development-ready
+                  </p>
                 </div>
               </div>
             </div>
-            
+
             <div className="mt-12 bg-blue-50 rounded-[20px] p-8">
-              <h3 className="text-xl font-semibold text-[#131417] mb-4">Design Evolution</h3>
+              <h3 className="text-xl font-semibold text-[#131417] mb-4">
+                Design Evolution
+              </h3>
               <p className="text-[#131417] leading-relaxed">
-                Through rapid prototyping and user testing, we evolved from basic inbox concepts to an intelligent, 
-                AI-powered triage system. Each iteration incorporated clinical staff feedback and addressed real-world 
-                workflow constraints.
+                Through rapid prototyping and user testing, we evolved from
+                basic inbox concepts to an intelligent, AI-powered triage
+                system. Each iteration incorporated clinical staff feedback and
+                addressed real-world workflow constraints.
               </p>
             </div>
           </div>
@@ -683,7 +807,7 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
               🎯 Feature Deep-Dives
             </h2>
-            
+
             <div className="space-y-16">
               {/* Feature 1 - AI Inbox Triage */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -693,100 +817,136 @@ export default function SymplifyAltCaseStudy() {
                       <Brain className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-semibold text-[#131417]">AI Inbox Triage</h3>
-                      <p className="text-[#9FA0A3]">Intelligent message prioritization</p>
+                      <h3 className="text-2xl font-semibold text-[#131417]">
+                        AI Inbox Triage
+                      </h3>
+                      <p className="text-[#9FA0A3]">
+                        Intelligent message prioritization
+                      </p>
                     </div>
                   </div>
-                  
+
                   <div className="bg-blue-50 rounded-[16px] p-6">
                     <div className="text-center mb-4">
-                      <span className="text-3xl font-bold text-blue-600">42%</span>
-                      <p className="text-sm text-blue-700">faster triage time</p>
+                      <span className="text-3xl font-bold text-blue-600">
+                        42%
+                      </span>
+                      <p className="text-sm text-blue-700">
+                        faster triage time
+                      </p>
                     </div>
                   </div>
-                  
+
                   <p className="text-lg text-[#131417] leading-relaxed">
-                    Our AI system analyzes message content, patient history, and urgency indicators to automatically 
-                    prioritize inbox items. Staff see the most critical items first, with transparent "why ranked" 
-                    explanations to build trust.
+                    Our AI system analyzes message content, patient history, and
+                    urgency indicators to automatically prioritize inbox items.
+                    Staff see the most critical items first, with transparent
+                    "why ranked" explanations to build trust.
                   </p>
-                  
+
                   <ul className="space-y-2">
                     <li className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-[#131417]">Clinical risk assessment</span>
+                      <span className="text-[#131417]">
+                        Clinical risk assessment
+                      </span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-[#131417]">SLA urgency scoring</span>
+                      <span className="text-[#131417]">
+                        SLA urgency scoring
+                      </span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-[#131417]">Explainable AI decisions</span>
+                      <span className="text-[#131417]">
+                        Explainable AI decisions
+                      </span>
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
                   <div className="text-center">
                     <Brain className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">AI Triage Interface</p>
-                    <p className="text-sm text-gray-400">Smart prioritization screenshot</p>
+                    <p className="text-gray-500 font-medium">
+                      AI Triage Interface
+                    </p>
+                    <p className="text-sm text-gray-400">
+                      Smart prioritization screenshot
+                    </p>
                   </div>
                 </div>
               </div>
-              
+
               {/* Feature 2 - Smart Scheduling */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300 lg:order-1">
                   <div className="text-center">
                     <Calendar className="w-16 h-16 text-gray-400 mx-auto mb-4" />
                     <p className="text-gray-500 font-medium">Smart Scheduler</p>
-                    <p className="text-sm text-gray-400">Predictive appointment slotting</p>
+                    <p className="text-sm text-gray-400">
+                      Predictive appointment slotting
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="space-y-6 lg:order-2">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-green-500 rounded-[12px] flex items-center justify-center">
                       <Calendar className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-semibold text-[#131417]">Smart Scheduling</h3>
-                      <p className="text-[#9FA0A3]">Predictive appointment optimization</p>
+                      <h3 className="text-2xl font-semibold text-[#131417]">
+                        Smart Scheduling
+                      </h3>
+                      <p className="text-[#9FA0A3]">
+                        Predictive appointment optimization
+                      </p>
                     </div>
                   </div>
-                  
+
                   <div className="bg-green-50 rounded-[16px] p-6">
                     <div className="text-center mb-4">
-                      <span className="text-3xl font-bold text-green-600">2.4pts</span>
-                      <p className="text-sm text-green-700">lower no-show rate</p>
+                      <span className="text-3xl font-bold text-green-600">
+                        2.4pts
+                      </span>
+                      <p className="text-sm text-green-700">
+                        lower no-show rate
+                      </p>
                     </div>
                   </div>
-                  
+
                   <p className="text-lg text-[#131417] leading-relaxed">
-                    Machine learning algorithms analyze patient patterns, appointment history, and external factors 
-                    to predict no-shows and optimize scheduling. Smart slotting reduces gaps while improving 
-                    appointment utilization.
+                    Machine learning algorithms analyze patient patterns,
+                    appointment history, and external factors to predict
+                    no-shows and optimize scheduling. Smart slotting reduces
+                    gaps while improving appointment utilization.
                   </p>
-                  
+
                   <ul className="space-y-2">
                     <li className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-[#131417]">No-show prediction modeling</span>
+                      <span className="text-[#131417]">
+                        No-show prediction modeling
+                      </span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-[#131417]">Optimal time slot recommendations</span>
+                      <span className="text-[#131417]">
+                        Optimal time slot recommendations
+                      </span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-[#131417]">Automated waitlist management</span>
+                      <span className="text-[#131417]">
+                        Automated waitlist management
+                      </span>
                     </li>
                   </ul>
                 </div>
               </div>
-              
+
               {/* Feature 3 - Unified Dashboard */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
@@ -795,45 +955,64 @@ export default function SymplifyAltCaseStudy() {
                       <Activity className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-semibold text-[#131417]">Unified Dashboard</h3>
-                      <p className="text-[#9FA0A3]">Real-time operational insights</p>
+                      <h3 className="text-2xl font-semibold text-[#131417]">
+                        Unified Dashboard
+                      </h3>
+                      <p className="text-[#9FA0A3]">
+                        Real-time operational insights
+                      </p>
                     </div>
                   </div>
-                  
+
                   <div className="bg-purple-50 rounded-[16px] p-6">
                     <div className="text-center mb-4">
-                      <span className="text-3xl font-bold text-purple-600">4.4hrs</span>
-                      <p className="text-sm text-purple-700">less admin overtime per week</p>
+                      <span className="text-3xl font-bold text-purple-600">
+                        4.4hrs
+                      </span>
+                      <p className="text-sm text-purple-700">
+                        less admin overtime per week
+                      </p>
                     </div>
                   </div>
-                  
+
                   <p className="text-lg text-[#131417] leading-relaxed">
-                    Role-based dashboards provide real-time visibility into operations, replacing manual Excel 
-                    tracking with automated insights. Administrators get predictive forecasting while clinical 
-                    staff see actionable notifications.
+                    Role-based dashboards provide real-time visibility into
+                    operations, replacing manual Excel tracking with automated
+                    insights. Administrators get predictive forecasting while
+                    clinical staff see actionable notifications.
                   </p>
-                  
+
                   <ul className="space-y-2">
                     <li className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-[#131417]">Real-time operational metrics</span>
+                      <span className="text-[#131417]">
+                        Real-time operational metrics
+                      </span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-[#131417]">Predictive revenue forecasting</span>
+                      <span className="text-[#131417]">
+                        Predictive revenue forecasting
+                      </span>
                     </li>
                     <li className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span className="text-[#131417]">Role-specific customization</span>
+                      <span className="text-[#131417]">
+                        Role-specific customization
+                      </span>
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
                   <div className="text-center">
                     <Activity className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">Operations Dashboard</p>
-                    <p className="text-sm text-gray-400">Real-time metrics & insights</p>
+                    <p className="text-gray-500 font-medium">
+                      Operations Dashboard
+                    </p>
+                    <p className="text-sm text-gray-400">
+                      Real-time metrics & insights
+                    </p>
                   </div>
                 </div>
               </div>
@@ -850,15 +1029,16 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
               ⚖️ Before vs After
             </h2>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-red-50 rounded-[20px] p-8 border border-red-100">
                 <div className="flex items-center gap-3 mb-6">
                   <X className="w-8 h-8 text-red-500" />
-                  <h3 className="text-xl font-bold text-red-800">Before: Fragmented Chaos</h3>
+                  <h3 className="text-xl font-bold text-red-800">
+                    Before: Fragmented Chaos
+                  </h3>
                 </div>
-                
-               
+
                 <ul className="space-y-3 text-red-700">
                   <li className="flex items-start gap-3">
                     <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
@@ -882,14 +1062,15 @@ export default function SymplifyAltCaseStudy() {
                   </li>
                 </ul>
               </div>
-              
+
               <div className="bg-green-50 rounded-[20px] p-8 border border-green-100">
                 <div className="flex items-center gap-3 mb-6">
                   <CheckCircle className="w-8 h-8 text-green-500" />
-                  <h3 className="text-xl font-bold text-green-800">After: Unified Intelligence</h3>
+                  <h3 className="text-xl font-bold text-green-800">
+                    After: Unified Intelligence
+                  </h3>
                 </div>
-                
-               
+
                 <ul className="space-y-3 text-green-700">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
@@ -926,7 +1107,7 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
               📱 Responsive Views
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
               <div className="space-y-4">
                 <div className="aspect-[3/4] bg-gray-100 rounded-[20px] flex items-center justify-center border-2 border-dashed border-gray-300 p-8">
@@ -936,11 +1117,15 @@ export default function SymplifyAltCaseStudy() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-semibold text-[#131417] mb-2">Desktop Dashboard</h3>
-                  <p className="text-sm text-[#9FA0A3]">Full-featured admin interface with multi-panel layouts</p>
+                  <h3 className="font-semibold text-[#131417] mb-2">
+                    Desktop Dashboard
+                  </h3>
+                  <p className="text-sm text-[#9FA0A3]">
+                    Full-featured admin interface with multi-panel layouts
+                  </p>
                 </div>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="aspect-[3/4] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300 p-6">
                   <div className="text-center">
@@ -949,35 +1134,48 @@ export default function SymplifyAltCaseStudy() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-semibold text-[#131417] mb-2">Tablet Interface</h3>
-                  <p className="text-sm text-[#9FA0A3]">Optimized for bedside use and patient rounds</p>
+                  <h3 className="font-semibold text-[#131417] mb-2">
+                    Tablet Interface
+                  </h3>
+                  <p className="text-sm text-[#9FA0A3]">
+                    Optimized for bedside use and patient rounds
+                  </p>
                 </div>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="aspect-[2/3] bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300 p-4">
                   <div className="text-center">
                     <Smartphone className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-                    <p className="text-gray-500 font-medium text-sm">Mobile View</p>
+                    <p className="text-gray-500 font-medium text-sm">
+                      Mobile View
+                    </p>
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-semibold text-[#131417] mb-2">Mobile App</h3>
-                  <p className="text-sm text-[#9FA0A3]">Critical notifications and quick actions on-the-go</p>
+                  <h3 className="font-semibold text-[#131417] mb-2">
+                    Mobile App
+                  </h3>
+                  <p className="text-sm text-[#9FA0A3]">
+                    Critical notifications and quick actions on-the-go
+                  </p>
                 </div>
               </div>
             </div>
-            
+
             <div className="mt-12 bg-blue-50 rounded-[20px] p-8">
-              <h3 className="text-xl font-semibold text-[#131417] mb-4">Mobile-First Approach</h3>
+              <h3 className="text-xl font-semibold text-[#131417] mb-4">
+                Mobile-First Approach
+              </h3>
               <p className="text-[#131417] leading-relaxed">
-                Given the mobile nature of healthcare work, we prioritized critical functions for point-of-care access. 
-                The progressive enhancement ensures full functionality on desktop while maintaining usability on mobile devices.
+                Given the mobile nature of healthcare work, we prioritized
+                critical functions for point-of-care access. The progressive
+                enhancement ensures full functionality on desktop while
+                maintaining usability on mobile devices.
               </p>
             </div>
           </div>
         </section>
-
 
         {/* Micro-interactions - Media Blocks Layout */}
         <section
@@ -988,78 +1186,105 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
               ✨ Micro-interactions
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
                   <div className="text-center">
                     <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">Priority Animation</p>
-                    <p className="text-sm text-gray-400">Smart triage in action</p>
+                    <p className="text-gray-500 font-medium">
+                      Priority Animation
+                    </p>
+                    <p className="text-sm text-gray-400">
+                      Smart triage in action
+                    </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#131417] mb-2">Smart Triage Animation</h3>
+                  <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                    Smart Triage Animation
+                  </h3>
                   <p className="text-[#9FA0A3] text-sm">
-                    Messages slide into priority order with subtle color coding and urgency indicators.
+                    Messages slide into priority order with subtle color coding
+                    and urgency indicators.
                   </p>
                 </div>
               </div>
-              
+
               <div className="space-y-6">
                 <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
                   <div className="text-center">
                     <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
                     <p className="text-gray-500 font-medium">Handoff Flow</p>
-                    <p className="text-sm text-gray-400">Seamless task transfers</p>
+                    <p className="text-sm text-gray-400">
+                      Seamless task transfers
+                    </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#131417] mb-2">Handoff Transitions</h3>
+                  <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                    Handoff Transitions
+                  </h3>
                   <p className="text-[#9FA0A3] text-sm">
-                    Smooth animations guide users through task handoffs with clear ownership indicators.
+                    Smooth animations guide users through task handoffs with
+                    clear ownership indicators.
                   </p>
                 </div>
               </div>
-              
+
               <div className="space-y-6">
                 <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
                   <div className="text-center">
                     <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
                     <p className="text-gray-500 font-medium">Loading States</p>
-                    <p className="text-sm text-gray-400">Intelligent feedback</p>
+                    <p className="text-sm text-gray-400">
+                      Intelligent feedback
+                    </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#131417] mb-2">AI Processing States</h3>
+                  <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                    AI Processing States
+                  </h3>
                   <p className="text-[#9FA0A3] text-sm">
-                    Progressive loading indicators show AI analysis progress with contextual explanations.
+                    Progressive loading indicators show AI analysis progress
+                    with contextual explanations.
                   </p>
                 </div>
               </div>
-              
+
               <div className="space-y-6">
                 <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
                   <div className="text-center">
                     <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">Success Feedback</p>
-                    <p className="text-sm text-gray-400">Satisfying completions</p>
+                    <p className="text-gray-500 font-medium">
+                      Success Feedback
+                    </p>
+                    <p className="text-sm text-gray-400">
+                      Satisfying completions
+                    </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-[#131417] mb-2">Completion Animations</h3>
+                  <h3 className="text-lg font-semibold text-[#131417] mb-2">
+                    Completion Animations
+                  </h3>
                   <p className="text-[#9FA0A3] text-sm">
-                    Delightful success states reinforce positive actions and build user confidence.
+                    Delightful success states reinforce positive actions and
+                    build user confidence.
                   </p>
                 </div>
               </div>
             </div>
-            
+
             <div className="mt-12 bg-purple-50 rounded-[20px] p-8">
-              <h3 className="text-xl font-semibold text-[#131417] mb-4">Design Philosophy</h3>
+              <h3 className="text-xl font-semibold text-[#131417] mb-4">
+                Design Philosophy
+              </h3>
               <p className="text-[#131417] leading-relaxed">
-                Every interaction was designed to reduce cognitive load while providing clear feedback. 
-                Animations serve functional purposes—guiding attention, indicating system status, and 
+                Every interaction was designed to reduce cognitive load while
+                providing clear feedback. Animations serve functional
+                purposes—guiding attention, indicating system status, and
                 building trust in AI-driven decisions.
               </p>
             </div>
@@ -1075,19 +1300,25 @@ export default function SymplifyAltCaseStudy() {
             <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
               🎯 Outcomes & Next Steps
             </h2>
-            
+
             <div className="space-y-12">
               <div className="prose prose-lg max-w-none">
-                <h3 className="text-2xl font-semibold text-[#131417] mb-6">Project Impact</h3>
+                <h3 className="text-2xl font-semibold text-[#131417] mb-6">
+                  Project Impact
+                </h3>
                 <p className="text-lg text-[#131417] leading-relaxed mb-8">
-                  The Symplify platform successfully transformed hospital operations across our pilot clinics, 
-                  demonstrating measurable improvements in efficiency, compliance, and staff satisfaction. 
-                  The 6-month controlled deployment provided strong validation for scaling the solution.
+                  The Symplify platform successfully transformed hospital
+                  operations across our pilot clinics, demonstrating measurable
+                  improvements in efficiency, compliance, and staff
+                  satisfaction. The 6-month controlled deployment provided
+                  strong validation for scaling the solution.
                 </p>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                   <div className="bg-green-50 rounded-[20px] p-8">
-                    <h4 className="text-xl font-semibold text-green-800 mb-4">Quantitative Results</h4>
+                    <h4 className="text-xl font-semibold text-green-800 mb-4">
+                      Quantitative Results
+                    </h4>
                     <ul className="space-y-3 text-green-700">
                       <li>• 42% reduction in average triage time</li>
                       <li>• 18% improvement in on-time follow-ups</li>
@@ -1097,12 +1328,16 @@ export default function SymplifyAltCaseStudy() {
                       <li>• 92% staff satisfaction score</li>
                     </ul>
                   </div>
-                  
+
                   <div className="bg-blue-50 rounded-[20px] p-8">
-                    <h4 className="text-xl font-semibold text-blue-800 mb-4">Qualitative Feedback</h4>
+                    <h4 className="text-xl font-semibold text-blue-800 mb-4">
+                      Qualitative Feedback
+                    </h4>
                     <ul className="space-y-3 text-blue-700">
                       <li>• Reduced stress from information overload</li>
-                      <li>• Increased confidence in prioritization decisions</li>
+                      <li>
+                        • Increased confidence in prioritization decisions
+                      </li>
                       <li>• Better work-life balance from reduced overtime</li>
                       <li>• Improved job satisfaction scores</li>
                       <li>• Enhanced patient care quality metrics</li>
@@ -1111,84 +1346,115 @@ export default function SymplifyAltCaseStudy() {
                   </div>
                 </div>
               </div>
-              
+
               <div>
-                <h3 className="text-2xl font-semibold text-[#131417] mb-6">Lessons Learned</h3>
+                <h3 className="text-2xl font-semibold text-[#131417] mb-6">
+                  Lessons Learned
+                </h3>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="space-y-4">
                     <div className="bg-orange-50 rounded-[16px] p-6 border-l-4 border-orange-400">
-                      <h4 className="font-semibold text-orange-800 mb-2">AI Transparency is Critical</h4>
+                      <h4 className="font-semibold text-orange-800 mb-2">
+                        AI Transparency is Critical
+                      </h4>
                       <p className="text-orange-700 text-sm">
-                        Staff adoption increased dramatically when we added "why ranked" explanations 
-                        and override capabilities to AI decisions.
+                        Staff adoption increased dramatically when we added "why
+                        ranked" explanations and override capabilities to AI
+                        decisions.
                       </p>
                     </div>
-                    
+
                     <div className="bg-purple-50 rounded-[16px] p-6 border-l-4 border-purple-400">
-                      <h4 className="font-semibold text-purple-800 mb-2">Gradual Rollout Works</h4>
+                      <h4 className="font-semibold text-purple-800 mb-2">
+                        Gradual Rollout Works
+                      </h4>
                       <p className="text-purple-700 text-sm">
-                        Phased deployment allowed us to address concerns and build confidence 
-                        before full implementation.
+                        Phased deployment allowed us to address concerns and
+                        build confidence before full implementation.
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-4">
                     <div className="bg-teal-50 rounded-[16px] p-6 border-l-4 border-teal-400">
-                      <h4 className="font-semibold text-teal-800 mb-2">Role-Specific Design Matters</h4>
+                      <h4 className="font-semibold text-teal-800 mb-2">
+                        Role-Specific Design Matters
+                      </h4>
                       <p className="text-teal-700 text-sm">
-                        Customizing interfaces for doctors, nurses, and administrators 
-                        significantly improved adoption and satisfaction.
+                        Customizing interfaces for doctors, nurses, and
+                        administrators significantly improved adoption and
+                        satisfaction.
                       </p>
                     </div>
-                    
+
                     <div className="bg-indigo-50 rounded-[16px] p-6 border-l-4 border-indigo-400">
-                      <h4 className="font-semibold text-indigo-800 mb-2">Integration is Everything</h4>
+                      <h4 className="font-semibold text-indigo-800 mb-2">
+                        Integration is Everything
+                      </h4>
                       <p className="text-indigo-700 text-sm">
-                        Success depended on seamless EHR integration rather than 
+                        Success depended on seamless EHR integration rather than
                         requiring staff to learn entirely new systems.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div>
-                <h3 className="text-2xl font-semibold text-[#131417] mb-6">Next Steps & Roadmap</h3>
+                <h3 className="text-2xl font-semibold text-[#131417] mb-6">
+                  Next Steps & Roadmap
+                </h3>
                 <div className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-[20px]">
                       <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Target className="w-8 h-8 text-white" />
                       </div>
-                      <h4 className="font-semibold text-[#131417] mb-2">Scale Deployment</h4>
-                      <p className="text-sm text-[#9FA0A3]">Roll out to 15+ additional hospital systems</p>
+                      <h4 className="font-semibold text-[#131417] mb-2">
+                        Scale Deployment
+                      </h4>
+                      <p className="text-sm text-[#9FA0A3]">
+                        Roll out to 15+ additional hospital systems
+                      </p>
                     </div>
-                    
+
                     <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-[20px]">
                       <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Brain className="w-8 h-8 text-white" />
                       </div>
-                      <h4 className="font-semibold text-[#131417] mb-2">Enhanced AI</h4>
-                      <p className="text-sm text-[#9FA0A3]">Predictive analytics and advanced automation</p>
+                      <h4 className="font-semibold text-[#131417] mb-2">
+                        Enhanced AI
+                      </h4>
+                      <p className="text-sm text-[#9FA0A3]">
+                        Predictive analytics and advanced automation
+                      </p>
                     </div>
-                    
+
                     <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-[20px]">
                       <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Heart className="w-8 h-8 text-white" />
                       </div>
-                      <h4 className="font-semibold text-[#131417] mb-2">Patient Portal</h4>
-                      <p className="text-sm text-[#9FA0A3]">Direct patient engagement features</p>
+                      <h4 className="font-semibold text-[#131417] mb-2">
+                        Patient Portal
+                      </h4>
+                      <p className="text-sm text-[#9FA0A3]">
+                        Direct patient engagement features
+                      </p>
                     </div>
                   </div>
-                  
+
                   <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-[20px] p-8">
-                    <h4 className="text-xl font-semibold text-[#131417] mb-4">Looking Forward</h4>
+                    <h4 className="text-xl font-semibold text-[#131417] mb-4">
+                      Looking Forward
+                    </h4>
                     <p className="text-[#131417] leading-relaxed">
-                      The success of Symplify has opened opportunities for deeper healthcare AI integration. 
-                      We're exploring predictive patient risk modeling, automated care plan suggestions, and 
-                      real-time quality improvement analytics. The goal remains the same: empowering healthcare 
-                      professionals to focus on patient care while technology handles operational complexity.
+                      The success of Symplify has opened opportunities for
+                      deeper healthcare AI integration. We're exploring
+                      predictive patient risk modeling, automated care plan
+                      suggestions, and real-time quality improvement analytics.
+                      The goal remains the same: empowering healthcare
+                      professionals to focus on patient care while technology
+                      handles operational complexity.
                     </p>
                   </div>
                 </div>
