@@ -121,7 +121,7 @@ const AnimatedCounter = ({
  * - Grids collapse to single-column on small screens and expand progressively
  * - Horizontal section navigation is scrollable on mobile and pinned as a bar on larger breakpoints
  */
-export default function MedicoCaseStudy() {
+export default function SymplifyCaseStudy() {
   const [enlargedImage, setEnlargedImage] = useState<{
     src: string;
     alt: string;
