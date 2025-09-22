@@ -198,18 +198,16 @@ export default function SymplifyAltCaseStudy() {
         >
           {[
             { href: "#tldr", label: "TL;DR" },
-            { href: "#context", label: "Context" },
-            { href: "#transformation", label: "Before/After" },
-            { href: "#problem", label: "Problem" },
-            { href: "#principles", label: "Principles" },
-            { href: "#research", label: "Research" },
+            { href: "#metrics", label: "Key Metrics" },
+            { href: "#context", label: "Context & Problem" },
+            { href: "#research", label: "Research & Insights" },
+            { href: "#wireframes", label: "Iteration" },
+            { href: "#features", label: "Feature Deep-Dives" },
+            { href: "#before-after", label: "Before vs After" },
+            { href: "#responsive", label: "Responsive Views" },
             { href: "#workflow", label: "Workflow" },
-            { href: "#personas", label: "Personas" },
-            { href: "#journeys", label: "Journeys" },
-            { href: "#decisions", label: "Decisions" },
-            { href: "#features", label: "Features" },
-            { href: "#impact", label: "Impact" },
-            { href: "#learnings", label: "Learnings" },
+            { href: "#interactions", label: "Micro-interactions" },
+            { href: "#outcomes", label: "Outcomes" },
           ].map((item) => (
             <a
               key={item.href}
