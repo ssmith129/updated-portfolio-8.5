@@ -50,10 +50,6 @@ const App = () => (
               element={<SymplifyAltCaseStudy />}
             />
             <Route
-              path="/case-studies/symplify-hospital-management-system-alt"
-              element={<SymplifyAltCaseStudy />}
-            />
-            <Route
               path="/case-studies/moneyfarm-ai-powered-personal-finance"
               element={<MoneyFarmCaseStudy />}
             />
