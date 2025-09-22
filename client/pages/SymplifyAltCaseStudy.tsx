@@ -746,13 +746,13 @@ export default function SymplifyAltCaseStudy() {
               </div>
 
               <div className="space-y-4">
-                <div className="aspect-[4/3] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <div className="w-8 h-8 bg-blue-300 rounded mx-auto mb-2"></div>
-                    <p className="text-gray-500 text-sm font-medium">
-                      Mid-fi Prototypes
-                    </p>
-                  </div>
+                <div className="aspect-[4/3] rounded-[16px] overflow-hidden border border-gray-200 shadow-sm">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F00168d90a81e4a8ab610cb1a95f87244?format=webp&width=800"
+                    alt="Mid-fi wireframes: Symplify dashboard overview"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="text-center">
                   <h3 className="font-semibold text-[#131417] mb-2">
