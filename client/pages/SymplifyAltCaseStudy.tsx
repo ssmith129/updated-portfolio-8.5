@@ -731,8 +731,7 @@ export default function SymplifyAltCaseStudy() {
                   type="button"
                   onClick={() =>
                     setEnlargedImage({
-                      src:
-                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffb1e6d82a6084e31a2fac073f5c2a294?format=webp&width=1600",
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffb1e6d82a6084e31a2fac073f5c2a294?format=webp&width=1600",
                       alt: "Lo-fi wireframes: Symplify dashboard overview",
                     })
                   }
@@ -761,8 +760,7 @@ export default function SymplifyAltCaseStudy() {
                   type="button"
                   onClick={() =>
                     setEnlargedImage({
-                      src:
-                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F00168d90a81e4a8ab610cb1a95f87244?format=webp&width=1600",
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F00168d90a81e4a8ab610cb1a95f87244?format=webp&width=1600",
                       alt: "Mid-fi wireframes: Symplify dashboard overview",
                     })
                   }
@@ -791,8 +789,7 @@ export default function SymplifyAltCaseStudy() {
                   type="button"
                   onClick={() =>
                     setEnlargedImage({
-                      src:
-                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff38c7380490b48e7b7f0a1d51df086b7?format=webp&width=1600",
+                      src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff38c7380490b48e7b7f0a1d51df086b7?format=webp&width=1600",
                       alt: "Hi‑fi wireframes: Symplify admin dashboard",
                     })
                   }
