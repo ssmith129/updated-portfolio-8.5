@@ -48,7 +48,7 @@ const App = () => (
             />
             <Route
               path="/case-studies/symplify-hospital-management-system"
-              element={<MedicoCaseStudy />}
+              element={<SymplifyCaseStudy />}
             />
             <Route
               path="/case-studies/symplify-hospital-management-system-alt"
