@@ -11,7 +11,7 @@ import CaseStudies from "./pages/CaseStudies";
 import About from "./pages/About";
 import ComputisCaseStudy from "./pages/ComputisCaseStudy";
 import EzEMRxCaseStudy from "./pages/EzEMRxCaseStudy";
-import MedicoCaseStudy from "./pages/MedicoCaseStudy";
+import SymplifyCaseStudy from "./pages/SymplifyCaseStudy";
 import SymplifyAltCaseStudy from "./pages/SymplifyAltCaseStudy";
 import MoneyFarmCaseStudy from "./pages/MoneyFarmCaseStudy";
 import NotFound from "./pages/NotFound";
