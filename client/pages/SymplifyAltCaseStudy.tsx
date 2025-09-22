@@ -1206,7 +1206,6 @@ export default function SymplifyAltCaseStudy() {
           </div>
         </section>
 
-
         {/* Outcomes & Next Steps - Text Block Layout */}
         <section
           id="outcomes"
