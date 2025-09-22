@@ -496,7 +496,7 @@ export default function MedicoCaseStudy() {
                   <span className="font-semibold">Constraints:</span>
                 </h3>
                 <ul className="space-y-2 text-[#131417]">
-                  <li>• HIPAA compliance required masking and audit logs</li>
+                  <li>��� HIPAA compliance required masking and audit logs</li>
                   <li>• Legacy EHRs couldn't be replaced, only extended</li>
                   <li>
                     • Staffing shortages → adoption needed to reduce workload,
@@ -2058,7 +2058,7 @@ export default function MedicoCaseStudy() {
 
       {/* Related Case Studies */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 sm:py-20 md:py-24 lg:py-32">
-        <RelatedCaseStudies currentCaseStudyId="medico" />
+        <RelatedCaseStudies currentCaseStudyId="symplify" />
       </section>
 
       <Footer />
