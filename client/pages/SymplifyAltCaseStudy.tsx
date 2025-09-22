@@ -688,7 +688,7 @@ export default function SymplifyAltCaseStudy() {
               </div>
 
               <div className="space-y-6">
-                <div className="bg-green-50 rounded-[16px] p-6">
+                <div className="bg-green-50 rounded-[16px] p-4">
                   <h4 className="font-semibold text-green-800 mb-4">
                     User Quotes
                   </h4>
