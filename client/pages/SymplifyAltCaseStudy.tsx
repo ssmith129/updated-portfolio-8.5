@@ -508,14 +508,7 @@ export default function SymplifyAltCaseStudy() {
               </div>
               
               <div className="space-y-6">
-                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <Target className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">Problem Visualization</p>
-                    <p className="text-sm text-gray-400">Fragmented workflow diagram</p>
-                  </div>
-                </div>
-                
+               
                 <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-[16px] p-6">
                   <h4 className="font-semibold text-[#131417] mb-4">Impact on Operations</h4>
                   <div className="grid grid-cols-2 gap-4 text-sm">
@@ -599,14 +592,7 @@ export default function SymplifyAltCaseStudy() {
               </div>
               
               <div className="space-y-6">
-                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <Brain className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">Research Synthesis</p>
-                    <p className="text-sm text-gray-400">User journey maps & pain points</p>
-                  </div>
-                </div>
-                
+               
                 <div className="bg-green-50 rounded-[16px] p-6">
                   <h4 className="font-semibold text-green-800 mb-4">User Quotes</h4>
                   <div className="space-y-4">
@@ -872,13 +858,7 @@ export default function SymplifyAltCaseStudy() {
                   <h3 className="text-xl font-bold text-red-800">Before: Fragmented Chaos</h3>
                 </div>
                 
-                <div className="aspect-video bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300 mb-6">
-                  <div className="text-center">
-                    <X className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                    <p className="text-gray-500 text-sm">Old System Screenshot</p>
-                  </div>
-                </div>
-                
+               
                 <ul className="space-y-3 text-red-700">
                   <li className="flex items-start gap-3">
                     <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
@@ -909,13 +889,7 @@ export default function SymplifyAltCaseStudy() {
                   <h3 className="text-xl font-bold text-green-800">After: Unified Intelligence</h3>
                 </div>
                 
-                <div className="aspect-video bg-gray-100 rounded-[12px] flex items-center justify-center border-2 border-dashed border-gray-300 mb-6">
-                  <div className="text-center">
-                    <CheckCircle className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                    <p className="text-gray-500 text-sm">New System Screenshot</p>
-                  </div>
-                </div>
-                
+               
                 <ul className="space-y-3 text-green-700">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
