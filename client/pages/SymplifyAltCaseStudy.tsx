@@ -787,14 +787,25 @@ export default function SymplifyAltCaseStudy() {
               </div>
 
               <div className="space-y-4">
-                <div className="aspect-[4/3] bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <div className="w-8 h-8 bg-green-400 rounded mx-auto mb-2"></div>
-                    <p className="text-gray-500 text-sm font-medium">
-                      Hi-fi Designs
-                    </p>
-                  </div>
-                </div>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src:
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff38c7380490b48e7b7f0a1d51df086b7?format=webp&width=1600",
+                      alt: "Hi‑fi wireframes: Symplify admin dashboard",
+                    })
+                  }
+                  aria-label="Open hi‑fi wireframes full size"
+                  className="group rounded-[16px] overflow-hidden border border-gray-200 shadow-sm w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 cursor-zoom-in"
+                >
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff38c7380490b48e7b7f0a1d51df086b7?format=webp&width=800"
+                    alt="Hi‑fi wireframes: Symplify admin dashboard"
+                    className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                    loading="lazy"
+                  />
+                </button>
                 <div className="text-center">
                   <h3 className="font-semibold text-[#131417] mb-2">
                     Final Designs
