@@ -761,7 +761,7 @@ export default function SymplifyAltCaseStudy() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F00168d90a81e4a8ab610cb1a95f87244?format=webp&width=800"
                     alt="Mid-fi wireframes: Symplify dashboard overview"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                     loading="lazy"
                   />
                 </button>
