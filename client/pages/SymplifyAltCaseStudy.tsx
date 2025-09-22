@@ -209,7 +209,6 @@ export default function SymplifyAltCaseStudy() {
             { href: "#features", label: "Feature Deep-Dives" },
             { href: "#before-after", label: "Before vs After" },
             { href: "#responsive", label: "Responsive Views" },
-            { href: "#interactions", label: "Micro-interactions" },
             { href: "#outcomes", label: "Outcomes" },
           ].map((item) => (
             <a
@@ -1207,119 +1206,6 @@ export default function SymplifyAltCaseStudy() {
           </div>
         </section>
 
-        {/* Micro-interactions - Media Blocks Layout */}
-        <section
-          id="interactions"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600"
-        >
-          <div className="bg-white rounded-[25px] p-8 sm:p-12 lg:p-16 shadow-sm hover:shadow-lg transition-all duration-300">
-            <h2 className="text-3xl sm:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-12">
-              ✨ Micro-interactions
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">
-                      Priority Animation
-                    </p>
-                    <p className="text-sm text-gray-400">
-                      Smart triage in action
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-[#131417] mb-2">
-                    Smart Triage Animation
-                  </h3>
-                  <p className="text-[#9FA0A3] text-sm">
-                    Messages slide into priority order with subtle color coding
-                    and urgency indicators.
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">Handoff Flow</p>
-                    <p className="text-sm text-gray-400">
-                      Seamless task transfers
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-[#131417] mb-2">
-                    Handoff Transitions
-                  </h3>
-                  <p className="text-[#9FA0A3] text-sm">
-                    Smooth animations guide users through task handoffs with
-                    clear ownership indicators.
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">Loading States</p>
-                    <p className="text-sm text-gray-400">
-                      Intelligent feedback
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-[#131417] mb-2">
-                    AI Processing States
-                  </h3>
-                  <p className="text-[#9FA0A3] text-sm">
-                    Progressive loading indicators show AI analysis progress
-                    with contextual explanations.
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <div className="aspect-video bg-gray-100 rounded-[16px] flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <div className="text-center">
-                    <PlayCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 font-medium">
-                      Success Feedback
-                    </p>
-                    <p className="text-sm text-gray-400">
-                      Satisfying completions
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-[#131417] mb-2">
-                    Completion Animations
-                  </h3>
-                  <p className="text-[#9FA0A3] text-sm">
-                    Delightful success states reinforce positive actions and
-                    build user confidence.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-12 bg-purple-50 rounded-[20px] p-8">
-              <h3 className="text-xl font-semibold text-[#131417] mb-4">
-                Design Philosophy
-              </h3>
-              <p className="text-[#131417] leading-relaxed">
-                Every interaction was designed to reduce cognitive load while
-                providing clear feedback. Animations serve functional
-                purposes—guiding attention, indicating system status, and
-                building trust in AI-driven decisions.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* Outcomes & Next Steps - Text Block Layout */}
         <section
