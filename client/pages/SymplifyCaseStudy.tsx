@@ -1286,6 +1286,124 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
+        {/* Final Solutions */}
+        <section
+          id="final-solutions"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1650"
+        >
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              🌟 Final Solutions
+            </h2>
+
+            <div className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <span className="font-semibold text-blue-800">Unified Dashboard:</span>
+                      <span className="text-[#131417]"> Centralized modules with role-based entry points</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <span className="font-semibold text-green-800">AI-Enhanced Inbox:</span>
+                      <span className="text-[#131417]"> 2.3× faster triage efficiency</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <span className="font-semibold text-purple-800">Appointment Calendar:</span>
+                      <span className="text-[#131417]"> Drag-and-drop smart rescheduling, error-proofed</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-orange-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <span className="font-semibold text-orange-800">Notification Feed:</span>
+                      <span className="text-[#131417]"> Reduced cognitive overload with priority grouping</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
+                <div className="text-center">
+                  <div className="text-2xl mb-4">🎬</div>
+                  <h3 className="text-lg font-semibold text-blue-800 mb-3">
+                    Visual Asset Suggestion (Interactive Journey Flow with Feature Callouts)
+                  </h3>
+                  <div className="text-left space-y-2 text-blue-700">
+                    <p><strong>Purpose:</strong> Show how the features work together in the user journey rather than in isolation.</p>
+                    <ul className="list-disc pl-5 space-y-1 text-sm">
+                      <li>One wide <strong>workflow diagram</strong> (horizontal swimlane, 1200–1400px width).</li>
+                      <li>Path: <strong>Dashboard → Notifications → Inbox → Scheduling → Messages</strong>.</li>
+                      <li>Each step marked with a <strong>callout bubble</strong> containing a micro-screenshot or thumbnail GIF + 1-line rationale.</li>
+                      <li>Use <strong>color-coded arrows</strong> to guide the eye left → right.</li>
+                      <li><strong>Visual Flow:</strong> Builds the narrative that these weren't standalone features — they worked together as a system.</li>
+                      <li><strong>Best For:</strong> Showcasing <strong>systems thinking</strong> + <strong>interaction design maturity</strong> to hiring managers.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Interaction Showcase */}
+        <section
+          id="interaction-showcase"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1675"
+        >
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              🎬 Interaction Showcase
+            </h2>
+
+            <div className="space-y-8">
+              <div>
+                <p className="text-lg text-[#131417] leading-[150%] mb-8">
+                  See the features in motion — short looping demos highlight how staff interacted with the system and how AI support fit seamlessly into workflows.
+                </p>
+              </div>
+
+              <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500">
+                <div className="text-center">
+                  <div className="text-2xl mb-4">📱</div>
+                  <h3 className="text-lg font-semibold text-green-800 mb-3">
+                    Visual Asset Suggestion (Stacked Interaction Gallery)
+                  </h3>
+                  <div className="text-left space-y-3 text-green-700">
+                    <p><strong>Purpose:</strong> Spotlight each feature individually with cinematic, scroll-friendly demos.</p>
+                    <div className="space-y-2 text-sm">
+                      <p>• Create <strong>4 vertical sections</strong> stacked one after another, one per feature.</p>
+                      <p>• <strong>Top (full-width GIF/video):</strong> 720–800px height, autoplay loop (5–7s).</p>
+                      <p>• <strong>Bottom Caption Block:</strong> Feature title + 2–3 rationale bullets.</p>
+                      <p>• Alternate section backgrounds (white → light gray → white → light gray) for rhythm.</p>
+                      <p>• GIFs centered, max <strong>1000px width</strong> for readability.</p>
+                    </div>
+                    <div className="space-y-2 text-sm">
+                      <p><strong>Examples:</strong></p>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li><em>Inbox Triage:</em> Loop of AI auto-tagging urgent vs routine messages, badge pulse → <em>Rationale:</em> Reduced overload, better prioritization.</li>
+                        <li><em>Scheduling:</em> Loop of drag-and-drop reschedule with conflict detection → <em>Rationale:</em> Error-proof scheduling, ↓ no-shows.</li>
+                        <li><em>Notifications:</em> Loop of alerts collapsing into compliance vs routine categories → <em>Rationale:</em> ↓ Alert fatigue, ↑ compliance adherence.</li>
+                        <li><em>Unified Messages:</em> Loop of threads merging into one inbox → <em>Rationale:</em> Faster response times, fewer silos.</li>
+                      </ul>
+                    </div>
+                    <p><strong>Visual Flow:</strong> Each feature gets its own spotlight moment, while the scroll narrative ties them together.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* User Personas */}
         <section
           id="personas"
