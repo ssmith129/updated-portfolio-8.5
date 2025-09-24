@@ -324,7 +324,6 @@ export default function SymplifyCaseStudy() {
         </div>
       </div>
 
-
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
         {/* Executive Summary */}
