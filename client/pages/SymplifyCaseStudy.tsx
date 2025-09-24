@@ -204,10 +204,10 @@ export default function SymplifyCaseStudy() {
             { href: "#problem", label: "Problem & Research" },
             { href: "#principles", label: "Market Analysis" },
             { href: "#research", label: "Design Process" },
+            { href: "#journeys", label: "User Flows" },
             { href: "#workflow", label: "Key Decisions" },
             { href: "#final-solutions", label: "Final Solutions" },
             { href: "#interaction-showcase", label: "Interactions" },
-            { href: "#features", label: "Features" },
             { href: "#impact", label: "Impact" },
             { href: "#learnings", label: "Learnings" },
           ].map((item) => (
@@ -428,7 +428,7 @@ export default function SymplifyCaseStudy() {
                     className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1"
                     startAnimation={startMetricsAnimation}
                   />
-                  <p className="text-sm text-[#9FA0A3]">↓ admin overhead</p>
+                  <p className="text-sm text-[#9FA0A3]">��� admin overhead</p>
                 </div>
               </div>
             </div>
