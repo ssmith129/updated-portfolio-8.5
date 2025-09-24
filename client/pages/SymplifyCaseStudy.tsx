@@ -281,9 +281,7 @@ export default function SymplifyCaseStudy() {
                     </li>
                   </ul>
                   <p className="mt-4 text-[#131417]">
-                    <span className="font-semibold">My Role:</span> Lead Product
-                    Designer → led 0→1 platform design under HIPAA + legacy EHR
-                    constraints
+                    <span className="font-semibold">My Role:</span> Founding Product Designer → 0→1 platform design for healthcare workflows under HIPAA constraints
                   </p>
                 </div>
 
@@ -1060,7 +1058,7 @@ export default function SymplifyCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Review inbox → Confirm appts</li>
+                    <li>�� Review inbox → Confirm appts</li>
                     <li>• Update chart efficiently</li>
                     <li>• AI-assisted decision support</li>
                   </ul>
