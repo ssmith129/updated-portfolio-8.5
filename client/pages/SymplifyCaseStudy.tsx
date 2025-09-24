@@ -160,8 +160,7 @@ export default function SymplifyCaseStudy() {
             Symplify – Hospital Management System
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px] md:max-w-[952px] w-full text-center lg:text-left mx-auto md:pr-px">
-            Transforming siloed hospital workflows into a unified, AI-powered
-            SaaS platform
+            A unified, AI-enhanced clinical operating system for public health programs and hospital workflows
           </p>
         </div>
       </header>
