@@ -263,9 +263,9 @@ export default function SymplifyCaseStudy() {
                     </li>
                     <li>
                       <span className="font-semibold">
-                        No-show rate ↓ 2.4 pts
+                        ↑ 70% compliance pass rate
                       </span>{" "}
-                      → improved appointment utilization
+                      → improved regulatory adherence
                     </li>
                     <li>
                       <span className="font-semibold">
@@ -1003,7 +1003,7 @@ export default function SymplifyCaseStudy() {
                     </h4>
                     <ul className="text-sm text-purple-700 space-y-1">
                       <li>• Role-based dashboards</li>
-                      <li>• Alerts</li>
+                      <li>��� Alerts</li>
                       <li>• Forecast reports</li>
                     </ul>
                   </div>
