@@ -197,15 +197,16 @@ export default function SymplifyCaseStudy() {
         >
           {[
             { href: "#tldr", label: "TL;DR" },
-            { href: "#context", label: "Context" },
-            { href: "#transformation", label: "Before/After" },
-            { href: "#problem", label: "Problem" },
-            { href: "#principles", label: "Principles" },
-            { href: "#research", label: "Research" },
-            { href: "#workflow", label: "Workflow" },
-            { href: "#personas", label: "Personas" },
-            { href: "#journeys", label: "Journeys" },
-            { href: "#decisions", label: "Decisions" },
+            { href: "#context", label: "Challenge" },
+            { href: "#solution", label: "Solution" },
+            { href: "#why-it-matters", label: "Why It Matters" },
+            { href: "#transformation", label: "Overview" },
+            { href: "#problem", label: "Problem & Research" },
+            { href: "#principles", label: "Market Analysis" },
+            { href: "#research", label: "Design Process" },
+            { href: "#workflow", label: "Key Decisions" },
+            { href: "#final-solutions", label: "Final Solutions" },
+            { href: "#interaction-showcase", label: "Interactions" },
             { href: "#features", label: "Features" },
             { href: "#impact", label: "Impact" },
             { href: "#learnings", label: "Learnings" },
@@ -1435,7 +1436,7 @@ export default function SymplifyCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>��� Review inbox → Confirm appts</li>
+                    <li>�� Review inbox → Confirm appts</li>
                     <li>• Update chart efficiently</li>
                     <li>• AI-assisted decision support</li>
                   </ul>
