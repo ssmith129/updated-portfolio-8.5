@@ -594,14 +594,14 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
-        {/* Problem & Opportunity */}
+        {/* Problem Statement & Research */}
         <section
           id="problem"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100"
         >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🧠 Problem & Opportunity
+              🧠 Problem Statement & Research
             </h2>
 
             <div className="space-y-8">
@@ -610,50 +610,115 @@ export default function SymplifyCaseStudy() {
                   <Target className="w-5 h-5 text-orange-600" />
                   Core Problem
                 </h3>
+                <p className="text-lg text-[#131417] leading-[150%] mb-4">
+                  Hospitals and WIC programs were relying on <span className="font-semibold">outdated, siloed tools</span>:
+                </p>
+                <ul className="space-y-3 mb-4">
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Messages scattered across multiple channels</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Appointment scheduling required <span className="font-semibold">manual reconciliation</span></span>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Compliance notifications buried in dropdowns</span>
+                  </li>
+                </ul>
                 <p className="text-lg text-[#131417] leading-[150%]">
-                  <span className="font-semibold">The Problem:</span>
-                  <br />
-                  Clinics were losing&nbsp;
-                  <span className="font-medium">
-                    5–8 hours per week per clinician
-                  </span>
-                  &nbsp;to inbox triage across fragmented tools (EHR,
-                  spreadsheets, sticky notes). Missed handoffs risked HIPAA
-                  violations and delayed care. Forecasting was manual and
-                  lagging, making proactive staffing impossible.
+                  The result: <span className="font-semibold">missed appointments, delayed responses, and staff burnout</span>.
                 </p>
               </div>
 
-              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
                 <h3 className="text-xl font-bold text-[#131417] mb-4">
-                  Opportunity
+                  Research Process
                 </h3>
-                <p className="text-lg text-[#131417] leading-[150%] mb-4">
-                  <span className="font-medium">
-                    How might we consolidate triage, scheduling, and forecasting
-                    into a single, explainable workflow — reducing staff burden
-                    while protecting compliance?
-                  </span>
+                <p className="text-lg text-[#131417] leading-[150%] mb-6">
+                  I led a structured discovery process designed to capture <span className="font-semibold">quantitative task data</span> and <span className="font-semibold">qualitative user sentiment</span>:
                 </p>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-medium text-[#131417] mb-2">
-                    Non-Goals (Deliberate Trade-offs):
-                  </h4>
-                  <ul className="space-y-2">
-                    <li className="text-[#131417]">
-                      ❌&nbsp; Did <span className="font-extrabold">not</span>{" "}
-                      replace full EHR stack — only layered workflows on top
-                    </li>
-                    <li className="text-[#131417]">
-                      ❌&nbsp; Did <span className="font-extrabold">not</span>{" "}
-                      rebuild billing — focused only on forecasting dashboards
-                    </li>
-                    <li className="text-[#131417]">
-                      ❌&nbsp;&nbsp;Did{" "}
-                      <span className="font-extrabold">not</span> tackle
-                      patient-facing portals in v1 — prioritized staff workflows
-                    </li>
-                  </ul>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">1</span>
+                      <div>
+                        <h4 className="font-semibold text-blue-800">Contextual Inquiry</h4>
+                        <p className="text-sm text-blue-700">Shadowed 12 clinic admins and 6 nurses across 3 facilities</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">2</span>
+                      <div>
+                        <h4 className="font-semibold text-blue-800">Task Analysis</h4>
+                        <p className="text-sm text-blue-700">Logged over 3,000 daily tasks, identifying friction points</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">3</span>
+                      <div>
+                        <h4 className="font-semibold text-blue-800">User Interviews</h4>
+                        <p className="text-sm text-blue-700">Structured interviews focusing on trust in technology and AI perceptions</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">4</span>
+                      <div>
+                        <h4 className="font-semibold text-blue-800">Usability Testing</h4>
+                        <p className="text-sm text-blue-700">3 iterative rounds validating navigation clarity and AI interpretability</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">5</span>
+                      <div>
+                        <h4 className="font-semibold text-blue-800">Stakeholder Workshops</h4>
+                        <p className="text-sm text-blue-700">Sessions with state agency leaders for regulatory alignment</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500">
+                <h3 className="text-xl font-bold text-[#131417] mb-4">
+                  Key Insights
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <p className="font-semibold text-green-800">60% of staff time lost</p>
+                        <p className="text-sm text-green-700">to context switching across multiple systems</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <p className="font-semibold text-green-800">40% of "urgent" messages were noise</p>
+                        <p className="text-sm text-green-700">undermining trust in alerts</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <p className="font-semibold text-green-800">Staff wanted AI augmentation, not automation</p>
+                        <p className="text-sm text-green-700">requiring transparency and control</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                      <div>
+                        <p className="font-semibold text-green-800">High administrative burden</p>
+                        <p className="text-sm text-green-700">caused compliance gaps and delayed patient care</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
