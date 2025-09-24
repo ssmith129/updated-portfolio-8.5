@@ -266,7 +266,7 @@ export default function SymplifyCaseStudy() {
                       <span className="font-semibold">
                         ↑ 70% compliance pass rate
                       </span>{" "}
-                      ��� improved regulatory adherence
+                      → improved regulatory adherence
                     </li>
                     <li>
                       <span className="font-semibold">
@@ -457,7 +457,7 @@ export default function SymplifyCaseStudy() {
 
               <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500">
                 <ul className="space-y-2 text-[#131417]">
-                  <li>��� HIPAA compliance required masking and audit logs</li>
+                  <li>• HIPAA compliance required masking and audit logs</li>
                   <li>• Legacy EHRs couldn't be replaced, only extended</li>
                   <li>
                     • Staffing shortages → adoption needed to reduce workload,
@@ -1095,7 +1095,7 @@ export default function SymplifyCaseStudy() {
                       <td className="py-3 px-4 font-semibold text-orange-600">
                         Smart Appointment Scheduling
                       </td>
-                      <td className="py-3 px-4">��� no-shows, ��� throughput</td>
+                      <td className="py-3 px-4">↓ no-shows, ↑ throughput</td>
                     </tr>
                     <tr className="hover:bg-yellow-50 transition-colors duration-200">
                       <td className="py-3 px-4">
@@ -1261,7 +1261,7 @@ export default function SymplifyCaseStudy() {
                     </h4>
                     <ul className="text-sm text-purple-700 space-y-1">
                       <li>• Role-based dashboards</li>
-                      <li>���� Alerts</li>
+                      <li>• Alerts</li>
                       <li>• Forecast reports</li>
                     </ul>
                   </div>
@@ -2065,7 +2065,7 @@ export default function SymplifyCaseStudy() {
 
             <div className="border-t border-gray-200 pt-12">
               <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-                �� What I'd Do Next
+                ➡️ What I'd Do Next
               </h2>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
@@ -2135,7 +2135,7 @@ export default function SymplifyCaseStudy() {
                         Scenario Planning
                       </h4>
                       <p className="text-orange-700 text-sm">
-                        �� financial what-if models for hospital admins
+                        → financial what-if models for hospital admins
                       </p>
                     </div>
                   </div>
