@@ -248,7 +248,7 @@ export default function SymplifyCaseStudy() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4">
-                    📌 TL;DR — Outcomes
+                    📌 TL;DR — Key Impact
                   </h3>
                   <ul className="list-disc pl-5 space-y-2 text-[#131417]">
                     <li>
