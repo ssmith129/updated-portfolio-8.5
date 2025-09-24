@@ -339,7 +339,7 @@ export default function SymplifyCaseStudy() {
                   Role
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Lead Product Designer
+                  Founding Product Designer
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
