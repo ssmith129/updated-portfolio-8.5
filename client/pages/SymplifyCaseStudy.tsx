@@ -266,7 +266,7 @@ export default function SymplifyCaseStudy() {
                       <span className="font-semibold">
                         ↑ 70% compliance pass rate
                       </span>{" "}
-                      → improved regulatory adherence
+                      ��� improved regulatory adherence
                     </li>
                     <li>
                       <span className="font-semibold">
@@ -1680,150 +1680,6 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
-        {/* Key Design Decisions Matrix */}
-        <section
-          id="decisions"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1800"
-        >
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
-            🔑 Key Design Decisions
-          </h2>
-
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div className="mb-6">
-              <p className="text-lg text-[#9FA0A3] leading-[150%]">
-                Critical design choices that shaped the platform — showing not
-                just what we chose, but why.
-              </p>
-            </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b-2 border-gray-200">
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50 rounded-tl-lg">
-                      Decision
-                    </th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">
-                      Options
-                    </th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">
-                      Trade-offs
-                    </th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50">
-                      Final Choice
-                    </th>
-                    <th className="text-left py-4 px-4 text-sm font-semibold text-[#131417] bg-gray-50 rounded-tr-lg">
-                      Risk & Mitigation
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-100 hover:bg-blue-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      Inbox prioritization
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Last-in; Manual flags; Risk+SLA score
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Simplicity vs consistency vs impact
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-blue-600">
-                      Risk+SLA scoring
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Added "why ranked" chips + overrides
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-green-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      Scheduling
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Manual; Historical only; Historical+provider patterns
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Simplicity vs accuracy
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-green-600">
-                      Historical+provider patterns
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Monthly backtests; alert on drift
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-purple-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      Forecasting
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Monthly Excel; Daily batch; Real-time
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Lag vs integration effort
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-purple-600">
-                      Real-time dashboard
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      API fallback to daily export
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-100 hover:bg-orange-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      Permissions
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Global; Role; Role+Org
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Speed vs safety
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-orange-600">
-                      Role+Org
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Provisioning checklist; quarterly audits
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-yellow-50 transition-colors duration-200">
-                    <td className="py-4 px-4 font-medium text-[#131417]">
-                      AI transparency
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Opaque; Confidence only; Confidence+Why+Override
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Speed vs trust vs complexity
-                    </td>
-                    <td className="py-4 px-4 text-sm font-semibold text-yellow-600">
-                      Confidence+Why+Override
-                    </td>
-                    <td className="py-4 px-4 text-sm text-[#9FA0A3]">
-                      Concise chips, inline tooltips
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-8 bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-              <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
-                🎯 Decision Philosophy
-              </h3>
-              <p className="text-base text-[#131417] leading-[150%]">
-                Each choice balanced{" "}
-                <span className="font-medium">user needs</span>,{" "}
-                <span className="font-medium">technical constraints</span>, and{" "}
-                <span className="font-medium">regulatory requirements</span>. We
-                prioritized explainability and user trust over pure automation,
-                ensuring clinical staff remained in control while gaining AI
-                assistance.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* Key Features */}
         <section
@@ -2279,7 +2135,7 @@ export default function SymplifyCaseStudy() {
                         Scenario Planning
                       </h4>
                       <p className="text-orange-700 text-sm">
-                        → financial what-if models for hospital admins
+                        �� financial what-if models for hospital admins
                       </p>
                     </div>
                   </div>
