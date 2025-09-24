@@ -1,0 +1,93 @@
+<div className="space-y-8">
+              <div>
+                <p className="text-lg text-[#131417] leading-[150%] mb-6">
+                  I applied a <span className="font-semibold">human-centered, systems-first approach</span>:
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <div className="flex items-start gap-3">
+                      <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">1</span>
+                      <div>
+                        <h3 className="text-lg font-semibold text-blue-800 mb-2">Journey Mapping</h3>
+                        <p className="text-blue-700">Identified workflow breakpoints for Admin, Nurse, and Public Health Coordinator personas</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <div className="flex items-start gap-3">
+                      <span className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">2</span>
+                      <div>
+                        <h3 className="text-lg font-semibold text-green-800 mb-2">Ideation Workshops</h3>
+                        <p className="text-green-700">Explored three models (Inbox-first, Calendar-first, Module-first)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-purple-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <div className="flex items-start gap-3">
+                      <span className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">3</span>
+                      <div>
+                        <h3 className="text-lg font-semibold text-purple-800 mb-2">Rapid Prototyping</h3>
+                        <p className="text-purple-700">Iterated from low → mid → high fidelity in Figma, validating with real staff</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <div className="flex items-start gap-3">
+                      <span className="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">4</span>
+                      <div>
+                        <h3 className="text-lg font-semibold text-orange-800 mb-2">Accessibility Reviews</h3>
+                        <p className="text-orange-700">Applied WCAG 2.1 AA standards at every iteration</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-[20px] p-6 border border-blue-200">
+                <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
+                  <Brain className="w-5 h-5 text-blue-600" />
+                  Design Philosophy
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold text-[#131417] mb-2">Core Principles</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                        <span className="text-[#131417]">Built <strong>modularity</strong> so features could scale across clinics and programs</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                        <span className="text-[#131417]">Designed <strong>explainable AI affordances</strong> (confidence levels, override controls)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                        <span className="text-[#131417]">Ensured <strong>trust-first UX patterns</strong> for sensitive healthcare data</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-[#131417] mb-2">Methodology Focus</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-3">
+                        <Target className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-[#131417]">Human-centered design with clinical staff at the center</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Target className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-[#131417]">Systems-first approach to address workflow fragmentation</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Target className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span className="text-[#131417]">Iterative validation with real healthcare environments</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
