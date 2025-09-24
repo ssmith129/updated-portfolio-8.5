@@ -1027,7 +1027,7 @@ export default function SymplifyCaseStudy() {
                       <td className="py-3 px-4 font-semibold text-orange-600">
                         Smart Appointment Scheduling
                       </td>
-                      <td className="py-3 px-4">��� no-shows, �� throughput</td>
+                      <td className="py-3 px-4">��� no-shows, ��� throughput</td>
                     </tr>
                     <tr className="hover:bg-yellow-50 transition-colors duration-200">
                       <td className="py-3 px-4">
@@ -1083,7 +1083,7 @@ export default function SymplifyCaseStudy() {
         >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🛠 System & Workflow
+              🔑 Key Design Decisions & Rationale
             </h2>
 
             <div className="mb-10">
@@ -2154,7 +2154,7 @@ export default function SymplifyCaseStudy() {
 
             <div className="border-t border-gray-200 pt-12">
               <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-                🚀 What I'd Do Next
+                �� What I'd Do Next
               </h2>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
