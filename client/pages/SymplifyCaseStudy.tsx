@@ -429,16 +429,6 @@ export default function SymplifyCaseStudy() {
                   />
                   <p className="text-sm text-[#9FA0A3]">↓ admin overhead</p>
                 </div>
-                <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <AnimatedCounter
-                    value={44}
-                    className="text-2xl sm:text-3xl font-bold text-teal-600 mb-1"
-                    startAnimation={startMetricsAnimation}
-                  />
-                  <p className="text-sm text-[#9FA0A3]">
-                    ↓ SLA breach risk (14.2% → 7.9%)
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -1003,7 +993,7 @@ export default function SymplifyCaseStudy() {
                     </h4>
                     <ul className="text-sm text-purple-700 space-y-1">
                       <li>• Role-based dashboards</li>
-                      <li>��� Alerts</li>
+                      <li>���� Alerts</li>
                       <li>• Forecast reports</li>
                     </ul>
                   </div>
