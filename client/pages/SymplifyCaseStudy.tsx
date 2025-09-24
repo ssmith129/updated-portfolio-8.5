@@ -257,9 +257,9 @@ export default function SymplifyCaseStudy() {
                     </li>
                     <li>
                       <span className="font-semibold">
-                        On-time follow-ups ↑ 18%
+                        ↑ 2.3× triage efficiency
                       </span>{" "}
-                      → fewer SLA breaches, faster care delivery
+                      → faster message prioritization
                     </li>
                     <li>
                       <span className="font-semibold">
@@ -464,7 +464,7 @@ export default function SymplifyCaseStudy() {
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Doctors �� appointment scheduling inside EHRs</span>
+                    <span>Doctors → appointment scheduling inside EHRs</span>
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
