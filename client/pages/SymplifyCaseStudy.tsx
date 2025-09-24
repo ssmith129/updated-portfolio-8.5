@@ -456,7 +456,6 @@ export default function SymplifyCaseStudy() {
 
               <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500">
                 <h3 className="text-lg font-medium text-[#131417] mb-4">
-                  <span className="font-semibold">Constraints:</span>
                 </h3>
                 <ul className="space-y-2 text-[#131417]">
                   <li>��� HIPAA compliance required masking and audit logs</li>
