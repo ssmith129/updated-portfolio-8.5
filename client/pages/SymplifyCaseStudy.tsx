@@ -1910,7 +1910,7 @@ export default function SymplifyCaseStudy() {
         >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              📈 Validation & Impact
+              📈 Outcomes & Impact
             </h2>
 
             <div className="mb-10">
