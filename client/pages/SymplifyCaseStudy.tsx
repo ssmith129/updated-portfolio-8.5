@@ -725,61 +725,161 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
-        {/* Design Principles */}
+        {/* Business & Market Analysis */}
         <section
           id="principles"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300"
         >
-          <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl cursor-pointer">
-            <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-6">
-              Design Principles
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              📊 Business & Market Analysis
             </h2>
 
-            <div className="bg-white/10 rounded-[20px] p-6 mb-8 transition-all duration-300 hover:bg-white/20 cursor-pointer">
-              <h3 className="text-xl font-medium mb-4">North Star</h3>
-              <blockquote className="text-lg italic leading-[150%]">
-                "Design a platform where medical staff can focus on patient
-                care, not system navigation — making technology invisible while
-                healthcare outcomes visible."
-              </blockquote>
-            </div>
+            <div className="space-y-8">
+              <div>
+                <p className="text-lg text-[#131417] leading-[150%] mb-6">
+                  The healthcare IT market is dominated by <span className="font-semibold">legacy EHR systems</span> (Epic, Cerner, Allscripts) designed for hospitals, not public health programs or smaller clinics. These systems are:
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Costly to implement and maintain</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Not optimized for staff-facing daily workflows</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Slow to adopt modern UX and AI-driven enhancements</span>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-2 flex items-center gap-2">
-                  <Heart className="w-4 h-4" />
-                  Patient-Centric Design
-                </h4>
-                <p className="text-sm text-gray-400 italic">
-                  Every interface decision optimizes for patient care quality.
-                </p>
+              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
+                <h3 className="text-xl font-bold text-[#131417] mb-4">
+                  Opportunity for Symplify
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Deliver a <span className="font-semibold">modular, cost-effective alternative</span> for public health agencies</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Differentiate with <span className="font-semibold">AI-enhanced task efficiency</span> and <span className="font-semibold">explainability</span></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Position as a <span className="font-semibold">scalable platform</span> bridging state agencies and local clinics</span>
+                  </li>
+                </ul>
               </div>
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-2 flex items-center gap-2">
-                  <Brain className="w-4 h-4" />
-                  Intelligent Assistance
-                </h4>
-                <p className="text-sm text-gray-400 italic">
-                  AI augments clinical decisions without replacing judgment.
-                </p>
+
+              <div>
+                <h3 className="text-xl font-medium text-[#131417] mb-6">
+                  Competitor Analysis
+                </h3>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="border-b border-gray-200">
+                        <th className="text-left p-4 font-medium text-[#131417]">
+                          Feature / Platform
+                        </th>
+                        <th className="text-center p-4 font-medium text-[#9FA0A3]">
+                          Epic
+                        </th>
+                        <th className="text-center p-4 font-medium text-[#9FA0A3]">
+                          Cerner
+                        </th>
+                        <th className="text-center p-4 font-medium text-[#9FA0A3]">
+                          Allscripts
+                        </th>
+                        <th className="text-center p-4 font-medium text-[#9FA0A3]">
+                          ezEMRx
+                        </th>
+                        <th className="text-center p-4 font-medium text-blue-600">
+                          Symplify
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-gray-100">
+                        <td className="p-4 text-[#131417]">Cost & Scalability</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">$$$$</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">$$$$</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">$$$</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">$$</td>
+                        <td className="text-center p-4 font-semibold text-blue-600">$ (modular)</td>
+                      </tr>
+                      <tr className="border-b border-gray-100">
+                        <td className="p-4 text-[#131417]">Usability (Staff-Facing)</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Low</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Medium</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Medium</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Low</td>
+                        <td className="text-center p-4 font-semibold text-blue-600">High</td>
+                      </tr>
+                      <tr className="border-b border-gray-100">
+                        <td className="p-4 text-[#131417]">AI Augmentation</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Minimal</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Minimal</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">None</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">None</td>
+                        <td className="text-center p-4 font-semibold text-blue-600">Smart Inbox, Notifications, Scheduling</td>
+                      </tr>
+                      <tr className="border-b border-gray-100">
+                        <td className="p-4 text-[#131417]">Accessibility (WCAG)</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Inconsistent</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Inconsistent</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Limited</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Limited</td>
+                        <td className="text-center p-4 font-semibold text-blue-600">WCAG 2.1 AA Compliant</td>
+                      </tr>
+                      <tr>
+                        <td className="p-4 text-[#131417]">Suitability for Public Health</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Low</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Low</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Medium</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">Medium</td>
+                        <td className="text-center p-4 font-semibold text-blue-600">High</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-2 flex items-center gap-2">
-                  <Shield className="w-4 h-4" />
-                  Compliance by Design
-                </h4>
-                <p className="text-sm text-gray-400 italic">
-                  HIPAA compliance and audit trails built into every workflow.
-                </p>
-              </div>
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-2 flex items-center gap-2">
-                  <Activity className="w-4 h-4" />
-                  Mobile-First Care
-                </h4>
-                <p className="text-sm text-gray-400 italic">
-                  Critical functions accessible at the point of care.
-                </p>
+
+              <div className="bg-green-50 rounded-[20px] p-6 border border-green-200">
+                <h3 className="text-lg font-medium text-green-800 mb-4 flex items-center gap-2">
+                  💡 Strategic Differentiators
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span className="text-sm text-green-700">
+                      Designed <strong>from the ground up</strong> for public health and WIC workflows
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span className="text-sm text-green-700">
+                      <strong>AI-driven efficiency</strong> with explainable decision-making
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span className="text-sm text-green-700">
+                      <strong>Lower implementation cost</strong> via modular SaaS model
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span className="text-sm text-green-700">
+                      Built-in <strong>compliance and accessibility standards</strong>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1229,7 +1329,7 @@ export default function SymplifyCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Track vitals ��� Triage msgs</li>
+                    <li>• Track vitals ����� Triage msgs</li>
                     <li>• Shift handoff coordination</li>
                     <li>• Monitor care continuity</li>
                   </ul>
