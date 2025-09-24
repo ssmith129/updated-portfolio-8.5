@@ -368,10 +368,10 @@ export default function SymplifyCaseStudy() {
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Users
+                  Tools
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Doctors, nurses, admins
+                  Figma, Notion, Framer, Jira, ChatGPT
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -482,7 +482,7 @@ export default function SymplifyCaseStudy() {
                 <ul className="space-y-2 text-[#131417]">
                   <li>• ~1,200 patient messages/month</li>
                   <li>•&nbsp;Avg triage time: 2m15s/item</li>
-                  <li>• SLA breaches: 14% of messages delayed &gt;24h</li>
+                  <li>�� SLA breaches: 14% of messages delayed &gt;24h</li>
                   <li>• No-show rate: ~10%</li>
                   <li>• Admin overtime: 12+ hrs/wk</li>
                 </ul>
