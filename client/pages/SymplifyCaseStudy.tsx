@@ -455,8 +455,6 @@ export default function SymplifyCaseStudy() {
 
 
               <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500">
-                <h3 className="text-lg font-medium text-[#131417] mb-4">
-                </h3>
                 <ul className="space-y-2 text-[#131417]">
                   <li>��� HIPAA compliance required masking and audit logs</li>
                   <li>• Legacy EHRs couldn't be replaced, only extended</li>
@@ -1437,7 +1435,7 @@ export default function SymplifyCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>�� Review inbox → Confirm appts</li>
+                    <li>��� Review inbox → Confirm appts</li>
                     <li>• Update chart efficiently</li>
                     <li>• AI-assisted decision support</li>
                   </ul>
