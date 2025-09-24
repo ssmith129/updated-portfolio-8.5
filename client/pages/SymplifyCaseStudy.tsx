@@ -412,11 +412,13 @@ export default function SymplifyCaseStudy() {
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">
-                    −2.4pts
-                  </div>
+                  <AnimatedCounter
+                    value={70}
+                    className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
                   <p className="text-sm text-[#9FA0A3]">
-                    no-show rate (9.8% → 7.4%)
+                    ↑ compliance pass rate
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
@@ -889,7 +891,7 @@ export default function SymplifyCaseStudy() {
         >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              ���� System & Workflow
+              🛠 System & Workflow
             </h2>
 
             <div className="mb-10">
