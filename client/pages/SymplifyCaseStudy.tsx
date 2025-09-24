@@ -252,8 +252,8 @@ export default function SymplifyCaseStudy() {
                   </h3>
                   <ul className="list-disc pl-5 space-y-2 text-[#131417]">
                     <li>
-                      <span className="font-semibold">Inbox triage ↓ 42%</span>{" "}
-                      → freed ~6.5 hrs/clinician/month
+                      <span className="font-semibold">↓ 40% average scheduling time</span>{" "}
+                      → streamlined appointment management
                     </li>
                     <li>
                       <span className="font-semibold">
@@ -464,7 +464,7 @@ export default function SymplifyCaseStudy() {
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Doctors → appointment scheduling inside EHRs</span>
+                    <span>Doctors �� appointment scheduling inside EHRs</span>
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
