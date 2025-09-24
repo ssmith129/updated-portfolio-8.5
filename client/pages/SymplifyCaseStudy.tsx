@@ -453,18 +453,6 @@ export default function SymplifyCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-                <h3 className="text-lg font-medium text-[#131417] mb-4">
-                  <span className="font-semibold">Operational baseline:</span>
-                </h3>
-                <ul className="space-y-2 text-[#131417]">
-                  <li>• ~1,200 patient messages/month</li>
-                  <li>•&nbsp;Avg triage time: 2m15s/item</li>
-                  <li>• SLA breaches: 14% of messages delayed &gt;24h</li>
-                  <li>• No-show rate: ~10%</li>
-                  <li>• Admin overtime: 12+ hrs/wk</li>
-                </ul>
-              </div>
 
               <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500">
                 <h3 className="text-lg font-medium text-[#131417] mb-4">
