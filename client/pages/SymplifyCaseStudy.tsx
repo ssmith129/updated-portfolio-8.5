@@ -447,9 +447,9 @@ export default function SymplifyCaseStudy() {
             <div className="space-y-8">
               <div>
                 <p className="text-lg text-[#131417] leading-[150%] mb-6">
-                  Mid-sized clinics faced an{" "}
-                  <span className="font-semibold">operational tax</span> from
-                  juggling three disconnected systems:
+                  Hospitals and public health programs relied on{" "}
+                  <span className="font-semibold">fragmented, outdated systems</span> —
+                  leading to missed appointments, compliance gaps, and staff burnout.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-[#131417]">
@@ -1051,7 +1051,7 @@ export default function SymplifyCaseStudy() {
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>�� Review inbox → Confirm appts</li>
-                    <li>��� Update chart efficiently</li>
+                    <li>• Update chart efficiently</li>
                     <li>• AI-assisted decision support</li>
                   </ul>
                 </div>
@@ -1129,7 +1129,7 @@ export default function SymplifyCaseStudy() {
                     Needs
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Track vitals → Triage msgs</li>
+                    <li>• Track vitals ��� Triage msgs</li>
                     <li>• Shift handoff coordination</li>
                     <li>• Monitor care continuity</li>
                   </ul>
