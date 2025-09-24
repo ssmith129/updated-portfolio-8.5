@@ -376,10 +376,10 @@ export default function SymplifyCaseStudy() {
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Method
+                  Company
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Controlled pilot (3 clinics, 65 staff, 6 weeks)
+                  Custom Data Processing Inc.
                 </p>
               </div>
             </div>
@@ -482,7 +482,7 @@ export default function SymplifyCaseStudy() {
                 <ul className="space-y-2 text-[#131417]">
                   <li>• ~1,200 patient messages/month</li>
                   <li>•&nbsp;Avg triage time: 2m15s/item</li>
-                  <li>�� SLA breaches: 14% of messages delayed &gt;24h</li>
+                  <li>• SLA breaches: 14% of messages delayed &gt;24h</li>
                   <li>• No-show rate: ~10%</li>
                   <li>• Admin overtime: 12+ hrs/wk</li>
                 </ul>
@@ -835,7 +835,7 @@ export default function SymplifyCaseStudy() {
                       <td className="py-3 px-4 font-semibold text-orange-600">
                         Smart Appointment Scheduling
                       </td>
-                      <td className="py-3 px-4">↓ no-shows, ↑ throughput</td>
+                      <td className="py-3 px-4">↓ no-shows, �� throughput</td>
                     </tr>
                     <tr className="hover:bg-yellow-50 transition-colors duration-200">
                       <td className="py-3 px-4">
