@@ -451,20 +451,6 @@ export default function SymplifyCaseStudy() {
                   <span className="font-semibold">fragmented, outdated systems</span> —
                   leading to missed appointments, compliance gaps, and staff burnout.
                 </p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start gap-3 text-[#131417]">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Doctors → appointment scheduling inside EHRs</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[#131417]">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Nurses → paper logs + shift notes</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[#131417]">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Admins → Excel sheets for revenue forecasting</span>
-                  </li>
-                </ul>
               </div>
 
               <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
