@@ -352,10 +352,10 @@ export default function SymplifyCaseStudy() {
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Constraints
+                  Timeline
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  HIPAA, legacy EHRs, 10-week delivery
+                  Jan–Aug 2024
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
