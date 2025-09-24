@@ -428,7 +428,7 @@ export default function SymplifyCaseStudy() {
                     className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1"
                     startAnimation={startMetricsAnimation}
                   />
-                  <p className="text-sm text-[#9FA0A3]">��� admin overhead</p>
+                  <p className="text-sm text-[#9FA0A3]">↓ admin overhead</p>
                 </div>
               </div>
             </div>
@@ -1403,137 +1403,6 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
-        {/* User Personas */}
-        <section
-          id="personas"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700"
-        >
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
-            User Personas
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Dr. Sarah (Physician) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Heart className="w-8 h-8 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium text-[#131417] mb-1">
-                    Dr. Sarah
-                  </h3>
-                  <p className="text-[#9FA0A3] font-medium">
-                    Attending Physician
-                  </p>
-                  <p className="text-sm text-[#9FA0A3]">8+ years experience</p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-green-800 mb-2">
-                    Needs
-                  </h4>
-                  <ul className="text-sm text-green-700 space-y-1">
-                    <li>�� Review inbox → Confirm appts</li>
-                    <li>• Update chart efficiently</li>
-                    <li>• AI-assisted decision support</li>
-                  </ul>
-                </div>
-
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-red-800 mb-2">
-                    Pain Points
-                  </h4>
-                  <p className="text-sm text-red-700">
-                    2m triage/item, duplicate entries across multiple systems
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Lisa (Administrator) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
-                  <Users className="w-8 h-8 text-purple-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium text-[#131417] mb-1">
-                    Lisa
-                  </h3>
-                  <p className="text-[#9FA0A3] font-medium">
-                    Hospital Administrator
-                  </p>
-                  <p className="text-sm text-[#9FA0A3]">12+ years experience</p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-green-800 mb-2">
-                    Needs
-                  </h4>
-                  <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Manage staffing → Generate reports</li>
-                    <li>• Monitor revenue dashboard in real-time</li>
-                    <li>• Oversee forecasting and operations</li>
-                  </ul>
-                </div>
-
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-red-800 mb-2">
-                    Pain Points
-                  </h4>
-                  <p className="text-sm text-red-700">
-                    Forecasts updated monthly via Excel exports — lagging
-                    insights
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Mike (Nurse) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                  <Activity className="w-8 h-8 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium text-[#131417] mb-1">
-                    Mike
-                  </h3>
-                  <p className="text-[#9FA0A3] font-medium">Registered Nurse</p>
-                  <p className="text-sm text-[#9FA0A3]">5+ years experience</p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-green-800 mb-2">
-                    Needs
-                  </h4>
-                  <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Track vitals ����� Triage msgs</li>
-                    <li>• Shift handoff coordination</li>
-                    <li>• Monitor care continuity</li>
-                  </ul>
-                </div>
-
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-red-800 mb-2">
-                    Pain Points
-                  </h4>
-                  <p className="text-sm text-red-700">
-                    Missed urgent handoffs due to paper logs and fragmented
-                    systems
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* User Flows & Journey Mapping */}
         <section
