@@ -885,14 +885,14 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
-        {/* Research & Insights */}
+        {/* Design Process & Methodology */}
         <section
           id="research"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500"
         >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🧪 Research & Insights
+              🎨 Design Process & Methodology
             </h2>
 
             <details className="mb-10 group">
