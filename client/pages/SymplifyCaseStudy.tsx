@@ -395,12 +395,12 @@ export default function SymplifyCaseStudy() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
-                    value={42}
+                    value={40}
                     className="text-2xl sm:text-3xl font-bold text-green-600 mb-1"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#9FA0A3]">
-                    ↓ inbox triage time (2m15s → 1m18s)
+                    ↓ average scheduling time
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
