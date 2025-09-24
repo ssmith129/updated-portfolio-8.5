@@ -470,6 +470,102 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
+        {/* Solution */}
+        <section
+          id="solution"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-850"
+        >
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              💡 Solution
+            </h2>
+
+            <div className="space-y-8">
+              <div>
+                <p className="text-lg text-[#131417] leading-[150%] mb-6">
+                  Designed <span className="font-semibold">Symplify</span>, an{" "}
+                  <span className="font-semibold">AI-enhanced, modular platform</span> with:
+                </p>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <div>
+                      <span className="font-semibold">Smart Inbox Triage</span> → Faster, explainable message prioritization
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <div>
+                      <span className="font-semibold">Smart Scheduling</span> → AI-assisted appointment management
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <div>
+                      <span className="font-semibold">Smart Notifications</span> → Reduced alert fatigue with clear priority tiers
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <div>
+                      <span className="font-semibold">Unified Email Integration</span> → Centralized communication
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why It Matters */}
+        <section
+          id="why-it-matters"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-875"
+        >
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              🔑 Why It Matters
+            </h2>
+
+            <div className="space-y-8">
+              <div>
+                <p className="text-lg text-[#131417] leading-[150%] mb-6">
+                  Symplify redefined hospital workflow UX:
+                </p>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <span className="font-semibold">Trust-first AI patterns</span> (transparent, human-in-the-loop)
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <span className="font-semibold">Scalable modular design system</span> for clinics and state agencies
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3 text-[#131417]">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <span className="font-semibold">Accessibility-first</span> (WCAG 2.1 AA compliant)
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
+                <div className="text-center">
+                  <div className="text-2xl mb-4">💡</div>
+                  <p className="text-lg text-blue-800 italic">
+                    Visual Asset Suggestion: Quick KPI infographic (Before vs After), paired with one hero dashboard screenshot for immediate impact.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Project Overview & Objectives */}
         <section
           id="transformation"
