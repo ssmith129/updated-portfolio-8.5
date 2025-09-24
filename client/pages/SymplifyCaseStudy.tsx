@@ -441,7 +441,7 @@ export default function SymplifyCaseStudy() {
         >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🔍 Challenge & Context
+              🎯 Challenge
             </h2>
 
             <div className="space-y-8">
