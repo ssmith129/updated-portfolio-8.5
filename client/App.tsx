@@ -11,7 +11,7 @@ import CaseStudies from "./pages/CaseStudies";
 import About from "./pages/About";
 import ComputisCaseStudy from "./pages/ComputisCaseStudy";
 import EzEMRxCaseStudy from "./pages/EzEMRxCaseStudy";
-import SymplifyAltCaseStudy from "./pages/SymplifyAltCaseStudy";
+import SymplifyCaseStudy from "./pages/SymplifyCaseStudy";
 import MoneyFarmCaseStudy from "./pages/MoneyFarmCaseStudy";
 import NotFound from "./pages/NotFound";
 
@@ -47,7 +47,7 @@ const App = () => (
             />
             <Route
               path="/case-studies/symplify-hospital-management-system"
-              element={<SymplifyAltCaseStudy />}
+              element={<SymplifyCaseStudy />}
             />
             <Route
               path="/case-studies/moneyfarm-ai-powered-personal-finance"

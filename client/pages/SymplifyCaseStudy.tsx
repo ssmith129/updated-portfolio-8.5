@@ -270,7 +270,7 @@ export default function SymplifyCaseStudy() {
                     </li>
                     <li>
                       <span className="font-semibold">
-                        Admin overtime ↓ 4.4 hrs/wk
+                        Admin overtime ��� 4.4 hrs/wk
                       </span>{" "}
                       → reduced staffing costs
                     </li>
@@ -324,16 +324,6 @@ export default function SymplifyCaseStudy() {
         </div>
       </div>
 
-      {/* Link to alternate version */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-4">
-        <Link
-          to="/case-studies/symplify-hospital-management-system-alt"
-          className="inline-flex items-center gap-2 text-sm font-medium text-[#131417] underline underline-offset-2 hover:text-blue-700 transition-colors duration-200"
-          aria-label="View alternate version of the Symplify case study"
-        >
-          View alternate version of this case study
-        </Link>
-      </div>
 
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
