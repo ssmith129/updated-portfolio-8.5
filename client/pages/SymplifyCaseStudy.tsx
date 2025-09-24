@@ -422,10 +422,12 @@ export default function SymplifyCaseStudy() {
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <div className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1">
-                    −4.4hrs
-                  </div>
-                  <p className="text-sm text-[#9FA0A3]">admin overtime/week</p>
+                  <AnimatedCounter
+                    value={20}
+                    className="text-2xl sm:text-3xl font-bold text-orange-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
+                  <p className="text-sm text-[#9FA0A3]">↓ admin overhead</p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
@@ -835,7 +837,7 @@ export default function SymplifyCaseStudy() {
                       <td className="py-3 px-4 font-semibold text-orange-600">
                         Smart Appointment Scheduling
                       </td>
-                      <td className="py-3 px-4">↓ no-shows, �� throughput</td>
+                      <td className="py-3 px-4">��� no-shows, �� throughput</td>
                     </tr>
                     <tr className="hover:bg-yellow-50 transition-colors duration-200">
                       <td className="py-3 px-4">
