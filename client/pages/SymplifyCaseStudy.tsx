@@ -269,9 +269,9 @@ export default function SymplifyCaseStudy() {
                     </li>
                     <li>
                       <span className="font-semibold">
-                        Admin overtime ��� 4.4 hrs/wk
+                        ↓ 20% admin overhead
                       </span>{" "}
-                      → reduced staffing costs
+                      → reduced documentation burden
                     </li>
                     <li>
                       <span className="font-semibold">
@@ -1837,7 +1837,7 @@ export default function SymplifyCaseStudy() {
                       </td>
                       <td className="py-3 px-4">—</td>
                       <td className="py-3 px-4">11%</td>
-                      <td className="py-3 px-4">—</td>
+                      <td className="py-3 px-4">���</td>
                       <td className="py-3 px-4 text-sm text-[#9FA0A3]">
                         Below guardrail (&lt;15%)
                       </td>
