@@ -275,9 +275,9 @@ export default function SymplifyCaseStudy() {
                     </li>
                     <li>
                       <span className="font-semibold">
-                        SLA breach risk ↓ 44%
+                        Trust-first AI patterns
                       </span>{" "}
-                      → safer, more compliant workflows
+                      → transparent, human-in-the-loop design
                     </li>
                   </ul>
                   <p className="mt-4 text-[#131417]">
@@ -1837,7 +1837,7 @@ export default function SymplifyCaseStudy() {
                       </td>
                       <td className="py-3 px-4">—</td>
                       <td className="py-3 px-4">11%</td>
-                      <td className="py-3 px-4">���</td>
+                      <td className="py-3 px-4">—</td>
                       <td className="py-3 px-4 text-sm text-[#9FA0A3]">
                         Below guardrail (&lt;15%)
                       </td>
