@@ -441,7 +441,7 @@ export default function SymplifyCaseStudy() {
         >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🔍 Context & Stakes
+              🔍 Challenge & Context
             </h2>
 
             <div className="space-y-8">
@@ -1051,7 +1051,7 @@ export default function SymplifyCaseStudy() {
                   </h4>
                   <ul className="text-sm text-green-700 space-y-1">
                     <li>�� Review inbox → Confirm appts</li>
-                    <li>• Update chart efficiently</li>
+                    <li>��� Update chart efficiently</li>
                     <li>• AI-assisted decision support</li>
                   </ul>
                 </div>
