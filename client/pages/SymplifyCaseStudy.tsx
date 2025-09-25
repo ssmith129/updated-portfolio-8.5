@@ -1787,7 +1787,6 @@ export default function SymplifyCaseStudy() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
