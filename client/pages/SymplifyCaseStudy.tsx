@@ -208,7 +208,6 @@ export default function SymplifyCaseStudy() {
             { href: "#journeys", label: "User Flows" },
             { href: "#workflow", label: "Key Decisions" },
             { href: "#final-solutions", label: "Final Solutions" },
-            { href: "#interaction-showcase", label: "Interactions" },
             { href: "#impact", label: "Impact" },
             { href: "#learnings", label: "Learnings" },
           ].map((item) => (
@@ -1313,7 +1312,7 @@ export default function SymplifyCaseStudy() {
         >
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              🛤️ User Flows &amp; Journey Mapping
+              🛤�� User Flows &amp; Journey Mapping
             </h2>
 
             <div className="mb-10">
@@ -1842,7 +1841,8 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
-        {/* Interaction Showcase */}
+        {/* Interaction Showcase (removed) */}
+        {false && (
         <section
           id="interaction-showcase"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1675"
@@ -1932,6 +1932,7 @@ export default function SymplifyCaseStudy() {
             </div>
           </div>
         </section>
+        )}
 
         {/* Key Features (removed) */}
         {false && (
