@@ -41,9 +41,9 @@ const useCountAnimation = (
 
       // Easing function for smooth animation
       const easeOut = 1 - Math.pow(1 - progress, 3);
-      const currentCount = Math.floor(easeOut * end);
+      const currentValue = easeOut * end;
 
-      setCount(currentCount);
+      setCount(currentValue);
 
       if (progress < 1) {
         requestAnimationFrame(animate);
@@ -64,11 +64,13 @@ const AnimatedCounter = ({
   suffix = "%",
   className,
   startAnimation,
+  decimals = 0,
 }: {
   value: number;
   suffix?: string;
   className: string;
   startAnimation: boolean;
+  decimals?: number;
 }) => {
   const [fallbackTimer, setFallbackTimer] = useState<NodeJS.Timeout | null>(
     null,
@@ -98,10 +100,13 @@ const AnimatedCounter = ({
   }, [startAnimation, fallbackTimer]);
 
   const animatedValue = useCountAnimation(value, 2000, shouldAnimate);
+  const displayValue = decimals > 0
+    ? animatedValue.toFixed(decimals)
+    : Math.floor(animatedValue).toString();
 
   return (
     <div className={className}>
-      {animatedValue}
+      {displayValue}
       {suffix}
     </div>
   );
@@ -409,9 +414,13 @@ export default function SymplifyCaseStudy() {
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">
-                    2.3×
-                  </div>
+                  <AnimatedCounter
+                    value={2.3}
+                    decimals={1}
+                    suffix="×"
+                    className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
                   <p className="text-sm text-[#9FA0A3]">↑ triage efficiency</p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
