@@ -1788,55 +1788,6 @@ export default function SymplifyCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-                <div className="text-center">
-                  <div className="text-2xl mb-4">🎬</div>
-                  <h3 className="text-lg font-semibold text-blue-800 mb-3">
-                    Visual Asset Suggestion (Interactive Journey Flow with
-                    Feature Callouts)
-                  </h3>
-                  <div className="text-left space-y-2 text-blue-700">
-                    <p>
-                      <strong>Purpose:</strong> Show how the features work
-                      together in the user journey rather than in isolation.
-                    </p>
-                    <ul className="list-disc pl-5 space-y-1 text-sm">
-                      <li>
-                        One wide <strong>workflow diagram</strong> (horizontal
-                        swimlane, 1200–1400px width).
-                      </li>
-                      <li>
-                        Path:{" "}
-                        <strong>
-                          Dashboard → Notifications → Inbox → Scheduling →
-                          Messages
-                        </strong>
-                        .
-                      </li>
-                      <li>
-                        Each step marked with a <strong>callout bubble</strong>{" "}
-                        containing a micro-screenshot or thumbnail GIF + 1-line
-                        rationale.
-                      </li>
-                      <li>
-                        Use <strong>color-coded arrows</strong> to guide the eye
-                        left → right.
-                      </li>
-                      <li>
-                        <strong>Visual Flow:</strong> Builds the narrative that
-                        these weren't standalone features — they worked together
-                        as a system.
-                      </li>
-                      <li>
-                        <strong>Best For:</strong> Showcasing{" "}
-                        <strong>systems thinking</strong> +{" "}
-                        <strong>interaction design maturity</strong> to hiring
-                        managers.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
