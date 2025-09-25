@@ -100,9 +100,10 @@ const AnimatedCounter = ({
   }, [startAnimation, fallbackTimer]);
 
   const animatedValue = useCountAnimation(value, 2000, shouldAnimate);
-  const displayValue = decimals > 0
-    ? animatedValue.toFixed(decimals)
-    : Math.floor(animatedValue).toString();
+  const displayValue =
+    decimals > 0
+      ? animatedValue.toFixed(decimals)
+      : Math.floor(animatedValue).toString();
 
   return (
     <div className={className}>
