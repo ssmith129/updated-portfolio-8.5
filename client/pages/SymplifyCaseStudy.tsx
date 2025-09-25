@@ -437,6 +437,7 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
+
         {/* Context & Stakes */}
         <section
           id="context"
