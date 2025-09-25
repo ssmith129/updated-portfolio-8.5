@@ -160,7 +160,8 @@ export default function SymplifyCaseStudy() {
             Symplify – Hospital Management System
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px] md:max-w-[952px] w-full text-center lg:text-left mx-auto md:pr-px">
-            A unified, AI-enhanced clinical operating system for public health programs and hospital workflows
+            A unified, AI-enhanced clinical operating system for public health
+            programs and hospital workflows
           </p>
         </div>
       </header>
@@ -253,7 +254,9 @@ export default function SymplifyCaseStudy() {
                   </h3>
                   <ul className="list-disc pl-5 space-y-2 text-[#131417]">
                     <li>
-                      <span className="font-semibold">↓ 40% average scheduling time</span>{" "}
+                      <span className="font-semibold">
+                        ↓ 40% average scheduling time
+                      </span>{" "}
                       → streamlined appointment management
                     </li>
                     <li>
@@ -282,7 +285,9 @@ export default function SymplifyCaseStudy() {
                     </li>
                   </ul>
                   <p className="mt-4 text-[#131417]">
-                    <span className="font-semibold">My Role:</span> Founding Product Designer → 0→1 platform design for healthcare workflows under HIPAA constraints
+                    <span className="font-semibold">My Role:</span> Founding
+                    Product Designer → 0→1 platform design for healthcare
+                    workflows under HIPAA constraints
                   </p>
                 </div>
 
@@ -408,9 +413,7 @@ export default function SymplifyCaseStudy() {
                   <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">
                     2.3×
                   </div>
-                  <p className="text-sm text-[#9FA0A3]">
-                    ↑ triage efficiency
-                  </p>
+                  <p className="text-sm text-[#9FA0A3]">↑ triage efficiency</p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
@@ -449,11 +452,13 @@ export default function SymplifyCaseStudy() {
               <div>
                 <p className="text-lg text-[#131417] leading-[150%] mb-6">
                   Hospitals and public health programs relied on{" "}
-                  <span className="font-semibold">fragmented, outdated systems</span> —
-                  leading to missed appointments, compliance gaps, and staff burnout.
+                  <span className="font-semibold">
+                    fragmented, outdated systems
+                  </span>{" "}
+                  — leading to missed appointments, compliance gaps, and staff
+                  burnout.
                 </p>
               </div>
-
 
               <div className="bg-orange-50 rounded-[20px] p-6 border-l-4 border-orange-500">
                 <ul className="space-y-2 text-[#131417]">
@@ -483,31 +488,40 @@ export default function SymplifyCaseStudy() {
               <div>
                 <p className="text-lg text-[#131417] leading-[150%] mb-6">
                   Designed <span className="font-semibold">Symplify</span>, an{" "}
-                  <span className="font-semibold">AI-enhanced, modular platform</span> with:
+                  <span className="font-semibold">
+                    AI-enhanced, modular platform
+                  </span>{" "}
+                  with:
                 </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="font-semibold">Smart Inbox Triage</span> → Faster, explainable message prioritization
+                      <span className="font-semibold">Smart Inbox Triage</span>{" "}
+                      → Faster, explainable message prioritization
                     </div>
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="font-semibold">Smart Scheduling</span> → AI-assisted appointment management
+                      <span className="font-semibold">Smart Scheduling</span> →
+                      AI-assisted appointment management
                     </div>
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="font-semibold">Smart Notifications</span> → Reduced alert fatigue with clear priority tiers
+                      <span className="font-semibold">Smart Notifications</span>{" "}
+                      → Reduced alert fatigue with clear priority tiers
                     </div>
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="font-semibold">Unified Email Integration</span> → Centralized communication
+                      <span className="font-semibold">
+                        Unified Email Integration
+                      </span>{" "}
+                      → Centralized communication
                     </div>
                   </li>
                 </ul>
@@ -535,19 +549,26 @@ export default function SymplifyCaseStudy() {
                   <li className="flex items-start gap-3 text-[#131417]">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold">Trust-first AI patterns</span> (transparent, human-in-the-loop)
+                      <span className="font-semibold">
+                        Trust-first AI patterns
+                      </span>{" "}
+                      (transparent, human-in-the-loop)
                     </div>
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold">Scalable modular design system</span> for clinics and state agencies
+                      <span className="font-semibold">
+                        Scalable modular design system
+                      </span>{" "}
+                      for clinics and state agencies
                     </div>
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold">Accessibility-first</span> (WCAG 2.1 AA compliant)
+                      <span className="font-semibold">Accessibility-first</span>{" "}
+                      (WCAG 2.1 AA compliant)
                     </div>
                   </li>
                 </ul>
@@ -557,7 +578,9 @@ export default function SymplifyCaseStudy() {
                 <div className="text-center">
                   <div className="text-2xl mb-4">💡</div>
                   <p className="text-lg text-blue-800 italic">
-                    Visual Asset Suggestion: Quick KPI infographic (Before vs After), paired with one hero dashboard screenshot for immediate impact.
+                    Visual Asset Suggestion: Quick KPI infographic (Before vs
+                    After), paired with one hero dashboard screenshot for
+                    immediate impact.
                   </p>
                 </div>
               </div>
@@ -578,9 +601,15 @@ export default function SymplifyCaseStudy() {
             <div className="space-y-8">
               <div>
                 <p className="text-lg text-[#131417] leading-[150%] mb-6">
-                  Symplify was designed to modernize fragmented hospital and public health workflows into a{" "}
-                  <span className="font-semibold">single, AI-driven platform</span>. The initiative was a{" "}
-                  <span className="font-semibold">0 → 1 system redesign</span>, targeting inefficiencies in scheduling, communication, and compliance.
+                  Symplify was designed to modernize fragmented hospital and
+                  public health workflows into a{" "}
+                  <span className="font-semibold">
+                    single, AI-driven platform
+                  </span>
+                  . The initiative was a{" "}
+                  <span className="font-semibold">0 → 1 system redesign</span>,
+                  targeting inefficiencies in scheduling, communication, and
+                  compliance.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
@@ -654,7 +683,10 @@ export default function SymplifyCaseStudy() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    <span>Deliver a modular system extensible to state-level health programs</span>
+                    <span>
+                      Deliver a modular system extensible to state-level health
+                      programs
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -679,7 +711,8 @@ export default function SymplifyCaseStudy() {
                   Core Problem
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%] mb-4">
-                  Hospitals and WIC programs were relying on <span className="font-semibold">outdated, siloed tools</span>:
+                  Hospitals and WIC programs were relying on{" "}
+                  <span className="font-semibold">outdated, siloed tools</span>:
                 </p>
                 <ul className="space-y-3 mb-4">
                   <li className="flex items-start gap-3 text-[#131417]">
@@ -688,7 +721,12 @@ export default function SymplifyCaseStudy() {
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Appointment scheduling required <span className="font-semibold">manual reconciliation</span></span>
+                    <span>
+                      Appointment scheduling required{" "}
+                      <span className="font-semibold">
+                        manual reconciliation
+                      </span>
+                    </span>
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
@@ -696,7 +734,11 @@ export default function SymplifyCaseStudy() {
                   </li>
                 </ul>
                 <p className="text-lg text-[#131417] leading-[150%]">
-                  The result: <span className="font-semibold">missed appointments, delayed responses, and staff burnout</span>.
+                  The result:{" "}
+                  <span className="font-semibold">
+                    missed appointments, delayed responses, and staff burnout
+                  </span>
+                  .
                 </p>
               </div>
 
@@ -705,45 +747,86 @@ export default function SymplifyCaseStudy() {
                   Research Process
                 </h3>
                 <p className="text-lg text-[#131417] leading-[150%] mb-6">
-                  I led a structured discovery process designed to capture <span className="font-semibold">quantitative task data</span> and <span className="font-semibold">qualitative user sentiment</span>:
+                  I led a structured discovery process designed to capture{" "}
+                  <span className="font-semibold">quantitative task data</span>{" "}
+                  and{" "}
+                  <span className="font-semibold">
+                    qualitative user sentiment
+                  </span>
+                  :
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
-                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">1</span>
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                        1
+                      </span>
                       <div>
-                        <h4 className="font-semibold text-blue-800">Contextual Inquiry</h4>
-                        <p className="text-sm text-blue-700">Shadowed 12 clinic admins and 6 nurses across 3 facilities</p>
+                        <h4 className="font-semibold text-blue-800">
+                          Contextual Inquiry
+                        </h4>
+                        <p className="text-sm text-blue-700">
+                          Shadowed 12 clinic admins and 6 nurses across 3
+                          facilities
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">2</span>
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                        2
+                      </span>
                       <div>
-                        <h4 className="font-semibold text-blue-800">Task Analysis</h4>
-                        <p className="text-sm text-blue-700">Logged over 3,000 daily tasks, identifying friction points</p>
+                        <h4 className="font-semibold text-blue-800">
+                          Task Analysis
+                        </h4>
+                        <p className="text-sm text-blue-700">
+                          Logged over 3,000 daily tasks, identifying friction
+                          points
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">3</span>
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                        3
+                      </span>
                       <div>
-                        <h4 className="font-semibold text-blue-800">User Interviews</h4>
-                        <p className="text-sm text-blue-700">Structured interviews focusing on trust in technology and AI perceptions</p>
+                        <h4 className="font-semibold text-blue-800">
+                          User Interviews
+                        </h4>
+                        <p className="text-sm text-blue-700">
+                          Structured interviews focusing on trust in technology
+                          and AI perceptions
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
-                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">4</span>
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                        4
+                      </span>
                       <div>
-                        <h4 className="font-semibold text-blue-800">Usability Testing</h4>
-                        <p className="text-sm text-blue-700">3 iterative rounds validating navigation clarity and AI interpretability</p>
+                        <h4 className="font-semibold text-blue-800">
+                          Usability Testing
+                        </h4>
+                        <p className="text-sm text-blue-700">
+                          3 iterative rounds validating navigation clarity and
+                          AI interpretability
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">5</span>
+                      <span className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                        5
+                      </span>
                       <div>
-                        <h4 className="font-semibold text-blue-800">Stakeholder Workshops</h4>
-                        <p className="text-sm text-blue-700">Sessions with state agency leaders for regulatory alignment</p>
+                        <h4 className="font-semibold text-blue-800">
+                          Stakeholder Workshops
+                        </h4>
+                        <p className="text-sm text-blue-700">
+                          Sessions with state agency leaders for regulatory
+                          alignment
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -759,15 +842,23 @@ export default function SymplifyCaseStudy() {
                     <div className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                       <div>
-                        <p className="font-semibold text-green-800">60% of staff time lost</p>
-                        <p className="text-sm text-green-700">to context switching across multiple systems</p>
+                        <p className="font-semibold text-green-800">
+                          60% of staff time lost
+                        </p>
+                        <p className="text-sm text-green-700">
+                          to context switching across multiple systems
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                       <div>
-                        <p className="font-semibold text-green-800">40% of "urgent" messages were noise</p>
-                        <p className="text-sm text-green-700">undermining trust in alerts</p>
+                        <p className="font-semibold text-green-800">
+                          40% of "urgent" messages were noise
+                        </p>
+                        <p className="text-sm text-green-700">
+                          undermining trust in alerts
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -775,15 +866,23 @@ export default function SymplifyCaseStudy() {
                     <div className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                       <div>
-                        <p className="font-semibold text-green-800">Staff wanted AI augmentation, not automation</p>
-                        <p className="text-sm text-green-700">requiring transparency and control</p>
+                        <p className="font-semibold text-green-800">
+                          Staff wanted AI augmentation, not automation
+                        </p>
+                        <p className="text-sm text-green-700">
+                          requiring transparency and control
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                       <div>
-                        <p className="font-semibold text-green-800">High administrative burden</p>
-                        <p className="text-sm text-green-700">caused compliance gaps and delayed patient care</p>
+                        <p className="font-semibold text-green-800">
+                          High administrative burden
+                        </p>
+                        <p className="text-sm text-green-700">
+                          caused compliance gaps and delayed patient care
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -806,7 +905,10 @@ export default function SymplifyCaseStudy() {
             <div className="space-y-8">
               <div>
                 <p className="text-lg text-[#131417] leading-[150%] mb-6">
-                  The healthcare IT market is dominated by <span className="font-semibold">legacy EHR systems</span> (Epic, Cerner, Allscripts) designed for hospitals, not public health programs or smaller clinics. These systems are:
+                  The healthcare IT market is dominated by{" "}
+                  <span className="font-semibold">legacy EHR systems</span>{" "}
+                  (Epic, Cerner, Allscripts) designed for hospitals, not public
+                  health programs or smaller clinics. These systems are:
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-3 text-[#131417]">
@@ -819,7 +921,9 @@ export default function SymplifyCaseStudy() {
                   </li>
                   <li className="flex items-start gap-3 text-[#131417]">
                     <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Slow to adopt modern UX and AI-driven enhancements</span>
+                    <span>
+                      Slow to adopt modern UX and AI-driven enhancements
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -831,15 +935,31 @@ export default function SymplifyCaseStudy() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    <span>Deliver a <span className="font-semibold">modular, cost-effective alternative</span> for public health agencies</span>
+                    <span>
+                      Deliver a{" "}
+                      <span className="font-semibold">
+                        modular, cost-effective alternative
+                      </span>{" "}
+                      for public health agencies
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    <span>Differentiate with <span className="font-semibold">AI-enhanced task efficiency</span> and <span className="font-semibold">explainability</span></span>
+                    <span>
+                      Differentiate with{" "}
+                      <span className="font-semibold">
+                        AI-enhanced task efficiency
+                      </span>{" "}
+                      and <span className="font-semibold">explainability</span>
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    <span>Position as a <span className="font-semibold">scalable platform</span> bridging state agencies and local clinics</span>
+                    <span>
+                      Position as a{" "}
+                      <span className="font-semibold">scalable platform</span>{" "}
+                      bridging state agencies and local clinics
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -874,44 +994,82 @@ export default function SymplifyCaseStudy() {
                     </thead>
                     <tbody>
                       <tr className="border-b border-gray-100">
-                        <td className="p-4 text-[#131417]">Cost & Scalability</td>
+                        <td className="p-4 text-[#131417]">
+                          Cost & Scalability
+                        </td>
                         <td className="text-center p-4 text-[#9FA0A3]">$$$$</td>
                         <td className="text-center p-4 text-[#9FA0A3]">$$$$</td>
                         <td className="text-center p-4 text-[#9FA0A3]">$$$</td>
                         <td className="text-center p-4 text-[#9FA0A3]">$$</td>
-                        <td className="text-center p-4 font-semibold text-blue-600">$ (modular)</td>
+                        <td className="text-center p-4 font-semibold text-blue-600">
+                          $ (modular)
+                        </td>
                       </tr>
                       <tr className="border-b border-gray-100">
-                        <td className="p-4 text-[#131417]">Usability (Staff-Facing)</td>
+                        <td className="p-4 text-[#131417]">
+                          Usability (Staff-Facing)
+                        </td>
                         <td className="text-center p-4 text-[#9FA0A3]">Low</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Medium</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Medium</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Medium
+                        </td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Medium
+                        </td>
                         <td className="text-center p-4 text-[#9FA0A3]">Low</td>
-                        <td className="text-center p-4 font-semibold text-blue-600">High</td>
+                        <td className="text-center p-4 font-semibold text-blue-600">
+                          High
+                        </td>
                       </tr>
                       <tr className="border-b border-gray-100">
                         <td className="p-4 text-[#131417]">AI Augmentation</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Minimal</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Minimal</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Minimal
+                        </td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Minimal
+                        </td>
                         <td className="text-center p-4 text-[#9FA0A3]">None</td>
                         <td className="text-center p-4 text-[#9FA0A3]">None</td>
-                        <td className="text-center p-4 font-semibold text-blue-600">Smart Inbox, Notifications, Scheduling</td>
+                        <td className="text-center p-4 font-semibold text-blue-600">
+                          Smart Inbox, Notifications, Scheduling
+                        </td>
                       </tr>
                       <tr className="border-b border-gray-100">
-                        <td className="p-4 text-[#131417]">Accessibility (WCAG)</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Inconsistent</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Inconsistent</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Limited</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Limited</td>
-                        <td className="text-center p-4 font-semibold text-blue-600">WCAG 2.1 AA Compliant</td>
+                        <td className="p-4 text-[#131417]">
+                          Accessibility (WCAG)
+                        </td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Inconsistent
+                        </td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Inconsistent
+                        </td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Limited
+                        </td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Limited
+                        </td>
+                        <td className="text-center p-4 font-semibold text-blue-600">
+                          WCAG 2.1 AA Compliant
+                        </td>
                       </tr>
                       <tr>
-                        <td className="p-4 text-[#131417]">Suitability for Public Health</td>
+                        <td className="p-4 text-[#131417]">
+                          Suitability for Public Health
+                        </td>
                         <td className="text-center p-4 text-[#9FA0A3]">Low</td>
                         <td className="text-center p-4 text-[#9FA0A3]">Low</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Medium</td>
-                        <td className="text-center p-4 text-[#9FA0A3]">Medium</td>
-                        <td className="text-center p-4 font-semibold text-blue-600">High</td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Medium
+                        </td>
+                        <td className="text-center p-4 text-[#9FA0A3]">
+                          Medium
+                        </td>
+                        <td className="text-center p-4 font-semibold text-blue-600">
+                          High
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -926,25 +1084,29 @@ export default function SymplifyCaseStudy() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
                     <span className="text-sm text-green-700">
-                      Designed <strong>from the ground up</strong> for public health and WIC workflows
+                      Designed <strong>from the ground up</strong> for public
+                      health and WIC workflows
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
                     <span className="text-sm text-green-700">
-                      <strong>AI-driven efficiency</strong> with explainable decision-making
+                      <strong>AI-driven efficiency</strong> with explainable
+                      decision-making
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
                     <span className="text-sm text-green-700">
-                      <strong>Lower implementation cost</strong> via modular SaaS model
+                      <strong>Lower implementation cost</strong> via modular
+                      SaaS model
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
                     <span className="text-sm text-green-700">
-                      Built-in <strong>compliance and accessibility standards</strong>
+                      Built-in{" "}
+                      <strong>compliance and accessibility standards</strong>
                     </span>
                   </div>
                 </div>
@@ -1577,15 +1739,25 @@ export default function SymplifyCaseStudy() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold text-blue-800">Unified Dashboard:</span>
-                      <span className="text-[#131417]"> Centralized modules with role-based entry points</span>
+                      <span className="font-semibold text-blue-800">
+                        Unified Dashboard:
+                      </span>
+                      <span className="text-[#131417]">
+                        {" "}
+                        Centralized modules with role-based entry points
+                      </span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold text-green-800">AI-Enhanced Inbox:</span>
-                      <span className="text-[#131417]"> 2.3× faster triage efficiency</span>
+                      <span className="font-semibold text-green-800">
+                        AI-Enhanced Inbox:
+                      </span>
+                      <span className="text-[#131417]">
+                        {" "}
+                        2.3× faster triage efficiency
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1593,15 +1765,25 @@ export default function SymplifyCaseStudy() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold text-purple-800">Appointment Calendar:</span>
-                      <span className="text-[#131417]"> Drag-and-drop smart rescheduling, error-proofed</span>
+                      <span className="font-semibold text-purple-800">
+                        Appointment Calendar:
+                      </span>
+                      <span className="text-[#131417]">
+                        {" "}
+                        Drag-and-drop smart rescheduling, error-proofed
+                      </span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-orange-600 mt-1 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold text-orange-800">Notification Feed:</span>
-                      <span className="text-[#131417]"> Reduced cognitive overload with priority grouping</span>
+                      <span className="font-semibold text-orange-800">
+                        Notification Feed:
+                      </span>
+                      <span className="text-[#131417]">
+                        {" "}
+                        Reduced cognitive overload with priority grouping
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -1611,17 +1793,47 @@ export default function SymplifyCaseStudy() {
                 <div className="text-center">
                   <div className="text-2xl mb-4">🎬</div>
                   <h3 className="text-lg font-semibold text-blue-800 mb-3">
-                    Visual Asset Suggestion (Interactive Journey Flow with Feature Callouts)
+                    Visual Asset Suggestion (Interactive Journey Flow with
+                    Feature Callouts)
                   </h3>
                   <div className="text-left space-y-2 text-blue-700">
-                    <p><strong>Purpose:</strong> Show how the features work together in the user journey rather than in isolation.</p>
+                    <p>
+                      <strong>Purpose:</strong> Show how the features work
+                      together in the user journey rather than in isolation.
+                    </p>
                     <ul className="list-disc pl-5 space-y-1 text-sm">
-                      <li>One wide <strong>workflow diagram</strong> (horizontal swimlane, 1200–1400px width).</li>
-                      <li>Path: <strong>Dashboard → Notifications → Inbox → Scheduling → Messages</strong>.</li>
-                      <li>Each step marked with a <strong>callout bubble</strong> containing a micro-screenshot or thumbnail GIF + 1-line rationale.</li>
-                      <li>Use <strong>color-coded arrows</strong> to guide the eye left → right.</li>
-                      <li><strong>Visual Flow:</strong> Builds the narrative that these weren't standalone features — they worked together as a system.</li>
-                      <li><strong>Best For:</strong> Showcasing <strong>systems thinking</strong> + <strong>interaction design maturity</strong> to hiring managers.</li>
+                      <li>
+                        One wide <strong>workflow diagram</strong> (horizontal
+                        swimlane, 1200–1400px width).
+                      </li>
+                      <li>
+                        Path:{" "}
+                        <strong>
+                          Dashboard → Notifications → Inbox → Scheduling →
+                          Messages
+                        </strong>
+                        .
+                      </li>
+                      <li>
+                        Each step marked with a <strong>callout bubble</strong>{" "}
+                        containing a micro-screenshot or thumbnail GIF + 1-line
+                        rationale.
+                      </li>
+                      <li>
+                        Use <strong>color-coded arrows</strong> to guide the eye
+                        left → right.
+                      </li>
+                      <li>
+                        <strong>Visual Flow:</strong> Builds the narrative that
+                        these weren't standalone features — they worked together
+                        as a system.
+                      </li>
+                      <li>
+                        <strong>Best For:</strong> Showcasing{" "}
+                        <strong>systems thinking</strong> +{" "}
+                        <strong>interaction design maturity</strong> to hiring
+                        managers.
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -1643,7 +1855,9 @@ export default function SymplifyCaseStudy() {
             <div className="space-y-8">
               <div>
                 <p className="text-lg text-[#131417] leading-[150%] mb-8">
-                  See the features in motion — short looping demos highlight how staff interacted with the system and how AI support fit seamlessly into workflows.
+                  See the features in motion — short looping demos highlight how
+                  staff interacted with the system and how AI support fit
+                  seamlessly into workflows.
                 </p>
               </div>
 
@@ -1654,24 +1868,64 @@ export default function SymplifyCaseStudy() {
                     Visual Asset Suggestion (Stacked Interaction Gallery)
                   </h3>
                   <div className="text-left space-y-3 text-green-700">
-                    <p><strong>Purpose:</strong> Spotlight each feature individually with cinematic, scroll-friendly demos.</p>
+                    <p>
+                      <strong>Purpose:</strong> Spotlight each feature
+                      individually with cinematic, scroll-friendly demos.
+                    </p>
                     <div className="space-y-2 text-sm">
-                      <p>• Create <strong>4 vertical sections</strong> stacked one after another, one per feature.</p>
-                      <p>• <strong>Top (full-width GIF/video):</strong> 720–800px height, autoplay loop (5–7s).</p>
-                      <p>• <strong>Bottom Caption Block:</strong> Feature title + 2–3 rationale bullets.</p>
-                      <p>• Alternate section backgrounds (white → light gray → white → light gray) for rhythm.</p>
-                      <p>• GIFs centered, max <strong>1000px width</strong> for readability.</p>
+                      <p>
+                        • Create <strong>4 vertical sections</strong> stacked
+                        one after another, one per feature.
+                      </p>
+                      <p>
+                        • <strong>Top (full-width GIF/video):</strong> 720–800px
+                        height, autoplay loop (5–7s).
+                      </p>
+                      <p>
+                        • <strong>Bottom Caption Block:</strong> Feature title +
+                        2–3 rationale bullets.
+                      </p>
+                      <p>
+                        • Alternate section backgrounds (white → light gray →
+                        white → light gray) for rhythm.
+                      </p>
+                      <p>
+                        • GIFs centered, max <strong>1000px width</strong> for
+                        readability.
+                      </p>
                     </div>
                     <div className="space-y-2 text-sm">
-                      <p><strong>Examples:</strong></p>
+                      <p>
+                        <strong>Examples:</strong>
+                      </p>
                       <ul className="list-disc pl-5 space-y-1">
-                        <li><em>Inbox Triage:</em> Loop of AI auto-tagging urgent vs routine messages, badge pulse → <em>Rationale:</em> Reduced overload, better prioritization.</li>
-                        <li><em>Scheduling:</em> Loop of drag-and-drop reschedule with conflict detection → <em>Rationale:</em> Error-proof scheduling, ↓ no-shows.</li>
-                        <li><em>Notifications:</em> Loop of alerts collapsing into compliance vs routine categories → <em>Rationale:</em> ↓ Alert fatigue, ↑ compliance adherence.</li>
-                        <li><em>Unified Messages:</em> Loop of threads merging into one inbox → <em>Rationale:</em> Faster response times, fewer silos.</li>
+                        <li>
+                          <em>Inbox Triage:</em> Loop of AI auto-tagging urgent
+                          vs routine messages, badge pulse → <em>Rationale:</em>{" "}
+                          Reduced overload, better prioritization.
+                        </li>
+                        <li>
+                          <em>Scheduling:</em> Loop of drag-and-drop reschedule
+                          with conflict detection → <em>Rationale:</em>{" "}
+                          Error-proof scheduling, ↓ no-shows.
+                        </li>
+                        <li>
+                          <em>Notifications:</em> Loop of alerts collapsing into
+                          compliance vs routine categories → <em>Rationale:</em>{" "}
+                          ↓ Alert fatigue, ↑ compliance adherence.
+                        </li>
+                        <li>
+                          <em>Unified Messages:</em> Loop of threads merging
+                          into one inbox → <em>Rationale:</em> Faster response
+                          times, fewer silos.
+                        </li>
                       </ul>
                     </div>
-                    <p><strong>Visual Flow:</strong> Each feature gets its own spotlight moment, while the scroll narrative ties them together.</p>
+                    <p>
+                      <strong>Visual Flow:</strong> Each feature gets its own
+                      spotlight moment, while the scroll narrative ties them
+                      together.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1679,143 +1933,140 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
-
-
-
-
         {/* Key Features (removed) */}
         {false && (
-        <section
-          id="features"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900"
-        >
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-            Key Features & Why They Mattered
-          </h2>
+          <section
+            id="features"
+            className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900"
+          >
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Key Features & Why They Mattered
+            </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
-                <Brain className="w-5 h-5 text-blue-600" />
-                Unified Dashboards
-              </h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">
-                Role-specific dashboards with prioritized tasks and unified
-                workflow
-              </p>
-              <p className="text-sm text-green-600 font-medium">
-                → Reduced friction and anticipates hospital needs
-              </p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9"
-                className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
-                style={{
-                  aspectRatio: "1.11",
-                  minHeight: "20px",
-                  minWidth: "20px",
-                }}
-                alt="Unified Dashboards feature"
-                onClick={() =>
-                  setEnlargedImage({
-                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1200",
-                    alt: "Unified Dashboards feature - Role-specific panels that prioritize daily tasks",
-                  })
-                }
-              />
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
+                  <Brain className="w-5 h-5 text-blue-600" />
+                  Unified Dashboards
+                </h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">
+                  Role-specific dashboards with prioritized tasks and unified
+                  workflow
+                </p>
+                <p className="text-sm text-green-600 font-medium">
+                  → Reduced friction and anticipates hospital needs
+                </p>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9"
+                  className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
+                  style={{
+                    aspectRatio: "1.11",
+                    minHeight: "20px",
+                    minWidth: "20px",
+                  }}
+                  alt="Unified Dashboards feature"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F42a7d3688ec04a07ac0dc0cb852c383b?alt=media&token=a098fd98-1ce2-4855-8abd-7a96f6005743&apiKey=ba69a23156414a589de97341511272c9&width=1200",
+                      alt: "Unified Dashboards feature - Role-specific panels that prioritize daily tasks",
+                    })
+                  }
+                />
+              </div>
 
-            <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
-                <Activity className="w-5 h-5 text-green-600" />
-                Smart Notifications
-              </h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">
-                AI-powered scoring ranks tasks by priority with risk detection
-              </p>
-              <p className="text-sm text-green-600 font-medium">
-                →&nbsp;Improved response times and reduced missed communications
-              </p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9"
-                className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
-                style={{
-                  aspectRatio: "1.47",
-                  minHeight: "20px",
-                  minWidth: "20px",
-                }}
-                alt="Smart Notifications feature"
-                onClick={() =>
-                  setEnlargedImage({
-                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1200",
-                    alt: "Smart Notifications feature - AI-powered scoring ranks tasks by priority with risk detection",
-                  })
-                }
-              />
-            </div>
+              <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
+                  <Activity className="w-5 h-5 text-green-600" />
+                  Smart Notifications
+                </h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">
+                  AI-powered scoring ranks tasks by priority with risk detection
+                </p>
+                <p className="text-sm text-green-600 font-medium">
+                  →&nbsp;Improved response times and reduced missed
+                  communications
+                </p>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9"
+                  className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
+                  style={{
+                    aspectRatio: "1.47",
+                    minHeight: "20px",
+                    minWidth: "20px",
+                  }}
+                  alt="Smart Notifications feature"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F14eb05775f1b4c92a0b1bb99bdf65f49?alt=media&token=061dc40f-6a5b-4e10-bef4-d76fb03cd97a&apiKey=ba69a23156414a589de97341511272c9&width=1200",
+                      alt: "Smart Notifications feature - AI-powered scoring ranks tasks by priority with risk detection",
+                    })
+                  }
+                />
+              </div>
 
-            <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-purple-600" />
-                Smart Scheduling
-              </h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">
-                AI with confidence badges predicts optimal appointment slots
-              </p>
-              <p className="text-sm text-green-600 font-medium">
-                → ↓ 2.4pts no-show rate and improved throughput
-              </p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9"
-                className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
-                style={{
-                  aspectRatio: "1.42",
-                  minHeight: "20px",
-                  minWidth: "20px",
-                }}
-                alt="Smart Scheduling feature"
-                onClick={() =>
-                  setEnlargedImage({
-                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1200",
-                    alt: "Smart Scheduling feature - AI analyzes historical data to recommend optimal scheduling blocks",
-                  })
-                }
-              />
-            </div>
+              <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
+                  <TrendingUp className="w-5 h-5 text-purple-600" />
+                  Smart Scheduling
+                </h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">
+                  AI with confidence badges predicts optimal appointment slots
+                </p>
+                <p className="text-sm text-green-600 font-medium">
+                  → ↓ 2.4pts no-show rate and improved throughput
+                </p>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9"
+                  className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
+                  style={{
+                    aspectRatio: "1.42",
+                    minHeight: "20px",
+                    minWidth: "20px",
+                  }}
+                  alt="Smart Scheduling feature"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd3f21a158fd34a568584df8d9587ae0d?alt=media&token=e90724bf-45b5-4848-a37d-bb5206016426&apiKey=ba69a23156414a589de97341511272c9&width=1200",
+                      alt: "Smart Scheduling feature - AI analyzes historical data to recommend optimal scheduling blocks",
+                    })
+                  }
+                />
+              </div>
 
-            <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
-                <Shield className="w-5 h-5 text-orange-600" />
-                AI Inbox Triage
-              </h3>
-              <p className="text-[#9FA0A3] text-sm mb-3">
-                SLA + risk scoring with explainable AI recommendations
-              </p>
-              <p className="text-sm text-green-600 font-medium">
-                → ↓ 42% inbox triage time (2m15s → 1m18s)
-              </p>
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9"
-                className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
-                style={{
-                  aspectRatio: "1.57",
-                  minHeight: "20px",
-                  minWidth: "20px",
-                }}
-                alt="AI Inbox Triage feature"
-                onClick={() =>
-                  setEnlargedImage({
-                    src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1200",
-                    alt: "AI Inbox Triage feature - Auto-sorts patient communications by urgency, flagging critical follow-ups",
-                  })
-                }
-              />
+              <div className="bg-white rounded-[20px] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-lg font-medium text-[#131417] mb-3 transition-all duration-300 hover:text-blue-600 flex items-center gap-2">
+                  <Shield className="w-5 h-5 text-orange-600" />
+                  AI Inbox Triage
+                </h3>
+                <p className="text-[#9FA0A3] text-sm mb-3">
+                  SLA + risk scoring with explainable AI recommendations
+                </p>
+                <p className="text-sm text-green-600 font-medium">
+                  → ↓ 42% inbox triage time (2m15s → 1m18s)
+                </p>
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=100 100w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=200 200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=400 400w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=800 800w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1200 1200w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1600 1600w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=2000 2000w, https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9"
+                  className="w-full mt-5 object-cover object-center overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300"
+                  style={{
+                    aspectRatio: "1.57",
+                    minHeight: "20px",
+                    minWidth: "20px",
+                  }}
+                  alt="AI Inbox Triage feature"
+                  onClick={() =>
+                    setEnlargedImage({
+                      src: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb0713de322e84b419c4239c526783626?alt=media&token=4ad66451-dcaf-497b-8e8e-5703c19141b3&apiKey=ba69a23156414a589de97341511272c9&width=1200",
+                      alt: "AI Inbox Triage feature - Auto-sorts patient communications by urgency, flagging critical follow-ups",
+                    })
+                  }
+                />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
         )}
 
         {/* Validation & Impact */}
