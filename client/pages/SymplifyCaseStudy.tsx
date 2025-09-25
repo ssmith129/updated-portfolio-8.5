@@ -1681,7 +1681,8 @@ export default function SymplifyCaseStudy() {
         </section>
 
 
-        {/* Key Features */}
+        {/* Key Features (removed) */}
+        {false && (
         <section
           id="features"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900"
@@ -1813,6 +1814,7 @@ export default function SymplifyCaseStudy() {
             </div>
           </div>
         </section>
+        )}
 
         {/* Validation & Impact */}
         <section
