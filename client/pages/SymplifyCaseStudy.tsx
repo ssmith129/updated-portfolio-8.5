@@ -447,6 +447,53 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
+        {/* Project Overview & Objectives */}
+        <section
+          id="transformation"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900"
+        >
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
+              📌 Project Overview & Objectives
+            </h2>
+
+            <div className="space-y-8">
+              <div>
+                <p className="text-lg text-[#131417] leading-[150%] mb-6">
+                  Symplify was designed to modernize fragmented hospital and public health workflows into a {" "}
+                  <span className="font-semibold">single, AI-driven platform</span>.
+                  The initiative was a {" "}
+                  <span className="font-semibold">0 → 1 system redesign</span>, targeting inefficiencies in scheduling, communication, and compliance.
+                </p>
+              </div>
+
+              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
+                <h3 className="text-lg font-medium text-[#131417] mb-4">
+                  Business Objectives
+                </h3>
+                <ul className="space-y-2 text-[#131417]">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Reduce time spent on administrative workflows</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Improve compliance and reduce missed tasks</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Create trustable, explainable AI workflows</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Deliver a modular system extensible to state-level health programs</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Context & Stakes */}
         <section
           id="context"
@@ -597,111 +644,6 @@ export default function SymplifyCaseStudy() {
           </div>
         </section>
 
-        {/* Project Overview & Objectives */}
-        <section
-          id="transformation"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900"
-        >
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-lg transition-all duration-300">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-blue-600 cursor-pointer">
-              📌 Project Overview & Objectives
-            </h2>
-
-            <div className="space-y-8">
-              <div>
-                <p className="text-lg text-[#131417] leading-[150%] mb-6">
-                  Symplify was designed to modernize fragmented hospital and
-                  public health workflows into a{" "}
-                  <span className="font-semibold">
-                    single, AI-driven platform
-                  </span>
-                  . The initiative was a{" "}
-                  <span className="font-semibold">0 → 1 system redesign</span>,
-                  targeting inefficiencies in scheduling, communication, and
-                  compliance.
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                      Company
-                    </h3>
-                    <p className="text-lg font-medium text-[#131417]">
-                      Custom Data Processing Inc.
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                      Project Type
-                    </h3>
-                    <p className="text-lg font-medium text-[#131417]">
-                      B2B SaaS – Healthcare / EHR
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                      Role
-                    </h3>
-                    <p className="text-lg font-medium text-[#131417]">
-                      Founding Product Designer
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                      Team
-                    </h3>
-                    <p className="text-lg font-medium text-[#131417]">
-                      8 (PM, engineers, clinical SMEs, data analysts)
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                      Timeline
-                    </h3>
-                    <p className="text-lg font-medium text-[#131417]">
-                      Jan–Aug 2024
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                      Tools
-                    </h3>
-                    <p className="text-lg font-medium text-[#131417]">
-                      Figma, Notion, Jira, ChatGPT, Framer
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500">
-                <h3 className="text-lg font-medium text-[#131417] mb-4">
-                  Business Objectives
-                </h3>
-                <ul className="space-y-2 text-[#131417]">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    <span>Reduce time spent on administrative workflows</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    <span>Improve compliance and reduce missed tasks</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    <span>Create trustable, explainable AI workflows</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    <span>
-                      Deliver a modular system extensible to state-level health
-                      programs
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Problem Statement & Research */}
         <section
