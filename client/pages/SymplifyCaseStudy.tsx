@@ -460,10 +460,15 @@ export default function SymplifyCaseStudy() {
             <div className="space-y-8">
               <div>
                 <p className="text-lg text-[#131417] leading-[150%] mb-6">
-                  Symplify was designed to modernize fragmented hospital and public health workflows into a {" "}
-                  <span className="font-semibold">single, AI-driven platform</span>.
-                  The initiative was a {" "}
-                  <span className="font-semibold">0 → 1 system redesign</span>, targeting inefficiencies in scheduling, communication, and compliance.
+                  Symplify was designed to modernize fragmented hospital and
+                  public health workflows into a{" "}
+                  <span className="font-semibold">
+                    single, AI-driven platform
+                  </span>
+                  . The initiative was a{" "}
+                  <span className="font-semibold">0 → 1 system redesign</span>,
+                  targeting inefficiencies in scheduling, communication, and
+                  compliance.
                 </p>
               </div>
 
@@ -486,7 +491,10 @@ export default function SymplifyCaseStudy() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    <span>Deliver a modular system extensible to state-level health programs</span>
+                    <span>
+                      Deliver a modular system extensible to state-level health
+                      programs
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -643,7 +651,6 @@ export default function SymplifyCaseStudy() {
             </div>
           </div>
         </section>
-
 
         {/* Problem Statement & Research */}
         <section
