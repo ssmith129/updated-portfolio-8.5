@@ -134,18 +134,15 @@ export default function ComputisCaseStudy() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
         <div className="w-full flex flex-col items-center justify-center">
           <iframe
-            src="https://computis.netlify.app/"
-            width={1440}
-            height={1024}
+            width={1280}
+            height="auto"
+            src="https://www.youtube.com/embed/ZE8HRCe0Fgc?autoplay=1&loop=1&controls=0&playlist=ZE8HRCe0Fgc&mute=1"
+            title="YouTube video player"
             frameBorder={0}
-            style={{ border: 0 }}
-            title="Computis Platform Embed"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            style={{ aspectRatio: '16 / 9', width: 1280, height: 'auto', border: 'none' }}
           />
-          <br />
-          Brought to you by{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
-            Computis
-          </a>
         </div>
       </div>
 
