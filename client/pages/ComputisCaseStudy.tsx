@@ -131,7 +131,7 @@ export default function ComputisCaseStudy() {
       </header>
 
       {/* Hero Image */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
         <div className="w-full flex flex-col items-center justify-center">
           <img
             src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fca5f1ed80d3a4a83bf81019bd3fda6c6?alt=media&token=d02d7e5c-adfa-405d-8727-6ccfd2d2f394&apiKey=ba69a23156414a589de97341511272c9"
@@ -142,7 +142,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Summary Card */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8">
         <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
@@ -258,7 +258,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
+      <main className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
         {/* Executive Summary */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-md transition-all duration-300 mt-12">
