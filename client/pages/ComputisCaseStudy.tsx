@@ -135,8 +135,8 @@ export default function ComputisCaseStudy() {
         <div className="w-full flex flex-col items-center justify-center">
           <iframe
             src="https://computis.netlify.app/"
-            width={1920}
-            height={900}
+            width={1440}
+            height={1024}
             frameBorder={0}
             style={{ border: 0 }}
             title="Computis Platform Embed"
