@@ -133,15 +133,10 @@ export default function ComputisCaseStudy() {
       {/* Hero Image */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
         <div className="w-full flex flex-col items-center justify-center">
-          <iframe
-            width={1280}
-            height="auto"
-            src="https://www.youtube.com/embed/ZE8HRCe0Fgc?autoplay=1&loop=1&controls=0&playlist=ZE8HRCe0Fgc&mute=1"
-            title="YouTube video player"
-            frameBorder={0}
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            style={{ aspectRatio: '16 / 9', width: 1280, height: 'auto', border: 'none' }}
+          <img
+            src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fca5f1ed80d3a4a83bf81019bd3fda6c6?alt=media&token=d02d7e5c-adfa-405d-8727-6ccfd2d2f394&apiKey=ba69a23156414a589de97341511272c9"
+            alt="Computis Dashboard demo"
+            className="w-full max-w-[1280px] h-auto rounded-lg"
           />
         </div>
       </div>
