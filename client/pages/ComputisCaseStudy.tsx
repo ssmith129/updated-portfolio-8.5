@@ -115,7 +115,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <header className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+      <header className="max-w-[1400px] w-full mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
         <div className="mb-8">
           <span className="inline-block bg-[#f59e0b] text-white px-4 py-2 rounded-[20px] text-[14px] font-medium tracking-[-0.14px] mb-6">
             FinTech UX Case Study
@@ -136,9 +136,13 @@ export default function ComputisCaseStudy() {
           <img
             src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fca5f1ed80d3a4a83bf81019bd3fda6c6?alt=media&token=d02d7e5c-adfa-405d-8727-6ccfd2d2f394&apiKey=ba69a23156414a589de97341511272c9"
             alt="Computis Dashboard demo"
-            className="w-full max-w-[1280px] h-auto rounded-lg"
+            className="w-full max-w-[1280px] h-auto rounded-[10px]"
+            style={{ boxShadow: '1px 1px 3px 0 rgba(151, 151, 151, 0.3)', overflow: 'hidden', borderStyle: 'hidden', borderWidth: 1, margin: '20px 0' }}
           />
         </div>
+      </div>
+      <div className="flex flex-col relative mt-5 text-center text-[18px]">
+        <p>Computis Dashboard Demo</p>
       </div>
 
       {/* Summary Card */}
