@@ -173,7 +173,7 @@ export default function SymplifyCaseStudy() {
       </header>
 
       {/* Hero Image */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
         <button
           onClick={() => setIsPreviewOpen(true)}
           className="w-full aspect-[1.85] rounded-lg flex items-center justify-center border border-blue-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group"
@@ -197,7 +197,7 @@ export default function SymplifyCaseStudy() {
       </div>
 
       {/* Section Navigation - horizontal pills for quick access */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-6">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-6">
         <nav
           aria-label="Case study sections"
           className="flex items-center gap-2 md:gap-3 overflow-x-auto py-2"
@@ -229,7 +229,7 @@ export default function SymplifyCaseStudy() {
       </div>
 
       {/* Summary Card */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8">
         <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
