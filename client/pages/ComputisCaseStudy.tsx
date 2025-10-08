@@ -137,7 +137,13 @@ export default function ComputisCaseStudy() {
             src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fca5f1ed80d3a4a83bf81019bd3fda6c6?alt=media&token=d02d7e5c-adfa-405d-8727-6ccfd2d2f394&apiKey=ba69a23156414a589de97341511272c9"
             alt="Computis Dashboard demo"
             className="w-full max-w-[1280px] h-auto rounded-[10px]"
-            style={{ boxShadow: '1px 1px 3px 0 rgba(151, 151, 151, 0.3)', overflow: 'hidden', borderStyle: 'hidden', borderWidth: 1, margin: '20px 0' }}
+            style={{
+              boxShadow: "1px 1px 3px 0 rgba(151, 151, 151, 0.3)",
+              overflow: "hidden",
+              borderStyle: "hidden",
+              borderWidth: 1,
+              margin: "20px 0",
+            }}
           />
         </div>
       </div>
