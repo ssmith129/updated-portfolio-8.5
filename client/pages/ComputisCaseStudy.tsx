@@ -123,7 +123,7 @@ export default function ComputisCaseStudy() {
             FinTech UX Case Study
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#131417] leading-[110%] tracking-[-1.2px] mb-6">
-            🧠 Computis — Redefining Trust in Crypto Tax Automation
+            Computis — Redefining Trust in Crypto Tax Automation
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px]">
             Transforming an opaque backend script into an enterprise-grade, CPA-first AI SaaS platform
@@ -1061,7 +1061,7 @@ export default function ComputisCaseStudy() {
 
               <div className="bg-slate-100 rounded-[20px] p-6 border-l-4 border-slate-600 mt-8">
                 <blockquote className="text-xl italic text-[#131417] leading-[150%]">
-                  "Design isn't what it looks like �� it's how a CPA defends logic without an engineer in the room."
+                  "Design isn't what it looks like — it's how a CPA defends logic without an engineer in the room."
                 </blockquote>
               </div>
             </div>
