@@ -152,7 +152,7 @@ export default function ComputisCaseStudy() {
           href="https://computis.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#131417] underline text-base"
+          className="text-[#131417] underline text-[20px]"
         >
           View Live Prototype
         </a>
