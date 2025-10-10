@@ -126,7 +126,8 @@ export default function ComputisCaseStudy() {
             Computis — Redefining Trust in Crypto Tax Automation
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-none md:whitespace-nowrap">
-            Transforming an opaque backend script into an enterprise-grade, CPA-first AI SaaS platform
+            Transforming an opaque backend script into an enterprise-grade,
+            CPA-first AI SaaS platform
           </p>
         </div>
       </header>
@@ -247,7 +248,9 @@ export default function ComputisCaseStudy() {
                       </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-xl font-bold text-blue-600 mb-1">↑ 150%</p>
+                      <p className="text-xl font-bold text-blue-600 mb-1">
+                        ↑ 150%
+                      </p>
                       <p className="text-sm text-[#9FA0A3]">
                         anomaly detection coverage
                       </p>
@@ -260,7 +263,20 @@ export default function ComputisCaseStudy() {
                     🚀 Executive Overview
                   </h3>
                   <p className="text-base text-[#131417] leading-[150%]">
-                    In early 2023, Computis CPAs spent 85% of their time waiting for engineers to modify Python scripts for crypto transaction classification. There were <span className="font-medium">no audit trails</span>, <span className="font-medium">no explainability</span>, and <span className="font-medium">no autonomy</span> for professionals. By October 2023, CPAs could build custom classification rules in under 90 seconds without writing code. This transformation turned AI opacity into transparency—<span className="font-semibold">reframing trust as Computis's competitive moat</span>.
+                    In early 2023, Computis CPAs spent 85% of their time waiting
+                    for engineers to modify Python scripts for crypto
+                    transaction classification. There were{" "}
+                    <span className="font-medium">no audit trails</span>,{" "}
+                    <span className="font-medium">no explainability</span>, and{" "}
+                    <span className="font-medium">no autonomy</span> for
+                    professionals. By October 2023, CPAs could build custom
+                    classification rules in under 90 seconds without writing
+                    code. This transformation turned AI opacity into
+                    transparency—
+                    <span className="font-semibold">
+                      reframing trust as Computis's competitive moat
+                    </span>
+                    .
                   </p>
                 </div>
               </div>
@@ -299,7 +315,9 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Duration
                 </h3>
-                <p className="text-lg font-medium text-[#131417]">10 months (Discovery → Beta Launch)</p>
+                <p className="text-lg font-medium text-[#131417]">
+                  10 months (Discovery → Beta Launch)
+                </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
@@ -326,23 +344,33 @@ export default function ComputisCaseStudy() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">Enable CPAs to self-serve without engineers</span>
+                  <span className="text-[#131417]">
+                    Enable CPAs to self-serve without engineers
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">Build audit-ready workflows with transparency</span>
+                  <span className="text-[#131417]">
+                    Build audit-ready workflows with transparency
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">Reduce compliance risk through explainable AI</span>
+                  <span className="text-[#131417]">
+                    Reduce compliance risk through explainable AI
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">Generate IRS 8949 and QuickBooks outputs</span>
+                  <span className="text-[#131417]">
+                    Generate IRS 8949 and QuickBooks outputs
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">Scale for DAOs, hedge funds, and enterprise CPA firms</span>
+                  <span className="text-[#131417]">
+                    Scale for DAOs, hedge funds, and enterprise CPA firms
+                  </span>
                 </li>
               </ul>
             </div>
@@ -422,9 +450,12 @@ export default function ComputisCaseStudy() {
                 Problem
               </h3>
               <p className="text-lg text-red-700 mb-4">
-                CPAs faced opaque, engineer-dependent crypto classification tools that blocked scale and trust.
+                CPAs faced opaque, engineer-dependent crypto classification
+                tools that blocked scale and trust.
               </p>
-              <h4 className="text-lg font-semibold text-red-800 mb-3">Pain Points:</h4>
+              <h4 className="text-lg font-semibold text-red-800 mb-3">
+                Pain Points:
+              </h4>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3 text-red-700">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
@@ -455,7 +486,11 @@ export default function ComputisCaseStudy() {
                 Opportunity
               </h3>
               <p className="text-lg text-green-700 mb-4">
-                Build a <span className="font-semibold">CPA-first explainable AI platform</span> with audit trails, rule-building, and scalable transparency.
+                Build a{" "}
+                <span className="font-semibold">
+                  CPA-first explainable AI platform
+                </span>{" "}
+                with audit trails, rule-building, and scalable transparency.
               </p>
             </div>
 
@@ -504,7 +539,8 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Competitive teardown: TaxBit, Cryptio, CoinTracker, ZenLedger
+                      Competitive teardown: TaxBit, Cryptio, CoinTracker,
+                      ZenLedger
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -730,7 +766,11 @@ export default function ComputisCaseStudy() {
               <div>
                 <div className="bg-slate-100 rounded-[20px] p-6">
                   <p className="text-[#131417] leading-[150%]">
-                    I led IA restructuring to ensure <span className="font-semibold">scalable, modular architecture</span>, enabling easy jurisdiction and asset expansion.
+                    I led IA restructuring to ensure{" "}
+                    <span className="font-semibold">
+                      scalable, modular architecture
+                    </span>
+                    , enabling easy jurisdiction and asset expansion.
                   </p>
                 </div>
               </div>
@@ -756,16 +796,29 @@ export default function ComputisCaseStudy() {
                     </h3>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-sm font-semibold text-blue-800 mb-1">Challenge:</p>
-                        <p className="text-sm text-blue-700">CPAs distrusted automation.</p>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          CPAs distrusted automation.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-green-800 mb-1">Solution:</p>
-                        <p className="text-sm text-green-700">Confidence-level chips with hover rationale and one-click override.</p>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Confidence-level chips with hover rationale and
+                          one-click override.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-amber-800 mb-1">Impact:</p>
-                        <p className="text-sm text-amber-700">↓ 70% false positives; ↑ AI trust & adoption.</p>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          ↓ 70% false positives; ↑ AI trust & adoption.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -775,7 +828,9 @@ export default function ComputisCaseStudy() {
                     <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-blue-100 to-indigo-100 rounded-lg flex items-center justify-center">
                       <div className="text-center">
                         <Zap className="w-16 h-16 text-blue-400 mx-auto mb-3" />
-                        <p className="text-sm text-blue-600">📸 Placeholder: confidence-chips.webp (1280×760px)</p>
+                        <p className="text-sm text-blue-600">
+                          📸 Placeholder: confidence-chips.webp (1280×760px)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -792,16 +847,29 @@ export default function ComputisCaseStudy() {
                     </h3>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-sm font-semibold text-blue-800 mb-1">Challenge:</p>
-                        <p className="text-sm text-blue-700">No compliance visibility.</p>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          No compliance visibility.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-green-800 mb-1">Solution:</p>
-                        <p className="text-sm text-green-700">Persistent contextual audit trail.</p>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Persistent contextual audit trail.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-amber-800 mb-1">Impact:</p>
-                        <p className="text-sm text-amber-700">↓ 40% compliance tickets; enabled independent IRS audit defense.</p>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          ↓ 40% compliance tickets; enabled independent IRS
+                          audit defense.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -811,7 +879,10 @@ export default function ComputisCaseStudy() {
                     <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-green-100 to-emerald-100 rounded-lg flex items-center justify-center">
                       <div className="text-center">
                         <FileText className="w-16 h-16 text-green-400 mx-auto mb-3" />
-                        <p className="text-sm text-green-600">📸 Placeholder: audit-drawer.gif (1280×760px, autoplay)</p>
+                        <p className="text-sm text-green-600">
+                          📸 Placeholder: audit-drawer.gif (1280×760px,
+                          autoplay)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -828,16 +899,28 @@ export default function ComputisCaseStudy() {
                     </h3>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-sm font-semibold text-blue-800 mb-1">Challenge:</p>
-                        <p className="text-sm text-blue-700">CPA dependency on engineers.</p>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          CPA dependency on engineers.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-green-800 mb-1">Solution:</p>
-                        <p className="text-sm text-green-700">Drag-and-drop natural language builder with preview.</p>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Drag-and-drop natural language builder with preview.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-amber-800 mb-1">Impact:</p>
-                        <p className="text-sm text-amber-700">↓ 85% engineering reliance; ↑ 32% conversions.</p>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          ↓ 85% engineering reliance; ↑ 32% conversions.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -847,7 +930,9 @@ export default function ComputisCaseStudy() {
                     <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-purple-100 to-violet-100 rounded-lg flex items-center justify-center">
                       <div className="text-center">
                         <Settings className="w-16 h-16 text-purple-400 mx-auto mb-3" />
-                        <p className="text-sm text-purple-600">📸 Placeholder: rule-builder.webp (1280×760px)</p>
+                        <p className="text-sm text-purple-600">
+                          📸 Placeholder: rule-builder.webp (1280×760px)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -864,16 +949,28 @@ export default function ComputisCaseStudy() {
                     </h3>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-sm font-semibold text-blue-800 mb-1">Challenge:</p>
-                        <p className="text-sm text-blue-700">Hidden FMV errors.</p>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          Hidden FMV errors.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-green-800 mb-1">Solution:</p>
-                        <p className="text-sm text-green-700">Inline color-coded anomaly flags with hover tooltips.</p>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Inline color-coded anomaly flags with hover tooltips.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-amber-800 mb-1">Impact:</p>
-                        <p className="text-sm text-amber-700">↑ 150% anomaly detection; ↓ manual triage.</p>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          ↑ 150% anomaly detection; ↓ manual triage.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -883,7 +980,9 @@ export default function ComputisCaseStudy() {
                     <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center">
                       <div className="text-center">
                         <AlertTriangle className="w-16 h-16 text-orange-400 mx-auto mb-3" />
-                        <p className="text-sm text-orange-600">📸 Placeholder: anomaly-detection.webp (1280×760px)</p>
+                        <p className="text-sm text-orange-600">
+                          📸 Placeholder: anomaly-detection.webp (1280×760px)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -900,16 +999,28 @@ export default function ComputisCaseStudy() {
                     </h3>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-sm font-semibold text-blue-800 mb-1">Challenge:</p>
-                        <p className="text-sm text-blue-700">CPA firms manage multiple clients.</p>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          CPA firms manage multiple clients.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-green-800 mb-1">Solution:</p>
-                        <p className="text-sm text-green-700">Role-based multi-tenant dashboards.</p>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Role-based multi-tenant dashboards.
+                        </p>
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-amber-800 mb-1">Impact:</p>
-                        <p className="text-sm text-amber-700">Enabled 100+ portfolio management.</p>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          Enabled 100+ portfolio management.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -919,7 +1030,9 @@ export default function ComputisCaseStudy() {
                     <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-slate-100 to-gray-100 rounded-lg flex items-center justify-center">
                       <div className="text-center">
                         <Users className="w-16 h-16 text-slate-400 mx-auto mb-3" />
-                        <p className="text-sm text-slate-600">📸 Placeholder: multi-tenant-view.webp (1280×760px)</p>
+                        <p className="text-sm text-slate-600">
+                          📸 Placeholder: multi-tenant-view.webp (1280×760px)
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -942,7 +1055,8 @@ export default function ComputisCaseStudy() {
                 Conflict
               </h3>
               <p className="text-lg leading-[150%]">
-                CTO wanted full automation; CPAs demanded override control for liability protection.
+                CTO wanted full automation; CPAs demanded override control for
+                liability protection.
               </p>
             </div>
 
@@ -953,8 +1067,13 @@ export default function ComputisCaseStudy() {
               </h3>
               <ul className="text-sm text-gray-300 space-y-2">
                 <li>• Facilitated design workshop with CPA + CTO</li>
-                <li>• Presented competitor data (40% G2 "black-box" complaints)</li>
-                <li>• Proposed <em>graduated autonomy</em> system (High → Auto / Med → Review / Low → Manual)</li>
+                <li>
+                  • Presented competitor data (40% G2 "black-box" complaints)
+                </li>
+                <li>
+                  • Proposed <em>graduated autonomy</em> system (High → Auto /
+                  Med → Review / Low → Manual)
+                </li>
               </ul>
             </div>
 
@@ -994,23 +1113,33 @@ export default function ComputisCaseStudy() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-gray-200 transition-all duration-300 hover:bg-white/60 hover:px-3 hover:rounded-lg cursor-pointer">
-                  <span className="text-[#9FA0A3] font-medium">Onboarding Time</span>
+                  <span className="text-[#9FA0A3] font-medium">
+                    Onboarding Time
+                  </span>
                   <span className="font-bold text-green-600">↓ 45%</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200 transition-all duration-300 hover:bg-white/60 hover:px-3 hover:rounded-lg cursor-pointer">
-                  <span className="text-[#9FA0A3] font-medium">Demo Conversion</span>
+                  <span className="text-[#9FA0A3] font-medium">
+                    Demo Conversion
+                  </span>
                   <span className="font-bold text-amber-600">↑ 32%</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200 transition-all duration-300 hover:bg-white/60 hover:px-3 hover:rounded-lg cursor-pointer">
-                  <span className="text-[#9FA0A3] font-medium">Engineering Reliance</span>
+                  <span className="text-[#9FA0A3] font-medium">
+                    Engineering Reliance
+                  </span>
                   <span className="font-bold text-purple-600">↓ 85%</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200 transition-all duration-300 hover:bg-white/60 hover:px-3 hover:rounded-lg cursor-pointer">
-                  <span className="text-[#9FA0A3] font-medium">Anomaly Detection</span>
+                  <span className="text-[#9FA0A3] font-medium">
+                    Anomaly Detection
+                  </span>
                   <span className="font-bold text-blue-600">↑ 150%</span>
                 </div>
                 <div className="flex justify-between items-center py-3 transition-all duration-300 hover:bg-white/60 hover:px-3 hover:rounded-lg cursor-pointer">
-                  <span className="text-[#9FA0A3] font-medium">Compliance Tickets</span>
+                  <span className="text-[#9FA0A3] font-medium">
+                    Compliance Tickets
+                  </span>
                   <span className="font-bold text-green-600">↓ 40%</span>
                 </div>
               </div>
@@ -1037,31 +1166,42 @@ export default function ComputisCaseStudy() {
             <div className="space-y-6">
               <div className="bg-amber-50 rounded-[20px] p-6 border-l-4 border-amber-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                 <p className="text-[#131417] leading-[150%]">
-                  <span className="font-semibold">Trust is a design currency</span> — Explainability drives adoption.
+                  <span className="font-semibold">
+                    Trust is a design currency
+                  </span>{" "}
+                  — Explainability drives adoption.
                 </p>
               </div>
 
               <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                 <p className="text-[#131417] leading-[150%]">
-                  <span className="font-semibold">System design &gt; screens</span> — Scalable IA reduces technical debt.
+                  <span className="font-semibold">
+                    System design &gt; screens
+                  </span>{" "}
+                  — Scalable IA reduces technical debt.
                 </p>
               </div>
 
               <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                 <p className="text-[#131417] leading-[150%]">
-                  <span className="font-semibold">Data storytelling wins alignment</span> — Numbers change minds.
+                  <span className="font-semibold">
+                    Data storytelling wins alignment
+                  </span>{" "}
+                  — Numbers change minds.
                 </p>
               </div>
 
               <div className="bg-purple-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                 <p className="text-[#131417] leading-[150%]">
-                  <span className="font-semibold">Transparency is a moat</span> — It became Computis's sales differentiator.
+                  <span className="font-semibold">Transparency is a moat</span>{" "}
+                  — It became Computis's sales differentiator.
                 </p>
               </div>
 
               <div className="bg-slate-100 rounded-[20px] p-6 border-l-4 border-slate-600 mt-8">
                 <blockquote className="text-xl italic text-[#131417] leading-[150%]">
-                  "Design isn't what it looks like — it's how a CPA defends logic without an engineer in the room."
+                  "Design isn't what it looks like — it's how a CPA defends
+                  logic without an engineer in the room."
                 </blockquote>
               </div>
             </div>
