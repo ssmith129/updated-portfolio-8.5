@@ -148,7 +148,12 @@ export default function ComputisCaseStudy() {
         </div>
       </div>
       <div className="flex flex-col relative mt-5 text-center text-[20px]">
-        <a href="https://computis.netlify.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2 rounded-[25px] bg-[#9013fe] text-white hover:bg-[#7a0fd1] transition-all duration-300 hover:scale-105">
+        <a
+          href="https://computis.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-5 py-2 rounded-[25px] bg-[#9013fe] text-white hover:bg-[#7a0fd1] transition-all duration-300 hover:scale-105"
+        >
           <span>View Live Prototype</span>
         </a>
       </div>
