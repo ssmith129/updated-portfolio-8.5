@@ -32,6 +32,7 @@ import {
   Dialog,
   DialogContent,
   DialogOverlay,
+  DialogTitle,
 } from "@/components/ui/dialog";
 
 // Custom hook for counting animation
@@ -1298,6 +1299,9 @@ export default function ComputisCaseStudy() {
           className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
           aria-describedby="gif-modal-description"
         >
+          <DialogTitle className="sr-only">
+            AI Confidence Chips + Accept/Reject Controls Demo
+          </DialogTitle>
           <div className="relative">
             <img
               src="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
@@ -1321,6 +1325,9 @@ export default function ComputisCaseStudy() {
           className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
           aria-describedby="audit-drawer-modal-description"
         >
+          <DialogTitle className="sr-only">
+            Inline Audit Trail Drawer Demo
+          </DialogTitle>
           <div className="relative">
             <img
               src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Inline%20Audit%20Drawer.gif"
