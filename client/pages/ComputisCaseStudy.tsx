@@ -825,14 +825,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-blue-100">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-blue-100 to-indigo-100 rounded-lg flex items-center justify-center">
-                      <div className="text-center">
-                        <Zap className="w-16 h-16 text-blue-400 mx-auto mb-3" />
-                        <p className="text-sm text-blue-600">
-                          📸 Placeholder: confidence-chips.webp (1280×760px)
-                        </p>
-                      </div>
-                    </div>
+                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-blue-100 to-indigo-100 rounded-lg flex items-center justify-center" />
                   </div>
                 </div>
               </div>
@@ -876,15 +869,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-green-100">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-green-100 to-emerald-100 rounded-lg flex items-center justify-center">
-                      <div className="text-center">
-                        <FileText className="w-16 h-16 text-green-400 mx-auto mb-3" />
-                        <p className="text-sm text-green-600">
-                          📸 Placeholder: audit-drawer.gif (1280×760px,
-                          autoplay)
-                        </p>
-                      </div>
-                    </div>
+                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-green-100 to-emerald-100 rounded-lg flex items-center justify-center" />
                   </div>
                 </div>
               </div>
@@ -919,7 +904,7 @@ export default function ComputisCaseStudy() {
                           Impact:
                         </p>
                         <p className="text-sm text-amber-700">
-                          ↓ 85% engineering reliance; ↑ 32% conversions.
+                          ↓ 85% engineering reliance; �� 32% conversions.
                         </p>
                       </div>
                     </div>
@@ -927,14 +912,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-purple-100">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-purple-100 to-violet-100 rounded-lg flex items-center justify-center">
-                      <div className="text-center">
-                        <Settings className="w-16 h-16 text-purple-400 mx-auto mb-3" />
-                        <p className="text-sm text-purple-600">
-                          📸 Placeholder: rule-builder.webp (1280×760px)
-                        </p>
-                      </div>
-                    </div>
+                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-purple-100 to-violet-100 rounded-lg flex items-center justify-center" />
                   </div>
                 </div>
               </div>
@@ -977,14 +955,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-orange-100">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center">
-                      <div className="text-center">
-                        <AlertTriangle className="w-16 h-16 text-orange-400 mx-auto mb-3" />
-                        <p className="text-sm text-orange-600">
-                          📸 Placeholder: anomaly-detection.webp (1280×760px)
-                        </p>
-                      </div>
-                    </div>
+                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center" />
                   </div>
                 </div>
               </div>
@@ -1027,14 +998,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-slate-100">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-slate-100 to-gray-100 rounded-lg flex items-center justify-center">
-                      <div className="text-center">
-                        <Users className="w-16 h-16 text-slate-400 mx-auto mb-3" />
-                        <p className="text-sm text-slate-600">
-                          📸 Placeholder: multi-tenant-view.webp (1280×760px)
-                        </p>
-                      </div>
-                    </div>
+                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-slate-100 to-gray-100 rounded-lg flex items-center justify-center" />
                   </div>
                 </div>
               </div>
