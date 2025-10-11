@@ -825,7 +825,17 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-blue-100">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-blue-100 to-indigo-100 rounded-lg flex items-center justify-center" />
+                    <div
+                      className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-blue-100 to-indigo-100 rounded-lg flex items-center justify-center"
+                      style={{
+                        backgroundImage: window.innerWidth <= 640
+                          ? 'url(https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2Fefc8526ee9b647488e056d26ab7f7b1a)'
+                          : undefined,
+                        backgroundRepeat: window.innerWidth <= 640 ? 'no-repeat' : undefined,
+                        backgroundPosition: window.innerWidth <= 640 ? 'center' : undefined,
+                        backgroundSize: window.innerWidth <= 640 ? 'cover' : undefined,
+                      }}
+                    />
                   </div>
                 </div>
               </div>
@@ -912,7 +922,17 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-purple-100">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-purple-100 to-violet-100 rounded-lg flex items-center justify-center" />
+                    <div
+                      className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-purple-100 to-violet-100 rounded-lg flex items-center justify-center"
+                      style={{
+                        backgroundImage: window.innerWidth <= 640
+                          ? 'url(https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2Fefc8526ee9b647488e056d26ab7f7b1a)'
+                          : undefined,
+                        backgroundRepeat: window.innerWidth <= 640 ? 'no-repeat' : undefined,
+                        backgroundPosition: window.innerWidth <= 640 ? 'center' : undefined,
+                        backgroundSize: window.innerWidth <= 640 ? 'cover' : undefined,
+                      }}
+                    />
                   </div>
                 </div>
               </div>
