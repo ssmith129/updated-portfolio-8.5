@@ -170,4 +170,14 @@
       transition-duration: 0.01ms !important;
     }
   }
+
+  /* Mobile GIF background for design decision sections */
+  @media (max-width: 640px) {
+    .mobile-gif-bg {
+      background-image: url(https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2Fefc8526ee9b647488e056d26ab7f7b1a) !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      background-size: cover !important;
+    }
+  }
 }
