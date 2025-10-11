@@ -1441,6 +1441,32 @@ export default function ComputisCaseStudy() {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* Multi-Tenant Architecture Modal Dialog */}
+      <Dialog open={isMultiTenantModalOpen} onOpenChange={setIsMultiTenantModalOpen}>
+        <DialogContent
+          className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
+          aria-describedby="multi-tenant-modal-description"
+        >
+          <DialogTitle className="sr-only">
+            Multi-Tenant Architecture Demo
+          </DialogTitle>
+          <div className="relative">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Client%20Based%20Roles.gif"
+              alt="Multi-Tenant Architecture - Full Size Demo"
+              className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
+              style={{
+                maxWidth: 'min(1440px, 95vw)',
+                maxHeight: 'min(904px, 95vh)',
+              }}
+            />
+            <span id="multi-tenant-modal-description" className="sr-only">
+              Full size demonstration of Multi-Tenant Architecture interface. Press Escape or click outside to close.
+            </span>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
