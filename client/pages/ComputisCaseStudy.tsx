@@ -823,9 +823,14 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-blue-100">
+                <div className="bg-white/60 rounded-[12px] border border-blue-100 self-center flex-none">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] rounded-lg flex items-center justify-center" />
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
+                      srcSet="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=100 100w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=200 200w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=400 400w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=800 800w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=1200 1200w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=1600 1600w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=2000 2000w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center"
+                    />
                   </div>
                 </div>
               </div>
@@ -1047,7 +1052,7 @@ export default function ComputisCaseStudy() {
                 Outcome
               </h3>
               <ul className="text-sm text-gray-300 space-y-2">
-                <li>• CTO aligned after market positioning demo</li>
+                <li>�� CTO aligned after market positioning demo</li>
                 <li>• Override control became a product differentiator</li>
                 <li>• Closed enterprise client deal after demo</li>
               </ul>
