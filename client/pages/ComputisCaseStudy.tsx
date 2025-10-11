@@ -103,6 +103,7 @@ export default function ComputisCaseStudy() {
   const [isGifModalOpen, setIsGifModalOpen] = useState(false);
   const [isAuditDrawerModalOpen, setIsAuditDrawerModalOpen] = useState(false);
   const [isRuleBuilderModalOpen, setIsRuleBuilderModalOpen] = useState(false);
+  const [isAnomalyDetectionModalOpen, setIsAnomalyDetectionModalOpen] = useState(false);
 
   // Use the new animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
@@ -1005,9 +1006,23 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-orange-100">
+                <div className="bg-white/60 rounded-[12px] border border-orange-100 self-center flex-none">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center" />
+                    <img
+                      loading="lazy"
+                      src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Data%20Anomaly%20Detection.gif"
+                      alt="Contextual Anomaly Detection demo"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setIsAnomalyDetectionModalOpen(true)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          setIsAnomalyDetectionModalOpen(true);
+                        }
+                      }}
+                    />
                   </div>
                 </div>
               </div>
