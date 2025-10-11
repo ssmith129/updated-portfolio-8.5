@@ -1400,6 +1400,32 @@ export default function ComputisCaseStudy() {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* Contextual Anomaly Detection Modal Dialog */}
+      <Dialog open={isAnomalyDetectionModalOpen} onOpenChange={setIsAnomalyDetectionModalOpen}>
+        <DialogContent
+          className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
+          aria-describedby="anomaly-detection-modal-description"
+        >
+          <DialogTitle className="sr-only">
+            Contextual Anomaly Detection Demo
+          </DialogTitle>
+          <div className="relative">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Data%20Anomaly%20Detection.gif"
+              alt="Contextual Anomaly Detection - Full Size Demo"
+              className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
+              style={{
+                maxWidth: 'min(1440px, 95vw)',
+                maxHeight: 'min(904px, 95vh)',
+              }}
+            />
+            <span id="anomaly-detection-modal-description" className="sr-only">
+              Full size demonstration of Contextual Anomaly Detection interface. Press Escape or click outside to close.
+            </span>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
