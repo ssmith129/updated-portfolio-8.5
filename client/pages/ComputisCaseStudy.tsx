@@ -148,7 +148,7 @@ export default function ComputisCaseStudy() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
         <div className="w-full flex flex-col items-center justify-center">
           <img
-            src="https://raw.githubusercontent.com/ssmith129/portfolio-website/f62f2bfae44de69648d93b6eaa1dd261c6463950/public/Dashboard.gif"
+            src="https://raw.githubusercontent.com/ssmith129/portfolio-website/f00556f27fc2ebd7151cac07d0c167922f7421e8/public/Dashboard.gif"
             alt="Computis Dashboard demo"
             className="w-full max-w-[1280px] h-auto rounded-[12px]"
             style={{
