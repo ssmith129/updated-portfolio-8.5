@@ -636,7 +636,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div>
                   <h3 className="text-xl font-medium text-[#131417] mb-1">
-                    David — CPA
+                    David �� CPA
                   </h3>
                   <p className="text-sm text-[#9FA0A3]">15+ years experience</p>
                 </div>
@@ -1276,6 +1276,29 @@ export default function ComputisCaseStudy() {
           </div>
         </div>
       )}
+
+      {/* GIF Modal Dialog */}
+      <Dialog open={isGifModalOpen} onOpenChange={setIsGifModalOpen}>
+        <DialogContent
+          className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
+          aria-describedby="gif-modal-description"
+        >
+          <div className="relative">
+            <img
+              src="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
+              alt="AI Confidence Chips + Accept/Reject Controls - Full Size Demo"
+              className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
+              style={{
+                maxWidth: 'min(1440px, 95vw)',
+                maxHeight: 'min(904px, 95vh)',
+              }}
+            />
+            <span id="gif-modal-description" className="sr-only">
+              Full size demonstration of AI Confidence Chips and Accept/Reject Controls interface. Press Escape or click outside to close.
+            </span>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
