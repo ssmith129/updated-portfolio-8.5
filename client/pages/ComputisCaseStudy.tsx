@@ -147,7 +147,7 @@ export default function ComputisCaseStudy() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
         <div className="w-full flex flex-col items-center justify-center">
           <img
-            src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fca5f1ed80d3a4a83bf81019bd3fda6c6?alt=media&token=d02d7e5c-adfa-405d-8727-6ccfd2d2f394&apiKey=ba69a23156414a589de97341511272c9"
+            src="https://raw.githubusercontent.com/ssmith129/portfolio-website/080f30c1bd9f0cf4da986a434a8881f482fac4e1/public/Dashboard.gif"
             alt="Computis Dashboard demo"
             className="w-full max-w-[1280px] h-auto rounded-[10px]"
             style={{
@@ -327,7 +327,7 @@ export default function ComputisCaseStudy() {
                   Duration
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  10 months (Discovery → Beta Launch)
+                  10 months (Discovery ��� Beta Launch)
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -1162,7 +1162,7 @@ export default function ComputisCaseStudy() {
                   <span className="text-[#9FA0A3] font-medium">
                     Onboarding Time
                   </span>
-                  <span className="font-bold text-green-600">↓ 45%</span>
+                  <span className="font-bold text-green-600">�� 45%</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-gray-200 transition-all duration-300 hover:bg-white/60 hover:px-3 hover:rounded-lg cursor-pointer">
                   <span className="text-[#9FA0A3] font-medium">
