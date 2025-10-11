@@ -99,6 +99,7 @@ export default function ComputisCaseStudy() {
   } | null>(null);
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+  const [isGifModalOpen, setIsGifModalOpen] = useState(false);
 
   // Use the new animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
@@ -834,7 +835,17 @@ export default function ComputisCaseStudy() {
                       loading="lazy"
                       src="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
                       srcSet="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=100 100w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=200 200w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=400 400w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=800 800w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=1200 1200w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=1600 1600w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=2000 2000w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
-                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setIsGifModalOpen(true)}
+                      alt="AI Confidence Chips + Accept/Reject Controls demo"
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          setIsGifModalOpen(true);
+                        }
+                      }}
                     />
                   </div>
                 </div>
@@ -914,7 +925,7 @@ export default function ComputisCaseStudy() {
                           Impact:
                         </p>
                         <p className="text-sm text-amber-700">
-                          ↓ 85% engineering reliance; �� 32% conversions.
+                          ↓ 85% engineering reliance; ��� 32% conversions.
                         </p>
                       </div>
                     </div>
