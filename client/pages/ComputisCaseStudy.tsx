@@ -102,6 +102,7 @@ export default function ComputisCaseStudy() {
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [isGifModalOpen, setIsGifModalOpen] = useState(false);
   const [isAuditDrawerModalOpen, setIsAuditDrawerModalOpen] = useState(false);
+  const [isRuleBuilderModalOpen, setIsRuleBuilderModalOpen] = useState(false);
 
   // Use the new animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
@@ -947,9 +948,23 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-purple-100">
+                <div className="bg-white/60 rounded-[12px] border border-purple-100 self-center flex-none">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] rounded-lg flex items-center justify-center" />
+                    <img
+                      loading="lazy"
+                      src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Rule%20Builder.gif"
+                      alt="Visual Rule Builder (No-Code) demo"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setIsRuleBuilderModalOpen(true)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          setIsRuleBuilderModalOpen(true);
+                        }
+                      }}
+                    />
                   </div>
                 </div>
               </div>
