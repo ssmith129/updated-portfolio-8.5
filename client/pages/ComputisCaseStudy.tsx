@@ -104,6 +104,7 @@ export default function ComputisCaseStudy() {
   const [isAuditDrawerModalOpen, setIsAuditDrawerModalOpen] = useState(false);
   const [isRuleBuilderModalOpen, setIsRuleBuilderModalOpen] = useState(false);
   const [isAnomalyDetectionModalOpen, setIsAnomalyDetectionModalOpen] = useState(false);
+  const [isMultiTenantModalOpen, setIsMultiTenantModalOpen] = useState(false);
 
   // Use the new animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
@@ -222,7 +223,7 @@ export default function ComputisCaseStudy() {
                         Duration
                       </p>
                       <p className="text-base font-medium text-[#131417]">
-                        10 months (Discovery → Beta Launch)
+                        10 months (Discovery �� Beta Launch)
                       </p>
                     </div>
                   </div>
@@ -1063,9 +1064,23 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-slate-100">
+                <div className="bg-white/60 rounded-[12px] border border-slate-100 self-center flex-none">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-slate-100 to-gray-100 rounded-lg flex items-center justify-center" />
+                    <img
+                      loading="lazy"
+                      src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Client%20Based%20Roles.gif"
+                      alt="Multi-Tenant Architecture demo"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setIsMultiTenantModalOpen(true)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          setIsMultiTenantModalOpen(true);
+                        }
+                      }}
+                    />
                   </div>
                 </div>
               </div>
