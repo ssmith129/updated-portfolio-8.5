@@ -912,7 +912,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-white/60 rounded-[12px] p-4 mt-4 border border-purple-100">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
-                    <div className="w-full max-w-[1280px] aspect-[1280/760] bg-gradient-to-br from-purple-100 to-violet-100 rounded-lg flex items-center justify-center mobile-gif-bg" />
+                    <div className="w-full max-w-[1280px] aspect-[1280/760] rounded-lg flex items-center justify-center mobile-gif-bg" />
                   </div>
                 </div>
               </div>
