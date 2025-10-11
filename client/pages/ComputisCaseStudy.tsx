@@ -103,7 +103,8 @@ export default function ComputisCaseStudy() {
   const [isGifModalOpen, setIsGifModalOpen] = useState(false);
   const [isAuditDrawerModalOpen, setIsAuditDrawerModalOpen] = useState(false);
   const [isRuleBuilderModalOpen, setIsRuleBuilderModalOpen] = useState(false);
-  const [isAnomalyDetectionModalOpen, setIsAnomalyDetectionModalOpen] = useState(false);
+  const [isAnomalyDetectionModalOpen, setIsAnomalyDetectionModalOpen] =
+    useState(false);
   const [isMultiTenantModalOpen, setIsMultiTenantModalOpen] = useState(false);
 
   // Use the new animation hook for metrics animation
@@ -847,7 +848,7 @@ export default function ComputisCaseStudy() {
                       role="button"
                       tabIndex={0}
                       onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
+                        if (e.key === "Enter" || e.key === " ") {
                           e.preventDefault();
                           setIsGifModalOpen(true);
                         }
@@ -905,7 +906,7 @@ export default function ComputisCaseStudy() {
                       role="button"
                       tabIndex={0}
                       onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
+                        if (e.key === "Enter" || e.key === " ") {
                           e.preventDefault();
                           setIsAuditDrawerModalOpen(true);
                         }
@@ -962,7 +963,7 @@ export default function ComputisCaseStudy() {
                       role="button"
                       tabIndex={0}
                       onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
+                        if (e.key === "Enter" || e.key === " ") {
                           e.preventDefault();
                           setIsRuleBuilderModalOpen(true);
                         }
@@ -1019,7 +1020,7 @@ export default function ComputisCaseStudy() {
                       role="button"
                       tabIndex={0}
                       onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
+                        if (e.key === "Enter" || e.key === " ") {
                           e.preventDefault();
                           setIsAnomalyDetectionModalOpen(true);
                         }
@@ -1076,7 +1077,7 @@ export default function ComputisCaseStudy() {
                       role="button"
                       tabIndex={0}
                       onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
+                        if (e.key === "Enter" || e.key === " ") {
                           e.preventDefault();
                           setIsMultiTenantModalOpen(true);
                         }
@@ -1354,19 +1355,23 @@ export default function ComputisCaseStudy() {
               alt="AI Confidence Chips + Accept/Reject Controls - Full Size Demo"
               className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
               style={{
-                maxWidth: 'min(1440px, 95vw)',
-                maxHeight: 'min(904px, 95vh)',
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
               }}
             />
             <span id="gif-modal-description" className="sr-only">
-              Full size demonstration of AI Confidence Chips and Accept/Reject Controls interface. Press Escape or click outside to close.
+              Full size demonstration of AI Confidence Chips and Accept/Reject
+              Controls interface. Press Escape or click outside to close.
             </span>
           </div>
         </DialogContent>
       </Dialog>
 
       {/* Inline Audit Trail Drawer Modal Dialog */}
-      <Dialog open={isAuditDrawerModalOpen} onOpenChange={setIsAuditDrawerModalOpen}>
+      <Dialog
+        open={isAuditDrawerModalOpen}
+        onOpenChange={setIsAuditDrawerModalOpen}
+      >
         <DialogContent
           className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
           aria-describedby="audit-drawer-modal-description"
@@ -1380,19 +1385,23 @@ export default function ComputisCaseStudy() {
               alt="Inline Audit Trail Drawer - Full Size Demo"
               className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
               style={{
-                maxWidth: 'min(1440px, 95vw)',
-                maxHeight: 'min(904px, 95vh)',
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
               }}
             />
             <span id="audit-drawer-modal-description" className="sr-only">
-              Full size demonstration of Inline Audit Trail Drawer interface. Press Escape or click outside to close.
+              Full size demonstration of Inline Audit Trail Drawer interface.
+              Press Escape or click outside to close.
             </span>
           </div>
         </DialogContent>
       </Dialog>
 
       {/* Visual Rule Builder Modal Dialog */}
-      <Dialog open={isRuleBuilderModalOpen} onOpenChange={setIsRuleBuilderModalOpen}>
+      <Dialog
+        open={isRuleBuilderModalOpen}
+        onOpenChange={setIsRuleBuilderModalOpen}
+      >
         <DialogContent
           className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
           aria-describedby="rule-builder-modal-description"
@@ -1406,19 +1415,23 @@ export default function ComputisCaseStudy() {
               alt="Visual Rule Builder (No-Code) - Full Size Demo"
               className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
               style={{
-                maxWidth: 'min(1440px, 95vw)',
-                maxHeight: 'min(904px, 95vh)',
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
               }}
             />
             <span id="rule-builder-modal-description" className="sr-only">
-              Full size demonstration of Visual Rule Builder (No-Code) interface. Press Escape or click outside to close.
+              Full size demonstration of Visual Rule Builder (No-Code)
+              interface. Press Escape or click outside to close.
             </span>
           </div>
         </DialogContent>
       </Dialog>
 
       {/* Contextual Anomaly Detection Modal Dialog */}
-      <Dialog open={isAnomalyDetectionModalOpen} onOpenChange={setIsAnomalyDetectionModalOpen}>
+      <Dialog
+        open={isAnomalyDetectionModalOpen}
+        onOpenChange={setIsAnomalyDetectionModalOpen}
+      >
         <DialogContent
           className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
           aria-describedby="anomaly-detection-modal-description"
@@ -1432,19 +1445,23 @@ export default function ComputisCaseStudy() {
               alt="Contextual Anomaly Detection - Full Size Demo"
               className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
               style={{
-                maxWidth: 'min(1440px, 95vw)',
-                maxHeight: 'min(904px, 95vh)',
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
               }}
             />
             <span id="anomaly-detection-modal-description" className="sr-only">
-              Full size demonstration of Contextual Anomaly Detection interface. Press Escape or click outside to close.
+              Full size demonstration of Contextual Anomaly Detection interface.
+              Press Escape or click outside to close.
             </span>
           </div>
         </DialogContent>
       </Dialog>
 
       {/* Multi-Tenant Architecture Modal Dialog */}
-      <Dialog open={isMultiTenantModalOpen} onOpenChange={setIsMultiTenantModalOpen}>
+      <Dialog
+        open={isMultiTenantModalOpen}
+        onOpenChange={setIsMultiTenantModalOpen}
+      >
         <DialogContent
           className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
           aria-describedby="multi-tenant-modal-description"
@@ -1458,12 +1475,13 @@ export default function ComputisCaseStudy() {
               alt="Multi-Tenant Architecture - Full Size Demo"
               className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
               style={{
-                maxWidth: 'min(1440px, 95vw)',
-                maxHeight: 'min(904px, 95vh)',
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
               }}
             />
             <span id="multi-tenant-modal-description" className="sr-only">
-              Full size demonstration of Multi-Tenant Architecture interface. Press Escape or click outside to close.
+              Full size demonstration of Multi-Tenant Architecture interface.
+              Press Escape or click outside to close.
             </span>
           </div>
         </DialogContent>
