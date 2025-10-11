@@ -147,15 +147,16 @@ export default function ComputisCaseStudy() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
         <div className="w-full flex flex-col items-center justify-center">
           <img
-            src="https://raw.githubusercontent.com/ssmith129/portfolio-website/080f30c1bd9f0cf4da986a434a8881f482fac4e1/public/Dashboard.gif"
+            src="https://raw.githubusercontent.com/ssmith129/portfolio-website/f62f2bfae44de69648d93b6eaa1dd261c6463950/public/Dashboard.gif"
             alt="Computis Dashboard demo"
-            className="w-full max-w-[1280px] h-auto rounded-[10px]"
+            className="w-full max-w-[1280px] h-auto rounded-[12px]"
             style={{
               boxShadow: "1px 1px 3px 0 rgba(151, 151, 151, 0.3)",
               overflow: "hidden",
               borderStyle: "hidden",
               borderWidth: 1,
               margin: "20px 0",
+              backgroundColor: "#ffffff",
             }}
           />
         </div>
@@ -165,7 +166,7 @@ export default function ComputisCaseStudy() {
           href="https://computis.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#131417] underline text-[20px]"
+          className="text-[#131417] font-semibold underline text-[20px]"
         >
           View Live Prototype
         </a>
