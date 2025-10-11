@@ -1314,6 +1314,29 @@ export default function ComputisCaseStudy() {
           </div>
         </DialogContent>
       </Dialog>
+
+      {/* Inline Audit Trail Drawer Modal Dialog */}
+      <Dialog open={isAuditDrawerModalOpen} onOpenChange={setIsAuditDrawerModalOpen}>
+        <DialogContent
+          className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
+          aria-describedby="audit-drawer-modal-description"
+        >
+          <div className="relative">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Inline%20Audit%20Drawer.gif"
+              alt="Inline Audit Trail Drawer - Full Size Demo"
+              className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
+              style={{
+                maxWidth: 'min(1440px, 95vw)',
+                maxHeight: 'min(904px, 95vh)',
+              }}
+            />
+            <span id="audit-drawer-modal-description" className="sr-only">
+              Full size demonstration of Inline Audit Trail Drawer interface. Press Escape or click outside to close.
+            </span>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
