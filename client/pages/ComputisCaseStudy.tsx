@@ -729,7 +729,25 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
             <div className="mb-8">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
+
+              {/* Design System Creation */}
+              <div className="bg-gradient-to-br from-slate-50 to-gray-50 rounded-[20px] p-6 border border-slate-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">🎨</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                      Design System Creation
+                    </h3>
+                    <p className="text-sm text-slate-800">
+                      Built comprehensive component library with dark theme
+                      optimized for extended professional use
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
                 Information Architecture
               </h3>
               <div className="bg-gradient-to-r from-slate-50 to-slate-100 rounded-[20px] p-6 border border-slate-200">
