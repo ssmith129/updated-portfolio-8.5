@@ -506,7 +506,6 @@ export default function ComputisCaseStudy() {
                 with audit trails, rule-building, and scalable transparency.
               </p>
             </div>
-
           </div>
         </section>
 
@@ -1210,34 +1209,49 @@ export default function ComputisCaseStudy() {
                 <blockquote className="text-base italic text-blue-800">
                   "First crypto tax tool actually designed for accountants."
                 </blockquote>
-                <cite className="text-sm text-blue-600 not-italic mt-2 block">— CPA Client</cite>
+                <cite className="text-sm text-blue-600 not-italic mt-2 block">
+                  — CPA Client
+                </cite>
               </div>
               <div className="bg-amber-50 rounded-[16px] p-5 border-l-4 border-amber-500">
                 <blockquote className="text-base italic text-amber-800">
-                  "Your handoffs made us 10x faster. Edge case docs were incredible."
+                  "Your handoffs made us 10x faster. Edge case docs were
+                  incredible."
                 </blockquote>
-                <cite className="text-sm text-amber-600 not-italic mt-2 block">— Engineering Lead</cite>
+                <cite className="text-sm text-amber-600 not-italic mt-2 block">
+                  — Engineering Lead
+                </cite>
               </div>
             </div>
 
             <div className="bg-gradient-to-r from-slate-50 to-gray-50 rounded-[20px] p-6 border border-slate-200">
-              <h3 className="text-lg font-semibold text-[#131417] mb-4">Business Impact</h3>
+              <h3 className="text-lg font-semibold text-[#131417] mb-4">
+                Business Impact
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-[#131417]">3 enterprise deals in 6 months</span>
+                  <span className="text-sm text-[#131417]">
+                    3 enterprise deals in 6 months
+                  </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-[#131417]">Scaled to DAOs & hedge funds</span>
+                  <span className="text-sm text-[#131417]">
+                    Scaled to DAOs & hedge funds
+                  </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-[#131417]">Reduced support overhead</span>
+                  <span className="text-sm text-[#131417]">
+                    Reduced support overhead
+                  </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-[#131417]">Improved retention via transparency</span>
+                  <span className="text-sm text-[#131417]">
+                    Improved retention via transparency
+                  </span>
                 </div>
               </div>
             </div>
@@ -1255,7 +1269,9 @@ export default function ComputisCaseStudy() {
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
                 <div className="flex items-center gap-3 mb-4">
                   <FileText className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                  <h3 className="text-lg font-semibold text-blue-900">Documentation</h3>
+                  <h3 className="text-lg font-semibold text-blue-900">
+                    Documentation
+                  </h3>
                 </div>
                 <ul className="space-y-2 text-sm text-blue-800">
                   <li>• Annotated Figma files</li>
@@ -1267,7 +1283,9 @@ export default function ComputisCaseStudy() {
               <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
                 <div className="flex items-center gap-3 mb-4">
                   <Shield className="w-6 h-6 text-green-600 flex-shrink-0" />
-                  <h3 className="text-lg font-semibold text-green-900">Quality Assurance</h3>
+                  <h3 className="text-lg font-semibold text-green-900">
+                    Quality Assurance
+                  </h3>
                 </div>
                 <ul className="space-y-2 text-sm text-green-800">
                   <li>• QA test scenarios</li>
@@ -1279,7 +1297,9 @@ export default function ComputisCaseStudy() {
               <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-[20px] p-6 border border-purple-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
                 <div className="flex items-center gap-3 mb-4">
                   <Users className="w-6 h-6 text-purple-600 flex-shrink-0" />
-                  <h3 className="text-lg font-semibold text-purple-900">Knowledge Transfer</h3>
+                  <h3 className="text-lg font-semibold text-purple-900">
+                    Knowledge Transfer
+                  </h3>
                 </div>
                 <ul className="space-y-2 text-sm text-purple-800">
                   <li>• Loom walkthroughs</li>
@@ -1300,23 +1320,43 @@ export default function ComputisCaseStudy() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
-                <h3 className="text-lg font-bold text-blue-900 mb-3">Trust is a UX Principle</h3>
-                <p className="text-sm text-blue-800">Explainability drove adoption more than feature quantity. Transparency converted skeptics into advocates.</p>
+                <h3 className="text-lg font-bold text-blue-900 mb-3">
+                  Trust is a UX Principle
+                </h3>
+                <p className="text-sm text-blue-800">
+                  Explainability drove adoption more than feature quantity.
+                  Transparency converted skeptics into advocates.
+                </p>
               </div>
 
               <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
-                <h3 className="text-lg font-bold text-purple-900 mb-3">Systems &gt; Screens</h3>
-                <p className="text-sm text-purple-800">Modular IA enabled scaling. Role-based architecture future-proofed for growth.</p>
+                <h3 className="text-lg font-bold text-purple-900 mb-3">
+                  Systems &gt; Screens
+                </h3>
+                <p className="text-sm text-purple-800">
+                  Modular IA enabled scaling. Role-based architecture
+                  future-proofed for growth.
+                </p>
               </div>
 
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
-                <h3 className="text-lg font-bold text-green-900 mb-3">AI + Human Collaboration</h3>
-                <p className="text-sm text-green-800">Override control flipped AI from threat to tool. Confidence indicators enabled informed decisions.</p>
+                <h3 className="text-lg font-bold text-green-900 mb-3">
+                  AI + Human Collaboration
+                </h3>
+                <p className="text-sm text-green-800">
+                  Override control flipped AI from threat to tool. Confidence
+                  indicators enabled informed decisions.
+                </p>
               </div>
 
               <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-[20px] p-6 border-l-4 border-amber-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
-                <h3 className="text-lg font-bold text-amber-900 mb-3">Design Drives Business</h3>
-                <p className="text-sm text-amber-800">Self-service features reduced costs. Audit trails closed enterprise deals and differentiated from competitors.</p>
+                <h3 className="text-lg font-bold text-amber-900 mb-3">
+                  Design Drives Business
+                </h3>
+                <p className="text-sm text-amber-800">
+                  Self-service features reduced costs. Audit trails closed
+                  enterprise deals and differentiated from competitors.
+                </p>
               </div>
             </div>
           </div>
