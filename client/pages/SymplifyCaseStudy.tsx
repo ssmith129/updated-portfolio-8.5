@@ -519,7 +519,7 @@ export default function SymplifyCaseStudy() {
                   <span className="font-semibold">
                     fragmented, outdated systems
                   </span>{" "}
-                  �� leading to missed appointments, compliance gaps, and staff
+                  — leading to missed appointments, compliance gaps, and staff
                   burnout.
                 </p>
               </div>
