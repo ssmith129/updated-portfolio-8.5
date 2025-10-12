@@ -1251,135 +1251,41 @@ export default function ComputisCaseStudy() {
               🤝 Collaboration & Handoff
             </h2>
 
-            <div className="mb-8">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Design-to-Development Process
-              </h3>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <div className="flex items-start gap-3 mb-4">
-                    <FileText className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <h4 className="text-lg font-semibold text-blue-900 mb-3">
-                        Documentation
-                      </h4>
-                      <ul className="space-y-2 text-sm text-blue-800">
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>
-                            Annotated Figma files with interaction states and
-                            edge cases
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>
-                            Component library with prop specifications
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Responsive breakpoint guidelines</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Accessibility requirements checklist</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-4">
+                  <FileText className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-blue-900">Documentation</h3>
                 </div>
+                <ul className="space-y-2 text-sm text-blue-800">
+                  <li>• Annotated Figma files</li>
+                  <li>• Component library specs</li>
+                  <li>• Accessibility checklist</li>
+                </ul>
+              </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <div className="flex items-start gap-3 mb-4">
-                    <Shield className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <h4 className="text-lg font-semibold text-green-900 mb-3">
-                        Quality Assurance
-                      </h4>
-                      <ul className="space-y-2 text-sm text-green-800">
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>
-                            QA test scenarios for audit trail workflows
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>
-                            Accessibility validation using Axe and manual
-                            testing
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>
-                            Cross-browser compatibility testing matrix
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>
-                            Performance benchmarks for large dataset views
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-4">
+                  <Shield className="w-6 h-6 text-green-600 flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-green-900">Quality Assurance</h3>
                 </div>
+                <ul className="space-y-2 text-sm text-green-800">
+                  <li>• QA test scenarios</li>
+                  <li>• Accessibility validation</li>
+                  <li>• Performance benchmarks</li>
+                </ul>
+              </div>
 
-                <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-[20px] p-6 border border-purple-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <div className="flex items-start gap-3 mb-4">
-                    <Users className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <h4 className="text-lg font-semibold text-purple-900 mb-3">
-                        Knowledge Transfer
-                      </h4>
-                      <ul className="space-y-2 text-sm text-purple-800">
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>
-                            Loom walkthrough videos for complex interaction
-                            patterns
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>
-                            Async Slack threads for edge case discussions
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Weekly design-dev sync for alignment</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>
-                            User story acceptance criteria with visual
-                            references
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+              <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-[20px] p-6 border border-purple-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-4">
+                  <Users className="w-6 h-6 text-purple-600 flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-purple-900">Knowledge Transfer</h3>
                 </div>
-
-                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-[20px] p-6 border border-amber-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <div className="flex items-start gap-3">
-                    <Zap className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <h4 className="text-lg font-semibold text-amber-900 mb-3">
-                        Engineering Feedback
-                      </h4>
-                      <blockquote className="text-base italic text-amber-800 leading-[150%]">
-                        "Your handoffs made us 10x faster. The edge case
-                        documentation was incredible."
-                      </blockquote>
-                    </div>
-                  </div>
-                </div>
+                <ul className="space-y-2 text-sm text-purple-800">
+                  <li>• Loom walkthroughs</li>
+                  <li>• Weekly design-dev syncs</li>
+                  <li>• Visual acceptance criteria</li>
+                </ul>
               </div>
             </div>
           </div>
