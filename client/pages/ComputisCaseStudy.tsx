@@ -695,9 +695,39 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              System Architecture
+
+              {/* Rapid Prototyping */}
+              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-[20px] p-6 border border-amber-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">⚡</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-amber-900 mb-2">
+                      Rapid Prototyping
+                    </h3>
+                    <p className="text-sm text-amber-800">
+                      Iterated from sketches → wireframes → interactive
+                      prototypes with continuous CPA validation
+                    </p>
+                  </div>
+                </div>
+              </div>
             </h2>
 
+              {/* Accessibility-First Design */}
+              <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-[20px] p-6 border border-pink-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">♿</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-pink-900 mb-2">
+                      Accessibility-First Design
+                    </h3>
+                    <p className="text-sm text-pink-800">
+                      Applied WCAG 2.1 AA standards from initial wireframes
+                      through final implementation
+                    </p>
+                  </div>
+                </div>
+              </div>
             <div className="mb-8">
               <h3 className="text-xl font-medium text-[#131417] mb-6">
                 Information Architecture
