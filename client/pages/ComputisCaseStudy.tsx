@@ -1445,13 +1445,13 @@ export default function ComputisCaseStudy() {
 
         {/* Design Philosophy */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2400">
-          <div className="bg-gradient-to-br from-[#131417] to-slate-800 text-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-8">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
               💭 Design Philosophy
             </h2>
 
-            <div className="bg-white/10 rounded-[20px] p-8 mb-6 backdrop-blur-sm">
-              <blockquote className="text-xl italic leading-[150%] mb-4">
+            <div className="bg-gradient-to-r from-slate-50 to-gray-50 rounded-[20px] p-8 mb-6 border border-slate-200">
+              <blockquote className="text-xl italic text-slate-800 leading-[150%] mb-4">
                 "Design isn't what it looks like — it's whether a CPA can
                 explain a tax report to a regulator without an engineer in the
                 room."
@@ -1459,38 +1459,38 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="mt-8">
-              <h3 className="text-xl font-medium mb-6">Core Tenets</h3>
+              <h3 className="text-xl font-medium text-[#131417] mb-6">Core Tenets</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
-                  <h4 className="font-semibold text-lg mb-2">
+                <div className="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-[20px] p-6 border-l-4 border-indigo-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                  <h4 className="font-semibold text-lg text-indigo-900 mb-2">
                     Transparency over Efficiency
                   </h4>
-                  <p className="text-sm text-gray-300">
+                  <p className="text-sm text-indigo-800">
                     Speed matters, but professional defensibility matters more
                   </p>
                 </div>
-                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
-                  <h4 className="font-semibold text-lg mb-2">
+                <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                  <h4 className="font-semibold text-lg text-purple-900 mb-2">
                     Augmentation over Automation
                   </h4>
-                  <p className="text-sm text-gray-300">
+                  <p className="text-sm text-purple-800">
                     AI should empower expertise, not replace judgment
                   </p>
                 </div>
-                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
-                  <h4 className="font-semibold text-lg mb-2">
+                <div className="bg-gradient-to-r from-teal-50 to-emerald-50 rounded-[20px] p-6 border-l-4 border-teal-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                  <h4 className="font-semibold text-lg text-teal-900 mb-2">
                     Systems over Surfaces
                   </h4>
-                  <p className="text-sm text-gray-300">
+                  <p className="text-sm text-teal-800">
                     Beautiful interfaces fail without sound information
                     architecture
                   </p>
                 </div>
-                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
-                  <h4 className="font-semibold text-lg mb-2">
+                <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-[20px] p-6 border-l-4 border-amber-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                  <h4 className="font-semibold text-lg text-amber-900 mb-2">
                     Trust through Control
                   </h4>
-                  <p className="text-sm text-gray-300">
+                  <p className="text-sm text-amber-800">
                     Professionals need agency, not just accuracy
                   </p>
                 </div>
