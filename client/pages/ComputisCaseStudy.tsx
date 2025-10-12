@@ -645,6 +645,22 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* User Journey Mapping */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">🗺️</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-blue-900 mb-2">
+                      User Journey Mapping
+                    </h3>
+                    <p className="text-sm text-blue-800">
+                      Documented complete workflows for CPA, Ops Analyst, and
+                      Admin personas across client lifecycle
+                    </p>
+                  </div>
+                </div>
+              </div>
         {/* System Architecture */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
