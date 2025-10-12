@@ -1,15 +1,18 @@
 # 🔧 Vercel Deployment Error Fix
 
 ## Error Encountered
+
 ```
 Error: Build "src" is "index.html" but expected "package.json" or "build.sh"
 WARN! Due to `builds` existing in your configuration file...
 ```
 
 ## Root Cause
+
 Vercel is using cached or legacy build configuration instead of the updated `vercel.json`.
 
 ## ✅ Fixed Files
+
 - [x] Updated `vercel.json` with modern configuration
 - [x] Removed legacy `routes` configuration
 - [x] Added explicit `version: 2` and `installCommand`
@@ -67,6 +70,7 @@ Vercel is using cached or legacy build configuration instead of the updated `ver
 Go to: Project Settings → General → Build & Development Settings
 
 **Required Settings:**
+
 ```
 Framework Preset:       Other (or blank)
 Build Command:          npm run build:vercel
@@ -76,6 +80,7 @@ Node.js Version:        20.x (or 18.x)
 ```
 
 **Environment Variables (if needed):**
+
 ```
 PING_MESSAGE = ping
 ```
@@ -83,11 +88,13 @@ PING_MESSAGE = ping
 ## 🔍 Verify Configuration
 
 ### 1. Check vercel.json (Local)
+
 ```bash
 cat vercel.json | grep -E "buildCommand|outputDirectory|version"
 ```
 
 Expected output:
+
 ```json
 "version": 2,
 "buildCommand": "npm run build:vercel",
@@ -95,11 +102,13 @@ Expected output:
 ```
 
 ### 2. Test Build Locally
+
 ```bash
 npm run build:vercel
 ```
 
 Should output:
+
 ```
 ✓ built in X.XXs
 dist/spa/index.html
@@ -107,7 +116,9 @@ dist/spa/assets/...
 ```
 
 ### 3. Verify Deployment
+
 After redeploying, check:
+
 - [ ] Build completes successfully
 - [ ] No "builds" warnings
 - [ ] Site loads at deployment URL
@@ -118,6 +129,7 @@ After redeploying, check:
 ### Still Getting "builds" Warning?
 
 **Solution A: Manual Override**
+
 1. Vercel Dashboard → Settings
 2. Look for "Override" or "Custom Configuration" toggle
 3. Enable and set explicitly:
@@ -125,6 +137,7 @@ After redeploying, check:
    - Output Directory: `dist/spa`
 
 **Solution B: Use Vercel CLI**
+
 ```bash
 # Delete .vercel folder
 rm -rf .vercel
@@ -134,6 +147,7 @@ vercel --prod
 ```
 
 **Solution C: Check for Hidden Configs**
+
 ```bash
 # Search for any legacy configs
 find . -name "vercel.json" -o -name "now.json"
@@ -143,6 +157,7 @@ cat .vercelignore 2>/dev/null || echo "No .vercelignore"
 ### Build Succeeds but Site Blank?
 
 Check rewrites in vercel.json:
+
 ```json
 "rewrites": [
   {
@@ -155,6 +170,7 @@ Check rewrites in vercel.json:
 ### API Routes 404?
 
 Ensure functions in `api/` directory:
+
 ```bash
 ls -la api/
 # Should show: demo.ts, ping.ts
