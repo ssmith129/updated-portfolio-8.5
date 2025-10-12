@@ -329,7 +329,7 @@ export default function ComputisCaseStudy() {
                   Duration
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  10 months (Discovery ��� Beta Launch)
+                  10 months (Discovery ����� Beta Launch)
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -1298,161 +1298,25 @@ export default function ComputisCaseStudy() {
               Key Learnings
             </h2>
 
-            <div className="space-y-6">
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl font-bold text-blue-600">1.</span>
-                  <div>
-                    <h3 className="text-lg font-bold text-blue-900 mb-2">
-                      Trust is a UX Principle
-                    </h3>
-                    <ul className="space-y-1 text-sm text-blue-800">
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Explainability drove adoption more than feature
-                          quantity
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Transparency converted skeptics into advocates
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Control mechanisms reduced perceived AI risk
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-blue-900 mb-3">Trust is a UX Principle</h3>
+                <p className="text-sm text-blue-800">Explainability drove adoption more than feature quantity. Transparency converted skeptics into advocates.</p>
               </div>
 
-              <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl font-bold text-purple-600">2.</span>
-                  <div>
-                    <h3 className="text-lg font-bold text-purple-900 mb-2">
-                      Systems Thinking &gt; Screen Design
-                    </h3>
-                    <ul className="space-y-1 text-sm text-purple-800">
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Modular IA enabled scaling to new market segments
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Role-based architecture future-proofed for growth
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Audit trail foundation unlocked regulatory compliance
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-purple-900 mb-3">Systems &gt; Screens</h3>
+                <p className="text-sm text-purple-800">Modular IA enabled scaling. Role-based architecture future-proofed for growth.</p>
               </div>
 
-              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl font-bold text-green-600">3.</span>
-                  <div>
-                    <h3 className="text-lg font-bold text-green-900 mb-2">
-                      AI + Human Collaboration Model
-                    </h3>
-                    <ul className="space-y-1 text-sm text-green-800">
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Override control flipped AI from threat to tool
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Confidence indicators enabled informed decisions
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Rationale transparency built professional trust
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-green-900 mb-3">AI + Human Collaboration</h3>
+                <p className="text-sm text-green-800">Override control flipped AI from threat to tool. Confidence indicators enabled informed decisions.</p>
               </div>
 
-              <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-[20px] p-6 border-l-4 border-amber-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl font-bold text-amber-600">4.</span>
-                  <div>
-                    <h3 className="text-lg font-bold text-amber-900 mb-2">
-                      Design Choices Drive Business Metrics
-                    </h3>
-                    <ul className="space-y-1 text-sm text-amber-800">
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Self-service features directly reduced support costs
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Audit trail capabilities closed enterprise deals
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          CPA-first positioning differentiated in crowded market
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-[20px] p-6 border-l-4 border-pink-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-4">
-                  <span className="text-2xl font-bold text-pink-600">5.</span>
-                  <div>
-                    <h3 className="text-lg font-bold text-pink-900 mb-2">
-                      Accessibility Benefits All Users
-                    </h3>
-                    <ul className="space-y-1 text-sm text-pink-800">
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Keyboard navigation improved power user efficiency
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          Clear hierarchy reduced cognitive load universally
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>
-                          WCAG compliance became competitive advantage
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-[20px] p-6 border-l-4 border-amber-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-amber-900 mb-3">Design Drives Business</h3>
+                <p className="text-sm text-amber-800">Self-service features reduced costs. Audit trails closed enterprise deals and differentiated from competitors.</p>
               </div>
             </div>
           </div>
