@@ -1178,168 +1178,68 @@ export default function ComputisCaseStudy() {
               📈 Outcomes & Impact
             </h2>
 
-            <div className="mb-8">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Quantitative Results
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-green-600 mb-2">
-                    ↓ 45%
-                  </p>
-                  <p className="text-sm text-green-800 font-medium">
-                    onboarding time
-                  </p>
-                  <p className="text-xs text-green-700 mt-1">
-                    (2.5h → 1.4h) through intuitive workflows
-                  </p>
-                </div>
-                <div className="bg-gradient-to-r from-amber-50 to-amber-100 rounded-[20px] p-6 border border-amber-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-amber-600 mb-2">
-                    ↑ 32%
-                  </p>
-                  <p className="text-sm text-amber-800 font-medium">
-                    demo-to-conversion rate
-                  </p>
-                  <p className="text-xs text-amber-700 mt-1">
-                    by demonstrating CPA-first value
-                  </p>
-                </div>
-                <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-[20px] p-6 border border-purple-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-purple-600 mb-2">
-                    ↓ 85%
-                  </p>
-                  <p className="text-sm text-purple-800 font-medium">
-                    engineering dependency
-                  </p>
-                  <p className="text-xs text-purple-700 mt-1">
-                    for classification rule changes
-                  </p>
-                </div>
-                <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-blue-600 mb-2">
-                    ↑ 150%
-                  </p>
-                  <p className="text-sm text-blue-800 font-medium">
-                    anomaly detection coverage
-                  </p>
-                  <p className="text-xs text-blue-700 mt-1">
-                    preventing filing errors
-                  </p>
-                </div>
-                <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-[20px] p-6 border border-teal-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-teal-600 mb-2">↓ 40%</p>
-                  <p className="text-sm text-teal-800 font-medium">
-                    compliance support tickets
-                  </p>
-                  <p className="text-xs text-teal-700 mt-1">
-                    through self-service audit trails
-                  </p>
-                </div>
-                <div className="bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-[20px] p-6 border border-emerald-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-emerald-600 mb-2">
-                    Zero
-                  </p>
-                  <p className="text-sm text-emerald-800 font-medium">
-                    client disputes
-                  </p>
-                  <p className="text-xs text-emerald-700 mt-1">
-                    related to FMV reconciliation errors post-launch
-                  </p>
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-[16px] p-4 border border-green-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-green-600 mb-1">↓45%</p>
+                <p className="text-xs text-green-800">CPA onboarding</p>
+              </div>
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-[16px] p-4 border border-amber-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-amber-600 mb-1">↑32%</p>
+                <p className="text-xs text-amber-800">conversion rate</p>
+              </div>
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-[16px] p-4 border border-purple-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-purple-600 mb-1">↓85%</p>
+                <p className="text-xs text-purple-800">eng dependency</p>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-[16px] p-4 border border-blue-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-blue-600 mb-1">↑150%</p>
+                <p className="text-xs text-blue-800">anomaly detection</p>
+              </div>
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-[16px] p-4 border border-teal-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-teal-600 mb-1">↓40%</p>
+                <p className="text-xs text-teal-800">support tickets</p>
+              </div>
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-[16px] p-4 border border-emerald-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-emerald-600 mb-1">Zero</p>
+                <p className="text-xs text-emerald-800">FMV disputes</p>
               </div>
             </div>
 
-            <div className="mb-8">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Qualitative Results
-              </h3>
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
-                  <blockquote className="text-lg italic text-blue-800 leading-[150%]">
-                    "First crypto tax tool actually designed for accountants."
-                  </blockquote>
-                  <cite className="text-sm text-blue-600 not-italic mt-2 block">
-                    — CPA Client
-                  </cite>
-                </div>
-                <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
-                  <blockquote className="text-lg italic text-green-800 leading-[150%]">
-                    "Clients trust our process now because we can show them
-                    exactly how we classified everything."
-                  </blockquote>
-                  <cite className="text-sm text-green-600 not-italic mt-2 block">
-                    — BD Lead
-                  </cite>
-                </div>
-                <div className="bg-purple-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
-                  <blockquote className="text-lg italic text-purple-800 leading-[150%]">
-                    "I feel in control with AI suggestions instead of overruled
-                    by them."
-                  </blockquote>
-                  <cite className="text-sm text-purple-600 not-italic mt-2 block">
-                    — Tax Analyst
-                  </cite>
-                </div>
-                <div className="bg-amber-50 rounded-[20px] p-6 border-l-4 border-amber-500 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
-                  <blockquote className="text-lg italic text-amber-800 leading-[150%]">
-                    "Your handoffs made us 10x faster. The edge case
-                    documentation was incredible."
-                  </blockquote>
-                  <cite className="text-sm text-amber-600 not-italic mt-2 block">
-                    — Engineering Lead
-                  </cite>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <div className="bg-blue-50 rounded-[16px] p-5 border-l-4 border-blue-500">
+                <blockquote className="text-base italic text-blue-800">
+                  "First crypto tax tool actually designed for accountants."
+                </blockquote>
+                <cite className="text-sm text-blue-600 not-italic mt-2 block">— CPA Client</cite>
+              </div>
+              <div className="bg-amber-50 rounded-[16px] p-5 border-l-4 border-amber-500">
+                <blockquote className="text-base italic text-amber-800">
+                  "Your handoffs made us 10x faster. Edge case docs were incredible."
+                </blockquote>
+                <cite className="text-sm text-amber-600 not-italic mt-2 block">— Engineering Lead</cite>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-slate-50 to-gray-50 rounded-[20px] p-8 border border-slate-200">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Business Outcomes
-              </h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">
-                    <span className="font-semibold">
-                      Closed 3 enterprise CPA firm deals
-                    </span>{" "}
-                    in first 6 months post-launch
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">
-                    <span className="font-semibold">
-                      Reduced customer success overhead
-                    </span>{" "}
-                    through self-service capabilities
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">
-                    <span className="font-semibold">
-                      Differentiated from competitors
-                    </span>{" "}
-                    in pitch meetings with explainable AI demos
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">
-                    <span className="font-semibold">Enabled scaling</span> to
-                    DAO and hedge fund market segments
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]">
-                    <span className="font-semibold">Improved retention</span>{" "}
-                    through trust-building transparency features
-                  </span>
-                </li>
-              </ul>
+            <div className="bg-gradient-to-r from-slate-50 to-gray-50 rounded-[20px] p-6 border border-slate-200">
+              <h3 className="text-lg font-semibold text-[#131417] mb-4">Business Impact</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#131417]">3 enterprise deals in 6 months</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#131417]">Scaled to DAOs & hedge funds</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#131417]">Reduced support overhead</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#131417]">Improved retention via transparency</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
