@@ -225,7 +225,7 @@ export default function ComputisCaseStudy() {
                         Duration
                       </p>
                       <p className="text-base font-medium text-[#131417]">
-                        10 months (Discovery �� Beta Launch)
+                        10 months (Discovery → Beta Launch)
                       </p>
                     </div>
                   </div>
@@ -329,7 +329,7 @@ export default function ComputisCaseStudy() {
                   Duration
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  10 months (Discovery ����� Beta Launch)
+                  10 months (Discovery → Beta Launch)
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -968,7 +968,7 @@ export default function ComputisCaseStudy() {
                           Impact:
                         </p>
                         <p className="text-sm text-amber-700">
-                          ↓ 85% engineering reliance; ��� 32% conversions.
+                          ↓ 85% engineering reliance; ↑ 32% conversions.
                         </p>
                       </div>
                     </div>
@@ -1153,7 +1153,7 @@ export default function ComputisCaseStudy() {
                 Outcome
               </h3>
               <ul className="text-sm text-gray-300 space-y-2">
-                <li>�� CTO aligned after market positioning demo</li>
+                <li>• CTO aligned after market positioning demo</li>
                 <li>• Override control became a product differentiator</li>
                 <li>• Closed enterprise client deal after demo</li>
               </ul>
