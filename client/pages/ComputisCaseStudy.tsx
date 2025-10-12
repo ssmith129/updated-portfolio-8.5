@@ -507,20 +507,6 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <div className="bg-amber-50 rounded-[20px] p-6 border-l-4 border-amber-500">
-              <h3 className="text-xl font-bold text-[#131417] mb-4 flex items-center gap-2">
-                <Lightbulb className="w-5 h-5 text-amber-600" />
-                Guiding Principle
-              </h3>
-              <blockquote className="text-lg text-[#131417] leading-[150%] mb-2">
-                <span className="font-semibold text-xl">
-                  Transparency &gt; Automation.
-                </span>
-              </blockquote>
-              <p className="text-[#131417]">
-                Automation should support—not replace—human expertise.
-              </p>
-            </div>
           </div>
         </section>
 
