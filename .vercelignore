@@ -1,0 +1,46 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+*.log
+
+# Development
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs (except dist/spa which is needed)
+server
+netlify
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+!README.md
+
+# Config files not needed in production
+.prettierrc
+.prettierignore
+tsconfig.json
+vite.config.ts
+vite.config.server.ts
+tailwind.config.ts
+postcss.config.js
