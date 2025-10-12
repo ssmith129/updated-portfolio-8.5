@@ -24,6 +24,7 @@ Error: Build "src" is "index.html" but expected "package.json" or "build.sh"
 2. **Scroll to "Build & Development Settings"**
 
 3. **CRITICAL: Override these settings manually:**
+
    ```
    Framework Preset:     Other
    Build Command:        npm run build:vercel
@@ -46,7 +47,7 @@ Error: Build "src" is "index.html" but expected "package.json" or "build.sh"
 
 3. **If found:** Remove or clear the `builds` array
 
-4. **If you see:** 
+4. **If you see:**
    ```json
    {
      "builds": [
@@ -86,6 +87,7 @@ If the above doesn't work, try forcing via environment variables:
 After redeploying, the build log should show:
 
 ✅ **Correct Output:**
+
 ```
 Running "vercel build"
 Detected package.json
@@ -97,6 +99,7 @@ Build Completed
 ```
 
 ❌ **Wrong Output (means still using cached config):**
+
 ```
 WARN! Due to 'builds' existing...
 Error: Build "src" is "index.html"...
@@ -121,7 +124,7 @@ Error: Build "src" is "index.html"...
    - **IMPORTANT:** When configuring, set:
      ```
      Framework:       Other
-     Build Command:   npm run build:vercel  
+     Build Command:   npm run build:vercel
      Output Dir:      dist/spa
      Install Command: npm install
      ```
@@ -132,11 +135,13 @@ Error: Build "src" is "index.html"...
 ## 📋 Checklist
 
 Before you start:
+
 - [ ] Committed latest changes to GitHub
 - [ ] Have access to Vercel Dashboard
 - [ ] Know your environment variables (backup)
 
 Dashboard fixes:
+
 - [ ] Opened Vercel project settings
 - [ ] Set Build Command: `npm run build:vercel`
 - [ ] Set Output Directory: `dist/spa`
@@ -146,6 +151,7 @@ Dashboard fixes:
 - [ ] Redeployed with "Clear Build Cache" checked
 
 Verification:
+
 - [ ] No "builds" warning in build logs
 - [ ] Build command shows: `npm run build:vercel`
 - [ ] Build completes successfully
@@ -187,15 +193,15 @@ If you've tried everything:
 **Why This Happens:**
 
 1. **Legacy Format (v1/v2):** Used `builds` array
+
    ```json
    {
-     "builds": [
-       { "src": "index.html", "use": "@vercel/static" }
-     ]
+     "builds": [{ "src": "index.html", "use": "@vercel/static" }]
    }
    ```
 
 2. **Modern Format:** Uses top-level build settings
+
    ```json
    {
      "buildCommand": "npm run build:vercel",
