@@ -21,11 +21,19 @@ import {
   FileText,
   Search,
   Settings,
+  Lightbulb,
+  AlertTriangle,
 } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
+import {
+  Dialog,
+  DialogContent,
+  DialogOverlay,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 // Custom hook for counting animation
 const useCountAnimation = (
@@ -92,6 +100,12 @@ export default function ComputisCaseStudy() {
   } | null>(null);
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+  const [isGifModalOpen, setIsGifModalOpen] = useState(false);
+  const [isAuditDrawerModalOpen, setIsAuditDrawerModalOpen] = useState(false);
+  const [isRuleBuilderModalOpen, setIsRuleBuilderModalOpen] = useState(false);
+  const [isAnomalyDetectionModalOpen, setIsAnomalyDetectionModalOpen] =
+    useState(false);
+  const [isMultiTenantModalOpen, setIsMultiTenantModalOpen] = useState(false);
 
   // Use the new animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
@@ -103,7 +117,7 @@ export default function ComputisCaseStudy() {
       <Navigation />
 
       {/* Back Button */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-[18px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.18px] hover:text-[#131417] transition-all duration-300 hover:scale-105 group"
@@ -115,44 +129,52 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <header className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+      <header className="max-w-[1400px] w-full mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
         <div className="mb-8">
           <span className="inline-block bg-[#f59e0b] text-white px-4 py-2 rounded-[20px] text-[14px] font-medium tracking-[-0.14px] mb-6">
             FinTech UX Case Study
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#131417] leading-[110%] tracking-[-1.2px] mb-6">
-            Computis – Crypto Tax Engine
+            Computis — Redefining Trust in Crypto Tax Automation
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-[800px]">
-            Transforming a backend script into an enterprise-grade, CPA-first
-            SaaS platform
+          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#9FA0A3] leading-[140%] tracking-[-0.24px] max-w-none md:whitespace-nowrap">
+            Transforming an opaque backend script into an enterprise-grade,
+            CPA-first AI SaaS platform
           </p>
         </div>
       </header>
 
       {/* Hero Image */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
-        <button
-          onClick={() => setIsPreviewOpen(true)}
-          className="w-full aspect-[1.85] bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg flex items-center justify-center border border-amber-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.01] cursor-pointer group"
-          aria-label="Open Computis platform preview"
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
+        <div className="w-full flex flex-col items-center justify-center">
+          <img
+            src="https://raw.githubusercontent.com/ssmith129/portfolio-website/f00556f27fc2ebd7151cac07d0c167922f7421e8/public/Dashboard.gif"
+            alt="Computis Dashboard demo"
+            className="w-full max-w-[1280px] h-auto rounded-[12px]"
+            style={{
+              boxShadow: "1px 1px 3px 0 rgba(151, 151, 151, 0.3)",
+              overflow: "hidden",
+              borderStyle: "hidden",
+              borderWidth: 1,
+              margin: "20px 0",
+              backgroundColor: "#ffffff",
+            }}
+          />
+        </div>
+      </div>
+      <div className="flex flex-col relative mt-5 text-center">
+        <a
+          href="https://computis.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#131417] font-semibold underline text-[20px]"
         >
-          <div className="text-center cursor-pointer flex flex-col">
-            <Coins className="w-16 h-16 text-amber-600 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110" />
-            <p className="text-amber-600 font-medium">View Live Platform</p>
-            <p className="text-sm text-amber-400 mt-1">
-              Click to preview computis.netlify.app
-            </p>
-            <div className="mt-3 flex items-center justify-center gap-2 text-xs text-amber-500">
-              <ZoomIn className="w-4 h-4" />
-              <span>Click to open preview</span>
-            </div>
-          </div>
-        </button>
+          View Live Prototype
+        </a>
       </div>
 
       {/* Summary Card */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8">
         <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
@@ -178,7 +200,7 @@ export default function ComputisCaseStudy() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg sm:text-xl font-medium text-[#131417] mb-4">
-                    From command-line script to CPA-first enterprise SaaS
+                    From Backend Script to CPA-First Enterprise SaaS
                   </h3>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -187,7 +209,7 @@ export default function ComputisCaseStudy() {
                         Role
                       </p>
                       <p className="text-base font-medium text-[#131417]">
-                        Lead Product Designer
+                        Founding Lead Product Designer
                       </p>
                     </div>
                     <div className="space-y-2">
@@ -195,7 +217,7 @@ export default function ComputisCaseStudy() {
                         Platform
                       </p>
                       <p className="text-base font-medium text-[#131417]">
-                        Web SaaS (Desktop-first)
+                        Web SaaS (Desktop-first, responsive)
                       </p>
                     </div>
                     <div className="space-y-2">
@@ -203,7 +225,7 @@ export default function ComputisCaseStudy() {
                         Duration
                       </p>
                       <p className="text-base font-medium text-[#131417]">
-                        10 months
+                        10 months (Discovery �� Beta Launch)
                       </p>
                     </div>
                   </div>
@@ -227,7 +249,7 @@ export default function ComputisCaseStudy() {
                         ↑ 32%
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
-                        demo-to-conversion
+                        demo-to-conversion rate
                       </p>
                     </div>
                     <div className="text-center">
@@ -235,13 +257,15 @@ export default function ComputisCaseStudy() {
                         ↓ 85%
                       </p>
                       <p className="text-sm text-[#9FA0A3]">
-                        reliance on engineers
+                        reliance on engineering teams
                       </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-xl font-bold text-blue-600 mb-1">↑</p>
+                      <p className="text-xl font-bold text-blue-600 mb-1">
+                        ↑ 150%
+                      </p>
                       <p className="text-sm text-[#9FA0A3]">
-                        enterprise positioning
+                        anomaly detection coverage
                       </p>
                     </div>
                   </div>
@@ -249,16 +273,23 @@ export default function ComputisCaseStudy() {
 
                 <div className="bg-amber-50 rounded-[16px] p-6 border-l-4 border-amber-500">
                   <h3 className="text-lg font-medium text-[#131417] mb-4 flex items-center gap-2">
-                    🚀 Executive Context
+                    🚀 Executive Overview
                   </h3>
                   <p className="text-base text-[#131417] leading-[150%]">
-                    We weren't just designing a UI. We were re-architecting
-                    trust in crypto tax compliance by transforming a Python
-                    command-line script into a{" "}
-                    <span className="font-medium">
-                      CPA-first enterprise platform
-                    </span>{" "}
-                    that combined automation with transparency.
+                    In early 2023, Computis CPAs spent 85% of their time waiting
+                    for engineers to modify Python scripts for crypto
+                    transaction classification. There were{" "}
+                    <span className="font-medium">no audit trails</span>,{" "}
+                    <span className="font-medium">no explainability</span>, and{" "}
+                    <span className="font-medium">no autonomy</span> for
+                    professionals. By October 2023, CPAs could build custom
+                    classification rules in under 90 seconds without writing
+                    code. This transformation turned AI opacity into
+                    transparency—
+                    <span className="font-semibold">
+                      reframing trust as Computis's competitive moat
+                    </span>
+                    .
                   </p>
                 </div>
               </div>
@@ -268,12 +299,12 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
-        {/* Executive Summary */}
+      <main className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16">
+        {/* Project Overview */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm hover:shadow-md transition-all duration-300 mt-12">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-amber-600 cursor-pointer">
-              Executive Context
+              Project Overview
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
@@ -282,15 +313,23 @@ export default function ComputisCaseStudy() {
                   Role
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Lead Product Designer (Founding Designer)
+                  Founding Lead Product Designer
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Company
+                  Team
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Computis Inc.
+                  CTO, PM, 2 Engineers, Design Agency Partner
+                </p>
+              </div>
+              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
+                  Duration
+                </h3>
+                <p className="text-lg font-medium text-[#131417]">
+                  10 months (Discovery ����� Beta Launch)
                 </p>
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -303,26 +342,50 @@ export default function ComputisCaseStudy() {
               </div>
               <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Duration
-                </h3>
-                <p className="text-lg font-medium text-[#131417]">10 months</p>
-              </div>
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
-                  Team
-                </h3>
-                <p className="text-lg font-medium text-[#131417]">
-                  CTO, PM, 2 Engineers, Selecto Agency
-                </p>
-              </div>
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#9FA0A3] uppercase tracking-[0.5px]">
                   Tools
                 </h3>
                 <p className="text-lg font-medium text-[#131417]">
-                  Figma, Miro, Jira, Webflow, Notion, GA
+                  Figma, Miro, Notion, Jira, GA, Mixpanel
                 </p>
               </div>
+            </div>
+
+            <div className="bg-slate-100 rounded-[20px] p-6 border-l-4 border-slate-600 mb-8">
+              <h3 className="text-lg font-medium text-[#131417] mb-4">
+                Objectives
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                  <span className="text-[#131417]">
+                    Enable CPAs to self-serve without engineers
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                  <span className="text-[#131417]">
+                    Build audit-ready workflows with transparency
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                  <span className="text-[#131417]">
+                    Reduce compliance risk through explainable AI
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                  <span className="text-[#131417]">
+                    Generate IRS 8949 and QuickBooks outputs
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
+                  <span className="text-[#131417]">
+                    Scale for DAOs, hedge funds, and enterprise CPA firms
+                  </span>
+                </li>
+              </ul>
             </div>
 
             <div
@@ -331,9 +394,9 @@ export default function ComputisCaseStudy() {
             >
               <h3 className="text-xl font-medium text-[#131417] mb-6 flex items-center gap-2">
                 <Activity className="w-5 h-5 text-amber-600" />
-                Key Impact Metrics
+                Hero Metrics
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
                     value={45}
@@ -341,7 +404,7 @@ export default function ComputisCaseStudy() {
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#9FA0A3]">
-                    ↓ CPA onboarding time
+                    ↓ CPA onboarding time (2.5h → 1.4h)
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
@@ -361,29 +424,28 @@ export default function ComputisCaseStudy() {
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#9FA0A3]">
-                    ↓ reliance on engineers
+                    ↓ reliance on engineering teams
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <span className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 block">
+                  <AnimatedCounter
+                    value={150}
+                    className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1"
+                    startAnimation={startMetricsAnimation}
+                  />
+                  <p className="text-sm text-[#9FA0A3]">
+                    ↑ anomaly detection coverage
+                  </p>
+                </div>
+                <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
+                  <span className="text-2xl sm:text-3xl font-bold text-green-600 mb-1 block">
                     ✓
                   </span>
                   <p className="text-sm text-[#9FA0A3]">
-                    enterprise CPA firm partnerships
+                    Secured enterprise CPA partnerships
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-8 bg-slate-100 rounded-[20px] p-6 border-l-4 border-slate-600">
-              <h3 className="text-lg font-medium text-[#131417] mb-4">
-                Mission Statement
-              </h3>
-              <blockquote className="text-lg italic text-[#131417] leading-[150%]">
-                "Reposition Computis as a CPA-first enterprise platform that
-                combined automation with transparency — so accountants could
-                trust, adopt, and advocate for it."
-              </blockquote>
             </div>
           </div>
         </section>
@@ -395,78 +457,53 @@ export default function ComputisCaseStudy() {
               Problem & Opportunity
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-              <div className="bg-red-50 rounded-[20px] p-6 border border-red-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
-                  <X className="w-5 h-5" />
-                  Initial State
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-red-700">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                    No UI or dashboard
-                  </li>
-                  <li className="flex items-start gap-3 text-red-700">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Manual classification via hardcoded scripts
-                  </li>
-                  <li className="flex items-start gap-3 text-red-700">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                    No audit trail or version control
-                  </li>
-                  <li className="flex items-start gap-3 text-red-700">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                    CSV-only outputs
-                  </li>
-                  <li className="flex items-start gap-3 text-red-700">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                    High reliance on developers
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-green-50 rounded-[20px] p-6 border border-green-100 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
-                  <Target className="w-5 h-5" />
-                  Opportunity
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-green-700">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    Empower CPAs to act independently
-                  </li>
-                  <li className="flex items-start gap-3 text-green-700">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    Build audit-first design with traceability
-                  </li>
-                  <li className="flex items-start gap-3 text-green-700">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    Reduce manual classification with explainable AI
-                  </li>
-                  <li className="flex items-start gap-3 text-green-700">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    Generate IRS 8949 + QuickBooks-ready exports
-                  </li>
-                  <li className="flex items-start gap-3 text-green-700">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                    Scale for DAOs, hedge funds, and multi-client firms
-                  </li>
-                </ul>
-              </div>
+            <div className="bg-red-50 rounded-[20px] p-6 border border-red-100 mb-8 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+              <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
+                <AlertTriangle className="w-5 h-5" />
+                Problem
+              </h3>
+              <p className="text-lg text-red-700 mb-4">
+                CPAs faced opaque, engineer-dependent crypto classification
+                tools that blocked scale and trust.
+              </p>
+              <h4 className="text-lg font-semibold text-red-800 mb-3">
+                Pain Points:
+              </h4>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3 text-red-700">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                  Manual Python scripts
+                </li>
+                <li className="flex items-start gap-3 text-red-700">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                  No audit trail for compliance
+                </li>
+                <li className="flex items-start gap-3 text-red-700">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                  CSV-only export workflows
+                </li>
+                <li className="flex items-start gap-3 text-red-700">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                  "Black-box" AI undermining trust
+                </li>
+                <li className="flex items-start gap-3 text-red-700">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                  Frequent FMV reconciliation errors
+                </li>
+              </ul>
             </div>
 
-            <div className="bg-amber-50 rounded-[20px] p-6 border-l-4 border-amber-500">
-              <h3 className="text-xl font-bold text-[#131417] mb-4">
-                Core Design Principle
+            <div className="bg-green-50 rounded-[20px] p-6 border border-green-100 mb-8 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+              <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
+                <Target className="w-5 h-5" />
+                Opportunity
               </h3>
-              <p className="text-lg text-[#131417] leading-[150%] mb-4">
+              <p className="text-lg text-green-700 mb-4">
+                Build a{" "}
                 <span className="font-semibold">
-                  Transparency &gt; Automation.
-                </span>
-              </p>
-              <p className="text-[#131417]">
-                Automation had to <em>support human expertise</em>, not replace
-                it.
+                  CPA-first explainable AI platform
+                </span>{" "}
+                with audit trails, rule-building, and scalable transparency.
               </p>
             </div>
           </div>
@@ -476,45 +513,50 @@ export default function ComputisCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              <span className="flex items-center gap-2">
-                Research <ChevronRight className="w-4 h-4" /> Insights{" "}
-                <ChevronRight className="w-4 h-4" /> Design
-              </span>
+              Research & Insights
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
               <div>
                 <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Methods
+                  Methodology
                 </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      1:1 CPA + analyst interviews
+                      8 CPA + tax analyst interviews
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      <span className="flex items-center gap-1 flex-wrap">
-                        Workflow shadowing of ingestion{" "}
-                        <ChevronRight className="w-4 h-4" /> tagging{" "}
-                        <ChevronRight className="w-4 h-4" /> reporting
-                      </span>
+                      6 workflow shadowing sessions
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Usage audits (GA, Mixpanel)
+                      Competitive teardown: TaxBit, Cryptio, CoinTracker,
+                      ZenLedger
                     </span>
                   </li>
                   <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
                     <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-[#131417]">
-                      Competitor teardown (TaxBit, Cryptio, CoinTracker,
-                      ZenLedger)
+                      4 usability test cycles
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
+                    <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Compliance workshops with tax attorneys
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
+                    <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-[#131417]">
+                      Analytics review via Mixpanel + GA
                     </span>
                   </li>
                 </ul>
@@ -527,34 +569,42 @@ export default function ComputisCaseStudy() {
                 <div className="space-y-4">
                   <div className="bg-red-50 rounded-[16px] p-4 border-l-4 border-red-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-red-800 mb-1">
-                      Distrust of automation
+                      1. CPAs rejected black-box AI
                     </p>
                     <p className="text-sm text-red-700">
-                      AI needed to show reasoning + allow override
+                      Transparency was non-negotiable for professional liability
                     </p>
                   </div>
                   <div className="bg-orange-50 rounded-[16px] p-4 border-l-4 border-orange-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-orange-800 mb-1">
-                      No audit trail
+                      2. 85% time loss waiting for engineers
                     </p>
                     <p className="text-sm text-orange-700">
-                      Compliance workflows broken
+                      CPAs needed autonomy to scale
                     </p>
                   </div>
                   <div className="bg-yellow-50 rounded-[16px] p-4 border-l-4 border-yellow-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-yellow-800 mb-1">
-                      FMV reconciliation error-prone
+                      3. Auditability drives trust & sales
                     </p>
                     <p className="text-sm text-yellow-700">
-                      Needed anomaly dashboards
+                      Audit trails became a competitive differentiator
+                    </p>
+                  </div>
+                  <div className="bg-green-50 rounded-[16px] p-4 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                    <p className="text-sm font-medium text-green-800 mb-1">
+                      4. Bulk rule-building = scale
+                    </p>
+                    <p className="text-sm text-green-700">
+                      Manual classification couldn't support growth
                     </p>
                   </div>
                   <div className="bg-blue-50 rounded-[16px] p-4 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
                     <p className="text-sm font-medium text-blue-800 mb-1">
-                      High manual effort
+                      5. Explainable AI increased adoption
                     </p>
                     <p className="text-sm text-blue-700">
-                      Bulk actions & rule builder essential
+                      Showing reasoning built professional confidence
                     </p>
                   </div>
                 </div>
@@ -563,128 +613,132 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* User Personas */}
+        {/* Design Process & Methodology */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
-          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-amber-600 cursor-pointer">
-            Personas & Journeys
-          </h2>
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Design Process & Methodology
+            </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* David (CPA) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
-                  <FileText className="w-8 h-8 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium text-[#131417] mb-1">
-                    David
-                  </h3>
-                  <p className="text-[#9FA0A3] font-medium">CPA</p>
-                  <p className="text-sm text-[#9FA0A3]">15+ years experience</p>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-green-800 mb-2">
-                    Needs
-                  </h4>
-                  <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Rule builder with transparency</li>
-                    <li>• Audit logs for compliance</li>
-                    <li>• QuickBooks-ready exports</li>
-                  </ul>
-                </div>
-
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-red-800 mb-2">
-                    Pain Points
-                  </h4>
-                  <p className="text-sm text-red-700">
-                    Overreliance on engineers, no classification transparency
-                  </p>
-                </div>
-
-                <div className="bg-blue-50 p-4 rounded-[16px] border border-blue-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-blue-800 mb-2">
-                    Journey
-                  </h4>
-                  <p className="text-sm text-blue-700">
-                    <span className="flex items-center gap-1 flex-wrap">
-                      Upload <ChevronRight className="w-3 h-3" /> Classify{" "}
-                      <ChevronRight className="w-3 h-3" /> Review{" "}
-                      <ChevronRight className="w-3 h-3" /> Export{" "}
-                      <ChevronRight className="w-3 h-3" /> Audit
-                    </span>
-                  </p>
-                </div>
-              </div>
+            <div className="mb-8">
+              <p className="text-lg text-[#131417] leading-[150%] mb-6">
+                I applied a{" "}
+                <span className="font-semibold text-amber-600">
+                  professional-centered, trust-first design approach
+                </span>{" "}
+                throughout the project lifecycle.
+              </p>
             </div>
 
-            {/* Mya (Ops Analyst) Persona */}
-            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
-                  <Search className="w-8 h-8 text-purple-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-medium text-[#131417] mb-1">
-                    Mya
-                  </h3>
-                  <p className="text-[#9FA0A3] font-medium">Ops Analyst</p>
-                  <p className="text-sm text-[#9FA0A3]">8+ years experience</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* User Journey Mapping */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">🗺️</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-blue-900 mb-2">
+                      User Journey Mapping
+                    </h3>
+                    <p className="text-sm text-blue-800">
+                      Documented complete workflows for CPA, Ops Analyst, and
+                      Admin personas across client lifecycle
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-green-800 mb-2">
-                    Needs
-                  </h4>
-                  <ul className="text-sm text-green-700 space-y-1">
-                    <li>• Anomaly detection for FMV errors</li>
-                    <li>• Bulk tagging capabilities</li>
-                    <li>• Ingestion validation tools</li>
-                  </ul>
+              {/* Information Architecture Design */}
+              <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-[20px] p-6 border border-purple-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">🏗️</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-purple-900 mb-2">
+                      Information Architecture Design
+                    </h3>
+                    <p className="text-sm text-purple-800">
+                      Structured modular IA supporting Clients → Wallets →
+                      Transactions → Rules → Reports flow
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-red-800 mb-2">
-                    Pain Points
-                  </h4>
-                  <p className="text-sm text-red-700">
-                    FMV errors, no bulk triage, no edit history
-                  </p>
+              {/* Trust Framework Development */}
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">🛡️</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-green-900 mb-2">
+                      Trust Framework Development
+                    </h3>
+                    <p className="text-sm text-green-800">
+                      Established design principles prioritizing transparency,
+                      explainability, and professional control
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="bg-purple-50 p-4 rounded-[16px] border border-purple-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                  <h4 className="text-sm font-semibold text-purple-800 mb-2">
-                    Journey
-                  </h4>
-                  <p className="text-sm text-purple-700">
-                    <span className="flex items-center gap-1 flex-wrap">
-                      Ingest <ChevronRight className="w-3 h-3" /> Review{" "}
-                      <ChevronRight className="w-3 h-3" /> Classify{" "}
-                      <ChevronRight className="w-3 h-3" /> Export
-                    </span>
-                  </p>
+              {/* Rapid Prototyping */}
+              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-[20px] p-6 border border-amber-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">⚡</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-amber-900 mb-2">
+                      Rapid Prototyping
+                    </h3>
+                    <p className="text-sm text-amber-800">
+                      Iterated from sketches → wireframes → interactive
+                      prototypes with continuous CPA validation
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Accessibility-First Design */}
+              <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-[20px] p-6 border border-pink-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">♿</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-pink-900 mb-2">
+                      Accessibility-First Design
+                    </h3>
+                    <p className="text-sm text-pink-800">
+                      Applied WCAG 2.1 AA standards from initial wireframes
+                      through final implementation
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Design System Creation */}
+              <div className="bg-gradient-to-br from-slate-50 to-gray-50 rounded-[20px] p-6 border border-slate-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">🎨</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                      Design System Creation
+                    </h3>
+                    <p className="text-sm text-slate-800">
+                      Built comprehensive component library with dark theme
+                      optimized for extended professional use
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
         {/* System Architecture */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              System Architecture & UX
+              System Architecture
             </h2>
 
             <div className="mb-8">
               <h3 className="text-xl font-medium text-[#131417] mb-6">
-                Modular Information Architecture
+                Information Architecture
               </h3>
               <div className="bg-gradient-to-r from-slate-50 to-slate-100 rounded-[20px] p-6 border border-slate-200">
                 <div className="flex flex-wrap items-center gap-3 text-center">
@@ -718,13 +772,13 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
               <div>
                 <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Role-Specific Views
+                  Role-Based Views
                 </h3>
                 <div className="space-y-4">
                   <div className="bg-blue-50 p-4 rounded-[16px] border-l-4 border-blue-500">
                     <h4 className="font-medium text-blue-800 mb-2">CPA</h4>
                     <p className="text-sm text-blue-700">
-                      Rule builder, audit logs, overrides
+                      Rules, audit logs, overrides
                     </p>
                   </div>
                   <div className="bg-purple-50 p-4 rounded-[16px] border-l-4 border-purple-500">
@@ -732,50 +786,325 @@ export default function ComputisCaseStudy() {
                       Analyst
                     </h4>
                     <p className="text-sm text-purple-700">
-                      Ingestion review, anomaly resolution, tagging
+                      Ingestion, anomalies
                     </p>
                   </div>
                   <div className="bg-green-50 p-4 rounded-[16px] border-l-4 border-green-500">
                     <h4 className="font-medium text-green-800 mb-2">Admin</h4>
                     <p className="text-sm text-green-700">
-                      Multi-client management, permissions, activity logs
+                      Multi-client operations
                     </p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Key UX Patterns
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <strong>AI Confidence Chips:</strong> Accept/Reject +
-                      rationale tooltip
+                <div className="bg-slate-100 rounded-[20px] p-6">
+                  <p className="text-[#131417] leading-[150%]">
+                    I led IA restructuring to ensure{" "}
+                    <span className="font-semibold">
+                      scalable, modular architecture
                     </span>
+                    , enabling easy jurisdiction and asset expansion.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Design Decisions */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              Key Design Decisions
+            </h2>
+
+            <div className="space-y-8">
+              {/* 1. AI Confidence Chips */}
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="text-3xl font-bold text-blue-600">1️⃣</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#131417] mb-2">
+                      AI Confidence Chips + Accept/Reject Controls
+                    </h3>
+                    <div className="space-y-3">
+                      <div>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          CPAs distrusted automation.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Confidence-level chips with hover rationale and
+                          one-click override.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          ↓ 70% false positives; ↑ AI trust & adoption.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <strong>Audit Trail Drawer:</strong> Inline logging,
-                      export-ready
-                    </span>
+                </div>
+                <div className="bg-white/60 rounded-[12px] border border-blue-100 self-center flex-none">
+                  <div className="flex items-center justify-center gap-2 text-gray-500">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
+                      srcSet="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=100 100w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=200 200w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=400 400w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=800 800w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=1200 1200w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=1600 1600w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e?width=2000 2000w, https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setIsGifModalOpen(true)}
+                      alt="AI Confidence Chips + Accept/Reject Controls demo"
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          setIsGifModalOpen(true);
+                        }
+                      }}
+                    />
                   </div>
-                  <div className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <strong>Anomaly Flags:</strong> Color-coded, hover
-                      explainers
-                    </span>
+                </div>
+              </div>
+
+              {/* 2. Inline Audit Trail Drawer */}
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="text-3xl font-bold text-green-600">2️⃣</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#131417] mb-2">
+                      Inline Audit Trail Drawer
+                    </h3>
+                    <div className="space-y-3">
+                      <div>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          No compliance visibility.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Persistent contextual audit trail.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          ↓ 40% compliance tickets; enabled independent IRS
+                          audit defense.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <strong>Rule Builder:</strong> Drag/drop logic with
-                      before/after preview
-                    </span>
+                </div>
+                <div className="bg-white/60 rounded-[12px] border border-green-100 self-center flex-none">
+                  <div className="flex items-center justify-center gap-2 text-gray-500">
+                    <img
+                      loading="lazy"
+                      src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Inline%20Audit%20Drawer.gif"
+                      alt="Inline Audit Trail Drawer demo"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setIsAuditDrawerModalOpen(true)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          setIsAuditDrawerModalOpen(true);
+                        }
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* 3. Visual Rule Builder */}
+              <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-[20px] p-6 border border-purple-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="text-3xl font-bold text-purple-600">3️⃣</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#131417] mb-2">
+                      Visual Rule Builder (No-Code)
+                    </h3>
+                    <div className="space-y-3">
+                      <div>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          CPA dependency on engineers.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Drag-and-drop natural language builder with preview.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          ↓ 85% engineering reliance; ��� 32% conversions.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white/60 rounded-[12px] border border-purple-100 self-center flex-none">
+                  <div className="flex items-center justify-center gap-2 text-gray-500">
+                    <img
+                      loading="lazy"
+                      src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Rule%20Builder.gif"
+                      alt="Visual Rule Builder (No-Code) demo"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setIsRuleBuilderModalOpen(true)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          setIsRuleBuilderModalOpen(true);
+                        }
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* 4. Contextual Anomaly Detection */}
+              <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-[20px] p-6 border border-orange-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="text-3xl font-bold text-orange-600">4️⃣</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#131417] mb-2">
+                      Contextual Anomaly Detection
+                    </h3>
+                    <div className="space-y-3">
+                      <div>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          Hidden FMV errors.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Inline color-coded anomaly flags with hover tooltips.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          ↑ 150% anomaly detection; ↓ manual triage.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white/60 rounded-[12px] border border-orange-100 self-center flex-none">
+                  <div className="flex items-center justify-center gap-2 text-gray-500">
+                    <img
+                      loading="lazy"
+                      src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Data%20Anomaly%20Detection.gif"
+                      alt="Contextual Anomaly Detection demo"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setIsAnomalyDetectionModalOpen(true)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          setIsAnomalyDetectionModalOpen(true);
+                        }
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* 5. Multi-Tenant Architecture */}
+              <div className="bg-gradient-to-r from-slate-50 to-gray-50 rounded-[20px] p-6 border border-slate-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="text-3xl font-bold text-slate-600">5️⃣</span>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#131417] mb-2">
+                      Multi-Tenant Architecture
+                    </h3>
+                    <div className="space-y-3">
+                      <div>
+                        <p className="text-sm font-semibold text-blue-800 mb-1">
+                          Challenge:
+                        </p>
+                        <p className="text-sm text-blue-700">
+                          CPA firms manage multiple clients.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-green-800 mb-1">
+                          Solution:
+                        </p>
+                        <p className="text-sm text-green-700">
+                          Role-based multi-tenant dashboards.
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-amber-800 mb-1">
+                          Impact:
+                        </p>
+                        <p className="text-sm text-amber-700">
+                          Enabled 100+ portfolio management.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-white/60 rounded-[12px] border border-slate-100 self-center flex-none">
+                  <div className="flex items-center justify-center gap-2 text-gray-500">
+                    <img
+                      loading="lazy"
+                      src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Client%20Based%20Roles.gif"
+                      alt="Multi-Tenant Architecture demo"
+                      className="w-full aspect-[1.59] min-w-[20px] min-h-[20px] overflow-hidden rounded-lg object-contain object-center cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setIsMultiTenantModalOpen(true)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          setIsMultiTenantModalOpen(true);
+                        }
+                      }}
+                    />
                   </div>
                 </div>
               </div>
@@ -783,159 +1112,145 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* Competitive Analysis */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              Competitive Analysis
+        {/* Stakeholder Alignment */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
+          <div className="bg-gradient-to-br from-[#131417] to-slate-800 text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl cursor-pointer">
+            <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-6">
+              Stakeholder Alignment: The Override Control Debate
             </h2>
 
-            <div className="overflow-x-auto mb-8">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b border-gray-200">
-                    <th className="text-left p-4 font-medium text-[#131417]">
-                      Feature
-                    </th>
-                    <th className="text-center p-4 font-medium text-amber-600">
-                      Computis
-                    </th>
-                    <th className="text-center p-4 font-medium text-[#9FA0A3]">
-                      TaxBit
-                    </th>
-                    <th className="text-center p-4 font-medium text-[#9FA0A3]">
-                      Cryptio
-                    </th>
-                    <th className="text-center p-4 font-medium text-[#9FA0A3]">
-                      CoinTracker
-                    </th>
-                    <th className="text-center p-4 font-medium text-[#9FA0A3]">
-                      ZenLedger
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-100">
-                    <td className="p-4 text-[#131417]">Rule Engine</td>
-                    <td className="text-center p-4">
-                      <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <span className="text-amber-500">⚠️</span>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-100">
-                    <td className="p-4 text-[#131417]">AI + Override</td>
-                    <td className="text-center p-4">
-                      <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <span className="text-amber-500">⚠️</span>
-                    </td>
-                    <td className="text-center p-4">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-100">
-                    <td className="p-4 text-[#131417]">Audit Trail</td>
-                    <td className="text-center p-4">
-                      <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <span className="text-amber-500">⚠️</span>
-                    </td>
-                    <td className="text-center p-4">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <span className="text-amber-500">⚠️</span>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-100">
-                    <td className="p-4 text-[#131417]">QuickBooks Export</td>
-                    <td className="text-center p-4">
-                      <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <span className="text-amber-500">⚠️</span>
-                    </td>
-                    <td className="text-center p-4">
-                      <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <span className="text-amber-500">⚠️</span>
-                    </td>
-                    <td className="text-center p-4">
-                      <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 text-[#131417]">FMV Dashboard</td>
-                    <td className="text-center p-4">
-                      <CheckCircle className="w-5 h-5 text-green-600 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <span className="text-amber-500">⚠️</span>
-                    </td>
-                    <td className="text-center p-4">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                    <td className="text-center p-4">
-                      <X className="w-5 h-5 text-red-500 mx-auto" />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="bg-white/10 rounded-[20px] p-6 mb-6 transition-all duration-300 hover:bg-white/20 cursor-pointer">
+              <h3 className="text-xl font-medium mb-4 flex items-center gap-2">
+                <AlertTriangle className="w-5 h-5 text-amber-400" />
+                Conflict
+              </h3>
+              <p className="text-lg leading-[150%]">
+                CTO wanted full automation; CPAs demanded override control for
+                liability protection.
+              </p>
             </div>
 
-            <div className="bg-green-50 rounded-[20px] p-6 border border-green-200">
-              <h3 className="text-lg font-medium text-green-800 mb-4 flex items-center gap-2">
-                💡 Key Differentiators
+            <div className="bg-white/10 rounded-[20px] p-6 mb-6 transition-all duration-300 hover:bg-white/20 cursor-pointer">
+              <h3 className="text-xl font-medium mb-4 flex items-center gap-2">
+                <Lightbulb className="w-5 h-5 text-yellow-400" />
+                Approach
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-green-700">
-                    Only platform with CPA-first visual rule builder
+              <ul className="text-sm text-gray-300 space-y-2">
+                <li>• Facilitated design workshop with CPA + CTO</li>
+                <li>
+                  • Presented competitor data (40% G2 "black-box" complaints)
+                </li>
+                <li>
+                  • Proposed <em>graduated autonomy</em> system (High → Auto /
+                  Med → Review / Low → Manual)
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white/10 rounded-[20px] p-6 mb-6 transition-all duration-300 hover:bg-white/20 cursor-pointer">
+              <h3 className="text-xl font-medium mb-4 flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                Outcome
+              </h3>
+              <ul className="text-sm text-gray-300 space-y-2">
+                <li>�� CTO aligned after market positioning demo</li>
+                <li>• Override control became a product differentiator</li>
+                <li>• Closed enterprise client deal after demo</li>
+              </ul>
+            </div>
+
+            <div className="bg-green-800/20 rounded-[20px] p-6 border border-green-500/30">
+              <blockquote className="text-lg italic leading-[150%]">
+                "The first crypto tax tool I'd stake my license on."
+              </blockquote>
+              <cite className="text-sm text-gray-400 not-italic mt-2 block">
+                — CPA
+              </cite>
+            </div>
+          </div>
+        </section>
+
+        {/* Outcomes & Impact */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              📈 Outcomes & Impact
+            </h2>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-[16px] p-4 border border-green-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-green-600 mb-1">↓45%</p>
+                <p className="text-xs text-green-800">CPA onboarding</p>
+              </div>
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-[16px] p-4 border border-amber-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-amber-600 mb-1">↑32%</p>
+                <p className="text-xs text-amber-800">conversion rate</p>
+              </div>
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-[16px] p-4 border border-purple-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-purple-600 mb-1">↓85%</p>
+                <p className="text-xs text-purple-800">eng dependency</p>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-[16px] p-4 border border-blue-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-blue-600 mb-1">↑150%</p>
+                <p className="text-xs text-blue-800">anomaly detection</p>
+              </div>
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-[16px] p-4 border border-teal-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-teal-600 mb-1">↓40%</p>
+                <p className="text-xs text-teal-800">support tickets</p>
+              </div>
+              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-[16px] p-4 border border-emerald-200 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <p className="text-2xl font-bold text-emerald-600 mb-1">Zero</p>
+                <p className="text-xs text-emerald-800">FMV disputes</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <div className="bg-blue-50 rounded-[16px] p-5 border-l-4 border-blue-500">
+                <blockquote className="text-base italic text-blue-800">
+                  "First crypto tax tool actually designed for accountants."
+                </blockquote>
+                <cite className="text-sm text-blue-600 not-italic mt-2 block">
+                  — CPA Client
+                </cite>
+              </div>
+              <div className="bg-amber-50 rounded-[16px] p-5 border-l-4 border-amber-500">
+                <blockquote className="text-base italic text-amber-800">
+                  "Your handoffs made us 10x faster. Edge case docs were
+                  incredible."
+                </blockquote>
+                <cite className="text-sm text-amber-600 not-italic mt-2 block">
+                  — Engineering Lead
+                </cite>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-slate-50 to-gray-50 rounded-[20px] p-6 border border-slate-200">
+              <h3 className="text-lg font-semibold text-[#131417] mb-4">
+                Business Impact
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#131417]">
+                    3 enterprise deals in 6 months
                   </span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-green-700">
-                    Audit-ready architecture with version logs
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#131417]">
+                    Scaled to DAOs & hedge funds
                   </span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-green-700">
-                    Explainable AI with confidence badges
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#131417]">
+                    Reduced support overhead
                   </span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-green-700">
-                    Scalable modular system
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#131417]">
+                    Improved retention via transparency
                   </span>
                 </div>
               </div>
@@ -944,221 +1259,158 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Collaboration & Handoff */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
-          <div className="bg-[#131417] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 transition-all duration-300 hover:shadow-2xl cursor-pointer">
-            <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-6">
-              Collaboration & Handoff
-            </h2>
-
-            <div className="bg-white/10 rounded-[20px] p-6 mb-8 transition-all duration-300 hover:bg-white/20 cursor-pointer">
-              <h3 className="text-xl font-medium mb-4">
-                At Staff Level Impact
-              </h3>
-              <p className="text-lg leading-[150%] mb-4">
-                At Staff level, I wasn't just designing — I was{" "}
-                <strong>reducing ambiguity for engineering</strong>:
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-3 flex items-center gap-2">
-                  <FileText className="w-4 h-4" />
-                  Design Specifications
-                </h4>
-                <ul className="text-sm text-gray-400 space-y-2">
-                  <li>• Annotated Figma specs with edge cases</li>
-                  <li>• QA checklists for audit workflows</li>
-                  <li>• Accessibility validation (WCAG AA, Axe, Lighthouse)</li>
-                </ul>
-              </div>
-              <div className="bg-white/5 rounded-[16px] p-6 transition-all duration-300 hover:bg-white/10 hover:scale-105 cursor-pointer">
-                <h4 className="font-medium mb-3 flex items-center gap-2">
-                  <Activity className="w-4 h-4" />
-                  Communication
-                </h4>
-                <ul className="text-sm text-gray-400 space-y-2">
-                  <li>• Loom walkthroughs for each module</li>
-                  <li>• Async threads in Slack to keep velocity high</li>
-                  <li>• Regular design review sessions</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-green-800/20 rounded-[20px] p-6 border border-green-500/30">
-              <blockquote className="text-lg italic leading-[150%] mb-4">
-                "The clarity of your design handoffs made engineering 10x
-                faster."
-              </blockquote>
-              <cite className="text-sm text-gray-400 not-italic">
-                — Lead Frontend Developer
-              </cite>
-            </div>
-          </div>
-        </section>
-
-        {/* Results & Impact */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2200">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              Results & Impact
+              🤝 Collaboration & Handoff
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Quantitative Results
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">CPA onboarding time</span>
-                    <span className="font-medium text-green-600">
-                      <span className="flex items-center gap-1">
-                        ↓45% (2.5h <ChevronRight className="w-3 h-3" /> 1.4h)
-                      </span>
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">Demo conversions</span>
-                    <span className="font-medium text-amber-600">↑32%</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">
-                      Reliance on engineers
-                    </span>
-                    <span className="font-medium text-purple-600">↓85%</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 transition-all duration-300 hover:bg-gray-50 hover:px-2 hover:rounded-lg cursor-pointer">
-                    <span className="text-[#9FA0A3]">
-                      Anomaly detection coverage
-                    </span>
-                    <span className="font-medium text-blue-600">↑150%</span>
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-4">
+                  <FileText className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-blue-900">
+                    Documentation
+                  </h3>
                 </div>
+                <ul className="space-y-2 text-sm text-blue-800">
+                  <li>• Annotated Figma files</li>
+                  <li>• Component library specs</li>
+                  <li>• Accessibility checklist</li>
+                </ul>
               </div>
 
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Qualitative Feedback
-                </h3>
-                <div className="space-y-4">
-                  <blockquote className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "First crypto tax tool purpose-built for accountants."
-                    <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — CPA Client
-                    </cite>
-                  </blockquote>
-
-                  <blockquote className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "Clients say the dashboard helped them trust our process."
-                    <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Business Development Lead
-                    </cite>
-                  </blockquote>
-
-                  <blockquote className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-[16px] italic transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                    "I feel in control with AI suggestions."
-                    <cite className="block text-sm text-[#9FA0A3] mt-2 not-italic">
-                      — Operations Analyst
-                    </cite>
-                  </blockquote>
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-4">
+                  <Shield className="w-6 h-6 text-green-600 flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-green-900">
+                    Quality Assurance
+                  </h3>
                 </div>
+                <ul className="space-y-2 text-sm text-green-800">
+                  <li>• QA test scenarios</li>
+                  <li>• Accessibility validation</li>
+                  <li>• Performance benchmarks</li>
+                </ul>
               </div>
-            </div>
 
-            <div className="bg-gradient-to-r from-green-50 to-amber-50 rounded-[20px] p-6 border border-green-200">
-              <h3 className="text-lg font-medium text-[#131417] mb-4">
-                Business Outcomes
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-[#131417]">
-                    Enabled enterprise CPA firm sales
-                  </span>
+              <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-[20px] p-6 border border-purple-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-4">
+                  <Users className="w-6 h-6 text-purple-600 flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-purple-900">
+                    Knowledge Transfer
+                  </h3>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-[#131417]">
-                    Reduced dev support tickets, enabling scale
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-4 h-4 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-[#131417]">
-                    Differentiated Computis from opaque competitors
-                  </span>
-                </div>
+                <ul className="space-y-2 text-sm text-purple-800">
+                  <li>• Loom walkthroughs</li>
+                  <li>• Weekly design-dev syncs</li>
+                  <li>• Visual acceptance criteria</li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Reflections */}
+        {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              Reflections
+              Key Learnings
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Key Learnings
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-[20px] p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-blue-900 mb-3">
+                  Trust is a UX Principle
                 </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <strong>Trust is a UX principle:</strong> surfacing AI
-                      logic built credibility
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <strong>System design &gt; screens:</strong> modular IA
-                      unlocked scalability
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <strong>AI + Human collaboration:</strong> override
-                      control flipped skepticism into adoption
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#131417] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-[#131417]">
-                      <strong className="flex items-center gap-1">
-                        Design <ChevronRight className="w-4 h-4" /> Business
-                        linkage:
-                      </strong>{" "}
-                      every UX choice tied to churn reduction, higher
-                      conversions, and fewer support costs
-                    </span>
-                  </li>
-                </ul>
+                <p className="text-sm text-blue-800">
+                  Explainability drove adoption more than feature quantity.
+                  Transparency converted skeptics into advocates.
+                </p>
               </div>
 
-              <div>
-                <h3 className="text-xl font-medium text-[#131417] mb-6">
-                  Design Philosophy
+              <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-purple-900 mb-3">
+                  Systems &gt; Screens
                 </h3>
-                <div className="bg-amber-50 rounded-[20px] p-6 border-l-4 border-amber-500">
-                  <blockquote className="text-lg italic text-[#131417] leading-[150%] mb-4">
-                    "Design isn't what it looks like — it's how a CPA explains a
-                    tax report to a regulator without an engineer in the room."
-                  </blockquote>
-                </div>
+                <p className="text-sm text-purple-800">
+                  Modular IA enabled scaling. Role-based architecture
+                  future-proofed for growth.
+                </p>
+              </div>
 
-                <div className="mt-6 bg-gradient-to-br from-amber-100 to-orange-100 rounded-[16px] p-6 text-center">
-                  <h4 className="text-lg font-medium text-[#131417] mb-2">
-                    Platform Tagline
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-green-900 mb-3">
+                  AI + Human Collaboration
+                </h3>
+                <p className="text-sm text-green-800">
+                  Override control flipped AI from threat to tool. Confidence
+                  indicators enabled informed decisions.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-[20px] p-6 border-l-4 border-amber-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-amber-900 mb-3">
+                  Design Drives Business
+                </h3>
+                <p className="text-sm text-amber-800">
+                  Self-service features reduced costs. Audit trails closed
+                  enterprise deals and differentiated from competitors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Design Philosophy */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2400">
+          <div className="bg-gradient-to-br from-[#131417] to-slate-800 text-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium leading-[120%] tracking-[-0.3px] mb-8">
+              💭 Design Philosophy
+            </h2>
+
+            <div className="bg-white/10 rounded-[20px] p-8 mb-6 backdrop-blur-sm">
+              <blockquote className="text-xl italic leading-[150%] mb-4">
+                "Design isn't what it looks like — it's whether a CPA can
+                explain a tax report to a regulator without an engineer in the
+                room."
+              </blockquote>
+            </div>
+
+            <div className="mt-8">
+              <h3 className="text-xl font-medium mb-6">Core Tenets</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
+                  <h4 className="font-semibold text-lg mb-2">
+                    Transparency over Efficiency
                   </h4>
-                  <p className="text-xl font-bold text-amber-700">
-                    "Transparency. Control. Trust."
+                  <p className="text-sm text-gray-300">
+                    Speed matters, but professional defensibility matters more
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
+                  <h4 className="font-semibold text-lg mb-2">
+                    Augmentation over Automation
+                  </h4>
+                  <p className="text-sm text-gray-300">
+                    AI should empower expertise, not replace judgment
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
+                  <h4 className="font-semibold text-lg mb-2">
+                    Systems over Surfaces
+                  </h4>
+                  <p className="text-sm text-gray-300">
+                    Beautiful interfaces fail without sound information
+                    architecture
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
+                  <h4 className="font-semibold text-lg mb-2">
+                    Trust through Control
+                  </h4>
+                  <p className="text-sm text-gray-300">
+                    Professionals need agency, not just accuracy
                   </p>
                 </div>
               </div>
@@ -1249,6 +1501,153 @@ export default function ComputisCaseStudy() {
           </div>
         </div>
       )}
+
+      {/* GIF Modal Dialog */}
+      <Dialog open={isGifModalOpen} onOpenChange={setIsGifModalOpen}>
+        <DialogContent
+          className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
+          aria-describedby="gif-modal-description"
+        >
+          <DialogTitle className="sr-only">
+            AI Confidence Chips + Accept/Reject Controls Demo
+          </DialogTitle>
+          <div className="relative">
+            <img
+              src="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
+              alt="AI Confidence Chips + Accept/Reject Controls - Full Size Demo"
+              className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
+              style={{
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
+              }}
+            />
+            <span id="gif-modal-description" className="sr-only">
+              Full size demonstration of AI Confidence Chips and Accept/Reject
+              Controls interface. Press Escape or click outside to close.
+            </span>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Inline Audit Trail Drawer Modal Dialog */}
+      <Dialog
+        open={isAuditDrawerModalOpen}
+        onOpenChange={setIsAuditDrawerModalOpen}
+      >
+        <DialogContent
+          className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
+          aria-describedby="audit-drawer-modal-description"
+        >
+          <DialogTitle className="sr-only">
+            Inline Audit Trail Drawer Demo
+          </DialogTitle>
+          <div className="relative">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Inline%20Audit%20Drawer.gif"
+              alt="Inline Audit Trail Drawer - Full Size Demo"
+              className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
+              style={{
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
+              }}
+            />
+            <span id="audit-drawer-modal-description" className="sr-only">
+              Full size demonstration of Inline Audit Trail Drawer interface.
+              Press Escape or click outside to close.
+            </span>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Visual Rule Builder Modal Dialog */}
+      <Dialog
+        open={isRuleBuilderModalOpen}
+        onOpenChange={setIsRuleBuilderModalOpen}
+      >
+        <DialogContent
+          className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
+          aria-describedby="rule-builder-modal-description"
+        >
+          <DialogTitle className="sr-only">
+            Visual Rule Builder (No-Code) Demo
+          </DialogTitle>
+          <div className="relative">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Rule%20Builder.gif"
+              alt="Visual Rule Builder (No-Code) - Full Size Demo"
+              className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
+              style={{
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
+              }}
+            />
+            <span id="rule-builder-modal-description" className="sr-only">
+              Full size demonstration of Visual Rule Builder (No-Code)
+              interface. Press Escape or click outside to close.
+            </span>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Contextual Anomaly Detection Modal Dialog */}
+      <Dialog
+        open={isAnomalyDetectionModalOpen}
+        onOpenChange={setIsAnomalyDetectionModalOpen}
+      >
+        <DialogContent
+          className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
+          aria-describedby="anomaly-detection-modal-description"
+        >
+          <DialogTitle className="sr-only">
+            Contextual Anomaly Detection Demo
+          </DialogTitle>
+          <div className="relative">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Data%20Anomaly%20Detection.gif"
+              alt="Contextual Anomaly Detection - Full Size Demo"
+              className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
+              style={{
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
+              }}
+            />
+            <span id="anomaly-detection-modal-description" className="sr-only">
+              Full size demonstration of Contextual Anomaly Detection interface.
+              Press Escape or click outside to close.
+            </span>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Multi-Tenant Architecture Modal Dialog */}
+      <Dialog
+        open={isMultiTenantModalOpen}
+        onOpenChange={setIsMultiTenantModalOpen}
+      >
+        <DialogContent
+          className="max-w-[95vw] w-auto h-auto p-0 border-0 bg-transparent"
+          aria-describedby="multi-tenant-modal-description"
+        >
+          <DialogTitle className="sr-only">
+            Multi-Tenant Architecture Demo
+          </DialogTitle>
+          <div className="relative">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Client%20Based%20Roles.gif"
+              alt="Multi-Tenant Architecture - Full Size Demo"
+              className="max-w-[1440px] max-h-[904px] w-auto h-auto object-contain rounded-lg"
+              style={{
+                maxWidth: "min(1440px, 95vw)",
+                maxHeight: "min(904px, 95vh)",
+              }}
+            />
+            <span id="multi-tenant-modal-description" className="sr-only">
+              Full size demonstration of Multi-Tenant Architecture interface.
+              Press Escape or click outside to close.
+            </span>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

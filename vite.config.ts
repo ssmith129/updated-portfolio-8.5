@@ -15,12 +15,36 @@ export default defineConfig(() => ({
   build: {
     outDir: "dist/spa",
     chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          "react-vendor": ["react", "react-dom", "react-router-dom"],
+          "ui-vendor": [
+            "@radix-ui/react-dialog",
+            "@radix-ui/react-accordion",
+            "@radix-ui/react-dropdown-menu",
+            "@radix-ui/react-select",
+            "@radix-ui/react-tabs",
+          ],
+          "three-vendor": ["three", "@react-three/fiber", "@react-three/drei"],
+          "charts-vendor": ["recharts"],
+          utils: ["framer-motion", "date-fns", "zod"],
+        },
+      },
+    },
+    sourcemap: false,
+    minify: "esbuild",
+    esbuild: {
+      drop: ["console", "debugger"],
+    },
   },
   plugins: [react()],
   async configureServer(server) {
-    const { createServer: createExpressServer } = await import("./server/index");
+    const { createServer: createExpressServer } = await import(
+      "./server/index"
+    );
     const expressApp = createExpressServer();
-    server.middlewares.use('/api', expressApp);
+    server.middlewares.use("/api", expressApp);
   },
   resolve: {
     alias: {
