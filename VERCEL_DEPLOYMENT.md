@@ -11,16 +11,19 @@
 ### Method 1: Vercel CLI (Recommended)
 
 1. **Install Vercel CLI:**
+
    ```bash
    npm i -g vercel
    ```
 
 2. **Login to Vercel:**
+
    ```bash
    vercel login
    ```
 
 3. **Deploy to Preview:**
+
    ```bash
    vercel
    ```
@@ -58,12 +61,15 @@ Since you have Vercel MCP connected, you can deploy directly from the Builder.io
 ## 🔧 Configuration Files
 
 ### `vercel.json`
+
 - Defines build settings, rewrites, and headers
 - Configures SPA routing fallback
 - Sets up API route handling
 
 ### API Routes
+
 All serverless functions are in the `api/` directory:
+
 - `/api/ping` - Health check endpoint
 - `/api/demo` - Demo endpoint
 - `/api/placeholder/:width/:height` - Placeholder images (redirects to picsum.photos)
@@ -72,9 +78,9 @@ All serverless functions are in the `api/` directory:
 
 Set these in Vercel Dashboard (Project Settings → Environment Variables):
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `PING_MESSAGE` | Custom ping response message | `ping` |
+| Variable       | Description                  | Default |
+| -------------- | ---------------------------- | ------- |
+| `PING_MESSAGE` | Custom ping response message | `ping`  |
 
 ## 🏗️ Build Process
 
@@ -83,6 +89,7 @@ Set these in Vercel Dashboard (Project Settings → Environment Variables):
    - Outputs to `dist/spa`
 
 2. **Output Structure:**
+
    ```
    dist/spa/
    ├── index.html
@@ -100,21 +107,25 @@ Set these in Vercel Dashboard (Project Settings → Environment Variables):
 ## 🔍 Troubleshooting
 
 ### Build Fails
+
 - Check Node.js version (requires 18+)
 - Verify all dependencies are in `package.json`
 - Run `npm install` and `npm run build:vercel` locally first
 
 ### API Routes 404
+
 - Ensure functions are in `api/` directory
 - Check `vercel.json` rewrites configuration
 - Verify function exports default handler
 
 ### Environment Variables Not Working
+
 - Add variables in Vercel Dashboard
 - Redeploy after adding variables
 - Check variable names match code
 
 ### SPA Routing Issues
+
 - Verify `vercel.json` has SPA fallback rewrite
 - Check React Router configuration
 - Ensure all routes use browser history mode
@@ -122,6 +133,7 @@ Set these in Vercel Dashboard (Project Settings → Environment Variables):
 ## 📊 Performance Optimization
 
 Your project includes:
+
 - ✅ Static asset caching (1 year)
 - ✅ Security headers (CSP, XSS protection)
 - ✅ Gzip/Brotli compression (automatic)
@@ -150,6 +162,7 @@ Your project includes:
 ## 🎯 Expected Results
 
 After successful deployment:
+
 - **Build Time:** ~1-2 minutes
 - **Cold Start:** <500ms (serverless functions)
 - **Page Load:** <2s (cached assets)

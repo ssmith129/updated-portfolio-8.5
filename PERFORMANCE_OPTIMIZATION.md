@@ -3,6 +3,7 @@
 ## 📦 Current Optimizations
 
 ### Code Splitting Strategy
+
 Your `vite.config.ts` now includes manual chunk splitting:
 
 1. **react-vendor** (~250KB)
@@ -31,16 +32,19 @@ Your `vite.config.ts` now includes manual chunk splitting:
 ### Build Optimizations
 
 ✅ **Terser Minification**
+
 - Removes console.log statements in production
 - Strips debug code
 - Reduces bundle size by ~15%
 
 ✅ **Source Maps Disabled**
+
 - Faster builds
 - Smaller deployment size
 - Enable only for debugging
 
 ✅ **Gzip Compression**
+
 - Automatic on Vercel
 - Reduces transfer size by ~70%
 
@@ -48,21 +52,21 @@ Your `vite.config.ts` now includes manual chunk splitting:
 
 ### Expected Performance (Lighthouse)
 
-| Metric | Score | Value |
-|--------|-------|-------|
-| Performance | 90-100 | Optimized |
-| Accessibility | 95-100 | WCAG compliant |
-| Best Practices | 95-100 | Security headers |
-| SEO | 90-100 | Meta tags optimized |
+| Metric         | Score  | Value               |
+| -------------- | ------ | ------------------- |
+| Performance    | 90-100 | Optimized           |
+| Accessibility  | 95-100 | WCAG compliant      |
+| Best Practices | 95-100 | Security headers    |
+| SEO            | 90-100 | Meta tags optimized |
 
 ### Core Web Vitals
 
-| Metric | Target | Current |
-|--------|--------|---------|
-| LCP (Largest Contentful Paint) | <2.5s | ~1.8s |
-| FID (First Input Delay) | <100ms | ~50ms |
-| CLS (Cumulative Layout Shift) | <0.1 | ~0.05 |
-| TTFB (Time to First Byte) | <600ms | ~200ms |
+| Metric                         | Target | Current |
+| ------------------------------ | ------ | ------- |
+| LCP (Largest Contentful Paint) | <2.5s  | ~1.8s   |
+| FID (First Input Delay)        | <100ms | ~50ms   |
+| CLS (Cumulative Layout Shift)  | <0.1   | ~0.05   |
+| TTFB (Time to First Byte)      | <600ms | ~200ms  |
 
 ## 🎯 Further Optimization Opportunities
 
@@ -76,8 +80,8 @@ Your `vite.config.ts` now includes manual chunk splitting:
 <img src="https://images.pexels.com/photo.jpg" />
 
 // Use Next.js Image component or:
-<img 
-  src="https://images.pexels.com/photo.jpg" 
+<img
+  src="https://images.pexels.com/photo.jpg"
   loading="lazy"
   decoding="async"
 />
@@ -88,9 +92,9 @@ Your `vite.config.ts` now includes manual chunk splitting:
 Implement lazy loading for routes:
 
 ```tsx
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense } from "react";
 
-const CaseStudy = lazy(() => import('./pages/ComputisCaseStudy'));
+const CaseStudy = lazy(() => import("./pages/ComputisCaseStudy"));
 
 function App() {
   return (
@@ -108,9 +112,9 @@ function App() {
 
 ```html
 <!-- Add to index.html -->
-<link 
-  rel="preload" 
-  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" 
+<link
+  rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
   as="style"
 />
 ```
@@ -123,25 +127,23 @@ function App() {
 ```ts
 // api/ping.ts - Convert to Edge Function
 export const config = {
-  runtime: 'edge',
+  runtime: "edge",
 };
 
 export default async function handler(req: Request) {
-  return new Response(
-    JSON.stringify({ message: 'ping' }),
-    {
-      headers: {
-        'content-type': 'application/json',
-        'cache-control': 'public, s-maxage=60',
-      },
-    }
-  );
+  return new Response(JSON.stringify({ message: "ping" }), {
+    headers: {
+      "content-type": "application/json",
+      "cache-control": "public, s-maxage=60",
+    },
+  });
 }
 ```
 
 ### 5. Caching Strategy
 
 **Implemented in vercel.json:**
+
 - Static assets: 1 year cache
 - API responses: Custom per endpoint
 - HTML: No cache (SPA)
@@ -149,7 +151,10 @@ export default async function handler(req: Request) {
 **Add to specific API routes:**
 
 ```ts
-res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400');
+res.setHeader(
+  "Cache-Control",
+  "public, s-maxage=3600, stale-while-revalidate=86400",
+);
 ```
 
 ### 6. Preloading Critical Resources
@@ -158,12 +163,12 @@ Add to `index.html`:
 
 ```html
 <!-- Preload critical assets -->
-<link rel="preload" href="/assets/index-[hash].css" as="style">
-<link rel="preload" href="/assets/index-[hash].js" as="script">
+<link rel="preload" href="/assets/index-[hash].css" as="style" />
+<link rel="preload" href="/assets/index-[hash].js" as="script" />
 
 <!-- DNS prefetch for external resources -->
-<link rel="dns-prefetch" href="https://api.builder.io">
-<link rel="dns-prefetch" href="https://cdn.builder.io">
+<link rel="dns-prefetch" href="https://api.builder.io" />
+<link rel="dns-prefetch" href="https://cdn.builder.io" />
 ```
 
 ### 7. Bundle Analysis
@@ -192,7 +197,7 @@ plugins: [
 **Use React.memo for expensive components:**
 
 ```tsx
-import { memo } from 'react';
+import { memo } from "react";
 
 const ExpensiveComponent = memo(({ data }) => {
   // Heavy rendering logic
@@ -211,6 +216,7 @@ npm install @tanstack/react-virtual
 ### Vercel Analytics
 
 Enable in Vercel Dashboard:
+
 1. Go to Project Settings
 2. Click on "Analytics"
 3. Enable Web Analytics
@@ -223,13 +229,13 @@ npm install @vercel/analytics
 Add to `main.tsx`:
 
 ```tsx
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <>
     <App />
     <Analytics />
-  </>
+  </>,
 );
 ```
 
@@ -240,10 +246,10 @@ npm install @vercel/speed-insights
 ```
 
 ```tsx
-import { SpeedInsights } from '@vercel/speed-insights/react';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 // Add to App
-<SpeedInsights />
+<SpeedInsights />;
 ```
 
 ## 🔍 Debug Performance
@@ -262,6 +268,7 @@ npx lighthouse http://localhost:3000 --view
 ### Vercel Analytics
 
 Monitor real user metrics:
+
 - Page load times
 - API response times
 - Error rates
