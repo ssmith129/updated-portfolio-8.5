@@ -628,126 +628,94 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* Design Process & Methodology */}
+        {/* User Personas */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
-          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-              Design Process & Methodology
-            </h2>
+          <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-amber-600 cursor-pointer">
+            User Personas
+          </h2>
 
-            <div className="mb-8">
-              <p className="text-lg text-[#131417] leading-[150%] mb-6">
-                I applied a{" "}
-                <span className="font-semibold text-amber-600">
-                  professional-centered, trust-first design approach
-                </span>{" "}
-                throughout the project lifecycle.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* David (CPA) Persona */}
+            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                  <FileText className="w-8 h-8 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-[#131417] mb-1">
+                    David �� CPA
+                  </h3>
+                  <p className="text-sm text-[#9FA0A3]">15+ years experience</p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                  <h4 className="text-sm font-semibold text-green-800 mb-2">
+                    Needs
+                  </h4>
+                  <ul className="text-sm text-green-700 space-y-1">
+                    <li>• Rule builder, audit logs, QuickBooks exports</li>
+                  </ul>
+                </div>
+
+                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                  <h4 className="text-sm font-semibold text-red-800 mb-2">
+                    Pain
+                  </h4>
+                  <p className="text-sm text-red-700">
+                    No transparency or autonomy
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* User Journey Mapping */}
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">🗺️</span>
-                  <div>
-                    <h3 className="text-lg font-semibold text-blue-900 mb-2">
-                      User Journey Mapping
-                    </h3>
-                    <p className="text-sm text-blue-800">
-                      Documented complete workflows for CPA, Ops Analyst, and
-                      Admin personas across client lifecycle
-                    </p>
-                  </div>
+            {/* Mya (Ops Analyst) Persona */}
+            <div className="bg-white rounded-[25px] p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                  <Search className="w-8 h-8 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-[#131417] mb-1">
+                    Mya — Operations Analyst
+                  </h3>
+                  <p className="text-sm text-[#9FA0A3]">8+ years experience</p>
                 </div>
               </div>
 
-              {/* Information Architecture Design */}
-              <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-[20px] p-6 border border-purple-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">🏗️</span>
-                  <div>
-                    <h3 className="text-lg font-semibold text-purple-900 mb-2">
-                      Information Architecture Design
-                    </h3>
-                    <p className="text-sm text-purple-800">
-                      Structured modular IA supporting Clients → Wallets →
-                      Transactions → Rules → Reports flow
-                    </p>
-                  </div>
+              <div className="space-y-4">
+                <div className="bg-green-50 p-4 rounded-[16px] border border-green-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                  <h4 className="text-sm font-semibold text-green-800 mb-2">
+                    Needs
+                  </h4>
+                  <ul className="text-sm text-green-700 space-y-1">
+                    <li>• Anomaly detection, bulk tagging</li>
+                  </ul>
                 </div>
-              </div>
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
 
-              {/* Trust Framework Development */}
-              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">🛡️</span>
-                  <div>
-                    <h3 className="text-lg font-semibold text-green-900 mb-2">
-                      Trust Framework Development
-                    </h3>
-                    <p className="text-sm text-green-800">
-                      Established design principles prioritizing transparency,
-                      explainability, and professional control
-                    </p>
-                  </div>
-                </div>
-              </div>
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
-
-              {/* Rapid Prototyping */}
-              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-[20px] p-6 border border-amber-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">⚡</span>
-                  <div>
-                    <h3 className="text-lg font-semibold text-amber-900 mb-2">
-                      Rapid Prototyping
-                    </h3>
-                    <p className="text-sm text-amber-800">
-                      Iterated from sketches → wireframes → interactive
-                      prototypes with continuous CPA validation
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </h2>
-
-              {/* Accessibility-First Design */}
-              <div className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-[20px] p-6 border border-pink-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">♿</span>
-                  <div>
-                    <h3 className="text-lg font-semibold text-pink-900 mb-2">
-                      Accessibility-First Design
-                    </h3>
-                    <p className="text-sm text-pink-800">
-                      Applied WCAG 2.1 AA standards from initial wireframes
-                      through final implementation
-                    </p>
-                  </div>
-                </div>
-              </div>
-            <div className="mb-8">
-
-              {/* Design System Creation */}
-              <div className="bg-gradient-to-br from-slate-50 to-gray-50 rounded-[20px] p-6 border border-slate-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">🎨</span>
-                  <div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                      Design System Creation
-                    </h3>
-                    <p className="text-sm text-slate-800">
-                      Built comprehensive component library with dark theme
-                      optimized for extended professional use
-                    </p>
-                  </div>
+                <div className="bg-red-50 p-4 rounded-[16px] border border-red-200 transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
+                  <h4 className="text-sm font-semibold text-red-800 mb-2">
+                    Pain
+                  </h4>
+                  <p className="text-sm text-red-700">
+                    FMV errors, no edit history
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        {/* System Architecture */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
+          <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] mb-8">
+              System Architecture
+            </h2>
+
+            <div className="mb-8">
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
                 Information Architecture
               </h3>
               <div className="bg-gradient-to-r from-slate-50 to-slate-100 rounded-[20px] p-6 border border-slate-200">
