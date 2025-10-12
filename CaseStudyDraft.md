@@ -1,6 +1,6 @@
 # Symplify – Hospital Management System
 
-*A unified, AI-enhanced clinical operating system for public health programs and hospital workflows*
+_A unified, AI-enhanced clinical operating system for public health programs and hospital workflows_
 
 ![Hero Dashboard Preview - Symplify unified system showcasing Inbox, Scheduling, and Notifications modules]
 
@@ -27,6 +27,7 @@
 - ↓ **44% SLA breach risk** (14.2% → 7.9%)
 
 ### Core Solution
+
 Designed **Symplify**, an **AI-enhanced, modular platform** that transformed fragmented hospital workflows into a unified system with smart inbox triage, AI-assisted scheduling, priority-based notifications, and centralized communication.
 
 ---
@@ -36,8 +37,9 @@ Designed **Symplify**, an **AI-enhanced, modular platform** that transformed fra
 Hospitals and public health programs relied on fragmented, outdated systems — leading to missed appointments, compliance gaps, and staff burnout.
 
 **Workflow Fragmentation:**
+
 - **Doctors** → appointment scheduling inside EHRs
-- **Nurses** → paper logs + shift notes  
+- **Nurses** → paper logs + shift notes
 - **Admins** → Excel sheets for revenue forecasting
 
 **The Result:** 60% of staff time lost to context switching, 40% of "urgent" messages were noise, and high administrative burden caused compliance gaps and delayed patient care.
@@ -56,6 +58,7 @@ Symplify was designed to modernize fragmented hospital and public health workflo
 - **Tools:** Figma, Notion, Jira, ChatGPT, Framer
 
 ### Business Objectives
+
 - Reduce time spent on administrative workflows
 - Improve compliance and reduce missed tasks
 - Create trustable, explainable AI workflows
@@ -107,21 +110,23 @@ The healthcare IT market is dominated by **legacy EHR systems** (Epic, Cerner, A
 - Slow to adopt modern UX and AI-driven enhancements
 
 ### Opportunity for Symplify
+
 - Deliver a **modular, cost-effective alternative** for public health agencies
 - Differentiate with **AI-enhanced task efficiency** and **explainability**
 - Position as a **scalable platform** bridging state agencies and local clinics
 
 ### Competitor Analysis
 
-| Feature / Platform | Epic | Cerner | Allscripts | ezEMRx | **Symplify** |
-| --- | --- | --- | --- | --- | --- |
-| Cost & Scalability | $$$$ | $$$$ | $$$ | $$ | **$ (modular)** |
-| Usability (Staff-Facing) | Low | Medium | Medium | Low | **High** |
-| AI Augmentation | Minimal | Minimal | None | None | **Smart Inbox, Notifications, Scheduling** |
-| Accessibility (WCAG) | Inconsistent | Inconsistent | Limited | Limited | **WCAG 2.1 AA Compliant** |
-| Suitability for Public Health | Low | Low | Medium | Medium | **High** |
+| Feature / Platform            | Epic         | Cerner       | Allscripts | ezEMRx  | **Symplify**                               |
+| ----------------------------- | ------------ | ------------ | ---------- | ------- | ------------------------------------------ |
+| Cost & Scalability            | $$$$         | $$$$         | $$$        | $$      | **$ (modular)**                            |
+| Usability (Staff-Facing)      | Low          | Medium       | Medium     | Low     | **High**                                   |
+| AI Augmentation               | Minimal      | Minimal      | None       | None    | **Smart Inbox, Notifications, Scheduling** |
+| Accessibility (WCAG)          | Inconsistent | Inconsistent | Limited    | Limited | **WCAG 2.1 AA Compliant**                  |
+| Suitability for Public Health | Low          | Low          | Medium     | Medium  | **High**                                   |
 
 ### Strategic Differentiators
+
 - Designed **from the ground up** for public health and WIC workflows
 - **AI-driven efficiency** with explainable decision-making
 - **Lower implementation cost** via modular SaaS model
@@ -147,22 +152,27 @@ I applied a **human-centered, systems-first approach**:
 ## 🔑 Key Design Decisions & Rationale
 
 ### Smart AI Chat Inbox Triage
+
 **Decision:** Prioritized urgent clinical needs using AI confidence badges
 **Rationale:** Reduced message overload by 42%, improved response times
 
 ### Smart Appointment Scheduling
+
 **Decision:** AI-assisted rescheduling with error prevention
 **Rationale:** Fewer no-shows (↓2.4pts), streamlined workflow
 
 ### Smart Notifications
+
 **Decision:** Grouped compliance-critical vs. routine updates
 **Rationale:** Eliminated alert fatigue, improved compliance by 44%
 
 ### Smart Unified Email Integration
+
 **Decision:** Consolidated communication channels
 **Rationale:** Improved response times, reduced context switching
 
 **Design Philosophy:**
+
 - Built **modularity** so features could scale across clinics and programs
 - Designed **explainable AI affordances** (confidence levels, override controls)
 - Ensured **trust-first UX patterns** for sensitive healthcare data
@@ -172,15 +182,19 @@ I applied a **human-centered, systems-first approach**:
 ## 🌟 Final Solutions
 
 ### Unified Dashboard
+
 Centralized modules with role-based entry points, providing staff with a single source of truth for all daily workflows.
 
 ### AI-Enhanced Inbox
+
 **2.3× faster triage efficiency** through intelligent message prioritization with explainable AI confidence badges.
 
 ### Appointment Calendar
+
 Drag-and-drop smart rescheduling with conflict detection and error-proofing, reducing administrative overhead.
 
 ### Notification Feed
+
 Reduced cognitive overload with priority grouping, separating compliance-critical alerts from routine updates.
 
 ![Interactive workflow diagram showing: Dashboard → Notifications → Inbox → Scheduling → Messages with color-coded arrows and feature callouts]
@@ -190,19 +204,27 @@ Reduced cognitive overload with priority grouping, separating compliance-critica
 ## 🎬 Interaction Showcase
 
 ### Smart Inbox Triage
+
 ![GIF: AI auto-tagging urgent vs routine messages with confidence badges]
+
 - **Rationale:** Reduced overload, better prioritization, 42% faster triage
 
 ### Smart Scheduling
+
 ![GIF: Drag-and-drop reschedule with conflict detection and error prevention]
+
 - **Rationale:** Error-proof scheduling, ↓2.4pts no-show rate, streamlined workflow
 
 ### Smart Notifications
+
 ![GIF: Alerts collapsing into compliance vs routine categories with priority indicators]
+
 - **Rationale:** ↓Alert fatigue, ↑compliance adherence, clearer task prioritization
 
 ### Unified Email Integration
+
 ![GIF: Communication threads merging into one centralized inbox]
+
 - **Rationale:** Faster response times, reduced context switching, unified communication
 
 ---
@@ -210,6 +232,7 @@ Reduced cognitive overload with priority grouping, separating compliance-critica
 ## 📈 Outcomes & Impact
 
 ### Quantitative Results
+
 - ↓ **42% inbox triage time** (2m15s → 1m18s)
 - ↑ **18% on-time follow-ups** (72% → 85.3%)
 - ↓ **2.4pts no-show rate** (9.8% → 7.4%)
@@ -220,12 +243,14 @@ Reduced cognitive overload with priority grouping, separating compliance-critica
 - ↓ **20% admin documentation overhead**
 
 ### Qualitative Results
+
 - Staff reported **higher confidence** in AI-supported workflows
 - Agencies noted improved **data quality** flowing into reports
 - Reduced staff burnout through streamlined administrative processes
 - Enhanced trust in technology through transparent AI decision-making
 
 ### Business Impact
+
 - Enabled scalable deployment across multiple public health programs
 - Reduced implementation costs compared to legacy EHR systems
 - Improved staff retention through workflow optimization
@@ -238,17 +263,20 @@ Reduced cognitive overload with priority grouping, separating compliance-critica
 ## 📚 Lessons Learned & Next Steps
 
 ### Key Learnings
+
 - **Transparent AI interaction builds trust** far faster than opaque automation
 - **Modular design systems accelerate adoption** across diverse clinics
 - **Accessibility-first workflows improve** not just compliance but also usability for all staff
 - **Human-in-the-loop AI** is essential for healthcare environments where trust and control are paramount
 
 ### Technical Insights
+
 - Role-based dashboards reduced cognitive load by focusing on relevant tasks
 - Explainable AI confidence badges improved user adoption of automated features
 - Unified communication channels eliminated 60% of context switching overhead
 
 ### Next Steps
+
 - **Phase 1:** Extend modules for patient-facing portals
 - **Phase 2:** Integrate predictive analytics for population health trends
 - **Phase 3:** Continue to evolve AI explainability standards in clinical workflows
@@ -271,4 +299,4 @@ The project demonstrated how thoughtful design can transform complex healthcare 
 
 ---
 
-*This case study showcases the complete product design lifecycle from 0→1, emphasizing systems thinking, AI interaction design, and measurable business impact in the healthcare sector.*
+_This case study showcases the complete product design lifecycle from 0→1, emphasizing systems thinking, AI interaction design, and measurable business impact in the healthcare sector._
