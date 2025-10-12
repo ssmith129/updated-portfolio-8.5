@@ -610,6 +610,87 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
             </div>
+
+            {/* Business & Market Analysis */}
+            <div className="mt-8 pt-8 border-t border-gray-200">
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
+                Business & Market Analysis
+              </h3>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                {/* Market Gaps */}
+                <div>
+                  <h4 className="text-base font-semibold text-[#131417] mb-4 flex items-center gap-2">
+                    <span className="text-lg">📊</span>
+                    Market Gaps
+                  </h4>
+                  <div className="space-y-3">
+                    <div className="bg-slate-50 rounded-[16px] p-4 border-l-4 border-slate-400 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                      <p className="text-sm text-slate-800">
+                        Consumer tools lack audit-grade compliance features
+                      </p>
+                    </div>
+                    <div className="bg-slate-50 rounded-[16px] p-4 border-l-4 border-slate-400 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                      <p className="text-sm text-slate-800">
+                        Enterprise platforms use opaque AI that CPAs can't validate
+                      </p>
+                    </div>
+                    <div className="bg-slate-50 rounded-[16px] p-4 border-l-4 border-slate-400 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                      <p className="text-sm text-slate-800">
+                        No CPA-first workflows with client management
+                      </p>
+                    </div>
+                    <div className="bg-slate-50 rounded-[16px] p-4 border-l-4 border-slate-400 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
+                      <p className="text-sm text-slate-800">
+                        Tools force reliance on engineering for rule customization
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Computis Opportunity */}
+                <div>
+                  <h4 className="text-base font-semibold text-[#131417] mb-4 flex items-center gap-2">
+                    <span className="text-lg">🎯</span>
+                    Computis Opportunity
+                  </h4>
+                  <div className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-[20px] p-6 border border-emerald-200">
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-emerald-900">
+                          <span className="font-semibold">First CPA-first platform</span> with transparent, auditable workflows
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-emerald-900">
+                          <span className="font-semibold">Explainable AI</span> with professional override control
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-emerald-900">
+                          <span className="font-semibold">Modular infrastructure</span> for multi-client firms
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-emerald-900">
+                          <span className="font-semibold">Audit-ready exports</span> competitors lack
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-indigo-50 rounded-[16px] p-4 border-l-4 border-indigo-500">
+                <p className="text-sm text-indigo-900">
+                  <span className="font-semibold">Market Positioning:</span> Dominate the CPA segment (CoinTracker, Koinly target consumers; TaxBit, Cryptio serve enterprises) by delivering professional-grade explainability
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
