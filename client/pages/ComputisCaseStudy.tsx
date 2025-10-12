@@ -628,8 +628,6 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-
-
         {/* Design Process & Methodology */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
           <div className="bg-white rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-sm">
@@ -1200,34 +1198,68 @@ export default function ComputisCaseStudy() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-[20px] p-6 border border-green-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-green-600 mb-2">↓ 45%</p>
-                  <p className="text-sm text-green-800 font-medium">onboarding time</p>
-                  <p className="text-xs text-green-700 mt-1">(2.5h → 1.4h) through intuitive workflows</p>
+                  <p className="text-2xl font-bold text-green-600 mb-2">
+                    ↓ 45%
+                  </p>
+                  <p className="text-sm text-green-800 font-medium">
+                    onboarding time
+                  </p>
+                  <p className="text-xs text-green-700 mt-1">
+                    (2.5h → 1.4h) through intuitive workflows
+                  </p>
                 </div>
                 <div className="bg-gradient-to-r from-amber-50 to-amber-100 rounded-[20px] p-6 border border-amber-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-amber-600 mb-2">↑ 32%</p>
-                  <p className="text-sm text-amber-800 font-medium">demo-to-conversion rate</p>
-                  <p className="text-xs text-amber-700 mt-1">by demonstrating CPA-first value</p>
+                  <p className="text-2xl font-bold text-amber-600 mb-2">
+                    ↑ 32%
+                  </p>
+                  <p className="text-sm text-amber-800 font-medium">
+                    demo-to-conversion rate
+                  </p>
+                  <p className="text-xs text-amber-700 mt-1">
+                    by demonstrating CPA-first value
+                  </p>
                 </div>
                 <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-[20px] p-6 border border-purple-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-purple-600 mb-2">↓ 85%</p>
-                  <p className="text-sm text-purple-800 font-medium">engineering dependency</p>
-                  <p className="text-xs text-purple-700 mt-1">for classification rule changes</p>
+                  <p className="text-2xl font-bold text-purple-600 mb-2">
+                    ↓ 85%
+                  </p>
+                  <p className="text-sm text-purple-800 font-medium">
+                    engineering dependency
+                  </p>
+                  <p className="text-xs text-purple-700 mt-1">
+                    for classification rule changes
+                  </p>
                 </div>
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-[20px] p-6 border border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-blue-600 mb-2">↑ 150%</p>
-                  <p className="text-sm text-blue-800 font-medium">anomaly detection coverage</p>
-                  <p className="text-xs text-blue-700 mt-1">preventing filing errors</p>
+                  <p className="text-2xl font-bold text-blue-600 mb-2">
+                    ↑ 150%
+                  </p>
+                  <p className="text-sm text-blue-800 font-medium">
+                    anomaly detection coverage
+                  </p>
+                  <p className="text-xs text-blue-700 mt-1">
+                    preventing filing errors
+                  </p>
                 </div>
                 <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-[20px] p-6 border border-teal-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
                   <p className="text-2xl font-bold text-teal-600 mb-2">↓ 40%</p>
-                  <p className="text-sm text-teal-800 font-medium">compliance support tickets</p>
-                  <p className="text-xs text-teal-700 mt-1">through self-service audit trails</p>
+                  <p className="text-sm text-teal-800 font-medium">
+                    compliance support tickets
+                  </p>
+                  <p className="text-xs text-teal-700 mt-1">
+                    through self-service audit trails
+                  </p>
                 </div>
                 <div className="bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-[20px] p-6 border border-emerald-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer">
-                  <p className="text-2xl font-bold text-emerald-600 mb-2">Zero</p>
-                  <p className="text-sm text-emerald-800 font-medium">client disputes</p>
-                  <p className="text-xs text-emerald-700 mt-1">related to FMV reconciliation errors post-launch</p>
+                  <p className="text-2xl font-bold text-emerald-600 mb-2">
+                    Zero
+                  </p>
+                  <p className="text-sm text-emerald-800 font-medium">
+                    client disputes
+                  </p>
+                  <p className="text-xs text-emerald-700 mt-1">
+                    related to FMV reconciliation errors post-launch
+                  </p>
                 </div>
               </div>
             </div>
@@ -1241,25 +1273,36 @@ export default function ComputisCaseStudy() {
                   <blockquote className="text-lg italic text-blue-800 leading-[150%]">
                     "First crypto tax tool actually designed for accountants."
                   </blockquote>
-                  <cite className="text-sm text-blue-600 not-italic mt-2 block">— CPA Client</cite>
+                  <cite className="text-sm text-blue-600 not-italic mt-2 block">
+                    — CPA Client
+                  </cite>
                 </div>
                 <div className="bg-green-50 rounded-[20px] p-6 border-l-4 border-green-500 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
                   <blockquote className="text-lg italic text-green-800 leading-[150%]">
-                    "Clients trust our process now because we can show them exactly how we classified everything."
+                    "Clients trust our process now because we can show them
+                    exactly how we classified everything."
                   </blockquote>
-                  <cite className="text-sm text-green-600 not-italic mt-2 block">— BD Lead</cite>
+                  <cite className="text-sm text-green-600 not-italic mt-2 block">
+                    — BD Lead
+                  </cite>
                 </div>
                 <div className="bg-purple-50 rounded-[20px] p-6 border-l-4 border-purple-500 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
                   <blockquote className="text-lg italic text-purple-800 leading-[150%]">
-                    "I feel in control with AI suggestions instead of overruled by them."
+                    "I feel in control with AI suggestions instead of overruled
+                    by them."
                   </blockquote>
-                  <cite className="text-sm text-purple-600 not-italic mt-2 block">— Tax Analyst</cite>
+                  <cite className="text-sm text-purple-600 not-italic mt-2 block">
+                    — Tax Analyst
+                  </cite>
                 </div>
                 <div className="bg-amber-50 rounded-[20px] p-6 border-l-4 border-amber-500 transition-all duration-300 hover:shadow-md hover:scale-[1.01] cursor-pointer">
                   <blockquote className="text-lg italic text-amber-800 leading-[150%]">
-                    "Your handoffs made us 10x faster. The edge case documentation was incredible."
+                    "Your handoffs made us 10x faster. The edge case
+                    documentation was incredible."
                   </blockquote>
-                  <cite className="text-sm text-amber-600 not-italic mt-2 block">— Engineering Lead</cite>
+                  <cite className="text-sm text-amber-600 not-italic mt-2 block">
+                    — Engineering Lead
+                  </cite>
                 </div>
               </div>
             </div>
@@ -1271,23 +1314,44 @@ export default function ComputisCaseStudy() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]"><span className="font-semibold">Closed 3 enterprise CPA firm deals</span> in first 6 months post-launch</span>
+                  <span className="text-[#131417]">
+                    <span className="font-semibold">
+                      Closed 3 enterprise CPA firm deals
+                    </span>{" "}
+                    in first 6 months post-launch
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]"><span className="font-semibold">Reduced customer success overhead</span> through self-service capabilities</span>
+                  <span className="text-[#131417]">
+                    <span className="font-semibold">
+                      Reduced customer success overhead
+                    </span>{" "}
+                    through self-service capabilities
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]"><span className="font-semibold">Differentiated from competitors</span> in pitch meetings with explainable AI demos</span>
+                  <span className="text-[#131417]">
+                    <span className="font-semibold">
+                      Differentiated from competitors
+                    </span>{" "}
+                    in pitch meetings with explainable AI demos
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]"><span className="font-semibold">Enabled scaling</span> to DAO and hedge fund market segments</span>
+                  <span className="text-[#131417]">
+                    <span className="font-semibold">Enabled scaling</span> to
+                    DAO and hedge fund market segments
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                  <span className="text-[#131417]"><span className="font-semibold">Improved retention</span> through trust-building transparency features</span>
+                  <span className="text-[#131417]">
+                    <span className="font-semibold">Improved retention</span>{" "}
+                    through trust-building transparency features
+                  </span>
                 </li>
               </ul>
             </div>
@@ -1311,15 +1375,22 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-3 mb-4">
                     <FileText className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="text-lg font-semibold text-blue-900 mb-3">Documentation</h4>
+                      <h4 className="text-lg font-semibold text-blue-900 mb-3">
+                        Documentation
+                      </h4>
                       <ul className="space-y-2 text-sm text-blue-800">
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Annotated Figma files with interaction states and edge cases</span>
+                          <span>
+                            Annotated Figma files with interaction states and
+                            edge cases
+                          </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Component library with prop specifications</span>
+                          <span>
+                            Component library with prop specifications
+                          </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
@@ -1338,23 +1409,34 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-3 mb-4">
                     <Shield className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="text-lg font-semibold text-green-900 mb-3">Quality Assurance</h4>
+                      <h4 className="text-lg font-semibold text-green-900 mb-3">
+                        Quality Assurance
+                      </h4>
                       <ul className="space-y-2 text-sm text-green-800">
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>QA test scenarios for audit trail workflows</span>
+                          <span>
+                            QA test scenarios for audit trail workflows
+                          </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Accessibility validation using Axe and manual testing</span>
+                          <span>
+                            Accessibility validation using Axe and manual
+                            testing
+                          </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Cross-browser compatibility testing matrix</span>
+                          <span>
+                            Cross-browser compatibility testing matrix
+                          </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Performance benchmarks for large dataset views</span>
+                          <span>
+                            Performance benchmarks for large dataset views
+                          </span>
                         </li>
                       </ul>
                     </div>
@@ -1365,15 +1447,22 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-3 mb-4">
                     <Users className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="text-lg font-semibold text-purple-900 mb-3">Knowledge Transfer</h4>
+                      <h4 className="text-lg font-semibold text-purple-900 mb-3">
+                        Knowledge Transfer
+                      </h4>
                       <ul className="space-y-2 text-sm text-purple-800">
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Loom walkthrough videos for complex interaction patterns</span>
+                          <span>
+                            Loom walkthrough videos for complex interaction
+                            patterns
+                          </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>Async Slack threads for edge case discussions</span>
+                          <span>
+                            Async Slack threads for edge case discussions
+                          </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
@@ -1381,7 +1470,10 @@ export default function ComputisCaseStudy() {
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                          <span>User story acceptance criteria with visual references</span>
+                          <span>
+                            User story acceptance criteria with visual
+                            references
+                          </span>
                         </li>
                       </ul>
                     </div>
@@ -1392,9 +1484,12 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-3">
                     <Zap className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="text-lg font-semibold text-amber-900 mb-3">Engineering Feedback</h4>
+                      <h4 className="text-lg font-semibold text-amber-900 mb-3">
+                        Engineering Feedback
+                      </h4>
                       <blockquote className="text-base italic text-amber-800 leading-[150%]">
-                        "Your handoffs made us 10x faster. The edge case documentation was incredible."
+                        "Your handoffs made us 10x faster. The edge case
+                        documentation was incredible."
                       </blockquote>
                     </div>
                   </div>
@@ -1416,19 +1511,28 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4">
                   <span className="text-2xl font-bold text-blue-600">1.</span>
                   <div>
-                    <h3 className="text-lg font-bold text-blue-900 mb-2">Trust is a UX Principle</h3>
+                    <h3 className="text-lg font-bold text-blue-900 mb-2">
+                      Trust is a UX Principle
+                    </h3>
                     <ul className="space-y-1 text-sm text-blue-800">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Explainability drove adoption more than feature quantity</span>
+                        <span>
+                          Explainability drove adoption more than feature
+                          quantity
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Transparency converted skeptics into advocates</span>
+                        <span>
+                          Transparency converted skeptics into advocates
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Control mechanisms reduced perceived AI risk</span>
+                        <span>
+                          Control mechanisms reduced perceived AI risk
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -1439,19 +1543,27 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4">
                   <span className="text-2xl font-bold text-purple-600">2.</span>
                   <div>
-                    <h3 className="text-lg font-bold text-purple-900 mb-2">Systems Thinking &gt; Screen Design</h3>
+                    <h3 className="text-lg font-bold text-purple-900 mb-2">
+                      Systems Thinking &gt; Screen Design
+                    </h3>
                     <ul className="space-y-1 text-sm text-purple-800">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Modular IA enabled scaling to new market segments</span>
+                        <span>
+                          Modular IA enabled scaling to new market segments
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Role-based architecture future-proofed for growth</span>
+                        <span>
+                          Role-based architecture future-proofed for growth
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Audit trail foundation unlocked regulatory compliance</span>
+                        <span>
+                          Audit trail foundation unlocked regulatory compliance
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -1462,19 +1574,27 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4">
                   <span className="text-2xl font-bold text-green-600">3.</span>
                   <div>
-                    <h3 className="text-lg font-bold text-green-900 mb-2">AI + Human Collaboration Model</h3>
+                    <h3 className="text-lg font-bold text-green-900 mb-2">
+                      AI + Human Collaboration Model
+                    </h3>
                     <ul className="space-y-1 text-sm text-green-800">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Override control flipped AI from threat to tool</span>
+                        <span>
+                          Override control flipped AI from threat to tool
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Confidence indicators enabled informed decisions</span>
+                        <span>
+                          Confidence indicators enabled informed decisions
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Rationale transparency built professional trust</span>
+                        <span>
+                          Rationale transparency built professional trust
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -1485,19 +1605,27 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4">
                   <span className="text-2xl font-bold text-amber-600">4.</span>
                   <div>
-                    <h3 className="text-lg font-bold text-amber-900 mb-2">Design Choices Drive Business Metrics</h3>
+                    <h3 className="text-lg font-bold text-amber-900 mb-2">
+                      Design Choices Drive Business Metrics
+                    </h3>
                     <ul className="space-y-1 text-sm text-amber-800">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Self-service features directly reduced support costs</span>
+                        <span>
+                          Self-service features directly reduced support costs
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Audit trail capabilities closed enterprise deals</span>
+                        <span>
+                          Audit trail capabilities closed enterprise deals
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>CPA-first positioning differentiated in crowded market</span>
+                        <span>
+                          CPA-first positioning differentiated in crowded market
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -1508,19 +1636,27 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4">
                   <span className="text-2xl font-bold text-pink-600">5.</span>
                   <div>
-                    <h3 className="text-lg font-bold text-pink-900 mb-2">Accessibility Benefits All Users</h3>
+                    <h3 className="text-lg font-bold text-pink-900 mb-2">
+                      Accessibility Benefits All Users
+                    </h3>
                     <ul className="space-y-1 text-sm text-pink-800">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Keyboard navigation improved power user efficiency</span>
+                        <span>
+                          Keyboard navigation improved power user efficiency
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>Clear hierarchy reduced cognitive load universally</span>
+                        <span>
+                          Clear hierarchy reduced cognitive load universally
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 bg-pink-500 rounded-full mt-1.5 flex-shrink-0"></span>
-                        <span>WCAG compliance became competitive advantage</span>
+                        <span>
+                          WCAG compliance became competitive advantage
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -1539,7 +1675,9 @@ export default function ComputisCaseStudy() {
 
             <div className="bg-white/10 rounded-[20px] p-8 mb-6 backdrop-blur-sm">
               <blockquote className="text-xl italic leading-[150%] mb-4">
-                "Design isn't what it looks like — it's whether a CPA can explain a tax report to a regulator without an engineer in the room."
+                "Design isn't what it looks like — it's whether a CPA can
+                explain a tax report to a regulator without an engineer in the
+                room."
               </blockquote>
             </div>
 
@@ -1547,20 +1685,37 @@ export default function ComputisCaseStudy() {
               <h3 className="text-xl font-medium mb-6">Core Tenets</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
-                  <h4 className="font-semibold text-lg mb-2">Transparency over Efficiency</h4>
-                  <p className="text-sm text-gray-300">Speed matters, but professional defensibility matters more</p>
+                  <h4 className="font-semibold text-lg mb-2">
+                    Transparency over Efficiency
+                  </h4>
+                  <p className="text-sm text-gray-300">
+                    Speed matters, but professional defensibility matters more
+                  </p>
                 </div>
                 <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
-                  <h4 className="font-semibold text-lg mb-2">Augmentation over Automation</h4>
-                  <p className="text-sm text-gray-300">AI should empower expertise, not replace judgment</p>
+                  <h4 className="font-semibold text-lg mb-2">
+                    Augmentation over Automation
+                  </h4>
+                  <p className="text-sm text-gray-300">
+                    AI should empower expertise, not replace judgment
+                  </p>
                 </div>
                 <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
-                  <h4 className="font-semibold text-lg mb-2">Systems over Surfaces</h4>
-                  <p className="text-sm text-gray-300">Beautiful interfaces fail without sound information architecture</p>
+                  <h4 className="font-semibold text-lg mb-2">
+                    Systems over Surfaces
+                  </h4>
+                  <p className="text-sm text-gray-300">
+                    Beautiful interfaces fail without sound information
+                    architecture
+                  </p>
                 </div>
                 <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 cursor-pointer">
-                  <h4 className="font-semibold text-lg mb-2">Trust through Control</h4>
-                  <p className="text-sm text-gray-300">Professionals need agency, not just accuracy</p>
+                  <h4 className="font-semibold text-lg mb-2">
+                    Trust through Control
+                  </h4>
+                  <p className="text-sm text-gray-300">
+                    Professionals need agency, not just accuracy
+                  </p>
                 </div>
               </div>
             </div>
