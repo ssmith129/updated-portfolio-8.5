@@ -9,6 +9,7 @@
 ## Executive Summary
 
 ### ✅ What's Working
+
 - **Local build:** Completes successfully in ~16s
 - **Output structure:** Correct (dist/spa/)
 - **API functions:** Properly formatted for Vercel serverless
@@ -17,6 +18,7 @@
 - **Dependencies:** All properly declared
 
 ### ⚠️ Issues Found
+
 1. **CRITICAL:** Vercel Dashboard using cached legacy "builds" configuration
 2. **MEDIUM:** Missing explicit Node.js version specification
 3. **LOW:** React core dependencies in devDependencies (should be in dependencies)
@@ -29,6 +31,7 @@
 ### ✅ Current Configuration (Correct)
 
 **package.json:**
+
 ```json
 {
   "scripts": {
@@ -39,6 +42,7 @@
 ```
 
 **vite.config.ts:**
+
 ```typescript
 {
   build: {
@@ -54,6 +58,7 @@
 ```
 
 **vercel.json:**
+
 ```json
 {
   "rewrites": [
@@ -79,6 +84,7 @@
 ```
 
 **Alternative:** Create `.nvmrc`:
+
 ```
 20
 ```
@@ -94,21 +100,23 @@
 **Build output:** Static SPA (✅ Vercel-optimized)
 
 **Vite Configuration Analysis:**
+
 ```typescript
 // ✅ Correct settings
 export default defineConfig({
   build: {
-    outDir: "dist/spa",           // ✅ Matches vercel.json
-    sourcemap: false,              // ✅ Reduces deployment size
-    minify: "esbuild",             // ✅ Fast, built-in
+    outDir: "dist/spa", // ✅ Matches vercel.json
+    sourcemap: false, // ✅ Reduces deployment size
+    minify: "esbuild", // ✅ Fast, built-in
     esbuild: {
-      drop: ["console", "debugger"] // ✅ Production optimization
-    }
-  }
-})
+      drop: ["console", "debugger"], // ✅ Production optimization
+    },
+  },
+});
 ```
 
 **Code Splitting Strategy (✅ Implemented):**
+
 - react-vendor: 345 KB → 108 KB gzipped
 - ui-vendor: 74 KB → 27 KB gzipped
 - three-vendor: 0.27 KB (lazy loaded)
@@ -126,6 +134,7 @@ export default defineConfig({
 #### Issue 1: React in devDependencies
 
 **Problem:** Core React packages are in devDependencies:
+
 ```json
 "devDependencies": {
   "react": "^18.3.1",
@@ -144,8 +153,8 @@ export default defineConfig({
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^4.18.2",
-    "react": "^18.3.1",              // ← MOVE HERE
-    "react-dom": "^18.3.1",          // ← MOVE HERE
+    "react": "^18.3.1", // ← MOVE HERE
+    "react-dom": "^18.3.1", // ← MOVE HERE
     "react-router-dom": "^6.26.2",
     "serverless-http": "^3.2.0",
     "zod": "^3.23.8"
@@ -158,6 +167,7 @@ export default defineConfig({
 **Status:** No `.env` file found (not critical for deployment)
 
 **Recommendation:** Create `.env.example`:
+
 ```bash
 # API Configuration
 PING_MESSAGE=ping
@@ -177,8 +187,9 @@ Set in Dashboard → Settings → Environment Variables
 **API Routes Analysis:**
 
 **✅ api/ping.ts:**
+
 ```typescript
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   // ✅ Proper CORS headers
@@ -188,6 +199,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
 ```
 
 **✅ api/demo.ts:**
+
 ```typescript
 // ✅ Uses @vercel/node types
 // ✅ Proper TypeScript imports from shared/
@@ -195,6 +207,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
 ```
 
 **✅ client/main.tsx:**
+
 ```typescript
 // ✅ Proper React 18 createRoot
 // ✅ HMR support
@@ -203,12 +216,13 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
 ```
 
 **✅ TypeScript Configuration:**
+
 ```json
 {
   "compilerOptions": {
-    "target": "ES2020",           // ✅ Modern
-    "module": "ESNext",           // ✅ Vite compatible
-    "jsx": "react-jsx",           // ✅ React 18
+    "target": "ES2020", // ✅ Modern
+    "module": "ESNext", // ✅ Vite compatible
+    "jsx": "react-jsx", // ✅ React 18
     "moduleResolution": "bundler" // ✅ Vite recommended
   }
 }
@@ -217,6 +231,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
 ### ⚠️ Minor Import Warning
 
 **Path Aliases:**
+
 ```typescript
 "@/*": ["./client/*"],
 "@shared/*": ["./shared/*"]
@@ -257,6 +272,7 @@ dist/spa/
 ### ✅ Static Assets Handling
 
 **Image References in index.html:**
+
 ```html
 <!-- ✅ External CDN (Builder.io) - No issues -->
 <link rel="icon" href="https://cdn.builder.io/api/v1/image/..." />
@@ -266,6 +282,7 @@ dist/spa/
 ```
 
 **Public Assets:**
+
 - ✅ Images copied to dist/spa/ during build
 - ✅ Cache headers configured in vercel.json
 - ✅ No broken references found
@@ -279,6 +296,7 @@ dist/spa/
 **Problem:** Vercel using cached "builds" array instead of modern config
 
 **Error:**
+
 ```
 WARN! Due to `builds` existing in your configuration file...
 Error: Build "src" is "index.html" but expected "package.json"
@@ -293,9 +311,10 @@ Error: Build "src" is "index.html" but expected "package.json"
    - Select project: `portfolio-website`
 
 2. **Update Build & Development Settings:**
+
    ```
    Settings → General → Build & Development Settings
-   
+
    Framework Preset:     Other
    Build Command:        npm run build:vercel
    Output Directory:     dist/spa
@@ -314,6 +333,7 @@ Error: Build "src" is "index.html" but expected "package.json"
 ### Solution 2: Move React to Dependencies
 
 **Current package.json:**
+
 ```json
 {
   "devDependencies": {
@@ -324,6 +344,7 @@ Error: Build "src" is "index.html" but expected "package.json"
 ```
 
 **Fixed package.json:**
+
 ```json
 {
   "dependencies": {
@@ -335,6 +356,7 @@ Error: Build "src" is "index.html" but expected "package.json"
 ```
 
 **Command:**
+
 ```bash
 npm install --save react react-dom
 npm uninstall --save-dev react react-dom
@@ -343,11 +365,13 @@ npm uninstall --save-dev react react-dom
 ### Solution 3: Add Node Version Specification
 
 **Create `.nvmrc`:**
+
 ```
 20
 ```
 
 **Or update package.json:**
+
 ```json
 {
   "engines": {
@@ -359,6 +383,7 @@ npm uninstall --save-dev react react-dom
 ### Solution 4: Optimize vercel.json (Already Done ✅)
 
 **Current (Correct):**
+
 ```json
 {
   "rewrites": [
@@ -392,6 +417,7 @@ npm uninstall --save-dev react react-dom
 ### Immediate Changes (Critical)
 
 #### 1. Update package.json
+
 ```bash
 # Move React to dependencies
 npm install --save react react-dom
@@ -408,6 +434,7 @@ npm install --save react react-dom
 ```
 
 #### 2. Update Vercel Dashboard
+
 - Settings → Build Command: `npm run build:vercel`
 - Settings → Output Directory: `dist/spa`
 - Clear "builds" legacy config if present
@@ -415,16 +442,19 @@ npm install --save react react-dom
 ### Recommended Changes (Optional)
 
 #### 1. Create .nvmrc
+
 ```bash
 echo "20" > .nvmrc
 ```
 
 #### 2. Add environment variables template
+
 ```bash
 cp .env.example .env.local  # For local development
 ```
 
 #### 3. Update .gitignore (verify)
+
 ```
 # Vercel
 .vercel
@@ -501,7 +531,7 @@ Source Maps:       ✅ Disabled (production)
 ### Performance Metrics (Expected)
 
 | Metric | Target | Current |
-|--------|--------|---------|
+| ------ | ------ | ------- |
 | LCP    | <2.5s  | ~1.8s   |
 | FID    | <100ms | ~50ms   |
 | CLS    | <0.1   | ~0.05   |
@@ -514,12 +544,14 @@ Source Maps:       ✅ Disabled (production)
 ### Issue: Build Fails on Vercel
 
 **Symptoms:**
+
 ```
 Error: Build "src" is "index.html"
 WARN! Due to 'builds' existing...
 ```
 
 **Solution:**
+
 1. Clear Vercel build cache
 2. Update dashboard settings
 3. Remove legacy "builds" config
@@ -530,6 +562,7 @@ WARN! Due to 'builds' existing...
 **Symptoms:** `/api/ping` returns 404
 
 **Solutions:**
+
 1. Verify functions in `api/` directory
 2. Check vercel.json rewrites
 3. Ensure `export default function handler`
@@ -540,6 +573,7 @@ WARN! Due to 'builds' existing...
 **Symptoms:** Site loads but shows blank page
 
 **Solutions:**
+
 1. Check browser console for errors
 2. Verify `dist/spa/index.html` exists
 3. Check SPA fallback in vercel.json
@@ -550,6 +584,7 @@ WARN! Due to 'builds' existing...
 **Symptoms:** `process.env.X` is undefined
 
 **Solutions:**
+
 1. Set in Vercel Dashboard
 2. Redeploy after adding variables
 3. Check variable names (case-sensitive)
@@ -560,6 +595,7 @@ WARN! Due to 'builds' existing...
 ## 11. Quick Fix Commands
 
 ### Local Testing
+
 ```bash
 # Clean build
 rm -rf dist node_modules
@@ -574,6 +610,7 @@ npm run typecheck
 ```
 
 ### Fix Dependencies
+
 ```bash
 # Move React to dependencies
 npm install --save react react-dom
@@ -584,6 +621,7 @@ npm install
 ```
 
 ### Vercel Deployment
+
 ```bash
 # Using Vercel CLI
 npm i -g vercel
@@ -603,12 +641,14 @@ git push origin main
 ### Status: ✅ Ready to Deploy (with minor fixes)
 
 **Critical Actions Required:**
+
 1. ✅ Move React to dependencies
 2. ✅ Add Node.js version specification
 3. ✅ Update Vercel Dashboard settings
 4. ✅ Clear build cache and redeploy
 
 **Expected Outcome:**
+
 - ✅ Build completes in ~15s
 - ✅ Deploy succeeds without warnings
 - ✅ Site loads at deployment URL
@@ -617,6 +657,7 @@ git push origin main
 ### Deployment Timeline
 
 1. **Apply fixes:** 5 minutes
+
    ```bash
    npm install --save react react-dom
    echo "20" > .nvmrc
@@ -646,6 +687,7 @@ git push origin main
 - **TypeScript Docs:** https://www.typescriptlang.org/docs
 
 **Project-Specific Guides:**
+
 - `VERCEL_DEPLOYMENT.md` - Full deployment guide
 - `VERCEL_DASHBOARD_FIX.md` - Dashboard configuration
 - `QUICK_DEPLOY.md` - 3-step deployment
