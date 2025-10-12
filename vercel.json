@@ -1,6 +1,8 @@
 {
+  "version": 2,
   "buildCommand": "npm run build:vercel",
   "outputDirectory": "dist/spa",
+  "installCommand": "npm install",
   "framework": null,
   "rewrites": [
     {
@@ -8,7 +10,7 @@
       "destination": "/api/:path*"
     },
     {
-      "source": "/((?!api/).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
@@ -38,12 +40,6 @@
           "value": "1; mode=block"
         }
       ]
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/.*",
-      "dest": "/api/$0"
     }
   ]
 }
