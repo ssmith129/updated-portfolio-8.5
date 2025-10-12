@@ -52,7 +52,7 @@ Symplify was designed to modernize fragmented hospital and public health workflo
 - **Project Type:** B2B SaaS – Healthcare / EHR
 - **Role:** Founding Product Designer
 - **Team:** 8 (PM, engineers, clinical SMEs, data analysts)
-- **Timeline:** Jan��Aug 2024
+- **Timeline:** Jan–Aug 2024
 - **Tools:** Figma, Notion, Jira, ChatGPT, Framer
 
 ### Business Objectives
