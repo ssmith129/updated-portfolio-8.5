@@ -632,7 +632,8 @@ export default function ComputisCaseStudy() {
                     </div>
                     <div className="bg-slate-50 rounded-[16px] p-4 border-l-4 border-slate-400 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
                       <p className="text-sm text-slate-800">
-                        Enterprise platforms use opaque AI that CPAs can't validate
+                        Enterprise platforms use opaque AI that CPAs can't
+                        validate
                       </p>
                     </div>
                     <div className="bg-slate-50 rounded-[16px] p-4 border-l-4 border-slate-400 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
@@ -642,7 +643,8 @@ export default function ComputisCaseStudy() {
                     </div>
                     <div className="bg-slate-50 rounded-[16px] p-4 border-l-4 border-slate-400 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
                       <p className="text-sm text-slate-800">
-                        Tools force reliance on engineering for rule customization
+                        Tools force reliance on engineering for rule
+                        customization
                       </p>
                     </div>
                   </div>
@@ -659,25 +661,35 @@ export default function ComputisCaseStudy() {
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
                         <span className="text-sm text-emerald-900">
-                          <span className="font-semibold">First CPA-first platform</span> with transparent, auditable workflows
+                          <span className="font-semibold">
+                            First CPA-first platform
+                          </span>{" "}
+                          with transparent, auditable workflows
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
                         <span className="text-sm text-emerald-900">
-                          <span className="font-semibold">Explainable AI</span> with professional override control
+                          <span className="font-semibold">Explainable AI</span>{" "}
+                          with professional override control
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
                         <span className="text-sm text-emerald-900">
-                          <span className="font-semibold">Modular infrastructure</span> for multi-client firms
+                          <span className="font-semibold">
+                            Modular infrastructure
+                          </span>{" "}
+                          for multi-client firms
                         </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
                         <span className="text-sm text-emerald-900">
-                          <span className="font-semibold">Audit-ready exports</span> competitors lack
+                          <span className="font-semibold">
+                            Audit-ready exports
+                          </span>{" "}
+                          competitors lack
                         </span>
                       </li>
                     </ul>
@@ -687,7 +699,10 @@ export default function ComputisCaseStudy() {
 
               <div className="bg-indigo-50 rounded-[16px] p-4 border-l-4 border-indigo-500">
                 <p className="text-sm text-indigo-900">
-                  <span className="font-semibold">Market Positioning:</span> Dominate the CPA segment (CoinTracker, Koinly target consumers; TaxBit, Cryptio serve enterprises) by delivering professional-grade explainability
+                  <span className="font-semibold">Market Positioning:</span>{" "}
+                  Dominate the CPA segment (CoinTracker, Koinly target
+                  consumers; TaxBit, Cryptio serve enterprises) by delivering
+                  professional-grade explainability
                 </p>
               </div>
             </div>
@@ -1459,7 +1474,9 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="mt-8">
-              <h3 className="text-xl font-medium text-[#131417] mb-6">Core Tenets</h3>
+              <h3 className="text-xl font-medium text-[#131417] mb-6">
+                Core Tenets
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-[20px] p-6 border-l-4 border-indigo-500 transition-all duration-300 hover:shadow-md hover:scale-[1.02]">
                   <h4 className="font-semibold text-lg text-indigo-900 mb-2">
