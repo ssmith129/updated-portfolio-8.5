@@ -1476,226 +1476,125 @@ export default function ComputisCaseStudy() {
         {/* NEW SECTION: Technical Collaboration & Partnership */}
         <section id="technical-collab" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000">
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 shadow-xl">
-            <div className="flex items-center gap-3 mb-10">
+            <div className="flex items-center gap-3 mb-8">
               <Settings className="w-8 h-8 text-[#00D4FF]" />
               <h2 className="text-3xl sm:text-4xl font-semibold leading-[1.2] tracking-tight">
-                Technical Collaboration: Bridging Design & Engineering
+                Technical Collaboration
               </h2>
-            </div>
-
-            <div className="bg-white/10 rounded-[20px] p-6 mb-10 backdrop-blur-sm border border-white/20">
-              <p className="text-lg leading-[1.7]">
-                <strong className="font-semibold">Partnership Philosophy:</strong> I don't just hand off designs—I partner with
-                engineering from ideation through launch. My goal is to speak their language, respect
-                their constraints, and collaborate on solutions that are both beautiful and buildable.
-              </p>
             </div>
 
             {/* Engineering Testimonial */}
             <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 mb-10 border border-[#00FFB3]/30">
-              <blockquote className="text-xl italic mb-4 leading-[1.5]">
-                "Most designers hand off Figma files and disappear. You sat with us during implementation,
-                debugged CSS together, and proposed performance optimizations. You think like an engineer
-                who happens to be excellent at design."
+              <blockquote className="text-lg italic mb-3 leading-[1.5]">
+                "You sat with us during implementation, debugged CSS together, and proposed performance optimizations. You think like an engineer who happens to be excellent at design."
               </blockquote>
               <cite className="text-sm text-gray-300 not-italic">
                 — Senior Frontend Engineer, Computis
               </cite>
             </div>
 
-            {/* Key Contributions */}
-            <div className="mb-12">
-              <h3 className="text-xl font-semibold mb-8 leading-[1.3]">Technical Contributions to the Product</h3>
-
-              <div className="space-y-8">
-                {/* Contribution 1 */}
-                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm border border-white/20">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-[#0080FF]/20 rounded-lg flex items-center justify-center border border-[#0080FF]/30">
-                      <Activity className="w-6 h-6 text-[#00D4FF]" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold mb-2 leading-[1.4]">
-                        1. Real-Time Rule Preview: API Design Collaboration
-                      </h4>
-                    </div>
+            {/* Key Contributions - Grid Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+              {/* Contribution 1 */}
+              <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm border border-white/20 hover:border-[#00D4FF]/40 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#0080FF]/20 rounded-lg flex items-center justify-center border border-[#0080FF]/30">
+                    <Activity className="w-5 h-5 text-[#00D4FF]" />
                   </div>
-
-                  <div className="space-y-4 pl-16">
-                    <div>
-                      <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">The Challenge</p>
-                      <p className="text-base text-gray-300 leading-[1.7]">
-                        The rule builder needed to show *instant* preview of rule impact (e.g., "This rule
-                        will classify 47 transactions"). Initial engineering proposal: full table re-fetch
-                        on every dropdown change. This would create 300ms+ latency and overload the server.
-                      </p>
-                    </div>
-
-                    <div>
-                      <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">My Technical Contribution</p>
-                      <p className="text-base text-gray-300 leading-[1.7] mb-3">
-                        I partnered with backend engineering to design a debounced, lightweight API endpoint:
-                      </p>
-                      <ul className="text-sm text-gray-300 space-y-2">
-                        <li className="leading-[1.6]">• <strong>Debounced API calls:</strong> 300ms debounce after last user input</li>
-                        <li className="leading-[1.6]">• <strong>Preview-only endpoint:</strong> New /api/rules/preview that returns count only (not full data)</li>
-                        <li className="leading-[1.6]">• <strong>Optimistic UI:</strong> Show loading spinner after 150ms</li>
-                        <li className="leading-[1.6]">• <strong>Client-side caching:</strong> Cache preview results for identical queries</li>
-                      </ul>
-                    </div>
-
-                    <div>
-                      <p className="text-sm font-semibold text-[#00FFB3] mb-2 leading-[1.4]">The Impact</p>
-                      <ul className="text-base text-gray-300 space-y-1">
-                        <li className="leading-[1.6]">• Perceived latency: <strong>Instant</strong> (users didn't notice 300ms delay)</li>
-                        <li className="leading-[1.6]">• Server load: ↓ 85% (count-only queries vs. full table fetches)</li>
-                        <li className="leading-[1.6]">• Rule creation time: ↓ 40% (faster iteration = faster completion)</li>
-                      </ul>
-                    </div>
-                  </div>
+                  <h4 className="text-lg font-semibold leading-[1.3]">
+                    Real-Time Rule Preview
+                  </h4>
                 </div>
 
-                {/* Contribution 2 */}
-                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm border border-white/20">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-[#00FFB3]/20 rounded-lg flex items-center justify-center border border-[#00FFB3]/30">
-                      <Shield className="w-6 h-6 text-[#00FFB3]" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold mb-2 leading-[1.4]">
-                        2. Accessibility CI/CD: Automated Testing Integration
-                      </h4>
-                    </div>
+                <p className="text-sm text-gray-400 mb-4 leading-[1.6]">
+                  Partnered with backend to design debounced API endpoint for instant preview
+                </p>
+
+                <div className="space-y-3">
+                  <div className="bg-[#0080FF]/10 rounded-lg p-3">
+                    <p className="text-xs font-semibold text-[#00D4FF] mb-1">Solution</p>
+                    <ul className="text-xs text-gray-300 space-y-1">
+                      <li>• 300ms debounced calls</li>
+                      <li>• Count-only endpoint</li>
+                      <li>• Client-side caching</li>
+                    </ul>
                   </div>
+                  <div className="bg-[#00FFB3]/10 rounded-lg p-3">
+                    <p className="text-xs font-semibold text-[#00FFB3] mb-1">Impact</p>
+                    <p className="text-xs text-gray-300">↓ 85% server load • ↓ 40% rule creation time</p>
+                  </div>
+                </div>
+              </div>
 
-                  <div className="space-y-4 pl-16">
-                    <div>
-                      <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">The Challenge</p>
-                      <p className="text-base text-gray-300 leading-[1.7]">
-                        Accessibility regressions kept slipping through QA. Manual testing was slow and
-                        inconsistent. We needed automated guardrails.
-                      </p>
-                    </div>
+              {/* Contribution 2 */}
+              <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm border border-white/20 hover:border-[#00FFB3]/40 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#00FFB3]/20 rounded-lg flex items-center justify-center border border-[#00FFB3]/30">
+                    <Shield className="w-5 h-5 text-[#00FFB3]" />
+                  </div>
+                  <h4 className="text-lg font-semibold leading-[1.3]">
+                    Accessibility CI/CD
+                  </h4>
+                </div>
 
-                    <div>
-                      <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">My Technical Contribution</p>
-                      <p className="text-base text-gray-300 leading-[1.7] mb-3">
-                        I worked with DevOps to integrate accessibility testing into CI/CD pipeline:
-                      </p>
-                      <ul className="text-sm text-gray-300 space-y-2">
-                        <li className="leading-[1.6]">• <strong>axe-core integration:</strong> Automated tests run on every PR (blocks merge if failures)</li>
-                        <li className="leading-[1.6]">• <strong>Lighthouse CI:</strong> Accessibility score must be ≥95 to pass</li>
-                        <li className="leading-[1.6]">• <strong>Custom test scenarios:</strong> Wrote Playwright tests for keyboard navigation flows</li>
-                        <li className="leading-[1.6]">• <strong>Documentation:</strong> Created "Accessibility Playbook" for engineering team</li>
-                      </ul>
-                    </div>
+                <p className="text-sm text-gray-400 mb-4 leading-[1.6]">
+                  Integrated automated testing into pipeline with DevOps team
+                </p>
 
-                    <div>
-                      <p className="text-sm font-semibold text-[#00FFB3] mb-2 leading-[1.4]">The Impact</p>
-                      <ul className="text-base text-gray-300 space-y-1">
-                        <li className="leading-[1.6]">• Zero accessibility regressions post-launch (previously 3-5/month)</li>
-                        <li className="leading-[1.6]">• Engineering confidence ↑ (no more "did I break accessibility?" anxiety)</li>
-                        <li className="leading-[1.6]">• Procurement blocker removed (WCAG compliance now guaranteed)</li>
-                      </ul>
-                    </div>
+                <div className="space-y-3">
+                  <div className="bg-[#00FFB3]/10 rounded-lg p-3">
+                    <p className="text-xs font-semibold text-[#00FFB3] mb-1">Solution</p>
+                    <ul className="text-xs text-gray-300 space-y-1">
+                      <li>• axe-core on every PR</li>
+                      <li>• Lighthouse CI ≥95 score</li>
+                      <li>• Playwright keyboard tests</li>
+                    </ul>
+                  </div>
+                  <div className="bg-[#0080FF]/10 rounded-lg p-3">
+                    <p className="text-xs font-semibold text-[#0080FF] mb-1">Impact</p>
+                    <p className="text-xs text-gray-300">Zero regressions post-launch • WCAG compliant</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Key Learnings */}
-            <div className="bg-gradient-to-r from-[#FFD700]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#FFD700]/30">
-              <h3 className="text-lg font-semibold mb-4 flex items-center gap-2 leading-[1.4]">
-                <Lightbulb className="w-5 h-5 text-[#FFD700]" />
-                Key Learnings on Technical Collaboration
-              </h3>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 bg-[#FFD700]/20 rounded-full flex items-center justify-center text-xs font-bold text-[#FFD700]">
-                    1
-                  </span>
-                  <p className="text-sm text-gray-300 leading-[1.6]">
-                    <strong>Speak engineering language:</strong> Learn their constraints (API latency, rendering cost,
-                    bundle size). When you understand *why* something is hard, you can design around it.
-                  </p>
+            {/* Collaboration Approach */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="bg-white/5 rounded-[16px] p-5 border border-white/10">
+                <div className="flex items-center gap-2 mb-3">
+                  <FileText className="w-5 h-5 text-[#00D4FF]" />
+                  <h5 className="text-sm font-semibold text-[#00D4FF]">Documentation</h5>
                 </div>
-                <div className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 bg-[#FFD700]/20 rounded-full flex items-center justify-center text-xs font-bold text-[#FFD700]">
-                    2
-                  </span>
-                  <p className="text-sm text-gray-300 leading-[1.6]">
-                    <strong>Prototype in code when needed:</strong> Sometimes a CodePen prototype explains intent
-                    better than 10 Figma screens. Show, don't just tell.
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 bg-[#FFD700]/20 rounded-full flex items-center justify-center text-xs font-bold text-[#FFD700]">
-                    3
-                  </span>
-                  <p className="text-sm text-gray-300 leading-[1.6]">
-                    <strong>Build trust through reliability:</strong> If you say "this is a P0 blocker," it better
-                    be a P0 blocker. Earn credibility by being right about priorities.
-                  </p>
-                </div>
+                <ul className="text-xs text-gray-400 space-y-1">
+                  <li>• Annotated Figma files</li>
+                  <li>• Component specs</li>
+                  <li>• Edge case docs</li>
+                </ul>
               </div>
-            </div>
-          </div>
-        </section>
 
-        {/* Stakeholder Alignment */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
-          <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 transition-all duration-300 hover:border-[#00D4FF]/40 cursor-pointer">
-            <h2 className="text-3xl sm:text-4xl font-semibold leading-[1.2] tracking-tight mb-8">
-              Stakeholder Alignment: The Override Control Debate
-            </h2>
+              <div className="bg-white/5 rounded-[16px] p-5 border border-white/10">
+                <div className="flex items-center gap-2 mb-3">
+                  <Zap className="w-5 h-5 text-[#FFD700]" />
+                  <h5 className="text-sm font-semibold text-[#FFD700]">Pair Sessions</h5>
+                </div>
+                <ul className="text-xs text-gray-400 space-y-1">
+                  <li>• Debug CSS together</li>
+                  <li>• Performance reviews</li>
+                  <li>• Code prototypes</li>
+                </ul>
+              </div>
 
-            <div className="bg-[#0A0A0A]/50 rounded-[20px] p-6 mb-8 border border-[#FF8888]/20 transition-all duration-300 hover:bg-[#0A0A0A]/70 cursor-pointer">
-              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 leading-[1.3]">
-                <AlertTriangle className="w-5 h-5 text-[#FFD700]" />
-                Conflict
-              </h3>
-              <p className="text-lg leading-[1.7] text-[#D1D5DB]">
-                CTO wanted full automation; CPAs demanded override control for
-                liability protection.
-              </p>
-            </div>
-
-            <div className="bg-[#0A0A0A]/50 rounded-[20px] p-6 mb-8 border border-[#FFD700]/20 transition-all duration-300 hover:bg-[#0A0A0A]/70 cursor-pointer">
-              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 leading-[1.3]">
-                <Lightbulb className="w-5 h-5 text-[#FFD700]" />
-                Approach
-              </h3>
-              <ul className="text-sm text-[#D1D5DB] space-y-2">
-                <li className="leading-[1.6]">• Facilitated design workshop with CPA + CTO</li>
-                <li className="leading-[1.6]">
-                  • Presented competitor data (40% G2 "black-box" complaints)
-                </li>
-                <li className="leading-[1.6]">
-                  • Proposed <em>graduated autonomy</em> system (High → Auto /
-                  Med → Review / Low → Manual)
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0A0A0A]/50 rounded-[20px] p-6 mb-8 border border-[#00FFB3]/20 transition-all duration-300 hover:bg-[#0A0A0A]/70 cursor-pointer">
-              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 leading-[1.3]">
-                <CheckCircle className="w-5 h-5 text-[#00FFB3]" />
-                Outcome
-              </h3>
-              <ul className="text-sm text-[#D1D5DB] space-y-2">
-                <li className="leading-[1.6]">• CTO aligned after market positioning demo</li>
-                <li className="leading-[1.6]">• Override control became a product differentiator</li>
-                <li className="leading-[1.6]">• Closed enterprise client deal after demo</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#00FFB3]/5 rounded-[20px] p-6 border border-[#00FFB3]/30">
-              <blockquote className="text-lg italic leading-[1.7] text-[#D1D5DB]">
-                "The first crypto tax tool I'd stake my license on."
-              </blockquote>
-              <cite className="text-sm text-[#9CA3AF] not-italic mt-2 block">
-                — CPA
-              </cite>
+              <div className="bg-white/5 rounded-[16px] p-5 border border-white/10">
+                <div className="flex items-center gap-2 mb-3">
+                  <Users className="w-5 h-5 text-[#00FFB3]" />
+                  <h5 className="text-sm font-semibold text-[#00FFB3]">Communication</h5>
+                </div>
+                <ul className="text-xs text-gray-400 space-y-1">
+                  <li>• Loom walkthroughs</li>
+                  <li>• Weekly syncs</li>
+                  <li>• Async via Figma</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -1836,59 +1735,6 @@ export default function ComputisCaseStudy() {
                     Improved retention via transparency
                   </span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Collaboration & Handoff */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2200">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
-              🤝 Collaboration & Handoff
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#0080FF]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02]">
-                <div className="flex items-center gap-3 mb-4">
-                  <FileText className="w-6 h-6 text-[#00D4FF] flex-shrink-0" />
-                  <h3 className="text-lg font-semibold text-[#00D4FF] leading-[1.4]">
-                    Documentation
-                  </h3>
-                </div>
-                <ul className="space-y-2 text-sm text-[#D1D5DB]">
-                  <li className="leading-[1.6]">• Annotated Figma files</li>
-                  <li className="leading-[1.6]">• Component library specs</li>
-                  <li className="leading-[1.6]">• Accessibility checklist</li>
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#00FFB3]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02]">
-                <div className="flex items-center gap-3 mb-4">
-                  <Shield className="w-6 h-6 text-[#00FFB3] flex-shrink-0" />
-                  <h3 className="text-lg font-semibold text-[#00FFB3] leading-[1.4]">
-                    Quality Assurance
-                  </h3>
-                </div>
-                <ul className="space-y-2 text-sm text-[#D1D5DB]">
-                  <li className="leading-[1.6]">• QA test scenarios</li>
-                  <li className="leading-[1.6]">• Accessibility validation</li>
-                  <li className="leading-[1.6]">• Performance benchmarks</li>
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#FFD700]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02]">
-                <div className="flex items-center gap-3 mb-4">
-                  <Users className="w-6 h-6 text-[#FFD700] flex-shrink-0" />
-                  <h3 className="text-lg font-semibold text-[#FFD700] leading-[1.4]">
-                    Knowledge Transfer
-                  </h3>
-                </div>
-                <ul className="space-y-2 text-sm text-[#D1D5DB]">
-                  <li className="leading-[1.6]">• Loom walkthroughs</li>
-                  <li className="leading-[1.6]">• Weekly design-dev syncs</li>
-                  <li className="leading-[1.6]">• Visual acceptance criteria</li>
-                </ul>
               </div>
             </div>
           </div>
