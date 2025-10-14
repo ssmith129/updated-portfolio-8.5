@@ -92,13 +92,29 @@ export default function RelatedCaseStudies({
 
   if (relatedCases.length === 0) return null;
 
+  // Detect theme based on current case study
+  const isDarkTheme = currentCaseStudyId === 'computis';
+  const isHealthcareTheme = currentCaseStudyId === 'symplify';
+
   return (
     <section className={`space-y-8 py-16 ${className}`}>
       <div className="text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-white leading-[120%] tracking-[-0.5px] mb-4 transition-all duration-500 hover:tracking-[-0.3px] hover:text-[#00D4FF]">
+        <h2 className={`text-2xl sm:text-3xl md:text-4xl font-medium leading-[120%] tracking-[-0.5px] mb-4 transition-all duration-500 hover:tracking-[-0.3px] ${
+          isDarkTheme
+            ? 'text-white hover:text-[#00D4FF]'
+            : isHealthcareTheme
+            ? 'text-[#0F172A] hover:text-[#3B82F6]'
+            : 'text-[#131417] hover:text-[#2a2a2a]'
+        }`}>
           Related Case Studies
         </h2>
-        <p className="text-base sm:text-lg text-[#888888] leading-[150%] tracking-[-0.16px] max-w-[600px] mx-auto transition-all duration-300 hover:text-[#CCCCCC]">
+        <p className={`text-base sm:text-lg leading-[150%] tracking-[-0.16px] max-w-[600px] mx-auto transition-all duration-300 ${
+          isDarkTheme
+            ? 'text-[#888888] hover:text-[#CCCCCC]'
+            : isHealthcareTheme
+            ? 'text-[#64748B] hover:text-[#475569]'
+            : 'text-[#9FA0A3] hover:text-[#131417]'
+        }`}>
           Explore more projects showcasing UX design across different domains
         </p>
       </div>
