@@ -167,10 +167,12 @@ export default function ComputisCaseStudy() {
         <div className="w-full flex flex-col items-center justify-center">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#00D4FF] to-[#00FFB3] rounded-[16px] opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
-            <img
-              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/f00556f27fc2ebd7151cac07d0c167922f7421e8/public/Dashboard.gif"
-              alt="Computis Dashboard demo"
-              className="relative w-full max-w-[1280px] h-auto rounded-[12px]"
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="relative w-full max-w-[3600px] h-auto rounded-[12px]"
               style={{
                 boxShadow: "0 0 40px rgba(0, 212, 255, 0.1)",
                 overflow: "hidden",
@@ -179,7 +181,13 @@ export default function ComputisCaseStudy() {
                 margin: "20px 0",
                 backgroundColor: "#0F0F0F",
               }}
-            />
+            >
+              <source
+                src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F9a2e2391639b42419ffe2ced602cd628?alt=media&token=8fcf21ed-2a10-4b16-b64a-bdaaf9144962&apiKey=ba69a23156414a589de97341511272c9"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
@@ -1701,7 +1709,7 @@ export default function ComputisCaseStudy() {
                 </div>
                 <ul className="text-xs text-gray-400 space-y-1">
                   <li>• Loom walkthroughs</li>
-                  <li>• Weekly syncs</li>
+                  <li>�� Weekly syncs</li>
                   <li>• Async via Figma</li>
                 </ul>
               </div>
