@@ -72,6 +72,8 @@ export default function Navigation({ className = "" }: NavigationProps) {
             className={`text-lg sm:text-xl md:text-2xl lg:text-xl font-medium leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] ${
               isDarkPage
                 ? "text-white group-hover:text-[#00D4FF]"
+                : isHealthcarePage
+                ? "text-[#0F172A] group-hover:text-[#3B82F6]"
                 : "text-[#131417] group-hover:text-[#2a2a2a]"
             }`}
           >
@@ -81,6 +83,8 @@ export default function Navigation({ className = "" }: NavigationProps) {
             className={`text-sm sm:text-base md:text-lg lg:text-base font-medium leading-normal tracking-[-0.16px] transition-colors duration-300 ${
               isDarkPage
                 ? "text-[#888888] hover:text-[#CCCCCC]"
+                : isHealthcarePage
+                ? "text-[#64748B] hover:text-[#3B82F6]"
                 : "text-[#9FA0A3] hover:text-[#131417]"
             }`}
           >
