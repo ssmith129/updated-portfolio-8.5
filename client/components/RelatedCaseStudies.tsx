@@ -124,7 +124,13 @@ export default function RelatedCaseStudies({
           <Link
             key={caseStudy.id}
             to={caseStudy.href}
-            className="group block bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[20px] sm:rounded-[25px] border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-bottom-6"
+            className={`group block backdrop-blur-xl rounded-[20px] sm:rounded-[25px] shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-bottom-6 ${
+              isDarkTheme
+                ? 'bg-[#0F0F0F]/80 border border-[#1A1A1A] hover:border-[#00D4FF]/30'
+                : isHealthcareTheme
+                ? 'bg-white/90 border border-[#E2E8F0] hover:border-[#3B82F6]/30'
+                : 'bg-white border border-gray-200 hover:border-gray-300'
+            }`}
             style={{ animationDelay: `${index * 150}ms` }}
             aria-label={`View ${caseStudy.title} case study: ${caseStudy.description}`}
           >
@@ -136,33 +142,75 @@ export default function RelatedCaseStudies({
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#00D4FF]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className={`absolute inset-0 bg-gradient-to-t opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+                isDarkTheme
+                  ? 'from-[#00D4FF]/20 to-transparent'
+                  : isHealthcareTheme
+                  ? 'from-[#3B82F6]/20 to-transparent'
+                  : 'from-gray-900/20 to-transparent'
+              }`} />
             </div>
 
             {/* Content */}
             <div className="p-6 sm:p-8">
               <div className="flex items-center justify-between mb-3">
-                <span className="inline-block bg-[#00D4FF]/10 text-[#00D4FF] border border-[#00D4FF]/20 px-3 py-1 rounded-[15px] text-xs font-medium tracking-[-0.12px] transition-all duration-300 group-hover:bg-[#00D4FF]/20 group-hover:border-[#00D4FF]/40">
+                <span className={`inline-block px-3 py-1 rounded-[15px] text-xs font-medium tracking-[-0.12px] transition-all duration-300 ${
+                  isDarkTheme
+                    ? 'bg-[#00D4FF]/10 text-[#00D4FF] border border-[#00D4FF]/20 group-hover:bg-[#00D4FF]/20 group-hover:border-[#00D4FF]/40'
+                    : isHealthcareTheme
+                    ? 'bg-[#3B82F6]/10 text-[#3B82F6] border border-[#3B82F6]/20 group-hover:bg-[#3B82F6]/20 group-hover:border-[#3B82F6]/40'
+                    : 'bg-gray-100 text-gray-700 border border-gray-200 group-hover:bg-gray-200'
+                }`}>
                   {caseStudy.category}
                 </span>
-                <span className="text-xs text-[#888888] font-medium">
+                <span className={`text-xs font-medium ${
+                  isDarkTheme
+                    ? 'text-[#888888]'
+                    : isHealthcareTheme
+                    ? 'text-[#64748B]'
+                    : 'text-[#9FA0A3]'
+                }`}>
                   {caseStudy.duration}
                 </span>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-medium text-white leading-[120%] tracking-[-0.2px] mb-2 transition-all duration-300 group-hover:tracking-[-0.1px] group-hover:text-[#00D4FF]">
+              <h3 className={`text-lg sm:text-xl font-medium leading-[120%] tracking-[-0.2px] mb-2 transition-all duration-300 group-hover:tracking-[-0.1px] ${
+                isDarkTheme
+                  ? 'text-white group-hover:text-[#00D4FF]'
+                  : isHealthcareTheme
+                  ? 'text-[#0F172A] group-hover:text-[#3B82F6]'
+                  : 'text-[#131417] group-hover:text-[#2a2a2a]'
+              }`}>
                 {caseStudy.title}
               </h3>
 
-              <p className="text-sm sm:text-base text-[#888888] leading-[120%] tracking-[-0.14px] mb-4 transition-all duration-300 group-hover:text-[#CCCCCC]">
+              <p className={`text-sm sm:text-base leading-[120%] tracking-[-0.14px] mb-4 transition-all duration-300 ${
+                isDarkTheme
+                  ? 'text-[#888888] group-hover:text-[#CCCCCC]'
+                  : isHealthcareTheme
+                  ? 'text-[#64748B] group-hover:text-[#475569]'
+                  : 'text-[#9FA0A3] group-hover:text-[#131417]'
+              }`}>
                 {caseStudy.subtitle}
               </p>
 
-              <p className="text-sm text-[#888888] leading-[150%] tracking-[-0.14px] mb-4 transition-all duration-300 group-hover:text-[#CCCCCC]">
+              <p className={`text-sm leading-[150%] tracking-[-0.14px] mb-4 transition-all duration-300 ${
+                isDarkTheme
+                  ? 'text-[#888888] group-hover:text-[#CCCCCC]'
+                  : isHealthcareTheme
+                  ? 'text-[#64748B] group-hover:text-[#475569]'
+                  : 'text-[#9FA0A3] group-hover:text-[#131417]'
+              }`}>
                 {caseStudy.description}
               </p>
 
-              <div className="flex items-center text-sm font-medium text-[#00D4FF] tracking-[-0.14px] transition-all duration-300 group-hover:gap-2">
+              <div className={`flex items-center text-sm font-medium tracking-[-0.14px] transition-all duration-300 group-hover:gap-2 ${
+                isDarkTheme
+                  ? 'text-[#00D4FF]'
+                  : isHealthcareTheme
+                  ? 'text-[#3B82F6]'
+                  : 'text-[#131417]'
+              }`}>
                 <span>View Case Study</span>
                 <ArrowRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
               </div>
