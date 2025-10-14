@@ -142,18 +142,21 @@ export default function SymplifyCaseStudy() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F8FAFC] via-white to-[#EFF6FF] scroll-smooth relative overflow-hidden">
       {/* Subtle healthcare background pattern */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: `
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `
           radial-gradient(circle at 20% 50%, #3B82F6 1px, transparent 1px),
           radial-gradient(circle at 80% 80%, #10B981 1px, transparent 1px)
         `,
-        backgroundSize: '50px 50px'
-      }}></div>
-      
+          backgroundSize: "50px 50px",
+        }}
+      ></div>
+
       {/* Gradient orbs for depth */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#3B82F6]/5 rounded-full blur-[100px]"></div>
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#10B981]/5 rounded-full blur-[120px]"></div>
-      
+
       <SkipLink />
       <Navigation />
 
@@ -304,9 +307,11 @@ export default function SymplifyCaseStudy() {
                     </li>
                   </ul>
                   <p className="mt-4 text-[#475569]">
-                    <span className="font-semibold text-[#0F172A]">My Role:</span> Founding
-                    Product Designer → 0→1 platform design for healthcare
-                    workflows under HIPAA constraints
+                    <span className="font-semibold text-[#0F172A]">
+                      My Role:
+                    </span>{" "}
+                    Founding Product Designer → 0→1 platform design for
+                    healthcare workflows under HIPAA constraints
                   </p>
                 </div>
 
@@ -480,8 +485,10 @@ export default function SymplifyCaseStudy() {
                     single, AI-driven platform
                   </span>
                   . The initiative was a{" "}
-                  <span className="font-semibold text-[#10B981]">0 → 1 system redesign</span>,
-                  targeting inefficiencies in scheduling, communication, and
+                  <span className="font-semibold text-[#10B981]">
+                    0 → 1 system redesign
+                  </span>
+                  , targeting inefficiencies in scheduling, communication, and
                   compliance.
                 </p>
               </div>
@@ -565,7 +572,9 @@ export default function SymplifyCaseStudy() {
             <div className="space-y-8">
               <div>
                 <p className="text-lg text-[#1E293B] leading-[150%] mb-6">
-                  Designed <span className="font-semibold text-[#3B82F6]">Symplify</span>, an{" "}
+                  Designed{" "}
+                  <span className="font-semibold text-[#3B82F6]">Symplify</span>
+                  , an{" "}
                   <span className="font-semibold text-[#10B981]">
                     AI-enhanced, modular platform
                   </span>{" "}
@@ -575,21 +584,27 @@ export default function SymplifyCaseStudy() {
                   <li className="flex items-start gap-3 text-[#1E293B]">
                     <span className="w-2 h-2 bg-[#3B82F6] rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="font-semibold text-[#3B82F6]">Smart Inbox Triage</span>{" "}
+                      <span className="font-semibold text-[#3B82F6]">
+                        Smart Inbox Triage
+                      </span>{" "}
                       → Faster, explainable message prioritization
                     </div>
                   </li>
                   <li className="flex items-start gap-3 text-[#1E293B]">
                     <span className="w-2 h-2 bg-[#10B981] rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="font-semibold text-[#10B981]">Smart Scheduling</span> →
-                      AI-assisted appointment management
+                      <span className="font-semibold text-[#10B981]">
+                        Smart Scheduling
+                      </span>{" "}
+                      → AI-assisted appointment management
                     </div>
                   </li>
                   <li className="flex items-start gap-3 text-[#1E293B]">
                     <span className="w-2 h-2 bg-[#8B5CF6] rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="font-semibold text-[#8B5CF6]">Smart Notifications</span>{" "}
+                      <span className="font-semibold text-[#8B5CF6]">
+                        Smart Notifications
+                      </span>{" "}
                       → Reduced alert fatigue with clear priority tiers
                     </div>
                   </li>
@@ -645,7 +660,9 @@ export default function SymplifyCaseStudy() {
                   <li className="flex items-start gap-3 text-[#1E293B]">
                     <CheckCircle className="w-5 h-5 text-[#10B981] mt-1 flex-shrink-0" />
                     <div>
-                      <span className="font-semibold text-[#3B82F6]">Accessibility-first</span>{" "}
+                      <span className="font-semibold text-[#3B82F6]">
+                        Accessibility-first
+                      </span>{" "}
                       (WCAG 2.1 AA compliant)
                     </div>
                   </li>
@@ -684,7 +701,10 @@ export default function SymplifyCaseStudy() {
                 </h3>
                 <p className="text-lg text-[#1E293B] leading-[150%] mb-4">
                   Hospitals and WIC programs were relying on{" "}
-                  <span className="font-semibold text-[#DC2626]">outdated, siloed tools</span>:
+                  <span className="font-semibold text-[#DC2626]">
+                    outdated, siloed tools
+                  </span>
+                  :
                 </p>
                 <ul className="space-y-3 mb-4">
                   <li className="flex items-start gap-3 text-[#1E293B]">
@@ -720,7 +740,9 @@ export default function SymplifyCaseStudy() {
                 </h3>
                 <p className="text-lg text-[#1E293B] leading-[150%] mb-6">
                   I led a structured discovery process designed to capture{" "}
-                  <span className="font-semibold text-[#3B82F6]">quantitative task data</span>{" "}
+                  <span className="font-semibold text-[#3B82F6]">
+                    quantitative task data
+                  </span>{" "}
                   and{" "}
                   <span className="font-semibold text-[#3B82F6]">
                     qualitative user sentiment
@@ -878,7 +900,9 @@ export default function SymplifyCaseStudy() {
               <div>
                 <p className="text-lg text-[#1E293B] leading-[150%] mb-6">
                   The healthcare IT market is dominated by{" "}
-                  <span className="font-semibold text-[#475569]">legacy EHR systems</span>{" "}
+                  <span className="font-semibold text-[#475569]">
+                    legacy EHR systems
+                  </span>{" "}
                   (Epic, Cerner, Allscripts) designed for hospitals, not public
                   health programs or smaller clinics. These systems are:
                 </p>
@@ -922,14 +946,19 @@ export default function SymplifyCaseStudy() {
                       <span className="font-semibold text-[#3B82F6]">
                         AI-enhanced task efficiency
                       </span>{" "}
-                      and <span className="font-semibold text-[#3B82F6]">explainability</span>
+                      and{" "}
+                      <span className="font-semibold text-[#3B82F6]">
+                        explainability
+                      </span>
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-[#10B981] mt-1 flex-shrink-0" />
                     <span className="text-[#1E293B]">
                       Position as a{" "}
-                      <span className="font-semibold text-[#3B82F6]">scalable platform</span>{" "}
+                      <span className="font-semibold text-[#3B82F6]">
+                        scalable platform
+                      </span>{" "}
                       bridging state agencies and local clinics
                     </span>
                   </li>
@@ -1056,29 +1085,38 @@ export default function SymplifyCaseStudy() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-[#10B981] mt-1 flex-shrink-0" />
                     <span className="text-sm text-[#047857]">
-                      Designed <strong className="text-[#065F46]">from the ground up</strong> for public
-                      health and WIC workflows
+                      Designed{" "}
+                      <strong className="text-[#065F46]">
+                        from the ground up
+                      </strong>{" "}
+                      for public health and WIC workflows
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-[#10B981] mt-1 flex-shrink-0" />
                     <span className="text-sm text-[#047857]">
-                      <strong className="text-[#065F46]">AI-driven efficiency</strong> with explainable
-                      decision-making
+                      <strong className="text-[#065F46]">
+                        AI-driven efficiency
+                      </strong>{" "}
+                      with explainable decision-making
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-[#10B981] mt-1 flex-shrink-0" />
                     <span className="text-sm text-[#047857]">
-                      <strong className="text-[#065F46]">Lower implementation cost</strong> via modular
-                      SaaS model
+                      <strong className="text-[#065F46]">
+                        Lower implementation cost
+                      </strong>{" "}
+                      via modular SaaS model
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-4 h-4 text-[#10B981] mt-1 flex-shrink-0" />
                     <span className="text-sm text-[#047857]">
                       Built-in{" "}
-                      <strong className="text-[#065F46]">compliance and accessibility standards</strong>
+                      <strong className="text-[#065F46]">
+                        compliance and accessibility standards
+                      </strong>
                     </span>
                   </div>
                 </div>
