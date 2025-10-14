@@ -114,14 +114,17 @@ export default function ComputisCaseStudy() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] relative overflow-hidden">
       {/* Subtle geometric background pattern */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: `
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `
           linear-gradient(to right, #00D4FF 1px, transparent 1px),
           linear-gradient(to bottom, #00D4FF 1px, transparent 1px)
         `,
-        backgroundSize: '80px 80px'
-      }}></div>
-      
+          backgroundSize: "80px 80px",
+        }}
+      ></div>
+
       {/* Gradient orbs for depth */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#00D4FF]/5 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#00FFB3]/5 rounded-full blur-[100px]"></div>
@@ -295,10 +298,16 @@ export default function ComputisCaseStudy() {
                     In early 2023, Computis CPAs spent 85% of their time waiting
                     for engineers to modify Python scripts for crypto
                     transaction classification. There were{" "}
-                    <span className="font-medium text-white">no audit trails</span>,{" "}
-                    <span className="font-medium text-white">no explainability</span>, and{" "}
-                    <span className="font-medium text-white">no autonomy</span> for
-                    professionals. By October 2023, CPAs could build custom
+                    <span className="font-medium text-white">
+                      no audit trails
+                    </span>
+                    ,{" "}
+                    <span className="font-medium text-white">
+                      no explainability
+                    </span>
+                    , and{" "}
+                    <span className="font-medium text-white">no autonomy</span>{" "}
+                    for professionals. By October 2023, CPAs could build custom
                     classification rules in under 90 seconds without writing
                     code. This transformation turned AI opacity into
                     transparency—
@@ -686,7 +695,9 @@ export default function ComputisCaseStudy() {
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                         <span className="text-sm text-[#CCCCCC]">
-                          <span className="font-semibold text-white">Explainable AI</span>{" "}
+                          <span className="font-semibold text-white">
+                            Explainable AI
+                          </span>{" "}
                           with professional override control
                         </span>
                       </li>
@@ -715,7 +726,9 @@ export default function ComputisCaseStudy() {
 
               <div className="bg-[#0080FF]/10 rounded-[16px] p-4 border-l-4 border-[#0080FF]">
                 <p className="text-sm text-[#CCCCCC]">
-                  <span className="font-semibold text-white">Market Positioning:</span>{" "}
+                  <span className="font-semibold text-white">
+                    Market Positioning:
+                  </span>{" "}
                   Dominate the CPA segment (CoinTracker, Koinly target
                   consumers; TaxBit, Cryptio serve enterprises) by delivering
                   professional-grade explainability
@@ -894,9 +907,7 @@ export default function ComputisCaseStudy() {
                     </p>
                   </div>
                   <div className="bg-[#00D4FF]/10 p-4 rounded-[16px] border-l-4 border-[#00D4FF]">
-                    <h4 className="font-medium text-[#00D4FF] mb-2">
-                      Analyst
-                    </h4>
+                    <h4 className="font-medium text-[#00D4FF] mb-2">Analyst</h4>
                     <p className="text-sm text-[#CCCCCC]">
                       Ingestion, anomalies
                     </p>
@@ -1523,7 +1534,8 @@ export default function ComputisCaseStudy() {
                     Context over Complexity
                   </h4>
                   <p className="text-sm text-[#CCCCCC]">
-                    Surface insights when they matter, hide complexity when they don't
+                    Surface insights when they matter, hide complexity when they
+                    don't
                   </p>
                 </div>
               </div>
