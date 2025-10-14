@@ -151,6 +151,8 @@ export default function Navigation({ className = "" }: NavigationProps) {
         } ${
           isDarkPage
             ? "bg-[#1A1A1A]/95 backdrop-blur-xl border border-[#00D4FF]/20"
+            : isHealthcarePage
+            ? "bg-white/95 backdrop-blur-xl border border-[#E2E8F0]"
             : "bg-white"
         }`}
         style={{ zIndex: 50 }}
@@ -165,6 +167,8 @@ export default function Navigation({ className = "" }: NavigationProps) {
                 className={`block px-4 py-3 text-base font-medium rounded-[20px] text-center ${
                   isDarkPage
                     ? "text-[#0A0A0A] bg-gradient-to-r from-[#00D4FF] to-[#0080FF]"
+                    : isHealthcarePage
+                    ? "text-white bg-gradient-to-r from-[#3B82F6] to-[#10B981]"
                     : "text-white bg-[#131417]"
                 }`}
                 aria-current="page"
@@ -179,6 +183,8 @@ export default function Navigation({ className = "" }: NavigationProps) {
                 className={`block px-4 py-3 text-base font-medium rounded-[20px] transition-colors duration-200 text-center focus:outline-none focus:ring-2 focus:ring-opacity-50 ${
                   isDarkPage
                     ? "text-[#CCCCCC] hover:bg-[#00D4FF]/10 hover:text-[#00D4FF] focus:ring-[#00D4FF]"
+                    : isHealthcarePage
+                    ? "text-[#475569] hover:bg-[#3B82F6]/10 hover:text-[#3B82F6] focus:ring-[#3B82F6]"
                     : "text-[#131417] hover:bg-gray-50 focus:ring-[#131417]"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
