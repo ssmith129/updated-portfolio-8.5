@@ -199,13 +199,48 @@ export default function ComputisCaseStudy() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
           <div className="flex items-center justify-between overflow-x-auto">
             <nav className="flex gap-4 sm:gap-6">
-              <a href="#problem" className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Problem</a>
-              <a href="#research" className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Research</a>
-              <a href="#process-deepdive" className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Process</a>
-              <a href="#design-system" className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Design System</a>
-              <a href="#solutions" className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Solutions</a>
-              <a href="#technical-collab" className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Technical</a>
-              <a href="#impact" className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Impact</a>
+              <a
+                href="#problem"
+                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
+              >
+                Problem
+              </a>
+              <a
+                href="#research"
+                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
+              >
+                Research
+              </a>
+              <a
+                href="#process-deepdive"
+                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
+              >
+                Process
+              </a>
+              <a
+                href="#design-system"
+                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
+              >
+                Design System
+              </a>
+              <a
+                href="#solutions"
+                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
+              >
+                Solutions
+              </a>
+              <a
+                href="#technical-collab"
+                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
+              >
+                Technical
+              </a>
+              <a
+                href="#impact"
+                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
+              >
+                Impact
+              </a>
             </nav>
           </div>
         </div>
@@ -239,12 +274,32 @@ export default function ComputisCaseStudy() {
               {/* Portfolio Update Callout - NEW */}
               <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[16px] p-5 mb-8 border-l-4 border-[#0080FF]">
                 <p className="text-sm font-semibold text-[#00D4FF] mb-2">
-                  <span className="font-bold">Portfolio Update (Jan 2025):</span> This enhanced version now includes in-depth design process documentation, design system showcase, and technical collaboration details.
+                  <span className="font-bold">
+                    Portfolio Update (Jan 2025):
+                  </span>{" "}
+                  This enhanced version now includes in-depth design process
+                  documentation, design system showcase, and technical
+                  collaboration details.
                 </p>
                 <div className="flex flex-wrap gap-3 mt-3">
-                  <a href="#process-deepdive" className="text-xs font-medium text-[#00D4FF] hover:underline">→ See Design Process</a>
-                  <a href="#design-system" className="text-xs font-medium text-[#00D4FF] hover:underline">→ Explore Design System</a>
-                  <a href="#technical-collab" className="text-xs font-medium text-[#00D4FF] hover:underline">→ View Technical Partnership</a>
+                  <a
+                    href="#process-deepdive"
+                    className="text-xs font-medium text-[#00D4FF] hover:underline"
+                  >
+                    → See Design Process
+                  </a>
+                  <a
+                    href="#design-system"
+                    className="text-xs font-medium text-[#00D4FF] hover:underline"
+                  >
+                    → Explore Design System
+                  </a>
+                  <a
+                    href="#technical-collab"
+                    className="text-xs font-medium text-[#00D4FF] hover:underline"
+                  >
+                    → View Technical Partnership
+                  </a>
                 </div>
               </div>
 
@@ -344,7 +399,9 @@ export default function ComputisCaseStudy() {
                       no explainability
                     </span>
                     , and{" "}
-                    <span className="font-semibold text-white">no autonomy</span>{" "}
+                    <span className="font-semibold text-white">
+                      no autonomy
+                    </span>{" "}
                     for professionals. By October 2023, CPAs could build custom
                     classification rules in under 90 seconds without writing
                     code. This transformation turned AI opacity into
@@ -515,7 +572,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Problem & Opportunity */}
-        <section id="problem" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
+        <section
+          id="problem"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900"
+        >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300 cursor-pointer">
             <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
               Problem & Opportunity
@@ -536,23 +596,33 @@ export default function ComputisCaseStudy() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-[#D1D5DB]">
                   <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">Manual Python scripts</span>
+                  <span className="text-base leading-[1.7]">
+                    Manual Python scripts
+                  </span>
                 </li>
                 <li className="flex items-start gap-3 text-[#D1D5DB]">
                   <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">No audit trail for compliance</span>
+                  <span className="text-base leading-[1.7]">
+                    No audit trail for compliance
+                  </span>
                 </li>
                 <li className="flex items-start gap-3 text-[#D1D5DB]">
                   <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">CSV-only export workflows</span>
+                  <span className="text-base leading-[1.7]">
+                    CSV-only export workflows
+                  </span>
                 </li>
                 <li className="flex items-start gap-3 text-[#D1D5DB]">
                   <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">"Black-box" AI undermining trust</span>
+                  <span className="text-base leading-[1.7]">
+                    "Black-box" AI undermining trust
+                  </span>
                 </li>
                 <li className="flex items-start gap-3 text-[#D1D5DB]">
                   <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">Frequent FMV reconciliation errors</span>
+                  <span className="text-base leading-[1.7]">
+                    Frequent FMV reconciliation errors
+                  </span>
                 </li>
               </ul>
             </div>
@@ -574,7 +644,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Research & Insights */}
-        <section id="research" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
+        <section
+          id="research"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100"
+        >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
               Research & Insights
@@ -778,7 +851,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* NEW SECTION: Design Process Deep Dive */}
-        <section id="process-deepdive" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
+        <section
+          id="process-deepdive"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300"
+        >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <div className="flex items-center gap-3 mb-10">
               <Brain className="w-8 h-8 text-[#00D4FF]" />
@@ -789,10 +865,14 @@ export default function ComputisCaseStudy() {
 
             <div className="bg-[#FFD700]/5 rounded-[20px] p-6 mb-10 border-l-4 border-[#FFD700]">
               <p className="text-base text-[#D1D5DB] leading-[1.7]">
-                <strong className="text-white font-semibold">Process Philosophy:</strong> I don't start with solutions—I start with constraints.
-                For Computis, the constraints were clear: CPAs need defensible decisions, engineers need
-                scalable systems, and the business needs faster sales cycles. These constraints shaped
-                every design decision.
+                <strong className="text-white font-semibold">
+                  Process Philosophy:
+                </strong>{" "}
+                I don't start with solutions—I start with constraints. For
+                Computis, the constraints were clear: CPAs need defensible
+                decisions, engineers need scalable systems, and the business
+                needs faster sales cycles. These constraints shaped every design
+                decision.
               </p>
             </div>
 
@@ -815,7 +895,11 @@ export default function ComputisCaseStudy() {
                         "CPAs rejected black-box AI"
                       </p>
                       <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                        <em>"I can't stake my license on something I can't explain to a client."</em> — CPA Interview
+                        <em>
+                          "I can't stake my license on something I can't explain
+                          to a client."
+                        </em>{" "}
+                        — CPA Interview
                       </p>
                     </div>
 
@@ -850,7 +934,10 @@ export default function ComputisCaseStudy() {
                         "85% time waiting for engineers"
                       </p>
                       <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                        <em>"I need to change one rule and it takes 3 days."</em> — CPA Interview
+                        <em>
+                          "I need to change one rule and it takes 3 days."
+                        </em>{" "}
+                        — CPA Interview
                       </p>
                     </div>
 
@@ -880,7 +967,9 @@ export default function ComputisCaseStudy() {
                 💡 Design Insight
               </h4>
               <p className="text-sm text-[#D1D5DB] leading-[1.7]">
-                Trust through transparency isn't just a principle—it's a measurable UX requirement. Every design decision was validated against the question: "Can a CPA defend this in an audit?"
+                Trust through transparency isn't just a principle—it's a
+                measurable UX requirement. Every design decision was validated
+                against the question: "Can a CPA defend this in an audit?"
               </p>
             </div>
           </div>
@@ -1050,19 +1139,25 @@ export default function ComputisCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <div className="bg-[#0080FF]/10 p-5 rounded-[16px] border-l-4 border-[#0080FF]">
-                    <h4 className="font-semibold text-[#00D4FF] mb-2 leading-[1.4]">CPA</h4>
+                    <h4 className="font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
+                      CPA
+                    </h4>
                     <p className="text-sm text-[#D1D5DB] leading-[1.6]">
                       Rules, audit logs, overrides
                     </p>
                   </div>
                   <div className="bg-[#00D4FF]/10 p-5 rounded-[16px] border-l-4 border-[#00D4FF]">
-                    <h4 className="font-semibold text-[#00D4FF] mb-2 leading-[1.4]">Analyst</h4>
+                    <h4 className="font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
+                      Analyst
+                    </h4>
                     <p className="text-sm text-[#D1D5DB] leading-[1.6]">
                       Ingestion, anomalies
                     </p>
                   </div>
                   <div className="bg-[#00FFB3]/10 p-5 rounded-[16px] border-l-4 border-[#00FFB3]">
-                    <h4 className="font-semibold text-[#00FFB3] mb-2 leading-[1.4]">Admin</h4>
+                    <h4 className="font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
+                      Admin
+                    </h4>
                     <p className="text-sm text-[#D1D5DB] leading-[1.6]">
                       Multi-client operations
                     </p>
@@ -1086,7 +1181,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* NEW SECTION: Design System Showcase */}
-        <section id="design-system" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000">
+        <section
+          id="design-system"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000"
+        >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <div className="flex items-center gap-3 mb-10">
               <Settings className="w-8 h-8 text-[#00D4FF]" />
@@ -1097,15 +1195,21 @@ export default function ComputisCaseStudy() {
 
             <div className="bg-[#FFD700]/5 rounded-[20px] p-6 mb-10 border-l-4 border-[#FFD700]">
               <p className="text-base text-[#D1D5DB] leading-[1.7]">
-                <strong className="text-white font-semibold">System Philosophy:</strong> A design system isn't just a component library—it's
-                a shared language between design and engineering. For Computis, the system needed to
-                support rapid feature development while maintaining trust through consistency.
+                <strong className="text-white font-semibold">
+                  System Philosophy:
+                </strong>{" "}
+                A design system isn't just a component library—it's a shared
+                language between design and engineering. For Computis, the
+                system needed to support rapid feature development while
+                maintaining trust through consistency.
               </p>
             </div>
 
             {/* System Principles */}
             <div className="mb-12">
-              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">Design Principles</h3>
+              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
+                Design Principles
+              </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#0080FF]/20">
@@ -1113,8 +1217,8 @@ export default function ComputisCaseStudy() {
                     1. Trust Through Clarity
                   </h4>
                   <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    Every component should reduce cognitive load and increase confidence.
-                    No surprises, no hidden actions.
+                    Every component should reduce cognitive load and increase
+                    confidence. No surprises, no hidden actions.
                   </p>
                 </div>
 
@@ -1123,8 +1227,8 @@ export default function ComputisCaseStudy() {
                     2. Professional-Grade Density
                   </h4>
                   <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    CPAs work with data-heavy interfaces. Optimize for information density
-                    without sacrificing readability.
+                    CPAs work with data-heavy interfaces. Optimize for
+                    information density without sacrificing readability.
                   </p>
                 </div>
 
@@ -1133,8 +1237,8 @@ export default function ComputisCaseStudy() {
                     3. Dark-First for Extended Use
                   </h4>
                   <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    CPAs spend 4-6 hours/day in the platform. Dark theme reduces eye strain
-                    and was preferred 3:1 in user research.
+                    CPAs spend 4-6 hours/day in the platform. Dark theme reduces
+                    eye strain and was preferred 3:1 in user research.
                   </p>
                 </div>
 
@@ -1143,8 +1247,8 @@ export default function ComputisCaseStudy() {
                     4. Accessibility is Non-Negotiable
                   </h4>
                   <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    WCAG 2.1 AA compliance from design through implementation. Enterprise
-                    procurement requires it.
+                    WCAG 2.1 AA compliance from design through implementation.
+                    Enterprise procurement requires it.
                   </p>
                 </div>
               </div>
@@ -1163,11 +1267,15 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-white/10 rounded-[12px] p-4 backdrop-blur-sm">
                   <p className="text-2xl font-bold mb-1">75%</p>
-                  <p className="text-sm text-gray-300">User preference for dark mode</p>
+                  <p className="text-sm text-gray-300">
+                    User preference for dark mode
+                  </p>
                 </div>
                 <div className="bg-white/10 rounded-[12px] p-4 backdrop-blur-sm">
                   <p className="text-2xl font-bold mb-1">7:1</p>
-                  <p className="text-sm text-gray-300">Contrast ratio (WCAG AAA)</p>
+                  <p className="text-sm text-gray-300">
+                    Contrast ratio (WCAG AAA)
+                  </p>
                 </div>
               </div>
             </div>
@@ -1175,7 +1283,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Key Design Decisions - Continue with remaining sections using consistent typography... */}
-        <section id="solutions" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
+        <section
+          id="solutions"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700"
+        >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
               Key Design Decisions
@@ -1474,7 +1585,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* NEW SECTION: Technical Collaboration & Partnership */}
-        <section id="technical-collab" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000">
+        <section
+          id="technical-collab"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000"
+        >
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 shadow-xl">
             <div className="flex items-center gap-3 mb-8">
               <Settings className="w-8 h-8 text-[#00D4FF]" />
@@ -1486,7 +1600,9 @@ export default function ComputisCaseStudy() {
             {/* Engineering Testimonial */}
             <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 mb-10 border border-[#00FFB3]/30">
               <blockquote className="text-lg italic mb-3 leading-[1.5]">
-                "You sat with us during implementation, debugged CSS together, and proposed performance optimizations. You think like an engineer who happens to be excellent at design."
+                "You sat with us during implementation, debugged CSS together,
+                and proposed performance optimizations. You think like an
+                engineer who happens to be excellent at design."
               </blockquote>
               <cite className="text-sm text-gray-300 not-italic">
                 — Senior Frontend Engineer, Computis
@@ -1507,12 +1623,15 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 <p className="text-sm text-gray-400 mb-4 leading-[1.6]">
-                  Partnered with backend to design debounced API endpoint for instant preview
+                  Partnered with backend to design debounced API endpoint for
+                  instant preview
                 </p>
 
                 <div className="space-y-3">
                   <div className="bg-[#0080FF]/10 rounded-lg p-3">
-                    <p className="text-xs font-semibold text-[#00D4FF] mb-1">Solution</p>
+                    <p className="text-xs font-semibold text-[#00D4FF] mb-1">
+                      Solution
+                    </p>
                     <ul className="text-xs text-gray-300 space-y-1">
                       <li>• 300ms debounced calls</li>
                       <li>• Count-only endpoint</li>
@@ -1520,8 +1639,12 @@ export default function ComputisCaseStudy() {
                     </ul>
                   </div>
                   <div className="bg-[#00FFB3]/10 rounded-lg p-3">
-                    <p className="text-xs font-semibold text-[#00FFB3] mb-1">Impact</p>
-                    <p className="text-xs text-gray-300">↓ 85% server load • ↓ 40% rule creation time</p>
+                    <p className="text-xs font-semibold text-[#00FFB3] mb-1">
+                      Impact
+                    </p>
+                    <p className="text-xs text-gray-300">
+                      ↓ 85% server load • ↓ 40% rule creation time
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1543,7 +1666,9 @@ export default function ComputisCaseStudy() {
 
                 <div className="space-y-3">
                   <div className="bg-[#00FFB3]/10 rounded-lg p-3">
-                    <p className="text-xs font-semibold text-[#00FFB3] mb-1">Solution</p>
+                    <p className="text-xs font-semibold text-[#00FFB3] mb-1">
+                      Solution
+                    </p>
                     <ul className="text-xs text-gray-300 space-y-1">
                       <li>• axe-core on every PR</li>
                       <li>• Lighthouse CI ≥95 score</li>
@@ -1551,8 +1676,12 @@ export default function ComputisCaseStudy() {
                     </ul>
                   </div>
                   <div className="bg-[#0080FF]/10 rounded-lg p-3">
-                    <p className="text-xs font-semibold text-[#0080FF] mb-1">Impact</p>
-                    <p className="text-xs text-gray-300">Zero regressions post-launch • WCAG compliant</p>
+                    <p className="text-xs font-semibold text-[#0080FF] mb-1">
+                      Impact
+                    </p>
+                    <p className="text-xs text-gray-300">
+                      Zero regressions post-launch • WCAG compliant
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1563,7 +1692,9 @@ export default function ComputisCaseStudy() {
               <div className="bg-white/5 rounded-[16px] p-5 border border-white/10">
                 <div className="flex items-center gap-2 mb-3">
                   <FileText className="w-5 h-5 text-[#00D4FF]" />
-                  <h5 className="text-sm font-semibold text-[#00D4FF]">Documentation</h5>
+                  <h5 className="text-sm font-semibold text-[#00D4FF]">
+                    Documentation
+                  </h5>
                 </div>
                 <ul className="text-xs text-gray-400 space-y-1">
                   <li>• Annotated Figma files</li>
@@ -1575,7 +1706,9 @@ export default function ComputisCaseStudy() {
               <div className="bg-white/5 rounded-[16px] p-5 border border-white/10">
                 <div className="flex items-center gap-2 mb-3">
                   <Zap className="w-5 h-5 text-[#FFD700]" />
-                  <h5 className="text-sm font-semibold text-[#FFD700]">Pair Sessions</h5>
+                  <h5 className="text-sm font-semibold text-[#FFD700]">
+                    Pair Sessions
+                  </h5>
                 </div>
                 <ul className="text-xs text-gray-400 space-y-1">
                   <li>• Debug CSS together</li>
@@ -1587,7 +1720,9 @@ export default function ComputisCaseStudy() {
               <div className="bg-white/5 rounded-[16px] p-5 border border-white/10">
                 <div className="flex items-center gap-2 mb-3">
                   <Users className="w-5 h-5 text-[#00FFB3]" />
-                  <h5 className="text-sm font-semibold text-[#00FFB3]">Communication</h5>
+                  <h5 className="text-sm font-semibold text-[#00FFB3]">
+                    Communication
+                  </h5>
                 </div>
                 <ul className="text-xs text-gray-400 space-y-1">
                   <li>• Loom walkthroughs</li>
@@ -1600,7 +1735,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Outcomes & Impact - ENHANCED */}
-        <section id="impact" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+        <section
+          id="impact"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100"
+        >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
               📈 Outcomes & Impact
@@ -1610,27 +1748,39 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00FFB3]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
                 <p className="text-3xl font-bold text-[#00FFB3] mb-2">↓45%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">CPA onboarding</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                  CPA onboarding
+                </p>
               </div>
               <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#FFD700]/5 rounded-[16px] p-4 border border-[#FFD700]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#FFD700]/40">
                 <p className="text-3xl font-bold text-[#FFD700] mb-2">↑32%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">conversion rate</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                  conversion rate
+                </p>
               </div>
               <div className="bg-gradient-to-br from-[#00D4FF]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00D4FF]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00D4FF]/40">
                 <p className="text-3xl font-bold text-[#00D4FF] mb-2">↓85%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">eng dependency</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                  eng dependency
+                </p>
               </div>
               <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#0080FF]/5 rounded-[16px] p-4 border border-[#0080FF]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#0080FF]/40">
                 <p className="text-3xl font-bold text-[#0080FF] mb-2">↑150%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">anomaly detection</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                  anomaly detection
+                </p>
               </div>
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
                 <p className="text-3xl font-bold text-[#00FFB3] mb-2">↓40%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">support tickets</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                  support tickets
+                </p>
               </div>
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
                 <p className="text-3xl font-bold text-[#00FFB3] mb-2">Zero</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">FMV disputes</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                  FMV disputes
+                </p>
               </div>
             </div>
 
@@ -1680,10 +1830,16 @@ export default function ComputisCaseStudy() {
                     <div className="w-8 h-8 bg-[#0080FF]/20 rounded-lg flex items-center justify-center">
                       <Zap className="w-4 h-4 text-[#0080FF]" />
                     </div>
-                    <h4 className="text-sm font-semibold text-[#0080FF]">Bulk Operations</h4>
+                    <h4 className="text-sm font-semibold text-[#0080FF]">
+                      Bulk Operations
+                    </h4>
                   </div>
-                  <p className="text-xs text-gray-400 mb-2">73% adopted bulk rules in week 1</p>
-                  <p className="text-xs text-gray-500">"Power user" feature became primary workflow</p>
+                  <p className="text-xs text-gray-400 mb-2">
+                    73% adopted bulk rules in week 1
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    "Power user" feature became primary workflow
+                  </p>
                 </div>
 
                 {/* Insight 2 */}
@@ -1692,10 +1848,16 @@ export default function ComputisCaseStudy() {
                     <div className="w-8 h-8 bg-[#00FFB3]/20 rounded-lg flex items-center justify-center">
                       <Brain className="w-4 h-4 text-[#00FFB3]" />
                     </div>
-                    <h4 className="text-sm font-semibold text-[#00FFB3]">Dark Mode</h4>
+                    <h4 className="text-sm font-semibold text-[#00FFB3]">
+                      Dark Mode
+                    </h4>
                   </div>
-                  <p className="text-xs text-gray-400 mb-2">75% defaulted to dark theme</p>
-                  <p className="text-xs text-gray-500">Investment in dark-first design validated</p>
+                  <p className="text-xs text-gray-400 mb-2">
+                    75% defaulted to dark theme
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    Investment in dark-first design validated
+                  </p>
                 </div>
 
                 {/* Insight 3 */}
@@ -1704,10 +1866,16 @@ export default function ComputisCaseStudy() {
                     <div className="w-8 h-8 bg-[#FFD700]/20 rounded-lg flex items-center justify-center">
                       <Shield className="w-4 h-4 text-[#FFD700]" />
                     </div>
-                    <h4 className="text-sm font-semibold text-[#FFD700]">Audit Trail</h4>
+                    <h4 className="text-sm font-semibold text-[#FFD700]">
+                      Audit Trail
+                    </h4>
                   </div>
-                  <p className="text-xs text-gray-400 mb-2">Closed 3 enterprise deals</p>
-                  <p className="text-xs text-gray-500">Competitive moat for compliance teams</p>
+                  <p className="text-xs text-gray-400 mb-2">
+                    Closed 3 enterprise deals
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    Competitive moat for compliance teams
+                  </p>
                 </div>
               </div>
             </div>
@@ -1724,7 +1892,8 @@ export default function ComputisCaseStudy() {
               </div>
               <div className="bg-[#FFD700]/5 rounded-[16px] p-5 border-l-4 border-[#FFD700]">
                 <blockquote className="text-sm italic text-[#D1D5DB] leading-[1.6] mb-2">
-                  "Your handoffs made us 10x faster. Edge case docs were incredible."
+                  "Your handoffs made us 10x faster. Edge case docs were
+                  incredible."
                 </blockquote>
                 <cite className="text-xs text-[#9CA3AF] not-italic">
                   — Engineering Lead
