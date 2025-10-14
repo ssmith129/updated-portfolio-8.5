@@ -52,6 +52,9 @@ export default function Navigation({ className = "" }: NavigationProps) {
   // Detect if we're on a dark-themed page (Computis case study)
   const isDarkPage = location.pathname.includes("/computis");
 
+  // Detect if we're on a healthcare-themed page (Symplify case study)
+  const isHealthcarePage = location.pathname.includes("/symplify");
+
   return (
     <nav
       className={`flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-4 sm:py-5 md:py-6 gap-4 md:gap-0 animate-in fade-in-0 slide-in-from-top-4 duration-700 ${className}`}
