@@ -1254,31 +1254,6 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Dark Theme Rationale */}
-            <div className="bg-gradient-to-r from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[20px] p-6 mb-10 border border-[#00D4FF]/20">
-              <h3 className="text-lg font-semibold mb-5 flex items-center gap-2 leading-[1.4]">
-                <Lightbulb className="w-5 h-5 text-[#FFD700]" />
-                Dark Theme Strategy
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="bg-white/10 rounded-[12px] p-4 backdrop-blur-sm">
-                  <p className="text-2xl font-bold mb-1">↓40%</p>
-                  <p className="text-sm text-gray-300">Eye strain reduction</p>
-                </div>
-                <div className="bg-white/10 rounded-[12px] p-4 backdrop-blur-sm">
-                  <p className="text-2xl font-bold mb-1">75%</p>
-                  <p className="text-sm text-gray-300">
-                    User preference for dark mode
-                  </p>
-                </div>
-                <div className="bg-white/10 rounded-[12px] p-4 backdrop-blur-sm">
-                  <p className="text-2xl font-bold mb-1">7:1</p>
-                  <p className="text-sm text-gray-300">
-                    Contrast ratio (WCAG AAA)
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
