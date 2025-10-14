@@ -98,6 +98,8 @@ export default function Navigation({ className = "" }: NavigationProps) {
         className={`hidden md:flex rounded-[25px] sm:rounded-[35px] md:rounded-[50px] p-[3px] sm:p-[4px] md:p-[5px] items-center flex-wrap gap-1 transition-all duration-300 hover:scale-[1.02] touch-manipulation ${
           isDarkPage
             ? "bg-[#1A1A1A]/80 backdrop-blur-xl border border-[#00D4FF]/20 shadow-xl hover:border-[#00D4FF]/40"
+            : isHealthcarePage
+            ? "bg-white/90 backdrop-blur-sm border border-[#E2E8F0] shadow-lg hover:shadow-xl"
             : "bg-white shadow-sm hover:shadow-md"
         }`}
       >
@@ -110,6 +112,8 @@ export default function Navigation({ className = "" }: NavigationProps) {
               className={`px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] transition-all duration-300 hover:scale-105 ${
                 isDarkPage
                   ? "bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] hover:from-[#00FFB3] hover:to-[#00D4FF]"
+                  : isHealthcarePage
+                  ? "bg-gradient-to-r from-[#3B82F6] to-[#10B981] text-white hover:from-[#2563EB] hover:to-[#059669]"
                   : "bg-[#131417] text-white hover:bg-[#2a2a2a]"
               }`}
               aria-current="page"
@@ -124,6 +128,8 @@ export default function Navigation({ className = "" }: NavigationProps) {
               className={`px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px] touch-manipulation focus:outline-none focus:ring-2 focus:ring-opacity-50 ${
                 isDarkPage
                   ? "text-[#CCCCCC] hover:bg-[#00D4FF]/10 hover:text-[#00D4FF] focus:ring-[#00D4FF]"
+                  : isHealthcarePage
+                  ? "text-[#475569] hover:bg-[#3B82F6]/10 hover:text-[#3B82F6] focus:ring-[#3B82F6]"
                   : "text-[#131417] hover:bg-gray-50 focus:ring-[#131417]"
               }`}
               aria-label={item.ariaLabel}
