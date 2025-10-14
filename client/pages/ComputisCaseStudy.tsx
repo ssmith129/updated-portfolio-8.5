@@ -1473,4 +1473,632 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* Due to length, I'll provide the complete file with all remaining sections following the same typography pattern in the next response */}
+        {/* NEW SECTION: Technical Collaboration & Partnership */}
+        <section id="technical-collab" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000">
+          <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 shadow-xl">
+            <div className="flex items-center gap-3 mb-10">
+              <Settings className="w-8 h-8 text-[#00D4FF]" />
+              <h2 className="text-3xl sm:text-4xl font-semibold leading-[1.2] tracking-tight">
+                Technical Collaboration: Bridging Design & Engineering
+              </h2>
+            </div>
+
+            <div className="bg-white/10 rounded-[20px] p-6 mb-10 backdrop-blur-sm border border-white/20">
+              <p className="text-lg leading-[1.7]">
+                <strong className="font-semibold">Partnership Philosophy:</strong> I don't just hand off designs—I partner with
+                engineering from ideation through launch. My goal is to speak their language, respect
+                their constraints, and collaborate on solutions that are both beautiful and buildable.
+              </p>
+            </div>
+
+            {/* Engineering Testimonial */}
+            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 mb-10 border border-[#00FFB3]/30">
+              <blockquote className="text-xl italic mb-4 leading-[1.5]">
+                "Most designers hand off Figma files and disappear. You sat with us during implementation,
+                debugged CSS together, and proposed performance optimizations. You think like an engineer
+                who happens to be excellent at design."
+              </blockquote>
+              <cite className="text-sm text-gray-300 not-italic">
+                — Senior Frontend Engineer, Computis
+              </cite>
+            </div>
+
+            {/* Key Contributions */}
+            <div className="mb-12">
+              <h3 className="text-xl font-semibold mb-8 leading-[1.3]">Technical Contributions to the Product</h3>
+
+              <div className="space-y-8">
+                {/* Contribution 1 */}
+                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm border border-white/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-[#0080FF]/20 rounded-lg flex items-center justify-center border border-[#0080FF]/30">
+                      <Activity className="w-6 h-6 text-[#00D4FF]" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2 leading-[1.4]">
+                        1. Real-Time Rule Preview: API Design Collaboration
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 pl-16">
+                    <div>
+                      <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">The Challenge</p>
+                      <p className="text-base text-gray-300 leading-[1.7]">
+                        The rule builder needed to show *instant* preview of rule impact (e.g., "This rule
+                        will classify 47 transactions"). Initial engineering proposal: full table re-fetch
+                        on every dropdown change. This would create 300ms+ latency and overload the server.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">My Technical Contribution</p>
+                      <p className="text-base text-gray-300 leading-[1.7] mb-3">
+                        I partnered with backend engineering to design a debounced, lightweight API endpoint:
+                      </p>
+                      <ul className="text-sm text-gray-300 space-y-2">
+                        <li className="leading-[1.6]">• <strong>Debounced API calls:</strong> 300ms debounce after last user input</li>
+                        <li className="leading-[1.6]">• <strong>Preview-only endpoint:</strong> New /api/rules/preview that returns count only (not full data)</li>
+                        <li className="leading-[1.6]">• <strong>Optimistic UI:</strong> Show loading spinner after 150ms</li>
+                        <li className="leading-[1.6]">• <strong>Client-side caching:</strong> Cache preview results for identical queries</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-semibold text-[#00FFB3] mb-2 leading-[1.4]">The Impact</p>
+                      <ul className="text-base text-gray-300 space-y-1">
+                        <li className="leading-[1.6]">• Perceived latency: <strong>Instant</strong> (users didn't notice 300ms delay)</li>
+                        <li className="leading-[1.6]">• Server load: ↓ 85% (count-only queries vs. full table fetches)</li>
+                        <li className="leading-[1.6]">• Rule creation time: ↓ 40% (faster iteration = faster completion)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Contribution 2 */}
+                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm border border-white/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-[#00FFB3]/20 rounded-lg flex items-center justify-center border border-[#00FFB3]/30">
+                      <Shield className="w-6 h-6 text-[#00FFB3]" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2 leading-[1.4]">
+                        2. Accessibility CI/CD: Automated Testing Integration
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 pl-16">
+                    <div>
+                      <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">The Challenge</p>
+                      <p className="text-base text-gray-300 leading-[1.7]">
+                        Accessibility regressions kept slipping through QA. Manual testing was slow and
+                        inconsistent. We needed automated guardrails.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">My Technical Contribution</p>
+                      <p className="text-base text-gray-300 leading-[1.7] mb-3">
+                        I worked with DevOps to integrate accessibility testing into CI/CD pipeline:
+                      </p>
+                      <ul className="text-sm text-gray-300 space-y-2">
+                        <li className="leading-[1.6]">• <strong>axe-core integration:</strong> Automated tests run on every PR (blocks merge if failures)</li>
+                        <li className="leading-[1.6]">• <strong>Lighthouse CI:</strong> Accessibility score must be ≥95 to pass</li>
+                        <li className="leading-[1.6]">• <strong>Custom test scenarios:</strong> Wrote Playwright tests for keyboard navigation flows</li>
+                        <li className="leading-[1.6]">• <strong>Documentation:</strong> Created "Accessibility Playbook" for engineering team</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-semibold text-[#00FFB3] mb-2 leading-[1.4]">The Impact</p>
+                      <ul className="text-base text-gray-300 space-y-1">
+                        <li className="leading-[1.6]">• Zero accessibility regressions post-launch (previously 3-5/month)</li>
+                        <li className="leading-[1.6]">• Engineering confidence ↑ (no more "did I break accessibility?" anxiety)</li>
+                        <li className="leading-[1.6]">• Procurement blocker removed (WCAG compliance now guaranteed)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Key Learnings */}
+            <div className="bg-gradient-to-r from-[#FFD700]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#FFD700]/30">
+              <h3 className="text-lg font-semibold mb-4 flex items-center gap-2 leading-[1.4]">
+                <Lightbulb className="w-5 h-5 text-[#FFD700]" />
+                Key Learnings on Technical Collaboration
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-6 h-6 bg-[#FFD700]/20 rounded-full flex items-center justify-center text-xs font-bold text-[#FFD700]">
+                    1
+                  </span>
+                  <p className="text-sm text-gray-300 leading-[1.6]">
+                    <strong>Speak engineering language:</strong> Learn their constraints (API latency, rendering cost,
+                    bundle size). When you understand *why* something is hard, you can design around it.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-6 h-6 bg-[#FFD700]/20 rounded-full flex items-center justify-center text-xs font-bold text-[#FFD700]">
+                    2
+                  </span>
+                  <p className="text-sm text-gray-300 leading-[1.6]">
+                    <strong>Prototype in code when needed:</strong> Sometimes a CodePen prototype explains intent
+                    better than 10 Figma screens. Show, don't just tell.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-6 h-6 bg-[#FFD700]/20 rounded-full flex items-center justify-center text-xs font-bold text-[#FFD700]">
+                    3
+                  </span>
+                  <p className="text-sm text-gray-300 leading-[1.6]">
+                    <strong>Build trust through reliability:</strong> If you say "this is a P0 blocker," it better
+                    be a P0 blocker. Earn credibility by being right about priorities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Stakeholder Alignment */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
+          <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 transition-all duration-300 hover:border-[#00D4FF]/40 cursor-pointer">
+            <h2 className="text-3xl sm:text-4xl font-semibold leading-[1.2] tracking-tight mb-8">
+              Stakeholder Alignment: The Override Control Debate
+            </h2>
+
+            <div className="bg-[#0A0A0A]/50 rounded-[20px] p-6 mb-8 border border-[#FF8888]/20 transition-all duration-300 hover:bg-[#0A0A0A]/70 cursor-pointer">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 leading-[1.3]">
+                <AlertTriangle className="w-5 h-5 text-[#FFD700]" />
+                Conflict
+              </h3>
+              <p className="text-lg leading-[1.7] text-[#D1D5DB]">
+                CTO wanted full automation; CPAs demanded override control for
+                liability protection.
+              </p>
+            </div>
+
+            <div className="bg-[#0A0A0A]/50 rounded-[20px] p-6 mb-8 border border-[#FFD700]/20 transition-all duration-300 hover:bg-[#0A0A0A]/70 cursor-pointer">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 leading-[1.3]">
+                <Lightbulb className="w-5 h-5 text-[#FFD700]" />
+                Approach
+              </h3>
+              <ul className="text-sm text-[#D1D5DB] space-y-2">
+                <li className="leading-[1.6]">• Facilitated design workshop with CPA + CTO</li>
+                <li className="leading-[1.6]">
+                  • Presented competitor data (40% G2 "black-box" complaints)
+                </li>
+                <li className="leading-[1.6]">
+                  • Proposed <em>graduated autonomy</em> system (High → Auto /
+                  Med → Review / Low → Manual)
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-[#0A0A0A]/50 rounded-[20px] p-6 mb-8 border border-[#00FFB3]/20 transition-all duration-300 hover:bg-[#0A0A0A]/70 cursor-pointer">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 leading-[1.3]">
+                <CheckCircle className="w-5 h-5 text-[#00FFB3]" />
+                Outcome
+              </h3>
+              <ul className="text-sm text-[#D1D5DB] space-y-2">
+                <li className="leading-[1.6]">• CTO aligned after market positioning demo</li>
+                <li className="leading-[1.6]">• Override control became a product differentiator</li>
+                <li className="leading-[1.6]">• Closed enterprise client deal after demo</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#00FFB3]/5 rounded-[20px] p-6 border border-[#00FFB3]/30">
+              <blockquote className="text-lg italic leading-[1.7] text-[#D1D5DB]">
+                "The first crypto tax tool I'd stake my license on."
+              </blockquote>
+              <cite className="text-sm text-[#9CA3AF] not-italic mt-2 block">
+                — CPA
+              </cite>
+            </div>
+          </div>
+        </section>
+
+        {/* Outcomes & Impact - ENHANCED */}
+        <section id="impact" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+              📈 Outcomes & Impact
+            </h2>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
+              <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00FFB3]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
+                <p className="text-3xl font-bold text-[#00FFB3] mb-2">↓45%</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">CPA onboarding</p>
+              </div>
+              <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#FFD700]/5 rounded-[16px] p-4 border border-[#FFD700]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#FFD700]/40">
+                <p className="text-3xl font-bold text-[#FFD700] mb-2">↑32%</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">conversion rate</p>
+              </div>
+              <div className="bg-gradient-to-br from-[#00D4FF]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00D4FF]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00D4FF]/40">
+                <p className="text-3xl font-bold text-[#00D4FF] mb-2">↓85%</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">eng dependency</p>
+              </div>
+              <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#0080FF]/5 rounded-[16px] p-4 border border-[#0080FF]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#0080FF]/40">
+                <p className="text-3xl font-bold text-[#0080FF] mb-2">↑150%</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">anomaly detection</p>
+              </div>
+              <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
+                <p className="text-3xl font-bold text-[#00FFB3] mb-2">↓40%</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">support tickets</p>
+              </div>
+              <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
+                <p className="text-3xl font-bold text-[#00FFB3] mb-2">Zero</p>
+                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">FMV disputes</p>
+              </div>
+            </div>
+
+            {/* Post-Launch Insights - NEW */}
+            <div className="mb-10">
+              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
+                Post-Launch Insights: What We Learned
+              </h3>
+
+              <div className="space-y-4">
+                <div className="bg-gradient-to-r from-[#0080FF]/5 to-[#00D4FF]/5 rounded-[16px] p-5 border-l-4 border-[#0080FF]">
+                  <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
+                    💡 Insight 1: CPAs Love Bulk Operations More Than We Expected
+                  </h4>
+                  <p className="text-sm text-[#D1D5DB] mb-2 leading-[1.6]">
+                    <strong>What we learned:</strong> Post-launch analytics showed 73% of CPAs used bulk rule
+                    application within the first week. We initially designed this as a "power user" feature,
+                    but it became the primary workflow.
+                  </p>
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <strong>What we'd do differently:</strong> Make bulk operations more prominent in onboarding.
+                    Move the "Apply to All" button to primary position (not hidden in dropdown).
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[16px] p-5 border-l-4 border-[#00FFB3]">
+                  <h4 className="text-base font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
+                    💡 Insight 2: Dark Mode Adoption Exceeded Expectations
+                  </h4>
+                  <p className="text-sm text-[#D1D5DB] mb-2 leading-[1.6]">
+                    <strong>What we learned:</strong> 75% of users defaulted to dark mode and never switched.
+                    We invested heavily in dark theme design—turns out this was the right bet.
+                  </p>
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <strong>What we'd do differently:</strong> Make dark mode the default (not light mode).
+                    Current approach: respects system preference, but we should be opinionated.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#00D4FF]/5 rounded-[16px] p-5 border-l-4 border-[#FFD700]">
+                  <h4 className="text-base font-semibold text-[#FFD700] mb-2 leading-[1.4]">
+                    💡 Insight 3: Audit Trail Became a Competitive Moat
+                  </h4>
+                  <p className="text-sm text-[#D1D5DB] mb-2 leading-[1.6]">
+                    <strong>What we learned:</strong> During enterprise sales calls, the audit trail feature
+                    closed 3 deals where competitors failed. Compliance officers loved the "paper trail" for
+                    IRS audits.
+                  </p>
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <strong>What we'd do differently:</strong> Make audit trail exportable (PDF report).
+                    Currently view-only—but CPAs want to print it for client files.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+              <div className="bg-[#0080FF]/5 rounded-[16px] p-5 border-l-4 border-[#0080FF]">
+                <blockquote className="text-base italic text-[#D1D5DB] leading-[1.6]">
+                  "First crypto tax tool actually designed for accountants."
+                </blockquote>
+                <cite className="text-sm text-[#9CA3AF] not-italic mt-2 block">
+                  — CPA Client
+                </cite>
+              </div>
+              <div className="bg-[#FFD700]/5 rounded-[16px] p-5 border-l-4 border-[#FFD700]">
+                <blockquote className="text-base italic text-[#D1D5DB] leading-[1.6]">
+                  "Your handoffs made us 10x faster. Edge case docs were
+                  incredible."
+                </blockquote>
+                <cite className="text-sm text-[#9CA3AF] not-italic mt-2 block">
+                  — Engineering Lead
+                </cite>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-[#1A1A1A]/50 to-[#252525]/50 rounded-[20px] p-6 border border-[#00D4FF]/20">
+              <h3 className="text-lg font-semibold text-white mb-5 leading-[1.3]">
+                Business Impact
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    3 enterprise deals in 6 months
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    Scaled to DAOs & hedge funds
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    Reduced support overhead
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    Improved retention via transparency
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Collaboration & Handoff */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2200">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+              🤝 Collaboration & Handoff
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#0080FF]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-4">
+                  <FileText className="w-6 h-6 text-[#00D4FF] flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-[#00D4FF] leading-[1.4]">
+                    Documentation
+                  </h3>
+                </div>
+                <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                  <li className="leading-[1.6]">• Annotated Figma files</li>
+                  <li className="leading-[1.6]">• Component library specs</li>
+                  <li className="leading-[1.6]">• Accessibility checklist</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#00FFB3]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-4">
+                  <Shield className="w-6 h-6 text-[#00FFB3] flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-[#00FFB3] leading-[1.4]">
+                    Quality Assurance
+                  </h3>
+                </div>
+                <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                  <li className="leading-[1.6]">• QA test scenarios</li>
+                  <li className="leading-[1.6]">• Accessibility validation</li>
+                  <li className="leading-[1.6]">• Performance benchmarks</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#FFD700]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-4">
+                  <Users className="w-6 h-6 text-[#FFD700] flex-shrink-0" />
+                  <h3 className="text-lg font-semibold text-[#FFD700] leading-[1.4]">
+                    Knowledge Transfer
+                  </h3>
+                </div>
+                <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                  <li className="leading-[1.6]">• Loom walkthroughs</li>
+                  <li className="leading-[1.6]">• Weekly design-dev syncs</li>
+                  <li className="leading-[1.6]">• Visual acceptance criteria</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Learnings */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+              Key Learnings
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-r from-[#0080FF]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#0080FF] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-[#00D4FF] mb-3 leading-[1.4]">
+                  Trust is a UX Principle
+                </h3>
+                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  Explainability drove adoption more than feature quantity.
+                  Transparency converted skeptics into advocates.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#00FFB3]/5 rounded-[20px] p-6 border-l-4 border-[#00D4FF] transition-all duration-300 hover:border-[#00FFB3] hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-[#00FFB3] mb-3 leading-[1.4]">
+                  Systems &gt; Screens
+                </h3>
+                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  Modular IA enabled scaling. Role-based architecture
+                  future-proofed for growth.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#00FFB3] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-white mb-3 leading-[1.4]">
+                  AI + Human Collaboration
+                </h3>
+                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  Override control flipped AI from threat to tool. Confidence
+                  indicators enabled informed decisions.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#FFD700] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
+                <h3 className="text-lg font-bold text-[#FFD700] mb-3 leading-[1.4]">
+                  Design Drives Business
+                </h3>
+                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  Self-service features reduced costs. Audit trails closed
+                  enterprise deals and differentiated from competitors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Design Philosophy */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2400">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+              💭 Design Philosophy
+            </h2>
+
+            <div className="bg-gradient-to-r from-[#1A1A1A]/50 to-[#252525]/50 rounded-[20px] p-8 mb-8 border border-[#00D4FF]/20">
+              <blockquote className="text-xl italic text-[#D1D5DB] leading-[1.7] mb-4">
+                "Design isn't what it looks like — it's whether a CPA can
+                explain a tax report to a regulator without an engineer in the
+                room."
+              </blockquote>
+            </div>
+
+            <div className="mt-10">
+              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
+                Core Tenets
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#0080FF]/5 rounded-[20px] p-6 border-l-4 border-[#00D4FF] transition-all duration-300 hover:border-[#0080FF] hover:scale-[1.02]">
+                  <h4 className="font-semibold text-lg text-[#00D4FF] mb-2 leading-[1.4]">
+                    Transparency over Efficiency
+                  </h4>
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    Speed matters, but professional defensibility matters more
+                  </p>
+                </div>
+                <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#00FFB3]/5 rounded-[20px] p-6 border-l-4 border-[#00D4FF] transition-all duration-300 hover:border-[#00FFB3] hover:scale-[1.02]">
+                  <h4 className="font-semibold text-lg text-[#00FFB3] mb-2 leading-[1.4]">
+                    Augmentation over Automation
+                  </h4>
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    AI should empower expertise, not replace judgment
+                  </p>
+                </div>
+                <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#00FFB3] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
+                  <h4 className="font-semibold text-lg text-white mb-2 leading-[1.4]">
+                    Systems over Surfaces
+                  </h4>
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    Scalable architecture beats pixel-perfect polish
+                  </p>
+                </div>
+                <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#FFD700] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
+                  <h4 className="font-semibold text-lg text-[#FFD700] mb-2 leading-[1.4]">
+                    Context over Complexity
+                  </h4>
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    Surface insights when they matter, hide complexity when they
+                    don't
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Modals */}
+      <Dialog open={isGifModalOpen} onOpenChange={setIsGifModalOpen}>
+        <DialogOverlay className="bg-black/80 backdrop-blur-sm" />
+        <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 bg-[#0F0F0F] border border-[#00D4FF]/30">
+          <DialogTitle className="sr-only">
+            AI Confidence Chips + Accept/Reject Controls - Enlarged View
+          </DialogTitle>
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            <img
+              src="https://cdn.builder.io/api/v1/file/assets%2Fba69a23156414a589de97341511272c9%2F94e15e6943d547aa907e95334d885d1e"
+              alt="AI Confidence Chips + Accept/Reject Controls - Full size view"
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog
+        open={isAuditDrawerModalOpen}
+        onOpenChange={setIsAuditDrawerModalOpen}
+      >
+        <DialogOverlay className="bg-black/80 backdrop-blur-sm" />
+        <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 bg-[#0F0F0F] border border-[#00FFB3]/30">
+          <DialogTitle className="sr-only">
+            Inline Audit Trail Drawer - Enlarged View
+          </DialogTitle>
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Inline%20Audit%20Drawer.gif"
+              alt="Inline Audit Trail Drawer - Full size view"
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog
+        open={isRuleBuilderModalOpen}
+        onOpenChange={setIsRuleBuilderModalOpen}
+      >
+        <DialogOverlay className="bg-black/80 backdrop-blur-sm" />
+        <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 bg-[#0F0F0F] border border-[#00D4FF]/30">
+          <DialogTitle className="sr-only">
+            Visual Rule Builder (No-Code) - Enlarged View
+          </DialogTitle>
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Rule%20Builder.gif"
+              alt="Visual Rule Builder (No-Code) - Full size view"
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog
+        open={isAnomalyDetectionModalOpen}
+        onOpenChange={setIsAnomalyDetectionModalOpen}
+      >
+        <DialogOverlay className="bg-black/80 backdrop-blur-sm" />
+        <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 bg-[#0F0F0F] border border-[#FFD700]/30">
+          <DialogTitle className="sr-only">
+            Contextual Anomaly Detection - Enlarged View
+          </DialogTitle>
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Data%20Anomaly%20Detection.gif"
+              alt="Contextual Anomaly Detection - Full size view"
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog
+        open={isMultiTenantModalOpen}
+        onOpenChange={setIsMultiTenantModalOpen}
+      >
+        <DialogOverlay className="bg-black/80 backdrop-blur-sm" />
+        <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 bg-[#0F0F0F] border border-[#6B7280]/30">
+          <DialogTitle className="sr-only">
+            Multi-Tenant Architecture - Enlarged View
+          </DialogTitle>
+          <div className="relative w-full h-full flex items-center justify-center p-4">
+            <img
+              src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Client%20Based%20Roles.gif"
+              alt="Multi-Tenant Architecture - Full size view"
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <RelatedCaseStudies currentCaseStudy="computis" />
+      <Footer />
+    </div>
+  );
+}
