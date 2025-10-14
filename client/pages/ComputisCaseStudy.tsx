@@ -1261,7 +1261,6 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 
