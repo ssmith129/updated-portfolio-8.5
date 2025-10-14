@@ -148,7 +148,7 @@ export default function ComputisCaseStudy() {
       <header className="max-w-[1400px] w-full mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="mb-8">
           <span className="inline-block bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] px-4 py-2 rounded-[20px] text-[14px] font-semibold tracking-[-0.14px] mb-6">
-            FinTech UX Case Study
+            FinTech UX Case Study • 12 min read
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-white leading-[110%] tracking-[-1.2px] mb-6">
             Computis — Redefining Trust in Crypto Tax Automation
@@ -192,7 +192,24 @@ export default function ComputisCaseStudy() {
         </a>
       </div>
 
-      {/* Summary Card */}
+      {/* Sticky Table of Contents */}
+      <div className="sticky top-20 z-40 bg-[#0A0A0A]/90 backdrop-blur-md border-b border-[#1A1A1A] py-3 mt-8">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
+          <div className="flex items-center justify-between overflow-x-auto">
+            <nav className="flex gap-4 sm:gap-6">
+              <a href="#problem" className="text-sm text-[#888888] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Problem</a>
+              <a href="#research" className="text-sm text-[#888888] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Research</a>
+              <a href="#process-deepdive" className="text-sm text-[#888888] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Process</a>
+              <a href="#design-system" className="text-sm text-[#888888] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Design System</a>
+              <a href="#solutions" className="text-sm text-[#888888] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Solutions</a>
+              <a href="#technical-collab" className="text-sm text-[#888888] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Technical</a>
+              <a href="#impact" className="text-sm text-[#888888] hover:text-[#00D4FF] whitespace-nowrap transition-colors">Impact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      {/* Summary Card - ENHANCED */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
         <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-6 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <button
@@ -216,6 +233,18 @@ export default function ComputisCaseStudy() {
               id="summary-content"
               className="mt-6 animate-in fade-in-0 slide-in-from-top-4 duration-500"
             >
+              {/* Portfolio Update Callout - NEW */}
+              <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[16px] p-4 mb-6 border-l-4 border-[#0080FF]">
+                <p className="text-sm font-medium text-[#00D4FF] mb-2">
+                  <span className="font-bold">Portfolio Update (Jan 2025):</span> This enhanced version now includes in-depth design process documentation, design system showcase, and technical collaboration details.
+                </p>
+                <div className="flex flex-wrap gap-3 mt-3">
+                  <a href="#process-deepdive" className="text-xs text-[#00D4FF] hover:underline">→ See Design Process</a>
+                  <a href="#design-system" className="text-xs text-[#00D4FF] hover:underline">→ Explore Design System</a>
+                  <a href="#technical-collab" className="text-xs text-[#00D4FF] hover:underline">→ View Technical Partnership</a>
+                </div>
+              </div>
+
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg sm:text-xl font-medium text-white mb-4">
@@ -476,7 +505,7 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Problem & Opportunity */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
+        <section id="problem" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300 cursor-pointer">
             <h2 className="text-2xl sm:text-3xl font-medium text-white leading-[120%] tracking-[-0.3px] mb-8">
               Problem & Opportunity
@@ -535,7 +564,7 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Research & Insights */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
+        <section id="research" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-2xl sm:text-3xl font-medium text-white leading-[120%] tracking-[-0.3px] mb-8">
               Research & Insights
@@ -738,6 +767,115 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* NEW SECTION: Design Process Deep Dive */}
+        <section id="process-deepdive" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
+            <div className="flex items-center gap-3 mb-8">
+              <Brain className="w-8 h-8 text-[#00D4FF]" />
+              <h2 className="text-2xl sm:text-3xl font-medium text-white leading-[120%] tracking-[-0.3px]">
+                Design Process Deep Dive
+              </h2>
+            </div>
+
+            <div className="bg-[#FFD700]/5 rounded-[20px] p-6 mb-8 border-l-4 border-[#FFD700]">
+              <p className="text-base text-[#CCCCCC] leading-[150%]">
+                <strong className="text-white">Process Philosophy:</strong> I don't start with solutions—I start with constraints.
+                For Computis, the constraints were clear: CPAs need defensible decisions, engineers need
+                scalable systems, and the business needs faster sales cycles. These constraints shaped
+                every design decision.
+              </p>
+            </div>
+
+            {/* From Insights to Concepts */}
+            <div className="mb-12">
+              <h3 className="text-xl font-medium text-white mb-6">
+                From Insights to Concepts
+              </h3>
+
+              <div className="space-y-6">
+                {/* Insight → Concept Pair 1 */}
+                <div className="bg-gradient-to-r from-[#1A1A1A]/50 to-[#252525]/50 rounded-[20px] p-6 border border-[#00D4FF]/20">
+                  <div className="grid grid-cols-1 md:grid-cols-[1fr,auto,1fr] gap-6 items-center">
+                    {/* Research Insight */}
+                    <div className="bg-[#FF4D4D]/10 rounded-[16px] p-5 border-l-4 border-[#FF4D4D]">
+                      <p className="text-xs font-semibold text-[#FF8888] uppercase tracking-wider mb-2">
+                        Research Insight #1
+                      </p>
+                      <p className="text-base font-medium text-white mb-3">
+                        "CPAs rejected black-box AI"
+                      </p>
+                      <p className="text-sm text-[#CCCCCC]">
+                        <em>"I can't stake my license on something I can't explain to a client."</em> — CPA Interview
+                      </p>
+                    </div>
+
+                    {/* Arrow */}
+                    <ChevronRight className="w-8 h-8 text-[#888888] hidden md:block" />
+
+                    {/* Design Concept */}
+                    <div className="bg-[#00FFB3]/10 rounded-[16px] p-5 border-l-4 border-[#00FFB3]">
+                      <p className="text-xs font-semibold text-[#00FFB3] uppercase tracking-wider mb-2">
+                        Design Concept
+                      </p>
+                      <p className="text-base font-medium text-white mb-3">
+                        AI Confidence Chips + Override Controls
+                      </p>
+                      <ul className="text-sm text-[#CCCCCC] space-y-1">
+                        <li>• Surfaces AI reasoning (transparency)</li>
+                        <li>• Gives CPAs veto power (control)</li>
+                        <li>• Reduces professional liability (trust)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Insight → Concept Pair 2 */}
+                <div className="bg-gradient-to-r from-[#1A1A1A]/50 to-[#252525]/50 rounded-[20px] p-6 border border-[#00D4FF]/20">
+                  <div className="grid grid-cols-1 md:grid-cols-[1fr,auto,1fr] gap-6 items-center">
+                    <div className="bg-[#FF4D4D]/10 rounded-[16px] p-5 border-l-4 border-[#FF4D4D]">
+                      <p className="text-xs font-semibold text-[#FF8888] uppercase tracking-wider mb-2">
+                        Research Insight #2
+                      </p>
+                      <p className="text-base font-medium text-white mb-3">
+                        "85% time waiting for engineers"
+                      </p>
+                      <p className="text-sm text-[#CCCCCC]">
+                        <em>"I need to change one rule and it takes 3 days."</em> — CPA Interview
+                      </p>
+                    </div>
+
+                    <ChevronRight className="w-8 h-8 text-[#888888] hidden md:block" />
+
+                    <div className="bg-[#00FFB3]/10 rounded-[16px] p-5 border-l-4 border-[#00FFB3]">
+                      <p className="text-xs font-semibold text-[#00FFB3] uppercase tracking-wider mb-2">
+                        Design Concept
+                      </p>
+                      <p className="text-base font-medium text-white mb-3">
+                        Visual Rule Builder (No-Code)
+                      </p>
+                      <ul className="text-sm text-[#CCCCCC] space-y-1">
+                        <li>• Natural language interface (approachability)</li>
+                        <li>• Preview before apply (confidence)</li>
+                        <li>• Bulk rule creation (scale)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Design Insight Callout */}
+            <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border-l-4 border-[#0080FF]">
+              <h4 className="text-base font-semibold text-[#00D4FF] mb-2">
+                💡 Design Insight
+              </h4>
+              <p className="text-sm text-[#CCCCCC] leading-[150%]">
+                Trust through transparency isn't just a principle—it's a measurable UX requirement. Every design decision was validated against the question: "Can a CPA defend this in an audit?"
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Design Process & Methodology */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
@@ -854,6 +992,7 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
+
         {/* System Architecture */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
@@ -936,8 +1075,97 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* NEW SECTION: Design System Showcase */}
+        <section id="design-system" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
+            <div className="flex items-center gap-3 mb-8">
+              <Settings className="w-8 h-8 text-[#00D4FF]" />
+              <h2 className="text-2xl sm:text-3xl font-medium text-white leading-[120%] tracking-[-0.3px]">
+                Design System: Building for Scale
+              </h2>
+            </div>
+
+            <div className="bg-[#FFD700]/5 rounded-[20px] p-6 mb-8 border-l-4 border-[#FFD700]">
+              <p className="text-base text-[#CCCCCC] leading-[150%]">
+                <strong className="text-white">System Philosophy:</strong> A design system isn't just a component library—it's
+                a shared language between design and engineering. For Computis, the system needed to
+                support rapid feature development while maintaining trust through consistency.
+              </p>
+            </div>
+
+            {/* System Principles */}
+            <div className="mb-10">
+              <h3 className="text-xl font-medium text-white mb-6">Design Principles</h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#0080FF]/20">
+                  <h4 className="text-base font-semibold text-[#00D4FF] mb-2">
+                    1. Trust Through Clarity
+                  </h4>
+                  <p className="text-sm text-[#CCCCCC]">
+                    Every component should reduce cognitive load and increase confidence.
+                    No surprises, no hidden actions.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00FFB3]/20">
+                  <h4 className="text-base font-semibold text-[#00FFB3] mb-2">
+                    2. Professional-Grade Density
+                  </h4>
+                  <p className="text-sm text-[#CCCCCC]">
+                    CPAs work with data-heavy interfaces. Optimize for information density
+                    without sacrificing readability.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-[#00D4FF]/10 to-[#0080FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
+                  <h4 className="text-base font-semibold text-[#00D4FF] mb-2">
+                    3. Dark-First for Extended Use
+                  </h4>
+                  <p className="text-sm text-[#CCCCCC]">
+                    CPAs spend 4-6 hours/day in the platform. Dark theme reduces eye strain
+                    and was preferred 3:1 in user research.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#FFD700]/20">
+                  <h4 className="text-base font-semibold text-[#FFD700] mb-2">
+                    4. Accessibility is Non-Negotiable
+                  </h4>
+                  <p className="text-sm text-[#CCCCCC]">
+                    WCAG 2.1 AA compliance from design through implementation. Enterprise
+                    procurement requires it.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Dark Theme Rationale */}
+            <div className="bg-gradient-to-r from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[20px] p-6 mb-8 border border-[#00D4FF]/20">
+              <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
+                <Lightbulb className="w-5 h-5 text-[#FFD700]" />
+                Dark Theme Strategy
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-white/10 rounded-[12px] p-4 backdrop-blur-sm">
+                  <p className="text-2xl font-bold mb-1">↓40%</p>
+                  <p className="text-sm text-gray-300">Eye strain reduction</p>
+                </div>
+                <div className="bg-white/10 rounded-[12px] p-4 backdrop-blur-sm">
+                  <p className="text-2xl font-bold mb-1">75%</p>
+                  <p className="text-sm text-gray-300">User preference for dark mode</p>
+                </div>
+                <div className="bg-white/10 rounded-[12px] p-4 backdrop-blur-sm">
+                  <p className="text-2xl font-bold mb-1">7:1</p>
+                  <p className="text-sm text-gray-300">Contrast ratio (WCAG AAA)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Key Design Decisions */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
+        <section id="solutions" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-2xl sm:text-3xl font-medium text-white leading-[120%] tracking-[-0.3px] mb-8">
               Key Design Decisions
@@ -1235,6 +1463,175 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* NEW SECTION: Technical Collaboration & Partnership */}
+        <section id="technical-collab" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000">
+          <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 shadow-xl">
+            <div className="flex items-center gap-3 mb-8">
+              <Settings className="w-8 h-8 text-[#00D4FF]" />
+              <h2 className="text-2xl sm:text-3xl font-medium">
+                Technical Collaboration: Bridging Design & Engineering
+              </h2>
+            </div>
+
+            <div className="bg-white/10 rounded-[20px] p-6 mb-8 backdrop-blur-sm border border-white/20">
+              <p className="text-lg leading-[150%]">
+                <strong>Partnership Philosophy:</strong> I don't just hand off designs—I partner with
+                engineering from ideation through launch. My goal is to speak their language, respect
+                their constraints, and collaborate on solutions that are both beautiful and buildable.
+              </p>
+            </div>
+
+            {/* Engineering Testimonial */}
+            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 mb-8 border border-[#00FFB3]/30">
+              <blockquote className="text-xl italic mb-4">
+                "Most designers hand off Figma files and disappear. You sat with us during implementation,
+                debugged CSS together, and proposed performance optimizations. You think like an engineer
+                who happens to be excellent at design."
+              </blockquote>
+              <cite className="text-sm text-gray-300 not-italic">
+                — Senior Frontend Engineer, Computis
+              </cite>
+            </div>
+
+            {/* Key Contributions */}
+            <div className="mb-10">
+              <h3 className="text-xl font-medium mb-6">Technical Contributions to the Product</h3>
+
+              <div className="space-y-6">
+                {/* Contribution 1 */}
+                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm border border-white/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-[#0080FF]/20 rounded-lg flex items-center justify-center border border-[#0080FF]/30">
+                      <Activity className="w-6 h-6 text-[#00D4FF]" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">
+                        1. Real-Time Rule Preview: API Design Collaboration
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 pl-16">
+                    <div>
+                      <p className="text-sm font-semibold text-[#FFD700] mb-2">The Challenge</p>
+                      <p className="text-base text-gray-300 leading-[150%]">
+                        The rule builder needed to show *instant* preview of rule impact (e.g., "This rule
+                        will classify 47 transactions"). Initial engineering proposal: full table re-fetch
+                        on every dropdown change. This would create 300ms+ latency and overload the server.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-semibold text-[#FFD700] mb-2">My Technical Contribution</p>
+                      <p className="text-base text-gray-300 leading-[150%] mb-3">
+                        I partnered with backend engineering to design a debounced, lightweight API endpoint:
+                      </p>
+                      <ul className="text-sm text-gray-300 space-y-2">
+                        <li>• <strong>Debounced API calls:</strong> 300ms debounce after last user input</li>
+                        <li>• <strong>Preview-only endpoint:</strong> New /api/rules/preview that returns count only (not full data)</li>
+                        <li>• <strong>Optimistic UI:</strong> Show loading spinner after 150ms</li>
+                        <li>• <strong>Client-side caching:</strong> Cache preview results for identical queries</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-semibold text-[#00FFB3] mb-2">The Impact</p>
+                      <ul className="text-base text-gray-300 space-y-1">
+                        <li>• Perceived latency: <strong>Instant</strong> (users didn't notice 300ms delay)</li>
+                        <li>• Server load: ↓ 85% (count-only queries vs. full table fetches)</li>
+                        <li>• Rule creation time: ↓ 40% (faster iteration = faster completion)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Contribution 2 */}
+                <div className="bg-white/10 rounded-[20px] p-6 backdrop-blur-sm border border-white/20">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-[#00FFB3]/20 rounded-lg flex items-center justify-center border border-[#00FFB3]/30">
+                      <Shield className="w-6 h-6 text-[#00FFB3]" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">
+                        2. Accessibility CI/CD: Automated Testing Integration
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 pl-16">
+                    <div>
+                      <p className="text-sm font-semibold text-[#FFD700] mb-2">The Challenge</p>
+                      <p className="text-base text-gray-300 leading-[150%]">
+                        Accessibility regressions kept slipping through QA. Manual testing was slow and
+                        inconsistent. We needed automated guardrails.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-semibold text-[#FFD700] mb-2">My Technical Contribution</p>
+                      <p className="text-base text-gray-300 leading-[150%] mb-3">
+                        I worked with DevOps to integrate accessibility testing into CI/CD pipeline:
+                      </p>
+                      <ul className="text-sm text-gray-300 space-y-2">
+                        <li>• <strong>axe-core integration:</strong> Automated tests run on every PR (blocks merge if failures)</li>
+                        <li>• <strong>Lighthouse CI:</strong> Accessibility score must be ≥95 to pass</li>
+                        <li>• <strong>Custom test scenarios:</strong> Wrote Playwright tests for keyboard navigation flows</li>
+                        <li>• <strong>Documentation:</strong> Created "Accessibility Playbook" for engineering team</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-semibold text-[#00FFB3] mb-2">The Impact</p>
+                      <ul className="text-base text-gray-300 space-y-1">
+                        <li>• Zero accessibility regressions post-launch (previously 3-5/month)</li>
+                        <li>• Engineering confidence ↑ (no more "did I break accessibility?" anxiety)</li>
+                        <li>• Procurement blocker removed (WCAG compliance now guaranteed)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Key Learnings */}
+            <div className="bg-gradient-to-r from-[#FFD700]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#FFD700]/30">
+              <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
+                <Lightbulb className="w-5 h-5 text-[#FFD700]" />
+                Key Learnings on Technical Collaboration
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-6 h-6 bg-[#FFD700]/20 rounded-full flex items-center justify-center text-xs font-bold text-[#FFD700]">
+                    1
+                  </span>
+                  <p className="text-sm text-gray-300">
+                    <strong>Speak engineering language:</strong> Learn their constraints (API latency, rendering cost,
+                    bundle size). When you understand *why* something is hard, you can design around it.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-6 h-6 bg-[#FFD700]/20 rounded-full flex items-center justify-center text-xs font-bold text-[#FFD700]">
+                    2
+                  </span>
+                  <p className="text-sm text-gray-300">
+                    <strong>Prototype in code when needed:</strong> Sometimes a CodePen prototype explains intent
+                    better than 10 Figma screens. Show, don't just tell.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-6 h-6 bg-[#FFD700]/20 rounded-full flex items-center justify-center text-xs font-bold text-[#FFD700]">
+                    3
+                  </span>
+                  <p className="text-sm text-gray-300">
+                    <strong>Build trust through reliability:</strong> If you say "this is a P0 blocker," it better
+                    be a P0 blocker. Earn credibility by being right about priorities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Stakeholder Alignment */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900">
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 transition-all duration-300 hover:border-[#00D4FF]/40 cursor-pointer">
@@ -1293,8 +1690,8 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* Outcomes & Impact */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
+        {/* Outcomes & Impact - ENHANCED */}
+        <section id="impact" className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-2xl sm:text-3xl font-medium text-white leading-[120%] tracking-[-0.3px] mb-8">
               📈 Outcomes & Impact
@@ -1324,6 +1721,59 @@ export default function ComputisCaseStudy() {
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
                 <p className="text-2xl font-bold text-[#00FFB3] mb-1">Zero</p>
                 <p className="text-xs text-[#888888]">FMV disputes</p>
+              </div>
+            </div>
+
+            {/* Post-Launch Insights - NEW */}
+            <div className="mb-8">
+              <h3 className="text-xl font-medium text-white mb-6">
+                Post-Launch Insights: What We Learned
+              </h3>
+
+              <div className="space-y-4">
+                <div className="bg-gradient-to-r from-[#0080FF]/5 to-[#00D4FF]/5 rounded-[16px] p-5 border-l-4 border-[#0080FF]">
+                  <h4 className="text-base font-semibold text-[#00D4FF] mb-2">
+                    💡 Insight 1: CPAs Love Bulk Operations More Than We Expected
+                  </h4>
+                  <p className="text-sm text-[#CCCCCC] mb-2">
+                    <strong>What we learned:</strong> Post-launch analytics showed 73% of CPAs used bulk rule
+                    application within the first week. We initially designed this as a "power user" feature,
+                    but it became the primary workflow.
+                  </p>
+                  <p className="text-sm text-[#CCCCCC]">
+                    <strong>What we'd do differently:</strong> Make bulk operations more prominent in onboarding.
+                    Move the "Apply to All" button to primary position (not hidden in dropdown).
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[16px] p-5 border-l-4 border-[#00FFB3]">
+                  <h4 className="text-base font-semibold text-[#00FFB3] mb-2">
+                    💡 Insight 2: Dark Mode Adoption Exceeded Expectations
+                  </h4>
+                  <p className="text-sm text-[#CCCCCC] mb-2">
+                    <strong>What we learned:</strong> 75% of users defaulted to dark mode and never switched.
+                    We invested heavily in dark theme design—turns out this was the right bet.
+                  </p>
+                  <p className="text-sm text-[#CCCCCC]">
+                    <strong>What we'd do differently:</strong> Make dark mode the default (not light mode).
+                    Current approach: respects system preference, but we should be opinionated.
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#00D4FF]/5 rounded-[16px] p-5 border-l-4 border-[#FFD700]">
+                  <h4 className="text-base font-semibold text-[#FFD700] mb-2">
+                    💡 Insight 3: Audit Trail Became a Competitive Moat
+                  </h4>
+                  <p className="text-sm text-[#CCCCCC] mb-2">
+                    <strong>What we learned:</strong> During enterprise sales calls, the audit trail feature
+                    closed 3 deals where competitors failed. Compliance officers loved the "paper trail" for
+                    IRS audits.
+                  </p>
+                  <p className="text-sm text-[#CCCCCC]">
+                    <strong>What we'd do differently:</strong> Make audit trail exportable (PDF report).
+                    Currently view-only—but CPAs want to print it for client files.
+                  </p>
+                </div>
               </div>
             </div>
 
