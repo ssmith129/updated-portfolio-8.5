@@ -1606,6 +1606,7 @@ export default function ComputisCaseStudy() {
               📈 Outcomes & Impact
             </h2>
 
+            {/* Metrics Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00FFB3]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
                 <p className="text-3xl font-bold text-[#00FFB3] mb-2">↓45%</p>
@@ -1633,84 +1634,12 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Post-Launch Insights - NEW */}
-            <div className="mb-10">
-              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
-                Post-Launch Insights: What We Learned
-              </h3>
-
-              <div className="space-y-4">
-                <div className="bg-gradient-to-r from-[#0080FF]/5 to-[#00D4FF]/5 rounded-[16px] p-5 border-l-4 border-[#0080FF]">
-                  <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
-                    💡 Insight 1: CPAs Love Bulk Operations More Than We Expected
-                  </h4>
-                  <p className="text-sm text-[#D1D5DB] mb-2 leading-[1.6]">
-                    <strong>What we learned:</strong> Post-launch analytics showed 73% of CPAs used bulk rule
-                    application within the first week. We initially designed this as a "power user" feature,
-                    but it became the primary workflow.
-                  </p>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    <strong>What we'd do differently:</strong> Make bulk operations more prominent in onboarding.
-                    Move the "Apply to All" button to primary position (not hidden in dropdown).
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[16px] p-5 border-l-4 border-[#00FFB3]">
-                  <h4 className="text-base font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
-                    💡 Insight 2: Dark Mode Adoption Exceeded Expectations
-                  </h4>
-                  <p className="text-sm text-[#D1D5DB] mb-2 leading-[1.6]">
-                    <strong>What we learned:</strong> 75% of users defaulted to dark mode and never switched.
-                    We invested heavily in dark theme design—turns out this was the right bet.
-                  </p>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    <strong>What we'd do differently:</strong> Make dark mode the default (not light mode).
-                    Current approach: respects system preference, but we should be opinionated.
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#00D4FF]/5 rounded-[16px] p-5 border-l-4 border-[#FFD700]">
-                  <h4 className="text-base font-semibold text-[#FFD700] mb-2 leading-[1.4]">
-                    💡 Insight 3: Audit Trail Became a Competitive Moat
-                  </h4>
-                  <p className="text-sm text-[#D1D5DB] mb-2 leading-[1.6]">
-                    <strong>What we learned:</strong> During enterprise sales calls, the audit trail feature
-                    closed 3 deals where competitors failed. Compliance officers loved the "paper trail" for
-                    IRS audits.
-                  </p>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    <strong>What we'd do differently:</strong> Make audit trail exportable (PDF report).
-                    Currently view-only—but CPAs want to print it for client files.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-              <div className="bg-[#0080FF]/5 rounded-[16px] p-5 border-l-4 border-[#0080FF]">
-                <blockquote className="text-base italic text-[#D1D5DB] leading-[1.6]">
-                  "First crypto tax tool actually designed for accountants."
-                </blockquote>
-                <cite className="text-sm text-[#9CA3AF] not-italic mt-2 block">
-                  — CPA Client
-                </cite>
-              </div>
-              <div className="bg-[#FFD700]/5 rounded-[16px] p-5 border-l-4 border-[#FFD700]">
-                <blockquote className="text-base italic text-[#D1D5DB] leading-[1.6]">
-                  "Your handoffs made us 10x faster. Edge case docs were
-                  incredible."
-                </blockquote>
-                <cite className="text-sm text-[#9CA3AF] not-italic mt-2 block">
-                  — Engineering Lead
-                </cite>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-[#1A1A1A]/50 to-[#252525]/50 rounded-[20px] p-6 border border-[#00D4FF]/20">
+            {/* Business Impact - Moved Up */}
+            <div className="bg-gradient-to-r from-[#1A1A1A]/50 to-[#252525]/50 rounded-[20px] p-6 border border-[#00D4FF]/20 mb-10">
               <h3 className="text-lg font-semibold text-white mb-5 leading-[1.3]">
                 Business Impact
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span className="text-sm text-[#D1D5DB] leading-[1.6]">
@@ -1735,6 +1664,71 @@ export default function ComputisCaseStudy() {
                     Improved retention via transparency
                   </span>
                 </div>
+              </div>
+            </div>
+
+            {/* Key Insights - Redesigned */}
+            <div className="mb-10">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+                Key Insights
+              </h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* Insight 1 */}
+                <div className="bg-white/5 rounded-[16px] p-5 border border-white/10 hover:border-[#0080FF]/40 transition-all">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-8 h-8 bg-[#0080FF]/20 rounded-lg flex items-center justify-center">
+                      <Zap className="w-4 h-4 text-[#0080FF]" />
+                    </div>
+                    <h4 className="text-sm font-semibold text-[#0080FF]">Bulk Operations</h4>
+                  </div>
+                  <p className="text-xs text-gray-400 mb-2">73% adopted bulk rules in week 1</p>
+                  <p className="text-xs text-gray-500">"Power user" feature became primary workflow</p>
+                </div>
+
+                {/* Insight 2 */}
+                <div className="bg-white/5 rounded-[16px] p-5 border border-white/10 hover:border-[#00FFB3]/40 transition-all">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-8 h-8 bg-[#00FFB3]/20 rounded-lg flex items-center justify-center">
+                      <Brain className="w-4 h-4 text-[#00FFB3]" />
+                    </div>
+                    <h4 className="text-sm font-semibold text-[#00FFB3]">Dark Mode</h4>
+                  </div>
+                  <p className="text-xs text-gray-400 mb-2">75% defaulted to dark theme</p>
+                  <p className="text-xs text-gray-500">Investment in dark-first design validated</p>
+                </div>
+
+                {/* Insight 3 */}
+                <div className="bg-white/5 rounded-[16px] p-5 border border-white/10 hover:border-[#FFD700]/40 transition-all">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-8 h-8 bg-[#FFD700]/20 rounded-lg flex items-center justify-center">
+                      <Shield className="w-4 h-4 text-[#FFD700]" />
+                    </div>
+                    <h4 className="text-sm font-semibold text-[#FFD700]">Audit Trail</h4>
+                  </div>
+                  <p className="text-xs text-gray-400 mb-2">Closed 3 enterprise deals</p>
+                  <p className="text-xs text-gray-500">Competitive moat for compliance teams</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonials */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-[#0080FF]/5 rounded-[16px] p-5 border-l-4 border-[#0080FF]">
+                <blockquote className="text-sm italic text-[#D1D5DB] leading-[1.6] mb-2">
+                  "First crypto tax tool actually designed for accountants."
+                </blockquote>
+                <cite className="text-xs text-[#9CA3AF] not-italic">
+                  — CPA Client
+                </cite>
+              </div>
+              <div className="bg-[#FFD700]/5 rounded-[16px] p-5 border-l-4 border-[#FFD700]">
+                <blockquote className="text-sm italic text-[#D1D5DB] leading-[1.6] mb-2">
+                  "Your handoffs made us 10x faster. Edge case docs were incredible."
+                </blockquote>
+                <cite className="text-xs text-[#9CA3AF] not-italic">
+                  — Engineering Lead
+                </cite>
               </div>
             </div>
           </div>
