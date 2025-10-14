@@ -93,12 +93,12 @@ export default function RelatedCaseStudies({
   if (relatedCases.length === 0) return null;
 
   return (
-    <section className={`space-y-8 ${className}`}>
+    <section className={`space-y-8 py-16 ${className}`}>
       <div className="text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] mb-4 transition-all duration-500 hover:tracking-[-0.3px]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-white leading-[120%] tracking-[-0.5px] mb-4 transition-all duration-500 hover:tracking-[-0.3px] hover:text-[#00D4FF]">
           Related Case Studies
         </h2>
-        <p className="text-base sm:text-lg text-[#9FA0A3] leading-[150%] tracking-[-0.16px] max-w-[600px] mx-auto transition-all duration-300 hover:text-[#131417]">
+        <p className="text-base sm:text-lg text-[#888888] leading-[150%] tracking-[-0.16px] max-w-[600px] mx-auto transition-all duration-300 hover:text-[#CCCCCC]">
           Explore more projects showcasing UX design across different domains
         </p>
       </div>
@@ -108,7 +108,7 @@ export default function RelatedCaseStudies({
           <Link
             key={caseStudy.id}
             to={caseStudy.href}
-            className="group block bg-white rounded-[20px] sm:rounded-[25px] shadow-sm hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-bottom-6"
+            className="group block bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[20px] sm:rounded-[25px] border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-bottom-6"
             style={{ animationDelay: `${index * 150}ms` }}
             aria-label={`View ${caseStudy.title} case study: ${caseStudy.description}`}
           >
@@ -120,33 +120,33 @@ export default function RelatedCaseStudies({
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#00D4FF]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
 
             {/* Content */}
             <div className="p-6 sm:p-8">
               <div className="flex items-center justify-between mb-3">
-                <span className="inline-block bg-[#F5F5F5] text-[#131417] px-3 py-1 rounded-[15px] text-xs font-medium tracking-[-0.12px] transition-all duration-300 group-hover:bg-[#131417] group-hover:text-white">
+                <span className="inline-block bg-[#00D4FF]/10 text-[#00D4FF] border border-[#00D4FF]/20 px-3 py-1 rounded-[15px] text-xs font-medium tracking-[-0.12px] transition-all duration-300 group-hover:bg-[#00D4FF]/20 group-hover:border-[#00D4FF]/40">
                   {caseStudy.category}
                 </span>
-                <span className="text-xs text-[#9FA0A3] font-medium">
+                <span className="text-xs text-[#888888] font-medium">
                   {caseStudy.duration}
                 </span>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-medium text-[#131417] leading-[120%] tracking-[-0.2px] mb-2 transition-all duration-300 group-hover:tracking-[-0.1px]">
+              <h3 className="text-lg sm:text-xl font-medium text-white leading-[120%] tracking-[-0.2px] mb-2 transition-all duration-300 group-hover:tracking-[-0.1px] group-hover:text-[#00D4FF]">
                 {caseStudy.title}
               </h3>
 
-              <p className="text-sm sm:text-base text-[#9FA0A3] leading-[120%] tracking-[-0.14px] mb-4 transition-all duration-300 group-hover:text-[#131417]">
+              <p className="text-sm sm:text-base text-[#888888] leading-[120%] tracking-[-0.14px] mb-4 transition-all duration-300 group-hover:text-[#CCCCCC]">
                 {caseStudy.subtitle}
               </p>
 
-              <p className="text-sm text-[#9FA0A3] leading-[150%] tracking-[-0.14px] mb-4 transition-all duration-300 group-hover:text-[#131417]">
+              <p className="text-sm text-[#888888] leading-[150%] tracking-[-0.14px] mb-4 transition-all duration-300 group-hover:text-[#CCCCCC]">
                 {caseStudy.description}
               </p>
 
-              <div className="flex items-center text-sm font-medium text-[#131417] tracking-[-0.14px] transition-all duration-300 group-hover:gap-2">
+              <div className="flex items-center text-sm font-medium text-[#00D4FF] tracking-[-0.14px] transition-all duration-300 group-hover:gap-2">
                 <span>View Case Study</span>
                 <ArrowRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
               </div>
@@ -159,7 +159,7 @@ export default function RelatedCaseStudies({
       <div className="text-center">
         <Link
           to="/case-studies"
-          className="inline-flex items-center gap-2 text-base font-medium text-[#9FA0A3] hover:text-[#131417] tracking-[-0.16px] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-opacity-50 rounded-md px-3 py-2"
+          className="inline-flex items-center gap-2 text-base font-medium text-[#888888] hover:text-[#00D4FF] tracking-[-0.16px] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#00D4FF] focus:ring-opacity-50 rounded-md px-3 py-2"
           aria-label="View all case studies in portfolio"
         >
           <span>View All Case Studies</span>
