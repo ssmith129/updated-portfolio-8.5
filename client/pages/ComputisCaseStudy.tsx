@@ -283,7 +283,7 @@ export default function ComputisCaseStudy() {
 
           {/* Metrics Grid - Always Visible */}
           <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 sm:p-8 border border-[#00FFB3]/20 mb-6">
-            <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2 leading-[1.3]">
+            <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2 leading-tight">
               <Activity className="w-6 h-6 text-[#00FFB3]" />
               Key Metrics
             </h3>
@@ -374,7 +374,7 @@ export default function ComputisCaseStudy() {
               <div className="space-y-8">
                 <div>
                   {/* H3: Subsection Headers */}
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6 leading-[1.3] tracking-tight">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6 leading-tight tracking-tight">
                     From Backend Script to CPA-First Enterprise SaaS
                   </h3>
 
@@ -409,7 +409,7 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00FFB3]/20">
-                  <h3 className="text-xl font-semibold text-white mb-5 flex items-center gap-2 leading-[1.3]">
+                  <h3 className="text-xl font-semibold text-white mb-5 flex items-center gap-2 leading-tight">
                     ✅ Impact at a Glance
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -451,7 +451,7 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 <div className="bg-[#FFD700]/5 rounded-[16px] p-6 border-l-4 border-[#FFD700]">
-                  <h3 className="text-xl font-semibold text-white mb-5 flex items-center gap-2 leading-[1.3]">
+                  <h3 className="text-xl font-semibold text-white mb-5 flex items-center gap-2 leading-tight">
                     🚀 Executive Overview
                   </h3>
                   {/* Body text - 16px base, good line height, secondary color */}
@@ -540,7 +540,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="bg-[#1A1A1A]/50 rounded-[20px] p-8 border-l-4 border-[#00D4FF] mb-10">
-              <h3 className="text-xl font-semibold text-white mb-5 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-5 leading-tight">
                 Objectives
               </h3>
               <ul className="space-y-4">
@@ -581,7 +581,7 @@ export default function ComputisCaseStudy() {
               ref={metricsRef as React.RefObject<HTMLDivElement>}
               className="bg-gradient-to-r from-[#00D4FF]/5 to-[#0080FF]/5 rounded-[20px] p-8 sm:p-10 border border-[#00D4FF]/20"
             >
-              <h3 className="text-xl font-semibold text-white mb-8 flex items-center gap-2 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-8 flex items-center gap-2 leading-tight">
                 <Activity className="w-6 h-6 text-[#00D4FF]" />
                 Hero Metrics
               </h3>
@@ -650,7 +650,7 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="bg-[#FF4D4D]/5 rounded-[20px] p-8 border border-[#FF4D4D]/20 mb-10 transition-all duration-300 hover:border-[#FF4D4D]/40 hover:scale-[1.02]">
-              <h3 className="text-2xl font-semibold text-[#FF6B6B] mb-5 flex items-center gap-2 leading-[1.3]">
+              <h3 className="text-2xl font-semibold text-[#FF6B6B] mb-5 flex items-center gap-2 leading-tight">
                 <AlertTriangle className="w-6 h-6" />
                 The Problem: Opacity & Dependency
               </h3>
@@ -682,7 +682,7 @@ export default function ComputisCaseStudy() {
                     </p>
                   </div>
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
-                    <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ CSV-Only Exports</p>
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">�� CSV-Only Exports</p>
                     <p className="text-xs text-[#D1D5DB] leading-[1.6]">
                       18-29 hours per client with manual data wrangling
                     </p>
@@ -702,7 +702,7 @@ export default function ComputisCaseStudy() {
             <ProblemEvidenceContainer />
 
             <div className="bg-[#00FFB3]/5 rounded-[20px] p-8 border border-[#00FFB3]/20 mb-10 transition-all duration-300 hover:border-[#00FFB3]/40 hover:scale-[1.02] cursor-pointer">
-              <h3 className="text-2xl font-semibold text-[#00FFB3] mb-5 flex items-center gap-2 leading-[1.3]">
+              <h3 className="text-2xl font-semibold text-[#00FFB3] mb-5 flex items-center gap-2 leading-tight">
                 <Target className="w-6 h-6" />
                 Opportunity
               </h3>
@@ -728,7 +728,7 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="mb-10">
-              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                 Research Methodology
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -753,7 +753,7 @@ export default function ComputisCaseStudy() {
 
             {/* User Interview Quotes */}
             <div className="mb-10">
-              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                 What Users Told Us
               </h3>
               <p className="text-base text-[#9CA3AF] mb-8 leading-[1.7]">
@@ -835,7 +835,7 @@ export default function ComputisCaseStudy() {
               <div></div>
 
               <div>
-                <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+                <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                   Key Insights
                 </h3>
                 <div className="space-y-4">
@@ -910,7 +910,7 @@ export default function ComputisCaseStudy() {
 
             {/* Competitive Analysis Matrix */}
             <div className="mt-12 pt-10 border-t border-[#1A1A1A]">
-              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                 Competitive Landscape Analysis
               </h3>
               <p className="text-base text-[#9CA3AF] mb-8 leading-[1.7]">
@@ -1022,7 +1022,7 @@ export default function ComputisCaseStudy() {
 
             {/* From Insights to Concepts */}
             <div className="mb-12">
-              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-8 leading-tight">
                 From Insights to Concepts
               </h3>
 
@@ -1107,7 +1107,7 @@ export default function ComputisCaseStudy() {
 
             {/* Design Evolution Timeline */}
             <div className="mb-12">
-              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-8 leading-tight">
                 Design Evolution: From Concept to Production
               </h3>
               <p className="text-base text-[#9CA3AF] mb-8 leading-[1.7]">
@@ -1212,7 +1212,7 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="mb-10">
-              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                 Information Architecture
               </h3>
               <div className="bg-gradient-to-r from-[#1A1A1A]/50 to-[#252525]/50 rounded-[20px] p-6 border border-[#00D4FF]/20">
@@ -1246,7 +1246,7 @@ export default function ComputisCaseStudy() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
               <div>
-                <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+                <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                   Role-Based Views
                 </h3>
                 <div className="space-y-4">
@@ -1319,7 +1319,7 @@ export default function ComputisCaseStudy() {
 
             {/* System Principles */}
             <div className="mb-12">
-              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-8 leading-tight">
                 Design Principles
               </h3>
 
@@ -1384,7 +1384,7 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4 mb-6">
                   <span className="text-4xl font-bold text-[#00D4FF]">1️⃣</span>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
                       AI-Powered Classification with Confidence Levels
                     </h3>
 
@@ -1478,7 +1478,7 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4 mb-6">
                   <span className="text-4xl font-bold text-[#00FFB3]">2️⃣</span>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
                       Inline Audit Trail Drawer
                     </h3>
                   </div>
@@ -1567,7 +1567,7 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4 mb-6">
                   <span className="text-4xl font-bold text-[#00D4FF]">3️⃣</span>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
                       Visual Rule Builder (No-Code)
                     </h3>
                   </div>
@@ -1656,7 +1656,7 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4 mb-6">
                   <span className="text-4xl font-bold text-[#FFD700]">4️⃣</span>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
                       Contextual Anomaly Detection
                     </h3>
                   </div>
@@ -1744,7 +1744,7 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-4 mb-6">
                   <span className="text-4xl font-bold text-[#6B7280]">5️⃣</span>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
                       Multi-Tenant Architecture
                     </h3>
                   </div>
@@ -1863,7 +1863,7 @@ export default function ComputisCaseStudy() {
                   <div className="flex-shrink-0 w-10 h-10 bg-[#0080FF]/20 rounded-lg flex items-center justify-center border border-[#0080FF]/30">
                     <Activity className="w-5 h-5 text-[#00D4FF]" />
                   </div>
-                  <h4 className="text-lg font-semibold leading-[1.3]">
+                  <h4 className="text-lg font-semibold leading-tight">
                     Real-Time Rule Preview
                   </h4>
                 </div>
@@ -1889,7 +1889,7 @@ export default function ComputisCaseStudy() {
                       Impact
                     </p>
                     <p className="text-xs text-gray-300">
-                      ↓ 85% server load • ↓ 40% rule creation time
+                      ↓ 85% server load ��� ↓ 40% rule creation time
                     </p>
                   </div>
                 </div>
@@ -1901,7 +1901,7 @@ export default function ComputisCaseStudy() {
                   <div className="flex-shrink-0 w-10 h-10 bg-[#00FFB3]/20 rounded-lg flex items-center justify-center border border-[#00FFB3]/30">
                     <Shield className="w-5 h-5 text-[#00FFB3]" />
                   </div>
-                  <h4 className="text-lg font-semibold leading-[1.3]">
+                  <h4 className="text-lg font-semibold leading-tight">
                     Accessibility CI/CD
                   </h4>
                 </div>
@@ -2032,7 +2032,7 @@ export default function ComputisCaseStudy() {
 
             {/* Key Insights - Redesigned */}
             <div className="mb-10">
-              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                 Key Insights
               </h3>
 
@@ -2095,7 +2095,7 @@ export default function ComputisCaseStudy() {
 
             {/* User Testimonials */}
             <div className="mb-10">
-              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                 What Users Say
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -2126,7 +2126,7 @@ export default function ComputisCaseStudy() {
 
             {/* Business ROI */}
             <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#00FFB3]/20">
-              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3] flex items-center gap-2">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-tight flex items-center gap-2">
                 <TrendingUp className="w-6 h-6 text-[#00FFB3]" />
                 Business Value & ROI
               </h3>
