@@ -154,10 +154,9 @@ export default function ComputisCaseStudy() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white leading-[1.1] tracking-tight mb-6">
             Computis — Redefining Trust in Crypto Tax Automation
           </h1>
-          {/* Hero Subtitle - Bridge between H1 and body */}
+          {/* Hero Hook - Compelling value statement */}
           <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-[1.4] tracking-tight max-w-5xl">
-            Transforming an opaque backend script into an enterprise-grade,
-            CPA-first AI SaaS platform
+            How I transformed crypto tax automation by making AI transparent and trustworthy for 47 CPA firms
           </p>
         </div>
       </header>
@@ -661,51 +660,112 @@ export default function ComputisCaseStudy() {
               Research & Insights
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
-                  Methodology
-                </h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#00D4FF] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base text-[#D1D5DB] leading-[1.7]">
-                      8 CPA + tax analyst interviews
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#00D4FF] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base text-[#D1D5DB] leading-[1.7]">
-                      6 workflow shadowing sessions
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#00D4FF] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base text-[#D1D5DB] leading-[1.7]">
-                      Competitive teardown: TaxBit, Cryptio, CoinTracker,
-                      ZenLedger
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#00D4FF] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base text-[#D1D5DB] leading-[1.7]">
-                      4 usability test cycles
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#00D4FF] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base text-[#D1D5DB] leading-[1.7]">
-                      Compliance workshops with tax attorneys
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <span className="w-2 h-2 bg-[#00D4FF] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base text-[#D1D5DB] leading-[1.7]">
-                      Analytics review via Mixpanel + GA
-                    </span>
-                  </li>
-                </ul>
+            <div className="mb-10">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+                Research Methodology
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div className="bg-[#0080FF]/10 rounded-[16px] p-4 text-center border border-[#0080FF]/20">
+                  <p className="text-3xl font-bold text-[#00D4FF] mb-2">8</p>
+                  <p className="text-xs text-[#9CA3AF]">CPA Interviews</p>
+                </div>
+                <div className="bg-[#00FFB3]/10 rounded-[16px] p-4 text-center border border-[#00FFB3]/20">
+                  <p className="text-3xl font-bold text-[#00FFB3] mb-2">6</p>
+                  <p className="text-xs text-[#9CA3AF]">Shadowing Sessions</p>
+                </div>
+                <div className="bg-[#FFD700]/10 rounded-[16px] p-4 text-center border border-[#FFD700]/20">
+                  <p className="text-3xl font-bold text-[#FFD700] mb-2">17</p>
+                  <p className="text-xs text-[#9CA3AF]">Usability Tests</p>
+                </div>
+                <div className="bg-[#00D4FF]/10 rounded-[16px] p-4 text-center border border-[#00D4FF]/20">
+                  <p className="text-3xl font-bold text-[#00D4FF] mb-2">14</p>
+                  <p className="text-xs text-[#9CA3AF]">Total Participants</p>
+                </div>
               </div>
+            </div>
+
+            {/* User Interview Quotes */}
+            <div className="mb-10">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+                What Users Told Us
+              </h3>
+              <p className="text-base text-[#9CA3AF] mb-8 leading-[1.7]">
+                Direct feedback from 8 CPA interviews revealed critical pain points in existing crypto tax workflows.
+              </p>
+
+              <div className="space-y-6">
+                {/* Quote 1 */}
+                <div className="bg-[#1A1A1A]/50 rounded-[20px] p-6 border-l-4 border-[#FF4D4D]">
+                  <div className="flex items-start gap-4">
+                    <span className="text-3xl">💬</span>
+                    <div>
+                      <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
+                        "I spend more time explaining to clients why the numbers changed than I do actually doing the work. Every adjustment requires a 30-minute explanation because they don't trust the 'magic' behind it."
+                      </p>
+                      <div className="border-t border-[#2A2A2A] pt-3">
+                        <p className="text-sm font-semibold text-[#9CA3AF]">— Senior Tax Manager</p>
+                        <p className="text-xs text-[#6B7280]">Big 4 Accounting Firm</p>
+                        <p className="text-xs text-[#6B7280] italic mt-1">CPA with 12 years crypto tax experience</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Quote 2 */}
+                <div className="bg-[#1A1A1A]/50 rounded-[20px] p-6 border-l-4 border-[#FFD700]">
+                  <div className="flex items-start gap-4">
+                    <span className="text-3xl">💬</span>
+                    <div>
+                      <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
+                        "I can't use a tool I can't explain to the IRS. When they audit my clients, I need to show exactly how every number was calculated. 'The AI did it' isn't an answer."
+                      </p>
+                      <div className="border-t border-[#2A2A2A] pt-3">
+                        <p className="text-sm font-semibold text-[#9CA3AF]">— Partner</p>
+                        <p className="text-xs text-[#6B7280]">Mid-Market CPA Firm</p>
+                        <p className="text-xs text-[#6B7280] italic mt-1">Specializes in cryptocurrency taxation</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Quote 3 */}
+                <div className="bg-[#1A1A1A]/50 rounded-[20px] p-6 border-l-4 border-[#00D4FF]">
+                  <div className="flex items-start gap-4">
+                    <span className="text-3xl">💬</span>
+                    <div>
+                      <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
+                        "Our workflow is Excel → Python script → Excel → Manual check → Excel again. I've become a data babysitter instead of a strategic advisor. My MBA isn't being used to copy-paste between spreadsheets."
+                      </p>
+                      <div className="border-t border-[#2A2A2A] pt-3">
+                        <p className="text-sm font-semibold text-[#9CA3AF]">— Tax Analyst</p>
+                        <p className="text-xs text-[#6B7280]">Fortune 500 In-House</p>
+                        <p className="text-xs text-[#6B7280] italic mt-1">Former engineer turned accountant</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Quote 4 */}
+                <div className="bg-[#1A1A1A]/50 rounded-[20px] p-6 border-l-4 border-[#00FFB3]">
+                  <div className="flex items-start gap-4">
+                    <span className="text-3xl">💬</span>
+                    <div>
+                      <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
+                        "If you could show me WHY the AI categorized something the way it did, and let ME make the final call when I disagree, I'd pay double what I'm paying now. I need augmentation, not replacement."
+                      </p>
+                      <div className="border-t border-[#2A2A2A] pt-3">
+                        <p className="text-sm font-semibold text-[#9CA3AF]">— Founder</p>
+                        <p className="text-xs text-[#6B7280]">Boutique Crypto Tax Consultancy</p>
+                        <p className="text-xs text-[#6B7280] italic mt-1">Former IRS examiner</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+              <div></div>
 
               <div>
                 <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
@@ -1084,7 +1144,7 @@ export default function ComputisCaseStudy() {
               {/* Design System Creation */}
               <div className="bg-gradient-to-br from-[#6B7280]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#6B7280]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02] cursor-pointer">
                 <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">🎨</span>
+                  <span className="text-2xl">��</span>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2 leading-[1.4]">
                       Design System Creation
