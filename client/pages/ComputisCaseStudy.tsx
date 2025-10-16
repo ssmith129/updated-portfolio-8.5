@@ -1993,7 +1993,7 @@ export default function ComputisCaseStudy() {
             {/* Metrics Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00FFB3]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
-                <p className="text-3xl font-bold text-[#00FFB3] mb-2">↓45%</p>
+                <p className="text-2xl font-bold text-[#00FFB3] mb-2">↓45%</p>
                 <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
                   CPA onboarding
                 </p>
