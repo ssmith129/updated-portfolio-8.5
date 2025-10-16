@@ -455,7 +455,7 @@ export default function ComputisCaseStudy() {
                     🚀 Executive Overview
                   </h3>
                   {/* Body text - 16px base, good line height, secondary color */}
-                  <p className="text-base text-[#D1D5DB] leading-[1.7]">
+                  <p className="text-base text-[#D1D5DB] leading-relaxed">
                     In early 2023, Computis CPAs spent 85% of their time waiting
                     for engineers to modify Python scripts for crypto
                     transaction classification. There were{" "}
@@ -546,31 +546,31 @@ export default function ComputisCaseStudy() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span className="text-base text-[#D1D5DB] leading-[1.7]">
+                  <span className="text-base text-[#D1D5DB] leading-relaxed">
                     Enable CPAs to self-serve without engineers
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span className="text-base text-[#D1D5DB] leading-[1.7]">
+                  <span className="text-base text-[#D1D5DB] leading-relaxed">
                     Build audit-ready workflows with transparency
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span className="text-base text-[#D1D5DB] leading-[1.7]">
+                  <span className="text-base text-[#D1D5DB] leading-relaxed">
                     Reduce compliance risk through explainable AI
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span className="text-base text-[#D1D5DB] leading-[1.7]">
+                  <span className="text-base text-[#D1D5DB] leading-relaxed">
                     Generate IRS 8949 and QuickBooks outputs
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span className="text-base text-[#D1D5DB] leading-[1.7]">
+                  <span className="text-base text-[#D1D5DB] leading-relaxed">
                     Scale for DAOs, hedge funds, and enterprise CPA firms
                   </span>
                 </li>
@@ -665,25 +665,25 @@ export default function ComputisCaseStudy() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
                     <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ Manual Python Scripts</p>
-                    <p className="text-xs text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-xs text-[#D1D5DB] leading-normal">
                       CPAs spent 85% of time waiting for engineers to modify backend code
                     </p>
                   </div>
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
                     <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ No Audit Trail</p>
-                    <p className="text-xs text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-xs text-[#D1D5DB] leading-normal">
                       Zero compliance visibility - couldn't defend decisions to IRS
                     </p>
                   </div>
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
                     <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ Black-Box AI</p>
-                    <p className="text-xs text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-xs text-[#D1D5DB] leading-normal">
                       No explanation for categorizations - impossible to explain to clients
                     </p>
                   </div>
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
                     <p className="text-sm font-semibold text-[#FF8888] mb-2">�� CSV-Only Exports</p>
-                    <p className="text-xs text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-xs text-[#D1D5DB] leading-normal">
                       18-29 hours per client with manual data wrangling
                     </p>
                   </div>
@@ -692,7 +692,7 @@ export default function ComputisCaseStudy() {
 
               <div className="bg-[#2A2A2A]/30 rounded-[12px] p-5 border border-[#FF4D4D]/20">
                 <p className="text-sm text-[#FF8888] font-semibold mb-2">📉 The Cost of Opacity</p>
-                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                <p className="text-sm text-[#D1D5DB] leading-normal">
                   In shadowing sessions, we observed CPAs spending <strong className="text-white">18-29 hours per client</strong> on workflows that should take 4-6 hours. The bottleneck? Waiting for engineers to modify Python scripts for every edge case.
                 </p>
               </div>
@@ -848,7 +848,7 @@ export default function ComputisCaseStudy() {
                         95% Critical
                       </span>
                     </div>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-sm text-[#D1D5DB] leading-normal">
                       CPAs spent 85% of time waiting for engineers
                     </p>
                   </div>
@@ -861,7 +861,7 @@ export default function ComputisCaseStudy() {
                         90% Regulatory Risk
                       </span>
                     </div>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-sm text-[#D1D5DB] leading-normal">
                       No IRS-defensible documentation
                     </p>
                   </div>
@@ -874,7 +874,7 @@ export default function ComputisCaseStudy() {
                         85% Trust Issue
                       </span>
                     </div>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-sm text-[#D1D5DB] leading-normal">
                       Can't explain to clients/IRS
                     </p>
                   </div>
@@ -887,7 +887,7 @@ export default function ComputisCaseStudy() {
                         75% Time-Consuming
                       </span>
                     </div>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-sm text-[#D1D5DB] leading-normal">
                       Manual data wrangling across platforms
                     </p>
                   </div>
@@ -900,7 +900,7 @@ export default function ComputisCaseStudy() {
                         70% Manual Fixes
                       </span>
                     </div>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-sm text-[#D1D5DB] leading-normal">
                       High error rate in categorization
                     </p>
                   </div>
@@ -979,7 +979,7 @@ export default function ComputisCaseStudy() {
                   <span className="text-2xl">💡</span>
                   <div>
                     <p className="text-sm font-semibold text-[#FFD700] mb-2">KEY DIFFERENTIATOR</p>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6] mb-3">
+                    <p className="text-sm text-[#D1D5DB] leading-normal mb-3">
                       We're the only platform that makes AI transparent and puts CPAs in control, not clients.
                     </p>
                     <p className="text-xs text-[#9CA3AF]">
@@ -1008,7 +1008,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="bg-[#FFD700]/5 rounded-[20px] p-6 mb-10 border-l-4 border-[#FFD700]">
-              <p className="text-base text-[#D1D5DB] leading-[1.7]">
+              <p className="text-base text-[#D1D5DB] leading-relaxed">
                 <strong className="text-white font-semibold">
                   Process Philosophy:
                 </strong>{" "}
@@ -1038,7 +1038,7 @@ export default function ComputisCaseStudy() {
                       <p className="text-base font-semibold text-white mb-3 leading-[1.4]">
                         "CPAs rejected black-box AI"
                       </p>
-                      <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                      <p className="text-sm text-[#D1D5DB] leading-normal">
                         <em>
                           "I can't stake my license on something I can't explain
                           to a client."
@@ -1077,7 +1077,7 @@ export default function ComputisCaseStudy() {
                       <p className="text-base font-semibold text-white mb-3 leading-[1.4]">
                         "85% time waiting for engineers"
                       </p>
-                      <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                      <p className="text-sm text-[#D1D5DB] leading-normal">
                         <em>
                           "I need to change one rule and it takes 3 days."
                         </em>{" "}
@@ -1194,7 +1194,7 @@ export default function ComputisCaseStudy() {
               <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
                 💡 Design Insight
               </h4>
-              <p className="text-sm text-[#D1D5DB] leading-[1.7]">
+              <p className="text-sm text-[#D1D5DB] leading-relaxed">
                 Trust through transparency isn't just a principle—it's a
                 measurable UX requirement. Every design decision was validated
                 against the question: "Can a CPA defend this in an audit?"
@@ -1254,7 +1254,7 @@ export default function ComputisCaseStudy() {
                     <h4 className="font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
                       CPA
                     </h4>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-sm text-[#D1D5DB] leading-normal">
                       Rules, audit logs, overrides
                     </p>
                   </div>
@@ -1262,7 +1262,7 @@ export default function ComputisCaseStudy() {
                     <h4 className="font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
                       Analyst
                     </h4>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-sm text-[#D1D5DB] leading-normal">
                       Ingestion, anomalies
                     </p>
                   </div>
@@ -1270,7 +1270,7 @@ export default function ComputisCaseStudy() {
                     <h4 className="font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
                       Admin
                     </h4>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <p className="text-sm text-[#D1D5DB] leading-normal">
                       Multi-client operations
                     </p>
                   </div>
@@ -1279,7 +1279,7 @@ export default function ComputisCaseStudy() {
 
               <div>
                 <div className="bg-[#1A1A1A]/50 rounded-[20px] p-6">
-                  <p className="text-base text-[#D1D5DB] leading-[1.7]">
+                  <p className="text-base text-[#D1D5DB] leading-relaxed">
                     I led IA restructuring to ensure{" "}
                     <span className="font-semibold text-white">
                       scalable, modular architecture
@@ -1306,7 +1306,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="bg-[#FFD700]/5 rounded-[20px] p-6 mb-10 border-l-4 border-[#FFD700]">
-              <p className="text-base text-[#D1D5DB] leading-[1.7]">
+              <p className="text-base text-[#D1D5DB] leading-relaxed">
                 <strong className="text-white font-semibold">
                   System Philosophy:
                 </strong>{" "}
@@ -1328,7 +1328,7 @@ export default function ComputisCaseStudy() {
                   <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
                     1. Trust Through Clarity
                   </h4>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     Every component should reduce cognitive load and increase
                     confidence. No surprises, no hidden actions.
                   </p>
@@ -1338,7 +1338,7 @@ export default function ComputisCaseStudy() {
                   <h4 className="text-base font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
                     2. Professional-Grade Density
                   </h4>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     CPAs work with data-heavy interfaces. Optimize for
                     information density without sacrificing readability.
                   </p>
@@ -1348,7 +1348,7 @@ export default function ComputisCaseStudy() {
                   <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
                     3. Dark-First for Extended Use
                   </h4>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     CPAs spend 4-6 hours/day in the platform. Dark theme reduces
                     eye strain and was preferred 3:1 in user research.
                   </p>
@@ -1358,7 +1358,7 @@ export default function ComputisCaseStudy() {
                   <h4 className="text-base font-semibold text-[#FFD700] mb-2 leading-[1.4]">
                     4. Accessibility is Non-Negotiable
                   </h4>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     WCAG 2.1 AA compliance from design through implementation.
                     Enterprise procurement requires it.
                   </p>
@@ -1396,7 +1396,7 @@ export default function ComputisCaseStudy() {
                           BEFORE
                         </span>
                         <div className="space-y-3">
-                          <p className="text-sm text-[#D1D5DB] leading-[1.6] mb-3">
+                          <p className="text-sm text-[#D1D5DB] leading-normal mb-3">
                             <strong className="text-[#FF8888]">Challenge:</strong> CPAs distrusted automation because previous tools provided categorizations without explanation.
                           </p>
                           <div className="space-y-2">
@@ -1422,7 +1422,7 @@ export default function ComputisCaseStudy() {
                           AFTER
                         </span>
                         <div className="space-y-3">
-                          <p className="text-sm text-[#D1D5DB] leading-[1.6] mb-3">
+                          <p className="text-sm text-[#D1D5DB] leading-normal mb-3">
                             <strong className="text-[#00FFB3]">Solution:</strong> Color-coded confidence chips (High/Medium/Low) with hover explanations showing AI rationale.
                           </p>
                           <div className="space-y-2">
@@ -1445,7 +1445,7 @@ export default function ComputisCaseStudy() {
 
                     {/* Impact Statement */}
                     <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
-                      <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                      <p className="text-sm text-[#D1D5DB] leading-normal">
                         <strong className="text-[#FFD700]">Impact:</strong> Reduced manual verification from <strong className="text-white">85% of transactions to 12%</strong>, saving CPAs an average of <strong className="text-white">6.5 hours per client</strong>. Trust score increased from 6.2/10 to 8.9/10.
                       </p>
                     </div>
@@ -1555,7 +1555,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Impact Statement */}
                 <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     <strong className="text-[#FFD700]">Impact:</strong> Reduced compliance preparation time from <strong className="text-white">2-3 hours to 15 minutes</strong> per client. Enabled CPAs to independently defend tax positions during IRS audits, resulting in <strong className="text-white">40% fewer compliance tickets</strong>.
                   </p>
                 </div>
@@ -1644,7 +1644,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Impact Statement */}
                 <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     <strong className="text-[#FFD700]">Impact:</strong> Eliminated <strong className="text-white">85% of engineering dependencies</strong> for rule creation. CPAs can now build and test custom classification rules in <strong className="text-white">under 90 seconds</strong> vs. waiting 2-3 weeks for engineering support. This led to <strong className="text-white">32% increase in demo-to-conversion rates</strong>.
                   </p>
                 </div>
@@ -1733,7 +1733,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Impact Statement */}
                 <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     <strong className="text-[#FFD700]">Impact:</strong> Increased anomaly detection coverage by <strong className="text-white">150%</strong> while reducing manual triage time. CPAs can now identify and resolve pricing discrepancies <strong className="text-white">3x faster</strong> with contextual severity indicators.
                   </p>
                 </div>
@@ -1821,7 +1821,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Impact Statement */}
                 <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     <strong className="text-[#FFD700]">Impact:</strong> Enabled CPA firms to manage <strong className="text-white">100+ client portfolios</strong> from a single dashboard. Reduced context switching by <strong className="text-white">60%</strong> and improved multi-client workflow efficiency for enterprise accounting firms.
                   </p>
                 </div>
@@ -2133,25 +2133,25 @@ export default function ComputisCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
                   <p className="text-2xl font-bold text-[#00FFB3] mb-2">↓ $47K</p>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     Avg. support cost per quarter (40% reduction)
                   </p>
                 </div>
                 <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
                   <p className="text-2xl font-bold text-[#FFD700] mb-2">↑ 32%</p>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     Demo-to-conversion rate improvement
                   </p>
                 </div>
                 <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
                   <p className="text-2xl font-bold text-[#00D4FF] mb-2">3</p>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  <p className="text-sm text-[#D1D5DB] leading-normal">
                     Enterprise deals closed in 6 months
                   </p>
                 </div>
               </div>
               <div className="mt-6 pt-6 border-t border-[#2A2A2A]">
-                <p className="text-sm text-[#D1D5DB] leading-[1.7]">
+                <p className="text-sm text-[#D1D5DB] leading-relaxed">
                   <strong className="text-white">Strategic Impact:</strong> Audit trail feature became the #1 competitive differentiator, enabling Computis to position as the only <em>"enterprise-grade, audit-ready"</em> crypto tax platform. This moat attracted CPA firms managing $500M+ in client assets.
                 </p>
               </div>
@@ -2174,7 +2174,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-lg font-bold text-[#00D4FF] mb-3 leading-[1.4]">
                   Trust is a UX Principle
                 </h3>
-                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                <p className="text-sm text-[#D1D5DB] leading-normal">
                   Explainability drove adoption more than feature quantity.
                   Transparency converted skeptics into advocates.
                 </p>
@@ -2184,7 +2184,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-lg font-bold text-[#00FFB3] mb-3 leading-[1.4]">
                   Systems &gt; Screens
                 </h3>
-                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                <p className="text-sm text-[#D1D5DB] leading-normal">
                   Modular IA enabled scaling. Role-based architecture
                   future-proofed for growth.
                 </p>
@@ -2194,7 +2194,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-lg font-bold text-white mb-3 leading-[1.4]">
                   AI + Human Collaboration
                 </h3>
-                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                <p className="text-sm text-[#D1D5DB] leading-normal">
                   Override control flipped AI from threat to tool. Confidence
                   indicators enabled informed decisions.
                 </p>
@@ -2204,7 +2204,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-lg font-bold text-[#FFD700] mb-3 leading-[1.4]">
                   Design Drives Business
                 </h3>
-                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                <p className="text-sm text-[#D1D5DB] leading-normal">
                   Self-service features reduced costs. Audit trails closed
                   enterprise deals and differentiated from competitors.
                 </p>
