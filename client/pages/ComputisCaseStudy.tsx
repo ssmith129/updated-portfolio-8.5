@@ -645,7 +645,7 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900"
         >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300 cursor-pointer">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
               Problem & Opportunity
             </h2>
 
@@ -723,7 +723,7 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100"
         >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
               Research & Insights
             </h2>
 
@@ -798,7 +798,7 @@ export default function ComputisCaseStudy() {
                 {/* Quote 3 */}
                 <div className="bg-[#1A1A1A]/50 rounded-[20px] p-6 border-l-4 border-[#00D4FF]">
                   <div className="flex items-start gap-4">
-                    <span className="text-3xl">💬</span>
+                    <span className="text-3xl">����</span>
                     <div>
                       <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
                         "Our workflow is Excel → Python script → Excel → Manual check → Excel again. I've become a data babysitter instead of a strategic advisor. My MBA isn't being used to copy-paste between spreadsheets."
@@ -1002,7 +1002,7 @@ export default function ComputisCaseStudy() {
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <div className="flex items-center gap-3 mb-10">
               <Brain className="w-8 h-8 text-[#00D4FF]" />
-              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight">
                 Design Process Deep Dive
               </h2>
             </div>
@@ -1207,7 +1207,7 @@ export default function ComputisCaseStudy() {
         {/* System Architecture */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
               System Architecture
             </h2>
 
@@ -1300,7 +1300,7 @@ export default function ComputisCaseStudy() {
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <div className="flex items-center gap-3 mb-10">
               <Settings className="w-8 h-8 text-[#00D4FF]" />
-              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight">
                 Design System: Building for Scale
               </h2>
             </div>
@@ -1374,7 +1374,7 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700"
         >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
               Key Design Decisions
             </h2>
 
@@ -1838,7 +1838,7 @@ export default function ComputisCaseStudy() {
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 shadow-xl">
             <div className="flex items-center gap-3 mb-8">
               <Settings className="w-8 h-8 text-[#00D4FF]" />
-              <h2 className="text-3xl sm:text-4xl font-semibold leading-[1.2] tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
                 Technical Collaboration
               </h2>
             </div>
@@ -1986,7 +1986,7 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2100"
         >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
               📈 Outcomes & Impact
             </h2>
 
@@ -2165,7 +2165,7 @@ export default function ComputisCaseStudy() {
         {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
               Key Learnings
             </h2>
 
