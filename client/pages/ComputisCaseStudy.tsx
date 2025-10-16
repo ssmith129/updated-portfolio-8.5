@@ -155,7 +155,7 @@ export default function ComputisCaseStudy() {
             FinTech UX Case Study • 12 min read
           </span>
           {/* H1: Case Study Title - Largest, most prominent */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white leading-[1.1] tracking-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight mb-6">
             Computis — Redefining Trust in Crypto Tax Automation
           </h1>
           {/* Hero Hook - Compelling value statement */}
@@ -798,7 +798,7 @@ export default function ComputisCaseStudy() {
                 {/* Quote 3 */}
                 <div className="bg-[#1A1A1A]/50 rounded-[20px] p-6 border-l-4 border-[#00D4FF]">
                   <div className="flex items-start gap-4">
-                    <span className="text-3xl">����</span>
+                    <span className="text-3xl">💬</span>
                     <div>
                       <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
                         "Our workflow is Excel → Python script → Excel → Manual check → Excel again. I've become a data babysitter instead of a strategic advisor. My MBA isn't being used to copy-paste between spreadsheets."
@@ -1002,7 +1002,7 @@ export default function ComputisCaseStudy() {
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <div className="flex items-center gap-3 mb-10">
               <Brain className="w-8 h-8 text-[#00D4FF]" />
-              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
                 Design Process Deep Dive
               </h2>
             </div>
@@ -1300,7 +1300,7 @@ export default function ComputisCaseStudy() {
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <div className="flex items-center gap-3 mb-10">
               <Settings className="w-8 h-8 text-[#00D4FF]" />
-              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
                 Design System: Building for Scale
               </h2>
             </div>
@@ -1838,7 +1838,7 @@ export default function ComputisCaseStudy() {
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 shadow-xl">
             <div className="flex items-center gap-3 mb-8">
               <Settings className="w-8 h-8 text-[#00D4FF]" />
-              <h2 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
+              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
                 Technical Collaboration
               </h2>
             </div>
