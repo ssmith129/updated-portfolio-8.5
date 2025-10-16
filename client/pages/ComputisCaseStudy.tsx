@@ -205,58 +205,6 @@ export default function ComputisCaseStudy() {
         </a>
       </div>
 
-      {/* Sticky Table of Contents */}
-      <div className="sticky top-20 z-40 bg-[#0A0A0A]/90 backdrop-blur-md border-b border-[#1A1A1A] py-3 mt-8">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12">
-          <div className="flex items-center justify-between overflow-x-auto">
-            <nav className="flex gap-4 sm:gap-6">
-              <a
-                href="#problem"
-                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
-              >
-                Problem
-              </a>
-              <a
-                href="#research"
-                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
-              >
-                Research
-              </a>
-              <a
-                href="#process-deepdive"
-                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
-              >
-                Process
-              </a>
-              <a
-                href="#design-system"
-                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
-              >
-                Design System
-              </a>
-              <a
-                href="#solutions"
-                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
-              >
-                Solutions
-              </a>
-              <a
-                href="#technical-collab"
-                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
-              >
-                Technical
-              </a>
-              <a
-                href="#impact"
-                className="text-sm font-medium text-[#9CA3AF] hover:text-[#00D4FF] whitespace-nowrap transition-colors"
-              >
-                Impact
-              </a>
-            </nav>
-          </div>
-        </div>
-      </div>
-
       {/* Summary Card - ENHANCED - Always Visible Metrics */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
         <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-6 sm:p-8 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
@@ -1000,8 +948,7 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300"
         >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <div className="flex items-center gap-3 mb-10">
-              <Brain className="w-8 h-8 text-[#00D4FF]" />
+            <div className="flex items-center gap-3 mb-5">
               <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
                 Design Process Deep Dive
               </h2>
@@ -1298,8 +1245,7 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000"
         >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <div className="flex items-center gap-3 mb-10">
-              <Settings className="w-8 h-8 text-[#00D4FF]" />
+            <div className="flex items-center gap-3 mb-5">
               <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
                 Design System: Building for Scale
               </h2>
@@ -1832,7 +1778,6 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 shadow-xl">
             <div className="flex items-center gap-3 mb-8">
-            <Settings className="w-8 h-8 text-[#00D4FF]" />
             <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight">
               Technical Collaboration
             </h2>
@@ -1982,7 +1927,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
-              📈 Outcomes & Impact
+              Outcomes &amp; Impact
             </h2>
 
             {/* Metrics Grid */}
