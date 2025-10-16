@@ -1811,6 +1811,22 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
+              {/* BeforeAfterComparison for Rule Builder */}
+              <BeforeAfterComparison
+                featureName="No-Code Rule Builder Interface"
+                painPoints={[
+                  "Engineers needed for every custom rule modification",
+                  "2-3 week delay for simple classification changes",
+                  "CPAs couldn't experiment or iterate on rules"
+                ]}
+                improvements={[
+                  "Drag-and-drop visual rule builder for CPAs",
+                  "Real-time preview with sample transactions",
+                  "Rules deployed in under 90 seconds"
+                ]}
+                impactStatement="Eliminated 85% of engineering dependencies for rule creation. CPAs can now build and test custom classification rules in under 90 seconds vs. waiting 2-3 weeks for engineering support. This led to 32% increase in demo-to-conversion rates."
+              />
+
               {/* 4. Contextual Anomaly Detection */}
               <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#FF8888]/5 rounded-[20px] p-8 border border-[#FFD700]/20 transition-all duration-300 hover:border-[#FF8888]/40 hover:scale-[1.02] cursor-pointer">
                 <div className="flex items-start gap-4 mb-6">
