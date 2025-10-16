@@ -841,6 +841,89 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
+            {/* Competitive Analysis Matrix */}
+            <div className="mt-12 pt-10 border-t border-[#1A1A1A]">
+              <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
+                Competitive Landscape Analysis
+              </h3>
+              <p className="text-base text-[#9CA3AF] mb-8 leading-[1.7]">
+                We analyzed 5 leading crypto tax platforms to identify gaps in AI transparency and CPA workflow support.
+              </p>
+
+              <div className="overflow-x-auto mb-8">
+                <table className="w-full border-collapse bg-[#1A1A1A]/50 rounded-[16px] overflow-hidden">
+                  <thead>
+                    <tr className="bg-gradient-to-r from-[#0080FF]/20 to-[#00D4FF]/20 border-b border-[#2A2A2A]">
+                      <th className="text-left p-4 text-sm font-semibold text-white">Feature</th>
+                      <th className="text-center p-4 text-sm font-bold text-[#00D4FF] bg-[#00D4FF]/10">Computis</th>
+                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">TaxBit</th>
+                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">Cryptio</th>
+                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">CoinTracker</th>
+                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">Koinly</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="p-4 text-sm text-[#D1D5DB]">AI Explainability</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                    </tr>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="p-4 text-sm text-[#D1D5DB]">Confidence Levels</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                    </tr>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="p-4 text-sm text-[#D1D5DB]">One-Click Override</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
+                    </tr>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="p-4 text-sm text-[#D1D5DB]">Real-Time Audit Trail</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
+                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#00FFB3]">✅</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                    </tr>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="p-4 text-sm text-[#D1D5DB]">CPA-First Design</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
+                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#00FFB3]">✅</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="bg-[#FFD700]/10 rounded-[16px] p-6 border-l-4 border-[#FFD700]">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">💡</span>
+                  <div>
+                    <p className="text-sm font-semibold text-[#FFD700] mb-2">KEY DIFFERENTIATOR</p>
+                    <p className="text-sm text-[#D1D5DB] leading-[1.6] mb-3">
+                      We're the only platform that makes AI transparent and puts CPAs in control, not clients.
+                    </p>
+                    <p className="text-xs text-[#9CA3AF]">
+                      <strong className="text-white">Target User:</strong> B2B (CPA firms serving clients) &bull;
+                      <strong className="text-white ml-2">Competitors:</strong> B2C (Clients self-managing taxes)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Business & Market Analysis */}
             <div className="mt-12 pt-10 border-t border-[#1A1A1A]">
               <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
