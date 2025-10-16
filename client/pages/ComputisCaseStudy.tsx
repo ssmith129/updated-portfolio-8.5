@@ -670,7 +670,7 @@ export default function ComputisCaseStudy() {
                     </p>
                   </div>
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
-                    <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ No Audit Trail</p>
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">��� No Audit Trail</p>
                     <p className="text-xs text-[#D1D5DB] leading-normal">
                       Zero compliance visibility - couldn't defend decisions to IRS
                     </p>
@@ -1382,11 +1382,10 @@ export default function ComputisCaseStudy() {
               {/* 1. AI Confidence Chips - Before/After Comparison */}
               <div className="bg-gradient-to-r from-[#0080FF]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#0080FF]/20 transition-all duration-300 hover:border-[#00D4FF]/40">
                 <div className="flex items-start gap-4 mb-6">
-                  <span className="text-4xl font-bold text-[#00D4FF]">1️⃣</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
-                      AI-Powered Classification with Confidence Levels
-                    </h3>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
+                    1. AI-Powered Classification with Confidence Levels
+                  </h3>
 
                     {/* Before/After Grid */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
@@ -1476,11 +1475,10 @@ export default function ComputisCaseStudy() {
               {/* 2. Inline Audit Trail Drawer */}
               <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#00FFB3]/20 transition-all duration-300 hover:border-[#00FFB3]/40">
                 <div className="flex items-start gap-4 mb-6">
-                  <span className="text-4xl font-bold text-[#00FFB3]">2️⃣</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
-                      Inline Audit Trail Drawer
-                    </h3>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
+                    2. Inline Audit Trail Drawer
+                  </h3>
                   </div>
                 </div>
 
@@ -1565,11 +1563,10 @@ export default function ComputisCaseStudy() {
               {/* 3. Visual Rule Builder */}
               <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#0080FF]/5 rounded-[20px] p-8 border border-[#00D4FF]/20 transition-all duration-300 hover:border-[#0080FF]/40">
                 <div className="flex items-start gap-4 mb-6">
-                  <span className="text-4xl font-bold text-[#00D4FF]">3️⃣</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
-                      Visual Rule Builder (No-Code)
-                    </h3>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
+                    3. Visual Rule Builder (No-Code)
+                  </h3>
                   </div>
                 </div>
 
@@ -1654,11 +1651,10 @@ export default function ComputisCaseStudy() {
               {/* 4. Contextual Anomaly Detection */}
               <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#FF8888]/5 rounded-[20px] p-8 border border-[#FFD700]/20 transition-all duration-300 hover:border-[#FF8888]/40">
                 <div className="flex items-start gap-4 mb-6">
-                  <span className="text-4xl font-bold text-[#FFD700]">4️⃣</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
-                      Contextual Anomaly Detection
-                    </h3>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
+                    4. Contextual Anomaly Detection
+                  </h3>
                   </div>
                 </div>
 
@@ -1742,11 +1738,10 @@ export default function ComputisCaseStudy() {
               {/* 5. Multi-Tenant Architecture */}
               <div className="bg-gradient-to-r from-[#6B7280]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#6B7280]/20 transition-all duration-300 hover:border-[#00D4FF]/40">
                 <div className="flex items-start gap-4 mb-6">
-                  <span className="text-4xl font-bold text-[#6B7280]">5️⃣</span>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
-                      Multi-Tenant Architecture
-                    </h3>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-semibold text-white leading-tight">
+                    5. Multi-Tenant Architecture
+                  </h3>
                   </div>
                 </div>
 
@@ -1837,11 +1832,11 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 shadow-xl">
             <div className="flex items-center gap-3 mb-8">
-              <Settings className="w-8 h-8 text-[#00D4FF]" />
-              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
-                Technical Collaboration
-              </h2>
-            </div>
+            <Settings className="w-8 h-8 text-[#00D4FF]" />
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight">
+              Technical Collaboration
+            </h2>
+          </div>
 
             {/* Engineering Testimonial */}
             <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 mb-10 border border-[#00FFB3]/30">
