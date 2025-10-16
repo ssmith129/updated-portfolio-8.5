@@ -589,7 +589,7 @@ export default function ComputisCaseStudy() {
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
                     value={45}
-                    className="text-4xl sm:text-5xl font-bold text-[#00FFB3] mb-3"
+                    className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-3"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
@@ -599,7 +599,7 @@ export default function ComputisCaseStudy() {
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
                     value={32}
-                    className="text-4xl sm:text-5xl font-bold text-[#FFD700] mb-3"
+                    className="text-3xl sm:text-4xl font-bold text-[#FFD700] mb-3"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
@@ -609,7 +609,7 @@ export default function ComputisCaseStudy() {
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
                     value={85}
-                    className="text-4xl sm:text-5xl font-bold text-[#00D4FF] mb-3"
+                    className="text-3xl sm:text-4xl font-bold text-[#00D4FF] mb-3"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
@@ -619,7 +619,7 @@ export default function ComputisCaseStudy() {
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
                   <AnimatedCounter
                     value={150}
-                    className="text-4xl sm:text-5xl font-bold text-[#0080FF] mb-3"
+                    className="text-3xl sm:text-4xl font-bold text-[#0080FF] mb-3"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
@@ -627,7 +627,7 @@ export default function ComputisCaseStudy() {
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
-                  <span className="text-4xl sm:text-5xl font-bold text-[#00FFB3] mb-3 block">
+                  <span className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-3 block">
                     ✓
                   </span>
                   <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
