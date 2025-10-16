@@ -1391,7 +1391,6 @@ export default function ComputisCaseStudy() {
               {/* Design System Creation */}
               <div className="bg-gradient-to-br from-[#6B7280]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#6B7280]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02] cursor-pointer">
                 <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">🎨</span>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2 leading-[1.4]">
                       Design System Creation
