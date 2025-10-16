@@ -877,7 +877,7 @@ export default function ComputisCaseStudy() {
                     <tr className="border-b border-[#2A2A2A]">
                       <td className="p-4 text-sm text-[#D1D5DB]">Confidence Levels</td>
                       <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">���</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
                       <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
                       <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
                       <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
@@ -1135,6 +1135,90 @@ export default function ComputisCaseStudy() {
                         <li>• Bulk rule creation (scale)</li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Design Evolution Timeline */}
+            <div className="mb-12">
+              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
+                Design Evolution: From Concept to Production
+              </h3>
+              <p className="text-base text-[#9CA3AF] mb-8 leading-[1.7]">
+                Here's how the most critical feature—automated classification rules—evolved from initial sketches to the final shipped product.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                {/* Stage 1 */}
+                <div className="bg-[#1A1A1A]/50 rounded-[16px] p-5 border border-[#0080FF]/20 hover:border-[#0080FF]/40 transition-all">
+                  <div className="w-10 h-10 bg-[#0080FF]/20 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-xl font-bold text-[#0080FF]">1</span>
+                  </div>
+                  <h4 className="text-sm font-semibold text-white mb-2 leading-[1.4]">
+                    Initial Exploration
+                  </h4>
+                  <p className="text-xs text-[#9CA3AF] mb-3 leading-[1.6]">
+                    Quick sketches to explore interaction patterns for rule creation
+                  </p>
+                  <div className="bg-[#0080FF]/10 rounded-lg p-3">
+                    <p className="text-xs text-[#00D4FF] italic">
+                      💡 Key question: How do we make AI suggestions transparent without overwhelming users?
+                    </p>
+                  </div>
+                </div>
+
+                {/* Stage 2 */}
+                <div className="bg-[#1A1A1A]/50 rounded-[16px] p-5 border border-[#00D4FF]/20 hover:border-[#00D4FF]/40 transition-all">
+                  <div className="w-10 h-10 bg-[#00D4FF]/20 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-xl font-bold text-[#00D4FF]">2</span>
+                  </div>
+                  <h4 className="text-sm font-semibold text-white mb-2 leading-[1.4]">
+                    Wireframe Testing
+                  </h4>
+                  <p className="text-xs text-[#9CA3AF] mb-3 leading-[1.6]">
+                    Tested with 3 CPAs to validate mental model
+                  </p>
+                  <div className="bg-[#00D4FF]/10 rounded-lg p-3">
+                    <p className="text-xs text-[#00D4FF] italic">
+                      📊 Learning: Users wanted to see ALL classification options upfront, not progressive disclosure
+                    </p>
+                  </div>
+                </div>
+
+                {/* Stage 3 */}
+                <div className="bg-[#1A1A1A]/50 rounded-[16px] p-5 border border-[#00FFB3]/20 hover:border-[#00FFB3]/40 transition-all">
+                  <div className="w-10 h-10 bg-[#00FFB3]/20 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-xl font-bold text-[#00FFB3]">3</span>
+                  </div>
+                  <h4 className="text-sm font-semibold text-white mb-2 leading-[1.4]">
+                    High-Fidelity Prototype
+                  </h4>
+                  <p className="text-xs text-[#9CA3AF] mb-3 leading-[1.6]">
+                    Tested with 5 users for usability validation
+                  </p>
+                  <div className="bg-[#00FFB3]/10 rounded-lg p-3">
+                    <p className="text-xs text-[#00FFB3] italic">
+                      🎯 Finding: Confidence percentages alone weren't enough—added color-coded chips for at-a-glance scanning
+                    </p>
+                  </div>
+                </div>
+
+                {/* Stage 4 */}
+                <div className="bg-[#1A1A1A]/50 rounded-[16px] p-5 border border-[#FFD700]/20 hover:border-[#FFD700]/40 transition-all">
+                  <div className="w-10 h-10 bg-[#FFD700]/20 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-xl font-bold text-[#FFD700]">4</span>
+                  </div>
+                  <h4 className="text-sm font-semibold text-white mb-2 leading-[1.4]">
+                    Production Release
+                  </h4>
+                  <p className="text-xs text-[#9CA3AF] mb-3 leading-[1.6]">
+                    Shipped with 98% design-dev fidelity
+                  </p>
+                  <div className="bg-[#FFD700]/10 rounded-lg p-3">
+                    <p className="text-xs text-[#FFD700] italic">
+                      ✅ Result: 89% task completion rate vs. 34% with old workflow
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1929,7 +2013,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
-              ��� Outcomes & Impact
+              📈 Outcomes & Impact
             </h2>
 
             {/* Metrics Grid */}
