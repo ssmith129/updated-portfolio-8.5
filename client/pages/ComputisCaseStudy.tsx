@@ -591,7 +591,7 @@ export default function ComputisCaseStudy() {
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
-                    ↓ CPA onboarding time (2.5h �� 1.4h)
+                    ↓ CPA onboarding time (2.5h → 1.4h)
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
@@ -695,6 +695,9 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
             </div>
+
+            {/* Visual Evidence from Technical Design Doc */}
+            <ProblemEvidenceContainer />
 
             <div className="bg-[#00FFB3]/5 rounded-[20px] p-8 border border-[#00FFB3]/20 mb-10 transition-all duration-300 hover:border-[#00FFB3]/40 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-2xl font-semibold text-[#00FFB3] mb-5 flex items-center gap-2 leading-[1.3]">
