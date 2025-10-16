@@ -877,7 +877,7 @@ export default function ComputisCaseStudy() {
                     <tr className="border-b border-[#2A2A2A]">
                       <td className="p-4 text-sm text-[#D1D5DB]">Confidence Levels</td>
                       <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">���</span></td>
                       <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
                       <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
                       <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
@@ -1929,7 +1929,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
-              📈 Outcomes & Impact
+              ��� Outcomes & Impact
             </h2>
 
             {/* Metrics Grid */}
@@ -2130,6 +2130,78 @@ export default function ComputisCaseStudy() {
                   <strong className="text-white">Strategic Impact:</strong> Audit trail feature became the #1 competitive differentiator, enabling Computis to position as the only <em>"enterprise-grade, audit-ready"</em> crypto tax platform. This moat attracted CPA firms managing $500M+ in client assets.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Transformation Summary */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000">
+          <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[25px] p-8 sm:p-10 lg:p-12 border-2 border-[#00D4FF]/30 shadow-2xl">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 leading-[1.2]">
+                The Transformation
+              </h2>
+              <p className="text-xl text-[#9CA3AF] leading-[1.5] max-w-3xl mx-auto">
+                From opaque Python scripts to transparent, CPA-first enterprise platform
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Before State */}
+              <div className="bg-[#1A1A1A]/60 rounded-[20px] p-6 border-l-4 border-[#FF4D4D]">
+                <h3 className="text-lg font-bold text-[#FF8888] mb-4 flex items-center gap-2">
+                  <span className="text-2xl">❌</span>
+                  Before (Jan 2023)
+                </h3>
+                <ul className="space-y-3">
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • 85% of CPA time spent waiting for engineers
+                  </li>
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • Zero AI transparency or explainability
+                  </li>
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • No audit trails for IRS compliance
+                  </li>
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • 18-29 hours per client processing time
+                  </li>
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • Manual Python script modifications required
+                  </li>
+                </ul>
+              </div>
+
+              {/* After State */}
+              <div className="bg-[#1A1A1A]/60 rounded-[20px] p-6 border-l-4 border-[#00FFB3]">
+                <h3 className="text-lg font-bold text-[#00FFB3] mb-4 flex items-center gap-2">
+                  <span className="text-2xl">✅</span>
+                  After (Oct 2023)
+                </h3>
+                <ul className="space-y-3">
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • CPAs build custom rules in <strong className="text-white">under 90 seconds</strong>
+                  </li>
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • AI confidence levels + full explainability
+                  </li>
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • Real-time audit trail for all decisions
+                  </li>
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • 10-14 hours per client (45% faster)
+                  </li>
+                  <li className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    • No-code visual rule builder for CPAs
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-8 border-t border-[#2A2A2A]">
+              <p className="text-center text-lg text-[#D1D5DB] leading-[1.7]">
+                <strong className="text-[#00D4FF]">Core Achievement:</strong> Transformed AI opacity into transparency—reframing <strong className="text-white">trust as Computis's competitive moat</strong> and enabling CPAs to serve <strong className="text-white">32% more clients</strong> without additional staff.
+              </p>
             </div>
           </div>
         </section>
