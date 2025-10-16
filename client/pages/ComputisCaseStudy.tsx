@@ -159,7 +159,7 @@ export default function ComputisCaseStudy() {
             Computis — Redefining Trust in Crypto Tax Automation
           </h1>
           {/* Hero Hook - Compelling value statement */}
-          <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-[1.4] tracking-tight max-w-5xl">
+          <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight max-w-5xl">
             How I transformed crypto tax automation by making AI transparent and trustworthy for 47 CPA firms
           </p>
         </div>
