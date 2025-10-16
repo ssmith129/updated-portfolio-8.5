@@ -296,21 +296,21 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
-                <p className="text-4xl sm:text-5xl font-bold text-[#FFD700] mb-3">↑ 32%</p>
+                <p className="text-3xl sm:text-4xl font-bold text-[#FFD700] mb-3">↑ 32%</p>
                 <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
                   Demo-to-conversion<br />
                   <span className="text-xs text-[#9CA3AF]">rate increase</span>
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
-                <p className="text-4xl sm:text-5xl font-bold text-[#00D4FF] mb-3">↓ 85%</p>
+                <p className="text-3xl sm:text-4xl font-bold text-[#00D4FF] mb-3">↓ 85%</p>
                 <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
                   Reliance on<br />
                   <span className="text-xs text-[#9CA3AF]">engineering teams</span>
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
-                <p className="text-4xl sm:text-5xl font-bold text-[#0080FF] mb-3">↑ 150%</p>
+                <p className="text-3xl sm:text-4xl font-bold text-[#0080FF] mb-3">↑ 150%</p>
                 <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
                   Anomaly detection<br />
                   <span className="text-xs text-[#9CA3AF]">coverage increase</span>
