@@ -588,50 +588,53 @@ export default function ComputisCaseStudy() {
               Problem & Opportunity
             </h2>
 
-            <div className="bg-[#FF4D4D]/5 rounded-[20px] p-8 border border-[#FF4D4D]/20 mb-10 transition-all duration-300 hover:border-[#FF4D4D]/40 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-[#FF4D4D]/5 rounded-[20px] p-8 border border-[#FF4D4D]/20 mb-10 transition-all duration-300 hover:border-[#FF4D4D]/40 hover:scale-[1.02]">
               <h3 className="text-2xl font-semibold text-[#FF6B6B] mb-5 flex items-center gap-2 leading-[1.3]">
                 <AlertTriangle className="w-6 h-6" />
-                Problem
+                The Problem: Opacity & Dependency
               </h3>
               <p className="text-lg text-[#D1D5DB] mb-6 leading-[1.7]">
-                CPAs faced opaque, engineer-dependent crypto classification
-                tools that blocked scale and trust.
+                CPAs faced opaque, engineer-dependent crypto classification tools that blocked scale and trust. The existing workflow was unsustainable.
               </p>
-              <h4 className="text-lg font-semibold text-[#FF8888] mb-4 leading-[1.4]">
-                Pain Points:
-              </h4>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3 text-[#D1D5DB]">
-                  <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">
-                    Manual Python scripts
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 text-[#D1D5DB]">
-                  <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">
-                    No audit trail for compliance
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 text-[#D1D5DB]">
-                  <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">
-                    CSV-only export workflows
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 text-[#D1D5DB]">
-                  <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">
-                    "Black-box" AI undermining trust
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 text-[#D1D5DB]">
-                  <span className="w-2 h-2 bg-[#FF4D4D] rounded-full mt-2.5 flex-shrink-0"></span>
-                  <span className="text-base leading-[1.7]">
-                    Frequent FMV reconciliation errors
-                  </span>
-                </li>
-              </ul>
+
+              <div className="bg-[#1A1A1A]/50 rounded-[16px] p-6 mb-6">
+                <h4 className="text-lg font-semibold text-[#FF8888] mb-4 leading-[1.4]">
+                  The Reality: What We Observed
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ Manual Python Scripts</p>
+                    <p className="text-xs text-[#D1D5DB] leading-[1.6]">
+                      CPAs spent 85% of time waiting for engineers to modify backend code
+                    </p>
+                  </div>
+                  <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ No Audit Trail</p>
+                    <p className="text-xs text-[#D1D5DB] leading-[1.6]">
+                      Zero compliance visibility - couldn't defend decisions to IRS
+                    </p>
+                  </div>
+                  <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ Black-Box AI</p>
+                    <p className="text-xs text-[#D1D5DB] leading-[1.6]">
+                      No explanation for categorizations - impossible to explain to clients
+                    </p>
+                  </div>
+                  <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ CSV-Only Exports</p>
+                    <p className="text-xs text-[#D1D5DB] leading-[1.6]">
+                      18-29 hours per client with manual data wrangling
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#2A2A2A]/30 rounded-[12px] p-5 border border-[#FF4D4D]/20">
+                <p className="text-sm text-[#FF8888] font-semibold mb-2">📉 The Cost of Opacity</p>
+                <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                  In shadowing sessions, we observed CPAs spending <strong className="text-white">18-29 hours per client</strong> on workflows that should take 4-6 hours. The bottleneck? Waiting for engineers to modify Python scripts for every edge case.
+                </p>
+              </div>
             </div>
 
             <div className="bg-[#00FFB3]/5 rounded-[20px] p-8 border border-[#00FFB3]/20 mb-10 transition-all duration-300 hover:border-[#00FFB3]/40 hover:scale-[1.02] cursor-pointer">
