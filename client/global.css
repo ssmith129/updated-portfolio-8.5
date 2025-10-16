@@ -1,3 +1,6 @@
+/* Import Computis Case Study Design Tokens */
+@import "./styles/design-tokens.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -170,5 +173,4 @@
       transition-duration: 0.01ms !important;
     }
   }
-
 }

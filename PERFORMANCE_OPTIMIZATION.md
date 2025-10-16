@@ -298,7 +298,7 @@ Monitor real user metrics:
 4. **Monitor production:** Use Vercel Analytics
 5. **Iterate:** Continuously improve based on data
 
-## �� Resources
+## 📚 Resources
 
 - [Vercel Performance Docs](https://vercel.com/docs/concepts/edge-network/overview)
 - [Web.dev Performance Guide](https://web.dev/performance/)
