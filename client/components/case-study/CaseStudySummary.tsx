@@ -1,10 +1,10 @@
-import React from 'react';
-import { TrendingUp, Award, Users, Zap } from 'lucide-react';
+import React from "react";
+import { TrendingUp, Award, Users, Zap } from "lucide-react";
 
 interface Metric {
   value: string;
   label: string;
-  icon: 'trending' | 'award' | 'users' | 'zap';
+  icon: "trending" | "award" | "users" | "zap";
 }
 
 interface CaseStudySummaryProps {
@@ -18,26 +18,26 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
   projectName = "Computis",
   metrics,
   keyTakeaways,
-  nextSteps
+  nextSteps,
 }) => {
   const defaultMetrics: Metric[] = [
     { value: "45%", label: "Time Reduction", icon: "trending" },
     { value: "32%", label: "Productivity Increase", icon: "zap" },
     { value: "47", label: "CPA Firms Served", icon: "users" },
-    { value: "A-", label: "Final Grade", icon: "award" }
+    { value: "A-", label: "Final Grade", icon: "award" },
   ];
 
   const defaultTakeaways = [
     "AI transparency isn't optional—it's a competitive moat in regulated industries",
     "Empowering users with control reduces support overhead and increases trust",
     "Visual storytelling (before/after, evolution) converts prospects 32% faster",
-    "Design systems accelerate handoffs and maintain quality at scale"
+    "Design systems accelerate handoffs and maintain quality at scale",
   ];
 
   const defaultNextSteps = [
     "Expand AI explainability to predictive tax scenarios",
     "Build white-label SDK for partner integrations",
-    "Develop mobile-first interface for on-the-go CPAs"
+    "Develop mobile-first interface for on-the-go CPAs",
   ];
 
   const displayMetrics = metrics || defaultMetrics;
@@ -46,13 +46,13 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
 
   const getIcon = (iconType: string) => {
     switch (iconType) {
-      case 'trending':
+      case "trending":
         return <TrendingUp className="w-6 h-6" />;
-      case 'award':
+      case "award":
         return <Award className="w-6 h-6" />;
-      case 'users':
+      case "users":
         return <Users className="w-6 h-6" />;
-      case 'zap':
+      case "zap":
         return <Zap className="w-6 h-6" />;
       default:
         return <TrendingUp className="w-6 h-6" />;
@@ -62,28 +62,30 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
   return (
     <section className="py-16 px-6 my-16">
       <div className="max-w-[1400px] mx-auto bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[25px] p-8 sm:p-12 border-2 border-[#00D4FF]/30">
-        
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">
             The {projectName} Transformation
           </h2>
           <p className="text-xl text-[#9CA3AF] leading-relaxed max-w-3xl mx-auto">
-            From opaque Python scripts to transparent, CPA-first enterprise platform
+            From opaque Python scripts to transparent, CPA-first enterprise
+            platform
           </p>
         </div>
 
         {/* Metrics Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {displayMetrics.map((metric, index) => (
-            <div 
+            <div
               key={index}
               className="bg-[#0F0F0F]/60 rounded-[20px] p-6 text-center border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all"
             >
               <div className="flex justify-center mb-3 text-[#00D4FF]">
                 {getIcon(metric.icon)}
               </div>
-              <p className="text-3xl font-bold text-white mb-2">{metric.value}</p>
+              <p className="text-3xl font-bold text-white mb-2">
+                {metric.value}
+              </p>
               <p className="text-sm text-[#9CA3AF]">{metric.label}</p>
             </div>
           ))}
@@ -121,7 +123,8 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
             </h3>
             <ul className="space-y-3">
               <li className="text-sm text-[#D1D5DB] leading-relaxed">
-                • CPAs build custom rules in <strong className="text-white">under 90 seconds</strong>
+                • CPAs build custom rules in{" "}
+                <strong className="text-white">under 90 seconds</strong>
               </li>
               <li className="text-sm text-[#D1D5DB] leading-relaxed">
                 • AI confidence levels + full explainability
@@ -138,15 +141,19 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
 
         {/* Key Takeaways */}
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-white mb-6">Key Takeaways</h3>
+          <h3 className="text-2xl font-semibold text-white mb-6">
+            Key Takeaways
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {displayTakeaways.map((takeaway, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-[#00D4FF]/10 rounded-[12px] p-4 flex items-start gap-3"
               >
                 <span className="text-[#00D4FF] text-xl mt-1">→</span>
-                <p className="text-sm text-[#D1D5DB] leading-relaxed">{takeaway}</p>
+                <p className="text-sm text-[#D1D5DB] leading-relaxed">
+                  {takeaway}
+                </p>
               </div>
             ))}
           </div>
@@ -168,9 +175,14 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
         {/* Core Achievement */}
         <div className="mt-8 pt-8 border-t border-[#2A2A2A]">
           <p className="text-center text-lg text-[#D1D5DB] leading-relaxed">
-            <strong className="text-[#00D4FF]">Core Achievement:</strong> Transformed AI opacity into transparency—reframing{' '}
-            <strong className="text-white">trust as {projectName}'s competitive moat</strong> and enabling CPAs to serve{' '}
-            <strong className="text-white">32% more clients</strong> without additional staff.
+            <strong className="text-[#00D4FF]">Core Achievement:</strong>{" "}
+            Transformed AI opacity into transparency—reframing{" "}
+            <strong className="text-white">
+              trust as {projectName}'s competitive moat
+            </strong>{" "}
+            and enabling CPAs to serve{" "}
+            <strong className="text-white">32% more clients</strong> without
+            additional staff.
           </p>
         </div>
       </div>

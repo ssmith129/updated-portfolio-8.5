@@ -1,5 +1,5 @@
-import React from 'react';
-import Head from 'next/head';
+import React from "react";
+import Head from "next/head";
 
 interface CaseStudyStructuredDataProps {
   title: string;
@@ -12,7 +12,9 @@ interface CaseStudyStructuredDataProps {
   url: string;
 }
 
-export const CaseStudyStructuredData: React.FC<CaseStudyStructuredDataProps> = ({
+export const CaseStudyStructuredData: React.FC<
+  CaseStudyStructuredDataProps
+> = ({
   title,
   description,
   authorName,
@@ -20,30 +22,30 @@ export const CaseStudyStructuredData: React.FC<CaseStudyStructuredDataProps> = (
   publishedDate,
   modifiedDate,
   imageUrl,
-  url
+  url,
 }) => {
   const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
+    "@context": "https://schema.org",
+    "@type": "Article",
     headline: title,
     description: description,
     author: {
-      '@type': 'Person',
+      "@type": "Person",
       name: authorName,
-      jobTitle: authorJobTitle
+      jobTitle: authorJobTitle,
     },
     datePublished: publishedDate,
     dateModified: modifiedDate || publishedDate,
     image: imageUrl,
     url: url,
     publisher: {
-      '@type': 'Person',
-      name: authorName
+      "@type": "Person",
+      name: authorName,
     },
     mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': url
-    }
+      "@type": "WebPage",
+      "@id": url,
+    },
   };
 
   return (

@@ -158,7 +158,8 @@ export default function ComputisCaseStudy() {
           </h1>
           {/* Hero Hook - Compelling value statement */}
           <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight max-w-5xl">
-            From opaque Python scripts to transparent, CPA-first enterprise platform
+            From opaque Python scripts to transparent, CPA-first enterprise
+            platform
           </p>
         </div>
       </header>
@@ -214,16 +215,28 @@ export default function ComputisCaseStudy() {
           {/* Project Metadata - Always Visible */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
-              <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">Role</p>
-              <p className="text-base font-medium text-white leading-normal">Founding Lead Product Designer</p>
+              <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">
+                Role
+              </p>
+              <p className="text-base font-medium text-white leading-normal">
+                Founding Lead Product Designer
+              </p>
             </div>
             <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
-              <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">Platform</p>
-              <p className="text-base font-medium text-white leading-normal">Web SaaS (Desktop-first, responsive)</p>
+              <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">
+                Platform
+              </p>
+              <p className="text-base font-medium text-white leading-normal">
+                Web SaaS (Desktop-first, responsive)
+              </p>
             </div>
             <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
-              <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">Duration</p>
-              <p className="text-base font-medium text-white leading-normal">10 months (Discovery → Beta Launch)</p>
+              <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">
+                Duration
+              </p>
+              <p className="text-base font-medium text-white leading-normal">
+                10 months (Discovery → Beta Launch)
+              </p>
             </div>
           </div>
 
@@ -235,31 +248,47 @@ export default function ComputisCaseStudy() {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center transition-all duration-300 hover:scale-110">
-                <p className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-3">↓ 45%</p>
+                <p className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-3">
+                  ↓ 45%
+                </p>
                 <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
-                  CPA onboarding time<br />
+                  CPA onboarding time
+                  <br />
                   <span className="text-xs text-[#9CA3AF]">(2.5h → 1.4h)</span>
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
-                <p className="text-3xl sm:text-4xl font-bold text-[#FFD700] mb-3">↑ 32%</p>
+                <p className="text-3xl sm:text-4xl font-bold text-[#FFD700] mb-3">
+                  ↑ 32%
+                </p>
                 <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
-                  Demo-to-conversion<br />
+                  Demo-to-conversion
+                  <br />
                   <span className="text-xs text-[#9CA3AF]">rate increase</span>
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
-                <p className="text-3xl sm:text-4xl font-bold text-[#00D4FF] mb-3">↓ 85%</p>
+                <p className="text-3xl sm:text-4xl font-bold text-[#00D4FF] mb-3">
+                  ↓ 85%
+                </p>
                 <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
-                  Reliance on<br />
-                  <span className="text-xs text-[#9CA3AF]">engineering teams</span>
+                  Reliance on
+                  <br />
+                  <span className="text-xs text-[#9CA3AF]">
+                    engineering teams
+                  </span>
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
-                <p className="text-3xl sm:text-4xl font-bold text-[#0080FF] mb-3">↑ 150%</p>
+                <p className="text-3xl sm:text-4xl font-bold text-[#0080FF] mb-3">
+                  ↑ 150%
+                </p>
                 <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
-                  Anomaly detection<br />
-                  <span className="text-xs text-[#9CA3AF]">coverage increase</span>
+                  Anomaly detection
+                  <br />
+                  <span className="text-xs text-[#9CA3AF]">
+                    coverage increase
+                  </span>
                 </p>
               </div>
             </div>
@@ -272,7 +301,7 @@ export default function ComputisCaseStudy() {
             aria-expanded={isSummaryExpanded}
             aria-controls="summary-content"
           >
-            {isSummaryExpanded ? 'Hide' : 'Read'} Executive Summary
+            {isSummaryExpanded ? "Hide" : "Read"} Executive Summary
             {isSummaryExpanded ? (
               <ChevronUp className="w-4 h-4" />
             ) : (
@@ -601,7 +630,9 @@ export default function ComputisCaseStudy() {
                 The Problem: Opacity & Dependency
               </h3>
               <p className="text-lg text-[#D1D5DB] mb-6 leading-relaxed">
-                CPAs faced opaque, engineer-dependent crypto classification tools that blocked scale and trust. The existing workflow was unsustainable.
+                CPAs faced opaque, engineer-dependent crypto classification
+                tools that blocked scale and trust. The existing workflow was
+                unsustainable.
               </p>
 
               <div className="bg-[#1A1A1A]/50 rounded-[16px] p-6 mb-6">
@@ -610,25 +641,36 @@ export default function ComputisCaseStudy() {
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
-                    <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ Manual Python Scripts</p>
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">
+                      ❌ Manual Python Scripts
+                    </p>
                     <p className="text-xs text-[#D1D5DB] leading-normal">
-                      CPAs spent 85% of time waiting for engineers to modify backend code
+                      CPAs spent 85% of time waiting for engineers to modify
+                      backend code
                     </p>
                   </div>
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
-                    <p className="text-sm font-semibold text-[#FF8888] mb-2">��� No Audit Trail</p>
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">
+                      ��� No Audit Trail
+                    </p>
                     <p className="text-xs text-[#D1D5DB] leading-normal">
-                      Zero compliance visibility - couldn't defend decisions to IRS
+                      Zero compliance visibility - couldn't defend decisions to
+                      IRS
                     </p>
                   </div>
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
-                    <p className="text-sm font-semibold text-[#FF8888] mb-2">❌ Black-Box AI</p>
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">
+                      ❌ Black-Box AI
+                    </p>
                     <p className="text-xs text-[#D1D5DB] leading-normal">
-                      No explanation for categorizations - impossible to explain to clients
+                      No explanation for categorizations - impossible to explain
+                      to clients
                     </p>
                   </div>
                   <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
-                    <p className="text-sm font-semibold text-[#FF8888] mb-2">�� CSV-Only Exports</p>
+                    <p className="text-sm font-semibold text-[#FF8888] mb-2">
+                      �� CSV-Only Exports
+                    </p>
                     <p className="text-xs text-[#D1D5DB] leading-normal">
                       18-29 hours per client with manual data wrangling
                     </p>
@@ -637,9 +679,15 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-[#2A2A2A]/30 rounded-[12px] p-5 border border-[#FF4D4D]/20">
-                <p className="text-sm text-[#FF8888] font-semibold mb-2">📉 The Cost of Opacity</p>
+                <p className="text-sm text-[#FF8888] font-semibold mb-2">
+                  📉 The Cost of Opacity
+                </p>
                 <p className="text-sm text-[#D1D5DB] leading-normal">
-                  In shadowing sessions, we observed CPAs spending <strong className="text-white">18-29 hours per client</strong> on workflows that should take 4-6 hours. The bottleneck? Waiting for engineers to modify Python scripts for every edge case.
+                  In shadowing sessions, we observed CPAs spending{" "}
+                  <strong className="text-white">18-29 hours per client</strong>{" "}
+                  on workflows that should take 4-6 hours. The bottleneck?
+                  Waiting for engineers to modify Python scripts for every edge
+                  case.
                 </p>
               </div>
             </div>
@@ -703,7 +751,8 @@ export default function ComputisCaseStudy() {
                 What Users Told Us
               </h3>
               <p className="text-base text-[#9CA3AF] mb-8 leading-relaxed">
-                Direct feedback from 8 CPA interviews revealed critical pain points in existing crypto tax workflows.
+                Direct feedback from 8 CPA interviews revealed critical pain
+                points in existing crypto tax workflows.
               </p>
 
               <div className="space-y-6">
@@ -713,12 +762,21 @@ export default function ComputisCaseStudy() {
                     <span className="text-3xl">💬</span>
                     <div>
                       <p className="text-base text-[#D1D5DB] italic leading-relaxed mb-4">
-                        "I spend more time explaining to clients why the numbers changed than I do actually doing the work. Every adjustment requires a 30-minute explanation because they don't trust the 'magic' behind it."
+                        "I spend more time explaining to clients why the numbers
+                        changed than I do actually doing the work. Every
+                        adjustment requires a 30-minute explanation because they
+                        don't trust the 'magic' behind it."
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
-                        <p className="text-sm font-semibold text-[#9CA3AF]">— Senior Tax Manager</p>
-                        <p className="text-xs text-[#6B7280]">Big 4 Accounting Firm</p>
-                        <p className="text-xs text-[#6B7280] italic mt-1">CPA with 12 years crypto tax experience</p>
+                        <p className="text-sm font-semibold text-[#9CA3AF]">
+                          — Senior Tax Manager
+                        </p>
+                        <p className="text-xs text-[#6B7280]">
+                          Big 4 Accounting Firm
+                        </p>
+                        <p className="text-xs text-[#6B7280] italic mt-1">
+                          CPA with 12 years crypto tax experience
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -730,12 +788,20 @@ export default function ComputisCaseStudy() {
                     <span className="text-3xl">💬</span>
                     <div>
                       <p className="text-base text-[#D1D5DB] italic leading-relaxed mb-4">
-                        "I can't use a tool I can't explain to the IRS. When they audit my clients, I need to show exactly how every number was calculated. 'The AI did it' isn't an answer."
+                        "I can't use a tool I can't explain to the IRS. When
+                        they audit my clients, I need to show exactly how every
+                        number was calculated. 'The AI did it' isn't an answer."
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
-                        <p className="text-sm font-semibold text-[#9CA3AF]">— Partner</p>
-                        <p className="text-xs text-[#6B7280]">Mid-Market CPA Firm</p>
-                        <p className="text-xs text-[#6B7280] italic mt-1">Specializes in cryptocurrency taxation</p>
+                        <p className="text-sm font-semibold text-[#9CA3AF]">
+                          — Partner
+                        </p>
+                        <p className="text-xs text-[#6B7280]">
+                          Mid-Market CPA Firm
+                        </p>
+                        <p className="text-xs text-[#6B7280] italic mt-1">
+                          Specializes in cryptocurrency taxation
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -747,12 +813,21 @@ export default function ComputisCaseStudy() {
                     <span className="text-3xl">💬</span>
                     <div>
                       <p className="text-base text-[#D1D5DB] italic leading-relaxed mb-4">
-                        "Our workflow is Excel → Python script → Excel → Manual check → Excel again. I've become a data babysitter instead of a strategic advisor. My MBA isn't being used to copy-paste between spreadsheets."
+                        "Our workflow is Excel → Python script → Excel → Manual
+                        check → Excel again. I've become a data babysitter
+                        instead of a strategic advisor. My MBA isn't being used
+                        to copy-paste between spreadsheets."
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
-                        <p className="text-sm font-semibold text-[#9CA3AF]">— Tax Analyst</p>
-                        <p className="text-xs text-[#6B7280]">Fortune 500 In-House</p>
-                        <p className="text-xs text-[#6B7280] italic mt-1">Former engineer turned accountant</p>
+                        <p className="text-sm font-semibold text-[#9CA3AF]">
+                          — Tax Analyst
+                        </p>
+                        <p className="text-xs text-[#6B7280]">
+                          Fortune 500 In-House
+                        </p>
+                        <p className="text-xs text-[#6B7280] italic mt-1">
+                          Former engineer turned accountant
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -764,12 +839,21 @@ export default function ComputisCaseStudy() {
                     <span className="text-3xl">💬</span>
                     <div>
                       <p className="text-base text-[#D1D5DB] italic leading-relaxed mb-4">
-                        "If you could show me WHY the AI categorized something the way it did, and let ME make the final call when I disagree, I'd pay double what I'm paying now. I need augmentation, not replacement."
+                        "If you could show me WHY the AI categorized something
+                        the way it did, and let ME make the final call when I
+                        disagree, I'd pay double what I'm paying now. I need
+                        augmentation, not replacement."
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
-                        <p className="text-sm font-semibold text-[#9CA3AF]">— Founder</p>
-                        <p className="text-xs text-[#6B7280]">Boutique Crypto Tax Consultancy</p>
-                        <p className="text-xs text-[#6B7280] italic mt-1">Former IRS examiner</p>
+                        <p className="text-sm font-semibold text-[#9CA3AF]">
+                          — Founder
+                        </p>
+                        <p className="text-xs text-[#6B7280]">
+                          Boutique Crypto Tax Consultancy
+                        </p>
+                        <p className="text-xs text-[#6B7280] italic mt-1">
+                          Former IRS examiner
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -860,61 +944,144 @@ export default function ComputisCaseStudy() {
                 Competitive Landscape Analysis
               </h3>
               <p className="text-base text-[#9CA3AF] mb-8 leading-relaxed">
-                We analyzed 5 leading crypto tax platforms to identify gaps in AI transparency and CPA workflow support.
+                We analyzed 5 leading crypto tax platforms to identify gaps in
+                AI transparency and CPA workflow support.
               </p>
 
               <div className="overflow-x-auto mb-8">
                 <table className="w-full border-collapse bg-[#1A1A1A]/50 rounded-[16px] overflow-hidden">
                   <thead>
                     <tr className="bg-gradient-to-r from-[#0080FF]/20 to-[#00D4FF]/20 border-b border-[#2A2A2A]">
-                      <th className="text-left p-4 text-sm font-semibold text-white">Feature</th>
-                      <th className="text-center p-4 text-sm font-bold text-[#00D4FF] bg-[#00D4FF]/10">Computis</th>
-                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">TaxBit</th>
-                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">Cryptio</th>
-                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">CoinTracker</th>
-                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">Koinly</th>
+                      <th className="text-left p-4 text-sm font-semibold text-white">
+                        Feature
+                      </th>
+                      <th className="text-center p-4 text-sm font-bold text-[#00D4FF] bg-[#00D4FF]/10">
+                        Computis
+                      </th>
+                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">
+                        TaxBit
+                      </th>
+                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">
+                        Cryptio
+                      </th>
+                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">
+                        CoinTracker
+                      </th>
+                      <th className="text-center p-4 text-sm font-semibold text-[#9CA3AF]">
+                        Koinly
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="p-4 text-sm text-[#D1D5DB]">AI Explainability</td>
-                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="p-4 text-sm text-[#D1D5DB]">
+                        AI Explainability
+                      </td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl text-[#00FFB3]">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
                     </tr>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="p-4 text-sm text-[#D1D5DB]">Confidence Levels</td>
-                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="p-4 text-sm text-[#D1D5DB]">
+                        Confidence Levels
+                      </td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl text-[#00FFB3]">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
                     </tr>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="p-4 text-sm text-[#D1D5DB]">One-Click Override</td>
-                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
+                      <td className="p-4 text-sm text-[#D1D5DB]">
+                        One-Click Override
+                      </td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl text-[#00FFB3]">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-xs text-[#FFD700] italic">
+                          Partial
+                        </span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-xs text-[#FFD700] italic">
+                          Partial
+                        </span>
+                      </td>
                     </tr>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="p-4 text-sm text-[#D1D5DB]">Real-Time Audit Trail</td>
-                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
-                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#00FFB3]">✅</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
+                      <td className="p-4 text-sm text-[#D1D5DB]">
+                        Real-Time Audit Trail
+                      </td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl text-[#00FFB3]">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-xs text-[#FFD700] italic">
+                          Partial
+                        </span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#00FFB3]">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
                     </tr>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="p-4 text-sm text-[#D1D5DB]">CPA-First Design</td>
-                      <td className="text-center p-4 bg-[#00D4FF]/5"><span className="text-2xl text-[#00FFB3]">✅</span></td>
-                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#00FFB3]">✅</span></td>
-                      <td className="text-center p-4"><span className="text-2xl text-[#FF4D4D]">❌</span></td>
-                      <td className="text-center p-4"><span className="text-xs text-[#FFD700] italic">Partial</span></td>
+                      <td className="p-4 text-sm text-[#D1D5DB]">
+                        CPA-First Design
+                      </td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl text-[#00FFB3]">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-xs text-[#FFD700] italic">
+                          Partial
+                        </span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#00FFB3]">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl text-[#FF4D4D]">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-xs text-[#FFD700] italic">
+                          Partial
+                        </span>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -924,19 +1091,25 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-3">
                   <span className="text-2xl">💡</span>
                   <div>
-                    <p className="text-sm font-semibold text-[#FFD700] mb-2">KEY DIFFERENTIATOR</p>
+                    <p className="text-sm font-semibold text-[#FFD700] mb-2">
+                      KEY DIFFERENTIATOR
+                    </p>
                     <p className="text-sm text-[#D1D5DB] leading-normal mb-3">
-                      We're the only platform that makes AI transparent and puts CPAs in control, not clients.
+                      We're the only platform that makes AI transparent and puts
+                      CPAs in control, not clients.
                     </p>
                     <p className="text-xs text-[#9CA3AF]">
-                      <strong className="text-white">Target User:</strong> B2B (CPA firms serving clients) &bull;
-                      <strong className="text-white ml-2">Competitors:</strong> B2C (Clients self-managing taxes)
+                      <strong className="text-white">Target User:</strong> B2B
+                      (CPA firms serving clients) &bull;
+                      <strong className="text-white ml-2">
+                        Competitors:
+                      </strong>{" "}
+                      B2C (Clients self-managing taxes)
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -1056,7 +1229,9 @@ export default function ComputisCaseStudy() {
                 Design Evolution: From Concept to Production
               </h3>
               <p className="text-base text-[#9CA3AF] mb-8 leading-relaxed">
-                Here's how the most critical feature—automated classification rules—evolved from initial sketches to the final shipped product.
+                Here's how the most critical feature—automated classification
+                rules—evolved from initial sketches to the final shipped
+                product.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -1069,11 +1244,13 @@ export default function ComputisCaseStudy() {
                     Initial Exploration
                   </h4>
                   <p className="text-xs text-[#9CA3AF] mb-3 leading-normal">
-                    Quick sketches to explore interaction patterns for rule creation
+                    Quick sketches to explore interaction patterns for rule
+                    creation
                   </p>
                   <div className="bg-[#0080FF]/10 rounded-lg p-3">
                     <p className="text-xs text-[#00D4FF] italic">
-                      Key question: How do we make AI suggestions transparent without overwhelming users?
+                      Key question: How do we make AI suggestions transparent
+                      without overwhelming users?
                     </p>
                   </div>
                 </div>
@@ -1091,7 +1268,8 @@ export default function ComputisCaseStudy() {
                   </p>
                   <div className="bg-[#00D4FF]/10 rounded-lg p-3">
                     <p className="text-xs text-[#00D4FF] italic">
-                      Learning: Users wanted to see ALL classification options upfront, not progressive disclosure
+                      Learning: Users wanted to see ALL classification options
+                      upfront, not progressive disclosure
                     </p>
                   </div>
                 </div>
@@ -1109,7 +1287,8 @@ export default function ComputisCaseStudy() {
                   </p>
                   <div className="bg-[#00FFB3]/10 rounded-lg p-3">
                     <p className="text-xs text-[#00FFB3] italic">
-                      Finding: Confidence percentages alone weren't enough—added color-coded chips for at-a-glance scanning
+                      Finding: Confidence percentages alone weren't enough—added
+                      color-coded chips for at-a-glance scanning
                     </p>
                   </div>
                 </div>
@@ -1147,7 +1326,6 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
-
 
         {/* System Architecture */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
@@ -1326,10 +1504,10 @@ export default function ComputisCaseStudy() {
               {/* 1. AI Confidence Chips - Before/After Comparison */}
               <div className="bg-gradient-to-r from-[#0080FF]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#0080FF]/20 transition-all duration-300 hover:border-[#00D4FF]/40">
                 <div className="flex items-start gap-4 mb-6">
-                <div className="flex-1">
-                  <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
-                    1. AI-Powered Classification with Confidence Levels
-                  </h3>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
+                      1. AI-Powered Classification with Confidence Levels
+                    </h3>
 
                     {/* Before/After Grid */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
@@ -1340,7 +1518,11 @@ export default function ComputisCaseStudy() {
                         </span>
                         <div className="space-y-3">
                           <p className="text-sm text-[#D1D5DB] leading-normal mb-3">
-                            <strong className="text-[#FF8888]">Challenge:</strong> CPAs distrusted automation because previous tools provided categorizations without explanation.
+                            <strong className="text-[#FF8888]">
+                              Challenge:
+                            </strong>{" "}
+                            CPAs distrusted automation because previous tools
+                            provided categorizations without explanation.
                           </p>
                           <div className="space-y-2">
                             <p className="text-xs text-[#FF8888] flex items-start gap-2">
@@ -1366,7 +1548,11 @@ export default function ComputisCaseStudy() {
                         </span>
                         <div className="space-y-3">
                           <p className="text-sm text-[#D1D5DB] leading-normal mb-3">
-                            <strong className="text-[#00FFB3]">Solution:</strong> Color-coded confidence chips (High/Medium/Low) with hover explanations showing AI rationale.
+                            <strong className="text-[#00FFB3]">
+                              Solution:
+                            </strong>{" "}
+                            Color-coded confidence chips (High/Medium/Low) with
+                            hover explanations showing AI rationale.
                           </p>
                           <div className="space-y-2">
                             <p className="text-xs text-[#00FFB3] flex items-start gap-2">
@@ -1389,7 +1575,16 @@ export default function ComputisCaseStudy() {
                     {/* Impact Statement */}
                     <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
                       <p className="text-sm text-[#D1D5DB] leading-normal">
-                        <strong className="text-[#FFD700]">Impact:</strong> Reduced manual verification from <strong className="text-white">85% of transactions to 12%</strong>, saving CPAs an average of <strong className="text-white">6.5 hours per client</strong>. Trust score increased from 6.2/10 to 8.9/10.
+                        <strong className="text-[#FFD700]">Impact:</strong>{" "}
+                        Reduced manual verification from{" "}
+                        <strong className="text-white">
+                          85% of transactions to 12%
+                        </strong>
+                        , saving CPAs an average of{" "}
+                        <strong className="text-white">
+                          6.5 hours per client
+                        </strong>
+                        . Trust score increased from 6.2/10 to 8.9/10.
                       </p>
                     </div>
                   </div>
@@ -1419,10 +1614,10 @@ export default function ComputisCaseStudy() {
               {/* 2. Inline Audit Trail Drawer */}
               <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#00FFB3]/20 transition-all duration-300 hover:border-[#00FFB3]/40">
                 <div className="flex items-start gap-4 mb-6">
-                <div className="flex-1">
-                  <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
-                    2. Inline Audit Trail Drawer
-                  </h3>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
+                      2. Inline Audit Trail Drawer
+                    </h3>
                   </div>
                 </div>
 
@@ -1457,15 +1652,21 @@ export default function ComputisCaseStudy() {
                       <div className="space-y-2">
                         <p className="text-xs text-[#FF8888] flex items-start gap-2">
                           <span>❌</span>
-                          <span>No compliance visibility into AI decisions</span>
+                          <span>
+                            No compliance visibility into AI decisions
+                          </span>
                         </p>
                         <p className="text-xs text-[#FF8888] flex items-start gap-2">
                           <span>❌</span>
-                          <span>CPAs couldn't defend categorizations to IRS</span>
+                          <span>
+                            CPAs couldn't defend categorizations to IRS
+                          </span>
                         </p>
                         <p className="text-xs text-[#FF8888] flex items-start gap-2">
                           <span>❌</span>
-                          <span>Manual documentation took 2-3 hours per client</span>
+                          <span>
+                            Manual documentation took 2-3 hours per client
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -1480,7 +1681,9 @@ export default function ComputisCaseStudy() {
                       <div className="space-y-2">
                         <p className="text-xs text-[#00FFB3] flex items-start gap-2">
                           <span>✅</span>
-                          <span>Persistent contextual audit trail with timestamps</span>
+                          <span>
+                            Persistent contextual audit trail with timestamps
+                          </span>
                         </p>
                         <p className="text-xs text-[#00FFB3] flex items-start gap-2">
                           <span>✅</span>
@@ -1498,19 +1701,28 @@ export default function ComputisCaseStudy() {
                 {/* Impact Statement */}
                 <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
                   <p className="text-sm text-[#D1D5DB] leading-normal">
-                    <strong className="text-[#FFD700]">Impact:</strong> Reduced compliance preparation time from <strong className="text-white">2-3 hours to 15 minutes</strong> per client. Enabled CPAs to independently defend tax positions during IRS audits, resulting in <strong className="text-white">40% fewer compliance tickets</strong>.
+                    <strong className="text-[#FFD700]">Impact:</strong> Reduced
+                    compliance preparation time from{" "}
+                    <strong className="text-white">
+                      2-3 hours to 15 minutes
+                    </strong>{" "}
+                    per client. Enabled CPAs to independently defend tax
+                    positions during IRS audits, resulting in{" "}
+                    <strong className="text-white">
+                      40% fewer compliance tickets
+                    </strong>
+                    .
                   </p>
                 </div>
               </div>
 
-
               {/* 3. Visual Rule Builder */}
               <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#0080FF]/5 rounded-[20px] p-8 border border-[#00D4FF]/20 transition-all duration-300 hover:border-[#0080FF]/40">
                 <div className="flex items-start gap-4 mb-6">
-                <div className="flex-1">
-                  <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
-                    3. Visual Rule Builder (No-Code)
-                  </h3>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
+                      3. Visual Rule Builder (No-Code)
+                    </h3>
                   </div>
                 </div>
 
@@ -1545,15 +1757,21 @@ export default function ComputisCaseStudy() {
                       <div className="space-y-2">
                         <p className="text-xs text-[#FF8888] flex items-start gap-2">
                           <span>❌</span>
-                          <span>Engineers needed for every custom rule modification</span>
+                          <span>
+                            Engineers needed for every custom rule modification
+                          </span>
                         </p>
                         <p className="text-xs text-[#FF8888] flex items-start gap-2">
                           <span>❌</span>
-                          <span>2-3 week delay for simple classification changes</span>
+                          <span>
+                            2-3 week delay for simple classification changes
+                          </span>
                         </p>
                         <p className="text-xs text-[#FF8888] flex items-start gap-2">
                           <span>���</span>
-                          <span>CPAs couldn't experiment or iterate on rules</span>
+                          <span>
+                            CPAs couldn't experiment or iterate on rules
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -1568,11 +1786,15 @@ export default function ComputisCaseStudy() {
                       <div className="space-y-2">
                         <p className="text-xs text-[#00FFB3] flex items-start gap-2">
                           <span>✅</span>
-                          <span>Drag-and-drop visual rule builder for CPAs</span>
+                          <span>
+                            Drag-and-drop visual rule builder for CPAs
+                          </span>
                         </p>
                         <p className="text-xs text-[#00FFB3] flex items-start gap-2">
                           <span>✅</span>
-                          <span>Real-time preview with sample transactions</span>
+                          <span>
+                            Real-time preview with sample transactions
+                          </span>
                         </p>
                         <p className="text-xs text-[#00FFB3] flex items-start gap-2">
                           <span>✅</span>
@@ -1586,19 +1808,30 @@ export default function ComputisCaseStudy() {
                 {/* Impact Statement */}
                 <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
                   <p className="text-sm text-[#D1D5DB] leading-normal">
-                    <strong className="text-[#FFD700]">Impact:</strong> Eliminated <strong className="text-white">85% of engineering dependencies</strong> for rule creation. CPAs can now build and test custom classification rules in <strong className="text-white">under 90 seconds</strong> vs. waiting 2-3 weeks for engineering support. This led to <strong className="text-white">32% increase in demo-to-conversion rates</strong>.
+                    <strong className="text-[#FFD700]">Impact:</strong>{" "}
+                    Eliminated{" "}
+                    <strong className="text-white">
+                      85% of engineering dependencies
+                    </strong>{" "}
+                    for rule creation. CPAs can now build and test custom
+                    classification rules in{" "}
+                    <strong className="text-white">under 90 seconds</strong> vs.
+                    waiting 2-3 weeks for engineering support. This led to{" "}
+                    <strong className="text-white">
+                      32% increase in demo-to-conversion rates
+                    </strong>
+                    .
                   </p>
                 </div>
               </div>
 
-
               {/* 4. Contextual Anomaly Detection */}
               <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#FF8888]/5 rounded-[20px] p-8 border border-[#FFD700]/20 transition-all duration-300 hover:border-[#FF8888]/40">
                 <div className="flex items-start gap-4 mb-6">
-                <div className="flex-1">
-                  <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
-                    4. Contextual Anomaly Detection
-                  </h3>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-tight">
+                      4. Contextual Anomaly Detection
+                    </h3>
                   </div>
                 </div>
 
@@ -1674,7 +1907,13 @@ export default function ComputisCaseStudy() {
                 {/* Impact Statement */}
                 <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
                   <p className="text-sm text-[#D1D5DB] leading-normal">
-                    <strong className="text-[#FFD700]">Impact:</strong> Increased anomaly detection coverage by <strong className="text-white">150%</strong> while reducing manual triage time. CPAs can now identify and resolve pricing discrepancies <strong className="text-white">3x faster</strong> with contextual severity indicators.
+                    <strong className="text-[#FFD700]">Impact:</strong>{" "}
+                    Increased anomaly detection coverage by{" "}
+                    <strong className="text-white">150%</strong> while reducing
+                    manual triage time. CPAs can now identify and resolve
+                    pricing discrepancies{" "}
+                    <strong className="text-white">3x faster</strong> with
+                    contextual severity indicators.
                   </p>
                 </div>
               </div>
@@ -1682,10 +1921,10 @@ export default function ComputisCaseStudy() {
               {/* 5. Multi-Tenant Architecture */}
               <div className="bg-gradient-to-r from-[#6B7280]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#6B7280]/20 transition-all duration-300 hover:border-[#00D4FF]/40">
                 <div className="flex items-start gap-4 mb-6">
-                <div className="flex-1">
-                  <h3 className="text-2xl font-semibold text-white leading-tight">
-                    5. Multi-Tenant Architecture
-                  </h3>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-white leading-tight">
+                      5. Multi-Tenant Architecture
+                    </h3>
                   </div>
                 </div>
 
@@ -1724,7 +1963,9 @@ export default function ComputisCaseStudy() {
                         </p>
                         <p className="text-xs text-[#FF8888] flex items-start gap-2">
                           <span>❌</span>
-                          <span>CPAs managed clients in separate instances</span>
+                          <span>
+                            CPAs managed clients in separate instances
+                          </span>
                         </p>
                         <p className="text-xs text-[#FF8888] flex items-start gap-2">
                           <span>❌</span>
@@ -1761,7 +2002,15 @@ export default function ComputisCaseStudy() {
                 {/* Impact Statement */}
                 <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
                   <p className="text-sm text-[#D1D5DB] leading-normal">
-                    <strong className="text-[#FFD700]">Impact:</strong> Enabled CPA firms to manage <strong className="text-white">100+ client portfolios</strong> from a single dashboard. Reduced context switching by <strong className="text-white">60%</strong> and improved multi-client workflow efficiency for enterprise accounting firms.
+                    <strong className="text-[#FFD700]">Impact:</strong> Enabled
+                    CPA firms to manage{" "}
+                    <strong className="text-white">
+                      100+ client portfolios
+                    </strong>{" "}
+                    from a single dashboard. Reduced context switching by{" "}
+                    <strong className="text-white">60%</strong> and improved
+                    multi-client workflow efficiency for enterprise accounting
+                    firms.
                   </p>
                 </div>
               </div>
@@ -1776,10 +2025,10 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] text-white rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#00D4FF]/20 shadow-xl">
             <div className="flex items-center gap-3 mb-8">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight">
-              Technical Collaboration
-            </h2>
-          </div>
+              <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight">
+                Technical Collaboration
+              </h2>
+            </div>
 
             {/* Engineering Testimonial */}
             <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 mb-10 border border-[#00FFB3]/30">
@@ -2041,7 +2290,9 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-3 mb-4">
                     <span className="text-3xl">���</span>
                     <blockquote className="text-base italic text-[#D1D5DB] leading-relaxed">
-                      "This is the first crypto tax tool that actually makes sense to a CPA. The confidence levels and override controls give me the transparency I need."
+                      "This is the first crypto tax tool that actually makes
+                      sense to a CPA. The confidence levels and override
+                      controls give me the transparency I need."
                     </blockquote>
                   </div>
                   <cite className="text-sm text-[#9CA3AF] not-italic font-medium">
@@ -2052,7 +2303,9 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-3 mb-4">
                     <span className="text-3xl">🚀</span>
                     <blockquote className="text-base italic text-[#D1D5DB] leading-relaxed">
-                      "Your handoffs made us 10x faster. The annotated Figma files and edge case documentation were incredible. Best design-to-dev process I've seen."
+                      "Your handoffs made us 10x faster. The annotated Figma
+                      files and edge case documentation were incredible. Best
+                      design-to-dev process I've seen."
                     </blockquote>
                   </div>
                   <cite className="text-sm text-[#9CA3AF] not-italic font-medium">
@@ -2070,13 +2323,17 @@ export default function ComputisCaseStudy() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
-                  <p className="text-2xl font-bold text-[#00FFB3] mb-2">↓ $47K</p>
+                  <p className="text-2xl font-bold text-[#00FFB3] mb-2">
+                    ↓ $47K
+                  </p>
                   <p className="text-sm text-[#D1D5DB] leading-normal">
                     Avg. support cost per quarter (40% reduction)
                   </p>
                 </div>
                 <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
-                  <p className="text-2xl font-bold text-[#FFD700] mb-2">↑ 32%</p>
+                  <p className="text-2xl font-bold text-[#FFD700] mb-2">
+                    ↑ 32%
+                  </p>
                   <p className="text-sm text-[#D1D5DB] leading-normal">
                     Demo-to-conversion rate improvement
                   </p>
@@ -2090,7 +2347,12 @@ export default function ComputisCaseStudy() {
               </div>
               <div className="mt-6 pt-6 border-t border-[#2A2A2A]">
                 <p className="text-sm text-[#D1D5DB] leading-relaxed">
-                  <strong className="text-white">Strategic Impact:</strong> Audit trail feature became the #1 competitive differentiator, enabling Computis to position as the only <em>"enterprise-grade, audit-ready"</em> crypto tax platform. This moat attracted CPA firms managing $500M+ in client assets.
+                  <strong className="text-white">Strategic Impact:</strong>{" "}
+                  Audit trail feature became the #1 competitive differentiator,
+                  enabling Computis to position as the only{" "}
+                  <em>"enterprise-grade, audit-ready"</em> crypto tax platform.
+                  This moat attracted CPA firms managing $500M+ in client
+                  assets.
                 </p>
               </div>
             </div>
@@ -2147,7 +2409,6 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
-
       </main>
 
       {/* Modals */}

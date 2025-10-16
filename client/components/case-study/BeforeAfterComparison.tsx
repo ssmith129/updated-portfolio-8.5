@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface BeforeAfterComparisonProps {
   featureName: string;
@@ -21,12 +21,12 @@ export const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
   afterImage,
   painPoints,
   improvements,
-  impactStatement
+  impactStatement,
 }) => {
   return (
-    <article 
+    <article
       className="my-12 p-8 sm:p-10 bg-[#1A1A1A]/50 rounded-[20px]"
-      aria-labelledby={`feature-${featureName.replace(/\s+/g, '-').toLowerCase()}`}
+      aria-labelledby={`feature-${featureName.replace(/\s+/g, "-").toLowerCase()}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_80px_1fr] gap-8 lg:gap-0 items-center">
         {/* Before Panel */}
@@ -34,7 +34,7 @@ export const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
           <span className="inline-block text-xs font-bold text-[#FF4D4D] bg-[#FF4D4D]/20 px-3 py-1 rounded-full mb-4">
             BEFORE
           </span>
-          
+
           {beforeImage && (
             <img
               src={beforeImage.src}
@@ -43,10 +43,13 @@ export const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
               loading="lazy"
             />
           )}
-          
+
           <div className="mt-4 space-y-2">
             {painPoints.map((point, index) => (
-              <p key={index} className="text-sm text-[#FF8888] flex items-start gap-2">
+              <p
+                key={index}
+                className="text-sm text-[#FF8888] flex items-start gap-2"
+              >
                 <span>❌</span>
                 <span>{point}</span>
               </p>
@@ -56,7 +59,10 @@ export const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
 
         {/* Divider */}
         <div className="text-center lg:rotate-0 rotate-90">
-          <span className="text-5xl text-[#00D4FF] font-bold" aria-hidden="true">
+          <span
+            className="text-5xl text-[#00D4FF] font-bold"
+            aria-hidden="true"
+          >
             →
           </span>
         </div>
@@ -66,7 +72,7 @@ export const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
           <span className="inline-block text-xs font-bold text-[#00FFB3] bg-[#00FFB3]/20 px-3 py-1 rounded-full mb-4">
             AFTER
           </span>
-          
+
           {afterImage && (
             <img
               src={afterImage.src}
@@ -75,10 +81,13 @@ export const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
               loading="lazy"
             />
           )}
-          
+
           <div className="mt-4 space-y-2">
             {improvements.map((improvement, index) => (
-              <p key={index} className="text-sm text-[#00FFB3] flex items-start gap-2">
+              <p
+                key={index}
+                className="text-sm text-[#00FFB3] flex items-start gap-2"
+              >
                 <span>✅</span>
                 <span>{improvement}</span>
               </p>
