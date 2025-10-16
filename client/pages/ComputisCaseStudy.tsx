@@ -1361,7 +1361,6 @@ export default function ComputisCaseStudy() {
               {/* Rapid Prototyping */}
               <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#FFD700]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02] cursor-pointer">
                 <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">⚡</span>
                   <div>
                     <h3 className="text-lg font-semibold text-[#FFD700] mb-2 leading-[1.4]">
                       Rapid Prototyping
