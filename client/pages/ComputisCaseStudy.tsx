@@ -289,7 +289,7 @@ export default function ComputisCaseStudy() {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center transition-all duration-300 hover:scale-110">
-                <p className="text-4xl sm:text-5xl font-bold text-[#00FFB3] mb-3">↓ 45%</p>
+                <p className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-3">↓ 45%</p>
                 <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
                   CPA onboarding time<br />
                   <span className="text-xs text-[#9CA3AF]">(2.5h → 1.4h)</span>
