@@ -501,7 +501,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Role
                 </h3>
-                <p className="text-lg font-medium text-white leading-[1.6]">
+                <p className="text-lg font-medium text-white leading-normal">
                   Founding Lead Product Designer
                 </p>
               </div>
@@ -509,7 +509,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Team
                 </h3>
-                <p className="text-lg font-medium text-white leading-[1.6]">
+                <p className="text-lg font-medium text-white leading-normal">
                   CTO, PM, 2 Engineers, Design Agency Partner
                 </p>
               </div>
@@ -517,7 +517,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Duration
                 </h3>
-                <p className="text-lg font-medium text-white leading-[1.6]">
+                <p className="text-lg font-medium text-white leading-normal">
                   10 months (Discovery → Beta Launch)
                 </p>
               </div>
@@ -525,7 +525,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Platform
                 </h3>
-                <p className="text-lg font-medium text-white leading-[1.6]">
+                <p className="text-lg font-medium text-white leading-normal">
                   Web SaaS (Desktop-first, responsive)
                 </p>
               </div>
@@ -533,7 +533,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Tools
                 </h3>
-                <p className="text-lg font-medium text-white leading-[1.6]">
+                <p className="text-lg font-medium text-white leading-normal">
                   Figma, Miro, Notion, Jira, GA, Mixpanel
                 </p>
               </div>
@@ -1926,7 +1926,7 @@ export default function ComputisCaseStudy() {
                       Impact
                     </p>
                     <p className="text-xs text-gray-300">
-                      Zero regressions post-launch • WCAG compliant
+                      Zero regressions post-launch �� WCAG compliant
                     </p>
                   </div>
                 </div>
