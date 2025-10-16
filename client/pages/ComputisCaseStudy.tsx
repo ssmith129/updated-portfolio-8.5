@@ -253,23 +253,80 @@ export default function ComputisCaseStudy() {
         </div>
       </div>
 
-      {/* Summary Card - ENHANCED */}
+      {/* Summary Card - ENHANCED - Always Visible Metrics */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
-        <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-6 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
+        <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-6 sm:p-8 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
+          {/* H2: Major Section Headers */}
+          <h2 className="text-2xl sm:text-3xl font-semibold text-white leading-[1.2] tracking-tight mb-8">
+            Impact at a Glance
+          </h2>
+
+          {/* Project Metadata - Always Visible */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
+              <p className="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">Role</p>
+              <p className="text-base font-medium text-white leading-[1.6]">Founding Lead Product Designer</p>
+            </div>
+            <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
+              <p className="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">Platform</p>
+              <p className="text-base font-medium text-white leading-[1.6]">Web SaaS (Desktop-first, responsive)</p>
+            </div>
+            <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
+              <p className="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">Duration</p>
+              <p className="text-base font-medium text-white leading-[1.6]">10 months (Discovery → Beta Launch)</p>
+            </div>
+          </div>
+
+          {/* Metrics Grid - Always Visible */}
+          <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 sm:p-8 border border-[#00FFB3]/20 mb-6">
+            <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2 leading-[1.3]">
+              <Activity className="w-6 h-6 text-[#00FFB3]" />
+              Key Metrics
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center transition-all duration-300 hover:scale-110">
+                <p className="text-4xl sm:text-5xl font-bold text-[#00FFB3] mb-3">↓ 45%</p>
+                <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
+                  CPA onboarding time<br />
+                  <span className="text-xs text-[#9CA3AF]">(2.5h → 1.4h)</span>
+                </p>
+              </div>
+              <div className="text-center transition-all duration-300 hover:scale-110">
+                <p className="text-4xl sm:text-5xl font-bold text-[#FFD700] mb-3">↑ 32%</p>
+                <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
+                  Demo-to-conversion<br />
+                  <span className="text-xs text-[#9CA3AF]">rate increase</span>
+                </p>
+              </div>
+              <div className="text-center transition-all duration-300 hover:scale-110">
+                <p className="text-4xl sm:text-5xl font-bold text-[#00D4FF] mb-3">↓ 85%</p>
+                <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
+                  Reliance on<br />
+                  <span className="text-xs text-[#9CA3AF]">engineering teams</span>
+                </p>
+              </div>
+              <div className="text-center transition-all duration-300 hover:scale-110">
+                <p className="text-4xl sm:text-5xl font-bold text-[#0080FF] mb-3">↑ 150%</p>
+                <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
+                  Anomaly detection<br />
+                  <span className="text-xs text-[#9CA3AF]">coverage increase</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Expandable Executive Summary */}
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
-            className="w-full flex items-center justify-between group"
+            className="w-full flex items-center justify-center gap-2 text-sm font-medium text-[#00D4FF] hover:text-[#00FFB3] transition-colors"
             aria-expanded={isSummaryExpanded}
             aria-controls="summary-content"
           >
-            {/* H2: Major Section Headers */}
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white leading-[1.2] tracking-tight group-hover:text-[#00D4FF] transition-colors duration-300">
-              TL;DR
-            </h2>
+            {isSummaryExpanded ? 'Hide' : 'Read'} Executive Summary
             {isSummaryExpanded ? (
-              <ChevronUp className="w-5 h-5 text-[#9CA3AF] group-hover:text-[#00D4FF] transition-colors duration-300" />
+              <ChevronUp className="w-4 h-4" />
             ) : (
-              <ChevronDown className="w-5 h-5 text-[#9CA3AF] group-hover:text-[#00D4FF] transition-colors duration-300" />
+              <ChevronDown className="w-4 h-4" />
             )}
           </button>
 
