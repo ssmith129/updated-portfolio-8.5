@@ -37,6 +37,7 @@ import {
 import ProblemEvidenceContainer from "../components/case-study/ProblemEvidenceContainer";
 import BeforeAfterComparison from "../components/case-study/BeforeAfterComparison";
 import DesignEvolutionShowcase from "../components/case-study/DesignEvolutionShowcase";
+import CaseStudySummary from "../components/case-study/CaseStudySummary";
 
 // Custom hook for counting animation
 const useCountAnimation = (
@@ -2114,7 +2115,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#FFD700]/5 rounded-[16px] p-4 border border-[#FFD700]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#FFD700]/40">
-                <p className="text-3xl font-bold text-[#FFD700] mb-2">↑32%</p>
+                <p className="text-3xl font-bold text-[#FFD700] mb-2">���32%</p>
                 <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
                   conversion rate
                 </p>
