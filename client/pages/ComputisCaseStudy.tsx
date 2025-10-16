@@ -1188,7 +1188,7 @@ export default function ComputisCaseStudy() {
                       </p>
                       <ul className="text-sm text-[#D1D5DB] space-y-1 leading-[1.6]">
                         <li>• Natural language interface (approachability)</li>
-                        <li>• Preview before apply (confidence)</li>
+                        <li>��� Preview before apply (confidence)</li>
                         <li>• Bulk rule creation (scale)</li>
                       </ul>
                     </div>
@@ -1331,7 +1331,6 @@ export default function ComputisCaseStudy() {
               {/* Information Architecture Design */}
               <div className="bg-gradient-to-br from-[#00D4FF]/10 to-[#00FFB3]/10 rounded-[20px] p-6 border border-[#00D4FF]/20 transition-all duration-300 hover:border-[#00FFB3]/40 hover:scale-[1.02] cursor-pointer">
                 <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">🏗️</span>
                   <div>
                     <h3 className="text-lg font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
                       Information Architecture Design
