@@ -1738,6 +1738,22 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
+              {/* BeforeAfterComparison Component Example from Technical Design Doc */}
+              <BeforeAfterComparison
+                featureName="Real-Time Audit Trail System"
+                painPoints={[
+                  "No visibility into AI decision-making process",
+                  "CPAs couldn't defend categorizations to auditors",
+                  "Manual documentation required 2-3 hours per client"
+                ]}
+                improvements={[
+                  "Complete audit trail with timestamps and reasoning",
+                  "One-click export for IRS audits",
+                  "Automatic documentation generation"
+                ]}
+                impactStatement="Reduced compliance preparation time from 2-3 hours to 15 minutes per client. Enabled CPAs to independently defend tax positions during IRS audits, resulting in 40% fewer compliance tickets."
+              />
+
               {/* 3. Visual Rule Builder */}
               <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#0080FF]/5 rounded-[20px] p-8 border border-[#00D4FF]/20 transition-all duration-300 hover:border-[#0080FF]/40 hover:scale-[1.02] cursor-pointer">
                 <div className="flex items-start gap-4 mb-6">
