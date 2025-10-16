@@ -2107,39 +2107,6 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Business Impact - Moved Up */}
-            <div className="bg-gradient-to-r from-[#1A1A1A]/50 to-[#252525]/50 rounded-[20px] p-6 border border-[#00D4FF]/20 mb-10">
-              <h3 className="text-lg font-semibold text-white mb-5 leading-[1.3]">
-                Business Impact
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    3 enterprise deals in 6 months
-                  </span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    Scaled to DAOs & hedge funds
-                  </span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    Reduced support overhead
-                  </span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    Improved retention via transparency
-                  </span>
-                </div>
-              </div>
-            </div>
-
             {/* Key Insights - Redesigned */}
             <div className="mb-10">
               <h3 className="text-xl font-semibold text-white mb-6 leading-[1.3]">
