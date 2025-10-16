@@ -424,7 +424,7 @@ export default function ComputisCaseStudy() {
                       </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-3xl font-bold text-[#FFD700] mb-2">
+                      <p className="text-2xl font-bold text-[#FFD700] mb-2">
                         ↑ 32%
                       </p>
                       <p className="text-sm font-medium text-[#9CA3AF]">
@@ -741,7 +741,7 @@ export default function ComputisCaseStudy() {
                   <p className="text-xs text-[#9CA3AF]">Shadowing Sessions</p>
                 </div>
                 <div className="bg-[#FFD700]/10 rounded-[16px] p-4 text-center border border-[#FFD700]/20">
-                  <p className="text-3xl font-bold text-[#FFD700] mb-2">17</p>
+                  <p className="text-2xl font-bold text-[#FFD700] mb-2">17</p>
                   <p className="text-xs text-[#9CA3AF]">Usability Tests</p>
                 </div>
                 <div className="bg-[#00D4FF]/10 rounded-[16px] p-4 text-center border border-[#00D4FF]/20">
@@ -1999,7 +1999,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#FFD700]/5 rounded-[16px] p-4 border border-[#FFD700]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#FFD700]/40">
-                <p className="text-3xl font-bold text-[#FFD700] mb-2">���32%</p>
+                <p className="text-2xl font-bold text-[#FFD700] mb-2">���32%</p>
                 <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
                   conversion rate
                 </p>
