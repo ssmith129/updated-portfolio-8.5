@@ -269,15 +269,15 @@ export default function ComputisCaseStudy() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
               <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">Role</p>
-              <p className="text-base font-medium text-white leading-[1.6]">Founding Lead Product Designer</p>
+              <p className="text-base font-medium text-white leading-normal">Founding Lead Product Designer</p>
             </div>
             <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
               <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">Platform</p>
-              <p className="text-base font-medium text-white leading-[1.6]">Web SaaS (Desktop-first, responsive)</p>
+              <p className="text-base font-medium text-white leading-normal">Web SaaS (Desktop-first, responsive)</p>
             </div>
             <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
               <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">Duration</p>
-              <p className="text-base font-medium text-white leading-[1.6]">10 months (Discovery → Beta Launch)</p>
+              <p className="text-base font-medium text-white leading-normal">10 months (Discovery → Beta Launch)</p>
             </div>
           </div>
 
@@ -290,28 +290,28 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center transition-all duration-300 hover:scale-110">
                 <p className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-3">↓ 45%</p>
-                <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
+                <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
                   CPA onboarding time<br />
                   <span className="text-xs text-[#9CA3AF]">(2.5h → 1.4h)</span>
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
                 <p className="text-3xl sm:text-4xl font-bold text-[#FFD700] mb-3">↑ 32%</p>
-                <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
+                <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
                   Demo-to-conversion<br />
                   <span className="text-xs text-[#9CA3AF]">rate increase</span>
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
                 <p className="text-3xl sm:text-4xl font-bold text-[#00D4FF] mb-3">↓ 85%</p>
-                <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
+                <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
                   Reliance on<br />
                   <span className="text-xs text-[#9CA3AF]">engineering teams</span>
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
                 <p className="text-3xl sm:text-4xl font-bold text-[#0080FF] mb-3">↑ 150%</p>
-                <p className="text-sm font-medium text-[#D1D5DB] leading-[1.6]">
+                <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
                   Anomaly detection<br />
                   <span className="text-xs text-[#9CA3AF]">coverage increase</span>
                 </p>
@@ -385,7 +385,7 @@ export default function ComputisCaseStudy() {
                         Role
                       </p>
                       {/* Body text - Medium size, medium weight */}
-                      <p className="text-base font-medium text-white leading-[1.6]">
+                      <p className="text-base font-medium text-white leading-normal">
                         Founding Lead Product Designer
                       </p>
                     </div>
@@ -393,7 +393,7 @@ export default function ComputisCaseStudy() {
                       <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                         Platform
                       </p>
-                      <p className="text-base font-medium text-white leading-[1.6]">
+                      <p className="text-base font-medium text-white leading-normal">
                         Web SaaS (Desktop-first, responsive)
                       </p>
                     </div>
@@ -401,7 +401,7 @@ export default function ComputisCaseStudy() {
                       <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                         Duration
                       </p>
-                      <p className="text-base font-medium text-white leading-[1.6]">
+                      <p className="text-base font-medium text-white leading-normal">
                         10 months (Discovery → Beta Launch)
                       </p>
                     </div>
@@ -592,7 +592,7 @@ export default function ComputisCaseStudy() {
                     className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-3"
                     startAnimation={startMetricsAnimation}
                   />
-                  <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
+                  <p className="text-sm font-medium text-[#9CA3AF] leading-normal">
                     ↓ CPA onboarding time (2.5h → 1.4h)
                   </p>
                 </div>
@@ -602,7 +602,7 @@ export default function ComputisCaseStudy() {
                     className="text-3xl sm:text-4xl font-bold text-[#FFD700] mb-3"
                     startAnimation={startMetricsAnimation}
                   />
-                  <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
+                  <p className="text-sm font-medium text-[#9CA3AF] leading-normal">
                     ↑ demo-to-conversion rate
                   </p>
                 </div>
@@ -612,7 +612,7 @@ export default function ComputisCaseStudy() {
                     className="text-3xl sm:text-4xl font-bold text-[#00D4FF] mb-3"
                     startAnimation={startMetricsAnimation}
                   />
-                  <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
+                  <p className="text-sm font-medium text-[#9CA3AF] leading-normal">
                     ↓ reliance on engineering teams
                   </p>
                 </div>
@@ -622,7 +622,7 @@ export default function ComputisCaseStudy() {
                     className="text-3xl sm:text-4xl font-bold text-[#0080FF] mb-3"
                     startAnimation={startMetricsAnimation}
                   />
-                  <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
+                  <p className="text-sm font-medium text-[#9CA3AF] leading-normal">
                     ↑ anomaly detection coverage
                   </p>
                 </div>
@@ -630,7 +630,7 @@ export default function ComputisCaseStudy() {
                   <span className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-3 block">
                     ✓
                   </span>
-                  <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
+                  <p className="text-sm font-medium text-[#9CA3AF] leading-normal">
                     Secured enterprise CPA partnerships
                   </p>
                 </div>
@@ -654,12 +654,12 @@ export default function ComputisCaseStudy() {
                 <AlertTriangle className="w-6 h-6" />
                 The Problem: Opacity & Dependency
               </h3>
-              <p className="text-lg text-[#D1D5DB] mb-6 leading-[1.7]">
+              <p className="text-lg text-[#D1D5DB] mb-6 leading-relaxed">
                 CPAs faced opaque, engineer-dependent crypto classification tools that blocked scale and trust. The existing workflow was unsustainable.
               </p>
 
               <div className="bg-[#1A1A1A]/50 rounded-[16px] p-6 mb-6">
-                <h4 className="text-lg font-semibold text-[#FF8888] mb-4 leading-[1.4]">
+                <h4 className="text-lg font-semibold text-[#FF8888] mb-4 leading-tight">
                   The Reality: What We Observed
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -706,7 +706,7 @@ export default function ComputisCaseStudy() {
                 <Target className="w-6 h-6" />
                 Opportunity
               </h3>
-              <p className="text-lg text-[#D1D5DB] mb-4 leading-[1.7]">
+              <p className="text-lg text-[#D1D5DB] mb-4 leading-relaxed">
                 Build a{" "}
                 <span className="font-semibold text-white">
                   CPA-first explainable AI platform
@@ -756,7 +756,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                 What Users Told Us
               </h3>
-              <p className="text-base text-[#9CA3AF] mb-8 leading-[1.7]">
+              <p className="text-base text-[#9CA3AF] mb-8 leading-relaxed">
                 Direct feedback from 8 CPA interviews revealed critical pain points in existing crypto tax workflows.
               </p>
 
@@ -766,7 +766,7 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-4">
                     <span className="text-3xl">💬</span>
                     <div>
-                      <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
+                      <p className="text-base text-[#D1D5DB] italic leading-relaxed mb-4">
                         "I spend more time explaining to clients why the numbers changed than I do actually doing the work. Every adjustment requires a 30-minute explanation because they don't trust the 'magic' behind it."
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
@@ -783,7 +783,7 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-4">
                     <span className="text-3xl">💬</span>
                     <div>
-                      <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
+                      <p className="text-base text-[#D1D5DB] italic leading-relaxed mb-4">
                         "I can't use a tool I can't explain to the IRS. When they audit my clients, I need to show exactly how every number was calculated. 'The AI did it' isn't an answer."
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
@@ -800,7 +800,7 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-4">
                     <span className="text-3xl">💬</span>
                     <div>
-                      <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
+                      <p className="text-base text-[#D1D5DB] italic leading-relaxed mb-4">
                         "Our workflow is Excel → Python script → Excel → Manual check → Excel again. I've become a data babysitter instead of a strategic advisor. My MBA isn't being used to copy-paste between spreadsheets."
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
@@ -817,7 +817,7 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-4">
                     <span className="text-3xl">💬</span>
                     <div>
-                      <p className="text-base text-[#D1D5DB] italic leading-[1.7] mb-4">
+                      <p className="text-base text-[#D1D5DB] italic leading-relaxed mb-4">
                         "If you could show me WHY the AI categorized something the way it did, and let ME make the final call when I disagree, I'd pay double what I'm paying now. I need augmentation, not replacement."
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
@@ -841,7 +841,7 @@ export default function ComputisCaseStudy() {
                 <div className="space-y-4">
                   <div className="bg-[#FF4D4D]/10 rounded-[16px] p-5 border-l-4 border-[#FF4D4D] transition-all duration-300 hover:bg-[#FF4D4D]/15 hover:scale-[1.02] cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
-                      <p className="text-sm font-semibold text-[#FF8888] leading-[1.4]">
+                      <p className="text-sm font-semibold text-[#FF8888] leading-tight">
                         Manual Python Scripts
                       </p>
                       <span className="text-xs font-bold text-[#FF4D4D] bg-[#FF4D4D]/20 px-3 py-1 rounded-full">
@@ -854,7 +854,7 @@ export default function ComputisCaseStudy() {
                   </div>
                   <div className="bg-[#FF6B6B]/10 rounded-[16px] p-5 border-l-4 border-[#FF6B6B] transition-all duration-300 hover:bg-[#FF6B6B]/15 hover:scale-[1.02] cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
-                      <p className="text-sm font-semibold text-[#FF8888] leading-[1.4]">
+                      <p className="text-sm font-semibold text-[#FF8888] leading-tight">
                         No Audit Trail for Compliance
                       </p>
                       <span className="text-xs font-bold text-[#FF6B6B] bg-[#FF6B6B]/20 px-3 py-1 rounded-full">
@@ -867,7 +867,7 @@ export default function ComputisCaseStudy() {
                   </div>
                   <div className="bg-[#FFD700]/10 rounded-[16px] p-5 border-l-4 border-[#FFD700] transition-all duration-300 hover:bg-[#FFD700]/15 hover:scale-[1.02] cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
-                      <p className="text-sm font-semibold text-[#FFD700] leading-[1.4]">
+                      <p className="text-sm font-semibold text-[#FFD700] leading-tight">
                         Black-Box AI Undermining Trust
                       </p>
                       <span className="text-xs font-bold text-[#FFD700] bg-[#FFD700]/20 px-3 py-1 rounded-full">
@@ -880,7 +880,7 @@ export default function ComputisCaseStudy() {
                   </div>
                   <div className="bg-[#00D4FF]/10 rounded-[16px] p-5 border-l-4 border-[#00D4FF] transition-all duration-300 hover:bg-[#00D4FF]/15 hover:scale-[1.02] cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
-                      <p className="text-sm font-semibold text-[#00D4FF] leading-[1.4]">
+                      <p className="text-sm font-semibold text-[#00D4FF] leading-tight">
                         CSV-Only Export Workflows
                       </p>
                       <span className="text-xs font-bold text-[#00D4FF] bg-[#00D4FF]/20 px-3 py-1 rounded-full">
@@ -893,7 +893,7 @@ export default function ComputisCaseStudy() {
                   </div>
                   <div className="bg-[#00FFB3]/10 rounded-[16px] p-5 border-l-4 border-[#00FFB3] transition-all duration-300 hover:bg-[#00FFB3]/15 hover:scale-[1.02] cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
-                      <p className="text-sm font-semibold text-[#00FFB3] leading-[1.4]">
+                      <p className="text-sm font-semibold text-[#00FFB3] leading-tight">
                         Frequent FMV Reconciliation Errors
                       </p>
                       <span className="text-xs font-bold text-[#00FFB3] bg-[#00FFB3]/20 px-3 py-1 rounded-full">
@@ -913,7 +913,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-xl font-semibold text-white mb-6 leading-tight">
                 Competitive Landscape Analysis
               </h3>
-              <p className="text-base text-[#9CA3AF] mb-8 leading-[1.7]">
+              <p className="text-base text-[#9CA3AF] mb-8 leading-relaxed">
                 We analyzed 5 leading crypto tax platforms to identify gaps in AI transparency and CPA workflow support.
               </p>
 
@@ -1035,7 +1035,7 @@ export default function ComputisCaseStudy() {
                       <p className="text-xs font-bold text-[#FF8888] uppercase tracking-wider mb-2">
                         Research Insight #1
                       </p>
-                      <p className="text-base font-semibold text-white mb-3 leading-[1.4]">
+                      <p className="text-base font-semibold text-white mb-3 leading-tight">
                         "CPAs rejected black-box AI"
                       </p>
                       <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -1055,10 +1055,10 @@ export default function ComputisCaseStudy() {
                       <p className="text-xs font-bold text-[#00FFB3] uppercase tracking-wider mb-2">
                         Design Concept
                       </p>
-                      <p className="text-base font-semibold text-white mb-3 leading-[1.4]">
+                      <p className="text-base font-semibold text-white mb-3 leading-tight">
                         AI Confidence Chips + Override Controls
                       </p>
-                      <ul className="text-sm text-[#D1D5DB] space-y-1 leading-[1.6]">
+                      <ul className="text-sm text-[#D1D5DB] space-y-1 leading-normal">
                         <li>• Surfaces AI reasoning (transparency)</li>
                         <li>• Gives CPAs veto power (control)</li>
                         <li>• Reduces professional liability (trust)</li>
@@ -1074,7 +1074,7 @@ export default function ComputisCaseStudy() {
                       <p className="text-xs font-bold text-[#FF8888] uppercase tracking-wider mb-2">
                         Research Insight #2
                       </p>
-                      <p className="text-base font-semibold text-white mb-3 leading-[1.4]">
+                      <p className="text-base font-semibold text-white mb-3 leading-tight">
                         "85% time waiting for engineers"
                       </p>
                       <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -1091,10 +1091,10 @@ export default function ComputisCaseStudy() {
                       <p className="text-xs font-bold text-[#00FFB3] uppercase tracking-wider mb-2">
                         Design Concept
                       </p>
-                      <p className="text-base font-semibold text-white mb-3 leading-[1.4]">
+                      <p className="text-base font-semibold text-white mb-3 leading-tight">
                         Visual Rule Builder (No-Code)
                       </p>
-                      <ul className="text-sm text-[#D1D5DB] space-y-1 leading-[1.6]">
+                      <ul className="text-sm text-[#D1D5DB] space-y-1 leading-normal">
                         <li>• Natural language interface (approachability)</li>
                         <li>• Preview before apply (confidence)</li>
                         <li>• Bulk rule creation (scale)</li>
@@ -1110,7 +1110,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-xl font-semibold text-white mb-8 leading-tight">
                 Design Evolution: From Concept to Production
               </h3>
-              <p className="text-base text-[#9CA3AF] mb-8 leading-[1.7]">
+              <p className="text-base text-[#9CA3AF] mb-8 leading-relaxed">
                 Here's how the most critical feature—automated classification rules—evolved from initial sketches to the final shipped product.
               </p>
 
@@ -1120,10 +1120,10 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 bg-[#0080FF]/20 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-xl font-bold text-[#0080FF]">1</span>
                   </div>
-                  <h4 className="text-sm font-semibold text-white mb-2 leading-[1.4]">
+                  <h4 className="text-sm font-semibold text-white mb-2 leading-tight">
                     Initial Exploration
                   </h4>
-                  <p className="text-xs text-[#9CA3AF] mb-3 leading-[1.6]">
+                  <p className="text-xs text-[#9CA3AF] mb-3 leading-normal">
                     Quick sketches to explore interaction patterns for rule creation
                   </p>
                   <div className="bg-[#0080FF]/10 rounded-lg p-3">
@@ -1138,10 +1138,10 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 bg-[#00D4FF]/20 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-xl font-bold text-[#00D4FF]">2</span>
                   </div>
-                  <h4 className="text-sm font-semibold text-white mb-2 leading-[1.4]">
+                  <h4 className="text-sm font-semibold text-white mb-2 leading-tight">
                     Wireframe Testing
                   </h4>
-                  <p className="text-xs text-[#9CA3AF] mb-3 leading-[1.6]">
+                  <p className="text-xs text-[#9CA3AF] mb-3 leading-normal">
                     Tested with 3 CPAs to validate mental model
                   </p>
                   <div className="bg-[#00D4FF]/10 rounded-lg p-3">
@@ -1156,10 +1156,10 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 bg-[#00FFB3]/20 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-xl font-bold text-[#00FFB3]">3</span>
                   </div>
-                  <h4 className="text-sm font-semibold text-white mb-2 leading-[1.4]">
+                  <h4 className="text-sm font-semibold text-white mb-2 leading-tight">
                     High-Fidelity Prototype
                   </h4>
-                  <p className="text-xs text-[#9CA3AF] mb-3 leading-[1.6]">
+                  <p className="text-xs text-[#9CA3AF] mb-3 leading-normal">
                     Tested with 5 users for usability validation
                   </p>
                   <div className="bg-[#00FFB3]/10 rounded-lg p-3">
@@ -1174,10 +1174,10 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 bg-[#FFD700]/20 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-xl font-bold text-[#FFD700]">4</span>
                   </div>
-                  <h4 className="text-sm font-semibold text-white mb-2 leading-[1.4]">
+                  <h4 className="text-sm font-semibold text-white mb-2 leading-tight">
                     Production Release
                   </h4>
-                  <p className="text-xs text-[#9CA3AF] mb-3 leading-[1.6]">
+                  <p className="text-xs text-[#9CA3AF] mb-3 leading-normal">
                     Shipped with 98% design-dev fidelity
                   </p>
                   <div className="bg-[#FFD700]/10 rounded-lg p-3">
@@ -1191,7 +1191,7 @@ export default function ComputisCaseStudy() {
 
             {/* Design Insight Callout */}
             <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border-l-4 border-[#0080FF]">
-              <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
+              <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-tight">
                 💡 Design Insight
               </h4>
               <p className="text-sm text-[#D1D5DB] leading-relaxed">
@@ -1251,7 +1251,7 @@ export default function ComputisCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <div className="bg-[#0080FF]/10 p-5 rounded-[16px] border-l-4 border-[#0080FF]">
-                    <h4 className="font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
+                    <h4 className="font-semibold text-[#00D4FF] mb-2 leading-tight">
                       CPA
                     </h4>
                     <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -1259,7 +1259,7 @@ export default function ComputisCaseStudy() {
                     </p>
                   </div>
                   <div className="bg-[#00D4FF]/10 p-5 rounded-[16px] border-l-4 border-[#00D4FF]">
-                    <h4 className="font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
+                    <h4 className="font-semibold text-[#00D4FF] mb-2 leading-tight">
                       Analyst
                     </h4>
                     <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -1267,7 +1267,7 @@ export default function ComputisCaseStudy() {
                     </p>
                   </div>
                   <div className="bg-[#00FFB3]/10 p-5 rounded-[16px] border-l-4 border-[#00FFB3]">
-                    <h4 className="font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
+                    <h4 className="font-semibold text-[#00FFB3] mb-2 leading-tight">
                       Admin
                     </h4>
                     <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -1325,7 +1325,7 @@ export default function ComputisCaseStudy() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#0080FF]/20">
-                  <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
+                  <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-tight">
                     1. Trust Through Clarity
                   </h4>
                   <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -1335,7 +1335,7 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00FFB3]/20">
-                  <h4 className="text-base font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
+                  <h4 className="text-base font-semibold text-[#00FFB3] mb-2 leading-tight">
                     2. Professional-Grade Density
                   </h4>
                   <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -1345,7 +1345,7 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 <div className="bg-gradient-to-br from-[#00D4FF]/10 to-[#0080FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
-                  <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
+                  <h4 className="text-base font-semibold text-[#00D4FF] mb-2 leading-tight">
                     3. Dark-First for Extended Use
                   </h4>
                   <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -1355,7 +1355,7 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#FFD700]/20">
-                  <h4 className="text-base font-semibold text-[#FFD700] mb-2 leading-[1.4]">
+                  <h4 className="text-base font-semibold text-[#FFD700] mb-2 leading-tight">
                     4. Accessibility is Non-Negotiable
                   </h4>
                   <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -1845,7 +1845,7 @@ export default function ComputisCaseStudy() {
 
             {/* Engineering Testimonial */}
             <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 mb-10 border border-[#00FFB3]/30">
-              <blockquote className="text-lg italic mb-3 leading-[1.5]">
+              <blockquote className="text-lg italic mb-3 leading-snug">
                 "You sat with us during implementation, debugged CSS together,
                 and proposed performance optimizations. You think like an
                 engineer who happens to be excellent at design."
@@ -1868,7 +1868,7 @@ export default function ComputisCaseStudy() {
                   </h4>
                 </div>
 
-                <p className="text-sm text-gray-400 mb-4 leading-[1.6]">
+                <p className="text-sm text-gray-400 mb-4 leading-normal">
                   Partnered with backend to design debounced API endpoint for
                   instant preview
                 </p>
@@ -1906,7 +1906,7 @@ export default function ComputisCaseStudy() {
                   </h4>
                 </div>
 
-                <p className="text-sm text-gray-400 mb-4 leading-[1.6]">
+                <p className="text-sm text-gray-400 mb-4 leading-normal">
                   Integrated automated testing into pipeline with DevOps team
                 </p>
 
@@ -1926,7 +1926,7 @@ export default function ComputisCaseStudy() {
                       Impact
                     </p>
                     <p className="text-xs text-gray-300">
-                      Zero regressions post-launch �� WCAG compliant
+                      Zero regressions post-launch • WCAG compliant
                     </p>
                   </div>
                 </div>
@@ -1994,37 +1994,37 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00FFB3]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
                 <p className="text-2xl font-bold text-[#00FFB3] mb-2">↓45%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                <p className="text-xs font-medium text-[#9CA3AF] leading-normal">
                   CPA onboarding
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#FFD700]/5 rounded-[16px] p-4 border border-[#FFD700]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#FFD700]/40">
                 <p className="text-2xl font-bold text-[#FFD700] mb-2">���32%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                <p className="text-xs font-medium text-[#9CA3AF] leading-normal">
                   conversion rate
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#00D4FF]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00D4FF]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00D4FF]/40">
                 <p className="text-2xl font-bold text-[#00D4FF] mb-2">���85%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                <p className="text-xs font-medium text-[#9CA3AF] leading-normal">
                   eng dependency
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#0080FF]/5 rounded-[16px] p-4 border border-[#0080FF]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#0080FF]/40">
                 <p className="text-2xl font-bold text-[#0080FF] mb-2">↑150%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                <p className="text-xs font-medium text-[#9CA3AF] leading-normal">
                   anomaly detection
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
                 <p className="text-2xl font-bold text-[#00FFB3] mb-2">↓40%</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                <p className="text-xs font-medium text-[#9CA3AF] leading-normal">
                   support tickets
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
                 <p className="text-2xl font-bold text-[#00FFB3] mb-2">Zero</p>
-                <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
+                <p className="text-xs font-medium text-[#9CA3AF] leading-normal">
                   FMV disputes
                 </p>
               </div>
@@ -2102,7 +2102,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#0080FF]/20">
                   <div className="flex items-start gap-3 mb-4">
                     <span className="text-3xl">💬</span>
-                    <blockquote className="text-base italic text-[#D1D5DB] leading-[1.7]">
+                    <blockquote className="text-base italic text-[#D1D5DB] leading-relaxed">
                       "This is the first crypto tax tool that actually makes sense to a CPA. The confidence levels and override controls give me the transparency I need."
                     </blockquote>
                   </div>
@@ -2113,7 +2113,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-gradient-to-br from-[#FFD700]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#FFD700]/20">
                   <div className="flex items-start gap-3 mb-4">
                     <span className="text-3xl">🚀</span>
-                    <blockquote className="text-base italic text-[#D1D5DB] leading-[1.7]">
+                    <blockquote className="text-base italic text-[#D1D5DB] leading-relaxed">
                       "Your handoffs made us 10x faster. The annotated Figma files and edge case documentation were incredible. Best design-to-dev process I've seen."
                     </blockquote>
                   </div>
@@ -2171,7 +2171,7 @@ export default function ComputisCaseStudy() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-r from-[#0080FF]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#0080FF] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
-                <h3 className="text-lg font-bold text-[#00D4FF] mb-3 leading-[1.4]">
+                <h3 className="text-lg font-bold text-[#00D4FF] mb-3 leading-tight">
                   Trust is a UX Principle
                 </h3>
                 <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -2181,7 +2181,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#00FFB3]/5 rounded-[20px] p-6 border-l-4 border-[#00D4FF] transition-all duration-300 hover:border-[#00FFB3] hover:scale-[1.02]">
-                <h3 className="text-lg font-bold text-[#00FFB3] mb-3 leading-[1.4]">
+                <h3 className="text-lg font-bold text-[#00FFB3] mb-3 leading-tight">
                   Systems &gt; Screens
                 </h3>
                 <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -2191,7 +2191,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#00FFB3] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
-                <h3 className="text-lg font-bold text-white mb-3 leading-[1.4]">
+                <h3 className="text-lg font-bold text-white mb-3 leading-tight">
                   AI + Human Collaboration
                 </h3>
                 <p className="text-sm text-[#D1D5DB] leading-normal">
@@ -2201,7 +2201,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#FFD700] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
-                <h3 className="text-lg font-bold text-[#FFD700] mb-3 leading-[1.4]">
+                <h3 className="text-lg font-bold text-[#FFD700] mb-3 leading-tight">
                   Design Drives Business
                 </h3>
                 <p className="text-sm text-[#D1D5DB] leading-normal">
