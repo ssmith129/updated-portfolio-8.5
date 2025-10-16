@@ -773,43 +773,68 @@ export default function ComputisCaseStudy() {
                 </h3>
                 <div className="space-y-4">
                   <div className="bg-[#FF4D4D]/10 rounded-[16px] p-5 border-l-4 border-[#FF4D4D] transition-all duration-300 hover:bg-[#FF4D4D]/15 hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-semibold text-[#FF8888] mb-2 leading-[1.4]">
-                      1. CPAs rejected black-box AI
-                    </p>
+                    <div className="flex items-center justify-between mb-2">
+                      <p className="text-sm font-semibold text-[#FF8888] leading-[1.4]">
+                        Manual Python Scripts
+                      </p>
+                      <span className="text-xs font-bold text-[#FF4D4D] bg-[#FF4D4D]/20 px-3 py-1 rounded-full">
+                        95% Critical
+                      </span>
+                    </div>
                     <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                      Transparency was non-negotiable for professional liability
+                      CPAs spent 85% of time waiting for engineers
+                    </p>
+                  </div>
+                  <div className="bg-[#FF6B6B]/10 rounded-[16px] p-5 border-l-4 border-[#FF6B6B] transition-all duration-300 hover:bg-[#FF6B6B]/15 hover:scale-[1.02] cursor-pointer">
+                    <div className="flex items-center justify-between mb-2">
+                      <p className="text-sm font-semibold text-[#FF8888] leading-[1.4]">
+                        No Audit Trail for Compliance
+                      </p>
+                      <span className="text-xs font-bold text-[#FF6B6B] bg-[#FF6B6B]/20 px-3 py-1 rounded-full">
+                        90% Regulatory Risk
+                      </span>
+                    </div>
+                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                      No IRS-defensible documentation
                     </p>
                   </div>
                   <div className="bg-[#FFD700]/10 rounded-[16px] p-5 border-l-4 border-[#FFD700] transition-all duration-300 hover:bg-[#FFD700]/15 hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">
-                      2. 85% time loss waiting for engineers
-                    </p>
+                    <div className="flex items-center justify-between mb-2">
+                      <p className="text-sm font-semibold text-[#FFD700] leading-[1.4]">
+                        Black-Box AI Undermining Trust
+                      </p>
+                      <span className="text-xs font-bold text-[#FFD700] bg-[#FFD700]/20 px-3 py-1 rounded-full">
+                        85% Trust Issue
+                      </span>
+                    </div>
                     <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                      CPAs needed autonomy to scale
+                      Can't explain to clients/IRS
                     </p>
                   </div>
                   <div className="bg-[#00D4FF]/10 rounded-[16px] p-5 border-l-4 border-[#00D4FF] transition-all duration-300 hover:bg-[#00D4FF]/15 hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
-                      3. Auditability drives trust & sales
-                    </p>
+                    <div className="flex items-center justify-between mb-2">
+                      <p className="text-sm font-semibold text-[#00D4FF] leading-[1.4]">
+                        CSV-Only Export Workflows
+                      </p>
+                      <span className="text-xs font-bold text-[#00D4FF] bg-[#00D4FF]/20 px-3 py-1 rounded-full">
+                        75% Time-Consuming
+                      </span>
+                    </div>
                     <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                      Audit trails became a competitive differentiator
+                      Manual data wrangling across platforms
                     </p>
                   </div>
                   <div className="bg-[#00FFB3]/10 rounded-[16px] p-5 border-l-4 border-[#00FFB3] transition-all duration-300 hover:bg-[#00FFB3]/15 hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
-                      4. Bulk rule-building = scale
-                    </p>
+                    <div className="flex items-center justify-between mb-2">
+                      <p className="text-sm font-semibold text-[#00FFB3] leading-[1.4]">
+                        Frequent FMV Reconciliation Errors
+                      </p>
+                      <span className="text-xs font-bold text-[#00FFB3] bg-[#00FFB3]/20 px-3 py-1 rounded-full">
+                        70% Manual Fixes
+                      </span>
+                    </div>
                     <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                      Manual classification couldn't support growth
-                    </p>
-                  </div>
-                  <div className="bg-[#0080FF]/10 rounded-[16px] p-5 border-l-4 border-[#0080FF] transition-all duration-300 hover:bg-[#0080FF]/15 hover:scale-[1.02] cursor-pointer">
-                    <p className="text-sm font-semibold text-[#0080FF] mb-2 leading-[1.4]">
-                      5. Explainable AI increased adoption
-                    </p>
-                    <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                      Showing reasoning built professional confidence
+                      High error rate in categorization
                     </p>
                   </div>
                 </div>
@@ -1144,7 +1169,7 @@ export default function ComputisCaseStudy() {
               {/* Design System Creation */}
               <div className="bg-gradient-to-br from-[#6B7280]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#6B7280]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02] cursor-pointer">
                 <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">��</span>
+                  <span className="text-2xl">🎨</span>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2 leading-[1.4]">
                       Design System Creation
