@@ -37,7 +37,6 @@ import {
 import ProblemEvidenceContainer from "../components/case-study/ProblemEvidenceContainer";
 import BeforeAfterComparison from "../components/case-study/BeforeAfterComparison";
 import DesignEvolutionShowcase from "../components/case-study/DesignEvolutionShowcase";
-import CaseStudySummary from "../components/case-study/CaseStudySummary";
 
 // Custom hook for counting animation
 const useCountAnimation = (
@@ -2098,9 +2097,6 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
-
-        {/* Comprehensive Transformation Summary - From Technical Design Doc */}
-        <CaseStudySummary projectName="Computis" />
 
         {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2300">
