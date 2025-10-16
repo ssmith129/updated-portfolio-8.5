@@ -2359,63 +2359,6 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* Design Philosophy */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-2400">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10">
-              💭 Design Philosophy
-            </h2>
-
-            <div className="bg-gradient-to-r from-[#1A1A1A]/50 to-[#252525]/50 rounded-[20px] p-8 mb-8 border border-[#00D4FF]/20">
-              <blockquote className="text-xl italic text-[#D1D5DB] leading-[1.7] mb-4">
-                "Design isn't what it looks like — it's whether a CPA can
-                explain a tax report to a regulator without an engineer in the
-                room."
-              </blockquote>
-            </div>
-
-            <div className="mt-10">
-              <h3 className="text-xl font-semibold text-white mb-8 leading-[1.3]">
-                Core Tenets
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#0080FF]/5 rounded-[20px] p-6 border-l-4 border-[#00D4FF] transition-all duration-300 hover:border-[#0080FF] hover:scale-[1.02]">
-                  <h4 className="font-semibold text-lg text-[#00D4FF] mb-2 leading-[1.4]">
-                    Transparency over Efficiency
-                  </h4>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    Speed matters, but professional defensibility matters more
-                  </p>
-                </div>
-                <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#00FFB3]/5 rounded-[20px] p-6 border-l-4 border-[#00D4FF] transition-all duration-300 hover:border-[#00FFB3] hover:scale-[1.02]">
-                  <h4 className="font-semibold text-lg text-[#00FFB3] mb-2 leading-[1.4]">
-                    Augmentation over Automation
-                  </h4>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    AI should empower expertise, not replace judgment
-                  </p>
-                </div>
-                <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#00FFB3] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
-                  <h4 className="font-semibold text-lg text-white mb-2 leading-[1.4]">
-                    Systems over Surfaces
-                  </h4>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    Scalable architecture beats pixel-perfect polish
-                  </p>
-                </div>
-                <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#00D4FF]/5 rounded-[20px] p-6 border-l-4 border-[#FFD700] transition-all duration-300 hover:border-[#00D4FF] hover:scale-[1.02]">
-                  <h4 className="font-semibold text-lg text-[#FFD700] mb-2 leading-[1.4]">
-                    Context over Complexity
-                  </h4>
-                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    Surface insights when they matter, hide complexity when they
-                    don't
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       {/* Modals */}
