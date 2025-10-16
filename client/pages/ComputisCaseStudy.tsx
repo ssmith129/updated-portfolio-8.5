@@ -1683,43 +1683,17 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* 2. Inline Audit Trail Drawer */}
-              <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#00FFB3]/20 transition-all duration-300 hover:border-[#00FFB3]/40 hover:scale-[1.02] cursor-pointer">
+              <div className="bg-gradient-to-r from-[#00FFB3]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#00FFB3]/20 transition-all duration-300 hover:border-[#00FFB3]/40">
                 <div className="flex items-start gap-4 mb-6">
                   <span className="text-4xl font-bold text-[#00FFB3]">2️⃣</span>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
                       Inline Audit Trail Drawer
                     </h3>
-                    <div className="space-y-4">
-                      <div>
-                        <p className="text-sm font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
-                          Challenge:
-                        </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          No compliance visibility.
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
-                          Solution:
-                        </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          Persistent contextual audit trail.
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">
-                          Impact:
-                        </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          ↓ 40% compliance tickets; enabled independent IRS
-                          audit defense.
-                        </p>
-                      </div>
-                    </div>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A]/60 rounded-[12px] border border-[#00FFB3]/10 self-center flex-none">
+
+                <div className="bg-[#1A1A1A]/60 rounded-[12px] border border-[#00FFB3]/10 mb-6">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
                     <img
                       loading="lazy"
@@ -1738,61 +1712,77 @@ export default function ComputisCaseStudy() {
                     />
                   </div>
                 </div>
-              </div>
 
-              {/* BeforeAfterComparison Component Example from Technical Design Doc */}
-              <BeforeAfterComparison
-                featureName="Real-Time Audit Trail System"
-                painPoints={[
-                  "No visibility into AI decision-making process",
-                  "CPAs couldn't defend categorizations to auditors",
-                  "Manual documentation required 2-3 hours per client"
-                ]}
-                improvements={[
-                  "Complete audit trail with timestamps and reasoning",
-                  "One-click export for IRS audits",
-                  "Automatic documentation generation"
-                ]}
-                impactStatement="Reduced compliance preparation time from 2-3 hours to 15 minutes per client. Enabled CPAs to independently defend tax positions during IRS audits, resulting in 40% fewer compliance tickets."
-              />
-
-              {/* 3. Visual Rule Builder */}
-              <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#0080FF]/5 rounded-[20px] p-8 border border-[#00D4FF]/20 transition-all duration-300 hover:border-[#0080FF]/40 hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-4 mb-6">
-                  <span className="text-4xl font-bold text-[#00D4FF]">3️⃣</span>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
-                      Visual Rule Builder (No-Code)
-                    </h3>
-                    <div className="space-y-4">
-                      <div>
-                        <p className="text-sm font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
-                          Challenge:
+                {/* Before/After Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                  {/* BEFORE Panel */}
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-5 border border-[#FF4D4D]/30">
+                    <span className="inline-block text-xs font-bold text-[#FF4D4D] bg-[#FF4D4D]/20 px-3 py-1 rounded-full mb-4">
+                      BEFORE
+                    </span>
+                    <div className="space-y-3">
+                      <div className="space-y-2">
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>No compliance visibility into AI decisions</span>
                         </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          CPA dependency on engineers.
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>CPAs couldn't defend categorizations to IRS</span>
+                        </p>
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>Manual documentation took 2-3 hours per client</span>
                         </p>
                       </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
-                          Solution:
+                    </div>
+                  </div>
+
+                  {/* AFTER Panel */}
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-5 border border-[#00FFB3]/30">
+                    <span className="inline-block text-xs font-bold text-[#00FFB3] bg-[#00FFB3]/20 px-3 py-1 rounded-full mb-4">
+                      AFTER
+                    </span>
+                    <div className="space-y-3">
+                      <div className="space-y-2">
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Persistent contextual audit trail with timestamps</span>
                         </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          Drag-and-drop natural language builder with preview.
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>One-click export for IRS audits</span>
                         </p>
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">
-                          Impact:
-                        </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          ↓ 85% engineering reliance; ↑ 32% conversions.
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Automatic documentation generation</span>
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A]/60 rounded-[12px] border border-[#00D4FF]/10 self-center flex-none">
+
+                {/* Impact Statement */}
+                <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <strong className="text-[#FFD700]">Impact:</strong> Reduced compliance preparation time from <strong className="text-white">2-3 hours to 15 minutes</strong> per client. Enabled CPAs to independently defend tax positions during IRS audits, resulting in <strong className="text-white">40% fewer compliance tickets</strong>.
+                  </p>
+                </div>
+              </div>
+
+
+              {/* 3. Visual Rule Builder */}
+              <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#0080FF]/5 rounded-[20px] p-8 border border-[#00D4FF]/20 transition-all duration-300 hover:border-[#0080FF]/40">
+                <div className="flex items-start gap-4 mb-6">
+                  <span className="text-4xl font-bold text-[#00D4FF]">3️⃣</span>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
+                      Visual Rule Builder (No-Code)
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="bg-[#1A1A1A]/60 rounded-[12px] border border-[#00D4FF]/10 mb-6">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
                     <img
                       loading="lazy"
@@ -1811,61 +1801,77 @@ export default function ComputisCaseStudy() {
                     />
                   </div>
                 </div>
-              </div>
 
-              {/* BeforeAfterComparison for Rule Builder */}
-              <BeforeAfterComparison
-                featureName="No-Code Rule Builder Interface"
-                painPoints={[
-                  "Engineers needed for every custom rule modification",
-                  "2-3 week delay for simple classification changes",
-                  "CPAs couldn't experiment or iterate on rules"
-                ]}
-                improvements={[
-                  "Drag-and-drop visual rule builder for CPAs",
-                  "Real-time preview with sample transactions",
-                  "Rules deployed in under 90 seconds"
-                ]}
-                impactStatement="Eliminated 85% of engineering dependencies for rule creation. CPAs can now build and test custom classification rules in under 90 seconds vs. waiting 2-3 weeks for engineering support. This led to 32% increase in demo-to-conversion rates."
-              />
-
-              {/* 4. Contextual Anomaly Detection */}
-              <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#FF8888]/5 rounded-[20px] p-8 border border-[#FFD700]/20 transition-all duration-300 hover:border-[#FF8888]/40 hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-4 mb-6">
-                  <span className="text-4xl font-bold text-[#FFD700]">4️⃣</span>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
-                      Contextual Anomaly Detection
-                    </h3>
-                    <div className="space-y-4">
-                      <div>
-                        <p className="text-sm font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
-                          Challenge:
+                {/* Before/After Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                  {/* BEFORE Panel */}
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-5 border border-[#FF4D4D]/30">
+                    <span className="inline-block text-xs font-bold text-[#FF4D4D] bg-[#FF4D4D]/20 px-3 py-1 rounded-full mb-4">
+                      BEFORE
+                    </span>
+                    <div className="space-y-3">
+                      <div className="space-y-2">
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>Engineers needed for every custom rule modification</span>
                         </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          Hidden FMV errors.
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>2-3 week delay for simple classification changes</span>
+                        </p>
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>���</span>
+                          <span>CPAs couldn't experiment or iterate on rules</span>
                         </p>
                       </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
-                          Solution:
+                    </div>
+                  </div>
+
+                  {/* AFTER Panel */}
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-5 border border-[#00FFB3]/30">
+                    <span className="inline-block text-xs font-bold text-[#00FFB3] bg-[#00FFB3]/20 px-3 py-1 rounded-full mb-4">
+                      AFTER
+                    </span>
+                    <div className="space-y-3">
+                      <div className="space-y-2">
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Drag-and-drop visual rule builder for CPAs</span>
                         </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          Inline color-coded anomaly flags with hover tooltips.
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Real-time preview with sample transactions</span>
                         </p>
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">
-                          Impact:
-                        </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          ↑ 150% anomaly detection; ↓ manual triage.
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Rules deployed in under 90 seconds</span>
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A]/60 rounded-[12px] border border-[#FFD700]/10 self-center flex-none">
+
+                {/* Impact Statement */}
+                <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <strong className="text-[#FFD700]">Impact:</strong> Eliminated <strong className="text-white">85% of engineering dependencies</strong> for rule creation. CPAs can now build and test custom classification rules in <strong className="text-white">under 90 seconds</strong> vs. waiting 2-3 weeks for engineering support. This led to <strong className="text-white">32% increase in demo-to-conversion rates</strong>.
+                  </p>
+                </div>
+              </div>
+
+
+              {/* 4. Contextual Anomaly Detection */}
+              <div className="bg-gradient-to-r from-[#FFD700]/5 to-[#FF8888]/5 rounded-[20px] p-8 border border-[#FFD700]/20 transition-all duration-300 hover:border-[#FF8888]/40">
+                <div className="flex items-start gap-4 mb-6">
+                  <span className="text-4xl font-bold text-[#FFD700]">4️⃣</span>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
+                      Contextual Anomaly Detection
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="bg-[#1A1A1A]/60 rounded-[12px] border border-[#FFD700]/10 mb-6">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
                     <img
                       loading="lazy"
@@ -1884,45 +1890,76 @@ export default function ComputisCaseStudy() {
                     />
                   </div>
                 </div>
-              </div>
 
-              {/* 5. Multi-Tenant Architecture */}
-              <div className="bg-gradient-to-r from-[#6B7280]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#6B7280]/20 transition-all duration-300 hover:border-[#00D4FF]/40 hover:scale-[1.02] cursor-pointer">
-                <div className="flex items-start gap-4 mb-6">
-                  <span className="text-4xl font-bold text-[#6B7280]">5️⃣</span>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
-                      Multi-Tenant Architecture
-                    </h3>
-                    <div className="space-y-4">
-                      <div>
-                        <p className="text-sm font-semibold text-[#00D4FF] mb-2 leading-[1.4]">
-                          Challenge:
+                {/* Before/After Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                  {/* BEFORE Panel */}
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-5 border border-[#FF4D4D]/30">
+                    <span className="inline-block text-xs font-bold text-[#FF4D4D] bg-[#FF4D4D]/20 px-3 py-1 rounded-full mb-4">
+                      BEFORE
+                    </span>
+                    <div className="space-y-3">
+                      <div className="space-y-2">
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>Hidden FMV (Fair Market Value) errors</span>
                         </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          CPA firms manage multiple clients.
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>Manual price validation across exchanges</span>
                         </p>
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#00FFB3] mb-2 leading-[1.4]">
-                          Solution:
-                        </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          Role-based multi-tenant dashboards.
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>High false-positive rate in detection</span>
                         </p>
                       </div>
-                      <div>
-                        <p className="text-sm font-semibold text-[#FFD700] mb-2 leading-[1.4]">
-                          Impact:
+                    </div>
+                  </div>
+
+                  {/* AFTER Panel */}
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-5 border border-[#00FFB3]/30">
+                    <span className="inline-block text-xs font-bold text-[#00FFB3] bg-[#00FFB3]/20 px-3 py-1 rounded-full mb-4">
+                      AFTER
+                    </span>
+                    <div className="space-y-3">
+                      <div className="space-y-2">
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Inline color-coded anomaly flags</span>
                         </p>
-                        <p className="text-sm text-[#D1D5DB] leading-[1.6]">
-                          Enabled 100+ portfolio management.
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Hover tooltips with detailed explanations</span>
+                        </p>
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Contextual severity indicators</span>
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A]/60 rounded-[12px] border border-[#6B7280]/10 self-center flex-none">
+
+                {/* Impact Statement */}
+                <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <strong className="text-[#FFD700]">Impact:</strong> Increased anomaly detection coverage by <strong className="text-white">150%</strong> while reducing manual triage time. CPAs can now identify and resolve pricing discrepancies <strong className="text-white">3x faster</strong> with contextual severity indicators.
+                  </p>
+                </div>
+              </div>
+
+              {/* 5. Multi-Tenant Architecture */}
+              <div className="bg-gradient-to-r from-[#6B7280]/5 to-[#00D4FF]/5 rounded-[20px] p-8 border border-[#6B7280]/20 transition-all duration-300 hover:border-[#00D4FF]/40">
+                <div className="flex items-start gap-4 mb-6">
+                  <span className="text-4xl font-bold text-[#6B7280]">5️⃣</span>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-white mb-4 leading-[1.3]">
+                      Multi-Tenant Architecture
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="bg-[#1A1A1A]/60 rounded-[12px] border border-[#6B7280]/10 mb-6">
                   <div className="flex items-center justify-center gap-2 text-gray-500">
                     <img
                       loading="lazy"
@@ -1940,6 +1977,62 @@ export default function ComputisCaseStudy() {
                       }}
                     />
                   </div>
+                </div>
+
+                {/* Before/After Grid */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                  {/* BEFORE Panel */}
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-5 border border-[#FF4D4D]/30">
+                    <span className="inline-block text-xs font-bold text-[#FF4D4D] bg-[#FF4D4D]/20 px-3 py-1 rounded-full mb-4">
+                      BEFORE
+                    </span>
+                    <div className="space-y-3">
+                      <div className="space-y-2">
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>Single-client focused architecture</span>
+                        </p>
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>CPAs managed clients in separate instances</span>
+                        </p>
+                        <p className="text-xs text-[#FF8888] flex items-start gap-2">
+                          <span>❌</span>
+                          <span>No centralized portfolio oversight</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* AFTER Panel */}
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-5 border border-[#00FFB3]/30">
+                    <span className="inline-block text-xs font-bold text-[#00FFB3] bg-[#00FFB3]/20 px-3 py-1 rounded-full mb-4">
+                      AFTER
+                    </span>
+                    <div className="space-y-3">
+                      <div className="space-y-2">
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Role-based multi-tenant dashboards</span>
+                        </p>
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Unified client portfolio management</span>
+                        </p>
+                        <p className="text-xs text-[#00FFB3] flex items-start gap-2">
+                          <span>✅</span>
+                          <span>Granular permission controls per client</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Impact Statement */}
+                <div className="bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] p-4 border-l-4 border-[#00D4FF]">
+                  <p className="text-sm text-[#D1D5DB] leading-[1.6]">
+                    <strong className="text-[#FFD700]">Impact:</strong> Enabled CPA firms to manage <strong className="text-white">100+ client portfolios</strong> from a single dashboard. Reduced context switching by <strong className="text-white">60%</strong> and improved multi-client workflow efficiency for enterprise accounting firms.
+                  </p>
                 </div>
               </div>
             </div>
