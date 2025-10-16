@@ -969,7 +969,7 @@ export default function ComputisCaseStudy() {
 
               <div className="bg-[#FFD700]/10 rounded-[16px] p-6 border-l-4 border-[#FFD700]">
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">��</span>
+                  <span className="text-2xl">💡</span>
                   <div>
                     <p className="text-sm font-semibold text-[#FFD700] mb-2">KEY DIFFERENTIATOR</p>
                     <p className="text-sm text-[#D1D5DB] leading-[1.6] mb-3">
@@ -2260,7 +2260,7 @@ export default function ComputisCaseStudy() {
                     • 85% of CPA time spent waiting for engineers
                   </li>
                   <li className="text-sm text-[#D1D5DB] leading-[1.6]">
-                    ��� Zero AI transparency or explainability
+                    • Zero AI transparency or explainability
                   </li>
                   <li className="text-sm text-[#D1D5DB] leading-[1.6]">
                     • No audit trails for IRS compliance
@@ -2278,7 +2278,7 @@ export default function ComputisCaseStudy() {
               <div className="bg-[#1A1A1A]/60 rounded-[20px] p-6 border-l-4 border-[#00FFB3]">
                 <h3 className="text-lg font-bold text-[#00FFB3] mb-4 flex items-center gap-2">
                   <span className="text-2xl">✅</span>
-                  After (Oct 2023)
+                  After
                 </h3>
                 <ul className="space-y-3">
                   <li className="text-sm text-[#D1D5DB] leading-[1.6]">
