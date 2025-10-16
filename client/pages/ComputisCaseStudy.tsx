@@ -20,7 +20,6 @@ import {
   Coins,
   FileText,
   Search,
-  Settings,
   Lightbulb,
   AlertTriangle,
 } from "lucide-react";
@@ -301,7 +300,7 @@ export default function ComputisCaseStudy() {
                     href="#process-deepdive"
                     className="text-xs font-medium text-[#00D4FF] hover:underline"
                   >
-                    → See Design Process
+                    �� See Design Process
                   </a>
                   <a
                     href="#design-system"
@@ -2040,7 +2039,7 @@ export default function ComputisCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[20px] p-6 border border-[#0080FF]/20">
                   <div className="flex items-start gap-3 mb-4">
-                    <span className="text-3xl">💬</span>
+                    <span className="text-3xl">���</span>
                     <blockquote className="text-base italic text-[#D1D5DB] leading-relaxed">
                       "This is the first crypto tax tool that actually makes sense to a CPA. The confidence levels and override controls give me the transparency I need."
                     </blockquote>
