@@ -261,22 +261,22 @@ export default function ComputisCaseStudy() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
         <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-6 sm:p-8 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           {/* H2: Major Section Headers */}
-          <h2 className="text-2xl sm:text-3xl font-semibold text-white leading-[1.2] tracking-tight mb-8">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10">
             Impact at a Glance
           </h2>
 
           {/* Project Metadata - Always Visible */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
-              <p className="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">Role</p>
+              <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">Role</p>
               <p className="text-base font-medium text-white leading-[1.6]">Founding Lead Product Designer</p>
             </div>
             <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
-              <p className="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">Platform</p>
+              <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">Platform</p>
               <p className="text-base font-medium text-white leading-[1.6]">Web SaaS (Desktop-first, responsive)</p>
             </div>
             <div className="bg-[#1A1A1A]/50 rounded-[12px] p-4">
-              <p className="text-xs font-bold text-[#6B7280] uppercase tracking-wider mb-2">Duration</p>
+              <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-2">Duration</p>
               <p className="text-base font-medium text-white leading-[1.6]">10 months (Discovery → Beta Launch)</p>
             </div>
           </div>
@@ -322,7 +322,7 @@ export default function ComputisCaseStudy() {
           {/* Expandable Executive Summary */}
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
-            className="w-full flex items-center justify-center gap-2 text-sm font-medium text-[#00D4FF] hover:text-[#00FFB3] transition-colors"
+            className="w-full flex items-center justify-center gap-2 text-base font-semibold text-[#00D4FF] hover:text-[#00FFB3] transition-colors"
             aria-expanded={isSummaryExpanded}
             aria-controls="summary-content"
           >
@@ -381,7 +381,7 @@ export default function ComputisCaseStudy() {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                     <div className="space-y-2">
                       {/* Label style - Small, uppercase, tracked */}
-                      <p className="text-xs font-bold text-[#6B7280] uppercase tracking-wider">
+                      <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                         Role
                       </p>
                       {/* Body text - Medium size, medium weight */}
@@ -390,7 +390,7 @@ export default function ComputisCaseStudy() {
                       </p>
                     </div>
                     <div className="space-y-2">
-                      <p className="text-xs font-bold text-[#6B7280] uppercase tracking-wider">
+                      <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                         Platform
                       </p>
                       <p className="text-base font-medium text-white leading-[1.6]">
@@ -398,7 +398,7 @@ export default function ComputisCaseStudy() {
                       </p>
                     </div>
                     <div className="space-y-2">
-                      <p className="text-xs font-bold text-[#6B7280] uppercase tracking-wider">
+                      <p className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                         Duration
                       </p>
                       <p className="text-base font-medium text-white leading-[1.6]">
@@ -492,13 +492,13 @@ export default function ComputisCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300 mt-12">
             {/* H2: Major Section Headers */}
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-[1.2] tracking-tight mb-10 transition-all duration-300 hover:text-[#00D4FF] cursor-pointer">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-10 transition-all duration-300 hover:text-[#00D4FF] cursor-pointer">
               Project Overview
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
               <div className="space-y-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-xs font-bold text-[#6B7280] uppercase tracking-wider">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Role
                 </h3>
                 <p className="text-lg font-medium text-white leading-[1.6]">
@@ -506,7 +506,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="space-y-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-xs font-bold text-[#6B7280] uppercase tracking-wider">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Team
                 </h3>
                 <p className="text-lg font-medium text-white leading-[1.6]">
@@ -514,7 +514,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="space-y-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-xs font-bold text-[#6B7280] uppercase tracking-wider">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Duration
                 </h3>
                 <p className="text-lg font-medium text-white leading-[1.6]">
@@ -522,7 +522,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="space-y-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-xs font-bold text-[#6B7280] uppercase tracking-wider">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Platform
                 </h3>
                 <p className="text-lg font-medium text-white leading-[1.6]">
@@ -530,7 +530,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="space-y-3 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-xs font-bold text-[#6B7280] uppercase tracking-wider">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
                   Tools
                 </h3>
                 <p className="text-lg font-medium text-white leading-[1.6]">
