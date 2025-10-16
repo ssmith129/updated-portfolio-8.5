@@ -1220,7 +1220,7 @@ export default function ComputisCaseStudy() {
                   </p>
                   <div className="bg-[#0080FF]/10 rounded-lg p-3">
                     <p className="text-xs text-[#00D4FF] italic">
-                      💡 Key question: How do we make AI suggestions transparent without overwhelming users?
+                      Key question: How do we make AI suggestions transparent without overwhelming users?
                     </p>
                   </div>
                 </div>
@@ -1238,7 +1238,7 @@ export default function ComputisCaseStudy() {
                   </p>
                   <div className="bg-[#00D4FF]/10 rounded-lg p-3">
                     <p className="text-xs text-[#00D4FF] italic">
-                      📊 Learning: Users wanted to see ALL classification options upfront, not progressive disclosure
+                      Learning: Users wanted to see ALL classification options upfront, not progressive disclosure
                     </p>
                   </div>
                 </div>
@@ -1256,7 +1256,7 @@ export default function ComputisCaseStudy() {
                   </p>
                   <div className="bg-[#00FFB3]/10 rounded-lg p-3">
                     <p className="text-xs text-[#00FFB3] italic">
-                      🎯 Finding: Confidence percentages alone weren't enough—added color-coded chips for at-a-glance scanning
+                      Finding: Confidence percentages alone weren't enough—added color-coded chips for at-a-glance scanning
                     </p>
                   </div>
                 </div>
@@ -1274,7 +1274,7 @@ export default function ComputisCaseStudy() {
                   </p>
                   <div className="bg-[#FFD700]/10 rounded-lg p-3">
                     <p className="text-xs text-[#FFD700] italic">
-                      ✅ Result: 89% task completion rate vs. 34% with old workflow
+                      Result: 89% task completion rate vs. 34% with old workflow
                     </p>
                   </div>
                 </div>
