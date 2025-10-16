@@ -415,7 +415,7 @@ export default function ComputisCaseStudy() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div className="text-center">
                       {/* Metric value - Large, bold, color */}
-                      <p className="text-3xl font-bold text-[#00FFB3] mb-2">
+                      <p className="text-2xl font-bold text-[#00FFB3] mb-2">
                         ↓ 45%
                       </p>
                       {/* Metric label - Small, secondary color */}
@@ -432,7 +432,7 @@ export default function ComputisCaseStudy() {
                       </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-3xl font-bold text-[#00D4FF] mb-2">
+                      <p className="text-2xl font-bold text-[#00D4FF] mb-2">
                         ↓ 85%
                       </p>
                       <p className="text-sm font-medium text-[#9CA3AF]">
@@ -440,7 +440,7 @@ export default function ComputisCaseStudy() {
                       </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-3xl font-bold text-[#0080FF] mb-2">
+                      <p className="text-2xl font-bold text-[#0080FF] mb-2">
                         ↑ 150%
                       </p>
                       <p className="text-sm font-medium text-[#9CA3AF]">
@@ -733,11 +733,11 @@ export default function ComputisCaseStudy() {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                 <div className="bg-[#0080FF]/10 rounded-[16px] p-4 text-center border border-[#0080FF]/20">
-                  <p className="text-3xl font-bold text-[#00D4FF] mb-2">8</p>
+                  <p className="text-2xl font-bold text-[#00D4FF] mb-2">8</p>
                   <p className="text-xs text-[#9CA3AF]">CPA Interviews</p>
                 </div>
                 <div className="bg-[#00FFB3]/10 rounded-[16px] p-4 text-center border border-[#00FFB3]/20">
-                  <p className="text-3xl font-bold text-[#00FFB3] mb-2">6</p>
+                  <p className="text-2xl font-bold text-[#00FFB3] mb-2">6</p>
                   <p className="text-xs text-[#9CA3AF]">Shadowing Sessions</p>
                 </div>
                 <div className="bg-[#FFD700]/10 rounded-[16px] p-4 text-center border border-[#FFD700]/20">
@@ -745,7 +745,7 @@ export default function ComputisCaseStudy() {
                   <p className="text-xs text-[#9CA3AF]">Usability Tests</p>
                 </div>
                 <div className="bg-[#00D4FF]/10 rounded-[16px] p-4 text-center border border-[#00D4FF]/20">
-                  <p className="text-3xl font-bold text-[#00D4FF] mb-2">14</p>
+                  <p className="text-2xl font-bold text-[#00D4FF] mb-2">14</p>
                   <p className="text-xs text-[#9CA3AF]">Total Participants</p>
                 </div>
               </div>
@@ -2005,25 +2005,25 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#00D4FF]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00D4FF]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00D4FF]/40">
-                <p className="text-3xl font-bold text-[#00D4FF] mb-2">���85%</p>
+                <p className="text-2xl font-bold text-[#00D4FF] mb-2">���85%</p>
                 <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
                   eng dependency
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#0080FF]/10 to-[#0080FF]/5 rounded-[16px] p-4 border border-[#0080FF]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#0080FF]/40">
-                <p className="text-3xl font-bold text-[#0080FF] mb-2">↑150%</p>
+                <p className="text-2xl font-bold text-[#0080FF] mb-2">↑150%</p>
                 <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
                   anomaly detection
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
-                <p className="text-3xl font-bold text-[#00FFB3] mb-2">↓40%</p>
+                <p className="text-2xl font-bold text-[#00FFB3] mb-2">↓40%</p>
                 <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
                   support tickets
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#00FFB3]/10 to-[#00D4FF]/5 rounded-[16px] p-4 border border-[#00FFB3]/20 text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:border-[#00FFB3]/40">
-                <p className="text-3xl font-bold text-[#00FFB3] mb-2">Zero</p>
+                <p className="text-2xl font-bold text-[#00FFB3] mb-2">Zero</p>
                 <p className="text-xs font-medium text-[#9CA3AF] leading-[1.6]">
                   FMV disputes
                 </p>
