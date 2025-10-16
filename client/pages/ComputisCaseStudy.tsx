@@ -156,11 +156,11 @@ export default function ComputisCaseStudy() {
           </span>
           {/* H1: Case Study Title - Largest, most prominent */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight mb-6">
-            Computis — Redefining Trust in Crypto Tax Automation
+            Computis — Redefining Crypto Tax Automation
           </h1>
           {/* Hero Hook - Compelling value statement */}
           <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight max-w-5xl">
-            How I transformed crypto tax automation by making AI transparent and trustworthy for 47 CPA firms
+            From opaque Python scripts to transparent, CPA-first enterprise platform
           </p>
         </div>
       </header>
