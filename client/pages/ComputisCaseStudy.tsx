@@ -34,6 +34,8 @@ import {
   DialogOverlay,
   DialogTitle,
 } from "@/components/ui/dialog";
+import ProblemEvidenceContainer from "../components/case-study/ProblemEvidenceContainer";
+import BeforeAfterComparison from "../components/case-study/BeforeAfterComparison";
 
 // Custom hook for counting animation
 const useCountAnimation = (
@@ -589,7 +591,7 @@ export default function ComputisCaseStudy() {
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm font-medium text-[#9CA3AF] leading-[1.6]">
-                    ↓ CPA onboarding time (2.5h → 1.4h)
+                    ↓ CPA onboarding time (2.5h �� 1.4h)
                   </p>
                 </div>
                 <div className="text-center transition-all duration-300 hover:scale-110 cursor-pointer">
