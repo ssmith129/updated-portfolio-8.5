@@ -36,6 +36,7 @@ import {
 } from "@/components/ui/dialog";
 import ProblemEvidenceContainer from "../components/case-study/ProblemEvidenceContainer";
 import BeforeAfterComparison from "../components/case-study/BeforeAfterComparison";
+import DesignEvolutionShowcase from "../components/case-study/DesignEvolutionShowcase";
 
 // Custom hook for counting animation
 const useCountAnimation = (
