@@ -692,7 +692,6 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-
             <div className="bg-[#00FFB3]/5 rounded-[20px] p-8 border border-[#00FFB3]/20 mb-10 transition-all duration-300 hover:border-[#00FFB3]/40 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-2xl font-semibold text-[#00FFB3] mb-5 flex items-center gap-2 leading-tight">
                 <Target className="w-6 h-6" />
