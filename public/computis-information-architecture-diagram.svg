@@ -1,0 +1,313 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#0A0A0A"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#00D4FF" stroke-width="1" opacity="0.03"/>
+    </pattern>
+    
+    <!-- Gradient definitions -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0080FF;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FFB3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  
+  <!-- Gradient orbs for depth -->
+  <ellipse cx="1000" cy="100" rx="150" ry="150" fill="#00D4FF" opacity="0.05" filter="url(#glow)"/>
+  <ellipse cx="200" cy="575" rx="125" ry="125" fill="#00FFB3" opacity="0.05" filter="url(#glow)"/>
+  
+  <!-- Title -->
+  <text x="600" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="white" text-anchor="middle" letter-spacing="-0.5">
+    Computis Information Architecture
+  </text>
+  
+  <!-- App Entry Point -->
+  <g id="root">
+    <rect x="500" y="80" width="200" height="60" rx="12" fill="#0F0F0F" stroke="#00D4FF" stroke-width="2" filter="url(#dropShadow)"/>
+    <text x="600" y="107" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#9CA3AF" text-anchor="middle" letter-spacing="1">
+      ROOT
+    </text>
+    <text x="600" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">
+      Computis App
+    </text>
+  </g>
+  
+  <!-- Connection lines from root -->
+  <line x1="600" y1="140" x2="180" y2="180" stroke="#00D4FF" stroke-width="2" opacity="0.5" stroke-dasharray="5,5"/>
+  <line x1="600" y1="140" x2="425" y2="180" stroke="#00FFB3" stroke-width="2" opacity="0.5" stroke-dasharray="5,5"/>
+  <line x1="600" y1="140" x2="775" y2="180" stroke="#FFD700" stroke-width="2" opacity="0.5" stroke-dasharray="5,5"/>
+  <line x1="600" y1="140" x2="1020" y2="180" stroke="#FF8888" stroke-width="2" opacity="0.5" stroke-dasharray="5,5"/>
+  
+  <!-- MAIN NAVIGATION Section -->
+  <g id="main-nav">
+    <!-- Section container -->
+    <rect x="30" y="180" width="300" height="380" rx="16" fill="#0F0F0F" fill-opacity="0.8" stroke="#00D4FF" stroke-width="1.5"/>
+    
+    <!-- Section header -->
+    <rect x="30" y="180" width="300" height="50" rx="16" fill="url(#primaryGradient)" opacity="0.15"/>
+    <text x="180" y="208" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#00D4FF" text-anchor="middle" letter-spacing="1">
+      MAIN NAVIGATION
+    </text>
+    
+    <!-- Dashboard -->
+    <rect x="50" y="250" width="260" height="50" rx="10" fill="#1A1A1A" stroke="#00D4FF" stroke-width="1.5"/>
+    <circle cx="70" cy="275" r="6" fill="#00D4FF"/>
+    <text x="90" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      Dashboard
+    </text>
+    <text x="300" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /
+    </text>
+    
+    <!-- Transactions -->
+    <rect x="50" y="310" width="260" height="50" rx="10" fill="#1A1A1A" stroke="#0080FF" stroke-width="1"/>
+    <circle cx="70" cy="335" r="6" fill="#0080FF"/>
+    <text x="90" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      Transactions
+    </text>
+    <text x="300" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /transactions
+    </text>
+    
+    <!-- Wallets -->
+    <rect x="50" y="370" width="260" height="50" rx="10" fill="#1A1A1A" stroke="#0080FF" stroke-width="1"/>
+    <circle cx="70" cy="395" r="6" fill="#0080FF"/>
+    <text x="90" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      Wallets & Exchanges
+    </text>
+    <text x="300" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /wallets
+    </text>
+    
+    <!-- Clients -->
+    <rect x="50" y="430" width="260" height="50" rx="10" fill="#1A1A1A" stroke="#0080FF" stroke-width="1"/>
+    <circle cx="70" cy="455" r="6" fill="#0080FF"/>
+    <text x="90" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      Clients
+    </text>
+    <text x="300" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /clients
+    </text>
+    
+    <!-- Data Anomaly Detection -->
+    <rect x="50" y="490" width="260" height="50" rx="10" fill="#1A1A1A" stroke="#0080FF" stroke-width="1"/>
+    <circle cx="70" cy="515" r="6" fill="#0080FF"/>
+    <text x="90" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="white">
+      Data Anomaly Detection
+    </text>
+    <text x="300" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="end">
+      /data-anomaly...
+    </text>
+  </g>
+  
+  <!-- REPORTS Section -->
+  <g id="reports">
+    <rect x="350" y="180" width="275" height="290" rx="16" fill="#0F0F0F" fill-opacity="0.8" stroke="#00FFB3" stroke-width="1.5"/>
+    
+    <!-- Section header -->
+    <rect x="350" y="180" width="275" height="50" rx="16" fill="url(#accentGradient)" opacity="0.15"/>
+    <text x="487.5" y="208" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#00FFB3" text-anchor="middle" letter-spacing="1">
+      REPORTS
+    </text>
+    
+    <!-- IRS 8949 -->
+    <rect x="370" y="250" width="235" height="50" rx="10" fill="#1A1A1A" stroke="#00FFB3" stroke-width="1"/>
+    <circle cx="390" cy="275" r="6" fill="#00FFB3"/>
+    <text x="410" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      IRS 8949
+    </text>
+    <text x="595" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /irs-8949
+    </text>
+    
+    <!-- Gain/Loss -->
+    <rect x="370" y="310" width="235" height="50" rx="10" fill="#1A1A1A" stroke="#00FFB3" stroke-width="1"/>
+    <circle cx="390" cy="335" r="6" fill="#00FFB3"/>
+    <text x="410" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      Gain/Loss
+    </text>
+    <text x="595" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /gain-loss
+    </text>
+    
+    <!-- Exports -->
+    <rect x="370" y="370" width="235" height="50" rx="10" fill="#1A1A1A" stroke="#00FFB3" stroke-width="1"/>
+    <circle cx="390" cy="395" r="6" fill="#00FFB3"/>
+    <text x="410" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      Exports
+    </text>
+    <text x="595" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /exports
+    </text>
+    
+    <!-- Wallet Ingestion -->
+    <rect x="370" y="430" width="235" height="50" rx="10" fill="#252525" stroke="#00FFB3" stroke-width="1" stroke-dasharray="3,3"/>
+    <circle cx="390" cy="455" r="6" fill="#00FFB3" opacity="0.5"/>
+    <text x="410" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#9CA3AF">
+      Wallet Ingestion
+    </text>
+    <text x="595" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280" text-anchor="end">
+      /wallet-ingestion
+    </text>
+  </g>
+  
+  <!-- SETTINGS Section -->
+  <g id="settings">
+    <rect x="645" y="180" width="275" height="260" rx="16" fill="#0F0F0F" fill-opacity="0.8" stroke="#FFD700" stroke-width="1.5"/>
+    
+    <!-- Section header -->
+    <rect x="645" y="180" width="275" height="50" rx="16" fill="#FFD700" opacity="0.15"/>
+    <text x="782.5" y="208" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFD700" text-anchor="middle" letter-spacing="1">
+      SETTINGS
+    </text>
+    
+    <!-- General Settings -->
+    <rect x="665" y="250" width="235" height="50" rx="10" fill="#1A1A1A" stroke="#FFD700" stroke-width="1"/>
+    <circle cx="685" cy="275" r="6" fill="#FFD700"/>
+    <text x="705" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      General Settings
+    </text>
+    <text x="890" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /settings
+    </text>
+    
+    <!-- Preferences -->
+    <rect x="665" y="310" width="235" height="50" rx="10" fill="#1A1A1A" stroke="#FFD700" stroke-width="1"/>
+    <circle cx="685" cy="335" r="6" fill="#FFD700"/>
+    <text x="705" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      Preferences
+    </text>
+    <text x="890" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /preferences
+    </text>
+    
+    <!-- Rule Engine -->
+    <rect x="665" y="370" width="235" height="50" rx="10" fill="#1A1A1A" stroke="#FFD700" stroke-width="1"/>
+    <circle cx="685" cy="395" r="6" fill="#FFD700"/>
+    <text x="705" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      Rule Engine
+    </text>
+    <text x="890" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="end">
+      /rule-engine
+    </text>
+  </g>
+  
+  <!-- HELP & ACCOUNT Section -->
+  <g id="help-account">
+    <rect x="940" y="180" width="230" height="260" rx="16" fill="#0F0F0F" fill-opacity="0.8" stroke="#FF8888" stroke-width="1.5"/>
+    
+    <!-- Section header -->
+    <rect x="940" y="180" width="230" height="50" rx="16" fill="#FF8888" opacity="0.15"/>
+    <text x="1055" y="208" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FF8888" text-anchor="middle" letter-spacing="1">
+      HELP & ACCOUNT
+    </text>
+    
+    <!-- My Account -->
+    <rect x="960" y="250" width="190" height="50" rx="10" fill="#1A1A1A" stroke="#FF8888" stroke-width="1"/>
+    <circle cx="980" cy="275" r="6" fill="#FF8888"/>
+    <text x="1000" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      My Account
+    </text>
+    <text x="1140" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="end">
+      /my-account
+    </text>
+    
+    <!-- Help Page -->
+    <rect x="960" y="310" width="190" height="50" rx="10" fill="#1A1A1A" stroke="#FF8888" stroke-width="1"/>
+    <circle cx="980" cy="335" r="6" fill="#FF8888"/>
+    <text x="1000" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">
+      Help Page
+    </text>
+    <text x="1140" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="end">
+      /help
+    </text>
+    
+    <!-- Keyboard Shortcuts -->
+    <rect x="960" y="370" width="190" height="50" rx="10" fill="#1A1A1A" stroke="#FF8888" stroke-width="1"/>
+    <circle cx="980" cy="395" r="6" fill="#FF8888"/>
+    <text x="1000" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="white">
+      Kbd Shortcuts
+    </text>
+    <text x="1140" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9CA3AF" text-anchor="end">
+      /keyboard...
+    </text>
+  </g>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="30" y="590" width="1140" height="70" rx="16" fill="#0F0F0F" fill-opacity="0.9" stroke="#1A1A1A" stroke-width="1"/>
+    
+    <text x="50" y="615" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#9CA3AF" letter-spacing="1">
+      LEGEND:
+    </text>
+    
+    <!-- Primary Pages -->
+    <rect x="150" y="600" width="20" height="20" rx="4" fill="#1A1A1A" stroke="#00D4FF" stroke-width="2"/>
+    <text x="180" y="615" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D1D5DB">
+      Primary Pages
+    </text>
+    
+    <!-- Secondary Pages -->
+    <rect x="310" y="600" width="20" height="20" rx="4" fill="#1A1A1A" stroke="#0080FF" stroke-width="1"/>
+    <text x="340" y="615" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D1D5DB">
+      Secondary Pages
+    </text>
+    
+    <!-- Utility Pages -->
+    <rect x="475" y="600" width="20" height="20" rx="4" fill="#252525" stroke="#00FFB3" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="505" y="615" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D1D5DB">
+      Utility Pages
+    </text>
+    
+    <!-- Route Path -->
+    <text x="150" y="645" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9CA3AF">
+      Route Path
+    </text>
+    <text x="235" y="645" font-family="Monaco, monospace" font-size="10" fill="#6B7280">
+      /example-path
+    </text>
+    
+    <!-- Grouped Sections -->
+    <rect x="390" y="633" width="35" height="16" rx="4" fill="transparent" stroke="#00FFB3" stroke-width="1.5"/>
+    <text x="435" y="645" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#D1D5DB">
+      Grouped Navigation Sections
+    </text>
+  </g>
+  
+  <!-- Footer metadata -->
+  <text x="600" y="670" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6B7280" text-anchor="middle">
+    Computis Crypto Tax Engine • Information Architecture • 16:9 Format • Optimized for Web Display
+  </text>
+</svg>
