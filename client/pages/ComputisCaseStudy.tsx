@@ -692,8 +692,6 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Visual Evidence from Technical Design Doc */}
-            <ProblemEvidenceContainer />
 
             <div className="bg-[#00FFB3]/5 rounded-[20px] p-8 border border-[#00FFB3]/20 mb-10 transition-all duration-300 hover:border-[#00FFB3]/40 hover:scale-[1.02] cursor-pointer">
               <h3 className="text-2xl font-semibold text-[#00FFB3] mb-5 flex items-center gap-2 leading-tight">
@@ -846,7 +844,7 @@ export default function ComputisCaseStudy() {
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
                         <p className="text-sm font-semibold text-[#9CA3AF]">
-                          — Founder
+                          ��� Founder
                         </p>
                         <p className="text-xs text-[#6B7280]">
                           Boutique Crypto Tax Consultancy
@@ -1098,14 +1096,7 @@ export default function ComputisCaseStudy() {
                       We're the only platform that makes AI transparent and puts
                       CPAs in control, not clients.
                     </p>
-                    <p className="text-xs text-[#9CA3AF]">
-                      <strong className="text-white">Target User:</strong> B2B
-                      (CPA firms serving clients) &bull;
-                      <strong className="text-white ml-2">
-                        Competitors:
-                      </strong>{" "}
-                      B2C (Clients self-managing taxes)
-                    </p>
+                    <p className="text-xs text-[#9CA3AF]" />
                   </div>
                 </div>
               </div>
@@ -1236,7 +1227,7 @@ export default function ComputisCaseStudy() {
 
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {/* Stage 1 */}
-                <div className="bg-[#1A1A1A]/50 rounded-[16px] p-5 border border-[#0080FF]/20 hover:border-[#0080FF]/40 transition-all">
+                <div className="bg-[#1A1A1A]/50 rounded-[16px] p-5 border border-[#0080FF]/20 hover:border-[#0080FF]/40 transition-all h-auto flex-grow-0 w-auto self-center flex flex-col justify-start items-start max-w-[500px]">
                   <div className="w-10 h-10 bg-[#0080FF]/20 rounded-lg flex items-center justify-center mb-4">
                     <span className="text-xl font-bold text-[#0080FF]">1</span>
                   </div>
@@ -1247,12 +1238,6 @@ export default function ComputisCaseStudy() {
                     Quick sketches to explore interaction patterns for rule
                     creation
                   </p>
-                  <div className="bg-[#0080FF]/10 rounded-lg p-3">
-                    <p className="text-xs text-[#00D4FF] italic">
-                      Key question: How do we make AI suggestions transparent
-                      without overwhelming users?
-                    </p>
-                  </div>
                 </div>
 
                 {/* Stage 2 */}
@@ -1266,12 +1251,6 @@ export default function ComputisCaseStudy() {
                   <p className="text-xs text-[#9CA3AF] mb-3 leading-normal">
                     Tested with 3 CPAs to validate mental model
                   </p>
-                  <div className="bg-[#00D4FF]/10 rounded-lg p-3">
-                    <p className="text-xs text-[#00D4FF] italic">
-                      Learning: Users wanted to see ALL classification options
-                      upfront, not progressive disclosure
-                    </p>
-                  </div>
                 </div>
 
                 {/* Stage 3 */}
@@ -1285,12 +1264,6 @@ export default function ComputisCaseStudy() {
                   <p className="text-xs text-[#9CA3AF] mb-3 leading-normal">
                     Tested with 5 users for usability validation
                   </p>
-                  <div className="bg-[#00FFB3]/10 rounded-lg p-3">
-                    <p className="text-xs text-[#00FFB3] italic">
-                      Finding: Confidence percentages alone weren't enough—added
-                      color-coded chips for at-a-glance scanning
-                    </p>
-                  </div>
                 </div>
 
                 {/* Stage 4 */}
