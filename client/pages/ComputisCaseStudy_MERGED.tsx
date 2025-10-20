@@ -1422,93 +1422,209 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* OUTCOMES & IMPACT SECTION */}
+        {/* MY ROLE & IMPACT SECTION */}
         <section className="mt-16">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
             <h2 className="text-2xl sm:text-3xl font-medium text-white mb-8">
-              Outcomes & Impact
+              My Role & Impact
             </h2>
 
-            <p className="text-base text-[#6B7280] mb-8 max-w-[75ch] leading-relaxed">
-              All metrics were tracked using a combination of Mixpanel funnels,
-              Google Analytics events, Jira ticket analysis, and recorded
-              usability sessions over a 10-month period (Oct 2022 - Aug 2023).
-            </p>
+            {/* What I Did */}
+            <div className="mb-10">
+              <h3 className="text-xl font-semibold text-white mb-6">
+                What I Did
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-[#1A1A1A]/50 p-5 rounded-lg border-l-4 border-[#00D4FF]">
+                  <h4 className="text-sm font-semibold text-[#00D4FF] mb-3 uppercase tracking-wider">
+                    Discovery & Research
+                  </h4>
+                  <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-[#00D4FF] rounded-full mt-2 flex-shrink-0" />
+                      <span>Led 8 CPA interviews + 6 workflow shadowing sessions</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-[#00D4FF] rounded-full mt-2 flex-shrink-0" />
+                      <span>Conducted competitive analysis of TaxBit, Cryptio, CoinTracker</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-[#00D4FF] rounded-full mt-2 flex-shrink-0" />
+                      <span>Synthesized 68 insights into 4 design themes</span>
+                    </li>
+                  </ul>
+                </div>
 
-            {/* Metric Cards with Context */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <MetricCard
-                metric="↓45% CPA Onboarding Time"
-                baseline="2.5h average (Oct 2022, n=6 CPAs)"
-                result="1.4h average (Aug 2023, n=6 CPAs)"
-                method="Task analysis (Wallet → Rule → Export)"
-                validation="Mixpanel funnel + 8 recorded sessions"
-                bgColor="bg-green-50/10"
-                borderColor="border-green-500"
-                icon={<TrendingUp className="w-5 h-5 text-green-400" />}
-              />
+                <div className="bg-[#1A1A1A]/50 p-5 rounded-lg border-l-4 border-[#00FFB3]">
+                  <h4 className="text-sm font-semibold text-[#00FFB3] mb-3 uppercase tracking-wider">
+                    Design & Strategy
+                  </h4>
+                  <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-[#00FFB3] rounded-full mt-2 flex-shrink-0" />
+                      <span>Designed visual rule builder (no-code interface)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-[#00FFB3] rounded-full mt-2 flex-shrink-0" />
+                      <span>Created AI confidence chips + explainability system</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-[#00FFB3] rounded-full mt-2 flex-shrink-0" />
+                      <span>Built inline audit trail drawer for compliance</span>
+                    </li>
+                  </ul>
+                </div>
 
-              <MetricCard
-                metric="↑32% Demo-to-Conversion Rate"
-                baseline="22% (Q1 2023, n=24 demos)"
-                result="29% (Q3 2023, n=23 demos)"
-                method="A/B test (explainability features)"
-                validation="HubSpot + manual analysis"
-                bgColor="bg-amber-50/10"
-                borderColor="border-amber-500"
-                icon={<Target className="w-5 h-5 text-amber-400" />}
-              />
+                <div className="bg-[#1A1A1A]/50 p-5 rounded-lg border-l-4 border-[#FFD700]">
+                  <h4 className="text-sm font-semibold text-[#FFD700] mb-3 uppercase tracking-wider">
+                    Testing & Validation
+                  </h4>
+                  <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-[#FFD700] rounded-full mt-2 flex-shrink-0" />
+                      <span>Ran 4 usability test cycles with 12 CPAs</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-[#FFD700] rounded-full mt-2 flex-shrink-0" />
+                      <span>A/B tested explainability features (32% conversion lift)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-[#FFD700] rounded-full mt-2 flex-shrink-0" />
+                      <span>Validated metrics via Mixpanel, GA, and Jira analysis</span>
+                    </li>
+                  </ul>
+                </div>
 
-              <MetricCard
-                metric="↓85% Engineering Dependency"
-                baseline="85% tasks needed engineer"
-                result="12% tasks needed engineer"
-                method="200 requests over 6 months"
-                validation="Jira ticket analysis"
-                bgColor="bg-purple-50/10"
-                borderColor="border-purple-500"
-                icon={<Zap className="w-5 h-5 text-purple-400" />}
-              />
-
-              <MetricCard
-                metric="↑150% Anomaly Detection Coverage"
-                baseline="35% FMV errors caught"
-                result="88% FMV errors caught"
-                method="Retrospective audit of 500 transactions"
-                validation="Internal audit + CPA feedback"
-                bgColor="bg-blue-50/10"
-                borderColor="border-blue-500"
-                icon={<Activity className="w-5 h-5 text-blue-400" />}
-              />
+                <div className="bg-[#1A1A1A]/50 p-5 rounded-lg border-l-4 border-purple-500">
+                  <h4 className="text-sm font-semibold text-purple-400 mb-3 uppercase tracking-wider">
+                    Collaboration & Advocacy
+                  </h4>
+                  <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
+                      <span>Facilitated CTO-CPA workshop on AI override controls</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
+                      <span>Delivered dev-ready Figma specs with documentation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1 h-1 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
+                      <span>Championed user-first decisions against automation bias</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            {/* Business Impact */}
-            <div className="bg-[#1A1A1A]/50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-white mb-4">
+            {/* Measurable Impact */}
+            <div className="mb-10">
+              <h3 className="text-xl font-semibold text-white mb-6">
+                Measurable Impact
+              </h3>
+              <p className="text-sm text-[#9CA3AF] mb-6 max-w-[75ch]">
+                All metrics tracked via Mixpanel funnels, Google Analytics events, Jira ticket
+                analysis, and recorded usability sessions (Oct 2022 - Aug 2023)
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <MetricCard
+                  metric="↓45% CPA Onboarding Time"
+                  baseline="2.5h average (Oct 2022, n=6 CPAs)"
+                  result="1.4h average (Aug 2023, n=6 CPAs)"
+                  method="Task analysis (Wallet → Rule → Export)"
+                  validation="Mixpanel funnel + 8 recorded sessions"
+                  bgColor="bg-green-50/10"
+                  borderColor="border-green-500"
+                  icon={<TrendingUp className="w-5 h-5 text-green-400" />}
+                />
+
+                <MetricCard
+                  metric="↑32% Demo-to-Conversion Rate"
+                  baseline="22% (Q1 2023, n=24 demos)"
+                  result="29% (Q3 2023, n=23 demos)"
+                  method="A/B test (explainability features)"
+                  validation="HubSpot + manual analysis"
+                  bgColor="bg-amber-50/10"
+                  borderColor="border-amber-500"
+                  icon={<Target className="w-5 h-5 text-amber-400" />}
+                />
+
+                <MetricCard
+                  metric="↓85% Engineering Dependency"
+                  baseline="85% tasks needed engineer"
+                  result="12% tasks needed engineer"
+                  method="200 requests over 6 months"
+                  validation="Jira ticket analysis"
+                  bgColor="bg-purple-50/10"
+                  borderColor="border-purple-500"
+                  icon={<Zap className="w-5 h-5 text-purple-400" />}
+                />
+
+                <MetricCard
+                  metric="↑150% Anomaly Detection Coverage"
+                  baseline="35% FMV errors caught"
+                  result="88% FMV errors caught"
+                  method="Retrospective audit of 500 transactions"
+                  validation="Internal audit + CPA feedback"
+                  bgColor="bg-blue-50/10"
+                  borderColor="border-blue-500"
+                  icon={<Activity className="w-5 h-5 text-blue-400" />}
+                />
+              </div>
+            </div>
+
+            {/* Business Outcomes */}
+            <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#00FFB3]/5 rounded-lg p-6 sm:p-8 border border-[#00D4FF]/20">
+              <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
+                <Coins className="w-6 h-6 text-[#00D4FF]" />
                 Business Outcomes
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div className="flex items-start gap-2 text-sm text-[#D1D5DB]">
-                  <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
+                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span>
-                    Closed 3 enterprise deals in 6 months ($450K+ ARR)
+                    <strong className="text-white">$450K+ ARR:</strong> Closed 3 enterprise
+                    deals in 6 months citing explainability as key factor
                   </span>
                 </div>
-                <div className="flex items-start gap-2 text-sm text-[#D1D5DB]">
-                  <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
-                  <span>Reduced support tickets by 40%</span>
-                </div>
-                <div className="flex items-start gap-2 text-sm text-[#D1D5DB]">
-                  <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
-                  <span>Scaled to DAOs, hedge funds, and 50+ CPA firms</span>
-                </div>
-                <div className="flex items-start gap-2 text-sm text-[#D1D5DB]">
-                  <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
+                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
+                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span>
-                    Zero FMV disputes post-launch (down from 8 in beta)
+                    <strong className="text-white">40% support reduction:</strong> Visual rule
+                    builder eliminated engineering bottlenecks
+                  </span>
+                </div>
+                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
+                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span>
+                    <strong className="text-white">50+ CPA firms:</strong> Scaled to DAOs,
+                    hedge funds, and enterprise accounting practices
+                  </span>
+                </div>
+                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
+                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span>
+                    <strong className="text-white">Zero FMV disputes:</strong> Contextual
+                    anomaly detection prevented tax penalties (down from 8 in beta)
                   </span>
                 </div>
               </div>
+            </div>
+
+            {/* Key Takeaway */}
+            <div className="mt-8 bg-[#1A1A1A]/50 rounded-lg p-6 border-l-4 border-[#FFD700]">
+              <h3 className="text-lg font-semibold text-[#FFD700] mb-3">
+                Key Takeaway
+              </h3>
+              <p className="text-base text-[#D1D5DB] leading-relaxed max-w-[75ch]">
+                Trust isn't a feature—it's a business strategy. By making AI explainable and
+                giving CPAs control, we transformed skepticism into advocacy. The confidence
+                chips alone closed a $180K enterprise deal because, as one Big 4 partner said:
+                <em className="block mt-3 text-white italic">
+                  "Your confidence chips are the only AI explanation that our CPAs trust."
+                </em>
+              </p>
             </div>
           </div>
         </section>
