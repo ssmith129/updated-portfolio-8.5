@@ -225,7 +225,7 @@
       Limited Access:
     </text>
     <text x="520" y="845" font-family="Arial, sans-serif" font-size="11" fill="#374151">
-      • Data ingestion & wallet sync
+      • Data ingestion &amp; wallet sync
     </text>
     <text x="520" y="865" font-family="Arial, sans-serif" font-size="11" fill="#374151">
       • Anomaly detection flagging
