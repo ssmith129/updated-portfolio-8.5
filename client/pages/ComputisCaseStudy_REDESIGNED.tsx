@@ -450,7 +450,7 @@ export default function ComputisCaseStudy() {
               User Journey Transformation
             </h2>
 
-            {/* PLACEHOLDER: Journey Map - Before */}
+            {/* Journey Map - Before */}
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <span className="bg-red-100/10 text-red-400 px-3 py-1 rounded-full text-sm font-medium">
@@ -460,23 +460,12 @@ export default function ComputisCaseStudy() {
                   CPA Journey — Current State (Manual + Engineer-Dependent)
                 </h3>
               </div>
-              <div className="bg-[#1A1A1A]/50 border-2 border-dashed border-[#6B7280] rounded-lg p-12 text-center">
-                <p className="text-[#6B7280] text-sm mb-2">
-                  📊 VISUAL ASSET PLACEHOLDER
-                </p>
-                <p className="text-white font-semibold mb-2">
-                  Journey Map — Current State
-                </p>
-                <p className="text-[#9CA3AF] text-xs max-w-[50ch] mx-auto">
-                  Dimensions: 1400px × 900px | Format: WebP
-                  <br />
-                  Shows 5 stages: Receive Data → Request Classification → Wait
-                  for Engineering → Review + Adjust → Export for Filing
-                  <br />
-                  Highlights: 85% time waiting, no audit trail, 2.5h total time,
-                  black-box AI
-                </p>
-              </div>
+              <img
+                src="/assets/journey-map-before.svg"
+                alt="CPA journey map showing current state before Computis: 5 stages from receiving client data to exporting for filing. Shows 85% of time waiting for engineers (2-3 days), no audit trail, black-box AI, frequent FMV errors, CSV-only exports. Total time: 2.5 hours per client. Pain points highlighted in red with declining emotional journey from neutral to very frustrated."
+                className="w-full rounded-lg shadow-md border border-[#6B7280]/30 hover:shadow-xl transition-shadow duration-300"
+                loading="lazy"
+              />
             </div>
 
             {/* PLACEHOLDER: Journey Map - After */}
