@@ -202,19 +202,18 @@ export default function ComputisCaseStudy() {
         <div className="mb-8">
           {/* Kicker Badge */}
           <span className="inline-block bg-[#f59e0b] text-white px-4 py-2 rounded-[20px] text-[14px] font-medium tracking-[-0.14px] mb-6">
-            FinTech • AI Transparency • 2023
+            FinTech UX Case Study • 12 min read
           </span>
 
           {/* Headline */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-white leading-[110%] tracking-[-1.2px] mb-6 max-w-[75ch]">
-            CPAs Control the AI, Not the Other Way Around
+            Computis — Redefining Crypto Tax Automation
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#6B7280] leading-[140%] tracking-[-0.24px] max-w-[75ch]">
-            How explainable AI design turned skeptical accountants into
-            advocates—and closed 3 enterprise deals in 6 months
-          </p>
+          <h2 className="text-lg sm:text-xl lg:text-2xl font-normal text-[#6B7280] leading-[140%] tracking-[-0.24px] max-w-[75ch]">
+            From opaque Python scripts to transparent, CPA-first enterprise platform
+          </h2>
         </div>
       </header>
 
