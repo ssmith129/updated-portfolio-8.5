@@ -478,24 +478,12 @@ export default function ComputisCaseStudy() {
                   CPA Journey — Future State (Self-Service + AI-Assisted)
                 </h3>
               </div>
-              <div className="bg-[#1A1A1A]/50 border-2 border-dashed border-[#6B7280] rounded-lg p-12 text-center">
-                <p className="text-[#6B7280] text-sm mb-2">
-                  📊 VISUAL ASSET PLACEHOLDER
-                </p>
-                <p className="text-white font-semibold mb-2">
-                  Journey Map — Future State
-                </p>
-                <p className="text-[#9CA3AF] text-xs max-w-[50ch] mx-auto">
-                  Dimensions: 1400px × 900px | Format: WebP
-                  <br />
-                  Shows 5 stages: Import Wallets → Build Rules → Review AI
-                  Classifications → Override + Annotate → Export (IRS 8949 +
-                  QuickBooks)
-                  <br />
-                  Improvements: Self-service, visual rule builder, 45% time
-                  reduction (1.4h total), confidence chips
-                </p>
-              </div>
+              <img
+                src="/assets/journey-map-after.svg"
+                alt="CPA journey map showing future state with Computis: 5 improved stages - Import Wallets (self-service), Build Rules (no-code), Review AI Classifications, Override & Annotate, Export (IRS 8949 + QuickBooks). Shows 45% time reduction from 2.5h to 1.4h, validated with 12 CPAs. Improvements highlighted in green with positive emotional journey from happy to relieved."
+                className="w-full rounded-lg shadow-md border border-[#6B7280]/30 hover:shadow-xl transition-shadow duration-300"
+                loading="lazy"
+              />
             </div>
 
             {/* Journey Impact */}
@@ -520,26 +508,12 @@ export default function ComputisCaseStudy() {
               Information Architecture
             </h2>
 
-            <div className="bg-[#1A1A1A]/50 border-2 border-dashed border-[#6B7280] rounded-lg p-12 text-center mb-6">
-              <p className="text-[#6B7280] text-sm mb-2">
-                🗂️ VISUAL ASSET PLACEHOLDER
-              </p>
-              <p className="text-white font-semibold mb-2">
-                IA Sitemap Diagram
-              </p>
-              <p className="text-[#9CA3AF] text-xs max-w-[60ch] mx-auto">
-                Dimensions: 1400px × 1000px | Format: WebP
-                <br />
-                Modular hierarchy: Dashboard → Clients → Wallets → Transactions
-                → Rules → Reports
-                <br />
-                Shows role-based permission layers (CPA, Analyst, Admin) with
-                color-coded badges
-                <br />
-                Annotations: Self-service entry point, audit trail at every
-                level, modular structure
-              </p>
-            </div>
+            <img
+              src="/assets/ia-diagram.svg"
+              alt="Computis information architecture diagram showing modular sitemap hierarchy: Dashboard at top level connecting to 5 main sections (Clients, Wallets, Rules, Reports, Settings). Multi-level navigation flows from Clients to Wallets to Transactions to Rules. Role-based permission layers shown for CPA (full access), Analyst (limited), and Admin (management). Self-service entry points, audit trail at every level, modular structure for jurisdiction expansion."
+              className="w-full rounded-lg shadow-md border border-[#6B7280]/30 hover:shadow-xl transition-shadow duration-300 mb-6"
+              loading="lazy"
+            />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50/10 p-4 rounded-lg border-l-4 border-blue-500">
