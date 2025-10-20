@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <!-- Background -->
+  <rect width="1400" height="900" fill="#F0FDF4"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1F2937" text-anchor="middle">
+    CPA JOURNEY — FUTURE STATE (With Computis)
+  </text>
+  
+  <!-- Column Headers (5 Stages) -->
+  <g id="stage-headers">
+    <!-- Stage 1 -->
+    <rect x="30" y="80" width="250" height="60" fill="#7C3AED" rx="8"/>
+    <text x="155" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      1. Import Wallets
+    </text>
+    <text x="155" y="125" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">
+      (Self-Service)
+    </text>
+    
+    <!-- Stage 2 -->
+    <rect x="300" y="80" width="250" height="60" fill="#7C3AED" rx="8"/>
+    <text x="425" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      2. Build Rules
+    </text>
+    <text x="425" y="125" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">
+      (No-Code)
+    </text>
+    
+    <!-- Stage 3 -->
+    <rect x="570" y="80" width="250" height="60" fill="#7C3AED" rx="8"/>
+    <text x="695" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      3. Review AI
+    </text>
+    <text x="695" y="125" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">
+      Classifications
+    </text>
+    
+    <!-- Stage 4 -->
+    <rect x="840" y="80" width="250" height="60" fill="#7C3AED" rx="8"/>
+    <text x="965" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      4. Override +
+    </text>
+    <text x="965" y="125" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">
+      Annotate
+    </text>
+    
+    <!-- Stage 5 -->
+    <rect x="1110" y="80" width="250" height="60" fill="#7C3AED" rx="8"/>
+    <text x="1235" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">
+      5. Export
+    </text>
+    <text x="1235" y="125" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">
+      (IRS 8949 + QuickBooks)
+    </text>
+  </g>
+  
+  <!-- Row 1: Actions -->
+  <g id="actions-row">
+    <text x="30" y="190" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F2937">
+      Actions:
+    </text>
+    
+    <rect x="30" y="200" width="250" height="80" fill="white" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="155" y="235" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • One-click CSV import
+    </text>
+    <text x="155" y="255" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • Auto-sync wallets
+    </text>
+    
+    <rect x="300" y="200" width="250" height="80" fill="white" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="425" y="235" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • Visual drag-and-drop
+    </text>
+    <text x="425" y="255" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • Live preview pane
+    </text>
+    
+    <rect x="570" y="200" width="250" height="80" fill="white" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="695" y="235" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • Scan confidence chips
+    </text>
+    <text x="695" y="255" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • Hover for reasoning
+    </text>
+    
+    <rect x="840" y="200" width="250" height="80" fill="white" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="965" y="235" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • One-click override
+    </text>
+    <text x="965" y="255" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • Inline audit trail
+    </text>
+    
+    <rect x="1110" y="200" width="250" height="80" fill="white" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="1235" y="235" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • IRS 8949 auto-format
+    </text>
+    <text x="1235" y="255" font-family="Arial, sans-serif" font-size="12" fill="#7C3AED" text-anchor="middle">
+      • QuickBooks integration
+    </text>
+  </g>
+  
+  <!-- Row 2: Improvements (GREEN HIGHLIGHTS) -->
+  <g id="improvements-row">
+    <text x="30" y="320" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F2937">
+      Improvements:
+    </text>
+    
+    <rect x="30" y="330" width="250" height="100" fill="#D1FAE5" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="40" y="355" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ Self-service import
+    </text>
+    <text x="40" y="375" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ No engineer needed
+    </text>
+    <text x="40" y="395" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ Automated sync
+    </text>
+    
+    <rect x="300" y="330" width="250" height="100" fill="#D1FAE5" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="310" y="355" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ Visual no-code builder
+    </text>
+    <text x="310" y="375" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ <90 sec rule creation
+    </text>
+    <text x="310" y="395" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ Excel-like familiar
+    </text>
+    
+    <rect x="570" y="330" width="250" height="100" fill="#D1FAE5" stroke="#10B981" stroke-width="3" rx="4"/>
+    <text x="580" y="355" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#065F46">
+      ✓ INSTANT FEEDBACK
+    </text>
+    <text x="580" y="375" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ Color-coded confidence
+    </text>
+    <text x="580" y="395" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ Hover explanations
+    </text>
+    
+    <rect x="840" y="330" width="250" height="100" fill="#D1FAE5" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="850" y="355" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ Full transparency
+    </text>
+    <text x="850" y="375" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ CPA control maintained
+    </text>
+    <text x="850" y="395" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ IRS-defensible audit
+    </text>
+    
+    <rect x="1110" y="330" width="250" height="100" fill="#D1FAE5" stroke="#10B981" stroke-width="2" rx="4"/>
+    <text x="1120" y="355" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ One-click exports
+    </text>
+    <text x="1120" y="375" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ IRS 8949 compliant
+    </text>
+    <text x="1120" y="395" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ QuickBooks ready
+    </text>
+  </g>
+  
+  <!-- Row 3: Emotions -->
+  <g id="emotions-row">
+    <text x="30" y="470" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F2937">
+      Emotions:
+    </text>
+    
+    <text x="155" y="510" font-family="Arial, sans-serif" font-size="48">😊</text>
+    <text x="155" y="540" font-family="Arial, sans-serif" font-size="12" fill="#6B7280" text-anchor="middle">
+      Happy
+    </text>
+    
+    <text x="425" y="510" font-family="Arial, sans-serif" font-size="48">😄</text>
+    <text x="425" y="540" font-family="Arial, sans-serif" font-size="12" fill="#6B7280" text-anchor="middle">
+      Delighted
+    </text>
+    
+    <text x="695" y="510" font-family="Arial, sans-serif" font-size="48">😌</text>
+    <text x="695" y="540" font-family="Arial, sans-serif" font-size="12" fill="#6B7280" text-anchor="middle">
+      Confident
+    </text>
+    
+    <text x="965" y="510" font-family="Arial, sans-serif" font-size="48">👍</text>
+    <text x="965" y="540" font-family="Arial, sans-serif" font-size="12" fill="#6B7280" text-anchor="middle">
+      Empowered
+    </text>
+    
+    <text x="1235" y="510" font-family="Arial, sans-serif" font-size="48">🎉</text>
+    <text x="1235" y="540" font-family="Arial, sans-serif" font-size="12" fill="#6B7280" text-anchor="middle">
+      Relieved
+    </text>
+  </g>
+  
+  <!-- Row 4: Time Spent -->
+  <g id="time-row">
+    <text x="30" y="590" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F2937">
+      Time Spent:
+    </text>
+    
+    <rect x="30" y="600" width="250" height="50" fill="#D1FAE5" stroke="#10B981" rx="4"/>
+    <text x="155" y="632" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#065F46" text-anchor="middle">
+      5 min
+    </text>
+    
+    <rect x="300" y="600" width="250" height="50" fill="#D1FAE5" stroke="#10B981" rx="4"/>
+    <text x="425" y="625" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#065F46" text-anchor="middle">
+      90 sec
+    </text>
+    <text x="425" y="642" font-family="Arial, sans-serif" font-size="11" fill="#065F46" text-anchor="middle">
+      (vs 2-3 days before)
+    </text>
+    
+    <rect x="570" y="600" width="250" height="50" fill="#D1FAE5" stroke="#10B981" stroke-width="3" rx="4"/>
+    <text x="695" y="625" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#065F46" text-anchor="middle">
+      30 MIN
+    </text>
+    <text x="695" y="642" font-family="Arial, sans-serif" font-size="11" fill="#065F46" text-anchor="middle">
+      (real-time review)
+    </text>
+    
+    <rect x="840" y="600" width="250" height="50" fill="#D1FAE5" stroke="#10B981" rx="4"/>
+    <text x="965" y="632" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#065F46" text-anchor="middle">
+      15 min
+    </text>
+    
+    <rect x="1110" y="600" width="250" height="50" fill="#D1FAE5" stroke="#10B981" rx="4"/>
+    <text x="1235" y="632" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#065F46" text-anchor="middle">
+      5 min
+    </text>
+  </g>
+  
+  <!-- Total Time Banner -->
+  <rect x="400" y="700" width="600" height="80" fill="#10B981" rx="8"/>
+  <text x="700" y="735" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">
+    TOTAL TIME: 1.4 HOURS
+  </text>
+  <text x="700" y="760" font-family="Arial, sans-serif" font-size="14" fill="#D1FAE5" text-anchor="middle">
+    45% reduction from 2.5h → 1.4h (validated with 12 CPAs)
+  </text>
+  
+  <!-- Key Improvements -->
+  <g id="improvements">
+    <text x="30" y="830" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10B981">
+      Key Improvements:
+    </text>
+    <text x="30" y="855" font-family="Arial, sans-serif" font-size="12" fill="#065F46">
+      ✓ 85% ↓ engineering dependency  ✓ Audit trail at every step  ✓ AI transparency  ✓ 88% anomaly detection  ✓ One-click IRS exports
+    </text>
+  </g>
+</svg>
