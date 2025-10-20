@@ -152,7 +152,6 @@ export default function ComputisCaseStudy() {
     src: string;
     alt: string;
   } | null>(null);
-  const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
   const [allInsightsExpanded, setAllInsightsExpanded] = useState(false);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [isGifModalOpen, setIsGifModalOpen] = useState(false);
