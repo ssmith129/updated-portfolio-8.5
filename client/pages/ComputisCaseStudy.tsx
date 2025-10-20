@@ -15,7 +15,6 @@ import {
   ZoomIn,
   X,
   ChevronDown,
-  ChevronUp,
   ChevronRight,
   Coins,
   FileText,
