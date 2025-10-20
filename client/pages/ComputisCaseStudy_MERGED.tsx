@@ -348,7 +348,9 @@ export default function ComputisCaseStudy() {
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-2xl font-bold text-[#0080FF]">↑ 150%</span>
+                <span className="text-2xl font-bold text-[#0080FF]">
+                  ↑ 150%
+                </span>
                 <span className="text-sm text-[#D1D5DB]">
                   anomaly detection coverage
                 </span>
@@ -358,7 +360,8 @@ export default function ComputisCaseStudy() {
               <span className="text-xl">💼</span>
               <span className="text-sm text-[#D1D5DB] leading-relaxed">
                 Closed 3 enterprise deals ($450K+ ARR) and scaled to DAOs, hedge
-                funds, and 50+ CPA firms through explainable AI and audit-ready workflows
+                funds, and 50+ CPA firms through explainable AI and audit-ready
+                workflows
               </span>
             </div>
           </div>
@@ -435,31 +438,36 @@ export default function ComputisCaseStudy() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span className="text-sm text-[#D1D5DB] leading-relaxed">
-                    Enable CPAs to self-serve without engineers through no-code visual tools
+                    Enable CPAs to self-serve without engineers through no-code
+                    visual tools
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span className="text-sm text-[#D1D5DB] leading-relaxed">
-                    Build audit-ready workflows with full transparency and compliance tracking
+                    Build audit-ready workflows with full transparency and
+                    compliance tracking
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span className="text-sm text-[#D1D5DB] leading-relaxed">
-                    Reduce compliance risk through explainable AI with inline confidence indicators
+                    Reduce compliance risk through explainable AI with inline
+                    confidence indicators
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span className="text-sm text-[#D1D5DB] leading-relaxed">
-                    Generate IRS 8949 and QuickBooks-ready outputs for seamless filing
+                    Generate IRS 8949 and QuickBooks-ready outputs for seamless
+                    filing
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span className="text-sm text-[#D1D5DB] leading-relaxed">
-                    Scale for DAOs, hedge funds, and enterprise CPA firms with multi-tenant architecture
+                    Scale for DAOs, hedge funds, and enterprise CPA firms with
+                    multi-tenant architecture
                   </span>
                 </li>
               </ul>
@@ -1442,11 +1450,16 @@ export default function ComputisCaseStudy() {
                   <ul className="space-y-2 text-sm text-[#D1D5DB]">
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-[#00D4FF] rounded-full mt-2 flex-shrink-0" />
-                      <span>Led 8 CPA interviews + 6 workflow shadowing sessions</span>
+                      <span>
+                        Led 8 CPA interviews + 6 workflow shadowing sessions
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-[#00D4FF] rounded-full mt-2 flex-shrink-0" />
-                      <span>Conducted competitive analysis of TaxBit, Cryptio, CoinTracker</span>
+                      <span>
+                        Conducted competitive analysis of TaxBit, Cryptio,
+                        CoinTracker
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-[#00D4FF] rounded-full mt-2 flex-shrink-0" />
@@ -1462,15 +1475,21 @@ export default function ComputisCaseStudy() {
                   <ul className="space-y-2 text-sm text-[#D1D5DB]">
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-[#00FFB3] rounded-full mt-2 flex-shrink-0" />
-                      <span>Designed visual rule builder (no-code interface)</span>
+                      <span>
+                        Designed visual rule builder (no-code interface)
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-[#00FFB3] rounded-full mt-2 flex-shrink-0" />
-                      <span>Created AI confidence chips + explainability system</span>
+                      <span>
+                        Created AI confidence chips + explainability system
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-[#00FFB3] rounded-full mt-2 flex-shrink-0" />
-                      <span>Built inline audit trail drawer for compliance</span>
+                      <span>
+                        Built inline audit trail drawer for compliance
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1486,11 +1505,15 @@ export default function ComputisCaseStudy() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-[#FFD700] rounded-full mt-2 flex-shrink-0" />
-                      <span>A/B tested explainability features (32% conversion lift)</span>
+                      <span>
+                        A/B tested explainability features (32% conversion lift)
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-[#FFD700] rounded-full mt-2 flex-shrink-0" />
-                      <span>Validated metrics via Mixpanel, GA, and Jira analysis</span>
+                      <span>
+                        Validated metrics via Mixpanel, GA, and Jira analysis
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1502,15 +1525,21 @@ export default function ComputisCaseStudy() {
                   <ul className="space-y-2 text-sm text-[#D1D5DB]">
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
-                      <span>Facilitated CTO-CPA workshop on AI override controls</span>
+                      <span>
+                        Facilitated CTO-CPA workshop on AI override controls
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
-                      <span>Delivered dev-ready Figma specs with documentation</span>
+                      <span>
+                        Delivered dev-ready Figma specs with documentation
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="w-1 h-1 bg-purple-500 rounded-full mt-2 flex-shrink-0" />
-                      <span>Championed user-first decisions against automation bias</span>
+                      <span>
+                        Championed user-first decisions against automation bias
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1523,8 +1552,9 @@ export default function ComputisCaseStudy() {
                 Measurable Impact
               </h3>
               <p className="text-sm text-[#9CA3AF] mb-6 max-w-[75ch]">
-                All metrics tracked via Mixpanel funnels, Google Analytics events, Jira ticket
-                analysis, and recorded usability sessions (Oct 2022 - Aug 2023)
+                All metrics tracked via Mixpanel funnels, Google Analytics
+                events, Jira ticket analysis, and recorded usability sessions
+                (Oct 2022 - Aug 2023)
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1584,29 +1614,34 @@ export default function ComputisCaseStudy() {
                 <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span>
-                    <strong className="text-white">$450K+ ARR:</strong> Closed 3 enterprise
-                    deals in 6 months citing explainability as key factor
+                    <strong className="text-white">$450K+ ARR:</strong> Closed 3
+                    enterprise deals in 6 months citing explainability as key
+                    factor
                   </span>
                 </div>
                 <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span>
-                    <strong className="text-white">40% support reduction:</strong> Visual rule
-                    builder eliminated engineering bottlenecks
+                    <strong className="text-white">
+                      40% support reduction:
+                    </strong>{" "}
+                    Visual rule builder eliminated engineering bottlenecks
                   </span>
                 </div>
                 <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span>
-                    <strong className="text-white">50+ CPA firms:</strong> Scaled to DAOs,
-                    hedge funds, and enterprise accounting practices
+                    <strong className="text-white">50+ CPA firms:</strong>{" "}
+                    Scaled to DAOs, hedge funds, and enterprise accounting
+                    practices
                   </span>
                 </div>
                 <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
                   <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
                   <span>
-                    <strong className="text-white">Zero FMV disputes:</strong> Contextual
-                    anomaly detection prevented tax penalties (down from 8 in beta)
+                    <strong className="text-white">Zero FMV disputes:</strong>{" "}
+                    Contextual anomaly detection prevented tax penalties (down
+                    from 8 in beta)
                   </span>
                 </div>
               </div>
@@ -1618,11 +1653,13 @@ export default function ComputisCaseStudy() {
                 Key Takeaway
               </h3>
               <p className="text-base text-[#D1D5DB] leading-relaxed max-w-[75ch]">
-                Trust isn't a feature—it's a business strategy. By making AI explainable and
-                giving CPAs control, we transformed skepticism into advocacy. The confidence
-                chips alone closed a $180K enterprise deal because, as one Big 4 partner said:
+                Trust isn't a feature—it's a business strategy. By making AI
+                explainable and giving CPAs control, we transformed skepticism
+                into advocacy. The confidence chips alone closed a $180K
+                enterprise deal because, as one Big 4 partner said:
                 <em className="block mt-3 text-white italic">
-                  "Your confidence chips are the only AI explanation that our CPAs trust."
+                  "Your confidence chips are the only AI explanation that our
+                  CPAs trust."
                 </em>
               </p>
             </div>
