@@ -1521,30 +1521,40 @@ export default function ComputisCaseStudy() {
               </h2>
               <button
                 onClick={() => {
-                  const jsonContent = JSON.stringify({
-                    businessOutcomes: [
-                      {
-                        metric: "$450K+ ARR",
-                        description: "Closed 3 enterprise deals in 6 months citing explainability as key factor"
+                  const jsonContent = JSON.stringify(
+                    {
+                      businessOutcomes: [
+                        {
+                          metric: "$450K+ ARR",
+                          description:
+                            "Closed 3 enterprise deals in 6 months citing explainability as key factor",
+                        },
+                        {
+                          metric: "40% support reduction",
+                          description:
+                            "Visual rule builder eliminated engineering bottlenecks",
+                        },
+                        {
+                          metric: "50+ CPA firms",
+                          description:
+                            "Scaled to DAOs, hedge funds, and enterprise accounting practices",
+                        },
+                        {
+                          metric: "Zero FMV disputes",
+                          description:
+                            "Contextual anomaly detection prevented tax penalties (down from 8 in beta)",
+                        },
+                      ],
+                      keyTakeaway: {
+                        insight:
+                          "Trust isn't a feature—it's a business strategy. By making AI explainable and giving CPAs control, we transformed skepticism into advocacy. The confidence chips alone closed a $180K enterprise deal because, as one Big 4 partner said:",
+                        quote:
+                          "Your confidence chips are the only AI explanation that our CPAs trust.",
                       },
-                      {
-                        metric: "40% support reduction",
-                        description: "Visual rule builder eliminated engineering bottlenecks"
-                      },
-                      {
-                        metric: "50+ CPA firms",
-                        description: "Scaled to DAOs, hedge funds, and enterprise accounting practices"
-                      },
-                      {
-                        metric: "Zero FMV disputes",
-                        description: "Contextual anomaly detection prevented tax penalties (down from 8 in beta)"
-                      }
-                    ],
-                    keyTakeaway: {
-                      insight: "Trust isn't a feature—it's a business strategy. By making AI explainable and giving CPAs control, we transformed skepticism into advocacy. The confidence chips alone closed a $180K enterprise deal because, as one Big 4 partner said:",
-                      quote: "Your confidence chips are the only AI explanation that our CPAs trust."
-                    }
-                  }, null, 2);
+                    },
+                    null,
+                    2,
+                  );
                   navigator.clipboard.writeText(jsonContent);
                 }}
                 className="flex items-center gap-2 px-4 py-2 bg-[#1A1A1A] hover:bg-[#252525] border border-[#6B7280]/30 hover:border-[#00D4FF]/50 rounded-lg transition-all duration-300 text-sm text-[#9CA3AF] hover:text-white"
@@ -1558,34 +1568,92 @@ export default function ComputisCaseStudy() {
             {/* JSON Code Block */}
             <div className="bg-[#0A0A0A] rounded-lg border border-[#1A1A1A] overflow-hidden">
               <div className="bg-[#1A1A1A]/50 px-4 py-2 border-b border-[#6B7280]/30">
-                <span className="text-xs font-mono text-[#9CA3AF]">outcome-impact.json</span>
+                <span className="text-xs font-mono text-[#9CA3AF]">
+                  outcome-impact.json
+                </span>
               </div>
               <pre className="p-6 overflow-x-auto">
                 <code className="text-sm font-mono leading-relaxed">
                   <span className="text-[#6B7280]">{"{"}</span>
-                  {"\n"}  <span className="text-[#00D4FF]">"businessOutcomes"</span><span className="text-[#6B7280]">:</span> <span className="text-[#6B7280]">[</span>
-                  {"\n"}    <span className="text-[#6B7280]">{"{"}</span>
-                  {"\n"}      <span className="text-[#00D4FF]">"metric"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"$450K+ ARR"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00D4FF]">"description"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Closed 3 enterprise deals in 6 months citing explainability as key factor"</span>
-                  {"\n"}    <span className="text-[#6B7280]">{"}"}</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#6B7280]">{"{"}</span>
-                  {"\n"}      <span className="text-[#00D4FF]">"metric"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"40% support reduction"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00D4FF]">"description"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Visual rule builder eliminated engineering bottlenecks"</span>
-                  {"\n"}    <span className="text-[#6B7280]">{"}"}</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#6B7280]">{"{"}</span>
-                  {"\n"}      <span className="text-[#00D4FF]">"metric"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"50+ CPA firms"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00D4FF]">"description"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Scaled to DAOs, hedge funds, and enterprise accounting practices"</span>
-                  {"\n"}    <span className="text-[#6B7280]">{"}"}</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#6B7280]">{"{"}</span>
-                  {"\n"}      <span className="text-[#00D4FF]">"metric"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Zero FMV disputes"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00D4FF]">"description"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Contextual anomaly detection prevented tax penalties (down from 8 in beta)"</span>
-                  {"\n"}    <span className="text-[#6B7280]">{"}"}</span>
-                  {"\n"}  <span className="text-[#6B7280]">]</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}  <span className="text-[#00D4FF]">"keyTakeaway"</span><span className="text-[#6B7280]">:</span> <span className="text-[#6B7280]">{"{"}</span>
-                  {"\n"}    <span className="text-[#00D4FF]">"insight"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Trust isn't a feature—it's a business strategy. By making AI explainable and giving CPAs control, we transformed skepticism into advocacy. The confidence chips alone closed a $180K enterprise deal because, as one Big 4 partner said:"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00D4FF]">"quote"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Your confidence chips are the only AI explanation that our CPAs trust."</span>
-                  {"\n"}  <span className="text-[#6B7280]">{"}"}</span>
-                  {"\n"}<span className="text-[#6B7280]">{"}"}</span>
+                  {"\n"}{" "}
+                  <span className="text-[#00D4FF]">"businessOutcomes"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#6B7280]">[</span>
+                  {"\n"} <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"} <span className="text-[#00D4FF]">"metric"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">"$450K+ ARR"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"description"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "Closed 3 enterprise deals in 6 months citing explainability
+                    as key factor"
+                  </span>
+                  {"\n"} <span className="text-[#6B7280]">{"}"}</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"} <span className="text-[#00D4FF]">"metric"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "40% support reduction"
+                  </span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"description"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "Visual rule builder eliminated engineering bottlenecks"
+                  </span>
+                  {"\n"} <span className="text-[#6B7280]">{"}"}</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"} <span className="text-[#00D4FF]">"metric"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">"50+ CPA firms"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"description"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "Scaled to DAOs, hedge funds, and enterprise accounting
+                    practices"
+                  </span>
+                  {"\n"} <span className="text-[#6B7280]">{"}"}</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"} <span className="text-[#00D4FF]">"metric"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">"Zero FMV disputes"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"description"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "Contextual anomaly detection prevented tax penalties (down
+                    from 8 in beta)"
+                  </span>
+                  {"\n"} <span className="text-[#6B7280]">{"}"}</span>
+                  {"\n"} <span className="text-[#6B7280]">]</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"keyTakeaway"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"} <span className="text-[#00D4FF]">"insight"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "Trust isn't a feature—it's a business strategy. By making
+                    AI explainable and giving CPAs control, we transformed
+                    skepticism into advocacy. The confidence chips alone closed
+                    a $180K enterprise deal because, as one Big 4 partner said:"
+                  </span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"quote"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "Your confidence chips are the only AI explanation that our
+                    CPAs trust."
+                  </span>
+                  {"\n"} <span className="text-[#6B7280]">{"}"}</span>
+                  {"\n"}
+                  <span className="text-[#6B7280]">{"}"}</span>
                 </code>
               </pre>
             </div>
