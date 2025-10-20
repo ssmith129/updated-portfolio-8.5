@@ -212,7 +212,8 @@ export default function ComputisCaseStudy() {
 
           {/* Subtitle */}
           <h2 className="text-lg sm:text-xl lg:text-2xl font-normal text-[#6B7280] leading-[140%] tracking-[-0.24px] max-w-[75ch]">
-            From opaque Python scripts to transparent, CPA-first enterprise platform
+            From opaque Python scripts to transparent, CPA-first enterprise
+            platform
           </h2>
         </div>
       </header>
@@ -378,23 +379,39 @@ export default function ComputisCaseStudy() {
               </h2>
               <button
                 onClick={() => {
-                  const jsonContent = JSON.stringify({
-                    projectMetadata: {
-                      role: "Founding Lead Product Designer",
-                      team: ["CTO", "PM", "2 Engineers", "Design Agency Partner"],
-                      duration: "10 months (Discovery → Beta Launch)",
-                      platform: "Web SaaS (Desktop-first, responsive)",
-                      tools: ["Figma", "Miro", "Notion", "Jira", "GA", "Mixpanel"],
-                      industry: "FinTech • Crypto Tax Compliance"
+                  const jsonContent = JSON.stringify(
+                    {
+                      projectMetadata: {
+                        role: "Founding Lead Product Designer",
+                        team: [
+                          "CTO",
+                          "PM",
+                          "2 Engineers",
+                          "Design Agency Partner",
+                        ],
+                        duration: "10 months (Discovery → Beta Launch)",
+                        platform: "Web SaaS (Desktop-first, responsive)",
+                        tools: [
+                          "Figma",
+                          "Miro",
+                          "Notion",
+                          "Jira",
+                          "GA",
+                          "Mixpanel",
+                        ],
+                        industry: "FinTech • Crypto Tax Compliance",
+                      },
+                      objectives: [
+                        "Enable CPAs to self-serve without engineers through no-code visual tools",
+                        "Build audit-ready workflows with full transparency and compliance tracking",
+                        "Reduce compliance risk through explainable AI with inline confidence indicators",
+                        "Generate IRS 8949 and QuickBooks-ready outputs for seamless filing",
+                        "Scale for DAOs, hedge funds, and enterprise CPA firms with multi-tenant architecture",
+                      ],
                     },
-                    objectives: [
-                      "Enable CPAs to self-serve without engineers through no-code visual tools",
-                      "Build audit-ready workflows with full transparency and compliance tracking",
-                      "Reduce compliance risk through explainable AI with inline confidence indicators",
-                      "Generate IRS 8949 and QuickBooks-ready outputs for seamless filing",
-                      "Scale for DAOs, hedge funds, and enterprise CPA firms with multi-tenant architecture"
-                    ]
-                  }, null, 2);
+                    null,
+                    2,
+                  );
                   navigator.clipboard.writeText(jsonContent);
                 }}
                 className="flex items-center gap-2 px-4 py-2 bg-[#1A1A1A] hover:bg-[#252525] border border-[#6B7280]/30 hover:border-[#00D4FF]/50 rounded-lg transition-all duration-300 text-sm text-[#9CA3AF] hover:text-white"
@@ -408,39 +425,108 @@ export default function ComputisCaseStudy() {
             {/* JSON Code Block */}
             <div className="bg-[#0A0A0A] rounded-lg border border-[#1A1A1A] overflow-hidden">
               <div className="bg-[#1A1A1A]/50 px-4 py-2 border-b border-[#6B7280]/30">
-                <span className="text-xs font-mono text-[#9CA3AF]">project-overview.json</span>
+                <span className="text-xs font-mono text-[#9CA3AF]">
+                  project-overview.json
+                </span>
               </div>
               <pre className="p-6 overflow-x-auto">
                 <code className="text-sm font-mono leading-relaxed">
                   <span className="text-[#6B7280]">{"{"}</span>
-                  {"\n"}  <span className="text-[#00D4FF]">"projectMetadata"</span><span className="text-[#6B7280]">:</span> <span className="text-[#6B7280]">{"{"}</span>
-                  {"\n"}    <span className="text-[#00D4FF]">"role"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Founding Lead Product Designer"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00D4FF]">"team"</span><span className="text-[#6B7280]">:</span> <span className="text-[#6B7280]">[</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"CTO"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"PM"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"2 Engineers"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"Design Agency Partner"</span>
-                  {"\n"}    <span className="text-[#6B7280]">]</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00D4FF]">"duration"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"10 months (Discovery → Beta Launch)"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00D4FF]">"platform"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Web SaaS (Desktop-first, responsive)"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00D4FF]">"tools"</span><span className="text-[#6B7280]">:</span> <span className="text-[#6B7280]">[</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"Figma"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"Miro"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"Notion"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"Jira"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"GA"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}      <span className="text-[#00FFB3]">"Mixpanel"</span>
-                  {"\n"}    <span className="text-[#6B7280]">]</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00D4FF]">"industry"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"FinTech • Crypto Tax Compliance"</span>
-                  {"\n"}  <span className="text-[#6B7280]">{"}"}</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}  <span className="text-[#00D4FF]">"objectives"</span><span className="text-[#6B7280]">:</span> <span className="text-[#6B7280]">[</span>
-                  {"\n"}    <span className="text-[#00FFB3]">"Enable CPAs to self-serve without engineers through no-code visual tools"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00FFB3]">"Build audit-ready workflows with full transparency and compliance tracking"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00FFB3]">"Reduce compliance risk through explainable AI with inline confidence indicators"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00FFB3]">"Generate IRS 8949 and QuickBooks-ready outputs for seamless filing"</span><span className="text-[#6B7280]">,</span>
-                  {"\n"}    <span className="text-[#00FFB3]">"Scale for DAOs, hedge funds, and enterprise CPA firms with multi-tenant architecture"</span>
-                  {"\n"}  <span className="text-[#6B7280]">]</span>
-                  {"\n"}<span className="text-[#6B7280]">{"}"}</span>
+                  {"\n"}{" "}
+                  <span className="text-[#00D4FF]">"projectMetadata"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"} <span className="text-[#00D4FF]">"role"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "Founding Lead Product Designer"
+                  </span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"team"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#6B7280]">[</span>
+                  {"\n"} <span className="text-[#00FFB3]">"CTO"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00FFB3]">"PM"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00FFB3]">"2 Engineers"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"}{" "}
+                  <span className="text-[#00FFB3]">
+                    "Design Agency Partner"
+                  </span>
+                  {"\n"} <span className="text-[#6B7280]">]</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"duration"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "10 months (Discovery → Beta Launch)"
+                  </span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"platform"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "Web SaaS (Desktop-first, responsive)"
+                  </span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"tools"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#6B7280]">[</span>
+                  {"\n"} <span className="text-[#00FFB3]">"Figma"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00FFB3]">"Miro"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00FFB3]">"Notion"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00FFB3]">"Jira"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00FFB3]">"GA"</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00FFB3]">"Mixpanel"</span>
+                  {"\n"} <span className="text-[#6B7280]">]</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"industry"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#00FFB3]">
+                    "FinTech • Crypto Tax Compliance"
+                  </span>
+                  {"\n"} <span className="text-[#6B7280]">{"}"}</span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"} <span className="text-[#00D4FF]">"objectives"</span>
+                  <span className="text-[#6B7280]">:</span>{" "}
+                  <span className="text-[#6B7280]">[</span>
+                  {"\n"}{" "}
+                  <span className="text-[#00FFB3]">
+                    "Enable CPAs to self-serve without engineers through no-code
+                    visual tools"
+                  </span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"}{" "}
+                  <span className="text-[#00FFB3]">
+                    "Build audit-ready workflows with full transparency and
+                    compliance tracking"
+                  </span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"}{" "}
+                  <span className="text-[#00FFB3]">
+                    "Reduce compliance risk through explainable AI with inline
+                    confidence indicators"
+                  </span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"}{" "}
+                  <span className="text-[#00FFB3]">
+                    "Generate IRS 8949 and QuickBooks-ready outputs for seamless
+                    filing"
+                  </span>
+                  <span className="text-[#6B7280]">,</span>
+                  {"\n"}{" "}
+                  <span className="text-[#00FFB3]">
+                    "Scale for DAOs, hedge funds, and enterprise CPA firms with
+                    multi-tenant architecture"
+                  </span>
+                  {"\n"} <span className="text-[#6B7280]">]</span>
+                  {"\n"}
+                  <span className="text-[#6B7280]">{"}"}</span>
                 </code>
               </pre>
             </div>
