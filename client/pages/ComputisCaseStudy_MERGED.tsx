@@ -1512,72 +1512,98 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* OUTCOME & IMPACT SECTION */}
+        {/* OUTCOME & IMPACT SECTION - JSON FORMAT */}
         <section className="mt-16">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <h2 className="text-2xl sm:text-3xl font-medium text-white mb-8">
-              Outcome & Impact
-              <br />
-            </h2>
-
-            {/* Business Outcomes */}
-            <div className="bg-gradient-to-r from-[#00D4FF]/5 to-[#00FFB3]/5 rounded-lg p-6 sm:p-8 border border-[#00D4FF]/20">
-              <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                <Coins className="w-6 h-6 text-[#00D4FF]" />
-                Business Outcomes
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
-                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span>
-                    <strong className="text-white">$450K+ ARR:</strong> Closed 3
-                    enterprise deals in 6 months citing explainability as key
-                    factor
-                  </span>
-                </div>
-                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
-                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span>
-                    <strong className="text-white">
-                      40% support reduction:
-                    </strong>{" "}
-                    Visual rule builder eliminated engineering bottlenecks
-                  </span>
-                </div>
-                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
-                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span>
-                    <strong className="text-white">50+ CPA firms:</strong>{" "}
-                    Scaled to DAOs, hedge funds, and enterprise accounting
-                    practices
-                  </span>
-                </div>
-                <div className="flex items-start gap-3 text-sm text-[#D1D5DB]">
-                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
-                  <span>
-                    <strong className="text-white">Zero FMV disputes:</strong>{" "}
-                    Contextual anomaly detection prevented tax penalties (down
-                    from 8 in beta)
-                  </span>
-                </div>
-              </div>
+            <div className="flex items-center justify-between mb-8">
+              <h2 className="text-2xl sm:text-3xl font-medium text-white">
+                Outcome & Impact
+              </h2>
+              <button
+                onClick={() => {
+                  const jsonContent = JSON.stringify({
+                    businessOutcomes: [
+                      {
+                        metric: "$450K+ ARR",
+                        description: "Closed 3 enterprise deals in 6 months citing explainability as key factor"
+                      },
+                      {
+                        metric: "40% support reduction",
+                        description: "Visual rule builder eliminated engineering bottlenecks"
+                      },
+                      {
+                        metric: "50+ CPA firms",
+                        description: "Scaled to DAOs, hedge funds, and enterprise accounting practices"
+                      },
+                      {
+                        metric: "Zero FMV disputes",
+                        description: "Contextual anomaly detection prevented tax penalties (down from 8 in beta)"
+                      }
+                    ],
+                    keyTakeaway: {
+                      insight: "Trust isn't a feature—it's a business strategy. By making AI explainable and giving CPAs control, we transformed skepticism into advocacy. The confidence chips alone closed a $180K enterprise deal because, as one Big 4 partner said:",
+                      quote: "Your confidence chips are the only AI explanation that our CPAs trust."
+                    }
+                  }, null, 2);
+                  navigator.clipboard.writeText(jsonContent);
+                }}
+                className="flex items-center gap-2 px-4 py-2 bg-[#1A1A1A] hover:bg-[#252525] border border-[#6B7280]/30 hover:border-[#00D4FF]/50 rounded-lg transition-all duration-300 text-sm text-[#9CA3AF] hover:text-white"
+                aria-label="Copy JSON to clipboard"
+              >
+                <FileText className="w-4 h-4" />
+                Copy JSON
+              </button>
             </div>
 
-            {/* Key Takeaway */}
-            <div className="mt-8 bg-[#1A1A1A]/50 rounded-lg p-6 border-l-4 border-[#FFD700]">
-              <h3 className="text-lg font-semibold text-[#FFD700] mb-3">
-                Key Takeaway
-              </h3>
-              <p className="text-base text-[#D1D5DB] leading-relaxed max-w-[75ch]">
-                Trust isn't a feature—it's a business strategy. By making AI
-                explainable and giving CPAs control, we transformed skepticism
-                into advocacy. The confidence chips alone closed a $180K
-                enterprise deal because, as one Big 4 partner said:
-                <em className="block mt-3 text-white italic">
-                  "Your confidence chips are the only AI explanation that our
-                  CPAs trust."
-                </em>
-              </p>
+            {/* JSON Code Block */}
+            <div className="bg-[#0A0A0A] rounded-lg border border-[#1A1A1A] overflow-hidden">
+              <div className="bg-[#1A1A1A]/50 px-4 py-2 border-b border-[#6B7280]/30">
+                <span className="text-xs font-mono text-[#9CA3AF]">outcome-impact.json</span>
+              </div>
+              <pre className="p-6 overflow-x-auto">
+                <code className="text-sm font-mono leading-relaxed">
+                  <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"}  <span className="text-[#00D4FF]">"businessOutcomes"</span><span className="text-[#6B7280]">:</span> <span className="text-[#6B7280]">[</span>
+                  {"\n"}    <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"}      <span className="text-[#00D4FF]">"metric"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"$450K+ ARR"</span><span className="text-[#6B7280]">,</span>
+                  {"\n"}      <span className="text-[#00D4FF]">"description"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Closed 3 enterprise deals in 6 months citing explainability as key factor"</span>
+                  {"\n"}    <span className="text-[#6B7280]">{"}"}</span><span className="text-[#6B7280]">,</span>
+                  {"\n"}    <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"}      <span className="text-[#00D4FF]">"metric"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"40% support reduction"</span><span className="text-[#6B7280]">,</span>
+                  {"\n"}      <span className="text-[#00D4FF]">"description"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Visual rule builder eliminated engineering bottlenecks"</span>
+                  {"\n"}    <span className="text-[#6B7280]">{"}"}</span><span className="text-[#6B7280]">,</span>
+                  {"\n"}    <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"}      <span className="text-[#00D4FF]">"metric"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"50+ CPA firms"</span><span className="text-[#6B7280]">,</span>
+                  {"\n"}      <span className="text-[#00D4FF]">"description"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Scaled to DAOs, hedge funds, and enterprise accounting practices"</span>
+                  {"\n"}    <span className="text-[#6B7280]">{"}"}</span><span className="text-[#6B7280]">,</span>
+                  {"\n"}    <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"}      <span className="text-[#00D4FF]">"metric"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Zero FMV disputes"</span><span className="text-[#6B7280]">,</span>
+                  {"\n"}      <span className="text-[#00D4FF]">"description"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Contextual anomaly detection prevented tax penalties (down from 8 in beta)"</span>
+                  {"\n"}    <span className="text-[#6B7280]">{"}"}</span>
+                  {"\n"}  <span className="text-[#6B7280]">]</span><span className="text-[#6B7280]">,</span>
+                  {"\n"}  <span className="text-[#00D4FF]">"keyTakeaway"</span><span className="text-[#6B7280]">:</span> <span className="text-[#6B7280]">{"{"}</span>
+                  {"\n"}    <span className="text-[#00D4FF]">"insight"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Trust isn't a feature—it's a business strategy. By making AI explainable and giving CPAs control, we transformed skepticism into advocacy. The confidence chips alone closed a $180K enterprise deal because, as one Big 4 partner said:"</span><span className="text-[#6B7280]">,</span>
+                  {"\n"}    <span className="text-[#00D4FF]">"quote"</span><span className="text-[#6B7280]">:</span> <span className="text-[#00FFB3]">"Your confidence chips are the only AI explanation that our CPAs trust."</span>
+                  {"\n"}  <span className="text-[#6B7280]">{"}"}</span>
+                  {"\n"}<span className="text-[#6B7280]">{"}"}</span>
+                </code>
+              </pre>
+            </div>
+
+            {/* Optional: Visual Key */}
+            <div className="mt-6 flex flex-wrap gap-4 text-xs">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-[#00D4FF]"></span>
+                <span className="text-[#9CA3AF]">Property Keys</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-[#00FFB3]"></span>
+                <span className="text-[#9CA3AF]">String Values</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-[#6B7280]"></span>
+                <span className="text-[#9CA3AF]">Syntax</span>
+              </div>
             </div>
           </div>
         </section>
