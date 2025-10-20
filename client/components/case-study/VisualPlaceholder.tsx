@@ -1,11 +1,26 @@
-import { Image, FileImage, BarChart3, GitBranch, Workflow, Users } from "lucide-react";
+import {
+  Image,
+  FileImage,
+  BarChart3,
+  GitBranch,
+  Workflow,
+  Users,
+} from "lucide-react";
 
 interface VisualPlaceholderProps {
   title: string;
   description: string;
   dimensions?: string;
   aspectRatio?: string;
-  type?: "image" | "diagram" | "chart" | "map" | "wireframe" | "screenshot" | "grid" | "storyboard";
+  type?:
+    | "image"
+    | "diagram"
+    | "chart"
+    | "map"
+    | "wireframe"
+    | "screenshot"
+    | "grid"
+    | "storyboard";
   altText?: string;
   className?: string;
 }

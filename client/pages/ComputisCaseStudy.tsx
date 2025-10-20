@@ -65,7 +65,9 @@ export default function ComputisCaseStudy() {
           </h1>
 
           <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight max-w-5xl">
-            How we transformed a black-box crypto-tax script into an explainable AI platform that cut onboarding time by 45% and closed three enterprise deals in six months.
+            How we transformed a black-box crypto-tax script into an explainable
+            AI platform that cut onboarding time by 45% and closed three
+            enterprise deals in six months.
           </p>
         </div>
       </header>
@@ -104,7 +106,8 @@ export default function ComputisCaseStudy() {
                 After Computis
               </h3>
               <p className="text-base text-[#D1D5DB] leading-relaxed">
-                They could design and audit AI logic themselves in 90 seconds — with traceable confidence and compliance built in.
+                They could design and audit AI logic themselves in 90 seconds —
+                with traceable confidence and compliance built in.
               </p>
             </div>
           </div>
@@ -126,11 +129,7 @@ export default function ComputisCaseStudy() {
               label="Enterprise contracts in 6 months"
               color="yellow"
             />
-            <MetricCard
-              value="↓ 40%"
-              label="Audit prep time"
-              color="cyan"
-            />
+            <MetricCard value="↓ 40%" label="Audit prep time" color="cyan" />
           </div>
         </div>
       </div>
@@ -150,7 +149,8 @@ export default function ComputisCaseStudy() {
                 The Challenge
               </h3>
               <p className="text-lg text-[#D1D5DB] mb-6 leading-relaxed">
-                Crypto tax workflows were opaque and engineer-dependent. CPAs feared AI mistakes they couldn't explain to clients or the IRS.
+                Crypto tax workflows were opaque and engineer-dependent. CPAs
+                feared AI mistakes they couldn't explain to clients or the IRS.
               </p>
             </div>
 
@@ -172,7 +172,9 @@ export default function ComputisCaseStudy() {
                 <span className="text-3xl">💬</span>
                 <div>
                   <p className="text-lg text-[#D1D5DB] italic leading-relaxed mb-4">
-                    "It's 11 PM and an audit is tomorrow. Our engineer is out, and I can't fix a DeFi error. I just need to see why the AI made that call."
+                    "It's 11 PM and an audit is tomorrow. Our engineer is out,
+                    and I can't fix a DeFi error. I just need to see why the AI
+                    made that call."
                   </p>
                   <div className="border-t border-[#2A2A2A] pt-3">
                     <p className="text-sm font-semibold text-[#9CA3AF]">
@@ -191,7 +193,8 @@ export default function ComputisCaseStudy() {
                 Opportunity
               </h3>
               <p className="text-lg text-[#D1D5DB] leading-relaxed">
-                Redefine trust as the core product value: build AI that shows its work and gives professionals the final say.
+                Redefine trust as the core product value: build AI that shows
+                its work and gives professionals the final say.
               </p>
             </div>
           </div>
@@ -303,7 +306,8 @@ export default function ComputisCaseStudy() {
 
             <div className="bg-[#00D4FF]/5 rounded-[20px] p-6 mb-10 border-l-4 border-[#00D4FF]">
               <p className="text-base text-[#D1D5DB] leading-relaxed">
-                We framed Computis as a <strong className="text-white">system of trust:</strong>
+                We framed Computis as a{" "}
+                <strong className="text-white">system of trust:</strong>
               </p>
             </div>
 
@@ -462,7 +466,8 @@ export default function ComputisCaseStudy() {
                       Outcome
                     </h4>
                     <p className="text-base text-[#D1D5DB] leading-relaxed mb-2">
-                      8/8 CPAs accepted high-confidence AI results without manual review.
+                      8/8 CPAs accepted high-confidence AI results without
+                      manual review.
                     </p>
                     <p className="text-sm text-[#9CA3AF]">
                       False positives dropped from 23 → 0 per month.
@@ -499,7 +504,8 @@ export default function ComputisCaseStudy() {
                       The Problem
                     </h4>
                     <p className="text-base text-[#D1D5DB] leading-relaxed">
-                      IRS audits require defensible logic trails. CPAs needed line-by-line visibility into AI rules.
+                      IRS audits require defensible logic trails. CPAs needed
+                      line-by-line visibility into AI rules.
                     </p>
                   </div>
 
@@ -584,7 +590,8 @@ export default function ComputisCaseStudy() {
                       Conflict
                     </h4>
                     <p className="text-base text-[#D1D5DB] leading-relaxed">
-                      CTO pushed for full automation; CPAs demanded manual control.
+                      CTO pushed for full automation; CPAs demanded manual
+                      control.
                     </p>
                   </div>
 
@@ -598,7 +605,8 @@ export default function ComputisCaseStudy() {
                     <div className="space-y-3">
                       <div className="bg-[#00FFB3]/10 rounded-[12px] p-4 border-l-4 border-[#00FFB3]">
                         <p className="text-sm text-white">
-                          <strong>High confidence:</strong> Auto approve (&lt; 2% error rate)
+                          <strong>High confidence:</strong> Auto approve (&lt;
+                          2% error rate)
                         </p>
                       </div>
                       <div className="bg-[#FFD700]/10 rounded-[12px] p-4 border-l-4 border-[#FFD700]">
@@ -608,7 +616,8 @@ export default function ComputisCaseStudy() {
                       </div>
                       <div className="bg-[#FF4D4D]/10 rounded-[12px] p-4 border-l-4 border-[#FF4D4D]">
                         <p className="text-sm text-white">
-                          <strong>Low confidence:</strong> Require manual approval
+                          <strong>Low confidence:</strong> Require manual
+                          approval
                         </p>
                       </div>
                     </div>
@@ -616,7 +625,8 @@ export default function ComputisCaseStudy() {
 
                   <div className="bg-[#FFD700]/10 rounded-[16px] p-6">
                     <p className="text-base text-[#D1D5DB] leading-relaxed">
-                      <strong className="text-[#FFD700]">Result:</strong> Framework became core of enterprise pricing tier.
+                      <strong className="text-[#FFD700]">Result:</strong>{" "}
+                      Framework became core of enterprise pricing tier.
                     </p>
                   </div>
                 </div>
@@ -688,7 +698,9 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 <p className="text-base text-[#D1D5DB] leading-relaxed">
-                  All quantitative outcomes were tracked and validated through Mixpanel and GA, ensuring credibility and data-driven decision making.
+                  All quantitative outcomes were tracked and validated through
+                  Mixpanel and GA, ensuring credibility and data-driven decision
+                  making.
                 </p>
               </div>
 
@@ -760,13 +772,16 @@ export default function ComputisCaseStudy() {
                     <span className="text-3xl">💬</span>
                     <div>
                       <p className="text-lg text-[#D1D5DB] italic leading-relaxed mb-4">
-                        "I defended a $2.3M tax position to the IRS with Computis' logs — and won without a tax attorney."
+                        "I defended a $2.3M tax position to the IRS with
+                        Computis' logs — and won without a tax attorney."
                       </p>
                       <div className="border-t border-[#2A2A2A] pt-3">
                         <p className="text-sm font-semibold text-[#9CA3AF]">
                           — Jennifer Huang, CPA
                         </p>
-                        <p className="text-xs text-[#6B7280]">Managing Partner</p>
+                        <p className="text-xs text-[#6B7280]">
+                          Managing Partner
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -799,7 +814,8 @@ export default function ComputisCaseStudy() {
                   <span className="text-sm font-bold text-[#00D4FF]">1</span>
                 </div>
                 <p className="text-base text-[#D1D5DB] leading-relaxed">
-                  Integrate LLM-assisted rule suggestions with human confirmation.
+                  Integrate LLM-assisted rule suggestions with human
+                  confirmation.
                 </p>
               </div>
 
@@ -831,7 +847,8 @@ export default function ComputisCaseStudy() {
                     Design Philosophy
                   </h3>
                   <p className="text-base text-[#D1D5DB] leading-relaxed italic">
-                    "This designer understands systems, humans, and business — and can make all three work together."
+                    "This designer understands systems, humans, and business —
+                    and can make all three work together."
                   </p>
                 </div>
               </div>

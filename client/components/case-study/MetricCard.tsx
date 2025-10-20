@@ -52,7 +52,9 @@ export function MetricCard({
         </div>
       )}
 
-      <p className={`text-3xl sm:text-4xl font-bold ${colors.value} mb-3 text-center`}>
+      <p
+        className={`text-3xl sm:text-4xl font-bold ${colors.value} mb-3 text-center`}
+      >
         {value}
       </p>
 
@@ -61,15 +63,14 @@ export function MetricCard({
       </p>
 
       {context && (
-        <p className="text-xs text-[#9CA3AF] text-center">
-          {context}
-        </p>
+        <p className="text-xs text-[#9CA3AF] text-center">{context}</p>
       )}
 
       {validationSource && (
         <div className="mt-4 pt-3 border-t border-[#2A2A2A]">
           <p className="text-xs text-[#6B7280] text-center">
-            <strong className="text-[#9CA3AF]">Source:</strong> {validationSource}
+            <strong className="text-[#9CA3AF]">Source:</strong>{" "}
+            {validationSource}
           </p>
         </div>
       )}
