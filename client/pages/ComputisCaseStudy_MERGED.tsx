@@ -1155,12 +1155,20 @@ export default function ComputisCaseStudy() {
 
                 {/* Visual Demo */}
                 <div className="p-6 bg-[#0A0A0A]/80 border-t border-[#6B7280]/20">
-                  <img
-                    src="https://raw.githubusercontent.com/ssmith129/portfolio-website/d4fd2343330c1b3aae85a3e885719953ac9e9953/public/Inline%20Audit%20Drawer.gif"
-                    alt="Inline Audit Trail Drawer demo showing contextual tamper-proof logs appearing next to transactions, reducing documentation time from 45 minutes to zero"
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                     onClick={() => setIsAuditDrawerModalOpen(true)}
-                  />
+                  >
+                    <source
+                      src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fb58b7598835c43dc840df13f0f1f2754?alt=media&token=57b06112-5b28-49aa-9ab2-917865c68dcd&apiKey=ba69a23156414a589de97341511272c9"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
 
