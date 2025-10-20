@@ -61,7 +61,10 @@ Keep both versions and create a new route:
 
 ```tsx
 // In client/App.tsx, add:
-<Route path="/case-studies/computis-redesigned" element={<ComputisCaseStudyRedesigned />} />
+<Route
+  path="/case-studies/computis-redesigned"
+  element={<ComputisCaseStudyRedesigned />}
+/>
 
 // Then visit: /case-studies/computis-redesigned
 ```
@@ -73,6 +76,7 @@ Keep both versions and create a new route:
 Before deploying, verify these items:
 
 ### Visual Review
+
 - [ ] Hero headline: "CPAs Control the AI, Not the Other Way Around"
 - [ ] Impact metrics show validation context
 - [ ] Journey maps display (before & after)
@@ -81,6 +85,7 @@ Before deploying, verify these items:
 - [ ] No console errors
 
 ### Mobile Check
+
 - [ ] Open on mobile device or resize browser to <768px
 - [ ] All sections stack vertically
 - [ ] Images don't overflow
@@ -88,6 +93,7 @@ Before deploying, verify these items:
 - [ ] Text is readable (≥16px)
 
 ### Accessibility Check
+
 - [ ] Tab through all interactive elements
 - [ ] Focus states visible
 - [ ] All images have alt text
@@ -98,6 +104,7 @@ Before deploying, verify these items:
 ## 🎯 What You'll See After Deployment
 
 ### Hero Section (NEW)
+
 ```
 FinTech • AI Transparency • 2023
 
@@ -112,6 +119,7 @@ View Live Prototype →
 ```
 
 ### Impact At a Glance (IMPROVED)
+
 ```
 Before: CPAs waited 2.5 hours for engineers to modify Python scripts...
 After: CPAs built custom rules in 90 seconds without code...
@@ -124,17 +132,19 @@ After: CPAs built custom rules in 90 seconds without code...
 ```
 
 ### Journey Maps (NEW)
+
 ```
 [IMAGE: Journey Map - Before]
 CPA JOURNEY — CURRENT STATE
 Shows 5 stages with pain points in red, 2.5h total time
 
 [IMAGE: Journey Map - After]
-CPA JOURNEY — FUTURE STATE  
+CPA JOURNEY — FUTURE STATE
 Shows 5 improved stages in green, 1.4h total time (45% reduction)
 ```
 
 ### Key Design Decisions (REWRITTEN)
+
 ```
 1️⃣ Visual Rule Builder (No-Code)
 
@@ -146,7 +156,7 @@ DISCOVERY
 
 3 OPTIONS EXPLORED
 A. Form-Based Builder     → ❌ Rejected
-B. Natural Language       → ❌ Rejected  
+B. Natural Language       → ❌ Rejected
 C. Visual Drag-and-Drop   → ✅ CHOSEN
 
 WHY VISUAL WON
@@ -172,6 +182,7 @@ TRADEOFF
 **Symptom:** Seeing broken image icons
 
 **Fix:**
+
 ```bash
 # Verify files exist
 ls public/assets/*.svg
@@ -188,6 +199,7 @@ chmod 644 public/assets/*.svg
 **Symptom:** Red errors in browser DevTools console
 
 **Fix:**
+
 ```bash
 # Check for syntax errors
 npm run typecheck
@@ -202,6 +214,7 @@ npm run typecheck
 **Symptom:** Content overflows or doesn't stack properly
 
 **Fix:**
+
 - Check responsive classes: `grid-cols-1 md:grid-cols-2`
 - Verify padding: `p-4 sm:p-6 md:p-8`
 - Test with: Chrome DevTools → Toggle Device Toolbar
@@ -216,33 +229,35 @@ Add these to track engagement:
 
 ```javascript
 // Track scroll depth
-gtag('event', 'scroll', {
-  'event_category': 'engagement',
-  'event_label': 'computis_case_study',
-  'percent_scrolled': 50
+gtag("event", "scroll", {
+  event_category: "engagement",
+  event_label: "computis_case_study",
+  percent_scrolled: 50,
 });
 
 // Track image views
-gtag('event', 'view', {
-  'event_category': 'visual_asset',
-  'event_label': 'journey_map_before'
+gtag("event", "view", {
+  event_category: "visual_asset",
+  event_label: "journey_map_before",
 });
 
 // Track decision section views
-gtag('event', 'scroll_to', {
-  'event_category': 'section',
-  'event_label': 'key_design_decisions'
+gtag("event", "scroll_to", {
+  event_category: "section",
+  event_label: "key_design_decisions",
 });
 ```
 
 ### Success Metrics
 
 **Week 1 Targets:**
+
 - Time on page: >5 minutes
 - Scroll depth: >60% reach "Outcomes"
 - Bounce rate: <40%
 
 **Month 1 Targets:**
+
 - Portfolio views: Track increase
 - Interview requests: Monitor correlation
 - User feedback: Collect via [feedback form](#open-feedback-form)
@@ -279,12 +294,14 @@ Ask 3 colleagues to:
 ## 🚨 Known Issues & Limitations
 
 ### What's NOT Included
+
 1. **Wireframe Evolution** - Placeholder only (create later if needed)
 2. **Persona Cards** - Placeholder only (create later if needed)
 3. **Before/After UI Comparison** - Not implemented
 4. **Design System Sheet** - Not implemented
 
 ### Why It's OK
+
 - These are "nice to have" assets (P2 priority)
 - Current 5 visual assets are highest ROI
 - Can add more assets based on user feedback
@@ -329,16 +346,19 @@ A: Google Analytics scroll depth, time on page, and user testing (see Metrics se
 ## 🎯 What's Next After Deployment
 
 ### Week 1: Monitor & Fix
+
 - Watch analytics
 - Fix any bugs reported
 - Collect initial feedback
 
 ### Week 2-4: Optimize
+
 - A/B test with old version (if running both)
 - Iterate based on user feedback
 - Add missing "nice to have" assets
 
 ### Month 2+: Scale
+
 - Apply learnings to other case studies
 - Update portfolio homepage to highlight
 - Share on LinkedIn/Twitter
@@ -348,6 +368,7 @@ A: Google Analytics scroll depth, time on page, and user testing (see Metrics se
 **Ready to deploy? Choose Option A or B above and execute! 🚀**
 
 **Questions? Review:**
+
 - `COMPLETE_REDESIGN_SUMMARY.md` for full overview
 - `PHASE_3_INTEGRATION.md` for detailed integration steps
 - `IMPLEMENTATION_GUIDE.md` for comprehensive setup

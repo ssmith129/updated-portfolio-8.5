@@ -271,7 +271,6 @@ export default function ComputisCaseStudy() {
               without code—turning AI opacity into transparency.
             </p>
           </div>
-
         </div>
       </div>
 
@@ -333,7 +332,6 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
-
 
         {/* PLACEHOLDER: Information Architecture Diagram */}
         <section className="mt-16">
@@ -430,8 +428,8 @@ export default function ComputisCaseStudy() {
                     1. CPAs rejected black-box AI
                   </p>
                   <p className="text-sm text-[#D1D5DB] max-w-[75ch] leading-relaxed">
-                    "I can't defend tax positions I don't understand" — Transparency
-                    was non-negotiable for professional liability
+                    "I can't defend tax positions I don't understand" —
+                    Transparency was non-negotiable for professional liability
                   </p>
                 </div>
 
@@ -440,7 +438,8 @@ export default function ComputisCaseStudy() {
                     2. 85% time loss waiting for engineers
                   </p>
                   <p className="text-sm text-[#D1D5DB] max-w-[75ch] leading-relaxed">
-                    Simple rule changes took 2-3 days—CPAs needed self-service autonomy
+                    Simple rule changes took 2-3 days—CPAs needed self-service
+                    autonomy
                   </p>
                 </div>
 
@@ -449,8 +448,8 @@ export default function ComputisCaseStudy() {
                     3. Audit trails became a sales differentiator
                   </p>
                   <p className="text-sm text-[#D1D5DB] max-w-[75ch] leading-relaxed">
-                    Compliance visibility wasn't just a feature—it closed enterprise
-                    deals
+                    Compliance visibility wasn't just a feature—it closed
+                    enterprise deals
                   </p>
                 </div>
               </div>
@@ -476,8 +475,8 @@ export default function ComputisCaseStudy() {
                       4. Dark mode was essential, not optional
                     </p>
                     <p className="text-sm text-[#D1D5DB] max-w-[75ch] leading-relaxed">
-                      CPAs work extended hours during tax season—75% preferred dark
-                      theme by default
+                      CPAs work extended hours during tax season—75% preferred
+                      dark theme by default
                     </p>
                   </div>
 
@@ -486,8 +485,8 @@ export default function ComputisCaseStudy() {
                       5. Bulk operations became the primary workflow
                     </p>
                     <p className="text-sm text-[#D1D5DB] max-w-[75ch] leading-relaxed">
-                      73% of CPAs adopted bulk rule application in week 1—what we
-                      thought was a "power user" feature became core
+                      73% of CPAs adopted bulk rule application in week 1—what
+                      we thought was a "power user" feature became core
                     </p>
                   </div>
                 </div>
@@ -522,16 +521,16 @@ export default function ComputisCaseStudy() {
                 </h4>
                 <ul className="space-y-2 text-sm text-blue-200/80">
                   <li>
-                    <strong>Visual Rule Builder:</strong> Only no-code solution for
-                    custom classification rules
+                    <strong>Visual Rule Builder:</strong> Only no-code solution
+                    for custom classification rules
                   </li>
                   <li>
-                    <strong>AI Confidence Chips:</strong> Only platform with inline
-                    explainability for every classification
+                    <strong>AI Confidence Chips:</strong> Only platform with
+                    inline explainability for every classification
                   </li>
                   <li>
-                    <strong>Real-Time Anomaly Detection:</strong> Only contextual
-                    flagging system with hover reasoning
+                    <strong>Real-Time Anomaly Detection:</strong> Only
+                    contextual flagging system with hover reasoning
                   </li>
                 </ul>
               </div>
@@ -552,13 +551,16 @@ export default function ComputisCaseStudy() {
                 {/* Header */}
                 <div className="bg-gradient-to-r from-purple-50/10 to-purple-100/10 p-6 border-b border-[#6B7280]/20">
                   <div className="flex items-start gap-4">
-                    <span className="text-3xl font-bold text-purple-400">1️⃣</span>
+                    <span className="text-3xl font-bold text-purple-400">
+                      1️⃣
+                    </span>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-white mb-2">
                         Visual Rule Builder (No-Code)
                       </h3>
                       <p className="text-sm text-purple-300 italic">
-                        "How do we give CPAs autonomy without overwhelming them?"
+                        "How do we give CPAs autonomy without overwhelming
+                        them?"
                       </p>
                     </div>
                   </div>
@@ -573,12 +575,12 @@ export default function ComputisCaseStudy() {
                     </h4>
                     <ul className="text-sm text-blue-200/80 space-y-1">
                       <li>
-                        • 6/8 CPAs rejected form-based builders ("too rigid for edge
-                        cases")
+                        • 6/8 CPAs rejected form-based builders ("too rigid for
+                        edge cases")
                       </li>
                       <li>
-                        • Natural language input tested poorly (35% misinterpretation
-                        rate)
+                        • Natural language input tested poorly (35%
+                        misinterpretation rate)
                       </li>
                       <li>• Spreadsheet formulas too technical for 4/8 CPAs</li>
                     </ul>
@@ -594,13 +596,17 @@ export default function ComputisCaseStudy() {
                         <p className="text-xs font-semibold text-[#D1D5DB] mb-1">
                           A. Form-Based Builder
                         </p>
-                        <p className="text-xs text-red-400">❌ Rejected — Too rigid</p>
+                        <p className="text-xs text-red-400">
+                          ❌ Rejected — Too rigid
+                        </p>
                       </div>
                       <div className="bg-[#0F0F0F] p-3 rounded border border-[#6B7280]/30">
                         <p className="text-xs font-semibold text-[#D1D5DB] mb-1">
                           B. Natural Language
                         </p>
-                        <p className="text-xs text-red-400">❌ Rejected — Ambiguous</p>
+                        <p className="text-xs text-red-400">
+                          ❌ Rejected — Ambiguous
+                        </p>
                       </div>
                       <div className="bg-[#0F0F0F] p-3 rounded border-2 border-green-500">
                         <p className="text-xs font-semibold text-[#D1D5DB] mb-1">
@@ -617,7 +623,9 @@ export default function ComputisCaseStudy() {
                       WHY VISUAL WON
                     </h4>
                     <ul className="text-sm text-green-200/80 space-y-1">
-                      <li>• 7/8 CPAs successfully built a rule in &lt;3 minutes</li>
+                      <li>
+                        • 7/8 CPAs successfully built a rule in &lt;3 minutes
+                      </li>
                       <li>• Live preview pane reduced errors by 60%</li>
                       <li>• Matched Excel filter mental model (familiarity)</li>
                     </ul>
@@ -637,10 +645,12 @@ export default function ComputisCaseStudy() {
 
                   {/* Tradeoff */}
                   <div className="bg-[#1A1A1A]/50 rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">TRADEOFF</h4>
+                    <h4 className="text-sm font-semibold text-white mb-2">
+                      TRADEOFF
+                    </h4>
                     <p className="text-sm text-[#D1D5DB]">
-                      Took 3 extra weeks to build, but reduced support burden by 40%
-                      and unlocked $200K+ in enterprise sales
+                      Took 3 extra weeks to build, but reduced support burden by
+                      40% and unlocked $200K+ in enterprise sales
                     </p>
                   </div>
                 </div>
@@ -667,8 +677,8 @@ export default function ComputisCaseStudy() {
                         AI Confidence Chips + Override Control
                       </h3>
                       <p className="text-sm text-blue-300 italic">
-                        "How do we make AI reasoning transparent without overwhelming
-                        CPAs?"
+                        "How do we make AI reasoning transparent without
+                        overwhelming CPAs?"
                       </p>
                     </div>
                   </div>
@@ -683,11 +693,15 @@ export default function ComputisCaseStudy() {
                     </h4>
                     <ul className="text-sm text-blue-200/80 space-y-1">
                       <li>
-                        • 8/8 CPAs demanded to see "why" behind AI classifications
+                        • 8/8 CPAs demanded to see "why" behind AI
+                        classifications
                       </li>
-                      <li>• 40% of G2 complaints cited "black-box" AI concerns</li>
                       <li>
-                        • Professional liability insurance requires explainability
+                        • 40% of G2 complaints cited "black-box" AI concerns
+                      </li>
+                      <li>
+                        • Professional liability insurance requires
+                        explainability
                       </li>
                     </ul>
                   </div>
@@ -703,13 +717,13 @@ export default function ComputisCaseStudy() {
                         goal—overrides defeat the purpose"
                       </p>
                       <p>
-                        <strong>CPAs' Response:</strong> "I can't defend positions I
-                        didn't approve"
+                        <strong>CPAs' Response:</strong> "I can't defend
+                        positions I didn't approve"
                       </p>
                       <p>
-                        <strong>My Facilitation:</strong> Organized workshop with both
-                        sides, presented G2 complaint data (40% cited lack of control),
-                        proposed graduated autonomy model
+                        <strong>My Facilitation:</strong> Organized workshop
+                        with both sides, presented G2 complaint data (40% cited
+                        lack of control), proposed graduated autonomy model
                       </p>
                     </div>
                   </div>
@@ -753,14 +767,16 @@ export default function ComputisCaseStudy() {
                     <ul className="text-sm text-green-200/80 space-y-1">
                       <li>• Non-intrusive: Visible without requiring action</li>
                       <li>
-                        • Scannable: Color-coded (green/yellow/red) for quick triage
+                        • Scannable: Color-coded (green/yellow/red) for quick
+                        triage
                       </li>
                       <li>
-                        • Detailed on demand: Hover reveals reasoning without modal
-                        disruption
+                        • Detailed on demand: Hover reveals reasoning without
+                        modal disruption
                       </li>
                       <li>
-                        • 6/8 CPAs said "This is what I needed" in usability tests
+                        • 6/8 CPAs said "This is what I needed" in usability
+                        tests
                       </li>
                     </ul>
                   </div>
@@ -773,7 +789,8 @@ export default function ComputisCaseStudy() {
                     <p className="text-sm text-amber-200/80">
                       Demo-to-conversion rate: 22% → 29% (+32% increase)
                       <br />
-                      3 enterprise deals closed citing "trust in AI" as deciding factor
+                      3 enterprise deals closed citing "trust in AI" as deciding
+                      factor
                       <br />
                       Zero disputes with overridden classifications post-launch
                     </p>
@@ -781,10 +798,12 @@ export default function ComputisCaseStudy() {
 
                   {/* Tradeoff */}
                   <div className="bg-[#1A1A1A]/50 rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">TRADEOFF</h4>
+                    <h4 className="text-sm font-semibold text-white mb-2">
+                      TRADEOFF
+                    </h4>
                     <p className="text-sm text-[#D1D5DB]">
-                      CPAs override 12% of classifications—slower than full automation,
-                      but prevents costly errors and builds trust
+                      CPAs override 12% of classifications—slower than full
+                      automation, but prevents costly errors and builds trust
                     </p>
                   </div>
 
@@ -798,8 +817,8 @@ export default function ComputisCaseStudy() {
                       <strong className="text-white">
                         closed a $180K enterprise deal
                       </strong>{" "}
-                      with a Big 4 accounting firm who said: "Your confidence chips are
-                      the only AI explanation that our CPAs trust."
+                      with a Big 4 accounting firm who said: "Your confidence
+                      chips are the only AI explanation that our CPAs trust."
                     </p>
                   </div>
                 </div>
@@ -820,14 +839,16 @@ export default function ComputisCaseStudy() {
                 {/* Header */}
                 <div className="bg-gradient-to-r from-green-50/10 to-green-100/10 p-6 border-b border-[#6B7280]/20">
                   <div className="flex items-start gap-4">
-                    <span className="text-3xl font-bold text-green-400">3️⃣</span>
+                    <span className="text-3xl font-bold text-green-400">
+                      3️⃣
+                    </span>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-white mb-2">
                         Inline Audit Trail Drawer
                       </h3>
                       <p className="text-sm text-green-300 italic">
-                        "How do we make compliance documentation seamless instead of a
-                        separate task?"
+                        "How do we make compliance documentation seamless
+                        instead of a separate task?"
                       </p>
                     </div>
                   </div>
@@ -842,16 +863,20 @@ export default function ComputisCaseStudy() {
                     </h4>
                     <ul className="text-sm text-blue-200/80 space-y-1">
                       <li>
-                        • CPAs manually documented every AI change for IRS defense
+                        • CPAs manually documented every AI change for IRS
+                        defense
                       </li>
                       <li>
-                        • Average 45 minutes per client spent creating audit logs
+                        • Average 45 minutes per client spent creating audit
+                        logs
                       </li>
                       <li>
-                        • Error-prone: 3/8 CPAs forgot to document critical overrides
+                        • Error-prone: 3/8 CPAs forgot to document critical
+                        overrides
                       </li>
                       <li>
-                        • Competitors required separate "export audit log" workflow
+                        • Competitors required separate "export audit log"
+                        workflow
                       </li>
                     </ul>
                   </div>
@@ -894,7 +919,8 @@ export default function ComputisCaseStudy() {
                     </h4>
                     <ul className="text-sm text-green-200/80 space-y-1">
                       <li>
-                        • Contextual: Appears next to the transaction being audited
+                        • Contextual: Appears next to the transaction being
+                        audited
                       </li>
                       <li>• Automatic: Zero manual documentation required</li>
                       <li>• Tamper-proof: Blockchain-inspired immutable log</li>
@@ -912,16 +938,19 @@ export default function ComputisCaseStudy() {
                       <br />
                       Used in 3 real IRS audits with zero issues
                       <br />
-                      Enterprise buyers cited audit trail as #1 feature requirement
+                      Enterprise buyers cited audit trail as #1 feature
+                      requirement
                     </p>
                   </div>
 
                   {/* Tradeoff */}
                   <div className="bg-[#1A1A1A]/50 rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">TRADEOFF</h4>
+                    <h4 className="text-sm font-semibold text-white mb-2">
+                      TRADEOFF
+                    </h4>
                     <p className="text-sm text-[#D1D5DB]">
-                      Requires 2-3 extra API calls per transaction (slight performance
-                      impact), but CPAs value compliance over speed
+                      Requires 2-3 extra API calls per transaction (slight
+                      performance impact), but CPAs value compliance over speed
                     </p>
                   </div>
                 </div>
@@ -942,7 +971,9 @@ export default function ComputisCaseStudy() {
                 {/* Header */}
                 <div className="bg-gradient-to-r from-amber-50/10 to-amber-100/10 p-6 border-b border-[#6B7280]/20">
                   <div className="flex items-start gap-4">
-                    <span className="text-3xl font-bold text-amber-400">4️⃣</span>
+                    <span className="text-3xl font-bold text-amber-400">
+                      4️⃣
+                    </span>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-white mb-2">
                         Contextual Anomaly Detection
@@ -963,10 +994,12 @@ export default function ComputisCaseStudy() {
                     </h4>
                     <ul className="text-sm text-blue-200/80 space-y-1">
                       <li>
-                        • FMV (Fair Market Value) errors caused 8 tax disputes in beta
+                        • FMV (Fair Market Value) errors caused 8 tax disputes
+                        in beta
                       </li>
                       <li>
-                        • Existing detection: 35% catch rate, 60% false positives
+                        • Existing detection: 35% catch rate, 60% false
+                        positives
                       </li>
                       <li>
                         • CPAs manually cross-checked prices across 3 exchanges
@@ -1015,14 +1048,16 @@ export default function ComputisCaseStudy() {
                     </h4>
                     <ul className="text-sm text-green-200/80 space-y-1">
                       <li>
-                        • Context-aware: Considers asset type, exchange, and time of
-                        day
+                        • Context-aware: Considers asset type, exchange, and
+                        time of day
                       </li>
                       <li>
-                        • Severity levels: Red (critical), Yellow (review), Gray (info)
+                        • Severity levels: Red (critical), Yellow (review), Gray
+                        (info)
                       </li>
                       <li>
-                        • Hover tooltips explain *why* flagged (not just "price error")
+                        • Hover tooltips explain *why* flagged (not just "price
+                        error")
                       </li>
                       <li>• Reduced false positives by 75% in testing</li>
                     </ul>
@@ -1044,10 +1079,13 @@ export default function ComputisCaseStudy() {
 
                   {/* Tradeoff */}
                   <div className="bg-[#1A1A1A]/50 rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">TRADEOFF</h4>
+                    <h4 className="text-sm font-semibold text-white mb-2">
+                      TRADEOFF
+                    </h4>
                     <p className="text-sm text-[#D1D5DB]">
                       Required integrating 4 real-time price APIs (engineering
-                      complexity), but prevented $120K+ in potential tax penalties
+                      complexity), but prevented $120K+ in potential tax
+                      penalties
                     </p>
                   </div>
                 </div>
@@ -1088,7 +1126,9 @@ export default function ComputisCaseStudy() {
                       DISCOVERY
                     </h4>
                     <ul className="text-sm text-blue-200/80 space-y-1">
-                      <li>• Single-client architecture forced context switching</li>
+                      <li>
+                        • Single-client architecture forced context switching
+                      </li>
                       <li>• CPAs managed 40+ tabs (one per client)</li>
                       <li>• No portfolio-level insights across clients</li>
                       <li>
@@ -1135,15 +1175,19 @@ export default function ComputisCaseStudy() {
                     </h4>
                     <ul className="text-sm text-green-200/80 space-y-1">
                       <li>
-                        • Portfolio view: See all clients at once with aggregated
-                        metrics
+                        • Portfolio view: See all clients at once with
+                        aggregated metrics
                       </li>
-                      <li>• Drill-down: Click into individual client details</li>
                       <li>
-                        • Role-based permissions: CPAs, Analysts, Admins see different
-                        views
+                        • Drill-down: Click into individual client details
                       </li>
-                      <li>• Bulk operations: Apply rules across multiple clients</li>
+                      <li>
+                        • Role-based permissions: CPAs, Analysts, Admins see
+                        different views
+                      </li>
+                      <li>
+                        • Bulk operations: Apply rules across multiple clients
+                      </li>
                     </ul>
                   </div>
 
@@ -1163,10 +1207,12 @@ export default function ComputisCaseStudy() {
 
                   {/* Tradeoff */}
                   <div className="bg-[#1A1A1A]/50 rounded-lg p-4">
-                    <h4 className="text-sm font-semibold text-white mb-2">TRADEOFF</h4>
+                    <h4 className="text-sm font-semibold text-white mb-2">
+                      TRADEOFF
+                    </h4>
                     <p className="text-sm text-[#D1D5DB]">
-                      Added 6 weeks to development timeline for role-based permissions,
-                      but unlocked enterprise segment ($450K+ ARR)
+                      Added 6 weeks to development timeline for role-based
+                      permissions, but unlocked enterprise segment ($450K+ ARR)
                     </p>
                   </div>
                 </div>
