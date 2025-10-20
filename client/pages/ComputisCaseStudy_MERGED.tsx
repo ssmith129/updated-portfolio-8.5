@@ -258,22 +258,112 @@ export default function ComputisCaseStudy() {
         </a>
       </div>
 
-      {/* TL;DR SECTION */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
-        <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-6 sm:p-8 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300">
-          {/* Transformation Story */}
-          <div className="max-w-[75ch]">
-            <p className="text-base text-white leading-relaxed mb-2">
-              <strong>Before:</strong> CPAs waited 2.5 hours for engineers to
-              modify Python scripts for crypto classification.
+      {/* TL;DR SUMMARY SECTION */}
+      <section className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
+        <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300">
+          <h2 className="text-2xl sm:text-3xl font-medium text-white mb-8">
+            TL;DR Summary
+          </h2>
+
+          {/* Project Metadata Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div className="bg-[#1A1A1A]/50 p-6 rounded-lg border border-[#6B7280]/30 hover:border-[#00D4FF]/50 transition-all duration-300">
+              <p className="text-xs font-semibold text-[#9CA3AF] uppercase tracking-wider mb-2">
+                Type
+              </p>
+              <p className="text-base font-medium text-white">
+                FinTech SaaS • Crypto Tax Compliance
+              </p>
+            </div>
+            <div className="bg-[#1A1A1A]/50 p-6 rounded-lg border border-[#6B7280]/30 hover:border-[#00D4FF]/50 transition-all duration-300">
+              <p className="text-xs font-semibold text-[#9CA3AF] uppercase tracking-wider mb-2">
+                Role
+              </p>
+              <p className="text-base font-medium text-white">
+                Founding Lead Product Designer
+              </p>
+            </div>
+            <div className="bg-[#1A1A1A]/50 p-6 rounded-lg border border-[#6B7280]/30 hover:border-[#00D4FF]/50 transition-all duration-300">
+              <p className="text-xs font-semibold text-[#9CA3AF] uppercase tracking-wider mb-2">
+                Duration
+              </p>
+              <p className="text-base font-medium text-white">
+                10 months (Oct 2022 - Aug 2023)
+              </p>
+            </div>
+            <div className="bg-[#1A1A1A]/50 p-6 rounded-lg border border-[#6B7280]/30 hover:border-[#00D4FF]/50 transition-all duration-300">
+              <p className="text-xs font-semibold text-[#9CA3AF] uppercase tracking-wider mb-2">
+                Company
+              </p>
+              <p className="text-base font-medium text-white">
+                Computis (YC-backed Startup)
+              </p>
+            </div>
+          </div>
+
+          {/* Tools & Team */}
+          <div className="bg-[#1A1A1A]/50 p-6 rounded-lg border border-[#6B7280]/30 mb-8">
+            <p className="text-xs font-semibold text-[#9CA3AF] uppercase tracking-wider mb-4">
+              Tools & Team
             </p>
-            <p className="text-base text-white leading-relaxed">
-              <strong>After:</strong> CPAs built custom rules in 90 seconds
-              without code—turning AI opacity into transparency.
-            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <p className="text-sm font-semibold text-white mb-2">Tools:</p>
+                <p className="text-sm text-[#D1D5DB]">
+                  Figma, Miro, Notion, Jira, Google Analytics, Mixpanel
+                </p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-white mb-2">Team:</p>
+                <p className="text-sm text-[#D1D5DB]">
+                  CTO, PM, 2 Engineers, Design Agency Partner
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Outcomes */}
+          <div className="bg-gradient-to-r from-green-50/10 to-green-100/10 p-6 sm:p-8 rounded-lg border border-green-500/30">
+            <h3 className="text-lg font-semibold text-green-400 mb-6 flex items-center gap-2">
+              <CheckCircle className="w-5 h-5" />
+              Key Outcomes
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl font-bold text-[#00FFB3]">↓ 45%</span>
+                <span className="text-sm text-[#D1D5DB]">
+                  CPA onboarding time (2.5h → 1.4h)
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-2xl font-bold text-[#FFD700]">↑ 32%</span>
+                <span className="text-sm text-[#D1D5DB]">
+                  demo-to-conversion rate increase
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-2xl font-bold text-[#00D4FF]">↓ 85%</span>
+                <span className="text-sm text-[#D1D5DB]">
+                  reliance on engineering teams
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-2xl font-bold text-[#0080FF]">↑ 150%</span>
+                <span className="text-sm text-[#D1D5DB]">
+                  anomaly detection coverage
+                </span>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 bg-[#1A1A1A]/50 rounded-lg">
+              <span className="text-xl">💼</span>
+              <span className="text-sm text-[#D1D5DB] leading-relaxed">
+                Closed 3 enterprise deals ($450K+ ARR) and scaled to DAOs, hedge
+                funds, and 50+ CPA firms through explainable AI and audit-ready workflows
+              </span>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
       <main className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-20 relative z-10">
@@ -476,7 +566,7 @@ export default function ComputisCaseStudy() {
                       4. Dark mode was essential, not optional
                     </p>
                     <p className="text-sm text-[#D1D5DB] max-w-[75ch] leading-relaxed">
-                      CPAs work extended hours during tax season—75% preferred
+                      CPAs work extended hours during tax season���75% preferred
                       dark theme by default
                     </p>
                   </div>
