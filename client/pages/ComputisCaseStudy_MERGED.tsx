@@ -524,50 +524,6 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* INFORMATION ARCHITECTURE SECTION */}
-        <section className="mt-16">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
-            <h2 className="text-2xl sm:text-3xl font-medium text-white mb-8">
-              Information Architecture
-            </h2>
-
-            <img
-              src="/assets/ia-diagram.svg"
-              alt="Computis information architecture diagram showing modular sitemap hierarchy: Dashboard at top level connecting to 5 main sections (Clients, Wallets, Rules, Reports, Settings). Multi-level navigation flows from Clients to Wallets to Transactions to Rules. Role-based permission layers shown for CPA (full access), Analyst (limited), and Admin (management). Self-service entry points, audit trail at every level, modular structure for jurisdiction expansion."
-              className="w-full rounded-lg shadow-md border border-[#6B7280]/30 hover:shadow-xl transition-shadow duration-300 mb-6"
-              loading="lazy"
-            />
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-blue-50/10 p-4 rounded-lg border-l-4 border-blue-500">
-                <h4 className="font-semibold text-blue-400 mb-2">
-                  Modular Design
-                </h4>
-                <p className="text-sm text-blue-200/80">
-                  Each level is independently scalable for new jurisdictions and
-                  assets
-                </p>
-              </div>
-              <div className="bg-purple-50/10 p-4 rounded-lg border-l-4 border-purple-500">
-                <h4 className="font-semibold text-purple-400 mb-2">
-                  Role-Based Views
-                </h4>
-                <p className="text-sm text-purple-200/80">
-                  CPAs, Analysts, and Admins see only relevant sections
-                </p>
-              </div>
-              <div className="bg-green-50/10 p-4 rounded-lg border-l-4 border-green-500">
-                <h4 className="font-semibold text-green-400 mb-2">
-                  Audit Trail
-                </h4>
-                <p className="text-sm text-green-200/80">
-                  Accessible contextually at every level for compliance
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* RESEARCH & INSIGHTS SECTION */}
         <section className="mt-16">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
