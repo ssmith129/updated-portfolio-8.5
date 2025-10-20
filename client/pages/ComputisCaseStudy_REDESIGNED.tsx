@@ -205,15 +205,16 @@ export default function ComputisCaseStudy() {
           <span className="inline-block bg-[#f59e0b] text-white px-4 py-2 rounded-[20px] text-[14px] font-medium tracking-[-0.14px] mb-6">
             FinTech • AI Transparency • 2023
           </span>
-          
+
           {/* NEW PUNCHY HEADLINE - From Action Plan */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-white leading-[110%] tracking-[-1.2px] mb-6 max-w-[75ch]">
             CPAs Control the AI, Not the Other Way Around
           </h1>
-          
+
           {/* RESULTS-DRIVEN SUBTITLE - From Action Plan */}
           <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#6B7280] leading-[140%] tracking-[-0.24px] max-w-[75ch]">
-            How explainable AI design turned skeptical accountants into advocates—and closed 3 enterprise deals in 6 months
+            How explainable AI design turned skeptical accountants into
+            advocates—and closed 3 enterprise deals in 6 months
           </p>
         </div>
       </header>
@@ -261,14 +262,15 @@ export default function ComputisCaseStudy() {
       {/* PHASE 1: COMPRESSED TL;DR SECTION */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
         <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-6 sm:p-8 border border-[#1A1A1A] shadow-xl hover:border-[#00D4FF]/30 transition-all duration-300">
-          
           {/* Transformation Story - COMPRESSED */}
           <div className="mb-6 max-w-[75ch]">
             <p className="text-base text-white leading-relaxed mb-2">
-              <strong>Before:</strong> CPAs waited 2.5 hours for engineers to modify Python scripts for crypto classification.
+              <strong>Before:</strong> CPAs waited 2.5 hours for engineers to
+              modify Python scripts for crypto classification.
             </p>
             <p className="text-base text-white leading-relaxed">
-              <strong>After:</strong> CPAs built custom rules in 90 seconds without code—turning AI opacity into transparency.
+              <strong>After:</strong> CPAs built custom rules in 90 seconds
+              without code—turning AI opacity into transparency.
             </p>
           </div>
 
@@ -306,7 +308,9 @@ export default function ComputisCaseStudy() {
                 <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
                   Reliance on
                   <br />
-                  <span className="text-xs text-[#6B7280]">engineering teams</span>
+                  <span className="text-xs text-[#6B7280]">
+                    engineering teams
+                  </span>
                 </p>
               </div>
               <div className="text-center transition-all duration-300 hover:scale-110">
@@ -316,7 +320,9 @@ export default function ComputisCaseStudy() {
                 <p className="text-sm font-medium text-[#D1D5DB] leading-normal">
                   Anomaly detection
                   <br />
-                  <span className="text-xs text-[#6B7280]">coverage increase</span>
+                  <span className="text-xs text-[#6B7280]">
+                    coverage increase
+                  </span>
                 </p>
               </div>
             </div>
@@ -380,7 +386,6 @@ export default function ComputisCaseStudy() {
 
       {/* Main Content */}
       <main className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-20 relative z-10">
-        
         {/* PHASE 1: IMPROVED PROBLEM SECTION - VISUAL CARD PATTERN */}
         <section className="mt-16">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
@@ -395,7 +400,9 @@ export default function ComputisCaseStudy() {
                 The Problem
               </h3>
               <p className="text-base text-[#D1D5DB] mb-4 max-w-[75ch] leading-relaxed">
-                CPAs spent 85% of their time waiting for engineers to modify backend scripts. No audit trails. No explainability. No autonomy.
+                CPAs spent 85% of their time waiting for engineers to modify
+                backend scripts. No audit trails. No explainability. No
+                autonomy.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
@@ -425,7 +432,12 @@ export default function ComputisCaseStudy() {
                 The Opportunity
               </h3>
               <p className="text-base text-[#D1D5DB] max-w-[75ch] leading-relaxed">
-                Build a <strong className="text-white">CPA-first explainable AI platform</strong> with audit trails, no-code rule-building, and transparency as a competitive moat.
+                Build a{" "}
+                <strong className="text-white">
+                  CPA-first explainable AI platform
+                </strong>{" "}
+                with audit trails, no-code rule-building, and transparency as a
+                competitive moat.
               </p>
             </div>
           </div>
@@ -449,14 +461,20 @@ export default function ComputisCaseStudy() {
                 </h3>
               </div>
               <div className="bg-[#1A1A1A]/50 border-2 border-dashed border-[#6B7280] rounded-lg p-12 text-center">
-                <p className="text-[#6B7280] text-sm mb-2">📊 VISUAL ASSET PLACEHOLDER</p>
-                <p className="text-white font-semibold mb-2">Journey Map — Current State</p>
+                <p className="text-[#6B7280] text-sm mb-2">
+                  📊 VISUAL ASSET PLACEHOLDER
+                </p>
+                <p className="text-white font-semibold mb-2">
+                  Journey Map — Current State
+                </p>
                 <p className="text-[#9CA3AF] text-xs max-w-[50ch] mx-auto">
                   Dimensions: 1400px × 900px | Format: WebP
                   <br />
-                  Shows 5 stages: Receive Data → Request Classification → Wait for Engineering → Review + Adjust → Export for Filing
+                  Shows 5 stages: Receive Data → Request Classification → Wait
+                  for Engineering → Review + Adjust → Export for Filing
                   <br />
-                  Highlights: 85% time waiting, no audit trail, 2.5h total time, black-box AI
+                  Highlights: 85% time waiting, no audit trail, 2.5h total time,
+                  black-box AI
                 </p>
               </div>
             </div>
@@ -472,21 +490,30 @@ export default function ComputisCaseStudy() {
                 </h3>
               </div>
               <div className="bg-[#1A1A1A]/50 border-2 border-dashed border-[#6B7280] rounded-lg p-12 text-center">
-                <p className="text-[#6B7280] text-sm mb-2">📊 VISUAL ASSET PLACEHOLDER</p>
-                <p className="text-white font-semibold mb-2">Journey Map — Future State</p>
+                <p className="text-[#6B7280] text-sm mb-2">
+                  📊 VISUAL ASSET PLACEHOLDER
+                </p>
+                <p className="text-white font-semibold mb-2">
+                  Journey Map — Future State
+                </p>
                 <p className="text-[#9CA3AF] text-xs max-w-[50ch] mx-auto">
                   Dimensions: 1400px × 900px | Format: WebP
                   <br />
-                  Shows 5 stages: Import Wallets → Build Rules → Review AI Classifications → Override + Annotate → Export (IRS 8949 + QuickBooks)
+                  Shows 5 stages: Import Wallets → Build Rules → Review AI
+                  Classifications → Override + Annotate → Export (IRS 8949 +
+                  QuickBooks)
                   <br />
-                  Improvements: Self-service, visual rule builder, 45% time reduction (1.4h total), confidence chips
+                  Improvements: Self-service, visual rule builder, 45% time
+                  reduction (1.4h total), confidence chips
                 </p>
               </div>
             </div>
 
             {/* Journey Impact */}
             <div className="bg-amber-50/10 rounded-lg p-6 border-l-4 border-amber-500">
-              <h4 className="font-semibold text-amber-400 mb-2">Journey Impact</h4>
+              <h4 className="font-semibold text-amber-400 mb-2">
+                Journey Impact
+              </h4>
               <ul className="space-y-1 text-sm text-amber-200/80">
                 <li>• Eliminated 85% engineering dependency</li>
                 <li>• Reduced onboarding from 2.5h to 1.4h (45% faster)</li>
@@ -505,34 +532,48 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="bg-[#1A1A1A]/50 border-2 border-dashed border-[#6B7280] rounded-lg p-12 text-center mb-6">
-              <p className="text-[#6B7280] text-sm mb-2">🗂️ VISUAL ASSET PLACEHOLDER</p>
-              <p className="text-white font-semibold mb-2">IA Sitemap Diagram</p>
+              <p className="text-[#6B7280] text-sm mb-2">
+                🗂️ VISUAL ASSET PLACEHOLDER
+              </p>
+              <p className="text-white font-semibold mb-2">
+                IA Sitemap Diagram
+              </p>
               <p className="text-[#9CA3AF] text-xs max-w-[60ch] mx-auto">
                 Dimensions: 1400px × 1000px | Format: WebP
                 <br />
-                Modular hierarchy: Dashboard → Clients → Wallets → Transactions → Rules → Reports
+                Modular hierarchy: Dashboard → Clients → Wallets → Transactions
+                → Rules → Reports
                 <br />
-                Shows role-based permission layers (CPA, Analyst, Admin) with color-coded badges
+                Shows role-based permission layers (CPA, Analyst, Admin) with
+                color-coded badges
                 <br />
-                Annotations: Self-service entry point, audit trail at every level, modular structure
+                Annotations: Self-service entry point, audit trail at every
+                level, modular structure
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-blue-50/10 p-4 rounded-lg border-l-4 border-blue-500">
-                <h4 className="font-semibold text-blue-400 mb-2">Modular Design</h4>
+                <h4 className="font-semibold text-blue-400 mb-2">
+                  Modular Design
+                </h4>
                 <p className="text-sm text-blue-200/80">
-                  Each level is independently scalable for new jurisdictions and assets
+                  Each level is independently scalable for new jurisdictions and
+                  assets
                 </p>
               </div>
               <div className="bg-purple-50/10 p-4 rounded-lg border-l-4 border-purple-500">
-                <h4 className="font-semibold text-purple-400 mb-2">Role-Based Views</h4>
+                <h4 className="font-semibold text-purple-400 mb-2">
+                  Role-Based Views
+                </h4>
                 <p className="text-sm text-purple-200/80">
                   CPAs, Analysts, and Admins see only relevant sections
                 </p>
               </div>
               <div className="bg-green-50/10 p-4 rounded-lg border-l-4 border-green-500">
-                <h4 className="font-semibold text-green-400 mb-2">Audit Trail</h4>
+                <h4 className="font-semibold text-green-400 mb-2">
+                  Audit Trail
+                </h4>
                 <p className="text-sm text-green-200/80">
                   Accessible contextually at every level for compliance
                 </p>
@@ -549,13 +590,19 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <p className="text-base text-[#6B7280] mb-8 max-w-[75ch] leading-relaxed">
-              All metrics were tracked using a combination of Mixpanel funnels, Google Analytics events, Jira ticket analysis, and recorded usability sessions over a 10-month period (Oct 2022 - Aug 2023).
+              All metrics were tracked using a combination of Mixpanel funnels,
+              Google Analytics events, Jira ticket analysis, and recorded
+              usability sessions over a 10-month period (Oct 2022 - Aug 2023).
             </p>
 
             {/* PLACEHOLDER: Metrics Dashboard */}
             <div className="bg-[#1A1A1A]/50 border-2 border-dashed border-[#6B7280] rounded-lg p-12 text-center mb-8">
-              <p className="text-[#6B7280] text-sm mb-2">📈 VISUAL ASSET PLACEHOLDER</p>
-              <p className="text-white font-semibold mb-2">Metrics Validation Dashboard</p>
+              <p className="text-[#6B7280] text-sm mb-2">
+                📈 VISUAL ASSET PLACEHOLDER
+              </p>
+              <p className="text-white font-semibold mb-2">
+                Metrics Validation Dashboard
+              </p>
               <p className="text-[#9CA3AF] text-xs max-w-[60ch] mx-auto">
                 Dimensions: 1400px × 700px | Format: WebP
                 <br />
@@ -564,8 +611,8 @@ export default function ComputisCaseStudy() {
                 • CPA onboarding time (line chart declining 2.5h to 1.4h)
                 <br />
                 • Demo-to-conversion rate (bar chart showing 32% increase)
-                <br />
-                • Engineering dependency (pie chart showing 85% to 12% reduction)
+                <br />• Engineering dependency (pie chart showing 85% to 12%
+                reduction)
               </p>
             </div>
 
@@ -624,7 +671,9 @@ export default function ComputisCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div className="flex items-start gap-2 text-sm text-[#D1D5DB]">
                   <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
-                  <span>Closed 3 enterprise deals in 6 months ($450K+ ARR)</span>
+                  <span>
+                    Closed 3 enterprise deals in 6 months ($450K+ ARR)
+                  </span>
                 </div>
                 <div className="flex items-start gap-2 text-sm text-[#D1D5DB]">
                   <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
@@ -636,7 +685,9 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="flex items-start gap-2 text-sm text-[#D1D5DB]">
                   <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
-                  <span>Zero FMV disputes post-launch (down from 8 in beta)</span>
+                  <span>
+                    Zero FMV disputes post-launch (down from 8 in beta)
+                  </span>
                 </div>
               </div>
             </div>
@@ -650,19 +701,36 @@ export default function ComputisCaseStudy() {
               🚧 Phase 2-3 Content In Progress
             </h3>
             <p className="text-[#9CA3AF] mb-4 max-w-[75ch]">
-              The following sections are being redesigned according to the action plan:
+              The following sections are being redesigned according to the
+              action plan:
             </p>
             <ul className="space-y-2 text-sm text-[#D1D5DB]">
-              <li>• <strong>Research & Insights</strong> - Visual hierarchy improvements, affinity maps</li>
-              <li>• <strong>Key Design Decisions</strong> - Complete rewrite with alternatives & rationale pattern</li>
-              <li>• <strong>Wireframe Evolution</strong> - Lo-fi → Mid-fi → Hi-fi progression</li>
-              <li>• <strong>Competitive Analysis Matrix</strong> - Enhanced with visual differentiation</li>
-              <li>• <strong>Design System Showcase</strong> - Component library and principles</li>
-              <li>• <strong>Persona Cards</strong> - 3 detailed user personas</li>
+              <li>
+                • <strong>Research & Insights</strong> - Visual hierarchy
+                improvements, affinity maps
+              </li>
+              <li>
+                • <strong>Key Design Decisions</strong> - Complete rewrite with
+                alternatives & rationale pattern
+              </li>
+              <li>
+                • <strong>Wireframe Evolution</strong> - Lo-fi → Mid-fi → Hi-fi
+                progression
+              </li>
+              <li>
+                • <strong>Competitive Analysis Matrix</strong> - Enhanced with
+                visual differentiation
+              </li>
+              <li>
+                • <strong>Design System Showcase</strong> - Component library
+                and principles
+              </li>
+              <li>
+                • <strong>Persona Cards</strong> - 3 detailed user personas
+              </li>
             </ul>
           </div>
         </section>
-
       </main>
 
       {/* Related Case Studies */}
@@ -673,7 +741,10 @@ export default function ComputisCaseStudy() {
 
       {/* Image Modal */}
       {enlargedImage && (
-        <Dialog open={!!enlargedImage} onOpenChange={() => setEnlargedImage(null)}>
+        <Dialog
+          open={!!enlargedImage}
+          onOpenChange={() => setEnlargedImage(null)}
+        >
           <DialogOverlay className="fixed inset-0 bg-black/90 z-50" />
           <DialogContent className="fixed inset-0 z-50 flex items-center justify-center p-4">
             <DialogTitle className="sr-only">{enlargedImage.alt}</DialogTitle>

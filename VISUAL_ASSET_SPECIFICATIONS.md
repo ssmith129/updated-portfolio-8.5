@@ -1,4 +1,5 @@
 # Visual Asset Placeholder Specifications
+
 **Computis Case Study Redesign - Phase 2**
 
 This document provides detailed specifications for all visual assets that need to be created to complete the Computis case study redesign according to the action plan.
@@ -8,18 +9,21 @@ This document provides detailed specifications for all visual assets that need t
 ## Asset Priority Matrix
 
 ### HIGH ROI (Create First - Phase 2A)
+
 1. ✅ **Journey Maps** (Current + Future State)
 2. ✅ **Information Architecture Diagram**
 3. ⏳ **Wireframe Evolution** (3 frames)
 4. ⏳ **Metrics Validation Dashboard**
 
 ### MEDIUM ROI (Create Next - Phase 2B)
+
 5. ⏳ **Research Synthesis (Affinity Map)**
 6. ⏳ **Competitive Analysis Matrix**
 7. ⏳ **Persona Cards** (3 personas)
 8. ⏳ **Before/After UI Comparison**
 
 ### NICE TO HAVE (Phase 3)
+
 9. ⏳ **Design System Component Sheet**
 10. ⏳ **Stakeholder Workshop Photo**
 11. ⏳ **Technical Architecture Diagram**
@@ -42,6 +46,7 @@ Location: /public/assets/journey-map-before.webp
 ```
 
 **Layout Structure:**
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ CPA JOURNEY — CURRENT STATE (Before Computis)              │
@@ -63,11 +68,13 @@ Location: /public/assets/journey-map-before.webp
 ```
 
 **Color Coding:**
+
 - Pain points: Red background (#FEE2E2)
 - Actions: Blue text (#1E40AF)
 - Time: Amber badges (#F59E0B)
 
 **Key Pain Points to Highlight:**
+
 - ✗ 85% time waiting for engineers
 - ✗ No audit trail for compliance
 - ✗ Frequent FMV errors
@@ -84,6 +91,7 @@ Location: /public/assets/journey-map-after.webp
 ```
 
 **Layout Structure:**
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ CPA JOURNEY — FUTURE STATE (With Computis)                 │
@@ -105,11 +113,13 @@ Location: /public/assets/journey-map-after.webp
 ```
 
 **Color Coding:**
+
 - Improvements: Green background (#D1FAE5)
 - Actions: Purple text (#7C3AED)
 - Time Saved: Green badges (#10B981)
 
 **Key Improvements to Highlight:**
+
 - ✓ Self-service wallet import (no engineer)
 - ✓ Visual rule builder (no code)
 - ✓ Confidence chips + hover reasoning
@@ -132,6 +142,7 @@ Location: /public/assets/ia-diagram.webp
 ```
 
 **Layout Structure:**
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                   COMPUTIS IA — SITEMAP                     │
@@ -174,6 +185,7 @@ Location: /public/assets/ia-diagram.webp
 ```
 
 **Visual Design:**
+
 - Primary nodes: Blue rounded rectangles (#3B82F6)
 - Secondary nodes: Purple rounded rectangles (#8B5CF6)
 - Tertiary nodes: Green rounded rectangles (#10B981)
@@ -205,6 +217,7 @@ File Size: <200KB per frame
 ### Three Frames to Create:
 
 #### FRAME 1: Lo-Fi Sketch (Week 2)
+
 ```
 Location: /public/assets/rule-builder-lofi.webp
 
@@ -218,6 +231,7 @@ Content:
 ```
 
 #### FRAME 2: Mid-Fi Prototype (Week 5)
+
 ```
 Location: /public/assets/rule-builder-midfi.webp
 
@@ -231,6 +245,7 @@ Content:
 ```
 
 #### FRAME 3: Hi-Fi Final (Week 8)
+
 ```
 Location: /public/assets/rule-builder-hifi.webp
 
@@ -244,6 +259,7 @@ Content:
 ```
 
 **Visual Design:**
+
 - Lo-Fi: Black sketches on white, hand-drawn style
 - Mid-Fi: Grayscale, clean lines, annotations in red
 - Hi-Fi: Full brand colors, polished shadows/borders
@@ -264,6 +280,7 @@ Location: /public/assets/metrics-validation-dashboard.webp
 ```
 
 **Layout Structure:**
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │              COMPUTIS METRICS VALIDATION                    │
@@ -306,6 +323,7 @@ Location: /public/assets/metrics-validation-dashboard.webp
 ```
 
 **Visual Design:**
+
 - Charts: Real data (even if anonymized/simplified)
 - Colors: Match brand (amber, blue, green)
 - Annotations: Highlight key inflection points
@@ -327,6 +345,7 @@ Location: /public/assets/research-affinity-map.webp
 ```
 
 **Layout Structure:**
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │           RESEARCH SYNTHESIS: CPA PAIN POINTS               │
@@ -370,6 +389,7 @@ Location: /public/assets/research-affinity-map.webp
 ```
 
 **Visual Design:**
+
 - Sticky notes: Different colors per theme
 - Quotes: Real verbatim from interviews
 - Numbers: Show frequency of mentions
@@ -391,6 +411,7 @@ Location: /public/assets/competitive-analysis-matrix.webp
 ```
 
 **Layout Structure:**
+
 ```
 ┌────���─────────────────────────────────────────────────────────────────┐
 │            COMPETITIVE ANALYSIS: CRYPTO TAX PLATFORMS                │
@@ -415,6 +436,7 @@ Location: /public/assets/competitive-analysis-matrix.webp
 ```
 
 **Visual Design:**
+
 - Checkmarks: Green ✓
 - X marks: Red ✗
 - Partial: Amber ~
@@ -430,6 +452,7 @@ Location: /public/assets/competitive-analysis-matrix.webp
 **Tools:** Figma
 
 **Create 3 Persona Cards:**
+
 1. Primary: Lead CPA (Decision Maker)
 2. Secondary: Operations Analyst (Power User)
 3. Tertiary: Admin (Multi-Client Manager)
@@ -445,6 +468,7 @@ Locations:
 ```
 
 **Card Layout Structure:**
+
 ```
 ┌─────────────────────────────────────────┐
 │  [Photo or Avatar]                      │
@@ -480,6 +504,7 @@ Locations:
 ```
 
 **Visual Design:**
+
 - Use consistent template for all 3 personas
 - Icons for goals (✓) and frustrations (✗)
 - Real quote in italics with quote marks
@@ -490,6 +515,7 @@ Locations:
 ## Implementation Checklist
 
 ### Phase 2A (Week 1-2) - High Priority Assets
+
 - [ ] Create Journey Map - Before (Asset 1A)
 - [ ] Create Journey Map - After (Asset 1B)
 - [ ] Create IA Diagram (Asset 2)
@@ -499,6 +525,7 @@ Locations:
 - [ ] Create Metrics Dashboard (Asset 4)
 
 ### Phase 2B (Week 3) - Medium Priority Assets
+
 - [ ] Create Research Affinity Map (Asset 5)
 - [ ] Create Competitive Analysis Matrix (Asset 6)
 - [ ] Create Persona Card - Lead CPA (Asset 7A)
@@ -506,6 +533,7 @@ Locations:
 - [ ] Create Persona Card - Admin (Asset 7C)
 
 ### Phase 3 (Week 4) - Nice to Have
+
 - [ ] Create Before/After UI Comparison
 - [ ] Create Design System Component Sheet
 - [ ] Optimize all images (compress, convert to WebP)
@@ -517,11 +545,13 @@ Locations:
 ## File Naming Convention
 
 All assets should follow this naming pattern:
+
 ```
 {asset-type}-{descriptor}-{variant}.webp
 ```
 
 Examples:
+
 - `journey-map-before.webp`
 - `journey-map-after.webp`
 - `ia-diagram.webp`

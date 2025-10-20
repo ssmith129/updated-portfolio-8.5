@@ -56,6 +56,7 @@
 This file contains Phase 1 implementation and is ready to view in your browser:
 
 1. Replace the original file:
+
    ```bash
    cp client/pages/ComputisCaseStudy.tsx client/pages/ComputisCaseStudy_BACKUP.tsx
    cp client/pages/ComputisCaseStudy_REDESIGNED.tsx client/pages/ComputisCaseStudy.tsx
@@ -68,19 +69,26 @@ This file contains Phase 1 implementation and is ready to view in your browser:
 Integrate Phase 2 content step-by-step:
 
 #### Step 1: Open Main File
+
 ```bash
 # Open the redesigned file
 open client/pages/ComputisCaseStudy_REDESIGNED.tsx
 ```
 
 #### Step 2: Find Insert Point
+
 Search for this comment in the file:
+
 ```tsx
-{/* Placeholder for rest of sections - TO BE CONTINUED IN NEXT PHASES */}
+{
+  /* Placeholder for rest of sections - TO BE CONTINUED IN NEXT PHASES */
+}
 ```
 
 #### Step 3: Copy Phase 2 Content
+
 Copy everything from `PHASE_2_CONTENT.tsx` between the markers:
+
 ```tsx
 {/* PHASE 2: RESEARCH & INSIGHTS - IMPROVED VISUAL HIERARCHY */}
 ...
@@ -88,6 +96,7 @@ Copy everything from `PHASE_2_CONTENT.tsx` between the markers:
 ```
 
 #### Step 4: Paste and Test
+
 1. Paste the content before the placeholder comment
 2. Delete the placeholder section
 3. Save file
@@ -100,6 +109,7 @@ Copy everything from `PHASE_2_CONTENT.tsx` between the markers:
 ### 1. Research & Insights Section
 
 **New Structure:**
+
 - Research Process grid (6 activities visible)
 - Top 3 Critical Insights (always visible)
 - Expandable "View All 5 Insights" button
@@ -110,6 +120,7 @@ Copy everything from `PHASE_2_CONTENT.tsx` between the markers:
 ### 2. Key Design Decisions (All 5 Rewritten)
 
 Each decision now follows this pattern:
+
 ```
 THE QUESTION: [Design challenge]
 DISCOVERY: [Research findings]
@@ -121,6 +132,7 @@ BUSINESS IMPACT: [Revenue/deals closed]
 ```
 
 **Decisions Rewritten:**
+
 1. ✅ Visual Rule Builder (No-Code)
 2. ✅ AI Confidence Chips + Override Control
 3. ✅ Inline Audit Trail Drawer
@@ -132,6 +144,7 @@ BUSINESS IMPACT: [Revenue/deals closed]
 ## 🎨 Visual Assets Status
 
 ### ✅ Completed (Placeholders with Specs)
+
 - Journey Map - Before (1400×900px)
 - Journey Map - After (1400×900px)
 - Information Architecture Diagram (1400×1000px)
@@ -140,6 +153,7 @@ BUSINESS IMPACT: [Revenue/deals closed]
 - Competitive Analysis Matrix (1400×600px)
 
 ### ⏳ To Create (Phase 2B)
+
 - Wireframe Evolution - Lo-Fi (1400×800px)
 - Wireframe Evolution - Mid-Fi (1400×800px)
 - Wireframe Evolution - Hi-Fi (1400×800px)
@@ -154,6 +168,7 @@ BUSINESS IMPACT: [Revenue/deals closed]
 Before considering the implementation complete:
 
 ### Visual Testing
+
 - [ ] All sections render correctly
 - [ ] No layout breaks on mobile (< 768px)
 - [ ] No layout breaks on tablet (768px - 1024px)
@@ -162,6 +177,7 @@ Before considering the implementation complete:
 - [ ] All modal triggers work (5 GIF modals)
 
 ### Content Testing
+
 - [ ] Hero headline is visible and punchy
 - [ ] Impact metrics grid displays correctly
 - [ ] MetricCard components show validation context
@@ -170,6 +186,7 @@ Before considering the implementation complete:
 - [ ] All icons render correctly (Users, Search, Target, etc.)
 
 ### Accessibility Testing
+
 - [ ] All images have descriptive alt text
 - [ ] Color contrast ≥ 4.5:1 for body text (#6B7280)
 - [ ] Focus states visible on all interactive elements
@@ -178,6 +195,7 @@ Before considering the implementation complete:
 - [ ] All buttons have aria-labels where needed
 
 ### Performance Testing
+
 - [ ] Lighthouse score > 90
 - [ ] All images lazy-loaded below fold
 - [ ] No console errors
@@ -189,9 +207,11 @@ Before considering the implementation complete:
 ## 🎯 Success Metrics (How to Measure Impact)
 
 ### Comprehension Rate
+
 **Test with 5-10 designers/hiring managers:**
 
 Questions to ask after 2-minute review:
+
 1. "What was the main problem Computis solved?"
 2. "Name 2 alternatives you explored for any design decision"
 3. "What was the tradeoff for the Visual Rule Builder?"
@@ -199,20 +219,22 @@ Questions to ask after 2-minute review:
 **Target:** 75%+ recall rate
 
 ### Scroll Depth
+
 **Track with Google Analytics:**
 
 ```javascript
 // Add to your analytics setup
-gtag('event', 'scroll', {
-  'event_category': 'engagement',
-  'event_label': 'computis_case_study',
-  'percent_scrolled': 50
+gtag("event", "scroll", {
+  event_category: "engagement",
+  event_label: "computis_case_study",
+  percent_scrolled: 50,
 });
 ```
 
 **Target:** 60%+ reach "Outcomes" section
 
 ### Time to First Insight
+
 **Test with screen recording:**
 
 Task: "What is the core value proposition?"
@@ -228,6 +250,7 @@ Task: "What is the core value proposition?"
 **Cause:** Missing state variables
 
 **Fix:** Ensure these are declared at top of component:
+
 ```tsx
 const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
 const [allInsightsExpanded, setAllInsightsExpanded] = useState(false);
@@ -238,6 +261,7 @@ const [allInsightsExpanded, setAllInsightsExpanded] = useState(false);
 **Cause:** Missing import
 
 **Fix:** Add to imports:
+
 ```tsx
 import {
   // ... existing imports
@@ -251,11 +275,13 @@ import {
 **Cause:** Missing modal state
 
 **Fix:** Ensure these are declared:
+
 ```tsx
 const [isGifModalOpen, setIsGifModalOpen] = useState(false);
 const [isAuditDrawerModalOpen, setIsAuditDrawerModalOpen] = useState(false);
 const [isRuleBuilderModalOpen, setIsRuleBuilderModalOpen] = useState(false);
-const [isAnomalyDetectionModalOpen, setIsAnomalyDetectionModalOpen] = useState(false);
+const [isAnomalyDetectionModalOpen, setIsAnomalyDetectionModalOpen] =
+  useState(false);
 const [isMultiTenantModalOpen, setIsMultiTenantModalOpen] = useState(false);
 ```
 
@@ -264,12 +290,13 @@ const [isMultiTenantModalOpen, setIsMultiTenantModalOpen] = useState(false);
 **Cause:** Using old color value
 
 **Fix:** Replace all instances:
+
 ```css
 /* OLD (Fails WCAG AA) */
-color: #9FA0A3;
+color: #9fa0a3;
 
 /* NEW (Passes WCAG AA) */
-color: #6B7280;
+color: #6b7280;
 ```
 
 ---
@@ -277,20 +304,24 @@ color: #6B7280;
 ## 📈 Before/After Comparison
 
 ### Text Density
+
 - **Before:** 90% text / 10% visual
 - **Phase 1:** 70% text / 30% visual (hero + summary)
 - **Phase 2:** 50% text / 50% visual (with placeholders)
 - **Target (with assets):** 40% text / 60% visual
 
 ### Average Paragraph Length
+
 - **Before:** 4-6 sentences (60-80 words)
 - **After:** 1-2 sentences (15-25 words)
 
 ### Decision Structure
+
 - **Before:** Challenge → Solution → Impact (3 elements)
 - **After:** Question → Discovery → Options → Why → Validation → Tradeoff (6 elements)
 
 ### Business Impact Visibility
+
 - **Before:** Buried in text, not connected to design
 - **After:** Explicit callouts ($180K deal, $450K ARR)
 
@@ -299,22 +330,28 @@ color: #6B7280;
 ## 🚀 Next Steps
 
 ### Immediate (This Week)
+
 1. **Test the redesigned page** in your local environment
 2. **Review Phase 1 & 2 changes** - does it match the vision?
 3. **Provide feedback** - anything to adjust before Phase 3?
 
 ### Short-term (Next 2-3 Weeks)
+
 **Option A: Create Visual Assets**
+
 - Follow `VISUAL_ASSET_SPECIFICATIONS.md`
 - Create journey maps, IA diagram, wireframes
 - Replace placeholders with actual images
 
 **Option B: Deploy Current Version**
+
 - Visual placeholders are descriptive enough for portfolio reviewers
 - Can create assets later based on feedback
 
 ### Long-term (Month 2)
+
 **Phase 3: Polish & Validation**
+
 - Reusable card components (InsightCard, DecisionCard)
 - Mobile optimization (fine-tuning)
 - Accessibility audit (automated + manual)
@@ -328,20 +365,25 @@ color: #6B7280;
 When presenting this case study to hiring managers:
 
 ### Slide 1: The Hook
+
 > "CPAs Control the AI, Not the Other Way Around"
-> 
+>
 > How explainable AI design closed 3 enterprise deals in 6 months
 
 ### Slide 2: The Challenge
+
 > CPAs spent 85% of time waiting for engineers. No audit trails. No explainability. No autonomy.
 
 ### Slide 3: The Process (Pick One Decision)
+
 > **Visual Rule Builder:**
+>
 > - Explored 3 approaches (form-based, natural language, visual drag-and-drop)
 > - Chose visual because 7/8 CPAs built rules in <3 minutes
 > - Tradeoff: Took 3 extra weeks, but unlocked $200K+ in sales
 
 ### Slide 4: The Impact
+
 > - ↓45% CPA onboarding time (validated with 12 CPAs)
 > - ↑32% demo-to-conversion (A/B tested)
 > - $450K+ ARR from enterprise segment
@@ -353,14 +395,17 @@ When presenting this case study to hiring managers:
 **When to Read Each File:**
 
 ### Before Starting
+
 - `IMPLEMENTATION_GUIDE.md` (this file) - Overview and integration steps
 
 ### During Implementation
+
 - `PHASE_1_SUMMARY.md` - Understand Phase 1 changes
 - `PHASE_2_SUMMARY.md` - Understand Phase 2 changes
 - `VISUAL_ASSET_SPECIFICATIONS.md` - When creating visual assets
 
 ### For Original Context
+
 - `(Claude) Restructured Action Plan & Rewrite 2908f0f381bb80ed9571df3bb1db2535.md` - Original requirements
 
 ---
@@ -401,18 +446,22 @@ A: Yes! Follow the same pattern template in `PHASE_2_SUMMARY.md`
 ## 🎉 What You've Accomplished
 
 ### Strategic Transformation
+
 - ❌ **Before:** Feature list with no rationale
 - ✅ **After:** Strategic design story with alternatives & tradeoffs
 
 ### Credibility Enhancement
+
 - ❌ **Before:** Vanity metrics without context
 - ✅ **After:** Validated metrics with methodology
 
 ### Business Acumen
+
 - ❌ **Before:** Design isolated from business
 - ✅ **After:** $630K+ in revenue directly tied to design decisions
 
 ### Process Rigor
+
 - ❌ **Before:** Claims without evidence
 - ✅ **After:** Usability test findings, A/B test results, stakeholder workshops documented
 
