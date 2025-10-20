@@ -367,6 +367,106 @@ export default function ComputisCaseStudy() {
 
       {/* Main Content */}
       <main className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-20 relative z-10">
+        {/* PROJECT OVERVIEW SECTION */}
+        <section className="mt-16">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
+            <h2 className="text-2xl sm:text-3xl font-medium text-white mb-8">
+              Project Overview
+            </h2>
+
+            {/* Project Details Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <div className="space-y-2">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
+                  Role
+                </h3>
+                <p className="text-base font-medium text-white">
+                  Founding Lead Product Designer
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
+                  Team
+                </h3>
+                <p className="text-base font-medium text-white">
+                  CTO, PM, 2 Engineers, Design Agency Partner
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
+                  Duration
+                </h3>
+                <p className="text-base font-medium text-white">
+                  10 months (Discovery → Beta Launch)
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
+                  Platform
+                </h3>
+                <p className="text-base font-medium text-white">
+                  Web SaaS (Desktop-first, responsive)
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
+                  Tools
+                </h3>
+                <p className="text-base font-medium text-white">
+                  Figma, Miro, Notion, Jira, GA, Mixpanel
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider">
+                  Industry
+                </h3>
+                <p className="text-base font-medium text-white">
+                  FinTech • Crypto Tax Compliance
+                </p>
+              </div>
+            </div>
+
+            {/* Objectives */}
+            <div className="bg-[#1A1A1A]/50 rounded-lg p-6 border-l-4 border-[#00D4FF]">
+              <h3 className="text-lg font-semibold text-white mb-5">
+                Project Objectives
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#D1D5DB] leading-relaxed">
+                    Enable CPAs to self-serve without engineers through no-code visual tools
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#D1D5DB] leading-relaxed">
+                    Build audit-ready workflows with full transparency and compliance tracking
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#D1D5DB] leading-relaxed">
+                    Reduce compliance risk through explainable AI with inline confidence indicators
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#D1D5DB] leading-relaxed">
+                    Generate IRS 8949 and QuickBooks-ready outputs for seamless filing
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[#00FFB3] mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-[#D1D5DB] leading-relaxed">
+                    Scale for DAOs, hedge funds, and enterprise CPA firms with multi-tenant architecture
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* PROBLEM & OPPORTUNITY SECTION */}
         <section className="mt-16">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] shadow-xl">
@@ -566,7 +666,7 @@ export default function ComputisCaseStudy() {
                       4. Dark mode was essential, not optional
                     </p>
                     <p className="text-sm text-[#D1D5DB] max-w-[75ch] leading-relaxed">
-                      CPAs work extended hours during tax season���75% preferred
+                      CPAs work extended hours during tax season—75% preferred
                       dark theme by default
                     </p>
                   </div>
