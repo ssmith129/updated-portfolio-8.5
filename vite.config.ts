@@ -44,7 +44,7 @@ export default defineConfig(() => ({
       "./server/index"
     );
     const expressApp = createExpressServer();
-    server.middlewares.use("/api", expressApp);
+    server.middlewares.use(expressApp);
   },
   resolve: {
     alias: {
