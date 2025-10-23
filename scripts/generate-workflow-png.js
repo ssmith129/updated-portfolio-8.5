@@ -1,5 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Simple SVG to PNG converter using Canvas (will need canvas package)
 async function generatePNG() {
@@ -7,9 +12,10 @@ async function generatePNG() {
     // Check if sharp is available (preferred) or use canvas
     let sharp;
     try {
-      sharp = require('sharp');
+      const sharpModule = await import('sharp');
+      sharp = sharpModule.default;
       console.log('Using sharp for PNG generation...');
-      
+
       const svgPath = path.join(__dirname, '..', 'public', 'Computis Assets', 'workflow-pain-points.svg');
       const pngPath = path.join(__dirname, '..', 'public', 'Computis Assets', 'workflow-pain-points.png');
       
@@ -26,7 +32,8 @@ async function generatePNG() {
       
       // Alternative: Use node-canvas if sharp is not available
       try {
-        const { createCanvas, loadImage } = require('canvas');
+        const canvasModule = await import('canvas');
+        const { createCanvas, loadImage } = canvasModule;
         
         const svgPath = path.join(__dirname, '..', 'public', 'Computis Assets', 'workflow-pain-points.svg');
         const pngPath = path.join(__dirname, '..', 'public', 'Computis Assets', 'workflow-pain-points.png');
