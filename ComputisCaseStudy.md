@@ -21,16 +21,16 @@ In early 2022, Computis CPAs waited 85% of their time for engineers to modify cl
 ### Impact at a Glance
 
 **↓ 45% CPA onboarding time (2.5h → 1.4h)**  
-*Time-to-first-successful-report across 12 enterprise onboardings, Q3-Q4 2023*
+_Time-to-first-successful-report across 12 enterprise onboardings, Q3-Q4 2023_
 
 **↑ 32% demo-to-conversion rate (18% → 50%)**  
-*Signed contracts / Demos delivered, N=22 enterprise deals*
+_Signed contracts / Demos delivered, N=22 enterprise deals_
 
 **↓ 85% engineering dependency (94% → 9%)**  
-*Classification tasks requiring dev tickets, N=847 tasks*
+_Classification tasks requiring dev tickets, N=847 tasks_
 
 **↑ 150% anomaly detection coverage**  
-*Flagged FMV discrepancies vs. manual audit baseline*
+_Flagged FMV discrepancies vs. manual audit baseline_
 
 ---
 
@@ -75,23 +75,23 @@ CPA workflow from intake → final report, pain points highlighted
 
 **1. Professional Liability Trumps Efficiency**  
 CPAs must defend every classification to the IRS. "Black-box" AI creates legal risk.  
-*Impact: Transparency became non-negotiable*
+_Impact: Transparency became non-negotiable_
 
 **2. Engineering Dependency Blocks Scale**  
 85% of CPA time spent on dev tickets. Average turnaround: 2.3 days.  
-*Impact: Self-service became core value prop*
+_Impact: Self-service became core value prop_
 
 **3. Audit Trails Drive Enterprise Sales**  
 3/4 competitors lacked history. This became Computis's moat.  
-*Impact: Audit drawer prioritized in MVP*
+_Impact: Audit drawer prioritized in MVP_
 
 **4. Bulk Operations Required**  
 Manual: 12 min/transaction. Average client: 3,000+ transactions.  
-*Impact: Rule builder with scale designed*
+_Impact: Rule builder with scale designed_
 
 **5. Trust Through Control**  
 CPAs wanted assistance, not replacement. Override tested as must-have.  
-*Impact: Graduated autonomy system built*
+_Impact: Graduated autonomy system built_
 
 ---
 
@@ -104,12 +104,15 @@ The crypto tax software market in 2022-2023 was dominated by consumer-first plat
 ### Detailed Competitive Assessment
 
 #### TaxBit
+
 **Strengths:**
+
 - Enterprise positioning with institutional clients
 - Strong API integrations with exchanges
 - AI-assisted classification with some transparency
 
 **Weaknesses:**
+
 - No visual rule builder for CPAs
 - Limited audit trail capabilities
 - Engineer-dependent for custom logic
@@ -118,12 +121,15 @@ The crypto tax software market in 2022-2023 was dominated by consumer-first plat
 **Opportunity Gap:** CPAs still relied on engineering teams for 70%+ of classification customizations
 
 #### Cryptio
+
 **Strengths:**
+
 - Multi-jurisdictional tax compliance
 - QuickBooks integration
 - Strong European market presence
 
 **Weaknesses:**
+
 - No self-service rule engine
 - Partial audit logging (export-only, not inline)
 - Limited anomaly detection for FMV errors
@@ -132,12 +138,15 @@ The crypto tax software market in 2022-2023 was dominated by consumer-first plat
 **Opportunity Gap:** No real-time compliance visibility or CPA-controlled overrides
 
 #### CoinTracker
+
 **Strengths:**
+
 - Consumer-friendly UI/UX
 - Extensive exchange integrations
 - Large user base
 
 **Weaknesses:**
+
 - Consumer-focused (not CPA-ready)
 - No audit trail whatsoever
 - No rule builder or bulk operations
@@ -146,12 +155,15 @@ The crypto tax software market in 2022-2023 was dominated by consumer-first plat
 **Opportunity Gap:** Completely unfit for professional accounting workflows
 
 #### ZenLedger
+
 **Strengths:**
+
 - Hybrid consumer/professional positioning
 - QuickBooks export capabilities
 - Some bulk tagging features
 
 **Weaknesses:**
+
 - Basic rule engine (text-based, not visual)
 - Partial audit trails (limited to exports)
 - No FMV anomaly dashboard
@@ -180,16 +192,16 @@ Based on competitive analysis, Computis positioned as **the only CPA-first crypt
 
 ### Competitive Feature Matrix
 
-| Feature                    | Computis | TaxBit | Cryptio | CoinTracker | ZenLedger |
-|---------------------------|:--------:|:------:|:-------:|:-----------:|:---------:|
-| Visual Rule Engine        | ✅       | ❌     | ❌      | ❌          | ⚠️        |
-| AI + Override Control     | ✅       | ✅     | ⚠️      | ❌          | ❌        |
-| Inline Audit Trail        | ✅       | ✅     | ⚠️      | ❌          | ⚠️        |
-| QuickBooks Export         | ✅       | ⚠️     | ✅      | ⚠️          | ✅        |
-| FMV Anomaly Detection     | ✅       | ⚠️     | ❌      | ❌          | ❌        |
-| Multi-Tenant Management   | ✅       | ⚠️     | ⚠️      | ❌          | ⚠️        |
-| Explainable AI            | ✅       | ⚠️     | ❌      | ❌          | ❌        |
-| Bulk Operations           | ✅       | ✅     | ⚠️      | ❌          | ⚠️        |
+| Feature                 | Computis | TaxBit | Cryptio | CoinTracker | ZenLedger |
+| ----------------------- | :------: | :----: | :-----: | :---------: | :-------: |
+| Visual Rule Engine      |    ✅    |   ❌   |   ❌    |     ❌      |    ⚠️     |
+| AI + Override Control   |    ✅    |   ✅   |   ⚠️    |     ❌      |    ❌     |
+| Inline Audit Trail      |    ✅    |   ✅   |   ⚠️    |     ❌      |    ⚠️     |
+| QuickBooks Export       |    ✅    |   ⚠️   |   ✅    |     ⚠️      |    ✅     |
+| FMV Anomaly Detection   |    ✅    |   ⚠️   |   ❌    |     ❌      |    ❌     |
+| Multi-Tenant Management |    ✅    |   ⚠️   |   ⚠️    |     ❌      |    ⚠️     |
+| Explainable AI          |    ✅    |   ⚠️   |   ❌    |     ❌      |    ❌     |
+| Bulk Operations         |    ✅    |   ✅   |   ⚠️    |     ❌      |    ⚠️     |
 
 **Legend:**  
 ✅ = Full feature  
@@ -199,6 +211,7 @@ Based on competitive analysis, Computis positioned as **the only CPA-first crypt
 ### Market Positioning Outcome
 
 This differentiation enabled Computis to:
+
 - Win 3 enterprise CPA firm partnerships in 6 months
 - Convert 32% more demos than industry average
 - Position as "the accountant's crypto tax platform" vs. "another AI tool"
@@ -308,6 +321,7 @@ Panel 1: CPA view | Panel 2: Analyst view | Panel 3: Admin view
 CTO wanted full automation; CPAs demanded override control for liability protection
 
 **My Approach:**
+
 1. Facilitated design workshop with CPA + CTO
 2. Presented competitor data (40% G2 "black-box" complaints)
 3. Proposed graduated autonomy: High confidence → Auto / Medium → Review / Low → Manual
