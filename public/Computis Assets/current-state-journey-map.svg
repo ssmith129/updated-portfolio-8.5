@@ -1,0 +1,337 @@
+<svg 
+    width="1400" 
+    height="900" 
+    viewBox="0 0 1400 900" 
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    aria-label="Journey map of CPA crypto tax workflow showing 8 steps from intake to report, with pain points highlighted at engineering bottleneck stages"
+>
+    <!-- Background -->
+    <rect width="1400" height="900" fill="#FAFAFA"/>
+    
+    <!-- Title -->
+    <text x="700" y="50" text-anchor="middle" font-size="32" font-weight="600" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif">
+        Current State: CPA Crypto Tax Workflow
+    </text>
+    
+    <text x="700" y="85" text-anchor="middle" font-size="16" fill="#6B7280" font-family="system-ui, -apple-system, sans-serif">
+        8-step process highlighting engineering bottlenecks and pain points
+    </text>
+
+    <!-- Legend -->
+    <g transform="translate(50, 120)">
+        <text font-size="14" font-weight="600" fill="#374151" font-family="system-ui, -apple-system, sans-serif">
+            Legend:
+        </text>
+        <g transform="translate(0, 25)">
+            <circle cx="8" cy="0" r="6" fill="#3B82F6"/>
+            <text x="20" y="5" font-size="12" fill="#6B7280" font-family="system-ui, -apple-system, sans-serif">
+                Standard Process
+            </text>
+        </g>
+        <g transform="translate(0, 45)">
+            <circle cx="8" cy="0" r="6" fill="#EF4444"/>
+            <text x="20" y="5" font-size="12" fill="#6B7280" font-family="system-ui, -apple-system, sans-serif">
+                Critical Bottleneck
+            </text>
+        </g>
+    </g>
+
+    <!-- Step 1: Client Intake -->
+    <g transform="translate(90, 250)">
+        <circle cx="35" cy="-20" r="16" fill="#3B82F6" opacity="0.1"/>
+        <text x="35" y="-15" text-anchor="middle" font-size="14" font-weight="700" fill="#3B82F6" font-family="system-ui, -apple-system, sans-serif">1</text>
+        <circle cx="35" cy="35" r="30" fill="white" stroke="#3B82F6" stroke-width="3" filter="url(#shadow)"/>
+        <!-- User Plus Icon -->
+        <path d="M35 20 L35 50 M20 35 L50 35" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="35" cy="20" r="6" fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+        <text x="35" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif">
+            <tspan x="35" dy="0">Client</tspan>
+            <tspan x="35" dy="14">Intake</tspan>
+        </text>
+        <foreignObject x="-25" y="130" width="120" height="100">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 11px; line-height: 1.4; color: #4B5563; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+                CPA collects client crypto transaction data and wallet addresses
+            </div>
+        </foreignObject>
+        <rect x="-30" y="250" width="130" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+        <path d="M-13 268 L-3 278 L-3 268 Z" fill="none" stroke="#D97706" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="-13" cy="268" r="8" fill="none" stroke="#D97706" stroke-width="2"/>
+        <text x="5" y="270" font-size="10" font-weight="600" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">Pain Point:</text>
+        <foreignObject x="-25" y="278" width="120" height="60">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 10px; line-height: 1.3; color: #78350F; text-align: center; font-family: system-ui, -apple-system, sans-serif; font-weight: 500;">
+                Manual data gathering, inconsistent formats
+            </div>
+        </foreignObject>
+    </g>
+
+    <!-- Arrow 1->2 -->
+    <line x1="160" y1="285" x2="180" y2="285" stroke="#D1D5DB" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 2: Wallet Connection -->
+    <g transform="translate(250, 250)">
+        <circle cx="35" cy="-20" r="16" fill="#3B82F6" opacity="0.1"/>
+        <text x="35" y="-15" text-anchor="middle" font-size="14" font-weight="700" fill="#3B82F6" font-family="system-ui, -apple-system, sans-serif">2</text>
+        <circle cx="35" cy="35" r="30" fill="white" stroke="#3B82F6" stroke-width="3" filter="url(#shadow)"/>
+        <!-- Link Icon -->
+        <path d="M27 27 L30 24 A5 5 0 0 1 40 24 L43 27 M43 43 L40 46 A5 5 0 0 1 30 46 L27 43" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <text x="35" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif">
+            <tspan x="35" dy="0">Wallet</tspan>
+            <tspan x="35" dy="14">Connection</tspan>
+        </text>
+        <foreignObject x="-25" y="130" width="120" height="100">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 11px; line-height: 1.4; color: #4B5563; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+                Connect to exchanges and blockchain explorers to pull transaction history
+            </div>
+        </foreignObject>
+        <rect x="-30" y="250" width="130" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+        <path d="M-13 268 L-3 278 L-3 268 Z" fill="none" stroke="#D97706" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="-13" cy="268" r="8" fill="none" stroke="#D97706" stroke-width="2"/>
+        <text x="5" y="270" font-size="10" font-weight="600" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">Pain Point:</text>
+        <foreignObject x="-25" y="278" width="120" height="60">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 10px; line-height: 1.3; color: #78350F; text-align: center; font-family: system-ui, -apple-system, sans-serif; font-weight: 500;">
+                API rate limits, multiple data sources
+            </div>
+        </foreignObject>
+    </g>
+
+    <!-- Arrow 2->3 -->
+    <line x1="320" y1="285" x2="340" y2="285" stroke="#D1D5DB" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 3: Transaction Ingestion -->
+    <g transform="translate(410, 250)">
+        <circle cx="35" cy="-20" r="16" fill="#3B82F6" opacity="0.1"/>
+        <text x="35" y="-15" text-anchor="middle" font-size="14" font-weight="700" fill="#3B82F6" font-family="system-ui, -apple-system, sans-serif">3</text>
+        <circle cx="35" cy="35" r="30" fill="white" stroke="#3B82F6" stroke-width="3" filter="url(#shadow)"/>
+        <!-- Download Icon -->
+        <path d="M35 20 L35 45 M27 37 L35 45 L43 37" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M20 50 L50 50" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="35" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif">
+            <tspan x="35" dy="0">Transaction</tspan>
+            <tspan x="35" dy="14">Ingestion</tspan>
+        </text>
+        <foreignObject x="-25" y="130" width="120" height="100">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 11px; line-height: 1.4; color: #4B5563; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+                Import raw transaction data into system for processing
+            </div>
+        </foreignObject>
+        <rect x="-30" y="250" width="130" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+        <path d="M-13 268 L-3 278 L-3 268 Z" fill="none" stroke="#D97706" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="-13" cy="268" r="8" fill="none" stroke="#D97706" stroke-width="2"/>
+        <text x="5" y="270" font-size="10" font-weight="600" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">Pain Point:</text>
+        <foreignObject x="-25" y="278" width="120" height="60">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 10px; line-height: 1.3; color: #78350F; text-align: center; font-family: system-ui, -apple-system, sans-serif; font-weight: 500;">
+                Data quality issues, missing metadata
+            </div>
+        </foreignObject>
+    </g>
+
+    <!-- Arrow 3->4 -->
+    <line x1="480" y1="285" x2="500" y2="285" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 4: Classification Request (BOTTLENECK) -->
+    <g transform="translate(570, 250)">
+        <circle cx="35" cy="-20" r="16" fill="#F59E0B" opacity="0.1"/>
+        <text x="35" y="-15" text-anchor="middle" font-size="14" font-weight="700" fill="#F59E0B" font-family="system-ui, -apple-system, sans-serif">4</text>
+        <circle cx="35" cy="35" r="30" fill="white" stroke="#F59E0B" stroke-width="3" filter="url(#shadow)"/>
+        <!-- Alert Circle Icon -->
+        <circle cx="35" cy="35" r="10" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+        <path d="M35 30 L35 35" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="35" cy="40" r="1" fill="#F59E0B"/>
+        <text x="35" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif">
+            <tspan x="35" dy="0">Classification</tspan>
+            <tspan x="35" dy="14">Request</tspan>
+        </text>
+        <foreignObject x="-25" y="130" width="120" height="100">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 11px; line-height: 1.4; color: #4B5563; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+                CPA identifies edge cases needing custom classification rules
+            </div>
+        </foreignObject>
+        <rect x="-30" y="250" width="130" height="80" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+        <path d="M-13 268 L-3 278 L-3 268 Z" fill="none" stroke="#DC2626" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="-13" cy="268" r="8" fill="none" stroke="#DC2626" stroke-width="2"/>
+        <text x="5" y="270" font-size="10" font-weight="600" fill="#991B1B" font-family="system-ui, -apple-system, sans-serif">Pain Point:</text>
+        <foreignObject x="-25" y="278" width="120" height="60">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 10px; line-height: 1.3; color: #7F1D1D; text-align: center; font-family: system-ui, -apple-system, sans-serif; font-weight: 500;">
+                85% of time waiting for engineer availability
+            </div>
+        </foreignObject>
+        <rect x="-30" y="345" width="130" height="24" rx="12" fill="#DC2626"/>
+        <text x="35" y="361" text-anchor="middle" font-size="10" font-weight="700" fill="white" font-family="system-ui, -apple-system, sans-serif">
+            CRITICAL BOTTLENECK
+        </text>
+    </g>
+
+    <!-- Arrow 4->5 -->
+    <line x1="640" y1="285" x2="660" y2="285" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 5: Engineer Ticket (BOTTLENECK) -->
+    <g transform="translate(730, 250)">
+        <circle cx="35" cy="-20" r="16" fill="#EF4444" opacity="0.1"/>
+        <text x="35" y="-15" text-anchor="middle" font-size="14" font-weight="700" fill="#EF4444" font-family="system-ui, -apple-system, sans-serif">5</text>
+        <circle cx="35" cy="35" r="30" fill="white" stroke="#EF4444" stroke-width="3" filter="url(#shadow)"/>
+        <!-- Ticket Icon -->
+        <rect x="25" y="25" width="20" height="20" rx="2" fill="none" stroke="#EF4444" stroke-width="2.5"/>
+        <circle cx="30" cy="35" r="1.5" fill="#EF4444"/>
+        <circle cx="40" cy="35" r="1.5" fill="#EF4444"/>
+        <text x="35" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif">
+            <tspan x="35" dy="0">Engineer</tspan>
+            <tspan x="35" dy="14">Ticket</tspan>
+        </text>
+        <foreignObject x="-25" y="130" width="120" height="100">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 11px; line-height: 1.4; color: #4B5563; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+                Submit ticket to engineering for Python script modifications
+            </div>
+        </foreignObject>
+        <rect x="-30" y="250" width="130" height="80" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+        <path d="M-13 268 L-3 278 L-3 268 Z" fill="none" stroke="#DC2626" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="-13" cy="268" r="8" fill="none" stroke="#DC2626" stroke-width="2"/>
+        <text x="5" y="270" font-size="10" font-weight="600" fill="#991B1B" font-family="system-ui, -apple-system, sans-serif">Pain Point:</text>
+        <foreignObject x="-25" y="278" width="120" height="60">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 10px; line-height: 1.3; color: #7F1D1D; text-align: center; font-family: system-ui, -apple-system, sans-serif; font-weight: 500;">
+                2.3-day average turnaround time
+            </div>
+        </foreignObject>
+        <rect x="-30" y="345" width="130" height="24" rx="12" fill="#DC2626"/>
+        <text x="35" y="361" text-anchor="middle" font-size="10" font-weight="700" fill="white" font-family="system-ui, -apple-system, sans-serif">
+            CRITICAL BOTTLENECK
+        </text>
+    </g>
+
+    <!-- Arrow 5->6 -->
+    <line x1="800" y1="285" x2="820" y2="285" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 6: Script Execution (BOTTLENECK) -->
+    <g transform="translate(890, 250)">
+        <circle cx="35" cy="-20" r="16" fill="#EF4444" opacity="0.1"/>
+        <text x="35" y="-15" text-anchor="middle" font-size="14" font-weight="700" fill="#EF4444" font-family="system-ui, -apple-system, sans-serif">6</text>
+        <circle cx="35" cy="35" r="30" fill="white" stroke="#EF4444" stroke-width="3" filter="url(#shadow)"/>
+        <!-- Code Icon -->
+        <path d="M27 30 L22 35 L27 40 M43 30 L48 35 L43 40" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M38 28 L32 42" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="35" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif">
+            <tspan x="35" dy="0">Script</tspan>
+            <tspan x="35" dy="14">Execution</tspan>
+        </text>
+        <foreignObject x="-25" y="130" width="120" height="100">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 11px; line-height: 1.4; color: #4B5563; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+                Engineer modifies backend script and runs classification
+            </div>
+        </foreignObject>
+        <rect x="-30" y="250" width="130" height="80" rx="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+        <path d="M-13 268 L-3 278 L-3 268 Z" fill="none" stroke="#DC2626" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="-13" cy="268" r="8" fill="none" stroke="#DC2626" stroke-width="2"/>
+        <text x="5" y="270" font-size="10" font-weight="600" fill="#991B1B" font-family="system-ui, -apple-system, sans-serif">Pain Point:</text>
+        <foreignObject x="-25" y="278" width="120" height="60">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 10px; line-height: 1.3; color: #7F1D1D; text-align: center; font-family: system-ui, -apple-system, sans-serif; font-weight: 500;">
+                No visibility into logic, black-box decisions
+            </div>
+        </foreignObject>
+        <rect x="-30" y="345" width="130" height="24" rx="12" fill="#DC2626"/>
+        <text x="35" y="361" text-anchor="middle" font-size="10" font-weight="700" fill="white" font-family="system-ui, -apple-system, sans-serif">
+            CRITICAL BOTTLENECK
+        </text>
+    </g>
+
+    <!-- Arrow 6->7 -->
+    <line x1="960" y1="285" x2="980" y2="285" stroke="#F59E0B" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 7: CPA Review -->
+    <g transform="translate(1050, 250)">
+        <circle cx="35" cy="-20" r="16" fill="#F59E0B" opacity="0.1"/>
+        <text x="35" y="-15" text-anchor="middle" font-size="14" font-weight="700" fill="#F59E0B" font-family="system-ui, -apple-system, sans-serif">7</text>
+        <circle cx="35" cy="35" r="30" fill="white" stroke="#F59E0B" stroke-width="3" filter="url(#shadow)"/>
+        <!-- Search Icon -->
+        <circle cx="32" cy="32" r="8" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+        <path d="M38 38 L45 45" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="35" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif">
+            <tspan x="35" dy="0">CPA</tspan>
+            <tspan x="35" dy="14">Review</tspan>
+        </text>
+        <foreignObject x="-25" y="130" width="120" height="100">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 11px; line-height: 1.4; color: #4B5563; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+                Review AI classifications and manually verify all results
+            </div>
+        </foreignObject>
+        <rect x="-30" y="250" width="130" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+        <path d="M-13 268 L-3 278 L-3 268 Z" fill="none" stroke="#D97706" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="-13" cy="268" r="8" fill="none" stroke="#D97706" stroke-width="2"/>
+        <text x="5" y="270" font-size="10" font-weight="600" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">Pain Point:</text>
+        <foreignObject x="-25" y="278" width="120" height="60">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 10px; line-height: 1.3; color: #78350F; text-align: center; font-family: system-ui, -apple-system, sans-serif; font-weight: 500;">
+                Cannot explain AI reasoning to clients or IRS
+            </div>
+        </foreignObject>
+    </g>
+
+    <!-- Arrow 7->8 -->
+    <line x1="1120" y1="285" x2="1140" y2="285" stroke="#D1D5DB" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Step 8: Report Generation -->
+    <g transform="translate(1210, 250)">
+        <circle cx="35" cy="-20" r="16" fill="#F59E0B" opacity="0.1"/>
+        <text x="35" y="-15" text-anchor="middle" font-size="14" font-weight="700" fill="#F59E0B" font-family="system-ui, -apple-system, sans-serif">8</text>
+        <circle cx="35" cy="35" r="30" fill="white" stroke="#F59E0B" stroke-width="3" filter="url(#shadow)"/>
+        <!-- File Text Icon -->
+        <rect x="26" y="22" width="18" height="26" rx="2" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+        <path d="M30 30 L40 30 M30 35 L40 35 M30 40 L37 40" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="35" y="95" text-anchor="middle" font-size="13" font-weight="600" fill="#1F2937" font-family="system-ui, -apple-system, sans-serif">
+            <tspan x="35" dy="0">Report</tspan>
+            <tspan x="35" dy="14">Generation</tspan>
+        </text>
+        <foreignObject x="-25" y="130" width="120" height="100">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 11px; line-height: 1.4; color: #4B5563; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+                Export results and manually format for IRS Form 8949
+            </div>
+        </foreignObject>
+        <rect x="-30" y="250" width="130" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+        <path d="M-13 268 L-3 278 L-3 268 Z" fill="none" stroke="#D97706" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="-13" cy="268" r="8" fill="none" stroke="#D97706" stroke-width="2"/>
+        <text x="5" y="270" font-size="10" font-weight="600" fill="#92400E" font-family="system-ui, -apple-system, sans-serif">Pain Point:</text>
+        <foreignObject x="-25" y="278" width="120" height="60">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 10px; line-height: 1.3; color: #78350F; text-align: center; font-family: system-ui, -apple-system, sans-serif; font-weight: 500;">
+                18-29 hours manual wrangling per client
+            </div>
+        </foreignObject>
+    </g>
+
+    <!-- Definitions -->
+    <defs>
+        <!-- Arrow Marker -->
+        <marker
+            id="arrowhead"
+            markerWidth="10"
+            markerHeight="10"
+            refX="9"
+            refY="3"
+            orient="auto"
+        >
+            <polygon points="0 0, 10 3, 0 6" fill="#D1D5DB" />
+        </marker>
+
+        <!-- Shadow Filter -->
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="0" dy="2" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.15"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Bottom Note -->
+    <g transform="translate(700, 850)">
+        <text 
+            text-anchor="middle" 
+            font-size="12" 
+            fill="#9CA3AF"
+            font-family="system-ui, -apple-system, sans-serif"
+        >
+            Average process duration: 18-29 hours per client | Engineering wait time: 2.3 days average
+        </text>
+    </g>
+</svg>
