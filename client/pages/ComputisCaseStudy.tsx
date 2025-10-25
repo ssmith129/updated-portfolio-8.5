@@ -95,9 +95,7 @@ export default function ComputisCaseStudy() {
         </a>
       </div>
 
-      {/* Main Content */}
       <main className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-20 relative z-10">
-        {/* Content sections removed per user request */}
       </main>
 
       <RelatedCaseStudies currentCaseStudy="computis" />
