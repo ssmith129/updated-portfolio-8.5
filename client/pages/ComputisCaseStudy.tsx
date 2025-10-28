@@ -809,15 +809,23 @@ export default function ComputisCaseStudy() {
                     </p>
                   </div>
                 </div>
-                {/* Rule Builder Video - Placeholder */}
+                {/* Rule Builder Video */}
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
-                  <div className="bg-[#0F0F0F] rounded-[12px] p-8 min-h-[400px] flex items-center justify-center border border-[#2A2A2A]">
-                    <p className="text-[#666666] text-center">
-                      {/* Placeholder for Rule Builder.mp4 */}
-                      <span className="block text-sm">
-                        Video: Visual Rule Builder Demo
-                      </span>
-                    </p>
+                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-auto"
+                      style={{ display: 'block' }}
+                    >
+                      <source
+                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd51b7487f9ca480f8bc164b8b0480065?alt=media&token=beadcbfa-6a54-4c0e-abb8-1fcab07b08be&apiKey=ba69a23156414a589de97341511272c9"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>
