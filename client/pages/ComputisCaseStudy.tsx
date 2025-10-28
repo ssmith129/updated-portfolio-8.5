@@ -344,25 +344,18 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              {/* Before Workflow Diagram - Placeholder: 1000x500px */}
+              {/* Before Workflow Diagram */}
               <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A]">
                 <p className="text-sm text-[#888888] mb-3">
                   Before: Manual Workflow Pain Points
                 </p>
-                <div className="bg-[#0F0F0F] rounded-[12px] p-8 min-h-[300px] flex items-center justify-center border border-[#2A2A2A]">
-                  <p className="text-[#666666] text-center">
-                    {/* Placeholder for before-workflow-pain-points.png (1000x500px) */}
-                    <span className="block text-sm mb-2">
-                      Image: Before Workflow Diagram
-                    </span>
-                    <span className="block text-xs">
-                      CPA → Request ticket → Engineer → Python script → Results
-                      → CPA
-                    </span>
-                    <span className="block text-xs mt-2">
-                      (annotated with wait times)
-                    </span>
-                  </p>
+                <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa3e2e3182ad748a5b1dff064524394b5?format=webp&width=800"
+                    alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
+                    className="w-full h-auto"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
