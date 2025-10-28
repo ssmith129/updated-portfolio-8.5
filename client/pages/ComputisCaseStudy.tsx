@@ -671,12 +671,13 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Design Process Evolution
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4c60a3d2c88b4ef0846516fc10e8001f?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F80d53d6a9a89470fad73bd3f5f5a294e?format=webp&width=800"
                   alt="Design Process Evolution showing progression from Low-Fi wireframes to Mid-Fi mockups to Hi-Fi final designs, demonstrating iterative refinement of the Computis dashboard interface with increasing detail and polish at each stage"
-                  className="w-full h-auto"
+                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
+                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F80d53d6a9a89470fad73bd3f5f5a294e")}
                 />
               </div>
             </div>
