@@ -411,16 +411,18 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Journey Map - Placeholder: 1400x510px */}
+            {/* Journey Map */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
               <p className="text-sm text-[#888888] mb-3">
                 Current State Journey Map
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] p-8 min-h-[350px] flex items-center justify-center border border-[#2A2A2A]">
-                <p className="text-[#666666] text-center">
-                  {/* Placeholder for current-state-journey-map.png (1400x510px) */}
-                  <span className="block text-sm">Image: Journey Map</span>
-                </p>
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F26177538cfe641ce871d86698d14f8f0?format=webp&width=800"
+                  alt="Current State Journey Map showing 8 workflow steps from Client Intake to Report Generation, with pain points highlighted including manual data gathering, authentication delays, missing transaction data, complex edge cases, 2-3 day engineer wait times, low visibility during script execution, manual classification results verification, and CSV-only export requiring manual formatting"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
               </div>
             </div>
 
