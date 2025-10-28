@@ -16,16 +16,16 @@ Transforming a crypto tax backend into a transparent, audit-ready platform that 
 ### Impact at a Glance
 
 **↓ 45% CPA onboarding time** (2.5h → 1.4h)
-*Time-to-first-successful-report across 12 enterprise onboardings, Q3-Q4 2023*
+_Time-to-first-successful-report across 12 enterprise onboardings, Q3-Q4 2023_
 
 **→ 32% demo-to-conversion rate** (18% → 50%)
-*Signed contracts / Demos delivered, N=22 enterprise deals*
+_Signed contracts / Demos delivered, N=22 enterprise deals_
 
 **↓ 85% engineering dependency** (94% → 9%)
-*Classification tasks requiring dev tickets, N=847 tasks*
+_Classification tasks requiring dev tickets, N=847 tasks_
 
 **→ 150% anomaly detection coverage**
-*Flagged FMV discrepancies vs. manual audit baseline*
+_Flagged FMV discrepancies vs. manual audit baseline_
 
 ---
 
@@ -49,7 +49,7 @@ After shadowing 12 CPAs across Big 4 and mid-market firms:
 
 ### The Strategic Realization
 
-CPAs didn't need *simpler* software—they needed **transparency at the point of automation**.
+CPAs didn't need _simpler_ software—they needed **transparency at the point of automation**.
 
 ---
 
@@ -68,31 +68,31 @@ Over 10 weeks, I led foundational research:
 
 CPAs must defend every classification to the IRS. "Black-box" AI creates legal risk.
 
-*Impact: Transparency became non-negotiable*
+_Impact: Transparency became non-negotiable_
 
 **2. Engineering Dependency Blocks Scale**
 
 85% of CPA time spent on dev tickets. Average turnaround: 2.3 days.
 
-*Impact: Self-service became core value prop*
+_Impact: Self-service became core value prop_
 
 **3. Audit Trails Drive Enterprise Sales**
 
 3/4 competitors lacked history. This became Computis's moat.
 
-*Impact: Audit drawer prioritized in MVP*
+_Impact: Audit drawer prioritized in MVP_
 
 **4. Bulk Operations Required**
 
 Manual: 12 min/transaction. Average client: 3,000+ transactions.
 
-*Impact: Rule builder with scale designed*
+_Impact: Rule builder with scale designed_
 
 **5. Trust Through Control**
 
 CPAs wanted assistance, not replacement. Override tested as must-have.
 
-*Impact: Graduated autonomy system built*
+_Impact: Graduated autonomy system built_
 
 ---
 
@@ -281,22 +281,28 @@ I analyzed competitors once. Ongoing tracking would have revealed emerging patte
 ## Media Assets
 
 ### Hero Section
+
 - Dashboard interface video with transaction table, confidence chip badges, and right-side audit drawer
 
 ### Research & Discovery
+
 - `research-synthesis-affinity-wall.png` (1200x842px)
 - `current-state-journey-map.png` (1400x510px)
 
 ### Workflows
+
 - `before-workflow-pain-points.png` (1000x500px)
 
 ### Competitive Analysis
+
 - `competitive-analysis-matrix.png` (1300x650px)
 
 ### Design Process
+
 - `design-process-evolution.png` (1400x480px)
 
 ### Solution Demos (Videos/Images)
+
 - `AI-Confidence-Tags.mp4` - AI confidence chips with hover states
 - `Inline-Audit-Drawer.mp4` - Audit trail drawer interaction
 - `Rule-Builder.mp4` - Visual rule builder demo
@@ -304,6 +310,7 @@ I analyzed competitors once. Ongoing tracking would have revealed emerging patte
 - `Multi-Tenant-View.mp4` - Multi-client dashboard
 
 ### Design System
+
 - `design-system-overview.png` (1400x1000px)
 
 ---
