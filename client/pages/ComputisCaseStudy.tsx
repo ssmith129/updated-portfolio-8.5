@@ -1011,12 +1011,13 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Design System Overview
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F23cae05f7a9b406ebccb66b7125b9ac4?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7505994af24545cea7638777279674a9?format=webp&width=800"
                   alt="Computis Design System showing comprehensive component library including Typography (Display Heading, Section Title, Subsection styles), Color Palette (Primary Blue, Accent Blue, Success Green, Secondary Green, Error Red, Warning Gold, Background, Text Secondary), Spacing System using 8px box base grid, and Component Library featuring Button, Dropdown, Input Field, Confidence Chip, Modal, Toast, Audit Drawer, and Table Row components"
-                  className="w-full h-auto"
+                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
+                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7505994af24545cea7638777279674a9")}
                 />
               </div>
             </div>
