@@ -549,12 +549,13 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Competitive Analysis Matrix
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff52509a988c4402581ad32e6c874d09a?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7657ed2bcdc34dad8eace29a2a908374?format=webp&width=800"
                   alt="Competitive Landscape Analysis comparing 5 crypto tax platforms (Computis, TaxBit, Cryptio, CoinTracker, Koinly) across key features including AI Explainability, Confidence Levels, One-Click Override, Real-Time Audit Trail, and CPA-First Design. Computis shows full support across all features while competitors have partial or no implementation"
-                  className="w-full h-auto"
+                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
+                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7657ed2bcdc34dad8eace29a2a908374")}
                 />
               </div>
             </div>
