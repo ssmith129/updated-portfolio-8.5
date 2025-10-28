@@ -357,7 +357,11 @@ export default function ComputisCaseStudy() {
                     alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
                     className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                     loading="lazy"
-                    onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F32e011aed35c4e49b427fb6d0d83bcd4")}
+                    onClick={() =>
+                      setEnlargedImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F32e011aed35c4e49b427fb6d0d83bcd4",
+                      )
+                    }
                   />
                 </div>
               </div>
@@ -410,7 +414,11 @@ export default function ComputisCaseStudy() {
                   alt="Research Synthesis: Computis CPA Workflow Study showing 127 insights from 8 CPA interviews + 6 shadowing sessions organized into 5 thematic clusters - Professional Liability, Engineering Dependency, Audit Requirements, Bulk Operations, and Trust & Control"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
-                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F14db6ee5ab934ef0a8910734977277a5")}
+                  onClick={() =>
+                    setEnlargedImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F14db6ee5ab934ef0a8910734977277a5",
+                    )
+                  }
                 />
               </div>
             </div>
@@ -426,7 +434,11 @@ export default function ComputisCaseStudy() {
                   alt="Current State Journey Map showing 8 workflow steps from Client Intake to Report Generation, with pain points highlighted including manual data gathering, authentication delays, missing transaction data, complex edge cases, 2-3 day engineer wait times, low visibility during script execution, manual classification results verification, and CSV-only export requiring manual formatting"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
-                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff47bad46ce2d497b8980e075087e51ea")}
+                  onClick={() =>
+                    setEnlargedImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff47bad46ce2d497b8980e075087e51ea",
+                    )
+                  }
                 />
               </div>
             </div>
@@ -556,7 +568,11 @@ export default function ComputisCaseStudy() {
                   alt="Competitive Landscape Analysis comparing 5 crypto tax platforms (Computis, TaxBit, Cryptio, CoinTracker, Koinly) across key features including AI Explainability, Confidence Levels, One-Click Override, Real-Time Audit Trail, and CPA-First Design. Computis shows full support across all features while competitors have partial or no implementation"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
-                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7657ed2bcdc34dad8eace29a2a908374")}
+                  onClick={() =>
+                    setEnlargedImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7657ed2bcdc34dad8eace29a2a908374",
+                    )
+                  }
                 />
               </div>
             </div>
@@ -677,7 +693,11 @@ export default function ComputisCaseStudy() {
                   alt="Design Process Evolution showing progression from Low-Fi wireframes to Mid-Fi mockups to Hi-Fi final designs, demonstrating iterative refinement of the Computis dashboard interface with increasing detail and polish at each stage"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
-                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F80d53d6a9a89470fad73bd3f5f5a294e")}
+                  onClick={() =>
+                    setEnlargedImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F80d53d6a9a89470fad73bd3f5f5a294e",
+                    )
+                  }
                 />
               </div>
             </div>
@@ -1017,7 +1037,11 @@ export default function ComputisCaseStudy() {
                   alt="Computis Design System showing comprehensive component library including Typography (Display Heading, Section Title, Subsection styles), Color Palette (Primary Blue, Accent Blue, Success Green, Secondary Green, Error Red, Warning Gold, Background, Text Secondary), Spacing System using 8px box base grid, and Component Library featuring Button, Dropdown, Input Field, Confidence Chip, Modal, Toast, Audit Drawer, and Table Row components"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
-                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7505994af24545cea7638777279674a9")}
+                  onClick={() =>
+                    setEnlargedImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7505994af24545cea7638777279674a9",
+                    )
+                  }
                 />
               </div>
             </div>
