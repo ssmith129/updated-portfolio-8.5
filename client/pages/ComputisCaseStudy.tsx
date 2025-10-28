@@ -660,18 +660,18 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Design Process Evolution - Placeholder: 1400x480px */}
+            {/* Design Process Evolution */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A]">
               <p className="text-sm text-[#888888] mb-3">
                 Design Process Evolution
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] p-8 min-h-[350px] flex items-center justify-center border border-[#2A2A2A]">
-                <p className="text-[#666666] text-center">
-                  {/* Placeholder for design-process-evolution.png (1400x480px) */}
-                  <span className="block text-sm">
-                    Image: Design Process Timeline
-                  </span>
-                </p>
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4c60a3d2c88b4ef0846516fc10e8001f?format=webp&width=800"
+                  alt="Design Process Evolution showing progression from Low-Fi wireframes to Mid-Fi mockups to Hi-Fi final designs, demonstrating iterative refinement of the Computis dashboard interface with increasing detail and polish at each stage"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
