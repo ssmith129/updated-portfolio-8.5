@@ -420,12 +420,13 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Current State Journey Map
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F26177538cfe641ce871d86698d14f8f0?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff47bad46ce2d497b8980e075087e51ea?format=webp&width=800"
                   alt="Current State Journey Map showing 8 workflow steps from Client Intake to Report Generation, with pain points highlighted including manual data gathering, authentication delays, missing transaction data, complex edge cases, 2-3 day engineer wait times, low visibility during script execution, manual classification results verification, and CSV-only export requiring manual formatting"
-                  className="w-full h-auto"
+                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
+                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff47bad46ce2d497b8980e075087e51ea")}
                 />
               </div>
             </div>
