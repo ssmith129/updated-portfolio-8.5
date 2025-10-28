@@ -761,15 +761,23 @@ export default function ComputisCaseStudy() {
                     </p>
                   </div>
                 </div>
-                {/* Inline Audit Drawer Video - Placeholder */}
+                {/* Inline Audit Drawer Video */}
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
-                  <div className="bg-[#0F0F0F] rounded-[12px] p-8 min-h-[400px] flex items-center justify-center border border-[#2A2A2A]">
-                    <p className="text-[#666666] text-center">
-                      {/* Placeholder for Inline Audit Drawer.mp4 */}
-                      <span className="block text-sm">
-                        Video: Inline Audit Trail Demo
-                      </span>
-                    </p>
+                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-auto"
+                      style={{ display: 'block' }}
+                    >
+                      <source
+                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F328b2a22e9dc4482abc79aae2356f2a8?alt=media&token=4362e7d0-46ec-4c84-ab13-33ca66c1c387&apiKey=ba69a23156414a589de97341511272c9"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>
