@@ -540,18 +540,18 @@ export default function ComputisCaseStudy() {
               </li>
             </ul>
 
-            {/* Competitive Matrix - Placeholder: 1300x650px */}
+            {/* Competitive Matrix */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
               <p className="text-sm text-[#888888] mb-3">
                 Competitive Analysis Matrix
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] p-8 min-h-[400px] flex items-center justify-center border border-[#2A2A2A]">
-                <p className="text-[#666666] text-center">
-                  {/* Placeholder for competitive-analysis-matrix.png (1300x650px) */}
-                  <span className="block text-sm">
-                    Image: Competitive Analysis Matrix
-                  </span>
-                </p>
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff52509a988c4402581ad32e6c874d09a?format=webp&width=800"
+                  alt="Competitive Landscape Analysis comparing 5 crypto tax platforms (Computis, TaxBit, Cryptio, CoinTracker, Koinly) across key features including AI Explainability, Confidence Levels, One-Click Override, Real-Time Audit Trail, and CPA-First Design. Computis shows full support across all features while competitors have partial or no implementation"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
               </div>
             </div>
 
