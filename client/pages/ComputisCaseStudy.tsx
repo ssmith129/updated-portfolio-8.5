@@ -351,7 +351,7 @@ export default function ComputisCaseStudy() {
                 </p>
                 <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa3e2e3182ad748a5b1dff064524394b5?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Feb3d1d0c0dec4c67b013d3cc8b3663a5"
                     alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
                     className="w-full h-auto"
                     loading="lazy"
