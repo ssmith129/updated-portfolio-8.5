@@ -818,7 +818,7 @@ export default function ComputisCaseStudy() {
                       muted
                       playsInline
                       className="w-full h-auto"
-                      style={{ display: 'block' }}
+                      style={{ display: "block" }}
                     >
                       <source
                         src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fd51b7487f9ca480f8bc164b8b0480065?alt=media&token=beadcbfa-6a54-4c0e-abb8-1fcab07b08be&apiKey=ba69a23156414a589de97341511272c9"
@@ -866,7 +866,7 @@ export default function ComputisCaseStudy() {
                       muted
                       playsInline
                       className="w-full h-auto"
-                      style={{ display: 'block' }}
+                      style={{ display: "block" }}
                     >
                       <source
                         src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F683506136ed1452fb80126c837c4bcbc?alt=media&token=63897377-0463-4eae-80d5-6c4f67c27c3e&apiKey=ba69a23156414a589de97341511272c9"
@@ -916,7 +916,7 @@ export default function ComputisCaseStudy() {
                       muted
                       playsInline
                       className="w-full h-auto"
-                      style={{ display: 'block' }}
+                      style={{ display: "block" }}
                     >
                       <source
                         src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F9ff1d91497864bd9abac4c1b8e51096a?alt=media&token=3025286d-e0ea-40a5-baf8-50688395fcc2&apiKey=ba69a23156414a589de97341511272c9"
