@@ -999,18 +999,18 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Design System Overview - Placeholder: 1400x1000px */}
+            {/* Design System Overview */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A]">
               <p className="text-sm text-[#888888] mb-3">
                 Design System Overview
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] p-8 min-h-[500px] flex items-center justify-center border border-[#2A2A2A]">
-                <p className="text-[#666666] text-center">
-                  {/* Placeholder for design-system-overview.png (1400x1000px) */}
-                  <span className="block text-sm">
-                    Image: Complete Design System
-                  </span>
-                </p>
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F23cae05f7a9b406ebccb66b7125b9ac4?format=webp&width=800"
+                  alt="Computis Design System showing comprehensive component library including Typography (Display Heading, Section Title, Subsection styles), Color Palette (Primary Blue, Accent Blue, Success Green, Secondary Green, Error Red, Warning Gold, Background, Text Secondary), Spacing System using 8px box base grid, and Component Library featuring Button, Dropdown, Input Field, Confidence Chip, Modal, Toast, Audit Drawer, and Table Row components"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
