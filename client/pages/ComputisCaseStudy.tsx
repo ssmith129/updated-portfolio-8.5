@@ -721,7 +721,7 @@ export default function ComputisCaseStudy() {
                       muted
                       playsInline
                       className="w-full h-auto"
-                      style={{ display: 'block' }}
+                      style={{ display: "block" }}
                     >
                       <source
                         src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F1722a6d109794969af99985a7fca6660?alt=media&token=7fa5119b-32c1-4ce6-8070-9f7e8c23fd25&apiKey=ba69a23156414a589de97341511272c9"
