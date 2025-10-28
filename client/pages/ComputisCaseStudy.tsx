@@ -9,6 +9,7 @@ import {
   CheckCircle,
   Quote,
   AlertCircle,
+  X,
 } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
@@ -77,6 +78,7 @@ const AnimatedCounter = ({
 
 export default function ComputisCaseStudy() {
   const [startMetricsAnimation, setStartMetricsAnimation] = useState(false);
+  const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -349,12 +351,13 @@ export default function ComputisCaseStudy() {
                 <p className="text-sm text-[#888888] mb-3">
                   Before: Manual Workflow Pain Points
                 </p>
-                <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Feb3d1d0c0dec4c67b013d3cc8b3663a5"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F32e011aed35c4e49b427fb6d0d83bcd4?format=webp&width=800"
                     alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
-                    className="w-full h-auto"
+                    className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                     loading="lazy"
+                    onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F32e011aed35c4e49b427fb6d0d83bcd4")}
                   />
                 </div>
               </div>
@@ -1289,6 +1292,30 @@ export default function ComputisCaseStudy() {
 
       <RelatedCaseStudies currentCaseStudyId="computis" />
       <Footer />
+
+      {/* Image Enlargement Modal */}
+      {enlargedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in-0 duration-300"
+          onClick={() => setEnlargedImage(null)}
+        >
+          <button
+            className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all duration-300"
+            onClick={() => setEnlargedImage(null)}
+            aria-label="Close enlarged image"
+          >
+            <X className="w-6 h-6" />
+          </button>
+          <div className="max-w-[95vw] max-h-[95vh] overflow-auto">
+            <img
+              src={enlargedImage}
+              alt="Enlarged view"
+              className="w-full h-auto rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
