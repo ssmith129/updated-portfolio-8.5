@@ -404,12 +404,13 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Research Synthesis & Affinity Wall
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F3511653ed5b949da93a9bb9ea467a219?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5da3b02f98384f56847903f3ee014068?format=webp&width=800"
                   alt="Research Synthesis: Computis CPA Workflow Study showing 127 insights from 8 CPA interviews + 6 shadowing sessions organized into 5 thematic clusters - Professional Liability, Engineering Dependency, Audit Requirements, Bulk Operations, and Trust & Control"
-                  className="w-full h-auto"
+                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
+                  onClick={() => setEnlargedImage("https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5da3b02f98384f56847903f3ee014068")}
                 />
               </div>
             </div>
