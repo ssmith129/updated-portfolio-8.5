@@ -396,18 +396,18 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Research Synthesis - Placeholder: 1200x842px */}
+            {/* Research Synthesis */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
               <p className="text-sm text-[#888888] mb-3">
                 Research Synthesis & Affinity Wall
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] p-8 min-h-[400px] flex items-center justify-center border border-[#2A2A2A]">
-                <p className="text-[#666666] text-center">
-                  {/* Placeholder for research-synthesis-affinity-wall.png (1200x842px) */}
-                  <span className="block text-sm">
-                    Image: Research Synthesis Board
-                  </span>
-                </p>
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F3511653ed5b949da93a9bb9ea467a219?format=webp&width=800"
+                  alt="Research Synthesis: Computis CPA Workflow Study showing 127 insights from 8 CPA interviews + 6 shadowing sessions organized into 5 thematic clusters - Professional Liability, Engineering Dependency, Audit Requirements, Bulk Operations, and Trust & Control"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
               </div>
             </div>
 
