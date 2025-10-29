@@ -801,7 +801,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
-                      autoPlay
+                      ref={auditDrawerVideoRef}
                       loop
                       muted
                       playsInline
