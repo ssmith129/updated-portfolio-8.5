@@ -154,7 +154,7 @@ export default function ComputisCaseStudy() {
             <div className="absolute -inset-1 bg-gradient-to-r from-[#00D4FF] to-[#00FFB3] rounded-[16px] opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
             {/* Hero Dashboard Interface - Placeholder: 1400x800px */}
             <video
-              autoPlay
+              ref={heroVideoRef}
               loop
               muted
               playsInline
@@ -1140,7 +1140,7 @@ export default function ComputisCaseStudy() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-[12px] p-4 border border-[#00FFB3]/20">
                     <p className="text-2xl font-bold text-[#00FFB3] mb-1">
-                      ↓45%
+                      ���45%
                     </p>
                     <p className="text-sm text-[#D1D5DB]">
                       CPA onboarding time (2.5h → 1.4h)
