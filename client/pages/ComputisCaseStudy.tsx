@@ -353,13 +353,13 @@ export default function ComputisCaseStudy() {
                 </p>
                 <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F32e011aed35c4e49b427fb6d0d83bcd4?format=webp&width=800"
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc35469cb26bd4ecf80af1d6bf132f3d8?format=webp&width=800"
                     alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
                     className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                     loading="lazy"
                     onClick={() =>
                       setEnlargedImage(
-                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F32e011aed35c4e49b427fb6d0d83bcd4",
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc35469cb26bd4ecf80af1d6bf132f3d8",
                       )
                     }
                   />
