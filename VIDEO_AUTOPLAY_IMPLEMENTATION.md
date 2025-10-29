@@ -198,7 +198,7 @@ const handleIframeAutoplay = (iframe: HTMLIFrameElement) => {
 2. Ensure video is muted (`muted` attribute)
 3. Verify `playsInline` attribute is present
 4. Check video source URL is accessible
-5. Confirm 15% of video is actually visible
+5. Confirm 40% of video is actually visible
 
 ### Multiple videos playing at once?
 
