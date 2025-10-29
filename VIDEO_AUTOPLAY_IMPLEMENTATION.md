@@ -66,10 +66,10 @@ All 6 videos in `client/pages/ComputisCaseStudy.tsx` now use this hook:
 #### After:
 
 ```tsx
-const videoRef = useVideoAutoplayOnVisible(0.15);
+const videoRef = useVideoAutoplayOnVisible(0.4);
 
 <video
-  ref={videoRef} // ✅ Plays only when 15% visible
+  ref={videoRef} // ✅ Plays only when 40% visible
   loop
   muted
   playsInline
