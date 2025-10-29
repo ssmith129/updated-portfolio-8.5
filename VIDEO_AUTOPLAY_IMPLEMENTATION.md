@@ -84,7 +84,7 @@ const videoRef = useVideoAutoplayOnVisible(0.4);
 
 ```typescript
 {
-  threshold: 0.15,  // 15% of video must be visible
+  threshold: 0.4,  // 40% of video must be visible
   // rootMargin can be added if needed for earlier/later detection
 }
 ```
