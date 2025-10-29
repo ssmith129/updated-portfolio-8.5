@@ -11,6 +11,7 @@ This implementation configures all embedded videos across the site to automatica
 **Location:** `client/hooks/use-video-autoplay.tsx`
 
 **Features:**
+
 - Uses the Intersection Observer API for efficient visibility detection
 - Configurable threshold (defaults to 0.15 / 15%)
 - Automatically plays video when visibility threshold is met
@@ -19,21 +20,16 @@ This implementation configures all embedded videos across the site to automatica
 - Prevents unhandled promise rejections
 
 **Usage Example:**
+
 ```tsx
-import { useVideoAutoplayOnVisible } from '../hooks/use-video-autoplay';
+import { useVideoAutoplayOnVisible } from "../hooks/use-video-autoplay";
 
 function MyComponent() {
   // Create ref with 15% visibility threshold
   const videoRef = useVideoAutoplayOnVisible(0.15);
-  
+
   return (
-    <video
-      ref={videoRef}
-      loop
-      muted
-      playsInline
-      className="w-full h-auto"
-    >
+    <video ref={videoRef} loop muted playsInline className="w-full h-auto">
       <source src="video-url.mp4" type="video/mp4" />
     </video>
   );
@@ -47,7 +43,7 @@ All 6 videos in `client/pages/ComputisCaseStudy.tsx` now use this hook:
 
 1. **Hero Video** - Main case study showcase
 2. **AI Confidence Tags Video** - Feature demonstration
-3. **Inline Audit Drawer Video** - Feature demonstration  
+3. **Inline Audit Drawer Video** - Feature demonstration
 4. **Rule Builder Video** - Feature demonstration
 5. **Anomaly Detection Video** - Feature demonstration
 6. **Multi-Tenant Dashboard Video** - Feature demonstration
@@ -55,9 +51,10 @@ All 6 videos in `client/pages/ComputisCaseStudy.tsx` now use this hook:
 ### 3. Key Changes Made
 
 #### Before:
+
 ```tsx
 <video
-  autoPlay  // ❌ Always plays regardless of visibility
+  autoPlay // ❌ Always plays regardless of visibility
   loop
   muted
   playsInline
@@ -67,17 +64,18 @@ All 6 videos in `client/pages/ComputisCaseStudy.tsx` now use this hook:
 ```
 
 #### After:
+
 ```tsx
 const videoRef = useVideoAutoplayOnVisible(0.15);
 
 <video
-  ref={videoRef}  // ✅ Plays only when 15% visible
+  ref={videoRef} // ✅ Plays only when 15% visible
   loop
   muted
   playsInline
 >
   <source src="..." type="video/mp4" />
-</video>
+</video>;
 ```
 
 ## Technical Details
@@ -133,14 +131,18 @@ The implementation respects browser autoplay policies:
 ### Potential additions:
 
 1. **Reduced Motion Support**
+
 ```typescript
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)",
+);
 if (prefersReducedMotion.matches) {
   // Don't autoplay
 }
 ```
 
 2. **Data Saver Support**
+
 ```typescript
 const connection = navigator.connection;
 if (connection?.saveData) {
@@ -149,8 +151,9 @@ if (connection?.saveData) {
 ```
 
 3. **Pause on Tab Visibility**
+
 ```typescript
-document.addEventListener('visibilitychange', () => {
+document.addEventListener("visibilitychange", () => {
   if (document.hidden) {
     videoElement.pause();
   }
@@ -158,6 +161,7 @@ document.addEventListener('visibilitychange', () => {
 ```
 
 4. **YouTube/Vimeo iframe Support**
+
 ```typescript
 // Handle iframe-based video embeds
 const handleIframeAutoplay = (iframe: HTMLIFrameElement) => {
@@ -202,7 +206,7 @@ This is expected behavior. Each video independently plays when visible. If you w
 
 ```typescript
 // Add logic to pause other videos when one plays
-videoElement.addEventListener('play', () => {
+videoElement.addEventListener("play", () => {
   // Pause other videos
 });
 ```
