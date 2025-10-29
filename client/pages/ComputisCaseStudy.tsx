@@ -14,6 +14,7 @@ import {
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
+import { useVideoAutoplayOnVisible } from "../hooks/use-video-autoplay";
 
 // Custom hook for counting animation
 const useCountAnimation = (
@@ -80,6 +81,14 @@ export default function ComputisCaseStudy() {
   const [startMetricsAnimation, setStartMetricsAnimation] = useState(false);
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
+  // Video autoplay refs with 40% visibility threshold
+  const heroVideoRef = useVideoAutoplayOnVisible(0.4);
+  const aiConfidenceVideoRef = useVideoAutoplayOnVisible(0.4);
+  const auditDrawerVideoRef = useVideoAutoplayOnVisible(0.4);
+  const ruleBuilderVideoRef = useVideoAutoplayOnVisible(0.4);
+  const anomalyDetectionVideoRef = useVideoAutoplayOnVisible(0.4);
+  const multiTenantVideoRef = useVideoAutoplayOnVisible(0.4);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setStartMetricsAnimation(true);
@@ -145,7 +154,7 @@ export default function ComputisCaseStudy() {
             <div className="absolute -inset-1 bg-gradient-to-r from-[#00D4FF] to-[#00FFB3] rounded-[16px] opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
             {/* Hero Dashboard Interface - Placeholder: 1400x800px */}
             <video
-              autoPlay
+              ref={heroVideoRef}
               loop
               muted
               playsInline
@@ -743,7 +752,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
-                      autoPlay
+                      ref={aiConfidenceVideoRef}
                       loop
                       muted
                       playsInline
@@ -792,7 +801,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
-                      autoPlay
+                      ref={auditDrawerVideoRef}
                       loop
                       muted
                       playsInline
@@ -840,7 +849,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
-                      autoPlay
+                      ref={ruleBuilderVideoRef}
                       loop
                       muted
                       playsInline
@@ -888,7 +897,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
-                      autoPlay
+                      ref={anomalyDetectionVideoRef}
                       loop
                       muted
                       playsInline
@@ -938,7 +947,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
-                      autoPlay
+                      ref={multiTenantVideoRef}
                       loop
                       muted
                       playsInline
