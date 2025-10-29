@@ -14,6 +14,7 @@ import {
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
+import { useVideoAutoplayOnVisible } from "../hooks/use-video-autoplay";
 
 // Custom hook for counting animation
 const useCountAnimation = (
