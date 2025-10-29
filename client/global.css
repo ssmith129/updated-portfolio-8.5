@@ -233,7 +233,7 @@
   }
 
   .hover-image-enlarge:hover::after {
-    content: 'Click to enlarge';
+    content: "Click to enlarge";
     @apply absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full;
     opacity: 0;
     animation: fadeIn 0.3s ease-in-out 0.1s forwards;
@@ -261,7 +261,11 @@
   }
 
   .hover-back-button:hover {
-    background: linear-gradient(90deg, rgba(0, 212, 255, 0.1) 0%, transparent 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 212, 255, 0.1) 0%,
+      transparent 100%
+    );
     border-color: rgba(0, 212, 255, 0.5);
   }
 
@@ -279,9 +283,13 @@
   }
 
   .hover-cta::before {
-    content: '';
+    content: "";
     @apply absolute inset-0 opacity-0;
-    background: linear-gradient(45deg, rgba(0, 212, 255, 0.2), rgba(0, 255, 179, 0.2));
+    background: linear-gradient(
+      45deg,
+      rgba(0, 212, 255, 0.2),
+      rgba(0, 255, 179, 0.2)
+    );
     transition: opacity var(--hover-duration-base) ease-out;
   }
 
@@ -303,16 +311,18 @@
 
   /* Feature Card Hover */
   .hover-feature-card {
-    transition: transform 0.25s var(--hover-easing-bounce),
-                box-shadow var(--hover-duration-base) ease-out,
-                border-color var(--hover-duration-fast) ease-out;
+    transition:
+      transform 0.25s var(--hover-easing-bounce),
+      box-shadow var(--hover-duration-base) ease-out,
+      border-color var(--hover-duration-fast) ease-out;
     will-change: transform, box-shadow;
   }
 
   .hover-feature-card:hover {
     transform: translateY(var(--hover-lift-lg));
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
-                0 0 0 1px rgba(0, 212, 255, 0.3);
+    box-shadow:
+      0 12px 40px rgba(0, 0, 0, 0.4),
+      0 0 0 1px rgba(0, 212, 255, 0.3);
     border-color: rgba(0, 212, 255, 0.5);
   }
 
@@ -330,7 +340,11 @@
 
   .hover-insight-card:hover {
     transform: translateX(8px);
-    background: linear-gradient(90deg, rgba(0, 212, 255, 0.05) 0%, transparent 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 212, 255, 0.05) 0%,
+      transparent 100%
+    );
   }
 
   .hover-insight-card:hover .insight-number {
@@ -339,9 +353,9 @@
   }
 
   .hover-insight-card::before {
-    content: '';
+    content: "";
     @apply absolute left-0 top-0 bottom-0 w-0;
-    background: linear-gradient(180deg, #00D4FF, #00FFB3);
+    background: linear-gradient(180deg, #00d4ff, #00ffb3);
     transition: width var(--hover-duration-base) ease-out;
   }
 
