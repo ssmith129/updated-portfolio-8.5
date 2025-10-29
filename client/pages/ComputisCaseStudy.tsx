@@ -752,7 +752,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
-                      autoPlay
+                      ref={aiConfidenceVideoRef}
                       loop
                       muted
                       playsInline
@@ -1140,7 +1140,7 @@ export default function ComputisCaseStudy() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-[12px] p-4 border border-[#00FFB3]/20">
                     <p className="text-2xl font-bold text-[#00FFB3] mb-1">
-                      ���45%
+                      ↓45%
                     </p>
                     <p className="text-sm text-[#D1D5DB]">
                       CPA onboarding time (2.5h → 1.4h)
