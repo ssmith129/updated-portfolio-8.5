@@ -21,7 +21,7 @@ export function useVideoAutoplayOnVisible(threshold: number = 0.4) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Video is at least 15% visible, attempt to play
+            // Video is at least 40% visible, attempt to play
             const playPromise = videoElement.play();
 
             // Handle play promise to avoid unhandled rejection errors
