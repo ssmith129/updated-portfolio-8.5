@@ -173,7 +173,7 @@ const handleIframeAutoplay = (iframe: HTMLIFrameElement) => {
 
 ### Manual Testing Checklist
 
-- [ ] Hero video plays when 15% visible
+- [ ] Hero video plays when 40% visible
 - [ ] Videos pause when scrolled out of view
 - [ ] Multiple videos don't interfere with each other
 - [ ] Videos work on mobile devices
