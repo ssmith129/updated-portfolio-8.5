@@ -410,13 +410,13 @@ export default function ComputisCaseStudy() {
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F14db6ee5ab934ef0a8910734977277a5?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F251dd3bb234f41d19fb167131a5f921a"
                   alt="Research Synthesis: Computis CPA Workflow Study showing 127 insights from 8 CPA interviews + 6 shadowing sessions organized into 5 thematic clusters - Professional Liability, Engineering Dependency, Audit Requirements, Bulk Operations, and Trust & Control"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F14db6ee5ab934ef0a8910734977277a5",
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F251dd3bb234f41d19fb167131a5f921a",
                     )
                   }
                 />
@@ -430,13 +430,13 @@ export default function ComputisCaseStudy() {
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff47bad46ce2d497b8980e075087e51ea?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9dd30073e99e495fa0e2dcbe564d5048"
                   alt="Current State Journey Map showing 8 workflow steps from Client Intake to Report Generation, with pain points highlighted including manual data gathering, authentication delays, missing transaction data, complex edge cases, 2-3 day engineer wait times, low visibility during script execution, manual classification results verification, and CSV-only export requiring manual formatting"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff47bad46ce2d497b8980e075087e51ea",
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9dd30073e99e495fa0e2dcbe564d5048",
                     )
                   }
                 />
