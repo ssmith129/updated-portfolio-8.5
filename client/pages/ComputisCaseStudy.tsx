@@ -749,7 +749,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* AI Confidence Tags Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={aiConfidenceVideoRef}
@@ -798,7 +798,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* Inline Audit Drawer Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={auditDrawerVideoRef}
@@ -846,7 +846,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* Rule Builder Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={ruleBuilderVideoRef}
@@ -894,7 +894,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* Data Anomaly Detection Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={anomalyDetectionVideoRef}
@@ -944,7 +944,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* Multi-Tenant View Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={multiTenantVideoRef}
