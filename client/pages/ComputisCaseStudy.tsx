@@ -564,13 +564,13 @@ export default function ComputisCaseStudy() {
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7657ed2bcdc34dad8eace29a2a908374?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F91992ada3d7e45289fb26264fb2baeb2"
                   alt="Competitive Landscape Analysis comparing 5 crypto tax platforms (Computis, TaxBit, Cryptio, CoinTracker, Koinly) across key features including AI Explainability, Confidence Levels, One-Click Override, Real-Time Audit Trail, and CPA-First Design. Computis shows full support across all features while competitors have partial or no implementation"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7657ed2bcdc34dad8eace29a2a908374",
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F91992ada3d7e45289fb26264fb2baeb2",
                     )
                   }
                 />
@@ -689,13 +689,13 @@ export default function ComputisCaseStudy() {
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F80d53d6a9a89470fad73bd3f5f5a294e?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa320d8ba63c4433a76c919e90d558f6"
                   alt="Design Process Evolution showing progression from Low-Fi wireframes to Mid-Fi mockups to Hi-Fi final designs, demonstrating iterative refinement of the Computis dashboard interface with increasing detail and polish at each stage"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F80d53d6a9a89470fad73bd3f5f5a294e",
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa320d8ba63c4433a76c919e90d558f6",
                     )
                   }
                 />
@@ -1033,13 +1033,13 @@ export default function ComputisCaseStudy() {
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7505994af24545cea7638777279674a9?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff14b120c4fc843c2b36a5040b0eb8646"
                   alt="Computis Design System showing comprehensive component library including Typography (Display Heading, Section Title, Subsection styles), Color Palette (Primary Blue, Accent Blue, Success Green, Secondary Green, Error Red, Warning Gold, Background, Text Secondary), Spacing System using 8px box base grid, and Component Library featuring Button, Dropdown, Input Field, Confidence Chip, Modal, Toast, Audit Drawer, and Table Row components"
                   className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7505994af24545cea7638777279674a9",
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff14b120c4fc843c2b36a5040b0eb8646",
                     )
                   }
                 />
