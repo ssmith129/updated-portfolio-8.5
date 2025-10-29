@@ -81,6 +81,14 @@ export default function ComputisCaseStudy() {
   const [startMetricsAnimation, setStartMetricsAnimation] = useState(false);
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
+  // Video autoplay refs with 15% visibility threshold
+  const heroVideoRef = useVideoAutoplayOnVisible(0.15);
+  const aiConfidenceVideoRef = useVideoAutoplayOnVisible(0.15);
+  const auditDrawerVideoRef = useVideoAutoplayOnVisible(0.15);
+  const ruleBuilderVideoRef = useVideoAutoplayOnVisible(0.15);
+  const anomalyDetectionVideoRef = useVideoAutoplayOnVisible(0.15);
+  const multiTenantVideoRef = useVideoAutoplayOnVisible(0.15);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setStartMetricsAnimation(true);
