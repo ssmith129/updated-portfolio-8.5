@@ -13,7 +13,7 @@ This implementation configures all embedded videos across the site to automatica
 **Features:**
 
 - Uses the Intersection Observer API for efficient visibility detection
-- Configurable threshold (defaults to 0.15 / 15%)
+- Configurable threshold (defaults to 0.4 / 40%)
 - Automatically plays video when visibility threshold is met
 - Pauses video when it falls below the visibility threshold
 - Handles browser autoplay policies gracefully
