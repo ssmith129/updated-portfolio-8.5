@@ -91,7 +91,7 @@ const videoRef = useVideoAutoplayOnVisible(0.4);
 
 ### Browser Compatibility
 
-- �� Modern browsers (Chrome, Firefox, Safari, Edge)
+- ✅ Modern browsers (Chrome, Firefox, Safari, Edge)
 - ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 - ⚠️ Fallback needed for IE11 (not supported in this implementation)
 
