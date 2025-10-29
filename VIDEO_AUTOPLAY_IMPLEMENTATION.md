@@ -25,8 +25,8 @@ This implementation configures all embedded videos across the site to automatica
 import { useVideoAutoplayOnVisible } from "../hooks/use-video-autoplay";
 
 function MyComponent() {
-  // Create ref with 15% visibility threshold
-  const videoRef = useVideoAutoplayOnVisible(0.15);
+  // Create ref with 40% visibility threshold
+  const videoRef = useVideoAutoplayOnVisible(0.4);
 
   return (
     <video ref={videoRef} loop muted playsInline className="w-full h-auto">
