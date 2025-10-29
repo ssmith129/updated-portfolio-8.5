@@ -2,7 +2,7 @@
 
 ## Overview
 
-This implementation configures all embedded videos across the site to automatically play only when at least 15% (0.15) of the video element is visible in the user's viewport. This approach respects user preferences, improves performance, and provides a better user experience.
+This implementation configures all embedded videos across the site to automatically play only when at least 40% (0.4) of the video element is visible in the user's viewport. This approach respects user preferences, improves performance, and provides a better user experience.
 
 ## Implementation Details
 
@@ -13,7 +13,7 @@ This implementation configures all embedded videos across the site to automatica
 **Features:**
 
 - Uses the Intersection Observer API for efficient visibility detection
-- Configurable threshold (defaults to 0.15 / 15%)
+- Configurable threshold (defaults to 0.4 / 40%)
 - Automatically plays video when visibility threshold is met
 - Pauses video when it falls below the visibility threshold
 - Handles browser autoplay policies gracefully
@@ -25,8 +25,8 @@ This implementation configures all embedded videos across the site to automatica
 import { useVideoAutoplayOnVisible } from "../hooks/use-video-autoplay";
 
 function MyComponent() {
-  // Create ref with 15% visibility threshold
-  const videoRef = useVideoAutoplayOnVisible(0.15);
+  // Create ref with 40% visibility threshold
+  const videoRef = useVideoAutoplayOnVisible(0.4);
 
   return (
     <video ref={videoRef} loop muted playsInline className="w-full h-auto">
@@ -66,10 +66,10 @@ All 6 videos in `client/pages/ComputisCaseStudy.tsx` now use this hook:
 #### After:
 
 ```tsx
-const videoRef = useVideoAutoplayOnVisible(0.15);
+const videoRef = useVideoAutoplayOnVisible(0.4);
 
 <video
-  ref={videoRef} // ✅ Plays only when 15% visible
+  ref={videoRef} // ✅ Plays only when 40% visible
   loop
   muted
   playsInline
@@ -84,7 +84,7 @@ const videoRef = useVideoAutoplayOnVisible(0.15);
 
 ```typescript
 {
-  threshold: 0.15,  // 15% of video must be visible
+  threshold: 0.4,  // 40% of video must be visible
   // rootMargin can be added if needed for earlier/later detection
 }
 ```
@@ -173,7 +173,7 @@ const handleIframeAutoplay = (iframe: HTMLIFrameElement) => {
 
 ### Manual Testing Checklist
 
-- [ ] Hero video plays when 15% visible
+- [ ] Hero video plays when 40% visible
 - [ ] Videos pause when scrolled out of view
 - [ ] Multiple videos don't interfere with each other
 - [ ] Videos work on mobile devices
@@ -198,7 +198,7 @@ const handleIframeAutoplay = (iframe: HTMLIFrameElement) => {
 2. Ensure video is muted (`muted` attribute)
 3. Verify `playsInline` attribute is present
 4. Check video source URL is accessible
-5. Confirm 15% of video is actually visible
+5. Confirm 40% of video is actually visible
 
 ### Multiple videos playing at once?
 

@@ -2,12 +2,12 @@ import { useEffect, useRef } from "react";
 
 /**
  * Custom hook to handle video autoplay based on visibility threshold
- * Automatically plays videos when at least 15% is visible in viewport
+ * Automatically plays videos when at least 40% is visible in viewport
  *
- * @param threshold - Visibility threshold (0.0 to 1.0), defaults to 0.15 (15%)
+ * @param threshold - Visibility threshold (0.0 to 1.0), defaults to 0.4 (40%)
  * @returns videoRef - Ref to attach to video element
  */
-export function useVideoAutoplayOnVisible(threshold: number = 0.15) {
+export function useVideoAutoplayOnVisible(threshold: number = 0.4) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export function useVideoAutoplayOnVisible(threshold: number = 0.15) {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Video is at least 15% visible, attempt to play
+            // Video is at least 40% visible, attempt to play
             const playPromise = videoElement.play();
 
             // Handle play promise to avoid unhandled rejection errors
@@ -37,7 +37,7 @@ export function useVideoAutoplayOnVisible(threshold: number = 0.15) {
                 });
             }
           } else {
-            // Video is less than 15% visible, pause it
+            // Video is less than 40% visible, pause it
             videoElement.pause();
           }
         });

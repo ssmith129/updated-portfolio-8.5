@@ -81,13 +81,13 @@ export default function ComputisCaseStudy() {
   const [startMetricsAnimation, setStartMetricsAnimation] = useState(false);
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
-  // Video autoplay refs with 15% visibility threshold
-  const heroVideoRef = useVideoAutoplayOnVisible(0.15);
-  const aiConfidenceVideoRef = useVideoAutoplayOnVisible(0.15);
-  const auditDrawerVideoRef = useVideoAutoplayOnVisible(0.15);
-  const ruleBuilderVideoRef = useVideoAutoplayOnVisible(0.15);
-  const anomalyDetectionVideoRef = useVideoAutoplayOnVisible(0.15);
-  const multiTenantVideoRef = useVideoAutoplayOnVisible(0.15);
+  // Video autoplay refs with 40% visibility threshold
+  const heroVideoRef = useVideoAutoplayOnVisible(0.4);
+  const aiConfidenceVideoRef = useVideoAutoplayOnVisible(0.4);
+  const auditDrawerVideoRef = useVideoAutoplayOnVisible(0.4);
+  const ruleBuilderVideoRef = useVideoAutoplayOnVisible(0.4);
+  const anomalyDetectionVideoRef = useVideoAutoplayOnVisible(0.4);
+  const multiTenantVideoRef = useVideoAutoplayOnVisible(0.4);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -122,10 +122,10 @@ export default function ComputisCaseStudy() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
         <Link
           to="/case-studies"
-          className="inline-flex items-center gap-2 text-base font-medium text-[#888888] leading-normal hover:text-[#00D4FF] transition-all duration-300 hover:scale-105 group"
+          className="inline-flex items-center gap-2 text-base font-medium text-[#888888] leading-normal hover:text-[#00D4FF] transition-all duration-300 group hover-back-button px-4 py-2 rounded-lg border border-transparent"
           aria-label="Return to case studies overview page"
         >
-          <ArrowLeft className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" />
+          <ArrowLeft className="w-5 h-5" />
           Back to Case Studies
         </Link>
       </div>
@@ -183,9 +183,22 @@ export default function ComputisCaseStudy() {
           href="https://computis.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#00D4FF] font-semibold underline text-lg hover:text-[#00FFB3] transition-colors duration-300"
+          className="text-[#00D4FF] font-semibold text-lg hover:text-[#00FFB3] transition-colors duration-300 hover-cta inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-[#00D4FF] bg-[#00D4FF]/10 w-auto self-center"
         >
           View Live Prototype
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
+          </svg>
         </a>
       </div>
 
@@ -193,7 +206,7 @@ export default function ComputisCaseStudy() {
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-20 relative z-10">
         {/* Project Details & Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Project Details
             </h2>
@@ -237,31 +250,31 @@ export default function ComputisCaseStudy() {
                 Impact at a Glance
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="text-center">
+                <div className="text-center hover-metric-card p-4 rounded-xl transition-all">
                   <AnimatedCounter
                     value={45}
                     prefix="↓ "
-                    className="text-2xl sm:text-3xl font-bold text-[#00FFB3] mb-1"
+                    className="text-2xl sm:text-3xl font-bold text-[#00FFB3] mb-1 metric-value transition-all"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#888888]">CPA onboarding time</p>
                   <p className="text-xs text-[#666666] mt-1">2.5h → 1.4h</p>
                 </div>
-                <div className="text-center">
+                <div className="text-center hover-metric-card p-4 rounded-xl transition-all">
                   <AnimatedCounter
                     value={32}
                     prefix="→ "
-                    className="text-2xl sm:text-3xl font-bold text-[#00D4FF] mb-1"
+                    className="text-2xl sm:text-3xl font-bold text-[#00D4FF] mb-1 metric-value transition-all"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#888888]">demo-to-conversion</p>
                   <p className="text-xs text-[#666666] mt-1">18% → 50%</p>
                 </div>
-                <div className="text-center">
+                <div className="text-center hover-metric-card p-4 rounded-xl transition-all">
                   <AnimatedCounter
                     value={85}
                     prefix="↓ "
-                    className="text-2xl sm:text-3xl font-bold text-[#8B5CF6] mb-1"
+                    className="text-2xl sm:text-3xl font-bold text-[#8B5CF6] mb-1 metric-value transition-all"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#888888]">
@@ -269,11 +282,11 @@ export default function ComputisCaseStudy() {
                   </p>
                   <p className="text-xs text-[#666666] mt-1">94% → 9%</p>
                 </div>
-                <div className="text-center">
+                <div className="text-center hover-metric-card p-4 rounded-xl transition-all">
                   <AnimatedCounter
                     value={150}
                     prefix="→ "
-                    className="text-2xl sm:text-3xl font-bold text-[#F59E0B] mb-1"
+                    className="text-2xl sm:text-3xl font-bold text-[#F59E0B] mb-1 metric-value transition-all"
                     startAnimation={startMetricsAnimation}
                   />
                   <p className="text-sm text-[#888888]">anomaly detection</p>
@@ -288,7 +301,7 @@ export default function ComputisCaseStudy() {
 
         {/* The Design Problem */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               The Design Problem Wasn't UX—It Was Trust
             </h2>
@@ -360,11 +373,11 @@ export default function ComputisCaseStudy() {
                 <p className="text-sm text-[#888888] mb-3">
                   Before: Manual Workflow Pain Points
                 </p>
-                <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
+                <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe27094a668d5446ebfbb4ec49d0811c5"
                     alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
-                    className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
+                    className="w-full h-auto transition-transform duration-300"
                     loading="lazy"
                     onClick={() =>
                       setEnlargedImage(
@@ -372,6 +385,9 @@ export default function ComputisCaseStudy() {
                       )
                     }
                   />
+                  <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                    Click to enlarge
+                  </div>
                 </div>
               </div>
             </div>
@@ -380,7 +396,7 @@ export default function ComputisCaseStudy() {
 
         {/* Research & Discovery */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Research & Discovery
             </h2>
@@ -417,11 +433,11 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Research Synthesis & Affinity Wall
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F251dd3bb234f41d19fb167131a5f921a"
                   alt="Research Synthesis: Computis CPA Workflow Study showing 127 insights from 8 CPA interviews + 6 shadowing sessions organized into 5 thematic clusters - Professional Liability, Engineering Dependency, Audit Requirements, Bulk Operations, and Trust & Control"
-                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-auto transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
@@ -429,6 +445,9 @@ export default function ComputisCaseStudy() {
                     )
                   }
                 />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                  Click to enlarge
+                </div>
               </div>
             </div>
 
@@ -437,11 +456,11 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Current State Journey Map
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9dd30073e99e495fa0e2dcbe564d5048"
                   alt="Current State Journey Map showing 8 workflow steps from Client Intake to Report Generation, with pain points highlighted including manual data gathering, authentication delays, missing transaction data, complex edge cases, 2-3 day engineer wait times, low visibility during script execution, manual classification results verification, and CSV-only export requiring manual formatting"
-                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-auto transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
@@ -449,6 +468,9 @@ export default function ComputisCaseStudy() {
                     )
                   }
                 />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                  Click to enlarge
+                </div>
               </div>
             </div>
 
@@ -531,7 +553,7 @@ export default function ComputisCaseStudy() {
 
         {/* Competitive Positioning */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Competitive Positioning
             </h2>
@@ -571,11 +593,11 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Competitive Analysis Matrix
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F91992ada3d7e45289fb26264fb2baeb2"
                   alt="Competitive Landscape Analysis comparing 5 crypto tax platforms (Computis, TaxBit, Cryptio, CoinTracker, Koinly) across key features including AI Explainability, Confidence Levels, One-Click Override, Real-Time Audit Trail, and CPA-First Design. Computis shows full support across all features while competitors have partial or no implementation"
-                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-auto transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
@@ -583,6 +605,9 @@ export default function ComputisCaseStudy() {
                     )
                   }
                 />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                  Click to enlarge
+                </div>
               </div>
             </div>
 
@@ -620,7 +645,7 @@ export default function ComputisCaseStudy() {
 
         {/* Design Process */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Design Process
             </h2>
@@ -696,11 +721,11 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Design Process Evolution
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa320d8ba63c4433a76c919e90d558f6"
                   alt="Design Process Evolution showing progression from Low-Fi wireframes to Mid-Fi mockups to Hi-Fi final designs, demonstrating iterative refinement of the Computis dashboard interface with increasing detail and polish at each stage"
-                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-auto transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
@@ -708,6 +733,9 @@ export default function ComputisCaseStudy() {
                     )
                   }
                 />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                  Click to enlarge
+                </div>
               </div>
             </div>
           </div>
@@ -715,7 +743,7 @@ export default function ComputisCaseStudy() {
 
         {/* Solution: Five Design Decisions */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1200">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Solution: Five Design Decisions
             </h2>
@@ -749,7 +777,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* AI Confidence Tags Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={aiConfidenceVideoRef}
@@ -798,7 +826,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* Inline Audit Drawer Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={auditDrawerVideoRef}
@@ -846,7 +874,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* Rule Builder Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={ruleBuilderVideoRef}
@@ -894,7 +922,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* Data Anomaly Detection Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={anomalyDetectionVideoRef}
@@ -944,7 +972,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 {/* Multi-Tenant View Video */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-6">
+                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <video
                       ref={multiTenantVideoRef}
@@ -969,7 +997,7 @@ export default function ComputisCaseStudy() {
 
         {/* Design System & Components */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Design System & Components
             </h2>
@@ -1040,11 +1068,11 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Design System Overview
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] cursor-pointer hover:border-[#00D4FF]/50 transition-all duration-300">
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff14b120c4fc843c2b36a5040b0eb8646"
                   alt="Computis Design System showing comprehensive component library including Typography (Display Heading, Section Title, Subsection styles), Color Palette (Primary Blue, Accent Blue, Success Green, Secondary Green, Error Red, Warning Gold, Background, Text Secondary), Spacing System using 8px box base grid, and Component Library featuring Button, Dropdown, Input Field, Confidence Chip, Modal, Toast, Audit Drawer, and Table Row components"
-                  className="w-full h-auto hover:scale-[1.02] transition-transform duration-300"
+                  className="w-full h-auto transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
@@ -1052,6 +1080,9 @@ export default function ComputisCaseStudy() {
                     )
                   }
                 />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                  Click to enlarge
+                </div>
               </div>
             </div>
           </div>
@@ -1059,7 +1090,7 @@ export default function ComputisCaseStudy() {
 
         {/* Stakeholder Alignment */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1400">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Stakeholder Alignment: The Override Control Debate
             </h2>
@@ -1127,7 +1158,7 @@ export default function ComputisCaseStudy() {
 
         {/* Outcomes & Business Impact */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Outcomes & Business Impact
             </h2>
@@ -1237,7 +1268,7 @@ export default function ComputisCaseStudy() {
 
         {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Key Learnings
             </h2>
@@ -1288,7 +1319,7 @@ export default function ComputisCaseStudy() {
 
         {/* What I'd Do Differently */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover:border-[#00D4FF]/30 transition-all duration-300">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               What I'd Do Differently
             </h2>
