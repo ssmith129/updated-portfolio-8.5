@@ -118,6 +118,30 @@ export default function ComputisCaseStudy() {
       <SkipLink />
       <Navigation />
 
+      {/* Sticky Metrics Strip */}
+      <div className="sticky top-[72px] z-40 bg-[#0A0A0A]/95 backdrop-blur-xl border-b border-[#1A1A1A] animate-in fade-in-0 slide-in-from-top-4 duration-700 delay-400">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 py-3">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            <div className="flex items-center gap-2 bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-full px-4 py-2 border border-[#00FFB3]/30">
+              <span className="text-lg font-bold text-[#00FFB3]">↓45%</span>
+              <span className="text-xs text-[#888888] hidden sm:inline">2.5h→1.4h</span>
+            </div>
+            <div className="flex items-center gap-2 bg-gradient-to-r from-[#00D4FF]/10 to-transparent rounded-full px-4 py-2 border border-[#00D4FF]/30">
+              <span className="text-lg font-bold text-[#00D4FF]">→32%</span>
+              <span className="text-xs text-[#888888] hidden sm:inline">18%→50%</span>
+            </div>
+            <div className="flex items-center gap-2 bg-gradient-to-r from-[#8B5CF6]/10 to-transparent rounded-full px-4 py-2 border border-[#8B5CF6]/30">
+              <span className="text-lg font-bold text-[#8B5CF6]">↓85%</span>
+              <span className="text-xs text-[#888888] hidden sm:inline">94%→9%</span>
+            </div>
+            <div className="flex items-center gap-2 bg-gradient-to-r from-[#F59E0B]/10 to-transparent rounded-full px-4 py-2 border border-[#F59E0B]/30">
+              <span className="text-lg font-bold text-[#F59E0B]">→150%</span>
+              <span className="text-xs text-[#888888] hidden sm:inline">coverage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Back Button */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
         <Link
@@ -139,6 +163,22 @@ export default function ComputisCaseStudy() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight mb-6">
             Computis: Turning CPAs from AI Skeptics to Power Users
           </h1>
+
+          {/* TL;DR Summary */}
+          <div className="bg-gradient-to-r from-[#00D4FF]/10 to-[#00FFB3]/10 rounded-[16px] px-6 py-4 border border-[#00D4FF]/30 mb-6 inline-block">
+            <p className="text-lg sm:text-xl font-medium text-white">
+              Trust-first UX cut onboarding by 45% and lifted conversions 32% in 6 months.
+            </p>
+          </div>
+
+          {/* Micro-endorsement Pill */}
+          <div className="bg-[#0F0F0F] rounded-full px-6 py-3 border border-[#00FFB3]/40 inline-flex items-center gap-2 mb-6">
+            <Quote className="w-4 h-4 text-[#00FFB3] flex-shrink-0" />
+            <p className="text-sm sm:text-base text-[#D1D5DB] italic">
+              "I'd stake my license on it." — <span className="text-[#00FFB3] font-medium">CPA Client</span>
+            </p>
+          </div>
+
           <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight max-w-5xl">
             Transforming a crypto tax backend into a transparent, audit-ready
             platform that enabled self-service workflows and secured 3
@@ -201,58 +241,6 @@ export default function ComputisCaseStudy() {
           </svg>
         </a>
       </div>
-
-      {/* Key Metrics - Above the fold */}
-      <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-12 relative z-10 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-        <div className="bg-gradient-to-r from-[#00D4FF]/10 to-[#00FFB3]/10 rounded-[25px] p-8 sm:p-10 border border-[#00D4FF]/20">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8 flex items-center gap-3">
-            <TrendingUp className="w-6 h-6 text-[#00D4FF]" />
-            Impact at a Glance
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-br from-[#00FFB3]/10 to-transparent rounded-[16px] p-6 border border-[#00FFB3]/30 hover:border-[#00FFB3]/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00FFB3]/20">
-              <AnimatedCounter
-                value={45}
-                prefix="↓ "
-                className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-2"
-                startAnimation={startMetricsAnimation}
-              />
-              <p className="text-sm font-medium text-[#D1D5DB] mb-1">CPA onboarding time</p>
-              <p className="text-xs text-[#888888]">2.5h → 1.4h</p>
-            </div>
-            <div className="bg-gradient-to-br from-[#00D4FF]/10 to-transparent rounded-[16px] p-6 border border-[#00D4FF]/30 hover:border-[#00D4FF]/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00D4FF]/20">
-              <AnimatedCounter
-                value={32}
-                prefix="→ "
-                className="text-3xl sm:text-4xl font-bold text-[#00D4FF] mb-2"
-                startAnimation={startMetricsAnimation}
-              />
-              <p className="text-sm font-medium text-[#D1D5DB] mb-1">demo-to-conversion</p>
-              <p className="text-xs text-[#888888]">18% → 50%</p>
-            </div>
-            <div className="bg-gradient-to-br from-[#8B5CF6]/10 to-transparent rounded-[16px] p-6 border border-[#8B5CF6]/30 hover:border-[#8B5CF6]/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#8B5CF6]/20">
-              <AnimatedCounter
-                value={85}
-                prefix="↓ "
-                className="text-3xl sm:text-4xl font-bold text-[#8B5CF6] mb-2"
-                startAnimation={startMetricsAnimation}
-              />
-              <p className="text-sm font-medium text-[#D1D5DB] mb-1">engineering dependency</p>
-              <p className="text-xs text-[#888888]">94% → 9%</p>
-            </div>
-            <div className="bg-gradient-to-br from-[#F59E0B]/10 to-transparent rounded-[16px] p-6 border border-[#F59E0B]/30 hover:border-[#F59E0B]/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#F59E0B]/20">
-              <AnimatedCounter
-                value={150}
-                prefix="→ "
-                className="text-3xl sm:text-4xl font-bold text-[#F59E0B] mb-2"
-                startAnimation={startMetricsAnimation}
-              />
-              <p className="text-sm font-medium text-[#D1D5DB] mb-1">anomaly detection</p>
-              <p className="text-xs text-[#888888]">coverage increase</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-20 relative z-10">
