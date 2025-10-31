@@ -278,130 +278,127 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-medium text-[#00D4FF] mb-6">
-                  Trust Gap Analysis
-                </h3>
+              {/* Opening Context - 60 words */}
+              <p className="text-lg text-[#D1D5DB] leading-relaxed">
+                Computis had powerful crypto tax automation technology, but CPAs refused to adopt black-box AI tools for IRS filings. With 94% of tasks requiring engineer intervention and 2.3-day turnaround times, the platform's technical capabilities were being undermined by a fundamental trust problem that no amount of polish could solve.
+              </p>
 
-                {/* Baseline Metrics */}
-                <div className="flex flex-wrap gap-4 mb-6 text-sm">
-                  <div className="bg-[#EF4444]/10 rounded-full px-4 py-2 border border-[#EF4444]/30">
-                    <span className="text-[#EF4444] font-semibold">Baseline: </span>
-                    <span className="text-[#D1D5DB]">avg. 2.3-day turnaround</span>
-                  </div>
-                  <div className="bg-[#EF4444]/10 rounded-full px-4 py-2 border border-[#EF4444]/30">
-                    <span className="text-[#EF4444] font-semibold">85% </span>
-                    <span className="text-[#D1D5DB]">of CPA time on eng tickets</span>
-                  </div>
+              {/* 4 Visual Problem Cards with Icons */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
+                  <AlertCircle className="w-10 h-10 text-[#EF4444] mb-3" />
+                  <p className="text-sm font-medium text-white">Unauditable AI decisions</p>
                 </div>
-
-                {/* 3-Column Trust Gap Board */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                  {/* Evidence */}
-                  <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00FFB3]/30">
-                    <h4 className="text-lg font-semibold text-[#00FFB3] mb-4">
-                      Evidence
-                    </h4>
-                    <div className="space-y-4">
-                      <div className="bg-[#0F0F0F] rounded-[8px] p-3 border-l-2 border-[#00FFB3]">
-                        <Quote className="w-4 h-4 text-[#00FFB3] mb-2" />
-                        <p className="text-sm text-[#D1D5DB] italic mb-2">
-                          "I don't trust black-box automation with IRS filings. Show me the logic, or I'll do it manually."
-                        </p>
-                        <p className="text-xs text-[#888888]">— Senior Tax Manager, Big 4 Firm</p>
-                      </div>
-                      <div>
-                        <p className="text-sm font-medium text-white mb-2">Ticket Stats:</p>
-                        <ul className="space-y-1 text-sm text-[#D1D5DB]">
-                          <li>• 127 classification questions/month</li>
-                          <li>• 94% required engineer intervention</li>
-                          <li>• 2.3-day avg. resolution time</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Risk */}
-                  <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30">
-                    <h4 className="text-lg font-semibold text-[#EF4444] mb-4">
-                      Risk (IRS Liability)
-                    </h4>
-                    <div className="space-y-4">
-                      <div className="bg-[#0F0F0F] rounded-[8px] p-3 border-l-2 border-[#EF4444]">
-                        <p className="text-sm font-medium text-white mb-2">Professional Liability:</p>
-                        <p className="text-sm text-[#D1D5DB]">
-                          CPAs legally bound to verify all tax calculations (Circular 230)
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-sm font-medium text-white mb-2">Compliance Impact:</p>
-                        <ul className="space-y-1 text-sm text-[#D1D5DB]">
-                          <li>• Form 8949 discrepancies risk IRS penalties</li>
-                          <li>• Unauditable classifications = liability exposure</li>
-                          <li>• 18% demo conversion (vs. 40% industry avg.)</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Implication */}
-                  <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00D4FF]/30">
-                    <h4 className="text-lg font-semibold text-[#00D4FF] mb-4">
-                      Implication
-                    </h4>
-                    <div className="space-y-4">
-                      <div className="bg-[#0F0F0F] rounded-[8px] p-3 border-l-2 border-[#00D4FF]">
-                        <p className="text-sm font-medium text-white mb-2">UI Must Expose Model Logic:</p>
-                        <p className="text-sm text-[#D1D5DB]">
-                          Show source data → classification rules → tax treatment → Form 8949 output
-                        </p>
-                      </div>
-                      <div>
-                        <p className="text-sm font-medium text-white mb-2">Required Features:</p>
-                        <ul className="space-y-1 text-sm text-[#D1D5DB]">
-                          <li>• "Audit Drawer" for drill-down verification</li>
-                          <li>• Confidence scores + IRS pub. citations</li>
-                          <li>• Override controls with documentation</li>
-                          <li>• Anomaly flags with explainability UI</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
+                  <Terminal className="w-10 h-10 text-[#EF4444] mb-3" />
+                  <p className="text-sm font-medium text-white">Engineer-dependent demos</p>
+                </div>
+                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
+                  <Clock className="w-10 h-10 text-[#EF4444] mb-3" />
+                  <p className="text-sm font-medium text-white">Custom scripting required</p>
+                </div>
+                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
+                  <ShieldAlert className="w-10 h-10 text-[#EF4444] mb-3" />
+                  <p className="text-sm font-medium text-white">Professional liability exposure</p>
                 </div>
               </div>
 
+              {/* Strategic Insight - 45 words */}
               <div>
                 <h3 className="text-xl font-medium text-[#00FFB3] mb-4">
                   The Strategic Realization
                 </h3>
                 <p className="text-lg text-[#D1D5DB] leading-relaxed">
-                  CPAs didn't need <em>simpler</em> software—they needed{" "}
-                  <strong className="text-white">
-                    transparency at the point of automation
-                  </strong>
-                  .
+                  CPAs didn't need <em>simpler</em> software—they needed <strong className="text-white">transparency at the point of automation</strong>. The solution wasn't hiding complexity, but exposing model logic to enable professional verification.
                 </p>
               </div>
 
-              {/* Before Workflow Diagram */}
-              <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A]">
-                <p className="text-sm text-[#888888] mb-3">
-                  Before: Manual Workflow Pain Points
-                </p>
-                <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe27094a668d5446ebfbb4ec49d0811c5"
-                    alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
-                    className="w-full h-auto transition-transform duration-300"
-                    loading="lazy"
-                    onClick={() =>
-                      setEnlargedImage(
-                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe27094a668d5446ebfbb4ec49d0811c5",
-                      )
-                    }
-                  />
-                  <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                    Click to enlarge
+              {/* Primary Quote Callout */}
+              <div className="bg-gradient-to-r from-[#EF4444]/10 to-[#DC2626]/10 rounded-[16px] p-6 border-l-4 border-[#EF4444]">
+                <div className="flex items-start gap-3">
+                  <Quote className="w-6 h-6 text-[#EF4444] flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="text-lg text-white italic mb-2">
+                      "I don't trust black-box automation with IRS filings. Show me the logic, or I'll do it manually."
+                    </p>
+                    <p className="text-sm text-[#888888]">
+                      ��� Senior Tax Manager, Big 4 Firm
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2 Mini-Quotes from Different Personas */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-[#1A1A1A] rounded-[12px] p-4 border border-[#00D4FF]/20">
+                  <div className="flex items-start gap-3">
+                    <Quote className="w-5 h-5 text-[#00D4FF] flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="text-sm text-[#D1D5DB] italic mb-2">
+                        "Every demo needs a 30-minute terminal session to prove it works."
+                      </p>
+                      <p className="text-xs text-[#888888]">— Lead Engineer</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-[#1A1A1A] rounded-[12px] p-4 border border-[#00FFB3]/20">
+                  <div className="flex items-start gap-3">
+                    <Quote className="w-5 h-5 text-[#00FFB3] flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="text-sm text-[#D1D5DB] italic mb-2">
+                        "I can't stake my license on results I can't verify or explain to the IRS."
+                      </p>
+                      <p className="text-xs text-[#888888]">— CPA Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Before/After Workflow Comparison */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Before Workflow */}
+                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30">
+                  <p className="text-sm text-[#EF4444] font-semibold mb-3">
+                    Before: Manual Workflow Pain Points
+                  </p>
+                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#EF4444]/60 transition-all duration-300 hover-image-enlarge relative group">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe27094a668d5446ebfbb4ec49d0811c5"
+                      alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
+                      className="w-full h-auto transition-transform duration-300"
+                      loading="lazy"
+                      onClick={() =>
+                        setEnlargedImage(
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe27094a668d5446ebfbb4ec49d0811c5",
+                        )
+                      }
+                    />
+                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                      Click to enlarge
+                    </div>
+                  </div>
+                </div>
+
+                {/* After Workflow */}
+                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00FFB3]/30">
+                  <p className="text-sm text-[#00FFB3] font-semibold mb-3">
+                    After: Transparent Self-Service
+                  </p>
+                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9dd30073e99e495fa0e2dcbe564d5048"
+                      alt="Redesigned Workflow: Self-service CPA workflow with transparency, audit trails, and 1.4h onboarding"
+                      className="w-full h-auto transition-transform duration-300"
+                      loading="lazy"
+                      onClick={() =>
+                        setEnlargedImage(
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9dd30073e99e495fa0e2dcbe564d5048",
+                        )
+                      }
+                    />
+                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                      Click to enlarge
+                    </div>
                   </div>
                 </div>
               </div>
