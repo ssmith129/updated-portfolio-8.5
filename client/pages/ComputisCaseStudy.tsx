@@ -202,6 +202,58 @@ export default function ComputisCaseStudy() {
         </a>
       </div>
 
+      {/* Key Metrics - Above the fold */}
+      <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-12 relative z-10 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
+        <div className="bg-gradient-to-r from-[#00D4FF]/10 to-[#00FFB3]/10 rounded-[25px] p-8 sm:p-10 border border-[#00D4FF]/20">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8 flex items-center gap-3">
+            <TrendingUp className="w-6 h-6 text-[#00D4FF]" />
+            Impact at a Glance
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-gradient-to-br from-[#00FFB3]/10 to-transparent rounded-[16px] p-6 border border-[#00FFB3]/30 hover:border-[#00FFB3]/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00FFB3]/20">
+              <AnimatedCounter
+                value={45}
+                prefix="↓ "
+                className="text-3xl sm:text-4xl font-bold text-[#00FFB3] mb-2"
+                startAnimation={startMetricsAnimation}
+              />
+              <p className="text-sm font-medium text-[#D1D5DB] mb-1">CPA onboarding time</p>
+              <p className="text-xs text-[#888888]">2.5h → 1.4h</p>
+            </div>
+            <div className="bg-gradient-to-br from-[#00D4FF]/10 to-transparent rounded-[16px] p-6 border border-[#00D4FF]/30 hover:border-[#00D4FF]/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00D4FF]/20">
+              <AnimatedCounter
+                value={32}
+                prefix="→ "
+                className="text-3xl sm:text-4xl font-bold text-[#00D4FF] mb-2"
+                startAnimation={startMetricsAnimation}
+              />
+              <p className="text-sm font-medium text-[#D1D5DB] mb-1">demo-to-conversion</p>
+              <p className="text-xs text-[#888888]">18% → 50%</p>
+            </div>
+            <div className="bg-gradient-to-br from-[#8B5CF6]/10 to-transparent rounded-[16px] p-6 border border-[#8B5CF6]/30 hover:border-[#8B5CF6]/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#8B5CF6]/20">
+              <AnimatedCounter
+                value={85}
+                prefix="↓ "
+                className="text-3xl sm:text-4xl font-bold text-[#8B5CF6] mb-2"
+                startAnimation={startMetricsAnimation}
+              />
+              <p className="text-sm font-medium text-[#D1D5DB] mb-1">engineering dependency</p>
+              <p className="text-xs text-[#888888]">94% → 9%</p>
+            </div>
+            <div className="bg-gradient-to-br from-[#F59E0B]/10 to-transparent rounded-[16px] p-6 border border-[#F59E0B]/30 hover:border-[#F59E0B]/60 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#F59E0B]/20">
+              <AnimatedCounter
+                value={150}
+                prefix="→ "
+                className="text-3xl sm:text-4xl font-bold text-[#F59E0B] mb-2"
+                startAnimation={startMetricsAnimation}
+              />
+              <p className="text-sm font-medium text-[#D1D5DB] mb-1">anomaly detection</p>
+              <p className="text-xs text-[#888888]">coverage increase</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-20 relative z-10">
         {/* Project Details & Impact at a Glance */}
@@ -244,58 +296,6 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#00D4FF]/10 to-[#00FFB3]/10 rounded-[20px] p-6 sm:p-8 border border-[#00D4FF]/20">
-              <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-[#00D4FF]" />
-                Impact at a Glance
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="text-center hover-metric-card p-4 rounded-xl transition-all">
-                  <AnimatedCounter
-                    value={45}
-                    prefix="↓ "
-                    className="text-2xl sm:text-3xl font-bold text-[#00FFB3] mb-1 metric-value transition-all"
-                    startAnimation={startMetricsAnimation}
-                  />
-                  <p className="text-sm text-[#888888]">CPA onboarding time</p>
-                  <p className="text-xs text-[#666666] mt-1">2.5h → 1.4h</p>
-                </div>
-                <div className="text-center hover-metric-card p-4 rounded-xl transition-all">
-                  <AnimatedCounter
-                    value={32}
-                    prefix="→ "
-                    className="text-2xl sm:text-3xl font-bold text-[#00D4FF] mb-1 metric-value transition-all"
-                    startAnimation={startMetricsAnimation}
-                  />
-                  <p className="text-sm text-[#888888]">demo-to-conversion</p>
-                  <p className="text-xs text-[#666666] mt-1">18% → 50%</p>
-                </div>
-                <div className="text-center hover-metric-card p-4 rounded-xl transition-all">
-                  <AnimatedCounter
-                    value={85}
-                    prefix="↓ "
-                    className="text-2xl sm:text-3xl font-bold text-[#8B5CF6] mb-1 metric-value transition-all"
-                    startAnimation={startMetricsAnimation}
-                  />
-                  <p className="text-sm text-[#888888]">
-                    engineering dependency
-                  </p>
-                  <p className="text-xs text-[#666666] mt-1">94% → 9%</p>
-                </div>
-                <div className="text-center hover-metric-card p-4 rounded-xl transition-all">
-                  <AnimatedCounter
-                    value={150}
-                    prefix="→ "
-                    className="text-2xl sm:text-3xl font-bold text-[#F59E0B] mb-1 metric-value transition-all"
-                    startAnimation={startMetricsAnimation}
-                  />
-                  <p className="text-sm text-[#888888]">anomaly detection</p>
-                  <p className="text-xs text-[#666666] mt-1">
-                    coverage increase
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -1156,41 +1156,9 @@ export default function ComputisCaseStudy() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-medium text-[#00D4FF] mb-4">
-                  Quantified Results
+                  Additional Quantified Results
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-[12px] p-4 border border-[#00FFB3]/20">
-                    <p className="text-2xl font-bold text-[#00FFB3] mb-1">
-                      ↓45%
-                    </p>
-                    <p className="text-sm text-[#D1D5DB]">
-                      CPA onboarding time (2.5h → 1.4h)
-                    </p>
-                  </div>
-                  <div className="bg-gradient-to-r from-[#00D4FF]/10 to-transparent rounded-[12px] p-4 border border-[#00D4FF]/20">
-                    <p className="text-2xl font-bold text-[#00D4FF] mb-1">
-                      →32%
-                    </p>
-                    <p className="text-sm text-[#D1D5DB]">
-                      demo-to-conversion rate (18% → 50%)
-                    </p>
-                  </div>
-                  <div className="bg-gradient-to-r from-[#8B5CF6]/10 to-transparent rounded-[12px] p-4 border border-[#8B5CF6]/20">
-                    <p className="text-2xl font-bold text-[#8B5CF6] mb-1">
-                      ↓85%
-                    </p>
-                    <p className="text-sm text-[#D1D5DB]">
-                      engineering dependency (94% → 9% of tasks)
-                    </p>
-                  </div>
-                  <div className="bg-gradient-to-r from-[#F59E0B]/10 to-transparent rounded-[12px] p-4 border border-[#F59E0B]/20">
-                    <p className="text-2xl font-bold text-[#F59E0B] mb-1">
-                      →150%
-                    </p>
-                    <p className="text-sm text-[#D1D5DB]">
-                      anomaly detection coverage
-                    </p>
-                  </div>
                   <div className="bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-[12px] p-4 border border-[#00FFB3]/20">
                     <p className="text-2xl font-bold text-[#00FFB3] mb-1">
                       ↓40%
