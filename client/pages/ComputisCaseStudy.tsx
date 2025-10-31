@@ -156,33 +156,16 @@ export default function ComputisCaseStudy() {
 
       {/* Hero Section */}
       <header className="max-w-[1400px] w-full mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
-        <div className="mb-8">
+        <div className="mb-8 flex flex-col">
           <span className="inline-block bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] px-4 py-2 rounded-[20px] text-sm font-semibold tracking-tight mb-6">
             FinTech UX Case Study
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight mb-6">
-            Computis: Turning CPAs from AI Skeptics to Power Users
+            Computis: Building Trust in AI Tax Automation
           </h1>
-
-          {/* TL;DR Summary */}
-          <div className="bg-gradient-to-r from-[#00D4FF]/10 to-[#00FFB3]/10 rounded-[16px] px-6 py-4 border border-[#00D4FF]/30 mb-6 inline-block">
-            <p className="text-lg sm:text-xl font-medium text-white">
-              Trust-first UX cut onboarding by 45% and lifted conversions 32% in 6 months.
-            </p>
-          </div>
-
-          {/* Micro-endorsement Pill */}
-          <div className="bg-[#0F0F0F] rounded-full px-6 py-3 border border-[#00FFB3]/40 inline-flex items-center gap-2 mb-6">
-            <Quote className="w-4 h-4 text-[#00FFB3] flex-shrink-0" />
-            <p className="text-sm sm:text-base text-[#D1D5DB] italic">
-              "I'd stake my license on it." — <span className="text-[#00FFB3] font-medium">CPA Client</span>
-            </p>
-          </div>
-
-          <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight max-w-5xl">
-            Transforming a crypto tax backend into a transparent, audit-ready
-            platform that enabled self-service workflows and secured 3
-            enterprise partnerships in 6 months
+          <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight w-full text-center m-auto">
+            Led end-to-end redesign that reduced CPA onboarding by 45% and
+            secured 3 enterprise partnerships
           </p>
         </div>
       </header>
