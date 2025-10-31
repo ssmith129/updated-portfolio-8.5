@@ -296,49 +296,93 @@ export default function ComputisCaseStudy() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-medium text-[#00D4FF] mb-4">
-                  The Business Context
+                <h3 className="text-xl font-medium text-[#00D4FF] mb-6">
+                  Trust Gap Analysis
                 </h3>
-                <p className="text-lg text-[#D1D5DB] leading-relaxed mb-4">
-                  Computis had powerful crypto tax automation technology built
-                  on Python scripts, but:
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-[#D1D5DB]">
-                    <span className="w-2 h-2 bg-[#EF4444] rounded-full mt-2 flex-shrink-0"></span>
-                    <span>CPAs refused to adopt tools they couldn't audit</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[#D1D5DB]">
-                    <span className="w-2 h-2 bg-[#EF4444] rounded-full mt-2 flex-shrink-0"></span>
-                    <span>
-                      Sales demos required engineer-led terminal sessions
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[#D1D5DB]">
-                    <span className="w-2 h-2 bg-[#EF4444] rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Every client onboarding needed custom scripting</span>
-                  </li>
-                  <li className="flex items-start gap-3 text-[#D1D5DB]">
-                    <span className="w-2 h-2 bg-[#EF4444] rounded-full mt-2 flex-shrink-0"></span>
-                    <span>
-                      Competitors (TaxBit, Cryptio) had polished UIs but lacked
-                      CPA workflow depth
-                    </span>
-                  </li>
-                </ul>
-              </div>
 
-              <div className="bg-gradient-to-r from-[#EF4444]/10 to-[#DC2626]/10 rounded-[16px] p-6 border-l-4 border-[#EF4444]">
-                <div className="flex items-start gap-3">
-                  <Quote className="w-6 h-6 text-[#EF4444] flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-lg text-white italic mb-2">
-                      "I don't trust black-box automation with IRS filings. Show
-                      me the logic, or I'll do it manually."
-                    </p>
-                    <p className="text-sm text-[#888888]">
-                      — Senior Tax Manager, Big 4 Firm
-                    </p>
+                {/* Baseline Metrics */}
+                <div className="flex flex-wrap gap-4 mb-6 text-sm">
+                  <div className="bg-[#EF4444]/10 rounded-full px-4 py-2 border border-[#EF4444]/30">
+                    <span className="text-[#EF4444] font-semibold">Baseline: </span>
+                    <span className="text-[#D1D5DB]">avg. 2.3-day turnaround</span>
+                  </div>
+                  <div className="bg-[#EF4444]/10 rounded-full px-4 py-2 border border-[#EF4444]/30">
+                    <span className="text-[#EF4444] font-semibold">85% </span>
+                    <span className="text-[#D1D5DB]">of CPA time on eng tickets</span>
+                  </div>
+                </div>
+
+                {/* 3-Column Trust Gap Board */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                  {/* Evidence */}
+                  <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00FFB3]/30">
+                    <h4 className="text-lg font-semibold text-[#00FFB3] mb-4">
+                      Evidence
+                    </h4>
+                    <div className="space-y-4">
+                      <div className="bg-[#0F0F0F] rounded-[8px] p-3 border-l-2 border-[#00FFB3]">
+                        <Quote className="w-4 h-4 text-[#00FFB3] mb-2" />
+                        <p className="text-sm text-[#D1D5DB] italic mb-2">
+                          "I don't trust black-box automation with IRS filings. Show me the logic, or I'll do it manually."
+                        </p>
+                        <p className="text-xs text-[#888888]">— Senior Tax Manager, Big 4 Firm</p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-white mb-2">Ticket Stats:</p>
+                        <ul className="space-y-1 text-sm text-[#D1D5DB]">
+                          <li>• 127 classification questions/month</li>
+                          <li>• 94% required engineer intervention</li>
+                          <li>• 2.3-day avg. resolution time</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Risk */}
+                  <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30">
+                    <h4 className="text-lg font-semibold text-[#EF4444] mb-4">
+                      Risk (IRS Liability)
+                    </h4>
+                    <div className="space-y-4">
+                      <div className="bg-[#0F0F0F] rounded-[8px] p-3 border-l-2 border-[#EF4444]">
+                        <p className="text-sm font-medium text-white mb-2">Professional Liability:</p>
+                        <p className="text-sm text-[#D1D5DB]">
+                          CPAs legally bound to verify all tax calculations (Circular 230)
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-white mb-2">Compliance Impact:</p>
+                        <ul className="space-y-1 text-sm text-[#D1D5DB]">
+                          <li>• Form 8949 discrepancies risk IRS penalties</li>
+                          <li>• Unauditable classifications = liability exposure</li>
+                          <li>• 18% demo conversion (vs. 40% industry avg.)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Implication */}
+                  <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00D4FF]/30">
+                    <h4 className="text-lg font-semibold text-[#00D4FF] mb-4">
+                      Implication
+                    </h4>
+                    <div className="space-y-4">
+                      <div className="bg-[#0F0F0F] rounded-[8px] p-3 border-l-2 border-[#00D4FF]">
+                        <p className="text-sm font-medium text-white mb-2">UI Must Expose Model Logic:</p>
+                        <p className="text-sm text-[#D1D5DB]">
+                          Show source data → classification rules → tax treatment → Form 8949 output
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-white mb-2">Required Features:</p>
+                        <ul className="space-y-1 text-sm text-[#D1D5DB]">
+                          <li>• "Audit Drawer" for drill-down verification</li>
+                          <li>• Confidence scores + IRS pub. citations</li>
+                          <li>• Override controls with documentation</li>
+                          <li>• Anomaly flags with explainability UI</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -888,7 +932,7 @@ export default function ComputisCaseStudy() {
                   <div>
                     <p className="text-sm text-[#888888] mb-1">Solution</p>
                     <p className="text-[#D1D5DB]">
-                      Inline color-coded flags (🔴 Critical, 🟡 Warning, 🟢 OK)
+                      Inline color-coded flags (🔴 Critical, 🟡 Warning, �� OK)
                       with hover tooltips
                     </p>
                   </div>
