@@ -10,6 +10,9 @@ import {
   Quote,
   AlertCircle,
   X,
+  Terminal,
+  Clock,
+  ShieldAlert,
 } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
