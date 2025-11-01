@@ -122,36 +122,7 @@ export default function ComputisCaseStudy() {
       <Navigation />
 
       {/* Sticky Metrics Strip */}
-      <div className="sticky top-[72px] z-40 bg-[#0A0A0A]/95 backdrop-blur-xl border-b border-[#1A1A1A] animate-in fade-in-0 slide-in-from-top-4 duration-700 delay-400">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 py-3">
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-            <div className="flex items-center gap-2 bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-full px-4 py-2 border border-[#00FFB3]/30">
-              <span className="text-lg font-bold text-[#00FFB3]">↓45%</span>
-              <span className="text-xs text-[#888888] hidden sm:inline">
-                2.5h→1.4h
-              </span>
-            </div>
-            <div className="flex items-center gap-2 bg-gradient-to-r from-[#00D4FF]/10 to-transparent rounded-full px-4 py-2 border border-[#00D4FF]/30">
-              <span className="text-lg font-bold text-[#00D4FF]">→32%</span>
-              <span className="text-xs text-[#888888] hidden sm:inline">
-                18%→50%
-              </span>
-            </div>
-            <div className="flex items-center gap-2 bg-gradient-to-r from-[#8B5CF6]/10 to-transparent rounded-full px-4 py-2 border border-[#8B5CF6]/30">
-              <span className="text-lg font-bold text-[#8B5CF6]">↓85%</span>
-              <span className="text-xs text-[#888888] hidden sm:inline">
-                94%→9%
-              </span>
-            </div>
-            <div className="flex items-center gap-2 bg-gradient-to-r from-[#F59E0B]/10 to-transparent rounded-full px-4 py-2 border border-[#F59E0B]/30">
-              <span className="text-lg font-bold text-[#F59E0B]">→150%</span>
-              <span className="text-xs text-[#888888] hidden sm:inline">
-                coverage
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="sticky top-[72px] z-40 bg-[#0A0A0A]/95 backdrop-blur-xl border-b border-[#1A1A1A] animate-in fade-in-0 slide-in-from-top-4 duration-700 delay-400" />
 
       {/* Back Button */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
@@ -240,7 +211,7 @@ export default function ComputisCaseStudy() {
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-12 space-y-20 relative z-10">
         {/* Project Details & Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 pb-5 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section flex flex-col">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Project Details
             </h2>
@@ -275,6 +246,36 @@ export default function ComputisCaseStudy() {
                 <p className="text-lg font-medium text-white">
                   Figma, Miro, Notion, Jira, Mixpanel
                 </p>
+              </div>
+            </div>
+
+            {/* Metrics Chips */}
+            <div className="flex flex-col max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 py-3">
+              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div className="flex flex-col w-1/4 max-md:w-full max-md:ml-0">
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-full px-4 py-2 border border-[#00FFB3]/30">
+                    <span className="text-lg font-bold text-[#00FFB3]">↓45%</span>
+                    <span className="text-xs text-[#888888] hidden sm:inline">2.5h→1.4h</span>
+                  </div>
+                </div>
+                <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-[#00D4FF]/10 to-transparent rounded-full px-4 py-2 border border-[#00D4FF]/30">
+                    <span className="text-lg font-bold text-[#00D4FF]">→32%</span>
+                    <span className="text-xs text-[#888888] hidden sm:inline">18%→50%</span>
+                  </div>
+                </div>
+                <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-[#8B5CF6]/10 to-transparent rounded-full px-4 py-2 border border-[#8B5CF6]/30">
+                    <span className="text-lg font-bold text-[#8B5CF6]">↓85%</span>
+                    <span className="text-xs text-[#888888] hidden sm:inline">94%→9%</span>
+                  </div>
+                </div>
+                <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-[#F59E0B]/10 to-transparent rounded-full px-4 py-2 border border-[#F59E0B]/30">
+                    <span className="text-lg font-bold text-[#F59E0B]">→150%</span>
+                    <span className="text-xs text-[#888888] hidden sm:inline">coverage</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
