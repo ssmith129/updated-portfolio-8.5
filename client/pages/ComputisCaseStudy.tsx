@@ -127,19 +127,27 @@ export default function ComputisCaseStudy() {
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             <div className="flex items-center gap-2 bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-full px-4 py-2 border border-[#00FFB3]/30">
               <span className="text-lg font-bold text-[#00FFB3]">↓45%</span>
-              <span className="text-xs text-[#888888] hidden sm:inline">2.5h→1.4h</span>
+              <span className="text-xs text-[#888888] hidden sm:inline">
+                2.5h→1.4h
+              </span>
             </div>
             <div className="flex items-center gap-2 bg-gradient-to-r from-[#00D4FF]/10 to-transparent rounded-full px-4 py-2 border border-[#00D4FF]/30">
               <span className="text-lg font-bold text-[#00D4FF]">→32%</span>
-              <span className="text-xs text-[#888888] hidden sm:inline">18%→50%</span>
+              <span className="text-xs text-[#888888] hidden sm:inline">
+                18%→50%
+              </span>
             </div>
             <div className="flex items-center gap-2 bg-gradient-to-r from-[#8B5CF6]/10 to-transparent rounded-full px-4 py-2 border border-[#8B5CF6]/30">
               <span className="text-lg font-bold text-[#8B5CF6]">↓85%</span>
-              <span className="text-xs text-[#888888] hidden sm:inline">94%→9%</span>
+              <span className="text-xs text-[#888888] hidden sm:inline">
+                94%→9%
+              </span>
             </div>
             <div className="flex items-center gap-2 bg-gradient-to-r from-[#F59E0B]/10 to-transparent rounded-full px-4 py-2 border border-[#F59E0B]/30">
               <span className="text-lg font-bold text-[#F59E0B]">→150%</span>
-              <span className="text-xs text-[#888888] hidden sm:inline">coverage</span>
+              <span className="text-xs text-[#888888] hidden sm:inline">
+                coverage
+              </span>
             </div>
           </div>
         </div>
@@ -269,7 +277,6 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -283,26 +290,39 @@ export default function ComputisCaseStudy() {
             <div className="space-y-6">
               {/* Opening Context - 60 words */}
               <p className="text-lg text-[#D1D5DB] leading-relaxed">
-                Computis had powerful crypto tax automation technology, but CPAs refused to adopt black-box AI tools for IRS filings. With 94% of tasks requiring engineer intervention and 2.3-day turnaround times, the platform's technical capabilities were being undermined by a fundamental trust problem that no amount of polish could solve.
+                Computis had powerful crypto tax automation technology, but CPAs
+                refused to adopt black-box AI tools for IRS filings. With 94% of
+                tasks requiring engineer intervention and 2.3-day turnaround
+                times, the platform's technical capabilities were being
+                undermined by a fundamental trust problem that no amount of
+                polish could solve.
               </p>
 
               {/* 4 Visual Problem Cards with Icons */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
                   <AlertCircle className="w-10 h-10 text-[#EF4444] mb-3" />
-                  <p className="text-sm font-medium text-white">Unauditable AI decisions</p>
+                  <p className="text-sm font-medium text-white">
+                    Unauditable AI decisions
+                  </p>
                 </div>
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
                   <Terminal className="w-10 h-10 text-[#EF4444] mb-3" />
-                  <p className="text-sm font-medium text-white">Engineer-dependent demos</p>
+                  <p className="text-sm font-medium text-white">
+                    Engineer-dependent demos
+                  </p>
                 </div>
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
                   <Clock className="w-10 h-10 text-[#EF4444] mb-3" />
-                  <p className="text-sm font-medium text-white">Custom scripting required</p>
+                  <p className="text-sm font-medium text-white">
+                    Custom scripting required
+                  </p>
                 </div>
                 <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
                   <ShieldAlert className="w-10 h-10 text-[#EF4444] mb-3" />
-                  <p className="text-sm font-medium text-white">Professional liability exposure</p>
+                  <p className="text-sm font-medium text-white">
+                    Professional liability exposure
+                  </p>
                 </div>
               </div>
 
@@ -312,10 +332,14 @@ export default function ComputisCaseStudy() {
                   The Strategic Realization
                 </h3>
                 <p className="text-lg text-[#D1D5DB] leading-relaxed mb-[41px]">
-                  CPAs didn't need <em>simpler</em> software—they needed <strong className="text-white">transparency at the point of automation</strong>. The solution wasn't hiding complexity, but exposing model logic to enable professional verification.
+                  CPAs didn't need <em>simpler</em> software—they needed{" "}
+                  <strong className="text-white">
+                    transparency at the point of automation
+                  </strong>
+                  . The solution wasn't hiding complexity, but exposing model
+                  logic to enable professional verification.
                 </p>
               </div>
-
 
               {/* 2 Mini-Quotes from Different Personas */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -324,7 +348,8 @@ export default function ComputisCaseStudy() {
                     <Quote className="w-5 h-5 text-[#00D4FF] flex-shrink-0 mt-1" />
                     <div>
                       <p className="text-sm text-[#D1D5DB] italic mb-2">
-                        "Every demo needs a 30-minute terminal session to prove it works."
+                        "Every demo needs a 30-minute terminal session to prove
+                        it works."
                       </p>
                       <p className="text-xs text-[#888888]">— Lead Engineer</p>
                     </div>
@@ -335,7 +360,8 @@ export default function ComputisCaseStudy() {
                     <Quote className="w-5 h-5 text-[#00FFB3] flex-shrink-0 mt-1" />
                     <div>
                       <p className="text-sm text-[#D1D5DB] italic mb-2">
-                        "I can't stake my license on results I can't verify or explain to the IRS."
+                        "I can't stake my license on results I can't verify or
+                        explain to the IRS."
                       </p>
                       <p className="text-xs text-[#888888]">— CPA Client</p>
                     </div>
@@ -344,8 +370,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Before/After Workflow Comparison */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6"></div>
               <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30">
                 <p className="text-sm text-[#EF4444] font-semibold mb-3">
                   Before: Manual Workflow Pain Points
@@ -399,7 +424,9 @@ export default function ComputisCaseStudy() {
                 <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
                   <div className="bg-[#8B5CF6]/10 rounded-[12px] p-4 border border-[#8B5CF6]/20 text-center">
                     <p className="text-white font-medium text-center">
-                      Competitive analysis<br />(4 platforms)
+                      Competitive analysis
+                      <br />
+                      (4 platforms)
                     </p>
                   </div>
                 </div>
@@ -413,7 +440,10 @@ export default function ComputisCaseStudy() {
                 <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
                   <div className="bg-[#F59E0B]/10 rounded-[12px] p-4 border border-[#F59E0B]/20 text-center">
                     <p className="text-white font-medium">
-                      4 usability testing<br />cycles<br />
+                      4 usability testing
+                      <br />
+                      cycles
+                      <br />
                     </p>
                   </div>
                 </div>
