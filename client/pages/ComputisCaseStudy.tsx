@@ -345,51 +345,32 @@ export default function ComputisCaseStudy() {
 
               {/* Before/After Workflow Comparison */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {/* Before Workflow */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30">
-                  <p className="text-sm text-[#EF4444] font-semibold mb-3">
-                    Before: Manual Workflow Pain Points
-                  </p>
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#EF4444]/60 transition-all duration-300 hover-image-enlarge relative group">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe27094a668d5446ebfbb4ec49d0811c5"
-                      alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
-                      className="w-full h-auto transition-transform duration-300"
-                      loading="lazy"
-                      onClick={() =>
-                        setEnlargedImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe27094a668d5446ebfbb4ec49d0811c5",
-                        )
-                      }
-                    />
-                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                      Click to enlarge
-                    </div>
-                  </div>
+              </div>
+              <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30">
+                <p className="text-sm text-[#EF4444] font-semibold mb-3">
+                  Before: Manual Workflow Pain Points
+                </p>
+                <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#EF4444]/60 transition-all duration-300 hover-image-enlarge relative group">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe27094a668d5446ebfbb4ec49d0811c5"
+                    alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
+                    className="w-full h-auto transition-transform duration-300"
+                    loading="lazy"
+                  />
                 </div>
-
-                {/* After Workflow */}
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00FFB3]/30">
-                  <p className="text-sm text-[#00FFB3] font-semibold mb-3">
-                    After: Transparent Self-Service
-                  </p>
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9dd30073e99e495fa0e2dcbe564d5048"
-                      alt="Redesigned Workflow: Self-service CPA workflow with transparency, audit trails, and 1.4h onboarding"
-                      className="w-full h-auto transition-transform duration-300"
-                      loading="lazy"
-                      onClick={() =>
-                        setEnlargedImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9dd30073e99e495fa0e2dcbe564d5048",
-                        )
-                      }
-                    />
-                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                      Click to enlarge
-                    </div>
-                  </div>
-                </div>
+              </div>
+            </div>
+            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00FFB3]/30">
+              <p className="text-sm text-[#00FFB3] font-semibold mb-3">
+                After: Transparent Self-Service
+              </p>
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F318dd32c0651498eb3dc22cbbb55b39f"
+                  alt="Redesigned Workflow: Self-service CPA workflow with transparency, audit trails, and 1.4h onboarding"
+                  className="w-full h-auto transition-transform duration-300"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
