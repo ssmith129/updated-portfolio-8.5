@@ -213,8 +213,8 @@ export default function ComputisCaseStudy() {
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] shadow-2xl">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 tracking-tight">
-              Impact at a Glance
+            <h2 className="text-3xl font-semibold text-white mb-8">
+              Impacts at a Glance
             </h2>
 
             <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 sm:p-8 border border-[#00FFB3]/20">
