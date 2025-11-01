@@ -576,7 +576,7 @@ export default function ComputisCaseStudy() {
 
             {/* Competitive Matrix */}
             <div className="mb-8">
-              <h3 className="text-2xl sm:text-3xl font-semibold text-white mb-2">
+              <h3 className="text-xl font-medium text-[#00D4FF] mb-3">
                 Competitive Landscape Analysis
               </h3>
               <p className="text-[#9CA3AF] text-base mb-6">
