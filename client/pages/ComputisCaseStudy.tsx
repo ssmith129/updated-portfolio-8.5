@@ -316,20 +316,6 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              {/* Primary Quote Callout */}
-              <div className="bg-gradient-to-r from-[#EF4444]/10 to-[#DC2626]/10 rounded-[16px] p-6 border-l-4 border-[#EF4444]">
-                <div className="flex items-start gap-3">
-                  <Quote className="w-6 h-6 text-[#EF4444] flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-lg text-white italic mb-2">
-                      "I don't trust black-box automation with IRS filings. Show me the logic, or I'll do it manually."
-                    </p>
-                    <p className="text-sm text-[#888888]">
-                      ��� Senior Tax Manager, Big 4 Firm
-                    </p>
-                  </div>
-                </div>
-              </div>
 
               {/* 2 Mini-Quotes from Different Personas */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
