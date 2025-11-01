@@ -138,16 +138,17 @@ export default function ComputisCaseStudy() {
 
       {/* Hero Section */}
       <header className="max-w-[1400px] w-full mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
-        <div className="mb-8 flex flex-col">
+        <div className="mb-8 flex flex-col gap-6">
           <span className="inline-block bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] px-4 py-2 rounded-[20px] text-sm font-semibold tracking-tight mb-6 w-auto self-start">
             FinTech UX Case Study
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight mb-6">
             Computis: Building Trust in AI Tax Automation
           </h1>
-          <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight w-full text-left m-auto">
-            Led end-to-end redesign that reduced CPA onboarding by 45% and
-            secured 3 enterprise partnerships
+          <p className="text-xl sm:text-2xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight w-full text-left self-center max-w-[850px] m-auto">
+            Transforming a crypto tax backend into a transparent, audit-ready
+            platform that enabled self-service workflows and secured 3
+            enterprise partnerships in 6 months
           </p>
         </div>
       </header>
