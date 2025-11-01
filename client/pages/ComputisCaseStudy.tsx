@@ -248,6 +248,14 @@ export default function ComputisCaseStudy() {
                   Figma, Miro, Notion, Jira, Mixpanel
                 </p>
               </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                  Platform
+                </h3>
+                <p className="text-lg font-medium text-white">
+                  Web SaaS (Desktop-first, responsive)
+                </p>
+              </div>
             </div>
 
             {/* Metrics Chips */}
