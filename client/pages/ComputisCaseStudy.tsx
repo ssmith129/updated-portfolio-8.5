@@ -773,8 +773,7 @@ export default function ComputisCaseStudy() {
 
               {/* Date stamp and footnote */}
               <p className="text-xs text-[#888888] mt-4">
-                Analysis conducted: January 2024 | Based on publicly available
-                features and user testing
+                Analysis conducted: Oct 2022 | Based on publicly available features and user testing
               </p>
             </div>
 
