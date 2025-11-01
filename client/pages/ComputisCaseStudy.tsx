@@ -210,7 +210,69 @@ export default function ComputisCaseStudy() {
 
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-12 space-y-20 relative z-10">
-        {/* Project Details & Impact at a Glance */}
+        {/* Impact at a Glance */}
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] shadow-2xl">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8 tracking-tight">
+              Impact at a Glance
+            </h2>
+
+            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[20px] p-6 sm:p-8 border border-[#00FFB3]/20">
+              <div className="flex items-center gap-2 mb-6">
+                <TrendingUp className="w-6 h-6 text-[#00FFB3]" />
+                <h3 className="text-xl font-semibold text-white">Key Metrics</h3>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {/* Metric 1: CPA onboarding time */}
+                <div className="flex flex-col items-center gap-3">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-[#00FFB3] mb-3">↓ 45%</div>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm font-medium text-[#D1D5DB] mb-1">CPA onboarding time</p>
+                    <p className="text-xs text-[#9CA3AF]">(2.5h → 1.4h)</p>
+                  </div>
+                </div>
+
+                {/* Metric 2: Demo-to-conversion */}
+                <div className="flex flex-col items-center gap-3">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-[#FFD700] mb-3">↑ 32%</div>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm font-medium text-[#D1D5DB] mb-1">Demo-to-conversion</p>
+                    <p className="text-xs text-[#9CA3AF]">rate increase</p>
+                  </div>
+                </div>
+
+                {/* Metric 3: Reliance on engineering teams */}
+                <div className="flex flex-col items-center gap-3">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-[#00D4FF] mb-3">↓ 85%</div>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm font-medium text-[#D1D5DB] mb-1">Reliance on</p>
+                    <p className="text-xs text-[#9CA3AF]">engineering teams</p>
+                  </div>
+                </div>
+
+                {/* Metric 4: Anomaly detection */}
+                <div className="flex flex-col items-center gap-3">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-[#0080FF] mb-3">↑ 150%</div>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm font-medium text-[#D1D5DB] mb-1">Anomaly detection</p>
+                    <p className="text-xs text-[#9CA3AF]">coverage increase</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Project Details */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section flex flex-col">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
