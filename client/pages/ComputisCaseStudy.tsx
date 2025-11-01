@@ -319,52 +319,6 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
             </div>
-
-            {/* Metrics Chips */}
-            <div className="flex flex-col max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 py-3">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-                <div className="flex flex-col w-1/4 max-md:w-full max-md:ml-0">
-                  <div className="flex items-center gap-2 bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-full px-4 py-2 border border-[#00FFB3]/30">
-                    <span className="text-lg font-bold text-[#00FFB3]">
-                      ↓45%
-                    </span>
-                    <span className="text-xs text-[#888888] hidden sm:inline">
-                      2.5h→1.4h
-                    </span>
-                  </div>
-                </div>
-                <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
-                  <div className="flex items-center gap-2 bg-gradient-to-r from-[#00D4FF]/10 to-transparent rounded-full px-4 py-2 border border-[#00D4FF]/30">
-                    <span className="text-lg font-bold text-[#00D4FF]">
-                      →32%
-                    </span>
-                    <span className="text-xs text-[#888888] hidden sm:inline">
-                      18%→50%
-                    </span>
-                  </div>
-                </div>
-                <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
-                  <div className="flex items-center gap-2 bg-gradient-to-r from-[#8B5CF6]/10 to-transparent rounded-full px-4 py-2 border border-[#8B5CF6]/30">
-                    <span className="text-lg font-bold text-[#8B5CF6]">
-                      ↓85%
-                    </span>
-                    <span className="text-xs text-[#888888] hidden sm:inline">
-                      94%→9%
-                    </span>
-                  </div>
-                </div>
-                <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
-                  <div className="flex items-center gap-2 bg-gradient-to-r from-[#F59E0B]/10 to-transparent rounded-full px-4 py-2 border border-[#F59E0B]/30">
-                    <span className="text-lg font-bold text-[#F59E0B]">
-                      →150%
-                    </span>
-                    <span className="text-xs text-[#888888] hidden sm:inline">
-                      coverage
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
