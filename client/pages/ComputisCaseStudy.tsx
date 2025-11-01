@@ -307,7 +307,7 @@ export default function ComputisCaseStudy() {
 
             <div className="space-y-6">
               {/* Opening Context - 60 words */}
-              <p className="text-lg text-[#D1D5DB] leading-relaxed">
+              <p className="text-lg text-[#D1D5DB] leading-7">
                 Computis had powerful crypto tax automation technology, but CPAs
                 refused to adopt black-box AI tools for IRS filings. With 94% of
                 tasks requiring engineer intervention and 2.3-day turnaround
@@ -361,7 +361,7 @@ export default function ComputisCaseStudy() {
 
               {/* 2 Mini-Quotes from Different Personas */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-[#1A1A1A] rounded-[12px] p-4 border border-[#00D4FF]/20">
+                <div className="bg-[#143b3b] rounded-[12px] p-4 border border-[#00D4FF]/20">
                   <div className="flex items-start gap-3">
                     <Quote className="w-5 h-5 text-[#00D4FF] flex-shrink-0 mt-1" />
                     <div>
@@ -373,7 +373,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A] rounded-[12px] p-4 border border-[#00FFB3]/20">
+                <div className="bg-[#143b3b] rounded-[12px] p-4 border border-[#00FFB3]/20">
                   <div className="flex items-start gap-3">
                     <Quote className="w-5 h-5 text-[#00FFB3] flex-shrink-0 mt-1" />
                     <div>
@@ -403,7 +403,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
             </div>
-            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00FFB3]/30">
+            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00FFB3]/30 mt-6">
               <p className="text-sm text-[#00FFB3] font-semibold mb-3">
                 After: Transparent Self-Service
               </p>
