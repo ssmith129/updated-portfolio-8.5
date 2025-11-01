@@ -160,13 +160,13 @@ export default function ComputisCaseStudy() {
       {/* Hero Section */}
       <header className="max-w-[1400px] w-full mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="mb-8 flex flex-col">
-          <span className="inline-block bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] px-4 py-2 rounded-[20px] text-sm font-semibold tracking-tight mb-6">
+          <span className="inline-block bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] px-4 py-2 rounded-[20px] text-sm font-semibold tracking-tight mb-6 w-auto self-start">
             FinTech UX Case Study
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight mb-6">
             Computis: Building Trust in AI Tax Automation
           </h1>
-          <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight w-full text-center m-auto">
+          <p className="text-xl sm:text-2xl lg:text-3xl font-normal text-[#9CA3AF] leading-relaxed tracking-tight w-full text-left m-auto">
             Led end-to-end redesign that reduced CPA onboarding by 45% and
             secured 3 enterprise partnerships
           </p>
@@ -229,10 +229,10 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-20 relative z-10">
+      <main className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-12 space-y-20 relative z-10">
         {/* Project Details & Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 pb-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Project Details
             </h2>
@@ -307,7 +307,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Strategic Insight - 45 words */}
-              <div>
+              <div className="mt-9">
                 <h3 className="text-xl font-medium text-[#00FFB3] mb-4">
                   The Strategic Realization
                 </h3>
@@ -387,26 +387,36 @@ export default function ComputisCaseStudy() {
               Over 10 weeks, I led foundational research:
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              <div className="bg-[#00D4FF]/10 rounded-[12px] p-4 border border-[#00D4FF]/20">
-                <p className="text-white font-medium">
-                  8 CPA + tax analyst interviews
-                </p>
-              </div>
-              <div className="bg-[#00FFB3]/10 rounded-[12px] p-4 border border-[#00FFB3]/20">
-                <p className="text-white font-medium">
-                  6 workflow shadowing sessions
-                </p>
-              </div>
-              <div className="bg-[#8B5CF6]/10 rounded-[12px] p-4 border border-[#8B5CF6]/20">
-                <p className="text-white font-medium">
-                  Competitive analysis (4 platforms)
-                </p>
-              </div>
-              <div className="bg-[#F59E0B]/10 rounded-[12px] p-4 border border-[#F59E0B]/20">
-                <p className="text-white font-medium">
-                  4 usability testing cycles
-                </p>
+            <div className="flex flex-col gap-4 mb-8">
+              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div className="flex flex-col w-1/4 max-md:w-full max-md:ml-0">
+                  <div className="bg-[#00D4FF]/10 rounded-[12px] p-4 border border-[#00D4FF]/20 w-auto self-center">
+                    <p className="text-white font-medium text-center">
+                      8 CPA + tax analyst interviews
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="bg-[#8B5CF6]/10 rounded-[12px] p-4 border border-[#8B5CF6]/20 text-center">
+                    <p className="text-white font-medium text-center">
+                      Competitive analysis<br />(4 platforms)
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="bg-[#00FFB3]/10 rounded-[12px] p-4 border border-[#00FFB3]/20">
+                    <p className="text-white font-medium text-center">
+                      6 workflow shadowing sessions
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col w-1/4 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="bg-[#F59E0B]/10 rounded-[12px] p-4 border border-[#F59E0B]/20 text-center">
+                    <p className="text-white font-medium">
+                      4 usability testing<br />cycles<br />
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
