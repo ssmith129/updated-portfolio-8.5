@@ -553,26 +553,159 @@ export default function ComputisCaseStudy() {
             </ul>
 
             {/* Competitive Matrix */}
-            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
-              <p className="text-sm text-[#888888] mb-3">
-                Competitive Analysis Matrix
+            <div className="mb-8">
+              <h3 className="text-2xl sm:text-3xl font-semibold text-white mb-2">
+                Competitive Landscape Analysis
+              </h3>
+              <p className="text-[#9CA3AF] text-base mb-6">
+                We analyzed 5 leading crypto tax platforms to identify gaps in AI transparency and CPA workflow support.
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F91992ada3d7e45289fb26264fb2baeb2"
-                  alt="Competitive Landscape Analysis comparing 5 crypto tax platforms (Computis, TaxBit, Cryptio, CoinTracker, Koinly) across key features including AI Explainability, Confidence Levels, One-Click Override, Real-Time Audit Trail, and CPA-First Design. Computis shows full support across all features while competitors have partial or no implementation"
-                  className="w-full h-auto transition-transform duration-300"
-                  loading="lazy"
-                  onClick={() =>
-                    setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F91992ada3d7e45289fb26264fb2baeb2",
-                    )
-                  }
-                />
-                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                  Click to enlarge
+
+              <div className="bg-[#1A1A1A]/50 rounded-[16px] p-1 border border-[#1A1A1A] shadow-[0_0_40px_0_rgba(0,212,255,0.1)] overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-gradient-to-r from-[#0080FF]/20 to-[#00D4FF]/20">
+                      <th className="text-left text-white text-sm font-semibold p-4 border-b border-[#2A2A2A]">Feature</th>
+                      <th className="text-center text-[#00D4FF] text-sm font-bold p-4 border-b border-[#2A2A2A] bg-[#00D4FF]/10">Computis</th>
+                      <th className="text-center text-[#9CA3AF] text-sm font-semibold p-4 border-b border-[#2A2A2A]">TaxBit</th>
+                      <th className="text-center text-[#9CA3AF] text-sm font-semibold p-4 border-b border-[#2A2A2A]">Cryptio</th>
+                      <th className="text-center text-[#9CA3AF] text-sm font-semibold p-4 border-b border-[#2A2A2A]">CoinTracker</th>
+                      <th className="text-center text-[#9CA3AF] text-sm font-semibold p-4 border-b border-[#2A2A2A]">Koinly</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="text-[#D1D5DB] text-sm p-4">AI Explainability</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                    </tr>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="text-[#D1D5DB] text-sm p-4">Confidence Levels</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                    </tr>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="text-[#D1D5DB] text-sm p-4">One-Click Override</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-[#FFD700] text-sm font-bold italic">Partial</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-[#FFD700] text-sm font-bold italic">Partial</span>
+                      </td>
+                    </tr>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="text-[#D1D5DB] text-sm p-4">Real-Time Audit Trail</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-[#FFD700] text-sm font-bold italic">Partial</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                    </tr>
+                    <tr className="border-b border-[#2A2A2A]">
+                      <td className="text-[#D1D5DB] text-sm p-4">CPA-First Design</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-2xl">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-[#FFD700] text-sm font-bold italic">Partial</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">✅</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-2xl">❌</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-[#FFD700] text-sm font-bold italic">Partial</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-[#D1D5DB] text-sm p-4 font-semibold">Where we're weaker</td>
+                      <td className="text-center p-4 bg-[#00D4FF]/5">
+                        <span className="text-xs text-[#9CA3AF]">API limits</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-xs text-[#9CA3AF]">Enterprise scale</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-xs text-[#9CA3AF]">Multi-entity</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-xs text-[#9CA3AF]">Consumer reach</span>
+                      </td>
+                      <td className="text-center p-4">
+                        <span className="text-xs text-[#9CA3AF]">Market share</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Legend */}
+              <div className="flex flex-wrap items-center gap-6 mt-4 text-sm">
+                <div className="flex items-center gap-2">
+                  <span className="text-lg">✅</span>
+                  <span className="text-white">Full Support</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-[#FFD700] font-bold italic text-sm">Partial</span>
+                  <span className="text-white">Partial Implementation</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-lg">❌</span>
+                  <span className="text-white">Not Available</span>
                 </div>
               </div>
+
+              {/* Date stamp and footnote */}
+              <p className="text-xs text-[#888888] mt-4">
+                Analysis conducted: January 2024 | Based on publicly available features and user testing
+              </p>
             </div>
 
             <h3 className="text-xl font-medium text-[#00FFB3] mb-4">
