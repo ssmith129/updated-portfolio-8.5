@@ -326,119 +326,29 @@ export default function ComputisCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
-              The Design Problem Wasn't UX—It Was Trust
+              The Problem: Trust Deficit in Crypto Accounting
             </h2>
 
             <div className="space-y-6">
-              {/* Opening Context - 60 words */}
               <p className="text-lg text-[#D1D5DB] leading-7">
-                Computis had powerful crypto tax automation technology, but CPAs
-                refused to adopt black-box AI tools for IRS filings. With 94% of
-                tasks requiring engineer intervention and 2.3-day turnaround
-                times, the platform's technical capabilities were being
-                undermined by a fundamental trust problem that no amount of
-                polish could solve.
+                Tax automation vendors like TaxBit or Cryptio prioritize speed; CPAs, however, prioritize defensibility.
               </p>
 
-              {/* 4 Visual Problem Cards with Icons */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
-                  <AlertCircle className="w-10 h-10 text-[#EF4444] mb-3" />
-                  <p className="text-sm font-medium text-white">
-                    Unauditable AI decisions
-                  </p>
-                </div>
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
-                  <Terminal className="w-10 h-10 text-[#EF4444] mb-3" />
-                  <p className="text-sm font-medium text-white">
-                    Engineer-dependent demos
-                  </p>
-                </div>
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
-                  <Clock className="w-10 h-10 text-[#EF4444] mb-3" />
-                  <p className="text-sm font-medium text-white">
-                    Custom scripting required
-                  </p>
-                </div>
-                <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30 flex flex-col items-center text-center">
-                  <ShieldAlert className="w-10 h-10 text-[#EF4444] mb-3" />
-                  <p className="text-sm font-medium text-white">
-                    Professional liability exposure
-                  </p>
-                </div>
-              </div>
-
-              {/* Strategic Insight - 45 words */}
-              <div className="mt-9">
-                <h3 className="text-xl font-medium text-[#00FFB3] mb-4">
-                  The Strategic Realization
-                </h3>
-                <p className="text-lg text-[#D1D5DB] leading-relaxed mb-[41px]">
-                  CPAs didn't need <em>simpler</em> software—they needed{" "}
-                  <strong className="text-white">
-                    transparency at the point of automation
-                  </strong>
-                  . The solution wasn't hiding complexity, but exposing model
-                  logic to enable professional verification.
-                </p>
-              </div>
-
-              {/* 2 Mini-Quotes from Different Personas */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-[#143b3b] rounded-[12px] p-4 border border-[#00D4FF]/20">
-                  <div className="flex items-start gap-3">
-                    <Quote className="w-5 h-5 text-[#00D4FF] flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="text-sm text-[#D1D5DB] italic mb-2">
-                        "Every demo needs a 30-minute terminal session to prove
-                        it works."
-                      </p>
-                      <p className="text-xs text-[#888888]">— Lead Engineer</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-[#143b3b] rounded-[12px] p-4 border border-[#00FFB3]/20">
-                  <div className="flex items-start gap-3">
-                    <Quote className="w-5 h-5 text-[#00FFB3] flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="text-sm text-[#D1D5DB] italic mb-2">
-                        "I can't stake my license on results I can't verify or
-                        explain to the IRS."
-                      </p>
-                      <p className="text-xs text-[#888888]">— CPA Client</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Before/After Workflow Comparison */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6"></div>
-              <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#EF4444]/30">
-                <p className="text-sm text-[#EF4444] font-semibold mb-3">
-                  Before: Manual Workflow Pain Points
-                </p>
-                <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#EF4444]/60 transition-all duration-300 hover-image-enlarge relative group">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fe27094a668d5446ebfbb4ec49d0811c5"
-                    alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results"
-                    className="w-full h-auto transition-transform duration-300"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#00FFB3]/30 mt-6">
-              <p className="text-sm text-[#00FFB3] font-semibold mb-3">
-                After: Transparent Self-Service
+              <p className="text-lg text-[#D1D5DB] leading-7">
+                Before Computis, firms faced opaque black-box systems that required manual double-checking, defeating automation's promise.
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F318dd32c0651498eb3dc22cbbb55b39f"
-                  alt="Redesigned Workflow: Self-service CPA workflow with transparency, audit trails, and 1.4h onboarding"
-                  className="w-full h-auto transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
+
+              <h3 className="text-xl font-medium text-[#00FFB3] mb-4">
+                Core Framing
+              </h3>
+
+              <p className="text-lg text-[#D1D5DB] leading-relaxed italic">
+                "The problem wasn't UX — it was trust."
+              </p>
+
+              <p className="text-lg text-[#D1D5DB] leading-relaxed">
+                We discovered that unless AI decisions were explainable, overridable, and auditable, CPAs would never adopt the tool at scale.
+              </p>
             </div>
           </div>
         </section>
