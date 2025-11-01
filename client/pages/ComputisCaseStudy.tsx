@@ -311,7 +311,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-xl font-medium text-[#00FFB3] mb-4">
                   The Strategic Realization
                 </h3>
-                <p className="text-lg text-[#D1D5DB] leading-relaxed">
+                <p className="text-lg text-[#D1D5DB] leading-relaxed mb-[41px]">
                   CPAs didn't need <em>simpler</em> software—they needed <strong className="text-white">transparency at the point of automation</strong>. The solution wasn't hiding complexity, but exposing model logic to enable professional verification.
                 </p>
               </div>
