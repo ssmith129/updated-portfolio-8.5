@@ -911,7 +911,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Part 3: Design Decisions (What We Built) */}
-            <h3 className="text-xl font-medium text-[#00D4FF] mb-2 mt-8">
+            <h3 className="text-lg font-semibold text-[#00D4FF] mb-2 mt-8">
               Design Decisions
             </h3>
             <p className="text-sm text-[#9CA3AF] mb-8">
