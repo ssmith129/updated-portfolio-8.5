@@ -296,7 +296,7 @@ export default function ComputisCaseStudy() {
 
         {/* Project Details */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section flex flex-col">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section flex flex-col">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Project Details
             </h2>
@@ -352,7 +352,7 @@ export default function ComputisCaseStudy() {
 
         {/* Overview */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-750">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Executive Context
             </h2>
@@ -379,7 +379,7 @@ export default function ComputisCaseStudy() {
 
         {/* The Design Problem */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               The Problem: Trust Deficit in Crypto Accounting
             </h2>
@@ -414,7 +414,7 @@ export default function ComputisCaseStudy() {
 
         {/* Research & Discovery */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Research & Discovery
             </h2>
@@ -1042,7 +1042,7 @@ export default function ComputisCaseStudy() {
 
         {/* Competitive Positioning */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Competitive Positioning
             </h2>
@@ -1315,7 +1315,7 @@ export default function ComputisCaseStudy() {
 
         {/* Design Process */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Design Process
             </h2>
@@ -1413,7 +1413,7 @@ export default function ComputisCaseStudy() {
 
         {/* Solution: Five Design Decisions */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1200">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Solution: Five Design Decisions
             </h2>
@@ -1667,7 +1667,7 @@ export default function ComputisCaseStudy() {
 
         {/* Design System & Components */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Design System & Components
             </h2>
@@ -1760,7 +1760,7 @@ export default function ComputisCaseStudy() {
 
         {/* Stakeholder Alignment */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1400">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Stakeholder Alignment: The Override Control Debate
             </h2>
@@ -1828,7 +1828,7 @@ export default function ComputisCaseStudy() {
 
         {/* Outcomes & Business Impact */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Outcomes & Business Impact
             </h2>
@@ -1906,7 +1906,7 @@ export default function ComputisCaseStudy() {
 
         {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1600">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Key Learnings
             </h2>
@@ -1957,7 +1957,7 @@ export default function ComputisCaseStudy() {
 
         {/* What I'd Do Differently */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               What I'd Do Differently
             </h2>
