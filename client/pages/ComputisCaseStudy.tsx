@@ -296,7 +296,7 @@ export default function ComputisCaseStudy() {
 
         {/* Project Details */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section flex flex-col">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] hover-section flex flex-col">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Project Details
             </h2>
@@ -905,7 +905,7 @@ export default function ComputisCaseStudy() {
                   IRS, I'll use it. Otherwise, it's just another liability."
                 </p>
                 <p className="text-xs text-[#888888] mt-2">
-                  �� Recurring theme across 7/8 interviews
+                  — Recurring theme across 7/8 interviews
                 </p>
               </div>
             </div>
