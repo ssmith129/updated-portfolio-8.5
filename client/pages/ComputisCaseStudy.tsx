@@ -780,36 +780,13 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 {/* Key Stat Callout */}
-                <div className="bg-[#EF4444]/10 rounded-lg p-3 mb-4 border border-[#EF4444]/20">
+                <div className="bg-[#EF4444]/10 rounded-lg p-3 border border-[#EF4444]/20">
                   <div className="text-2xl font-bold text-[#EF4444] mb-1">
                     8/8
                   </div>
                   <div className="text-xs text-[#D1D5DB]">
                     Participants prioritize liability over speed
                   </div>
-                </div>
-
-                {/* Bullet Points */}
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#EF4444] mt-0.5">•</span>
-                    <span>CPAs personally liable for every classification</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#EF4444] mt-0.5">•</span>
-                    <span>
-                      Would rather spend 3 hours manual work than risk
-                      unexplainable AI
-                    </span>
-                  </li>
-                </ul>
-
-                {/* Quote */}
-                <div className="pt-4 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic leading-relaxed">
-                    "That's my CPA license on the line."
-                  </p>
-                  <p className="text-xs text-[#666666] mt-1">— CPA #3, Big 4</p>
                 </div>
               </div>
 
@@ -827,35 +804,13 @@ export default function ComputisCaseStudy() {
                   Engineering Dependency Blocks Scaling
                 </h4>
 
-                <div className="bg-[#F59E0B]/10 rounded-lg p-3 mb-4 border border-[#F59E0B]/20">
+                <div className="bg-[#F59E0B]/10 rounded-lg p-3 border border-[#F59E0B]/20">
                   <div className="text-2xl font-bold text-[#F59E0B] mb-1">
                     2-3 days
                   </div>
                   <div className="text-xs text-[#D1D5DB]">
                     Wait time for Python script execution
                   </div>
-                </div>
-
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#F59E0B] mt-0.5">•</span>
-                    <span>6/8 firms cited this as #1 bottleneck</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#F59E0B] mt-0.5">•</span>
-                    <span>
-                      40% of clients couldn't use tool during tax season
-                    </span>
-                  </li>
-                </ul>
-
-                <div className="pt-4 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic leading-relaxed">
-                    "We need real-time or we can't scale."
-                  </p>
-                  <p className="text-xs text-[#666666] mt-1">
-                    — Tax Analyst #2
-                  </p>
                 </div>
               </div>
 
@@ -873,35 +828,13 @@ export default function ComputisCaseStudy() {
                   Audit Trails = Enterprise Dealbreaker
                 </h4>
 
-                <div className="bg-[#8B5CF6]/10 rounded-lg p-3 mb-4 border border-[#8B5CF6]/20">
+                <div className="bg-[#8B5CF6]/10 rounded-lg p-3 border border-[#8B5CF6]/20">
                   <div className="text-2xl font-bold text-[#8B5CF6] mb-1">
                     4/4
                   </div>
                   <div className="text-xs text-[#D1D5DB]">
                     Competitors lack change history
                   </div>
-                </div>
-
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#8B5CF6] mt-0.5">•</span>
-                    <span>5/8 enterprise CPAs require full audit trails</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#8B5CF6] mt-0.5">•</span>
-                    <span>
-                      Must track who, what, when, why for IRS compliance
-                    </span>
-                  </li>
-                </ul>
-
-                <div className="pt-4 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic leading-relaxed">
-                    "Consumer tools can't handle enterprise."
-                  </p>
-                  <p className="text-xs text-[#666666] mt-1">
-                    — CPA #6, Mid-market
-                  </p>
                 </div>
               </div>
 
@@ -919,31 +852,13 @@ export default function ComputisCaseStudy() {
                   Manual Work Fails at Transaction Scale
                 </h4>
 
-                <div className="bg-[#00D4FF]/10 rounded-lg p-3 mb-4 border border-[#00D4FF]/20">
+                <div className="bg-[#00D4FF]/10 rounded-lg p-3 border border-[#00D4FF]/20">
                   <div className="text-2xl font-bold text-[#00D4FF] mb-1">
                     600 hrs
                   </div>
                   <div className="text-xs text-[#D1D5DB]">
                     Per client (3,000 transactions × 12 min)
                   </div>
-                </div>
-
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00D4FF] mt-0.5">•</span>
-                    <span>Average client: 3,000+ transactions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00D4FF] mt-0.5">•</span>
-                    <span>Manual classification: 12 min/transaction</span>
-                  </li>
-                </ul>
-
-                <div className="pt-4 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic leading-relaxed">
-                    "We can't scale this manually."
-                  </p>
-                  <p className="text-xs text-[#666666] mt-1">— CPA #4</p>
                 </div>
               </div>
 
@@ -961,33 +876,13 @@ export default function ComputisCaseStudy() {
                   Trust Requires Control, Not Replacement
                 </h4>
 
-                <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
+                <div className="bg-[#00FFB3]/10 rounded-lg p-3 border border-[#00FFB3]/20">
                   <div className="text-2xl font-bold text-[#00FFB3] mb-1">
                     100%
                   </div>
                   <div className="text-xs text-[#D1D5DB]">
                     Adoption with override controls shown
                   </div>
-                </div>
-
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">•</span>
-                    <span>CPAs rejected "hands-off" AI automation</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">•</span>
-                    <span>
-                      Professional judgment must remain final authority
-                    </span>
-                  </li>
-                </ul>
-
-                <div className="pt-4 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic leading-relaxed">
-                    "I need the power to disagree with AI."
-                  </p>
-                  <p className="text-xs text-[#666666] mt-1">— CPA #7</p>
                 </div>
               </div>
             </div>
