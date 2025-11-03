@@ -1016,14 +1016,14 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Part 3: Design Decisions (What We Built) */}
-            <h3 className="text-xl font-medium text-[#00D4FF] mb-3 mt-8">
+            <h3 className="text-xl font-medium text-[#00D4FF] mb-2 mt-8">
               Design Decisions
             </h3>
-            <p className="text-sm text-[#9CA3AF] mb-6">
-              The features and experiences we designed to address these insights
+            <p className="text-sm text-[#9CA3AF] mb-8">
+              5 features directly addressing research insights → measurable business impact
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A]">
                 <div className="flex items-center gap-2 mb-3">
                   <Shield className="w-4 h-4 text-[#00FFB3]" />
