@@ -488,13 +488,17 @@ export default function ComputisCaseStudy() {
             <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
               <div className="flex items-start gap-3 mb-4">
                 <Terminal className="w-5 h-5 text-[#00D4FF] flex-shrink-0 mt-0.5" />
-                <h3 className="text-lg font-semibold text-white">Research Protocol</h3>
+                <h3 className="text-lg font-semibold text-white">
+                  Research Protocol
+                </h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Interview Protocol */}
                 <div>
-                  <p className="text-sm font-medium text-[#00D4FF] mb-3">Interview Structure (60min)</p>
+                  <p className="text-sm font-medium text-[#00D4FF] mb-3">
+                    Interview Structure (60min)
+                  </p>
                   <ul className="space-y-2 text-sm text-[#D1D5DB]">
                     <li className="flex items-start gap-2">
                       <span className="text-[#00FFB3] font-mono">00-10:</span>
@@ -502,7 +506,9 @@ export default function ComputisCaseStudy() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#00FFB3] font-mono">10-25:</span>
-                      <span>Pain point deep-dive (critical incident technique)</span>
+                      <span>
+                        Pain point deep-dive (critical incident technique)
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#00FFB3] font-mono">25-45:</span>
@@ -517,11 +523,15 @@ export default function ComputisCaseStudy() {
 
                 {/* Participant Demographics */}
                 <div>
-                  <p className="text-sm font-medium text-[#00D4FF] mb-3">Participant Demographics (n=8)</p>
+                  <p className="text-sm font-medium text-[#00D4FF] mb-3">
+                    Participant Demographics (n=8)
+                  </p>
                   <div className="space-y-3">
                     <div className="bg-[#0F0F0F] rounded-lg p-3 border border-[#2A2A2A]">
                       <div className="flex justify-between items-center mb-1">
-                        <span className="text-xs text-[#888888]">Role Distribution</span>
+                        <span className="text-xs text-[#888888]">
+                          Role Distribution
+                        </span>
                       </div>
                       <div className="flex gap-2 text-xs text-[#D1D5DB]">
                         <span>• 5 CPAs (Big 4 + Mid-market)</span>
@@ -533,7 +543,9 @@ export default function ComputisCaseStudy() {
 
                     <div className="bg-[#0F0F0F] rounded-lg p-3 border border-[#2A2A2A]">
                       <div className="flex justify-between items-center mb-1">
-                        <span className="text-xs text-[#888888]">Experience Level</span>
+                        <span className="text-xs text-[#888888]">
+                          Experience Level
+                        </span>
                       </div>
                       <div className="flex gap-2 text-xs text-[#D1D5DB]">
                         <span>• 3-12 years in tax classification</span>
@@ -545,7 +557,9 @@ export default function ComputisCaseStudy() {
 
                     <div className="bg-[#0F0F0F] rounded-lg p-3 border border-[#2A2A2A]">
                       <div className="flex justify-between items-center mb-1">
-                        <span className="text-xs text-[#888888]">Client Scale</span>
+                        <span className="text-xs text-[#888888]">
+                          Client Scale
+                        </span>
                       </div>
                       <div className="flex gap-2 text-xs text-[#D1D5DB]">
                         <span>• 100-5,000 transactions/client</span>
@@ -557,22 +571,34 @@ export default function ComputisCaseStudy() {
 
               {/* Sample Data & Analysis */}
               <div className="mt-6 pt-6 border-t border-[#2A2A2A]">
-                <p className="text-sm font-medium text-[#00D4FF] mb-3">Analysis Method</p>
+                <p className="text-sm font-medium text-[#00D4FF] mb-3">
+                  Analysis Method
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="bg-[#0F0F0F] rounded-lg p-4 border border-[#2A2A2A]">
-                    <div className="text-2xl font-bold text-white mb-1">127</div>
-                    <p className="text-xs text-[#888888]">Verbatim quotes tagged</p>
-                    <p className="text-xs text-[#D1D5DB] mt-2">Coding: Deductive + Emergent themes</p>
+                    <div className="text-2xl font-bold text-white mb-1">
+                      127
+                    </div>
+                    <p className="text-xs text-[#888888]">
+                      Verbatim quotes tagged
+                    </p>
+                    <p className="text-xs text-[#D1D5DB] mt-2">
+                      Coding: Deductive + Emergent themes
+                    </p>
                   </div>
                   <div className="bg-[#0F0F0F] rounded-lg p-4 border border-[#2A2A2A]">
                     <div className="text-2xl font-bold text-white mb-1">5</div>
                     <p className="text-xs text-[#888888]">Thematic clusters</p>
-                    <p className="text-xs text-[#D1D5DB] mt-2">Method: Affinity diagramming (Miro)</p>
+                    <p className="text-xs text-[#D1D5DB] mt-2">
+                      Method: Affinity diagramming (Miro)
+                    </p>
                   </div>
                   <div className="bg-[#0F0F0F] rounded-lg p-4 border border-[#2A2A2A]">
                     <div className="text-2xl font-bold text-white mb-1">3</div>
                     <p className="text-xs text-[#888888]">Validation rounds</p>
-                    <p className="text-xs text-[#D1D5DB] mt-2">With CPAs, Product, Engineering</p>
+                    <p className="text-xs text-[#D1D5DB] mt-2">
+                      With CPAs, Product, Engineering
+                    </p>
                   </div>
                 </div>
               </div>
@@ -729,12 +755,13 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-{/* Part 1: Research Insights (What We Learned) */}
+            {/* Part 1: Research Insights (What We Learned) */}
             <h3 className="text-xl font-medium text-[#00D4FF] mb-2">
               Research Insights
             </h3>
             <p className="text-sm text-[#9CA3AF] mb-8">
-              5 critical findings from 8 CPA interviews + 6 workflow shadowing sessions
+              5 critical findings from 8 CPA interviews + 6 workflow shadowing
+              sessions
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
@@ -743,7 +770,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-12 h-12 rounded-lg bg-[#EF4444]/10 flex items-center justify-center flex-shrink-0">
                     <ShieldAlert className="w-6 h-6 text-[#EF4444]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">01</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    01
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -752,8 +781,12 @@ export default function ComputisCaseStudy() {
 
                 {/* Key Stat Callout */}
                 <div className="bg-[#EF4444]/10 rounded-lg p-3 mb-4 border border-[#EF4444]/20">
-                  <div className="text-2xl font-bold text-[#EF4444] mb-1">8/8</div>
-                  <div className="text-xs text-[#D1D5DB]">Participants prioritize liability over speed</div>
+                  <div className="text-2xl font-bold text-[#EF4444] mb-1">
+                    8/8
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    Participants prioritize liability over speed
+                  </div>
                 </div>
 
                 {/* Bullet Points */}
@@ -764,7 +797,10 @@ export default function ComputisCaseStudy() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#EF4444] mt-0.5">•</span>
-                    <span>Would rather spend 3 hours manual work than risk unexplainable AI</span>
+                    <span>
+                      Would rather spend 3 hours manual work than risk
+                      unexplainable AI
+                    </span>
                   </li>
                 </ul>
 
@@ -782,7 +818,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-12 h-12 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-[#F59E0B]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">02</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    02
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -790,8 +828,12 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 <div className="bg-[#F59E0B]/10 rounded-lg p-3 mb-4 border border-[#F59E0B]/20">
-                  <div className="text-2xl font-bold text-[#F59E0B] mb-1">2-3 days</div>
-                  <div className="text-xs text-[#D1D5DB]">Wait time for Python script execution</div>
+                  <div className="text-2xl font-bold text-[#F59E0B] mb-1">
+                    2-3 days
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    Wait time for Python script execution
+                  </div>
                 </div>
 
                 <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
@@ -801,7 +843,9 @@ export default function ComputisCaseStudy() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#F59E0B] mt-0.5">•</span>
-                    <span>40% of clients couldn't use tool during tax season</span>
+                    <span>
+                      40% of clients couldn't use tool during tax season
+                    </span>
                   </li>
                 </ul>
 
@@ -809,7 +853,9 @@ export default function ComputisCaseStudy() {
                   <p className="text-xs text-[#888888] italic leading-relaxed">
                     "We need real-time or we can't scale."
                   </p>
-                  <p className="text-xs text-[#666666] mt-1">— Tax Analyst #2</p>
+                  <p className="text-xs text-[#666666] mt-1">
+                    — Tax Analyst #2
+                  </p>
                 </div>
               </div>
 
@@ -818,7 +864,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-12 h-12 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center flex-shrink-0">
                     <FileText className="w-6 h-6 text-[#8B5CF6]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">03</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    03
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -826,8 +874,12 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 <div className="bg-[#8B5CF6]/10 rounded-lg p-3 mb-4 border border-[#8B5CF6]/20">
-                  <div className="text-2xl font-bold text-[#8B5CF6] mb-1">4/4</div>
-                  <div className="text-xs text-[#D1D5DB]">Competitors lack change history</div>
+                  <div className="text-2xl font-bold text-[#8B5CF6] mb-1">
+                    4/4
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    Competitors lack change history
+                  </div>
                 </div>
 
                 <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
@@ -837,7 +889,9 @@ export default function ComputisCaseStudy() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#8B5CF6] mt-0.5">•</span>
-                    <span>Must track who, what, when, why for IRS compliance</span>
+                    <span>
+                      Must track who, what, when, why for IRS compliance
+                    </span>
                   </li>
                 </ul>
 
@@ -845,7 +899,9 @@ export default function ComputisCaseStudy() {
                   <p className="text-xs text-[#888888] italic leading-relaxed">
                     "Consumer tools can't handle enterprise."
                   </p>
-                  <p className="text-xs text-[#666666] mt-1">— CPA #6, Mid-market</p>
+                  <p className="text-xs text-[#666666] mt-1">
+                    — CPA #6, Mid-market
+                  </p>
                 </div>
               </div>
 
@@ -854,7 +910,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <Layers className="w-6 h-6 text-[#00D4FF]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">04</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    04
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -862,8 +920,12 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 <div className="bg-[#00D4FF]/10 rounded-lg p-3 mb-4 border border-[#00D4FF]/20">
-                  <div className="text-2xl font-bold text-[#00D4FF] mb-1">600 hrs</div>
-                  <div className="text-xs text-[#D1D5DB]">Per client (3,000 transactions × 12 min)</div>
+                  <div className="text-2xl font-bold text-[#00D4FF] mb-1">
+                    600 hrs
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    Per client (3,000 transactions × 12 min)
+                  </div>
                 </div>
 
                 <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
@@ -890,7 +952,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-12 h-12 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
                     <ToggleLeft className="w-6 h-6 text-[#00FFB3]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">05</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    05
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -898,8 +962,12 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-2xl font-bold text-[#00FFB3] mb-1">100%</div>
-                  <div className="text-xs text-[#D1D5DB]">Adoption with override controls shown</div>
+                  <div className="text-2xl font-bold text-[#00FFB3] mb-1">
+                    100%
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    Adoption with override controls shown
+                  </div>
                 </div>
 
                 <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
@@ -909,7 +977,9 @@ export default function ComputisCaseStudy() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">•</span>
-                    <span>Professional judgment must remain final authority</span>
+                    <span>
+                      Professional judgment must remain final authority
+                    </span>
                   </li>
                 </ul>
 
@@ -929,13 +999,19 @@ export default function ComputisCaseStudy() {
                 Synthesis: The Core Design Tension
               </h3>
               <p className="text-[#D1D5DB] leading-relaxed mb-3">
-                CPAs needed automation for scale but couldn't sacrifice professional defensibility. The insight wasn't "make AI better"—it was <strong className="text-white">"make AI auditable"</strong>.
+                CPAs needed automation for scale but couldn't sacrifice
+                professional defensibility. The insight wasn't "make AI
+                better"—it was{" "}
+                <strong className="text-white">"make AI auditable"</strong>.
               </p>
               <div className="bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#00FFB3]">
                 <p className="text-sm text-white italic">
-                  "If I can screenshot your AI's reasoning and show it to the IRS, I'll use it. Otherwise, it's just another liability."
+                  "If I can screenshot your AI's reasoning and show it to the
+                  IRS, I'll use it. Otherwise, it's just another liability."
                 </p>
-                <p className="text-xs text-[#888888] mt-2">— Recurring theme across 7/8 interviews</p>
+                <p className="text-xs text-[#888888] mt-2">
+                  — Recurring theme across 7/8 interviews
+                </p>
               </div>
             </div>
 
@@ -959,7 +1035,9 @@ export default function ComputisCaseStudy() {
                   Explainable AI Confidence Scores
                 </h4>
                 <p className="text-sm text-[#D1D5DB] mb-3">
-                  Every AI classification shows why: matching rules, transaction patterns, and confidence level. CPAs can screenshot this for audit defense.
+                  Every AI classification shows why: matching rules, transaction
+                  patterns, and confidence level. CPAs can screenshot this for
+                  audit defense.
                 </p>
                 <p className="text-xs text-[#888888] italic">
                   → Addresses Insight #1 (Professional Liability)
@@ -977,7 +1055,8 @@ export default function ComputisCaseStudy() {
                   Self-Service Classification Interface
                 </h4>
                 <p className="text-sm text-[#D1D5DB] mb-3">
-                  No-code interface for CPAs to run classifications instantly. Eliminated 2-3 day engineering dependency entirely.
+                  No-code interface for CPAs to run classifications instantly.
+                  Eliminated 2-3 day engineering dependency entirely.
                 </p>
                 <p className="text-xs text-[#888888] italic">
                   → Addresses Insight #2 (Engineering Dependency)
@@ -995,7 +1074,9 @@ export default function ComputisCaseStudy() {
                   Complete Audit Drawer with Change History
                 </h4>
                 <p className="text-sm text-[#D1D5DB] mb-3">
-                  Every classification tracks who, what, when, why. Exportable audit reports for compliance. Enterprise-only feature became our competitive moat.
+                  Every classification tracks who, what, when, why. Exportable
+                  audit reports for compliance. Enterprise-only feature became
+                  our competitive moat.
                 </p>
                 <p className="text-xs text-[#888888] italic">
                   → Addresses Insight #3 (Audit Requirements)
@@ -1013,7 +1094,9 @@ export default function ComputisCaseStudy() {
                   Bulk Rule Builder with Transaction Matching
                 </h4>
                 <p className="text-sm text-[#D1D5DB] mb-3">
-                  Create classification rules once, apply to thousands of transactions. Pattern detection suggests rules automatically. Reduced repetitive work by 68%.
+                  Create classification rules once, apply to thousands of
+                  transactions. Pattern detection suggests rules automatically.
+                  Reduced repetitive work by 68%.
                 </p>
                 <p className="text-xs text-[#888888] italic">
                   → Addresses Insight #4 (Manual Scale Failure)
@@ -1031,7 +1114,9 @@ export default function ComputisCaseStudy() {
                   One-Click Override with Context Preservation
                 </h4>
                 <p className="text-sm text-[#D1D5DB] mb-3">
-                  AI suggests, CPA decides. Override button visible on every result. System remembers professional judgment for future suggestions.
+                  AI suggests, CPA decides. Override button visible on every
+                  result. System remembers professional judgment for future
+                  suggestions.
                 </p>
                 <p className="text-xs text-[#888888] italic">
                   → Addresses Insight #5 (Trust Through Control)
