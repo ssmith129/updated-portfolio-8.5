@@ -1845,7 +1845,7 @@ export default function ComputisCaseStudy() {
                     </p>
                     <p className="text-sm text-[#D1D5DB]">support tickets</p>
                   </div>
-                  <div className="bg-gradient-to-r from-[#00D4FF]/10 to-transparent rounded-[12px] p-4 border border-[#00D4FF]/20">
+                  <div className="bg-gradient-to-r from-[#00D4FF]/10 to-transparent rounded-[12px] p-4 border border-[#00D4FF]/20 text-center">
                     <p className="text-2xl font-bold text-[#00D4FF] mb-1">
                       Zero
                     </p>
