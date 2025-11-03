@@ -1708,7 +1708,7 @@ export default function ComputisCaseStudy() {
 
             <div className="space-y-8">
               <div>
-                <h3 className="text-xl font-medium text-[#00D4FF] mb-4">
+                <h3 className="text-lg font-semibold text-[#00D4FF] mb-4">
                   Additional Quantified Results
                 </h3>
                 <div className="flex flex-row gap-12">
@@ -1730,7 +1730,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div>
-                <h3 className="text-xl font-medium text-[#00FFB3] mb-4">
+                <h3 className="text-lg font-semibold text-[#00FFB3] mb-4">
                   Business Outcomes
                 </h3>
                 <div className="space-y-3">
