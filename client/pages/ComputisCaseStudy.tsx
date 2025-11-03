@@ -109,7 +109,7 @@ export default function ComputisCaseStudy() {
     <div className="min-h-screen bg-[#0A0A0A] relative overflow-hidden">
       {/* Subtle geometric background pattern */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute left-[65px] top-[262px] right-0 bottom-0 opacity-[0.03]"
         style={{
           backgroundImage: `
           linear-gradient(to right, #00D4FF 1px, transparent 1px),
