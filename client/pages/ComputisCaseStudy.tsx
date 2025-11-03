@@ -309,9 +309,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
                   Company
                 </h3>
-                <p className="text-lg font-medium text-white">
-                  Computis Inc.
-                </p>
+                <p className="text-lg font-medium text-white">Computis Inc.</p>
               </div>
               <div className="space-y-2">
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
@@ -355,7 +353,10 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <p className="text-lg text-[#D1D5DB] leading-7 mb-6">
-              We weren't just designing a UI. We were re-architecting trust in crypto tax compliance by transforming a Python command-line script into a CPA-first enterprise platform that combined automation with transparency.
+              We weren't just designing a UI. We were re-architecting trust in
+              crypto tax compliance by transforming a Python command-line script
+              into a CPA-first enterprise platform that combined automation with
+              transparency.
             </p>
 
             <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
@@ -363,7 +364,9 @@ export default function ComputisCaseStudy() {
                 Mission Statement
               </h3>
               <p className="text-base text-white italic leading-relaxed">
-                "Reposition Computis as a CPA-first enterprise platform that combined automation with transparency — so accountants could trust, adopt, and advocate for it."
+                "Reposition Computis as a CPA-first enterprise platform that
+                combined automation with transparency — so accountants could
+                trust, adopt, and advocate for it."
               </p>
             </div>
           </div>
