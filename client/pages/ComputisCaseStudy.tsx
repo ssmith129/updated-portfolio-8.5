@@ -352,12 +352,12 @@ export default function ComputisCaseStudy() {
 
         {/* Overview */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-750">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Executive Context
             </h2>
 
-            <p className="text-lg text-[#D1D5DB] leading-7 mb-6">
+            <p className="text-base text-[#D1D5DB] leading-relaxed mb-6">
               We weren't just designing a UI. We were re-architecting trust in
               crypto tax compliance by transforming a Python command-line script
               into a CPA-first enterprise platform that combined automation with
@@ -379,7 +379,7 @@ export default function ComputisCaseStudy() {
 
         {/* The Design Problem */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               The Problem: Trust Deficit in Crypto Accounting
             </h2>
