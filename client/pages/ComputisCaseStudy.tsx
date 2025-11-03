@@ -730,14 +730,14 @@ export default function ComputisCaseStudy() {
             </div>
 
 {/* Part 1: Research Insights (What We Learned) */}
-            <h3 className="text-xl font-medium text-[#00D4FF] mb-3">
+            <h3 className="text-xl font-medium text-[#00D4FF] mb-2">
               Research Insights
             </h3>
-            <p className="text-sm text-[#9CA3AF] mb-6">
-              What CPAs told us about their current workflow and pain points
+            <p className="text-sm text-[#9CA3AF] mb-8">
+              5 critical findings from 8 CPA interviews + 6 workflow shadowing sessions
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-[#EF4444]/10 flex items-center justify-center flex-shrink-0">
