@@ -418,7 +418,131 @@ export default function ComputisCaseStudy() {
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Research & Discovery
             </h2>
+  `content`: `            {/* RESEARCH METHODOLOGY - Add this section after \"Research & Discovery\" heading */}
+            
+            <div className=\"bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] mb-8\">
+              <div className=\"flex items-start gap-3 mb-4\">
+                <Terminal className=\"w-5 h-5 text-[#00D4FF] flex-shrink-0 mt-0.5\" />
+                <h3 className=\"text-lg font-semibold text-white\">Research Protocol</h3>
+              </div>
+              
+              <div className=\"grid grid-cols-1 md:grid-cols-2 gap-6\">
+                {/* Interview Protocol */}
+                <div>
+                  <p className=\"text-sm font-medium text-[#00D4FF] mb-3\">Interview Structure (60min)</p>
+                  <ul className=\"space-y-2 text-sm text-[#D1D5DB]\">
+                    <li className=\"flex items-start gap-2\">
+                      <span className=\"text-[#00FFB3] font-mono\">00-10:</span>
+                      <span>Current workflow walkthrough (task analysis)</span>
+                    </li>
+                    <li className=\"flex items-start gap-2\">
+    < span className =\"text-[#00FFB3] font-mono\">10-25:</span>
+      < span > Pain point deep - dive(critical incident technique)</span >
+                    </li >
+    <li className=\"flex items-start gap-2\">
+      < span className =\"text-[#00FFB3] font-mono\">25-45:</span>
+        < span > Tool requirements & decision criteria</span >
+                    </li >
+    <li className=\"flex items-start gap-2\">
+      < span className =\"text-[#00FFB3] font-mono\">45-60:</span>
+        < span > Competitive product comparison(show & tell)</span >
+                    </li >
+                  </ul >
+                </div >
 
+    {/* Participant Demographics */ }
+    < div >
+    <p className=\"text-sm font-medium text-[#00D4FF] mb-3\">Participant Demographics (n=8)</p>
+      < div className =\"space-y-3\">
+        < div className =\"bg-[#0F0F0F] rounded-lg p-3 border border-[#2A2A2A]\">
+          < div className =\"flex justify-between items-center mb-1\">
+            < span className =\"text-xs text-[#888888]\">Role Distribution</span>
+                      </div >
+    <div className=\"flex gap-2 text-xs text-[#D1D5DB]\">
+      <span>• 5 CPAs(Big 4 + Mid - market)</span >
+                      </div >
+    <div className=\"flex gap-2 text-xs text-[#D1D5DB]\">
+      <span>• 3 Tax Analysts(In - house teams)</span >
+                      </div >
+                    </div >
+
+    <div className=\"bg-[#0F0F0F] rounded-lg p-3 border border-[#2A2A2A]\">
+      < div className =\"flex justify-between items-center mb-1\">
+        < span className =\"text-xs text-[#888888]\">Experience Level</span>
+                      </div >
+    <div className=\"flex gap-2 text-xs text-[#D1D5DB]\">
+      <span>• 3 - 12 years in tax classification</span >
+                      </div >
+    <div className=\"flex gap-2 text-xs text-[#D1D5DB]\">
+      <span>• All manage 50 + clients annually</span >
+                      </div >
+                    </div >
+
+    <div className=\"bg-[#0F0F0F] rounded-lg p-3 border border-[#2A2A2A]\">
+      < div className =\"flex justify-between items-center mb-1\">
+        < span className =\"text-xs text-[#888888]\">Client Scale</span>
+                      </div >
+    <div className=\"flex gap-2 text-xs text-[#D1D5DB]\">
+      <span>• 100 - 5, 000 transactions / client</span >
+                      </div >
+                    </div >
+                  </div >
+                </div >
+              </div >
+
+    {/* Sample Data & Analysis */ }
+    < div className =\"mt-6 pt-6 border-t border-[#2A2A2A]\">
+      < p className =\"text-sm font-medium text-[#00D4FF] mb-3\">Analysis Method</p>
+        < div className =\"grid grid-cols-1 md:grid-cols-3 gap-4\">
+          < div className =\"bg-[#0F0F0F] rounded-lg p-4 border border-[#2A2A2A]\">
+            < div className =\"text-2xl font-bold text-white mb-1\">127</div>
+              < p className =\"text-xs text-[#888888]\">Verbatim quotes tagged</p>
+                < p className =\"text-xs text-[#D1D5DB] mt-2\">Coding: Deductive + Emergent themes</p>
+                  </div >
+    <div className=\"bg-[#0F0F0F] rounded-lg p-4 border border-[#2A2A2A]\">
+      < div className =\"text-2xl font-bold text-white mb-1\">5</div>
+        < p className =\"text-xs text-[#888888]\">Thematic clusters</p>
+          < p className =\"text-xs text-[#D1D5DB] mt-2\">Method: Affinity diagramming (Miro)</p>
+                  </div >
+    <div className=\"bg-[#0F0F0F] rounded-lg p-4 border border-[#2A2A2A]\">
+      < div className =\"text-2xl font-bold text-white mb-1\">3</div>
+        < p className =\"text-xs text-[#888888]\">Validation rounds</p>
+          < p className =\"text-xs text-[#D1D5DB] mt-2\">With CPAs, Product, Engineering</p>
+                  </div >
+                </div >
+              </div >
+
+    {/* Sample Verbatim */ }
+    < div className =\"mt-6 pt-6 border-t border-[#2A2A2A]\">
+      < p className =\"text-sm font-medium text-[#00D4FF] mb-3\">Sample Verbatim (Anonymized)</p>
+        < div className =\"space-y-3\">
+          < div className =\"bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#EF4444] border-r border-t border-b border-[#2A2A2A]\">
+            < p className =\"text-sm text-[#D1D5DB] italic mb-2\">
+  \"If I can't explain WHY the AI classified something as a travel expense vs. meals & entertainment, I'm personally liable. That's my CPA license on the line.\"
+                    </p >
+    <p className=\"text-xs text-[#888888]\">— CPA #3, Big 4, 8 years experience</p>
+      < p className =\"text-xs text-[#00FFB3] mt-1\">→ Theme: Professional Liability</p>
+                  </div >
+
+    <div className=\"bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#F59E0B] border-r border-t border-b border-[#2A2A2A]\">
+      < p className =\"text-sm text-[#D1D5DB] italic mb-2\">
+  \"We have a 2-3 day SLA just waiting for engineering to run the Python script. During tax season, that's unacceptable. We need real-time.\"
+                    </p >
+    <p className=\"text-xs text-[#888888]\">— Tax Analyst #2, In-house team, 5 years experience</p>
+      < p className =\"text-xs text-[#00FFB3] mt-1\">→ Theme: Engineering Dependency</p>
+                  </div >
+
+    <div className=\"bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#8B5CF6] border-r border-t border-b border-[#2A2A2A]\">
+      < p className =\"text-sm text-[#D1D5DB] italic mb-2\">
+  \"For enterprise clients, I need to show a complete audit trail: who changed what classification, when, and why. None of the consumer tools do this.\"
+                    </p >
+    <p className=\"text-xs text-[#888888]\">— CPA #6, Mid-market firm, 12 years experience</p>
+      < p className =\"text-xs text-[#00FFB3] mt-1\">→ Theme: Audit Requirements</p>
+                  </div >
+                </div >
+              </div >
+            </div >
+}
             <p className="text-lg text-[#D1D5DB] leading-relaxed mb-6">
               Over 10 weeks, I led foundational research:
             </p>
