@@ -161,7 +161,7 @@ export default function SymplifyCaseStudy() {
       <Navigation />
 
       {/* Back Button */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-[18px] font-medium text-[#64748B] leading-normal tracking-[-0.18px] hover:text-[#3B82F6] transition-all duration-300 hover:scale-105 group"
@@ -173,7 +173,7 @@ export default function SymplifyCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <header className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
+      <header className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="mb-8 flex flex-col lg:block">
           <span className="inline-block bg-gradient-to-r from-[#3B82F6] to-[#10B981] text-white px-4 py-2 rounded-[20px] text-[14px] font-semibold tracking-[-0.14px] mb-6">
             Healthcare UX Case Study
@@ -189,7 +189,7 @@ export default function SymplifyCaseStudy() {
       </header>
 
       {/* Hero Image */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         <button
           onClick={() => setIsPreviewOpen(true)}
           className="w-full aspect-[1.85] rounded-[16px] flex items-center justify-center border border-[#E2E8F0] transition-all duration-300 hover:shadow-xl hover:scale-[1.01] cursor-pointer group relative overflow-hidden"
@@ -214,7 +214,7 @@ export default function SymplifyCaseStudy() {
       </div>
 
       {/* Section Navigation - horizontal pills for quick access */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-6 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 mt-6 relative z-10">
         <nav
           aria-label="Case study sections"
           className="flex items-center gap-2 md:gap-3 overflow-x-auto py-2"
@@ -246,7 +246,7 @@ export default function SymplifyCaseStudy() {
       </div>
 
       {/* Summary Card */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
         <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E2E8F0]">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
@@ -690,7 +690,7 @@ export default function SymplifyCaseStudy() {
         >
           <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#E2E8F0]">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.3px] mb-8">
-              🧠 Problem Statement & Research
+              ��� Problem Statement & Research
             </h2>
 
             <div className="space-y-8">
