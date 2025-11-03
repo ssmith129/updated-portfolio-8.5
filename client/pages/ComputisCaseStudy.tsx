@@ -414,12 +414,12 @@ export default function ComputisCaseStudy() {
 
         {/* Research & Discovery */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Research & Discovery
             </h2>
 
-            <p className="text-lg text-[#D1D5DB] leading-relaxed mb-6">
+            <p className="text-base text-[#D1D5DB] leading-relaxed mb-6">
               Over 10 weeks, I led foundational research:
             </p>
 
