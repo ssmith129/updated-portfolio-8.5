@@ -10,7 +10,7 @@ export default function MoneyFarmCaseStudy() {
       <Navigation />
 
       {/* Back Button */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-[18px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.18px] hover:text-[#131417] transition-all duration-300 hover:scale-105 group"
@@ -21,7 +21,7 @@ export default function MoneyFarmCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
         <div className="mb-8">
           <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[25px] text-[14px] font-medium tracking-[-0.14px] mb-6 transition-all duration-300 hover:scale-105">
             UX Case Study
@@ -39,7 +39,7 @@ export default function MoneyFarmCaseStudy() {
       </div>
 
       {/* Content Sections */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
         {/* TL;DR Summary */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
