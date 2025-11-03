@@ -1413,7 +1413,7 @@ export default function ComputisCaseStudy() {
 
         {/* Solution: Five Design Decisions */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1200">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Solution: Five Design Decisions
             </h2>
@@ -1423,7 +1423,7 @@ export default function ComputisCaseStudy() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl font-bold text-[#00D4FF]">1.</span>
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-lg font-semibold text-white">
                     AI Confidence Chips + Override Control
                   </h3>
                 </div>
@@ -1471,7 +1471,7 @@ export default function ComputisCaseStudy() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl font-bold text-[#00FFB3]">2.</span>
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-lg font-semibold text-white">
                     Inline Audit Trail Drawer
                   </h3>
                 </div>
@@ -1520,7 +1520,7 @@ export default function ComputisCaseStudy() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl font-bold text-[#8B5CF6]">3.</span>
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-lg font-semibold text-white">
                     Visual Rule Builder (No-Code)
                   </h3>
                 </div>
@@ -1568,7 +1568,7 @@ export default function ComputisCaseStudy() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl font-bold text-[#F59E0B]">4.</span>
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-lg font-semibold text-white">
                     Contextual Anomaly Detection
                   </h3>
                 </div>
@@ -1616,7 +1616,7 @@ export default function ComputisCaseStudy() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl font-bold text-[#00D4FF]">5.</span>
-                  <h3 className="text-xl font-semibold text-white">
+                  <h3 className="text-lg font-semibold text-white">
                     Role-Based Multi-Tenant Dashboard
                   </h3>
                 </div>
