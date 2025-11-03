@@ -466,16 +466,26 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Journey Map */}
-            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
+            <div className="mb-8">
               <p className="text-sm text-[#888888] mb-3">
                 Current State Journey Map
               </p>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9dd30073e99e495fa0e2dcbe564d5048"
-                alt="Current State Journey Map showing 8 workflow steps from Client Intake to Report Generation, with pain points highlighted including manual data gathering, authentication delays, missing transaction data, complex edge cases, 2-3 day engineer wait times, low visibility during script execution, manual classification results verification, and CSV-only export requiring manual formatting"
-                className="w-full h-auto transition-transform duration-300"
-                loading="lazy"
-              />
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d88d39d14af4c01a4e1a9f64d10c0a6"
+                  alt="Current State Journey Map showing 8 workflow steps from Client Intake to Report Generation, with pain points highlighted including manual data gathering, authentication delays, missing transaction data, complex edge cases, 2-3 day engineer wait times, low visibility during script execution, manual classification results verification, and CSV-only export requiring manual formatting"
+                  className="w-full h-auto transition-transform duration-300"
+                  loading="lazy"
+                  onClick={() =>
+                    setEnlargedImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d88d39d14af4c01a4e1a9f64d10c0a6",
+                    )
+                  }
+                />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                  Click to enlarge
+                </div>
+              </div>
             </div>
 
             <h3 className="text-xl font-medium text-[#00D4FF] mb-6">
