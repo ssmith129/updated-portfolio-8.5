@@ -634,73 +634,79 @@ export default function ComputisCaseStudy() {
               Five Critical Insights
             </h3>
 
-            <div className="space-y-6">
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
-                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                  <span className="text-[#00D4FF]">1.</span> Professional
-                  Liability Trumps Efficiency
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
+                    <Shield className="w-5 h-5 text-[#00D4FF]" />
+                  </div>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">01</span>
+                </div>
+                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
+                  CPAs must defend every tax classification
                 </h4>
-                <p className="text-[#D1D5DB] mb-2">
-                  CPAs must defend every classification to the IRS. "Black-box"
-                  AI creates legal risk.
-                </p>
-                <p className="text-sm text-[#00FFB3]">
-                  <strong>Impact:</strong> Transparency became non-negotiable
+                <p className="text-sm text-[#00FFB3] font-medium">
+                  Transparency became our non-negotiable design requirement
                 </p>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
-                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                  <span className="text-[#00D4FF]">2.</span> Engineering
-                  Dependency Blocks Scale
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
+                    <Unlink className="w-5 h-5 text-[#00D4FF]" />
+                  </div>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">02</span>
+                </div>
+                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
+                  Dev dependency blocked scaling to teams
                 </h4>
-                <p className="text-[#D1D5DB] mb-2">
-                  85% of CPA time spent on dev tickets. Average turnaround: 2.3
-                  days.
-                </p>
-                <p className="text-sm text-[#00FFB3]">
-                  <strong>Impact:</strong> Self-service became core value prop
+                <p className="text-sm text-[#00FFB3] font-medium">
+                  Self-service became our core value proposition
                 </p>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
-                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                  <span className="text-[#00D4FF]">3.</span> Audit Trails Drive
-                  Enterprise Sales
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
+                    <FileText className="w-5 h-5 text-[#00D4FF]" />
+                  </div>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">03</span>
+                </div>
+                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
+                  Competitors lacked audit trails for enterprise
                 </h4>
-                <p className="text-[#D1D5DB] mb-2">
-                  3/4 competitors lacked history. This became Computis's moat.
-                </p>
-                <p className="text-sm text-[#00FFB3]">
-                  <strong>Impact:</strong> Audit drawer prioritized in MVP
+                <p className="text-sm text-[#00FFB3] font-medium">
+                  Audit history became our competitive moat
                 </p>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
-                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                  <span className="text-[#00D4FF]">4.</span> Bulk Operations
-                  Required
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
+                    <Layers className="w-5 h-5 text-[#00D4FF]" />
+                  </div>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">04</span>
+                </div>
+                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
+                  Manual processing failed at transaction scale
                 </h4>
-                <p className="text-[#D1D5DB] mb-2">
-                  Manual: 12 min/transaction. Average client: 3,000+
-                  transactions.
-                </p>
-                <p className="text-sm text-[#00FFB3]">
-                  <strong>Impact:</strong> Rule builder with scale designed
+                <p className="text-sm text-[#00FFB3] font-medium">
+                  Bulk rule builder enabled enterprise workflows
                 </p>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
-                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                  <span className="text-[#00D4FF]">5.</span> Trust Through
-                  Control
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
+                    <ToggleLeft className="w-5 h-5 text-[#00D4FF]" />
+                  </div>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">05</span>
+                </div>
+                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
+                  CPAs wanted assistance not automation replacement
                 </h4>
-                <p className="text-[#D1D5DB] mb-2">
-                  CPAs wanted assistance, not replacement. Override tested as
-                  must-have.
-                </p>
-                <p className="text-sm text-[#00FFB3]">
-                  <strong>Impact:</strong> Graduated autonomy system built
+                <p className="text-sm text-[#00FFB3] font-medium">
+                  Override controls tested as must-have feature
                 </p>
               </div>
             </div>
