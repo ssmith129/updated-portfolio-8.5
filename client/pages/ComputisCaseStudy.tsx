@@ -645,7 +645,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <Shield className="w-5 h-5 text-[#00D4FF]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">01</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    01
+                  </span>
                 </div>
                 <h4 className="text-base font-semibold text-white mb-3 leading-snug">
                   CPAs must defend every tax classification
@@ -660,7 +662,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <Unlink className="w-5 h-5 text-[#00D4FF]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">02</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    02
+                  </span>
                 </div>
                 <h4 className="text-base font-semibold text-white mb-3 leading-snug">
                   Dev dependency blocked scaling to teams
@@ -675,7 +679,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <FileText className="w-5 h-5 text-[#00D4FF]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">03</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    03
+                  </span>
                 </div>
                 <h4 className="text-base font-semibold text-white mb-3 leading-snug">
                   Competitors lacked audit trails for enterprise
@@ -690,7 +696,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <Layers className="w-5 h-5 text-[#00D4FF]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">04</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    04
+                  </span>
                 </div>
                 <h4 className="text-base font-semibold text-white mb-3 leading-snug">
                   Manual processing failed at transaction scale
@@ -705,7 +713,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <ToggleLeft className="w-5 h-5 text-[#00D4FF]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">05</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    05
+                  </span>
                 </div>
                 <h4 className="text-base font-semibold text-white mb-3 leading-snug">
                   CPAs wanted assistance not automation replacement
