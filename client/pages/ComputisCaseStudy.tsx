@@ -465,6 +465,120 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
+            {/* Before/After Workflow Comparison */}
+            <div className="mb-8">
+              <h3 className="text-xl font-medium text-[#00D4FF] mb-3">
+                Workflow Transformation
+              </h3>
+              <p className="text-[#9CA3AF] text-base mb-6">
+                Based on research insights, we redesigned the core CPA workflow from an engineer-dependent, opaque process to a transparent, self-service platform with full professional control.
+              </p>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Before State */}
+                <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#EF4444]/30">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-3 h-3 rounded-full bg-[#EF4444]"></div>
+                    <p className="text-sm text-[#EF4444] font-semibold">
+                      Before: Manual Workflow Pain Points
+                    </p>
+                  </div>
+                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#EF4444]/60 transition-all duration-300 hover-image-enlarge relative group">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9fbbd6e7fc934c54ba9109a71b62b295"
+                      alt="Current Workflow: CPA Request Process showing pain points - 2.3 day wait, no visibility, and inability to explain results. Manual, engineer-dependent classification workflow with critical bottlenecks"
+                      className="w-full h-auto transition-transform duration-300"
+                      loading="lazy"
+                      onClick={() =>
+                        setEnlargedImage(
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9fbbd6e7fc934c54ba9109a71b62b295",
+                        )
+                      }
+                    />
+                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                      Click to enlarge
+                    </div>
+                  </div>
+                  <ul className="mt-4 space-y-2 text-sm text-[#D1D5DB]">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#EF4444] mt-0.5">•</span>
+                      <span>2-3 day wait for engineer intervention</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#EF4444] mt-0.5">•</span>
+                      <span>No visibility during script execution</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#EF4444] mt-0.5">•</span>
+                      <span>Unable to explain or verify AI results</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* After State */}
+                <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#00FFB3]/30">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-3 h-3 rounded-full bg-[#00FFB3]"></div>
+                    <p className="text-sm text-[#00FFB3] font-semibold">
+                      After: Transparent Self-Service
+                    </p>
+                  </div>
+                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fda713d8affe442f79b0bf11d2349b814"
+                      alt="Redesigned Workflow: Self-service CPA workflow with transparency, audit trails, and 1.4h onboarding. AI-powered automation with explainable confidence scores, one-click overrides, and full audit capabilities"
+                      className="w-full h-auto transition-transform duration-300"
+                      loading="lazy"
+                      onClick={() =>
+                        setEnlargedImage(
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fda713d8affe442f79b0bf11d2349b814",
+                        )
+                      }
+                    />
+                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                      Click to enlarge
+                    </div>
+                  </div>
+                  <ul className="mt-4 space-y-2 text-sm text-[#D1D5DB]">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#00FFB3] mt-0.5">✓</span>
+                      <span>90-second real-time processing</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#00FFB3] mt-0.5">✓</span>
+                      <span>Explainable AI with confidence scores</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#00FFB3] mt-0.5">✓</span>
+                      <span>Full audit trail + one-click overrides</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Key Improvements Summary */}
+              <div className="mt-6 bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
+                <h4 className="text-sm font-semibold text-white mb-3 flex items-center gap-2">
+                  <TrendingUp className="w-4 h-4 text-[#00FFB3]" />
+                  Key Transformation Metrics
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                  <div>
+                    <div className="text-2xl font-bold text-[#00FFB3] mb-1">↓ 85%</div>
+                    <div className="text-xs text-[#9CA3AF]">Engineering dependency</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-[#00FFB3] mb-1">↓ 45%</div>
+                    <div className="text-xs text-[#9CA3AF]">Onboarding time</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-[#00D4FF] mb-1">→ 32%</div>
+                    <div className="text-xs text-[#9CA3AF]">Conversion rate increase</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Journey Map */}
             <div className="mb-8">
               <p className="text-sm text-[#888888] mb-3">
