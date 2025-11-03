@@ -1020,7 +1020,8 @@ export default function ComputisCaseStudy() {
               Design Decisions
             </h3>
             <p className="text-sm text-[#9CA3AF] mb-8">
-              5 features directly addressing research insights → measurable business impact
+              5 features directly addressing research insights → measurable
+              business impact
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1029,7 +1030,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
                     <Shield className="w-5 h-5 text-[#00FFB3]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">01</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    01
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -1037,8 +1040,12 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-sm font-semibold text-[#00FFB3] mb-1">🎯 Solves</div>
-                  <div className="text-xs text-[#D1D5DB]">Insight #1: Professional Liability</div>
+                  <div className="text-sm font-semibold text-[#00FFB3] mb-1">
+                    🎯 Solves
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    Insight #1: Professional Liability
+                  </div>
                 </div>
 
                 <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
@@ -1048,7 +1055,9 @@ export default function ComputisCaseStudy() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Displays confidence level for each classification</span>
+                    <span>
+                      Displays confidence level for each classification
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">✓</span>
@@ -1062,7 +1071,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
                     <Zap className="w-5 h-5 text-[#00FFB3]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">02</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    02
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -1070,8 +1081,12 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-2xl font-bold text-[#00FFB3] mb-1">0 days</div>
-                  <div className="text-xs text-[#D1D5DB]">Wait time (vs 2-3 days before)</div>
+                  <div className="text-2xl font-bold text-[#00FFB3] mb-1">
+                    0 days
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    Wait time (vs 2-3 days before)
+                  </div>
                 </div>
 
                 <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
@@ -1081,11 +1096,15 @@ export default function ComputisCaseStudy() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Run classifications instantly, no engineer needed</span>
+                    <span>
+                      Run classifications instantly, no engineer needed
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Eliminated engineering dependency → 85% reduction</span>
+                    <span>
+                      Eliminated engineering dependency → 85% reduction
+                    </span>
                   </li>
                 </ul>
 
@@ -1099,7 +1118,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
                     <FileText className="w-5 h-5 text-[#00FFB3]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">03</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    03
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -1107,8 +1128,12 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-sm font-semibold text-[#00FFB3] mb-1">💰 Competitive Moat</div>
-                  <div className="text-xs text-[#D1D5DB]">Enterprise-only feature differentiator</div>
+                  <div className="text-sm font-semibold text-[#00FFB3] mb-1">
+                    💰 Competitive Moat
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    Enterprise-only feature differentiator
+                  </div>
                 </div>
 
                 <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
@@ -1136,7 +1161,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
                     <Layers className="w-5 h-5 text-[#00FFB3]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">04</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    04
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -1144,14 +1171,20 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-2xl font-bold text-[#00FFB3] mb-1">↓ 68%</div>
-                  <div className="text-xs text-[#D1D5DB]">Reduction in repetitive work</div>
+                  <div className="text-2xl font-bold text-[#00FFB3] mb-1">
+                    ↓ 68%
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    Reduction in repetitive work
+                  </div>
                 </div>
 
                 <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Create rule once, apply to 1,000s of transactions</span>
+                    <span>
+                      Create rule once, apply to 1,000s of transactions
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">✓</span>
@@ -1159,7 +1192,9 @@ export default function ComputisCaseStudy() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Scales from 100 to 5,000 transactions per client</span>
+                    <span>
+                      Scales from 100 to 5,000 transactions per client
+                    </span>
                   </li>
                 </ul>
 
@@ -1173,7 +1208,9 @@ export default function ComputisCaseStudy() {
                   <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
                     <ToggleLeft className="w-5 h-5 text-[#00FFB3]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">05</span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
+                    05
+                  </span>
                 </div>
 
                 <h4 className="text-lg font-bold text-white mb-4 leading-tight">
@@ -1181,8 +1218,12 @@ export default function ComputisCaseStudy() {
                 </h4>
 
                 <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-sm font-semibold text-[#00FFB3] mb-1">🧠 AI Learns</div>
-                  <div className="text-xs text-[#D1D5DB]">System remembers CPA judgment patterns</div>
+                  <div className="text-sm font-semibold text-[#00FFB3] mb-1">
+                    🧠 AI Learns
+                  </div>
+                  <div className="text-xs text-[#D1D5DB]">
+                    System remembers CPA judgment patterns
+                  </div>
                 </div>
 
                 <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
