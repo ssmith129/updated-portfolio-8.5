@@ -351,17 +351,21 @@ export default function ComputisCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-750">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
-              Overview
+              Executive Context
             </h2>
 
-            <p className="text-lg text-[#D1D5DB] leading-7">
-              Computis is an AI-powered tax automation platform built for CPAs
-              managing digital-asset clients. The challenge wasn't "designing
-              another dashboard"—it was rebuilding trust in automation. Through
-              explainable AI and audit-ready workflows, the redesign cut
-              onboarding time ↓ 45%, increased demo-to-conversion ↑ 32%, and
-              reduced engineering dependency ↓ 84%.
+            <p className="text-lg text-[#D1D5DB] leading-7 mb-6">
+              We weren't just designing a UI. We were re-architecting trust in crypto tax compliance by transforming a Python command-line script into a CPA-first enterprise platform that combined automation with transparency.
             </p>
+
+            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
+              <h3 className="text-sm font-semibold text-[#00D4FF] uppercase tracking-wide mb-3">
+                Mission Statement
+              </h3>
+              <p className="text-base text-white italic leading-relaxed">
+                "Reposition Computis as a CPA-first enterprise platform that combined automation with transparency — so accountants could trust, adopt, and advocate for it."
+              </p>
+            </div>
           </div>
         </section>
 
