@@ -615,7 +615,7 @@ export default function ComputisCaseStudy() {
                 self-service platform with full professional control.
               </p>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="flex flex-col gap-6">
                 {/* Before State */}
                 <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#EF4444]/30">
                   <div className="flex items-center gap-2 mb-4">
@@ -764,7 +764,7 @@ export default function ComputisCaseStudy() {
               sessions
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div className="flex flex-row gap-6 mb-8 overflow-auto">
               <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all group">
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-12 h-12 rounded-lg bg-[#EF4444]/10 flex items-center justify-center flex-shrink-0">
