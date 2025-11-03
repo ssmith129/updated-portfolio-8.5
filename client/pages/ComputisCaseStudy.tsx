@@ -1315,12 +1315,12 @@ export default function ComputisCaseStudy() {
 
         {/* Design Process */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Design Process
             </h2>
 
-            <p className="text-lg text-[#D1D5DB] leading-relaxed mb-6">
+            <p className="text-base text-[#D1D5DB] leading-relaxed mb-6">
               I applied a{" "}
               <strong className="text-white">
                 trust-first, professional-centered
@@ -1334,7 +1334,7 @@ export default function ComputisCaseStudy() {
                   1
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-white mb-1">
+                  <h4 className="text-base font-semibold text-white mb-1">
                     Journey Mapping
                   </h4>
                   <p className="text-[#D1D5DB]">
@@ -1347,7 +1347,7 @@ export default function ComputisCaseStudy() {
                   2
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-white mb-1">
+                  <h4 className="text-base font-semibold text-white mb-1">
                     Trust Framework
                   </h4>
                   <p className="text-[#D1D5DB]">
@@ -1361,7 +1361,7 @@ export default function ComputisCaseStudy() {
                   3
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-white mb-1">
+                  <h4 className="text-base font-semibold text-white mb-1">
                     Rapid Prototyping
                   </h4>
                   <p className="text-[#D1D5DB]">
@@ -1375,7 +1375,7 @@ export default function ComputisCaseStudy() {
                   4
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-white mb-1">
+                  <h4 className="text-base font-semibold text-white mb-1">
                     Design System
                   </h4>
                   <p className="text-[#D1D5DB]">
