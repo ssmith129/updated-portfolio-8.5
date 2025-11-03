@@ -385,25 +385,25 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="space-y-6">
-              <p className="text-lg text-[#D1D5DB] leading-7">
+              <p className="text-base text-[#D1D5DB] leading-relaxed">
                 Tax automation vendors like TaxBit or Cryptio prioritize speed;
                 CPAs, however, prioritize defensibility.
               </p>
 
-              <p className="text-lg text-[#D1D5DB] leading-7">
+              <p className="text-base text-[#D1D5DB] leading-relaxed">
                 Before Computis, firms faced opaque black-box systems that
                 required manual double-checking, defeating automation's promise.
               </p>
 
-              <h3 className="text-xl font-medium text-[#00FFB3] mb-4">
+              <h3 className="text-lg font-semibold text-[#00FFB3] mt-8 mb-3">
                 Core Framing
               </h3>
 
-              <p className="text-lg text-[#D1D5DB] leading-relaxed italic">
+              <p className="text-base text-[#D1D5DB] leading-relaxed italic">
                 "The problem wasn't UX — it was trust."
               </p>
 
-              <p className="text-lg text-[#D1D5DB] leading-relaxed">
+              <p className="text-base text-[#D1D5DB] leading-relaxed">
                 We discovered that unless AI decisions were explainable,
                 overridable, and auditable, CPAs would never adopt the tool at
                 scale.
