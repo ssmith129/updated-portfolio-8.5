@@ -1672,67 +1672,6 @@ export default function ComputisCaseStudy() {
               Design System & Components
             </h2>
 
-            <h3 className="text-xl font-medium text-[#00D4FF] mb-6">
-              Key Components Built
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              <div className="bg-[#1A1A1A]/60 rounded-[12px] p-4 border border-[#2A2A2A]">
-                <h4 className="text-white font-medium mb-1">Confidence Chip</h4>
-                <p className="text-sm text-[#888888]">
-                  3 states (High/Med/Low) with semantic colors
-                </p>
-              </div>
-              <div className="bg-[#1A1A1A]/60 rounded-[12px] p-4 border border-[#2A2A2A]">
-                <h4 className="text-white font-medium mb-1">Audit Drawer</h4>
-                <p className="text-sm text-[#888888]">
-                  Persistent right-rail with timestamp timeline
-                </p>
-              </div>
-              <div className="bg-[#1A1A1A]/60 rounded-[12px] p-4 border border-[#2A2A2A]">
-                <h4 className="text-white font-medium mb-1">
-                  Rule Builder Card
-                </h4>
-                <p className="text-sm text-[#888888]">
-                  Drag-drop interface with condition logic
-                </p>
-              </div>
-              <div className="bg-[#1A1A1A]/60 rounded-[12px] p-4 border border-[#2A2A2A]">
-                <h4 className="text-white font-medium mb-1">Anomaly Flag</h4>
-                <p className="text-sm text-[#888888]">
-                  Inline severity indicator with tooltip
-                </p>
-              </div>
-              <div className="bg-[#1A1A1A]/60 rounded-[12px] p-4 border border-[#2A2A2A]">
-                <h4 className="text-white font-medium mb-1">
-                  Multi-Select Filter
-                </h4>
-                <p className="text-sm text-[#888888]">
-                  Advanced transaction filtering
-                </p>
-              </div>
-              <div className="bg-[#1A1A1A]/60 rounded-[12px] p-4 border border-[#2A2A2A]">
-                <h4 className="text-white font-medium mb-1">Data Table</h4>
-                <p className="text-sm text-[#888888]">
-                  Virtualized, sortable, with bulk actions
-                </p>
-              </div>
-              <div className="bg-[#1A1A1A]/60 rounded-[12px] p-4 border border-[#2A2A2A]">
-                <h4 className="text-white font-medium mb-1">
-                  Toast Notifications
-                </h4>
-                <p className="text-sm text-[#888888]">
-                  Non-blocking feedback system
-                </p>
-              </div>
-              <div className="bg-[#1A1A1A]/60 rounded-[12px] p-4 border border-[#2A2A2A]">
-                <h4 className="text-white font-medium mb-1">Modal Patterns</h4>
-                <p className="text-sm text-[#888888]">
-                  Confirmation, info, destructive actions
-                </p>
-              </div>
-            </div>
-
             {/* Design System Overview */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A]">
               <p className="text-sm text-[#888888] mb-3">
