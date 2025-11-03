@@ -738,25 +738,42 @@ export default function ComputisCaseStudy() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all">
-                <div className="flex items-start gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#EF4444]/10 flex items-center justify-center flex-shrink-0">
-                    <ShieldAlert className="w-5 h-5 text-[#EF4444]" />
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all group">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-[#EF4444]/10 flex items-center justify-center flex-shrink-0">
+                    <ShieldAlert className="w-6 h-6 text-[#EF4444]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    INSIGHT 01
-                  </span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">01</span>
                 </div>
-                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
+
+                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
                   Professional Liability Trumps Efficiency
                 </h4>
-                <p className="text-sm text-[#D1D5DB] leading-relaxed">
-                  CPAs are personally liable for every tax classification. 8/8 participants said they would rather spend 3 hours manually classifying than risk using AI they couldn't explain to auditors.
-                </p>
-                <div className="mt-3 pt-3 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic">
-                    "That's my CPA license on the line." — CPA #3
+
+                {/* Key Stat Callout */}
+                <div className="bg-[#EF4444]/10 rounded-lg p-3 mb-4 border border-[#EF4444]/20">
+                  <div className="text-2xl font-bold text-[#EF4444] mb-1">8/8</div>
+                  <div className="text-xs text-[#D1D5DB]">Participants prioritize liability over speed</div>
+                </div>
+
+                {/* Bullet Points */}
+                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#EF4444] mt-0.5">•</span>
+                    <span>CPAs personally liable for every classification</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#EF4444] mt-0.5">•</span>
+                    <span>Would rather spend 3 hours manual work than risk unexplainable AI</span>
+                  </li>
+                </ul>
+
+                {/* Quote */}
+                <div className="pt-4 border-t border-[#2A2A2A]">
+                  <p className="text-xs text-[#888888] italic leading-relaxed">
+                    "That's my CPA license on the line."
                   </p>
+                  <p className="text-xs text-[#666666] mt-1">— CPA #3, Big 4</p>
                 </div>
               </div>
 
