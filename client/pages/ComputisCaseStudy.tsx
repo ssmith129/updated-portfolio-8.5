@@ -1042,12 +1042,12 @@ export default function ComputisCaseStudy() {
 
         {/* Competitive Positioning */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-5 border border-[#1A1A1A] hover-section">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] hover-section">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Competitive Positioning
             </h2>
 
-            <h3 className="text-xl font-medium text-[#00D4FF] mb-4">
+            <h3 className="text-lg font-semibold text-[#00D4FF] mb-4">
               Market Gaps
             </h3>
             <ul className="space-y-3 mb-8">
@@ -1079,7 +1079,7 @@ export default function ComputisCaseStudy() {
 
             {/* Competitive Matrix */}
             <div className="mb-8">
-              <h3 className="text-xl font-medium text-[#00D4FF] mb-3">
+              <h3 className="text-lg font-semibold text-[#00D4FF] mb-3">
                 Competitive Landscape Analysis
               </h3>
               <p className="text-[#9CA3AF] text-base mb-6">
@@ -1281,7 +1281,7 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <h3 className="text-xl font-medium text-[#00FFB3] mb-4">
+            <h3 className="text-lg font-semibold text-[#00FFB3] mb-4">
               Strategic Differentiators
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
