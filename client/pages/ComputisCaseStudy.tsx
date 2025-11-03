@@ -777,91 +777,147 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all">
-                <div className="flex items-start gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-5 h-5 text-[#F59E0B]" />
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all group">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-6 h-6 text-[#F59E0B]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    INSIGHT 02
-                  </span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">02</span>
                 </div>
-                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
-                  Engineering Dependency Blocks Team Scaling
+
+                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
+                  Engineering Dependency Blocks Scaling
                 </h4>
-                <p className="text-sm text-[#D1D5DB] leading-relaxed">
-                  6/8 firms identified 2-3 day wait times for Python script execution as their #1 bottleneck. During tax season, this single dependency made the tool unusable for 40% of clients.
-                </p>
-                <div className="mt-3 pt-3 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic">
-                    "We need real-time or we can't scale." — Analyst #2
+
+                <div className="bg-[#F59E0B]/10 rounded-lg p-3 mb-4 border border-[#F59E0B]/20">
+                  <div className="text-2xl font-bold text-[#F59E0B] mb-1">2-3 days</div>
+                  <div className="text-xs text-[#D1D5DB]">Wait time for Python script execution</div>
+                </div>
+
+                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#F59E0B] mt-0.5">•</span>
+                    <span>6/8 firms cited this as #1 bottleneck</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#F59E0B] mt-0.5">•</span>
+                    <span>40% of clients couldn't use tool during tax season</span>
+                  </li>
+                </ul>
+
+                <div className="pt-4 border-t border-[#2A2A2A]">
+                  <p className="text-xs text-[#888888] italic leading-relaxed">
+                    "We need real-time or we can't scale."
                   </p>
+                  <p className="text-xs text-[#666666] mt-1">— Tax Analyst #2</p>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#8B5CF6]/40 transition-all">
-                <div className="flex items-start gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center flex-shrink-0">
-                    <FileText className="w-5 h-5 text-[#8B5CF6]" />
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#8B5CF6]/40 transition-all group">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center flex-shrink-0">
+                    <FileText className="w-6 h-6 text-[#8B5CF6]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    INSIGHT 03
-                  </span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">03</span>
                 </div>
-                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
-                  Enterprise Requires Complete Audit Trails
+
+                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
+                  Audit Trails = Enterprise Dealbreaker
                 </h4>
-                <p className="text-sm text-[#D1D5DB] leading-relaxed">
-                  All 4 competitive tools lacked change history. Enterprise CPAs (5/8) said this was a dealbreaker: "I need to prove who changed what classification, when, and why."
-                </p>
-                <div className="mt-3 pt-3 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic">
-                    "Consumer tools can't handle enterprise." — CPA #6
+
+                <div className="bg-[#8B5CF6]/10 rounded-lg p-3 mb-4 border border-[#8B5CF6]/20">
+                  <div className="text-2xl font-bold text-[#8B5CF6] mb-1">4/4</div>
+                  <div className="text-xs text-[#D1D5DB]">Competitors lack change history</div>
+                </div>
+
+                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B5CF6] mt-0.5">•</span>
+                    <span>5/8 enterprise CPAs require full audit trails</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#8B5CF6] mt-0.5">•</span>
+                    <span>Must track who, what, when, why for IRS compliance</span>
+                  </li>
+                </ul>
+
+                <div className="pt-4 border-t border-[#2A2A2A]">
+                  <p className="text-xs text-[#888888] italic leading-relaxed">
+                    "Consumer tools can't handle enterprise."
                   </p>
+                  <p className="text-xs text-[#666666] mt-1">— CPA #6, Mid-market</p>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all">
-                <div className="flex items-start gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
-                    <Layers className="w-5 h-5 text-[#00D4FF]" />
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all group">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
+                    <Layers className="w-6 h-6 text-[#00D4FF]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    INSIGHT 04
-                  </span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">04</span>
                 </div>
-                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
-                  Manual Classification Fails at Transaction Scale
+
+                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
+                  Manual Work Fails at Transaction Scale
                 </h4>
-                <p className="text-sm text-[#D1D5DB] leading-relaxed">
-                  Average client has 3,000+ transactions. Manual classification takes 12 minutes per transaction. Basic math: 600 hours per client made the current process financially impossible.
-                </p>
-                <div className="mt-3 pt-3 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic">
-                    "We can't scale this manually." — CPA #4
+
+                <div className="bg-[#00D4FF]/10 rounded-lg p-3 mb-4 border border-[#00D4FF]/20">
+                  <div className="text-2xl font-bold text-[#00D4FF] mb-1">600 hrs</div>
+                  <div className="text-xs text-[#D1D5DB]">Per client (3,000 transactions × 12 min)</div>
+                </div>
+
+                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#00D4FF] mt-0.5">•</span>
+                    <span>Average client: 3,000+ transactions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#00D4FF] mt-0.5">•</span>
+                    <span>Manual classification: 12 min/transaction</span>
+                  </li>
+                </ul>
+
+                <div className="pt-4 border-t border-[#2A2A2A]">
+                  <p className="text-xs text-[#888888] italic leading-relaxed">
+                    "We can't scale this manually."
                   </p>
+                  <p className="text-xs text-[#666666] mt-1">— CPA #4</p>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00FFB3]/40 transition-all">
-                <div className="flex items-start gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
-                    <ToggleLeft className="w-5 h-5 text-[#00FFB3]" />
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00FFB3]/40 transition-all group">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
+                    <ToggleLeft className="w-6 h-6 text-[#00FFB3]" />
                   </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    INSIGHT 05
-                  </span>
+                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">05</span>
                 </div>
-                <h4 className="text-base font-semibold text-white mb-3 leading-snug">
-                  Trust Requires Control, Not Full Automation
+
+                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
+                  Trust Requires Control, Not Replacement
                 </h4>
-                <p className="text-sm text-[#D1D5DB] leading-relaxed">
-                  CPAs rejected "hands-off" AI. When shown override controls, 100% said they would adopt the tool. Professional judgment had to remain final authority.
-                </p>
-                <div className="mt-3 pt-3 border-t border-[#2A2A2A]">
-                  <p className="text-xs text-[#888888] italic">
-                    "I need the power to disagree with AI." — CPA #7
+
+                <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
+                  <div className="text-2xl font-bold text-[#00FFB3] mb-1">100%</div>
+                  <div className="text-xs text-[#D1D5DB]">Adoption with override controls shown</div>
+                </div>
+
+                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#00FFB3] mt-0.5">•</span>
+                    <span>CPAs rejected "hands-off" AI automation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#00FFB3] mt-0.5">•</span>
+                    <span>Professional judgment must remain final authority</span>
+                  </li>
+                </ul>
+
+                <div className="pt-4 border-t border-[#2A2A2A]">
+                  <p className="text-xs text-[#888888] italic leading-relaxed">
+                    "I need the power to disagree with AI."
                   </p>
+                  <p className="text-xs text-[#666666] mt-1">— CPA #7</p>
                 </div>
               </div>
             </div>
