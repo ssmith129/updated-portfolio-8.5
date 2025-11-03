@@ -1838,7 +1838,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-xl font-medium text-[#00D4FF] mb-4">
                   Additional Quantified Results
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex flex-row gap-12">
                   <div className="bg-gradient-to-r from-[#00FFB3]/10 to-transparent rounded-[12px] p-4 border border-[#00FFB3]/20">
                     <p className="text-2xl font-bold text-[#00FFB3] mb-1">
                       ↓40%
