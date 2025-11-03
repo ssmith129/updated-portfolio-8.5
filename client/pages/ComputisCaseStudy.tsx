@@ -660,7 +660,7 @@ export default function ComputisCaseStudy() {
                 <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#00FFB3]/30">
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-3 h-3 rounded-full bg-[#00FFB3]"></div>
-                    <p className="text-sm text-[#00FFB3] font-semibold">
+                    <p className="text-lg text-[#00FFB3] font-semibold">
                       After: Transparent Self-Service
                     </p>
                   </div>
