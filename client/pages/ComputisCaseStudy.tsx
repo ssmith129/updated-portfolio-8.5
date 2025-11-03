@@ -348,7 +348,12 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <p className="text-lg text-[#D1D5DB] leading-7">
-              Computis is an AI-powered tax automation platform built for CPAs managing digital-asset clients. The challenge wasn't "designing another dashboard"—it was rebuilding trust in automation. Through explainable AI and audit-ready workflows, the redesign cut onboarding time ↓ 45%, increased demo-to-conversion ↑ 32%, and reduced engineering dependency ↓ 84%.
+              Computis is an AI-powered tax automation platform built for CPAs
+              managing digital-asset clients. The challenge wasn't "designing
+              another dashboard"—it was rebuilding trust in automation. Through
+              explainable AI and audit-ready workflows, the redesign cut
+              onboarding time ↓ 45%, increased demo-to-conversion ↑ 32%, and
+              reduced engineering dependency ↓ 84%.
             </p>
           </div>
         </section>
