@@ -471,7 +471,9 @@ export default function ComputisCaseStudy() {
                 Workflow Transformation
               </h3>
               <p className="text-[#9CA3AF] text-base mb-6">
-                Based on research insights, we redesigned the core CPA workflow from an engineer-dependent, opaque process to a transparent, self-service platform with full professional control.
+                Based on research insights, we redesigned the core CPA workflow
+                from an engineer-dependent, opaque process to a transparent,
+                self-service platform with full professional control.
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -564,16 +566,28 @@ export default function ComputisCaseStudy() {
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
                   <div>
-                    <div className="text-2xl font-bold text-[#00FFB3] mb-1">↓ 85%</div>
-                    <div className="text-xs text-[#9CA3AF]">Engineering dependency</div>
+                    <div className="text-2xl font-bold text-[#00FFB3] mb-1">
+                      ↓ 85%
+                    </div>
+                    <div className="text-xs text-[#9CA3AF]">
+                      Engineering dependency
+                    </div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-[#00FFB3] mb-1">↓ 45%</div>
-                    <div className="text-xs text-[#9CA3AF]">Onboarding time</div>
+                    <div className="text-2xl font-bold text-[#00FFB3] mb-1">
+                      ↓ 45%
+                    </div>
+                    <div className="text-xs text-[#9CA3AF]">
+                      Onboarding time
+                    </div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-[#00D4FF] mb-1">→ 32%</div>
-                    <div className="text-xs text-[#9CA3AF]">Conversion rate increase</div>
+                    <div className="text-2xl font-bold text-[#00D4FF] mb-1">
+                      → 32%
+                    </div>
+                    <div className="text-xs text-[#9CA3AF]">
+                      Conversion rate increase
+                    </div>
                   </div>
                 </div>
               </div>
