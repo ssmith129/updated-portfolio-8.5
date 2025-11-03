@@ -302,15 +302,15 @@ export default function ComputisCaseStudy() {
                   Role
                 </h3>
                 <p className="text-lg font-medium text-white">
-                  Founding Lead Product Designer
+                  Lead Product Designer (Founding Designer)
                 </p>
               </div>
               <div className="space-y-2">
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
-                  Team
+                  Company
                 </h3>
                 <p className="text-lg font-medium text-white">
-                  CTO, PM, 2 Engineers, Agency Partner
+                  Computis Inc.
                 </p>
               </div>
               <div className="space-y-2">
@@ -321,10 +321,18 @@ export default function ComputisCaseStudy() {
               </div>
               <div className="space-y-2">
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                  Team
+                </h3>
+                <p className="text-lg font-medium text-white">
+                  CTO, PM, 2 Engineers, Selecto Agency
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
                   Tools
                 </h3>
                 <p className="text-lg font-medium text-white">
-                  Figma, Miro, Notion, Jira, Mixpanel
+                  Figma, Miro, Jira, Webflow, Notion, GA
                 </p>
               </div>
               <div className="space-y-2">
