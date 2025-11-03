@@ -255,7 +255,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
 
-                {/* Metric 3: Reliance on engineering teams */}
+                {/* Metric 3: Reliance on engineers */}
                 <div className="flex flex-col items-center gap-3">
                   <div className="text-center">
                     <div className="text-4xl font-bold text-[#00D4FF] mb-3">
@@ -266,22 +266,22 @@ export default function ComputisCaseStudy() {
                     <p className="text-sm font-medium text-[#D1D5DB] mb-1">
                       Reliance on
                     </p>
-                    <p className="text-xs text-[#9CA3AF]">engineering teams</p>
+                    <p className="text-xs text-[#9CA3AF]">engineers</p>
                   </div>
                 </div>
 
-                {/* Metric 4: Anomaly detection */}
+                {/* Metric 4: Enterprise positioning */}
                 <div className="flex flex-col items-center gap-3">
                   <div className="text-center">
                     <div className="text-4xl font-bold text-[#0080FF] mb-3">
-                      ↑ 150%
+                      ↑
                     </div>
                   </div>
                   <div className="text-center">
                     <p className="text-sm font-medium text-[#D1D5DB] mb-1">
-                      Anomaly detection
+                      Enterprise
                     </p>
-                    <p className="text-xs text-[#9CA3AF]">coverage increase</p>
+                    <p className="text-xs text-[#9CA3AF]">positioning</p>
                   </div>
                 </div>
               </div>
