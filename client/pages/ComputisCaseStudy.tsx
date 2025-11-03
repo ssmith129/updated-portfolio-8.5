@@ -919,225 +919,121 @@ export default function ComputisCaseStudy() {
               business impact
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-5 h-5 text-[#00FFB3]" />
-                  </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    01
-                  </span>
-                </div>
+            <div className="flex flex-col gap-6">
+              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div className="flex flex-col w-1/5 max-md:w-full">
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group h-auto">
+                    <div className="flex items-start justify-between mb-4 mx-auto">
+                      <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center mx-auto">
+                        <Shield className="w-5 h-5 text-[#00FFB3]" />
+                      </div>
+                    </div>
 
-                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
-                  Explainable AI Confidence Scores
-                </h4>
+                    <h4 className="text-xs font-semibold text-white mb-4 leading-tight text-center">
+                      Explainable AI Confidence Scores
+                    </h4>
 
-                <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-sm font-semibold text-[#00FFB3] mb-1">
-                    🎯 Solves
-                  </div>
-                  <div className="text-xs text-[#D1D5DB]">
-                    Insight #1: Professional Liability
-                  </div>
-                </div>
-
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Shows matching rules + transaction patterns</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>
-                      Displays confidence level for each classification
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Screenshot-ready for IRS audit defense</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
-                    <Zap className="w-5 h-5 text-[#00FFB3]" />
-                  </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    02
-                  </span>
-                </div>
-
-                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
-                  Self-Service Classification Interface
-                </h4>
-
-                <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-2xl font-bold text-[#00FFB3] mb-1">
-                    0 days
-                  </div>
-                  <div className="text-xs text-[#D1D5DB]">
-                    Wait time (vs 2-3 days before)
+                    <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
+                      <div className="text-sm font-semibold text-[#00FFB3] mb-1">
+                        🎯 Solves
+                      </div>
+                      <div className="text-xs text-[#D1D5DB]">
+                        Insight #1: Professional Liability
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>No-code visual interface for CPAs</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>
-                      Run classifications instantly, no engineer needed
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>
-                      Eliminated engineering dependency → 85% reduction
-                    </span>
-                  </li>
-                </ul>
+                <div className="flex flex-col w-1/5 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group flex flex-col">
+                    <div className="flex items-start justify-between mb-4 mx-auto">
+                      <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center">
+                        <Zap className="w-5 h-5 text-[#00FFB3]" />
+                      </div>
+                    </div>
 
-                <div className="pt-3 border-t border-[#2A2A2A] text-xs text-[#888888] italic">
-                  🎯 Solves Insight #2: Engineering Dependency
-                </div>
-              </div>
+                    <h4 className="text-xs font-semibold text-white mb-4 leading-tight text-center">
+                      Self-Service Classification Interface
+                    </h4>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
-                    <FileText className="w-5 h-5 text-[#00FFB3]" />
-                  </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    03
-                  </span>
-                </div>
-
-                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
-                  Complete Audit Drawer + Change History
-                </h4>
-
-                <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-sm font-semibold text-[#00FFB3] mb-1">
-                    💰 Competitive Moat
-                  </div>
-                  <div className="text-xs text-[#D1D5DB]">
-                    Enterprise-only feature differentiator
+                    <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
+                      <div className="text-sm font-bold text-[#00FFB3] mb-1">
+                        0 days
+                      </div>
+                      <div className="text-xs text-[#D1D5DB]">
+                        Wait time (vs 2-3 days before)
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Tracks who, what, when, why for every change</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Exportable audit reports for IRS compliance</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Version control for classification decisions</span>
-                  </li>
-                </ul>
+                <div className="flex flex-col w-1/5 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group flex flex-col">
+                    <div className="flex items-start justify-between mb-4 mx-auto">
+                      <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center">
+                        <FileText className="w-5 h-5 text-[#00FFB3]" />
+                      </div>
+                    </div>
 
-                <div className="pt-3 border-t border-[#2A2A2A] text-xs text-[#888888] italic">
-                  🎯 Solves Insight #3: Audit Trail Requirements
-                </div>
-              </div>
+                    <h4 className="text-xs font-semibold text-white mb-4 leading-tight text-center">
+                      Complete Audit Drawer + Change History
+                    </h4>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
-                    <Layers className="w-5 h-5 text-[#00FFB3]" />
-                  </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    04
-                  </span>
-                </div>
-
-                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
-                  Bulk Rule Builder + Pattern Detection
-                </h4>
-
-                <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-2xl font-bold text-[#00FFB3] mb-1">
-                    ↓ 68%
-                  </div>
-                  <div className="text-xs text-[#D1D5DB]">
-                    Reduction in repetitive work
+                    <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
+                      <div className="text-xs font-semibold text-[#00FFB3] mb-1 w-full">
+                        💰 Competitive Moat
+                      </div>
+                      <div className="text-xs text-[#D1D5DB]">
+                        Enterprise-only feature differentiator
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>
-                      Create rule once, apply to 1,000s of transactions
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>AI suggests rules based on pattern detection</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>
-                      Scales from 100 to 5,000 transactions per client
-                    </span>
-                  </li>
-                </ul>
+                <div className="flex flex-col w-1/5 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group flex flex-col">
+                    <div className="flex items-start justify-between mb-4 mx-auto">
+                      <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center">
+                        <Layers className="w-5 h-5 text-[#00FFB3]" />
+                      </div>
+                    </div>
 
-                <div className="pt-3 border-t border-[#2A2A2A] text-xs text-[#888888] italic">
-                  🎯 Solves Insight #4: Transaction Scale Failure
-                </div>
-              </div>
+                    <h4 className="text-xs font-semibold text-white mb-4 leading-tight text-center">
+                      Bulk Rule Builder + Pattern Detection
+                    </h4>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
-                    <ToggleLeft className="w-5 h-5 text-[#00FFB3]" />
-                  </div>
-                  <span className="text-xs font-bold text-[#888888] uppercase tracking-wide">
-                    05
-                  </span>
-                </div>
-
-                <h4 className="text-lg font-bold text-white mb-4 leading-tight">
-                  One-Click Override + Context Memory
-                </h4>
-
-                <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
-                  <div className="text-sm font-semibold text-[#00FFB3] mb-1">
-                    🧠 AI Learns
-                  </div>
-                  <div className="text-xs text-[#D1D5DB]">
-                    System remembers CPA judgment patterns
+                    <div className="bg-[#00FFB3]/10 rounded-lg p-3 mb-4 border border-[#00FFB3]/20">
+                      <div className="text-sm font-bold text-[#00FFB3] mb-1">
+                        ↓ 68%
+                      </div>
+                      <div className="text-xs text-[#D1D5DB]">
+                        Reduction in repetitive work
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <ul className="space-y-2 text-sm text-[#D1D5DB] mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>AI suggests, CPA has final decision</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Override button on every classification result</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#00FFB3] mt-0.5">✓</span>
-                    <span>Learns from overrides for future suggestions</span>
-                  </li>
-                </ul>
+                <div className="flex flex-col w-1/5 ml-5 max-md:w-full max-md:ml-0">
+                  <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border-l-4 border-[#00FFB3] border-r border-t border-b border-[#2A2A2A] hover:border-l-[#00FFB3] hover:shadow-lg hover:shadow-[#00FFB3]/10 transition-all group flex flex-col pt-[14px]">
+                    <div className="flex items-start justify-between mb-4 mx-auto">
+                      <div className="w-5 h-5 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center">
+                        <ToggleLeft className="w-5 h-5 text-[#00FFB3]" />
+                      </div>
+                    </div>
 
-                <div className="pt-3 border-t border-[#2A2A2A] text-xs text-[#888888] italic">
-                  🎯 Solves Insight #5: Trust Through Control
+                    <h4 className="text-xs font-semibold text-white mb-4 leading-tight text-center">
+                      One-Click Override + Context Memory
+                    </h4>
+
+                    <div className="bg-[#00FFB3]/10 rounded-lg p-3 mx-1.5 mb-4 border border-[#00FFB3]/20">
+                      <div className="text-xs font-semibold text-[#00FFB3] mb-1">
+                        🧠 AI Learns
+                      </div>
+                      <div className="text-xs text-[#D1D5DB]">
+                        System remembers CPA judgment patterns
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
