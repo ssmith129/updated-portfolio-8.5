@@ -756,7 +756,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Part 1: Research Insights (What We Learned) */}
-            <h3 className="text-xl font-medium text-[#00D4FF] mb-2">
+            <h3 className="text-lg font-semibold text-[#00D4FF] mb-2">
               Research Insights
             </h3>
             <p className="text-sm text-[#9CA3AF] mb-8">
