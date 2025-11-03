@@ -418,8 +418,7 @@ export default function ComputisCaseStudy() {
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Research & Discovery
             </h2>
-  `content`: `            {/* RESEARCH METHODOLOGY - Add this section after \"Research & Discovery\" heading */}
-            
+{/* RESEARCH METHODOLOGY */}
             <div className=\"bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] mb-8\">
               <div className=\"flex items-start gap-3 mb-4\">
                 <Terminal className=\"w-5 h-5 text-[#00D4FF] flex-shrink-0 mt-0.5\" />
