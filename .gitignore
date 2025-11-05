@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+.vite
 
 # Editor directories and files
 .vscode/*
@@ -26,3 +27,13 @@ dist-ssr
 .config/
 !.env
 .env
+
+# Temporary files
+temp_*
+*.zip
+
+# Implementation notes (use docs/ for permanent documentation)
+*_IMPLEMENTATION*.md
+*_DEPLOYMENT*.md
+*_FIX*.md
+*_SPEC*.md
