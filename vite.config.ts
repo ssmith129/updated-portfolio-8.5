@@ -48,7 +48,11 @@ export default defineConfig(() => ({
     // Only handle API and health routes with Express; let Vite handle SPA routes
     server.middlewares.use((req, res, next) => {
       const url = req.url || "";
-      if (url.startsWith("/api/") || url === "/api" || url.startsWith("/health")) {
+      if (
+        url.startsWith("/api/") ||
+        url === "/api" ||
+        url.startsWith("/health")
+      ) {
         return (expressApp as any)(req, res, next);
       }
       return next();
