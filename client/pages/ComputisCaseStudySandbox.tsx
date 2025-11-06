@@ -369,7 +369,7 @@ export default function ComputisCaseStudySandbox() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#00FFB3] mt-0.5">•</span>
-                      <span>Professional liability > operational efficiency</span>
+                      <span>Professional liability &gt; operational efficiency</span>
                     </li>
                   </ul>
                 </div>
@@ -458,7 +458,7 @@ export default function ComputisCaseStudySandbox() {
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-white mb-2">
-                      1. Professional Liability > Efficiency
+                      1. Professional Liability &gt; Efficiency
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(28 quotes)</p>
                     <p className="text-[#D1D5DB]">
@@ -1164,7 +1164,7 @@ export default function ComputisCaseStudySandbox() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2">
-                      1. In High-Stakes Domains, Explainability > Feature
+                      1. In High-Stakes Domains, Explainability &gt; Feature
                       Breadth
                     </h3>
                     <p className="text-sm text-[#888888] mb-2">
@@ -1201,7 +1201,7 @@ export default function ComputisCaseStudySandbox() {
                     </p>
                     <p className="text-[#D1D5DB] mb-2">
                       <strong className="text-white">Learning:</strong> Systems
-                      thinking > screen design. Early architectural decisions
+                      thinking &gt; screen design. Early architectural decisions
                       enabled enterprise growth.
                     </p>
                     <p className="text-[#00FFB3] font-medium">
