@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
@@ -25,7 +26,7 @@ import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import { useVideoAutoplayOnVisible } from "../hooks/use-video-autoplay";
 
-export default function ComputisCaseStudySandbox() {
+export default function ComputisCaseStudy() {
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
   // Video autoplay refs with 40% visibility threshold
