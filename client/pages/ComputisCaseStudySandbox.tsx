@@ -912,7 +912,7 @@ export default function ComputisCaseStudySandbox() {
                       style={{ display: "block" }}
                     >
                       <source
-                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F16d8c5a49c5447899e82cf3beb66aa4c?alt=media&token=4e42f51b-dd8f-4c60-bcb9-2c4b8eeb6e41&apiKey=ba69a23156414a589de97341511272c9"
+                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa0883ef4ca724f1cb2cb430ba6abc50e?alt=media&token=5a058dfd-fbf1-4ab6-ae2f-85808836c967&apiKey=ba69a23156414a589de97341511272c9"
                         type="video/mp4"
                       />
                       Your browser does not support the video tag.
