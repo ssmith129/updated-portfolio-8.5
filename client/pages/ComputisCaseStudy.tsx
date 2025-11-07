@@ -186,7 +186,7 @@ export default function ComputisCaseStudy() {
               <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#FFD700]/10 to-transparent rounded-[16px] p-6 border border-[#FFD700]/20">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#FFD700] mb-3">
-                    ↑ 32%
+                    ��� 32%
                   </div>
                 </div>
                 <div className="text-center">
@@ -280,47 +280,22 @@ export default function ComputisCaseStudy() {
             {/* Before/After Workflow Comparison */}
             <div className="mb-8">
               <div className="flex flex-col gap-6">
-                <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#EF4444]/30">
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="w-3 h-3 rounded-full bg-[#EF4444]"></div>
-                    <p className="text-lg text-[#EF4444] font-semibold">
-                      Before: Manual Workflow Pain Points
-                    </p>
-                  </div>
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#EF4444]/60 transition-all duration-300 hover-image-enlarge relative group">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9fbbd6e7fc934c54ba9109a71b62b295"
-                      alt="Before workflow showing manual engineer-dependent process"
-                      className="w-full h-auto transition-transform duration-300"
-                      loading="lazy"
-                      onClick={() =>
-                        setEnlargedImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9fbbd6e7fc934c54ba9109a71b62b295",
-                        )
-                      }
-                    />
-                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                      Click to enlarge
-                    </div>
-                  </div>
-                </div>
-
                 <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#00FFB3]/30">
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-3 h-3 rounded-full bg-[#00FFB3]"></div>
                     <p className="text-lg text-[#00FFB3] font-semibold">
-                      After: Transparent Self-Service
+                      Before/After Workflow Comparison
                     </p>
                   </div>
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fda713d8affe442f79b0bf11d2349b814"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa0e9c2c002144b23913e4c4b3bfdf489"
                       alt="After workflow showing self-service transparent system"
                       className="w-full h-auto transition-transform duration-300"
                       loading="lazy"
                       onClick={() =>
                         setEnlargedImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fda713d8affe442f79b0bf11d2349b814",
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa0e9c2c002144b23913e4c4b3bfdf489",
                         )
                       }
                     />
@@ -1233,7 +1208,7 @@ export default function ComputisCaseStudy() {
                       lift—more than any feature addition.
                     </p>
                     <p className="text-[#00FFB3] font-medium">
-                      Takeaway: In FinTech, healthcare, legal—defensibility
+                      Takeaway: In FinTech, healthcare, legal��defensibility
                       trumps efficiency.
                     </p>
                   </div>
