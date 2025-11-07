@@ -452,13 +452,13 @@ export default function ComputisCaseStudy() {
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F48d799160dc747138f69c051e6910cff?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fd82d9e8a55884e62a4f9607f6ef0089a"
                   alt="Sample Usability Study Structure"
                   className="w-full h-auto transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F48d799160dc747138f69c051e6910cff?format=webp&width=800",
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fd82d9e8a55884e62a4f9607f6ef0089a",
                     )
                   }
                 />
@@ -1177,13 +1177,13 @@ export default function ComputisCaseStudy() {
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F71cc30712766432ba0b2577eebdafd4b?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fb2ba5c86168b43ee9715e140d1461d11"
                   alt="Usability Test Results"
                   className="w-full h-auto transition-transform duration-300"
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F71cc30712766432ba0b2577eebdafd4b?format=webp&width=800",
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fb2ba5c86168b43ee9715e140d1461d11",
                     )
                   }
                 />
