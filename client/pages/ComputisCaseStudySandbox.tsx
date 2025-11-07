@@ -289,7 +289,6 @@ export default function ComputisCaseStudySandbox() {
                 CPAs couldn't explain classifications to clients or defend them
                 during IRS audits.
               </p>
-
             </div>
 
             {/* Before/After Workflow Comparison */}
@@ -364,7 +363,9 @@ export default function ComputisCaseStudySandbox() {
               <ul className="space-y-2 text-sm text-[#D1D5DB]">
                 <li className="flex items-start gap-2">
                   <span className="text-[#00FFB3] mt-0.5">•</span>
-                  <span>8/8 CPAs rejected automation they couldn't explain</span>
+                  <span>
+                    8/8 CPAs rejected automation they couldn't explain
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#00FFB3] mt-0.5">•</span>
@@ -372,15 +373,17 @@ export default function ComputisCaseStudySandbox() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#00FFB3] mt-0.5">•</span>
-                  <span>Professional liability &gt; operational efficiency</span>
+                  <span>
+                    Professional liability &gt; operational efficiency
+                  </span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#00D4FF] mt-4">
               <p className="text-sm text-white italic">
-                "If I can't screenshot your AI's reasoning for an audit,
-                it's just another liability."
+                "If I can't screenshot your AI's reasoning for an audit, it's
+                just another liability."
               </p>
               <p className="text-xs text-[#888888] mt-2">
                 — Senior CPA, Big 4 firm
@@ -397,7 +400,9 @@ export default function ComputisCaseStudySandbox() {
             </h2>
 
             <p className="text-base text-[#D1D5DB] leading-relaxed mb-6">
-              <strong className="text-white">10-week foundational study:</strong>
+              <strong className="text-white">
+                10-week foundational study:
+              </strong>
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -1169,14 +1174,15 @@ export default function ComputisCaseStudySandbox() {
                       Breadth
                     </h3>
                     <p className="text-sm text-[#888888] mb-2">
-                      <strong className="text-[#00D4FF]">Application:</strong> 6/8
-                      CPAs ignored 20+ feature requests to prioritize audit trail
+                      <strong className="text-[#00D4FF]">Application:</strong>{" "}
+                      6/8 CPAs ignored 20+ feature requests to prioritize audit
+                      trail
                     </p>
                     <p className="text-[#D1D5DB] mb-2">
                       <strong className="text-white">Learning:</strong>{" "}
-                      Professional liability creates different value hierarchies.
-                      Transparency features drove 32% conversion lift—more than
-                      any feature addition.
+                      Professional liability creates different value
+                      hierarchies. Transparency features drove 32% conversion
+                      lift—more than any feature addition.
                     </p>
                     <p className="text-[#00FFB3] font-medium">
                       Takeaway: In FinTech, healthcare, legal—defensibility
@@ -1290,7 +1296,9 @@ export default function ComputisCaseStudySandbox() {
                     delay, stakeholder frustration, simplified scope
                   </p>
                   <p>
-                    <strong className="text-[#00FFB3]">Learning applied:</strong>{" "}
+                    <strong className="text-[#00FFB3]">
+                      Learning applied:
+                    </strong>{" "}
                     Weekly "art of the possible" sessions from Week 1 in next
                     project → caught constraints in 48 hours
                   </p>
@@ -1313,7 +1321,9 @@ export default function ComputisCaseStudySandbox() {
                     sprint
                   </p>
                   <p>
-                    <strong className="text-[#00FFB3]">Learning applied:</strong>{" "}
+                    <strong className="text-[#00FFB3]">
+                      Learning applied:
+                    </strong>{" "}
                     Formal think-aloud protocols with session recordings → 40%
                     fewer iterations
                   </p>

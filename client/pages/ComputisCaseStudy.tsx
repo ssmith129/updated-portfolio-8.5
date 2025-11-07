@@ -289,7 +289,6 @@ export default function ComputisCaseStudy() {
                 CPAs couldn't explain classifications to clients or defend them
                 during IRS audits.
               </p>
-
             </div>
 
             {/* Before/After Workflow Comparison */}
@@ -359,8 +358,8 @@ export default function ComputisCaseStudy() {
 
               <div className="bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#00D4FF] mt-4">
                 <p className="text-sm text-white italic">
-                  "If I can't screenshot your AI's reasoning for an audit,
-                  it's just another liability."
+                  "If I can't screenshot your AI's reasoning for an audit, it's
+                  just another liability."
                 </p>
                 <p className="text-xs text-[#888888] mt-2">
                   — Senior CPA, Big 4 firm
