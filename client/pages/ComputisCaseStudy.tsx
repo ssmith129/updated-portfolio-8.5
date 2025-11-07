@@ -1146,6 +1146,29 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
             </div>
+
+            {/* Usability Test Results Image */}
+            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-8">
+              <p className="text-sm text-[#888888] mb-3">
+                Usability Test Results
+              </p>
+              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F71cc30712766432ba0b2577eebdafd4b?format=webp&width=800"
+                  alt="Usability Test Results"
+                  className="w-full h-auto transition-transform duration-300"
+                  loading="lazy"
+                  onClick={() =>
+                    setEnlargedImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F71cc30712766432ba0b2577eebdafd4b?format=webp&width=800",
+                    )
+                  }
+                />
+                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                  Click to enlarge
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
