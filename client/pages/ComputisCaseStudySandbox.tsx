@@ -962,7 +962,7 @@ export default function ComputisCaseStudySandbox() {
                       style={{ display: "block" }}
                     >
                       <source
-                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fe4a1ff0f74cd4fd9bca03f0a9b6d6a02?alt=media&token=f84a80dc-7fd1-47da-b53a-2e8bf8a7e1a5&apiKey=ba69a23156414a589de97341511272c9"
+                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F362cda60207c4bf0ab15de32042ef9e7?alt=media&token=d93a0b85-9d93-47d7-ae9b-89a2da2835b1&apiKey=ba69a23156414a589de97341511272c9"
                         type="video/mp4"
                       />
                       Your browser does not support the video tag.
@@ -1015,7 +1015,7 @@ export default function ComputisCaseStudySandbox() {
                       style={{ display: "block" }}
                     >
                       <source
-                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F9f9e6f8c05724802ad3d09084e73dbc3?alt=media&token=d976a3f4-f97e-420b-9fb8-b89b9bf62fde&apiKey=ba69a23156414a589de97341511272c9"
+                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F15fdcef43e9c49fabf34b76adb4b6b02?alt=media&token=a9348a1a-ab63-4fea-95e6-244e99875618&apiKey=ba69a23156414a589de97341511272c9"
                         type="video/mp4"
                       />
                       Your browser does not support the video tag.
@@ -1065,7 +1065,7 @@ export default function ComputisCaseStudySandbox() {
                       style={{ display: "block" }}
                     >
                       <source
-                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fca30088e2dbe42ea8edf88d23cfbf3a7?alt=media&token=63ff42eb-9edc-44b4-8b03-05bc125caa4e&apiKey=ba69a23156414a589de97341511272c9"
+                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F634ec079a5b3440d93ec5826c682c3e0?alt=media&token=e4100b8b-ba86-4734-b2ce-0b759ff3b9ad&apiKey=ba69a23156414a589de97341511272c9"
                         type="video/mp4"
                       />
                       Your browser does not support the video tag.
