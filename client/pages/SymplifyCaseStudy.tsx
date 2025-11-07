@@ -690,7 +690,7 @@ export default function SymplifyCaseStudy() {
         >
           <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#E2E8F0]">
             <h2 className="text-2xl sm:text-3xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.3px] mb-8">
-              ��� Problem Statement & Research
+              Problem Statement & Research
             </h2>
 
             <div className="space-y-8">
@@ -1215,7 +1215,7 @@ export default function SymplifyCaseStudy() {
 
             <div className="mb-10">
               <h3 className="text-xl font-medium text-[#0F172A] mb-6">
-                Insights → Design Moves
+                Insights ��� Design Moves
               </h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm border-collapse">

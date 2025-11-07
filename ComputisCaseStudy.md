@@ -156,7 +156,7 @@ I applied a **trust-first, professional-centered** approach across 10 months:
 
 **Solution:** Drag-and-drop natural language rule builder with real-time preview
 
-**Impact:** ��85% engineering reliance; →32% conversions
+**Impact:** ↓85% engineering reliance; →32% conversions
 
 ---
 

@@ -186,7 +186,7 @@ export default function ComputisCaseStudy() {
               <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#FFD700]/10 to-transparent rounded-[16px] p-6 border border-[#FFD700]/20">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#FFD700] mb-3">
-                    ��� 32%
+                    ↑ 32%
                   </div>
                 </div>
                 <div className="text-center">
@@ -1049,7 +1049,7 @@ export default function ComputisCaseStudy() {
                     <p className="text-sm text-[#888888] mb-1">Solution</p>
                     <ul className="text-[#D1D5DB] space-y-1">
                       <li>• Client-scoped views with role permissions</li>
-                      <li>• Seamless context switching</li>
+                      <li>��� Seamless context switching</li>
                       <li>• Portfolio-level insights</li>
                     </ul>
                   </div>
