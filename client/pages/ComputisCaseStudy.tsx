@@ -290,51 +290,6 @@ export default function ComputisCaseStudy() {
                 during IRS audits.
               </p>
 
-              <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
-                <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                  <Target className="w-5 h-5 text-[#00D4FF]" />
-                  Core Insight
-                </h3>
-                <p className="text-base text-white italic leading-relaxed mb-4">
-                  "The problem wasn't UX—it was trust."
-                </p>
-
-                <div className="bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#00FFB3] mt-4">
-                  <p className="text-sm font-semibold text-[#00FFB3] mb-2">
-                    Research Finding:
-                  </p>
-                  <ul className="space-y-2 text-sm text-[#D1D5DB]">
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#00FFB3] mt-0.5">•</span>
-                      <span>
-                        8/8 CPAs rejected automation they couldn't explain
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#00FFB3] mt-0.5">•</span>
-                      <span>
-                        Manual verification defeated automation's purpose
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-[#00FFB3] mt-0.5">•</span>
-                      <span>
-                        Professional liability &gt; operational efficiency
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#00D4FF] mt-4">
-                  <p className="text-sm text-white italic">
-                    "If I can't screenshot your AI's reasoning for an audit,
-                    it's just another liability."
-                  </p>
-                  <p className="text-xs text-[#888888] mt-2">
-                    — Senior CPA, Big 4 firm
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* Before/After Workflow Comparison */}
@@ -364,6 +319,52 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
+              <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                <Target className="w-5 h-5 text-[#00D4FF]" />
+                Core Insight
+              </h3>
+              <p className="text-base text-white italic leading-relaxed mb-4">
+                "The problem wasn't UX—it was trust."
+              </p>
+
+              <div className="bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#00FFB3] mt-4">
+                <p className="text-sm font-semibold text-[#00FFB3] mb-2">
+                  Research Finding:
+                </p>
+                <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#00FFB3] mt-0.5">•</span>
+                    <span>
+                      8/8 CPAs rejected automation they couldn't explain
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#00FFB3] mt-0.5">•</span>
+                    <span>
+                      Manual verification defeated automation's purpose
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#00FFB3] mt-0.5">•</span>
+                    <span>
+                      Professional liability &gt; operational efficiency
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#00D4FF] mt-4">
+                <p className="text-sm text-white italic">
+                  "If I can't screenshot your AI's reasoning for an audit,
+                  it's just another liability."
+                </p>
+                <p className="text-xs text-[#888888] mt-2">
+                  — Senior CPA, Big 4 firm
+                </p>
               </div>
             </div>
           </div>
