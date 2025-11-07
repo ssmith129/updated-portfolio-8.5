@@ -336,6 +336,36 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
             </div>
+
+            {/* Before/After Workflow Comparison */}
+            <div className="mb-8">
+              <div className="flex flex-col gap-6">
+                <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#00FFB3]/30">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-3 h-3 rounded-full bg-[#00FFB3]"></div>
+                    <p className="text-lg text-[#00FFB3] font-semibold">
+                      Before/After Workflow Comparison
+                    </p>
+                  </div>
+                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa0e9c2c002144b23913e4c4b3bfdf489"
+                      alt="After workflow showing self-service transparent system"
+                      className="w-full h-auto transition-transform duration-300"
+                      loading="lazy"
+                      onClick={() =>
+                        setEnlargedImage(
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa0e9c2c002144b23913e4c4b3bfdf489",
+                        )
+                      }
+                    />
+                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
+                      Click to enlarge
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
