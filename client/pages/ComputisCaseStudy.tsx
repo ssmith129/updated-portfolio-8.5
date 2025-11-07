@@ -293,7 +293,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Before/After Workflow Comparison */}
-            <div className="mb-8">
+            <div className="mt-6 mb-8">
               <div className="flex flex-col gap-6">
                 <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#00FFB3]/30">
                   <div className="flex items-center gap-2 mb-4">
