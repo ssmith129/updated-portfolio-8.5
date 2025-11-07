@@ -308,9 +308,9 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="space-y-6 mt-8">
-              <p className="text-base text-[#D1D5DB] leading-relaxed">
+              <h3 className="text-lg font-semibold text-white">
                 Tax platforms prioritize speed. CPAs prioritize defensibility.
-              </p>
+              </h3>
 
               <p className="text-base text-[#D1D5DB] leading-relaxed">
                 Before Computis, accounting firms faced a critical dilemma:{" "}
@@ -1006,7 +1006,7 @@ export default function ComputisCaseStudy() {
                   <div>
                     <p className="text-sm text-[#888888] mb-1">Impact</p>
                     <p className="text-[#00FFB3] font-medium">
-                      ↑150% anomaly detection | Reduced manual triage
+                      ���150% anomaly detection | Reduced manual triage
                     </p>
                   </div>
                 </div>
