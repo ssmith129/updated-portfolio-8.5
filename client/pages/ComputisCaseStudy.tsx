@@ -361,15 +361,21 @@ export default function ComputisCaseStudy() {
                   <ul className="space-y-2 text-sm text-[#D1D5DB]">
                     <li className="flex items-start gap-2">
                       <span className="text-[#00FFB3] mt-0.5">•</span>
-                      <span>8/8 CPAs rejected automation they couldn't explain</span>
+                      <span>
+                        8/8 CPAs rejected automation they couldn't explain
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#00FFB3] mt-0.5">•</span>
-                      <span>Manual verification defeated automation's purpose</span>
+                      <span>
+                        Manual verification defeated automation's purpose
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#00FFB3] mt-0.5">•</span>
-                      <span>Professional liability &gt; operational efficiency</span>
+                      <span>
+                        Professional liability &gt; operational efficiency
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -396,7 +402,9 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <p className="text-base text-[#D1D5DB] leading-relaxed mb-6">
-              <strong className="text-white">10-week foundational study:</strong>
+              <strong className="text-white">
+                10-week foundational study:
+              </strong>
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -1214,14 +1222,15 @@ export default function ComputisCaseStudy() {
                       Breadth
                     </h3>
                     <p className="text-sm text-[#888888] mb-2">
-                      <strong className="text-[#00D4FF]">Application:</strong> 6/8
-                      CPAs ignored 20+ feature requests to prioritize audit trail
+                      <strong className="text-[#00D4FF]">Application:</strong>{" "}
+                      6/8 CPAs ignored 20+ feature requests to prioritize audit
+                      trail
                     </p>
                     <p className="text-[#D1D5DB] mb-2">
                       <strong className="text-white">Learning:</strong>{" "}
-                      Professional liability creates different value hierarchies.
-                      Transparency features drove 32% conversion lift—more than
-                      any feature addition.
+                      Professional liability creates different value
+                      hierarchies. Transparency features drove 32% conversion
+                      lift—more than any feature addition.
                     </p>
                     <p className="text-[#00FFB3] font-medium">
                       Takeaway: In FinTech, healthcare, legal—defensibility
@@ -1335,7 +1344,9 @@ export default function ComputisCaseStudy() {
                     delay, stakeholder frustration, simplified scope
                   </p>
                   <p>
-                    <strong className="text-[#00FFB3]">Learning applied:</strong>{" "}
+                    <strong className="text-[#00FFB3]">
+                      Learning applied:
+                    </strong>{" "}
                     Weekly "art of the possible" sessions from Week 1 in next
                     project → caught constraints in 48 hours
                   </p>
@@ -1358,7 +1369,9 @@ export default function ComputisCaseStudy() {
                     sprint
                   </p>
                   <p>
-                    <strong className="text-[#00FFB3]">Learning applied:</strong>{" "}
+                    <strong className="text-[#00FFB3]">
+                      Learning applied:
+                    </strong>{" "}
                     Formal think-aloud protocols with session recordings → 40%
                     fewer iterations
                   </p>
