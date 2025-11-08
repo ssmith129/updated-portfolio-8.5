@@ -868,32 +868,6 @@ export default function ComputisCaseStudy() {
                     Inline Audit Trail Drawer
                   </h3>
                 </div>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm text-[#888888] mb-1">Challenge</p>
-                    <p className="text-[#D1D5DB]">
-                      No compliance visibility or change history
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-[#888888] mb-1">Solution</p>
-                    <ul className="text-[#D1D5DB] space-y-1">
-                      <li>• Persistent contextual audit log</li>
-                      <li>
-                        • Classification history, rule changes, override
-                        rationale
-                      </li>
-                      <li>• Exportable for IRS documentation</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="text-sm text-[#888888] mb-1">Impact</p>
-                    <p className="text-[#00FFB3] font-medium">
-                      ↓40% compliance tickets | Enabled independent audit
-                      defense
-                    </p>
-                  </div>
-                </div>
                 <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <AnnotatedDemo
