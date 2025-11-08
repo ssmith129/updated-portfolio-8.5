@@ -855,20 +855,34 @@ export default function ComputisCaseStudySandbox() {
                 </div>
                 <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
-                    <video
-                      ref={aiConfidenceVideoRef}
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-auto"
-                      style={{ display: "block" }}
-                    >
-                      <source
-                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F1722a6d109794969af99985a7fca6660?alt=media&token=7fa5119b-32c1-4ce6-8070-9f7e8c23fd25&apiKey=ba69a23156414a589de97341511272c9"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
+                    <AnnotatedDemo
+                      src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F1722a6d109794969af99985a7fca6660?alt=media&token=7fa5119b-32c1-4ce6-8070-9f7e8c23fd25&apiKey=ba69a23156414a589de97341511272c9"
+                      annotations={[
+                        {
+                          time: 0,
+                          label: "Challenge",
+                          heading: "8/8 CPAs distrusted 'black box' automation",
+                          text: "Early demos failed when CPAs couldn't see how or why classifications were made.",
+                        },
+                        {
+                          time: 3,
+                          label: "Solution",
+                          heading: "Confidence badges with explainable reasoning",
+                          bullets: [
+                            "High/Medium/Low confidence chips tied to AI certainty scores",
+                            "Reasoning tooltips that surface classification logic on hover",
+                            "One-click override that preserves full context and history",
+                          ],
+                        },
+                        {
+                          time: 8,
+                          label: "Impact",
+                          heading: "↓70% false positives | 100% CPA adoption in demos",
+                          text: "Once CPAs could inspect and override the AI, they shifted from skeptics to advocates.",
+                        },
+                      ]}
+                      containerClassName="aspect-video"
+                    />
                   </div>
                 </div>
               </div>
