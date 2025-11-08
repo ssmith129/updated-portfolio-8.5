@@ -925,20 +925,34 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
-                    <video
-                      ref={auditDrawerVideoRef}
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-auto"
-                      style={{ display: "block" }}
-                    >
-                      <source
-                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa0883ef4ca724f1cb2cb430ba6abc50e?alt=media&token=5a058dfd-fbf1-4ab6-ae2f-85808836c967&apiKey=ba69a23156414a589de97341511272c9"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
+                    <AnnotatedDemo
+                      src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa0883ef4ca724f1cb2cb430ba6abc50e?alt=media&token=5a058dfd-fbf1-4ab6-ae2f-85808836c967&apiKey=ba69a23156414a589de97341511272c9"
+                      annotations={[
+                        {
+                          time: 0,
+                          label: "Challenge",
+                          heading: "No compliance visibility or change history",
+                          text: "CPAs needed defensible documentation trails but had no way to track classification decisions over time.",
+                        },
+                        {
+                          time: 3,
+                          label: "Solution",
+                          heading: "Persistent contextual audit log",
+                          bullets: [
+                            "Classification history tracking every decision point",
+                            "Rule changes and override rationale preserved",
+                            "Exportable audit reports for IRS documentation",
+                          ],
+                        },
+                        {
+                          time: 8,
+                          label: "Impact",
+                          heading: "↓40% compliance tickets | Enabled independent audit defense",
+                          text: "CPAs could now defend classifications during audits without engineering support.",
+                        },
+                      ]}
+                      containerClassName="aspect-video"
+                    />
                   </div>
                 </div>
               </div>
