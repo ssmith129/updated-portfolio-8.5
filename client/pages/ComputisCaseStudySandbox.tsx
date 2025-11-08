@@ -24,13 +24,13 @@ import {
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import { useVideoAutoplayOnVisible } from "../hooks/use-video-autoplay";
+import { AnnotatedDemo } from "../components/case-study/AnnotatedDemo";
 
 export default function ComputisCaseStudySandbox() {
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
   // Video autoplay refs with 40% visibility threshold
   const heroVideoRef = useVideoAutoplayOnVisible(0.4);
-  const aiConfidenceVideoRef = useVideoAutoplayOnVisible(0.4);
   const auditDrawerVideoRef = useVideoAutoplayOnVisible(0.4);
   const ruleBuilderVideoRef = useVideoAutoplayOnVisible(0.4);
   const anomalyDetectionVideoRef = useVideoAutoplayOnVisible(0.4);
