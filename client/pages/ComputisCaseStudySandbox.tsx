@@ -31,7 +31,6 @@ export default function ComputisCaseStudySandbox() {
 
   // Video autoplay refs with 40% visibility threshold
   const heroVideoRef = useVideoAutoplayOnVisible(0.4);
-  const ruleBuilderVideoRef = useVideoAutoplayOnVisible(0.4);
   const anomalyDetectionVideoRef = useVideoAutoplayOnVisible(0.4);
   const multiTenantVideoRef = useVideoAutoplayOnVisible(0.4);
 
@@ -988,20 +987,34 @@ export default function ComputisCaseStudySandbox() {
                 </div>
                 <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
-                    <video
-                      ref={ruleBuilderVideoRef}
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-auto"
-                      style={{ display: "block" }}
-                    >
-                      <source
-                        src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F362cda60207c4bf0ab15de32042ef9e7?alt=media&token=d93a0b85-9d93-47d7-ae9b-89a2da2835b1&apiKey=ba69a23156414a589de97341511272c9"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
+                    <AnnotatedDemo
+                      src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F362cda60207c4bf0ab15de32042ef9e7?alt=media&token=d93a0b85-9d93-47d7-ae9b-89a2da2835b1&apiKey=ba69a23156414a589de97341511272c9"
+                      annotations={[
+                        {
+                          time: 0,
+                          label: "Challenge",
+                          heading: "85% engineering dependency for custom rules",
+                          text: "Every client-specific rule required engineering work, creating bottlenecks and slowing sales cycles.",
+                        },
+                        {
+                          time: 3,
+                          label: "Solution",
+                          heading: "No-code drag-and-drop rule builder",
+                          bullets: [
+                            "Natural language interface for building complex rules",
+                            "Real-time preview showing rule application on actual data",
+                            "Bulk pattern detection to apply rules at scale",
+                          ],
+                        },
+                        {
+                          time: 8,
+                          label: "Impact",
+                          heading: "↓85% engineering reliance | ↑32% conversion rate",
+                          text: "Sales teams could now configure custom rules during demos, dramatically shortening sales cycles.",
+                        },
+                      ]}
+                      containerClassName="aspect-video"
+                    />
                   </div>
                 </div>
               </div>
