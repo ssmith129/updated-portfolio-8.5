@@ -943,7 +943,8 @@ export default function ComputisCaseStudy() {
                         {
                           time: 8,
                           label: "Impact",
-                          heading: "↓40% compliance tickets | Enabled independent audit defense",
+                          heading:
+                            "↓40% compliance tickets | Enabled independent audit defense",
                           text: "CPAs could now defend classifications during audits without engineering support.",
                         },
                       ]}
@@ -991,7 +992,8 @@ export default function ComputisCaseStudy() {
                         {
                           time: 0,
                           label: "Challenge",
-                          heading: "85% engineering dependency for custom rules",
+                          heading:
+                            "85% engineering dependency for custom rules",
                           text: "Every client-specific rule required engineering work, creating bottlenecks and slowing sales cycles.",
                         },
                         {
@@ -1007,7 +1009,8 @@ export default function ComputisCaseStudy() {
                         {
                           time: 8,
                           label: "Impact",
-                          heading: "↓85% engineering reliance | ↑32% conversion rate",
+                          heading:
+                            "↓85% engineering reliance | ↑32% conversion rate",
                           text: "Sales teams could now configure custom rules during demos, dramatically shortening sales cycles.",
                         },
                       ]}
@@ -1064,7 +1067,8 @@ export default function ComputisCaseStudy() {
                         {
                           time: 3,
                           label: "Solution",
-                          heading: "Contextual anomaly detection with visual flags",
+                          heading:
+                            "Contextual anomaly detection with visual flags",
                           bullets: [
                             "Inline color-coded flags: 🔴 Critical, 🟡 Warning, 🟢 OK",
                             "Hover tooltips explaining specific anomalies and thresholds",
@@ -1074,7 +1078,8 @@ export default function ComputisCaseStudy() {
                         {
                           time: 8,
                           label: "Impact",
-                          heading: "↑50% anomaly detection | Reduced manual triage",
+                          heading:
+                            "↑50% anomaly detection | Reduced manual triage",
                           text: "CPAs could instantly spot and resolve pricing errors before client submissions.",
                         },
                       ]}
@@ -1128,7 +1133,8 @@ export default function ComputisCaseStudy() {
                         {
                           time: 3,
                           label: "Solution",
-                          heading: "Multi-tenant architecture with role-based access",
+                          heading:
+                            "Multi-tenant architecture with role-based access",
                           bullets: [
                             "Client-scoped views with granular role permissions",
                             "Seamless context switching between client accounts",
@@ -1138,7 +1144,8 @@ export default function ComputisCaseStudy() {
                         {
                           time: 8,
                           label: "Impact",
-                          heading: "Enabled enterprise-scale management | Unlocked 3 deals",
+                          heading:
+                            "Enabled enterprise-scale management | Unlocked 3 deals",
                           text: "Firms could now efficiently manage hundreds of clients with proper access controls and visibility.",
                         },
                       ]}
