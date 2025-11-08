@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import CaseStudies from "./pages/CaseStudies";
 import About from "./pages/About";
 import ComputisCaseStudy from "./pages/ComputisCaseStudy";
+import ComputisCaseStudySandbox from "./pages/ComputisCaseStudySandbox";
 import EzEMRxCaseStudy from "./pages/EzEMRxCaseStudy";
 import SymplifyCaseStudy from "./pages/SymplifyCaseStudy";
 import MoneyFarmCaseStudy from "./pages/MoneyFarmCaseStudy";
@@ -31,6 +32,10 @@ const App = () => (
             <Route
               path="/case-studies/computis-crypto-tax-engine"
               element={<ComputisCaseStudy />}
+            />
+            <Route
+              path="/case-studies/computis-crypto-tax-engine-sandbox"
+              element={<ComputisCaseStudySandbox />}
             />
             <Route
               path="/ComputisCaseStudy"
