@@ -24,6 +24,7 @@ import {
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import { useVideoAutoplayOnVisible } from "../hooks/use-video-autoplay";
+import { AnnotatedDemo } from "../components/case-study/AnnotatedDemo";
 
 export default function ComputisCaseStudy() {
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
