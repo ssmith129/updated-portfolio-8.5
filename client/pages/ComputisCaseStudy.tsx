@@ -867,7 +867,8 @@ export default function ComputisCaseStudy() {
                         {
                           time: 3,
                           label: "Solution",
-                          heading: "Confidence badges with explainable reasoning",
+                          heading:
+                            "Confidence badges with explainable reasoning",
                           bullets: [
                             "High/Medium/Low confidence chips tied to AI certainty scores",
                             "Reasoning tooltips that surface classification logic on hover",
@@ -877,7 +878,8 @@ export default function ComputisCaseStudy() {
                         {
                           time: 8,
                           label: "Impact",
-                          heading: "↓70% false positives | 100% CPA adoption in demos",
+                          heading:
+                            "↓70% false positives | 100% CPA adoption in demos",
                           text: "Once CPAs could inspect and override the AI, they shifted from skeptics to advocates.",
                         },
                       ]}
