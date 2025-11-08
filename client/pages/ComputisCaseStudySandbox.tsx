@@ -31,7 +31,6 @@ export default function ComputisCaseStudySandbox() {
 
   // Video autoplay refs with 40% visibility threshold
   const heroVideoRef = useVideoAutoplayOnVisible(0.4);
-  const auditDrawerVideoRef = useVideoAutoplayOnVisible(0.4);
   const ruleBuilderVideoRef = useVideoAutoplayOnVisible(0.4);
   const anomalyDetectionVideoRef = useVideoAutoplayOnVisible(0.4);
   const multiTenantVideoRef = useVideoAutoplayOnVisible(0.4);
