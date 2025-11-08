@@ -824,31 +824,6 @@ export default function ComputisCaseStudy() {
                     AI Confidence Chips + Override Control
                   </h3>
                 </div>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm text-[#888888] mb-1">Challenge</p>
-                    <p className="text-[#D1D5DB]">
-                      8/8 CPAs distrusted "black box" automation
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-[#888888] mb-1">Solution</p>
-                    <ul className="text-[#D1D5DB] space-y-1">
-                      <li>
-                        • Confidence badges (High/Medium/Low) with reasoning
-                        tooltips
-                      </li>
-                      <li>• One-click override preserving context</li>
-                      <li>• Full explainability of AI classification logic</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="text-sm text-[#888888] mb-1">Impact</p>
-                    <p className="text-[#00FFB3] font-medium">
-                      ↓70% false positives | 100% CPA adoption in demos
-                    </p>
-                  </div>
-                </div>
                 <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <AnnotatedDemo
