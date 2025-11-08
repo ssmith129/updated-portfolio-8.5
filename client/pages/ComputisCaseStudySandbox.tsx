@@ -955,31 +955,6 @@ export default function ComputisCaseStudySandbox() {
                     Contextual Anomaly Detection
                   </h3>
                 </div>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm text-[#888888] mb-1">Challenge</p>
-                    <p className="text-[#D1D5DB]">
-                      Hidden fair market value (FMV) errors
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-[#888888] mb-1">Solution</p>
-                    <ul className="text-[#D1D5DB] space-y-1">
-                      <li>
-                        • Inline color-coded flags (🔴 Critical, 🟡 Warning, 🟢
-                        OK)
-                      </li>
-                      <li>• Hover tooltips explaining anomaly</li>
-                      <li>• Smart filtering by severity</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="text-sm text-[#888888] mb-1">Impact</p>
-                    <p className="text-[#00FFB3] font-medium">
-                      ↑150% anomaly detection | Reduced manual triage
-                    </p>
-                  </div>
-                </div>
                 <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
                   <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
                     <AnnotatedDemo
