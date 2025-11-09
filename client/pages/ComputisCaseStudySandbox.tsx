@@ -172,7 +172,7 @@ export default function ComputisCaseStudySandbox() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-medium text-[#D1D5DB] mb-1">
+                  <p className="text-sm font-medium text-[#B0AFAF] mb-1">
                     CPA onboarding time
                   </p>
                   <p className="text-xs text-[#9CA3AF]">(2.5h → 1.4h)</p>
@@ -186,7 +186,7 @@ export default function ComputisCaseStudySandbox() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-medium text-[#D1D5DB] mb-1">
+                  <p className="text-sm font-medium text-[#B0AFAF] mb-1">
                     Demo-to-conversion rate
                   </p>
                   <p className="text-xs text-[#9CA3AF]">increase</p>
@@ -200,7 +200,7 @@ export default function ComputisCaseStudySandbox() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-medium text-[#D1D5DB] mb-1">
+                  <p className="text-sm font-medium text-[#B0AFAF] mb-1">
                     Engineering dependency
                   </p>
                   <p className="text-xs text-[#9CA3AF]">reduction</p>
@@ -214,7 +214,7 @@ export default function ComputisCaseStudySandbox() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-medium text-[#D1D5DB] mb-1">
+                  <p className="text-sm font-medium text-[#B0AFAF] mb-1">
                     FMV disputes
                   </p>
                   <p className="text-xs text-[#9CA3AF]">post-launch</p>
@@ -278,7 +278,7 @@ export default function ComputisCaseStudySandbox() {
                 Tax platforms prioritize speed. CPAs prioritize defensibility.
               </h3>
 
-              <p className="text-base text-[#D1D5DB] leading-relaxed">
+              <p className="text-base text-[#B0AFAF] leading-relaxed">
                 Before Computis, accounting firms faced a critical dilemma:{" "}
                 <strong className="text-white">opaque AI systems</strong> that
                 required manual verification—defeating automation's promise.
@@ -356,7 +356,7 @@ export default function ComputisCaseStudySandbox() {
               <p className="text-sm font-semibold text-[#00FFB3] mb-2">
                 Research Finding:
               </p>
-              <ul className="space-y-2 text-sm text-[#D1D5DB]">
+              <ul className="space-y-2 text-sm text-[#B0AFAF]">
                 <li className="flex items-start gap-2">
                   <span className="text-[#00FFB3] mt-0.5">•</span>
                   <span>
@@ -395,7 +395,7 @@ export default function ComputisCaseStudySandbox() {
               Research: Understanding Professional Skepticism
             </h2>
 
-            <p className="text-base text-[#D1D5DB] leading-relaxed mb-6">
+            <p className="text-base text-[#B0AFAF] leading-relaxed mb-6">
               <strong className="text-white">
                 10-week foundational study:
               </strong>
@@ -463,7 +463,7 @@ export default function ComputisCaseStudySandbox() {
                       1. Professional Liability &gt; Efficiency
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(28 quotes)</p>
-                    <p className="text-[#D1D5DB]">
+                    <p className="text-[#B0AFAF]">
                       Finding: 8/8 participants prioritized IRS defensibility
                       over time savings
                     </p>
@@ -481,7 +481,7 @@ export default function ComputisCaseStudySandbox() {
                       2. Engineering Dependency Blocks Scale
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(19 quotes)</p>
-                    <p className="text-[#D1D5DB]">
+                    <p className="text-[#B0AFAF]">
                       Finding: 2-3 day wait times for Python script execution
                     </p>
                   </div>
@@ -498,7 +498,7 @@ export default function ComputisCaseStudySandbox() {
                       3. Audit Trails = Enterprise Dealbreaker
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(31 quotes)</p>
-                    <p className="text-[#D1D5DB]">
+                    <p className="text-[#B0AFAF]">
                       Finding: 4/4 competitors lack comprehensive change history
                     </p>
                   </div>
@@ -515,7 +515,7 @@ export default function ComputisCaseStudySandbox() {
                       4. Manual Work Fails at Scale
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(26 quotes)</p>
-                    <p className="text-[#D1D5DB]">
+                    <p className="text-[#B0AFAF]">
                       Finding: 600 hours per client at 3,000 transactions (12
                       min each)
                     </p>
@@ -533,7 +533,7 @@ export default function ComputisCaseStudySandbox() {
                       5. Trust Requires Control, Not Replacement
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(23 quotes)</p>
-                    <p className="text-[#D1D5DB]">
+                    <p className="text-[#B0AFAF]">
                       Finding: 100% adoption when override controls demonstrated
                     </p>
                   </div>
@@ -547,7 +547,7 @@ export default function ComputisCaseStudySandbox() {
                 <Target className="w-5 h-5 text-[#00D4FF]" />
                 Synthesis: The Core Design Tension
               </h3>
-              <p className="text-[#D1D5DB] leading-relaxed mb-3">
+              <p className="text-[#B0AFAF] leading-relaxed mb-3">
                 CPAs needed automation for scale but couldn't sacrifice
                 professional defensibility.
               </p>
@@ -621,7 +621,7 @@ export default function ComputisCaseStudySandbox() {
                   </thead>
                   <tbody>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="text-[#D1D5DB] text-sm p-4">
+                      <td className="text-[#B0AFAF] text-sm p-4">
                         AI Explainability
                       </td>
                       <td className="text-center p-4 bg-[#00D4FF]/5">
@@ -641,7 +641,7 @@ export default function ComputisCaseStudySandbox() {
                       </td>
                     </tr>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="text-[#D1D5DB] text-sm p-4">
+                      <td className="text-[#B0AFAF] text-sm p-4">
                         Audit Trails
                       </td>
                       <td className="text-center p-4 bg-[#00D4FF]/5">
@@ -663,7 +663,7 @@ export default function ComputisCaseStudySandbox() {
                       </td>
                     </tr>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="text-[#D1D5DB] text-sm p-4">
+                      <td className="text-[#B0AFAF] text-sm p-4">
                         CPA-First Design
                       </td>
                       <td className="text-center p-4 bg-[#00D4FF]/5">
@@ -695,7 +695,7 @@ export default function ComputisCaseStudySandbox() {
               <h3 className="text-lg font-semibold text-white mb-3">
                 Key Finding
               </h3>
-              <p className="text-[#D1D5DB] mb-4">
+              <p className="text-[#B0AFAF] mb-4">
                 Every competitor prioritized speed over defensibility.
               </p>
               <p className="text-white font-semibold">
@@ -707,7 +707,7 @@ export default function ComputisCaseStudySandbox() {
                 <p className="text-sm font-semibold text-[#00D4FF] mb-2">
                   Our Strategic Bet: Trust over feature parity
                 </p>
-                <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                <ul className="space-y-2 text-sm text-[#B0AFAF]">
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">P0:</span>
                     <span>Audit trail + confidence system</span>
@@ -765,7 +765,7 @@ export default function ComputisCaseStudySandbox() {
                   <h4 className="text-base font-semibold text-white mb-1">
                     Foundation
                   </h4>
-                  <ul className="text-[#D1D5DB] space-y-1 text-sm">
+                  <ul className="text-[#B0AFAF] space-y-1 text-sm">
                     <li>• Journey mapping for CPA, Analyst, Admin personas</li>
                     <li>• Trust framework principles defined</li>
                     <li>• IA explorations tested with 3 CPAs</li>
@@ -781,7 +781,7 @@ export default function ComputisCaseStudySandbox() {
                   <h4 className="text-base font-semibold text-white mb-1">
                     Exploration
                   </h4>
-                  <ul className="text-[#D1D5DB] space-y-1 text-sm">
+                  <ul className="text-[#B0AFAF] space-y-1 text-sm">
                     <li>• Rapid prototyping: 3 dashboard approaches</li>
                     <li>• Usability testing identified friction points</li>
                     <li>• Iterated confidence system 4 times</li>
@@ -797,7 +797,7 @@ export default function ComputisCaseStudySandbox() {
                   <h4 className="text-base font-semibold text-white mb-1">
                     Validation
                   </h4>
-                  <ul className="text-[#D1D5DB] space-y-1 text-sm">
+                  <ul className="text-[#B0AFAF] space-y-1 text-sm">
                     <li>• High-fidelity prototype testing</li>
                     <li>• Engineering feasibility validation</li>
                     <li>• Design system documentation</li>
@@ -1054,7 +1054,7 @@ export default function ComputisCaseStudySandbox() {
                 <h4 className="text-sm font-semibold text-[#00FFB3] mb-3">
                   User Efficiency
                 </h4>
-                <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                <ul className="space-y-2 text-sm text-[#B0AFAF]">
                   <li>↓45% CPA onboarding time (2.5h → 1.4h)</li>
                   <li>↓40% support tickets</li>
                   <li>Zero FMV disputes post-launch</li>
@@ -1065,7 +1065,7 @@ export default function ComputisCaseStudySandbox() {
                 <h4 className="text-sm font-semibold text-[#FFD700] mb-3">
                   Business Growth
                 </h4>
-                <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                <ul className="space-y-2 text-sm text-[#B0AFAF]">
                   <li>↑32% demo-to-conversion rate</li>
                   <li>3 enterprise CPA partnerships</li>
                   <li>Scaled to DAOs, hedge funds, multi-client firms</li>
@@ -1076,7 +1076,7 @@ export default function ComputisCaseStudySandbox() {
                 <h4 className="text-sm font-semibold text-[#00D4FF] mb-3">
                   Technical Excellence
                 </h4>
-                <ul className="space-y-2 text-sm text-[#D1D5DB]">
+                <ul className="space-y-2 text-sm text-[#B0AFAF]">
                   <li>↓85% engineering dependency</li>
                   <li>90-second real-time processing (vs 2-3 day wait)</li>
                   <li>Self-service rule customization</li>
@@ -1133,7 +1133,7 @@ export default function ComputisCaseStudySandbox() {
                       6/8 CPAs ignored 20+ feature requests to prioritize audit
                       trail
                     </p>
-                    <p className="text-[#D1D5DB] mb-2">
+                    <p className="text-[#B0AFAF] mb-2">
                       <strong className="text-white">Learning:</strong>{" "}
                       Professional liability creates different value
                       hierarchies. Transparency features drove 32% conversion
@@ -1161,7 +1161,7 @@ export default function ComputisCaseStudySandbox() {
                       Role-based IA supported 100+ client portfolios without
                       refactor
                     </p>
-                    <p className="text-[#D1D5DB] mb-2">
+                    <p className="text-[#B0AFAF] mb-2">
                       <strong className="text-white">Learning:</strong> Systems
                       thinking &gt; screen design. Early architectural decisions
                       enabled enterprise growth.
@@ -1187,7 +1187,7 @@ export default function ComputisCaseStudySandbox() {
                       <strong className="text-[#8B5CF6]">Application:</strong>{" "}
                       Override controls flipped AI from threat to tool
                     </p>
-                    <p className="text-[#D1D5DB] mb-2">
+                    <p className="text-[#B0AFAF] mb-2">
                       <strong className="text-white">Learning:</strong>{" "}
                       Confidence indicators enabled informed decisions vs blind
                       acceptance. CPAs wanted augmentation, not replacement.
@@ -1213,7 +1213,7 @@ export default function ComputisCaseStudySandbox() {
                       Self-service features reduced costs; audit trails closed
                       enterprise deals
                     </p>
-                    <p className="text-[#D1D5DB] mb-2">
+                    <p className="text-[#B0AFAF] mb-2">
                       <strong className="text-white">Learning:</strong> UX
                       decisions directly impacted revenue (3 partnerships) and
                       efficiency (85% less eng dependency).
@@ -1240,7 +1240,7 @@ export default function ComputisCaseStudySandbox() {
                 <h3 className="text-lg font-semibold text-white mb-3">
                   1. Earlier Engineering Involvement
                 </h3>
-                <div className="space-y-3 text-[#D1D5DB]">
+                <div className="space-y-3 text-[#B0AFAF]">
                   <p>
                     <strong className="text-[#EF4444]">What happened:</strong>{" "}
                     Designed complex bulk import at Week 5 → API limits flagged
@@ -1264,7 +1264,7 @@ export default function ComputisCaseStudySandbox() {
                 <h3 className="text-lg font-semibold text-white mb-3">
                   2. Structured Usability Testing from Start
                 </h3>
-                <div className="space-y-3 text-[#D1D5DB]">
+                <div className="space-y-3 text-[#B0AFAF]">
                   <p>
                     <strong className="text-[#EF4444]">What happened:</strong>{" "}
                     Informal testing missed 4/6 CPAs struggling with bulk rule
@@ -1289,7 +1289,7 @@ export default function ComputisCaseStudySandbox() {
                 <h3 className="text-lg font-semibold text-white mb-3">
                   3. Ongoing Competitive Monitoring
                 </h3>
-                <div className="space-y-3 text-[#D1D5DB]">
+                <div className="space-y-3 text-[#B0AFAF]">
                   <p>
                     <strong className="text-[#EF4444]">What happened:</strong>{" "}
                     Single competitive analysis at project start
