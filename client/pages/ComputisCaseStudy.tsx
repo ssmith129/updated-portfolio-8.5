@@ -457,18 +457,18 @@ export default function ComputisCaseStudy() {
               Five Critical Insights
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all h-full flex flex-col">
-                <div className="flex items-start gap-4 flex-1">
-                  <div className="w-12 h-12 rounded-lg bg-[#EF4444]/10 flex items-center justify-center flex-shrink-0">
-                    <ShieldAlert className="w-6 h-6 text-[#EF4444]" />
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-start">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all h-full flex flex-col justify-start items-center">
+                <div className="w-12 h-12 rounded-lg bg-[#EF4444]/10 flex items-center justify-center mb-5">
+                  <ShieldAlert className="w-6 h-6 text-[#EF4444]" />
+                </div>
+                <div className="flex items-start gap-4 flex-1 text-center">
                   <div>
-                    <h4 className="text-lg font-bold text-white mb-2">
+                    <h4 className="text-sm font-semibold text-white mb-2">
                       1. Professional Liability &gt; Efficiency
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(28 quotes)</p>
-                    <p className="text-[#B0AFAF] text-base leading-6">
+                    <p className="text-[#B7B7B7] text-sm leading-5 mt-5">
                       Finding: 8/8 participants prioritized IRS defensibility
                       over time savings
                     </p>
@@ -476,51 +476,53 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all h-full flex flex-col">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all h-full flex flex-col text-center justify-start items-center">
+                <div className="w-12 h-12 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center mb-5">
+                  <Clock className="w-6 h-6 text-[#F59E0B]" />
+                </div>
                 <div className="flex items-start gap-4 flex-1 justify-start">
-                  <div className="w-12 h-12 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-[#F59E0B]" />
-                  </div>
                   <div>
-                    <h4 className="text-lg font-bold text-white mb-2">
+                    <h4 className="text-sm font-semibold text-white mb-2">
                       2. Engineering Dependency Blocks Scale
                     </h4>
-                    <p className="text-base text-[#DBDBDB] mb-2 pt-5">(19 quotes)</p>
-                    <p className="text-[#B0AFAF] text-base leading-6">
-                      Finding: 2-3 day wait times for Python script execution
+                    <p className="text-sm text-[#888888] mb-2">(19 quotes)</p>
+                    <p className="text-[#B0AFAF] text-sm leading-5 m-5">
+                      <span className="text-[#B7B7B7]">
+                        Finding: 2-3 day wait times for Python script execution
+                      </span>
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#8B5CF6]/40 transition-all h-full flex flex-col">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#8B5CF6]/40 transition-all h-full flex flex-col justify-start items-center">
+                <div className="w-12 h-12 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center mb-5">
+                  <FileText className="w-6 h-6 text-[#8B5CF6]" />
+                </div>
                 <div className="flex items-start gap-4 flex-1">
-                  <div className="w-12 h-12 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center flex-shrink-0">
-                    <FileText className="w-6 h-6 text-[#8B5CF6]" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-white mb-2">
+                  <div className="text-center">
+                    <h4 className="text-sm font-semibold text-white mb-2">
                       3. Audit Trails = Enterprise Dealbreaker
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(31 quotes)</p>
-                    <p className="text-[#B0AFAF] text-base leading-6">
+                    <p className="text-[#B7B7B7] text-sm leading-5 m-5">
                       Finding: 4/4 competitors lack comprehensive change history
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all h-full flex flex-col">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all h-full flex flex-col justify-start items-center">
+                <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-5">
+                  <Layers className="w-6 h-6 text-[#00D4FF]" />
+                </div>
                 <div className="flex flex-row gap-4 flex-1">
-                  <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
-                    <Layers className="w-6 h-6 text-[#00D4FF]" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-white mb-2">
+                  <div className="text-center">
+                    <h4 className="text-base font-semibold text-white mb-2">
                       4. Manual Work Fails at Scale
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(26 quotes)</p>
-                    <p className="text-[#B0AFAF] text-base leading-6">
+                    <p className="text-[#B7B7B7] text-sm leading-5 mt-5">
                       Finding: 600 hours per client at 3,000 transactions (12
                       min each)
                     </p>
@@ -528,17 +530,17 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00FFB3]/40 transition-all h-full flex flex-col">
-                <div className="flex items-start gap-4 flex-1">
-                  <div className="w-12 h-12 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
-                    <ToggleLeft className="w-6 h-6 text-[#00FFB3]" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-white mb-2">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] py-5 px-6 pb-6 border border-[#2A2A2A] hover:border-[#00FFB3]/40 transition-all h-full flex flex-col justify-start items-center">
+                <div className="w-12 h-12 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center mb-5">
+                  <ToggleLeft className="w-6 h-6 text-[#00FFB3]" />
+                </div>
+                <div className="flex items-start gap-4 flex-1 justify-center">
+                  <div className="text-center">
+                    <h4 className="text-sm font-medium text-white leading-5 mb-2">
                       5. Trust Requires Control, Not Replacement
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(23 quotes)</p>
-                    <p className="text-[#B0AFAF] text-base leading-6">
+                    <p className="text-[#B7B7B7] text-sm leading-5 mt-5">
                       Finding: 100% adoption when override controls demonstrated
                     </p>
                   </div>
@@ -553,7 +555,7 @@ export default function ComputisCaseStudy() {
                   <Target className="w-6 h-6 text-[#00D4FF]" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">
+                  <h3 className="text-lg font-semibold text-white mb-2">
                     Synthesis: The Core Design Tension
                   </h3>
                   <p className="text-[#B0AFAF] text-base leading-relaxed">
@@ -563,8 +565,16 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
               <div className="bg-[#0F0F0F] rounded-xl p-6 border-l-4 border-[#00FFB3]">
-                <p className="text-lg font-semibold text-[#00FFB3] uppercase tracking-wide mb-3">
-                  Strategic Decision
+                <p className="text-[19px] text-[#00FFB3] uppercase tracking-wide mb-3">
+                  <span>
+                    <span>
+                      <strong>
+                        <span className="font-medium">
+                          Strategic Decision
+                        </span>
+                      </strong>
+                    </span>
+                  </span>
                 </p>
                 <p className="text-white font-normal leading-7 mt-5 italic">
                   Make AI auditable, not just "better"
@@ -983,7 +993,7 @@ export default function ComputisCaseStudy() {
                           heading:
                             "Contextual anomaly detection with visual flags",
                           bullets: [
-                            "Inline color-coded flags: 🔴 Critical, 🟡 Warning, 🟢 OK",
+                            "Inline color-coded flags: 🔴 Critical, ��� Warning, 🟢 OK",
                             "Hover tooltips explaining specific anomalies and thresholds",
                             "Smart filtering by severity level for efficient triage",
                           ],
