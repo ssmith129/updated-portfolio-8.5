@@ -453,7 +453,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Five Critical Insights */}
-            <h3 className="text-lg font-semibold text-[#00D4FF] mb-6">
+            <h3 className="text-lg font-semibold text-[#00D4FF] mb-6 pb-5">
               Five Critical Insights
             </h3>
 
@@ -468,7 +468,7 @@ export default function ComputisCaseStudy() {
                       1. Professional Liability &gt; Efficiency
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(28 quotes)</p>
-                    <p className="text-[#B0AFAF]">
+                    <p className="text-[#B0AFAF] text-base leading-6">
                       Finding: 8/8 participants prioritized IRS defensibility
                       over time savings
                     </p>
@@ -477,7 +477,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all h-full flex flex-col">
-                <div className="flex items-start gap-4 flex-1">
+                <div className="flex items-start gap-4 flex-1 justify-start">
                   <div className="w-12 h-12 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-[#F59E0B]" />
                   </div>
@@ -485,8 +485,8 @@ export default function ComputisCaseStudy() {
                     <h4 className="text-lg font-bold text-white mb-2">
                       2. Engineering Dependency Blocks Scale
                     </h4>
-                    <p className="text-sm text-[#888888] mb-2">(19 quotes)</p>
-                    <p className="text-[#B0AFAF]">
+                    <p className="text-base text-[#DBDBDB] mb-2 pt-5">(19 quotes)</p>
+                    <p className="text-[#B0AFAF] text-base leading-6">
                       Finding: 2-3 day wait times for Python script execution
                     </p>
                   </div>
@@ -503,7 +503,7 @@ export default function ComputisCaseStudy() {
                       3. Audit Trails = Enterprise Dealbreaker
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(31 quotes)</p>
-                    <p className="text-[#B0AFAF]">
+                    <p className="text-[#B0AFAF] text-base leading-6">
                       Finding: 4/4 competitors lack comprehensive change history
                     </p>
                   </div>
@@ -511,7 +511,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all h-full flex flex-col">
-                <div className="flex items-start gap-4 flex-1">
+                <div className="flex flex-row gap-4 flex-1">
                   <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <Layers className="w-6 h-6 text-[#00D4FF]" />
                   </div>
@@ -520,7 +520,7 @@ export default function ComputisCaseStudy() {
                       4. Manual Work Fails at Scale
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(26 quotes)</p>
-                    <p className="text-[#B0AFAF]">
+                    <p className="text-[#B0AFAF] text-base leading-6">
                       Finding: 600 hours per client at 3,000 transactions (12
                       min each)
                     </p>
@@ -538,7 +538,7 @@ export default function ComputisCaseStudy() {
                       5. Trust Requires Control, Not Replacement
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(23 quotes)</p>
-                    <p className="text-[#B0AFAF]">
+                    <p className="text-[#B0AFAF] text-base leading-6">
                       Finding: 100% adoption when override controls demonstrated
                     </p>
                   </div>
