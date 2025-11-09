@@ -231,7 +231,7 @@ export default function ComputisCaseStudy() {
               Quick Facts
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex flex-row sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="space-y-2">
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
                   Role
@@ -240,7 +240,7 @@ export default function ComputisCaseStudy() {
                   Lead Product Designer (Founding Designer)
                 </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 self-center sm:self-auto">
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
                   Timeline
                 </h3>
@@ -408,7 +408,7 @@ export default function ComputisCaseStudy() {
 
             {/* Research Synthesis Image */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
-              <p className="text-sm text-[#888888] mb-3">
+              <p className="text-sm text-[#C1C1C1] mb-3">
                 Research Synthesis & Affinity Wall
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
@@ -431,7 +431,7 @@ export default function ComputisCaseStudy() {
 
             {/* Sample Usability Study Structure */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
-              <p className="text-sm text-[#888888] mb-3">
+              <p className="text-sm text-[#C1C1C1] mb-3">
                 Sample Usability Study Structure
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
@@ -740,7 +740,7 @@ export default function ComputisCaseStudy() {
 
             {/* Design Process Evolution Image */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
-              <p className="text-sm text-[#888888] mb-3">
+              <p className="text-sm text-[#C1C1C1] sm:text-[#888888] mb-3">
                 Design Process Evolution
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
@@ -1115,7 +1115,7 @@ export default function ComputisCaseStudy() {
 
             {/* Usability Test Results Image */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-8">
-              <p className="text-sm text-[#888888] mb-3">
+              <p className="text-sm text-[#B7B7B7] mb-3">
                 Usability Test Results
               </p>
               <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
