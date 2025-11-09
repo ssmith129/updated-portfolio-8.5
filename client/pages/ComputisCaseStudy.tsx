@@ -453,13 +453,13 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Five Critical Insights */}
-            <h3 className="text-lg font-semibold text-[#00D4FF] mb-4">
+            <h3 className="text-lg font-semibold text-[#00D4FF] mb-6">
               Five Critical Insights
             </h3>
 
-            <div className="space-y-6">
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all">
-                <div className="flex items-start gap-4 mb-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all h-full flex flex-col">
+                <div className="flex items-start gap-4 flex-1">
                   <div className="w-12 h-12 rounded-lg bg-[#EF4444]/10 flex items-center justify-center flex-shrink-0">
                     <ShieldAlert className="w-6 h-6 text-[#EF4444]" />
                   </div>
@@ -476,8 +476,8 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all">
-                <div className="flex items-start gap-4 mb-3">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all h-full flex flex-col">
+                <div className="flex items-start gap-4 flex-1">
                   <div className="w-12 h-12 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-[#F59E0B]" />
                   </div>
@@ -493,8 +493,8 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#8B5CF6]/40 transition-all">
-                <div className="flex items-start gap-4 mb-3">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#8B5CF6]/40 transition-all h-full flex flex-col">
+                <div className="flex items-start gap-4 flex-1">
                   <div className="w-12 h-12 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center flex-shrink-0">
                     <FileText className="w-6 h-6 text-[#8B5CF6]" />
                   </div>
@@ -510,8 +510,8 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all">
-                <div className="flex items-start gap-4 mb-3">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all h-full flex flex-col">
+                <div className="flex items-start gap-4 flex-1">
                   <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <Layers className="w-6 h-6 text-[#00D4FF]" />
                   </div>
@@ -528,8 +528,8 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00FFB3]/40 transition-all">
-                <div className="flex items-start gap-4 mb-3">
+              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00FFB3]/40 transition-all h-full flex flex-col">
+                <div className="flex items-start gap-4 flex-1">
                   <div className="w-12 h-12 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
                     <ToggleLeft className="w-6 h-6 text-[#00FFB3]" />
                   </div>
@@ -547,20 +547,26 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Synthesis */}
-            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20 mt-8">
-              <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
-                <Target className="w-5 h-5 text-[#00D4FF]" />
-                Synthesis: The Core Design Tension
-              </h3>
-              <p className="text-[#B0AFAF] leading-relaxed mb-3">
-                CPAs needed automation for scale but couldn't sacrifice
-                professional defensibility.
-              </p>
-              <div className="bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#00FFB3]">
-                <p className="text-sm font-semibold text-[#00FFB3] mb-2">
-                  Strategic Decision:
+            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-8 border border-[#00D4FF]/20 mt-12">
+              <div className="flex items-start gap-3 mb-6">
+                <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/20 flex items-center justify-center flex-shrink-0">
+                  <Target className="w-6 h-6 text-[#00D4FF]" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Synthesis: The Core Design Tension
+                  </h3>
+                  <p className="text-[#B0AFAF] text-base leading-relaxed">
+                    CPAs needed automation for scale but couldn't sacrifice
+                    professional defensibility.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[#0F0F0F] rounded-xl p-6 border-l-4 border-[#00FFB3]">
+                <p className="text-sm font-semibold text-[#00FFB3] uppercase tracking-wide mb-3">
+                  Strategic Decision
                 </p>
-                <p className="text-white font-medium">
+                <p className="text-white text-lg font-semibold">
                   Make AI auditable, not just "better"
                 </p>
               </div>
