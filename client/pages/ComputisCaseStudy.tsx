@@ -599,7 +599,7 @@ export default function ComputisCaseStudy() {
 
         {/* Competitive Landscape */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] py-2.5 px-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Competitive Landscape: The Transparency Gap
             </h2>
