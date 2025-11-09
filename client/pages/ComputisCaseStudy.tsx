@@ -777,52 +777,58 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-[#00D4FF] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0">
-                  1
+            <div className="flex flex-col">
+              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-[#00D4FF] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0">
+                      1
+                    </div>
+                    <div>
+                      <h4 className="text-base font-semibold text-white mb-1">
+                        Foundation
+                      </h4>
+                      <ul className="text-[#B0AFAF] space-y-1 text-sm">
+                        <li className="text-base">• Journey mapping for CPA, Analyst, Admin personas</li>
+                        <li className="text-base">• Trust framework principles defined</li>
+                        <li className="text-base">• IA explorations tested with 3 CPAs</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-base font-semibold text-white mb-1">
-                    Foundation
-                  </h4>
-                  <ul className="text-[#B0AFAF] space-y-1 text-sm">
-                    <li>• Journey mapping for CPA, Analyst, Admin personas</li>
-                    <li>• Trust framework principles defined</li>
-                    <li>• IA explorations tested with 3 CPAs</li>
-                  </ul>
+                <div className="flex flex-col w-[33%] ml-5 max-md:ml-0 max-md:w-full">
+                  <div className="flex items-start gap-4 h-auto flex-grow">
+                    <div className="w-8 h-8 bg-[#00FFB3] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0">
+                      2
+                    </div>
+                    <div>
+                      <h4 className="text-base font-semibold text-white mb-1">
+                        Exploration
+                      </h4>
+                      <ul className="text-[#B0AFAF] space-y-1 text-sm">
+                        <li className="text-base">• Rapid prototyping: 3 dashboard approaches</li>
+                        <li className="text-base">• Usability testing identified friction points</li>
+                        <li className="text-base">• Iterated confidence system 4 times</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-[#00FFB3] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0">
-                  2
-                </div>
-                <div>
-                  <h4 className="text-base font-semibold text-white mb-1">
-                    Exploration
-                  </h4>
-                  <ul className="text-[#B0AFAF] space-y-1 text-sm">
-                    <li>• Rapid prototyping: 3 dashboard approaches</li>
-                    <li>• Usability testing identified friction points</li>
-                    <li>• Iterated confidence system 4 times</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
-                  3
-                </div>
-                <div>
-                  <h4 className="text-base font-semibold text-white mb-1">
-                    Validation
-                  </h4>
-                  <ul className="text-[#B0AFAF] space-y-1 text-sm">
-                    <li>• High-fidelity prototype testing</li>
-                    <li>• Engineering feasibility validation</li>
-                    <li>• Design system documentation</li>
-                  </ul>
+                <div className="flex flex-col w-[33%] ml-5 max-md:ml-0 max-md:w-full">
+                  <div className="flex items-start gap-4 h-auto flex-grow">
+                    <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                      3
+                    </div>
+                    <div>
+                      <h4 className="text-base font-semibold text-white mb-1">
+                        Validation
+                      </h4>
+                      <ul className="text-[#B0AFAF] space-y-1 text-sm">
+                        <li className="text-base">• High-fidelity prototype testing</li>
+                        <li className="text-base">• Engineering feasibility validation</li>
+                        <li className="text-base">• Design system documentation</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
