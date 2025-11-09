@@ -156,11 +156,11 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1440px] mx-auto px-5 pb-12 space-y-20 relative z-10">
+      <main className="max-w-[1200px] mx-auto px-5 pb-12 space-y-20 relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] shadow-2xl">
-            <h2 className="text-3xl font-semibold text-white mb-8">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-10 pb-0 border border-[#1A1A1A] shadow-2xl">
+            <h2 className="text-3xl font-semibold text-white pb-5 mb-5">
               Impact at a Glance
             </h2>
 
@@ -226,12 +226,12 @@ export default function ComputisCaseStudy() {
 
         {/* Quick Facts */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] py-2.5 px-10 border border-[#1A1A1A]">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-white pb-5">
               Quick Facts
             </h2>
 
-            <div className="flex flex-row sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex flex-row sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
               <div className="space-y-2">
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
                   Role
