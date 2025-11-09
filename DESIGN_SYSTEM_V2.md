@@ -9,6 +9,7 @@ This document outlines the comprehensive design system overhaul implemented to a
 ## 1. Enhanced Typography System
 
 ### The Problem (Before)
+
 - **Body text too small**: 16px caused reading fatigue in long-form content
 - **Weak hierarchy**: Headings didn't create sufficient visual distinction
 - **Poor line-height**: 1.4-1.5 line-height caused eye strain
@@ -17,19 +18,20 @@ This document outlines the comprehensive design system overhaul implemented to a
 ### The Solution (After)
 
 #### Desktop Type Scale
+
 ```css
 /* Headings - Clear hierarchy with proper letter-spacing */
 h1 {
-  font-size: 3.5rem;        /* 56px */
+  font-size: 3.5rem; /* 56px */
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  margin-top: 4rem;         /* 64px */
-  margin-bottom: 2rem;      /* 32px */
+  margin-top: 4rem; /* 64px */
+  margin-bottom: 2rem; /* 32px */
 }
 
 h2 {
-  font-size: 2.5rem;        /* 40px */
+  font-size: 2.5rem; /* 40px */
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.01em;
@@ -38,15 +40,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;       /* 28px */
+  font-size: 1.75rem; /* 28px */
   font-weight: 600;
   line-height: 1.3;
-  margin-top: 3rem;         /* 48px */
-  margin-bottom: 1.5rem;    /* 24px */
+  margin-top: 3rem; /* 48px */
+  margin-bottom: 1.5rem; /* 24px */
 }
 
 h4 {
-  font-size: 1.25rem;       /* 20px */
+  font-size: 1.25rem; /* 20px */
   font-weight: 600;
   line-height: 1.4;
   margin-top: 3rem;
@@ -55,41 +57,53 @@ h4 {
 
 /* Body Text - Enhanced readability */
 p {
-  font-size: 1.125rem;      /* 18px - 12.5% larger than before */
-  line-height: 1.7;         /* WCAG compliant - 1.5 minimum */
-  max-width: 70ch;          /* Optimal line length */
+  font-size: 1.125rem; /* 18px - 12.5% larger than before */
+  line-height: 1.7; /* WCAG compliant - 1.5 minimum */
+  max-width: 70ch; /* Optimal line length */
 }
 
 /* Emphasis Text */
 .lead {
-  font-size: 1.375rem;      /* 22px */
+  font-size: 1.375rem; /* 22px */
   line-height: 1.6;
   font-weight: 400;
 }
 
 /* Small Text */
 .caption {
-  font-size: 0.875rem;      /* 14px */
+  font-size: 0.875rem; /* 14px */
   line-height: 1.5;
   opacity: 0.8;
 }
 
 /* Statistics */
 .stat {
-  font-size: 3rem;          /* 48px */
+  font-size: 3rem; /* 48px */
   font-weight: 700;
   line-height: 1;
 }
 ```
 
 #### Mobile Type Scale (< 768px)
+
 ```css
 @media (max-width: 767px) {
-  h1 { font-size: 2.5rem; }  /* 40px */
-  h2 { font-size: 2rem; }    /* 32px */
-  h3 { font-size: 1.5rem; }  /* 24px */
-  p { font-size: 1rem; line-height: 1.6; }  /* 16px */
-  .stat { font-size: 2.5rem; }  /* 40px */
+  h1 {
+    font-size: 2.5rem;
+  } /* 40px */
+  h2 {
+    font-size: 2rem;
+  } /* 32px */
+  h3 {
+    font-size: 1.5rem;
+  } /* 24px */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  } /* 16px */
+  .stat {
+    font-size: 2.5rem;
+  } /* 40px */
 }
 ```
 
@@ -120,16 +134,18 @@ p {
 ```
 
 ### Benefits
+
 ✅ **18% increase** in reading comfort (user testing)  
 ✅ **1.7 line-height** meets WCAG 2.1 Level AA (1.5 minimum)  
 ✅ **70ch max-width** ensures optimal 50-75 character line length  
-✅ **Responsive scaling** maintains readability across all devices  
+✅ **Responsive scaling** maintains readability across all devices
 
 ---
 
 ## 2. Spacing System - 8px Grid
 
 ### The Problem (Before)
+
 - **Inconsistent spacing**: No systematic approach
 - **Cramped layouts**: Insufficient breathing room
 - **Poor vertical rhythm**: Irregular spacing between elements
@@ -138,63 +154,66 @@ p {
 ### The Solution (After)
 
 #### 8px Grid System
+
 ```css
 :root {
-  --space-xs: 0.5rem;    /* 8px  - Tight spacing */
-  --space-sm: 1rem;      /* 16px - Compact spacing */
-  --space-md: 1.5rem;    /* 24px - Standard spacing */
-  --space-lg: 2rem;      /* 32px - Comfortable spacing */
-  --space-xl: 3rem;      /* 48px - Generous spacing */
-  --space-2xl: 4rem;     /* 64px - Section spacing */
-  --space-3xl: 6rem;     /* 96px - Major section spacing */
+  --space-xs: 0.5rem; /* 8px  - Tight spacing */
+  --space-sm: 1rem; /* 16px - Compact spacing */
+  --space-md: 1.5rem; /* 24px - Standard spacing */
+  --space-lg: 2rem; /* 32px - Comfortable spacing */
+  --space-xl: 3rem; /* 48px - Generous spacing */
+  --space-2xl: 4rem; /* 64px - Section spacing */
+  --space-3xl: 6rem; /* 96px - Major section spacing */
 }
 ```
 
 #### Applied Spacing Rules
+
 ```css
 /* Section Spacing */
 section {
-  padding: var(--space-3xl) 0;  /* 96px top/bottom */
+  padding: var(--space-3xl) 0; /* 96px top/bottom */
 }
 
 section + section {
-  margin-top: var(--space-3xl);  /* 96px between sections */
+  margin-top: var(--space-3xl); /* 96px between sections */
 }
 
 /* Content Spacing */
 h2 {
-  margin-top: var(--space-2xl);     /* 64px */
-  margin-bottom: var(--space-lg);   /* 32px */
+  margin-top: var(--space-2xl); /* 64px */
+  margin-bottom: var(--space-lg); /* 32px */
 }
 
 h3 {
-  margin-top: var(--space-xl);      /* 48px */
-  margin-bottom: var(--space-md);   /* 24px */
+  margin-top: var(--space-xl); /* 48px */
+  margin-bottom: var(--space-md); /* 24px */
 }
 
 p + p {
-  margin-top: var(--space-lg);      /* 32px between paragraphs */
+  margin-top: var(--space-lg); /* 32px between paragraphs */
 }
 
 /* Component Spacing */
 .card {
-  padding: var(--space-xl);         /* 48px internal padding */
+  padding: var(--space-xl); /* 48px internal padding */
 }
 
 .card + .card {
-  margin-top: var(--space-lg);      /* 32px between cards */
+  margin-top: var(--space-lg); /* 32px between cards */
 }
 ```
 
 #### Mobile Spacing (< 768px)
+
 ```css
 @media (max-width: 767px) {
   section {
-    padding: var(--space-2xl) 0;    /* 64px (reduced from 96px) */
+    padding: var(--space-2xl) 0; /* 64px (reduced from 96px) */
   }
-  
+
   section + section {
-    margin-top: var(--space-2xl);   /* 64px */
+    margin-top: var(--space-2xl); /* 64px */
   }
 }
 ```
@@ -217,16 +236,18 @@ p + p {
 ```
 
 ### Benefits
+
 ✅ **Consistent vertical rhythm** throughout the application  
 ✅ **Improved scanability** - 40% faster content discovery (A/B testing)  
 ✅ **Reduced cognitive load** - clearer visual grouping  
-✅ **Easy maintenance** - all spacing uses CSS variables  
+✅ **Easy maintenance** - all spacing uses CSS variables
 
 ---
 
 ## 3. Enhanced Color System
 
 ### The Problem (Before)
+
 - **Limited neutral scale**: Only 5 gray values
 - **Weak hierarchy**: Difficult to distinguish content levels
 - **Accessibility concerns**: Some combinations below WCAG AA
@@ -235,53 +256,56 @@ p + p {
 ### The Solution (After)
 
 #### Expanded Neutral Palette
+
 ```css
 :root {
   /* Full 9-step gray scale for better hierarchy */
-  --gray-50: #f9fafb;   /* Lightest background */
-  --gray-100: #f3f4f6;  /* Light background */
-  --gray-200: #e5e7eb;  /* Borders */
-  --gray-300: #d1d5db;  /* Disabled text */
-  --gray-400: #9ca3af;  /* Placeholder text */
-  --gray-500: #6b7280;  /* Secondary text */
-  --gray-600: #4b5563;  /* Body text - 7.2:1 (AAA) ✓ */
-  --gray-700: #374151;  /* Headings - 9.5:1 (AAA) ✓ */
-  --gray-800: #1f2937;  /* High emphasis */
-  --gray-900: #111827;  /* Maximum contrast */
+  --gray-50: #f9fafb; /* Lightest background */
+  --gray-100: #f3f4f6; /* Light background */
+  --gray-200: #e5e7eb; /* Borders */
+  --gray-300: #d1d5db; /* Disabled text */
+  --gray-400: #9ca3af; /* Placeholder text */
+  --gray-500: #6b7280; /* Secondary text */
+  --gray-600: #4b5563; /* Body text - 7.2:1 (AAA) ✓ */
+  --gray-700: #374151; /* Headings - 9.5:1 (AAA) ✓ */
+  --gray-800: #1f2937; /* High emphasis */
+  --gray-900: #111827; /* Maximum contrast */
 }
 ```
 
 #### Primary Colors (Unchanged - Already Compliant)
+
 ```css
 :root {
-  --primary: #6366f1;         /* 4.5:1 on white (AA) ✓ */
+  --primary: #6366f1; /* 4.5:1 on white (AA) ✓ */
   --primary-light: #818cf8;
   --primary-dark: #4f46e5;
 }
 ```
 
 #### Semantic Colors
+
 ```css
 :root {
-  --success: #10b981;   /* Positive metrics - 4.8:1 (AA) ✓ */
-  --warning: #f59e0b;   /* Cautions - 5.1:1 (AA) ✓ */
-  --danger: #ef4444;    /* Errors - 4.6:1 (AA) ✓ */
-  --info: #3b82f6;      /* Informational - 4.7:1 (AA) ✓ */
+  --success: #10b981; /* Positive metrics - 4.8:1 (AA) ✓ */
+  --warning: #f59e0b; /* Cautions - 5.1:1 (AA) ✓ */
+  --danger: #ef4444; /* Errors - 4.6:1 (AA) ✓ */
+  --info: #3b82f6; /* Informational - 4.7:1 (AA) ✓ */
 }
 ```
 
 ### WCAG Compliance Table
 
-| Color | Usage | Contrast Ratio | WCAG Level |
-|-------|-------|----------------|------------|
-| --gray-700 | Headings | 9.5:1 | AAA ✓ |
-| --gray-600 | Body text | 7.2:1 | AAA ✓ |
-| --gray-500 | Secondary text | 5.3:1 | AA ✓ |
-| --primary | Interactive elements | 4.5:1 | AA ✓ |
-| --success | Positive indicators | 4.8:1 | AA ✓ |
-| --warning | Warning states | 5.1:1 | AA ✓ |
-| --danger | Error states | 4.6:1 | AA ✓ |
-| --info | Informational | 4.7:1 | AA ✓ |
+| Color      | Usage                | Contrast Ratio | WCAG Level |
+| ---------- | -------------------- | -------------- | ---------- |
+| --gray-700 | Headings             | 9.5:1          | AAA ✓      |
+| --gray-600 | Body text            | 7.2:1          | AAA ✓      |
+| --gray-500 | Secondary text       | 5.3:1          | AA ✓       |
+| --primary  | Interactive elements | 4.5:1          | AA ✓       |
+| --success  | Positive indicators  | 4.8:1          | AA ✓       |
+| --warning  | Warning states       | 5.1:1          | AA ✓       |
+| --danger   | Error states         | 4.6:1          | AA ✓       |
+| --info     | Informational        | 4.7:1          | AA ✓       |
 
 ### Usage Guidelines
 
@@ -303,10 +327,11 @@ p + p {
 ```
 
 ### Benefits
+
 ✅ **100% WCAG AA compliance** across all text/background combinations  
 ✅ **9-step gray scale** enables subtle hierarchy distinctions  
 ✅ **Semantic colors** provide clear visual meaning  
-✅ **Dark mode ready** with inverted values  
+✅ **Dark mode ready** with inverted values
 
 ---
 
@@ -316,38 +341,65 @@ p + p {
 
 ```css
 /* Base styles - Mobile first (320px+) */
-.container { padding: 1rem; }
+.container {
+  padding: 1rem;
+}
 
 /* Small phones (320px - 479px) */
 @media (max-width: 479px) {
-  .container { padding: 1rem; }
-  h1 { font-size: 2rem; }
-  .stat { font-size: 2rem; }
-  .grid { grid-template-columns: 1fr; }
+  .container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .stat {
+    font-size: 2rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Large phones (480px - 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
-  .container { padding: 1.5rem; }
-  h1 { font-size: 2.5rem; }
-  .stat { font-size: 2.5rem; }
+  .container {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .stat {
+    font-size: 2.5rem;
+  }
 }
 
 /* Tablets (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container { padding: 2rem; }
-  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .container {
+    padding: 2rem;
+  }
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Desktop (1024px+) */
 @media (min-width: 1024px) {
-  .container { max-width: 1200px; margin: 0 auto; }
-  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Large Desktop (1440px+) */
 @media (min-width: 1440px) {
-  .container { max-width: 1400px; }
+  .container {
+    max-width: 1400px;
+  }
 }
 ```
 
@@ -388,31 +440,31 @@ p + p {
 
 ### Typography Improvements
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Body font size | 16px | 18px | +12.5% |
-| Line height | 1.5 | 1.7 | +13.3% |
-| H1 size (desktop) | 36px | 56px | +55.6% |
-| Reading width | None | 70ch | ✓ Optimal |
-| WCAG compliance | Partial | Full AA | ✓ 100% |
+| Metric            | Before  | After   | Improvement |
+| ----------------- | ------- | ------- | ----------- |
+| Body font size    | 16px    | 18px    | +12.5%      |
+| Line height       | 1.5     | 1.7     | +13.3%      |
+| H1 size (desktop) | 36px    | 56px    | +55.6%      |
+| Reading width     | None    | 70ch    | ✓ Optimal   |
+| WCAG compliance   | Partial | Full AA | ✓ 100%      |
 
 ### Spacing Improvements
 
-| Element | Before | After | Improvement |
-|---------|--------|-------|-------------|
-| Section padding | Inconsistent | 96px (8px grid) | ✓ Consistent |
-| Paragraph spacing | 12-24px | 32px | +33-167% |
-| Heading margins | 16px | 48-64px | +200-300% |
-| Card padding | 16-24px | 48px | +100-200% |
+| Element           | Before       | After           | Improvement  |
+| ----------------- | ------------ | --------------- | ------------ |
+| Section padding   | Inconsistent | 96px (8px grid) | ✓ Consistent |
+| Paragraph spacing | 12-24px      | 32px            | +33-167%     |
+| Heading margins   | 16px         | 48-64px         | +200-300%    |
+| Card padding      | 16-24px      | 48px            | +100-200%    |
 
 ### Color Improvements
 
-| Aspect | Before | After |
-|--------|--------|-------|
-| Gray scale values | 5 | 9 |
-| WCAG AA compliance | 70% | 100% |
-| Semantic colors | None | 4 defined |
-| Dark mode support | Partial | Full |
+| Aspect             | Before  | After     |
+| ------------------ | ------- | --------- |
+| Gray scale values  | 5       | 9         |
+| WCAG AA compliance | 70%     | 100%      |
+| Semantic colors    | None    | 4 defined |
+| Dark mode support  | Partial | Full      |
 
 ---
 
@@ -489,6 +541,7 @@ var(--danger)         /* Error - 4.6:1 AA */
 ## 8. Success Metrics
 
 ### Quantitative Results
+
 - ✅ **Reading comfort**: +18% improvement (user surveys)
 - ✅ **Content scanability**: 40% faster (eye-tracking studies)
 - ✅ **WCAG compliance**: 100% AA standard (automated testing)
@@ -496,6 +549,7 @@ var(--danger)         /* Error - 4.6:1 AA */
 - ✅ **Development velocity**: 30% faster implementation (dev surveys)
 
 ### Qualitative Results
+
 - ✅ "Text is much easier to read for long articles"
 - ✅ "Clear visual hierarchy makes scanning effortless"
 - ✅ "Consistent spacing feels more professional"
@@ -507,16 +561,19 @@ var(--danger)         /* Error - 4.6:1 AA */
 ## 9. Support & Resources
 
 ### Files Modified
+
 - `client/styles/design-tokens.css` - Core design system variables
 - `client/global.css` - Global typography and spacing rules
 - `tailwind.config.ts` - Breakpoint configuration
 
 ### Documentation
+
 - [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [Optimal Line Length Research](https://baymard.com/blog/line-length-readability)
 - [8px Grid System](https://spec.fm/specifics/8-pt-grid)
 
 ### Tools
+
 - [Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [Typography Scale Calculator](https://type-scale.com/)
 - [Spacing Calculator](https://spacingcalculator.com/)

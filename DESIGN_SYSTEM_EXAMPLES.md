@@ -51,7 +51,9 @@ export function ArticlePage() {
 
       {/* List with proper spacing */}
       <ul className="space-y-2 text-body leading-extra-loose text-gray-600">
-        <li>8/8 participants prioritized IRS defensibility over time savings</li>
+        <li>
+          8/8 participants prioritized IRS defensibility over time savings
+        </li>
         <li>100% adoption when override controls were demonstrated</li>
         <li>Zero tolerance for unexplainable AI decisions</li>
       </ul>
@@ -178,28 +180,34 @@ export function CaseStudyPage() {
 ```tsx
 export function ResponsiveCard() {
   return (
-    <div className="
+    <div
+      className="
       p-4              {/* 16px on mobile */}
       md:p-8           {/* 32px on tablet */}
       lg:p-12          {/* 48px on desktop */}
       bg-white 
       rounded-lg
-    ">
-      <h3 className="
+    "
+    >
+      <h3
+        className="
         text-xl          {/* Smaller on mobile */}
         md:text-2xl      {/* Medium on tablet */}
         lg:text-h3       {/* Full size on desktop */}
         mb-4 
         md:mb-6
-      ">
+      "
+      >
         Responsive Card Title
       </h3>
 
-      <p className="
+      <p
+        className="
         text-base        {/* 16px on mobile */}
         md:text-body     {/* 18px on tablet+ */}
         leading-extra-loose
-      ">
+      "
+      >
         Content that scales appropriately across breakpoints.
       </p>
     </div>
@@ -260,9 +268,7 @@ export function ContentHierarchy() {
   return (
     <article className="max-w-[70ch]">
       {/* Primary heading - Darkest gray (AAA compliance) */}
-      <h1 className="text-h1 text-gray-700 font-bold mb-6">
-        Main Heading
-      </h1>
+      <h1 className="text-h1 text-gray-700 font-bold mb-6">Main Heading</h1>
 
       {/* Body text - Dark gray (AAA compliance) */}
       <p className="text-body text-gray-600 leading-extra-loose mb-8">
@@ -272,14 +278,14 @@ export function ContentHierarchy() {
 
       {/* Secondary text - Medium gray (AA compliance) */}
       <p className="text-body text-gray-500 leading-extra-loose mb-6">
-        Secondary information that's less critical. Still meets AA standard
-        with 5.3:1 contrast ratio.
+        Secondary information that's less critical. Still meets AA standard with
+        5.3:1 contrast ratio.
       </p>
 
       {/* Tertiary/caption text - Light gray (AA compliance) */}
       <p className="caption text-gray-400 leading-relaxed">
-        Metadata, timestamps, or supplementary information. Meets minimum
-        AA standard at 4.5:1.
+        Metadata, timestamps, or supplementary information. Meets minimum AA
+        standard at 4.5:1.
       </p>
 
       {/* Disabled state - Lightest gray */}
@@ -298,7 +304,8 @@ export function InteractiveComponents() {
   return (
     <div className="space-y-6">
       {/* Primary button - WCAG AA compliant */}
-      <button className="
+      <button
+        className="
         min-h-[48px]           {/* Touch-friendly */}
         min-w-[48px]
         px-8 
@@ -309,13 +316,14 @@ export function InteractiveComponents() {
         rounded-lg
         hover:bg-primary-dark
         transition-colors
-      ">
+      "
+      >
         Primary Action
       </button>
 
       {/* Link with proper contrast */}
-      <a 
-        href="#" 
+      <a
+        href="#"
         className="
           text-primary           {/* 4.5:1 contrast */}
           underline 
@@ -327,7 +335,8 @@ export function InteractiveComponents() {
       </a>
 
       {/* Badge with semantic color */}
-      <span className="
+      <span
+        className="
         inline-flex 
         items-center 
         px-3 
@@ -337,7 +346,8 @@ export function InteractiveComponents() {
         text-sm 
         font-medium 
         rounded-full
-      ">
+      "
+      >
         Active
       </span>
     </div>
@@ -354,7 +364,8 @@ export function InteractiveComponents() {
 ```tsx
 export function ResponsiveGrid() {
   return (
-    <div className="
+    <div
+      className="
       grid 
       grid-cols-1          {/* 1 column on mobile (< 480px) */}
       sm:grid-cols-2       {/* 2 columns on large phones (480px+) */}
@@ -362,7 +373,8 @@ export function ResponsiveGrid() {
       xl:grid-cols-4       {/* 4 columns on large desktop (1280px+) */}
       gap-6                {/* Consistent 24px gap */}
       md:gap-8             {/* 32px gap on tablet+ */}
-    ">
+    "
+    >
       <div className="card p-12 bg-gray-50">Item 1</div>
       <div className="card p-12 bg-gray-50">Item 2</div>
       <div className="card p-12 bg-gray-50">Item 3</div>
@@ -379,26 +391,30 @@ export function ResponsiveHeading() {
   return (
     <div>
       {/* Scales: 32px → 40px → 56px */}
-      <h1 className="
+      <h1
+        className="
         text-4xl             {/* 32px on mobile */}
         sm:text-5xl          {/* 40px on large phones */}
         lg:text-h1           {/* 56px on desktop */}
         font-bold
         leading-tight
         tracking-tight
-      ">
+      "
+      >
         Responsive Heading
       </h1>
 
       {/* Scales: 16px → 18px */}
-      <p className="
+      <p
+        className="
         text-base            {/* 16px on mobile */}
         md:text-body         {/* 18px on tablet+ */}
         leading-loose
         md:leading-extra-loose
         mt-6
         max-w-[70ch]
-      ">
+      "
+      >
         Body text that scales up on larger screens for better readability.
       </p>
     </div>
@@ -411,7 +427,8 @@ export function ResponsiveHeading() {
 ```tsx
 export function ResponsiveContainer() {
   return (
-    <div className="
+    <div
+      className="
       w-full
       px-4                 {/* 16px on mobile */}
       sm:px-6              {/* 24px on large phones */}
@@ -420,10 +437,12 @@ export function ResponsiveContainer() {
       max-w-7xl            {/* 1280px max-width */}
       2xl:max-w-[1400px]   {/* 1400px on extra large */}
       mx-auto
-    ">
+    "
+    >
       <h2 className="text-h2 mb-8">Content</h2>
       <p className="text-body max-w-[70ch]">
-        Container automatically adjusts padding and max-width based on screen size.
+        Container automatically adjusts padding and max-width based on screen
+        size.
       </p>
     </div>
   );
@@ -439,7 +458,8 @@ export function ResponsiveContainer() {
 ```tsx
 export function BasicCard({ title, description }: CardProps) {
   return (
-    <div className="
+    <div
+      className="
       card 
       p-12                 {/* 48px internal spacing */}
       bg-white 
@@ -449,10 +469,9 @@ export function BasicCard({ title, description }: CardProps) {
       hover:border-primary 
       hover:shadow-lg
       transition-all
-    ">
-      <h3 className="text-h3 font-semibold text-gray-700 mb-6">
-        {title}
-      </h3>
+    "
+    >
+      <h3 className="text-h3 font-semibold text-gray-700 mb-6">{title}</h3>
       <p className="text-body text-gray-600 leading-extra-loose">
         {description}
       </p>
@@ -466,7 +485,8 @@ export function BasicCard({ title, description }: CardProps) {
 ```tsx
 export function MetricCard({ value, label, trend }: MetricCardProps) {
   return (
-    <div className="
+    <div
+      className="
       card 
       p-12 
       bg-gradient-to-br 
@@ -475,15 +495,12 @@ export function MetricCard({ value, label, trend }: MetricCardProps) {
       rounded-lg 
       border 
       border-primary/20
-    ">
-      <div className="stat text-primary font-bold mb-4">
-        {value}
-      </div>
-      <p className="text-body text-gray-700 font-medium mb-2">
-        {label}
-      </p>
+    "
+    >
+      <div className="stat text-primary font-bold mb-4">{value}</div>
+      <p className="text-body text-gray-700 font-medium mb-2">{label}</p>
       <p className="caption text-success">
-        {trend > 0 ? '↑' : '↓'} {Math.abs(trend)}% vs last month
+        {trend > 0 ? "↑" : "↓"} {Math.abs(trend)}% vs last month
       </p>
     </div>
   );
@@ -495,7 +512,8 @@ export function MetricCard({ value, label, trend }: MetricCardProps) {
 ```tsx
 export function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="
+    <div
+      className="
       card 
       p-12 
       bg-gray-50 
@@ -504,9 +522,11 @@ export function FeatureCard({ icon, title, description }: FeatureCardProps) {
       hover:shadow-xl
       transition-all
       duration-300
-    ">
+    "
+    >
       {/* Icon with semantic color */}
-      <div className="
+      <div
+        className="
         w-16 
         h-16 
         bg-primary/10 
@@ -515,13 +535,12 @@ export function FeatureCard({ icon, title, description }: FeatureCardProps) {
         items-center 
         justify-center
         mb-6
-      ">
+      "
+      >
         <span className="text-3xl text-primary">{icon}</span>
       </div>
 
-      <h3 className="text-h3 font-semibold text-gray-700 mb-4">
-        {title}
-      </h3>
+      <h3 className="text-h3 font-semibold text-gray-700 mb-4">{title}</h3>
 
       <p className="text-body text-gray-600 leading-extra-loose">
         {description}
@@ -543,8 +562,8 @@ export function AccessibleForm() {
     <form className="max-w-2xl space-y-8">
       {/* Form group with proper spacing */}
       <div className="space-y-2">
-        <label 
-          htmlFor="email" 
+        <label
+          htmlFor="email"
           className="
             block 
             text-body 
@@ -643,7 +662,9 @@ export function AccessibleForm() {
 ```tsx
 <section className="py-24 bg-primary/5">
   <div className="container text-center">
-    <h2 className="text-h2 font-bold text-gray-700 mb-6">Ready to Get Started?</h2>
+    <h2 className="text-h2 font-bold text-gray-700 mb-6">
+      Ready to Get Started?
+    </h2>
     <p className="lead text-gray-600 mb-12 max-w-[70ch] mx-auto">
       Join thousands of professionals using our platform.
     </p>

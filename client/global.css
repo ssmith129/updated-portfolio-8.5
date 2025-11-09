@@ -128,48 +128,48 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-primary);
-    font-size: var(--text-body);        /* 18px - improved readability */
-    line-height: var(--leading-extra-loose);  /* 1.7 - WCAG compliant */
+    font-size: var(--text-body); /* 18px - improved readability */
+    line-height: var(--leading-extra-loose); /* 1.7 - WCAG compliant */
     color: var(--color-text-secondary);
   }
 
   /* Heading hierarchy - Clear visual distinction */
   h1 {
-    font-size: var(--text-h1);          /* 56px desktop, responsive */
+    font-size: var(--text-h1); /* 56px desktop, responsive */
     font-weight: var(--font-bold);
-    line-height: var(--leading-tight);  /* 1.1 */
-    letter-spacing: var(--tracking-tight);  /* -0.02em */
+    line-height: var(--leading-tight); /* 1.1 */
+    letter-spacing: var(--tracking-tight); /* -0.02em */
     color: var(--color-text-primary);
-    margin-top: var(--space-2xl);       /* 64px */
-    margin-bottom: var(--space-lg);     /* 32px */
+    margin-top: var(--space-2xl); /* 64px */
+    margin-bottom: var(--space-lg); /* 32px */
   }
 
   h2 {
-    font-size: var(--text-h2);          /* 40px desktop, responsive */
+    font-size: var(--text-h2); /* 40px desktop, responsive */
     font-weight: var(--font-bold);
-    line-height: var(--leading-snug);   /* 1.2 */
-    letter-spacing: var(--tracking-snug);  /* -0.01em */
+    line-height: var(--leading-snug); /* 1.2 */
+    letter-spacing: var(--tracking-snug); /* -0.01em */
     color: var(--color-text-primary);
-    margin-top: var(--space-2xl);       /* 64px */
-    margin-bottom: var(--space-lg);     /* 32px */
+    margin-top: var(--space-2xl); /* 64px */
+    margin-bottom: var(--space-lg); /* 32px */
   }
 
   h3 {
-    font-size: var(--text-h3);          /* 28px desktop, responsive */
+    font-size: var(--text-h3); /* 28px desktop, responsive */
     font-weight: var(--font-semibold);
-    line-height: var(--leading-normal);  /* 1.3 */
+    line-height: var(--leading-normal); /* 1.3 */
     color: var(--color-text-primary);
-    margin-top: var(--space-xl);        /* 48px */
-    margin-bottom: var(--space-md);     /* 24px */
+    margin-top: var(--space-xl); /* 48px */
+    margin-bottom: var(--space-md); /* 24px */
   }
 
   h4 {
-    font-size: var(--text-h4);          /* 20px */
+    font-size: var(--text-h4); /* 20px */
     font-weight: var(--font-semibold);
-    line-height: var(--leading-comfortable);  /* 1.4 */
+    line-height: var(--leading-comfortable); /* 1.4 */
     color: var(--color-text-primary);
-    margin-top: var(--space-xl);        /* 48px */
-    margin-bottom: var(--space-md);     /* 24px */
+    margin-top: var(--space-xl); /* 48px */
+    margin-bottom: var(--space-md); /* 24px */
   }
 
   h5 {
@@ -192,21 +192,21 @@
 
   /* Paragraph spacing and optimal reading width */
   p {
-    font-size: var(--text-body);        /* 18px */
-    line-height: var(--leading-extra-loose);  /* 1.7 */
-    max-width: var(--max-content-width);  /* 70ch - optimal line length */
+    font-size: var(--text-body); /* 18px */
+    line-height: var(--leading-extra-loose); /* 1.7 */
+    max-width: var(--max-content-width); /* 70ch - optimal line length */
     color: var(--color-text-secondary);
   }
 
   /* Paragraph vertical rhythm */
   p + p {
-    margin-top: var(--space-lg);        /* 32px breathing room */
+    margin-top: var(--space-lg); /* 32px breathing room */
   }
 
   /* Lead/intro text */
   .lead {
-    font-size: var(--text-lead);        /* 22px */
-    line-height: var(--leading-loose);  /* 1.6 */
+    font-size: var(--text-lead); /* 22px */
+    line-height: var(--leading-loose); /* 1.6 */
     font-weight: var(--font-normal);
     max-width: var(--max-content-width);
   }
@@ -214,15 +214,15 @@
   /* Small text / captions */
   .caption,
   small {
-    font-size: var(--text-small);       /* 14px */
-    line-height: var(--leading-relaxed);  /* 1.5 */
+    font-size: var(--text-small); /* 14px */
+    line-height: var(--leading-relaxed); /* 1.5 */
     opacity: 0.8;
     color: var(--color-text-tertiary);
   }
 
   /* Large statistics */
   .stat {
-    font-size: var(--text-stat);        /* 48px desktop, responsive */
+    font-size: var(--text-stat); /* 48px desktop, responsive */
     font-weight: var(--font-bold);
     line-height: 1;
   }
@@ -234,7 +234,8 @@
   }
 
   /* Lists with proper spacing */
-  ul, ol {
+  ul,
+  ol {
     margin-top: var(--space-md);
     margin-bottom: var(--space-md);
     padding-left: var(--space-lg);
@@ -366,21 +367,21 @@
 @layer components {
   /* Section spacing with breathing room */
   section {
-    padding: var(--space-3xl) 0;        /* 96px top/bottom */
+    padding: var(--space-3xl) 0; /* 96px top/bottom */
   }
 
   section + section {
-    margin-top: var(--space-3xl);       /* 96px between sections */
+    margin-top: var(--space-3xl); /* 96px between sections */
   }
 
   /* Card/component spacing */
   .card {
-    padding: var(--space-xl);           /* 48px */
+    padding: var(--space-xl); /* 48px */
     border-radius: var(--radius-lg);
   }
 
   .card + .card {
-    margin-top: var(--space-lg);        /* 32px */
+    margin-top: var(--space-lg); /* 32px */
   }
 
   /* Container with optimal max-width */
@@ -393,29 +394,29 @@
   /* Mobile spacing adjustments */
   @media (max-width: 767px) {
     section {
-      padding: var(--space-2xl) 0;      /* 64px on mobile */
+      padding: var(--space-2xl) 0; /* 64px on mobile */
     }
 
     section + section {
-      margin-top: var(--space-2xl);     /* 64px between sections */
+      margin-top: var(--space-2xl); /* 64px between sections */
     }
 
     .card {
-      padding: var(--space-md);         /* 24px on mobile */
+      padding: var(--space-md); /* 24px on mobile */
     }
 
     .container {
-      padding: 0 var(--space-sm);       /* 16px on mobile */
+      padding: 0 var(--space-sm); /* 16px on mobile */
     }
   }
 
   @media (max-width: 479px) {
     section {
-      padding: var(--space-xl) 0;       /* 48px on small phones */
+      padding: var(--space-xl) 0; /* 48px on small phones */
     }
 
     .container {
-      padding: 0 var(--space-sm);       /* 16px on small phones */
+      padding: 0 var(--space-sm); /* 16px on small phones */
     }
   }
 }
@@ -604,7 +605,7 @@
   /* Small phones (320px - 479px) */
   @media (max-width: 479px) {
     .container {
-      padding: var(--space-sm);         /* 16px */
+      padding: var(--space-sm); /* 16px */
     }
 
     /* Ensure touch targets */
@@ -624,14 +625,14 @@
   /* Large phones (480px - 767px) */
   @media (min-width: 480px) and (max-width: 767px) {
     .container {
-      padding: var(--space-md);         /* 24px */
+      padding: var(--space-md); /* 24px */
     }
   }
 
   /* Tablets (768px - 1023px) */
   @media (min-width: 768px) and (max-width: 1023px) {
     .container {
-      padding: var(--space-lg);         /* 32px */
+      padding: var(--space-lg); /* 32px */
     }
 
     .grid-2 {
