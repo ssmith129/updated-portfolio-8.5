@@ -384,23 +384,23 @@ export default function ComputisCaseStudy() {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-              <div className="bg-[#00D4FF]/10 rounded-[12px] p-4 border border-[#00D4FF]/20">
-                <p className="text-white font-medium text-center">
+              <div className="bg-[#00D4FF]/10 rounded-[12px] p-4 border border-[#00D4FF]/20 flex flex-col justify-center items-center">
+                <p className="text-white font-normal text-center text-base leading-6">
                   8 CPA interviews (60 min, structured protocol)
                 </p>
               </div>
-              <div className="bg-[#8B5CF6]/10 rounded-[12px] p-4 border border-[#8B5CF6]/20">
-                <p className="text-white font-medium text-center">
+              <div className="bg-[#8B5CF6]/10 rounded-[12px] p-4 border border-[#8B5CF6]/20 flex flex-col justify-center items-center">
+                <p className="text-white font-medium text-center text-base leading-6">
                   6 workflow shadowing sessions (Big 4 + mid-market)
                 </p>
               </div>
-              <div className="bg-[#00FFB3]/10 rounded-[12px] p-4 border border-[#00FFB3]/20">
-                <p className="text-white font-medium text-center">
+              <div className="bg-[#00FFB3]/10 rounded-[12px] p-4 border border-[#00FFB3]/20 flex flex-col justify-center items-center">
+                <p className="text-white font-medium text-center text-base leading-6">
                   127 verbatim quotes → 5 thematic clusters
                 </p>
               </div>
-              <div className="bg-[#F59E0B]/10 rounded-[12px] p-4 border border-[#F59E0B]/20">
-                <p className="text-white font-medium text-center">
+              <div className="bg-[#F59E0B]/10 rounded-[12px] p-4 border border-[#F59E0B]/20 flex flex-col justify-center items-center">
+                <p className="text-white font-medium text-center text-base leading-6">
                   4 usability testing cycles
                 </p>
               </div>
