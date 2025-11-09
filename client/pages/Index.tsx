@@ -100,7 +100,7 @@ export default function Index() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
+        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
           {/* Computis Project */}
           <Link
             to="/case-studies/computis-crypto-tax-engine"
@@ -153,57 +153,6 @@ export default function Index() {
             </div>
           </Link>
 
-          {/* ezEMRx Project */}
-          <Link
-            to="/case-studies/ezemrx-redesigning-ehr"
-            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-left-6 duration-1000 delay-1300 touch-manipulation w-full max-w-[600px] mx-auto"
-            aria-label="View ezEMRx EHR redesign case study - healthcare platform for public health"
-          >
-            <div className="aspect-square overflow-hidden relative">
-              <img
-                src="/ipad.png"
-                alt="ezEMRx - Electronic Health Records System"
-                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
-              <div className="text-white">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-2 transition-all duration-300">
-                  ezEMRx
-                </h3>
-                <p className="text-sm sm:text-base md:text-lg font-normal opacity-90 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px]">
-                  EHR for Public Health
-                </p>
-              </div>
-            </div>
-          </Link>
-
-          {/* MoneyFarm Project */}
-          <Link
-            to="/case-studies/moneyfarm-ai-powered-personal-finance"
-            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-right-6 duration-1000 delay-1500 touch-manipulation w-full max-w-[600px] mx-auto"
-            aria-label="View MoneyFarm AI finance case study - AI-powered personal finance platform"
-          >
-            <div className="aspect-square overflow-hidden relative">
-              <img
-                src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="MoneyFarm - AI-Powered Personal Finance Manager"
-                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
-              <div className="text-white">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-2 transition-all duration-300">
-                  MoneyFarm
-                </h3>
-                <p className="text-sm sm:text-base md:text-lg font-normal opacity-90 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px]">
-                  AI-Powered Personal Finance
-                </p>
-              </div>
-            </div>
-          </Link>
         </div>
 
         {/* View All Projects Link */}
