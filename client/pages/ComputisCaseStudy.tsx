@@ -713,22 +713,22 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
-              <h3 className="text-lg font-semibold text-white mb-3">
+              <h3 className="text-xl font-semibold text-white mb-3">
                 Key Finding
               </h3>
-              <p className="text-[#B0AFAF] mb-4">
+              <p className="text-[#B0AFAF] mb-2">
                 Every competitor prioritized speed over defensibility.
               </p>
-              <p className="text-white font-semibold">
+              <p className="text-white">
                 0/4 platforms offered explainable AI or comprehensive audit
                 trails.
               </p>
 
               <div className="mt-4 pt-4 border-t border-[#00D4FF]/20">
-                <p className="text-sm font-semibold text-[#00D4FF] mb-2">
+                <p className="text-lg font-semibold text-[#00D4FF] mb-5">
                   Our Strategic Bet: Trust over feature parity
                 </p>
-                <ul className="space-y-2 text-sm text-[#B0AFAF]">
+                <ul className="space-y-2 text-base text-[#B0AFAF]">
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">P0:</span>
                     <span>Audit trail + confidence system</span>
@@ -993,7 +993,7 @@ export default function ComputisCaseStudy() {
                           heading:
                             "Contextual anomaly detection with visual flags",
                           bullets: [
-                            "Inline color-coded flags: 🔴 Critical, ��� Warning, 🟢 OK",
+                            "Inline color-coded flags: 🔴 Critical, 🟡 Warning, 🟢 OK",
                             "Hover tooltips explaining specific anomalies and thresholds",
                             "Smart filtering by severity level for efficient triage",
                           ],
