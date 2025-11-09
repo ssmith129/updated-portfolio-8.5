@@ -156,7 +156,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-5 pb-12 space-y-20 relative z-10">
+      <main className="max-w-[1200px] mx-auto px-5 space-y-20 relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-10 pb-0 border border-[#1A1A1A] shadow-2xl">
@@ -226,12 +226,12 @@ export default function ComputisCaseStudy() {
 
         {/* Quick Facts */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] py-2.5 px-10 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white pb-5">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] py-2.5 px-10 border border-[#1A1A1A] h-auto flex-grow-0">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-white text-left">
               Quick Facts
             </h2>
 
-            <div className="flex flex-row sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
+            <div className="flex flex-row sm:grid sm:grid-cols-2 lg:grid-cols-4 mt-5 w-auto self-stretch">
               <div className="space-y-2">
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
                   Role
@@ -244,7 +244,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
                   Timeline
                 </h3>
-                <p className="text-lg font-medium text-white">10 months</p>
+                <p className="text-lg font-medium text-white w-auto self-center">10 months</p>
               </div>
               <div className="space-y-2">
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
