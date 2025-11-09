@@ -563,10 +563,10 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
               <div className="bg-[#0F0F0F] rounded-xl p-6 border-l-4 border-[#00FFB3]">
-                <p className="text-sm font-semibold text-[#00FFB3] uppercase tracking-wide mb-3">
+                <p className="text-lg font-semibold text-[#00FFB3] uppercase tracking-wide mb-3">
                   Strategic Decision
                 </p>
-                <p className="text-white text-lg font-semibold">
+                <p className="text-white font-normal leading-7 mt-5 italic">
                   Make AI auditable, not just "better"
                 </p>
               </div>
