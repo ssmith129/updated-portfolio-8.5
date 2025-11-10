@@ -75,7 +75,7 @@ export default function ComputisCaseStudySandbox() {
       <Navigation />
 
       {/* Back Button */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-base font-medium text-[#888888] leading-normal hover:text-[#00D4FF] transition-all duration-300 group hover-back-button px-4 py-2 rounded-lg border border-transparent"
@@ -87,7 +87,7 @@ export default function ComputisCaseStudySandbox() {
       </div>
 
       {/* Hero Section */}
-      <header className="max-w-[1440px] w-full mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
+      <header className="max-w-[1400px] w-full mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="m-0 mx-auto mb-8 flex flex-col gap-6">
           <span className="inline-block bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] px-4 py-2 rounded-[20px] text-sm font-semibold tracking-tight mb-6 w-auto self-start">
             FinTech UX Case Study
@@ -102,7 +102,7 @@ export default function ComputisCaseStudySandbox() {
       </header>
 
       {/* Hero Video */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         <div className="w-full flex flex-col items-center justify-center">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#00D4FF] to-[#00FFB3] rounded-[16px] opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
@@ -156,7 +156,7 @@ export default function ComputisCaseStudySandbox() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1440px] mx-auto px-5 pb-12 space-y-20 relative z-10">
+      <main className="max-w-[1400px] mx-auto px-5 pb-12 space-y-20 relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A] shadow-2xl">
