@@ -11,7 +11,7 @@ export default function Index() {
       {/* Hero Section */}
       <main
         id="main-content"
-        className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-24 xl:py-[120px]"
+        className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] pt-8 pb-8 sm:pt-12 sm:pb-12 md:pt-16 md:pb-16 lg:pt-24 lg:pb-20 xl:pt-[120px] xl:pb-[80px]"
       >
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-300">
           {/* Profile Image */}
@@ -100,7 +100,7 @@ export default function Index() {
         </div>
 
         {/* Projects Grid */}
-        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
           {/* Computis Project */}
           <Link
             to="/case-studies/computis-crypto-tax-engine"
