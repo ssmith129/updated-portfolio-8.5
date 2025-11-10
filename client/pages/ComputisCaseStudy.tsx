@@ -244,7 +244,9 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
                   Timeline
                 </h3>
-                <p className="text-lg font-medium text-white w-auto self-center">10 months</p>
+                <p className="text-lg font-medium text-white w-auto self-center">
+                  10 months
+                </p>
               </div>
               <div className="space-y-2">
                 <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
@@ -569,9 +571,7 @@ export default function ComputisCaseStudy() {
                   <span>
                     <span>
                       <strong>
-                        <span className="font-medium">
-                          Strategic Decision
-                        </span>
+                        <span className="font-medium">Strategic Decision</span>
                       </strong>
                     </span>
                   </span>
@@ -789,9 +789,15 @@ export default function ComputisCaseStudy() {
                         Foundation
                       </h4>
                       <ul className="text-[#B0AFAF] space-y-1 text-sm">
-                        <li className="text-base">• Journey mapping for CPA, Analyst, Admin personas</li>
-                        <li className="text-base">• Trust framework principles defined</li>
-                        <li className="text-base">• IA explorations tested with 3 CPAs</li>
+                        <li className="text-base">
+                          • Journey mapping for CPA, Analyst, Admin personas
+                        </li>
+                        <li className="text-base">
+                          • Trust framework principles defined
+                        </li>
+                        <li className="text-base">
+                          • IA explorations tested with 3 CPAs
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -806,9 +812,15 @@ export default function ComputisCaseStudy() {
                         Exploration
                       </h4>
                       <ul className="text-[#B0AFAF] space-y-1 text-sm">
-                        <li className="text-base">• Rapid prototyping: 3 dashboard approaches</li>
-                        <li className="text-base">• Usability testing identified friction points</li>
-                        <li className="text-base">• Iterated confidence system 4 times</li>
+                        <li className="text-base">
+                          • Rapid prototyping: 3 dashboard approaches
+                        </li>
+                        <li className="text-base">
+                          • Usability testing identified friction points
+                        </li>
+                        <li className="text-base">
+                          • Iterated confidence system 4 times
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -823,9 +835,15 @@ export default function ComputisCaseStudy() {
                         Validation
                       </h4>
                       <ul className="text-[#B0AFAF] space-y-1 text-sm">
-                        <li className="text-base">• High-fidelity prototype testing</li>
-                        <li className="text-base">• Engineering feasibility validation</li>
-                        <li className="text-base">• Design system documentation</li>
+                        <li className="text-base">
+                          • High-fidelity prototype testing
+                        </li>
+                        <li className="text-base">
+                          • Engineering feasibility validation
+                        </li>
+                        <li className="text-base">
+                          • Design system documentation
+                        </li>
                       </ul>
                     </div>
                   </div>
