@@ -124,6 +124,13 @@
     @apply border-border;
   }
 
+  /* Reset default browser margins and padding */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   /* Body text - Enhanced for reading comfort */
   body {
     @apply bg-background text-foreground;
