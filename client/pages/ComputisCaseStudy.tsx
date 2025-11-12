@@ -270,7 +270,7 @@ export default function ComputisCaseStudy() {
 
         {/* The Challenge */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] py-2.5 px-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl py-2.5 px-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               The Challenge: Automation vs. Professional Liability
             </h2>
@@ -280,12 +280,12 @@ export default function ComputisCaseStudy() {
                 Tax platforms prioritize speed. CPAs prioritize defensibility.
               </h3>
 
-              <p className="text-base text-[#B0AFAF] leading-relaxed">
-                <span className="text-[#9DA1A4]">
+              <p className="text-base text-gray-400 leading-relaxed">
+                <span className="text-gray-400">
                   Before Computis, accounting firms faced a critical dilemma:
                 </span>{" "}
                 <strong className="text-white">opaque AI systems</strong>
-                <span className="text-[#B0AFAF]">
+                <span className="text-gray-400">
                   {" "}
                   that required manual verification—defeating automation's
                   promise. CPAs couldn't explain classifications to clients or
@@ -297,14 +297,14 @@ export default function ComputisCaseStudy() {
             {/* Before/After Workflow Comparison */}
             <div className="mt-6 mb-8">
               <div className="flex flex-col gap-6">
-                <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#00FFB3]/30">
+                <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#00FFB3]/30">
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-3 h-3 rounded-full bg-[#00FFB3]"></div>
                     <p className="text-lg text-[#00FFB3] font-semibold">
                       Before/After Workflow Comparison
                     </p>
                   </div>
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
+                  <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa0e9c2c002144b23913e4c4b3bfdf489"
                       alt="After workflow showing self-service transparent system"
@@ -324,7 +324,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
+            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-xl p-6 border border-[#00D4FF]/20">
               <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
                 <Target className="w-5 h-5 text-[#00D4FF]" />
                 Core Insight
@@ -337,7 +337,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-sm font-semibold text-[#00FFB3] mb-2">
                   Research Finding:
                 </p>
-                <ul className="space-y-2 text-sm text-[#B0AFAF]">
+                <ul className="space-y-2 text-sm text-gray-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">•</span>
                     <span>
@@ -374,34 +374,34 @@ export default function ComputisCaseStudy() {
 
         {/* Research & Discovery */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] py-2.5 px-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl py-2.5 px-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Research: Understanding Professional Skepticism
             </h2>
 
-            <p className="text-base text-[#B0AFAF] leading-relaxed mb-6">
+            <p className="text-base text-gray-400 leading-relaxed mb-6">
               <strong className="text-white font-semibold text-lg">
                 10-week foundational study:
               </strong>
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-              <div className="bg-[#00D4FF]/10 rounded-[12px] p-4 border border-[#00D4FF]/20 flex flex-col justify-center items-center">
+              <div className="bg-[#00D4FF]/10 rounded-lg p-4 border border-[#00D4FF]/20 flex flex-col justify-center items-center">
                 <p className="text-white font-normal text-center text-base leading-6">
                   8 CPA interviews (60 min, structured protocol)
                 </p>
               </div>
-              <div className="bg-[#8B5CF6]/10 rounded-[12px] p-4 border border-[#8B5CF6]/20 flex flex-col justify-center items-center">
+              <div className="bg-[#8B5CF6]/10 rounded-lg p-4 border border-[#8B5CF6]/20 flex flex-col justify-center items-center">
                 <p className="text-white font-medium text-center text-base leading-6">
                   6 workflow shadowing sessions (Big 4 + mid-market)
                 </p>
               </div>
-              <div className="bg-[#00FFB3]/10 rounded-[12px] p-4 border border-[#00FFB3]/20 flex flex-col justify-center items-center">
+              <div className="bg-[#00FFB3]/10 rounded-lg p-4 border border-[#00FFB3]/20 flex flex-col justify-center items-center">
                 <p className="text-white font-medium text-center text-base leading-6">
                   127 verbatim quotes → 5 thematic clusters
                 </p>
               </div>
-              <div className="bg-[#F59E0B]/10 rounded-[12px] p-4 border border-[#F59E0B]/20 flex flex-col justify-center items-center">
+              <div className="bg-[#F59E0B]/10 rounded-lg p-4 border border-[#F59E0B]/20 flex flex-col justify-center items-center">
                 <p className="text-white font-medium text-center text-base leading-6">
                   4 usability testing cycles
                 </p>
@@ -409,11 +409,11 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Research Synthesis Image */}
-            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
-              <p className="text-sm text-[#C1C1C1] mb-3">
+            <div className="bg-[#1A1A1A] rounded-xl p-6 border border-[#2A2A2A] mb-8">
+              <p className="text-sm text-gray-400 mb-3">
                 Research Synthesis & Affinity Wall
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
+              <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d22dd43205f4b36a3895561ba205024"
                   alt="Research Synthesis: Computis CPA Workflow Study"
@@ -432,11 +432,11 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Sample Usability Study Structure */}
-            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
-              <p className="text-sm text-[#C1C1C1] mb-3">
+            <div className="bg-[#1A1A1A] rounded-xl p-6 border border-[#2A2A2A] mb-8">
+              <p className="text-sm text-gray-400 mb-3">
                 Sample Usability Study Structure
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
+              <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fd82d9e8a55884e62a4f9607f6ef0089a"
                   alt="Sample Usability Study Structure"
@@ -460,7 +460,7 @@ export default function ComputisCaseStudy() {
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-start">
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all h-full flex flex-col justify-start items-center">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all h-full flex flex-col justify-start items-center">
                 <div className="w-12 h-12 rounded-lg bg-[#EF4444]/10 flex items-center justify-center mb-5">
                   <ShieldAlert className="w-6 h-6 text-[#EF4444]" />
                 </div>
@@ -470,7 +470,7 @@ export default function ComputisCaseStudy() {
                       1. Professional Liability &gt; Efficiency
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(28 quotes)</p>
-                    <p className="text-[#B7B7B7] text-sm leading-5 mt-5">
+                    <p className="text-gray-400 text-sm leading-5 mt-5">
                       Finding: 8/8 participants prioritized IRS defensibility
                       over time savings
                     </p>
@@ -478,7 +478,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all h-full flex flex-col text-center justify-start items-center">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all h-full flex flex-col text-center justify-start items-center">
                 <div className="w-12 h-12 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center mb-5">
                   <Clock className="w-6 h-6 text-[#F59E0B]" />
                 </div>
@@ -488,8 +488,8 @@ export default function ComputisCaseStudy() {
                       2. Engineering Dependency Blocks Scale
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(19 quotes)</p>
-                    <p className="text-[#B0AFAF] text-sm leading-5 m-5">
-                      <span className="text-[#B7B7B7]">
+                    <p className="text-gray-400 text-sm leading-5 m-5">
+                      <span className="text-gray-400">
                         Finding: 2-3 day wait times for Python script execution
                       </span>
                     </p>
@@ -497,7 +497,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#8B5CF6]/40 transition-all h-full flex flex-col justify-start items-center">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A] hover:border-[#8B5CF6]/40 transition-all h-full flex flex-col justify-start items-center">
                 <div className="w-12 h-12 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center mb-5">
                   <FileText className="w-6 h-6 text-[#8B5CF6]" />
                 </div>
@@ -507,14 +507,14 @@ export default function ComputisCaseStudy() {
                       3. Audit Trails = Enterprise Dealbreaker
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(31 quotes)</p>
-                    <p className="text-[#B7B7B7] text-sm leading-5 m-5">
+                    <p className="text-gray-400 text-sm leading-5 m-5">
                       Finding: 4/4 competitors lack comprehensive change history
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all h-full flex flex-col justify-start items-center">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all h-full flex flex-col justify-start items-center">
                 <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-5">
                   <Layers className="w-6 h-6 text-[#00D4FF]" />
                 </div>
@@ -524,7 +524,7 @@ export default function ComputisCaseStudy() {
                       4. Manual Work Fails at Scale
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(26 quotes)</p>
-                    <p className="text-[#B7B7B7] text-sm leading-5 mt-5">
+                    <p className="text-gray-400 text-sm leading-5 mt-5">
                       Finding: 600 hours per client at 3,000 transactions (12
                       min each)
                     </p>
@@ -532,7 +532,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] py-5 px-6 pb-6 border border-[#2A2A2A] hover:border-[#00FFB3]/40 transition-all h-full flex flex-col justify-start items-center">
+              <div className="bg-[#1A1A1A]/60 rounded-xl py-5 px-6 pb-6 border border-[#2A2A2A] hover:border-[#00FFB3]/40 transition-all h-full flex flex-col justify-start items-center">
                 <div className="w-12 h-12 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center mb-5">
                   <ToggleLeft className="w-6 h-6 text-[#00FFB3]" />
                 </div>
@@ -542,7 +542,7 @@ export default function ComputisCaseStudy() {
                       5. Trust Requires Control, Not Replacement
                     </h4>
                     <p className="text-sm text-[#888888] mb-2">(23 quotes)</p>
-                    <p className="text-[#B7B7B7] text-sm leading-5 mt-5">
+                    <p className="text-gray-400 text-sm leading-5 mt-5">
                       Finding: 100% adoption when override controls demonstrated
                     </p>
                   </div>
@@ -551,7 +551,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Synthesis */}
-            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-8 border border-[#00D4FF]/20 mt-12">
+            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-xl p-8 border border-[#00D4FF]/20 mt-12">
               <div className="flex items-start gap-3 mb-6">
                 <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/20 flex items-center justify-center flex-shrink-0">
                   <Target className="w-6 h-6 text-[#00D4FF]" />
@@ -560,7 +560,7 @@ export default function ComputisCaseStudy() {
                   <h3 className="text-lg font-semibold text-white mb-2">
                     Synthesis: The Core Design Tension
                   </h3>
-                  <p className="text-[#B0AFAF] text-base leading-relaxed">
+                  <p className="text-gray-400 text-base leading-relaxed">
                     CPAs needed automation for scale but couldn't sacrifice
                     professional defensibility.
                   </p>
@@ -587,7 +587,7 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-[#888888] mb-3">
                 Current State Journey Map
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
+              <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d88d39d14af4c01a4e1a9f64d10c0a6"
                   alt="Current State Journey Map"
@@ -609,14 +609,14 @@ export default function ComputisCaseStudy() {
 
         {/* Competitive Landscape */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] py-2.5 px-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl py-2.5 px-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Competitive Landscape: The Transparency Gap
             </h2>
 
             {/* Competitive Matrix */}
             <div className="mb-8">
-              <div className="bg-[#1A1A1A]/50 rounded-[16px] p-1 border border-[#1A1A1A] shadow-[0_0_40px_0_rgba(0,212,255,0.1)] overflow-x-auto">
+              <div className="bg-[#1A1A1A]/50 rounded-xl p-1 border border-[#1A1A1A] shadow-[0_0_40px_0_rgba(0,212,255,0.1)] overflow-x-auto">
                 <table className="w-full border-collapse">
                   <thead>
                     <tr className="bg-gradient-to-r from-[#0080FF]/20 to-[#00D4FF]/20">
@@ -626,23 +626,23 @@ export default function ComputisCaseStudy() {
                       <th className="text-center text-[#00D4FF] text-sm font-bold p-4 border-b border-[#2A2A2A] bg-[#00D4FF]/10">
                         Computis
                       </th>
-                      <th className="text-center text-[#9CA3AF] text-sm font-semibold p-4 border-b border-[#2A2A2A]">
+                      <th className="text-center text-gray-400 text-sm font-semibold p-4 border-b border-[#2A2A2A]">
                         TaxBit
                       </th>
-                      <th className="text-center text-[#9CA3AF] text-sm font-semibold p-4 border-b border-[#2A2A2A]">
+                      <th className="text-center text-gray-400 text-sm font-semibold p-4 border-b border-[#2A2A2A]">
                         Cryptio
                       </th>
-                      <th className="text-center text-[#9CA3AF] text-sm font-semibold p-4 border-b border-[#2A2A2A]">
+                      <th className="text-center text-gray-400 text-sm font-semibold p-4 border-b border-[#2A2A2A]">
                         CoinTracker
                       </th>
-                      <th className="text-center text-[#9CA3AF] text-sm font-semibold p-4 border-b border-[#2A2A2A]">
+                      <th className="text-center text-gray-400 text-sm font-semibold p-4 border-b border-[#2A2A2A]">
                         Koinly
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="text-[#B0AFAF] text-sm p-4">
+                      <td className="text-gray-400 text-sm p-4">
                         AI Explainability
                       </td>
                       <td className="text-center p-4 bg-[#00D4FF]/5">
@@ -662,7 +662,7 @@ export default function ComputisCaseStudy() {
                       </td>
                     </tr>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="text-[#B0AFAF] text-sm p-4">
+                      <td className="text-gray-400 text-sm p-4">
                         Audit Trails
                       </td>
                       <td className="text-center p-4 bg-[#00D4FF]/5">
@@ -684,7 +684,7 @@ export default function ComputisCaseStudy() {
                       </td>
                     </tr>
                     <tr className="border-b border-[#2A2A2A]">
-                      <td className="text-[#B0AFAF] text-sm p-4">
+                      <td className="text-gray-400 text-sm p-4">
                         CPA-First Design
                       </td>
                       <td className="text-center p-4 bg-[#00D4FF]/5">
@@ -712,11 +712,11 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-[16px] p-6 border border-[#00D4FF]/20">
+            <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-xl p-6 border border-[#00D4FF]/20">
               <h3 className="text-xl font-semibold text-white mb-3">
                 Key Finding
               </h3>
-              <p className="text-[#B0AFAF] mb-2">
+              <p className="text-gray-400 mb-2">
                 Every competitor prioritized speed over defensibility.
               </p>
               <p className="text-white">
@@ -728,7 +728,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-lg font-semibold text-[#00D4FF] mb-5">
                   Our Strategic Bet: Trust over feature parity
                 </p>
-                <ul className="space-y-2 text-base text-[#B0AFAF]">
+                <ul className="space-y-2 text-base text-gray-400">
                   <li className="flex items-start gap-2">
                     <span className="text-[#00FFB3] mt-0.5">P0:</span>
                     <span>Audit trail + confidence system</span>
@@ -749,17 +749,17 @@ export default function ComputisCaseStudy() {
 
         {/* Design Process */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] py-2.5 px-10 pb-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl py-2.5 px-10 pb-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
               Design Process: Trust-First, Professional-Centered
             </h2>
 
             {/* Design Process Evolution Image */}
-            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
-              <p className="text-sm text-[#C1C1C1] sm:text-[#888888] mb-3">
+            <div className="bg-[#1A1A1A] rounded-xl p-6 border border-[#2A2A2A] mb-8">
+              <p className="text-sm text-gray-400 sm:text-[#888888] mb-3">
                 Design Process Evolution
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
+              <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa320d8ba63c4433a76c919e90d558f6"
                   alt="Design Process Evolution"
@@ -788,7 +788,7 @@ export default function ComputisCaseStudy() {
                       <h4 className="text-base font-semibold text-white mb-1">
                         Foundation
                       </h4>
-                      <ul className="text-[#B0AFAF] space-y-1 text-sm">
+                      <ul className="text-gray-400 space-y-1 text-sm">
                         <li className="text-base">
                           • Journey mapping for CPA, Analyst, Admin personas
                         </li>
@@ -811,7 +811,7 @@ export default function ComputisCaseStudy() {
                       <h4 className="text-base font-semibold text-white mb-1">
                         Exploration
                       </h4>
-                      <ul className="text-[#B0AFAF] space-y-1 text-sm">
+                      <ul className="text-gray-400 space-y-1 text-sm">
                         <li className="text-base">
                           • Rapid prototyping: 3 dashboard approaches
                         </li>
@@ -834,7 +834,7 @@ export default function ComputisCaseStudy() {
                       <h4 className="text-base font-semibold text-white mb-1">
                         Validation
                       </h4>
-                      <ul className="text-[#B0AFAF] space-y-1 text-sm">
+                      <ul className="text-gray-400 space-y-1 text-sm">
                         <li className="text-base">
                           • High-fidelity prototype testing
                         </li>
@@ -855,7 +855,7 @@ export default function ComputisCaseStudy() {
 
         {/* Solution: Five Design Decisions */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1200">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-8 sm:p-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Solution: Five Design Decisions
             </h2>
@@ -869,8 +869,8 @@ export default function ComputisCaseStudy() {
                     AI Confidence Chips + Override Control
                   </h3>
                 </div>
-                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
+                  <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A]">
                     <AnnotatedDemo
                       src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F1722a6d109794969af99985a7fca6660?alt=media&token=7fa5119b-32c1-4ce6-8070-9f7e8c23fd25&apiKey=ba69a23156414a589de97341511272c9"
                       annotations={[
@@ -913,8 +913,8 @@ export default function ComputisCaseStudy() {
                     Inline Audit Trail Drawer
                   </h3>
                 </div>
-                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
+                  <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A]">
                     <AnnotatedDemo
                       src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa0883ef4ca724f1cb2cb430ba6abc50e?alt=media&token=5a058dfd-fbf1-4ab6-ae2f-85808836c967&apiKey=ba69a23156414a589de97341511272c9"
                       annotations={[
@@ -956,8 +956,8 @@ export default function ComputisCaseStudy() {
                     Visual Rule Builder (No-Code)
                   </h3>
                 </div>
-                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
+                  <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A]">
                     <AnnotatedDemo
                       src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F362cda60207c4bf0ab15de32042ef9e7?alt=media&token=d93a0b85-9d93-47d7-ae9b-89a2da2835b1&apiKey=ba69a23156414a589de97341511272c9"
                       annotations={[
@@ -1000,8 +1000,8 @@ export default function ComputisCaseStudy() {
                     Contextual Anomaly Detection
                   </h3>
                 </div>
-                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
+                  <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A]">
                     <AnnotatedDemo
                       src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F15fdcef43e9c49fabf34b76adb4b6b02?alt=media&token=a9348a1a-ab63-4fea-95e6-244e99875618&apiKey=ba69a23156414a589de97341511272c9"
                       annotations={[
@@ -1044,8 +1044,8 @@ export default function ComputisCaseStudy() {
                     Multi-Tenant Dashboard
                   </h3>
                 </div>
-                <div className="bg-[#1A1A1A] rounded-[16px] border border-[#2A2A2A] mt-6">
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A]">
+                <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
+                  <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A]">
                     <AnnotatedDemo
                       src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F634ec079a5b3440d93ec5826c682c3e0?alt=media&token=e4100b8b-ba86-4734-b2ce-0b759ff3b9ad&apiKey=ba69a23156414a589de97341511272c9"
                       annotations={[
@@ -1085,7 +1085,7 @@ export default function ComputisCaseStudy() {
 
         {/* Outcomes */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-8 sm:p-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Outcomes: From Prototype to Enterprise Platform
             </h2>
@@ -1095,33 +1095,33 @@ export default function ComputisCaseStudy() {
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <h4 className="text-sm font-semibold text-[#00FFB3] mb-3">
                   User Efficiency
                 </h4>
-                <ul className="space-y-2 text-sm text-[#B0AFAF]">
+                <ul className="space-y-2 text-sm text-gray-400">
                   <li>↓45% CPA onboarding time (2.5h → 1.4h)</li>
                   <li>↓40% support tickets</li>
                   <li>Zero FMV disputes post-launch</li>
                 </ul>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <h4 className="text-sm font-semibold text-[#FFD700] mb-3">
                   Business Growth
                 </h4>
-                <ul className="space-y-2 text-sm text-[#B0AFAF]">
+                <ul className="space-y-2 text-sm text-gray-400">
                   <li>↑32% demo-to-conversion rate</li>
                   <li>3 enterprise CPA partnerships</li>
                   <li>Scaled to DAOs, hedge funds, multi-client firms</li>
                 </ul>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <h4 className="text-sm font-semibold text-[#00D4FF] mb-3">
                   Technical Excellence
                 </h4>
-                <ul className="space-y-2 text-sm text-[#B0AFAF]">
+                <ul className="space-y-2 text-sm text-gray-400">
                   <li>↓85% engineering dependency</li>
                   <li>90-second real-time processing (vs 2-3 day wait)</li>
                   <li>Self-service rule customization</li>
@@ -1154,11 +1154,11 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Usability Test Results Image */}
-            <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mt-8">
-              <p className="text-sm text-[#B7B7B7] mb-3">
+            <div className="bg-[#1A1A1A] rounded-xl p-6 border border-[#2A2A2A] mt-8">
+              <p className="text-sm text-gray-400 mb-3">
                 Usability Test Results
               </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
+              <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fb2ba5c86168b43ee9715e140d1461d11"
                   alt="Usability Test Results"
@@ -1180,13 +1180,13 @@ export default function ComputisCaseStudy() {
 
         {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1400">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-8 sm:p-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Key Learnings
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <div className="flex items-start gap-4 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <Lightbulb className="w-5 h-5 text-[#00D4FF]" />
@@ -1201,7 +1201,7 @@ export default function ComputisCaseStudy() {
                       6/8 CPAs ignored 20+ feature requests to prioritize audit
                       trail
                     </p>
-                    <p className="text-[#B0AFAF] mb-2">
+                    <p className="text-gray-400 mb-2">
                       <strong className="text-white">Learning:</strong>{" "}
                       Professional liability creates different value
                       hierarchies. Transparency features drove 32% conversion
@@ -1215,7 +1215,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <div className="flex items-start gap-4 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
                     <Layers className="w-5 h-5 text-[#00FFB3]" />
@@ -1229,7 +1229,7 @@ export default function ComputisCaseStudy() {
                       Role-based IA supported 100+ client portfolios without
                       refactor
                     </p>
-                    <p className="text-[#B0AFAF] mb-2">
+                    <p className="text-gray-400 mb-2">
                       <strong className="text-white">Learning:</strong> Systems
                       thinking &gt; screen design. Early architectural decisions
                       enabled enterprise growth.
@@ -1242,7 +1242,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <div className="flex items-start gap-4 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center flex-shrink-0">
                     <Shield className="w-5 h-5 text-[#8B5CF6]" />
@@ -1255,7 +1255,7 @@ export default function ComputisCaseStudy() {
                       <strong className="text-[#8B5CF6]">Application:</strong>{" "}
                       Override controls flipped AI from threat to tool
                     </p>
-                    <p className="text-[#B0AFAF] mb-2">
+                    <p className="text-gray-400 mb-2">
                       <strong className="text-white">Learning:</strong>{" "}
                       Confidence indicators enabled informed decisions vs blind
                       acceptance. CPAs wanted augmentation, not replacement.
@@ -1267,7 +1267,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <div className="flex items-start gap-4 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0">
                     <TrendingUp className="w-5 h-5 text-[#FFD700]" />
@@ -1281,7 +1281,7 @@ export default function ComputisCaseStudy() {
                       Self-service features reduced costs; audit trails closed
                       enterprise deals
                     </p>
-                    <p className="text-[#B0AFAF] mb-2">
+                    <p className="text-gray-400 mb-2">
                       <strong className="text-white">Learning:</strong> UX
                       decisions directly impacted revenue (3 partnerships) and
                       efficiency (85% less eng dependency).
@@ -1298,17 +1298,17 @@ export default function ComputisCaseStudy() {
 
         {/* Reflections */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-8 sm:p-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
               Reflections: What I'd Do Differently
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <h3 className="text-lg font-semibold text-white mb-3">
                   1. Earlier Engineering Involvement
                 </h3>
-                <div className="space-y-3 text-[#B0AFAF]">
+                <div className="space-y-3 text-gray-400">
                   <p>
                     <strong className="text-[#EF4444]">What happened:</strong>{" "}
                     Designed complex bulk import at Week 5 → API limits flagged
@@ -1328,11 +1328,11 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <h3 className="text-lg font-semibold text-white mb-3">
                   2. Structured Usability Testing from Start
                 </h3>
-                <div className="space-y-3 text-[#B0AFAF]">
+                <div className="space-y-3 text-gray-400">
                   <p>
                     <strong className="text-[#EF4444]">What happened:</strong>{" "}
                     Informal testing missed 4/6 CPAs struggling with bulk rule
@@ -1353,11 +1353,11 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
                 <h3 className="text-lg font-semibold text-white mb-3">
                   3. Ongoing Competitive Monitoring
                 </h3>
-                <div className="space-y-3 text-[#B0AFAF]">
+                <div className="space-y-3 text-gray-400">
                   <p>
                     <strong className="text-[#EF4444]">What happened:</strong>{" "}
                     Single competitive analysis at project start
