@@ -226,14 +226,14 @@ export default function ComputisCaseStudy() {
 
         {/* Quick Facts */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] py-2.5 px-10 border border-[#1A1A1A] h-auto flex-grow-0">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl py-8 px-12 border border-[#1A1A1A] h-auto flex-grow-0">
             <h2 className="text-2xl sm:text-3xl font-semibold text-white text-left">
               Quick Facts
             </h2>
 
             <div className="flex flex-row sm:grid sm:grid-cols-2 lg:grid-cols-4 mt-5 w-auto self-stretch">
               <div className="space-y-2">
-                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide">
                   Role
                 </h3>
                 <p className="text-lg font-medium text-white">
@@ -241,7 +241,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="space-y-2 self-center sm:self-auto">
-                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide">
                   Timeline
                 </h3>
                 <p className="text-lg font-medium text-white w-auto self-center">
@@ -249,7 +249,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide">
                   Team
                 </h3>
                 <p className="text-lg font-medium text-white">
@@ -257,7 +257,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide">
                   Platform
                 </h3>
                 <p className="text-lg font-medium text-white">
