@@ -156,10 +156,10 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-5 space-y-14 relative z-10">
+      <main className="max-w-[1200px] mx-auto px-5 space-y-16 relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-10 pb-0 border border-[#1A1A1A] shadow-2xl">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-12 pb-0 border border-[#1A1A1A] shadow-2xl">
             <h2 className="text-3xl font-semibold text-white pb-5 mb-5">
               Impact at a Glance
             </h2>
@@ -1208,7 +1208,7 @@ export default function ComputisCaseStudy() {
                       lift—more than any feature addition.
                     </p>
                     <p className="text-[#00FFB3] font-medium">
-                      Takeaway: In FinTech, healthcare, legal��defensibility
+                      Takeaway: In FinTech, healthcare, legal���defensibility
                       trumps efficiency.
                     </p>
                   </div>
