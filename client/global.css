@@ -206,12 +206,17 @@
   }
 
   /* FIX 7: Global minimum line-height for WCAG compliance */
-  p, li, span, div {
+  p,
+  li,
+  span,
+  div {
     line-height: max(1.5em, var(--line-height, 1.5));
   }
 
   /* Override only for headings */
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     line-height: 1.2;
   }
 
@@ -329,7 +334,7 @@
 
   /* FIX 8: Improved focus states for accessibility */
   *:focus-visible {
-    outline: 2px solid #00D4FF;
+    outline: 2px solid #00d4ff;
     outline-offset: 2px;
     box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.2);
   }
