@@ -102,16 +102,16 @@ export default function ComputisCaseStudy() {
       </header>
 
       {/* Hero Video */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         <div className="w-full flex flex-col items-center justify-center">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#00D4FF] to-[#00FFB3] rounded-[16px] opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#00D4FF] to-[#00FFB3] rounded-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
             <video
               ref={heroVideoRef}
               loop
               muted
               playsInline
-              className="relative w-full max-w-[3600px] h-auto rounded-[12px]"
+              className="relative w-full max-w-[3600px] h-auto rounded-lg"
               style={{
                 boxShadow: "0 0 40px rgba(0, 212, 255, 0.1)",
                 overflow: "hidden",
