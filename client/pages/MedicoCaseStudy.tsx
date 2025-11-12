@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from “react”;
-import { Link } from “react-router-dom”;
+import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import {
 ArrowLeft,
 Target,
@@ -21,11 +21,11 @@ TestTube,
 BarChart3,
 Map,
 Palette,
-} from “lucide-react”;
-import Navigation, { SkipLink } from “../components/Navigation”;
-import RelatedCaseStudies from “../components/RelatedCaseStudies”;
-import Footer from “../components/Footer”;
-import { useIntersectionAnimation } from “../hooks/use-page-animations”;
+} from "lucide-react";
+import Navigation, { SkipLink } from "../components/Navigation";
+import RelatedCaseStudies from "../components/RelatedCaseStudies";
+import Footer from "../components/Footer";
+import { useIntersectionAnimation } from "../hooks/use-page-animations";
 
 // Custom hook for counting animation
 const useCountAnimation = (
@@ -38,7 +38,6 @@ const [count, setCount] = useState(0);
 useEffect(() => {
 if (!startAnimation) return;
 
-```
 let startTime: number;
 
 const animate = (currentTime: number) => {
@@ -59,7 +58,6 @@ const animate = (currentTime: number) => {
 };
 
 requestAnimationFrame(animate);
-```
 
 }, [end, duration, startAnimation]);
 
@@ -69,7 +67,7 @@ return count;
 // Animated Counter Component
 const AnimatedCounter = ({
 value,
-suffix = “%”,
+suffix = "%",
 className,
 startAnimation,
 }: {
@@ -96,7 +94,7 @@ alt: string;
 
 // Use the new animation hook for metrics animation
 const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
-useIntersectionAnimation(0.5, “0px 0px -50px 0px”);
+useIntersectionAnimation(0.5, "0px 0px -50px 0px");
 
 return (
 <div className="min-h-screen bg-[#F5F5F5]">
@@ -1126,7 +1124,6 @@ return (
     </div>
   )}
 </div>
-```
 
 );
 }
