@@ -227,7 +227,7 @@ export default function ComputisCaseStudy() {
         {/* Quick Facts */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl py-8 px-12 border border-[#1A1A1A] h-auto flex-grow-0">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white text-left">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white text-left">
               Quick Facts
             </h2>
 
@@ -610,7 +610,7 @@ export default function ComputisCaseStudy() {
         {/* Competitive Landscape */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl py-8 px-12 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
               Competitive Landscape: The Transparency Gap
             </h2>
 
@@ -750,7 +750,7 @@ export default function ComputisCaseStudy() {
         {/* Design Process */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl py-8 px-12 pb-10 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
               Design Process: Trust-First, Professional-Centered
             </h2>
 
@@ -856,7 +856,7 @@ export default function ComputisCaseStudy() {
         {/* Solution: Five Design Decisions */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1200">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-8 sm:p-12 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-8">
               Solution: Five Design Decisions
             </h2>
 
@@ -1086,7 +1086,7 @@ export default function ComputisCaseStudy() {
         {/* Outcomes */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-8 sm:p-12 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-8">
               Outcomes: From Prototype to Enterprise Platform
             </h2>
 
@@ -1181,7 +1181,7 @@ export default function ComputisCaseStudy() {
         {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1400">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-8 sm:p-12 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-8">
               Key Learnings
             </h2>
 
@@ -1299,7 +1299,7 @@ export default function ComputisCaseStudy() {
         {/* Reflections */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-8 sm:p-12 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-8">
               Reflections: What I'd Do Differently
             </h2>
 
