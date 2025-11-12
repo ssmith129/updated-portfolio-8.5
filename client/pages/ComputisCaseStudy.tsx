@@ -459,7 +459,7 @@ export default function ComputisCaseStudy() {
               Five Critical Insights
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 justify-center items-start">
               <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all h-full flex flex-col justify-start items-center">
                 <div className="w-12 h-12 rounded-lg bg-[#EF4444]/10 flex items-center justify-center mb-5">
                   <ShieldAlert className="w-6 h-6 text-[#EF4444]" />
