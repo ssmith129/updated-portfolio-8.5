@@ -160,64 +160,64 @@ export default function ComputisCaseStudy() {
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-12 pb-0 border border-[#1A1A1A] shadow-2xl">
-            <h2 className="text-3xl font-semibold text-white pb-5 mb-5">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white pb-5 mb-5">
               Impact at a Glance
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#00FFB3]/10 to-transparent rounded-[16px] p-6 border border-[#00FFB3]/20">
+              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#00FFB3]/10 to-transparent rounded-xl p-6 border border-[#00FFB3]/20">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#00FFB3] mb-3">
                     ↓ 45%
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-medium text-[#B0AFAF] mb-1">
+                  <p className="text-sm font-medium text-gray-400 mb-1">
                     CPA onboarding time
                   </p>
-                  <p className="text-xs text-[#9CA3AF]">(2.5h → 1.4h)</p>
+                  <p className="text-xs text-gray-400">(2.5h → 1.4h)</p>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#FFD700]/10 to-transparent rounded-[16px] p-6 border border-[#FFD700]/20">
+              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#FFD700]/10 to-transparent rounded-xl p-6 border border-[#FFD700]/20">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#FFD700] mb-3">
                     ↑ 32%
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-medium text-[#B0AFAF] mb-1">
+                  <p className="text-sm font-medium text-gray-400 mb-1">
                     Demo-to-conversion rate
                   </p>
-                  <p className="text-xs text-[#9CA3AF]">increase</p>
+                  <p className="text-xs text-gray-400">increase</p>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#00D4FF]/10 to-transparent rounded-[16px] p-6 border border-[#00D4FF]/20">
+              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#00D4FF]/10 to-transparent rounded-xl p-6 border border-[#00D4FF]/20">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#00D4FF] mb-3">
                     ↓ 85%
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-medium text-[#B0AFAF] mb-1">
+                  <p className="text-sm font-medium text-gray-400 mb-1">
                     Engineering dependency
                   </p>
-                  <p className="text-xs text-[#9CA3AF]">reduction</p>
+                  <p className="text-xs text-gray-400">reduction</p>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#0080FF]/10 to-transparent rounded-[16px] p-6 border border-[#0080FF]/20">
+              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#0080FF]/10 to-transparent rounded-xl p-6 border border-[#0080FF]/20">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-[#0080FF] mb-3">
                     Zero
                   </div>
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-medium text-[#B0AFAF] mb-1">
+                  <p className="text-sm font-medium text-gray-400 mb-1">
                     FMV disputes
                   </p>
-                  <p className="text-xs text-[#9CA3AF]">post-launch</p>
+                  <p className="text-xs text-gray-400">post-launch</p>
                 </div>
               </div>
             </div>
@@ -1208,7 +1208,7 @@ export default function ComputisCaseStudy() {
                       lift—more than any feature addition.
                     </p>
                     <p className="text-[#00FFB3] font-medium">
-                      Takeaway: In FinTech, healthcare, legal���defensibility
+                      Takeaway: In FinTech, healthcare, legal��defensibility
                       trumps efficiency.
                     </p>
                   </div>
