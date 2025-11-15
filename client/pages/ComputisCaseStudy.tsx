@@ -159,14 +159,14 @@ export default function ComputisCaseStudy() {
       <main className="max-w-[1400px] mx-auto px-6 space-y-1 relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-          <div className="flex px-1 py-1 flex-col items-start gap-4 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+          <div className="flex px-6 py-1 flex-col items-start gap-4 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
             <div className="flex flex-col items-start self-stretch">
               <h2 className="self-stretch text-white text-3xl font-semibold leading-tight tracking-tight">
                 Impact at a Glance
               </h2>
             </div>
 
-            <div className="flex justify-center items-start gap-2 self-stretch">
+            <div className="flex justify-center items-start self-stretch">
               <div className="flex w-full md:w-[251.5px] p-6 flex-col items-center gap-2 self-stretch rounded-2xl border border-[#00FFB3]/20 bg-gradient-to-br from-[#00FFB3]/10 to-transparent">
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
