@@ -9,7 +9,7 @@ export default function About() {
       <Navigation />
 
       {/* Header */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] pt-8 sm:pt-12 md:pt-16 lg:pt-24 xl:pt-[150px] animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-300">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] pt-8 sm:pt-12 md:pt-16 lg:pt-24 xl:pt-[150px] animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-300">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 xl:gap-24 items-center lg:items-start mb-8 sm:mb-12 md:mb-16 lg:mb-24 xl:mb-[160px]">
           {/* Profile Image */}
           <div className="flex-shrink-0 animate-in fade-in-0 zoom-in-95 duration-1000 delay-500">
@@ -44,7 +44,7 @@ export default function About() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] pb-8 sm:pb-12 md:pb-16 space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-24 xl:space-y-[150px]">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] pb-8 sm:pb-12 md:pb-16 space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-24 xl:space-y-[150px]">
         {/* Professional Summary Section */}
         <section className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-24 xl:gap-[440px] animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
           <div className="w-full lg:w-[200px]">

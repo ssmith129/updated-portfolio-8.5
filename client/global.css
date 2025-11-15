@@ -205,6 +205,21 @@
     color: var(--color-text-secondary);
   }
 
+  /* FIX 7: Global minimum line-height for WCAG compliance */
+  p,
+  li,
+  span,
+  div {
+    line-height: max(1.5em, var(--line-height, 1.5));
+  }
+
+  /* Override only for headings */
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+  }
+
   /* Paragraph vertical rhythm */
   p + p {
     margin-top: var(--space-lg); /* 32px breathing room */
@@ -317,9 +332,11 @@
     }
   }
 
-  /* Improved focus states for accessibility */
+  /* FIX 8: Improved focus states for accessibility */
   *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500;
+    outline: 2px solid #00d4ff;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.2);
   }
 
   /* Animation fixes for page refresh and navigation */
@@ -433,10 +450,14 @@
    ============================================ */
 
 @layer components {
-  /* Metric Card Hover */
+  /* FIX 10: Metric Card Hover with performance optimization */
   .hover-metric-card {
     @apply transition-all duration-300 ease-out;
-    will-change: transform, box-shadow;
+    will-change: transform;
+  }
+
+  .hover-metric-card:hover {
+    will-change: auto;
   }
 
   .hover-metric-card:hover {
@@ -452,7 +473,11 @@
   /* Image Hover Enhancement */
   .hover-image-enlarge {
     @apply transition-all duration-300 ease-out cursor-zoom-in;
-    will-change: transform, border-color;
+    will-change: transform;
+  }
+
+  .hover-image-enlarge:hover {
+    will-change: auto;
   }
 
   .hover-image-enlarge:hover {
@@ -501,7 +526,11 @@
     @apply transition-all relative overflow-hidden;
     transition-duration: var(--hover-duration-fast);
     transition-timing-function: var(--hover-easing-bounce);
-    will-change: transform, box-shadow;
+    will-change: transform;
+  }
+
+  .hover-cta:hover {
+    will-change: auto;
   }
 
   .hover-cta:hover {

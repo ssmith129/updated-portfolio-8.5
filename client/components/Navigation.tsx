@@ -57,7 +57,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
 
   return (
     <nav
-      className={`flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-4 sm:py-5 md:py-6 gap-4 md:gap-0 animate-in fade-in-0 slide-in-from-top-4 duration-700 ${className}`}
+      className={`max-w-[1400px] w-auto mx-auto flex flex-col md:flex-row justify-between items-center p-6 gap-4 md:gap-0 animate-in fade-in-0 slide-in-from-top-4 duration-700 ${className}`}
       role="navigation"
       aria-label="Main navigation"
     >
