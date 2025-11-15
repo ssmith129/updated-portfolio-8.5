@@ -973,7 +973,7 @@ export default function ComputisCaseStudy() {
 
         {/* Design Process */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl py-8 px-12 pb-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 pt-8 pb-10 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
               Design Process: Trust-First, Professional-Centered
             </h2>
