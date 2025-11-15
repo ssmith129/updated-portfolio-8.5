@@ -985,7 +985,7 @@ export default function ComputisCaseStudy() {
               </p>
               <div className="bg-[#0F0F0F] rounded-lg overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa320d8ba63c4433a76c919e90d558f6"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fdd2691193932438a8f68173a7d662e54"
                   alt="Design Process Evolution"
                   className="w-full h-auto transition-transform duration-300"
                   loading="lazy"
