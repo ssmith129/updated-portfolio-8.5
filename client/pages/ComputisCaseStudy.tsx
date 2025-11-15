@@ -156,68 +156,102 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-5 space-y-[14px] relative z-10">
+      <main className="max-w-[1200px] mx-auto px-10 space-y-[14px] relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl p-12 pb-0 border border-[#1A1A1A] shadow-2xl">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white pb-5 mb-5">
-              Impact at a Glance
-            </h2>
+          <div className="flex py-6 px-10 pb-0.5 flex-col items-start gap-5 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+            <div className="flex pb-5 flex-col items-start self-stretch">
+              <h2 className="self-stretch text-white text-[30px] font-semibold leading-9 tracking-[-0.3px]">
+                Impact at a Glance
+              </h2>
+            </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#00FFB3]/10 to-transparent rounded-xl p-6 border border-[#00FFB3]/20">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-[#00FFB3] mb-3">
-                    ↓ 45%
+            <div className="flex justify-center items-start gap-6 self-stretch">
+              <div className="flex w-[251.5px] py-[25px] px-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#00FFB3]/20 bg-gradient-to-br from-[#00FFB3]/10 to-transparent">
+                <div className="flex pb-3 flex-col items-start">
+                  <div className="flex flex-col items-center">
+                    <div className="text-[#00FFB3] text-center text-4xl font-bold leading-10">
+                      ↓ 45%
+                    </div>
                   </div>
                 </div>
-                <div className="text-center">
-                  <p className="text-sm font-medium text-gray-400 mb-1">
-                    CPA onboarding time
-                  </p>
-                  <p className="text-xs text-gray-400">(2.5h → 1.4h)</p>
+                <div className="flex flex-col items-start gap-[18px]">
+                  <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                    <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
+                      CPA onboarding time
+                    </div>
+                  </div>
+                  <div className="flex max-w-[529.922px] flex-col items-center self-stretch">
+                    <div className="text-[#9CA3AF] text-center text-xs font-normal leading-4">
+                      (2.5h → 1.4h)
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#FFD700]/10 to-transparent rounded-xl p-6 border border-[#FFD700]/20">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-[#FFD700] mb-3">
-                    ↑ 32%
+              <div className="flex w-[251.5px] py-[25px] px-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#FFD700]/20 bg-gradient-to-br from-[#FFD700]/10 to-transparent">
+                <div className="flex pb-3 flex-col items-start">
+                  <div className="flex flex-col items-center">
+                    <div className="text-[#FFD700] text-center text-4xl font-bold leading-10">
+                      ↑ 32%
+                    </div>
                   </div>
                 </div>
-                <div className="text-center">
-                  <p className="text-sm font-medium text-gray-400 mb-1">
-                    Demo-to-conversion rate
-                  </p>
-                  <p className="text-xs text-gray-400">increase</p>
+                <div className="flex flex-col items-start gap-[18px]">
+                  <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                    <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
+                      Demo-to-conversion rate
+                    </div>
+                  </div>
+                  <div className="flex max-w-[529.922px] flex-col items-center self-stretch">
+                    <div className="text-[#9CA3AF] text-center text-xs font-normal leading-4">
+                      increase
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#00D4FF]/10 to-transparent rounded-xl p-6 border border-[#00D4FF]/20">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-[#00D4FF] mb-3">
-                    ↓ 85%
+              <div className="flex w-[251.5px] py-[25px] px-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#00D4FF]/20 bg-gradient-to-br from-[#00D4FF]/10 to-transparent">
+                <div className="flex pb-3 flex-col items-start">
+                  <div className="flex flex-col items-center">
+                    <div className="text-[#00D4FF] text-center text-4xl font-bold leading-10">
+                      ↓ 85%
+                    </div>
                   </div>
                 </div>
-                <div className="text-center">
-                  <p className="text-sm font-medium text-gray-400 mb-1">
-                    Engineering dependency
-                  </p>
-                  <p className="text-xs text-gray-400">reduction</p>
+                <div className="flex flex-col items-start gap-[18px]">
+                  <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                    <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
+                      Engineering dependency
+                    </div>
+                  </div>
+                  <div className="flex max-w-[529.922px] flex-col items-center self-stretch">
+                    <div className="text-[#9CA3AF] text-center text-xs font-normal leading-4">
+                      reduction
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center gap-3 bg-gradient-to-br from-[#0080FF]/10 to-transparent rounded-xl p-6 border border-[#0080FF]/20">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-[#0080FF] mb-3">
-                    Zero
+              <div className="flex w-[251.5px] py-[25px] px-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#0080FF]/20 bg-gradient-to-br from-[#0080FF]/10 to-transparent">
+                <div className="flex pb-3 flex-col items-start">
+                  <div className="flex flex-col items-center">
+                    <div className="text-[#0080FF] text-center text-4xl font-bold leading-10">
+                      Zero
+                    </div>
                   </div>
                 </div>
-                <div className="text-center">
-                  <p className="text-sm font-medium text-gray-400 mb-1">
-                    FMV disputes
-                  </p>
-                  <p className="text-xs text-gray-400">post-launch</p>
+                <div className="flex flex-col items-start gap-[18px]">
+                  <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                    <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
+                      FMV disputes
+                    </div>
+                  </div>
+                  <div className="flex max-w-[529.922px] flex-col items-center self-stretch">
+                    <div className="text-[#9CA3AF] text-center text-xs font-normal leading-4">
+                      post-launch
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
