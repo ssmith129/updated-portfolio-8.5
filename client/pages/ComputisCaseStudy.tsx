@@ -75,7 +75,7 @@ export default function ComputisCaseStudy() {
       <Navigation />
 
       {/* Back Button */}
-      <div className="max-w-[1400px] mx-auto px-10 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-6 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-base font-medium text-[#888888] leading-normal hover:text-[#00D4FF] transition-all duration-300 group hover-back-button px-4 py-2 rounded-lg border border-transparent"
@@ -87,7 +87,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <header className="max-w-[1400px] w-full mx-auto px-10 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
+      <header className="max-w-[1400px] w-full mx-auto px-6 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="mb-8 flex flex-col gap-6">
           <span className="inline-block bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] px-4 py-2 rounded-2xl text-sm font-semibold tracking-tight mb-6 w-auto self-start">
             FinTech UX Case Study
@@ -102,7 +102,7 @@ export default function ComputisCaseStudy() {
       </header>
 
       {/* Hero Video */}
-      <div className="max-w-[1400px] mx-auto px-10 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-6 relative z-10">
         <div className="w-full flex flex-col items-center justify-center">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#00D4FF] to-[#00FFB3] rounded-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur"></div>
