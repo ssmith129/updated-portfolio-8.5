@@ -92,7 +92,7 @@ export default function ComputisCaseStudy() {
           <span className="inline-block bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] px-4 py-2 rounded-2xl text-sm font-semibold tracking-tight mb-6 w-auto self-start">
             FinTech UX Case Study
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight mb-6 w-full">
             Computis: From Black Box to Transparent AI
           </h1>
           <p className="text-xl sm:text-2xl font-normal text-gray-400 leading-relaxed tracking-tight w-full text-left self-center max-w-[860px] ml-0 mr-auto">
@@ -131,7 +131,7 @@ export default function ComputisCaseStudy() {
         </div>
       </div>
 
-      <div className="flex flex-col relative mt-5 text-center z-10 mb-12">
+      <div className="flex flex-col relative mt-5 text-center z-10 mb-6">
         <a
           href="https://computis.netlify.app/"
           target="_blank"
