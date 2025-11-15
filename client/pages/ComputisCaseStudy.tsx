@@ -260,7 +260,7 @@ export default function ComputisCaseStudy() {
 
         {/* Quick Facts */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-10 py-3 border border-[#1A1A1A] flex flex-col items-start gap-6">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-10 py-3 border border-[#1A1A1A] flex flex-col items-start gap-3">
             <h2 className="text-[30px] font-semibold text-white leading-[36px] tracking-[-0.3px]">
               Quick Facts
             </h2>
