@@ -260,7 +260,7 @@ export default function ComputisCaseStudy() {
 
         {/* Quick Facts */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A] h-auto flex-grow-0 flex flex-col justify-start items-start">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-12 border border-[#1A1A1A] h-auto flex-grow-0 flex flex-col justify-start items-start">
             <h2 className="text-4xl font-semibold text-white text-left mb-8">
               Quick Facts
             </h2>
@@ -876,7 +876,7 @@ export default function ComputisCaseStudy() {
                         <span className="text-2xl">❌</span>
                       </td>
                       <td className="text-center p-4">
-                        <span className="text-2xl">��</span>
+                        <span className="text-2xl">❌</span>
                       </td>
                       <td className="text-center p-4">
                         <span className="text-2xl">❌</span>
