@@ -619,7 +619,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-full md:w-[340px] h-[230px] py-[21px] px-[27px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+              <div className="flex w-full md:w-[320px] h-[230px] p-3 flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
                 <div className="flex w-12 h-[68px] pb-5 flex-col items-start flex-shrink-0">
                   <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#00FFB3]/10">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
