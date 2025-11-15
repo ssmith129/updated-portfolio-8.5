@@ -156,7 +156,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1400px] mx-auto px-10 space-y-16 relative z-10">
+      <main className="max-w-[1400px] mx-auto px-10 space-y-1 relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <div className="flex px-[41px] py-0 flex-col items-start gap-5 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
