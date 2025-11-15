@@ -175,7 +175,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-col items-start gap-2">
                   <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       CPA onboarding time
@@ -183,7 +183,7 @@ export default function ComputisCaseStudy() {
                   </div>
                   <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#9CA3AF] text-center text-xs font-normal leading-4">
-                      (2.5h �� 1.4h)
+                      (2.5h → 1.4h)
                     </div>
                   </div>
                 </div>
@@ -197,7 +197,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-col items-start gap-2">
                   <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       Demo-to-conversion rate
@@ -219,7 +219,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-col items-start gap-2">
                   <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       Engineering dependency
@@ -241,7 +241,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-4">
+                <div className="flex flex-col items-start gap-2">
                   <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       FMV disputes
