@@ -1051,11 +1051,11 @@ export default function ComputisCaseStudy() {
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-[#00D4FF] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0">
+                    <div className="w-8 h-8 bg-[#00D4FF] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0 mt-0.5">
                       1
                     </div>
                     <div>
-                      <h4 className="text-base font-semibold text-white mb-1">
+                      <h4 className="text-base font-semibold text-white mb-1 leading-8">
                         Foundation
                       </h4>
                       <ul className="text-gray-400 space-y-1 text-sm">
@@ -1074,11 +1074,11 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="flex flex-col w-[33%] ml-5 max-md:ml-0 max-md:w-full">
                   <div className="flex items-start gap-4 h-auto flex-grow">
-                    <div className="w-8 h-8 bg-[#00FFB3] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0">
+                    <div className="w-8 h-8 bg-[#00FFB3] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0 mt-0.5">
                       2
                     </div>
                     <div>
-                      <h4 className="text-base font-semibold text-white mb-1">
+                      <h4 className="text-base font-semibold text-white mb-1 leading-8">
                         Exploration
                       </h4>
                       <ul className="text-gray-400 space-y-1 text-sm">
@@ -1097,11 +1097,11 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="flex flex-col w-[33%] ml-5 max-md:ml-0 max-md:w-full">
                   <div className="flex items-start gap-4 h-auto flex-grow">
-                    <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                    <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mt-0.5">
                       3
                     </div>
                     <div>
-                      <h4 className="text-base font-semibold text-white mb-1">
+                      <h4 className="text-base font-semibold text-white mb-1 leading-8">
                         Validation
                       </h4>
                       <ul className="text-gray-400 space-y-1 text-sm">
