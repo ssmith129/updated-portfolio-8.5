@@ -991,7 +991,7 @@ export default function ComputisCaseStudy() {
                   loading="lazy"
                   onClick={() =>
                     setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa320d8ba63c4433a76c919e90d558f6",
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fdd2691193932438a8f68173a7d662e54",
                     )
                   }
                 />
