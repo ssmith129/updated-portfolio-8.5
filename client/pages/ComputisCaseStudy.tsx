@@ -1093,7 +1093,7 @@ export default function ComputisCaseStudy() {
                   <div className="flex items-start gap-4 h-auto flex-grow">
                     <div>
                       <h4 className="text-base font-semibold text-[#8a5cf6] mb-1 leading-8">
-                        3. Validation
+                        2. Validation
                       </h4>
                       <ul className="text-gray-400 space-y-1 text-sm">
                         <li className="text-base">
