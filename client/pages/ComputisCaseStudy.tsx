@@ -384,7 +384,7 @@ export default function ComputisCaseStudy() {
             <div className="w-full max-w-[1078px] flex flex-col items-start gap-3 rounded-2xl border border-[#00D4FF]/20 bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 px-[25px] py-6">
               <div className="flex items-center gap-2 self-stretch">
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 flex flex-col justify-center items-start"
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
