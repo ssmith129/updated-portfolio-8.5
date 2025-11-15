@@ -175,7 +175,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-[18px]">
+                <div className="flex flex-col items-start gap-4">
                   <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       CPA onboarding time
@@ -197,7 +197,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-[18px]">
+                <div className="flex flex-col items-start gap-4">
                   <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       Demo-to-conversion rate
@@ -215,11 +215,11 @@ export default function ComputisCaseStudy() {
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
                     <div className="text-[#00D4FF] text-center text-4xl font-bold leading-10">
-                      ��� 85%
+                      ↓ 85%
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-[18px]">
+                <div className="flex flex-col items-start gap-4">
                   <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       Engineering dependency
@@ -241,7 +241,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-[18px]">
+                <div className="flex flex-col items-start gap-4">
                   <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       FMV disputes
