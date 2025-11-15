@@ -1051,12 +1051,9 @@ export default function ComputisCaseStudy() {
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-[#00D4FF] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0 mt-0.5">
-                      1
-                    </div>
                     <div>
-                      <h4 className="text-base font-semibold text-white mb-1 leading-8">
-                        Foundation
+                      <h4 className="text-base font-semibold mb-1 leading-8">
+                        <span className="text-[#04d4ff]">1. Foundation</span>
                       </h4>
                       <ul className="text-gray-400 space-y-1 text-sm">
                         <li className="text-base">
@@ -1074,12 +1071,9 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="flex flex-col w-[33%] ml-5 max-md:ml-0 max-md:w-full">
                   <div className="flex items-start gap-4 h-auto flex-grow">
-                    <div className="w-8 h-8 bg-[#00FFB3] rounded-full flex items-center justify-center text-[#0A0A0A] font-bold flex-shrink-0 mt-0.5">
-                      2
-                    </div>
                     <div>
-                      <h4 className="text-base font-semibold text-white mb-1 leading-8">
-                        Exploration
+                      <h4 className="text-base font-semibold text-[#00ffb3] mb-1 leading-8">
+                        2. Exploration
                       </h4>
                       <ul className="text-gray-400 space-y-1 text-sm">
                         <li className="text-base">
@@ -1097,12 +1091,9 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="flex flex-col w-[33%] ml-5 max-md:ml-0 max-md:w-full">
                   <div className="flex items-start gap-4 h-auto flex-grow">
-                    <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 mt-0.5">
-                      3
-                    </div>
                     <div>
-                      <h4 className="text-base font-semibold text-white mb-1 leading-8">
-                        Validation
+                      <h4 className="text-base font-semibold text-[#8a5cf6] mb-1 leading-8">
+                        3. Validation
                       </h4>
                       <ul className="text-gray-400 space-y-1 text-sm">
                         <li className="text-base">
@@ -1134,9 +1125,8 @@ export default function ComputisCaseStudy() {
               {/* Decision 1 */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl font-bold text-[#00D4FF]">1.</span>
-                  <h3 className="text-lg font-semibold text-white">
-                    AI Confidence Chips + Override Control
+                  <h3 className="text-xl font-bold text-[#04d4ff] leading-7">
+                    1. AI Confidence Chips + Override Control
                   </h3>
                 </div>
                 <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
@@ -1178,9 +1168,8 @@ export default function ComputisCaseStudy() {
               {/* Decision 2 */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl font-bold text-[#00FFB3]">2.</span>
-                  <h3 className="text-lg font-semibold text-white">
-                    Inline Audit Trail Drawer
+                  <h3 className="text-xl font-bold text-[#00ffb3] leading-7">
+                    2. Inline Audit Trail Drawer
                   </h3>
                 </div>
                 <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
@@ -1221,9 +1210,8 @@ export default function ComputisCaseStudy() {
               {/* Decision 3 */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl font-bold text-[#8B5CF6]">3.</span>
-                  <h3 className="text-lg font-semibold text-white">
-                    Visual Rule Builder (No-Code)
+                  <h3 className="text-xl font-bold text-[#8a5cf6] leading-7">
+                    3. Visual Rule Builder (No-Code)
                   </h3>
                 </div>
                 <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
@@ -1265,9 +1253,8 @@ export default function ComputisCaseStudy() {
               {/* Decision 4 */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl font-bold text-[#F59E0B]">4.</span>
-                  <h3 className="text-lg font-semibold text-white">
-                    Contextual Anomaly Detection
+                  <h3 className="text-xl font-bold text-[#f59e0b] leading-7">
+                    4. Contextual Anomaly Detection
                   </h3>
                 </div>
                 <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
@@ -1309,9 +1296,8 @@ export default function ComputisCaseStudy() {
               {/* Decision 5 */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl font-bold text-[#00D4FF]">5.</span>
-                  <h3 className="text-lg font-semibold text-white">
-                    Multi-Tenant Dashboard
+                  <h3 className="text-xl font-bold text-[#04d4ff] leading-7">
+                    5. Multi-Tenant Dashboard
                   </h3>
                 </div>
                 <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] mt-6">
@@ -1365,7 +1351,7 @@ export default function ComputisCaseStudy() {
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <h4 className="text-sm font-semibold text-[#00FFB3] mb-3">
                   User Efficiency
                 </h4>
@@ -1376,7 +1362,7 @@ export default function ComputisCaseStudy() {
                 </ul>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <h4 className="text-sm font-semibold text-[#FFD700] mb-3">
                   Business Growth
                 </h4>
@@ -1387,7 +1373,7 @@ export default function ComputisCaseStudy() {
                 </ul>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <h4 className="text-sm font-semibold text-[#00D4FF] mb-3">
                   Technical Excellence
                 </h4>
@@ -1456,7 +1442,7 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <div className="flex items-start gap-4 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center flex-shrink-0">
                     <Lightbulb className="w-5 h-5 text-[#00D4FF]" />
@@ -1485,7 +1471,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <div className="flex items-start gap-4 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center flex-shrink-0">
                     <Layers className="w-5 h-5 text-[#00FFB3]" />
@@ -1512,7 +1498,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <div className="flex items-start gap-4 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center flex-shrink-0">
                     <Shield className="w-5 h-5 text-[#8B5CF6]" />
@@ -1537,7 +1523,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <div className="flex items-start gap-4 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0">
                     <TrendingUp className="w-5 h-5 text-[#FFD700]" />
@@ -1574,7 +1560,7 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <h3 className="text-lg font-semibold text-white mb-3">
                   1. Earlier Engineering Involvement
                 </h3>
@@ -1598,7 +1584,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <h3 className="text-lg font-semibold text-white mb-3">
                   2. Structured Usability Testing from Start
                 </h3>
@@ -1623,7 +1609,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A]">
+              <div className="bg-[#1A1A1A]/60 rounded-xl pt-0 px-6 pb-6 border border-[#2A2A2A]">
                 <h3 className="text-lg font-semibold text-white mb-3">
                   3. Ongoing Competitive Monitoring
                 </h3>
