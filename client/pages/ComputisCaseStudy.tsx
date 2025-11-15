@@ -159,7 +159,7 @@ export default function ComputisCaseStudy() {
       <main className="max-w-[1400px] mx-auto px-10 space-y-16 relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-          <div className="flex px-[41px] py-0 flex-col items-start self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+          <div className="flex px-12 py-12 flex-col items-start gap-8 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
             <div className="flex flex-col items-start self-stretch">
               <h2 className="self-stretch text-white text-[30px] font-semibold leading-9 tracking-[-0.3px]">
                 Impact at a Glance
@@ -167,7 +167,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="flex justify-center items-start gap-6 self-stretch">
-              <div className="flex w-[251.5px] py-[25px] px-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#00FFB3]/20 bg-gradient-to-br from-[#00FFB3]/10 to-transparent">
+              <div className="flex w-full md:w-[251.5px] p-6 flex-col items-center gap-4 self-stretch rounded-2xl border border-[#00FFB3]/20 bg-gradient-to-br from-[#00FFB3]/10 to-transparent">
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
                     <div className="text-[#00FFB3] text-center text-4xl font-bold leading-10">
@@ -189,7 +189,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-[251.5px] py-[25px] px-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#FFD700]/20 bg-gradient-to-br from-[#FFD700]/10 to-transparent">
+              <div className="flex w-full md:w-[251.5px] p-6 flex-col items-center gap-4 self-stretch rounded-2xl border border-[#FFD700]/20 bg-gradient-to-br from-[#FFD700]/10 to-transparent">
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
                     <div className="text-[#FFD700] text-center text-4xl font-bold leading-10">
@@ -211,11 +211,11 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-[251.5px] py-[25px] px-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#00D4FF]/20 bg-gradient-to-br from-[#00D4FF]/10 to-transparent">
+              <div className="flex w-full md:w-[251.5px] p-6 flex-col items-center gap-4 self-stretch rounded-2xl border border-[#00D4FF]/20 bg-gradient-to-br from-[#00D4FF]/10 to-transparent">
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
                     <div className="text-[#00D4FF] text-center text-4xl font-bold leading-10">
-                      ↓ 85%
+                      ��� 85%
                     </div>
                   </div>
                 </div>
@@ -233,7 +233,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-[251.5px] py-[25px] px-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#0080FF]/20 bg-gradient-to-br from-[#0080FF]/10 to-transparent">
+              <div className="flex w-full md:w-[251.5px] p-6 flex-col items-center gap-4 self-stretch rounded-2xl border border-[#0080FF]/20 bg-gradient-to-br from-[#0080FF]/10 to-transparent">
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
                     <div className="text-[#0080FF] text-center text-4xl font-bold leading-10">
