@@ -260,7 +260,7 @@ export default function ComputisCaseStudy() {
 
         {/* Quick Facts */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 pt-8 pb-8 border border-[#1A1A1A] h-auto flex-grow-0">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A] h-auto flex-grow-0">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white text-left mb-6">
               Quick Facts
             </h2>
@@ -304,7 +304,7 @@ export default function ComputisCaseStudy() {
 
         {/* The Challenge */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 pt-8 pb-8 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
               The Challenge: Automation vs. Professional Liability
             </h2>
@@ -408,7 +408,7 @@ export default function ComputisCaseStudy() {
 
         {/* Research & Discovery */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 pt-8 pb-8 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
               Research: Understanding Professional Skepticism
             </h2>
@@ -833,7 +833,7 @@ export default function ComputisCaseStudy() {
 
         {/* Competitive Landscape */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 pt-8 pb-8 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
               Competitive Landscape: The Transparency Gap
             </h2>
@@ -973,7 +973,7 @@ export default function ComputisCaseStudy() {
 
         {/* Design Process */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 pt-8 pb-10 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
               Design Process: Trust-First, Professional-Centered
             </h2>
