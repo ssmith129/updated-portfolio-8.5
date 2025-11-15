@@ -159,7 +159,7 @@ export default function ComputisCaseStudy() {
       <main className="max-w-[1400px] mx-auto px-10 space-y-0 relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-          <div className="flex px-[41px] py-0 flex-col items-start gap-5 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+          <div className="flex px-[41px] py-0 flex-col items-start self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
             <div className="flex flex-col items-start self-stretch">
               <h2 className="self-stretch text-white text-[30px] font-semibold leading-9 tracking-[-0.3px]">
                 Impact at a Glance
@@ -259,8 +259,8 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Quick Facts */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A] h-auto flex-grow-0">
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A] h-auto flex-grow-0 flex flex-col justify-start items-start">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white text-left mb-6">
               Quick Facts
             </h2>
@@ -303,7 +303,7 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* The Challenge */}
-        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
+        <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800 flex flex-col">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A]">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
               The Challenge: Automation vs. Professional Liability
@@ -1324,7 +1324,7 @@ export default function ComputisCaseStudy() {
                   User Efficiency
                 </h4>
                 <ul className="space-y-2 text-sm text-gray-400">
-                  <li>↓45% CPA onboarding time (2.5h → 1.4h)</li>
+                  <li>↓45% CPA onboarding time (2.5h �� 1.4h)</li>
                   <li>↓40% support tickets</li>
                   <li>Zero FMV disputes post-launch</li>
                 </ul>
