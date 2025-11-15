@@ -265,7 +265,7 @@ export default function ComputisCaseStudy() {
               Quick Facts
             </h2>
 
-            <div className="flex flex-row sm:grid sm:grid-cols-2 lg:grid-cols-4 mt-5 w-auto self-stretch">
+            <div className="flex flex-row sm:grid sm:grid-cols-2 lg:grid-cols-4 w-auto self-stretch">
               <div className="space-y-2">
                 <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide">
                   Role
