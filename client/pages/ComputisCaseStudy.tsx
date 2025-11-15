@@ -176,7 +176,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start gap-4">
-                  <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                  <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       CPA onboarding time
                     </div>
@@ -198,7 +198,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start gap-4">
-                  <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                  <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       Demo-to-conversion rate
                     </div>
@@ -220,7 +220,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start gap-4">
-                  <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                  <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       Engineering dependency
                     </div>
@@ -242,7 +242,7 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start gap-4">
-                  <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                  <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       FMV disputes
                     </div>
@@ -535,7 +535,7 @@ export default function ComputisCaseStudy() {
                         1. Professional Liability &gt; Efficiency
                       </div>
                     </div>
-                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                    <div className="flex flex-col items-center self-stretch">
                       <div className="text-[#888] text-center text-sm font-normal leading-5">
                         (28 quotes)
                       </div>
@@ -584,7 +584,7 @@ export default function ComputisCaseStudy() {
                         2. Engineering Dependency Blocks Scale
                       </div>
                     </div>
-                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                    <div className="flex flex-col items-center self-stretch">
                       <div className="text-[#888] text-center text-sm font-normal leading-5">
                         (19 quotes)
                       </div>
@@ -653,7 +653,7 @@ export default function ComputisCaseStudy() {
                         3. Audit Trails = Enterprise Dealbreaker
                       </div>
                     </div>
-                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                    <div className="flex flex-col items-center self-stretch">
                       <div className="text-[#888] text-center text-sm font-normal leading-5">
                         (31 quotes)
                       </div>
@@ -709,7 +709,7 @@ export default function ComputisCaseStudy() {
                         4. Manual Work Fails at Scale
                       </div>
                     </div>
-                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                    <div className="flex flex-col items-center self-stretch">
                       <div className="text-[#888] text-center text-sm font-normal leading-5">
                         (26 quotes)
                       </div>
@@ -758,7 +758,7 @@ export default function ComputisCaseStudy() {
                         5. Trust Requires Control, Not Replacement
                       </div>
                     </div>
-                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                    <div className="flex flex-col items-center self-stretch">
                       <div className="text-[#888] text-center text-sm font-normal leading-5">
                         (23 quotes)
                       </div>
