@@ -161,7 +161,7 @@ export default function ComputisCaseStudy() {
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
           <div className="flex px-12 py-12 flex-col items-start gap-8 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
             <div className="flex flex-col items-start self-stretch">
-              <h2 className="self-stretch text-white text-[30px] font-semibold leading-9 tracking-[-0.3px]">
+              <h2 className="self-stretch text-white text-3xl font-semibold leading-tight tracking-tight">
                 Impact at a Glance
               </h2>
             </div>
@@ -261,7 +261,7 @@ export default function ComputisCaseStudy() {
         {/* Quick Facts */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A] h-auto flex-grow-0 flex flex-col justify-start items-start">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white text-left mb-6">
+            <h2 className="text-4xl font-semibold text-white text-left mb-8">
               Quick Facts
             </h2>
 
@@ -305,7 +305,7 @@ export default function ComputisCaseStudy() {
         {/* The Challenge */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800 flex flex-col">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
+            <h2 className="text-4xl font-semibold text-white mb-8">
               The Challenge: Automation vs. Professional Liability
             </h2>
 
@@ -409,7 +409,7 @@ export default function ComputisCaseStudy() {
         {/* Research & Discovery */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
+            <h2 className="text-4xl font-semibold text-white mb-8">
               Research: Understanding Professional Skepticism
             </h2>
 
@@ -834,7 +834,7 @@ export default function ComputisCaseStudy() {
         {/* Competitive Landscape */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
+            <h2 className="text-4xl font-semibold text-white mb-8">
               Competitive Landscape: The Transparency Gap
             </h2>
 
@@ -876,7 +876,7 @@ export default function ComputisCaseStudy() {
                         <span className="text-2xl">❌</span>
                       </td>
                       <td className="text-center p-4">
-                        <span className="text-2xl">❌</span>
+                        <span className="text-2xl">��</span>
                       </td>
                       <td className="text-center p-4">
                         <span className="text-2xl">❌</span>
@@ -974,7 +974,7 @@ export default function ComputisCaseStudy() {
         {/* Design Process */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
           <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-12 py-6 border border-[#1A1A1A]">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6">
+            <h2 className="text-4xl font-semibold text-white mb-8">
               Design Process: Trust-First, Professional-Centered
             </h2>
 
