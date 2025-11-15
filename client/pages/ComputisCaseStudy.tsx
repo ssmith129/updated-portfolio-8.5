@@ -274,7 +274,9 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="flex flex-col items-start max-w-[795px]">
                   <p className="text-lg font-medium text-white leading-7">
-                    Lead Product Designer<br />(Founding Designer)
+                    Lead Product Designer
+                    <br />
+                    (Founding Designer)
                   </p>
                 </div>
               </div>
@@ -313,7 +315,9 @@ export default function ComputisCaseStudy() {
                 </div>
                 <div className="flex flex-col items-start max-w-[795px]">
                   <p className="text-lg font-medium text-white leading-7">
-                    Web SaaS (Desktop-first,<br />responsive)
+                    Web SaaS (Desktop-first,
+                    <br />
+                    responsive)
                   </p>
                 </div>
               </div>
@@ -379,10 +383,35 @@ export default function ComputisCaseStudy() {
 
             <div className="w-full max-w-[1078px] flex flex-col items-start gap-3 rounded-2xl border border-[#00D4FF]/20 bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 px-6 py-6">
               <div className="flex items-center gap-2 self-stretch">
-                <svg className="w-5 h-5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.99999 18.3334C14.6024 18.3334 18.3333 14.6025 18.3333 10.0001C18.3333 5.39771 14.6024 1.66675 9.99999 1.66675C5.39762 1.66675 1.66666 5.39771 1.66666 10.0001C1.66666 14.6025 5.39762 18.3334 9.99999 18.3334Z" stroke="#00D4FF" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z" stroke="#00D4FF" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M10 11.6666C10.9205 11.6666 11.6667 10.9204 11.6667 9.99992C11.6667 9.07944 10.9205 8.33325 10 8.33325C9.07954 8.33325 8.33334 9.07944 8.33334 9.99992C8.33334 10.9204 9.07954 11.6666 10 11.6666Z" stroke="#00D4FF" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg
+                  className="w-5 h-5"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.99999 18.3334C14.6024 18.3334 18.3333 14.6025 18.3333 10.0001C18.3333 5.39771 14.6024 1.66675 9.99999 1.66675C5.39762 1.66675 1.66666 5.39771 1.66666 10.0001C1.66666 14.6025 5.39762 18.3334 9.99999 18.3334Z"
+                    stroke="#00D4FF"
+                    strokeWidth="1.66667"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z"
+                    stroke="#00D4FF"
+                    strokeWidth="1.66667"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M10 11.6666C10.9205 11.6666 11.6667 10.9204 11.6667 9.99992C11.6667 9.07944 10.9205 8.33325 10 8.33325C9.07954 8.33325 8.33334 9.07944 8.33334 9.99992C8.33334 10.9204 9.07954 11.6666 10 11.6666Z"
+                    stroke="#00D4FF"
+                    strokeWidth="1.66667"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
                 <h3 className="text-lg font-semibold text-white leading-7">
                   Core Insight
@@ -405,7 +434,9 @@ export default function ComputisCaseStudy() {
                 <div className="flex flex-col items-start gap-2 self-stretch pl-8">
                   <div className="flex items-start gap-2 self-stretch">
                     <div className="flex flex-col items-start pt-0.5">
-                      <span className="text-sm text-[#00FFB3] leading-[23.8px]">•</span>
+                      <span className="text-sm text-[#00FFB3] leading-[23.8px]">
+                        •
+                      </span>
                     </div>
                     <p className="text-sm text-[#B0AFAF] leading-[23.8px]">
                       8/8 CPAs rejected automation they couldn't explain
@@ -414,7 +445,9 @@ export default function ComputisCaseStudy() {
 
                   <div className="flex items-start gap-2 self-stretch">
                     <div className="flex flex-col items-start pt-0.5">
-                      <span className="text-sm text-[#00FFB3] leading-[23.8px]">•</span>
+                      <span className="text-sm text-[#00FFB3] leading-[23.8px]">
+                        •
+                      </span>
                     </div>
                     <p className="text-sm text-[#B0AFAF] leading-[23.8px]">
                       Manual verification defeated automation's purpose
@@ -423,7 +456,9 @@ export default function ComputisCaseStudy() {
 
                   <div className="flex items-start gap-2 self-stretch">
                     <div className="flex flex-col items-start pt-0.5">
-                      <span className="text-sm text-[#00FFB3] leading-[23.8px]">•</span>
+                      <span className="text-sm text-[#00FFB3] leading-[23.8px]">
+                        •
+                      </span>
                     </div>
                     <p className="text-sm text-[#B0AFAF] leading-[23.8px]">
                       Professional liability &gt; operational efficiency
@@ -435,7 +470,8 @@ export default function ComputisCaseStudy() {
               <div className="bg-[#0F0F0F] rounded-lg px-5 pt-5 pb-4 border-l-4 border-[#00D4FF] flex flex-col items-start gap-2 self-stretch">
                 <div className="flex flex-col items-start w-full max-w-[618px]">
                   <p className="text-sm text-white italic leading-5">
-                    "If I can't screenshot your AI's reasoning for an audit, it's just another liability."
+                    "If I can't screenshot your AI's reasoning for an audit,
+                    it's just another liability."
                   </p>
                 </div>
 
