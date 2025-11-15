@@ -166,8 +166,8 @@ export default function ComputisCaseStudy() {
               </h2>
             </div>
 
-            <div className="flex justify-center items-start self-stretch">
-              <div className="flex w-full md:w-[251.5px] p-6 flex-col items-center gap-2 self-stretch rounded-2xl border border-[#00FFB3]/20 bg-gradient-to-br from-[#00FFB3]/10 to-transparent">
+            <div className="flex justify-center items-start gap-6 self-stretch">
+              <div className="flex w-full md:w-[251.5px] p-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#00FFB3]/20 bg-gradient-to-br from-[#00FFB3]/10 to-transparent">
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
                     <div className="text-[#00FFB3] text-center text-4xl font-bold leading-10">
@@ -175,7 +175,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-2">
+                <div className="flex flex-col items-start gap-[18px]">
                   <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       CPA onboarding time
@@ -189,7 +189,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-full md:w-[251.5px] p-6 flex-col items-center gap-2 self-stretch rounded-2xl border border-[#FFD700]/20 bg-gradient-to-br from-[#FFD700]/10 to-transparent">
+              <div className="flex w-full md:w-[251.5px] p-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#FFD700]/20 bg-gradient-to-br from-[#FFD700]/10 to-transparent">
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
                     <div className="text-[#FFD700] text-center text-4xl font-bold leading-10">
@@ -197,7 +197,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-2">
+                <div className="flex flex-col items-start gap-[18px]">
                   <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       Demo-to-conversion rate
@@ -211,7 +211,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-full md:w-[251.5px] p-6 flex-col items-center gap-2 self-stretch rounded-2xl border border-[#00D4FF]/20 bg-gradient-to-br from-[#00D4FF]/10 to-transparent">
+              <div className="flex w-full md:w-[251.5px] p-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#00D4FF]/20 bg-gradient-to-br from-[#00D4FF]/10 to-transparent">
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
                     <div className="text-[#00D4FF] text-center text-4xl font-bold leading-10">
@@ -219,7 +219,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-2">
+                <div className="flex flex-col items-start gap-[18px]">
                   <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       Engineering dependency
@@ -233,7 +233,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-full md:w-[251.5px] p-6 flex-col items-center gap-2 self-stretch rounded-2xl border border-[#0080FF]/20 bg-gradient-to-br from-[#0080FF]/10 to-transparent">
+              <div className="flex w-full md:w-[251.5px] p-[25px] flex-col items-center gap-3 self-stretch rounded-2xl border border-[#0080FF]/20 bg-gradient-to-br from-[#0080FF]/10 to-transparent">
                 <div className="flex pb-3 flex-col items-start">
                   <div className="flex flex-col items-center">
                     <div className="text-[#0080FF] text-center text-4xl font-bold leading-10">
@@ -241,7 +241,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-2">
+                <div className="flex flex-col items-start gap-[18px]">
                   <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#B0AFAF] text-center text-sm font-medium leading-5">
                       FMV disputes
