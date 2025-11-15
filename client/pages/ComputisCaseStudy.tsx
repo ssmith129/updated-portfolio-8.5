@@ -159,7 +159,7 @@ export default function ComputisCaseStudy() {
       <main className="max-w-[1200px] mx-auto px-10 space-y-[14px] relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-          <div className="flex py-6 px-10 pb-0.5 flex-col items-start gap-5 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+          <div className="flex pt-6 px-[41px] pb-px flex-col items-start gap-5 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
             <div className="flex pb-5 flex-col items-start self-stretch">
               <h2 className="self-stretch text-white text-[30px] font-semibold leading-9 tracking-[-0.3px]">
                 Impact at a Glance
