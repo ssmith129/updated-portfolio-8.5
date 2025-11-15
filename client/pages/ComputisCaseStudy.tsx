@@ -459,92 +459,158 @@ export default function ComputisCaseStudy() {
               Five Critical Insights
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 justify-center items-start">
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A] hover:border-[#EF4444]/40 transition-all h-full flex flex-col justify-start items-center">
-                <div className="w-12 h-12 rounded-lg bg-[#EF4444]/10 flex items-center justify-center mb-5">
-                  <ShieldAlert className="w-6 h-6 text-[#EF4444]" />
+            <div className="flex justify-center items-start content-start gap-6 flex-wrap">
+              <div className="flex w-full md:w-[340px] p-[25px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+                <div className="flex w-12 h-[68px] pb-5 flex-col items-start">
+                  <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#EF4444]/10">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 13C20 18 16.5 20.5 12.34 21.95C12.1222 22.0238 11.8855 22.0202 11.67 21.94C7.5 20.5 4 18 4 13V5.99996C4 5.73474 4.10536 5.48039 4.29289 5.29285C4.48043 5.10532 4.73478 4.99996 5 4.99996C7 4.99996 9.5 3.79996 11.24 2.27996C11.4519 2.09896 11.7214 1.99951 12 1.99951C12.2786 1.99951 12.5481 2.09896 12.76 2.27996C14.51 3.80996 17 4.99996 19 4.99996C19.2652 4.99996 19.5196 5.10532 19.7071 5.29285C19.8946 5.48039 20 5.73474 20 5.99996V13Z" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M12 8V12" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M12 16H12.01" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </div>
-                <div className="flex items-start gap-4 flex-1 text-center">
-                  <div>
-                    <h4 className="text-sm font-semibold text-white mb-2">
-                      1. Professional Liability &gt; Efficiency
-                    </h4>
-                    <p className="text-sm text-[#888888] mb-2">(28 quotes)</p>
-                    <p className="text-gray-400 text-sm leading-5 mt-5">
-                      Finding: 8/8 participants prioritized IRS defensibility
-                      over time savings
-                    </p>
+                <div className="flex items-start">
+                  <div className="flex min-w-[293.33px] flex-col items-start gap-2">
+                    <div className="flex flex-col items-center self-stretch">
+                      <div className="text-white text-center text-sm font-semibold leading-5">
+                        1. Professional Liability &gt; Efficiency
+                      </div>
+                    </div>
+                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                      <div className="text-[#888] text-center text-sm font-normal leading-5">
+                        (28 quotes)
+                      </div>
+                    </div>
+                    <div className="flex max-w-[618.242px] pt-3 flex-col items-center self-stretch">
+                      <div className="text-[#B7B7B7] text-center text-sm font-normal leading-5">
+                        Finding: 8/8 participants prioritized IRS defensibility over time savings
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A] hover:border-[#F59E0B]/40 transition-all h-full flex flex-col text-center justify-start items-center">
-                <div className="w-12 h-12 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center mb-5">
-                  <Clock className="w-6 h-6 text-[#F59E0B]" />
+              <div className="flex w-full md:w-[340px] p-[25px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+                <div className="flex w-12 h-[68px] pb-5 flex-col items-start">
+                  <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#F59E0B]/10">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M12 6V12L16 14" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </div>
-                <div className="flex items-start gap-4 flex-1 justify-start">
-                  <div>
-                    <h4 className="text-sm font-semibold text-white mb-2">
-                      2. Engineering Dependency Blocks Scale
-                    </h4>
-                    <p className="text-sm text-[#888888] mb-2">(19 quotes)</p>
-                    <p className="text-gray-400 text-sm leading-5 m-5">
-                      <span className="text-gray-400">
+                <div className="flex items-start">
+                  <div className="flex min-w-[293.34px] flex-col items-center gap-2">
+                    <div className="flex flex-col items-center self-stretch">
+                      <div className="text-white text-center text-sm font-semibold leading-5">
+                        2. Engineering Dependency Blocks Scale
+                      </div>
+                    </div>
+                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                      <div className="text-[#888] text-center text-sm font-normal leading-5">
+                        (19 quotes)
+                      </div>
+                    </div>
+                    <div className="flex w-[253.34px] max-w-[618.242px] pt-3 flex-col items-center">
+                      <div className="text-[#B7B7B7] text-center text-sm font-normal leading-5">
                         Finding: 2-3 day wait times for Python script execution
-                      </span>
-                    </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A] hover:border-[#8B5CF6]/40 transition-all h-full flex flex-col justify-start items-center">
-                <div className="w-12 h-12 rounded-lg bg-[#8B5CF6]/10 flex items-center justify-center mb-5">
-                  <FileText className="w-6 h-6 text-[#8B5CF6]" />
+              <div className="flex w-full md:w-[340px] p-[25px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+                <div className="flex w-12 h-[68px] pb-5 flex-col items-start">
+                  <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#8B5CF6]/10">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V7L15 2Z" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M14 2V6C14 6.53043 14.2107 7.03914 14.5858 7.41421C14.9609 7.78929 15.4696 8 16 8H20" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M10 9H8" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M16 13H8" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M16 17H8" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </div>
-                <div className="flex items-start gap-4 flex-1">
-                  <div className="text-center">
-                    <h4 className="text-sm font-semibold text-white mb-2">
-                      3. Audit Trails = Enterprise Dealbreaker
-                    </h4>
-                    <p className="text-sm text-[#888888] mb-2">(31 quotes)</p>
-                    <p className="text-gray-400 text-sm leading-5 m-5">
-                      Finding: 4/4 competitors lack comprehensive change history
-                    </p>
+                <div className="flex w-[293.34px] items-start">
+                  <div className="flex min-w-[293.34px] flex-col items-center gap-2">
+                    <div className="flex flex-col items-center self-stretch">
+                      <div className="text-white text-center text-sm font-semibold leading-5">
+                        3. Audit Trails = Enterprise Dealbreaker
+                      </div>
+                    </div>
+                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                      <div className="text-[#888] text-center text-sm font-normal leading-5">
+                        (31 quotes)
+                      </div>
+                    </div>
+                    <div className="flex w-[253.34px] max-w-[618.242px] pt-3 flex-col items-center">
+                      <div className="text-[#B7B7B7] text-center text-sm font-normal leading-5">
+                        Finding: 4/4 competitors lack comprehensive change history
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl p-6 border border-[#2A2A2A] hover:border-[#00D4FF]/40 transition-all h-full flex flex-col justify-start items-center">
-                <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-5">
-                  <Layers className="w-6 h-6 text-[#00D4FF]" />
+              <div className="flex w-full md:w-[340px] p-[25px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+                <div className="flex w-12 h-[68px] pb-5 flex-col items-start">
+                  <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#00D4FF]/10">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.83 2.17987C12.5694 2.06102 12.2864 1.99951 12 1.99951C11.7136 1.99951 11.4306 2.06102 11.17 2.17987L2.6 6.07987C2.42255 6.15811 2.27168 6.28627 2.16576 6.44873C2.05985 6.61118 2.00346 6.80093 2.00346 6.99487C2.00346 7.1888 2.05985 7.37855 2.16576 7.54101C2.27168 7.70347 2.42255 7.83162 2.6 7.90987L11.18 11.8199C11.4406 11.9387 11.7236 12.0002 12.01 12.0002C12.2964 12.0002 12.5794 11.9387 12.84 11.8199L21.42 7.91987C21.5975 7.84163 21.7483 7.71347 21.8542 7.55101C21.9602 7.38855 22.0165 7.1988 22.0165 7.00487C22.0165 6.81093 21.9602 6.62118 21.8542 6.45872C21.7483 6.29627 21.5975 6.16811 21.42 6.08987L12.83 2.17987Z" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M22 17.6499L12.83 21.8099C12.5694 21.9288 12.2864 21.9903 12 21.9903C11.7136 21.9903 11.4306 21.9288 11.17 21.8099L2 17.6499" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M22 12.6499L12.83 16.8099C12.5694 16.9288 12.2864 16.9903 12 16.9903C11.7136 16.9903 11.4306 16.9288 11.17 16.8099L2 12.6499" stroke="#00D4FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </div>
-                <div className="flex flex-row gap-4 flex-1">
-                  <div className="text-center">
-                    <h4 className="text-base font-semibold text-white mb-2">
-                      4. Manual Work Fails at Scale
-                    </h4>
-                    <p className="text-sm text-[#888888] mb-2">(26 quotes)</p>
-                    <p className="text-gray-400 text-sm leading-5 mt-5">
-                      Finding: 600 hours per client at 3,000 transactions (12
-                      min each)
-                    </p>
+                <div className="flex flex-col items-start gap-[10px]">
+                  <div className="flex w-[293.33px] min-w-[293.33px] flex-col items-start gap-2">
+                    <div className="flex flex-col items-center self-stretch">
+                      <div className="text-white text-center text-base font-semibold leading-6">
+                        4. Manual Work Fails at Scale
+                      </div>
+                    </div>
+                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                      <div className="text-[#888] text-center text-sm font-normal leading-5">
+                        (26 quotes)
+                      </div>
+                    </div>
+                    <div className="flex max-w-[618.242px] pt-3 flex-col items-center self-stretch">
+                      <div className="text-[#B7B7B7] text-center text-sm font-normal leading-5">
+                        Finding: 600 hours per client at 3,000 transactions (12 min each)
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#1A1A1A]/60 rounded-xl py-5 px-6 pb-6 border border-[#2A2A2A] hover:border-[#00FFB3]/40 transition-all h-full flex flex-col justify-start items-center">
-                <div className="w-12 h-12 rounded-lg bg-[#00FFB3]/10 flex items-center justify-center mb-5">
-                  <ToggleLeft className="w-6 h-6 text-[#00FFB3]" />
+              <div className="flex w-full md:w-[340px] h-[230px] py-[21px] px-[27px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+                <div className="flex w-12 h-[68px] pb-5 flex-col items-start flex-shrink-0">
+                  <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#00FFB3]/10">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 6H8C4.68629 6 2 8.68629 2 12C2 15.3137 4.68629 18 8 18H16C19.3137 18 22 15.3137 22 12C22 8.68629 19.3137 6 16 6Z" stroke="#00FFB3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M8 14C9.10457 14 10 13.1046 10 12C10 10.8954 9.10457 10 8 10C6.89543 10 6 10.8954 6 12C6 13.1046 6.89543 14 8 14Z" stroke="#00FFB3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </div>
-                <div className="flex items-start gap-4 flex-1 justify-center">
-                  <div className="text-center">
-                    <h4 className="text-sm font-medium text-white leading-5 mb-2">
-                      5. Trust Requires Control, Not Replacement
-                    </h4>
-                    <p className="text-sm text-[#888888] mb-2">(23 quotes)</p>
-                    <p className="text-gray-400 text-sm leading-5 mt-5">
-                      Finding: 100% adoption when override controls demonstrated
-                    </p>
+                <div className="flex flex-col items-start gap-[10px] self-stretch">
+                  <div className="flex flex-col items-start gap-2">
+                    <div className="flex flex-col items-center self-stretch">
+                      <div className="text-white text-center text-sm font-medium leading-5">
+                        5. Trust Requires Control, Not Replacement
+                      </div>
+                    </div>
+                    <div className="flex max-w-[618.242px] flex-col items-center self-stretch">
+                      <div className="text-[#888] text-center text-sm font-normal leading-5">
+                        (23 quotes)
+                      </div>
+                    </div>
+                    <div className="flex max-w-[618.242px] pt-3 flex-col items-center self-stretch">
+                      <div className="text-[#B7B7B7] text-center text-sm font-normal leading-5">
+                        Finding: 100% adoption when override controls demonstrated
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
