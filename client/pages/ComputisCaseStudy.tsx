@@ -494,7 +494,7 @@ export default function ComputisCaseStudy() {
             </h3>
 
             <div className="flex justify-center items-start content-start gap-6 flex-wrap">
-              <div className="flex w-full md:w-[340px] p-[25px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+              <div className="flex w-full md:w-[320px] p-3 flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
                 <div className="flex w-12 h-[68px] pb-5 flex-col items-start">
                   <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#EF4444]/10">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -525,7 +525,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-full md:w-[340px] p-[25px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+              <div className="flex w-full md:w-[320px] p-3 flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
                 <div className="flex w-12 h-[68px] pb-5 flex-col items-start">
                   <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#F59E0B]/10">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -555,7 +555,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-full md:w-[340px] p-[25px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+              <div className="flex w-full md:w-[320px] p-3 flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
                 <div className="flex w-12 h-[68px] pb-5 flex-col items-start">
                   <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#8B5CF6]/10">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -588,7 +588,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="flex w-full md:w-[340px] p-[25px] flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
+              <div className="flex w-full md:w-[320px] p-3 flex-col items-center flex-shrink-0 rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A]/60">
                 <div className="flex w-12 h-[68px] pb-5 flex-col items-start">
                   <div className="flex w-12 h-12 justify-center items-center flex-shrink-0 rounded-lg bg-[#00D4FF]/10">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
