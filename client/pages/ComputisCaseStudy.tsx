@@ -383,36 +383,6 @@ export default function ComputisCaseStudy() {
 
             <div className="w-full max-w-[1078px] flex flex-col items-start gap-3 rounded-2xl border border-[#00D4FF]/20 bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 px-[25px] py-6">
               <div className="flex items-center gap-2 self-stretch">
-                <svg
-                  className="w-5 h-5 flex flex-col justify-center items-start"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.99999 18.3334C14.6024 18.3334 18.3333 14.6025 18.3333 10.0001C18.3333 5.39771 14.6024 1.66675 9.99999 1.66675C5.39762 1.66675 1.66666 5.39771 1.66666 10.0001C1.66666 14.6025 5.39762 18.3334 9.99999 18.3334Z"
-                    stroke="#00D4FF"
-                    strokeWidth="1.66667"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 15C12.7614 15 15 12.7614 15 10C15 7.23858 12.7614 5 10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15Z"
-                    stroke="#00D4FF"
-                    strokeWidth="1.66667"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M10 11.6666C10.9205 11.6666 11.6667 10.9204 11.6667 9.99992C11.6667 9.07944 10.9205 8.33325 10 8.33325C9.07954 8.33325 8.33334 9.07944 8.33334 9.99992C8.33334 10.9204 9.07954 11.6666 10 11.6666Z"
-                    stroke="#00D4FF"
-                    strokeWidth="1.66667"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
                 <h3 className="text-lg font-semibold text-white leading-7">
                   Core Insight
                 </h3>
@@ -856,9 +826,6 @@ export default function ComputisCaseStudy() {
             {/* Synthesis */}
             <div className="bg-gradient-to-r from-[#00FFB3]/10 to-[#00D4FF]/10 rounded-xl p-8 border border-[#00D4FF]/20 mt-12">
               <div className="flex items-start gap-3 mb-6">
-                <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/20 flex items-center justify-center flex-shrink-0">
-                  <Target className="w-6 h-6 text-[#00D4FF]" />
-                </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">
                     Synthesis: The Core Design Tension
