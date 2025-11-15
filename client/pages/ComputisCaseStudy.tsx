@@ -181,7 +181,7 @@ export default function ComputisCaseStudy() {
                       CPA onboarding time
                     </div>
                   </div>
-                  <div className="flex max-w-[529.922px] flex-col items-center self-stretch">
+                  <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#9CA3AF] text-center text-xs font-normal leading-4">
                       (2.5h → 1.4h)
                     </div>
@@ -203,7 +203,7 @@ export default function ComputisCaseStudy() {
                       Demo-to-conversion rate
                     </div>
                   </div>
-                  <div className="flex max-w-[529.922px] flex-col items-center self-stretch">
+                  <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#9CA3AF] text-center text-xs font-normal leading-4">
                       increase
                     </div>
@@ -225,7 +225,7 @@ export default function ComputisCaseStudy() {
                       Engineering dependency
                     </div>
                   </div>
-                  <div className="flex max-w-[529.922px] flex-col items-center self-stretch">
+                  <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#9CA3AF] text-center text-xs font-normal leading-4">
                       reduction
                     </div>
@@ -247,7 +247,7 @@ export default function ComputisCaseStudy() {
                       FMV disputes
                     </div>
                   </div>
-                  <div className="flex max-w-[529.922px] flex-col items-center self-stretch">
+                  <div className="flex flex-col items-center self-stretch">
                     <div className="text-[#9CA3AF] text-center text-xs font-normal leading-4">
                       post-launch
                     </div>
