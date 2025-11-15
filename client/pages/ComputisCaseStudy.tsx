@@ -260,43 +260,62 @@ export default function ComputisCaseStudy() {
 
         {/* Quick Facts */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-1 py-1 border border-[#1A1A1A] h-auto flex-grow-0 flex flex-col justify-start items-start">
-            <h2 className="text-4xl font-semibold text-white text-left mb-8">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-10 py-3 border border-[#1A1A1A] flex flex-col items-start gap-6">
+            <h2 className="text-[30px] font-semibold text-white leading-[36px] tracking-[-0.3px]">
               Quick Facts
             </h2>
 
-            <div className="flex flex-row sm:grid sm:grid-cols-2 lg:grid-cols-4 w-auto self-stretch">
-              <div className="space-y-2">
-                <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide">
-                  Role
-                </h3>
-                <p className="text-lg font-medium text-white">
-                  Lead Product Designer (Founding Designer)
-                </p>
+            <div className="flex flex-col md:flex-row w-full justify-center items-start h-auto">
+              <div className="flex flex-col items-start gap-6 flex-1">
+                <div className="flex flex-col items-start">
+                  <h3 className="text-sm font-medium text-[#888] uppercase tracking-[0.35px] leading-5">
+                    Role
+                  </h3>
+                </div>
+                <div className="flex flex-col items-start max-w-[795px]">
+                  <p className="text-lg font-medium text-white leading-7">
+                    Lead Product Designer<br />(Founding Designer)
+                  </p>
+                </div>
               </div>
-              <div className="space-y-2 self-center sm:self-auto">
-                <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide">
-                  Timeline
-                </h3>
-                <p className="text-lg font-medium text-white w-auto self-center">
-                  10 months
-                </p>
+
+              <div className="flex flex-col items-start gap-6 flex-1 pb-7">
+                <div className="flex flex-col items-start">
+                  <h3 className="text-sm font-medium text-[#888] uppercase tracking-[0.35px] leading-5">
+                    Timeline
+                  </h3>
+                </div>
+                <div className="flex flex-col items-start max-w-[795px]">
+                  <p className="text-lg font-medium text-white leading-7">
+                    10 months
+                  </p>
+                </div>
               </div>
-              <div className="space-y-2">
-                <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide">
-                  Team
-                </h3>
-                <p className="text-lg font-medium text-white">
-                  CTO, PM, 2 Engineers
-                </p>
+
+              <div className="flex flex-col items-start gap-6 flex-1 pb-7">
+                <div className="flex flex-col items-start">
+                  <h3 className="text-sm font-medium text-[#888] uppercase tracking-[0.35px] leading-5">
+                    Team
+                  </h3>
+                </div>
+                <div className="flex flex-col items-start max-w-[795px]">
+                  <p className="text-lg font-medium text-white leading-7">
+                    CTO, PM, 2 Engineers
+                  </p>
+                </div>
               </div>
-              <div className="space-y-2">
-                <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wide">
-                  Platform
-                </h3>
-                <p className="text-lg font-medium text-white">
-                  Web SaaS (Desktop-first, responsive)
-                </p>
+
+              <div className="flex flex-col items-start gap-6 flex-1">
+                <div className="flex flex-col items-start">
+                  <h3 className="text-sm font-medium text-[#888] uppercase tracking-[0.35px] leading-5">
+                    Platform
+                  </h3>
+                </div>
+                <div className="flex flex-col items-start max-w-[795px]">
+                  <p className="text-lg font-medium text-white leading-7">
+                    Web SaaS (Desktop-first,<br />responsive)
+                  </p>
+                </div>
               </div>
             </div>
           </div>
