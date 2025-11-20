@@ -159,7 +159,7 @@ export default function ComputisCaseStudy() {
       <main className="max-w-[1400px] mx-auto px-6 space-y-1 relative z-10">
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-          <div className="flex px-5 py-5 flex-col items-start gap-4 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+          <div className="flex pt-0 px-5 pb-5 flex-col items-start gap-4 self-stretch rounded-[25px] border border-[#1A1A1A] bg-[#0F0F0F]/80 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] backdrop-blur-xl">
             <div className="flex flex-col items-start self-stretch">
               <h2 className="self-stretch text-white text-3xl font-semibold leading-tight tracking-tight">
                 Impact at a Glance
@@ -327,7 +327,7 @@ export default function ComputisCaseStudy() {
 
         {/* The Challenge */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800 flex flex-col">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl px-5 py-5 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-2xl pt-0 px-5 pb-5 border border-[#1A1A1A]">
             <h2 className="text-4xl font-semibold text-white mb-8">
               The Challenge: Automation vs. Professional Liability
             </h2>
