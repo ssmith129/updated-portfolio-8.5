@@ -19,6 +19,7 @@ import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import VideoOverlay from "../components/VideoOverlay";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
+import { useCountUp } from "../hooks/use-count-up";
 
 export default function ComputisCaseStudy() {
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
@@ -27,6 +28,13 @@ export default function ComputisCaseStudy() {
   // Use the animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
     useIntersectionAnimation(0.3, "0px 0px -100px 0px");
+
+  // Count up animations for each metric
+  const onboardingCount = useCountUp(45, 2000, startMetricsAnimation);
+  const conversionCount = useCountUp(32, 2000, startMetricsAnimation);
+  const classificationCount = useCountUp(85, 2000, startMetricsAnimation);
+  const errorDetectionCount = useCountUp(150, 2000, startMetricsAnimation);
+  const enterpriseDealsCount = useCountUp(3, 2000, startMetricsAnimation);
 
   // Scroll to top button visibility
   useEffect(() => {
@@ -284,7 +292,7 @@ export default function ComputisCaseStudy() {
                     CPA Onboarding Time
                   </p>
                   <p className="text-2xl sm:text-3xl font-bold text-green-600 mb-1">
-                    ↓ 45%
+                    ↓ {onboardingCount}%
                   </p>
                   <p className="text-sm text-green-600">2.5h → 1.4h</p>
                 </div>
@@ -294,7 +302,7 @@ export default function ComputisCaseStudy() {
                     Demo-to-Conversion
                   </p>
                   <p className="text-2xl sm:text-3xl font-bold text-blue-600">
-                    ↑ 32%
+                    ↑ {conversionCount}%
                   </p>
                 </div>
 
@@ -303,7 +311,7 @@ export default function ComputisCaseStudy() {
                     Manual Classification Work
                   </p>
                   <p className="text-2xl sm:text-3xl font-bold text-purple-600">
-                    ↓ 85%
+                    ↓ {classificationCount}%
                   </p>
                 </div>
 
@@ -312,7 +320,7 @@ export default function ComputisCaseStudy() {
                     Error Detection Rate
                   </p>
                   <p className="text-2xl sm:text-3xl font-bold text-orange-600">
-                    ↑ 150%
+                    ↑ {errorDetectionCount}%
                   </p>
                 </div>
 
@@ -321,7 +329,7 @@ export default function ComputisCaseStudy() {
                     Enterprise Deals
                   </p>
                   <p className="text-2xl sm:text-3xl font-bold text-indigo-600">
-                    3
+                    {enterpriseDealsCount}
                   </p>
                   <p className="text-sm text-indigo-600">closed in 6 months</p>
                 </div>
