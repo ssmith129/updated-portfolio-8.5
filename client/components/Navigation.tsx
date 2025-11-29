@@ -83,7 +83,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
         <p
           className={`text-sm sm:text-base md:text-lg lg:text-base font-medium leading-normal tracking-[-0.16px] ${
             isDarkPage
-              ? "text-[#888888]"
+              ? "text-[#A1A1A1]"
               : isHealthcarePage
                 ? "text-[#64748B]"
                 : "text-[#9FA0A3]"

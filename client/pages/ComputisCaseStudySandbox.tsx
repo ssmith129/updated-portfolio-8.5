@@ -25,10 +25,9 @@ import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import { useVideoAutoplayOnVisible } from "../hooks/use-video-autoplay";
 import { AnnotatedDemo } from "../components/case-study/AnnotatedDemo";
+import { InteractiveImage } from "../components/ui/InteractiveImage";
 
 export default function ComputisCaseStudySandbox() {
-  const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
-
   // Video autoplay refs with 40% visibility threshold
   const heroVideoRef = useVideoAutoplayOnVisible(0.4);
 
@@ -50,27 +49,6 @@ export default function ComputisCaseStudySandbox() {
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#00D4FF]/5 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#00FFB3]/5 rounded-full blur-[100px]"></div>
 
-      {/* Image Modal */}
-      {enlargedImage && (
-        <div
-          className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 cursor-pointer"
-          onClick={() => setEnlargedImage(null)}
-        >
-          <button
-            className="absolute top-4 right-4 text-white hover:text-[#00D4FF] transition-colors"
-            onClick={() => setEnlargedImage(null)}
-            aria-label="Close enlarged image"
-          >
-            <X className="w-8 h-8" />
-          </button>
-          <img
-            src={enlargedImage}
-            alt="Enlarged view"
-            className="max-w-full max-h-full object-contain"
-          />
-        </div>
-      )}
-
       <SkipLink />
       <Navigation />
 
@@ -78,7 +56,7 @@ export default function ComputisCaseStudySandbox() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
         <Link
           to="/case-studies"
-          className="inline-flex items-center gap-2 text-base font-medium text-[#888888] leading-normal hover:text-[#00D4FF] transition-all duration-300 group hover-back-button px-4 py-2 rounded-lg border border-transparent"
+          className="inline-flex items-center gap-2 text-base font-medium text-[#A1A1A1] leading-normal hover:text-[#00D4FF] transition-all duration-300 group hover-back-button px-4 py-2 rounded-lg border border-transparent"
           aria-label="Return to case studies overview page"
         >
           <ArrowLeft className="w-5 h-5" />
@@ -233,7 +211,7 @@ export default function ComputisCaseStudySandbox() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="space-y-2">
-                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                <h3 className="text-sm font-medium text-[#A1A1A1] uppercase tracking-wide">
                   Role
                 </h3>
                 <p className="text-lg font-medium text-white">
@@ -241,13 +219,13 @@ export default function ComputisCaseStudySandbox() {
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                <h3 className="text-sm font-medium text-[#A1A1A1] uppercase tracking-wide">
                   Timeline
                 </h3>
                 <p className="text-lg font-medium text-white">10 months</p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                <h3 className="text-sm font-medium text-[#A1A1A1] uppercase tracking-wide">
                   Team
                 </h3>
                 <p className="text-lg font-medium text-white">
@@ -255,7 +233,7 @@ export default function ComputisCaseStudySandbox() {
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-sm font-medium text-[#888888] uppercase tracking-wide">
+                <h3 className="text-sm font-medium text-[#A1A1A1] uppercase tracking-wide">
                   Platform
                 </h3>
                 <p className="text-lg font-medium text-white">
@@ -297,22 +275,11 @@ export default function ComputisCaseStudySandbox() {
                       Before: Manual Workflow Pain Points
                     </p>
                   </div>
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#EF4444]/60 transition-all duration-300 hover-image-enlarge relative group">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9fbbd6e7fc934c54ba9109a71b62b295"
-                      alt="Before workflow showing manual engineer-dependent process"
-                      className="w-full h-auto transition-transform duration-300"
-                      loading="lazy"
-                      onClick={() =>
-                        setEnlargedImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9fbbd6e7fc934c54ba9109a71b62b295",
-                        )
-                      }
-                    />
-                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                      Click to enlarge
-                    </div>
-                  </div>
+                  <InteractiveImage
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9fbbd6e7fc934c54ba9109a71b62b295"
+                    alt="Before workflow: Manual engineer-dependent process with 2-3 day wait times for Python script execution"
+                    className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#EF4444]/60"
+                  />
                 </div>
 
                 <div className="bg-[#1A1A1A]/60 rounded-[16px] p-6 border border-[#00FFB3]/30">
@@ -322,22 +289,11 @@ export default function ComputisCaseStudySandbox() {
                       After: Transparent Self-Service
                     </p>
                   </div>
-                  <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60 transition-all duration-300 hover-image-enlarge relative group">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fda713d8affe442f79b0bf11d2349b814"
-                      alt="After workflow showing self-service transparent system"
-                      className="w-full h-auto transition-transform duration-300"
-                      loading="lazy"
-                      onClick={() =>
-                        setEnlargedImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fda713d8affe442f79b0bf11d2349b814",
-                        )
-                      }
-                    />
-                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                      Click to enlarge
-                    </div>
-                  </div>
+                  <InteractiveImage
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fda713d8affe442f79b0bf11d2349b814"
+                    alt="After workflow: Self-service transparent system with 90-second real-time processing and no engineering dependency"
+                    className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00FFB3]/60"
+                  />
                 </div>
               </div>
             </div>
@@ -381,7 +337,7 @@ export default function ComputisCaseStudySandbox() {
                 "If I can't screenshot your AI's reasoning for an audit, it's
                 just another liability."
               </p>
-              <p className="text-xs text-[#888888] mt-2">
+              <p className="text-xs text-[#A1A1A1] mt-2">
                 — Senior CPA, Big 4 firm
               </p>
             </div>
@@ -426,25 +382,12 @@ export default function ComputisCaseStudySandbox() {
 
             {/* Research Synthesis Image */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
-              <p className="text-sm text-[#888888] mb-3">
-                Research Synthesis & Affinity Wall
-              </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d22dd43205f4b36a3895561ba205024"
-                  alt="Research Synthesis: Computis CPA Workflow Study"
-                  className="w-full h-auto transition-transform duration-300"
-                  loading="lazy"
-                  onClick={() =>
-                    setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d22dd43205f4b36a3895561ba205024",
-                    )
-                  }
-                />
-                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                  Click to enlarge
-                </div>
-              </div>
+              <InteractiveImage
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d22dd43205f4b36a3895561ba205024"
+                alt="Research Synthesis: Computis CPA Workflow Study showing 127 verbatim quotes organized into 5 thematic clusters from 8 CPA interviews"
+                caption="Research Synthesis & Affinity Wall"
+                className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60"
+              />
             </div>
 
             {/* Five Critical Insights */}
@@ -462,7 +405,7 @@ export default function ComputisCaseStudySandbox() {
                     <h4 className="text-lg font-bold text-white mb-2">
                       1. Professional Liability &gt; Efficiency
                     </h4>
-                    <p className="text-sm text-[#888888] mb-2">(28 quotes)</p>
+                    <p className="text-sm text-[#A1A1A1] mb-2">(28 quotes)</p>
                     <p className="text-[#B0AFAF]">
                       Finding: 8/8 participants prioritized IRS defensibility
                       over time savings
@@ -480,7 +423,7 @@ export default function ComputisCaseStudySandbox() {
                     <h4 className="text-lg font-bold text-white mb-2">
                       2. Engineering Dependency Blocks Scale
                     </h4>
-                    <p className="text-sm text-[#888888] mb-2">(19 quotes)</p>
+                    <p className="text-sm text-[#A1A1A1] mb-2">(19 quotes)</p>
                     <p className="text-[#B0AFAF]">
                       Finding: 2-3 day wait times for Python script execution
                     </p>
@@ -497,7 +440,7 @@ export default function ComputisCaseStudySandbox() {
                     <h4 className="text-lg font-bold text-white mb-2">
                       3. Audit Trails = Enterprise Dealbreaker
                     </h4>
-                    <p className="text-sm text-[#888888] mb-2">(31 quotes)</p>
+                    <p className="text-sm text-[#A1A1A1] mb-2">(31 quotes)</p>
                     <p className="text-[#B0AFAF]">
                       Finding: 4/4 competitors lack comprehensive change history
                     </p>
@@ -514,7 +457,7 @@ export default function ComputisCaseStudySandbox() {
                     <h4 className="text-lg font-bold text-white mb-2">
                       4. Manual Work Fails at Scale
                     </h4>
-                    <p className="text-sm text-[#888888] mb-2">(26 quotes)</p>
+                    <p className="text-sm text-[#A1A1A1] mb-2">(26 quotes)</p>
                     <p className="text-[#B0AFAF]">
                       Finding: 600 hours per client at 3,000 transactions (12
                       min each)
@@ -532,7 +475,7 @@ export default function ComputisCaseStudySandbox() {
                     <h4 className="text-lg font-bold text-white mb-2">
                       5. Trust Requires Control, Not Replacement
                     </h4>
-                    <p className="text-sm text-[#888888] mb-2">(23 quotes)</p>
+                    <p className="text-sm text-[#A1A1A1] mb-2">(23 quotes)</p>
                     <p className="text-[#B0AFAF]">
                       Finding: 100% adoption when override controls demonstrated
                     </p>
@@ -563,25 +506,12 @@ export default function ComputisCaseStudySandbox() {
 
             {/* Current State Journey Map */}
             <div className="mt-8">
-              <p className="text-sm text-[#888888] mb-3">
-                Current State Journey Map
-              </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d88d39d14af4c01a4e1a9f64d10c0a6"
-                  alt="Current State Journey Map"
-                  className="w-full h-auto transition-transform duration-300"
-                  loading="lazy"
-                  onClick={() =>
-                    setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d88d39d14af4c01a4e1a9f64d10c0a6",
-                    )
-                  }
-                />
-                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                  Click to enlarge
-                </div>
-              </div>
+              <InteractiveImage
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F2d88d39d14af4c01a4e1a9f64d10c0a6"
+                alt="Current State Journey Map: CPA workflow analysis showing pain points, emotions, and opportunities across the crypto tax preparation process"
+                caption="Current State Journey Map"
+                className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60"
+              />
             </div>
           </div>
         </section>
@@ -735,25 +665,12 @@ export default function ComputisCaseStudySandbox() {
 
             {/* Design Process Evolution Image */}
             <div className="bg-[#1A1A1A] rounded-[16px] p-6 border border-[#2A2A2A] mb-8">
-              <p className="text-sm text-[#888888] mb-3">
-                Design Process Evolution
-              </p>
-              <div className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60 transition-all duration-300 hover-image-enlarge relative group">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa320d8ba63c4433a76c919e90d558f6"
-                  alt="Design Process Evolution"
-                  className="w-full h-auto transition-transform duration-300"
-                  loading="lazy"
-                  onClick={() =>
-                    setEnlargedImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa320d8ba63c4433a76c919e90d558f6",
-                    )
-                  }
-                />
-                <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 pointer-events-none">
-                  Click to enlarge
-                </div>
-              </div>
+              <InteractiveImage
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffa320d8ba63c4433a76c919e90d558f6"
+                alt="Design Process Evolution: Trust-first methodology showing foundation, exploration, and validation phases with iterative testing cycles"
+                caption="Design Process Evolution"
+                className="bg-[#0F0F0F] rounded-[12px] overflow-hidden border border-[#2A2A2A] hover:border-[#00D4FF]/60"
+              />
             </div>
 
             <div className="space-y-6">
@@ -1094,7 +1011,7 @@ export default function ComputisCaseStudySandbox() {
                   "Your handoffs made us 10x faster. Edge case documentation was
                   incredible."
                 </p>
-                <p className="text-xs text-[#888888]">— Engineering Lead</p>
+                <p className="text-xs text-[#A1A1A1]">— Engineering Lead</p>
               </div>
 
               <div className="bg-[#0F0F0F] rounded-lg p-4 border-l-4 border-[#00FFB3]">
@@ -1102,7 +1019,7 @@ export default function ComputisCaseStudySandbox() {
                   "First crypto tax tool I can defend to clients. The audit
                   trail is everything."
                 </p>
-                <p className="text-xs text-[#888888]">
+                <p className="text-xs text-[#A1A1A1]">
                   — CPA Partner, Mid-Market Firm
                 </p>
               </div>
@@ -1128,7 +1045,7 @@ export default function ComputisCaseStudySandbox() {
                       1. In High-Stakes Domains, Explainability &gt; Feature
                       Breadth
                     </h3>
-                    <p className="text-sm text-[#888888] mb-2">
+                    <p className="text-sm text-[#A1A1A1] mb-2">
                       <strong className="text-[#00D4FF]">Application:</strong>{" "}
                       6/8 CPAs ignored 20+ feature requests to prioritize audit
                       trail
@@ -1156,7 +1073,7 @@ export default function ComputisCaseStudySandbox() {
                     <h3 className="text-lg font-semibold text-white mb-2">
                       2. Modular Architecture Enables Scale
                     </h3>
-                    <p className="text-sm text-[#888888] mb-2">
+                    <p className="text-sm text-[#A1A1A1] mb-2">
                       <strong className="text-[#00FFB3]">Application:</strong>{" "}
                       Role-based IA supported 100+ client portfolios without
                       refactor
@@ -1183,7 +1100,7 @@ export default function ComputisCaseStudySandbox() {
                     <h3 className="text-lg font-semibold text-white mb-2">
                       3. AI + Human Collaboration
                     </h3>
-                    <p className="text-sm text-[#888888] mb-2">
+                    <p className="text-sm text-[#A1A1A1] mb-2">
                       <strong className="text-[#8B5CF6]">Application:</strong>{" "}
                       Override controls flipped AI from threat to tool
                     </p>
@@ -1208,7 +1125,7 @@ export default function ComputisCaseStudySandbox() {
                     <h3 className="text-lg font-semibold text-white mb-2">
                       4. Design Drives Business
                     </h3>
-                    <p className="text-sm text-[#888888] mb-2">
+                    <p className="text-sm text-[#A1A1A1] mb-2">
                       <strong className="text-[#FFD700]">Application:</strong>{" "}
                       Self-service features reduced costs; audit trails closed
                       enterprise deals
