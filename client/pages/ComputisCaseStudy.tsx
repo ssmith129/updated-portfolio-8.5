@@ -574,35 +574,57 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
 
-                <div className="space-y-4">
-                  <div className="bg-red-50 p-4 rounded-[15px] border border-red-100">
-                    <p className="text-[14px] font-semibold text-[#131417] mb-1">
-                      Problem
+                {/* Video Demonstration with Overlays */}
+                <div className="mt-6 relative rounded-[20px] overflow-hidden shadow-lg group">
+                  <video
+                    ref={ruleBuilderVideoRef}
+                    className="w-full h-auto"
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                    aria-label="Smart Rule Builder with Pattern Recognition demonstration video"
+                  >
+                    <source
+                      src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
+                      type="video/mp4"
+                    />
+                    <p className="p-4 bg-gray-100 text-center text-sm text-gray-600">
+                      Your browser does not support the video tag. Please use a modern browser to view this demonstration.
                     </p>
-                    <p className="text-[16px] text-[#555]">
-                      CPAs repeatedly created similar rules for common
-                      scenarios.
-                    </p>
-                  </div>
+                  </video>
 
-                  <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-100">
-                    <p className="text-[14px] font-semibold text-[#131417] mb-1">
-                      Solution
-                    </p>
-                    <p className="text-[16px] text-[#555]">
-                      AI suggests rule templates based on transaction patterns;
-                      no-code builder with natural language preview.
-                    </p>
-                  </div>
+                  {/* Annotated Overlays */}
+                  <div className="absolute inset-0 pointer-events-none">
+                    {/* Problem Annotation - Bottom Left */}
+                    <div className="absolute bottom-4 left-4 max-w-[280px] sm:max-w-[320px] min-h-[120px] flex flex-col justify-between bg-red-500/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
+                        Problem
+                      </p>
+                      <p className="text-[14px] sm:text-[15px] text-white leading-tight">
+                        CPAs repeatedly created similar rules for common scenarios.
+                      </p>
+                    </div>
 
-                  <div className="bg-green-50 p-4 rounded-[15px] border border-green-100">
-                    <p className="text-[14px] font-semibold text-[#131417] mb-1">
-                      Impact
-                    </p>
-                    <p className="text-[16px] text-[#555]">
-                      Rule creation time reduced from 15 minutes to 90 seconds;
-                      32% increase in demo conversions.
-                    </p>
+                    {/* Solution Annotation - Bottom Right */}
+                    <div className="absolute bottom-4 right-4 max-w-[280px] sm:max-w-[340px] min-h-[120px] flex flex-col justify-between bg-blue-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-blue-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
+                        Solution
+                      </p>
+                      <p className="text-[14px] sm:text-[15px] text-white leading-tight">
+                        AI suggests rule templates based on transaction patterns; no-code builder with natural language preview.
+                      </p>
+                    </div>
+
+                    {/* Impact Annotation - Bottom Center */}
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-[90%] sm:max-w-[400px] min-h-[120px] flex flex-col justify-between bg-green-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-green-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
+                        Impact
+                      </p>
+                      <p className="text-[14px] sm:text-[15px] text-white leading-tight text-center">
+                        Rule creation time reduced from 15 minutes to 90 seconds; 32% increase in demo conversions.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
