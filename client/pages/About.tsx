@@ -204,23 +204,23 @@ export default function About() {
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
                 Design & Prototyping
               </h3>
-              <div className="flex flex-wrap gap-2 sm:gap-3 mb-3 sm:mb-4">
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+              <div className="flex flex-wrap gap-2 mb-3">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Figma
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Component Libraries
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Design Tokens
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Rapid Prototyping
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Interactive Flows
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Mobile & Web UX
                 </span>
               </div>
@@ -237,17 +237,17 @@ export default function About() {
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
                 Product Domains
               </h3>
-              <div className="flex flex-wrap gap-2 sm:gap-3 mb-3 sm:mb-4">
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+              <div className="flex flex-wrap gap-2 mb-3">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Crypto & Fintech UX
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Full-Lifecycle Design
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Prototyping in Figma & Code
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Cross-Functional Collaboration
                 </span>
               </div>
@@ -264,20 +264,20 @@ export default function About() {
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
                 Collaboration & Process
               </h3>
-              <div className="flex flex-wrap gap-2 sm:gap-3 mb-3 sm:mb-4">
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+              <div className="flex flex-wrap gap-2 mb-3">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   SaaS
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Cross-Functional Teams
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Founder-Led Startups
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Lean/Agile Environments
                 </span>
-                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1 sm:py-2 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="bg-white border border-[#131417] text-[#131417] px-3 sm:px-4 py-1.5 rounded-[20px] sm:rounded-[25px] text-xs sm:text-sm md:text-[14px] font-medium transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Jira/Confluence
                 </span>
               </div>
