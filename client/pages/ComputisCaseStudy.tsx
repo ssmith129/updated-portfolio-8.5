@@ -197,7 +197,7 @@ export default function ComputisCaseStudy() {
       </nav>
 
       {/* Back Button */}
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-[18px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.18px] hover:text-[#131417] transition-all duration-300 hover:scale-105 group"
@@ -208,7 +208,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
         <div className="mb-8">
           <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[25px] text-[14px] font-medium tracking-[-0.14px] mb-6 transition-all duration-300 hover:scale-105">
             FinTech UX Case Study
@@ -224,16 +224,13 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Content Sections */}
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
         {/* Impact At a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+          <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
                 Impact At a Glance
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
+          </h2>
+          <div className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
                   <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">
@@ -337,19 +334,15 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </section>
 
         {/* The Challenge */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-900">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+          <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
                 The Challenge
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
+          </h2>
+          <div className="space-y-6">
               <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
                 Computis had a solid, functional platform for crypto tax
                 management—but CPAs were still spending excessive time on manual
@@ -396,19 +389,15 @@ export default function ComputisCaseStudy() {
                   into a truly intelligent tax automation platform.
                 </p>
               </div>
-            </div>
           </div>
         </section>
 
         {/* My Approach */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1100">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+          <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
                 My Approach
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
+          </h2>
+          <div className="space-y-6">
               <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
                 I led the design of Computis's AI feature suite, focusing on{" "}
                 <strong>augmentation over automation</strong>—ensuring AI
@@ -449,19 +438,15 @@ export default function ComputisCaseStudy() {
                 transparency and override control to maintain professional
                 liability standards.
               </blockquote>
-            </div>
           </div>
         </section>
 
         {/* AI Feature Design Solutions */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1300">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+          <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
                 AI Feature Design Solutions
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
+          </h2>
+          <div className="space-y-6">
               {/* Feature 1: AI-Powered Classification */}
               <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-amber-500">
                 <div className="flex items-start gap-4 mb-6">
@@ -747,19 +732,15 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </section>
 
         {/* Stakeholder Alignment */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1500">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+          <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
                 Stakeholder Alignment
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
+          </h2>
+          <div className="space-y-6">
               <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
                 <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
                   <Users className="w-5 h-5 text-purple-600" />
@@ -810,19 +791,15 @@ export default function ComputisCaseStudy() {
                   judgment." — CPA Beta User
                 </blockquote>
               </div>
-            </div>
           </div>
         </section>
 
         {/* Results & Business Impact */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+          <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
                 Results & Business Impact
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
+          </h2>
+          <div className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
                   <div className="flex items-center gap-3 mb-3">
@@ -874,19 +851,15 @@ export default function ComputisCaseStudy() {
                   </p>
                 </div>
               </div>
-            </div>
           </div>
         </section>
 
         {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1900">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
-            <div className="w-full lg:w-[200px]">
-              <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px]">
+          <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
                 Key Learnings
-              </h2>
-            </div>
-            <div className="flex-1 space-y-6">
+          </h2>
+          <div className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
                   <h3 className="text-[18px] font-semibold text-[#131417] mb-3">
@@ -925,7 +898,6 @@ export default function ComputisCaseStudy() {
                   </p>
                 </div>
               </div>
-            </div>
           </div>
         </section>
       </div>
