@@ -64,7 +64,7 @@ export default function About() {
                 <span className="border border-[#131417] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] px-3 sm:px-4 md:px-5 py-1 transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Concept
                 </span>
-                <span>to</span>
+                to
                 <span className="border border-[#131417] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] px-3 sm:px-4 md:px-5 py-1 transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Launch
                 </span>
@@ -201,7 +201,7 @@ export default function About() {
           <div className="flex-1 space-y-6">
             {/* Design & Prototyping */}
             <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 transition-all duration-300 hover:tracking-[-0.2px]">
                 Design & Prototyping
               </h3>
               <div className="flex flex-wrap gap-2 mb-3">
@@ -234,7 +234,7 @@ export default function About() {
 
             {/* Product Domains */}
             <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 transition-all duration-300 hover:tracking-[-0.2px]">
                 Product Domains
               </h3>
               <div className="flex flex-wrap gap-2 mb-3">
@@ -261,7 +261,7 @@ export default function About() {
 
             {/* Technical Skills */}
             <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 transition-all duration-300 hover:tracking-[-0.2px]">
                 Collaboration & Process
               </h3>
               <div className="flex flex-wrap gap-2 mb-3">
@@ -301,7 +301,7 @@ export default function About() {
 
           <div className="flex-1 space-y-6">
             <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 transition-all duration-300 hover:tracking-[-0.2px]">
                 User-Centered Discovery
               </h3>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[573px] transition-all duration-300 hover:text-[#2a2a2a]">
@@ -313,7 +313,7 @@ export default function About() {
             </div>
 
             <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 transition-all duration-300 hover:tracking-[-0.2px]">
                 Rapid Prototyping
               </h3>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[573px] transition-all duration-300 hover:text-[#2a2a2a]">
@@ -325,7 +325,7 @@ export default function About() {
             </div>
 
             <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
-              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 transition-all duration-300 hover:tracking-[-0.2px]">
                 Design Systems Leadership
               </h3>
               <p className="text-sm sm:text-base md:text-[18px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] tracking-[-0.14px] sm:tracking-[-0.16px] md:tracking-[-0.18px] max-w-[573px] transition-all duration-300 hover:text-[#2a2a2a]">
