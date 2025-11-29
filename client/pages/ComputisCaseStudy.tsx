@@ -88,7 +88,7 @@ export default function ComputisCaseStudy() {
                   <p className="text-[18px] font-medium text-[#131417]">Web SaaS (Desktop-first, responsive)</p>
                 </div>
               </div>
-              
+
               <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
                 <p className="text-[14px] font-medium text-[#9FA0A3] mb-4">Tools & Team</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -150,7 +150,7 @@ export default function ComputisCaseStudy() {
               <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
                 Computis had a solid, functional platform for crypto tax management—but CPAs were still spending excessive time on manual transaction classification. The existing UI handled data well, but lacked intelligent automation features that competitors were beginning to offer.
               </p>
-              
+
               <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
                 <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5 text-red-500" />
@@ -201,7 +201,7 @@ export default function ComputisCaseStudy() {
               <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
                 I led the design of Computis's AI feature suite, focusing on <strong>augmentation over automation</strong>—ensuring AI enhanced CPA expertise rather than replacing professional judgment.
               </p>
-              
+
               <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
                 <h3 className="text-[20px] font-medium text-[#131417] mb-4">Research Foundation</h3>
                 <ul className="space-y-2">
@@ -251,18 +251,18 @@ export default function ComputisCaseStudy() {
                     <h3 className="text-[22px] font-semibold text-[#131417] mb-2">AI-Powered Classification with Confidence Indicators</h3>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="bg-red-50 p-4 rounded-[15px] border border-red-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Problem</p>
                     <p className="text-[16px] text-[#555]">Manual classification consumed 60%+ of CPA time.</p>
                   </div>
-                  
+
                   <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Solution</p>
                     <p className="text-[16px] text-[#555]">ML-driven auto-classification with visual confidence scores (High/Medium/Low) and one-click accept/reject controls.</p>
                   </div>
-                  
+
                   <div className="bg-green-50 p-4 rounded-[15px] border border-green-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Impact</p>
                     <p className="text-[16px] text-[#555]">85% reduction in manual classification work; CPAs review only flagged items.</p>
@@ -280,18 +280,18 @@ export default function ComputisCaseStudy() {
                     <h3 className="text-[22px] font-semibold text-[#131417] mb-2">Intelligent Audit Trail System</h3>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="bg-red-50 p-4 rounded-[15px] border border-red-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Problem</p>
                     <p className="text-[16px] text-[#555]">No visibility into how classifications were determined.</p>
                   </div>
-                  
+
                   <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Solution</p>
                     <p className="text-[16px] text-[#555]">AI-generated audit logs documenting classification rationale, rule triggers, and decision history.</p>
                   </div>
-                  
+
                   <div className="bg-green-50 p-4 rounded-[15px] border border-green-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Impact</p>
                     <p className="text-[16px] text-[#555]">40% reduction in compliance preparation time; enabled self-service IRS audit defense.</p>
@@ -309,18 +309,18 @@ export default function ComputisCaseStudy() {
                     <h3 className="text-[22px] font-semibold text-[#131417] mb-2">Smart Rule Builder with Pattern Recognition</h3>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="bg-red-50 p-4 rounded-[15px] border border-red-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Problem</p>
                     <p className="text-[16px] text-[#555]">CPAs repeatedly created similar rules for common scenarios.</p>
                   </div>
-                  
+
                   <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Solution</p>
                     <p className="text-[16px] text-[#555]">AI suggests rule templates based on transaction patterns; no-code builder with natural language preview.</p>
                   </div>
-                  
+
                   <div className="bg-green-50 p-4 rounded-[15px] border border-green-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Impact</p>
                     <p className="text-[16px] text-[#555]">Rule creation time reduced from 15 minutes to 90 seconds; 32% increase in demo conversions.</p>
@@ -338,18 +338,18 @@ export default function ComputisCaseStudy() {
                     <h3 className="text-[22px] font-semibold text-[#131417] mb-2">Proactive Anomaly Detection Engine</h3>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="bg-red-50 p-4 rounded-[15px] border border-red-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Problem</p>
                     <p className="text-[16px] text-[#555]">FMV errors and data inconsistencies discovered too late.</p>
                   </div>
-                  
+
                   <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Solution</p>
                     <p className="text-[16px] text-[#555]">ML-powered anomaly detection with inline color-coded flags and explanatory tooltips.</p>
                   </div>
-                  
+
                   <div className="bg-green-50 p-4 rounded-[15px] border border-green-100">
                     <p className="text-[14px] font-semibold text-[#131417] mb-1">Impact</p>
                     <p className="text-[16px] text-[#555]">150% increase in error detection; issues caught before client delivery.</p>
@@ -511,8 +511,8 @@ export default function ComputisCaseStudy() {
 
           <div className="group bg-white/80 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden mb-16 lg:mb-[270px]">
             <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-              <img 
-                src="/Transactions Grid.png" 
+              <img
+                src="/Transactions Grid.png"
                 alt="Classification Grid Interface"
                 className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
               />
@@ -530,8 +530,8 @@ export default function ComputisCaseStudy() {
 
           <div className="group bg-white/60 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden mb-16 lg:mb-[270px]">
             <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-              <img 
-                src="/Rule Builder.png" 
+              <img
+                src="/Rule Builder.png"
                 alt="Rule Builder Interface"
                 className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
               />
@@ -580,8 +580,8 @@ export default function ComputisCaseStudy() {
 
               <div className="group bg-white/20 backdrop-blur-sm rounded-[20px] p-6 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-[1.02] cursor-pointer relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-[20px]">
-                  <img 
-                    src="/Audit Trail Drawer.png" 
+                  <img
+                    src="/Audit Trail Drawer.png"
                     alt="Audit Log Timeline Interface"
                     className="w-[90%] h-[90%] object-contain rounded-lg shadow-2xl"
                   />
