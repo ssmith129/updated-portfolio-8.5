@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
 import {
   ArrowLeft,
   Sparkles,
@@ -14,6 +15,43 @@ import {
 import Footer from "../components/Footer";
 
 export default function ComputisCaseStudy() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Intersection Observer for 40% visibility threshold
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+            // Attempt to play the video
+            video.play().catch((error) => {
+              // Handle autoplay block gracefully
+              console.log("Autoplay was prevented:", error);
+              // Video will remain paused until user interaction
+            });
+          } else {
+            // Pause video when less than 40% visible
+            video.pause();
+          }
+        });
+      },
+      {
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+        rootMargin: "0px",
+      }
+    );
+
+    observer.observe(video);
+
+    // Cleanup
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       {/* Navigation */}
@@ -358,6 +396,27 @@ export default function ComputisCaseStudy() {
                       only flagged items.
                     </p>
                   </div>
+                </div>
+
+                {/* Video Demonstration */}
+                <div className="mt-6 rounded-[20px] overflow-hidden shadow-lg">
+                  <video
+                    ref={videoRef}
+                    className="w-full h-auto"
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                    aria-label="AI Classification confidence indicators demonstration video"
+                  >
+                    <source
+                      src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
+                      type="video/mp4"
+                    />
+                    <p className="p-4 bg-gray-100 text-center text-sm text-gray-600">
+                      Your browser does not support the video tag. Please use a modern browser to view this demonstration.
+                    </p>
+                  </video>
                 </div>
               </div>
 
