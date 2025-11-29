@@ -460,63 +460,13 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
 
-                {/* Video Demonstration with Overlays */}
-                <div className="mt-6 relative rounded-[20px] overflow-hidden shadow-lg group">
-                  <video
-                    ref={videoRef}
-                    className="w-full h-auto"
-                    loop
-                    muted
-                    playsInline
-                    preload="metadata"
-                    aria-label="AI Classification confidence indicators demonstration video"
-                  >
-                    <source
-                      src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
-                      type="video/mp4"
-                    />
-                    <p className="p-4 bg-gray-100 text-center text-sm text-gray-600">
-                      Your browser does not support the video tag. Please use a
-                      modern browser to view this demonstration.
-                    </p>
-                  </video>
-
-                  {/* Annotated Overlays */}
-                  <div className="absolute inset-0 pointer-events-none">
-                    {/* Problem Annotation - Bottom Left */}
-                    <div className="absolute bottom-4 left-4 max-w-[280px] sm:max-w-[320px] min-h-[120px] flex flex-col justify-between bg-red-500/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
-                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
-                        Problem
-                      </p>
-                      <p className="text-[14px] sm:text-[15px] text-white leading-tight">
-                        Manual classification consumed 60%+ of CPA time.
-                      </p>
-                    </div>
-
-                    {/* Solution Annotation - Bottom Right */}
-                    <div className="absolute bottom-4 right-4 max-w-[280px] sm:max-w-[340px] min-h-[120px] flex flex-col justify-between bg-blue-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-blue-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
-                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
-                        Solution
-                      </p>
-                      <p className="text-[14px] sm:text-[15px] text-white leading-tight">
-                        ML-driven auto-classification with visual confidence
-                        scores (High/Medium/Low) and one-click accept/reject
-                        controls.
-                      </p>
-                    </div>
-
-                    {/* Impact Annotation - Bottom Center */}
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-[90%] sm:max-w-[400px] min-h-[120px] flex flex-col justify-between bg-green-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-green-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
-                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
-                        Impact
-                      </p>
-                      <p className="text-[14px] sm:text-[15px] text-white leading-tight text-center">
-                        85% reduction in manual classification work; CPAs review
-                        only flagged items.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <VideoOverlay
+                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
+                  ariaLabel="AI Classification confidence indicators demonstration video"
+                  problem="Manual classification consumed 60%+ of CPA time."
+                  solution="ML-driven auto-classification with visual confidence scores (High/Medium/Low) and one-click accept/reject controls."
+                  impact="85% reduction in manual classification work; CPAs review only flagged items."
+                />
               </div>
 
               {/* Feature 2: Intelligent Audit Trail */}
