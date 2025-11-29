@@ -13,6 +13,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import Footer from "../components/Footer";
+import VideoOverlay from "../components/VideoOverlay";
 
 export default function ComputisCaseStudy() {
   const videoRef = useRef<HTMLVideoElement>(null);
