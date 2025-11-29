@@ -208,7 +208,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
         <div className="mb-8">
           <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[25px] text-[14px] font-medium tracking-[-0.14px] mb-6 transition-all duration-300 hover:scale-105">
             FinTech UX Case Study
@@ -224,7 +224,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Content Sections */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 pb-24 space-y-24">
         {/* Impact At a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
           <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
