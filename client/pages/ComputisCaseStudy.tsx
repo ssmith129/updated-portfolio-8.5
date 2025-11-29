@@ -159,7 +159,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-[1400px] mx-auto px-6 space-y-10 relative z-10 pb-20">
+      <main className="max-w-[1400px] mx-auto px-6 space-y-[14px] relative z-10 pb-20">
         
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
