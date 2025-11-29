@@ -69,7 +69,7 @@ export default function ComputisCaseStudy() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#0F172A] leading-[110%] tracking-[-1.2px] mb-6">
             Computis — Designing AI Features for Crypto Tax Automation
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#64748B] leading-[140%] tracking-[-0.24px] max-w-[800px] md:max-w-[952px] w-full text-center lg:text-left mx-auto md:pr-px">
+          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#64748B] leading-[140%] tracking-[-0.24px] max-w-[800px] md:max-w-[952px]">
             Leading the design of an AI-powered feature suite that augments CPA
             expertise while maintaining professional control
           </p>
