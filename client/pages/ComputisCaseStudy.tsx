@@ -103,7 +103,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Summary Card */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
         <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E2E8F0]">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
