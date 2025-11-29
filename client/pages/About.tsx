@@ -53,25 +53,25 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex-1 space-y-6 sm:space-y-8">
+          <div className="flex-1 space-y-4">
             <div className="mb-8">
               <div className="flex flex-wrap items-center gap-2 text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.32px] mb-6 sm:mb-8">
                 <span>Passionate about creating</span>
-                <span className="border border-[#131417] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] px-3 sm:px-4 md:px-5 py-1 sm:py-1.5 md:py-2 transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="border border-[#131417] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] px-3 sm:px-4 md:px-5 py-1 transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Intuitive
                 </span>
                 <span>experiences from</span>
-                <span className="border border-[#131417] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] px-3 sm:px-4 md:px-5 py-1 sm:py-1.5 md:py-2 transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="border border-[#131417] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] px-3 sm:px-4 md:px-5 py-1 transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Concept
                 </span>
                 <span>to</span>
-                <span className="border border-[#131417] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] px-3 sm:px-4 md:px-5 py-1 sm:py-1.5 md:py-2 transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
+                <span className="border border-[#131417] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] px-3 sm:px-4 md:px-5 py-1 transition-all duration-300 hover:bg-[#131417] hover:text-white hover:scale-105">
                   Launch
                 </span>
               </div>
             </div>
 
-            <div className="space-y-6 sm:space-y-8">
+            <div className="space-y-4">
               <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
                 Product Designer with 7+ years of experience delivering
                 intuitive, high-impact experiences across crypto, fintech, and
