@@ -173,7 +173,7 @@ export default function ComputisCaseStudy() {
                       <span className="font-semibold text-[#F59E0B]">
                         ↑ 150% error detection rate
                       </span>{" "}
-                      → issues caught before client delivery
+                      ��� issues caught before client delivery
                     </li>
                     <li>
                       <span className="font-semibold text-[#3B82F6]">
@@ -776,7 +776,7 @@ export default function ComputisCaseStudy() {
       <Footer />
 
       {/* Scroll to Top Button */}
-      <div className="fixed bottom-8 left-0 right-0 z-50 pointer-events-none">
+      <div className="fixed bottom-16 left-0 right-0 z-50 pointer-events-none">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 relative">
           <button
             onClick={scrollToTop}
