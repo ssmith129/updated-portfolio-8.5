@@ -31,6 +31,7 @@ export default function VideoOverlay({
             });
           } else {
             video.pause();
+            video.currentTime = 0;
           }
         });
       },

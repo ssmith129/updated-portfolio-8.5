@@ -37,8 +37,9 @@ export function useVideoAutoplayOnVisible(threshold: number = 0.4) {
                 });
             }
           } else {
-            // Video is less than 40% visible, pause it
+            // Video is less than 40% visible, pause and restart it
             videoElement.pause();
+            videoElement.currentTime = 0;
           }
         });
       },
