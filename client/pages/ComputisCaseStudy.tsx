@@ -49,7 +49,7 @@ export default function ComputisCaseStudy() {
       <Navigation />
 
       {/* Back Button */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-[18px] font-medium text-[#64748B] leading-normal tracking-[-0.18px] hover:text-[#F59E0B] transition-all duration-300 hover:scale-105 group"
@@ -77,7 +77,7 @@ export default function ComputisCaseStudy() {
       </header>
 
       {/* Section Navigation */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-6 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-6 relative z-10">
         <nav
           aria-label="Case study sections"
           className="flex items-center justify-center gap-2 md:gap-3 overflow-x-auto py-2"
