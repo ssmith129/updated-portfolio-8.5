@@ -79,18 +79,18 @@ export default function Navigation({ className = "" }: NavigationProps) {
           >
             Sean Smith
           </h1>
-          <p
-            className={`text-sm sm:text-base md:text-lg lg:text-base font-medium leading-normal tracking-[-0.16px] transition-colors duration-300 ${
-              isDarkPage
-                ? "text-[#888888] hover:text-[#CCCCCC]"
-                : isHealthcarePage
-                  ? "text-[#64748B] hover:text-[#3B82F6]"
-                  : "text-[#9FA0A3] hover:text-[#131417]"
-            }`}
-          >
-            San Francisco, CA
-          </p>
         </Link>
+        <p
+          className={`text-sm sm:text-base md:text-lg lg:text-base font-medium leading-normal tracking-[-0.16px] ${
+            isDarkPage
+              ? "text-[#888888]"
+              : isHealthcarePage
+                ? "text-[#64748B]"
+                : "text-[#9FA0A3]"
+          }`}
+        >
+          San Francisco, CA
+        </p>
       </div>
 
       {/* Desktop Navigation */}
