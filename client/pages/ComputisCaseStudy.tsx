@@ -82,478 +82,473 @@ export default function ComputisCaseStudy() {
         {/* Impact At a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
           <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
-                Impact At a Glance
+            Impact At a Glance
           </h2>
           <div className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">
-                    Role
-                  </p>
-                  <p className="text-[18px] font-medium text-[#131417]">
-                    Founding Lead Product Designer
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">
-                    Duration
-                  </p>
-                  <p className="text-[18px] font-medium text-[#131417]">
-                    10 months
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">
-                    Platform
-                  </p>
-                  <p className="text-[18px] font-medium text-[#131417]">
-                    Web SaaS (Desktop-first, responsive)
-                  </p>
-                </div>
-              </div>
-
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                <p className="text-[14px] font-medium text-[#9FA0A3] mb-4">
-                  Tools & Team
+                <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">
+                  Role
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-[16px] font-medium text-[#131417] mb-2">
-                      Tools:
-                    </p>
-                    <p className="text-[16px] text-[#131417]">
-                      Figma, Miro, Notion, Jira, Mixpanel, GA
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-[16px] font-medium text-[#131417] mb-2">
-                      Team:
-                    </p>
-                    <p className="text-[16px] text-[#131417]">
-                      CTO, PM, 2 ML Engineers, 2 Frontend Engineers, Design
-                      Partner
-                    </p>
-                  </div>
+                <p className="text-[18px] font-medium text-[#131417]">
+                  Founding Lead Product Designer
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">
+                  Duration
+                </p>
+                <p className="text-[18px] font-medium text-[#131417]">
+                  10 months
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                <p className="text-[14px] font-medium text-[#9FA0A3] mb-2">
+                  Platform
+                </p>
+                <p className="text-[18px] font-medium text-[#131417]">
+                  Web SaaS (Desktop-first, responsive)
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+              <p className="text-[14px] font-medium text-[#9FA0A3] mb-4">
+                Tools & Team
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <p className="text-[16px] font-medium text-[#131417] mb-2">
+                    Tools:
+                  </p>
+                  <p className="text-[16px] text-[#131417]">
+                    Figma, Miro, Notion, Jira, Mixpanel, GA
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[16px] font-medium text-[#131417] mb-2">
+                    Team:
+                  </p>
+                  <p className="text-[16px] text-[#131417]">
+                    CTO, PM, 2 ML Engineers, 2 Frontend Engineers, Design
+                    Partner
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div className="space-y-4">
-                <h3 className="text-[20px] font-medium text-[#131417]">
-                  Key Metrics
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                  <div className="bg-green-50 p-6 rounded-[25px] border-2 border-green-200 hover:border-green-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                    <p className="text-[14px] font-medium text-green-700 mb-2">
-                      CPA Onboarding Time
-                    </p>
-                    <p className="text-[28px] font-bold text-green-600 mb-1">
-                      ↓ 45%
-                    </p>
-                    <p className="text-[14px] text-green-600">2.5h → 1.4h</p>
-                  </div>
+            <div className="space-y-4">
+              <h3 className="text-[20px] font-medium text-[#131417]">
+                Key Metrics
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div className="bg-green-50 p-6 rounded-[25px] border-2 border-green-200 hover:border-green-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
+                  <p className="text-[14px] font-medium text-green-700 mb-2">
+                    CPA Onboarding Time
+                  </p>
+                  <p className="text-[28px] font-bold text-green-600 mb-1">
+                    ↓ 45%
+                  </p>
+                  <p className="text-[14px] text-green-600">2.5h → 1.4h</p>
+                </div>
 
-                  <div className="bg-blue-50 p-6 rounded-[25px] border-2 border-blue-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                    <p className="text-[14px] font-medium text-blue-700 mb-2">
-                      Demo-to-Conversion
-                    </p>
-                    <p className="text-[28px] font-bold text-blue-600">↑ 32%</p>
-                  </div>
+                <div className="bg-blue-50 p-6 rounded-[25px] border-2 border-blue-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
+                  <p className="text-[14px] font-medium text-blue-700 mb-2">
+                    Demo-to-Conversion
+                  </p>
+                  <p className="text-[28px] font-bold text-blue-600">↑ 32%</p>
+                </div>
 
-                  <div className="bg-purple-50 p-6 rounded-[25px] border-2 border-purple-200 hover:border-purple-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                    <p className="text-[14px] font-medium text-purple-700 mb-2">
-                      Manual Classification Work
-                    </p>
-                    <p className="text-[28px] font-bold text-purple-600">
-                      ↓ 85%
-                    </p>
-                  </div>
+                <div className="bg-purple-50 p-6 rounded-[25px] border-2 border-purple-200 hover:border-purple-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
+                  <p className="text-[14px] font-medium text-purple-700 mb-2">
+                    Manual Classification Work
+                  </p>
+                  <p className="text-[28px] font-bold text-purple-600">↓ 85%</p>
+                </div>
 
-                  <div className="bg-orange-50 p-6 rounded-[25px] border-2 border-orange-200 hover:border-orange-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                    <p className="text-[14px] font-medium text-orange-700 mb-2">
-                      Error Detection Rate
-                    </p>
-                    <p className="text-[28px] font-bold text-orange-600">
-                      ↑ 150%
-                    </p>
-                  </div>
+                <div className="bg-orange-50 p-6 rounded-[25px] border-2 border-orange-200 hover:border-orange-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
+                  <p className="text-[14px] font-medium text-orange-700 mb-2">
+                    Error Detection Rate
+                  </p>
+                  <p className="text-[28px] font-bold text-orange-600">
+                    ↑ 150%
+                  </p>
+                </div>
 
-                  <div className="bg-indigo-50 p-6 rounded-[25px] border-2 border-indigo-200 hover:border-indigo-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                    <p className="text-[14px] font-medium text-indigo-700 mb-2">
-                      Enterprise Deals
-                    </p>
-                    <p className="text-[28px] font-bold text-indigo-600">3</p>
-                    <p className="text-[14px] text-indigo-600">
-                      closed in 6 months
-                    </p>
-                  </div>
+                <div className="bg-indigo-50 p-6 rounded-[25px] border-2 border-indigo-200 hover:border-indigo-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
+                  <p className="text-[14px] font-medium text-indigo-700 mb-2">
+                    Enterprise Deals
+                  </p>
+                  <p className="text-[28px] font-bold text-indigo-600">3</p>
+                  <p className="text-[14px] text-indigo-600">
+                    closed in 6 months
+                  </p>
                 </div>
               </div>
+            </div>
           </div>
         </section>
 
         {/* The Challenge */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-900">
           <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
-                The Challenge
+            The Challenge
           </h2>
           <div className="space-y-6">
-              <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
-                Computis had a solid, functional platform for crypto tax
-                management—but CPAs were still spending excessive time on manual
-                transaction classification. The existing UI handled data well,
-                but lacked intelligent automation features that competitors were
-                beginning to offer.
+            <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
+              Computis had a solid, functional platform for crypto tax
+              management—but CPAs were still spending excessive time on manual
+              transaction classification. The existing UI handled data well, but
+              lacked intelligent automation features that competitors were
+              beginning to offer.
+            </p>
+
+            <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
+                <AlertTriangle className="w-5 h-5 text-red-500" />
+                Pain Points Identified
+              </h3>
+              <ul className="space-y-3">
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></span>
+                  Manual classification of thousands of transactions per client
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></span>
+                  No automated anomaly detection for FMV discrepancies
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></span>
+                  Repetitive rule creation for common transaction patterns
+                </li>
+                <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3">
+                  <span className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></span>
+                  Limited visibility into classification decisions for audit
+                  defense
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
+              <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
+                <Lightbulb className="w-5 h-5 text-blue-600" />
+                The Opportunity
+              </h3>
+              <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px]">
+                Design and implement AI-powered features that would automate
+                routine work while keeping CPAs in control—turning Computis into
+                a truly intelligent tax automation platform.
               </p>
-
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
-                  <AlertTriangle className="w-5 h-5 text-red-500" />
-                  Pain Points Identified
-                </h3>
-                <ul className="space-y-3">
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></span>
-                    Manual classification of thousands of transactions per
-                    client
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></span>
-                    No automated anomaly detection for FMV discrepancies
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></span>
-                    Repetitive rule creation for common transaction patterns
-                  </li>
-                  <li className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] flex items-start gap-3">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></span>
-                    Limited visibility into classification decisions for audit
-                    defense
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
-                  <Lightbulb className="w-5 h-5 text-blue-600" />
-                  The Opportunity
-                </h3>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px]">
-                  Design and implement AI-powered features that would automate
-                  routine work while keeping CPAs in control—turning Computis
-                  into a truly intelligent tax automation platform.
-                </p>
-              </div>
+            </div>
           </div>
         </section>
 
         {/* My Approach */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1100">
           <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
-                My Approach
+            My Approach
           </h2>
           <div className="space-y-6">
-              <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
-                I led the design of Computis's AI feature suite, focusing on{" "}
-                <strong>augmentation over automation</strong>—ensuring AI
-                enhanced CPA expertise rather than replacing professional
-                judgment.
+            <p className="text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.2px]">
+              I led the design of Computis's AI feature suite, focusing on{" "}
+              <strong>augmentation over automation</strong>—ensuring AI enhanced
+              CPA expertise rather than replacing professional judgment.
+            </p>
+
+            <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
+              <h3 className="text-[20px] font-medium text-[#131417] mb-4">
+                Research Foundation
+              </h3>
+              <ul className="space-y-2">
+                <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                  8 CPA interviews identifying automation opportunities
+                </li>
+                <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                  6 workflow shadowing sessions to map classification patterns
+                </li>
+                <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                  Competitive analysis of AI features (TaxBit, Cryptio,
+                  CoinTracker)
+                </li>
+                <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                  4 usability test cycles validating AI interaction patterns
+                </li>
+              </ul>
+            </div>
+
+            <blockquote className="bg-[#131417] text-white p-8 rounded-[25px] italic text-[20px] leading-[150%] tracking-[-0.2px] transition-all duration-300 hover:scale-[1.02]">
+              <p className="text-[16px] font-medium text-[#9FA0A3] mb-2">
+                🎯 Key Insight:
               </p>
-
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">
-                  Research Foundation
-                </h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    8 CPA interviews identifying automation opportunities
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    6 workflow shadowing sessions to map classification patterns
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Competitive analysis of AI features (TaxBit, Cryptio,
-                    CoinTracker)
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    4 usability test cycles validating AI interaction patterns
-                  </li>
-                </ul>
-              </div>
-
-              <blockquote className="bg-[#131417] text-white p-8 rounded-[25px] italic text-[20px] leading-[150%] tracking-[-0.2px] transition-all duration-300 hover:scale-[1.02]">
-                <p className="text-[16px] font-medium text-[#9FA0A3] mb-2">
-                  🎯 Key Insight:
-                </p>
-                CPAs wanted AI to handle repetitive work, but needed
-                transparency and override control to maintain professional
-                liability standards.
-              </blockquote>
+              CPAs wanted AI to handle repetitive work, but needed transparency
+              and override control to maintain professional liability standards.
+            </blockquote>
           </div>
         </section>
 
         {/* AI Feature Design Solutions */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1300">
           <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
-                AI Feature Design Solutions
+            AI Feature Design Solutions
           </h2>
           <div className="space-y-6">
-              {/* Feature 1: AI-Powered Classification */}
-              <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-amber-500">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="w-6 h-6 text-amber-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-[22px] font-semibold text-[#131417] mb-2">
-                      AI-Powered Classification with Confidence Indicators
-                    </h3>
-                  </div>
+            {/* Feature 1: AI-Powered Classification */}
+            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-amber-500">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Sparkles className="w-6 h-6 text-amber-600" />
                 </div>
-
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="AI Classification confidence indicators demonstration video"
-                  problem="Manual classification consumed 60%+ of CPA time."
-                  solution="ML-driven auto-classification with visual confidence scores (High/Medium/Low) and one-click accept/reject controls."
-                  impact="85% reduction in manual classification work; CPAs review only flagged items."
-                />
+                <div>
+                  <h3 className="text-[22px] font-semibold text-[#131417] mb-2">
+                    AI-Powered Classification with Confidence Indicators
+                  </h3>
+                </div>
               </div>
 
-              {/* Feature 2: Intelligent Audit Trail */}
-              <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-amber-500">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Eye className="w-6 h-6 text-amber-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-[22px] font-semibold text-[#131417] mb-2">
-                      Intelligent Audit Trail System
-                    </h3>
-                  </div>
-                </div>
+              <VideoOverlay
+                videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
+                ariaLabel="AI Classification confidence indicators demonstration video"
+                problem="Manual classification consumed 60%+ of CPA time."
+                solution="ML-driven auto-classification with visual confidence scores (High/Medium/Low) and one-click accept/reject controls."
+                impact="85% reduction in manual classification work; CPAs review only flagged items."
+              />
+            </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Intelligent Audit Trail System demonstration video"
-                  problem="No visibility into how classifications were determined."
-                  solution="AI-generated audit logs documenting classification rationale, rule triggers, and decision history."
-                  impact="40% reduction in compliance preparation time; enabled self-service IRS audit defense."
-                />
+            {/* Feature 2: Intelligent Audit Trail */}
+            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-amber-500">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Eye className="w-6 h-6 text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="text-[22px] font-semibold text-[#131417] mb-2">
+                    Intelligent Audit Trail System
+                  </h3>
+                </div>
               </div>
 
-              {/* Feature 3: Smart Rule Builder */}
-              <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-amber-500">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Settings className="w-6 h-6 text-amber-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-[22px] font-semibold text-[#131417] mb-2">
-                      Smart Rule Builder with Pattern Recognition
-                    </h3>
-                  </div>
-                </div>
+              <VideoOverlay
+                videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
+                ariaLabel="Intelligent Audit Trail System demonstration video"
+                problem="No visibility into how classifications were determined."
+                solution="AI-generated audit logs documenting classification rationale, rule triggers, and decision history."
+                impact="40% reduction in compliance preparation time; enabled self-service IRS audit defense."
+              />
+            </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Smart Rule Builder with Pattern Recognition demonstration video"
-                  problem="CPAs repeatedly created similar rules for common scenarios."
-                  solution="AI suggests rule templates based on transaction patterns; no-code builder with natural language preview."
-                  impact="Rule creation time reduced from 15 minutes to 90 seconds; 32% increase in demo conversions."
-                />
+            {/* Feature 3: Smart Rule Builder */}
+            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-amber-500">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Settings className="w-6 h-6 text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="text-[22px] font-semibold text-[#131417] mb-2">
+                    Smart Rule Builder with Pattern Recognition
+                  </h3>
+                </div>
               </div>
 
-              {/* Feature 4: Proactive Anomaly Detection */}
-              <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-amber-500">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <AlertTriangle className="w-6 h-6 text-amber-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-[22px] font-semibold text-[#131417] mb-2">
-                      Proactive Anomaly Detection Engine
-                    </h3>
-                  </div>
-                </div>
+              <VideoOverlay
+                videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
+                ariaLabel="Smart Rule Builder with Pattern Recognition demonstration video"
+                problem="CPAs repeatedly created similar rules for common scenarios."
+                solution="AI suggests rule templates based on transaction patterns; no-code builder with natural language preview."
+                impact="Rule creation time reduced from 15 minutes to 90 seconds; 32% increase in demo conversions."
+              />
+            </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Proactive Anomaly Detection Engine demonstration video"
-                  problem="FMV errors and data inconsistencies discovered too late."
-                  solution="ML-powered anomaly detection with inline color-coded flags and explanatory tooltips."
-                  impact="150% increase in error detection; issues caught before client delivery."
-                />
+            {/* Feature 4: Proactive Anomaly Detection */}
+            <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-amber-500">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <AlertTriangle className="w-6 h-6 text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="text-[22px] font-semibold text-[#131417] mb-2">
+                    Proactive Anomaly Detection Engine
+                  </h3>
+                </div>
               </div>
+
+              <VideoOverlay
+                videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
+                ariaLabel="Proactive Anomaly Detection Engine demonstration video"
+                problem="FMV errors and data inconsistencies discovered too late."
+                solution="ML-powered anomaly detection with inline color-coded flags and explanatory tooltips."
+                impact="150% increase in error detection; issues caught before client delivery."
+              />
+            </div>
           </div>
         </section>
 
         {/* Stakeholder Alignment */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1500">
           <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
-                Stakeholder Alignment
+            Stakeholder Alignment
           </h2>
           <div className="space-y-6">
-              <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
-                  <Users className="w-5 h-5 text-purple-600" />
-                  Balancing Automation & Control
-                </h3>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] mb-4">
-                  <strong>Challenge:</strong> Engineering wanted maximum
-                  automation; CPAs required override capabilities for liability
-                  protection.
-                </p>
-              </div>
+            <div className="bg-white rounded-[25px] p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
+                <Users className="w-5 h-5 text-purple-600" />
+                Balancing Automation & Control
+              </h3>
+              <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] mb-4">
+                <strong>Challenge:</strong> Engineering wanted maximum
+                automation; CPAs required override capabilities for liability
+                protection.
+              </p>
+            </div>
 
-              <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4">
-                  My Approach
-                </h3>
-                <ul className="space-y-2">
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Facilitated cross-functional workshop mapping trust
-                    requirements
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Presented user research showing 40% of competitor complaints
-                    cited "lack of control"
-                  </li>
-                  <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
-                    Designed graduated autonomy system: High confidence →
-                    Auto-apply | Medium → Review queue | Low → Manual required
-                  </li>
-                </ul>
-              </div>
+            <div className="bg-gray-50 p-6 rounded-[25px] transition-all duration-300 hover:bg-gray-100">
+              <h3 className="text-[20px] font-medium text-[#131417] mb-4">
+                My Approach
+              </h3>
+              <ul className="space-y-2">
+                <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                  Facilitated cross-functional workshop mapping trust
+                  requirements
+                </li>
+                <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                  Presented user research showing 40% of competitor complaints
+                  cited "lack of control"
+                </li>
+                <li className="text-[16px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 bg-[#9FA0A3] rounded-full mt-2.5 flex-shrink-0"></span>
+                  Designed graduated autonomy system: High confidence →
+                  Auto-apply | Medium → Review queue | Low → Manual required
+                </li>
+              </ul>
+            </div>
 
-              <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 transition-all duration-300 hover:border-green-300 hover:scale-[1.02]">
-                <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
-                  Outcome
-                </h3>
-                <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] mb-4">
-                  The tiered confidence system became a key differentiator. One
-                  enterprise prospect specifically cited "professional control"
-                  as their deciding factor.
-                </p>
-                <blockquote className="bg-white/80 p-6 rounded-[20px] italic text-[18px] leading-[150%] tracking-[-0.18px] border-l-4 border-green-500">
-                  "Finally, AI that works *with* me instead of replacing my
-                  judgment." — CPA Beta User
-                </blockquote>
-              </div>
+            <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 transition-all duration-300 hover:border-green-300 hover:scale-[1.02]">
+              <h3 className="text-[20px] font-medium text-[#131417] mb-4 flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-600" />
+                Outcome
+              </h3>
+              <p className="text-[18px] font-normal text-[#131417] leading-[150%] tracking-[-0.18px] mb-4">
+                The tiered confidence system became a key differentiator. One
+                enterprise prospect specifically cited "professional control" as
+                their deciding factor.
+              </p>
+              <blockquote className="bg-white/80 p-6 rounded-[20px] italic text-[18px] leading-[150%] tracking-[-0.18px] border-l-4 border-green-500">
+                "Finally, AI that works *with* me instead of replacing my
+                judgment." — CPA Beta User
+              </blockquote>
+            </div>
           </div>
         </section>
 
         {/* Results & Business Impact */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1700">
           <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
-                Results & Business Impact
+            Results & Business Impact
           </h2>
           <div className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <TrendingUp className="w-6 h-6 text-indigo-600" />
-                    <h3 className="text-[20px] font-semibold text-[#131417]">
-                      Enterprise Deals
-                    </h3>
-                  </div>
-                  <p className="text-[16px] text-[#555]">
-                    3 enterprise CPA firm deals closed within 6 months of AI
-                    feature launch
-                  </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-3">
+                  <TrendingUp className="w-6 h-6 text-indigo-600" />
+                  <h3 className="text-[20px] font-semibold text-[#131417]">
+                    Enterprise Deals
+                  </h3>
                 </div>
-
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Shield className="w-6 h-6 text-green-600" />
-                    <h3 className="text-[20px] font-semibold text-[#131417]">
-                      Compliance
-                    </h3>
-                  </div>
-                  <p className="text-[16px] text-[#555]">
-                    Zero FMV disputes reported post-implementation
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <TrendingUp className="w-6 h-6 text-purple-600" />
-                    <h3 className="text-[20px] font-semibold text-[#131417]">
-                      Platform Expansion
-                    </h3>
-                  </div>
-                  <p className="text-[16px] text-[#555]">
-                    Capabilities expanded to serve DAOs and hedge funds
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <CheckCircle className="w-6 h-6 text-blue-600" />
-                    <h3 className="text-[20px] font-semibold text-[#131417]">
-                      Key Differentiator
-                    </h3>
-                  </div>
-                  <p className="text-[16px] text-[#555]">
-                    AI features cited as primary differentiator in 78% of won
-                    deals
-                  </p>
-                </div>
+                <p className="text-[16px] text-[#555]">
+                  3 enterprise CPA firm deals closed within 6 months of AI
+                  feature launch
+                </p>
               </div>
+
+              <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-3">
+                  <Shield className="w-6 h-6 text-green-600" />
+                  <h3 className="text-[20px] font-semibold text-[#131417]">
+                    Compliance
+                  </h3>
+                </div>
+                <p className="text-[16px] text-[#555]">
+                  Zero FMV disputes reported post-implementation
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-3">
+                  <TrendingUp className="w-6 h-6 text-purple-600" />
+                  <h3 className="text-[20px] font-semibold text-[#131417]">
+                    Platform Expansion
+                  </h3>
+                </div>
+                <p className="text-[16px] text-[#555]">
+                  Capabilities expanded to serve DAOs and hedge funds
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02]">
+                <div className="flex items-center gap-3 mb-3">
+                  <CheckCircle className="w-6 h-6 text-blue-600" />
+                  <h3 className="text-[20px] font-semibold text-[#131417]">
+                    Key Differentiator
+                  </h3>
+                </div>
+                <p className="text-[16px] text-[#555]">
+                  AI features cited as primary differentiator in 78% of won
+                  deals
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-1900">
           <h2 className="text-[24px] font-medium text-[#131417] leading-[120%] tracking-[-0.24px] transition-all duration-300 hover:tracking-[-0.2px] mb-8">
-                Key Learnings
+            Key Learnings
           </h2>
           <div className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
-                  <h3 className="text-[18px] font-semibold text-[#131417] mb-3">
-                    Augmentation {">"} Automation
-                  </h3>
-                  <p className="text-[16px] text-[#555]">
-                    CPAs adopted AI faster when they retained control
-                  </p>
-                </div>
-
-                <div className="bg-purple-50 p-6 rounded-[25px] border border-purple-200 transition-all duration-300 hover:border-purple-300 hover:scale-[1.02]">
-                  <h3 className="text-[18px] font-semibold text-[#131417] mb-3">
-                    Transparency Builds Trust
-                  </h3>
-                  <p className="text-[16px] text-[#555]">
-                    Confidence scores and audit trails drove adoption
-                  </p>
-                </div>
-
-                <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 transition-all duration-300 hover:border-green-300 hover:scale-[1.02]">
-                  <h3 className="text-[18px] font-semibold text-[#131417] mb-3">
-                    Pattern Recognition = Scale
-                  </h3>
-                  <p className="text-[16px] text-[#555]">
-                    Smart suggestions multiplied CPA efficiency
-                  </p>
-                </div>
-
-                <div className="bg-amber-50 p-6 rounded-[25px] border border-amber-200 transition-all duration-300 hover:border-amber-300 hover:scale-[1.02]">
-                  <h3 className="text-[18px] font-semibold text-[#131417] mb-3">
-                    AI UX is Different
-                  </h3>
-                  <p className="text-[16px] text-[#555]">
-                    Designing for probabilistic outputs requires new interaction
-                    patterns
-                  </p>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="bg-blue-50 p-6 rounded-[25px] border border-blue-200 transition-all duration-300 hover:border-blue-300 hover:scale-[1.02]">
+                <h3 className="text-[18px] font-semibold text-[#131417] mb-3">
+                  Augmentation {">"} Automation
+                </h3>
+                <p className="text-[16px] text-[#555]">
+                  CPAs adopted AI faster when they retained control
+                </p>
               </div>
+
+              <div className="bg-purple-50 p-6 rounded-[25px] border border-purple-200 transition-all duration-300 hover:border-purple-300 hover:scale-[1.02]">
+                <h3 className="text-[18px] font-semibold text-[#131417] mb-3">
+                  Transparency Builds Trust
+                </h3>
+                <p className="text-[16px] text-[#555]">
+                  Confidence scores and audit trails drove adoption
+                </p>
+              </div>
+
+              <div className="bg-green-50 p-6 rounded-[25px] border border-green-200 transition-all duration-300 hover:border-green-300 hover:scale-[1.02]">
+                <h3 className="text-[18px] font-semibold text-[#131417] mb-3">
+                  Pattern Recognition = Scale
+                </h3>
+                <p className="text-[16px] text-[#555]">
+                  Smart suggestions multiplied CPA efficiency
+                </p>
+              </div>
+
+              <div className="bg-amber-50 p-6 rounded-[25px] border border-amber-200 transition-all duration-300 hover:border-amber-300 hover:scale-[1.02]">
+                <h3 className="text-[18px] font-semibold text-[#131417] mb-3">
+                  AI UX is Different
+                </h3>
+                <p className="text-[16px] text-[#555]">
+                  Designing for probabilistic outputs requires new interaction
+                  patterns
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
