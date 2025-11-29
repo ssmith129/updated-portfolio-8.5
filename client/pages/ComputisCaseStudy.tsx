@@ -163,8 +163,8 @@ export default function ComputisCaseStudy() {
         
         {/* Impact at a Glance */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-5 pb-5 border border-[#1A1A1A] flex flex-col items-start gap-3">
-            <h2 className="text-white text-3xl font-semibold leading-tight tracking-tight pt-5">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-5 py-[10px] border border-[#1A1A1A] flex flex-col items-start gap-3">
+            <h2 className="text-white text-3xl font-semibold leading-tight tracking-tight">
               Impact at a Glance
             </h2>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -199,7 +199,7 @@ export default function ComputisCaseStudy() {
 
         {/* The Challenge */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A]">
             <h2 className="text-white text-3xl font-semibold leading-tight tracking-tight mb-6">
               The Challenge
             </h2>
@@ -241,7 +241,7 @@ export default function ComputisCaseStudy() {
 
         {/* My Approach */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A]">
             <h2 className="text-white text-3xl font-semibold leading-tight tracking-tight mb-6">
               My Approach
             </h2>
@@ -291,7 +291,7 @@ export default function ComputisCaseStudy() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
             {/* Feature 1 */}
-            <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A] hover:border-[#f59e0b]/30 transition-all duration-300">
+            <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A] hover:border-[#f59e0b]/30 transition-all duration-300">
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-3 bg-[#f59e0b]/10 rounded-xl">
                   <Sparkles className="w-6 h-6 text-[#f59e0b]" />
@@ -319,7 +319,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A] hover:border-[#f59e0b]/30 transition-all duration-300">
+            <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A] hover:border-[#f59e0b]/30 transition-all duration-300">
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-3 bg-[#f59e0b]/10 rounded-xl">
                   <Eye className="w-6 h-6 text-[#f59e0b]" />
@@ -347,7 +347,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A] hover:border-[#f59e0b]/30 transition-all duration-300">
+            <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A] hover:border-[#f59e0b]/30 transition-all duration-300">
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-3 bg-[#f59e0b]/10 rounded-xl">
                   <Settings className="w-6 h-6 text-[#f59e0b]" />
@@ -375,7 +375,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A] hover:border-[#f59e0b]/30 transition-all duration-300">
+            <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A] hover:border-[#f59e0b]/30 transition-all duration-300">
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-3 bg-[#f59e0b]/10 rounded-xl">
                   <AlertCircle className="w-6 h-6 text-[#f59e0b]" />
@@ -407,7 +407,7 @@ export default function ComputisCaseStudy() {
 
         {/* Stakeholder Alignment */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A]">
             <h2 className="text-white text-3xl font-semibold leading-tight tracking-tight mb-6">
               Stakeholder Alignment: Balancing Automation & Control
             </h2>
@@ -452,7 +452,7 @@ export default function ComputisCaseStudy() {
 
         {/* Results & Business Impact */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A]">
             <h2 className="text-white text-3xl font-semibold leading-tight tracking-tight mb-6">
               Results & Business Impact
             </h2>
@@ -479,7 +479,7 @@ export default function ComputisCaseStudy() {
 
         {/* Key Learnings */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1200">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A]">
             <h2 className="text-white text-3xl font-semibold leading-tight tracking-tight mb-6">
               Key Learnings
             </h2>
@@ -518,7 +518,7 @@ export default function ComputisCaseStudy() {
 
         {/* Tools & Platform */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300">
-          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] p-8 border border-[#1A1A1A]">
+          <div className="bg-[#0F0F0F]/80 backdrop-blur-xl rounded-[25px] px-8 py-[10px] border border-[#1A1A1A]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-white text-lg font-semibold mb-4">Tools</h3>
