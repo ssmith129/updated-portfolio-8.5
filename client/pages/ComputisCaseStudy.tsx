@@ -16,7 +16,6 @@ import {
   ArrowUp,
 } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
-import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 import VideoOverlay from "../components/VideoOverlay";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
@@ -772,7 +771,6 @@ export default function ComputisCaseStudy() {
         </section>
       </main>
 
-      <RelatedCaseStudies currentCaseStudyId="computis" />
       <Footer />
 
       {/* Scroll to Top Button */}
