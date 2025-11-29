@@ -388,8 +388,8 @@ export default function ComputisCaseStudy() {
 
                   {/* Annotated Overlays */}
                   <div className="absolute inset-0 pointer-events-none">
-                    {/* Problem Annotation - Top Left */}
-                    <div className="absolute top-4 left-4 max-w-[280px] sm:max-w-[320px] bg-red-500/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                    {/* Problem Annotation - Bottom Left */}
+                    <div className="absolute bottom-4 left-4 max-w-[280px] sm:max-w-[320px] bg-red-500/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
                       <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
                         Problem
                       </p>
@@ -398,8 +398,8 @@ export default function ComputisCaseStudy() {
                       </p>
                     </div>
 
-                    {/* Solution Annotation - Top Right */}
-                    <div className="absolute top-4 right-4 max-w-[280px] sm:max-w-[340px] bg-blue-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-blue-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                    {/* Solution Annotation - Bottom Right */}
+                    <div className="absolute bottom-4 right-4 max-w-[280px] sm:max-w-[340px] bg-blue-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-blue-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
                       <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
                         Solution
                       </p>
