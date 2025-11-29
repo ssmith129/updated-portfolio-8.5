@@ -104,9 +104,9 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex-1 space-y-6 sm:space-y-8 lg:space-y-12 xl:space-y-[50px]">
+          <div className="flex-1 space-y-6">
             {/* Computis */}
-            <div className="border-b border-[#9FA0A3] pb-4 sm:pb-6 lg:pb-8 xl:pb-[50px] transition-all duration-300 hover:border-[#131417]">
+            <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2 sm:gap-0">
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] transition-all duration-300 hover:tracking-[-0.2px]">
                   Senior Product Designer
@@ -138,7 +138,7 @@ export default function About() {
             </div>
 
             {/* Previous Role */}
-            <div className="border-b border-[#9FA0A3] pb-4 sm:pb-6 lg:pb-8 xl:pb-[50px] transition-all duration-300 hover:border-[#131417]">
+            <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2 sm:gap-0">
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] transition-all duration-300 hover:tracking-[-0.2px]">
                   Founding Product Designer
@@ -169,8 +169,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex-1 space-y-6 sm:space-y-8 lg:space-y-12 xl:space-y-[50px]">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-[#9FA0A3] pb-3 sm:pb-4 lg:pb-8 xl:pb-[50px] gap-2 sm:gap-0 transition-all duration-300 hover:border-[#131417]">
+          <div className="flex-1 space-y-6">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-[#9FA0A3] pb-4 gap-2 sm:gap-0 transition-all duration-300 hover:border-[#131417]">
               <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.24px] lg:tracking-[-0.28px] transition-all duration-300 hover:tracking-[-0.2px]">
                 M.S. - Human-Computer Interaction
               </span>
@@ -179,7 +179,7 @@ export default function About() {
               </span>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-[#9FA0A3] pb-3 sm:pb-4 lg:pb-8 xl:pb-[50px] gap-2 sm:gap-0 transition-all duration-300 hover:border-[#131417]">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-[#9FA0A3] pb-4 gap-2 sm:gap-0 transition-all duration-300 hover:border-[#131417]">
               <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.24px] lg:tracking-[-0.28px] transition-all duration-300 hover:tracking-[-0.2px]">
                 San Francisco State University
               </span>
@@ -198,9 +198,9 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex-1 space-y-6 sm:space-y-8 lg:space-y-12 xl:space-y-[50px]">
+          <div className="flex-1 space-y-6">
             {/* Design & Prototyping */}
-            <div className="border-b border-[#9FA0A3] pb-4 sm:pb-6 lg:pb-8 xl:pb-[50px] transition-all duration-300 hover:border-[#131417]">
+            <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
                 Design & Prototyping
               </h3>
@@ -233,7 +233,7 @@ export default function About() {
             </div>
 
             {/* Product Domains */}
-            <div className="border-b border-[#9FA0A3] pb-4 sm:pb-6 lg:pb-8 xl:pb-[50px] transition-all duration-300 hover:border-[#131417]">
+            <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
                 Product Domains
               </h3>
@@ -260,7 +260,7 @@ export default function About() {
             </div>
 
             {/* Technical Skills */}
-            <div className="border-b border-[#9FA0A3] pb-4 sm:pb-6 lg:pb-8 xl:pb-[50px] transition-all duration-300 hover:border-[#131417]">
+            <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
                 Collaboration & Process
               </h3>
@@ -299,8 +299,8 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex-1 space-y-6 sm:space-y-8 lg:space-y-12 xl:space-y-[50px]">
-            <div className="border-b border-[#9FA0A3] pb-4 sm:pb-6 lg:pb-8 xl:pb-[50px] transition-all duration-300 hover:border-[#131417]">
+          <div className="flex-1 space-y-6">
+            <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
                 User-Centered Discovery
               </h3>
@@ -312,7 +312,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="border-b border-[#9FA0A3] pb-4 sm:pb-6 lg:pb-8 xl:pb-[50px] transition-all duration-300 hover:border-[#131417]">
+            <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
                 Rapid Prototyping
               </h3>
@@ -324,7 +324,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="border-b border-[#9FA0A3] pb-4 sm:pb-6 lg:pb-8 xl:pb-[50px] transition-all duration-300 hover:border-[#131417]">
+            <div className="border-b border-[#9FA0A3] pb-6 transition-all duration-300 hover:border-[#131417]">
               <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-normal text-[#131417] leading-[28px] sm:leading-[30px] md:leading-[32px] tracking-[-0.18px] sm:tracking-[-0.24px] md:tracking-[-0.28px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.2px]">
                 Design Systems Leadership
               </h3>
