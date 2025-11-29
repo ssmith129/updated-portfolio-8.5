@@ -622,8 +622,7 @@ export default function ComputisCaseStudy() {
                     <span className="w-1.5 h-1.5 bg-[#64748B] rounded-full mt-2.5 flex-shrink-0"></span>
                     <span className="text-base leading-[150%]">
                       Designed graduated autonomy system: High confidence →
-                      Auto-apply | Medium → Review queue | Low → Manual
-                      required
+                      Auto-apply | Medium → Review queue | Low → Manual required
                     </span>
                   </li>
                 </ul>
