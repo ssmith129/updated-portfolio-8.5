@@ -771,7 +771,9 @@ export default function ComputisCaseStudy() {
         </section>
       </main>
 
-      <Footer />
+      <div className="relative z-10">
+        <Footer />
+      </div>
 
       {/* Scroll to Top Button */}
       <div className="fixed bottom-20 left-0 right-0 z-50 pointer-events-none">
