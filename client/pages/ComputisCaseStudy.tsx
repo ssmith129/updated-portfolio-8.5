@@ -526,62 +526,13 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
 
-                {/* Video Demonstration with Overlays */}
-                <div className="mt-6 relative rounded-[20px] overflow-hidden shadow-lg group">
-                  <video
-                    ref={anomalyVideoRef}
-                    className="w-full h-auto"
-                    loop
-                    muted
-                    playsInline
-                    preload="metadata"
-                    aria-label="Proactive Anomaly Detection Engine demonstration video"
-                  >
-                    <source
-                      src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
-                      type="video/mp4"
-                    />
-                    <p className="p-4 bg-gray-100 text-center text-sm text-gray-600">
-                      Your browser does not support the video tag. Please use a
-                      modern browser to view this demonstration.
-                    </p>
-                  </video>
-
-                  {/* Annotated Overlays */}
-                  <div className="absolute inset-0 pointer-events-none">
-                    {/* Problem Annotation - Bottom Left */}
-                    <div className="absolute bottom-4 left-4 max-w-[280px] sm:max-w-[320px] min-h-[120px] flex flex-col justify-between bg-red-500/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
-                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
-                        Problem
-                      </p>
-                      <p className="text-[14px] sm:text-[15px] text-white leading-tight">
-                        FMV errors and data inconsistencies discovered too late.
-                      </p>
-                    </div>
-
-                    {/* Solution Annotation - Bottom Right */}
-                    <div className="absolute bottom-4 right-4 max-w-[280px] sm:max-w-[340px] min-h-[120px] flex flex-col justify-between bg-blue-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-blue-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
-                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
-                        Solution
-                      </p>
-                      <p className="text-[14px] sm:text-[15px] text-white leading-tight">
-                        ML-powered anomaly detection with inline color-coded
-                        flags and explanatory tooltips.
-                      </p>
-                    </div>
-
-                    {/* Impact Annotation - Bottom Center */}
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-[90%] sm:max-w-[400px] min-h-[120px] flex flex-col justify-between bg-green-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-green-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
-                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
-                        Impact
-                      </p>
-                      <p className="text-[14px] sm:text-[15px] text-white leading-tight text-center">
-                        150% increase in error detection; issues caught before
-                        client delivery.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <VideoOverlay
+                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
+                  ariaLabel="Proactive Anomaly Detection Engine demonstration video"
+                  problem="FMV errors and data inconsistencies discovered too late."
+                  solution="ML-powered anomaly detection with inline color-coded flags and explanatory tooltips."
+                  impact="150% increase in error detection; issues caught before client delivery."
+                />
               </div>
           </div>
         </section>
