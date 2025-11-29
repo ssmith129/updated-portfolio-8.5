@@ -80,7 +80,7 @@ export default function ComputisCaseStudy() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-6 relative z-10">
         <nav
           aria-label="Case study sections"
-          className="flex items-center gap-2 md:gap-3 overflow-x-auto py-2"
+          className="flex items-center justify-center gap-2 md:gap-3 overflow-x-auto py-2"
         >
           {[
             { href: "#tldr", label: "TL;DR" },
