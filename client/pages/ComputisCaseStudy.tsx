@@ -487,7 +487,7 @@ export default function ComputisCaseStudy() {
               <div className="bg-[#1A1A1A]/50 rounded-xl p-6 border border-[#2A2A2A]">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="text-[#f59e0b] text-2xl font-bold">1</div>
-                  <h3 className="text-white font-semibold">Augmentation > Automation</h3>
+                  <h3 className="text-white font-semibold">Augmentation &gt; Automation</h3>
                 </div>
                 <p className="text-[#9A9A9F]">CPAs adopted AI faster when they retained control</p>
               </div>
