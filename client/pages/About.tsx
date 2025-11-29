@@ -27,17 +27,17 @@ export default function About() {
           {/* Header Text */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-[56px] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
-              <span className="xl:leading-[54px]">
+              <div style={{ lineHeight: '54px' }}>
                 Senior Product Designer with 7+ years of experience creating
                 intuitive, scalable UX for complex SaaS and enterprise
                 platforms.
-              </span>
+              </div>
               <br />
               <br />
-              <span className="xl:leading-[54px]">
+              <div style={{ lineHeight: '54px' }}>
                 I specialize in AI-integrated systems that streamline workflows,
                 simplify data, and drive decisions.
-              </span>
+              </div>
             </h1>
           </div>
         </div>
