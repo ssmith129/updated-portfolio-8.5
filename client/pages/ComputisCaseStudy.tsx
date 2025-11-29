@@ -44,7 +44,7 @@ export default function ComputisCaseStudy() {
       {
         threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
         rootMargin: "0px",
-      }
+      },
     );
 
     observer.observe(video);
@@ -79,7 +79,7 @@ export default function ComputisCaseStudy() {
       {
         threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
         rootMargin: "0px",
-      }
+      },
     );
 
     observer.observe(video);
@@ -114,7 +114,7 @@ export default function ComputisCaseStudy() {
       {
         threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
         rootMargin: "0px",
-      }
+      },
     );
 
     observer.observe(video);
@@ -149,7 +149,7 @@ export default function ComputisCaseStudy() {
       {
         threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
         rootMargin: "0px",
-      }
+      },
     );
 
     observer.observe(video);
@@ -490,7 +490,8 @@ export default function ComputisCaseStudy() {
                       type="video/mp4"
                     />
                     <p className="p-4 bg-gray-100 text-center text-sm text-gray-600">
-                      Your browser does not support the video tag. Please use a modern browser to view this demonstration.
+                      Your browser does not support the video tag. Please use a
+                      modern browser to view this demonstration.
                     </p>
                   </video>
 
@@ -512,7 +513,9 @@ export default function ComputisCaseStudy() {
                         Solution
                       </p>
                       <p className="text-[14px] sm:text-[15px] text-white leading-tight">
-                        ML-driven auto-classification with visual confidence scores (High/Medium/Low) and one-click accept/reject controls.
+                        ML-driven auto-classification with visual confidence
+                        scores (High/Medium/Low) and one-click accept/reject
+                        controls.
                       </p>
                     </div>
 
@@ -522,7 +525,8 @@ export default function ComputisCaseStudy() {
                         Impact
                       </p>
                       <p className="text-[14px] sm:text-[15px] text-white leading-tight text-center">
-                        85% reduction in manual classification work; CPAs review only flagged items.
+                        85% reduction in manual classification work; CPAs review
+                        only flagged items.
                       </p>
                     </div>
                   </div>
@@ -558,7 +562,8 @@ export default function ComputisCaseStudy() {
                       type="video/mp4"
                     />
                     <p className="p-4 bg-gray-100 text-center text-sm text-gray-600">
-                      Your browser does not support the video tag. Please use a modern browser to view this demonstration.
+                      Your browser does not support the video tag. Please use a
+                      modern browser to view this demonstration.
                     </p>
                   </video>
 
@@ -580,7 +585,8 @@ export default function ComputisCaseStudy() {
                         Solution
                       </p>
                       <p className="text-[14px] sm:text-[15px] text-white leading-tight">
-                        AI-generated audit logs documenting classification rationale, rule triggers, and decision history.
+                        AI-generated audit logs documenting classification
+                        rationale, rule triggers, and decision history.
                       </p>
                     </div>
 
@@ -590,7 +596,8 @@ export default function ComputisCaseStudy() {
                         Impact
                       </p>
                       <p className="text-[14px] sm:text-[15px] text-white leading-tight text-center">
-                        40% reduction in compliance preparation time; enabled self-service IRS audit defense.
+                        40% reduction in compliance preparation time; enabled
+                        self-service IRS audit defense.
                       </p>
                     </div>
                   </div>
@@ -626,7 +633,8 @@ export default function ComputisCaseStudy() {
                       type="video/mp4"
                     />
                     <p className="p-4 bg-gray-100 text-center text-sm text-gray-600">
-                      Your browser does not support the video tag. Please use a modern browser to view this demonstration.
+                      Your browser does not support the video tag. Please use a
+                      modern browser to view this demonstration.
                     </p>
                   </video>
 
@@ -638,7 +646,8 @@ export default function ComputisCaseStudy() {
                         Problem
                       </p>
                       <p className="text-[14px] sm:text-[15px] text-white leading-tight">
-                        CPAs repeatedly created similar rules for common scenarios.
+                        CPAs repeatedly created similar rules for common
+                        scenarios.
                       </p>
                     </div>
 
@@ -648,7 +657,8 @@ export default function ComputisCaseStudy() {
                         Solution
                       </p>
                       <p className="text-[14px] sm:text-[15px] text-white leading-tight">
-                        AI suggests rule templates based on transaction patterns; no-code builder with natural language preview.
+                        AI suggests rule templates based on transaction
+                        patterns; no-code builder with natural language preview.
                       </p>
                     </div>
 
@@ -658,7 +668,8 @@ export default function ComputisCaseStudy() {
                         Impact
                       </p>
                       <p className="text-[14px] sm:text-[15px] text-white leading-tight text-center">
-                        Rule creation time reduced from 15 minutes to 90 seconds; 32% increase in demo conversions.
+                        Rule creation time reduced from 15 minutes to 90
+                        seconds; 32% increase in demo conversions.
                       </p>
                     </div>
                   </div>
@@ -694,7 +705,8 @@ export default function ComputisCaseStudy() {
                       type="video/mp4"
                     />
                     <p className="p-4 bg-gray-100 text-center text-sm text-gray-600">
-                      Your browser does not support the video tag. Please use a modern browser to view this demonstration.
+                      Your browser does not support the video tag. Please use a
+                      modern browser to view this demonstration.
                     </p>
                   </video>
 
@@ -716,7 +728,8 @@ export default function ComputisCaseStudy() {
                         Solution
                       </p>
                       <p className="text-[14px] sm:text-[15px] text-white leading-tight">
-                        ML-powered anomaly detection with inline color-coded flags and explanatory tooltips.
+                        ML-powered anomaly detection with inline color-coded
+                        flags and explanatory tooltips.
                       </p>
                     </div>
 
@@ -726,7 +739,8 @@ export default function ComputisCaseStudy() {
                         Impact
                       </p>
                       <p className="text-[14px] sm:text-[15px] text-white leading-tight text-center">
-                        150% increase in error detection; issues caught before client delivery.
+                        150% increase in error detection; issues caught before
+                        client delivery.
                       </p>
                     </div>
                   </div>
