@@ -389,7 +389,7 @@ export default function ComputisCaseStudy() {
                   {/* Annotated Overlays */}
                   <div className="absolute inset-0 pointer-events-none">
                     {/* Problem Annotation - Bottom Left */}
-                    <div className="absolute bottom-4 left-4 max-w-[280px] sm:max-w-[320px] bg-red-500/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                    <div className="absolute bottom-4 left-4 max-w-[280px] sm:max-w-[320px] min-h-[140px] flex flex-col justify-between bg-red-500/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
                       <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
                         Problem
                       </p>
@@ -399,7 +399,7 @@ export default function ComputisCaseStudy() {
                     </div>
 
                     {/* Solution Annotation - Bottom Right */}
-                    <div className="absolute bottom-4 right-4 max-w-[280px] sm:max-w-[340px] bg-blue-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-blue-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                    <div className="absolute bottom-4 right-4 max-w-[280px] sm:max-w-[340px] min-h-[140px] flex flex-col justify-between bg-blue-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-blue-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
                       <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
                         Solution
                       </p>
@@ -409,7 +409,7 @@ export default function ComputisCaseStudy() {
                     </div>
 
                     {/* Impact Annotation - Bottom Center */}
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-[90%] sm:max-w-[400px] bg-green-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-green-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-[90%] sm:max-w-[400px] min-h-[140px] flex flex-col justify-between bg-green-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-green-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
                       <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
                         Impact
                       </p>
