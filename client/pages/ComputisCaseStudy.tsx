@@ -366,40 +366,8 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
 
-                <div className="space-y-4">
-                  <div className="bg-red-50 p-4 rounded-[15px] border border-red-100">
-                    <p className="text-[14px] font-semibold text-[#131417] mb-1">
-                      Problem
-                    </p>
-                    <p className="text-[16px] text-[#555]">
-                      Manual classification consumed 60%+ of CPA time.
-                    </p>
-                  </div>
-
-                  <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-100">
-                    <p className="text-[14px] font-semibold text-[#131417] mb-1">
-                      Solution
-                    </p>
-                    <p className="text-[16px] text-[#555]">
-                      ML-driven auto-classification with visual confidence
-                      scores (High/Medium/Low) and one-click accept/reject
-                      controls.
-                    </p>
-                  </div>
-
-                  <div className="bg-green-50 p-4 rounded-[15px] border border-green-100">
-                    <p className="text-[14px] font-semibold text-[#131417] mb-1">
-                      Impact
-                    </p>
-                    <p className="text-[16px] text-[#555]">
-                      85% reduction in manual classification work; CPAs review
-                      only flagged items.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Video Demonstration */}
-                <div className="mt-6 rounded-[20px] overflow-hidden shadow-lg">
+                {/* Video Demonstration with Overlays */}
+                <div className="mt-6 relative rounded-[20px] overflow-hidden shadow-lg group">
                   <video
                     ref={videoRef}
                     className="w-full h-auto"
@@ -417,6 +385,39 @@ export default function ComputisCaseStudy() {
                       Your browser does not support the video tag. Please use a modern browser to view this demonstration.
                     </p>
                   </video>
+
+                  {/* Annotated Overlays */}
+                  <div className="absolute inset-0 pointer-events-none">
+                    {/* Problem Annotation - Top Left */}
+                    <div className="absolute top-4 left-4 max-w-[280px] sm:max-w-[320px] bg-red-500/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-red-600 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
+                        Problem
+                      </p>
+                      <p className="text-[14px] sm:text-[15px] text-white leading-tight">
+                        Manual classification consumed 60%+ of CPA time.
+                      </p>
+                    </div>
+
+                    {/* Solution Annotation - Top Right */}
+                    <div className="absolute top-4 right-4 max-w-[280px] sm:max-w-[340px] bg-blue-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-blue-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
+                        Solution
+                      </p>
+                      <p className="text-[14px] sm:text-[15px] text-white leading-tight">
+                        ML-driven auto-classification with visual confidence scores (High/Medium/Low) and one-click accept/reject controls.
+                      </p>
+                    </div>
+
+                    {/* Impact Annotation - Bottom Center */}
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-[90%] sm:max-w-[400px] bg-green-600/90 backdrop-blur-sm p-4 rounded-[12px] border-2 border-green-700 shadow-xl transform transition-all duration-300 hover:scale-105 pointer-events-auto">
+                      <p className="text-[12px] font-bold text-white mb-1 uppercase tracking-wide">
+                        Impact
+                      </p>
+                      <p className="text-[14px] sm:text-[15px] text-white leading-tight text-center">
+                        85% reduction in manual classification work; CPAs review only flagged items.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
