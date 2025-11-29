@@ -17,6 +17,7 @@ import Footer from "../components/Footer";
 export default function ComputisCaseStudy() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const auditVideoRef = useRef<HTMLVideoElement>(null);
+  const ruleBuilderVideoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -55,6 +56,41 @@ export default function ComputisCaseStudy() {
 
   useEffect(() => {
     const video = auditVideoRef.current;
+    if (!video) return;
+
+    // Intersection Observer for 40% visibility threshold
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+            // Attempt to play the video
+            video.play().catch((error) => {
+              // Handle autoplay block gracefully
+              console.log("Autoplay was prevented:", error);
+              // Video will remain paused until user interaction
+            });
+          } else {
+            // Pause video when less than 40% visible
+            video.pause();
+          }
+        });
+      },
+      {
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+        rootMargin: "0px",
+      }
+    );
+
+    observer.observe(video);
+
+    // Cleanup
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    const video = ruleBuilderVideoRef.current;
     if (!video) return;
 
     // Intersection Observer for 40% visibility threshold
