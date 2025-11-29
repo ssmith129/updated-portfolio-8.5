@@ -777,17 +777,21 @@ export default function ComputisCaseStudy() {
       <Footer />
 
       {/* Scroll to Top Button */}
-      <button
-        onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 z-50 p-4 rounded-full bg-gradient-to-r from-[#F59E0B] to-[#3B82F6] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F59E0B] focus:ring-offset-2 ${
-          showScrollTop
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-16 pointer-events-none"
-        }`}
-        aria-label="Scroll to top"
-      >
-        <ArrowUp className="w-6 h-6" />
-      </button>
+      <div className="fixed bottom-8 left-0 right-0 z-50 pointer-events-none">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-8 lg:px-12 relative">
+          <button
+            onClick={scrollToTop}
+            className={`absolute right-4 sm:right-8 lg:right-12 p-4 rounded-full bg-gradient-to-r from-[#F59E0B] to-[#3B82F6] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F59E0B] focus:ring-offset-2 pointer-events-auto ${
+              showScrollTop
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-16 pointer-events-none"
+            }`}
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="w-6 h-6" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
