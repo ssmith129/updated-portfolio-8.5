@@ -49,7 +49,7 @@ export default function ComputisCaseStudy() {
       <Navigation />
 
       {/* Back Button */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-[18px] font-medium text-[#64748B] leading-normal tracking-[-0.18px] hover:text-[#F59E0B] transition-all duration-300 hover:scale-105 group"
@@ -61,7 +61,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <header className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
+      <header className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="mb-8 flex flex-col lg:block">
           <span className="inline-block bg-gradient-to-r from-[#F59E0B] to-[#3B82F6] text-white px-4 py-2 rounded-[20px] text-[14px] font-semibold tracking-[-0.14px] mb-6">
             FinTech UX Case Study
@@ -77,7 +77,7 @@ export default function ComputisCaseStudy() {
       </header>
 
       {/* Section Navigation */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-6 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-6 relative z-10">
         <nav
           aria-label="Case study sections"
           className="flex items-center justify-center gap-2 md:gap-3 overflow-x-auto py-2"
@@ -103,7 +103,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       {/* Summary Card */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
         <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E2E8F0]">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
@@ -191,7 +191,7 @@ export default function ComputisCaseStudy() {
       {/* Main Content */}
       <main
         id="main-content"
-        className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16 relative z-10"
+        className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16 relative z-10"
       >
         {/* Impact At a Glance */}
         <section
