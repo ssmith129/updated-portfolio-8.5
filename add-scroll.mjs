@@ -1,7 +1,7 @@
-const fs = require('fs');
+import { readFileSync, writeFileSync } from 'fs';
 
 const filePath = 'client/pages/MedicoCaseStudy.tsx';
-let content = fs.readFileSync(filePath, 'utf8');
+const content = readFileSync(filePath, 'utf8');
 
 const scrollButton = `
 {/* Scroll to Top Button */}
@@ -26,14 +26,7 @@ aria-label="Scroll to top"
 );
 }`;
 
-// Replace the last three lines with the new content
 const lines = content.split('\n');
-const lastThreeLines = lines.slice(-3).join('\n');
-
-if (lastThreeLines.includes('</div>\n```\n\n);\n}')) {
-  const newContent = lines.slice(0, -3).join('\n') + '\n' + scrollButton;
-  fs.writeFileSync(filePath, newContent, 'utf8');
-  console.log('Scroll button added successfully!');
-} else {
-  console.log('Could not find expected ending. File ending:', lastThreeLines);
-}
+const newContent = lines.slice(0, -3).join('\n') + '\n' + scrollButton;
+writeFileSync(filePath, newContent, 'utf8');
+console.log('Success!');
