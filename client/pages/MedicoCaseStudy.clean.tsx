@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
+  ArrowUp,
   Target,
   Users,
   Calendar,
@@ -83,6 +84,7 @@ export default function MedicoCaseStudy() {
     alt: string;
   } | null>(null);
   const [startMetricsAnimation, setStartMetricsAnimation] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const metricsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
