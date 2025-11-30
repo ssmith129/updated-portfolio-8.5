@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
+ArrowUp,
   ArrowUp,
   Target,
   Users,
@@ -135,6 +136,7 @@ export default function SymplifyCaseStudy() {
   } | null>(null);
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Use the new animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
