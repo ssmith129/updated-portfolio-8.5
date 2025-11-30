@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
+  ArrowUp,
   Target,
   Users,
   Calendar,
