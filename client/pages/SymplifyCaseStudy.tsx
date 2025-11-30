@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import {
   ArrowLeft,
   ArrowUp,
-  ArrowUp,
   Target,
   Users,
   Calendar,
@@ -345,7 +344,7 @@ export default function SymplifyCaseStudy() {
                   <ul className="list-disc pl-5 space-y-2 text-[#1E293B]">
                     <li>
                       <span className="font-semibold">Before:</span> Doctors in
-                      EHR, nurses in paper logs, admins in Excel — siloed, slow,
+                      EHR, nurses in paper logs, admins in Excel ��� siloed, slow,
                       error-prone
                     </li>
                     <li>
