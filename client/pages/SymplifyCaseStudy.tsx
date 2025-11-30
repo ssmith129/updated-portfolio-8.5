@@ -142,6 +142,23 @@ export default function SymplifyCaseStudy() {
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
     useIntersectionAnimation(0.3, "0px 0px -100px 0px");
 
+  // Scroll to top button visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F8FAFC] via-white to-[#EFF6FF] scroll-smooth relative overflow-hidden">
       {/* Subtle healthcare background pattern */}
