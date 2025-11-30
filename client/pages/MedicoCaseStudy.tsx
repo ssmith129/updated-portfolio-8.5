@@ -90,6 +90,8 @@ return (
 };
 
 export default function MedicoCaseStudy() {
+const [showScrollTop, setShowScrollTop] = useState(false);
+
 const [enlargedImage, setEnlargedImage] = useState<{
 src: string;
 alt: string;
