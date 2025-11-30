@@ -87,6 +87,23 @@ export default function MedicoCaseStudy() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const metricsRef = useRef<HTMLDivElement>(null);
 
+  // Scroll to top button visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
