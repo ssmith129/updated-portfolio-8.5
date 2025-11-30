@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
+  ArrowUp,
   TrendingUp,
   Users,
   Target,
@@ -28,6 +29,24 @@ import { AnnotatedDemo } from "../components/case-study/AnnotatedDemo";
 
 export default function ComputisCaseStudySandbox() {
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  // Scroll to top button visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   // Video autoplay refs with 40% visibility threshold
   const heroVideoRef = useVideoAutoplayOnVisible(0.4);
@@ -1312,6 +1331,23 @@ export default function ComputisCaseStudySandbox() {
       </main>
 
       <Footer />
+
+      {/* Scroll to Top Button */}
+      <div className="fixed bottom-20 left-0 right-0 z-50 pointer-events-none">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 relative pointer-events-none">
+          <button
+            onClick={scrollToTop}
+            className={`absolute right-4 sm:right-8 lg:right-12 p-4 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#0088CC] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#00D4FF] focus:ring-offset-2 pointer-events-auto ${
+              showScrollTop
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-16 pointer-events-none"
+            }`}
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="w-6 h-6" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
