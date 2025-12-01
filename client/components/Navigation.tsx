@@ -68,9 +68,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
           className="group"
           aria-label="Sean Smith - UX/Product Designer - Go to homepage"
         >
-          <h1
-            className="text-lg sm:text-xl md:text-2xl lg:text-xl font-medium leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] text-[#131417] group-hover:text-[#2a2a2a]"
-          >
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-xl font-medium leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] text-[#131417] group-hover:text-[#2a2a2a]">
             Sean Smith
           </h1>
         </Link>
