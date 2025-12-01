@@ -205,7 +205,6 @@ export default function About() {
                 San Francisco State University
               </span>
               <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-normal text-[#9FA0A3] leading-[26px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.24px] lg:tracking-[-0.28px] transition-all duration-300 hover:text-[#131417]">
-                San Francisco, CA
               </span>
             </div>
           </div>
