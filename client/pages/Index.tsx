@@ -49,7 +49,7 @@ export default function Index() {
 
           {/* Hero Text */}
           <div className="flex-1 text-center lg:text-left order-2 lg:order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[94px] font-medium text-[#131417] leading-[110%] sm:leading-[115%] md:leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.5px] xl:tracking-[-1.88px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-500 hover:tracking-[-1.3px] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-700">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] 2xl:text-[94px] font-medium text-[#131417] leading-[110%] sm:leading-[115%] md:leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.5px] xl:tracking-[-1.72px] 2xl:tracking-[-1.88px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-500 hover:tracking-[-1.3px] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-700">
               UX/Product Designer
             </h1>
 
