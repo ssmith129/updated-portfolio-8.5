@@ -85,6 +85,23 @@ export default function Navigation({ className = "" }: NavigationProps) {
         </p>
       </div>
 
+      {/* Mobile Menu Button */}
+      <button
+        onClick={toggleMobileMenu}
+        className={`md:hidden p-3 rounded-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-opacity-50 touch-manipulation ${
+          isDarkPage
+            ? "text-[#CCCCCC] hover:bg-[#00D4FF]/10 hover:text-[#00D4FF] focus:ring-[#00D4FF]"
+            : isHealthcarePage
+              ? "text-[#475569] hover:bg-[#3B82F6]/10 hover:text-[#3B82F6] focus:ring-[#3B82F6]"
+              : "text-[#131417] hover:bg-gray-100 focus:ring-[#131417]"
+        }`}
+        aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={isMobileMenuOpen}
+        aria-controls="mobile-menu"
+      >
+        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+
       {/* Desktop Navigation */}
       <div
         className={`hidden md:flex rounded-[25px] sm:rounded-[35px] md:rounded-[50px] p-[3px] sm:p-[4px] md:p-[5px] items-center flex-wrap gap-1 transition-all duration-300 hover:scale-[1.02] touch-manipulation ${
