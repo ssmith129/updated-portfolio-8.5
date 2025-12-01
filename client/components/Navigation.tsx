@@ -80,17 +80,6 @@ export default function Navigation({ className = "" }: NavigationProps) {
             Sean Smith
           </h1>
         </Link>
-        <p
-          className={`text-sm sm:text-base md:text-lg lg:text-base font-medium leading-normal tracking-[-0.16px] ${
-            isDarkPage
-              ? "text-[#888888]"
-              : isHealthcarePage
-                ? "text-[#64748B]"
-                : "text-[#9FA0A3]"
-          }`}
-        >
-          San Francisco, CA
-        </p>
       </div>
 
       {/* Desktop Navigation */}
