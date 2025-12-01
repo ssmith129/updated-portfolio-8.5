@@ -150,10 +150,19 @@ export default function Navigation({ className = "" }: NavigationProps) {
         })}
       </div>
 
+      {/* Mobile Menu Backdrop */}
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+          onClick={toggleMobileMenu}
+          aria-hidden="true"
+        />
+      )}
+
       {/* Mobile Navigation Menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden absolute top-full left-0 right-0 shadow-lg rounded-b-[20px] transition-all duration-300 ${
+        className={`md:hidden absolute top-full left-0 right-0 shadow-lg rounded-b-[20px] transition-all duration-300 z-50 ${
           isMobileMenuOpen
             ? "opacity-100 visible translate-y-0"
             : "opacity-0 invisible -translate-y-4"
@@ -164,7 +173,6 @@ export default function Navigation({ className = "" }: NavigationProps) {
               ? "bg-white/95 backdrop-blur-xl border border-[#E2E8F0]"
               : "bg-white"
         }`}
-        style={{ zIndex: 50 }}
       >
         <div className="px-4 py-6 space-y-3">
           {navigationItems.map((item) => {

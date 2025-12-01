@@ -47,15 +47,15 @@ export default function About() {
 
           {/* Header Text */}
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-[56px] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
-              <div style={{ lineHeight: "54px" }}>
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-tight sm:leading-normal md:leading-relaxed lg:leading-[54px] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
+              <div className="leading-tight sm:leading-normal md:leading-relaxed lg:leading-[54px]">
                 Senior Product Designer with 7+ years of experience creating
                 intuitive, scalable UX for complex SaaS and enterprise
                 platforms.
               </div>
               <br />
               <br />
-              <div style={{ lineHeight: "54px" }}>
+              <div className="leading-tight sm:leading-normal md:leading-relaxed lg:leading-[54px]">
                 I specialize in AI-integrated systems that streamline workflows,
                 simplify data, and drive decisions.
               </div>
@@ -67,7 +67,7 @@ export default function About() {
       {/* Main Content */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] pb-8 sm:pb-12 md:pb-16 space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-24 xl:space-y-[150px]">
         {/* Professional Summary Section */}
-        <section className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-24 xl:gap-[440px] animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
+        <section className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-24 xl:gap-32 2xl:gap-40 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
           <div className="w-full lg:w-[200px]">
             <p className="text-sm sm:text-base md:text-lg lg:text-[18px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
               Professional Summary
