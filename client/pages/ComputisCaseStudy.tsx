@@ -25,18 +25,15 @@ export default function ComputisCaseStudy() {
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // Use the animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
     useIntersectionAnimation(0.3, "0px 0px -100px 0px");
 
-  // Count up animations for each metric
   const onboardingCount = useCountUp(45, 2000, startMetricsAnimation);
   const conversionCount = useCountUp(32, 2000, startMetricsAnimation);
   const classificationCount = useCountUp(85, 2000, startMetricsAnimation);
   const errorDetectionCount = useCountUp(150, 2000, startMetricsAnimation);
   const enterpriseDealsCount = useCountUp(3, 2000, startMetricsAnimation);
 
-  // Scroll to top button visibility
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
@@ -54,59 +51,54 @@ export default function ComputisCaseStudy() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F8FAFC] via-white to-[#FEF3C7] scroll-smooth relative overflow-hidden">
-      {/* Subtle background pattern */}
+    <div className="min-h-screen bg-precision-neutral scroll-smooth relative overflow-hidden font-sans">
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.02]"
         style={{
           backgroundImage: `
-          radial-gradient(circle at 20% 50%, #F59E0B 1px, transparent 1px),
-          radial-gradient(circle at 80% 80%, #3B82F6 1px, transparent 1px)
+          radial-gradient(circle at 20% 50%, var(--precision-accent) 1px, transparent 1px),
+          radial-gradient(circle at 80% 80%, var(--precision-secondary) 1px, transparent 1px)
         `,
-          backgroundSize: "50px 50px",
+          backgroundSize: "64px 64px",
         }}
       ></div>
 
-      {/* Gradient orbs for depth */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#F59E0B]/5 rounded-full blur-[100px]"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#3B82F6]/5 rounded-full blur-[120px]"></div>
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#00D4AA]/3 rounded-full blur-[120px]"></div>
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#1E3A5F]/4 rounded-full blur-[140px]"></div>
 
       <SkipLink />
       <Navigation />
 
-      {/* Back Button */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-6 pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300 relative z-10">
         <Link
           to="/case-studies"
-          className="inline-flex items-center gap-2 text-[18px] font-medium text-[#64748B] leading-normal tracking-[-0.18px] hover:text-[#F59E0B] transition-all duration-300 hover:scale-105 group"
+          className="inline-flex items-center gap-2 text-base font-medium text-precision-text-secondary leading-normal hover:text-precision-accent transition-all duration-200 hover:scale-[1.02] group"
           aria-label="Return to case studies overview page"
         >
-          <ArrowLeft className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" />
+          <ArrowLeft className="w-5 h-5 transition-transform duration-200 group-hover:-translate-x-1" />
           Back to Case Studies
         </Link>
       </div>
 
-      {/* Hero Section */}
-      <header className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
+      <header className="max-w-[1200px] mx-auto px-6 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="mb-8 flex flex-col lg:block">
-          <span className="inline-block bg-gradient-to-r from-[#F59E0B] to-[#3B82F6] text-white px-4 py-2 rounded-[20px] text-[14px] font-semibold tracking-[-0.14px] mb-6">
+          <span className="inline-block bg-precision-accent text-white px-4 py-2 rounded-pill text-sm font-semibold tracking-tight mb-6">
             FinTech UX Case Study
           </span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#0F172A] leading-[110%] tracking-[-1.2px] mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[40px] font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-6">
             Computis — Designing AI Features for Crypto Tax Automation
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl font-normal text-[#64748B] leading-[140%] tracking-[-0.24px]">
+          <p className="text-lg sm:text-xl font-normal text-precision-text-secondary leading-[140%]">
             Leading the design of an AI-powered feature suite that augments CPA
             expertise while maintaining professional control
           </p>
         </div>
       </header>
 
-      {/* Section Navigation */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-6 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-6 mt-8 relative z-10">
         <nav
           aria-label="Case study sections"
-          className="flex items-center justify-center gap-2 md:gap-3 overflow-x-auto py-2"
+          className="flex items-center justify-center gap-2 overflow-x-auto py-2"
         >
           {[
             { href: "#tldr", label: "TL;DR" },
@@ -120,7 +112,7 @@ export default function ComputisCaseStudy() {
             <a
               key={item.href}
               href={item.href}
-              className="shrink-0 px-3 py-2 rounded-full bg-white/80 backdrop-blur-sm text-[#475569] border border-[#E2E8F0] text-sm font-medium hover:bg-[#F59E0B]/10 hover:text-[#F59E0B] hover:border-[#F59E0B]/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F59E0B] transition-all duration-200 shadow-sm hover:shadow-md"
+              className="shrink-0 px-4 py-2 rounded-button bg-white text-precision-text-secondary border border-[#E3E8EF] text-sm font-medium hover:bg-precision-accent/10 hover:text-precision-accent hover:border-precision-accent/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-precision-accent transition-all duration-200 shadow-precision-sm hover:shadow-precision-md hover:scale-[1.02]"
             >
               {item.label}
             </a>
@@ -128,22 +120,21 @@ export default function ComputisCaseStudy() {
         </nav>
       </div>
 
-      {/* Summary Card */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 mt-8 relative z-10">
-        <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E2E8F0]">
+      <div className="max-w-[1200px] mx-auto px-6 mt-8 relative z-10">
+        <div className="bg-white backdrop-blur-xl rounded-card p-6 shadow-precision-md hover:shadow-precision-md transition-all duration-200 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E3E8EF]">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
             className="w-full flex items-center justify-between group"
             aria-expanded={isSummaryExpanded}
             aria-controls="summary-content"
           >
-            <h2 className="text-xl sm:text-2xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.24px] group-hover:text-[#F59E0B] transition-colors duration-300">
+            <h2 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary leading-[120%] group-hover:text-precision-accent transition-colors duration-200">
               Quick View
             </h2>
             {isSummaryExpanded ? (
-              <ChevronUp className="w-5 h-5 text-[#64748B] group-hover:text-[#F59E0B] transition-colors duration-300" />
+              <ChevronUp className="w-5 h-5 text-precision-text-secondary group-hover:text-precision-accent transition-colors duration-200" />
             ) : (
-              <ChevronDown className="w-5 h-5 text-[#64748B] group-hover:text-[#F59E0B] transition-colors duration-300" />
+              <ChevronDown className="w-5 h-5 text-precision-text-secondary group-hover:text-precision-accent transition-colors duration-200" />
             )}
           </button>
 
@@ -154,43 +145,43 @@ export default function ComputisCaseStudy() {
             >
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-medium text-[#0F172A] mb-4">
+                  <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary mb-4">
                     📌 TL;DR — Key Impact
                   </h3>
-                  <ul className="list-disc pl-5 space-y-2 text-[#1E293B]">
+                  <ul className="list-disc pl-5 space-y-2 text-precision-text-primary">
                     <li>
-                      <span className="font-semibold text-[#10B981]">
+                      <span className="font-semibold text-precision-success">
                         ↓ 85% manual classification work
                       </span>{" "}
                       → CPAs review only flagged items
                     </li>
                     <li>
-                      <span className="font-semibold text-[#3B82F6]">
+                      <span className="font-semibold text-precision-secondary">
                         ↑ 32% demo-to-conversion rate
                       </span>{" "}
                       → faster rule creation drove adoption
                     </li>
                     <li>
-                      <span className="font-semibold text-[#8B5CF6]">
+                      <span className="font-semibold text-precision-accent">
                         ↓ 45% CPA onboarding time
                       </span>{" "}
                       → from 2.5h to 1.4h
                     </li>
                     <li>
-                      <span className="font-semibold text-[#F59E0B]">
+                      <span className="font-semibold text-precision-warning">
                         ↑ 150% error detection rate
                       </span>{" "}
                       → issues caught before client delivery
                     </li>
                     <li>
-                      <span className="font-semibold text-[#3B82F6]">
+                      <span className="font-semibold text-precision-primary">
                         Trust-first AI patterns
                       </span>{" "}
                       → transparent, human-in-the-loop design
                     </li>
                   </ul>
-                  <p className="mt-4 text-[#475569]">
-                    <span className="font-semibold text-[#0F172A]">
+                  <p className="mt-4 text-precision-text-secondary">
+                    <span className="font-semibold text-precision-text-primary">
                       My Role:
                     </span>{" "}
                     Founding Lead Product Designer → 0→1 AI feature design for
@@ -198,10 +189,10 @@ export default function ComputisCaseStudy() {
                   </p>
                 </div>
 
-                <div className="border-t border-[#E2E8F0]"></div>
+                <div className="border-t border-[#E3E8EF]"></div>
 
-                <div className="bg-gradient-to-r from-[#FEF3C7] to-[#FED7AA] rounded-[16px] p-4 border-l-4 border-[#F59E0B]">
-                  <p className="text-[#1E293B] italic leading-relaxed">
+                <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-4 border-l-4 border-precision-accent">
+                  <p className="text-precision-text-primary italic leading-relaxed">
                     Computis transformed from a functional crypto tax platform
                     into an intelligent automation system — delivering
                     measurable time savings, safer workflows, and professional
@@ -214,64 +205,62 @@ export default function ComputisCaseStudy() {
         </div>
       </div>
 
-      {/* Main Content */}
       <main
         id="main-content"
-        className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-12 pb-24 space-y-16 relative z-10"
+        className="max-w-[1200px] mx-auto px-6 pb-24 space-y-16 relative z-10"
       >
-        {/* Impact At a Glance */}
         <section
           id="tldr"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col"
         >
-          <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-lg hover:shadow-xl transition-all duration-300 mt-12 border border-[#E2E8F0]">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.3px] mb-8 transition-all duration-300 hover:text-[#F59E0B] cursor-pointer">
+          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 mt-12 border border-[#E3E8EF]">
+            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8 transition-all duration-200 hover:text-precision-accent cursor-pointer">
               📌 Impact At a Glance
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#64748B] uppercase tracking-[0.5px]">
+              <div className="space-y-2 transition-all duration-200 hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
                   Role
                 </h3>
-                <p className="text-lg font-medium text-[#0F172A]">
+                <p className="text-base font-medium text-precision-text-primary">
                   Founding Lead Product Designer
                 </p>
               </div>
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#64748B] uppercase tracking-[0.5px]">
+              <div className="space-y-2 transition-all duration-200 hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
                   Duration
                 </h3>
-                <p className="text-lg font-medium text-[#0F172A]">10 months</p>
+                <p className="text-base font-medium text-precision-text-primary">10 months</p>
               </div>
-              <div className="space-y-2 transition-all duration-300 hover:scale-105 cursor-pointer">
-                <h3 className="text-sm font-medium text-[#64748B] uppercase tracking-[0.5px]">
+              <div className="space-y-2 transition-all duration-200 hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
                   Platform
                 </h3>
-                <p className="text-lg font-medium text-[#0F172A]">
+                <p className="text-base font-medium text-precision-text-primary">
                   Web SaaS (Desktop-first, responsive)
                 </p>
               </div>
             </div>
 
-            <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300 mb-6 border border-[#E2E8F0]">
-              <p className="text-sm font-medium text-[#64748B] mb-4 uppercase tracking-[0.5px]">
+            <div className="bg-white rounded-card p-6 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 mb-6 border border-[#E3E8EF]">
+              <p className="text-xs font-semibold text-precision-text-secondary mb-4 uppercase tracking-wider">
                 Tools & Team
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <p className="text-base font-medium text-[#0F172A] mb-2">
+                  <p className="text-sm font-semibold text-precision-text-primary mb-2">
                     Tools:
                   </p>
-                  <p className="text-base text-[#1E293B]">
+                  <p className="text-sm text-precision-text-primary">
                     Figma, Miro, Notion, Jira, Mixpanel, GA
                   </p>
                 </div>
                 <div>
-                  <p className="text-base font-medium text-[#0F172A] mb-2">
+                  <p className="text-sm font-semibold text-precision-text-primary mb-2">
                     Team:
                   </p>
-                  <p className="text-base text-[#1E293B]">
+                  <p className="text-sm text-precision-text-primary">
                     CTO, PM, 2 ML Engineers, 2 Frontend Engineers, Design
                     Partner
                   </p>
@@ -281,76 +270,75 @@ export default function ComputisCaseStudy() {
 
             <div
               ref={metricsRef as React.RefObject<HTMLDivElement>}
-              className="bg-gradient-to-r from-[#FEF3C7] via-white to-[#DBEAFE] rounded-[20px] p-6 sm:p-8 border border-[#E2E8F0]"
+              className="bg-gradient-to-r from-[#E0F9F4] via-white to-[#E8F4FA] rounded-card p-6 sm:p-8 border border-[#E3E8EF]"
             >
-              <h3 className="text-xl font-medium text-[#0F172A] mb-6">
+              <h3 className="text-xl font-semibold font-heading text-precision-text-primary mb-6">
                 Key Metrics
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div className="bg-green-50 p-6 rounded-[25px] border-2 border-green-200 hover:border-green-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                  <p className="text-sm font-medium text-green-700 mb-2">
+                <div className="bg-[#E0F9F4] p-6 rounded-card border-2 border-[#00D4AA]/30 hover:border-[#00D4AA]/50 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     CPA Onboarding Time
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-green-600 mb-1">
+                  <p className="text-2xl sm:text-3xl font-bold text-precision-success mb-1">
                     ↓ {onboardingCount}%
                   </p>
-                  <p className="text-sm text-green-600">2.5h → 1.4h</p>
+                  <p className="text-xs font-mono text-precision-text-secondary">2.5h → 1.4h</p>
                 </div>
 
-                <div className="bg-blue-50 p-6 rounded-[25px] border-2 border-blue-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                  <p className="text-sm font-medium text-blue-700 mb-2">
+                <div className="bg-[#E8F4FA] p-6 rounded-card border-2 border-[#1E3A5F]/20 hover:border-[#1E3A5F]/40 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     Demo-to-Conversion
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-blue-600">
+                  <p className="text-2xl sm:text-3xl font-bold text-precision-secondary">
                     ↑ {conversionCount}%
                   </p>
                 </div>
 
-                <div className="bg-purple-50 p-6 rounded-[25px] border-2 border-purple-200 hover:border-purple-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                  <p className="text-sm font-medium text-purple-700 mb-2">
+                <div className="bg-[#E0F9F4] p-6 rounded-card border-2 border-[#00D4AA]/30 hover:border-[#00D4AA]/50 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     Manual Classification Work
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-purple-600">
+                  <p className="text-2xl sm:text-3xl font-bold text-precision-accent">
                     ↓ {classificationCount}%
                   </p>
                 </div>
 
-                <div className="bg-orange-50 p-6 rounded-[25px] border-2 border-orange-200 hover:border-orange-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                  <p className="text-sm font-medium text-orange-700 mb-2">
+                <div className="bg-[#FFF4E6] p-6 rounded-card border-2 border-[#F39C12]/30 hover:border-[#F39C12]/50 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     Error Detection Rate
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-orange-600">
+                  <p className="text-2xl sm:text-3xl font-bold text-precision-warning">
                     ↑ {errorDetectionCount}%
                   </p>
                 </div>
 
-                <div className="bg-indigo-50 p-6 rounded-[25px] border-2 border-indigo-200 hover:border-indigo-300 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] text-center">
-                  <p className="text-sm font-medium text-indigo-700 mb-2">
+                <div className="bg-[#E8F0FA] p-6 rounded-card border-2 border-[#0A2540]/20 hover:border-[#0A2540]/40 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     Enterprise Deals
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-indigo-600">
+                  <p className="text-2xl sm:text-3xl font-bold text-precision-primary">
                     {enterpriseDealsCount}
                   </p>
-                  <p className="text-sm text-indigo-600">closed in 6 months</p>
+                  <p className="text-xs font-mono text-precision-text-secondary">closed in 6 months</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* The Challenge */}
         <section
           id="challenge"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800"
         >
-          <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#E2E8F0]">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.3px] mb-8">
+          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               🎯 The Challenge
             </h2>
 
             <div className="space-y-8">
               <div>
-                <p className="text-lg text-[#1E293B] leading-[150%] mb-6">
+                <p className="text-base text-precision-text-primary leading-[150%] mb-6">
                   Computis had a solid, functional platform for crypto tax
                   management—but CPAs were still spending excessive time on
                   manual transaction classification. The existing UI handled
@@ -359,33 +347,33 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-[#FEF2F2] to-[#FEE2E2] rounded-[20px] p-6 border-l-4 border-[#EF4444] transition-all duration-300 hover:shadow-md hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xl font-bold text-[#991B1B] mb-4 flex items-center gap-2">
-                  <AlertTriangle className="w-5 h-5 text-[#DC2626]" />
+              <div className="bg-gradient-to-r from-[#FDEEEE] to-[#FCE4E4] rounded-card p-6 border-l-4 border-precision-error transition-all duration-200 hover:shadow-precision-md hover:scale-[1.02] cursor-pointer">
+                <h3 className="text-xl font-bold font-heading text-[#C0392B] mb-4 flex items-center gap-2">
+                  <AlertTriangle className="w-5 h-5 text-precision-error" />
                   Pain Points Identified
                 </h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-2 h-2 bg-[#EF4444] rounded-full mt-2 flex-shrink-0"></span>
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-2 h-2 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span>
                       Manual classification of thousands of transactions per
                       client
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-2 h-2 bg-[#EF4444] rounded-full mt-2 flex-shrink-0"></span>
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-2 h-2 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span>
                       No automated anomaly detection for FMV discrepancies
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-2 h-2 bg-[#EF4444] rounded-full mt-2 flex-shrink-0"></span>
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-2 h-2 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span>
                       Repetitive rule creation for common transaction patterns
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-2 h-2 bg-[#EF4444] rounded-full mt-2 flex-shrink-0"></span>
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-2 h-2 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span>
                       Limited visibility into classification decisions for audit
                       defense
@@ -394,12 +382,12 @@ export default function ComputisCaseStudy() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-r from-[#EFF6FF] to-[#DBEAFE] rounded-[20px] p-6 border-l-4 border-[#3B82F6]">
-                <h3 className="text-xl font-bold text-[#1E40AF] mb-4 flex items-center gap-2">
-                  <Lightbulb className="w-5 h-5 text-[#3B82F6]" />
+              <div className="bg-gradient-to-r from-[#E8F4FA] to-[#D4E9F7] rounded-card p-6 border-l-4 border-precision-secondary">
+                <h3 className="text-xl font-bold font-heading text-precision-primary mb-4 flex items-center gap-2">
+                  <Lightbulb className="w-5 h-5 text-precision-secondary" />
                   The Opportunity
                 </h3>
-                <p className="text-lg text-[#1E293B] leading-[150%]">
+                <p className="text-base text-precision-text-primary leading-[150%]">
                   Design and implement AI-powered features that would automate
                   routine work while keeping CPAs in control—turning Computis
                   into a truly intelligent tax automation platform.
@@ -409,21 +397,20 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* My Approach */}
         <section
           id="approach"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900"
         >
-          <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#E2E8F0]">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.3px] mb-8">
+          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               💡 My Approach
             </h2>
 
             <div className="space-y-8">
               <div>
-                <p className="text-lg text-[#1E293B] leading-[150%] mb-6">
+                <p className="text-base text-precision-text-primary leading-[150%] mb-6">
                   I led the design of Computis's AI feature suite, focusing on{" "}
-                  <span className="font-semibold text-[#F59E0B]">
+                  <span className="font-semibold text-precision-accent">
                     augmentation over automation
                   </span>
                   —ensuring AI enhanced CPA expertise rather than replacing
@@ -431,45 +418,45 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-[#F8FAFC] to-[#F1F5F9] rounded-[20px] p-6 transition-all duration-300 hover:bg-gradient-to-r hover:from-[#EFF6FF] hover:to-[#DBEAFE]">
-                <h3 className="text-xl font-medium text-[#0F172A] mb-4">
+              <div className="bg-gradient-to-r from-[#FAFBFC] to-[#F0F4F8] rounded-card p-6 transition-all duration-200 hover:bg-gradient-to-r hover:from-[#E8F4FA] hover:to-[#D4E9F7]">
+                <h3 className="text-xl font-semibold font-heading text-precision-text-primary mb-4">
                   Research Foundation
                 </h3>
                 <ul className="space-y-2">
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-1.5 h-1.5 bg-[#64748B] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base leading-[150%]">
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
+                    <span className="text-sm leading-[150%]">
                       8 CPA interviews identifying automation opportunities
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-1.5 h-1.5 bg-[#64748B] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base leading-[150%]">
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
+                    <span className="text-sm leading-[150%]">
                       6 workflow shadowing sessions to map classification
                       patterns
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-1.5 h-1.5 bg-[#64748B] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base leading-[150%]">
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
+                    <span className="text-sm leading-[150%]">
                       Competitive analysis of AI features (TaxBit, Cryptio,
                       CoinTracker)
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-1.5 h-1.5 bg-[#64748B] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base leading-[150%]">
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
+                    <span className="text-sm leading-[150%]">
                       4 usability test cycles validating AI interaction patterns
                     </span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-r from-[#FEF3C7] to-[#FED7AA] rounded-[20px] p-6 border-l-4 border-[#F59E0B]">
-                <p className="text-sm font-medium text-[#92400E] mb-2">
+              <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-6 border-l-4 border-precision-accent">
+                <p className="text-xs font-semibold text-[#0A7A5E] mb-2 uppercase tracking-wider">
                   🎯 Key Insight:
                 </p>
-                <p className="text-lg text-[#1E293B] leading-[150%] italic">
+                <p className="text-base text-precision-text-primary leading-[150%] italic">
                   CPAs wanted AI to handle repetitive work, but needed
                   transparency and override control to maintain professional
                   liability standards.
@@ -479,25 +466,23 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* AI Feature Design Solutions */}
         <section
           id="solutions"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100"
         >
-          <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#E2E8F0]">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.3px] mb-8">
+          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               ✨ AI Feature Design Solutions
             </h2>
 
             <div className="space-y-6">
-              {/* Feature 1: AI-Powered Classification */}
-              <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-[#F59E0B]">
+              <div className="bg-white rounded-card p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border-l-4 border-precision-accent">
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="w-6 h-6 text-amber-600" />
+                  <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-6 h-6 text-precision-accent" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-[#0F172A] mb-2">
+                    <h3 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
                       AI-Powered Classification with Confidence Indicators
                     </h3>
                   </div>
@@ -512,14 +497,13 @@ export default function ComputisCaseStudy() {
                 />
               </div>
 
-              {/* Feature 2: Intelligent Audit Trail */}
-              <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-[#3B82F6]">
+              <div className="bg-white rounded-card p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border-l-4 border-precision-secondary">
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Eye className="w-6 h-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
+                    <Eye className="w-6 h-6 text-precision-secondary" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-[#0F172A] mb-2">
+                    <h3 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
                       Intelligent Audit Trail System
                     </h3>
                   </div>
@@ -534,14 +518,13 @@ export default function ComputisCaseStudy() {
                 />
               </div>
 
-              {/* Feature 3: Smart Rule Builder */}
-              <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-[#10B981]">
+              <div className="bg-white rounded-card p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border-l-4 border-precision-success">
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Settings className="w-6 h-6 text-green-600" />
+                  <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                    <Settings className="w-6 h-6 text-precision-success" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-[#0F172A] mb-2">
+                    <h3 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
                       Smart Rule Builder with Pattern Recognition
                     </h3>
                   </div>
@@ -556,14 +539,13 @@ export default function ComputisCaseStudy() {
                 />
               </div>
 
-              {/* Feature 4: Proactive Anomaly Detection */}
-              <div className="bg-white rounded-[25px] p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-[#EF4444]">
+              <div className="bg-white rounded-card p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border-l-4 border-precision-error">
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <AlertTriangle className="w-6 h-6 text-red-600" />
+                  <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
+                    <AlertTriangle className="w-6 h-6 text-precision-error" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-[#0F172A] mb-2">
+                    <h3 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
                       Proactive Anomaly Detection Engine
                     </h3>
                   </div>
@@ -581,24 +563,23 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* Stakeholder Alignment */}
         <section
           id="stakeholder"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300"
         >
-          <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#E2E8F0]">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.3px] mb-8">
+          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               🤝 Stakeholder Alignment
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-white rounded-[20px] p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-[#E2E8F0]">
-                <h3 className="text-xl font-medium text-[#0F172A] mb-4 flex items-center gap-2">
-                  <Users className="w-5 h-5 text-purple-600" />
+              <div className="bg-white rounded-card p-6 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+                <h3 className="text-xl font-semibold font-heading text-precision-text-primary mb-4 flex items-center gap-2">
+                  <Users className="w-5 h-5 text-precision-accent" />
                   Balancing Automation & Control
                 </h3>
-                <p className="text-lg text-[#1E293B] leading-[150%] mb-4">
-                  <span className="font-semibold text-[#0F172A]">
+                <p className="text-base text-precision-text-primary leading-[150%] mb-4">
+                  <span className="font-semibold text-precision-text-primary">
                     Challenge:
                   </span>{" "}
                   Engineering wanted maximum automation; CPAs required override
@@ -606,28 +587,28 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-[#F8FAFC] to-[#F1F5F9] rounded-[20px] p-6 transition-all duration-300 hover:bg-gradient-to-r hover:from-[#EFF6FF] hover:to-[#DBEAFE]">
-                <h3 className="text-xl font-medium text-[#0F172A] mb-4">
+              <div className="bg-gradient-to-r from-[#FAFBFC] to-[#F0F4F8] rounded-card p-6 transition-all duration-200 hover:bg-gradient-to-r hover:from-[#E8F4FA] hover:to-[#D4E9F7]">
+                <h3 className="text-xl font-semibold font-heading text-precision-text-primary mb-4">
                   My Approach
                 </h3>
                 <ul className="space-y-2">
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-1.5 h-1.5 bg-[#64748B] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base leading-[150%]">
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
+                    <span className="text-sm leading-[150%]">
                       Facilitated cross-functional workshop mapping trust
                       requirements
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-1.5 h-1.5 bg-[#64748B] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base leading-[150%]">
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
+                    <span className="text-sm leading-[150%]">
                       Presented user research showing 40% of competitor
                       complaints cited "lack of control"
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-[#1E293B]">
-                    <span className="w-1.5 h-1.5 bg-[#64748B] rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-base leading-[150%]">
+                  <li className="flex items-start gap-3 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
+                    <span className="text-sm leading-[150%]">
                       Designed graduated autonomy system: High confidence →
                       Auto-apply | Medium → Review queue | Low → Manual required
                     </span>
@@ -635,22 +616,22 @@ export default function ComputisCaseStudy() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-r from-[#ECFDF5] to-[#D1FAE5] rounded-[20px] p-6 border-l-4 border-[#10B981]">
-                <h3 className="text-xl font-medium text-[#065F46] mb-4 flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#10B981]" />
+              <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-6 border-l-4 border-precision-success">
+                <h3 className="text-xl font-semibold font-heading text-[#0A7A5E] mb-4 flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-precision-success" />
                   Outcome
                 </h3>
-                <p className="text-lg text-[#1E293B] leading-[150%] mb-4">
+                <p className="text-base text-precision-text-primary leading-[150%] mb-4">
                   The tiered confidence system became a key differentiator. One
                   enterprise prospect specifically cited "professional control"
                   as their deciding factor.
                 </p>
-                <blockquote className="bg-white/80 p-6 rounded-[20px] italic text-lg leading-[150%] border-l-4 border-[#10B981]">
-                  <p className="text-[#047857]">
+                <blockquote className="bg-white/90 p-6 rounded-card italic text-base leading-[150%] border-l-4 border-precision-success">
+                  <p className="text-[#0A7A5E]">
                     "Finally, AI that works *with* me instead of replacing my
                     judgment."
                   </p>
-                  <cite className="block text-sm text-[#059669] mt-2 not-italic">
+                  <cite className="block text-xs text-precision-success mt-2 not-italic font-mono">
                     — CPA Beta User
                   </cite>
                 </blockquote>
@@ -659,63 +640,62 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* Results & Business Impact */}
         <section
           id="results"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500"
         >
-          <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#E2E8F0]">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.3px] mb-8">
+          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               📈 Results & Business Impact
             </h2>
 
             <div className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] border border-[#E2E8F0]">
+                <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border border-[#E3E8EF]">
                   <div className="flex items-center gap-3 mb-3">
-                    <TrendingUp className="w-6 h-6 text-indigo-600" />
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#0F172A]">
+                    <TrendingUp className="w-6 h-6 text-precision-primary" />
+                    <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary">
                       Enterprise Deals
                     </h3>
                   </div>
-                  <p className="text-base text-[#475569]">
+                  <p className="text-sm text-precision-text-secondary">
                     3 enterprise CPA firm deals closed within 6 months of AI
                     feature launch
                   </p>
                 </div>
 
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] border border-[#E2E8F0]">
+                <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border border-[#E3E8EF]">
                   <div className="flex items-center gap-3 mb-3">
-                    <Shield className="w-6 h-6 text-green-600" />
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#0F172A]">
+                    <Shield className="w-6 h-6 text-precision-success" />
+                    <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary">
                       Compliance
                     </h3>
                   </div>
-                  <p className="text-base text-[#475569]">
+                  <p className="text-sm text-precision-text-secondary">
                     Zero FMV disputes reported post-implementation
                   </p>
                 </div>
 
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] border border-[#E2E8F0]">
+                <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border border-[#E3E8EF]">
                   <div className="flex items-center gap-3 mb-3">
-                    <TrendingUp className="w-6 h-6 text-purple-600" />
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#0F172A]">
+                    <TrendingUp className="w-6 h-6 text-precision-accent" />
+                    <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary">
                       Platform Expansion
                     </h3>
                   </div>
-                  <p className="text-base text-[#475569]">
+                  <p className="text-sm text-precision-text-secondary">
                     Capabilities expanded to serve DAOs and hedge funds
                   </p>
                 </div>
 
-                <div className="bg-white p-6 rounded-[25px] shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] border border-[#E2E8F0]">
+                <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border border-[#E3E8EF]">
                   <div className="flex items-center gap-3 mb-3">
-                    <CheckCircle className="w-6 h-6 text-blue-600" />
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#0F172A]">
+                    <CheckCircle className="w-6 h-6 text-precision-secondary" />
+                    <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary">
                       Key Differentiator
                     </h3>
                   </div>
-                  <p className="text-base text-[#475569]">
+                  <p className="text-sm text-precision-text-secondary">
                     AI features cited as primary differentiator in 78% of won
                     deals
                   </p>
@@ -725,50 +705,49 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        {/* Key Learnings */}
         <section
           id="learnings"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700"
         >
-          <div className="bg-white/90 backdrop-blur-xl rounded-[25px] p-8 sm:p-10 lg:p-12 shadow-lg hover:shadow-xl transition-all duration-300 border border-[#E2E8F0]">
-            <h2 className="text-2xl sm:text-3xl font-medium text-[#0F172A] leading-[120%] tracking-[-0.3px] mb-8">
+          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               💡 Key Learnings
             </h2>
 
             <div className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-r from-[#EFF6FF] to-[#DBEAFE] p-6 rounded-[25px] border border-[#3B82F6]/20 transition-all duration-300 hover:border-[#3B82F6]/40 hover:scale-[1.02]">
-                  <h3 className="text-lg font-semibold text-[#0F172A] mb-3">
+                <div className="bg-gradient-to-r from-[#E8F4FA] to-[#D4E9F7] p-6 rounded-card border border-precision-secondary/20 transition-all duration-200 hover:border-precision-secondary/40 hover:scale-[1.02]">
+                  <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
                     Augmentation {">"} Automation
                   </h3>
-                  <p className="text-base text-[#475569]">
+                  <p className="text-sm text-precision-text-secondary">
                     CPAs adopted AI faster when they retained control
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-r from-[#F5F3FF] to-[#EDE9FE] p-6 rounded-[25px] border border-[#8B5CF6]/20 transition-all duration-300 hover:border-[#8B5CF6]/40 hover:scale-[1.02]">
-                  <h3 className="text-lg font-semibold text-[#0F172A] mb-3">
+                <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] p-6 rounded-card border border-precision-accent/20 transition-all duration-200 hover:border-precision-accent/40 hover:scale-[1.02]">
+                  <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
                     Transparency Builds Trust
                   </h3>
-                  <p className="text-base text-[#475569]">
+                  <p className="text-sm text-precision-text-secondary">
                     Confidence scores and audit trails drove adoption
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-r from-[#ECFDF5] to-[#D1FAE5] p-6 rounded-[25px] border border-[#10B981]/20 transition-all duration-300 hover:border-[#10B981]/40 hover:scale-[1.02]">
-                  <h3 className="text-lg font-semibold text-[#0F172A] mb-3">
+                <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] p-6 rounded-card border border-precision-success/20 transition-all duration-200 hover:border-precision-success/40 hover:scale-[1.02]">
+                  <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
                     Pattern Recognition = Scale
                   </h3>
-                  <p className="text-base text-[#475569]">
+                  <p className="text-sm text-precision-text-secondary">
                     Smart suggestions multiplied CPA efficiency
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-r from-[#FEF3C7] to-[#FED7AA] p-6 rounded-[25px] border border-[#F59E0B]/20 transition-all duration-300 hover:border-[#F59E0B]/40 hover:scale-[1.02]">
-                  <h3 className="text-lg font-semibold text-[#0F172A] mb-3">
+                <div className="bg-gradient-to-r from-[#FFF4E6] to-[#FFE9CC] p-6 rounded-card border border-precision-warning/20 transition-all duration-200 hover:border-precision-warning/40 hover:scale-[1.02]">
+                  <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
                     AI UX is Different
                   </h3>
-                  <p className="text-base text-[#475569]">
+                  <p className="text-sm text-precision-text-secondary">
                     Designing for probabilistic outputs requires new interaction
                     patterns
                   </p>
@@ -783,12 +762,11 @@ export default function ComputisCaseStudy() {
         <Footer />
       </div>
 
-      {/* Scroll to Top Button */}
       <div className="fixed bottom-20 left-0 right-0 z-50 pointer-events-none">
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 relative pointer-events-none">
+        <div className="max-w-[1200px] mx-auto px-6 relative pointer-events-none">
           <button
             onClick={scrollToTop}
-            className={`absolute right-4 sm:right-8 lg:right-12 p-4 rounded-full bg-gradient-to-r from-[#F59E0B] to-[#3B82F6] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#F59E0B] focus:ring-offset-2 pointer-events-auto ${
+            className={`absolute right-6 p-4 rounded-button bg-gradient-to-r from-precision-accent to-precision-secondary text-white shadow-precision-md hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-precision-accent focus:ring-offset-2 pointer-events-auto ${
               showScrollTop
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-16 pointer-events-none"
