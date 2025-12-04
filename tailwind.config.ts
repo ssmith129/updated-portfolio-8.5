@@ -93,11 +93,11 @@ export default {
         pill: "9999px",
       },
       boxShadow: {
-        'precision-sm': 'var(--shadow-sm)',
-        'precision-md': 'var(--shadow-md)',
+        "precision-sm": "var(--shadow-sm)",
+        "precision-md": "var(--shadow-md)",
       },
       transitionTimingFunction: {
-        'precision': 'cubic-bezier(0.4, 0, 0.2, 1)',
+        precision: "cubic-bezier(0.4, 0, 0.2, 1)",
       },
       spacing: {
         "18": "4.5rem",

@@ -231,7 +231,9 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
                   Duration
                 </h3>
-                <p className="text-base font-medium text-precision-text-primary">10 months</p>
+                <p className="text-base font-medium text-precision-text-primary">
+                  10 months
+                </p>
               </div>
               <div className="space-y-2 transition-all duration-200 hover:scale-[1.02] cursor-pointer">
                 <h3 className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
@@ -283,7 +285,9 @@ export default function ComputisCaseStudy() {
                   <p className="text-2xl sm:text-3xl font-bold text-precision-success mb-1">
                     ↓ {onboardingCount}%
                   </p>
-                  <p className="text-xs font-mono text-precision-text-secondary">2.5h → 1.4h</p>
+                  <p className="text-xs font-mono text-precision-text-secondary">
+                    2.5h → 1.4h
+                  </p>
                 </div>
 
                 <div className="bg-[#E8F4FA] p-6 rounded-card border-2 border-[#1E3A5F]/20 hover:border-[#1E3A5F]/40 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
@@ -320,7 +324,9 @@ export default function ComputisCaseStudy() {
                   <p className="text-2xl sm:text-3xl font-bold text-precision-primary">
                     {enterpriseDealsCount}
                   </p>
-                  <p className="text-xs font-mono text-precision-text-secondary">closed in 6 months</p>
+                  <p className="text-xs font-mono text-precision-text-secondary">
+                    closed in 6 months
+                  </p>
                 </div>
               </div>
             </div>

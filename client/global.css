@@ -4,7 +4,6 @@
 
 /* Enhanced Responsive Base Styles */
 @layer base {
-
   /**
    * Tailwind CSS theme
    * tailwind.config.ts expects the following color variables to be expressed as HSL values.
@@ -12,15 +11,15 @@
   */
   :root {
     /* Precision Trust Theme Variables */
-    --precision-primary: #0A2540;
-    --precision-secondary: #1E3A5F;
-    --precision-accent: #00D4AA;
-    --precision-neutral: #F7F9FC;
-    --precision-text-primary: #1A1F36;
+    --precision-primary: #0a2540;
+    --precision-secondary: #1e3a5f;
+    --precision-accent: #00d4aa;
+    --precision-neutral: #f7f9fc;
+    --precision-text-primary: #1a1f36;
     --precision-text-secondary: #697386;
-    --precision-error: #E74C3C;
-    --precision-success: #00D4AA;
-    --precision-warning: #F39C12;
+    --precision-error: #e74c3c;
+    --precision-success: #00d4aa;
+    --precision-warning: #f39c12;
 
     /* Precision Trust Shadows */
     --shadow-sm: 0 1px 3px rgba(10, 37, 64, 0.08);
@@ -30,7 +29,7 @@
     --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     /* Precision Trust Borders */
-    --border-subtle: 1px solid #E3E8EF;
+    --border-subtle: 1px solid #e3e8ef;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
