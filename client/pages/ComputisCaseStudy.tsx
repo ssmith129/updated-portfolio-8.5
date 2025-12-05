@@ -631,48 +631,40 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border-l-4 border-precision-error">
-                <div className="flex items-start gap-4 mb-6">
+              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm border-l-4 border-precision-error">
+                <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
                     <AlertTriangle className="w-6 h-6 text-precision-error" />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
-                      Proactive Anomaly Detection Engine
+                    <h3 className="text-lg sm:text-xl font-bold font-heading text-precision-text-primary">
+                      4. Real-Time Anomaly Detection
                     </h3>
                   </div>
                 </div>
 
-                <div className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-red-50 p-4 rounded-card border border-red-100">
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
-                      <p className="text-sm text-precision-text-primary leading-[160%]">
-                        FMV errors discovered during final review or after filing. No proactive alerts.
-                      </p>
-                    </div>
-                    <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
-                      <p className="text-sm text-precision-text-primary leading-[160%]">
-                        ML anomaly detection with color-coded flags (red/yellow) and hover tooltips.
-                      </p>
-                    </div>
-                    <div className="bg-green-50 p-4 rounded-card border border-green-100">
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
-                      <p className="text-sm text-precision-text-primary leading-[160%]">
-                        <strong>150% increase</strong> in error detection. One firm avoided $47K miscalculation in month 1.
-                      </p>
-                    </div>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-sm font-semibold text-precision-text-primary mb-2">
+                      <strong>Goal:</strong> Surface issues before they become compliance problems.
+                    </p>
                   </div>
 
-                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-card">
-                    <p className="text-xs font-semibold text-amber-900 uppercase tracking-wider mb-2 flex items-center gap-2">
-                      <AlertTriangle className="w-4 h-4" />
-                      Critical Trade-off
-                    </p>
-                    <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
-                      <strong>False positives over false negatives.</strong> 78% precision (22% false alarms). Engineering wanted fewer alerts; I prioritized catching every error. <em>In compliance, missing an error is catastrophic; reviewing a false alert is annoying.</em> User feedback improved precision to 89% while maintaining 95%+ recall.
-                    </p>
+                  <div>
+                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Capabilities:</p>
+                    <ul className="space-y-1 ml-5">
+                      <li className="text-sm text-precision-text-primary list-disc">Outlier detection</li>
+                      <li className="text-sm text-precision-text-primary list-disc">Pattern-break flags</li>
+                      <li className="text-sm text-precision-text-primary list-disc">Inline correction flows</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Impact:</p>
+                    <ul className="space-y-1 ml-5">
+                      <li className="text-sm text-precision-text-primary list-disc"><strong>Increased trust in platform accuracy</strong></li>
+                      <li className="text-sm text-precision-text-primary list-disc"><strong>Helped win enterprise accounts that required audit-grade tools</strong></li>
+                    </ul>
                   </div>
 
                   <VideoOverlay
