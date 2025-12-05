@@ -29,15 +29,27 @@ export default function ComputisCaseStudy() {
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
     useIntersectionAnimation(0.3, "0px 0px -100px 0px");
 
-  const onboardingCount = useCountUp(45, 2000, startMetricsAnimation);
-  const conversionCount = useCountUp(32, 2000, startMetricsAnimation);
-  const classificationCount = useCountUp(85, 2000, startMetricsAnimation);
-  const errorDetectionCount = useCountUp(150, 2000, startMetricsAnimation);
-  const enterpriseDealsCount = useCountUp(3, 2000, startMetricsAnimation);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  const shouldAnimate = startMetricsAnimation && !hasAnimated;
+
+  const onboardingCount = useCountUp(45, 2000, shouldAnimate);
+  const conversionCount = useCountUp(32, 2000, shouldAnimate);
+  const classificationCount = useCountUp(85, 2000, shouldAnimate);
+  const errorDetectionCount = useCountUp(150, 2000, shouldAnimate);
+  const enterpriseDealsCount = useCountUp(3, 2000, shouldAnimate);
+
+  useEffect(() => {
+    if (startMetricsAnimation && !hasAnimated) {
+      setHasAnimated(true);
+    }
+  }, [startMetricsAnimation, hasAnimated]);
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 400);
+      const isMobile = window.innerWidth < 768;
+      const scrollThreshold = isMobile ? window.innerHeight * 1.5 : 400;
+      setShowScrollTop(window.scrollY > scrollThreshold);
       setIsNavSticky(window.scrollY > 300);
     };
 
@@ -92,10 +104,10 @@ export default function ComputisCaseStudy() {
           <span className="inline-block bg-precision-accent text-white px-4 py-2 rounded-pill text-sm font-semibold tracking-tight mb-4 w-fit">
             FinTech UX Case Study
           </span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-4">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-4">
             Computis — AI-Powered Crypto Tax Automation
           </h1>
-          <p className="text-base sm:text-lg text-precision-text-secondary leading-[140%] mb-6">
+          <p className="text-sm sm:text-base lg:text-lg text-precision-text-secondary leading-[140%] mb-6 max-w-[65ch]">
             Designed intelligent automation that reduced manual classification work by 85% while keeping CPAs in control.
           </p>
 
@@ -211,10 +223,10 @@ export default function ComputisCaseStudy() {
       >
         <section
           id="tldr"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 mt-12 border border-[#E3E8EF]">
-            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8 transition-all duration-200 hover:text-precision-accent cursor-pointer">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8 transition-all duration-200 hover:text-precision-accent cursor-pointer">
               📌 Impact At a Glance
             </h2>
 
@@ -283,16 +295,17 @@ export default function ComputisCaseStudy() {
 
         <section
           id="challenge"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               🎯 The Challenge
             </h2>
 
-            <div className="space-y-8">
-              <div>
-                <p className="text-base text-precision-text-primary leading-[150%] mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <div className="space-y-4">
+                <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">Context</h3>
+                <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
                   Computis had a solid, functional platform for crypto tax
                   management—but CPAs were still spending excessive time on
                   manual transaction classification. The existing UI handled
@@ -301,68 +314,67 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-[#FDEEEE] to-[#FCE4E4] rounded-card p-6 border-l-4 border-precision-error transition-all duration-200 hover:shadow-precision-md hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xl font-bold font-heading text-[#C0392B] mb-4 flex items-center gap-2">
+              <div className="bg-gradient-to-r from-[#FDEEEE] to-[#FCE4E4] rounded-card p-5 border-l-4 border-precision-error">
+                <h3 className="text-base sm:text-lg font-bold font-heading text-[#C0392B] mb-3 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5 text-precision-error" />
                   Pain Points Identified
                 </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-2 h-2 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
+                <ul className="space-y-2.5">
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span>
-                      Manual classification of thousands of transactions per
-                      client
+                      Manual classification of thousands of transactions per client
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-2 h-2 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span>
                       No automated anomaly detection for FMV discrepancies
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-2 h-2 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span>
                       Repetitive rule creation for common transaction patterns
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-2 h-2 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span>
-                      Limited visibility into classification decisions for audit
-                      defense
+                      Limited visibility into classification decisions for audit defense
                     </span>
                   </li>
                 </ul>
               </div>
+            </div>
 
-              <div className="bg-gradient-to-r from-[#E8F4FA] to-[#D4E9F7] rounded-card p-6 border-l-4 border-precision-secondary">
-                <h3 className="text-xl font-bold font-heading text-precision-primary mb-4 flex items-center gap-2">
-                  <Lightbulb className="w-5 h-5 text-precision-secondary" />
-                  The Opportunity
-                </h3>
-                <p className="text-base text-precision-text-primary leading-[150%]">
-                  Design and implement AI-powered features that would automate
-                  routine work while keeping CPAs in control—turning Computis
-                  into a truly intelligent tax automation platform.
-                </p>
-              </div>
+            <div className="mt-6 bg-gradient-to-r from-[#E8F4FA] to-[#D4E9F7] rounded-card p-5 border-l-4 border-precision-secondary">
+              <h3 className="text-base sm:text-lg font-bold font-heading text-precision-primary mb-3 flex items-center gap-2">
+                <Lightbulb className="w-5 h-5 text-precision-secondary" />
+                The Opportunity
+              </h3>
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                Design and implement AI-powered features that would automate
+                routine work while keeping CPAs in control—turning Computis
+                into a truly intelligent tax automation platform.
+              </p>
             </div>
           </div>
         </section>
 
         <section
           id="approach"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               💡 My Approach
             </h2>
 
-            <div className="space-y-8">
-              <div>
-                <p className="text-base text-precision-text-primary leading-[150%] mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <div className="space-y-4">
+                <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">Design Philosophy</h3>
+                <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
                   I led the design of Computis's AI feature suite, focusing on{" "}
                   <span className="font-semibold text-precision-accent">
                     augmentation over automation
@@ -372,60 +384,58 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-[#FAFBFC] to-[#F0F4F8] rounded-card p-6 transition-all duration-200 hover:bg-gradient-to-r hover:from-[#E8F4FA] hover:to-[#D4E9F7]">
-                <h3 className="text-xl font-semibold font-heading text-precision-text-primary mb-4">
+              <div className="bg-gradient-to-r from-[#FAFBFC] to-[#F0F4F8] rounded-card p-5">
+                <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
                   Research Foundation
                 </h3>
                 <ul className="space-y-2">
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-sm leading-[150%]">
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-sm leading-[160%]">
                       8 CPA interviews identifying automation opportunities
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-sm leading-[150%]">
-                      6 workflow shadowing sessions to map classification
-                      patterns
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-sm leading-[160%]">
+                      6 workflow shadowing sessions to map classification patterns
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-sm leading-[150%]">
-                      Competitive analysis of AI features (TaxBit, Cryptio,
-                      CoinTracker)
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-sm leading-[160%]">
+                      Competitive analysis of AI features (TaxBit, Cryptio, CoinTracker)
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-sm leading-[150%]">
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-sm leading-[160%]">
                       4 usability test cycles validating AI interaction patterns
                     </span>
                   </li>
                 </ul>
               </div>
+            </div>
 
-              <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-6 border-l-4 border-precision-accent">
-                <p className="text-xs font-semibold text-[#0A7A5E] mb-2 uppercase tracking-wider">
-                  🎯 Key Insight:
-                </p>
-                <p className="text-base text-precision-text-primary leading-[150%] italic">
-                  CPAs wanted AI to handle repetitive work, but needed
-                  transparency and override control to maintain professional
-                  liability standards.
-                </p>
-              </div>
+            <div className="mt-6 bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-5 border-l-4 border-precision-accent">
+              <p className="text-xs font-semibold text-[#0A7A5E] mb-2 uppercase tracking-wider">
+                🎯 Key Insight:
+              </p>
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] italic max-w-prose">
+                CPAs wanted AI to handle repetitive work, but needed
+                transparency and override control to maintain professional
+                liability standards.
+              </p>
             </div>
           </div>
         </section>
 
         <section
           id="solutions"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               ✨ AI Feature Design Solutions
             </h2>
 
@@ -519,87 +529,85 @@ export default function ComputisCaseStudy() {
 
         <section
           id="stakeholder"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               🤝 Stakeholder Alignment
             </h2>
 
-            <div className="space-y-6">
-              <div className="bg-white rounded-card p-6 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-                <h3 className="text-xl font-semibold font-heading text-precision-text-primary mb-4 flex items-center gap-2">
-                  <Users className="w-5 h-5 text-precision-accent" />
-                  Balancing Automation & Control
-                </h3>
-                <p className="text-base text-precision-text-primary leading-[150%] mb-4">
-                  <span className="font-semibold text-precision-text-primary">
-                    Challenge:
-                  </span>{" "}
-                  Engineering wanted maximum automation; CPAs required override
-                  capabilities for liability protection.
-                </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <div className="space-y-4">
+                <div className="bg-white rounded-card p-5 shadow-precision-sm border border-[#E3E8EF]">
+                  <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3 flex items-center gap-2">
+                    <Users className="w-5 h-5 text-precision-accent" />
+                    Balancing Automation & Control
+                  </h3>
+                  <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                    <span className="font-semibold text-precision-text-primary">
+                      Challenge:
+                    </span>{" "}
+                    Engineering wanted maximum automation; CPAs required override
+                    capabilities for liability protection.
+                  </p>
+                </div>
               </div>
 
-              <div className="bg-gradient-to-r from-[#FAFBFC] to-[#F0F4F8] rounded-card p-6 transition-all duration-200 hover:bg-gradient-to-r hover:from-[#E8F4FA] hover:to-[#D4E9F7]">
-                <h3 className="text-xl font-semibold font-heading text-precision-text-primary mb-4">
+              <div className="bg-gradient-to-r from-[#FAFBFC] to-[#F0F4F8] rounded-card p-5">
+                <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
                   My Approach
                 </h3>
                 <ul className="space-y-2">
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-sm leading-[150%]">
-                      Facilitated cross-functional workshop mapping trust
-                      requirements
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-sm leading-[160%]">
+                      Facilitated cross-functional workshop mapping trust requirements
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-sm leading-[150%]">
-                      Presented user research showing 40% of competitor
-                      complaints cited "lack of control"
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-sm leading-[160%]">
+                      Presented user research showing 40% of competitor complaints cited "lack of control"
                     </span>
                   </li>
-                  <li className="flex items-start gap-3 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2.5 flex-shrink-0"></span>
-                    <span className="text-sm leading-[150%]">
-                      Designed graduated autonomy system: High confidence →
-                      Auto-apply | Medium → Review queue | Low → Manual required
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-sm leading-[160%]">
+                      Designed graduated autonomy system: High confidence → Auto-apply | Medium → Review queue | Low → Manual required
                     </span>
                   </li>
                 </ul>
               </div>
+            </div>
 
-              <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-6 border-l-4 border-precision-success">
-                <h3 className="text-xl font-semibold font-heading text-[#0A7A5E] mb-4 flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-precision-success" />
-                  Outcome
-                </h3>
-                <p className="text-base text-precision-text-primary leading-[150%] mb-4">
-                  The tiered confidence system became a key differentiator. One
-                  enterprise prospect specifically cited "professional control"
-                  as their deciding factor.
+            <div className="mt-6 bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-5 border-l-4 border-precision-success">
+              <h3 className="text-base sm:text-lg font-semibold font-heading text-[#0A7A5E] mb-3 flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-precision-success" />
+                Outcome
+              </h3>
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] mb-4 max-w-prose">
+                The tiered confidence system became a key differentiator. One
+                enterprise prospect specifically cited "professional control"
+                as their deciding factor.
+              </p>
+              <blockquote className="bg-white/90 p-5 rounded-card italic text-sm sm:text-base leading-[160%] border-l-4 border-precision-success">
+                <p className="text-[#0A7A5E]">
+                  "Finally, AI that works *with* me instead of replacing my judgment."
                 </p>
-                <blockquote className="bg-white/90 p-6 rounded-card italic text-base leading-[150%] border-l-4 border-precision-success">
-                  <p className="text-[#0A7A5E]">
-                    "Finally, AI that works *with* me instead of replacing my
-                    judgment."
-                  </p>
-                  <cite className="block text-xs text-precision-success mt-2 not-italic font-mono">
-                    — CPA Beta User
-                  </cite>
-                </blockquote>
-              </div>
+                <cite className="block text-xs text-precision-success mt-2 not-italic font-mono">
+                  — CPA Beta User
+                </cite>
+              </blockquote>
             </div>
           </div>
         </section>
 
         <section
           id="results"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               📈 Results & Business Impact
             </h2>
 
@@ -661,10 +669,10 @@ export default function ComputisCaseStudy() {
 
         <section
           id="learnings"
-          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               💡 Key Learnings
             </h2>
 
@@ -720,7 +728,7 @@ export default function ComputisCaseStudy() {
         <div className="max-w-[1200px] mx-auto px-6 relative pointer-events-none">
           <button
             onClick={scrollToTop}
-            className={`absolute right-6 p-4 rounded-button bg-gradient-to-r from-precision-accent to-precision-secondary text-white shadow-precision-md hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-precision-accent focus:ring-offset-2 pointer-events-auto ${
+            className={`absolute right-6 p-3 sm:p-4 min-h-[48px] min-w-[48px] rounded-button bg-gradient-to-r from-precision-accent to-precision-secondary text-white shadow-precision-md hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-precision-accent focus:ring-offset-2 pointer-events-auto ${
               showScrollTop
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-16 pointer-events-none"
