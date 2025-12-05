@@ -108,23 +108,41 @@ export default function ComputisCaseStudy() {
             Computis — AI-Powered Crypto Tax Automation
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-precision-text-secondary leading-[140%] mb-6 max-w-[65ch]">
-            Designed intelligent automation that reduced manual classification work by 85% while keeping CPAs in control.
+            Designed intelligent automation that reduced manual classification
+            work by 85% while keeping CPAs in control.
           </p>
 
           <div className="bg-white/60 backdrop-blur-sm rounded-card p-5 border border-[#E3E8EF]">
-            <h2 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">What I Achieved</h2>
+            <h2 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
+              What I Achieved
+            </h2>
             <ul className="space-y-2">
               <li className="flex items-start gap-2 text-sm text-precision-text-primary">
                 <CheckCircle className="w-4 h-4 text-precision-accent mt-0.5 flex-shrink-0" />
-                <span><strong className="text-precision-accent">↓ 85% manual work</strong> — CPAs review only flagged items</span>
+                <span>
+                  <strong className="text-precision-accent">
+                    ↓ 85% manual work
+                  </strong>{" "}
+                  — CPAs review only flagged items
+                </span>
               </li>
               <li className="flex items-start gap-2 text-sm text-precision-text-primary">
                 <CheckCircle className="w-4 h-4 text-precision-secondary mt-0.5 flex-shrink-0" />
-                <span><strong className="text-precision-secondary">↑ 32% conversions</strong> — faster rule creation drove adoption</span>
+                <span>
+                  <strong className="text-precision-secondary">
+                    ↑ 32% conversions
+                  </strong>{" "}
+                  — faster rule creation drove adoption
+                </span>
               </li>
               <li className="flex items-start gap-2 text-sm text-precision-text-primary">
                 <CheckCircle className="w-4 h-4 text-precision-warning mt-0.5 flex-shrink-0" />
-                <span><strong className="text-precision-warning">↑ 150% error detection</strong> — issues caught before client delivery</span>
+                <span>
+                  <strong className="text-precision-warning">
+                    ↑ 150% error detection
+                  </strong>{" "}
+                  — issues caught before client delivery
+                </span>
               </li>
             </ul>
           </div>
@@ -185,29 +203,51 @@ export default function ComputisCaseStudy() {
               <div className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
                   <div>
-                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">Role</span>
-                    <p className="text-precision-text-primary mt-1">Founding Lead Product Designer</p>
+                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
+                      Role
+                    </span>
+                    <p className="text-precision-text-primary mt-1">
+                      Founding Lead Product Designer
+                    </p>
                   </div>
                   <div>
-                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">Duration</span>
-                    <p className="text-precision-text-primary mt-1">10 months</p>
+                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
+                      Duration
+                    </span>
+                    <p className="text-precision-text-primary mt-1">
+                      10 months
+                    </p>
                   </div>
                   <div>
-                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">Platform</span>
-                    <p className="text-precision-text-primary mt-1">Web SaaS (Desktop-first)</p>
+                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
+                      Platform
+                    </span>
+                    <p className="text-precision-text-primary mt-1">
+                      Web SaaS (Desktop-first)
+                    </p>
                   </div>
                 </div>
 
                 <div className="border-t border-[#E3E8EF] pt-4">
-                  <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2 block">Tools & Team</span>
+                  <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2 block">
+                    Tools & Team
+                  </span>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                     <div>
-                      <span className="font-medium text-precision-text-primary">Tools:</span>
-                      <span className="text-precision-text-secondary ml-2">Figma, Miro, Notion, Jira</span>
+                      <span className="font-medium text-precision-text-primary">
+                        Tools:
+                      </span>
+                      <span className="text-precision-text-secondary ml-2">
+                        Figma, Miro, Notion, Jira
+                      </span>
                     </div>
                     <div>
-                      <span className="font-medium text-precision-text-primary">Team:</span>
-                      <span className="text-precision-text-secondary ml-2">CTO, PM, 2 ML, 2 Frontend</span>
+                      <span className="font-medium text-precision-text-primary">
+                        Team:
+                      </span>
+                      <span className="text-precision-text-secondary ml-2">
+                        CTO, PM, 2 ML, 2 Frontend
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -249,7 +289,8 @@ export default function ComputisCaseStudy() {
                     2.5h → 1.4h
                   </p>
                   <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
-                    <strong>via</strong> smart rule templates reducing setup complexity
+                    <strong>via</strong> smart rule templates reducing setup
+                    complexity
                   </p>
                 </div>
 
@@ -261,7 +302,8 @@ export default function ComputisCaseStudy() {
                     ↑ {conversionCount}%
                   </p>
                   <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
-                    <strong>via</strong> 90-sec rule builder allowing setup during sales calls
+                    <strong>via</strong> 90-sec rule builder allowing setup
+                    during sales calls
                   </p>
                 </div>
 
@@ -273,7 +315,8 @@ export default function ComputisCaseStudy() {
                     ↓ {classificationCount}%
                   </p>
                   <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
-                    <strong>via</strong> 3-tier auto-classification (90%+ confidence threshold)
+                    <strong>via</strong> 3-tier auto-classification (90%+
+                    confidence threshold)
                   </p>
                 </div>
 
@@ -285,7 +328,8 @@ export default function ComputisCaseStudy() {
                     ↑ {errorDetectionCount}%
                   </p>
                   <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
-                    <strong>via</strong> ML anomaly detection with sensitive thresholds
+                    <strong>via</strong> ML anomaly detection with sensitive
+                    thresholds
                   </p>
                 </div>
 
@@ -319,7 +363,9 @@ export default function ComputisCaseStudy() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="space-y-4">
-                <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">Context</h3>
+                <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">
+                  Context
+                </h3>
                 <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
                   Computis had a solid, functional platform for crypto tax
                   management—but CPAs were still spending excessive time on
@@ -340,7 +386,8 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      Manual classification of thousands of transactions per client
+                      Manual classification of thousands of transactions per
+                      client
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
@@ -358,7 +405,8 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      Limited visibility into classification decisions for audit defense
+                      Limited visibility into classification decisions for audit
+                      defense
                     </span>
                   </li>
                 </ul>
@@ -373,7 +421,10 @@ export default function ComputisCaseStudy() {
                 </h3>
               </div>
               <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-[65ch]">
-                Design and implement AI-powered features that would <strong>automate routine work</strong> while <strong>keeping CPAs in control</strong>—turning Computis into a truly intelligent tax automation platform.
+                Design and implement AI-powered features that would{" "}
+                <strong>automate routine work</strong> while{" "}
+                <strong>keeping CPAs in control</strong>—turning Computis into a
+                truly intelligent tax automation platform.
               </p>
             </div>
           </div>
@@ -389,19 +440,25 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="mb-8 pb-8 border-b border-[#E3E8EF]">
-              <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider mb-4">My Responsibilities</h3>
+              <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider mb-4">
+                My Responsibilities
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
                     <span className="text-sm leading-[160%]">
-                      <strong>Product strategy & feature definition</strong> for entire AI suite (classification, audit trails, rule builder, anomaly detection)
+                      <strong>Product strategy & feature definition</strong> for
+                      entire AI suite (classification, audit trails, rule
+                      builder, anomaly detection)
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
                     <span className="text-sm leading-[160%]">
-                      <strong>Interaction patterns & UX design</strong> for all AI touchpoints, confidence indicators, and control mechanisms
+                      <strong>Interaction patterns & UX design</strong> for all
+                      AI touchpoints, confidence indicators, and control
+                      mechanisms
                     </span>
                   </li>
                 </ul>
@@ -409,13 +466,17 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
                     <span className="text-sm leading-[160%]">
-                      <strong>Partnered with ML engineers</strong> on model integration, UX constraints, and threshold tuning based on user feedback
+                      <strong>Partnered with ML engineers</strong> on model
+                      integration, UX constraints, and threshold tuning based on
+                      user feedback
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
                     <span className="text-sm leading-[160%]">
-                      <strong>Led user research</strong> (8 CPA interviews, 6 shadowing sessions, 4 usability test cycles) to validate design decisions
+                      <strong>Led user research</strong> (8 CPA interviews, 6
+                      shadowing sessions, 4 usability test cycles) to validate
+                      design decisions
                     </span>
                   </li>
                 </ul>
@@ -424,13 +485,24 @@ export default function ComputisCaseStudy() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="space-y-4">
-                <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">Design Philosophy</h3>
+                <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">
+                  Design Philosophy
+                </h3>
                 <div className="space-y-3">
                   <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                    I designed AI features around <strong className="text-precision-accent">explicit confidence ranges</strong> that surfaced uncertainty to CPAs instead of hiding it.
+                    I designed AI features around{" "}
+                    <strong className="text-precision-accent">
+                      explicit confidence ranges
+                    </strong>{" "}
+                    that surfaced uncertainty to CPAs instead of hiding it.
                   </p>
                   <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                    We treated <strong className="text-precision-secondary">medium-confidence predictions as hypotheses, not truths</strong>, and built UI patterns (review queues, override controls) around that principle.
+                    We treated{" "}
+                    <strong className="text-precision-secondary">
+                      medium-confidence predictions as hypotheses, not truths
+                    </strong>
+                    , and built UI patterns (review queues, override controls)
+                    around that principle.
                   </p>
                 </div>
               </div>
@@ -449,13 +521,15 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      6 workflow shadowing sessions to map classification patterns
+                      6 workflow shadowing sessions to map classification
+                      patterns
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      Competitive analysis of AI features (TaxBit, Cryptio, CoinTracker)
+                      Competitive analysis of AI features (TaxBit, Cryptio,
+                      CoinTracker)
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
@@ -476,7 +550,15 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch] italic">
-                CPAs wanted AI to handle repetitive work, but needed <strong className="not-italic text-precision-accent">transparency and override control</strong> to maintain professional liability standards. <span className="font-semibold not-italic">Designing for probabilistic outputs meant we needed explicit confidence ranges, not black-box automation.</span>
+                CPAs wanted AI to handle repetitive work, but needed{" "}
+                <strong className="not-italic text-precision-accent">
+                  transparency and override control
+                </strong>{" "}
+                to maintain professional liability standards.{" "}
+                <span className="font-semibold not-italic">
+                  Designing for probabilistic outputs meant we needed explicit
+                  confidence ranges, not black-box automation.
+                </span>
               </p>
             </div>
           </div>
@@ -511,45 +593,69 @@ export default function ComputisCaseStudy() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
                   <div className="space-y-4">
                     <div>
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Goal</p>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+                        Goal
+                      </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        Reduce manual classification while <strong className="text-precision-accent">keeping CPAs in control</strong>.
+                        Reduce manual classification while{" "}
+                        <strong className="text-precision-accent">
+                          keeping CPAs in control
+                        </strong>
+                        .
                       </p>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Key Capabilities</p>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+                        Key Capabilities
+                      </p>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Auto-classification with confidence tiers</span>
+                          <span className="max-w-[60ch]">
+                            Auto-classification with confidence tiers
+                          </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Smart review queue</span>
+                          <span className="max-w-[60ch]">
+                            Smart review queue
+                          </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Inline override controls</span>
+                          <span className="max-w-[60ch]">
+                            Inline override controls
+                          </span>
                         </li>
                       </ul>
                     </div>
                   </div>
 
                   <div className="bg-white rounded-card p-5 border-l-4 border-precision-accent shadow-sm">
-                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">Impact</p>
+                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
+                      Impact
+                    </p>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-2.5">
                         <CheckCircle className="w-5 h-5 text-precision-accent mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-base font-bold text-precision-accent">↓ 85%</p>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">manual classification</p>
+                          <p className="text-base font-bold text-precision-accent">
+                            ↓ 85%
+                          </p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">
+                            manual classification
+                          </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-2.5">
                         <CheckCircle className="w-5 h-5 text-precision-accent mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-base font-bold text-precision-accent">↑ 150%</p>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">error detection accuracy</p>
+                          <p className="text-base font-bold text-precision-accent">
+                            ↑ 150%
+                          </p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">
+                            error detection accuracy
+                          </p>
                         </div>
                       </li>
                     </ul>
@@ -577,48 +683,72 @@ export default function ComputisCaseStudy() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
                   <div className="space-y-4">
                     <div>
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Goal</p>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+                        Goal
+                      </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        Make every AI decision <strong className="text-precision-secondary">transparent and defensible</strong>.
+                        Make every AI decision{" "}
+                        <strong className="text-precision-secondary">
+                          transparent and defensible
+                        </strong>
+                        .
                       </p>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Capabilities</p>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+                        Capabilities
+                      </p>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Rationale statements</span>
+                          <span className="max-w-[60ch]">
+                            Rationale statements
+                          </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Similar transaction clustering</span>
+                          <span className="max-w-[60ch]">
+                            Similar transaction clustering
+                          </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Historical decisions</span>
+                          <span className="max-w-[60ch]">
+                            Historical decisions
+                          </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Simple override + reclassify workflow</span>
+                          <span className="max-w-[60ch]">
+                            Simple override + reclassify workflow
+                          </span>
                         </li>
                       </ul>
                     </div>
                   </div>
 
                   <div className="bg-white rounded-card p-5 border-l-4 border-precision-secondary shadow-sm">
-                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">Impact</p>
+                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
+                      Impact
+                    </p>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-2.5">
                         <Shield className="w-5 h-5 text-precision-secondary mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-base font-bold text-precision-secondary">0</p>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">FMV disputes</p>
+                          <p className="text-base font-bold text-precision-secondary">
+                            0
+                          </p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">
+                            FMV disputes
+                          </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-2.5">
                         <TrendingUp className="w-5 h-5 text-precision-secondary mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">Faster approvals for enterprise onboarding</p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">
+                            Faster approvals for enterprise onboarding
+                          </p>
                         </div>
                       </li>
                     </ul>
@@ -646,17 +776,27 @@ export default function ComputisCaseStudy() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
                   <div className="space-y-4">
                     <div>
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Goal</p>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+                        Goal
+                      </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        Standardize logic and <strong className="text-precision-success">prevent rework year over year</strong>.
+                        Standardize logic and{" "}
+                        <strong className="text-precision-success">
+                          prevent rework year over year
+                        </strong>
+                        .
                       </p>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Capabilities</p>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+                        Capabilities
+                      </p>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Pattern detection</span>
+                          <span className="max-w-[60ch]">
+                            Pattern detection
+                          </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
@@ -664,30 +804,42 @@ export default function ComputisCaseStudy() {
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">User-friendly rule editing</span>
+                          <span className="max-w-[60ch]">
+                            User-friendly rule editing
+                          </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Versioning & auditability</span>
+                          <span className="max-w-[60ch]">
+                            Versioning & auditability
+                          </span>
                         </li>
                       </ul>
                     </div>
                   </div>
 
                   <div className="bg-white rounded-card p-5 border-l-4 border-precision-success shadow-sm">
-                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">Impact</p>
+                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
+                      Impact
+                    </p>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-2.5">
                         <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-base font-bold text-precision-success">↓ 45%</p>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">onboarding time</p>
+                          <p className="text-base font-bold text-precision-success">
+                            ↓ 45%
+                          </p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">
+                            onboarding time
+                          </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-2.5">
                         <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">Reduced repetitive work for CPA teams</p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">
+                            Reduced repetitive work for CPA teams
+                          </p>
                         </div>
                       </li>
                     </ul>
@@ -715,43 +867,64 @@ export default function ComputisCaseStudy() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
                   <div className="space-y-4">
                     <div>
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Goal</p>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+                        Goal
+                      </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        Surface issues <strong className="text-precision-error">before they become compliance problems</strong>.
+                        Surface issues{" "}
+                        <strong className="text-precision-error">
+                          before they become compliance problems
+                        </strong>
+                        .
                       </p>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Capabilities</p>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+                        Capabilities
+                      </p>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Outlier detection</span>
+                          <span className="max-w-[60ch]">
+                            Outlier detection
+                          </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Pattern-break flags</span>
+                          <span className="max-w-[60ch]">
+                            Pattern-break flags
+                          </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Inline correction flows</span>
+                          <span className="max-w-[60ch]">
+                            Inline correction flows
+                          </span>
                         </li>
                       </ul>
                     </div>
                   </div>
 
                   <div className="bg-white rounded-card p-5 border-l-4 border-precision-error shadow-sm">
-                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">Impact</p>
+                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
+                      Impact
+                    </p>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-2.5">
                         <CheckCircle className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">Increased trust in platform accuracy</p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">
+                            Increased trust in platform accuracy
+                          </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-2.5">
                         <TrendingUp className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">Helped win enterprise accounts that required audit-grade tools</p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">
+                            Helped win enterprise accounts that required
+                            audit-grade tools
+                          </p>
                         </div>
                       </li>
                     </ul>
@@ -787,8 +960,8 @@ export default function ComputisCaseStudy() {
                     <span className="font-semibold text-precision-text-primary">
                       Challenge:
                     </span>{" "}
-                    Engineering wanted maximum automation; CPAs required override
-                    capabilities for liability protection.
+                    Engineering wanted maximum automation; CPAs required
+                    override capabilities for liability protection.
                   </p>
                 </div>
               </div>
@@ -801,19 +974,22 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      Facilitated cross-functional workshop mapping trust requirements
+                      Facilitated cross-functional workshop mapping trust
+                      requirements
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      Presented user research showing 40% of competitor complaints cited "lack of control"
+                      Presented user research showing 40% of competitor
+                      complaints cited "lack of control"
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      Designed graduated autonomy system: High confidence → Auto-apply | Medium → Review queue | Low → Manual required
+                      Designed graduated autonomy system: High confidence →
+                      Auto-apply | Medium → Review queue | Low → Manual required
                     </span>
                   </li>
                 </ul>
@@ -827,12 +1003,13 @@ export default function ComputisCaseStudy() {
               </h3>
               <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] mb-4 max-w-prose">
                 The tiered confidence system became a key differentiator. One
-                enterprise prospect specifically cited "professional control"
-                as their deciding factor.
+                enterprise prospect specifically cited "professional control" as
+                their deciding factor.
               </p>
               <blockquote className="bg-white/90 p-5 rounded-card italic text-sm sm:text-base leading-[160%] border-l-4 border-precision-success">
                 <p className="text-[#0A7A5E]">
-                  "Finally, AI that works *with* me instead of replacing my judgment."
+                  "Finally, AI that works *with* me instead of replacing my
+                  judgment."
                 </p>
                 <cite className="block text-xs text-precision-success mt-2 not-italic font-mono">
                   — CPA Beta User
@@ -927,7 +1104,13 @@ export default function ComputisCaseStudy() {
                     Control Over Speed
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    <strong>CPAs adopted AI faster when they retained control.</strong> We deliberately kept the medium-confidence threshold (70-89%) in a review queue instead of auto-applying. This added friction but preserved trust—a trade-off that became our competitive edge.
+                    <strong>
+                      CPAs adopted AI faster when they retained control.
+                    </strong>{" "}
+                    We deliberately kept the medium-confidence threshold
+                    (70-89%) in a review queue instead of auto-applying. This
+                    added friction but preserved trust—a trade-off that became
+                    our competitive edge.
                   </p>
                 </div>
 
@@ -936,7 +1119,11 @@ export default function ComputisCaseStudy() {
                     Surface Uncertainty, Don't Hide It
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    <strong>Explicit confidence ranges drove adoption.</strong> We treated medium-confidence predictions as hypotheses requiring human validation. Visual indicators (color-coded flags, percentage scores) made AI reasoning transparent instead of opaque.
+                    <strong>Explicit confidence ranges drove adoption.</strong>{" "}
+                    We treated medium-confidence predictions as hypotheses
+                    requiring human validation. Visual indicators (color-coded
+                    flags, percentage scores) made AI reasoning transparent
+                    instead of opaque.
                   </p>
                 </div>
 
@@ -945,7 +1132,15 @@ export default function ComputisCaseStudy() {
                     Templates Over Black-Box NLP
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    <strong>CPAs didn't trust natural language rule creation.</strong> We shipped pattern-based templates (80% speed gain) 4 months faster than full NLP. Lesson: <em>Partial automation users understand beats full automation they distrust.</em>
+                    <strong>
+                      CPAs didn't trust natural language rule creation.
+                    </strong>{" "}
+                    We shipped pattern-based templates (80% speed gain) 4 months
+                    faster than full NLP. Lesson:{" "}
+                    <em>
+                      Partial automation users understand beats full automation
+                      they distrust.
+                    </em>
                   </p>
                 </div>
 
@@ -954,7 +1149,14 @@ export default function ComputisCaseStudy() {
                     False Positives Beat False Negatives
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    <strong>In compliance, missing an error is catastrophic; reviewing a false alert is annoying.</strong> We tuned anomaly detection to 78% precision (22% false alarms) to catch 95%+ of real issues. Users trained the model via feedback, improving precision to 89% over 3 months.
+                    <strong>
+                      In compliance, missing an error is catastrophic; reviewing
+                      a false alert is annoying.
+                    </strong>{" "}
+                    We tuned anomaly detection to 78% precision (22% false
+                    alarms) to catch 95%+ of real issues. Users trained the
+                    model via feedback, improving precision to 89% over 3
+                    months.
                   </p>
                 </div>
               </div>
