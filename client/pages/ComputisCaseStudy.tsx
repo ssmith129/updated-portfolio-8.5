@@ -480,11 +480,17 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-4">
               ✨ AI Feature Design Solutions
             </h2>
 
-            <div className="space-y-6">
+            <p className="text-base text-precision-text-secondary mb-8 italic">
+              Four AI capabilities transformed workflow speed and accuracy
+            </p>
+
+            <div className="border-t-2 border-[#E3E8EF] mb-8"></div>
+
+            <div className="space-y-8">
               <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border-l-4 border-precision-accent">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
