@@ -490,7 +490,7 @@ export default function ComputisCaseStudy() {
 
             <div className="border-t-2 border-[#E3E8EF] mb-8"></div>
 
-            <div className="space-y-8">
+            <div className="space-y-10">
               <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm border-l-4 border-precision-accent">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
