@@ -779,6 +779,8 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        <div className="border-t-2 border-[#E3E8EF] my-16"></div>
+
         <section
           id="results"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500 scroll-mt-24"
@@ -844,6 +846,8 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        <div className="border-t-2 border-[#E3E8EF] my-16"></div>
+
         <section
           id="learnings"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700 scroll-mt-24"
@@ -855,40 +859,39 @@ export default function ComputisCaseStudy() {
 
             <div className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-r from-[#E8F4FA] to-[#D4E9F7] p-6 rounded-card border border-precision-secondary/20 transition-all duration-200 hover:border-precision-secondary/40 hover:scale-[1.02]">
+                <div className="bg-white p-6 rounded-card border-l-4 border-precision-secondary shadow-sm hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-precision-secondary focus-within:ring-offset-2">
                   <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
-                    Augmentation {">"} Automation
+                    Control Over Speed
                   </h3>
-                  <p className="text-sm text-precision-text-secondary">
-                    CPAs adopted AI faster when they retained control
+                  <p className="text-sm text-precision-text-primary leading-[160%]">
+                    <strong>CPAs adopted AI faster when they retained control.</strong> We deliberately kept the medium-confidence threshold (70-89%) in a review queue instead of auto-applying. This added friction but preserved trust—a trade-off that became our competitive edge.
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] p-6 rounded-card border border-precision-accent/20 transition-all duration-200 hover:border-precision-accent/40 hover:scale-[1.02]">
+                <div className="bg-white p-6 rounded-card border-l-4 border-precision-accent shadow-sm hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-precision-accent focus-within:ring-offset-2">
                   <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
-                    Transparency Builds Trust
+                    Surface Uncertainty, Don't Hide It
                   </h3>
-                  <p className="text-sm text-precision-text-secondary">
-                    Confidence scores and audit trails drove adoption
+                  <p className="text-sm text-precision-text-primary leading-[160%]">
+                    <strong>Explicit confidence ranges drove adoption.</strong> We treated medium-confidence predictions as hypotheses requiring human validation. Visual indicators (color-coded flags, percentage scores) made AI reasoning transparent instead of opaque.
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] p-6 rounded-card border border-precision-success/20 transition-all duration-200 hover:border-precision-success/40 hover:scale-[1.02]">
+                <div className="bg-white p-6 rounded-card border-l-4 border-precision-success shadow-sm hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-precision-success focus-within:ring-offset-2">
                   <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
-                    Pattern Recognition = Scale
+                    Templates Over Black-Box NLP
                   </h3>
-                  <p className="text-sm text-precision-text-secondary">
-                    Smart suggestions multiplied CPA efficiency
+                  <p className="text-sm text-precision-text-primary leading-[160%]">
+                    <strong>CPAs didn't trust natural language rule creation.</strong> We shipped pattern-based templates (80% speed gain) 4 months faster than full NLP. Lesson: <em>Partial automation users understand beats full automation they distrust.</em>
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-r from-[#FFF4E6] to-[#FFE9CC] p-6 rounded-card border border-precision-warning/20 transition-all duration-200 hover:border-precision-warning/40 hover:scale-[1.02]">
+                <div className="bg-white p-6 rounded-card border-l-4 border-precision-warning shadow-sm hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-precision-warning focus-within:ring-offset-2">
                   <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
-                    AI UX is Different
+                    False Positives Beat False Negatives
                   </h3>
-                  <p className="text-sm text-precision-text-secondary">
-                    Designing for probabilistic outputs requires new interaction
-                    patterns
+                  <p className="text-sm text-precision-text-primary leading-[160%]">
+                    <strong>In compliance, missing an error is catastrophic; reviewing a false alert is annoying.</strong> We tuned anomaly detection to 78% precision (22% false alarms) to catch 95%+ of real issues. Users trained the model via feedback, improving precision to 89% over 3 months.
                   </p>
                 </div>
               </div>
