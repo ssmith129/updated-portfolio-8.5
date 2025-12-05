@@ -328,33 +328,35 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-[#FDEEEE] to-[#FCE4E4] rounded-card p-5 border-l-4 border-precision-error">
-                <h3 className="text-base sm:text-lg font-bold font-heading text-[#C0392B] mb-3 flex items-center gap-2">
-                  <AlertTriangle className="w-5 h-5 text-precision-error" />
-                  Pain Points Identified
-                </h3>
+              <div className="bg-white rounded-card p-5 border-l-4 border-precision-error shadow-sm">
+                <div className="flex items-center gap-2 mb-3">
+                  <AlertTriangle className="w-5 h-5 text-precision-error flex-shrink-0" />
+                  <h3 className="text-base sm:text-lg font-bold font-heading text-precision-error">
+                    Pain Points Identified
+                  </h3>
+                </div>
                 <ul className="space-y-2.5">
-                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                    <span>
+                    <span className="max-w-[60ch]">
                       Manual classification of thousands of transactions per client
                     </span>
                   </li>
-                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                    <span>
+                    <span className="max-w-[60ch]">
                       No automated anomaly detection for FMV discrepancies
                     </span>
                   </li>
-                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                    <span>
+                    <span className="max-w-[60ch]">
                       Repetitive rule creation for common transaction patterns
                     </span>
                   </li>
-                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                    <span>
+                    <span className="max-w-[60ch]">
                       Limited visibility into classification decisions for audit defense
                     </span>
                   </li>
@@ -362,15 +364,15 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="mt-6 bg-gradient-to-r from-[#E8F4FA] to-[#D4E9F7] rounded-card p-5 border-l-4 border-precision-secondary">
-              <h3 className="text-base sm:text-lg font-bold font-heading text-precision-primary mb-3 flex items-center gap-2">
-                <Lightbulb className="w-5 h-5 text-precision-secondary" />
-                The Opportunity
-              </h3>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                Design and implement AI-powered features that would automate
-                routine work while keeping CPAs in control—turning Computis
-                into a truly intelligent tax automation platform.
+            <div className="mt-6 bg-white rounded-card p-5 border-l-4 border-precision-secondary shadow-sm">
+              <div className="flex items-center gap-2 mb-3">
+                <Lightbulb className="w-5 h-5 text-precision-secondary flex-shrink-0" />
+                <h3 className="text-base sm:text-lg font-bold font-heading text-precision-secondary">
+                  The Opportunity
+                </h3>
+              </div>
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-[65ch]">
+                Design and implement AI-powered features that would <strong>automate routine work</strong> while <strong>keeping CPAs in control</strong>—turning Computis into a truly intelligent tax automation platform.
               </p>
             </div>
           </div>
@@ -422,9 +424,14 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="space-y-4">
                 <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">Design Philosophy</h3>
-                <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                  I designed AI features around <strong>explicit confidence ranges</strong> that surfaced uncertainty to CPAs instead of hiding it. We treated <strong>medium-confidence predictions as hypotheses, not truths</strong>, and built UI patterns (review queues, override controls) around that principle.
-                </p>
+                <div className="space-y-3">
+                  <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+                    I designed AI features around <strong className="text-precision-accent">explicit confidence ranges</strong> that surfaced uncertainty to CPAs instead of hiding it.
+                  </p>
+                  <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+                    We treated <strong className="text-precision-secondary">medium-confidence predictions as hypotheses, not truths</strong>, and built UI patterns (review queues, override controls) around that principle.
+                  </p>
+                </div>
               </div>
 
               <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm">
@@ -460,15 +467,15 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="mt-6 bg-[#E0F9F4] rounded-card p-5 border-l-4 border-precision-accent">
-              <div className="flex items-start gap-2 mb-2">
-                <Lightbulb className="w-4 h-4 text-[#0A7A5E] mt-1 flex-shrink-0" />
-                <p className="text-xs font-semibold text-[#0A7A5E] uppercase tracking-wider">
+            <div className="mt-6 bg-[#E0F9F4] rounded-card p-6 border-l-4 border-precision-accent shadow-sm">
+              <div className="flex items-center gap-2 mb-3">
+                <Lightbulb className="w-5 h-5 text-[#0A7A5E] flex-shrink-0" />
+                <p className="text-sm font-bold text-[#0A7A5E] uppercase tracking-wider">
                   Key Insight
                 </p>
               </div>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                CPAs wanted AI to handle repetitive work, but needed <strong>transparency and override control</strong> to maintain professional liability standards. <em>Designing for probabilistic outputs meant we needed explicit confidence ranges, not black-box automation.</em>
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch] italic">
+                CPAs wanted AI to handle repetitive work, but needed <strong className="not-italic text-precision-accent">transparency and override control</strong> to maintain professional liability standards. <span className="font-semibold not-italic">Designing for probabilistic outputs meant we needed explicit confidence ranges, not black-box automation.</span>
               </p>
             </div>
           </div>
