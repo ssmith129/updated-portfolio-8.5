@@ -3,9 +3,9 @@ import { useEffect, useRef } from "react";
 interface VideoOverlayProps {
   videoSrc: string;
   ariaLabel: string;
-  problem: string;
-  solution: string;
-  impact: string;
+  problem?: string;
+  solution?: string;
+  impact?: string;
 }
 
 export default function VideoOverlay({
