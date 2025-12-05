@@ -908,7 +908,7 @@ export default function ComputisCaseStudy() {
         <div className="max-w-[1200px] mx-auto px-6 relative pointer-events-none">
           <button
             onClick={scrollToTop}
-            className={`absolute right-6 p-3 sm:p-4 min-h-[48px] min-w-[48px] rounded-button bg-gradient-to-r from-precision-accent to-precision-secondary text-white shadow-precision-md hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-precision-accent focus:ring-offset-2 pointer-events-auto ${
+            className={`absolute right-6 p-3 sm:p-4 min-h-[48px] min-w-[48px] rounded-button bg-gradient-to-r from-precision-accent to-precision-secondary text-white shadow-precision-md hover:shadow-xl transition-all duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-precision-accent pointer-events-auto ${
               showScrollTop
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-16 pointer-events-none"
