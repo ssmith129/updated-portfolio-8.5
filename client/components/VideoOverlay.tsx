@@ -86,7 +86,6 @@ export default function VideoOverlay({
           muted
           playsInline
           preload="metadata"
-          loading="lazy"
           aria-label={ariaLabel}
         >
           <source src={videoSrc} type="video/mp4" />
