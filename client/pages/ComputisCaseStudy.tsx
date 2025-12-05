@@ -498,59 +498,71 @@ export default function ComputisCaseStudy() {
             <div className="border-t-2 border-[#E3E8EF] mb-8"></div>
 
             <div className="space-y-10">
-              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm border-l-4 border-precision-accent">
-                <div className="flex items-start gap-4 mb-4">
+              <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+                <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                     <Sparkles className="w-6 h-6 text-precision-accent" />
                   </div>
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold font-heading text-precision-text-primary">
-                      1. Intelligent Transaction Classification
-                    </h3>
-                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-precision-text-primary">
+                    Intelligent Transaction Classification
+                  </h3>
                 </div>
 
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">
-                      <strong>Goal:</strong> Reduce manual classification while keeping CPAs in control.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Key Capabilities:</p>
-                    <ul className="space-y-1 ml-5">
-                      <li className="text-sm text-precision-text-primary list-disc">Auto-classification with confidence tiers</li>
-                      <li className="text-sm text-precision-text-primary list-disc">Smart review queue</li>
-                      <li className="text-sm text-precision-text-primary list-disc">Inline override controls</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Impact:</p>
-                    <ul className="space-y-1 ml-5">
-                      <li className="text-sm text-precision-text-primary list-disc"><strong>↓ 85% manual classification</strong></li>
-                      <li className="text-sm text-precision-text-primary list-disc"><strong>↑ 150% error detection accuracy</strong></li>
-                    </ul>
-                  </div>
-
-                  <div className="rounded-card overflow-hidden shadow-lg mt-4">
-                    <video
-                      className="w-full h-auto"
-                      loop
-                      muted
-                      playsInline
-                      controls
-                      preload="metadata"
-                      aria-label="AI Classification confidence indicators demonstration video"
-                    >
-                      <source src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9" type="video/mp4" />
-                      <p className="p-4 bg-gray-100 text-center text-xs sm:text-sm text-gray-600">
-                        Your browser does not support the video tag. Please use a modern browser to view this demonstration.
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Goal</p>
+                      <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+                        Reduce manual classification while <strong className="text-precision-accent">keeping CPAs in control</strong>.
                       </p>
-                    </video>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Key Capabilities</p>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Auto-classification with confidence tiers</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Smart review queue</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Inline override controls</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-card p-5 border-l-4 border-precision-accent shadow-sm">
+                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">Impact</p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2.5">
+                        <CheckCircle className="w-5 h-5 text-precision-accent mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-base font-bold text-precision-accent">↓ 85%</p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">manual classification</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2.5">
+                        <CheckCircle className="w-5 h-5 text-precision-accent mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-base font-bold text-precision-accent">↑ 150%</p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">error detection accuracy</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
+
+                <VideoOverlay
+                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
+                  ariaLabel="AI Classification confidence indicators demonstration video"
+                  problem="Manual classification consumed 60%+ of CPA time."
+                  solution="ML-driven auto-classification with visual confidence scores (High/Medium/Low) and one-click accept/reject controls."
+                  impact="85% reduction in manual classification work; CPAs review only flagged items."
+                />
               </div>
 
               <div className="border-t border-[#E3E8EF]"></div>
