@@ -502,19 +502,19 @@ export default function ComputisCaseStudy() {
                     <div className="bg-red-50 p-4 rounded-card border border-red-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        CPAs manually classified 3,000-10,000 transactions per client. Each required reviewing wallet addresses, transaction types, counterparties, and historical context—consuming 60%+ of billable time on repetitive pattern matching.
+                        Manual classification of 3,000-10,000 transactions per client consumed 60%+ of billable time.
                       </p>
                     </div>
                     <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Designed a 3-tier confidence system (High/Medium/Low) with visual indicators. High-confidence (90%+) auto-applied; Medium (70-89%) sent to review queue; Low (&lt;70%) flagged for manual input.
+                        3-tier confidence system: 90%+ auto-applied; 70-89% review queue; &lt;70% manual.
                       </p>
                     </div>
                     <div className="bg-green-50 p-4 rounded-card border border-green-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        85% reduction in manual work. CPAs now review only flagged items (~15% of transactions), turning hours of classification into minutes of oversight.
+                        <strong>85% reduction</strong> in manual work—hours became minutes.
                       </p>
                     </div>
                   </div>
@@ -525,7 +525,7 @@ export default function ComputisCaseStudy() {
                       Critical Trade-off
                     </p>
                     <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
-                      <strong>We deliberately chose human-in-the-loop for medium-confidence decisions</strong> (70-89% range), trading speed for compliance safety. Engineering initially pushed for 70%+ auto-apply threshold to maximize automation. User research revealed CPAs would lose trust if the system made questionable calls autonomously—even occasionally. The review queue added friction but preserved professional liability control, which became a competitive differentiator.
+                      <strong>Human-in-the-loop for 70-89% confidence</strong>—trading speed for trust. Engineering wanted full automation; user research showed CPAs would lose trust if AI made questionable calls autonomously. The review queue preserved liability control and became a competitive differentiator.
                     </p>
                   </div>
 
@@ -556,19 +556,19 @@ export default function ComputisCaseStudy() {
                     <div className="bg-red-50 p-4 rounded-card border border-red-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Classification decisions lived only in CPAs' heads or scattered spreadsheets. When the IRS requested documentation, CPAs manually reconstructed rationale from memory—a time-consuming, error-prone process with zero traceability.
+                        Decisions lived in CPAs' heads. IRS documentation required manual reconstruction from memory.
                       </p>
                     </div>
                     <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Built an automated audit trail that logged every AI classification with: (1) which rule triggered, (2) confidence score, (3) human override actions, (4) timestamp, (5) data sources consulted. Made logs exportable as IRS-ready PDF reports.
+                        Automated audit trail logging rule triggers, confidence scores, overrides, timestamps, and data sources. Exportable as IRS-ready PDFs.
                       </p>
                     </div>
                     <div className="bg-green-50 p-4 rounded-card border border-green-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        40% reduction in compliance prep time. CPAs now generate audit-ready documentation in one click. Zero FMV disputes post-implementation—transparency eliminated ambiguity.
+                        <strong>40% reduction</strong> in compliance prep. Zero FMV disputes—transparency eliminated ambiguity.
                       </p>
                     </div>
                   </div>
@@ -579,7 +579,7 @@ export default function ComputisCaseStudy() {
                       Critical Trade-off
                     </p>
                     <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
-                      <strong>We chose verbose logging over database performance.</strong> ML engineers worried that storing detailed rationale for every transaction would bloat the database and slow queries. I advocated for comprehensive logs based on CPA interviews—audit defense is non-negotiable in regulated industries. We solved performance with async background logging and archival strategies, but the core principle remained: <em>transparency cannot be sacrificed for speed in compliance workflows</em>.
+                      <strong>Verbose logging over performance.</strong> ML engineers worried about database bloat; I prioritized audit defense (non-negotiable in compliance). Solved with async logging, but maintained principle: <em>transparency cannot be sacrificed for speed</em>.
                     </p>
                   </div>
 
@@ -610,19 +610,19 @@ export default function ComputisCaseStudy() {
                     <div className="bg-red-50 p-4 rounded-card border border-red-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Creating classification rules required navigating complex conditional logic UI with nested dropdowns. CPAs spent 10-15 minutes per rule, often recreating identical patterns (e.g., "All Coinbase deposits = Income") across clients.
+                        Complex conditional logic UI. 10-15 minutes per rule, recreating identical patterns across clients.
                       </p>
                     </div>
                     <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Designed a pattern-detection system that analyzed user behavior and suggested pre-built templates ("Looks like you're classifying staking rewards—use this template?"). Added natural language preview: "When [condition], classify as [category]."
+                        Pattern-detection system suggesting pre-built templates + natural language preview.
                       </p>
                     </div>
                     <div className="bg-green-50 p-4 rounded-card border border-green-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Rule creation dropped from 15 minutes to 90 seconds. 32% increase in demo-to-conversion—prospects could set up their first automation during sales calls.
+                        15 min → 90 sec. <strong>32% increase</strong> in demo conversions.
                       </p>
                     </div>
                   </div>
@@ -633,7 +633,7 @@ export default function ComputisCaseStudy() {
                       Critical Trade-off
                     </p>
                     <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
-                      <strong>We prioritized templates over full NLP rule creation.</strong> The ML team proposed a natural language input system ("Classify all Uniswap swaps as trading"). While powerful, usability testing revealed CPAs did not trust black-box text interpretation—they needed to see structured logic. We compromised: smart templates for common patterns + traditional rule builder for edge cases. This gave 80% speed improvement for 20% of engineering effort, shipping 4 months faster than full NLP would have allowed.
+                      <strong>Templates over full NLP.</strong> CPAs didn't trust black-box text interpretation. Smart templates for common patterns + traditional builder for edge cases = 80% speed gain for 20% effort, <strong>shipping 4 months faster</strong>.
                     </p>
                   </div>
 
@@ -664,19 +664,19 @@ export default function ComputisCaseStudy() {
                     <div className="bg-red-50 p-4 rounded-card border border-red-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        FMV (Fair Market Value) errors and data inconsistencies surfaced during final client review or worse—after filing. CPAs had no proactive alerts, relying on manual spot-checks that missed systematic issues.
+                        FMV errors discovered during final review or after filing. No proactive alerts.
                       </p>
                     </div>
                     <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Implemented ML-based anomaly detection analyzing FMV outliers, duplicate transactions, and wallet address mismatches. Designed inline color-coded flags (red = critical, yellow = review) with hover tooltips explaining the issue and suggested fix.
+                        ML anomaly detection with color-coded flags (red/yellow) and hover tooltips.
                       </p>
                     </div>
                     <div className="bg-green-50 p-4 rounded-card border border-green-100">
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        150% increase in error detection rate. Issues caught before client delivery. One CPA firm avoided a $47K tax miscalculation in their first month using the feature.
+                        <strong>150% increase</strong> in error detection. One firm avoided $47K miscalculation in month 1.
                       </p>
                     </div>
                   </div>
@@ -687,7 +687,7 @@ export default function ComputisCaseStudy() {
                       Critical Trade-off
                     </p>
                     <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
-                      <strong>We accepted false positives to avoid false negatives.</strong> The ML model's initial precision was 78%—meaning 22% of alerts were false alarms. Engineering wanted to tune for fewer false positives to avoid "alert fatigue." I pushed back: <em>in tax compliance, missing a real error is catastrophic; reviewing a false alert is merely annoying</em>. We kept the sensitive threshold but added one-click "dismiss" and "not an issue" feedback to train the model. Over 3 months, precision improved to 89% while maintaining 95%+ recall.
+                      <strong>False positives over false negatives.</strong> 78% precision (22% false alarms). Engineering wanted fewer alerts; I prioritized catching every error. <em>In compliance, missing an error is catastrophic; reviewing a false alert is annoying.</em> User feedback improved precision to 89% while maintaining 95%+ recall.
                     </p>
                   </div>
 
