@@ -6,7 +6,12 @@ interface InteractiveImageProps {
   className?: string;
 }
 
-export function InteractiveImage({ src, alt, caption, className }: InteractiveImageProps) {
+export function InteractiveImage({
+  src,
+  alt,
+  caption,
+  className,
+}: InteractiveImageProps) {
   return (
     <div className={className}>
       <img src={src} alt={alt} className="w-full h-auto rounded-lg" />

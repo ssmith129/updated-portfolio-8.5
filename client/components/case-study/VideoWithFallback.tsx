@@ -5,7 +5,12 @@ interface VideoWithFallbackProps {
   className?: string;
 }
 
-export function VideoWithFallback({ src, fallbackImage, alt, className }: VideoWithFallbackProps) {
+export function VideoWithFallback({
+  src,
+  fallbackImage,
+  alt,
+  className,
+}: VideoWithFallbackProps) {
   return (
     <video
       src={src}
