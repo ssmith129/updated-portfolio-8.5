@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
+  ArrowUp,
   Target,
   Users,
   Calendar,
@@ -134,10 +135,28 @@ export default function SymplifyCaseStudy() {
   } | null>(null);
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Use the new animation hook for metrics animation
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
     useIntersectionAnimation(0.3, "0px 0px -100px 0px");
+
+  // Scroll to top button visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F8FAFC] via-white to-[#EFF6FF] scroll-smooth relative overflow-hidden">
@@ -325,7 +344,7 @@ export default function SymplifyCaseStudy() {
                   <ul className="list-disc pl-5 space-y-2 text-[#1E293B]">
                     <li>
                       <span className="font-semibold">Before:</span> Doctors in
-                      EHR, nurses in paper logs, admins in Excel — siloed, slow,
+                      EHR, nurses in paper logs, admins in Excel ��� siloed, slow,
                       error-prone
                     </li>
                     <li>
@@ -1567,6 +1586,23 @@ export default function SymplifyCaseStudy() {
 
       <RelatedCaseStudies currentCaseStudyId="symplify" />
       <Footer />
+
+      {/* Scroll to Top Button */}
+      <div className="fixed bottom-20 left-0 right-0 z-50 pointer-events-none">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 relative pointer-events-none">
+          <button
+            onClick={scrollToTop}
+            className={`absolute right-4 sm:right-8 lg:right-12 p-4 rounded-full bg-gradient-to-r from-[#10B981] to-[#059669] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#10B981] focus:ring-offset-2 pointer-events-auto ${
+              showScrollTop
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-16 pointer-events-none"
+            }`}
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="w-6 h-6" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

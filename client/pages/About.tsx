@@ -1,8 +1,29 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { ArrowUp } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export default function About() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  // Scroll to top button visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
       <SkipLink />
@@ -26,15 +47,15 @@ export default function About() {
 
           {/* Header Text */}
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-[56px] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
-              <div style={{ lineHeight: "54px" }}>
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-tight sm:leading-normal md:leading-relaxed lg:leading-[54px] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
+              <div className="leading-tight sm:leading-normal md:leading-relaxed lg:leading-[54px]">
                 Senior Product Designer with 7+ years of experience creating
                 intuitive, scalable UX for complex SaaS and enterprise
                 platforms.
               </div>
               <br />
               <br />
-              <div style={{ lineHeight: "54px" }}>
+              <div className="leading-tight sm:leading-normal md:leading-relaxed lg:leading-[54px]">
                 I specialize in AI-integrated systems that streamline workflows,
                 simplify data, and drive decisions.
               </div>
@@ -46,7 +67,7 @@ export default function About() {
       {/* Main Content */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] pb-8 sm:pb-12 md:pb-16 space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-24 xl:space-y-[150px]">
         {/* Professional Summary Section */}
-        <section className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-24 xl:gap-[440px] animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
+        <section className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-24 xl:gap-32 2xl:gap-40 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-500">
           <div className="w-full lg:w-[200px]">
             <p className="text-sm sm:text-base md:text-lg lg:text-[18px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.18px] transition-all duration-300 hover:text-[#131417]">
               Professional Summary
@@ -183,9 +204,7 @@ export default function About() {
               <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-normal text-[#131417] leading-[26px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.24px] lg:tracking-[-0.28px] transition-all duration-300 hover:tracking-[-0.2px]">
                 San Francisco State University
               </span>
-              <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-normal text-[#9FA0A3] leading-[26px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.24px] lg:tracking-[-0.28px] transition-all duration-300 hover:text-[#131417]">
-                San Francisco, CA
-              </span>
+              <span className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-normal text-[#9FA0A3] leading-[26px] sm:leading-[28px] md:leading-[30px] lg:leading-[32px] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.24px] lg:tracking-[-0.28px] transition-all duration-300 hover:text-[#131417]"></span>
             </div>
           </div>
         </section>
@@ -340,6 +359,23 @@ export default function About() {
       </div>
 
       <Footer />
+
+      {/* Scroll to Top Button */}
+      <div className="fixed bottom-20 left-0 right-0 z-50 pointer-events-none">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 relative pointer-events-none">
+          <button
+            onClick={scrollToTop}
+            className={`absolute right-4 sm:right-8 lg:right-12 p-4 rounded-full bg-[#131417] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-offset-2 pointer-events-auto ${
+              showScrollTop
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-16 pointer-events-none"
+            }`}
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="w-6 h-6" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

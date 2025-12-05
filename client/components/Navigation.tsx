@@ -68,15 +68,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
           className="group"
           aria-label="Sean Smith - UX/Product Designer - Go to homepage"
         >
-          <h1
-            className={`text-lg sm:text-xl md:text-2xl lg:text-xl font-medium leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] ${
-              isDarkPage
-                ? "text-white group-hover:text-[#00D4FF]"
-                : isHealthcarePage
-                  ? "text-[#0F172A] group-hover:text-[#3B82F6]"
-                  : "text-[#131417] group-hover:text-[#2a2a2a]"
-            }`}
-          >
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-xl font-medium leading-normal tracking-[-0.2px] transition-all duration-300 hover:tracking-[-0.1px] text-[#131417] group-hover:text-[#2a2a2a]">
             Sean Smith
           </h1>
         </Link>
@@ -92,6 +84,23 @@ export default function Navigation({ className = "" }: NavigationProps) {
           San Francisco, CA
         </p>
       </div>
+
+      {/* Mobile Menu Button */}
+      <button
+        onClick={toggleMobileMenu}
+        className={`md:hidden p-3 rounded-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-opacity-50 touch-manipulation ${
+          isDarkPage
+            ? "text-[#CCCCCC] hover:bg-[#00D4FF]/10 hover:text-[#00D4FF] focus:ring-[#00D4FF]"
+            : isHealthcarePage
+              ? "text-[#475569] hover:bg-[#3B82F6]/10 hover:text-[#3B82F6] focus:ring-[#3B82F6]"
+              : "text-[#131417] hover:bg-gray-100 focus:ring-[#131417]"
+        }`}
+        aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={isMobileMenuOpen}
+        aria-controls="mobile-menu"
+      >
+        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
 
       {/* Desktop Navigation */}
       <div
@@ -109,7 +118,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
           return current ? (
             <div
               key={item.href}
-              className={`px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] transition-all duration-300 hover:scale-105 ${
+              className={`px-3 sm:px-4 md:px-6 lg:px-[25px] py-3 sm:py-3 md:py-[13px] min-h-[44px] flex items-center rounded-[25px] sm:rounded-[35px] md:rounded-[50px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] transition-all duration-300 hover:scale-105 ${
                 isDarkPage
                   ? "bg-gradient-to-r from-[#00D4FF] to-[#0080FF] text-[#0A0A0A] hover:from-[#00FFB3] hover:to-[#00D4FF]"
                   : isHealthcarePage
@@ -125,7 +134,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
             <Link
               key={item.href}
               to={item.href}
-              className={`px-3 sm:px-4 md:px-6 lg:px-[25px] py-2 sm:py-2.5 md:py-[13px] text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px] touch-manipulation focus:outline-none focus:ring-2 focus:ring-opacity-50 ${
+              className={`px-3 sm:px-4 md:px-6 lg:px-[25px] py-3 sm:py-3 md:py-[13px] min-h-[44px] flex items-center text-xs sm:text-sm md:text-base lg:text-[18px] font-medium tracking-[-0.18px] rounded-[25px] sm:rounded-[35px] md:rounded-[50px] transition-all duration-300 hover:scale-105 hover:tracking-[-0.1px] touch-manipulation focus:outline-none focus:ring-2 focus:ring-opacity-50 ${
                 isDarkPage
                   ? "text-[#CCCCCC] hover:bg-[#00D4FF]/10 hover:text-[#00D4FF] focus:ring-[#00D4FF]"
                   : isHealthcarePage
@@ -141,10 +150,19 @@ export default function Navigation({ className = "" }: NavigationProps) {
         })}
       </div>
 
+      {/* Mobile Menu Backdrop */}
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+          onClick={toggleMobileMenu}
+          aria-hidden="true"
+        />
+      )}
+
       {/* Mobile Navigation Menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden absolute top-full left-0 right-0 shadow-lg rounded-b-[20px] transition-all duration-300 ${
+        className={`md:hidden absolute top-full left-0 right-0 shadow-lg rounded-b-[20px] transition-all duration-300 z-50 ${
           isMobileMenuOpen
             ? "opacity-100 visible translate-y-0"
             : "opacity-0 invisible -translate-y-4"
@@ -155,7 +173,6 @@ export default function Navigation({ className = "" }: NavigationProps) {
               ? "bg-white/95 backdrop-blur-xl border border-[#E2E8F0]"
               : "bg-white"
         }`}
-        style={{ zIndex: 50 }}
       >
         <div className="px-4 py-6 space-y-3">
           {navigationItems.map((item) => {
