@@ -711,59 +711,69 @@ export default function ComputisCaseStudy() {
 
               <div className="border-t border-[#E3E8EF]"></div>
 
-              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm border-l-4 border-precision-error">
-                <div className="flex items-start gap-4 mb-4">
+              <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+                <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
                     <AlertTriangle className="w-6 h-6 text-precision-error" />
                   </div>
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold font-heading text-precision-text-primary">
-                      4. Real-Time Anomaly Detection
-                    </h3>
-                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-precision-text-primary">
+                    Real-Time Anomaly Detection
+                  </h3>
                 </div>
 
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">
-                      <strong>Goal:</strong> Surface issues before they become compliance problems.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Capabilities:</p>
-                    <ul className="space-y-1 ml-5">
-                      <li className="text-sm text-precision-text-primary list-disc">Outlier detection</li>
-                      <li className="text-sm text-precision-text-primary list-disc">Pattern-break flags</li>
-                      <li className="text-sm text-precision-text-primary list-disc">Inline correction flows</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Impact:</p>
-                    <ul className="space-y-1 ml-5">
-                      <li className="text-sm text-precision-text-primary list-disc"><strong>Increased trust in platform accuracy</strong></li>
-                      <li className="text-sm text-precision-text-primary list-disc"><strong>Helped win enterprise accounts that required audit-grade tools</strong></li>
-                    </ul>
-                  </div>
-
-                  <div className="rounded-card overflow-hidden shadow-lg mt-4">
-                    <video
-                      className="w-full h-auto"
-                      loop
-                      muted
-                      playsInline
-                      controls
-                      preload="metadata"
-                      aria-label="Proactive Anomaly Detection Engine demonstration video"
-                    >
-                      <source src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9" type="video/mp4" />
-                      <p className="p-4 bg-gray-100 text-center text-xs sm:text-sm text-gray-600">
-                        Your browser does not support the video tag. Please use a modern browser to view this demonstration.
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Goal</p>
+                      <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+                        Surface issues <strong className="text-precision-error">before they become compliance problems</strong>.
                       </p>
-                    </video>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Capabilities</p>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Outlier detection</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Pattern-break flags</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Inline correction flows</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-card p-5 border-l-4 border-precision-error shadow-sm">
+                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">Impact</p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2.5">
+                        <CheckCircle className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">Increased trust in platform accuracy</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2.5">
+                        <TrendingUp className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">Helped win enterprise accounts that required audit-grade tools</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
+
+                <VideoOverlay
+                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
+                  ariaLabel="Proactive Anomaly Detection Engine demonstration video"
+                  problem="FMV errors and data inconsistencies discovered too late."
+                  solution="ML-powered anomaly detection with inline color-coded flags and explanatory tooltips."
+                  impact="150% increase in error detection; issues caught before client delivery."
+                />
               </div>
             </div>
           </div>
