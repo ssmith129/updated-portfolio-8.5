@@ -537,6 +537,8 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
+              <div className="border-t border-[#E3E8EF]"></div>
+
               <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm border-l-4 border-precision-secondary">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
