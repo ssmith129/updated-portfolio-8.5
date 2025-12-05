@@ -440,88 +440,220 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-white rounded-card p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border-l-4 border-precision-accent">
+              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border-l-4 border-precision-accent">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                     <Sparkles className="w-6 h-6 text-precision-accent" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
                       AI-Powered Classification with Confidence Indicators
                     </h3>
                   </div>
                 </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="AI Classification confidence indicators demonstration video"
-                  problem="Manual classification consumed 60%+ of CPA time."
-                  solution="ML-driven auto-classification with visual confidence scores (High/Medium/Low) and one-click accept/reject controls."
-                  impact="85% reduction in manual classification work; CPAs review only flagged items."
-                />
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-red-50 p-4 rounded-card border border-red-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        CPAs manually classified 3,000-10,000 transactions per client. Each required reviewing wallet addresses, transaction types, counterparties, and historical context—consuming 60%+ of billable time on repetitive pattern matching.
+                      </p>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        Designed a 3-tier confidence system (High/Medium/Low) with visual indicators. High-confidence (90%+) auto-applied; Medium (70-89%) sent to review queue; Low (&lt;70%) flagged for manual input.
+                      </p>
+                    </div>
+                    <div className="bg-green-50 p-4 rounded-card border border-green-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        85% reduction in manual work. CPAs now review only flagged items (~15% of transactions), turning hours of classification into minutes of oversight.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-card">
+                    <p className="text-xs font-semibold text-amber-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4" />
+                      Critical Trade-off
+                    </p>
+                    <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
+                      <strong>We deliberately chose human-in-the-loop for medium-confidence decisions</strong> (70-89% range), trading speed for compliance safety. Engineering initially pushed for 70%+ auto-apply threshold to maximize automation. User research revealed CPAs would lose trust if the system made questionable calls autonomously—even occasionally. The review queue added friction but preserved professional liability control, which became a competitive differentiator.
+                    </p>
+                  </div>
+
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="AI Classification confidence indicators demonstration video"
+                    problem="Manual classification consumed 60%+ of CPA time."
+                    solution="ML-driven auto-classification with visual confidence scores (High/Medium/Low) and one-click accept/reject controls."
+                    impact="85% reduction in manual classification work; CPAs review only flagged items."
+                  />
+                </div>
               </div>
 
-              <div className="bg-white rounded-card p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border-l-4 border-precision-secondary">
+              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border-l-4 border-precision-secondary">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
                     <Eye className="w-6 h-6 text-precision-secondary" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
                       Intelligent Audit Trail System
                     </h3>
                   </div>
                 </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Intelligent Audit Trail System demonstration video"
-                  problem="No visibility into how classifications were determined."
-                  solution="AI-generated audit logs documenting classification rationale, rule triggers, and decision history."
-                  impact="40% reduction in compliance preparation time; enabled self-service IRS audit defense."
-                />
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-red-50 p-4 rounded-card border border-red-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        Classification decisions lived only in CPAs' heads or scattered spreadsheets. When the IRS requested documentation, CPAs manually reconstructed rationale from memory—a time-consuming, error-prone process with zero traceability.
+                      </p>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        Built an automated audit trail that logged every AI classification with: (1) which rule triggered, (2) confidence score, (3) human override actions, (4) timestamp, (5) data sources consulted. Made logs exportable as IRS-ready PDF reports.
+                      </p>
+                    </div>
+                    <div className="bg-green-50 p-4 rounded-card border border-green-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        40% reduction in compliance prep time. CPAs now generate audit-ready documentation in one click. Zero FMV disputes post-implementation—transparency eliminated ambiguity.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-card">
+                    <p className="text-xs font-semibold text-amber-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4" />
+                      Critical Trade-off
+                    </p>
+                    <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
+                      <strong>We chose verbose logging over database performance.</strong> ML engineers worried that storing detailed rationale for every transaction would bloat the database and slow queries. I advocated for comprehensive logs based on CPA interviews—audit defense is non-negotiable in regulated industries. We solved performance with async background logging and archival strategies, but the core principle remained: <em>transparency cannot be sacrificed for speed in compliance workflows</em>.
+                    </p>
+                  </div>
+
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Intelligent Audit Trail System demonstration video"
+                    problem="No visibility into how classifications were determined."
+                    solution="AI-generated audit logs documenting classification rationale, rule triggers, and decision history."
+                    impact="40% reduction in compliance preparation time; enabled self-service IRS audit defense."
+                  />
+                </div>
               </div>
 
-              <div className="bg-white rounded-card p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border-l-4 border-precision-success">
+              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border-l-4 border-precision-success">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                     <Settings className="w-6 h-6 text-precision-success" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
                       Smart Rule Builder with Pattern Recognition
                     </h3>
                   </div>
                 </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Smart Rule Builder with Pattern Recognition demonstration video"
-                  problem="CPAs repeatedly created similar rules for common scenarios."
-                  solution="AI suggests rule templates based on transaction patterns; no-code builder with natural language preview."
-                  impact="Rule creation time reduced from 15 minutes to 90 seconds; 32% increase in demo conversions."
-                />
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-red-50 p-4 rounded-card border border-red-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        Creating classification rules required navigating complex conditional logic UI with nested dropdowns. CPAs spent 10-15 minutes per rule, often recreating identical patterns (e.g., "All Coinbase deposits = Income") across clients.
+                      </p>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        Designed a pattern-detection system that analyzed user behavior and suggested pre-built templates ("Looks like you're classifying staking rewards—use this template?"). Added natural language preview: "When [condition], classify as [category]."
+                      </p>
+                    </div>
+                    <div className="bg-green-50 p-4 rounded-card border border-green-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        Rule creation dropped from 15 minutes to 90 seconds. 32% increase in demo-to-conversion—prospects could set up their first automation during sales calls.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-card">
+                    <p className="text-xs font-semibold text-amber-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4" />
+                      Critical Trade-off
+                    </p>
+                    <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
+                      <strong>We prioritized templates over full NLP rule creation.</strong> The ML team proposed a natural language input system ("Classify all Uniswap swaps as trading"). While powerful, usability testing revealed CPAs did not trust black-box text interpretation—they needed to see structured logic. We compromised: smart templates for common patterns + traditional rule builder for edge cases. This gave 80% speed improvement for 20% of engineering effort, shipping 4 months faster than full NLP would have allowed.
+                    </p>
+                  </div>
+
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Smart Rule Builder with Pattern Recognition demonstration video"
+                    problem="CPAs repeatedly created similar rules for common scenarios."
+                    solution="AI suggests rule templates based on transaction patterns; no-code builder with natural language preview."
+                    impact="Rule creation time reduced from 15 minutes to 90 seconds; 32% increase in demo conversions."
+                  />
+                </div>
               </div>
 
-              <div className="bg-white rounded-card p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border-l-4 border-precision-error">
+              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border-l-4 border-precision-error">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
                     <AlertTriangle className="w-6 h-6 text-precision-error" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
                       Proactive Anomaly Detection Engine
                     </h3>
                   </div>
                 </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Proactive Anomaly Detection Engine demonstration video"
-                  problem="FMV errors and data inconsistencies discovered too late."
-                  solution="ML-powered anomaly detection with inline color-coded flags and explanatory tooltips."
-                  impact="150% increase in error detection; issues caught before client delivery."
-                />
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-red-50 p-4 rounded-card border border-red-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        FMV (Fair Market Value) errors and data inconsistencies surfaced during final client review or worse—after filing. CPAs had no proactive alerts, relying on manual spot-checks that missed systematic issues.
+                      </p>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        Implemented ML-based anomaly detection analyzing FMV outliers, duplicate transactions, and wallet address mismatches. Designed inline color-coded flags (red = critical, yellow = review) with hover tooltips explaining the issue and suggested fix.
+                      </p>
+                    </div>
+                    <div className="bg-green-50 p-4 rounded-card border border-green-100">
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        150% increase in error detection rate. Issues caught before client delivery. One CPA firm avoided a $47K tax miscalculation in their first month using the feature.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-card">
+                    <p className="text-xs font-semibold text-amber-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4" />
+                      Critical Trade-off
+                    </p>
+                    <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
+                      <strong>We accepted false positives to avoid false negatives.</strong> The ML model's initial precision was 78%—meaning 22% of alerts were false alarms. Engineering wanted to tune for fewer false positives to avoid "alert fatigue." I pushed back: <em>in tax compliance, missing a real error is catastrophic; reviewing a false alert is merely annoying</em>. We kept the sensitive threshold but added one-click "dismiss" and "not an issue" feedback to train the model. Over 3 months, precision improved to 89% while maintaining 95%+ recall.
+                    </p>
+                  </div>
+
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Proactive Anomaly Detection Engine demonstration video"
+                    problem="FMV errors and data inconsistencies discovered too late."
+                    solution="ML-powered anomaly detection with inline color-coded flags and explanatory tooltips."
+                    impact="150% increase in error detection; issues caught before client delivery."
+                  />
+                </div>
               </div>
             </div>
           </div>
