@@ -537,48 +537,41 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border-l-4 border-precision-secondary">
-                <div className="flex items-start gap-4 mb-6">
+              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm border-l-4 border-precision-secondary">
+                <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
                     <Eye className="w-6 h-6 text-precision-secondary" />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
-                      Intelligent Audit Trail System
+                    <h3 className="text-lg sm:text-xl font-bold font-heading text-precision-text-primary">
+                      2. Explainable Audit Trail
                     </h3>
                   </div>
                 </div>
 
-                <div className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-red-50 p-4 rounded-card border border-red-100">
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
-                      <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Decisions lived in CPAs' heads. IRS documentation required manual reconstruction from memory.
-                      </p>
-                    </div>
-                    <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
-                      <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Automated audit trail logging rule triggers, confidence scores, overrides, timestamps, and data sources. Exportable as IRS-ready PDFs.
-                      </p>
-                    </div>
-                    <div className="bg-green-50 p-4 rounded-card border border-green-100">
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
-                      <p className="text-sm text-precision-text-primary leading-[160%]">
-                        <strong>40% reduction</strong> in compliance prep. Zero FMV disputes—transparency eliminated ambiguity.
-                      </p>
-                    </div>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-sm font-semibold text-precision-text-primary mb-2">
+                      <strong>Goal:</strong> Make every AI decision transparent and defensible.
+                    </p>
                   </div>
 
-                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-card">
-                    <p className="text-xs font-semibold text-amber-900 uppercase tracking-wider mb-2 flex items-center gap-2">
-                      <AlertTriangle className="w-4 h-4" />
-                      Critical Trade-off
-                    </p>
-                    <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
-                      <strong>Verbose logging over performance.</strong> ML engineers worried about database bloat; I prioritized audit defense (non-negotiable in compliance). Solved with async logging, but maintained principle: <em>transparency cannot be sacrificed for speed</em>.
-                    </p>
+                  <div>
+                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Capabilities:</p>
+                    <ul className="space-y-1 ml-5">
+                      <li className="text-sm text-precision-text-primary list-disc">Rationale statements</li>
+                      <li className="text-sm text-precision-text-primary list-disc">Similar transaction clustering</li>
+                      <li className="text-sm text-precision-text-primary list-disc">Historical decisions</li>
+                      <li className="text-sm text-precision-text-primary list-disc">Simple override + reclassify workflow</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Impact:</p>
+                    <ul className="space-y-1 ml-5">
+                      <li className="text-sm text-precision-text-primary list-disc"><strong>0 FMV disputes</strong></li>
+                      <li className="text-sm text-precision-text-primary list-disc"><strong>Faster approvals for enterprise onboarding</strong></li>
+                    </ul>
                   </div>
 
                   <VideoOverlay
