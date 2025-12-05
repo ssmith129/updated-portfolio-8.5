@@ -386,20 +386,49 @@ export default function ComputisCaseStudy() {
               💡 My Approach
             </h2>
 
+            <div className="mb-8 pb-8 border-b border-[#E3E8EF]">
+              <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider mb-4">My Responsibilities</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
+                    <span className="text-sm leading-[160%]">
+                      <strong>Product strategy & feature definition</strong> for entire AI suite (classification, audit trails, rule builder, anomaly detection)
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
+                    <span className="text-sm leading-[160%]">
+                      <strong>Interaction patterns & UX design</strong> for all AI touchpoints, confidence indicators, and control mechanisms
+                    </span>
+                  </li>
+                </ul>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
+                    <span className="text-sm leading-[160%]">
+                      <strong>Partnered with ML engineers</strong> on model integration, UX constraints, and threshold tuning based on user feedback
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
+                    <span className="text-sm leading-[160%]">
+                      <strong>Led user research</strong> (8 CPA interviews, 6 shadowing sessions, 4 usability test cycles) to validate design decisions
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="space-y-4">
                 <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">Design Philosophy</h3>
                 <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                  I led the design of Computis's AI feature suite, focusing on{" "}
-                  <span className="font-semibold text-precision-accent">
-                    augmentation over automation
-                  </span>
-                  —ensuring AI enhanced CPA expertise rather than replacing
-                  professional judgment.
+                  I designed AI features around <strong>explicit confidence ranges</strong> that surfaced uncertainty to CPAs instead of hiding it. We treated <strong>medium-confidence predictions as hypotheses, not truths</strong>, and built UI patterns (review queues, override controls) around that principle.
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-[#FAFBFC] to-[#F0F4F8] rounded-card p-5">
+              <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm">
                 <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
                   Research Foundation
                 </h3>
@@ -432,14 +461,15 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="mt-6 bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-5 border-l-4 border-precision-accent">
-              <p className="text-xs font-semibold text-[#0A7A5E] mb-2 uppercase tracking-wider">
-                🎯 Key Insight:
-              </p>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] italic max-w-prose">
-                CPAs wanted AI to handle repetitive work, but needed
-                transparency and override control to maintain professional
-                liability standards.
+            <div className="mt-6 bg-[#E0F9F4] rounded-card p-5 border-l-4 border-precision-accent">
+              <div className="flex items-start gap-2 mb-2">
+                <Lightbulb className="w-4 h-4 text-[#0A7A5E] mt-1 flex-shrink-0" />
+                <p className="text-xs font-semibold text-[#0A7A5E] uppercase tracking-wider">
+                  Key Insight
+                </p>
+              </div>
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                CPAs wanted AI to handle repetitive work, but needed <strong>transparency and override control</strong> to maintain professional liability standards. <em>Designing for probabilistic outputs meant we needed explicit confidence ranges, not black-box automation.</em>
               </p>
             </div>
           </div>
