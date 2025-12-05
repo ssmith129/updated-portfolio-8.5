@@ -567,118 +567,146 @@ export default function ComputisCaseStudy() {
 
               <div className="border-t border-[#E3E8EF]"></div>
 
-              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm border-l-4 border-precision-secondary">
-                <div className="flex items-start gap-4 mb-4">
+              <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+                <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
                     <Eye className="w-6 h-6 text-precision-secondary" />
                   </div>
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold font-heading text-precision-text-primary">
-                      2. Explainable Audit Trail
-                    </h3>
-                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-precision-text-primary">
+                    Explainable Audit Trail
+                  </h3>
                 </div>
 
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">
-                      <strong>Goal:</strong> Make every AI decision transparent and defensible.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Capabilities:</p>
-                    <ul className="space-y-1 ml-5">
-                      <li className="text-sm text-precision-text-primary list-disc">Rationale statements</li>
-                      <li className="text-sm text-precision-text-primary list-disc">Similar transaction clustering</li>
-                      <li className="text-sm text-precision-text-primary list-disc">Historical decisions</li>
-                      <li className="text-sm text-precision-text-primary list-disc">Simple override + reclassify workflow</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Impact:</p>
-                    <ul className="space-y-1 ml-5">
-                      <li className="text-sm text-precision-text-primary list-disc"><strong>0 FMV disputes</strong></li>
-                      <li className="text-sm text-precision-text-primary list-disc"><strong>Faster approvals for enterprise onboarding</strong></li>
-                    </ul>
-                  </div>
-
-                  <div className="rounded-card overflow-hidden shadow-lg mt-4">
-                    <video
-                      className="w-full h-auto"
-                      loop
-                      muted
-                      playsInline
-                      controls
-                      preload="metadata"
-                      aria-label="Intelligent Audit Trail System demonstration video"
-                    >
-                      <source src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9" type="video/mp4" />
-                      <p className="p-4 bg-gray-100 text-center text-xs sm:text-sm text-gray-600">
-                        Your browser does not support the video tag. Please use a modern browser to view this demonstration.
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Goal</p>
+                      <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+                        Make every AI decision <strong className="text-precision-secondary">transparent and defensible</strong>.
                       </p>
-                    </video>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Capabilities</p>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Rationale statements</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Similar transaction clustering</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Historical decisions</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Simple override + reclassify workflow</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-card p-5 border-l-4 border-precision-secondary shadow-sm">
+                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">Impact</p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2.5">
+                        <Shield className="w-5 h-5 text-precision-secondary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-base font-bold text-precision-secondary">0</p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">FMV disputes</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2.5">
+                        <TrendingUp className="w-5 h-5 text-precision-secondary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">Faster approvals for enterprise onboarding</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
+
+                <VideoOverlay
+                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
+                  ariaLabel="Intelligent Audit Trail System demonstration video"
+                  problem="No visibility into how classifications were determined."
+                  solution="AI-generated audit logs documenting classification rationale, rule triggers, and decision history."
+                  impact="40% reduction in compliance preparation time; enabled self-service IRS audit defense."
+                />
               </div>
 
               <div className="border-t border-[#E3E8EF]"></div>
 
-              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm border-l-4 border-precision-success">
-                <div className="flex items-start gap-4 mb-4">
+              <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+                <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                     <Settings className="w-6 h-6 text-precision-success" />
                   </div>
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold font-heading text-precision-text-primary">
-                      3. Smart Rule Builder
-                    </h3>
-                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-precision-text-primary">
+                    Smart Rule Builder
+                  </h3>
                 </div>
 
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">
-                      <strong>Goal:</strong> Standardize logic and prevent rework year over year.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Capabilities:</p>
-                    <ul className="space-y-1 ml-5">
-                      <li className="text-sm text-precision-text-primary list-disc">Pattern detection</li>
-                      <li className="text-sm text-precision-text-primary list-disc">Suggested rules</li>
-                      <li className="text-sm text-precision-text-primary list-disc">User-friendly rule editing</li>
-                      <li className="text-sm text-precision-text-primary list-disc">Versioning & auditability</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Impact:</p>
-                    <ul className="space-y-1 ml-5">
-                      <li className="text-sm text-precision-text-primary list-disc"><strong>↓ 45% onboarding time</strong></li>
-                      <li className="text-sm text-precision-text-primary list-disc"><strong>Reduced repetitive work for CPA teams</strong></li>
-                    </ul>
-                  </div>
-
-                  <div className="rounded-card overflow-hidden shadow-lg mt-4">
-                    <video
-                      className="w-full h-auto"
-                      loop
-                      muted
-                      playsInline
-                      controls
-                      preload="metadata"
-                      aria-label="Smart Rule Builder with Pattern Recognition demonstration video"
-                    >
-                      <source src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9" type="video/mp4" />
-                      <p className="p-4 bg-gray-100 text-center text-xs sm:text-sm text-gray-600">
-                        Your browser does not support the video tag. Please use a modern browser to view this demonstration.
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Goal</p>
+                      <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+                        Standardize logic and <strong className="text-precision-success">prevent rework year over year</strong>.
                       </p>
-                    </video>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Capabilities</p>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Pattern detection</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Suggested rules</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">User-friendly rule editing</span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">Versioning & auditability</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-card p-5 border-l-4 border-precision-success shadow-sm">
+                    <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">Impact</p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-2.5">
+                        <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-base font-bold text-precision-success">↓ 45%</p>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">onboarding time</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2.5">
+                        <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-sm text-precision-text-primary leading-[160%]">Reduced repetitive work for CPA teams</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
+
+                <VideoOverlay
+                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
+                  ariaLabel="Smart Rule Builder with Pattern Recognition demonstration video"
+                  problem="CPAs repeatedly created similar rules for common scenarios."
+                  solution="AI suggests rule templates based on transaction patterns; no-code builder with natural language preview."
+                  impact="Rule creation time reduced from 15 minutes to 90 seconds; 32% increase in demo conversions."
+                />
               </div>
 
               <div className="border-t border-[#E3E8EF]"></div>
