@@ -22,8 +22,9 @@ import { useIntersectionAnimation } from "../hooks/use-page-animations";
 import { useCountUp } from "../hooks/use-count-up";
 
 export default function ComputisCaseStudy() {
-  const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
+  const [isSummaryExpanded, setIsSummaryExpanded] = useState(true);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isNavSticky, setIsNavSticky] = useState(false);
 
   const { elementRef: metricsRef, isVisible: startMetricsAnimation } =
     useIntersectionAnimation(0.3, "0px 0px -100px 0px");
@@ -37,10 +38,16 @@ export default function ComputisCaseStudy() {
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
+      setIsNavSticky(window.scrollY > 300);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    setIsSummaryExpanded(!isMobile);
   }, []);
 
   const scrollToTop = () => {
@@ -80,124 +87,117 @@ export default function ComputisCaseStudy() {
         </Link>
       </div>
 
-      <header className="max-w-[1200px] mx-auto px-6 pt-12 pb-0 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
-        <div className="mb-8 flex flex-col lg:block">
-          <span className="inline-block bg-precision-accent text-white px-4 py-2 rounded-pill text-sm font-semibold tracking-tight mb-6">
+      <header className="max-w-[1200px] mx-auto px-6 pt-12 pb-6 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
+        <div className="flex flex-col">
+          <span className="inline-block bg-precision-accent text-white px-4 py-2 rounded-pill text-sm font-semibold tracking-tight mb-4 w-fit">
             FinTech UX Case Study
           </span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[40px] font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-6">
-            Computis — Designing AI Features for Crypto Tax Automation
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-4">
+            Computis — AI-Powered Crypto Tax Automation
           </h1>
-          <p className="text-lg sm:text-xl font-normal text-precision-text-secondary leading-[140%]">
-            Leading the design of an AI-powered feature suite that augments CPA
-            expertise while maintaining professional control
+          <p className="text-base sm:text-lg text-precision-text-secondary leading-[140%] mb-6">
+            Designed intelligent automation that reduced manual classification work by 85% while keeping CPAs in control.
           </p>
+
+          <div className="bg-white/60 backdrop-blur-sm rounded-card p-5 border border-[#E3E8EF]">
+            <h2 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">What I Achieved</h2>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-sm text-precision-text-primary">
+                <CheckCircle className="w-4 h-4 text-precision-accent mt-0.5 flex-shrink-0" />
+                <span><strong className="text-precision-accent">↓ 85% manual work</strong> — CPAs review only flagged items</span>
+              </li>
+              <li className="flex items-start gap-2 text-sm text-precision-text-primary">
+                <CheckCircle className="w-4 h-4 text-precision-secondary mt-0.5 flex-shrink-0" />
+                <span><strong className="text-precision-secondary">↑ 32% conversions</strong> — faster rule creation drove adoption</span>
+              </li>
+              <li className="flex items-start gap-2 text-sm text-precision-text-primary">
+                <CheckCircle className="w-4 h-4 text-precision-warning mt-0.5 flex-shrink-0" />
+                <span><strong className="text-precision-warning">↑ 150% error detection</strong> — issues caught before client delivery</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
 
-      <div className="max-w-[1200px] mx-auto px-6 mt-8 relative z-10">
-        <nav
-          aria-label="Case study sections"
-          className="flex items-center justify-center gap-2 overflow-x-auto py-2"
-        >
-          {[
-            { href: "#tldr", label: "TL;DR" },
-            { href: "#challenge", label: "Challenge" },
-            { href: "#approach", label: "My Approach" },
-            { href: "#solutions", label: "AI Solutions" },
-            { href: "#stakeholder", label: "Stakeholder Alignment" },
-            { href: "#results", label: "Results" },
-            { href: "#learnings", label: "Key Learnings" },
-          ].map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="shrink-0 px-4 py-2 rounded-button bg-white text-precision-text-secondary border border-[#E3E8EF] text-sm font-medium hover:bg-precision-accent/10 hover:text-precision-accent hover:border-precision-accent/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-precision-accent transition-all duration-200 shadow-precision-sm hover:shadow-precision-md hover:scale-[1.02]"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
+      <div
+        className={`${isNavSticky ? "fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-precision-md" : "relative"} z-50 transition-all duration-300 hidden md:block`}
+      >
+        <div className="max-w-[1200px] mx-auto px-6 py-3">
+          <nav
+            aria-label="Case study sections"
+            className="flex items-center justify-center gap-2 overflow-x-auto"
+          >
+            {[
+              { href: "#challenge", label: "Challenge" },
+              { href: "#approach", label: "My Approach" },
+              { href: "#solutions", label: "AI Solutions" },
+              { href: "#stakeholder", label: "Stakeholder Alignment" },
+              { href: "#results", label: "Results" },
+              { href: "#learnings", label: "Key Learnings" },
+            ].map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="shrink-0 px-4 py-2 rounded-button bg-white text-precision-text-secondary border border-[#E3E8EF] text-sm font-medium hover:bg-precision-accent/10 hover:text-precision-accent hover:border-precision-accent/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-precision-accent transition-all duration-200 shadow-precision-sm hover:shadow-precision-md"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+        </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto px-6 mt-8 relative z-10">
-        <div className="bg-white backdrop-blur-xl rounded-card p-6 shadow-precision-md hover:shadow-precision-md transition-all duration-200 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E3E8EF]">
+      <div className="max-w-[1200px] mx-auto px-6 mt-6 relative z-10">
+        <div className="bg-white/80 backdrop-blur-sm rounded-card p-5 shadow-precision-sm transition-all duration-200 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E3E8EF]">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
             className="w-full flex items-center justify-between group"
             aria-expanded={isSummaryExpanded}
             aria-controls="summary-content"
           >
-            <h2 className="text-xl sm:text-2xl font-semibold font-heading text-precision-text-primary leading-[120%] group-hover:text-precision-accent transition-colors duration-200">
+            <h2 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider group-hover:text-precision-accent transition-colors duration-200">
               Quick View
             </h2>
             {isSummaryExpanded ? (
-              <ChevronUp className="w-5 h-5 text-precision-text-secondary group-hover:text-precision-accent transition-colors duration-200" />
+              <ChevronUp className="w-4 h-4 text-precision-text-secondary group-hover:text-precision-accent transition-colors duration-200" />
             ) : (
-              <ChevronDown className="w-5 h-5 text-precision-text-secondary group-hover:text-precision-accent transition-colors duration-200" />
+              <ChevronDown className="w-4 h-4 text-precision-text-secondary group-hover:text-precision-accent transition-colors duration-200" />
             )}
           </button>
 
           {isSummaryExpanded && (
             <div
               id="summary-content"
-              className="mt-6 animate-in fade-in-0 slide-in-from-top-4 duration-500"
+              className="mt-4 animate-in fade-in-0 slide-in-from-top-4 duration-500"
             >
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary mb-4">
-                    📌 TL;DR — Key Impact
-                  </h3>
-                  <ul className="list-disc pl-5 space-y-2 text-precision-text-primary">
-                    <li>
-                      <span className="font-semibold text-precision-success">
-                        ↓ 85% manual classification work
-                      </span>{" "}
-                      → CPAs review only flagged items
-                    </li>
-                    <li>
-                      <span className="font-semibold text-precision-secondary">
-                        ↑ 32% demo-to-conversion rate
-                      </span>{" "}
-                      → faster rule creation drove adoption
-                    </li>
-                    <li>
-                      <span className="font-semibold text-precision-accent">
-                        ↓ 45% CPA onboarding time
-                      </span>{" "}
-                      → from 2.5h to 1.4h
-                    </li>
-                    <li>
-                      <span className="font-semibold text-precision-warning">
-                        ↑ 150% error detection rate
-                      </span>{" "}
-                      → issues caught before client delivery
-                    </li>
-                    <li>
-                      <span className="font-semibold text-precision-primary">
-                        Trust-first AI patterns
-                      </span>{" "}
-                      → transparent, human-in-the-loop design
-                    </li>
-                  </ul>
-                  <p className="mt-4 text-precision-text-secondary">
-                    <span className="font-semibold text-precision-text-primary">
-                      My Role:
-                    </span>{" "}
-                    Founding Lead Product Designer → 0→1 AI feature design for
-                    crypto tax automation
-                  </p>
+              <div className="space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                  <div>
+                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">Role</span>
+                    <p className="text-precision-text-primary mt-1">Founding Lead Product Designer</p>
+                  </div>
+                  <div>
+                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">Duration</span>
+                    <p className="text-precision-text-primary mt-1">10 months</p>
+                  </div>
+                  <div>
+                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">Platform</span>
+                    <p className="text-precision-text-primary mt-1">Web SaaS (Desktop-first)</p>
+                  </div>
                 </div>
 
-                <div className="border-t border-[#E3E8EF]"></div>
-
-                <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-4 border-l-4 border-precision-accent">
-                  <p className="text-precision-text-primary italic leading-relaxed">
-                    Computis transformed from a functional crypto tax platform
-                    into an intelligent automation system — delivering
-                    measurable time savings, safer workflows, and professional
-                    control for CPAs.
-                  </p>
+                <div className="border-t border-[#E3E8EF] pt-4">
+                  <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2 block">Tools & Team</span>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                    <div>
+                      <span className="font-medium text-precision-text-primary">Tools:</span>
+                      <span className="text-precision-text-secondary ml-2">Figma, Miro, Notion, Jira</span>
+                    </div>
+                    <div>
+                      <span className="font-medium text-precision-text-primary">Team:</span>
+                      <span className="text-precision-text-secondary ml-2">CTO, PM, 2 ML, 2 Frontend</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -217,58 +217,6 @@ export default function ComputisCaseStudy() {
             <h2 className="text-2xl sm:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8 transition-all duration-200 hover:text-precision-accent cursor-pointer">
               📌 Impact At a Glance
             </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-              <div className="space-y-2 transition-all duration-200 hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
-                  Role
-                </h3>
-                <p className="text-base font-medium text-precision-text-primary">
-                  Founding Lead Product Designer
-                </p>
-              </div>
-              <div className="space-y-2 transition-all duration-200 hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
-                  Duration
-                </h3>
-                <p className="text-base font-medium text-precision-text-primary">
-                  10 months
-                </p>
-              </div>
-              <div className="space-y-2 transition-all duration-200 hover:scale-[1.02] cursor-pointer">
-                <h3 className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
-                  Platform
-                </h3>
-                <p className="text-base font-medium text-precision-text-primary">
-                  Web SaaS (Desktop-first, responsive)
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-card p-6 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 mb-6 border border-[#E3E8EF]">
-              <p className="text-xs font-semibold text-precision-text-secondary mb-4 uppercase tracking-wider">
-                Tools & Team
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <p className="text-sm font-semibold text-precision-text-primary mb-2">
-                    Tools:
-                  </p>
-                  <p className="text-sm text-precision-text-primary">
-                    Figma, Miro, Notion, Jira, Mixpanel, GA
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-precision-text-primary mb-2">
-                    Team:
-                  </p>
-                  <p className="text-sm text-precision-text-primary">
-                    CTO, PM, 2 ML Engineers, 2 Frontend Engineers, Design
-                    Partner
-                  </p>
-                </div>
-              </div>
-            </div>
 
             <div
               ref={metricsRef as React.RefObject<HTMLDivElement>}
