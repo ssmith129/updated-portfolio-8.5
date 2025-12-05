@@ -98,7 +98,7 @@ export const BeforeAfterComparison: React.FC<BeforeAfterComparisonProps> = ({
 
       {/* Impact Statement */}
       <div className="mt-8 p-6 bg-gradient-to-r from-[#0080FF]/10 to-[#00D4FF]/10 rounded-[12px] border-l-4 border-[#00D4FF]">
-        <p className="text-sm text-[#D1D5DB] leading-relaxed">
+        <p className="text-sm text-[#B0AFAF] leading-relaxed">
           <strong className="text-[#FFD700]">Impact:</strong> {impactStatement}
         </p>
       </div>

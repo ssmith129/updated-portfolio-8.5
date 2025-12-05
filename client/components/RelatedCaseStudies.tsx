@@ -113,7 +113,7 @@ export default function RelatedCaseStudies({
         <p
           className={`text-base sm:text-lg leading-[150%] tracking-[-0.16px] max-w-[600px] mx-auto transition-all duration-300 ${
             isDarkTheme
-              ? "text-[#888888] hover:text-[#CCCCCC]"
+              ? "text-[#A1A1A1] hover:text-[#CCCCCC]"
               : isHealthcareTheme
                 ? "text-[#64748B] hover:text-[#475569]"
                 : "text-[#9FA0A3] hover:text-[#131417]"
@@ -131,7 +131,7 @@ export default function RelatedCaseStudies({
           to="/case-studies"
           className={`inline-flex items-center gap-2 text-base font-medium tracking-[-0.16px] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-opacity-50 rounded-md px-3 py-2 ${
             isDarkTheme
-              ? "text-[#888888] hover:text-[#00D4FF] focus:ring-[#00D4FF]"
+              ? "text-[#A1A1A1] hover:text-[#00D4FF] focus:ring-[#00D4FF]"
               : isHealthcareTheme
                 ? "text-[#64748B] hover:text-[#3B82F6] focus:ring-[#3B82F6]"
                 : "text-[#9FA0A3] hover:text-[#131417] focus:ring-[#131417]"

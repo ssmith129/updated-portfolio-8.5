@@ -100,16 +100,16 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
               Before
             </h3>
             <ul className="space-y-3">
-              <li className="text-sm text-[#D1D5DB] leading-relaxed">
+              <li className="text-sm text-[#B0AFAF] leading-relaxed">
                 • 85% of CPA time spent waiting for engineers
               </li>
-              <li className="text-sm text-[#D1D5DB] leading-relaxed">
+              <li className="text-sm text-[#B0AFAF] leading-relaxed">
                 • Zero AI transparency or explainability
               </li>
-              <li className="text-sm text-[#D1D5DB] leading-relaxed">
+              <li className="text-sm text-[#B0AFAF] leading-relaxed">
                 • No audit trails for IRS compliance
               </li>
-              <li className="text-sm text-[#D1D5DB] leading-relaxed">
+              <li className="text-sm text-[#B0AFAF] leading-relaxed">
                 • 18-29 hours per client processing time
               </li>
             </ul>
@@ -122,17 +122,17 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
               After
             </h3>
             <ul className="space-y-3">
-              <li className="text-sm text-[#D1D5DB] leading-relaxed">
+              <li className="text-sm text-[#B0AFAF] leading-relaxed">
                 • CPAs build custom rules in{" "}
                 <strong className="text-white">under 90 seconds</strong>
               </li>
-              <li className="text-sm text-[#D1D5DB] leading-relaxed">
+              <li className="text-sm text-[#B0AFAF] leading-relaxed">
                 • AI confidence levels + full explainability
               </li>
-              <li className="text-sm text-[#D1D5DB] leading-relaxed">
+              <li className="text-sm text-[#B0AFAF] leading-relaxed">
                 • Real-time audit trail for all decisions
               </li>
-              <li className="text-sm text-[#D1D5DB] leading-relaxed">
+              <li className="text-sm text-[#B0AFAF] leading-relaxed">
                 • 10-14 hours per client (45% faster)
               </li>
             </ul>
@@ -151,7 +151,7 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
                 className="bg-[#00D4FF]/10 rounded-[12px] p-4 flex items-start gap-3"
               >
                 <span className="text-[#00D4FF] text-xl mt-1">→</span>
-                <p className="text-sm text-[#D1D5DB] leading-relaxed">
+                <p className="text-sm text-[#B0AFAF] leading-relaxed">
                   {takeaway}
                 </p>
               </div>
@@ -166,7 +166,7 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
             {displayNextSteps.map((step, index) => (
               <div key={index} className="flex items-start gap-3">
                 <span className="text-[#FFD700] text-lg mt-1">•</span>
-                <p className="text-sm text-[#D1D5DB] leading-relaxed">{step}</p>
+                <p className="text-sm text-[#B0AFAF] leading-relaxed">{step}</p>
               </div>
             ))}
           </div>
@@ -174,7 +174,7 @@ export const CaseStudySummary: React.FC<CaseStudySummaryProps> = ({
 
         {/* Core Achievement */}
         <div className="mt-8 pt-8 border-t border-[#2A2A2A]">
-          <p className="text-center text-lg text-[#D1D5DB] leading-relaxed">
+          <p className="text-center text-lg text-[#B0AFAF] leading-relaxed">
             <strong className="text-[#00D4FF]">Core Achievement:</strong>{" "}
             Transformed AI opacity into transparency—reframing{" "}
             <strong className="text-white">

@@ -1,11 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, X, ZoomIn } from "lucide-react";
+import { ArrowLeft, X, ZoomIn, ArrowUp } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export default function EzEMRxCaseStudy() {
   const [isImageEnlarged, setIsImageEnlarged] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  // Scroll to top button visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
@@ -13,7 +31,7 @@ export default function EzEMRxCaseStudy() {
       <Navigation />
 
       {/* Back Button */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-8 animate-in fade-in-0 slide-in-from-left-4 duration-700 delay-300">
         <Link
           to="/case-studies"
           className="inline-flex items-center gap-2 text-[18px] font-medium text-[#9FA0A3] leading-normal tracking-[-0.18px] hover:text-[#131417] transition-all duration-300 hover:scale-105 group"
@@ -24,7 +42,7 @@ export default function EzEMRxCaseStudy() {
       </div>
 
       {/* Hero Section */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-[100px] pt-16 pb-24 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500">
         <div className="mb-8">
           <span className="inline-block bg-[#131417] text-white px-4 py-2 rounded-[25px] text-[14px] font-medium tracking-[-0.14px] mb-6 transition-all duration-300 hover:scale-105">
             UX Case Study
@@ -40,7 +58,7 @@ export default function EzEMRxCaseStudy() {
       </div>
 
       {/* Content Sections */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-8 lg:px-[100px] pb-24 space-y-24">
         {/* TL;DR Summary */}
         <section className="animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-700">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-[200px]">
@@ -1047,6 +1065,23 @@ export default function EzEMRxCaseStudy() {
       )}
 
       <Footer />
+
+      {/* Scroll to Top Button */}
+      <div className="fixed bottom-20 left-0 right-0 z-50 pointer-events-none">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 relative pointer-events-none">
+          <button
+            onClick={scrollToTop}
+            className={`absolute right-4 sm:right-8 lg:right-12 p-4 rounded-full bg-[#131417] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-offset-2 pointer-events-auto ${
+              showScrollTop
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-16 pointer-events-none"
+            }`}
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="w-6 h-6" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

@@ -13,18 +13,33 @@ export default {
       },
     },
     screens: {
-      xs: "320px",
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
+      xs: "320px", // Small phones
+      sm: "480px", // Large phones (updated from 640px)
+      md: "768px", // Tablets
+      lg: "1024px", // Desktop
+      xl: "1280px", // Large desktop
+      "2xl": "1440px", // Extra large desktop (updated from 1536px)
     },
     extend: {
       fontFamily: {
-        sans: ["Manrope", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+        sans: ["Inter", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+        heading: ["Inter", "SF Pro Display", "-apple-system", "sans-serif"],
+        mono: ["JetBrains Mono", "IBM Plex Mono", "monospace"],
       },
       colors: {
+        precision: {
+          primary: "var(--precision-primary)",
+          secondary: "var(--precision-secondary)",
+          accent: "var(--precision-accent)",
+          neutral: "var(--precision-neutral)",
+          text: {
+            primary: "var(--precision-text-primary)",
+            secondary: "var(--precision-text-secondary)",
+          },
+          error: "var(--precision-error)",
+          success: "var(--precision-success)",
+          warning: "var(--precision-warning)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -73,6 +88,16 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        card: "12px",
+        button: "8px",
+        pill: "9999px",
+      },
+      boxShadow: {
+        "precision-sm": "var(--shadow-sm)",
+        "precision-md": "var(--shadow-md)",
+      },
+      transitionTimingFunction: {
+        precision: "cubic-bezier(0.4, 0, 0.2, 1)",
       },
       spacing: {
         "18": "4.5rem",

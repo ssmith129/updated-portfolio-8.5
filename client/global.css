@@ -1,6 +1,3 @@
-/* Import Computis Case Study Design Tokens */
-@import "./styles/design-tokens.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,23 +10,26 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Hover Microinteraction Tokens */
-    --hover-lift-sm: -2px;
-    --hover-lift-md: -4px;
-    --hover-lift-lg: -6px;
+    /* Precision Trust Theme Variables */
+    --precision-primary: #0a2540;
+    --precision-secondary: #1e3a5f;
+    --precision-accent: #00d4aa;
+    --precision-neutral: #f7f9fc;
+    --precision-text-primary: #1a1f36;
+    --precision-text-secondary: #697386;
+    --precision-error: #e74c3c;
+    --precision-success: #00d4aa;
+    --precision-warning: #f39c12;
 
-    --hover-duration-fast: 200ms;
-    --hover-duration-base: 300ms;
-    --hover-duration-slow: 400ms;
+    /* Precision Trust Shadows */
+    --shadow-sm: 0 1px 3px rgba(10, 37, 64, 0.08);
+    --shadow-md: 0 4px 12px rgba(10, 37, 64, 0.12);
 
-    --hover-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
-    --hover-easing-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
-    --hover-easing-smooth: ease-in-out;
+    /* Precision Trust Transitions */
+    --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --glow-primary: rgba(0, 212, 255, 0.15);
-    --glow-secondary: rgba(0, 255, 179, 0.15);
-    --glow-strong: rgba(0, 212, 255, 0.4);
-
+    /* Precision Trust Borders */
+    --border-subtle: 1px solid #e3e8ef;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -147,230 +147,13 @@
   /* Better text readability on small screens */
   @media (max-width: 768px) {
     body {
-      font-size: 16px; /* Prevents zoom on iOS */
+      font-size: 16px;
+      /* Prevents zoom on iOS */
     }
   }
 
   /* Improved focus states for accessibility */
   *:focus-visible {
     @apply outline-2 outline-offset-2 outline-blue-500;
-  }
-
-  /* Animation fixes for page refresh and navigation */
-  .page-animation-wrapper {
-    /* Ensure animations are ready to restart */
-    animation-fill-mode: both;
-  }
-
-  /* Prevent animation flicker on page load */
-  [class*="animate-in"] {
-    animation-fill-mode: both;
-    animation-play-state: running;
-  }
-
-  /* Ensure proper animation reset on page changes */
-  .page-animation-wrapper * {
-    animation-duration: inherit;
-    animation-timing-function: inherit;
-  }
-
-  /* Fix for stale animation states */
-  @media (prefers-reduced-motion: no-preference) {
-    [class*="animate-in"] {
-      will-change: transform, opacity;
-    }
-  }
-
-  /* Respect reduced motion preferences */
-  @media (prefers-reduced-motion: reduce) {
-    [class*="animate-in"] {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      animation-delay: 0s !important;
-      transition-duration: 0.01ms !important;
-    }
-
-    /* Disable all hover microinteractions for reduced motion */
-    .hover-lift,
-    .hover-lift-sm,
-    .hover-lift-md,
-    .hover-lift-lg,
-    .hover-glow,
-    .hover-scale {
-      transition-duration: 0.01ms !important;
-      transform: none !important;
-      box-shadow: none !important;
-    }
-  }
-}
-
-/* Hover Microinteraction Utilities */
-@layer components {
-  /* Metric Card Hover */
-  .hover-metric-card {
-    @apply transition-all duration-300 ease-out;
-    will-change: transform, box-shadow;
-  }
-
-  .hover-metric-card:hover {
-    transform: translateY(var(--hover-lift-md));
-    box-shadow: 0 8px 24px var(--glow-primary);
-  }
-
-  .hover-metric-card:hover .metric-value {
-    transform: scale(1.05);
-    filter: brightness(1.15);
-  }
-
-  /* Image Hover Enhancement */
-  .hover-image-enlarge {
-    @apply transition-all duration-300 ease-out cursor-zoom-in;
-    will-change: transform, border-color;
-  }
-
-  .hover-image-enlarge:hover {
-    transform: translateY(var(--hover-lift-sm)) scale(1.01);
-  }
-
-  .hover-image-enlarge:hover::after {
-    content: "Click to enlarge";
-    @apply absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full;
-    opacity: 0;
-    animation: fadeIn 0.3s ease-in-out 0.1s forwards;
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
-  /* Back Button Hover */
-  .hover-back-button {
-    @apply transition-all duration-200 ease-out relative;
-    will-change: border-color;
-  }
-
-  .hover-back-button:hover {
-    box-shadow: 0 0 12px var(--glow-strong);
-  }
-
-  .hover-back-button:hover svg {
-    transform: translateX(-4px);
-    transition: transform 0.25s var(--hover-easing-standard);
-  }
-
-  .hover-back-button:hover {
-    background: linear-gradient(
-      90deg,
-      rgba(0, 212, 255, 0.1) 0%,
-      transparent 100%
-    );
-    border-color: rgba(0, 212, 255, 0.5);
-  }
-
-  /* CTA Button Hover */
-  .hover-cta {
-    @apply transition-all relative overflow-hidden;
-    transition-duration: var(--hover-duration-fast);
-    transition-timing-function: var(--hover-easing-bounce);
-    will-change: transform, box-shadow;
-  }
-
-  .hover-cta:hover {
-    transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 8px 32px var(--glow-strong);
-  }
-
-  .hover-cta::before {
-    content: "";
-    @apply absolute inset-0 opacity-0;
-    background: linear-gradient(
-      45deg,
-      rgba(0, 212, 255, 0.2),
-      rgba(0, 255, 179, 0.2)
-    );
-    transition: opacity var(--hover-duration-base) ease-out;
-  }
-
-  .hover-cta:hover::before {
-    opacity: 1;
-  }
-
-  /* Section Container Hover */
-  .hover-section {
-    @apply transition-all duration-500 ease-in-out;
-    transition-delay: 50ms;
-    will-change: border-color, filter;
-  }
-
-  .hover-section:hover {
-    filter: brightness(1.02);
-    box-shadow: 0 0 60px rgba(0, 212, 255, 0.05) inset;
-  }
-
-  /* Feature Card Hover */
-  .hover-feature-card {
-    transition:
-      transform 0.25s var(--hover-easing-bounce),
-      box-shadow var(--hover-duration-base) ease-out,
-      border-color var(--hover-duration-fast) ease-out;
-    will-change: transform, box-shadow;
-  }
-
-  .hover-feature-card:hover {
-    transform: translateY(var(--hover-lift-lg));
-    box-shadow:
-      0 12px 40px rgba(0, 0, 0, 0.4),
-      0 0 0 1px rgba(0, 212, 255, 0.3);
-    border-color: rgba(0, 212, 255, 0.5);
-  }
-
-  .hover-feature-card:hover .feature-icon {
-    transform: rotate(5deg);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-
-  /* Critical Insight Card Hover */
-  .hover-insight-card {
-    @apply transition-all relative;
-    transition-duration: var(--hover-duration-base);
-    transition-timing-function: var(--hover-easing-standard);
-  }
-
-  .hover-insight-card:hover {
-    transform: translateX(8px);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 212, 255, 0.05) 0%,
-      transparent 100%
-    );
-  }
-
-  .hover-insight-card:hover .insight-number {
-    transform: scale(1.15);
-    transition: transform 0.3s var(--hover-easing-bounce);
-  }
-
-  .hover-insight-card::before {
-    content: "";
-    @apply absolute left-0 top-0 bottom-0 w-0;
-    background: linear-gradient(180deg, #00d4ff, #00ffb3);
-    transition: width var(--hover-duration-base) ease-out;
-  }
-
-  .hover-insight-card:hover::before {
-    width: 6px;
-  }
-
-  /* Focus States for Accessibility */
-  .hover-metric-card:focus-visible,
-  .hover-image-enlarge:focus-visible,
-  .hover-back-button:focus-visible,
-  .hover-cta:focus-visible,
-  .hover-feature-card:focus-visible {
-    @apply outline-2 outline-offset-2;
-    outline-color: rgba(0, 212, 255, 0.6);
-    box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.2);
   }
 }
