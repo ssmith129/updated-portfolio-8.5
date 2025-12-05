@@ -565,7 +565,7 @@ export default function ComputisCaseStudy() {
                 />
               </div>
 
-              <div className="border-t border-[#E3E8EF]"></div>
+              <div className="border-t-2 border-[#E3E8EF] my-2"></div>
 
               <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
                 <div className="flex items-center gap-3 mb-6">
@@ -637,7 +637,7 @@ export default function ComputisCaseStudy() {
                 />
               </div>
 
-              <div className="border-t border-[#E3E8EF]"></div>
+              <div className="border-t-2 border-[#E3E8EF] my-2"></div>
 
               <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
                 <div className="flex items-center gap-3 mb-6">
@@ -709,7 +709,7 @@ export default function ComputisCaseStudy() {
                 />
               </div>
 
-              <div className="border-t border-[#E3E8EF]"></div>
+              <div className="border-t-2 border-[#E3E8EF] my-2"></div>
 
               <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
                 <div className="flex items-center gap-3 mb-6">
