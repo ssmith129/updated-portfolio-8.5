@@ -238,54 +238,69 @@ export default function ComputisCaseStudy() {
                 Key Metrics
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div className="bg-[#E0F9F4] p-6 rounded-card border-2 border-[#00D4AA]/30 hover:border-[#00D4AA]/50 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                <div className="bg-white p-6 rounded-card border-2 border-[#00D4AA] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-accent focus-within:ring-offset-2">
                   <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     CPA Onboarding Time
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-precision-success mb-1">
+                  <p className="text-3xl sm:text-4xl font-bold text-precision-success mb-1">
                     ↓ {onboardingCount}%
                   </p>
-                  <p className="text-xs font-mono text-precision-text-secondary">
+                  <p className="text-xs font-mono text-precision-text-secondary mb-2">
                     2.5h → 1.4h
+                  </p>
+                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
+                    <strong>via</strong> smart rule templates reducing setup complexity
                   </p>
                 </div>
 
-                <div className="bg-[#E8F4FA] p-6 rounded-card border-2 border-[#1E3A5F]/20 hover:border-[#1E3A5F]/40 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                <div className="bg-white p-6 rounded-card border-2 border-[#1E3A5F] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-secondary focus-within:ring-offset-2">
                   <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     Demo-to-Conversion
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-precision-secondary">
+                  <p className="text-3xl sm:text-4xl font-bold text-precision-secondary mb-3">
                     ↑ {conversionCount}%
+                  </p>
+                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
+                    <strong>via</strong> 90-sec rule builder allowing setup during sales calls
                   </p>
                 </div>
 
-                <div className="bg-[#E0F9F4] p-6 rounded-card border-2 border-[#00D4AA]/30 hover:border-[#00D4AA]/50 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                <div className="bg-white p-6 rounded-card border-2 border-[#00D4AA] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-accent focus-within:ring-offset-2">
                   <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     Manual Classification Work
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-precision-accent">
+                  <p className="text-3xl sm:text-4xl font-bold text-precision-accent mb-3">
                     ↓ {classificationCount}%
+                  </p>
+                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
+                    <strong>via</strong> 3-tier auto-classification (90%+ confidence threshold)
                   </p>
                 </div>
 
-                <div className="bg-[#FFF4E6] p-6 rounded-card border-2 border-[#F39C12]/30 hover:border-[#F39C12]/50 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                <div className="bg-white p-6 rounded-card border-2 border-[#F39C12] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-warning focus-within:ring-offset-2">
                   <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     Error Detection Rate
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-precision-warning">
+                  <p className="text-3xl sm:text-4xl font-bold text-precision-warning mb-3">
                     ↑ {errorDetectionCount}%
+                  </p>
+                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
+                    <strong>via</strong> ML anomaly detection with sensitive thresholds
                   </p>
                 </div>
 
-                <div className="bg-[#E8F0FA] p-6 rounded-card border-2 border-[#0A2540]/20 hover:border-[#0A2540]/40 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] text-center">
+                <div className="bg-white p-6 rounded-card border-2 border-[#0A2540] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-primary focus-within:ring-offset-2">
                   <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
                     Enterprise Deals
                   </p>
-                  <p className="text-2xl sm:text-3xl font-bold text-precision-primary">
+                  <p className="text-3xl sm:text-4xl font-bold text-precision-primary mb-1">
                     {enterpriseDealsCount}
                   </p>
-                  <p className="text-xs font-mono text-precision-text-secondary">
+                  <p className="text-xs font-mono text-precision-text-secondary mb-2">
                     closed in 6 months
+                  </p>
+                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
+                    AI features = differentiator in 78% of won deals
                   </p>
                 </div>
               </div>
