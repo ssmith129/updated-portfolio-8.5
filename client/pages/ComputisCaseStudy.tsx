@@ -584,48 +584,41 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border-l-4 border-precision-success">
-                <div className="flex items-start gap-4 mb-6">
+              <div className="bg-white rounded-card p-6 sm:p-8 shadow-precision-sm border-l-4 border-precision-success">
+                <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                     <Settings className="w-6 h-6 text-precision-success" />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold font-heading text-precision-text-primary mb-2">
-                      Smart Rule Builder with Pattern Recognition
+                    <h3 className="text-lg sm:text-xl font-bold font-heading text-precision-text-primary">
+                      3. Smart Rule Builder
                     </h3>
                   </div>
                 </div>
 
-                <div className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-red-50 p-4 rounded-card border border-red-100">
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Before</p>
-                      <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Complex conditional logic UI. 10-15 minutes per rule, recreating identical patterns across clients.
-                      </p>
-                    </div>
-                    <div className="bg-blue-50 p-4 rounded-card border border-blue-100">
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Decision</p>
-                      <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Pattern-detection system suggesting pre-built templates + natural language preview.
-                      </p>
-                    </div>
-                    <div className="bg-green-50 p-4 rounded-card border border-green-100">
-                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">After</p>
-                      <p className="text-sm text-precision-text-primary leading-[160%]">
-                        15 min → 90 sec. <strong>32% increase</strong> in demo conversions.
-                      </p>
-                    </div>
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-sm font-semibold text-precision-text-primary mb-2">
+                      <strong>Goal:</strong> Standardize logic and prevent rework year over year.
+                    </p>
                   </div>
 
-                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-card">
-                    <p className="text-xs font-semibold text-amber-900 uppercase tracking-wider mb-2 flex items-center gap-2">
-                      <AlertTriangle className="w-4 h-4" />
-                      Critical Trade-off
-                    </p>
-                    <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
-                      <strong>Templates over full NLP.</strong> CPAs didn't trust black-box text interpretation. Smart templates for common patterns + traditional builder for edge cases = 80% speed gain for 20% effort, <strong>shipping 4 months faster</strong>.
-                    </p>
+                  <div>
+                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Capabilities:</p>
+                    <ul className="space-y-1 ml-5">
+                      <li className="text-sm text-precision-text-primary list-disc">Pattern detection</li>
+                      <li className="text-sm text-precision-text-primary list-disc">Suggested rules</li>
+                      <li className="text-sm text-precision-text-primary list-disc">User-friendly rule editing</li>
+                      <li className="text-sm text-precision-text-primary list-disc">Versioning & auditability</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="text-sm font-semibold text-precision-text-primary mb-2">Impact:</p>
+                    <ul className="space-y-1 ml-5">
+                      <li className="text-sm text-precision-text-primary list-disc"><strong>↓ 45% onboarding time</strong></li>
+                      <li className="text-sm text-precision-text-primary list-disc"><strong>Reduced repetitive work for CPA teams</strong></li>
+                    </ul>
                   </div>
 
                   <VideoOverlay
