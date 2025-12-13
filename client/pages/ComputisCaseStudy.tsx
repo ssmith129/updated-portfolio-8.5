@@ -879,40 +879,42 @@ export default function ComputisCaseStudy() {
                   <div className="space-y-4">
                     <div>
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                        Goal
+                        Problem
                       </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        Surface issues{" "}
-                        <strong className="text-precision-error">
-                          before they become compliance problems
-                        </strong>
-                        .
+                        FMV errors and data inconsistencies discovered too late—after export or client delivery.
                       </p>
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                        Capabilities
+                        Solution
+                      </p>
+                      <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] mb-3 max-w-[60ch]">
+                        ML-powered detection with severity-tiered inline flags:
                       </p>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Outlier detection
+                            <strong>Error:</strong> Requires resolution before export
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Pattern-break flags
+                            <strong>Warning:</strong> Should be reviewed
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Inline correction flows
+                            <strong>Info:</strong> FYI, may not require action
                           </span>
                         </li>
                       </ul>
+                      <p className="text-sm text-precision-text-primary leading-[170%] mt-3 max-w-[60ch]">
+                        Contextual explanations with one-click resolution options (fetch price, enter manual FMV, mark N/A).
+                      </p>
                     </div>
                   </div>
 
@@ -920,25 +922,17 @@ export default function ComputisCaseStudy() {
                     <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
                       Impact
                     </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
-                        <div>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">
-                            Increased trust in platform accuracy
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <TrendingUp className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
-                        <div>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">
-                            Helped win enterprise accounts that required
-                            audit-grade tools
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
+                    <p className="text-sm text-precision-text-primary leading-[160%] mb-3 max-w-[60ch]">
+                      150% increase in error detection; zero FMV disputes post-implementation.
+                    </p>
+                    <div className="mt-3 pt-3 border-t border-gray-200">
+                      <p className="text-xs font-semibold text-precision-error mb-2">
+                        Design Decision:
+                      </p>
+                      <p className="text-sm text-precision-text-primary leading-[160%] max-w-[60ch]">
+                        Warn, don't block—CPAs sometimes have legitimate reasons to export with known issues. The interface documents acknowledgment.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
