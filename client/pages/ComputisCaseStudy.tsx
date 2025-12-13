@@ -1024,6 +1024,56 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        <section
+          id="tradeoff"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1400 scroll-mt-24"
+        >
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+              ⚖️ Critical Trade-off: Speed vs. Transparency
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
+              <div className="bg-white rounded-card p-5 border-l-4 border-precision-warning shadow-sm">
+                <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
+                  Tension
+                </h3>
+                <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                  Removing rationale generation would cut processing time 60%—and we'd just lost a deal to a faster competitor. CTO pushed for speed; I argued transparency is non-negotiable in regulated domains.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-card p-5 border-l-4 border-precision-accent shadow-sm">
+                <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
+                  Research Insight
+                </h3>
+                <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                  Competitor "black box AI" complaints outnumbered performance complaints 3:1.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-[#E0F9F4] to-[#CCF5EC] rounded-card p-6 border-l-4 border-precision-success mb-6">
+              <h3 className="text-base sm:text-lg font-semibold font-heading text-[#0A7A5E] mb-3">
+                Solution
+              </h3>
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                Hybrid approach—immediate classification display with async rationale loading. Users got speed for scanning, transparency within seconds for examination.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm">
+              <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3 flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-precision-success" />
+                Impact
+              </h3>
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                "Explainable AI" positioning won subsequent deals against faster competitor; 3 enterprise clients cited audit defensibility as deciding factor.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <div className="border-t-2 border-[#E3E8EF] my-16"></div>
 
         <section
