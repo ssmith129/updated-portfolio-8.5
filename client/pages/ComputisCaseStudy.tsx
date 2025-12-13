@@ -1085,57 +1085,141 @@ export default function ComputisCaseStudy() {
               📈 Results & Business Impact
             </h2>
 
-            <div className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border border-[#E3E8EF]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <TrendingUp className="w-6 h-6 text-precision-primary" />
-                    <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary">
-                      Enterprise Deals
-                    </h3>
-                  </div>
-                  <p className="text-sm text-precision-text-secondary">
-                    3 enterprise CPA firm deals closed within 6 months of AI
-                    feature launch
-                  </p>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-lg font-semibold font-heading text-precision-text-primary mb-4">
+                  Quantitative Outcomes
+                </h3>
+                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-[#E3E8EF]">
+                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">Metric</th>
+                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">Before</th>
+                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">After</th>
+                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">Change</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-[#E3E8EF]">
+                        <td className="py-3 px-4 text-precision-text-primary">Manual classification workload</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">100% manual</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">15% manual</td>
+                        <td className="py-3 px-4 font-semibold text-precision-accent">↓ 85%</td>
+                      </tr>
+                      <tr className="border-b border-[#E3E8EF]">
+                        <td className="py-3 px-4 text-precision-text-primary">CPA onboarding (new client)</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">2.5 hours</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">1.4 hours</td>
+                        <td className="py-3 px-4 font-semibold text-precision-success">↓ 45%</td>
+                      </tr>
+                      <tr className="border-b border-[#E3E8EF]">
+                        <td className="py-3 px-4 text-precision-text-primary">Demo-to-conversion rate</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">Baseline</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">+32%</td>
+                        <td className="py-3 px-4 font-semibold text-precision-secondary">↑ 32%</td>
+                      </tr>
+                      <tr className="border-b border-[#E3E8EF]">
+                        <td className="py-3 px-4 text-precision-text-primary">Engineering dependency for rules</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">100%</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">15% (edge cases)</td>
+                        <td className="py-3 px-4 font-semibold text-precision-accent">↓ 85%</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 px-4 text-precision-text-primary">FMV disputes post-filing</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">Occasional</td>
+                        <td className="py-3 px-4 text-precision-text-secondary">Zero</td>
+                        <td className="py-3 px-4 font-semibold text-precision-success">Eliminated</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+              </div>
 
-                <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border border-[#E3E8EF]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Shield className="w-6 h-6 text-precision-success" />
-                    <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary">
-                      Compliance
-                    </h3>
+              <div>
+                <h3 className="text-lg font-semibold font-heading text-precision-text-primary mb-4">
+                  Adoption Metrics
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="bg-white p-5 rounded-card border-l-4 border-precision-success shadow-sm">
+                    <p className="text-2xl font-bold text-precision-success mb-1">89%</p>
+                    <p className="text-xs text-precision-text-secondary">AI acceptance rate — CPAs trusted high-confidence classifications</p>
                   </div>
-                  <p className="text-sm text-precision-text-secondary">
-                    Zero FMV disputes reported post-implementation
-                  </p>
+                  <div className="bg-white p-5 rounded-card border-l-4 border-precision-accent shadow-sm">
+                    <p className="text-2xl font-bold text-precision-accent mb-1">11%</p>
+                    <p className="text-xs text-precision-text-secondary">Meaningful override rate — capturing human context AI lacked</p>
+                  </div>
+                  <div className="bg-white p-5 rounded-card border-l-4 border-precision-secondary shadow-sm">
+                    <p className="text-2xl font-bold text-precision-secondary mb-1">78%</p>
+                    <p className="text-xs text-precision-text-secondary">Rule builder adoption — up from 12% in v1</p>
+                  </div>
+                  <div className="bg-white p-5 rounded-card border-l-4 border-precision-warning shadow-sm">
+                    <p className="text-2xl font-bold text-precision-warning mb-1">340%</p>
+                    <p className="text-xs text-precision-text-secondary">Increase in audit trail exports</p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border border-[#E3E8EF]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <TrendingUp className="w-6 h-6 text-precision-accent" />
-                    <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary">
-                      Platform Expansion
-                    </h3>
+              <div>
+                <h3 className="text-lg font-semibold font-heading text-precision-text-primary mb-4">
+                  Business Impact
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+                    <div className="flex items-center gap-3 mb-3">
+                      <TrendingUp className="w-6 h-6 text-precision-primary" />
+                      <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                        Revenue Impact
+                      </h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-precision-text-primary">
+                      <li className="flex items-start gap-2">
+                        <span className="text-precision-accent mt-1">•</span>
+                        <span>3 enterprise CPA firm deals closed within 6 months of AI launch</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-precision-accent mt-1">•</span>
+                        <span>78% of won deals cited AI features as primary differentiator</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-precision-accent mt-1">•</span>
+                        <span>First Big 4 accounting partnership secured</span>
+                      </li>
+                    </ul>
                   </div>
-                  <p className="text-sm text-precision-text-secondary">
-                    Capabilities expanded to serve DAOs and hedge funds
-                  </p>
-                </div>
 
-                <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 hover:scale-[1.02] border border-[#E3E8EF]">
-                  <div className="flex items-center gap-3 mb-3">
-                    <CheckCircle className="w-6 h-6 text-precision-secondary" />
-                    <h3 className="text-lg sm:text-xl font-semibold font-heading text-precision-text-primary">
-                      Key Differentiator
-                    </h3>
+                  <div className="bg-white p-6 rounded-card shadow-precision-sm hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Shield className="w-6 h-6 text-precision-success" />
+                      <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                        Operational Wins
+                      </h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-precision-text-primary">
+                      <li className="flex items-start gap-2">
+                        <span className="text-precision-success mt-1">•</span>
+                        <span>40% reduction in classification-related support tickets</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-precision-success mt-1">•</span>
+                        <span>Platform expanded to serve DAOs and hedge funds</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-precision-success mt-1">•</span>
+                        <span>Zero FMV disputes reported post-implementation</span>
+                      </li>
+                    </ul>
                   </div>
-                  <p className="text-sm text-precision-text-secondary">
-                    AI features cited as primary differentiator in 78% of won
-                    deals
-                  </p>
                 </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-[#E0F9F4] to-[#E8F4FA] rounded-card p-6 border-l-4 border-precision-accent">
+                <blockquote className="text-base italic text-precision-text-primary leading-[160%]">
+                  "This is the first crypto tax tool I'd stake my license on."
+                </blockquote>
+                <cite className="block text-sm text-precision-accent mt-2 not-italic font-semibold">
+                  — Enterprise CPA
+                </cite>
               </div>
             </div>
           </div>
