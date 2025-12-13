@@ -770,41 +770,36 @@ export default function ComputisCaseStudy() {
                   <div className="space-y-4">
                     <div>
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                        Goal
+                        Problem
                       </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        Standardize logic and{" "}
-                        <strong className="text-precision-success">
-                          prevent rework year over year
-                        </strong>
-                        .
+                        CPAs repeatedly created similar rules, but every change required engineering (2-5 day wait).
                       </p>
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                        Capabilities
+                        Solution
+                      </p>
+                      <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] mb-3 max-w-[60ch]">
+                        No-code visual rule builder with:
                       </p>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Pattern detection
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
-                          <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">Suggested rules</span>
-                        </li>
-                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
-                          <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="max-w-[60ch]">
-                            User-friendly rule editing
+                            Drag-and-drop logic blocks with natural language preview
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Versioning & auditability
+                            Live preview showing exact transaction impact before applying
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                          <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="max-w-[60ch]">
+                            AI-suggested rules based on detected classification patterns
                           </span>
                         </li>
                       </ul>
@@ -815,27 +810,50 @@ export default function ComputisCaseStudy() {
                     <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
                       Impact
                     </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
-                        <div>
-                          <p className="text-base font-bold text-precision-success">
-                            ↓ 45%
-                          </p>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">
-                            onboarding time
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
-                        <div>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">
-                            Reduced repetitive work for CPA teams
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
+                    <p className="text-sm text-precision-text-primary leading-[160%] mb-3 max-w-[60ch]">
+                      Adoption jumped from 12% to 67%; rule creation reduced from 15 minutes to 90 seconds; 32% increase in demo conversions.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-[#FFF5F5] to-[#FEF3E2] rounded-card p-6 border-l-4 border-precision-warning mb-6">
+                  <h4 className="text-base font-bold text-precision-text-primary mb-3 flex items-center gap-2">
+                    <AlertTriangle className="w-5 h-5 text-precision-warning" />
+                    Failure & Recovery: The Rule Builder Nobody Used
+                  </h4>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                        Problem
+                      </p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        First version launched to 12% adoption—users explored for 3-4 minutes then abandoned without creating a single rule.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                        Root Cause
+                      </p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        Over-engineered with 14 condition types and nested logic that intimidated CPAs wanting simple automation.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                        Solution
+                      </p>
+                      <p className="text-sm text-precision-text-primary leading-[160%]">
+                        Stripped to a "recipe" model, removing 9 condition types. Added "Advanced Mode" toggle for power users despite engineering pushback that we were discarding capabilities.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-precision-success uppercase tracking-wider mb-1">
+                        Key Learning
+                      </p>
+                      <p className="text-sm text-precision-text-primary leading-[160%] italic">
+                        In B2B tools for non-technical users, capability without usability is worthless.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
