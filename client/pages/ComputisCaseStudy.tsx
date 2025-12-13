@@ -443,6 +443,10 @@ export default function ComputisCaseStudy() {
               💡 My Approach
             </h2>
 
+            <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] mb-8 max-w-prose">
+              I led the design of Computis's AI feature suite, focusing on <strong>augmentation over automation</strong>—ensuring AI enhanced CPA expertise rather than replacing professional judgment.
+            </p>
+
             <div className="mb-8 pb-8 border-b border-[#E3E8EF]">
               <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider mb-4">
                 My Responsibilities
@@ -478,9 +482,7 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
                     <span className="text-sm leading-[160%]">
-                      <strong>Led user research</strong> (8 CPA interviews, 6
-                      shadowing sessions, 4 usability test cycles) to validate
-                      design decisions
+                      <strong>Led user research</strong> (12 CPA interviews, 6 full-day observations, 4 usability test cycles) to validate design decisions
                     </span>
                   </li>
                 </ul>
@@ -519,27 +521,31 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      8 CPA interviews identifying automation opportunities
+                      <strong>12 CPA interviews</strong> identifying automation opportunities and trust requirements
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      6 workflow shadowing sessions to map classification
-                      patterns
+                      <strong>6 full-day workflow observations</strong> mapping classification patterns and friction points
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      Competitive analysis of AI features (TaxBit, Cryptio,
-                      CoinTracker)
+                      <strong>50,000+ transaction analysis</strong> revealing 73% followed predictable patterns
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      4 usability test cycles validating AI interaction patterns
+                      <strong>Competitive analysis</strong> of TaxBit, Cryptio, CoinTracker (300+ G2 reviews)
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5 text-precision-text-primary">
+                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-sm leading-[160%]">
+                      <strong>4 usability test cycles</strong> validating AI interaction patterns
                     </span>
                   </li>
                 </ul>
@@ -554,15 +560,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch] italic">
-                CPAs wanted AI to handle repetitive work, but needed{" "}
-                <strong className="not-italic text-precision-accent">
-                  transparency and override control
-                </strong>{" "}
-                to maintain professional liability standards.{" "}
-                <span className="font-semibold not-italic">
-                  Designing for probabilistic outputs meant we needed explicit
-                  confidence ranges, not black-box automation.
-                </span>
+                This wasn't a UX problem ("make AI easy to use")—it was a trust problem ("make AI safe to rely on"). CPAs are personally liable for classifications. They needed to explain decisions to the IRS, not accept black-box outputs.
               </p>
             </div>
           </div>
