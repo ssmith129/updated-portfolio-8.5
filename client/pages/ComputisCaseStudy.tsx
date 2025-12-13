@@ -688,43 +688,42 @@ export default function ComputisCaseStudy() {
                   <div className="space-y-4">
                     <div>
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                        Goal
+                        Problem
                       </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        Make every AI decision{" "}
-                        <strong className="text-precision-secondary">
-                          transparent and defensible
-                        </strong>
-                        .
+                        No visibility into how classifications were determined—CPAs maintained separate documentation for compliance.
                       </p>
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                        Capabilities
+                        Solution
+                      </p>
+                      <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] mb-3 max-w-[60ch]">
+                        AI-generated audit logs capturing:
                       </p>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Rationale statements
+                            Classification changes (AI-suggested and manual)
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Similar transaction clustering
+                            Override decisions with required rationale prompts
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Historical decisions
+                            User identification and timestamps
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-secondary rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Simple override + reclassify workflow
+                            Export-ready PDF documentation for IRS defense
                           </span>
                         </li>
                       </ul>
@@ -735,27 +734,17 @@ export default function ComputisCaseStudy() {
                     <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
                       Impact
                     </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start gap-2.5">
-                        <Shield className="w-5 h-5 text-precision-secondary mt-0.5 flex-shrink-0" />
-                        <div>
-                          <p className="text-base font-bold text-precision-secondary">
-                            0
-                          </p>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">
-                            FMV disputes
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <TrendingUp className="w-5 h-5 text-precision-secondary mt-0.5 flex-shrink-0" />
-                        <div>
-                          <p className="text-sm text-precision-text-primary leading-[160%]">
-                            Faster approvals for enterprise onboarding
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
+                    <p className="text-sm text-precision-text-primary leading-[160%] mb-3 max-w-[60ch]">
+                      40% reduction in compliance preparation time; enabled self-service IRS audit defense.
+                    </p>
+                    <div className="mt-3 pt-3 border-t border-gray-200">
+                      <p className="text-xs font-semibold text-precision-secondary mb-2">
+                        Design Decision:
+                      </p>
+                      <p className="text-sm text-precision-text-primary leading-[160%] max-w-[60ch]">
+                        Override rationale was made <em>required</em> after testing—CPAs wanted it for professional liability protection.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
