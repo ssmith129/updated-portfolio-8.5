@@ -596,40 +596,42 @@ export default function ComputisCaseStudy() {
                   <div className="space-y-4">
                     <div>
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                        Goal
+                        Problem
                       </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        Reduce manual classification while{" "}
-                        <strong className="text-precision-accent">
-                          keeping CPAs in control
-                        </strong>
-                        .
+                        Manual classification consumed 60%+ of CPA time with predictable, repetitive decisions.
                       </p>
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                        Key Capabilities
+                        Solution
+                      </p>
+                      <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] mb-3 max-w-[60ch]">
+                        ML-driven auto-classification with visual confidence tiers:
                       </p>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Auto-classification with confidence tiers
+                            <strong>High (90%+):</strong> Auto-classified unless overridden
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Smart review queue
+                            <strong>Medium (60-89%):</strong> Surfaced for quick review with one-click accept/reject
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Inline override controls
+                            <strong>Low (&lt;60%):</strong> Requires manual classification
                           </span>
                         </li>
                       </ul>
+                      <p className="text-sm text-precision-text-primary leading-[170%] mt-3 max-w-[60ch]">
+                        Each suggestion includes inline rationale tooltips explaining the AI's reasoning—pattern matches, historical precedent, and data signals.
+                      </p>
                     </div>
                   </div>
 
