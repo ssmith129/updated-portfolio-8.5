@@ -108,8 +108,7 @@ export default function ComputisCaseStudy() {
             Computis — AI-Powered Crypto Tax Automation
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-precision-text-secondary leading-[140%] mb-6 max-w-[65ch]">
-            Designed intelligent automation that reduced manual classification
-            work by 85% while keeping CPAs in control.
+            Leading the design of an AI-powered feature suite that augments CPA expertise while maintaining professional control
           </p>
 
           <div className="bg-white/60 backdrop-blur-sm rounded-card p-5 border border-[#E3E8EF]">
@@ -201,7 +200,7 @@ export default function ComputisCaseStudy() {
               className="mt-4 animate-in fade-in-0 slide-in-from-top-4 duration-500"
             >
               <div className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
                   <div>
                     <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
                       Role
@@ -223,7 +222,15 @@ export default function ComputisCaseStudy() {
                       Platform
                     </span>
                     <p className="text-precision-text-primary mt-1">
-                      Web SaaS (Desktop-first)
+                      Web SaaS (Desktop-first, responsive)
+                    </p>
+                  </div>
+                  <div>
+                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
+                      Scope
+                    </span>
+                    <p className="text-precision-text-primary mt-1">
+                      AI Strategy, UX Research, System Design, Feature Design
                     </p>
                   </div>
                 </div>
@@ -238,7 +245,7 @@ export default function ComputisCaseStudy() {
                         Tools:
                       </span>
                       <span className="text-precision-text-secondary ml-2">
-                        Figma, Miro, Notion, Jira
+                        Figma, Miro, Notion, Jira, Mixpanel, GA
                       </span>
                     </div>
                     <div>
@@ -246,7 +253,7 @@ export default function ComputisCaseStudy() {
                         Team:
                       </span>
                       <span className="text-precision-text-secondary ml-2">
-                        CTO, PM, 2 ML, 2 Frontend
+                        CTO, ML Engineer, 2 Frontend Engineers, CEO
                       </span>
                     </div>
                   </div>
