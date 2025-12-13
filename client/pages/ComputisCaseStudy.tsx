@@ -374,11 +374,7 @@ export default function ComputisCaseStudy() {
                   Context
                 </h3>
                 <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                  Computis had a solid, functional platform for crypto tax
-                  management—but CPAs were still spending excessive time on
-                  manual transaction classification. The existing UI handled
-                  data well, but lacked intelligent automation features that
-                  competitors were beginning to offer.
+                  Computis had a solid, functional platform for crypto tax management—but CPAs were spending <strong>95% of their time on manual classification and error-hunting</strong> rather than leveraging their expertise for tax strategy and client consultation.
                 </p>
               </div>
 
@@ -393,27 +389,31 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      Manual classification of thousands of transactions per
-                      client
+                      <strong>Manual classification</strong> of thousands of transactions per client (35% of CPA time)
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      No automated anomaly detection for FMV discrepancies
+                      <strong>No automated anomaly detection</strong> for FMV discrepancies and data errors
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      Repetitive rule creation for common transaction patterns
+                      <strong>Engineering dependency</strong> for every rule change (2-5 day wait times)
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      Limited visibility into classification decisions for audit
-                      defense
+                      <strong>Limited audit visibility</strong> into classification decisions for IRS defense
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
+                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="max-w-[60ch]">
+                      <strong>Reactive error discovery</strong> only during manual review or after client delivery
                     </span>
                   </li>
                 </ul>
@@ -428,10 +428,7 @@ export default function ComputisCaseStudy() {
                 </h3>
               </div>
               <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-[65ch]">
-                Design and implement AI-powered features that would{" "}
-                <strong>automate routine work</strong> while{" "}
-                <strong>keeping CPAs in control</strong>—turning Computis into a
-                truly intelligent tax automation platform.
+                Design AI-powered features that automate routine work while keeping CPAs in control—transforming Computis from a passive calculation engine into an intelligent workflow assistant.
               </p>
             </div>
           </div>
