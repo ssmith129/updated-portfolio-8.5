@@ -160,9 +160,11 @@ export default function ComputisCaseStudy() {
               { href: "#challenge", label: "Challenge" },
               { href: "#approach", label: "My Approach" },
               { href: "#solutions", label: "AI Solutions" },
-              { href: "#stakeholder", label: "Stakeholder Alignment" },
+              { href: "#stakeholder", label: "Stakeholder" },
+              { href: "#tradeoff", label: "Trade-offs" },
               { href: "#results", label: "Results" },
-              { href: "#learnings", label: "Key Learnings" },
+              { href: "#learnings", label: "Learnings" },
+              { href: "#reflections", label: "Reflections" },
             ].map((item) => (
               <a
                 key={item.href}
