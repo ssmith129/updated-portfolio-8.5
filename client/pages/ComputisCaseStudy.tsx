@@ -1240,62 +1240,37 @@ export default function ComputisCaseStudy() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="bg-white p-6 rounded-card border-l-4 border-precision-secondary shadow-sm hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-precision-secondary focus-within:ring-offset-2">
                   <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
-                    Control Over Speed
+                    Augmentation &gt; Automation
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    <strong>
-                      CPAs adopted AI faster when they retained control.
-                    </strong>{" "}
-                    We deliberately kept the medium-confidence threshold
-                    (70-89%) in a review queue instead of auto-applying. This
-                    added friction but preserved trust—a trade-off that became
-                    our competitive edge.
+                    CPAs adopted AI faster when they retained control. Human-in-the-loop isn't a weakness—it's how you earn trust for AI capabilities in regulated industries.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-card border-l-4 border-precision-accent shadow-sm hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-precision-accent focus-within:ring-offset-2">
                   <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
-                    Surface Uncertainty, Don't Hide It
+                    Transparency Builds Trust
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    <strong>Explicit confidence ranges drove adoption.</strong>{" "}
-                    We treated medium-confidence predictions as hypotheses
-                    requiring human validation. Visual indicators (color-coded
-                    flags, percentage scores) made AI reasoning transparent
-                    instead of opaque.
+                    Confidence scores and explainable reasoning drove adoption. In high-stakes domains (finance, healthcare, legal), AI transparency isn't nice-to-have—it's the core feature.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-card border-l-4 border-precision-success shadow-sm hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-precision-success focus-within:ring-offset-2">
                   <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
-                    Templates Over Black-Box NLP
+                    Simplicity Beats Capability
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    <strong>
-                      CPAs didn't trust natural language rule creation.
-                    </strong>{" "}
-                    We shipped pattern-based templates (80% speed gain) 4 months
-                    faster than full NLP. Lesson:{" "}
-                    <em>
-                      Partial automation users understand beats full automation
-                      they distrust.
-                    </em>
+                    The rule builder failure taught me that features nobody uses have zero value. Start with minimum viable complexity and let users graduate to power features.
                   </p>
                 </div>
 
                 <div className="bg-white p-6 rounded-card border-l-4 border-precision-warning shadow-sm hover:shadow-md transition-all duration-200 focus-within:ring-2 focus-within:ring-precision-warning focus-within:ring-offset-2">
                   <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
-                    False Positives Beat False Negatives
+                    Failed Experiments Reveal Values
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    <strong>
-                      In compliance, missing an error is catastrophic; reviewing
-                      a false alert is annoying.
-                    </strong>{" "}
-                    We tuned anomaly detection to 78% precision (22% false
-                    alarms) to catch 95%+ of real issues. Users trained the
-                    model via feedback, improving precision to 89% over 3
-                    months.
+                    Testing fully automated classification taught us the most. CPAs rejected it immediately—not because of accuracy, but because it removed professional judgment. This insight shaped our entire positioning.
                   </p>
                 </div>
               </div>
