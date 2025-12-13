@@ -1277,6 +1277,39 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
+
+        <div className="border-t-2 border-[#E3E8EF] my-16"></div>
+
+        <section
+          id="reflections"
+          className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900 scroll-mt-24"
+        >
+          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+              🔄 What I'd Do Differently
+            </h2>
+
+            <div className="space-y-6">
+              <div className="bg-white rounded-card p-6 border-l-4 border-precision-accent shadow-sm">
+                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
+                  Ship minimal first
+                </h3>
+                <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
+                  The rule builder failure cost 6 weeks. I now advocate launching at minimum viable complexity and adding power features based on observed demand, not assumed need.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-card p-6 border-l-4 border-precision-secondary shadow-sm">
+                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
+                  Document trade-off decisions explicitly
+                </h3>
+                <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
+                  The speed vs. transparency debate recurred because we hadn't formalized the reasoning. I now create brief "trade-off memos" for major architectural choices to reduce relitigated debates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <div className="relative z-10">
