@@ -108,7 +108,8 @@ export default function ComputisCaseStudy() {
             Computis — AI-Powered Crypto Tax Automation
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-precision-text-secondary leading-[140%] mb-6 max-w-[65ch]">
-            Leading the design of an AI-powered feature suite that augments CPA expertise while maintaining professional control
+            Leading the design of an AI-powered feature suite that augments CPA
+            expertise while maintaining professional control
           </p>
 
           <div className="bg-white/60 backdrop-blur-sm rounded-card p-5 border border-[#E3E8EF]">
@@ -376,7 +377,13 @@ export default function ComputisCaseStudy() {
                   Context
                 </h3>
                 <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                  Computis had a solid, functional platform for crypto tax management—but CPAs were spending <strong>95% of their time on manual classification and error-hunting</strong> rather than leveraging their expertise for tax strategy and client consultation.
+                  Computis had a solid, functional platform for crypto tax
+                  management—but CPAs were spending{" "}
+                  <strong>
+                    95% of their time on manual classification and error-hunting
+                  </strong>{" "}
+                  rather than leveraging their expertise for tax strategy and
+                  client consultation.
                 </p>
               </div>
 
@@ -391,31 +398,36 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      <strong>Manual classification</strong> of thousands of transactions per client (35% of CPA time)
+                      <strong>Manual classification</strong> of thousands of
+                      transactions per client (35% of CPA time)
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      <strong>No automated anomaly detection</strong> for FMV discrepancies and data errors
+                      <strong>No automated anomaly detection</strong> for FMV
+                      discrepancies and data errors
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      <strong>Engineering dependency</strong> for every rule change (2-5 day wait times)
+                      <strong>Engineering dependency</strong> for every rule
+                      change (2-5 day wait times)
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      <strong>Limited audit visibility</strong> into classification decisions for IRS defense
+                      <strong>Limited audit visibility</strong> into
+                      classification decisions for IRS defense
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                     <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                     <span className="max-w-[60ch]">
-                      <strong>Reactive error discovery</strong> only during manual review or after client delivery
+                      <strong>Reactive error discovery</strong> only during
+                      manual review or after client delivery
                     </span>
                   </li>
                 </ul>
@@ -430,7 +442,9 @@ export default function ComputisCaseStudy() {
                 </h3>
               </div>
               <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-[65ch]">
-                Design AI-powered features that automate routine work while keeping CPAs in control—transforming Computis from a passive calculation engine into an intelligent workflow assistant.
+                Design AI-powered features that automate routine work while
+                keeping CPAs in control—transforming Computis from a passive
+                calculation engine into an intelligent workflow assistant.
               </p>
             </div>
           </div>
@@ -446,7 +460,9 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] mb-8 max-w-prose">
-              I led the design of Computis's AI feature suite, focusing on <strong>augmentation over automation</strong>—ensuring AI enhanced CPA expertise rather than replacing professional judgment.
+              I led the design of Computis's AI feature suite, focusing on{" "}
+              <strong>augmentation over automation</strong>—ensuring AI enhanced
+              CPA expertise rather than replacing professional judgment.
             </p>
 
             <div className="mb-8 pb-8 border-b border-[#E3E8EF]">
@@ -484,7 +500,9 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
                     <span className="text-sm leading-[160%]">
-                      <strong>Led user research</strong> (12 CPA interviews, 6 full-day observations, 4 usability test cycles) to validate design decisions
+                      <strong>Led user research</strong> (12 CPA interviews, 6
+                      full-day observations, 4 usability test cycles) to
+                      validate design decisions
                     </span>
                   </li>
                 </ul>
@@ -523,31 +541,36 @@ export default function ComputisCaseStudy() {
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      <strong>12 CPA interviews</strong> identifying automation opportunities and trust requirements
+                      <strong>12 CPA interviews</strong> identifying automation
+                      opportunities and trust requirements
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      <strong>6 full-day workflow observations</strong> mapping classification patterns and friction points
+                      <strong>6 full-day workflow observations</strong> mapping
+                      classification patterns and friction points
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      <strong>50,000+ transaction analysis</strong> revealing 73% followed predictable patterns
+                      <strong>50,000+ transaction analysis</strong> revealing
+                      73% followed predictable patterns
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      <strong>Competitive analysis</strong> of TaxBit, Cryptio, CoinTracker (300+ G2 reviews)
+                      <strong>Competitive analysis</strong> of TaxBit, Cryptio,
+                      CoinTracker (300+ G2 reviews)
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <span className="text-sm leading-[160%]">
-                      <strong>4 usability test cycles</strong> validating AI interaction patterns
+                      <strong>4 usability test cycles</strong> validating AI
+                      interaction patterns
                     </span>
                   </li>
                 </ul>
@@ -562,7 +585,10 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch] italic">
-                This wasn't a UX problem ("make AI easy to use")—it was a trust problem ("make AI safe to rely on"). CPAs are personally liable for classifications. They needed to explain decisions to the IRS, not accept black-box outputs.
+                This wasn't a UX problem ("make AI easy to use")—it was a trust
+                problem ("make AI safe to rely on"). CPAs are personally liable
+                for classifications. They needed to explain decisions to the
+                IRS, not accept black-box outputs.
               </p>
             </div>
           </div>
@@ -601,7 +627,8 @@ export default function ComputisCaseStudy() {
                         Problem
                       </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        Manual classification consumed 60%+ of CPA time with predictable, repetitive decisions.
+                        Manual classification consumed 60%+ of CPA time with
+                        predictable, repetitive decisions.
                       </p>
                     </div>
                     <div>
@@ -609,30 +636,36 @@ export default function ComputisCaseStudy() {
                         Solution
                       </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] mb-3 max-w-[60ch]">
-                        ML-driven auto-classification with visual confidence tiers:
+                        ML-driven auto-classification with visual confidence
+                        tiers:
                       </p>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            <strong>High (90%+):</strong> Auto-classified unless overridden
+                            <strong>High (90%+):</strong> Auto-classified unless
+                            overridden
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            <strong>Medium (60-89%):</strong> Surfaced for quick review with one-click accept/reject
+                            <strong>Medium (60-89%):</strong> Surfaced for quick
+                            review with one-click accept/reject
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-accent rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            <strong>Low (&lt;60%):</strong> Requires manual classification
+                            <strong>Low (&lt;60%):</strong> Requires manual
+                            classification
                           </span>
                         </li>
                       </ul>
                       <p className="text-sm text-precision-text-primary leading-[170%] mt-3 max-w-[60ch]">
-                        Each suggestion includes inline rationale tooltips explaining the AI's reasoning—pattern matches, historical precedent, and data signals.
+                        Each suggestion includes inline rationale tooltips
+                        explaining the AI's reasoning—pattern matches,
+                        historical precedent, and data signals.
                       </p>
                     </div>
                   </div>
@@ -693,7 +726,9 @@ export default function ComputisCaseStudy() {
                         Problem
                       </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        No visibility into how classifications were determined—CPAs maintained separate documentation for compliance.
+                        No visibility into how classifications were
+                        determined—CPAs maintained separate documentation for
+                        compliance.
                       </p>
                     </div>
                     <div>
@@ -737,14 +772,17 @@ export default function ComputisCaseStudy() {
                       Impact
                     </p>
                     <p className="text-sm text-precision-text-primary leading-[160%] mb-3 max-w-[60ch]">
-                      40% reduction in compliance preparation time; enabled self-service IRS audit defense.
+                      40% reduction in compliance preparation time; enabled
+                      self-service IRS audit defense.
                     </p>
                     <div className="mt-3 pt-3 border-t border-gray-200">
                       <p className="text-xs font-semibold text-precision-secondary mb-2">
                         Design Decision:
                       </p>
                       <p className="text-sm text-precision-text-primary leading-[160%] max-w-[60ch]">
-                        Override rationale was made <em>required</em> after testing—CPAs wanted it for professional liability protection.
+                        Override rationale was made <em>required</em> after
+                        testing—CPAs wanted it for professional liability
+                        protection.
                       </p>
                     </div>
                   </div>
@@ -775,7 +813,8 @@ export default function ComputisCaseStudy() {
                         Problem
                       </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        CPAs repeatedly created similar rules, but every change required engineering (2-5 day wait).
+                        CPAs repeatedly created similar rules, but every change
+                        required engineering (2-5 day wait).
                       </p>
                     </div>
                     <div>
@@ -789,19 +828,22 @@ export default function ComputisCaseStudy() {
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Drag-and-drop logic blocks with natural language preview
+                            Drag-and-drop logic blocks with natural language
+                            preview
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            Live preview showing exact transaction impact before applying
+                            Live preview showing exact transaction impact before
+                            applying
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-success rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            AI-suggested rules based on detected classification patterns
+                            AI-suggested rules based on detected classification
+                            patterns
                           </span>
                         </li>
                       </ul>
@@ -813,7 +855,9 @@ export default function ComputisCaseStudy() {
                       Impact
                     </p>
                     <p className="text-sm text-precision-text-primary leading-[160%] mb-3 max-w-[60ch]">
-                      Adoption jumped from 12% to 67%; rule creation reduced from 15 minutes to 90 seconds; 32% increase in demo conversions.
+                      Adoption jumped from 12% to 67%; rule creation reduced
+                      from 15 minutes to 90 seconds; 32% increase in demo
+                      conversions.
                     </p>
                   </div>
                 </div>
@@ -829,7 +873,9 @@ export default function ComputisCaseStudy() {
                         Problem
                       </p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        First version launched to 12% adoption—users explored for 3-4 minutes then abandoned without creating a single rule.
+                        First version launched to 12% adoption—users explored
+                        for 3-4 minutes then abandoned without creating a single
+                        rule.
                       </p>
                     </div>
                     <div>
@@ -837,7 +883,8 @@ export default function ComputisCaseStudy() {
                         Root Cause
                       </p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Over-engineered with 14 condition types and nested logic that intimidated CPAs wanting simple automation.
+                        Over-engineered with 14 condition types and nested logic
+                        that intimidated CPAs wanting simple automation.
                       </p>
                     </div>
                     <div>
@@ -845,7 +892,10 @@ export default function ComputisCaseStudy() {
                         Solution
                       </p>
                       <p className="text-sm text-precision-text-primary leading-[160%]">
-                        Stripped to a "recipe" model, removing 9 condition types. Added "Advanced Mode" toggle for power users despite engineering pushback that we were discarding capabilities.
+                        Stripped to a "recipe" model, removing 9 condition
+                        types. Added "Advanced Mode" toggle for power users
+                        despite engineering pushback that we were discarding
+                        capabilities.
                       </p>
                     </div>
                     <div>
@@ -853,7 +903,8 @@ export default function ComputisCaseStudy() {
                         Key Learning
                       </p>
                       <p className="text-sm text-precision-text-primary leading-[160%] italic">
-                        In B2B tools for non-technical users, capability without usability is worthless.
+                        In B2B tools for non-technical users, capability without
+                        usability is worthless.
                       </p>
                     </div>
                   </div>
@@ -884,7 +935,8 @@ export default function ComputisCaseStudy() {
                         Problem
                       </p>
                       <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                        FMV errors and data inconsistencies discovered too late—after export or client delivery.
+                        FMV errors and data inconsistencies discovered too
+                        late—after export or client delivery.
                       </p>
                     </div>
                     <div>
@@ -898,7 +950,8 @@ export default function ComputisCaseStudy() {
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
                           <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
                           <span className="max-w-[60ch]">
-                            <strong>Error:</strong> Requires resolution before export
+                            <strong>Error:</strong> Requires resolution before
+                            export
                           </span>
                         </li>
                         <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
@@ -915,7 +968,8 @@ export default function ComputisCaseStudy() {
                         </li>
                       </ul>
                       <p className="text-sm text-precision-text-primary leading-[170%] mt-3 max-w-[60ch]">
-                        Contextual explanations with one-click resolution options (fetch price, enter manual FMV, mark N/A).
+                        Contextual explanations with one-click resolution
+                        options (fetch price, enter manual FMV, mark N/A).
                       </p>
                     </div>
                   </div>
@@ -925,14 +979,17 @@ export default function ComputisCaseStudy() {
                       Impact
                     </p>
                     <p className="text-sm text-precision-text-primary leading-[160%] mb-3 max-w-[60ch]">
-                      150% increase in error detection; zero FMV disputes post-implementation.
+                      150% increase in error detection; zero FMV disputes
+                      post-implementation.
                     </p>
                     <div className="mt-3 pt-3 border-t border-gray-200">
                       <p className="text-xs font-semibold text-precision-error mb-2">
                         Design Decision:
                       </p>
                       <p className="text-sm text-precision-text-primary leading-[160%] max-w-[60ch]">
-                        Warn, don't block—CPAs sometimes have legitimate reasons to export with known issues. The interface documents acknowledgment.
+                        Warn, don't block—CPAs sometimes have legitimate reasons
+                        to export with known issues. The interface documents
+                        acknowledgment.
                       </p>
                     </div>
                   </div>
@@ -1041,7 +1098,10 @@ export default function ComputisCaseStudy() {
                   Tension
                 </h3>
                 <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                  Removing rationale generation would cut processing time 60%—and we'd just lost a deal to a faster competitor. CTO pushed for speed; I argued transparency is non-negotiable in regulated domains.
+                  Removing rationale generation would cut processing time
+                  60%—and we'd just lost a deal to a faster competitor. CTO
+                  pushed for speed; I argued transparency is non-negotiable in
+                  regulated domains.
                 </p>
               </div>
 
@@ -1050,7 +1110,8 @@ export default function ComputisCaseStudy() {
                   Research Insight
                 </h3>
                 <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                  Competitor "black box AI" complaints outnumbered performance complaints 3:1.
+                  Competitor "black box AI" complaints outnumbered performance
+                  complaints 3:1.
                 </p>
               </div>
             </div>
@@ -1060,7 +1121,9 @@ export default function ComputisCaseStudy() {
                 Solution
               </h3>
               <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                Hybrid approach—immediate classification display with async rationale loading. Users got speed for scanning, transparency within seconds for examination.
+                Hybrid approach—immediate classification display with async
+                rationale loading. Users got speed for scanning, transparency
+                within seconds for examination.
               </p>
             </div>
 
@@ -1070,7 +1133,9 @@ export default function ComputisCaseStudy() {
                 Impact
               </h3>
               <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                "Explainable AI" positioning won subsequent deals against faster competitor; 3 enterprise clients cited audit defensibility as deciding factor.
+                "Explainable AI" positioning won subsequent deals against faster
+                competitor; 3 enterprise clients cited audit defensibility as
+                deciding factor.
               </p>
             </div>
           </div>
@@ -1096,42 +1161,90 @@ export default function ComputisCaseStudy() {
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="border-b border-[#E3E8EF]">
-                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">Metric</th>
-                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">Before</th>
-                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">After</th>
-                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">Change</th>
+                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">
+                          Metric
+                        </th>
+                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">
+                          Before
+                        </th>
+                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">
+                          After
+                        </th>
+                        <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">
+                          Change
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="border-b border-[#E3E8EF]">
-                        <td className="py-3 px-4 text-precision-text-primary">Manual classification workload</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">100% manual</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">15% manual</td>
-                        <td className="py-3 px-4 font-semibold text-precision-accent">↓ 85%</td>
+                        <td className="py-3 px-4 text-precision-text-primary">
+                          Manual classification workload
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          100% manual
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          15% manual
+                        </td>
+                        <td className="py-3 px-4 font-semibold text-precision-accent">
+                          ↓ 85%
+                        </td>
                       </tr>
                       <tr className="border-b border-[#E3E8EF]">
-                        <td className="py-3 px-4 text-precision-text-primary">CPA onboarding (new client)</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">2.5 hours</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">1.4 hours</td>
-                        <td className="py-3 px-4 font-semibold text-precision-success">↓ 45%</td>
+                        <td className="py-3 px-4 text-precision-text-primary">
+                          CPA onboarding (new client)
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          2.5 hours
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          1.4 hours
+                        </td>
+                        <td className="py-3 px-4 font-semibold text-precision-success">
+                          ↓ 45%
+                        </td>
                       </tr>
                       <tr className="border-b border-[#E3E8EF]">
-                        <td className="py-3 px-4 text-precision-text-primary">Demo-to-conversion rate</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">Baseline</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">+32%</td>
-                        <td className="py-3 px-4 font-semibold text-precision-secondary">↑ 32%</td>
+                        <td className="py-3 px-4 text-precision-text-primary">
+                          Demo-to-conversion rate
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          Baseline
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          +32%
+                        </td>
+                        <td className="py-3 px-4 font-semibold text-precision-secondary">
+                          ↑ 32%
+                        </td>
                       </tr>
                       <tr className="border-b border-[#E3E8EF]">
-                        <td className="py-3 px-4 text-precision-text-primary">Engineering dependency for rules</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">100%</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">15% (edge cases)</td>
-                        <td className="py-3 px-4 font-semibold text-precision-accent">↓ 85%</td>
+                        <td className="py-3 px-4 text-precision-text-primary">
+                          Engineering dependency for rules
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          100%
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          15% (edge cases)
+                        </td>
+                        <td className="py-3 px-4 font-semibold text-precision-accent">
+                          ↓ 85%
+                        </td>
                       </tr>
                       <tr>
-                        <td className="py-3 px-4 text-precision-text-primary">FMV disputes post-filing</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">Occasional</td>
-                        <td className="py-3 px-4 text-precision-text-secondary">Zero</td>
-                        <td className="py-3 px-4 font-semibold text-precision-success">Eliminated</td>
+                        <td className="py-3 px-4 text-precision-text-primary">
+                          FMV disputes post-filing
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          Occasional
+                        </td>
+                        <td className="py-3 px-4 text-precision-text-secondary">
+                          Zero
+                        </td>
+                        <td className="py-3 px-4 font-semibold text-precision-success">
+                          Eliminated
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -1144,20 +1257,38 @@ export default function ComputisCaseStudy() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="bg-white p-5 rounded-card border-l-4 border-precision-success shadow-sm">
-                    <p className="text-2xl font-bold text-precision-success mb-1">89%</p>
-                    <p className="text-xs text-precision-text-secondary">AI acceptance rate — CPAs trusted high-confidence classifications</p>
+                    <p className="text-2xl font-bold text-precision-success mb-1">
+                      89%
+                    </p>
+                    <p className="text-xs text-precision-text-secondary">
+                      AI acceptance rate — CPAs trusted high-confidence
+                      classifications
+                    </p>
                   </div>
                   <div className="bg-white p-5 rounded-card border-l-4 border-precision-accent shadow-sm">
-                    <p className="text-2xl font-bold text-precision-accent mb-1">11%</p>
-                    <p className="text-xs text-precision-text-secondary">Meaningful override rate — capturing human context AI lacked</p>
+                    <p className="text-2xl font-bold text-precision-accent mb-1">
+                      11%
+                    </p>
+                    <p className="text-xs text-precision-text-secondary">
+                      Meaningful override rate — capturing human context AI
+                      lacked
+                    </p>
                   </div>
                   <div className="bg-white p-5 rounded-card border-l-4 border-precision-secondary shadow-sm">
-                    <p className="text-2xl font-bold text-precision-secondary mb-1">78%</p>
-                    <p className="text-xs text-precision-text-secondary">Rule builder adoption — up from 12% in v1</p>
+                    <p className="text-2xl font-bold text-precision-secondary mb-1">
+                      78%
+                    </p>
+                    <p className="text-xs text-precision-text-secondary">
+                      Rule builder adoption — up from 12% in v1
+                    </p>
                   </div>
                   <div className="bg-white p-5 rounded-card border-l-4 border-precision-warning shadow-sm">
-                    <p className="text-2xl font-bold text-precision-warning mb-1">340%</p>
-                    <p className="text-xs text-precision-text-secondary">Increase in audit trail exports</p>
+                    <p className="text-2xl font-bold text-precision-warning mb-1">
+                      340%
+                    </p>
+                    <p className="text-xs text-precision-text-secondary">
+                      Increase in audit trail exports
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1177,11 +1308,17 @@ export default function ComputisCaseStudy() {
                     <ul className="space-y-2 text-sm text-precision-text-primary">
                       <li className="flex items-start gap-2">
                         <span className="text-precision-accent mt-1">•</span>
-                        <span>3 enterprise CPA firm deals closed within 6 months of AI launch</span>
+                        <span>
+                          3 enterprise CPA firm deals closed within 6 months of
+                          AI launch
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-precision-accent mt-1">•</span>
-                        <span>78% of won deals cited AI features as primary differentiator</span>
+                        <span>
+                          78% of won deals cited AI features as primary
+                          differentiator
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-precision-accent mt-1">•</span>
@@ -1200,15 +1337,22 @@ export default function ComputisCaseStudy() {
                     <ul className="space-y-2 text-sm text-precision-text-primary">
                       <li className="flex items-start gap-2">
                         <span className="text-precision-success mt-1">•</span>
-                        <span>40% reduction in classification-related support tickets</span>
+                        <span>
+                          40% reduction in classification-related support
+                          tickets
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-precision-success mt-1">•</span>
-                        <span>Platform expanded to serve DAOs and hedge funds</span>
+                        <span>
+                          Platform expanded to serve DAOs and hedge funds
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-precision-success mt-1">•</span>
-                        <span>Zero FMV disputes reported post-implementation</span>
+                        <span>
+                          Zero FMV disputes reported post-implementation
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -1245,7 +1389,9 @@ export default function ComputisCaseStudy() {
                     Augmentation &gt; Automation
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    CPAs adopted AI faster when they retained control. Human-in-the-loop isn't a weakness—it's how you earn trust for AI capabilities in regulated industries.
+                    CPAs adopted AI faster when they retained control.
+                    Human-in-the-loop isn't a weakness—it's how you earn trust
+                    for AI capabilities in regulated industries.
                   </p>
                 </div>
 
@@ -1254,7 +1400,9 @@ export default function ComputisCaseStudy() {
                     Transparency Builds Trust
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    Confidence scores and explainable reasoning drove adoption. In high-stakes domains (finance, healthcare, legal), AI transparency isn't nice-to-have—it's the core feature.
+                    Confidence scores and explainable reasoning drove adoption.
+                    In high-stakes domains (finance, healthcare, legal), AI
+                    transparency isn't nice-to-have—it's the core feature.
                   </p>
                 </div>
 
@@ -1263,7 +1411,9 @@ export default function ComputisCaseStudy() {
                     Simplicity Beats Capability
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    The rule builder failure taught me that features nobody uses have zero value. Start with minimum viable complexity and let users graduate to power features.
+                    The rule builder failure taught me that features nobody uses
+                    have zero value. Start with minimum viable complexity and
+                    let users graduate to power features.
                   </p>
                 </div>
 
@@ -1272,7 +1422,10 @@ export default function ComputisCaseStudy() {
                     Failed Experiments Reveal Values
                   </h3>
                   <p className="text-sm text-precision-text-primary leading-[160%]">
-                    Testing fully automated classification taught us the most. CPAs rejected it immediately—not because of accuracy, but because it removed professional judgment. This insight shaped our entire positioning.
+                    Testing fully automated classification taught us the most.
+                    CPAs rejected it immediately—not because of accuracy, but
+                    because it removed professional judgment. This insight
+                    shaped our entire positioning.
                   </p>
                 </div>
               </div>
@@ -1297,7 +1450,9 @@ export default function ComputisCaseStudy() {
                   Ship minimal first
                 </h3>
                 <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
-                  The rule builder failure cost 6 weeks. I now advocate launching at minimum viable complexity and adding power features based on observed demand, not assumed need.
+                  The rule builder failure cost 6 weeks. I now advocate
+                  launching at minimum viable complexity and adding power
+                  features based on observed demand, not assumed need.
                 </p>
               </div>
 
@@ -1306,7 +1461,9 @@ export default function ComputisCaseStudy() {
                   Document trade-off decisions explicitly
                 </h3>
                 <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
-                  The speed vs. transparency debate recurred because we hadn't formalized the reasoning. I now create brief "trade-off memos" for major architectural choices to reduce relitigated debates.
+                  The speed vs. transparency debate recurred because we hadn't
+                  formalized the reasoning. I now create brief "trade-off memos"
+                  for major architectural choices to reduce relitigated debates.
                 </p>
               </div>
             </div>
