@@ -3,9 +3,9 @@ import { useEffect, useRef } from "react";
 interface VideoOverlayProps {
   videoSrc: string;
   ariaLabel: string;
-  problem: string;
-  solution: string;
-  impact: string;
+  problem?: string;
+  solution?: string;
+  impact?: string;
 }
 
 export default function VideoOverlay({
@@ -50,32 +50,40 @@ export default function VideoOverlay({
 
   return (
     <div className="space-y-4">
-      {/* Problem, Solution, Impact sections above video */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {/* Problem */}
-        <div className="bg-red-50 p-4 rounded-[15px] border border-red-100 transition-all duration-300 hover:shadow-md">
-          <p className="text-[14px] font-semibold text-[#131417] mb-1">
-            Problem
-          </p>
-          <p className="text-[16px] text-[#555]">{problem}</p>
-        </div>
+      {/* Problem, Solution, Impact sections above video - only render if props provided */}
+      {(problem || solution || impact) && (
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {/* Problem */}
+          {problem && (
+            <div className="bg-red-50 p-4 rounded-[15px] border border-red-100 transition-all duration-300 hover:shadow-md">
+              <p className="text-[14px] font-semibold text-[#131417] mb-1">
+                Problem
+              </p>
+              <p className="text-[16px] text-[#555]">{problem}</p>
+            </div>
+          )}
 
-        {/* Solution */}
-        <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-100 transition-all duration-300 hover:shadow-md">
-          <p className="text-[14px] font-semibold text-[#131417] mb-1">
-            Solution
-          </p>
-          <p className="text-[16px] text-[#555]">{solution}</p>
-        </div>
+          {/* Solution */}
+          {solution && (
+            <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-100 transition-all duration-300 hover:shadow-md">
+              <p className="text-[14px] font-semibold text-[#131417] mb-1">
+                Solution
+              </p>
+              <p className="text-[16px] text-[#555]">{solution}</p>
+            </div>
+          )}
 
-        {/* Impact */}
-        <div className="bg-green-50 p-4 rounded-[15px] border border-green-100 transition-all duration-300 hover:shadow-md">
-          <p className="text-[14px] font-semibold text-[#131417] mb-1">
-            Impact
-          </p>
-          <p className="text-[16px] text-[#555]">{impact}</p>
+          {/* Impact */}
+          {impact && (
+            <div className="bg-green-50 p-4 rounded-[15px] border border-green-100 transition-all duration-300 hover:shadow-md">
+              <p className="text-[14px] font-semibold text-[#131417] mb-1">
+                Impact
+              </p>
+              <p className="text-[16px] text-[#555]">{impact}</p>
+            </div>
+          )}
         </div>
-      </div>
+      )}
 
       {/* Video without overlays */}
       <div className="rounded-[12px] sm:rounded-[16px] md:rounded-[20px] overflow-hidden shadow-lg">
