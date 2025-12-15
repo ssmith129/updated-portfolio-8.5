@@ -108,7 +108,9 @@ export default function ComputisCaseStudy() {
             Computis — AI-Powered Crypto Tax Automation
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-precision-text-secondary leading-[140%] mb-6 max-w-[65ch]">
-            Leading the design of an AI feature suite that <strong>augments CPA expertise</strong> while maintaining professional control and IRS audit defensibility
+            Leading the design of an AI feature suite that{" "}
+            <strong>augments CPA expertise</strong> while maintaining
+            professional control and IRS audit defensibility
           </p>
 
           <div className="bg-white/60 backdrop-blur-sm rounded-card p-5 border border-[#E3E8EF]">
@@ -373,7 +375,9 @@ export default function ComputisCaseStudy() {
             <div className="section-tldr mb-8">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
-                CPAs spent 95% of time on repetitive classification. They needed AI that handles routine work without removing professional judgment.
+                CPAs spent 95% of time on repetitive classification. They needed
+                AI that handles routine work without removing professional
+                judgment.
               </p>
             </div>
 
@@ -448,7 +452,10 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <blockquote className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch] italic mb-4">
-                "This wasn't a UX problem—it was a <strong>trust problem</strong>. CPAs are personally liable for classifications. They needed to explain decisions to the IRS, not accept black-box outputs."
+                "This wasn't a UX problem—it was a{" "}
+                <strong>trust problem</strong>. CPAs are personally liable for
+                classifications. They needed to explain decisions to the IRS,
+                not accept black-box outputs."
               </blockquote>
             </div>
 
@@ -633,7 +640,8 @@ export default function ComputisCaseStudy() {
             <div className="section-tldr mb-8">
               <span className="section-tldr-label">Section Summary</span>
               <p className="section-tldr-text">
-                Four AI capabilities each solving a specific workflow bottleneck while maintaining CPA professional control.
+                Four AI capabilities each solving a specific workflow bottleneck
+                while maintaining CPA professional control.
               </p>
             </div>
 

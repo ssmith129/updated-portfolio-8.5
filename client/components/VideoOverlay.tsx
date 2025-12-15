@@ -89,7 +89,9 @@ export function FeatureCards({ problem, solution, impact }: FeatureCardsProps) {
           <p className="text-xs font-bold text-precision-error uppercase tracking-wider mb-2">
             Problem
           </p>
-          <p className="text-sm text-precision-text-primary leading-[170%]">{problem}</p>
+          <p className="text-sm text-precision-text-primary leading-[170%]">
+            {problem}
+          </p>
         </div>
       )}
 
@@ -99,7 +101,9 @@ export function FeatureCards({ problem, solution, impact }: FeatureCardsProps) {
           <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">
             Solution
           </p>
-          <p className="text-sm text-precision-text-primary leading-[170%]">{solution}</p>
+          <p className="text-sm text-precision-text-primary leading-[170%]">
+            {solution}
+          </p>
         </div>
       )}
 
@@ -109,7 +113,9 @@ export function FeatureCards({ problem, solution, impact }: FeatureCardsProps) {
           <p className="text-xs font-bold text-precision-success uppercase tracking-wider mb-2">
             Impact
           </p>
-          <p className="text-sm text-precision-text-primary leading-[170%] font-semibold">{impact}</p>
+          <p className="text-sm text-precision-text-primary leading-[170%] font-semibold">
+            {impact}
+          </p>
         </div>
       )}
     </div>
