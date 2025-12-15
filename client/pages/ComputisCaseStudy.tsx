@@ -440,6 +440,18 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
+            <div className="mt-6 bg-[#E0F9F4] rounded-card p-6 border-l-4 border-precision-accent shadow-sm">
+              <div className="flex items-center gap-2 mb-3">
+                <Lightbulb className="w-5 h-5 text-[#0A7A5E] flex-shrink-0" />
+                <p className="text-sm font-bold text-[#0A7A5E] uppercase tracking-wider">
+                  Key Insight
+                </p>
+              </div>
+              <blockquote className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch] italic mb-4">
+                "This wasn't a UX problem—it was a <strong>trust problem</strong>. CPAs are personally liable for classifications. They needed to explain decisions to the IRS, not accept black-box outputs."
+              </blockquote>
+            </div>
+
             <div className="mt-6 bg-white rounded-card p-5 border-l-4 border-precision-secondary shadow-sm">
               <div className="flex items-center gap-2 mb-3">
                 <Lightbulb className="w-5 h-5 text-precision-secondary flex-shrink-0" />
