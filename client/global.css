@@ -190,7 +190,7 @@
 
   /* Video container with prominence */
   .video-container {
-    @apply relative rounded-xl overflow-hidden;
+    @apply relative rounded-full overflow-hidden;
     @apply ring-2 ring-opacity-20 shadow-lg hover:shadow-xl transition-shadow;
     ring-color: var(--precision-accent);
   }
