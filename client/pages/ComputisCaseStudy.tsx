@@ -928,6 +928,9 @@ export default function ComputisCaseStudy() {
                 <VideoOverlay
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="Smart Rule Builder with Pattern Recognition demonstration video"
+                  problem="CPAs repeatedly created similar rules, but every change required engineering tickets (2-5 day wait times)"
+                  solution="No-code visual rule builder with drag-and-drop logic, natural language preview, live transaction count, and AI-suggested rules based on patterns"
+                  impact="12% → 67% adoption (5.5x increase) | 15 min → 90 sec creation time | ↑ 32% demo-to-conversion"
                 />
               </div>
 
@@ -1013,6 +1016,9 @@ export default function ComputisCaseStudy() {
                 <VideoOverlay
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="Proactive Anomaly Detection Engine demonstration video"
+                  problem="FMV errors and data inconsistencies discovered too late—after export or client delivery"
+                  solution="ML-powered detection with severity-tiered inline flags (Error/Warning/Info) that warn but don't block export"
+                  impact="↑ 150% error detection | Zero FMV disputes post-implementation"
                 />
               </div>
             </div>
