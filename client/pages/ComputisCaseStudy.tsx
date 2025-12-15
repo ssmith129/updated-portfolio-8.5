@@ -701,10 +701,12 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="AI Classification confidence indicators demonstration video"
-                />
+                <div className="video-container">
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="AI Classification confidence indicators demonstration video"
+                  />
+                </div>
               </div>
 
               <div className="border-t-2 border-[#E3E8EF] my-2"></div>
@@ -788,10 +790,12 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Intelligent Audit Trail System demonstration video"
-                />
+                <div className="video-container">
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Intelligent Audit Trail System demonstration video"
+                  />
+                </div>
               </div>
 
               <div className="border-t-2 border-[#E3E8EF] my-2"></div>
@@ -910,10 +914,12 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Smart Rule Builder with Pattern Recognition demonstration video"
-                />
+                <div className="video-container">
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Smart Rule Builder with Pattern Recognition demonstration video"
+                  />
+                </div>
               </div>
 
               <div className="border-t-2 border-[#E3E8EF] my-2"></div>
@@ -995,10 +1001,12 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
 
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Proactive Anomaly Detection Engine demonstration video"
-                />
+                <div className="video-container">
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Proactive Anomaly Detection Engine demonstration video"
+                  />
+                </div>
               </div>
             </div>
           </div>
