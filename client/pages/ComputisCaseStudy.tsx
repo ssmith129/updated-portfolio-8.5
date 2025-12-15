@@ -614,13 +614,16 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-4">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               ✨ AI Feature Design Solutions
             </h2>
 
-            <p className="text-base text-precision-text-secondary mb-8 italic">
-              Four AI capabilities transformed workflow speed and accuracy
-            </p>
+            <div className="section-tldr mb-8">
+              <span className="section-tldr-label">Section Summary</span>
+              <p className="section-tldr-text">
+                Four AI capabilities each solving a specific workflow bottleneck while maintaining CPA professional control.
+              </p>
+            </div>
 
             <div className="border-t-2 border-[#E3E8EF] mb-8"></div>
 
