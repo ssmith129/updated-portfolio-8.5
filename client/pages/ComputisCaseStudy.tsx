@@ -1394,7 +1394,7 @@ export default function ComputisCaseStudy() {
                   "This is the first crypto tax tool I'd stake my license on."
                 </blockquote>
                 <cite className="block text-sm text-precision-accent mt-2 not-italic font-semibold">
-                  — Enterprise CPA
+                  — Enterprise CPA, Big 4 Partner
                 </cite>
               </div>
             </div>
