@@ -189,14 +189,15 @@
   /* Video container with prominence */
   .video-container {
     @apply relative rounded-xl overflow-hidden;
-    @apply ring-2 ring-precision-accent/20;
-    @apply shadow-lg hover:shadow-xl transition-shadow;
+    @apply ring-2 ring-opacity-20 shadow-lg hover:shadow-xl transition-shadow;
+    ring-color: var(--precision-accent);
   }
 
   .video-container::before {
     content: "▶ Watch Demo";
     @apply absolute top-4 left-4 z-10;
-    @apply bg-precision-accent text-white px-3 py-1 rounded-full text-xs font-semibold;
+    @apply text-white px-3 py-1 rounded-full text-xs font-semibold;
+    background-color: var(--precision-accent);
   }
 
   /* Metric card hover effect */
