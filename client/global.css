@@ -10,20 +10,37 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Precision Trust Theme Variables */
-    --precision-primary: #0a2540;
-    --precision-secondary: #1e3a5f;
-    --precision-accent: #00d4aa;
-    --precision-neutral: #f7f9fc;
-    --precision-text-primary: #1a1f36;
-    --precision-text-secondary: #697386;
-    --precision-error: #e74c3c;
-    --precision-success: #00d4aa;
-    --precision-warning: #f39c12;
+    /* Case Study Color System */
+    --cs-primary: #0A2540;
+    --cs-secondary: #1E3A5F;
+    --cs-accent: #00D4AA;
+    --cs-neutral: #F8FAFC;
+    --cs-text-primary: #1A1F36;
+    --cs-text-secondary: #64748B;
+    --cs-border: #E2E8F0;
+    --cs-error: #EF4444;
+    --cs-success: #10B981;
+    --cs-warning: #F59E0B;
+
+    /* Shadow System */
+    --cs-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --cs-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --cs-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    /* Precision Trust Theme Variables (legacy - aliased to cs- variables) */
+    --precision-primary: var(--cs-primary);
+    --precision-secondary: var(--cs-secondary);
+    --precision-accent: var(--cs-accent);
+    --precision-neutral: var(--cs-neutral);
+    --precision-text-primary: var(--cs-text-primary);
+    --precision-text-secondary: var(--cs-text-secondary);
+    --precision-error: var(--cs-error);
+    --precision-success: var(--cs-success);
+    --precision-warning: var(--cs-warning);
 
     /* Precision Trust Shadows */
-    --shadow-sm: 0 1px 3px rgba(10, 37, 64, 0.08);
-    --shadow-md: 0 4px 12px rgba(10, 37, 64, 0.12);
+    --shadow-sm: var(--cs-shadow-sm);
+    --shadow-md: var(--cs-shadow-md);
 
     /* Precision Trust Transitions */
     --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
