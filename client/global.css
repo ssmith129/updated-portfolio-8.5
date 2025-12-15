@@ -157,3 +157,17 @@
     @apply outline-2 outline-offset-2 outline-blue-500;
   }
 }
+
+/* In global.css - add case study specific */
+.case-study-prose p {
+  @apply leading-[180%] text-base mb-4;
+}
+
+.case-study-prose ul {
+  @apply space-y-3 mb-6;
+}
+
+/* Add max-width constraint for readability */
+.case-study-content {
+  @apply max-w-[680px]; /* Optimal reading width */
+}
