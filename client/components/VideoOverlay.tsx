@@ -52,34 +52,34 @@ export default function VideoOverlay({
     <div className="space-y-4">
       {/* Problem, Solution, Impact sections above video - only render if props provided */}
       {(problem || solution || impact) && (
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
           {/* Problem */}
           {problem && (
-            <div className="bg-red-50 p-4 rounded-[15px] border border-red-100 transition-all duration-300 hover:shadow-md">
-              <p className="text-[14px] font-semibold text-[#131417] mb-1">
+            <div className="bg-gradient-to-br from-red-50 to-orange-50 p-5 rounded-card border-l-4 border-precision-error shadow-sm hover:shadow-md transition-all duration-300">
+              <p className="text-xs font-bold text-precision-error uppercase tracking-wider mb-2">
                 Problem
               </p>
-              <p className="text-[16px] text-[#555]">{problem}</p>
+              <p className="text-sm text-precision-text-primary leading-[170%]">{problem}</p>
             </div>
           )}
 
           {/* Solution */}
           {solution && (
-            <div className="bg-blue-50 p-4 rounded-[15px] border border-blue-100 transition-all duration-300 hover:shadow-md">
-              <p className="text-[14px] font-semibold text-[#131417] mb-1">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-5 rounded-card border-l-4 border-precision-secondary shadow-sm hover:shadow-md transition-all duration-300">
+              <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">
                 Solution
               </p>
-              <p className="text-[16px] text-[#555]">{solution}</p>
+              <p className="text-sm text-precision-text-primary leading-[170%]">{solution}</p>
             </div>
           )}
 
           {/* Impact */}
           {impact && (
-            <div className="bg-green-50 p-4 rounded-[15px] border border-green-100 transition-all duration-300 hover:shadow-md">
-              <p className="text-[14px] font-semibold text-[#131417] mb-1">
+            <div className="bg-gradient-to-br from-green-50 to-teal-50 p-5 rounded-card border-l-4 border-precision-success shadow-sm hover:shadow-md transition-all duration-300">
+              <p className="text-xs font-bold text-precision-success uppercase tracking-wider mb-2">
                 Impact
               </p>
-              <p className="text-[16px] text-[#555]">{impact}</p>
+              <p className="text-sm text-precision-text-primary leading-[170%] font-semibold">{impact}</p>
             </div>
           )}
         </div>
