@@ -26,12 +26,6 @@ import {
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import VideoOverlay from "../components/VideoOverlay";
-import ResearchArtifacts from "../components/case-study/ResearchArtifacts";
-import DesignEvolution from "../components/case-study/DesignEvolution";
-import ConfidenceSystemDiagram from "../components/case-study/ConfidenceSystemDiagram";
-import SectionTLDR from "../components/case-study/SectionTLDR";
-import BeforeAfterSlider from "../components/case-study/BeforeAfterSlider";
-import QuickWinsStrip from "../components/case-study/QuickWinsStrip";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
 import { useCountUp } from "../hooks/use-count-up";
 
