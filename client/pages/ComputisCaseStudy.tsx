@@ -34,10 +34,10 @@ export default function ComputisCaseStudy() {
   const shouldAnimate = startMetricsAnimation && !hasAnimated;
 
   const onboardingCount = useCountUp(45, 2000, shouldAnimate);
-  const conversionCount = useCountUp(32, 2000, shouldAnimate);
-  const classificationCount = useCountUp(85, 2000, shouldAnimate);
-  const errorDetectionCount = useCountUp(150, 2000, shouldAnimate);
-  const enterpriseDealsCount = useCountUp(3, 2000, shouldAnimate);
+  const conversionCount = useCountUp(32, 2000, shouldAnimate, 200); // 200ms delay
+  const classificationCount = useCountUp(85, 2000, shouldAnimate, 400);
+  const errorDetectionCount = useCountUp(150, 2000, shouldAnimate, 600);
+  const enterpriseDealsCount = useCountUp(3, 2000, shouldAnimate, 800);
 
   useEffect(() => {
     if (startMetricsAnimation && !hasAnimated) {
