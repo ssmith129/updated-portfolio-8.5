@@ -713,6 +713,9 @@ export default function ComputisCaseStudy() {
                 <VideoOverlay
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="AI Classification confidence indicators demonstration video"
+                  problem="Manual classification consumed 60%+ of CPA time with predictable, repetitive decisions"
+                  solution="ML-driven auto-classification with 3-tier confidence system (High 90%+: auto-classified, Medium 60-89%: review queue, Low <60%: manual required)"
+                  impact="↓ 85% manual classification | ↑ 150% error detection accuracy"
                 />
               </div>
 
@@ -800,6 +803,9 @@ export default function ComputisCaseStudy() {
                 <VideoOverlay
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="Intelligent Audit Trail System demonstration video"
+                  problem="No visibility into classification decisions—CPAs maintained separate documentation for compliance"
+                  solution="AI-generated audit logs capturing classification changes, override rationale (required), timestamps, and export-ready PDF for IRS defense"
+                  impact="↓ 40% compliance prep time | Self-service IRS audit defense enabled"
                 />
               </div>
 
