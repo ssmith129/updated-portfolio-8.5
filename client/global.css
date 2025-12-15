@@ -171,6 +171,67 @@
 
   /* Improved focus states for accessibility */
   *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500;
+    @apply outline-2 outline-offset-2 outline-cs-accent;
+  }
+}
+
+/* ============================================
+   CASE STUDY SPECIFIC STYLES
+   ============================================ */
+
+@layer components {
+  /* Section TLDR styling */
+  .section-tldr {
+    @apply bg-gradient-to-r from-cs-accent/5 to-cs-secondary/5;
+    @apply p-4 rounded-xl border-l-4 border-cs-accent;
+  }
+
+  /* Video container with prominence */
+  .video-container {
+    @apply relative rounded-2xl overflow-hidden;
+    @apply ring-2 ring-cs-accent/20;
+    @apply shadow-cs-md hover:shadow-cs-lg transition-shadow duration-300;
+  }
+
+  /* Metric card hover effect */
+  .metric-card {
+    @apply bg-white p-5 rounded-xl border-2 shadow-cs-sm;
+    @apply hover:shadow-cs-md transition-all duration-200;
+    @apply focus-within:ring-2 focus-within:ring-cs-accent focus-within:ring-offset-2;
+  }
+
+  /* Feature card styling */
+  .feature-card {
+    @apply bg-cs-neutral rounded-2xl p-6 border border-cs-border;
+    @apply hover:shadow-cs-md transition-shadow duration-200;
+  }
+
+  /* Quote styling */
+  .quote-block {
+    @apply bg-gradient-to-r from-cs-accent/10 to-cs-secondary/10;
+    @apply rounded-2xl p-6 border-l-4 border-cs-accent;
+  }
+
+  /* Research artifact card */
+  .artifact-card {
+    @apply bg-white rounded-xl p-5 border border-cs-border;
+    @apply hover:shadow-cs-md transition-all cursor-pointer;
+  }
+
+  /* Confidence tier badges */
+  .confidence-badge {
+    @apply text-xs font-bold px-2 py-0.5 rounded-full;
+  }
+
+  .confidence-badge--high {
+    @apply bg-cs-success text-white;
+  }
+
+  .confidence-badge--medium {
+    @apply bg-cs-warning text-white;
+  }
+
+  .confidence-badge--low {
+    @apply bg-cs-error text-white;
   }
 }
