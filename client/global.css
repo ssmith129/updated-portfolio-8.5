@@ -11,21 +11,23 @@
   */
   :root {
     /* Case Study Color System */
-    --cs-primary: #0A2540;
-    --cs-secondary: #1E3A5F;
-    --cs-accent: #00D4AA;
-    --cs-neutral: #F8FAFC;
-    --cs-text-primary: #1A1F36;
-    --cs-text-secondary: #64748B;
-    --cs-border: #E2E8F0;
-    --cs-error: #EF4444;
-    --cs-success: #10B981;
-    --cs-warning: #F59E0B;
+    --cs-primary: #0a2540;
+    --cs-secondary: #1e3a5f;
+    --cs-accent: #00d4aa;
+    --cs-neutral: #f8fafc;
+    --cs-text-primary: #1a1f36;
+    --cs-text-secondary: #64748b;
+    --cs-border: #e2e8f0;
+    --cs-error: #ef4444;
+    --cs-success: #10b981;
+    --cs-warning: #f59e0b;
 
     /* Shadow System */
     --cs-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --cs-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --cs-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --cs-shadow-md:
+      0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --cs-shadow-lg:
+      0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
     /* Precision Trust Theme Variables (legacy - aliased to cs- variables) */
     --precision-primary: var(--cs-primary);
