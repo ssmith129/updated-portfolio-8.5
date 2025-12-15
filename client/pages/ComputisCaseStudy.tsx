@@ -462,7 +462,9 @@ export default function ComputisCaseStudy() {
             <div className="section-tldr">
               <span className="section-tldr-label">Section Summary</span>
               <p className="section-tldr-text">
-                Designed 3-tier AI confidence system that reduced manual classification by 85% while maintaining CPA professional control.
+                Designed 3-tier AI confidence system that reduced manual
+                classification by 85% while maintaining CPA professional
+                control.
               </p>
             </div>
 

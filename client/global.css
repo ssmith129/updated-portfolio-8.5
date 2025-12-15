@@ -175,7 +175,11 @@
 /* Add section summary cards */
 .section-tldr {
   @apply p-4 rounded-lg mb-6 border-l-4;
-  background: linear-gradient(to right, rgba(0, 212, 170, 0.05), rgba(30, 58, 95, 0.05));
+  background: linear-gradient(
+    to right,
+    rgba(0, 212, 170, 0.05),
+    rgba(30, 58, 95, 0.05)
+  );
   border-left-color: var(--precision-accent);
 }
 
