@@ -108,8 +108,7 @@ export default function ComputisCaseStudy() {
             Computis — AI-Powered Crypto Tax Automation
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-precision-text-secondary leading-[140%] mb-6 max-w-[65ch]">
-            Leading the design of an AI-powered feature suite that augments CPA
-            expertise while maintaining professional control
+            Leading the design of an AI feature suite that <strong>augments CPA expertise</strong> while maintaining professional control and IRS audit defensibility
           </p>
 
           <div className="bg-white/60 backdrop-blur-sm rounded-card p-5 border border-[#E3E8EF]">
@@ -367,9 +366,16 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               🎯 The Challenge
             </h2>
+
+            <div className="section-tldr mb-8">
+              <span className="section-tldr-label">TL;DR</span>
+              <p className="section-tldr-text">
+                CPAs spent 95% of time on repetitive classification. They needed AI that handles routine work without removing professional judgment.
+              </p>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="space-y-4">
