@@ -459,6 +459,13 @@ export default function ComputisCaseStudy() {
               💡 My Approach
             </h2>
 
+            <div className="section-tldr">
+              <span className="section-tldr-label">Section Summary</span>
+              <p className="section-tldr-text">
+                Designed 3-tier AI confidence system that reduced manual classification by 85% while maintaining CPA professional control.
+              </p>
+            </div>
+
             <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] mb-8 max-w-prose">
               I led the design of Computis's AI feature suite, focusing on{" "}
               <strong>augmentation over automation</strong>—ensuring AI enhanced
