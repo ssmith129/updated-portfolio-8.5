@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
-import VideoOverlay from "../components/VideoOverlay";
+import VideoOverlay, { FeatureCards } from "../components/VideoOverlay";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
 import { useCountUp } from "../hooks/use-count-up";
 
