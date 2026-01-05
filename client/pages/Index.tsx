@@ -82,7 +82,7 @@ export default function Index() {
                 About Me
               </Link>
               <a
-                href="mailto:contact@seansmith.com"
+                href="mailto:smithdesign530@gmail.com"
                 className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#131417] text-[#131417] text-lg font-medium rounded-[25px] hover:bg-[#131417] hover:text-white transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-opacity-50 touch-manipulation"
                 aria-label="Contact Sean Smith via email"
               >
