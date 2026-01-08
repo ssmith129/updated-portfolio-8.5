@@ -66,7 +66,7 @@ export default function Index() {
               that streamline workflows and drive decisions.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-1100">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 sm:gap-6 animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-1100">
               <Link
                 to="/case-studies"
                 className="inline-flex items-center justify-center px-6 py-3 bg-[#131417] text-white text-lg font-medium rounded-[25px] hover:bg-[#2a2a2a] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-opacity-50 touch-manipulation"
