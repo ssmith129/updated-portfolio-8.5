@@ -94,7 +94,7 @@ export default function About() {
 
             <div className="space-y-4">
               <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#131417] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] transition-all duration-300 hover:text-[#2a2a2a]">
-                Product Designer with 7+ years of experience delivering
+                Product Designer with 8+ years of experience delivering
                 intuitive, high-impact experiences across crypto, fintech, and
                 B2B SaaS platforms. I specialize in AI-integrated systems that
                 streamline workflows, simplify data, and drive decisions.
