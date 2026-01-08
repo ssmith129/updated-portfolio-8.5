@@ -54,7 +54,7 @@ export default function Index() {
             </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[28px] font-normal text-[#131417] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] xl:tracking-[-0.28px] mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] transition-all duration-300 hover:text-[#2a2a2a] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-900">
-              7+ years creating intuitive, scalable UX for complex SaaS
+              8+ years creating intuitive, scalable UX for complex SaaS
               platforms. I specialize in{" "}
               <Link
                 to="/about"
@@ -66,7 +66,7 @@ export default function Index() {
               that streamline workflows and drive decisions.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-1100">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 sm:gap-6 animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-1100">
               <Link
                 to="/case-studies"
                 className="inline-flex items-center justify-center px-6 py-3 bg-[#131417] text-white text-lg font-medium rounded-[25px] hover:bg-[#2a2a2a] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-opacity-50 touch-manipulation"
@@ -81,6 +81,13 @@ export default function Index() {
               >
                 About Me
               </Link>
+              <a
+                href="mailto:smithdesign530@gmail.com"
+                className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#131417] text-[#131417] text-lg font-medium rounded-[25px] hover:bg-[#131417] hover:text-white transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-opacity-50 touch-manipulation"
+                aria-label="Contact Sean Smith via email"
+              >
+                Contact Me
+              </a>
             </div>
           </div>
         </div>
@@ -206,7 +213,7 @@ export default function Index() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
           <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-900">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
-              7+
+              8+
             </div>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] transition-all duration-300 group-hover:text-[#131417]">
               Years Experience
