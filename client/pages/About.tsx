@@ -49,7 +49,7 @@ export default function About() {
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[48px] font-normal text-[#131417] leading-tight sm:leading-normal md:leading-relaxed lg:leading-[54px] tracking-[-0.4px] sm:tracking-[-0.6px] md:tracking-[-0.8px] transition-all duration-500 hover:tracking-[-0.6px]">
               <div className="leading-tight sm:leading-normal md:leading-relaxed lg:leading-[54px]">
-                Senior Product Designer with 7+ years of experience creating
+                Senior Product Designer with 8+ years of experience creating
                 intuitive, scalable UX for complex SaaS and enterprise
                 platforms.
               </div>
