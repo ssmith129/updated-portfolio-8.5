@@ -787,9 +787,16 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               🤝 Stakeholder Alignment
             </h2>
+
+            <div className="section-tldr mb-8">
+              <span className="section-tldr-label">TL;DR</span>
+              <p className="section-tldr-text">
+                Resolved tension between engineering (max automation) and CPAs (control) with tiered confidence system. Became key differentiator in sales.
+              </p>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="space-y-4">
@@ -866,9 +873,16 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1400 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               ⚖️ Critical Trade-off: Speed vs. Transparency
             </h2>
+
+            <div className="section-tldr mb-8">
+              <span className="section-tldr-label">TL;DR</span>
+              <p className="section-tldr-text">
+                Chose transparency over speed with hybrid async approach. "Explainable AI" positioning won deals against faster competitor.
+              </p>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6">
               <div className="bg-white rounded-card p-5 border-l-4 border-precision-warning shadow-sm">
@@ -926,9 +940,16 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               📈 Results & Business Impact
             </h2>
+
+            <div className="section-tldr mb-8">
+              <span className="section-tldr-label">TL;DR</span>
+              <p className="section-tldr-text">
+                85% reduction in manual work, 32% conversion increase, 3 enterprise deals closed. AI features cited in 78% of won deals.
+              </p>
+            </div>
 
             {/* Visual results comparison placeholder */}
             <div className="mb-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
