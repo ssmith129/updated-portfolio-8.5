@@ -160,14 +160,12 @@ export default function ComputisCaseStudy() {
             className="flex items-center justify-center gap-2 overflow-x-auto"
           >
             {[
+              { href: "#research", label: "Research" },
               { href: "#challenge", label: "Challenge" },
-              { href: "#approach", label: "My Approach" },
-              { href: "#solutions", label: "AI Solutions" },
-              { href: "#stakeholder", label: "Stakeholder" },
-              { href: "#tradeoff", label: "Trade-offs" },
+              { href: "#approach", label: "Approach" },
+              { href: "#solutions", label: "Solutions" },
               { href: "#results", label: "Results" },
               { href: "#learnings", label: "Learnings" },
-              { href: "#reflections", label: "Reflections" },
             ].map((item) => (
               <a
                 key={item.href}
