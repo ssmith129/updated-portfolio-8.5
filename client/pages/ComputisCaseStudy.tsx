@@ -358,9 +358,7 @@ export default function ComputisCaseStudy() {
             <div className="section-tldr mb-8">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
-                CPAs spent 95% of time on repetitive classification. They needed
-                AI that handles routine work without removing professional
-                judgment.
+                CPAs spent 95% of time on repetitive classification. They needed AI that automates routine work while preserving professional judgment for IRS liability.
               </p>
             </div>
 
@@ -440,6 +438,15 @@ export default function ComputisCaseStudy() {
                 classifications. They needed to explain decisions to the IRS,
                 not accept black-box outputs."
               </blockquote>
+            </div>
+
+            {/* Placeholder for before/after comparison */}
+            <div className="mt-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+              <div className="max-w-[1440px] mx-auto">
+                <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
+                <p className="text-xs text-precision-text-secondary">before-after-cpa-workflow.png</p>
+                <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 500px</p>
+              </div>
             </div>
 
             <div className="mt-6 bg-white rounded-card p-5 border-l-4 border-precision-secondary shadow-sm">
@@ -594,18 +601,25 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
+            {/* Placeholder for confidence tier diagram */}
+            <div className="mt-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+              <div className="max-w-[1440px] mx-auto">
+                <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
+                <p className="text-xs text-precision-text-secondary">ai-confidence-tier-system.png</p>
+                <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 400px</p>
+                <p className="text-xs text-precision-text-secondary mt-2 italic">3-tier confidence system diagram showing decision flow</p>
+              </div>
+            </div>
+
             <div className="mt-6 bg-[#E0F9F4] rounded-card p-6 border-l-4 border-precision-accent shadow-sm">
               <div className="flex items-center gap-2 mb-3">
                 <Lightbulb className="w-5 h-5 text-[#0A7A5E] flex-shrink-0" />
                 <p className="text-sm font-bold text-[#0A7A5E] uppercase tracking-wider">
-                  Key Insight
+                  Design Philosophy
                 </p>
               </div>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch] italic">
-                This wasn't a UX problem ("make AI easy to use")—it was a trust
-                problem ("make AI safe to rely on"). CPAs are personally liable
-                for classifications. They needed to explain decisions to the
-                IRS, not accept black-box outputs.
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch]">
+                <strong className="text-precision-accent">Augmentation over automation.</strong> Medium-confidence predictions treated as hypotheses, not truths. Every AI decision includes an override mechanism and audit trail.
               </p>
             </div>
           </div>
