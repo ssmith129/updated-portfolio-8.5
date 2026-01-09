@@ -190,3 +190,80 @@
 .section-tldr-text {
   @apply text-sm font-medium text-precision-text-primary;
 }
+
+/* ============================================
+   COMPUTIS CASE STUDY - ENHANCED STYLES
+   ============================================ */
+
+/* Hide scrollbar for metrics strip while maintaining functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Metric card hover glow effect */
+.metric-card-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.metric-card-glow:hover {
+  transform: translateY(-2px);
+}
+
+/* Active nav item indicator */
+.nav-item-active {
+  @apply bg-precision-accent text-white shadow-md;
+}
+
+/* Smooth scroll offset for sticky nav */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  [id] {
+    scroll-margin-top: 100px;
+  }
+}
+
+/* Animation utilities - Count up animation */
+.count-up {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .touch-target {
+    min-height: 48px;
+    min-width: 48px;
+  }
+}
+
+/* Large screens - wider content */
+@media (min-width: 1440px) {
+  .case-study-content {
+    max-width: 1320px;
+  }
+}
+
+/* Accessibility enhancements - Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+  .section-tldr {
+    border-left-width: 6px;
+  }
+}
