@@ -1217,9 +1217,16 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               🔄 What I'd Do Differently
             </h2>
+
+            <div className="section-tldr mb-8">
+              <span className="section-tldr-label">TL;DR</span>
+              <p className="section-tldr-text">
+                Ship minimal first, document trade-offs explicitly. Rule builder complexity taught me: start simple, add power based on observed demand.
+              </p>
+            </div>
 
             <div className="space-y-6">
               <div className="bg-white rounded-card p-6 border-l-4 border-precision-accent shadow-sm">
