@@ -18,6 +18,7 @@ import {
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import VideoOverlay, { FeatureCards } from "../components/VideoOverlay";
+import QuickWinsStrip, { computisMetrics } from "../components/QuickWinsStrip";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
 import { useCountUp } from "../hooks/use-count-up";
 
@@ -180,6 +181,8 @@ export default function ComputisCaseStudy() {
         </div>
       </div>
 
+      <QuickWinsStrip metrics={computisMetrics} />
+
       <div className="max-w-[1200px] mx-auto px-6 mt-6 relative z-10">
         <div className="bg-white/80 backdrop-blur-sm rounded-card p-5 shadow-precision-sm transition-all duration-200 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E3E8EF]">
           <button
@@ -273,91 +276,71 @@ export default function ComputisCaseStudy() {
         className="max-w-[1200px] mx-auto px-6 pb-24 space-y-16 relative z-10"
       >
         <section
-          id="tldr"
+          id="research"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 mt-12 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8 transition-all duration-200 hover:text-precision-accent cursor-pointer">
-              📌 Impact At a Glance
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
+              🔍 Research Foundation
             </h2>
 
-            <div
-              ref={metricsRef as React.RefObject<HTMLDivElement>}
-              className="bg-gradient-to-r from-[#E0F9F4] via-white to-[#E8F4FA] rounded-card p-6 sm:p-8 border border-[#E3E8EF]"
-            >
-              <h3 className="text-xl font-semibold font-heading text-precision-text-primary mb-6">
-                Key Metrics
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div className="bg-white p-6 rounded-card border-2 border-[#00D4AA] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-accent focus-within:ring-offset-2">
-                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
-                    CPA Onboarding Time
-                  </p>
-                  <p className="text-3xl sm:text-4xl font-bold text-precision-success mb-1">
-                    ↓ {onboardingCount}%
-                  </p>
-                  <p className="text-xs font-mono text-precision-text-secondary mb-2">
-                    2.5h → 1.4h
-                  </p>
-                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
-                    <strong>via</strong> smart rule templates reducing setup
-                    complexity
-                  </p>
-                </div>
+            <div className="section-tldr mb-8">
+              <span className="section-tldr-label">TL;DR</span>
+              <p className="section-tldr-text">
+                12 CPA interviews + 50,000 transaction analysis revealed 73% of work followed predictable patterns—perfect for AI augmentation.
+              </p>
+            </div>
 
-                <div className="bg-white p-6 rounded-card border-2 border-[#1E3A5F] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-secondary focus-within:ring-offset-2">
-                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
-                    Demo-to-Conversion
-                  </p>
-                  <p className="text-3xl sm:text-4xl font-bold text-precision-secondary mb-3">
-                    ↑ {conversionCount}%
-                  </p>
-                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
-                    <strong>via</strong> 90-sec rule builder allowing setup
-                    during sales calls
-                  </p>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF]">
+                <h3 className="text-lg font-semibold text-precision-text-primary mb-4 flex items-center gap-2">
+                  <Users className="w-5 h-5 text-precision-accent" />
+                  User Research
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
+                    <span><strong>12 CPA interviews</strong> identifying pain points and trust requirements</span>
+                  </li>
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
+                    <span><strong>6 full-day observations</strong> mapping classification workflows</span>
+                  </li>
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
+                    <span><strong>4 usability test cycles</strong> validating AI interactions</span>
+                  </li>
+                </ul>
+              </div>
 
-                <div className="bg-white p-6 rounded-card border-2 border-[#00D4AA] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-accent focus-within:ring-offset-2">
-                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
-                    Manual Classification Work
-                  </p>
-                  <p className="text-3xl sm:text-4xl font-bold text-precision-accent mb-3">
-                    ↓ {classificationCount}%
-                  </p>
-                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
-                    <strong>via</strong> 3-tier auto-classification (90%+
-                    confidence threshold)
-                  </p>
-                </div>
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF]">
+                <h3 className="text-lg font-semibold text-precision-text-primary mb-4 flex items-center gap-2">
+                  <TrendingUp className="w-5 h-5 text-precision-secondary" />
+                  Data Analysis
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
+                    <span><strong>50,000+ transactions</strong> analyzed for patterns</span>
+                  </li>
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
+                    <span><strong>73% predictability</strong> rate discovered</span>
+                  </li>
+                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
+                    <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
+                    <span><strong>300+ G2 reviews</strong> of competitors analyzed</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-                <div className="bg-white p-6 rounded-card border-2 border-[#F39C12] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-warning focus-within:ring-offset-2">
-                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
-                    Error Detection Rate
-                  </p>
-                  <p className="text-3xl sm:text-4xl font-bold text-precision-warning mb-3">
-                    ↑ {errorDetectionCount}%
-                  </p>
-                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
-                    <strong>via</strong> ML anomaly detection with sensitive
-                    thresholds
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-card border-2 border-[#0A2540] shadow-lg hover:shadow-xl transition-all duration-200 text-center focus-within:ring-2 focus-within:ring-precision-primary focus-within:ring-offset-2">
-                  <p className="text-xs font-semibold text-precision-text-secondary mb-2 uppercase tracking-wider">
-                    Enterprise Deals
-                  </p>
-                  <p className="text-3xl sm:text-4xl font-bold text-precision-primary mb-1">
-                    {enterpriseDealsCount}
-                  </p>
-                  <p className="text-xs font-mono text-precision-text-secondary mb-2">
-                    closed in 6 months
-                  </p>
-                  <p className="text-xs text-precision-text-secondary leading-tight pt-2 border-t border-gray-200">
-                    AI features = differentiator in 78% of won deals
-                  </p>
-                </div>
+            {/* Placeholder for research artifacts visualization */}
+            <div className="mt-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+              <div className="max-w-[1440px] mx-auto">
+                <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
+                <p className="text-xs text-precision-text-secondary">cpa-workflow-journey-map.png</p>
+                <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 600px</p>
               </div>
             </div>
           </div>
