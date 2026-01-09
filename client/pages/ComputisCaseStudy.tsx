@@ -709,6 +709,16 @@ export default function ComputisCaseStudy() {
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="Intelligent Audit Trail System demonstration video"
                 />
+
+                {/* Placeholder for audit trail wireframes */}
+                <div className="mt-6 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+                  <div className="max-w-[1440px] mx-auto">
+                    <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
+                    <p className="text-xs text-precision-text-secondary">audit-trail-interface.png</p>
+                    <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 600px</p>
+                    <p className="text-xs text-precision-text-secondary mt-2 italic">Timeline view with override rationale and PDF export</p>
+                  </div>
+                </div>
               </div>
 
               <div className="border-t-2 border-[#E3E8EF] my-2"></div>
@@ -733,6 +743,16 @@ export default function ComputisCaseStudy() {
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="Smart Rule Builder with Pattern Recognition demonstration video"
                 />
+
+                {/* Placeholder for rule builder wireframes */}
+                <div className="mt-6 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+                  <div className="max-w-[1440px] mx-auto">
+                    <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
+                    <p className="text-xs text-precision-text-secondary">rule-builder-evolution.png</p>
+                    <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 700px</p>
+                    <p className="text-xs text-precision-text-secondary mt-2 italic">Before/after: Complex form (v1) vs drag-and-drop builder (v2)</p>
+                  </div>
+                </div>
               </div>
 
               <div className="border-t-2 border-[#E3E8EF] my-2"></div>
