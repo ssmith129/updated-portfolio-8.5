@@ -930,13 +930,23 @@ export default function ComputisCaseStudy() {
               📈 Results & Business Impact
             </h2>
 
+            {/* Visual results comparison placeholder */}
+            <div className="mb-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+              <div className="max-w-[1440px] mx-auto">
+                <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
+                <p className="text-xs text-precision-text-secondary">results-before-after-infographic.png</p>
+                <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 600px</p>
+                <p className="text-xs text-precision-text-secondary mt-2 italic">Visual comparison showing workflow improvements and metrics</p>
+              </div>
+            </div>
+
             <div className="space-y-8">
               <div>
                 <h3 className="text-lg font-semibold font-heading text-precision-text-primary mb-4">
                   Quantitative Outcomes
                 </h3>
                 <div className="bg-white rounded-card p-6 border border-[#E3E8EF] overflow-x-auto">
-                  <table className="w-full text-sm">
+                  <table className="w-full text-sm results-table">
                     <thead>
                       <tr className="border-b border-[#E3E8EF]">
                         <th className="text-left py-3 px-4 font-semibold text-precision-text-secondary">
