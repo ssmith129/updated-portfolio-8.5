@@ -644,6 +644,16 @@ export default function ComputisCaseStudy() {
 
             <div className="border-t-2 border-[#E3E8EF] mb-8"></div>
 
+            {/* Placeholder for design system */}
+            <div className="mb-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+              <div className="max-w-[1440px] mx-auto">
+                <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
+                <p className="text-xs text-precision-text-secondary">design-system-components.png</p>
+                <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 800px</p>
+                <p className="text-xs text-precision-text-secondary mt-2 italic">Showcase of AI UI components: confidence badges, review queues, override controls</p>
+              </div>
+            </div>
+
             <div className="space-y-10">
               <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
                 <div className="flex items-center gap-3 mb-6">
@@ -665,6 +675,16 @@ export default function ComputisCaseStudy() {
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="AI Classification confidence indicators demonstration video"
                 />
+
+                {/* Placeholder for wireframe gallery */}
+                <div className="mt-6 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+                  <div className="max-w-[1440px] mx-auto">
+                    <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
+                    <p className="text-xs text-precision-text-secondary">classification-wireframes.png</p>
+                    <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 600px</p>
+                    <p className="text-xs text-precision-text-secondary mt-2 italic">Wireframe evolution showing confidence indicator iterations</p>
+                  </div>
+                </div>
               </div>
 
               <div className="border-t-2 border-[#E3E8EF] my-2"></div>
