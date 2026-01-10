@@ -289,13 +289,13 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF]">
-                <h3 className="text-lg font-semibold text-precision-text-primary mb-4 flex items-center gap-2">
-                  <Users className="w-5 h-5 text-precision-accent" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-4 rounded-card border border-[#E3E8EF]">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
+                  <Users className="w-4 h-4 text-precision-accent" />
                   User Research
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
                     <span><strong>12 CPA interviews</strong> identifying pain points and trust requirements</span>
@@ -311,12 +311,12 @@ export default function ComputisCaseStudy() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF]">
-                <h3 className="text-lg font-semibold text-precision-text-primary mb-4 flex items-center gap-2">
-                  <TrendingUp className="w-5 h-5 text-precision-secondary" />
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-4 rounded-card border border-[#E3E8EF]">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
+                  <TrendingUp className="w-4 h-4 text-precision-secondary" />
                   Data Analysis
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
                     <span><strong>50,000+ transactions</strong> analyzed for patterns</span>
@@ -334,7 +334,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Placeholder for research artifacts visualization */}
-            <div className="mt-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+            <div className="mt-6 bg-[#FAFBFC] rounded-card p-6 border-2 border-dashed border-[#E3E8EF] text-center">
               <div className="max-w-[1440px] mx-auto">
                 <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
                 <p className="text-xs text-precision-text-secondary">cpa-workflow-journey-map.png</p>
