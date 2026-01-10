@@ -174,21 +174,21 @@
 
 /* Add section summary cards */
 .section-tldr {
-  @apply p-4 rounded-lg mb-6 border-l-4;
+  @apply p-3 rounded-lg mb-6 border-l-4;
   background: linear-gradient(
     to right,
-    rgba(0, 212, 170, 0.05),
+    rgba(0, 212, 170, 0.08),
     rgba(30, 58, 95, 0.05)
   );
   border-left-color: var(--precision-accent);
 }
 
 .section-tldr-label {
-  @apply text-xs font-semibold uppercase tracking-wider text-precision-accent mb-1;
+  @apply text-xs font-bold uppercase tracking-wider text-precision-accent mb-1 block;
 }
 
 .section-tldr-text {
-  @apply text-sm font-medium text-precision-text-primary;
+  @apply text-sm leading-relaxed font-medium text-precision-text-primary;
 }
 
 /* ============================================
