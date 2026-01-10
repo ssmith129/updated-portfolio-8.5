@@ -433,14 +433,14 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] mb-8 max-w-prose">
+            <p className="text-base text-precision-text-primary leading-relaxed mb-6 max-w-prose">
               I led the design of Computis's AI feature suite, focusing on{" "}
               <strong>augmentation over automation</strong>—ensuring AI enhanced
               CPA expertise rather than replacing professional judgment.
             </p>
 
-            <div className="mb-8 pb-8 border-b border-[#E3E8EF]">
-              <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider mb-4">
+            <div className="mb-6 pb-6 border-b border-[#E3E8EF]">
+              <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
                 My Responsibilities
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -483,19 +483,19 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">
+            <div className="space-y-3">
+              <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider">
                 Design Philosophy
               </h3>
-              <div className="space-y-3">
-                <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+              <div className="space-y-2">
+                <p className="text-base text-precision-text-primary leading-relaxed max-w-[60ch]">
                   I designed AI features around{" "}
                   <strong className="text-precision-accent">
                     explicit confidence ranges
                   </strong>{" "}
                   that surfaced uncertainty to CPAs instead of hiding it.
                 </p>
-                <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+                <p className="text-base text-precision-text-primary leading-relaxed max-w-[60ch]">
                   We treated{" "}
                   <strong className="text-precision-secondary">
                     medium-confidence predictions as hypotheses, not truths
@@ -507,7 +507,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Placeholder for confidence tier diagram */}
-            <div className="mt-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+            <div className="mt-6 bg-[#FAFBFC] rounded-card p-6 border-2 border-dashed border-[#E3E8EF] text-center">
               <div className="max-w-[1440px] mx-auto">
                 <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
                 <p className="text-xs text-precision-text-secondary">ai-confidence-tier-system.png</p>
