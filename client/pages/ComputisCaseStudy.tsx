@@ -108,7 +108,7 @@ export default function ComputisCaseStudy() {
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-3">
             Computis — AI-Powered Crypto Tax Automation
           </h1>
-          <p className="text-base text-precision-text-secondary leading-[140%] mb-4 max-w-[65ch]">
+          <p className="text-base text-precision-text-secondary leading-[140%] mb-4">
             Leading the design of an AI feature suite that{" "}
             <strong>augments CPA expertise</strong> while maintaining
             professional control and IRS audit defensibility
@@ -364,7 +364,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">
                 Context
               </h3>
-              <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
+              <p className="text-base text-precision-text-primary leading-relaxed">
                 Computis had a solid, functional platform for crypto tax
                 management—but CPAs were spending{" "}
                 <strong>
@@ -391,7 +391,7 @@ export default function ComputisCaseStudy() {
                   Key Insight
                 </p>
               </div>
-              <blockquote className="text-base text-precision-text-primary leading-relaxed max-w-[65ch] italic mb-4">
+              <blockquote className="text-base text-precision-text-primary leading-relaxed italic mb-4">
                 "This wasn't a UX problem—it was a{" "}
                 <strong>trust problem</strong>. CPAs are personally liable for
                 classifications. They needed to explain decisions to the IRS,
@@ -406,7 +406,7 @@ export default function ComputisCaseStudy() {
                   The Opportunity
                 </h3>
               </div>
-              <p className="text-base text-precision-text-primary leading-relaxed max-w-[65ch]">
+              <p className="text-base text-precision-text-primary leading-relaxed">
                 Design AI-powered features that automate routine work while
                 keeping CPAs in control—transforming Computis from a passive
                 calculation engine into an intelligent workflow assistant.
@@ -433,7 +433,7 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <p className="text-base text-precision-text-primary leading-relaxed mb-6 max-w-prose">
+            <p className="text-base text-precision-text-primary leading-relaxed mb-6">
               I led the design of Computis's AI feature suite, focusing on{" "}
               <strong>augmentation over automation</strong>—ensuring AI enhanced
               CPA expertise rather than replacing professional judgment.
@@ -488,14 +488,14 @@ export default function ComputisCaseStudy() {
                 Design Philosophy
               </h3>
               <div className="space-y-2">
-                <p className="text-base text-precision-text-primary leading-relaxed max-w-[60ch]">
+                <p className="text-base text-precision-text-primary leading-relaxed">
                   I designed AI features around{" "}
                   <strong className="text-precision-accent">
                     explicit confidence ranges
                   </strong>{" "}
                   that surfaced uncertainty to CPAs instead of hiding it.
                 </p>
-                <p className="text-base text-precision-text-primary leading-relaxed max-w-[60ch]">
+                <p className="text-base text-precision-text-primary leading-relaxed">
                   We treated{" "}
                   <strong className="text-precision-secondary">
                     medium-confidence predictions as hypotheses, not truths
@@ -523,7 +523,7 @@ export default function ComputisCaseStudy() {
                   Design Philosophy
                 </p>
               </div>
-              <p className="text-base text-precision-text-primary leading-relaxed max-w-[65ch]">
+              <p className="text-base text-precision-text-primary leading-relaxed">
                 <strong className="text-precision-accent">Augmentation over automation.</strong> Medium-confidence predictions treated as hypotheses, not truths. Every AI decision includes an override mechanism and audit trail.
               </p>
             </div>
@@ -718,7 +718,7 @@ export default function ComputisCaseStudy() {
                     <Users className="w-5 h-5 text-precision-accent" />
                     Balancing Automation & Control
                   </h3>
-                  <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
+                  <p className="text-base text-precision-text-primary leading-relaxed">
                     <span className="font-semibold text-precision-text-primary">
                       Challenge:
                     </span>{" "}
@@ -763,7 +763,7 @@ export default function ComputisCaseStudy() {
                 <CheckCircle className="w-5 h-5 text-precision-success" />
                 Outcome
               </h3>
-              <p className="text-base text-precision-text-primary leading-relaxed mb-4 max-w-prose">
+              <p className="text-base text-precision-text-primary leading-relaxed mb-4">
                 The tiered confidence system became a key differentiator. One
                 enterprise prospect specifically cited "professional control" as
                 their deciding factor.
@@ -802,7 +802,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
                   Tension
                 </h3>
-                <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
+                <p className="text-base text-precision-text-primary leading-relaxed">
                   Removing rationale generation would cut processing time
                   60%—and we'd just lost a deal to a faster competitor. CTO
                   pushed for speed; I argued transparency is non-negotiable in
@@ -814,7 +814,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
                   Research Insight
                 </h3>
-                <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
+                <p className="text-base text-precision-text-primary leading-relaxed">
                   Competitor "black box AI" complaints outnumbered performance
                   complaints 3:1.
                 </p>
@@ -825,7 +825,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-base sm:text-lg font-semibold font-heading text-[#0A7A5E] mb-3">
                 Solution
               </h3>
-              <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
+              <p className="text-base text-precision-text-primary leading-relaxed">
                 Hybrid approach—immediate classification display with async
                 rationale loading. Users got speed for scanning, transparency
                 within seconds for examination.
@@ -837,7 +837,7 @@ export default function ComputisCaseStudy() {
                 <CheckCircle className="w-5 h-5 text-precision-success" />
                 Impact
               </h3>
-              <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
+              <p className="text-base text-precision-text-primary leading-relaxed">
                 "Explainable AI" positioning won subsequent deals against faster
                 competitor; 3 enterprise clients cited audit defensibility as
                 deciding factor.
@@ -1146,7 +1146,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
                   Ship minimal first
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-relaxed max-w-prose">
+                <p className="text-sm text-precision-text-primary leading-relaxed">
                   The rule builder failure cost 6 weeks. I now advocate
                   launching at minimum viable complexity and adding power
                   features based on observed demand, not assumed need.
@@ -1157,7 +1157,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
                   Document trade-off decisions explicitly
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-relaxed max-w-prose">
+                <p className="text-sm text-precision-text-primary leading-relaxed">
                   The speed vs. transparency debate recurred because we hadn't
                   formalized the reasoning. I now create brief "trade-off memos"
                   for major architectural choices to reduce relitigated debates.
