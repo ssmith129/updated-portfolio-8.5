@@ -587,10 +587,8 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <div className="border-t-2 border-[#E3E8EF] mb-8"></div>
-
             {/* Placeholder for design system */}
-            <div className="mb-8 bg-[#FAFBFC] rounded-card p-6 border-2 border-dashed border-[#E3E8EF] text-center">
+            <div className="mt-6 mb-6 bg-[#FAFBFC] rounded-card p-6 border-2 border-dashed border-[#E3E8EF] text-center">
               <div className="max-w-[1440px] mx-auto">
                 <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
                 <p className="text-xs text-precision-text-secondary">design-system-components.png</p>
