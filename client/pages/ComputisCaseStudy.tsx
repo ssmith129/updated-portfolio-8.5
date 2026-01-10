@@ -271,13 +271,13 @@ export default function ComputisCaseStudy() {
 
       <main
         id="main-content"
-        className="max-w-[1200px] mx-auto px-6 pb-24 space-y-16 relative z-10"
+        className="max-w-[1200px] mx-auto px-6 pb-24 space-y-12 relative z-10"
       >
         <section
           id="research"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 mt-12 border border-[#E3E8EF]">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 mt-12 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               Research Foundation
             </h2>
@@ -348,7 +348,7 @@ export default function ComputisCaseStudy() {
           id="challenge"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+          <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               The Challenge
             </h2>
@@ -419,7 +419,7 @@ export default function ComputisCaseStudy() {
           id="approach"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+          <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
               My Approach
             </h2>
@@ -534,7 +534,7 @@ export default function ComputisCaseStudy() {
           id="design-process"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000 scroll-mt-24"
         >
-          <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
+          <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-white leading-[120%] mb-6 text-center">
               Design Process Overview
             </h2>
@@ -574,7 +574,7 @@ export default function ComputisCaseStudy() {
           id="solutions"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               AI Feature Design Solutions
             </h2>
@@ -600,7 +600,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="space-y-10">
-              <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+              <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                     <Sparkles className="w-6 h-6 text-precision-accent" />
@@ -624,7 +624,7 @@ export default function ComputisCaseStudy() {
 
               <div className="border-t-2 border-[#E3E8EF] my-2"></div>
 
-              <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+              <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
                     <Eye className="w-6 h-6 text-precision-secondary" />
@@ -648,7 +648,7 @@ export default function ComputisCaseStudy() {
 
               <div className="border-t-2 border-[#E3E8EF] my-2"></div>
 
-              <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+              <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                     <Settings className="w-6 h-6 text-precision-success" />
@@ -672,7 +672,7 @@ export default function ComputisCaseStudy() {
 
               <div className="border-t-2 border-[#E3E8EF] my-2"></div>
 
-              <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+              <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
                     <AlertTriangle className="w-6 h-6 text-precision-error" />
@@ -701,7 +701,7 @@ export default function ComputisCaseStudy() {
           id="stakeholder"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+          <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               Stakeholder Alignment
             </h2>
@@ -787,7 +787,7 @@ export default function ComputisCaseStudy() {
           id="tradeoff"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1400 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+          <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               Critical Trade-off: Speed vs. Transparency
             </h2>
@@ -854,7 +854,7 @@ export default function ComputisCaseStudy() {
           id="results"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               Results & Business Impact
             </h2>
@@ -1101,7 +1101,7 @@ export default function ComputisCaseStudy() {
           id="learnings"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1700 scroll-mt-24"
         >
-          <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
+          <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
             <div className="text-center">
               <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-white leading-[120%] mb-4">
                 The Core Insight
@@ -1131,7 +1131,7 @@ export default function ComputisCaseStudy() {
           id="reflections"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900 scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
               What I'd Do Differently
             </h2>
