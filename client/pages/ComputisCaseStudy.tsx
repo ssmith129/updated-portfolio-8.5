@@ -535,12 +535,12 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1000 scroll-mt-24"
         >
           <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-white leading-[120%] mb-6 text-center">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-white leading-tight mb-4 text-center">
               Design Process Overview
             </h2>
 
             {/* Placeholder for design process timeline */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-card p-8 border-2 border-dashed border-white/30 text-center">
+            <div className="bg-white/10 backdrop-blur-sm rounded-card p-6 border-2 border-dashed border-white/30 text-center">
               <div className="max-w-[1440px] mx-auto">
                 <p className="text-sm font-semibold text-white uppercase tracking-wider mb-2">Image Placeholder</p>
                 <p className="text-xs text-white/80">design-process-timeline.png</p>
@@ -549,20 +549,20 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
-              <div className="bg-white/10 backdrop-blur-sm p-5 rounded-card border border-white/20">
+            <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-card border border-white/20">
                 <p className="text-[#00D4AA] font-bold text-2xl mb-2">10 mo</p>
                 <p className="text-white/90 text-sm">Project Duration</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-5 rounded-card border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-card border border-white/20">
                 <p className="text-[#00D4AA] font-bold text-2xl mb-2">4</p>
                 <p className="text-white/90 text-sm">AI Features Shipped</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-5 rounded-card border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-card border border-white/20">
                 <p className="text-[#00D4AA] font-bold text-2xl mb-2">12+</p>
                 <p className="text-white/90 text-sm">Usability Tests</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-5 rounded-card border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-card border border-white/20">
                 <p className="text-[#00D4AA] font-bold text-2xl mb-2">78%</p>
                 <p className="text-white/90 text-sm">Feature Adoption</p>
               </div>
