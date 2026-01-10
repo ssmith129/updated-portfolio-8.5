@@ -623,11 +623,11 @@ export default function ComputisCaseStudy() {
 
 
               <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
-                    <Eye className="w-6 h-6 text-precision-secondary" />
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
+                    <Eye className="w-5 h-5 text-precision-secondary" />
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-precision-text-primary">
+                  <h3 className="text-xl font-bold font-heading text-precision-text-primary">
                     Explainable Audit Trail
                   </h3>
                 </div>
@@ -647,11 +647,11 @@ export default function ComputisCaseStudy() {
 
 
               <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
-                    <Settings className="w-6 h-6 text-precision-success" />
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                    <Settings className="w-5 h-5 text-precision-success" />
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-precision-text-primary">
+                  <h3 className="text-xl font-bold font-heading text-precision-text-primary">
                     Smart Rule Builder
                   </h3>
                 </div>
@@ -671,11 +671,11 @@ export default function ComputisCaseStudy() {
 
 
               <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
-                    <AlertTriangle className="w-6 h-6 text-precision-error" />
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
+                    <AlertTriangle className="w-5 h-5 text-precision-error" />
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-precision-text-primary">
+                  <h3 className="text-xl font-bold font-heading text-precision-text-primary">
                     Real-Time Anomaly Detection
                   </h3>
                 </div>
