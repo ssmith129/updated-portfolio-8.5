@@ -279,7 +279,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 mt-12 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
-              🔍 Research Foundation
+              Research Foundation
             </h2>
 
             <div className="section-tldr mb-8">
@@ -350,7 +350,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
-              🎯 The Challenge
+              The Challenge
             </h2>
 
             <div className="section-tldr mb-8">
@@ -421,7 +421,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
-              💡 My Approach
+              My Approach
             </h2>
 
             <div className="section-tldr">
@@ -536,7 +536,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-white leading-[120%] mb-6 text-center">
-              🔄 Design Process Overview
+              Design Process Overview
             </h2>
 
             {/* Placeholder for design process timeline */}
@@ -576,7 +576,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
-              ✨ AI Feature Design Solutions
+              AI Feature Design Solutions
             </h2>
 
             <div className="section-tldr mb-8">
@@ -703,7 +703,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
-              🤝 Stakeholder Alignment
+              Stakeholder Alignment
             </h2>
 
             <div className="section-tldr mb-8">
@@ -789,7 +789,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-8 lg:p-10 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
-              ⚖️ Critical Trade-off: Speed vs. Transparency
+              Critical Trade-off: Speed vs. Transparency
             </h2>
 
             <div className="section-tldr mb-8">
@@ -856,7 +856,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
-              📈 Results & Business Impact
+              Results & Business Impact
             </h2>
 
             <div className="section-tldr mb-8">
@@ -1104,7 +1104,7 @@ export default function ComputisCaseStudy() {
           <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
             <div className="text-center">
               <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-white leading-[120%] mb-4">
-                💡 The Core Insight
+                The Core Insight
               </h2>
               <div className="max-w-[900px] mx-auto">
                 <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-[160%] mb-6 font-medium">
@@ -1133,7 +1133,7 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-8 sm:p-10 lg:p-12 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
-              🔄 What I'd Do Differently
+              What I'd Do Differently
             </h2>
 
             <div className="section-tldr mb-8">
