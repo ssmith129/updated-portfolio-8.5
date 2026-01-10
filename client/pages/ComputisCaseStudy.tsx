@@ -333,12 +333,18 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Placeholder for research artifacts visualization */}
-            <div className="mt-6 bg-[#FAFBFC] rounded-card p-6 border-2 border-dashed border-[#E3E8EF] text-center">
-              <div className="max-w-[1440px] mx-auto">
-                <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
-                <p className="text-xs text-precision-text-secondary">cpa-workflow-journey-map.png</p>
-                <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 600px</p>
+            {/* CPA Workflow Journey Map */}
+            <div className="mt-6 group relative rounded-card overflow-hidden">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F28b06b9508a14bd39471afa1e7704f76?format=webp&width=1600"
+                alt="CPA Crypto Tax Workflow Journey Map showing the 5-phase process from client onboard to form 8949 completion, with emotion curve indicating pain points in classification phase"
+                className="w-full h-auto cursor-zoom-in transition-transform duration-300 hover:scale-[1.02]"
+                onClick={() => window.open('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F28b06b9508a14bd39471afa1e7704f76?format=webp&width=2400', '_blank')}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none flex items-center justify-center">
+                <span className="text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
+                  Click to enlarge
+                </span>
               </div>
             </div>
           </div>
