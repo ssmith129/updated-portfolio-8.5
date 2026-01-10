@@ -384,10 +384,10 @@ export default function ComputisCaseStudy() {
             {/* CPA Time Allocation Transformation - Before/After Comparison */}
             <div className="mt-6 group relative rounded-card overflow-hidden">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7610b06ed35247ba8a48c7e874c19cdc"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1541f2cd9eb340f1b232921ee19e6c66"
                 alt="CPA Time Allocation Transformation showing before and after workflow comparison - manual classification reduced from 95% to 15% with Computis AI"
                 className="w-full h-auto cursor-zoom-in transition-transform duration-300 hover:scale-[1.02]"
-                onClick={() => window.open('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7610b06ed35247ba8a48c7e874c19cdc', '_blank')}
+                onClick={() => window.open('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1541f2cd9eb340f1b232921ee19e6c66', '_blank')}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none flex items-center justify-center">
                 <span className="text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
