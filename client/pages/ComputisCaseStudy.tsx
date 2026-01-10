@@ -100,25 +100,25 @@ export default function ComputisCaseStudy() {
         </Link>
       </div>
 
-      <header className="max-w-[1200px] mx-auto px-6 pt-12 pb-6 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
+      <header className="max-w-[1200px] mx-auto px-6 pt-8 pb-4 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="flex flex-col">
-          <span className="inline-block bg-precision-accent text-white px-4 py-2 rounded-pill text-sm font-semibold tracking-tight mb-4 w-fit">
+          <span className="inline-block bg-precision-accent text-white px-3 py-1.5 rounded-pill text-xs font-semibold tracking-tight mb-3 w-fit">
             FinTech UX Case Study
           </span>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-4">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-3">
             Computis — AI-Powered Crypto Tax Automation
           </h1>
-          <p className="text-sm sm:text-base lg:text-lg text-precision-text-secondary leading-[140%] mb-6 max-w-[65ch]">
+          <p className="text-base text-precision-text-secondary leading-[140%] mb-4 max-w-[65ch]">
             Leading the design of an AI feature suite that{" "}
             <strong>augments CPA expertise</strong> while maintaining
             professional control and IRS audit defensibility
           </p>
 
-          <div className="bg-white/60 backdrop-blur-sm rounded-card p-5 border border-[#E3E8EF]">
-            <h2 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
+          <div className="bg-white/60 backdrop-blur-sm rounded-card p-4 border border-[#E3E8EF]">
+            <h2 className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
               What I Achieved
             </h2>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5">
               <li className="flex items-start gap-2 text-sm text-precision-text-primary">
                 <CheckCircle className="w-4 h-4 text-precision-accent mt-0.5 flex-shrink-0" />
                 <span>
