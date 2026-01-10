@@ -376,7 +376,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Placeholder for before/after comparison */}
-            <div className="mt-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+            <div className="mt-6 bg-[#FAFBFC] rounded-card p-6 border-2 border-dashed border-[#E3E8EF] text-center">
               <div className="max-w-[1440px] mx-auto">
                 <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
                 <p className="text-xs text-precision-text-secondary">before-after-cpa-workflow.png</p>
@@ -590,7 +590,7 @@ export default function ComputisCaseStudy() {
             <div className="border-t-2 border-[#E3E8EF] mb-8"></div>
 
             {/* Placeholder for design system */}
-            <div className="mb-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+            <div className="mb-8 bg-[#FAFBFC] rounded-card p-6 border-2 border-dashed border-[#E3E8EF] text-center">
               <div className="max-w-[1440px] mx-auto">
                 <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
                 <p className="text-xs text-precision-text-secondary">design-system-components.png</p>
@@ -867,7 +867,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Visual results comparison placeholder */}
-            <div className="mb-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+            <div className="mb-8 bg-[#FAFBFC] rounded-card p-6 border-2 border-dashed border-[#E3E8EF] text-center">
               <div className="max-w-[1440px] mx-auto">
                 <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
                 <p className="text-xs text-precision-text-secondary">results-before-after-infographic.png</p>
