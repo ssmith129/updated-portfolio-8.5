@@ -181,15 +181,15 @@ export default function ComputisCaseStudy() {
 
       <QuickWinsStrip metrics={computisMetrics} />
 
-      <div className="max-w-[1200px] mx-auto px-6 mt-6 relative z-10">
-        <div className="bg-white/80 backdrop-blur-sm rounded-card p-5 shadow-precision-sm transition-all duration-200 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E3E8EF]">
+      <div className="max-w-[1200px] mx-auto px-6 mt-4 relative z-10">
+        <div className="bg-white/80 backdrop-blur-sm rounded-card p-4 shadow-precision-sm transition-all duration-200 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E3E8EF]">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
             className="w-full flex items-center justify-between group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-precision-accent focus-visible:ring-offset-2 rounded-sm p-1 -m-1"
             aria-expanded={isSummaryExpanded}
             aria-controls="summary-content"
           >
-            <h2 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider group-hover:text-precision-accent transition-colors duration-200">
+            <h2 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider group-hover:text-precision-accent transition-colors duration-200">
               Quick View
             </h2>
             {isSummaryExpanded ? (
@@ -204,8 +204,8 @@ export default function ComputisCaseStudy() {
               id="summary-content"
               className="mt-4 animate-in fade-in-0 slide-in-from-top-4 duration-500"
             >
-              <div className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+              <div className="space-y-3">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
                   <div>
                     <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
                       Role
