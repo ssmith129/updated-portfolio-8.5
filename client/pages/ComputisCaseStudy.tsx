@@ -846,7 +846,7 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        <div className="border-t-2 border-[#E3E8EF] my-16"></div>
+        <div className="border-t border-[#E3E8EF] my-8"></div>
 
         <section
           id="results"
@@ -1093,7 +1093,7 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        <div className="border-t-2 border-[#E3E8EF] my-16"></div>
+        <div className="border-t border-[#E3E8EF] my-8"></div>
 
         <section
           id="learnings"
@@ -1101,20 +1101,20 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
             <div className="text-center">
-              <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-white leading-[120%] mb-4">
+              <h2 className="text-2xl lg:text-3xl font-bold font-heading text-white leading-tight mb-4">
                 The Core Insight
               </h2>
               <div className="max-w-[900px] mx-auto">
-                <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed mb-6 font-medium">
+                <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium">
                   In regulated domains, AI transparency isn't a feature—it's the product.
                   <span className="text-[#00D4AA] font-bold"> Augmentation beats automation</span> when professionals retain control,
                   <span className="text-[#00D4AA] font-bold"> simplicity beats capability</span> when users actually adopt it,
                   and <span className="text-[#00D4AA] font-bold">failed experiments teach the most</span>—
                   CPAs rejected full automation not for accuracy, but to preserve professional judgment.
                 </p>
-                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-pill border border-white/20">
-                  <Lightbulb className="w-5 h-5 text-[#00D4AA]" />
-                  <span className="text-sm font-semibold text-white tracking-wide">
+                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-pill border border-white/20">
+                  <Lightbulb className="w-4 h-4 text-[#00D4AA]" />
+                  <span className="text-sm font-semibold text-white">
                     Human-in-the-loop isn't a weakness—it's how you earn trust in high-stakes AI.
                   </span>
                 </div>
@@ -1123,7 +1123,7 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
-        <div className="border-t-2 border-[#E3E8EF] my-16"></div>
+        <div className="border-t border-[#E3E8EF] my-8"></div>
 
         <section
           id="reflections"
