@@ -277,7 +277,7 @@ export default function ComputisCaseStudy() {
           id="research"
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col scroll-mt-24"
         >
-          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 mt-12 border border-[#E3E8EF]">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 mt-6 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Research Foundation
             </h2>
