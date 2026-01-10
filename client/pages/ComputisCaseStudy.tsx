@@ -278,11 +278,11 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700 flex flex-col scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 mt-12 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Research Foundation
             </h2>
 
-            <div className="section-tldr mb-8">
+            <div className="section-tldr mb-6">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 12 CPA interviews + 50,000 transaction analysis revealed 73% of work followed predictable patterns—perfect for AI augmentation.
@@ -349,11 +349,11 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-800 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               The Challenge
             </h2>
 
-            <div className="section-tldr mb-8">
+            <div className="section-tldr mb-6">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 CPAs spent 95% of time on repetitive classification. They needed AI that automates routine work while preserving professional judgment for IRS liability.
@@ -420,11 +420,11 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-900 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-8">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               My Approach
             </h2>
 
-            <div className="section-tldr">
+            <div className="section-tldr mb-6">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 Designed 3-tier AI confidence system that reduced manual
@@ -575,11 +575,11 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1100 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               AI Feature Design Solutions
             </h2>
 
-            <div className="section-tldr mb-8">
+            <div className="section-tldr mb-6">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 Four AI capabilities each solving a specific workflow bottleneck
@@ -702,11 +702,11 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1300 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Stakeholder Alignment
             </h2>
 
-            <div className="section-tldr mb-8">
+            <div className="section-tldr mb-6">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 Resolved tension between engineering (max automation) and CPAs (control) with tiered confidence system. Became key differentiator in sales.
@@ -788,11 +788,11 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1400 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-5 sm:p-6 lg:p-7 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Critical Trade-off: Speed vs. Transparency
             </h2>
 
-            <div className="section-tldr mb-8">
+            <div className="section-tldr mb-6">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 Chose transparency over speed with hybrid async approach. "Explainable AI" positioning won deals against faster competitor.
@@ -855,11 +855,11 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1500 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Results & Business Impact
             </h2>
 
-            <div className="section-tldr mb-8">
+            <div className="section-tldr mb-6">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 85% reduction in manual work, 32% conversion increase, 3 enterprise deals closed. AI features cited in 78% of won deals.
@@ -1132,11 +1132,11 @@ export default function ComputisCaseStudy() {
           className="animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-1900 scroll-mt-24"
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-xl sm:text-2xl lg:text-[32px] font-bold font-heading text-precision-text-primary leading-[120%] mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               What I'd Do Differently
             </h2>
 
-            <div className="section-tldr mb-8">
+            <div className="section-tldr mb-6">
               <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 Ship minimal first, document trade-offs explicitly. Rule builder complexity taught me: start simple, add power based on observed demand.
