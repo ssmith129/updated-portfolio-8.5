@@ -381,12 +381,18 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            {/* Placeholder for before/after comparison */}
-            <div className="mt-6 bg-[#FAFBFC] rounded-card p-6 border-2 border-dashed border-[#E3E8EF] text-center">
-              <div className="max-w-[1440px] mx-auto">
-                <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
-                <p className="text-xs text-precision-text-secondary">before-after-cpa-workflow.png</p>
-                <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 500px</p>
+            {/* CPA Time Allocation Transformation - Before/After Comparison */}
+            <div className="mt-6 group relative rounded-card overflow-hidden">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5d63deb037084c49adcc92c12339e683?format=webp&width=800"
+                alt="CPA Time Allocation Transformation showing before and after workflow comparison - manual classification reduced from 95% to 15% with Computis AI"
+                className="w-full h-auto cursor-zoom-in transition-transform duration-300 hover:scale-[1.02]"
+                onClick={() => window.open('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5d63deb037084c49adcc92c12339e683?format=webp&width=2400', '_blank')}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none flex items-center justify-center">
+                <span className="text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
+                  Click to enlarge
+                </span>
               </div>
             </div>
 
