@@ -364,7 +364,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">
                 Context
               </h3>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+              <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
                 Computis had a solid, functional platform for crypto tax
                 management—but CPAs were spending{" "}
                 <strong>
@@ -391,7 +391,7 @@ export default function ComputisCaseStudy() {
                   Key Insight
                 </p>
               </div>
-              <blockquote className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch] italic mb-4">
+              <blockquote className="text-base text-precision-text-primary leading-relaxed max-w-[65ch] italic mb-4">
                 "This wasn't a UX problem—it was a{" "}
                 <strong>trust problem</strong>. CPAs are personally liable for
                 classifications. They needed to explain decisions to the IRS,
@@ -406,7 +406,7 @@ export default function ComputisCaseStudy() {
                   The Opportunity
                 </h3>
               </div>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-[65ch]">
+              <p className="text-base text-precision-text-primary leading-relaxed max-w-[65ch]">
                 Design AI-powered features that automate routine work while
                 keeping CPAs in control—transforming Computis from a passive
                 calculation engine into an intelligent workflow assistant.
@@ -447,7 +447,7 @@ export default function ComputisCaseStudy() {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span className="text-sm leading-[160%]">
+                    <span className="text-sm leading-relaxed">
                       <strong>Product strategy & feature definition</strong> for
                       entire AI suite (classification, audit trails, rule
                       builder, anomaly detection)
@@ -455,7 +455,7 @@ export default function ComputisCaseStudy() {
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span className="text-sm leading-[160%]">
+                    <span className="text-sm leading-relaxed">
                       <strong>Interaction patterns & UX design</strong> for all
                       AI touchpoints, confidence indicators, and control
                       mechanisms
@@ -465,7 +465,7 @@ export default function ComputisCaseStudy() {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span className="text-sm leading-[160%]">
+                    <span className="text-sm leading-relaxed">
                       <strong>Partnered with ML engineers</strong> on model
                       integration, UX constraints, and threshold tuning based on
                       user feedback
@@ -473,7 +473,7 @@ export default function ComputisCaseStudy() {
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span className="text-sm leading-[160%]">
+                    <span className="text-sm leading-relaxed">
                       <strong>Led user research</strong> (12 CPA interviews, 6
                       full-day observations, 4 usability test cycles) to
                       validate design decisions
@@ -523,7 +523,7 @@ export default function ComputisCaseStudy() {
                   Design Philosophy
                 </p>
               </div>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[65ch]">
+              <p className="text-base text-precision-text-primary leading-relaxed max-w-[65ch]">
                 <strong className="text-precision-accent">Augmentation over automation.</strong> Medium-confidence predictions treated as hypotheses, not truths. Every AI decision includes an override mechanism and audit trail.
               </p>
             </div>
@@ -720,7 +720,7 @@ export default function ComputisCaseStudy() {
                     <Users className="w-5 h-5 text-precision-accent" />
                     Balancing Automation & Control
                   </h3>
-                  <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                  <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
                     <span className="font-semibold text-precision-text-primary">
                       Challenge:
                     </span>{" "}
@@ -737,21 +737,21 @@ export default function ComputisCaseStudy() {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-sm leading-[160%]">
+                    <span className="text-sm leading-relaxed">
                       Facilitated cross-functional workshop mapping trust
                       requirements
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-sm leading-[160%]">
+                    <span className="text-sm leading-relaxed">
                       Presented user research showing 40% of competitor
                       complaints cited "lack of control"
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-precision-text-primary">
                     <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-sm leading-[160%]">
+                    <span className="text-sm leading-relaxed">
                       Designed graduated autonomy system: High confidence →
                       Auto-apply | Medium → Review queue | Low → Manual required
                     </span>
@@ -765,12 +765,12 @@ export default function ComputisCaseStudy() {
                 <CheckCircle className="w-5 h-5 text-precision-success" />
                 Outcome
               </h3>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] mb-4 max-w-prose">
+              <p className="text-base text-precision-text-primary leading-relaxed mb-4 max-w-prose">
                 The tiered confidence system became a key differentiator. One
                 enterprise prospect specifically cited "professional control" as
                 their deciding factor.
               </p>
-              <blockquote className="bg-white/90 p-5 rounded-card italic text-sm sm:text-base leading-[160%] border-l-4 border-precision-success">
+              <blockquote className="bg-white/90 p-5 rounded-card italic text-base leading-relaxed border-l-4 border-precision-success">
                 <p className="text-[#0A7A5E]">
                   "Finally, AI that works *with* me instead of replacing my
                   judgment."
@@ -804,7 +804,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
                   Tension
                 </h3>
-                <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
                   Removing rationale generation would cut processing time
                   60%—and we'd just lost a deal to a faster competitor. CTO
                   pushed for speed; I argued transparency is non-negotiable in
@@ -816,7 +816,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
                   Research Insight
                 </h3>
-                <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
                   Competitor "black box AI" complaints outnumbered performance
                   complaints 3:1.
                 </p>
@@ -827,7 +827,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-base sm:text-lg font-semibold font-heading text-[#0A7A5E] mb-3">
                 Solution
               </h3>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+              <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
                 Hybrid approach—immediate classification display with async
                 rationale loading. Users got speed for scanning, transparency
                 within seconds for examination.
@@ -839,7 +839,7 @@ export default function ComputisCaseStudy() {
                 <CheckCircle className="w-5 h-5 text-precision-success" />
                 Impact
               </h3>
-              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+              <p className="text-base text-precision-text-primary leading-relaxed max-w-prose">
                 "Explainable AI" positioning won subsequent deals against faster
                 competitor; 3 enterprise clients cited audit defensibility as
                 deciding factor.
@@ -1084,7 +1084,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-gradient-to-r from-[#E0F9F4] to-[#E8F4FA] rounded-card p-6 border-l-4 border-precision-accent">
-                <blockquote className="text-base italic text-precision-text-primary leading-[160%]">
+                <blockquote className="text-base italic text-precision-text-primary leading-relaxed">
                   "This is the first crypto tax tool I'd stake my license on."
                 </blockquote>
                 <cite className="block text-sm text-precision-accent mt-2 not-italic font-semibold">
@@ -1107,7 +1107,7 @@ export default function ComputisCaseStudy() {
                 The Core Insight
               </h2>
               <div className="max-w-[900px] mx-auto">
-                <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-[160%] mb-6 font-medium">
+                <p className="text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed mb-6 font-medium">
                   In regulated domains, AI transparency isn't a feature—it's the product.
                   <span className="text-[#00D4AA] font-bold"> Augmentation beats automation</span> when professionals retain control,
                   <span className="text-[#00D4AA] font-bold"> simplicity beats capability</span> when users actually adopt it,
@@ -1148,7 +1148,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
                   Ship minimal first
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
+                <p className="text-sm text-precision-text-primary leading-relaxed max-w-prose">
                   The rule builder failure cost 6 weeks. I now advocate
                   launching at minimum viable complexity and adding power
                   features based on observed demand, not assumed need.
@@ -1159,7 +1159,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
                   Document trade-off decisions explicitly
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-[160%] max-w-prose">
+                <p className="text-sm text-precision-text-primary leading-relaxed max-w-prose">
                   The speed vs. transparency debate recurred because we hadn't
                   formalized the reasoning. I now create brief "trade-off memos"
                   for major architectural choices to reduce relitigated debates.
