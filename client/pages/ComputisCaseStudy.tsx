@@ -360,66 +360,27 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              <div className="space-y-4">
-                <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">
-                  Context
-                </h3>
-                <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
-                  Computis had a solid, functional platform for crypto tax
-                  management—but CPAs were spending{" "}
-                  <strong>
-                    95% of their time on manual classification and error-hunting
-                  </strong>{" "}
-                  rather than leveraging their expertise for tax strategy and
-                  client consultation.
-                </p>
-              </div>
+            <div className="space-y-4">
+              <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">
+                Context
+              </h3>
+              <p className="text-sm sm:text-base text-precision-text-primary leading-[160%] max-w-prose">
+                Computis had a solid, functional platform for crypto tax
+                management—but CPAs were spending{" "}
+                <strong>
+                  95% of their time on manual classification and error-hunting
+                </strong>{" "}
+                rather than leveraging their expertise for tax strategy and
+                client consultation.
+              </p>
+            </div>
 
-              <div className="bg-white rounded-card p-5 border-l-4 border-precision-error shadow-sm">
-                <div className="flex items-center gap-2 mb-3">
-                  <AlertTriangle className="w-5 h-5 text-precision-error flex-shrink-0" />
-                  <h3 className="text-base sm:text-lg font-bold font-heading text-precision-error">
-                    Pain Points Identified
-                  </h3>
-                </div>
-                <ul className="space-y-2.5">
-                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
-                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="max-w-[60ch]">
-                      <strong>Manual classification</strong> of thousands of
-                      transactions per client (35% of CPA time)
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
-                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="max-w-[60ch]">
-                      <strong>No automated anomaly detection</strong> for FMV
-                      discrepancies and data errors
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
-                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="max-w-[60ch]">
-                      <strong>Engineering dependency</strong> for every rule
-                      change (2-5 day wait times)
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
-                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="max-w-[60ch]">
-                      <strong>Limited audit visibility</strong> into
-                      classification decisions for IRS defense
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2.5 text-sm text-precision-text-primary leading-[160%]">
-                    <span className="w-1.5 h-1.5 bg-precision-error rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="max-w-[60ch]">
-                      <strong>Reactive error discovery</strong> only during
-                      manual review or after client delivery
-                    </span>
-                  </li>
-                </ul>
+            {/* Placeholder for before/after comparison */}
+            <div className="mt-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
+              <div className="max-w-[1440px] mx-auto">
+                <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
+                <p className="text-xs text-precision-text-secondary">before-after-cpa-workflow.png</p>
+                <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 500px</p>
               </div>
             </div>
 
@@ -436,15 +397,6 @@ export default function ComputisCaseStudy() {
                 classifications. They needed to explain decisions to the IRS,
                 not accept black-box outputs."
               </blockquote>
-            </div>
-
-            {/* Placeholder for before/after comparison */}
-            <div className="mt-8 bg-[#FAFBFC] rounded-card p-8 border-2 border-dashed border-[#E3E8EF] text-center">
-              <div className="max-w-[1440px] mx-auto">
-                <p className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Image Placeholder</p>
-                <p className="text-xs text-precision-text-secondary">before-after-cpa-workflow.png</p>
-                <p className="text-xs text-precision-text-secondary mt-1">Dimensions: 1440px × 500px</p>
-              </div>
             </div>
 
             <div className="mt-6 bg-white rounded-card p-5 border-l-4 border-precision-secondary shadow-sm">
@@ -531,71 +483,26 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              <div className="space-y-4">
-                <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">
-                  Design Philosophy
-                </h3>
-                <div className="space-y-3">
-                  <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                    I designed AI features around{" "}
-                    <strong className="text-precision-accent">
-                      explicit confidence ranges
-                    </strong>{" "}
-                    that surfaced uncertainty to CPAs instead of hiding it.
-                  </p>
-                  <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
-                    We treated{" "}
-                    <strong className="text-precision-secondary">
-                      medium-confidence predictions as hypotheses, not truths
-                    </strong>
-                    , and built UI patterns (review queues, override controls)
-                    around that principle.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm">
-                <h3 className="text-base sm:text-lg font-semibold font-heading text-precision-text-primary mb-3">
-                  Research Foundation
-                </h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2.5 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-sm leading-[160%]">
-                      <strong>12 CPA interviews</strong> identifying automation
-                      opportunities and trust requirements
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2.5 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-sm leading-[160%]">
-                      <strong>6 full-day workflow observations</strong> mapping
-                      classification patterns and friction points
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2.5 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-sm leading-[160%]">
-                      <strong>50,000+ transaction analysis</strong> revealing
-                      73% followed predictable patterns
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2.5 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-sm leading-[160%]">
-                      <strong>Competitive analysis</strong> of TaxBit, Cryptio,
-                      CoinTracker (300+ G2 reviews)
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2.5 text-precision-text-primary">
-                    <span className="w-1.5 h-1.5 bg-precision-text-secondary rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-sm leading-[160%]">
-                      <strong>4 usability test cycles</strong> validating AI
-                      interaction patterns
-                    </span>
-                  </li>
-                </ul>
+            <div className="space-y-4">
+              <h3 className="text-base font-semibold text-precision-text-secondary uppercase tracking-wider">
+                Design Philosophy
+              </h3>
+              <div className="space-y-3">
+                <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+                  I designed AI features around{" "}
+                  <strong className="text-precision-accent">
+                    explicit confidence ranges
+                  </strong>{" "}
+                  that surfaced uncertainty to CPAs instead of hiding it.
+                </p>
+                <p className="text-sm sm:text-base text-precision-text-primary leading-[170%] max-w-[60ch]">
+                  We treated{" "}
+                  <strong className="text-precision-secondary">
+                    medium-confidence predictions as hypotheses, not truths
+                  </strong>
+                  , and built UI patterns (review queues, override controls)
+                  around that principle.
+                </p>
               </div>
             </div>
 
