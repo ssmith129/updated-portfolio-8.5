@@ -425,7 +425,7 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="section-tldr">
-              <span className="section-tldr-label">Section Summary</span>
+              <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 Designed 3-tier AI confidence system that reduced manual
                 classification by 85% while maintaining CPA professional
@@ -580,7 +580,7 @@ export default function ComputisCaseStudy() {
             </h2>
 
             <div className="section-tldr mb-8">
-              <span className="section-tldr-label">Section Summary</span>
+              <span className="section-tldr-label">TL;DR</span>
               <p className="section-tldr-text">
                 Four AI capabilities each solving a specific workflow bottleneck
                 while maintaining CPA professional control.
