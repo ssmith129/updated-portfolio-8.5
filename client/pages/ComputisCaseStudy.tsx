@@ -490,10 +490,10 @@ export default function ComputisCaseStudy() {
             {/* Competitive Analysis */}
             <div className="case-study-image mt-6">
               <img
-                src="/assets/images/competitive-analysis-300dpi.png"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8ab57b107e964f45b4ed64272fe091e9?format=webp&width=2000"
                 alt="Competitive feature comparison matrix showing Computis advantages in AI transparency and professional control"
                 loading="lazy"
-                onClick={() => setLightboxImage('/assets/images/competitive-analysis-300dpi.png')}
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8ab57b107e964f45b4ed64272fe091e9?format=webp&width=2000')}
               />
               <div className="case-study-image__overlay">
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
