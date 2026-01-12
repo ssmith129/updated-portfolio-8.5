@@ -506,10 +506,10 @@ export default function ComputisCaseStudy() {
             {/* Information Architecture */}
             <div className="case-study-image mt-6">
               <img
-                src="/assets/images/computis-ia-diagram-v2-300dpi.png"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa3f8e240afaa45b4ba527d25602e6f36?format=webp&width=2000"
                 alt="Information architecture diagram showing AI feature integration across platform"
                 loading="lazy"
-                onClick={() => setLightboxImage('/assets/images/computis-ia-diagram-v2-300dpi.png')}
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa3f8e240afaa45b4ba527d25602e6f36?format=webp&width=2000')}
               />
               <div className="case-study-image__overlay">
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
