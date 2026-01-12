@@ -474,10 +474,10 @@ export default function ComputisCaseStudy() {
             {/* CPA Workflow Journey Map */}
             <div className="case-study-image mb-6">
               <img
-                src="/assets/images/cpa-workflow-journey-300dpi.png"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F56aa33666a104a019f1f762a459eb924?format=webp&width=2000"
                 alt="CPA workflow journey map showing 5 phases with emotion curve and pain points"
                 loading="lazy"
-                onClick={() => setLightboxImage('/assets/images/cpa-workflow-journey-300dpi.png')}
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F56aa33666a104a019f1f762a459eb924?format=webp&width=2000')}
               />
               <div className="case-study-image__overlay">
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
