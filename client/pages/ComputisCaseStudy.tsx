@@ -22,7 +22,6 @@ import {
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import VideoOverlay, { FeatureCards } from "../components/VideoOverlay";
-import QuickWinsStrip, { computisMetrics } from "../components/QuickWinsStrip";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
 import "../styles/computis-case-study.css";
 
@@ -165,8 +164,6 @@ export default function ComputisCaseStudy() {
           </nav>
         </div>
       </div>
-
-      <QuickWinsStrip metrics={computisMetrics} />
 
       <div className="max-w-[1200px] mx-auto px-6 mt-4 relative z-10">
         <div className="bg-white/80 backdrop-blur-sm rounded-card p-4 shadow-precision-sm transition-all duration-200 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E3E8EF]">
