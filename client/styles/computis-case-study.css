@@ -208,7 +208,7 @@
 
 .skill-tag {
   @apply px-3 py-1.5 bg-[#E0F9F4] text-precision-accent text-sm font-medium rounded-full;
-  @apply border border-precision-accent/20;
+  @apply border border-[#00D4AA]/20;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
