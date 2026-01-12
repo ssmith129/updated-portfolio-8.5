@@ -621,10 +621,10 @@ export default function ComputisCaseStudy() {
             {/* UI Evolution */}
             <div className="case-study-image mt-8">
               <img
-                src="/assets/images/transaction-classification-evolution-2x-300dpi.png"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa6260d073e4549a18738fa5e8680edde?format=webp&width=2000"
                 alt="Transaction classification UI evolution showing before and after AI integration"
                 loading="lazy"
-                onClick={() => setLightboxImage('/assets/images/transaction-classification-evolution-2x-300dpi.png')}
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa6260d073e4549a18738fa5e8680edde?format=webp&width=2000')}
               />
               <div className="case-study-image__overlay">
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
