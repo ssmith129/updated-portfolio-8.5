@@ -394,10 +394,10 @@ export default function ComputisCaseStudy() {
             {/* Research Quotes Gallery */}
             <div className="case-study-image mt-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F51e94f2283194dcf83568fb5e2f9e749?format=webp&width=2000"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc16ff6d62dda40b3bb78207aea59fa36?format=webp&width=2400"
                 alt="Gallery of CPA interview quotes highlighting trust concerns, control needs, and AI skepticism"
                 loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F51e94f2283194dcf83568fb5e2f9e749?format=webp&width=2000')}
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc16ff6d62dda40b3bb78207aea59fa36?format=webp&width=2400')}
               />
               <div className="case-study-image__overlay">
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
