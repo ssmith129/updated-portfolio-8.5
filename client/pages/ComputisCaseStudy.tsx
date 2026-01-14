@@ -280,10 +280,10 @@ export default function ComputisCaseStudy() {
             {/* Pain Point Visual */}
             <div className="case-study-image mb-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8e12d536c9994664a66dc416aeaa9db6?format=webp&width=2000"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F13659dd7432b459a882eea7b97d13c3c?format=webp&width=800"
                 alt="CPA Time Allocation - Before: 95% manual classification vs After: 85% reduction with Computis AI"
                 loading="eager"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8e12d536c9994664a66dc416aeaa9db6?format=webp&width=2000')}
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F13659dd7432b459a882eea7b97d13c3c?format=webp&width=800')}
               />
               <div className="case-study-image__overlay">
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
