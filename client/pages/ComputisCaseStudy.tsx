@@ -490,10 +490,10 @@ export default function ComputisCaseStudy() {
             {/* Competitive Analysis */}
             <div className="case-study-image mt-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8ab57b107e964f45b4ed64272fe091e9?format=webp&width=2000"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400"
                 alt="Competitive feature comparison matrix showing Computis advantages in AI transparency and professional control"
                 loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8ab57b107e964f45b4ed64272fe091e9?format=webp&width=2000')}
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400')}
               />
               <div className="case-study-image__overlay">
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
@@ -506,10 +506,10 @@ export default function ComputisCaseStudy() {
             {/* Information Architecture */}
             <div className="case-study-image mt-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa3f8e240afaa45b4ba527d25602e6f36?format=webp&width=2000"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F550d96e6817647739d3e9f0d237b8c5d?format=webp&width=2400"
                 alt="Information architecture diagram showing AI feature integration across platform"
                 loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa3f8e240afaa45b4ba527d25602e6f36?format=webp&width=2000')}
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F550d96e6817647739d3e9f0d237b8c5d?format=webp&width=2400')}
               />
               <div className="case-study-image__overlay">
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
