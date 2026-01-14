@@ -334,10 +334,10 @@ export default function ComputisCaseStudy() {
             {/* Research Approach Visual */}
             <div className="case-study-image mb-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1de73014351b4dfab1ecb9254282b45c?format=webp&width=2000"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1716d0afb38b4317a6918302b42bafbc?format=webp&width=2400"
                 alt="4-phase research methodology: Discovery, Analysis, Ideation, Validation"
                 loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1de73014351b4dfab1ecb9254282b45c?format=webp&width=2000')}
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1716d0afb38b4317a6918302b42bafbc?format=webp&width=2400')}
               />
               <div className="case-study-image__overlay">
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
