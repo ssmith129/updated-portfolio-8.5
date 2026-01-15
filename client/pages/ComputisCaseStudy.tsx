@@ -38,6 +38,8 @@ export default function ComputisCaseStudy() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isNavSticky, setIsNavSticky] = useState(false);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
