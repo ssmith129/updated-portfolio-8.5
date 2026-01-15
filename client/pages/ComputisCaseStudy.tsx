@@ -23,6 +23,14 @@ import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import VideoOverlay, { FeatureCards } from "../components/VideoOverlay";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "../components/ui/carousel";
 import "../styles/computis-case-study.css";
 
 export default function ComputisCaseStudy() {
