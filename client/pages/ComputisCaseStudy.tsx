@@ -526,6 +526,35 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
+            {/* Design System Showcase Subsection */}
+            <div className="mt-8 space-y-6">
+              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+                Design System Showcase
+              </h3>
+
+              <div className="mb-6">
+                <p className="text-base text-precision-text-primary leading-relaxed">
+                  Building the Computis platform required a strategic, systematic approach to design consistency. We developed a comprehensive design system that unified typography, color palettes, component libraries, and interaction patterns across all user touchpoints. This foundation enabled rapid iteration while maintaining visual coherence and professional credibility—critical for CPAs managing high-stakes tax workflows. By establishing reusable patterns and clear design principles, we reduced design debt, accelerated development velocity, and ensured every interface element reinforced user trust through predictable, polished experiences that met enterprise-grade quality standards.
+                </p>
+              </div>
+
+              {/* Design System Visual */}
+              <div className="case-study-image mt-6">
+                <img
+                  src="https://via.placeholder.com/2880x1340/E3E8EF/0A2540?text=Design+System+Visual+Asset"
+                  alt="Computis design system showing typography, colors, components, and design tokens"
+                  loading="lazy"
+                  onClick={() => setLightboxImage('https://via.placeholder.com/2880x1340/E3E8EF/0A2540?text=Design+System+Visual+Asset')}
+                />
+                <div className="case-study-image__overlay">
+                  <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                </div>
+              </div>
+              <p className="case-study-image__caption">
+                Figure 7: Computis design system — typography, colors, components, and other important assets
+              </p>
+            </div>
+
             {/* AI Features */}
             <div className="mt-8 space-y-6">
               <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
