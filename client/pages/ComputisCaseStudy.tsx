@@ -541,10 +541,10 @@ export default function ComputisCaseStudy() {
               {/* Design System Visual */}
               <div className="case-study-image mt-6">
                 <img
-                  src="https://via.placeholder.com/2880x1340/E3E8EF/0A2540?text=Design+System+Visual+Asset"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880"
                   alt="Computis design system showing typography, colors, components, and design tokens"
                   loading="lazy"
-                  onClick={() => setLightboxImage('https://via.placeholder.com/2880x1340/E3E8EF/0A2540?text=Design+System+Visual+Asset')}
+                  onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880')}
                 />
                 <div className="case-study-image__overlay">
                   <span className="case-study-image__zoom-hint">Click to enlarge</span>
