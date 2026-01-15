@@ -416,10 +416,16 @@ export default function ComputisCaseStudy() {
         >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
-              The Solution: 3-Tier AI Confidence System
+              Design Solutions
             </h2>
 
-            <div className="insight-callout insight-callout--key mb-6">
+            {/* 3-Tier AI Confidence System Subsection */}
+            <div className="mt-8 space-y-6">
+              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+                The Solution: 3-Tier AI Confidence System
+              </h3>
+
+              <div className="insight-callout insight-callout--key mb-6">
               <div className="insight-callout__header">
                 <Target className="w-5 h-5 text-[#0A7A5E]" />
                 <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
@@ -515,9 +521,10 @@ export default function ComputisCaseStudy() {
                 <span className="case-study-image__zoom-hint">Click to enlarge</span>
               </div>
             </div>
-            <p className="case-study-image__caption">
-              Figure 6: Platform information architecture — AI touchpoints throughout workflow
-            </p>
+              <p className="case-study-image__caption">
+                Figure 6: Platform information architecture — AI touchpoints throughout workflow
+              </p>
+            </div>
 
             {/* AI Features */}
             <div className="mt-8 space-y-6">
