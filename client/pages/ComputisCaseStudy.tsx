@@ -406,6 +406,38 @@ export default function ComputisCaseStudy() {
             <p className="case-study-image__caption">
               Figure 3: Key insights from CPA interviews — trust, control, and professional liability
             </p>
+
+            {/* CPA Workflow Journey Map */}
+            <div className="case-study-image mt-6">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400"
+                alt="CPA workflow journey map showing 5 phases with emotion curve and pain points"
+                loading="lazy"
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400')}
+              />
+              <div className="case-study-image__overlay">
+                <span className="case-study-image__zoom-hint">Click to enlarge</span>
+              </div>
+            </div>
+            <p className="case-study-image__caption">
+              Figure 4: CPA workflow journey — mapping pain points and AI intervention opportunities
+            </p>
+
+            {/* Competitive Analysis */}
+            <div className="case-study-image mt-6">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400"
+                alt="Competitive feature comparison matrix showing Computis advantages in AI transparency and professional control"
+                loading="lazy"
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400')}
+              />
+              <div className="case-study-image__overlay">
+                <span className="case-study-image__zoom-hint">Click to enlarge</span>
+              </div>
+            </div>
+            <p className="case-study-image__caption">
+              Figure 5: Competitive analysis — Computis differentiation through explainable AI
+            </p>
           </div>
         </section>
 
@@ -476,38 +508,6 @@ export default function ComputisCaseStudy() {
                 <p className="text-xs text-red-600">Manual work</p>
               </div>
             </div>
-
-            {/* CPA Workflow Journey Map */}
-            <div className="case-study-image mb-6">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400"
-                alt="CPA workflow journey map showing 5 phases with emotion curve and pain points"
-                loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400')}
-              />
-              <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">Click to enlarge</span>
-              </div>
-            </div>
-            <p className="case-study-image__caption">
-              Figure 4: CPA workflow journey — mapping pain points and AI intervention opportunities
-            </p>
-
-            {/* Competitive Analysis */}
-            <div className="case-study-image mt-6">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400"
-                alt="Competitive feature comparison matrix showing Computis advantages in AI transparency and professional control"
-                loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400')}
-              />
-              <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">Click to enlarge</span>
-              </div>
-            </div>
-            <p className="case-study-image__caption">
-              Figure 5: Competitive analysis — Computis differentiation through explainable AI
-            </p>
 
             {/* Information Architecture */}
             <div className="case-study-image mt-6">
