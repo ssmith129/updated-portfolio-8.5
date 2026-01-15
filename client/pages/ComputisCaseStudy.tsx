@@ -58,6 +58,19 @@ export default function ComputisCaseStudy() {
     setIsSummaryExpanded(!isMobile);
   }, []);
 
+  useEffect(() => {
+    if (!carouselApi) return;
+
+    const onSelect = () => {
+      setCurrentSlide(carouselApi.selectedScrollSnap());
+    };
+
+    carouselApi.on("select", onSelect);
+    return () => {
+      carouselApi.off("select", onSelect);
+    };
+  }, [carouselApi]);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
