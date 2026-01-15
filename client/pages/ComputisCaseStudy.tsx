@@ -692,6 +692,74 @@ export default function ComputisCaseStudy() {
             <p className="case-study-image__caption">
               Figure 7: UI evolution — before/after AI integration with confidence indicators
             </p>
+
+            {/* UI Screens Section */}
+            <div className="mt-12">
+              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-6">
+                UI Screens
+              </h3>
+
+              <Carousel
+                setApi={setCarouselApi}
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent>
+                  {Array.from({ length: 9 }).map((_, index) => (
+                    <CarouselItem key={index}>
+                      <div className="relative group cursor-pointer">
+                        <img
+                          src={`https://via.placeholder.com/800x500/E3E8EF/0A2540?text=UI+Screen+${index + 1}`}
+                          alt={`Computis platform UI screen ${index + 1}`}
+                          className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                          loading="lazy"
+                          onClick={() =>
+                            setLightboxImage(
+                              `https://via.placeholder.com/800x500/E3E8EF/0A2540?text=UI+Screen+${index + 1}`
+                            )
+                          }
+                        />
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                          <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                            Click to enlarge
+                          </span>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+
+                {/* Navigation Controls */}
+                <div className="flex items-center justify-center gap-4 mt-6">
+                  <CarouselPrevious className="relative left-0 translate-x-0 translate-y-0" />
+
+                  {/* Dot Indicators */}
+                  <div className="flex gap-2">
+                    {Array.from({ length: 9 }).map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => carouselApi?.scrollTo(index)}
+                        className={`h-2 rounded-full transition-all duration-300 ${
+                          currentSlide === index
+                            ? "w-8 bg-precision-accent"
+                            : "w-2 bg-gray-300 hover:bg-gray-400"
+                        }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+
+                  <CarouselNext className="relative right-0 translate-x-0 translate-y-0" />
+                </div>
+              </Carousel>
+
+              <p className="text-sm text-precision-text-secondary text-center mt-4">
+                Interactive gallery of Computis platform UI screens — Click any image to view fullscreen
+              </p>
+            </div>
           </div>
         </section>
 
