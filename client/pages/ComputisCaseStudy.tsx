@@ -534,7 +534,7 @@ export default function ComputisCaseStudy() {
 
               <div className="mb-6">
                 <p className="text-base text-precision-text-primary leading-relaxed">
-                  Building the Computis platform required a strategic, systematic approach to design consistency. We developed a comprehensive design system that unified typography, color palettes, component libraries, and interaction patterns across all user touchpoints. This foundation enabled rapid iteration while maintaining visual coherence and professional credibility—critical for CPAs managing high-stakes tax workflows. By establishing reusable patterns and clear design principles, we reduced design debt, accelerated development velocity, and ensured every interface element reinforced user trust through predictable, polished experiences that met enterprise-grade quality standards.
+                  We developed a comprehensive design system that unified typography, color palettes, component libraries, and interaction patterns across all touchpoints. This foundation enabled rapid iteration while maintaining visual coherence and professional credibility critical for CPAs managing high-stakes tax workflows.
                 </p>
               </div>
 
