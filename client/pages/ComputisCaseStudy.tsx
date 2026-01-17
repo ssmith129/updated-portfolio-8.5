@@ -851,26 +851,6 @@ export default function ComputisCaseStudy() {
                   <CarouselItem>
                     <div className="relative group cursor-pointer">
                       <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa86222fd23ae4bc58f54e967747843d8?format=webp&width=2400"
-                        alt="Computis Audit Trail - Export audit log collapsed view"
-                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                        loading="lazy"
-                        onClick={() =>
-                          setLightboxImage(
-                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa86222fd23ae4bc58f54e967747843d8?format=webp&width=2400"
-                          )
-                        }
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative group cursor-pointer">
-                      <img
                         src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
                         alt="Computis Audit Trail - Export audit log expanded view"
                         className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
@@ -896,7 +876,7 @@ export default function ComputisCaseStudy() {
 
                   {/* Dot Indicators */}
                   <div className="flex gap-2">
-                    {Array.from({ length: 9 }).map((_, index) => (
+                    {Array.from({ length: 8 }).map((_, index) => (
                       <button
                         key={index}
                         onClick={() => carouselApi?.scrollTo(index)}
