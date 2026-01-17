@@ -708,28 +708,186 @@ export default function ComputisCaseStudy() {
                 className="w-full"
               >
                 <CarouselContent>
-                  {Array.from({ length: 9 }).map((_, index) => (
-                    <CarouselItem key={index}>
-                      <div className="relative group cursor-pointer">
-                        <img
-                          src={`https://via.placeholder.com/800x500/E3E8EF/0A2540?text=UI+Screen+${index + 1}`}
-                          alt={`Computis platform UI screen ${index + 1}`}
-                          className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                          loading="lazy"
-                          onClick={() =>
-                            setLightboxImage(
-                              `https://via.placeholder.com/800x500/E3E8EF/0A2540?text=UI+Screen+${index + 1}`
-                            )
-                          }
-                        />
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                          <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                            Click to enlarge
-                          </span>
-                        </div>
+                  <CarouselItem>
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
+                        alt="Computis Dashboard - Key metrics and data overview"
+                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                        loading="lazy"
+                        onClick={() =>
+                          setLightboxImage(
+                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
+                          )
+                        }
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                          Click to enlarge
+                        </span>
                       </div>
-                    </CarouselItem>
-                  ))}
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
+                        alt="Computis Rule Builder - Configure classification rules"
+                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                        loading="lazy"
+                        onClick={() =>
+                          setLightboxImage(
+                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
+                          )
+                        }
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                          Click to enlarge
+                        </span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
+                        alt="Computis Exports - IRS 8949, QBO, and CSV export options"
+                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                        loading="lazy"
+                        onClick={() =>
+                          setLightboxImage(
+                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
+                          )
+                        }
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                          Click to enlarge
+                        </span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
+                        alt="Computis Gain/Loss Report - Capital gains analysis"
+                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                        loading="lazy"
+                        onClick={() =>
+                          setLightboxImage(
+                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
+                          )
+                        }
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                          Click to enlarge
+                        </span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
+                        alt="Computis IRS Form 8949 - Sales and dispositions of capital assets"
+                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                        loading="lazy"
+                        onClick={() =>
+                          setLightboxImage(
+                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
+                          )
+                        }
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                          Click to enlarge
+                        </span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
+                        alt="Computis Client Management - Manage firms and client users"
+                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                        loading="lazy"
+                        onClick={() =>
+                          setLightboxImage(
+                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
+                          )
+                        }
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                          Click to enlarge
+                        </span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
+                        alt="Computis Wallets and Exchanges - Connect crypto sources"
+                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                        loading="lazy"
+                        onClick={() =>
+                          setLightboxImage(
+                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
+                          )
+                        }
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                          Click to enlarge
+                        </span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa86222fd23ae4bc58f54e967747843d8?format=webp&width=2400"
+                        alt="Computis Audit Trail - Export audit log collapsed view"
+                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                        loading="lazy"
+                        onClick={() =>
+                          setLightboxImage(
+                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa86222fd23ae4bc58f54e967747843d8?format=webp&width=2400"
+                          )
+                        }
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                          Click to enlarge
+                        </span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group cursor-pointer">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
+                        alt="Computis Audit Trail - Export audit log expanded view"
+                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                        loading="lazy"
+                        onClick={() =>
+                          setLightboxImage(
+                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
+                          )
+                        }
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                          Click to enlarge
+                        </span>
+                      </div>
+                    </div>
+                  </CarouselItem>
                 </CarouselContent>
 
                 {/* Navigation Controls */}
