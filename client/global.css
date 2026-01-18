@@ -286,3 +286,52 @@
     border-left-width: 6px;
   }
 }
+
+/* ============================================
+   DARK MODE UTILITIES
+   ============================================ */
+
+@layer utilities {
+  /* Smooth dark mode transitions */
+  .dark-mode-transition {
+    @apply transition-colors duration-200 ease-in-out;
+  }
+
+  /* Dark mode card backgrounds */
+  .card-dark {
+    @apply bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700;
+  }
+
+  /* Dark mode text variants */
+  .text-dark-primary {
+    @apply text-precision-text-primary dark:text-precision-text-primary;
+  }
+
+  .text-dark-secondary {
+    @apply text-precision-text-secondary dark:text-precision-text-secondary;
+  }
+
+  /* Dark mode shadows */
+  .shadow-dark {
+    @apply shadow-precision-sm dark:shadow-precision-md;
+  }
+
+  /* Dark mode borders */
+  .border-dark {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+
+  /* Dark mode hover states */
+  .hover-dark {
+    @apply hover:bg-gray-50 dark:hover:bg-gray-700/50;
+  }
+
+  /* Dark mode backgrounds */
+  .bg-dark-surface {
+    @apply bg-white dark:bg-gray-900;
+  }
+
+  .bg-dark-elevated {
+    @apply bg-gray-50 dark:bg-gray-800;
+  }
+}
