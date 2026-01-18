@@ -1,6 +1,7 @@
 # Dark Mode Implementation Documentation
 
 ## Overview
+
 This website features a comprehensive dark mode implementation that provides a seamless user experience across all pages. The dark mode preference is automatically saved and persists across browsing sessions.
 
 ---
@@ -12,7 +13,7 @@ This website features a comprehensive dark mode implementation that provides a s
 ✅ **Smooth Transitions** - 200ms color transitions for pleasant theme switching  
 ✅ **WCAG Compliant** - Maintains 4.5:1 contrast ratios for accessibility  
 ✅ **Global Coverage** - Dark mode styles applied to all UI elements  
-✅ **Cross-Browser Compatible** - Tested on Chrome, Firefox, Safari, and Edge  
+✅ **Cross-Browser Compatible** - Tested on Chrome, Firefox, Safari, and Edge
 
 ---
 
@@ -30,6 +31,7 @@ const { theme, toggleTheme, setTheme } = useTheme();
 ```
 
 **Methods:**
+
 - `theme` - Current theme (`"light"` | `"dark"`)
 - `toggleTheme()` - Switches between light and dark modes
 - `setTheme(theme)` - Explicitly sets the theme
@@ -41,10 +43,11 @@ A reusable button component that displays sun/moon icons and toggles dark mode:
 ```tsx
 import ThemeToggle from "./components/ThemeToggle";
 
-<ThemeToggle className="ml-2" />
+<ThemeToggle className="ml-2" />;
 ```
 
 **Features:**
+
 - Animated icon transitions
 - Accessible with ARIA labels
 - Hover effects
@@ -55,6 +58,7 @@ import ThemeToggle from "./components/ThemeToggle";
 Dark mode colors are defined using CSS custom properties:
 
 #### Light Mode Colors
+
 ```css
 :root {
   --precision-primary: #0a2540;
@@ -70,6 +74,7 @@ Dark mode colors are defined using CSS custom properties:
 ```
 
 #### Dark Mode Colors
+
 ```css
 .dark {
   --precision-primary: #1a1f36;
@@ -122,12 +127,8 @@ import { useTheme } from "../contexts/ThemeContext";
 
 export default function MyComponent() {
   const { theme } = useTheme();
-  
-  return (
-    <div>
-      {theme === "dark" ? <DarkModeIcon /> : <LightModeIcon />}
-    </div>
-  );
+
+  return <div>{theme === "dark" ? <DarkModeIcon /> : <LightModeIcon />}</div>;
 }
 ```
 
@@ -160,11 +161,11 @@ Use these pre-built utility classes for common dark mode patterns:
 
 All dark mode colors meet WCAG AA standards (4.5:1 minimum):
 
-| Element | Light Mode | Dark Mode | Contrast Ratio |
-|---------|-----------|-----------|----------------|
-| Primary Text | #1a1f36 on #f7f9fc | #e8eaed on #0f1419 | 12.5:1 ✅ |
-| Secondary Text | #697386 on #f7f9fc | #9fa3ad on #0f1419 | 4.8:1 ✅ |
-| Accent | #00d4aa on #f7f9fc | #00d4aa on #0f1419 | 4.9:1 ✅ |
+| Element        | Light Mode         | Dark Mode          | Contrast Ratio |
+| -------------- | ------------------ | ------------------ | -------------- |
+| Primary Text   | #1a1f36 on #f7f9fc | #e8eaed on #0f1419 | 12.5:1 ✅      |
+| Secondary Text | #697386 on #f7f9fc | #9fa3ad on #0f1419 | 4.8:1 ✅       |
+| Accent         | #00d4aa on #f7f9fc | #00d4aa on #0f1419 | 4.9:1 ✅       |
 
 ---
 
@@ -173,7 +174,7 @@ All dark mode colors meet WCAG AA standards (4.5:1 minimum):
 ✅ **Chrome/Edge** (v90+) - Full support  
 ✅ **Firefox** (v88+) - Full support  
 ✅ **Safari** (v14+) - Full support  
-✅ **Mobile browsers** - Full support with touch optimizations  
+✅ **Mobile browsers** - Full support with touch optimizations
 
 ---
 
@@ -185,8 +186,8 @@ Edit `client/global.css`:
 
 ```css
 .dark {
-  --precision-accent: #YOUR_COLOR;  /* Update accent color */
-  --precision-neutral: #YOUR_BG;    /* Update background */
+  --precision-accent: #YOUR_COLOR; /* Update accent color */
+  --precision-neutral: #YOUR_BG; /* Update background */
 }
 ```
 
@@ -273,13 +274,15 @@ pa11y --runner axe http://localhost:3000
 ### Issue: Theme doesn't persist after refresh
 
 **Solution:** Check browser localStorage support:
+
 ```javascript
-console.log(localStorage.getItem('theme'));
+console.log(localStorage.getItem("theme"));
 ```
 
 ### Issue: Colors not changing in dark mode
 
 **Solution:** Ensure you're using Tailwind's `dark:` prefix or CSS custom properties:
+
 ```tsx
 // ❌ Won't work
 <div className="bg-gray-100">
@@ -291,6 +294,7 @@ console.log(localStorage.getItem('theme'));
 ### Issue: Transitions too slow/fast
 
 **Solution:** Adjust transition duration in `global.css`:
+
 ```css
 transition-duration: 200ms; /* Adjust this value */
 ```
@@ -336,6 +340,7 @@ Potential improvements for the dark mode system:
 ## Support
 
 For issues or questions about dark mode implementation:
+
 1. Check this documentation
 2. Review the code in `/client/contexts/ThemeContext.tsx`
 3. Test in browser dev tools with `document.documentElement.classList`
@@ -346,6 +351,6 @@ For issues or questions about dark mode implementation:
 
 Dark mode implementation by Sean Smith Portfolio Team  
 Using Tailwind CSS dark mode utilities  
-Icons from Lucide React  
+Icons from Lucide React
 
 Last Updated: January 2025
