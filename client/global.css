@@ -78,6 +78,22 @@
   }
 
   .dark {
+    /* Precision Trust Theme Variables - Dark Mode */
+    --precision-primary: #1a1f36;
+    --precision-secondary: #2a3144;
+    --precision-accent: #00d4aa;
+    --precision-neutral: #0f1419;
+    --precision-text-primary: #e8eaed;
+    --precision-text-secondary: #9fa3ad;
+    --precision-error: #ff6b6b;
+    --precision-success: #00d4aa;
+    --precision-warning: #ffa94d;
+
+    /* Precision Trust Shadows - Dark Mode */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+    /* Shadcn/UI Dark Mode Variables */
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
