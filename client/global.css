@@ -135,10 +135,13 @@
 @layer base {
   * {
     @apply border-border;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-precision-neutral text-precision-text-primary;
     font-family:
       "Manrope",
       -apple-system,
