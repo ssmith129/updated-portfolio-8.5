@@ -49,16 +49,16 @@ export default function Index() {
 
           {/* Hero Text */}
           <div className="flex-1 text-center lg:text-left order-2 lg:order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] 2xl:text-[94px] font-medium text-[#131417] leading-[110%] sm:leading-[115%] md:leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.5px] xl:tracking-[-1.72px] 2xl:tracking-[-1.88px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-500 hover:tracking-[-1.3px] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-700">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] 2xl:text-[94px] font-medium text-[#131417] dark:text-white leading-[110%] sm:leading-[115%] md:leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.5px] xl:tracking-[-1.72px] 2xl:tracking-[-1.88px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-500 hover:tracking-[-1.3px] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-700">
               UX/Product Designer
             </h1>
 
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[28px] font-normal text-[#131417] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] xl:tracking-[-0.28px] mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] transition-all duration-300 hover:text-[#2a2a2a] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-900">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[28px] font-normal text-[#131417] dark:text-gray-300 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] xl:tracking-[-0.28px] mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] transition-all duration-300 hover:text-[#2a2a2a] dark:hover:text-white animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-900">
               8+ years creating intuitive, scalable UX for complex SaaS
               platforms. I specialize in{" "}
               <Link
                 to="/about"
-                className="text-[#131417] hover:text-[#2a2a2a] underline underline-offset-4 decoration-2 hover:decoration-[#2a2a2a] transition-all duration-300"
+                className="text-[#131417] dark:text-precision-accent hover:text-[#2a2a2a] dark:hover:text-white underline underline-offset-4 decoration-2 hover:decoration-[#2a2a2a] dark:hover:decoration-precision-accent transition-all duration-300"
                 aria-label="Learn more about Sean's AI integration expertise"
               >
                 AI-integrated systems
