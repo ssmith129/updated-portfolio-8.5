@@ -149,6 +149,9 @@ export default function Navigation({ className = "" }: NavigationProps) {
             </Link>
           );
         })}
+
+        {/* Dark Mode Toggle - Desktop */}
+        <ThemeToggle className="ml-2" />
       </div>
 
       {/* Mobile Menu Backdrop */}
