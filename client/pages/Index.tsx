@@ -25,7 +25,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F5F5]">
+    <div className="min-h-screen bg-[#F5F5F5] dark:bg-gray-900 transition-colors duration-200">
       <SkipLink />
       <Navigation />
 
