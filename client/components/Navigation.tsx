@@ -216,6 +216,11 @@ export default function Navigation({ className = "" }: NavigationProps) {
               </Link>
             );
           })}
+
+          {/* Dark Mode Toggle - Mobile */}
+          <div className="flex justify-center pt-3 border-t border-gray-200 dark:border-gray-700">
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </nav>
