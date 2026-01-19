@@ -677,203 +677,171 @@ export default function ComputisCaseStudy() {
                 UI Screens
               </h3>
 
-              <Carousel
-                setApi={setCarouselApi}
-                opts={{
-                  align: "start",
-                  loop: true,
-                }}
-                className="w-full"
-              >
-                <CarouselContent>
-                  <CarouselItem>
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
-                        alt="Dashboard"
-                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                        loading="lazy"
-                        onClick={() =>
-                          setLightboxImage(
-                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
-                          )
-                        }
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
-                        alt="Rule Builder"
-                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                        loading="lazy"
-                        onClick={() =>
-                          setLightboxImage(
-                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
-                          )
-                        }
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
-                        alt="Exports"
-                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                        loading="lazy"
-                        onClick={() =>
-                          setLightboxImage(
-                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
-                          )
-                        }
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
-                        alt="Gain/Loss Report"
-                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                        loading="lazy"
-                        onClick={() =>
-                          setLightboxImage(
-                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
-                          )
-                        }
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
-                        alt="IRS Form 8949"
-                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                        loading="lazy"
-                        onClick={() =>
-                          setLightboxImage(
-                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
-                          )
-                        }
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
-                        alt="Client Management"
-                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                        loading="lazy"
-                        onClick={() =>
-                          setLightboxImage(
-                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
-                          )
-                        }
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
-                        alt="Wallets and Exchanges"
-                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                        loading="lazy"
-                        onClick={() =>
-                          setLightboxImage(
-                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
-                          )
-                        }
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="relative group cursor-pointer">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
-                        alt="Audit Trail (Expanded view)"
-                        className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
-                        loading="lazy"
-                        onClick={() =>
-                          setLightboxImage(
-                            "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
-                          )
-                        }
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
-                          Click to enlarge
-                        </span>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                </CarouselContent>
-
-                {/* Navigation Controls */}
-                <div className="flex items-center justify-center gap-4 mt-6">
-                  <CarouselPrevious className="relative left-0 translate-x-0 translate-y-0" />
-
-                  {/* Dot Indicators */}
-                  <div className="flex gap-2">
-                    {Array.from({ length: 8 }).map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => carouselApi?.scrollTo(index)}
-                        className={`h-2 rounded-full transition-all duration-300 ${
-                          currentSlide === index
-                            ? "w-8 bg-precision-accent"
-                            : "w-2 bg-gray-300 hover:bg-gray-400"
-                        }`}
-                        aria-label={`Go to slide ${index + 1}`}
-                      />
-                    ))}
+              {/* 2x4 Grid Layout */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Row 1, Col 1: Dashboard */}
+                <div className="relative group cursor-pointer">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
+                    alt="Dashboard"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
+                      )
+                    }
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                      Click to enlarge
+                    </span>
                   </div>
-
-                  <CarouselNext className="relative right-0 translate-x-0 translate-y-0" />
                 </div>
-              </Carousel>
 
-              <p className="text-sm text-precision-text-secondary text-center mt-4">
-                Interactive gallery of Computis platform UI screens — Click any image to view fullscreen
+                {/* Row 1, Col 2: Rule Builder */}
+                <div className="relative group cursor-pointer">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
+                    alt="Rule Builder"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
+                      )
+                    }
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+
+                {/* Row 2, Col 1: Exports */}
+                <div className="relative group cursor-pointer">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
+                    alt="Exports"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
+                      )
+                    }
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+
+                {/* Row 2, Col 2: Gain/Loss Report */}
+                <div className="relative group cursor-pointer">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
+                    alt="Gain/Loss Report"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
+                      )
+                    }
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+
+                {/* Row 3, Col 1: IRS Form 8949 */}
+                <div className="relative group cursor-pointer">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
+                    alt="IRS Form 8949"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
+                      )
+                    }
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+
+                {/* Row 3, Col 2: Client Management */}
+                <div className="relative group cursor-pointer">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
+                    alt="Client Management"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
+                      )
+                    }
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+
+                {/* Row 4, Col 1: Wallets and Exchanges */}
+                <div className="relative group cursor-pointer">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
+                    alt="Wallets and Exchanges"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
+                      )
+                    }
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+
+                {/* Row 4, Col 2: Audit Trail (Expanded view) */}
+                <div className="relative group cursor-pointer">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
+                    alt="Audit Trail (Expanded view)"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm transition-all duration-300 group-hover:shadow-md"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
+                      )
+                    }
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 rounded-lg flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-sm font-medium bg-precision-primary px-4 py-2 rounded-lg shadow-lg">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-sm text-precision-text-secondary text-center mt-6">
+                Click any image to view fullscreen
               </p>
             </div>
           </div>
