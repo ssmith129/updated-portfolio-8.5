@@ -48,6 +48,27 @@ export default function ComputisCaseStudy() {
     setIsSummaryExpanded(!isMobile);
   }, []);
 
+  // Lightbox keyboard and scroll handling
+  useEffect(() => {
+    if (lightboxImage) {
+      // Prevent body scroll when lightbox is open
+      document.body.style.overflow = "hidden";
+
+      // Close on ESC key
+      const handleEscape = (e: KeyboardEvent) => {
+        if (e.key === "Escape") {
+          setLightboxImage(null);
+        }
+      };
+
+      document.addEventListener("keydown", handleEscape);
+
+      return () => {
+        document.body.style.overflow = "unset";
+        document.removeEventListener("keydown", handleEscape);
+      };
+    }
+  }, [lightboxImage]);
 
   const scrollToTop = () => {
     window.scrollTo({
