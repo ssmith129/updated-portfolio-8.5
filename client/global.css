@@ -288,6 +288,50 @@
 }
 
 /* ============================================
+   IPAD & TABLET UTILITIES
+   ============================================ */
+
+@layer utilities {
+  /* Touch target utilities */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  .touch-target-lg {
+    @apply min-h-[48px] min-w-[48px];
+  }
+
+  /* iPad-specific containers */
+  .container-ipad {
+    @apply max-w-[90vw] mx-auto px-[5vw];
+  }
+
+  /* Responsive text for tablets */
+  .text-responsive {
+    font-size: clamp(16px, 1.5vw, 18px);
+  }
+
+  /* Touch feedback */
+  .touch-feedback {
+    @apply active:scale-95 transition-transform duration-100;
+  }
+
+  /* iPad grid layouts */
+  .grid-ipad-2 {
+    @apply grid grid-cols-1 md:grid-cols-2;
+  }
+
+  .grid-ipad-3 {
+    @apply grid grid-cols-1 md:grid-cols-2 ipad-pro:grid-cols-3;
+  }
+
+  /* Spacing for touch */
+  .gap-touch {
+    @apply gap-4 md:gap-6;
+  }
+}
+
+/* ============================================
    DARK MODE UTILITIES
    ============================================ */
 
