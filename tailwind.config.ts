@@ -15,8 +15,11 @@ export default {
     screens: {
       xs: "320px", // Small phones
       sm: "480px", // Large phones (updated from 640px)
-      md: "768px", // Tablets
+      md: "768px", // Tablets (iPad Portrait)
+      "md-land": "1024px", // iPad Landscape
       lg: "1024px", // Desktop
+      "ipad-air": "1180px", // iPad Air specific
+      "ipad-pro": "1366px", // iPad Pro 12.9" landscape
       xl: "1280px", // Large desktop
       "2xl": "1440px", // Extra large desktop (updated from 1536px)
     },
