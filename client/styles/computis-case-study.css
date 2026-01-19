@@ -81,17 +81,53 @@
    ============================================ */
 
 .image-lightbox {
-  @apply fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm;
+  @apply fixed inset-0 bg-black/95 backdrop-blur-md;
   @apply flex items-center justify-center p-4;
+  z-index: 9999;
+  cursor: zoom-out;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .image-lightbox__close {
-  @apply absolute top-4 right-4 p-3 bg-white/10 rounded-full;
-  @apply hover:bg-white/20 transition-colors;
+  @apply absolute top-4 right-4 z-[10000] p-3 bg-white/10 rounded-full;
+  @apply hover:bg-white/20 transition-all duration-200;
+  @apply focus:outline-none focus:ring-2 focus:ring-white/50;
+  cursor: pointer;
+}
+
+.image-lightbox__close:hover {
+  transform: scale(1.1);
 }
 
 .image-lightbox__image {
-  @apply max-w-[95vw] max-h-[90vh] object-contain rounded-lg shadow-2xl;
+  max-width: 95vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  @apply rounded-lg shadow-2xl;
+  cursor: default;
+  animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* ============================================
