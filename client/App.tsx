@@ -1,4 +1,5 @@
 import "./global.css";
+import "./styles/ipad-optimizations.css";
 
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
