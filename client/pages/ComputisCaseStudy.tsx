@@ -1140,22 +1140,41 @@ export default function ComputisCaseStudy() {
 
       {/* Image Lightbox */}
       {lightboxImage && (
-        <div className="image-lightbox" onClick={() => setLightboxImage(null)}>
+        <div
+          className="image-lightbox"
+          onClick={() => setLightboxImage(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Image lightbox - Click anywhere to close"
+        >
           <button
             className="image-lightbox__close"
-            onClick={() => setLightboxImage(null)}
-            aria-label="Close lightbox"
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightboxImage(null);
+            }}
+            aria-label="Close lightbox (ESC)"
+            title="Close (ESC)"
+            autoFocus
           >
-            <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <svg
+              className="w-6 h-6 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <img
-            src={lightboxImage}
-            alt="Enlarged view"
-            className="image-lightbox__image"
-            onClick={(e) => e.stopPropagation()}
-          />
+          <div className="flex items-center justify-center w-full h-full">
+            <img
+              src={lightboxImage}
+              alt="Enlarged screenshot - Full resolution view"
+              className="image-lightbox__image"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
         </div>
       )}
 
