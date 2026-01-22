@@ -703,14 +703,14 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* AI Features */}
-            <div className="mt-8 space-y-6">
-              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+            <div className="mt-8 space-y-4">
+              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-3">
                 Four AI Capabilities
               </h3>
 
               {/* Feature 1: Classification */}
-              <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
-                <div className="flex items-center gap-3 mb-4">
+              <div className="bg-white rounded-card p-4 border border-[#E3E8EF] shadow-sm">
+                <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                     <Sparkles className="w-5 h-5 text-precision-accent" />
                   </div>
@@ -732,8 +732,8 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Feature 2: Audit Trail */}
-              <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
-                <div className="flex items-center gap-3 mb-4">
+              <div className="bg-white rounded-card p-4 border border-[#E3E8EF] shadow-sm">
+                <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
                     <Eye className="w-5 h-5 text-precision-secondary" />
                   </div>
@@ -755,8 +755,8 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Feature 3: Rule Builder */}
-              <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
-                <div className="flex items-center gap-3 mb-4">
+              <div className="bg-white rounded-card p-4 border border-[#E3E8EF] shadow-sm">
+                <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                     <Settings className="w-5 h-5 text-precision-success" />
                   </div>
@@ -778,8 +778,8 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Feature 4: Anomaly Detection */}
-              <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
-                <div className="flex items-center gap-3 mb-4">
+              <div className="bg-white rounded-card p-4 border border-[#E3E8EF] shadow-sm">
+                <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
                     <AlertTriangle className="w-5 h-5 text-precision-error" />
                   </div>
