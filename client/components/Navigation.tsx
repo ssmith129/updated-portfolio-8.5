@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import ThemeToggle from "./ThemeToggle";
 
 interface NavigationProps {
   className?: string;
@@ -149,9 +148,6 @@ export default function Navigation({ className = "" }: NavigationProps) {
             </Link>
           );
         })}
-
-        {/* Dark Mode Toggle - Desktop */}
-        <ThemeToggle className="ml-2" />
       </div>
 
       {/* Mobile Menu Backdrop */}
@@ -216,11 +212,6 @@ export default function Navigation({ className = "" }: NavigationProps) {
               </Link>
             );
           })}
-
-          {/* Dark Mode Toggle - Mobile */}
-          <div className="flex justify-center pt-3 border-t border-gray-200 dark:border-gray-700">
-            <ThemeToggle />
-          </div>
         </div>
       </div>
     </nav>
