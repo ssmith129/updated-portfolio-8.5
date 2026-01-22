@@ -82,14 +82,14 @@ export function FeatureCards({ problem, solution, impact }: FeatureCardsProps) {
   if (!problem && !solution && !impact) return null;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
       {/* Problem */}
       {problem && (
-        <div className="bg-gradient-to-br from-red-50 to-orange-50 p-5 rounded-card border-l-4 border-precision-error shadow-sm hover:shadow-md transition-all duration-300">
-          <p className="text-xs font-bold text-precision-error uppercase tracking-wider mb-2">
+        <div className="bg-gradient-to-br from-red-50 to-orange-50 p-3 rounded-card border-l-4 border-precision-error shadow-sm hover:shadow-md transition-all duration-300">
+          <p className="text-xs font-bold text-precision-error uppercase tracking-wider mb-1.5">
             Problem
           </p>
-          <p className="text-sm text-precision-text-primary leading-[170%]">
+          <p className="text-sm text-precision-text-primary leading-[160%]">
             {problem}
           </p>
         </div>
@@ -97,11 +97,11 @@ export function FeatureCards({ problem, solution, impact }: FeatureCardsProps) {
 
       {/* Solution */}
       {solution && (
-        <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-5 rounded-card border-l-4 border-precision-secondary shadow-sm hover:shadow-md transition-all duration-300">
-          <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">
+        <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-3 rounded-card border-l-4 border-precision-secondary shadow-sm hover:shadow-md transition-all duration-300">
+          <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-1.5">
             Solution
           </p>
-          <p className="text-sm text-precision-text-primary leading-[170%]">
+          <p className="text-sm text-precision-text-primary leading-[160%]">
             {solution}
           </p>
         </div>
@@ -109,11 +109,11 @@ export function FeatureCards({ problem, solution, impact }: FeatureCardsProps) {
 
       {/* Impact */}
       {impact && (
-        <div className="bg-gradient-to-br from-green-50 to-teal-50 p-5 rounded-card border-l-4 border-precision-success shadow-sm hover:shadow-md transition-all duration-300">
-          <p className="text-xs font-bold text-precision-success uppercase tracking-wider mb-2">
+        <div className="bg-gradient-to-br from-green-50 to-teal-50 p-3 rounded-card border-l-4 border-precision-success shadow-sm hover:shadow-md transition-all duration-300">
+          <p className="text-xs font-bold text-precision-success uppercase tracking-wider mb-1.5">
             Impact
           </p>
-          <p className="text-sm text-precision-text-primary leading-[170%] font-semibold">
+          <p className="text-sm text-precision-text-primary leading-[160%] font-semibold">
             {impact}
           </p>
         </div>
