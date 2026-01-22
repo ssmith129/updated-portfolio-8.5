@@ -116,70 +116,37 @@ export default function ComputisCaseStudy() {
             Computis — AI-Powered Crypto Tax Automation
           </h1>
           <p className="text-base text-precision-text-secondary leading-[140%] mb-6">
-            Designing AI features that <strong>augment CPA expertise</strong>{" "}
-            while maintaining professional control and IRS audit defensibility
+            Designing AI features that <strong>augment CPA expertise</strong> while maintaining professional control and IRS audit defensibility
           </p>
 
           {/* Hero Metrics Grid - Above the Fold */}
           <div className="hero-metrics-grid mb-6">
             <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                AI Trust
-              </p>
-              <p className="text-3xl font-bold text-precision-accent mb-1">
-                89%
-              </p>
-              <p className="text-xs text-precision-text-secondary">
-                Acceptance rate
-              </p>
-              <p className="text-xs font-semibold text-precision-success mt-2">
-                +287% increase
-              </p>
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">AI Trust</p>
+              <p className="text-3xl font-bold text-precision-accent mb-1">89%</p>
+              <p className="text-xs text-precision-text-secondary">Acceptance rate</p>
+              <p className="text-xs font-semibold text-precision-success mt-2">+287% increase</p>
             </div>
 
             <div className="hero-metric-card hero-metric-card--success shadow-precision-sm">
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                Manual Work
-              </p>
-              <p className="text-3xl font-bold text-precision-success mb-1">
-                ↓85%
-              </p>
-              <p className="text-xs text-precision-text-secondary">
-                Classification time
-              </p>
-              <p className="text-xs font-semibold text-precision-accent mt-2">
-                15% review only
-              </p>
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Manual Work</p>
+              <p className="text-3xl font-bold text-precision-success mb-1">↓85%</p>
+              <p className="text-xs text-precision-text-secondary">Classification time</p>
+              <p className="text-xs font-semibold text-precision-accent mt-2">15% review only</p>
             </div>
 
             <div className="hero-metric-card hero-metric-card--secondary shadow-precision-sm">
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                Review Queue
-              </p>
-              <p className="text-3xl font-bold text-precision-secondary mb-1">
-                11%
-              </p>
-              <p className="text-xs text-precision-text-secondary">
-                Medium confidence
-              </p>
-              <p className="text-xs font-semibold text-precision-accent mt-2">
-                Human context
-              </p>
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Review Queue</p>
+              <p className="text-3xl font-bold text-precision-secondary mb-1">11%</p>
+              <p className="text-xs text-precision-text-secondary">Medium confidence</p>
+              <p className="text-xs font-semibold text-precision-accent mt-2">Human context</p>
             </div>
 
             <div className="hero-metric-card hero-metric-card--warning shadow-precision-sm">
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
-                Audit Defense
-              </p>
-              <p className="text-3xl font-bold text-precision-warning mb-1">
-                340%
-              </p>
-              <p className="text-xs text-precision-text-secondary">
-                Trail exports
-              </p>
-              <p className="text-xs font-semibold text-precision-success mt-2">
-                IRS-ready
-              </p>
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Audit Defense</p>
+              <p className="text-3xl font-bold text-precision-warning mb-1">340%</p>
+              <p className="text-xs text-precision-text-secondary">Trail exports</p>
+              <p className="text-xs font-semibold text-precision-success mt-2">IRS-ready</p>
             </div>
           </div>
 
@@ -313,7 +280,10 @@ export default function ComputisCaseStudy() {
         className="max-w-[1200px] mx-auto px-6 pb-16 space-y-8 relative z-10"
       >
         {/* PROBLEM SECTION */}
-        <section id="problem" className="section-animate scroll-mt-24 mt-6">
+        <section
+          id="problem"
+          className="section-animate scroll-mt-24 mt-6"
+        >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               The Problem
@@ -322,14 +292,10 @@ export default function ComputisCaseStudy() {
             <div className="insight-callout insight-callout--key mb-6">
               <div className="insight-callout__header">
                 <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">
-                  TL;DR
-                </p>
+                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
               </div>
               <p className="insight-callout__text">
-                CPAs spent 95% of time on repetitive classification. They needed
-                AI that automates routine work while preserving professional
-                judgment for IRS liability.
+                CPAs spent 95% of time on repetitive classification. They needed AI that automates routine work while preserving professional judgment for IRS liability.
               </p>
             </div>
 
@@ -339,51 +305,39 @@ export default function ComputisCaseStudy() {
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffb144b7c7d4d4a4383dab85bad19238c?format=webp&width=2400"
                 alt="CPA Time Allocation - Before: 95% manual classification vs After: 85% reduction with Computis AI"
                 loading="eager"
-                onClick={() =>
-                  setLightboxImage(
-                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffb144b7c7d4d4a4383dab85bad19238c?format=webp&width=2400",
-                  )
-                }
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffb144b7c7d4d4a4383dab85bad19238c?format=webp&width=2400')}
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">
-                  Click to enlarge
-                </span>
+                <span className="case-study-image__zoom-hint">Click to enlarge</span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 1: CPA workflow transformation — from 95% manual work to
-              15% review-only
+              Figure 1: CPA workflow transformation — from 95% manual work to 15% review-only
             </p>
 
             <div className="mt-6">
               <p className="text-base text-precision-text-primary leading-relaxed mb-4">
-                Computis had a functional crypto tax platform—but CPAs spent{" "}
-                <strong>95% of time on manual classification</strong> instead of
-                high-value tax strategy and client consultation.
+                Computis had a functional crypto tax platform—but CPAs spent <strong>95% of time on manual classification</strong> instead of high-value tax strategy and client consultation.
               </p>
             </div>
 
             <div className="insight-callout insight-callout--warning mt-6">
               <div className="insight-callout__header">
                 <Lightbulb className="w-5 h-5 text-precision-error" />
-                <p className="text-sm font-bold uppercase tracking-wider text-precision-error">
-                  Key Insight
-                </p>
+                <p className="text-sm font-bold uppercase tracking-wider text-precision-error">Key Insight</p>
               </div>
               <p className="insight-callout__text">
-                <strong>
-                  This wasn't a UX problem—it was a trust problem.
-                </strong>{" "}
-                CPAs are personally liable for classifications. They needed to
-                explain decisions to the IRS, not accept black-box outputs.
+                <strong>This wasn't a UX problem—it was a trust problem.</strong> CPAs are personally liable for classifications. They needed to explain decisions to the IRS, not accept black-box outputs.
               </p>
             </div>
           </div>
         </section>
 
         {/* RESEARCH SECTION */}
-        <section id="research" className="section-animate scroll-mt-24">
+        <section
+          id="research"
+          className="section-animate scroll-mt-24"
+        >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Research Foundation
@@ -392,13 +346,10 @@ export default function ComputisCaseStudy() {
             <div className="insight-callout insight-callout--key mb-6">
               <div className="insight-callout__header">
                 <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">
-                  TL;DR
-                </p>
+                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
               </div>
               <p className="insight-callout__text">
-                12 CPA interviews + 50,000 transaction analysis revealed 73% of
-                work followed predictable patterns—perfect for AI augmentation.
+                12 CPA interviews + 50,000 transaction analysis revealed 73% of work followed predictable patterns—perfect for AI augmentation.
               </p>
             </div>
 
@@ -408,21 +359,14 @@ export default function ComputisCaseStudy() {
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1716d0afb38b4317a6918302b42bafbc?format=webp&width=2400"
                 alt="4-phase research methodology: Discovery, Analysis, Ideation, Validation"
                 loading="lazy"
-                onClick={() =>
-                  setLightboxImage(
-                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1716d0afb38b4317a6918302b42bafbc?format=webp&width=2400",
-                  )
-                }
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1716d0afb38b4317a6918302b42bafbc?format=webp&width=2400')}
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">
-                  Click to enlarge
-                </span>
+                <span className="case-study-image__zoom-hint">Click to enlarge</span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 2: 4-phase research approach — from discovery to validated
-              prototypes
+              Figure 2: 4-phase research approach — from discovery to validated prototypes
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -434,22 +378,15 @@ export default function ComputisCaseStudy() {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span>
-                      <strong>12 CPA interviews</strong> — trust requirements
-                    </span>
+                    <span><strong>12 CPA interviews</strong> — trust requirements</span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span>
-                      <strong>6 full-day observations</strong> — workflow
-                      mapping
-                    </span>
+                    <span><strong>6 full-day observations</strong> — workflow mapping</span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span>
-                      <strong>4 usability test cycles</strong> — AI interactions
-                    </span>
+                    <span><strong>4 usability test cycles</strong> — AI interactions</span>
                   </li>
                 </ul>
               </div>
@@ -462,21 +399,15 @@ export default function ComputisCaseStudy() {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
-                    <span>
-                      <strong>50,000+ transactions</strong> analyzed
-                    </span>
+                    <span><strong>50,000+ transactions</strong> analyzed</span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
-                    <span>
-                      <strong>73% predictability</strong> rate discovered
-                    </span>
+                    <span><strong>73% predictability</strong> rate discovered</span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
-                    <span>
-                      <strong>300+ G2 reviews</strong> analyzed
-                    </span>
+                    <span><strong>300+ G2 reviews</strong> analyzed</span>
                   </li>
                 </ul>
               </div>
@@ -488,21 +419,14 @@ export default function ComputisCaseStudy() {
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc16ff6d62dda40b3bb78207aea59fa36?format=webp&width=2400"
                 alt="Gallery of CPA interview quotes highlighting trust concerns, control needs, and AI skepticism"
                 loading="lazy"
-                onClick={() =>
-                  setLightboxImage(
-                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc16ff6d62dda40b3bb78207aea59fa36?format=webp&width=2400",
-                  )
-                }
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc16ff6d62dda40b3bb78207aea59fa36?format=webp&width=2400')}
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">
-                  Click to enlarge
-                </span>
+                <span className="case-study-image__zoom-hint">Click to enlarge</span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 3: Key insights from CPA interviews — trust, control, and
-              professional liability
+              Figure 3: Key insights from CPA interviews — trust, control, and professional liability
             </p>
 
             {/* CPA Workflow Journey Map */}
@@ -511,21 +435,14 @@ export default function ComputisCaseStudy() {
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400"
                 alt="CPA workflow journey map showing 5 phases with emotion curve and pain points"
                 loading="lazy"
-                onClick={() =>
-                  setLightboxImage(
-                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400",
-                  )
-                }
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400')}
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">
-                  Click to enlarge
-                </span>
+                <span className="case-study-image__zoom-hint">Click to enlarge</span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 4: CPA workflow journey — mapping pain points and AI
-              intervention opportunities
+              Figure 4: CPA workflow journey — mapping pain points and AI intervention opportunities
             </p>
 
             {/* Competitive Analysis */}
@@ -534,27 +451,23 @@ export default function ComputisCaseStudy() {
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400"
                 alt="Competitive feature comparison matrix showing Computis advantages in AI transparency and professional control"
                 loading="lazy"
-                onClick={() =>
-                  setLightboxImage(
-                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400",
-                  )
-                }
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400')}
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">
-                  Click to enlarge
-                </span>
+                <span className="case-study-image__zoom-hint">Click to enlarge</span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 5: Competitive analysis — Computis differentiation through
-              explainable AI
+              Figure 5: Competitive analysis — Computis differentiation through explainable AI
             </p>
           </div>
         </section>
 
         {/* SOLUTION SECTION */}
-        <section id="solution" className="section-animate scroll-mt-24">
+        <section
+          id="solution"
+          className="section-animate scroll-mt-24"
+        >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Design Solutions
@@ -567,97 +480,71 @@ export default function ComputisCaseStudy() {
               </h3>
 
               <div className="insight-callout insight-callout--key mb-6">
-                <div className="insight-callout__header">
-                  <Target className="w-5 h-5 text-[#0A7A5E]" />
-                  <p className="insight-callout__label insight-callout__label--key">
-                    TL;DR
-                  </p>
-                </div>
-                <p className="insight-callout__text">
-                  Designed tiered AI confidence system that reduced manual
-                  classification by 85% while maintaining CPA professional
-                  control through graduated autonomy.
+              <div className="insight-callout__header">
+                <Target className="w-5 h-5 text-[#0A7A5E]" />
+                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
+              </div>
+              <p className="insight-callout__text">
+                Designed tiered AI confidence system that reduced manual classification by 85% while maintaining CPA professional control through graduated autonomy.
+              </p>
+            </div>
+
+            {/* Confidence Tier Visualization */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              <div className="confidence-tier confidence-tier--high shadow-precision-sm">
+                <span className="confidence-tier__badge confidence-tier__badge--high">
+                  ≥90% Confidence
+                </span>
+                <h3 className="text-lg font-bold text-green-700 mb-2">High Confidence</h3>
+                <p className="text-sm text-precision-text-primary mb-3">Auto-classified</p>
+                <p className="text-xs text-precision-text-secondary leading-relaxed">
+                  CPAs trusted AI completely. No review needed. IRS-ready documentation generated.
                 </p>
+                <p className="text-2xl font-bold text-green-600 mt-3">89%</p>
+                <p className="text-xs text-green-600">Acceptance rate</p>
               </div>
 
-              {/* Confidence Tier Visualization */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                <div className="confidence-tier confidence-tier--high shadow-precision-sm">
-                  <span className="confidence-tier__badge confidence-tier__badge--high">
-                    ≥90% Confidence
-                  </span>
-                  <h3 className="text-lg font-bold text-green-700 mb-2">
-                    High Confidence
-                  </h3>
-                  <p className="text-sm text-precision-text-primary mb-3">
-                    Auto-classified
-                  </p>
-                  <p className="text-xs text-precision-text-secondary leading-relaxed">
-                    CPAs trusted AI completely. No review needed. IRS-ready
-                    documentation generated.
-                  </p>
-                  <p className="text-2xl font-bold text-green-600 mt-3">89%</p>
-                  <p className="text-xs text-green-600">Acceptance rate</p>
-                </div>
-
-                <div className="confidence-tier confidence-tier--medium shadow-precision-sm">
-                  <span className="confidence-tier__badge confidence-tier__badge--medium">
-                    60-89% Confidence
-                  </span>
-                  <h3 className="text-lg font-bold text-yellow-700 mb-2">
-                    Medium Confidence
-                  </h3>
-                  <p className="text-sm text-precision-text-primary mb-3">
-                    Review queue
-                  </p>
-                  <p className="text-xs text-precision-text-secondary leading-relaxed">
-                    Flagged for human review. AI provides hypothesis +
-                    rationale. CPA makes final call.
-                  </p>
-                  <p className="text-2xl font-bold text-yellow-600 mt-3">11%</p>
-                  <p className="text-xs text-yellow-600">Override rate</p>
-                </div>
-
-                <div className="confidence-tier confidence-tier--low shadow-precision-sm">
-                  <span className="confidence-tier__badge confidence-tier__badge--low">
-                    &lt;60% Confidence
-                  </span>
-                  <h3 className="text-lg font-bold text-red-700 mb-2">
-                    Low Confidence
-                  </h3>
-                  <p className="text-sm text-precision-text-primary mb-3">
-                    Manual required
-                  </p>
-                  <p className="text-xs text-precision-text-secondary leading-relaxed">
-                    AI admits uncertainty. Full CPA manual classification with
-                    context preservation.
-                  </p>
-                  <p className="text-2xl font-bold text-red-600 mt-3">15%</p>
-                  <p className="text-xs text-red-600">Manual work</p>
-                </div>
+              <div className="confidence-tier confidence-tier--medium shadow-precision-sm">
+                <span className="confidence-tier__badge confidence-tier__badge--medium">
+                  60-89% Confidence
+                </span>
+                <h3 className="text-lg font-bold text-yellow-700 mb-2">Medium Confidence</h3>
+                <p className="text-sm text-precision-text-primary mb-3">Review queue</p>
+                <p className="text-xs text-precision-text-secondary leading-relaxed">
+                  Flagged for human review. AI provides hypothesis + rationale. CPA makes final call.
+                </p>
+                <p className="text-2xl font-bold text-yellow-600 mt-3">11%</p>
+                <p className="text-xs text-yellow-600">Override rate</p>
               </div>
 
-              {/* Information Architecture */}
-              <div className="case-study-image mt-6">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F550d96e6817647739d3e9f0d237b8c5d?format=webp&width=2400"
-                  alt="Information architecture diagram showing AI feature integration across platform"
-                  loading="lazy"
-                  onClick={() =>
-                    setLightboxImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F550d96e6817647739d3e9f0d237b8c5d?format=webp&width=2400",
-                    )
-                  }
-                />
-                <div className="case-study-image__overlay">
-                  <span className="case-study-image__zoom-hint">
-                    Click to enlarge
-                  </span>
-                </div>
+              <div className="confidence-tier confidence-tier--low shadow-precision-sm">
+                <span className="confidence-tier__badge confidence-tier__badge--low">
+                  &lt;60% Confidence
+                </span>
+                <h3 className="text-lg font-bold text-red-700 mb-2">Low Confidence</h3>
+                <p className="text-sm text-precision-text-primary mb-3">Manual required</p>
+                <p className="text-xs text-precision-text-secondary leading-relaxed">
+                  AI admits uncertainty. Full CPA manual classification with context preservation.
+                </p>
+                <p className="text-2xl font-bold text-red-600 mt-3">15%</p>
+                <p className="text-xs text-red-600">Manual work</p>
               </div>
+            </div>
+
+            {/* Information Architecture */}
+            <div className="case-study-image mt-6">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F550d96e6817647739d3e9f0d237b8c5d?format=webp&width=2400"
+                alt="Information architecture diagram showing AI feature integration across platform"
+                loading="lazy"
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F550d96e6817647739d3e9f0d237b8c5d?format=webp&width=2400')}
+              />
+              <div className="case-study-image__overlay">
+                <span className="case-study-image__zoom-hint">Click to enlarge</span>
+              </div>
+            </div>
               <p className="case-study-image__caption">
-                Figure 6: Platform information architecture — AI touchpoints
-                throughout workflow
+                Figure 6: Platform information architecture — AI touchpoints throughout workflow
               </p>
             </div>
 
@@ -669,12 +556,7 @@ export default function ComputisCaseStudy() {
 
               <div className="mb-6">
                 <p className="text-base text-precision-text-primary leading-relaxed">
-                  We developed a comprehensive design system that unified
-                  typography, color palettes, component libraries, and
-                  interaction patterns across all touchpoints. This foundation
-                  enabled rapid iteration while maintaining visual coherence and
-                  professional credibility critical for CPAs managing
-                  high-stakes tax workflows.
+                  We developed a comprehensive design system that unified typography, color palettes, component libraries, and interaction patterns across all touchpoints. This foundation enabled rapid iteration while maintaining visual coherence and professional credibility critical for CPAs managing high-stakes tax workflows.
                 </p>
               </div>
 
@@ -684,21 +566,14 @@ export default function ComputisCaseStudy() {
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880"
                   alt="Computis design system showing typography, colors, components, and design tokens"
                   loading="lazy"
-                  onClick={() =>
-                    setLightboxImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880",
-                    )
-                  }
+                  onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880')}
                 />
                 <div className="case-study-image__overlay">
-                  <span className="case-study-image__zoom-hint">
-                    Click to enlarge
-                  </span>
+                  <span className="case-study-image__zoom-hint">Click to enlarge</span>
                 </div>
               </div>
               <p className="case-study-image__caption">
-                Figure 7: Computis design system — typography, colors,
-                components, and other important assets
+                Figure 7: Computis design system — typography, colors, components, and other important assets
               </p>
             </div>
 
@@ -807,21 +682,14 @@ export default function ComputisCaseStudy() {
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa6260d073e4549a18738fa5e8680edde?format=webp&width=2000"
                 alt="Transaction classification UI evolution showing before and after AI integration"
                 loading="lazy"
-                onClick={() =>
-                  setLightboxImage(
-                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa6260d073e4549a18738fa5e8680edde?format=webp&width=2000",
-                  )
-                }
+                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa6260d073e4549a18738fa5e8680edde?format=webp&width=2000')}
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">
-                  Click to enlarge
-                </span>
+                <span className="case-study-image__zoom-hint">Click to enlarge</span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 7: UI evolution — before/after AI integration with
-              confidence indicators
+              Figure 7: UI evolution — before/after AI integration with confidence indicators
             </p>
 
             {/* UI Screens Section */}
@@ -834,121 +702,145 @@ export default function ComputisCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Row 1, Col 1: Dashboard */}
                 <div>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
-                    alt="Dashboard"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
-                    loading="lazy"
-                  />
+                  <div className="case-study-image mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
+                      alt="Dashboard"
+                      loading="lazy"
+                      onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400')}
+                    />
+                    <div className="case-study-image__overlay">
+                      <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                    </div>
+                  </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Dashboard View:</strong> Main overview displaying
-                    client portfolio metrics, AI confidence indicators, and
-                    transaction review queues for daily CPA workflow management.
+                    <strong>Dashboard View:</strong> Main overview displaying client portfolio metrics, AI confidence indicators, and transaction review queues for daily CPA workflow management.
                   </p>
                 </div>
 
                 {/* Row 1, Col 2: Rule Builder */}
                 <div>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
-                    alt="Rule Builder"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
-                    loading="lazy"
-                  />
+                  <div className="case-study-image mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
+                      alt="Rule Builder"
+                      loading="lazy"
+                      onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400')}
+                    />
+                    <div className="case-study-image__overlay">
+                      <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                    </div>
+                  </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Rule Builder:</strong> Visual no-code interface
-                    enabling CPAs to create custom classification rules with
-                    drag-and-drop logic and real-time preview.
+                    <strong>Rule Builder:</strong> Visual no-code interface enabling CPAs to create custom classification rules with drag-and-drop logic and real-time preview.
                   </p>
                 </div>
 
                 {/* Row 2, Col 1: Exports */}
                 <div>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
-                    alt="Exports"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
-                    loading="lazy"
-                  />
+                  <div className="case-study-image mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
+                      alt="Exports"
+                      loading="lazy"
+                      onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400')}
+                    />
+                    <div className="case-study-image__overlay">
+                      <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                    </div>
+                  </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Exports:</strong> Batch export management screen for
-                    generating IRS-ready tax forms, audit trails, and client
-                    reports in multiple formats.
+                    <strong>Exports:</strong> Batch export management screen for generating IRS-ready tax forms, audit trails, and client reports in multiple formats.
                   </p>
                 </div>
 
                 {/* Row 2, Col 2: Gain/Loss Report */}
                 <div>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
-                    alt="Gain/Loss Report"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
-                    loading="lazy"
-                  />
+                  <div className="case-study-image mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
+                      alt="Gain/Loss Report"
+                      loading="lazy"
+                      onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400')}
+                    />
+                    <div className="case-study-image__overlay">
+                      <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                    </div>
+                  </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Gain/Loss Report:</strong> Comprehensive capital
-                    gains summary showing realized profits, losses, and tax
-                    liability calculations per IRS requirements.
+                    <strong>Gain/Loss Report:</strong> Comprehensive capital gains summary showing realized profits, losses, and tax liability calculations per IRS requirements.
                   </p>
                 </div>
 
                 {/* Row 3, Col 1: IRS Form 8949 */}
                 <div>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
-                    alt="IRS Form 8949"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
-                    loading="lazy"
-                  />
+                  <div className="case-study-image mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
+                      alt="IRS Form 8949"
+                      loading="lazy"
+                      onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400')}
+                    />
+                    <div className="case-study-image__overlay">
+                      <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                    </div>
+                  </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>IRS Form 8949:</strong> Auto-populated federal tax
-                    form displaying cryptocurrency transactions with
-                    AI-classified cost basis and disposal information.
+                    <strong>IRS Form 8949:</strong> Auto-populated federal tax form displaying cryptocurrency transactions with AI-classified cost basis and disposal information.
                   </p>
                 </div>
 
                 {/* Row 3, Col 2: Client Management */}
                 <div>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
-                    alt="Client Management"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
-                    loading="lazy"
-                  />
+                  <div className="case-study-image mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
+                      alt="Client Management"
+                      loading="lazy"
+                      onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400')}
+                    />
+                    <div className="case-study-image__overlay">
+                      <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                    </div>
+                  </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Client Management:</strong> CPA firm dashboard for
-                    managing multiple client accounts, onboarding status, and
-                    delegated access permissions.
+                    <strong>Client Management:</strong> CPA firm dashboard for managing multiple client accounts, onboarding status, and delegated access permissions.
                   </p>
                 </div>
 
                 {/* Row 4, Col 1: Wallets and Exchanges */}
                 <div>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
-                    alt="Wallets and Exchanges"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
-                    loading="lazy"
-                  />
+                  <div className="case-study-image mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
+                      alt="Wallets and Exchanges"
+                      loading="lazy"
+                      onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400')}
+                    />
+                    <div className="case-study-image__overlay">
+                      <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                    </div>
+                  </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Wallets and Exchanges:</strong> Connection hub for
-                    linking cryptocurrency wallets and exchange accounts to
-                    import transaction data automatically.
+                    <strong>Wallets and Exchanges:</strong> Connection hub for linking cryptocurrency wallets and exchange accounts to import transaction data automatically.
                   </p>
                 </div>
 
                 {/* Row 4, Col 2: Audit Trail (Expanded view) */}
                 <div>
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
-                    alt="Audit Trail (Expanded view)"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
-                    loading="lazy"
-                  />
+                  <div className="case-study-image mb-3">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
+                      alt="Audit Trail (Expanded view)"
+                      loading="lazy"
+                      onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400')}
+                    />
+                    <div className="case-study-image__overlay">
+                      <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                    </div>
+                  </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Audit Trail:</strong> Detailed classification
-                    history showing AI decisions, confidence scores, manual
-                    overrides, and timestamps for IRS audit defense.
+                    <strong>Audit Trail:</strong> Detailed classification history showing AI decisions, confidence scores, manual overrides, and timestamps for IRS audit defense.
                   </p>
                 </div>
               </div>
@@ -957,7 +849,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* KEY DECISIONS SECTION */}
-        <section id="decisions" className="section-animate scroll-mt-24">
+        <section
+          id="decisions"
+          className="section-animate scroll-mt-24"
+        >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Key Design Decisions
@@ -966,13 +861,10 @@ export default function ComputisCaseStudy() {
             <div className="insight-callout insight-callout--key mb-6">
               <div className="insight-callout__header">
                 <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">
-                  TL;DR
-                </p>
+                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
               </div>
               <p className="insight-callout__text">
-                Four critical trade-offs balanced automation with professional
-                control. Transparency over speed won enterprise deals.
+                Four critical trade-offs balanced automation with professional control. Transparency over speed won enterprise deals.
               </p>
             </div>
 
@@ -987,46 +879,24 @@ export default function ComputisCaseStudy() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="decisions-table__decision">
-                      Show confidence scores
-                    </td>
-                    <td className="decisions-table__why">
-                      CPAs need to know "how sure" AI is
-                    </td>
+                    <td className="decisions-table__decision">Show confidence scores</td>
+                    <td className="decisions-table__why">CPAs need to know "how sure" AI is</td>
                     <td className="decisions-table__result">89% trust rate</td>
                   </tr>
                   <tr>
-                    <td className="decisions-table__decision">
-                      Review queue vs auto-apply all
-                    </td>
-                    <td className="decisions-table__why">
-                      Medium confidence = human context needed
-                    </td>
-                    <td className="decisions-table__result">
-                      11% meaningful overrides
-                    </td>
+                    <td className="decisions-table__decision">Review queue vs auto-apply all</td>
+                    <td className="decisions-table__why">Medium confidence = human context needed</td>
+                    <td className="decisions-table__result">11% meaningful overrides</td>
                   </tr>
                   <tr>
-                    <td className="decisions-table__decision">
-                      Async rationale loading
-                    </td>
-                    <td className="decisions-table__why">
-                      Balance speed with transparency
-                    </td>
-                    <td className="decisions-table__result">
-                      "Explainable AI" differentiator
-                    </td>
+                    <td className="decisions-table__decision">Async rationale loading</td>
+                    <td className="decisions-table__why">Balance speed with transparency</td>
+                    <td className="decisions-table__result">"Explainable AI" differentiator</td>
                   </tr>
                   <tr>
-                    <td className="decisions-table__decision">
-                      Override always allowed
-                    </td>
-                    <td className="decisions-table__why">
-                      Professional liability protection
-                    </td>
-                    <td className="decisions-table__result">
-                      CPA control preserved
-                    </td>
+                    <td className="decisions-table__decision">Override always allowed</td>
+                    <td className="decisions-table__why">Professional liability protection</td>
+                    <td className="decisions-table__result">CPA control preserved</td>
                   </tr>
                 </tbody>
               </table>
@@ -1038,12 +908,10 @@ export default function ComputisCaseStudy() {
                   Critical Trade-off: Speed vs. Transparency
                 </h3>
                 <p className="text-sm text-precision-text-primary leading-relaxed mb-3">
-                  Removing rationale would cut processing 60%—but competitor
-                  "black box" complaints outnumbered speed complaints 3:1.
+                  Removing rationale would cut processing 60%—but competitor "black box" complaints outnumbered speed complaints 3:1.
                 </p>
                 <p className="text-xs font-semibold text-precision-success">
-                  ✓ Chose transparency. Won 3 enterprise deals citing audit
-                  defensibility.
+                  ✓ Chose transparency. Won 3 enterprise deals citing audit defensibility.
                 </p>
               </div>
 
@@ -1052,8 +920,7 @@ export default function ComputisCaseStudy() {
                   Stakeholder Alignment
                 </h3>
                 <p className="text-sm text-precision-text-primary leading-relaxed mb-3">
-                  Engineering wanted max automation; CPAs required override
-                  capabilities. Tiered system satisfied both.
+                  Engineering wanted max automation; CPAs required override capabilities. Tiered system satisfied both.
                 </p>
                 <p className="text-xs font-semibold text-precision-success">
                   ✓ "Finally, AI that works *with* me" — CPA Beta User
@@ -1064,7 +931,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* BUSINESS IMPACT SECTION */}
-        <section id="impact" className="section-animate scroll-mt-24">
+        <section
+          id="impact"
+          className="section-animate scroll-mt-24"
+        >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Business Impact
@@ -1073,13 +943,10 @@ export default function ComputisCaseStudy() {
             <div className="insight-callout insight-callout--key mb-6">
               <div className="insight-callout__header">
                 <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">
-                  TL;DR
-                </p>
+                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
               </div>
               <p className="insight-callout__text">
-                85% reduction in manual work, 32% conversion increase, 3
-                enterprise deals closed. AI features cited in 78% of won deals.
+                85% reduction in manual work, 32% conversion increase, 3 enterprise deals closed. AI features cited in 78% of won deals.
               </p>
             </div>
 
@@ -1123,41 +990,31 @@ export default function ComputisCaseStudy() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="decisions-table__why">
-                      Manual classification workload
-                    </td>
+                    <td className="decisions-table__why">Manual classification workload</td>
                     <td>100% manual</td>
                     <td>15% manual</td>
                     <td className="decisions-table__result">↓85%</td>
                   </tr>
                   <tr>
-                    <td className="decisions-table__why">
-                      CPA onboarding (new client)
-                    </td>
+                    <td className="decisions-table__why">CPA onboarding (new client)</td>
                     <td>2.5 hours</td>
                     <td>1.4 hours</td>
                     <td className="decisions-table__result">↓45%</td>
                   </tr>
                   <tr>
-                    <td className="decisions-table__why">
-                      Demo-to-conversion rate
-                    </td>
+                    <td className="decisions-table__why">Demo-to-conversion rate</td>
                     <td>Baseline</td>
                     <td>+32%</td>
                     <td className="decisions-table__result">↑32%</td>
                   </tr>
                   <tr>
-                    <td className="decisions-table__why">
-                      Error detection accuracy
-                    </td>
+                    <td className="decisions-table__why">Error detection accuracy</td>
                     <td>Baseline</td>
                     <td>+150%</td>
                     <td className="decisions-table__result">↑150%</td>
                   </tr>
                   <tr>
-                    <td className="decisions-table__why">
-                      Audit trail exports
-                    </td>
+                    <td className="decisions-table__why">Audit trail exports</td>
                     <td>Baseline</td>
                     <td>+340%</td>
                     <td className="decisions-table__result">↑340%</td>
@@ -1186,29 +1043,16 @@ export default function ComputisCaseStudy() {
               </h2>
               <div className="max-w-[900px] mx-auto">
                 <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium">
-                  In regulated domains, AI transparency isn't a feature—it's the
-                  product.
-                  <span className="text-[#00D4AA] font-bold">
-                    {" "}
-                    Augmentation beats automation
-                  </span>{" "}
-                  when professionals retain control,
-                  <span className="text-[#00D4AA] font-bold">
-                    {" "}
-                    simplicity beats capability
-                  </span>{" "}
-                  when users actually adopt it, and{" "}
-                  <span className="text-[#00D4AA] font-bold">
-                    failed experiments teach the most
-                  </span>
-                  — CPAs rejected full automation not for accuracy, but to
-                  preserve professional judgment.
+                  In regulated domains, AI transparency isn't a feature—it's the product.
+                  <span className="text-[#00D4AA] font-bold"> Augmentation beats automation</span> when professionals retain control,
+                  <span className="text-[#00D4AA] font-bold"> simplicity beats capability</span> when users actually adopt it,
+                  and <span className="text-[#00D4AA] font-bold">failed experiments teach the most</span>—
+                  CPAs rejected full automation not for accuracy, but to preserve professional judgment.
                 </p>
                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-pill border border-white/20">
                   <Lightbulb className="w-4 h-4 text-[#00D4AA]" />
                   <span className="text-sm font-semibold text-white">
-                    Human-in-the-loop isn't a weakness—it's how you earn trust
-                    in high-stakes AI.
+                    Human-in-the-loop isn't a weakness—it's how you earn trust in high-stakes AI.
                   </span>
                 </div>
               </div>
@@ -1217,7 +1061,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* SKILLS SECTION */}
-        <section id="skills" className="section-animate scroll-mt-24">
+        <section
+          id="skills"
+          className="section-animate scroll-mt-24"
+        >
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4 text-center">
               Skills Demonstrated
@@ -1250,8 +1097,7 @@ export default function ComputisCaseStudy() {
                     Ship minimal first
                   </h4>
                   <p className="text-xs text-precision-text-secondary leading-relaxed">
-                    Rule builder v1 was too complex. Launch at minimum viable
-                    complexity, add power features based on observed demand.
+                    Rule builder v1 was too complex. Launch at minimum viable complexity, add power features based on observed demand.
                   </p>
                 </div>
                 <div className="bg-white rounded-card p-5 border-l-4 border-precision-secondary shadow-sm text-left">
@@ -1259,8 +1105,7 @@ export default function ComputisCaseStudy() {
                     Document trade-offs explicitly
                   </h4>
                   <p className="text-xs text-precision-text-secondary leading-relaxed">
-                    Create "trade-off memos" for major architectural choices to
-                    reduce relitigated debates.
+                    Create "trade-off memos" for major architectural choices to reduce relitigated debates.
                   </p>
                 </div>
               </div>
@@ -1299,11 +1144,7 @@ export default function ComputisCaseStudy() {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
           <div className="flex items-center justify-center w-full h-full">
