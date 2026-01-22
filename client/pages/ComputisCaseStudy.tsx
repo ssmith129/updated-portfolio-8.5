@@ -705,9 +705,12 @@ export default function ComputisCaseStudy() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
                     alt="Dashboard"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
                     loading="lazy"
                   />
+                  <p className="text-sm text-precision-text-primary">
+                    <strong>Dashboard View:</strong> Main overview displaying client portfolio metrics, AI confidence indicators, and transaction review queues for daily CPA workflow management.
+                  </p>
                 </div>
 
                 {/* Row 1, Col 2: Rule Builder */}
@@ -715,9 +718,12 @@ export default function ComputisCaseStudy() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
                     alt="Rule Builder"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
                     loading="lazy"
                   />
+                  <p className="text-sm text-precision-text-primary">
+                    <strong>Rule Builder:</strong> Visual no-code interface enabling CPAs to create custom classification rules with drag-and-drop logic and real-time preview.
+                  </p>
                 </div>
 
                 {/* Row 2, Col 1: Exports */}
@@ -725,9 +731,12 @@ export default function ComputisCaseStudy() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
                     alt="Exports"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
                     loading="lazy"
                   />
+                  <p className="text-sm text-precision-text-primary">
+                    <strong>Exports:</strong> Batch export management screen for generating IRS-ready tax forms, audit trails, and client reports in multiple formats.
+                  </p>
                 </div>
 
                 {/* Row 2, Col 2: Gain/Loss Report */}
@@ -735,9 +744,12 @@ export default function ComputisCaseStudy() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
                     alt="Gain/Loss Report"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
                     loading="lazy"
                   />
+                  <p className="text-sm text-precision-text-primary">
+                    <strong>Gain/Loss Report:</strong> Comprehensive capital gains summary showing realized profits, losses, and tax liability calculations per IRS requirements.
+                  </p>
                 </div>
 
                 {/* Row 3, Col 1: IRS Form 8949 */}
@@ -745,9 +757,12 @@ export default function ComputisCaseStudy() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
                     alt="IRS Form 8949"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
                     loading="lazy"
                   />
+                  <p className="text-sm text-precision-text-primary">
+                    <strong>IRS Form 8949:</strong> Auto-populated federal tax form displaying cryptocurrency transactions with AI-classified cost basis and disposal information.
+                  </p>
                 </div>
 
                 {/* Row 3, Col 2: Client Management */}
@@ -755,9 +770,12 @@ export default function ComputisCaseStudy() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
                     alt="Client Management"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
                     loading="lazy"
                   />
+                  <p className="text-sm text-precision-text-primary">
+                    <strong>Client Management:</strong> CPA firm dashboard for managing multiple client accounts, onboarding status, and delegated access permissions.
+                  </p>
                 </div>
 
                 {/* Row 4, Col 1: Wallets and Exchanges */}
@@ -765,9 +783,12 @@ export default function ComputisCaseStudy() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
                     alt="Wallets and Exchanges"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
                     loading="lazy"
                   />
+                  <p className="text-sm text-precision-text-primary">
+                    <strong>Wallets and Exchanges:</strong> Connection hub for linking cryptocurrency wallets and exchange accounts to import transaction data automatically.
+                  </p>
                 </div>
 
                 {/* Row 4, Col 2: Audit Trail (Expanded view) */}
@@ -775,9 +796,12 @@ export default function ComputisCaseStudy() {
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
                     alt="Audit Trail (Expanded view)"
-                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm"
+                    className="w-full h-auto rounded-lg border border-[#E3E8EF] shadow-sm mb-3"
                     loading="lazy"
                   />
+                  <p className="text-sm text-precision-text-primary">
+                    <strong>Audit Trail:</strong> Detailed classification history showing AI decisions, confidence scores, manual overrides, and timestamps for IRS audit defense.
+                  </p>
                 </div>
               </div>
             </div>
