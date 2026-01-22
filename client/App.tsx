@@ -19,50 +19,48 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider>
-      <TooltipProvider>
-        <BrowserRouter>
-          <PageAnimationWrapper>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/case-studies" element={<CaseStudies />} />
-              <Route path="/about" element={<About />} />
-              <Route
-                path="/case-studies/computis-crypto-tax-engine"
-                element={<ComputisCaseStudy />}
-              />
-              <Route
-                path="/case-studies/computis-crypto-tax-engine-sandbox"
-                element={<ComputisCaseStudySandbox />}
-              />
-              <Route
-                path="/ComputisCaseStudy"
-                element={
-                  <Navigate
-                    to="/case-studies/computis-crypto-tax-engine"
-                    replace
-                  />
-                }
-              />
-              <Route
-                path="/case-studies/ezemrx-redesigning-ehr"
-                element={<EzEMRxCaseStudy />}
-              />
-              <Route
-                path="/case-studies/symplify-hospital-management-system"
-                element={<SymplifyCaseStudy />}
-              />
-              <Route
-                path="/case-studies/moneyfarm-ai-powered-personal-finance"
-                element={<MoneyFarmCaseStudy />}
-              />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </PageAnimationWrapper>
-        </BrowserRouter>
-      </TooltipProvider>
-    </ThemeProvider>
+    <TooltipProvider>
+      <BrowserRouter>
+        <PageAnimationWrapper>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/about" element={<About />} />
+            <Route
+              path="/case-studies/computis-crypto-tax-engine"
+              element={<ComputisCaseStudy />}
+            />
+            <Route
+              path="/case-studies/computis-crypto-tax-engine-sandbox"
+              element={<ComputisCaseStudySandbox />}
+            />
+            <Route
+              path="/ComputisCaseStudy"
+              element={
+                <Navigate
+                  to="/case-studies/computis-crypto-tax-engine"
+                  replace
+                />
+              }
+            />
+            <Route
+              path="/case-studies/ezemrx-redesigning-ehr"
+              element={<EzEMRxCaseStudy />}
+            />
+            <Route
+              path="/case-studies/symplify-hospital-management-system"
+              element={<SymplifyCaseStudy />}
+            />
+            <Route
+              path="/case-studies/moneyfarm-ai-powered-personal-finance"
+              element={<MoneyFarmCaseStudy />}
+            />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </PageAnimationWrapper>
+      </BrowserRouter>
+    </TooltipProvider>
   </QueryClientProvider>
 );
 
