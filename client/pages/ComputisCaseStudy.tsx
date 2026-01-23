@@ -88,6 +88,13 @@ export default function ComputisCaseStudy() {
 
   return (
     <div className="min-h-screen bg-precision-neutral scroll-smooth relative overflow-hidden font-sans">
+      {/* Scroll Progress Indicator */}
+      <div
+        className="fixed top-0 left-0 h-1 bg-gradient-to-r from-precision-accent to-precision-secondary z-[9999] transition-all duration-300"
+        style={{ width: `${scrollProgress}%` }}
+        aria-hidden="true"
+      ></div>
+
       <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
