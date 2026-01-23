@@ -539,28 +539,31 @@ export default function ComputisCaseStudy() {
               professional liability
             </p>
 
-            {/* CPA Workflow Journey Map */}
-            <div className="case-study-image mt-12">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400"
-                alt="CPA workflow journey map showing 5 phases with emotion curve and pain points"
-                loading="lazy"
-                onClick={() =>
-                  setLightboxImage(
-                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400",
-                  )
-                }
-              />
-              <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">
-                  Click to enlarge
-                </span>
+            {/* CPA Workflow Journey Map - Elevated */}
+            <div className="mt-12 bg-gradient-to-br from-[#E0F9F4]/20 to-[#E8F4FA]/20 rounded-2xl p-8 border-2 border-precision-accent/20 relative overflow-hidden signature-accent">
+              <div className="absolute top-0 right-0 w-1 h-32 bg-gradient-to-b from-precision-accent to-transparent opacity-50"></div>
+              <h3 className="text-sm font-semibold text-precision-accent uppercase tracking-wider mb-4">Research Synthesis</h3>
+              <div className="case-study-image">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400"
+                  alt="CPA workflow journey map showing 5 phases with emotion curve and pain points"
+                  loading="lazy"
+                  onClick={() =>
+                    setLightboxImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400",
+                    )
+                  }
+                />
+                <div className="case-study-image__overlay">
+                  <span className="case-study-image__zoom-hint">
+                    Click to enlarge
+                  </span>
+                </div>
               </div>
+              <p className="case-study-image__caption mt-4">
+                Figure 4: CPA workflow journey — mapping pain points and AI intervention opportunities
+              </p>
             </div>
-            <p className="case-study-image__caption">
-              Figure 4: CPA workflow journey — mapping pain points and AI
-              intervention opportunities
-            </p>
 
             {/* Competitive Analysis */}
             <div className="case-study-image mt-12">
