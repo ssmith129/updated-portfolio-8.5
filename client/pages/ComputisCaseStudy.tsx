@@ -202,7 +202,7 @@ export default function ComputisCaseStudy() {
                 Audit Defense
               </p>
               <p className="text-3xl font-bold text-precision-warning mb-1">
-                340%
+                {auditDefenseCount}%
               </p>
               <p className="text-xs text-precision-text-secondary">
                 Trail exports
