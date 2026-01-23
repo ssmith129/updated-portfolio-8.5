@@ -1217,60 +1217,50 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <div className="bg-white rounded-card border border-[#E3E8EF] overflow-x-auto shadow-sm">
-              <table className="decisions-table">
-                <thead>
-                  <tr>
-                    <th>Decision</th>
-                    <th>Why</th>
-                    <th>Result</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="decisions-table__decision">
-                      Show confidence scores
-                    </td>
-                    <td className="decisions-table__why">
-                      CPAs need to know "how sure" AI is
-                    </td>
-                    <td className="decisions-table__result">89% trust rate</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__decision">
-                      Review queue vs auto-apply all
-                    </td>
-                    <td className="decisions-table__why">
-                      Medium confidence = human context needed
-                    </td>
-                    <td className="decisions-table__result">
-                      11% meaningful overrides
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__decision">
-                      Async rationale loading
-                    </td>
-                    <td className="decisions-table__why">
-                      Balance speed with transparency
-                    </td>
-                    <td className="decisions-table__result">
-                      "Explainable AI" differentiator
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__decision">
-                      Override always allowed
-                    </td>
-                    <td className="decisions-table__why">
-                      Professional liability protection
-                    </td>
-                    <td className="decisions-table__result">
-                      CPA control preserved
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Decision 1 */}
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">Decision</p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3">Show confidence scores</h3>
+                <p className="text-sm text-precision-text-secondary mb-4">CPAs need to know "how sure" AI is</p>
+                <div className="pt-3 border-t border-[#E3E8EF]">
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">Result</p>
+                  <p className="text-base font-semibold text-precision-success">89% trust rate</p>
+                </div>
+              </div>
+
+              {/* Decision 2 */}
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">Decision</p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3">Review queue vs auto-apply all</h3>
+                <p className="text-sm text-precision-text-secondary mb-4">Medium confidence = human context needed</p>
+                <div className="pt-3 border-t border-[#E3E8EF]">
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">Result</p>
+                  <p className="text-base font-semibold text-precision-success">11% meaningful overrides</p>
+                </div>
+              </div>
+
+              {/* Decision 3 */}
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">Decision</p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3">Async rationale loading</h3>
+                <p className="text-sm text-precision-text-secondary mb-4">Balance speed with transparency</p>
+                <div className="pt-3 border-t border-[#E3E8EF]">
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">Result</p>
+                  <p className="text-base font-semibold text-precision-success">"Explainable AI" differentiator</p>
+                </div>
+              </div>
+
+              {/* Decision 4 */}
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">Decision</p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3">Override always allowed</h3>
+                <p className="text-sm text-precision-text-secondary mb-4">Professional liability protection</p>
+                <div className="pt-3 border-t border-[#E3E8EF]">
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">Result</p>
+                  <p className="text-base font-semibold text-precision-success">CPA control preserved</p>
+                </div>
+              </div>
             </div>
 
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
