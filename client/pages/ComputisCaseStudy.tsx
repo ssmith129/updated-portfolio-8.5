@@ -722,6 +722,21 @@ export default function ComputisCaseStudy() {
                   </h4>
                 </div>
 
+                <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-accent font-bold mt-1">•</span>
+                    <span><strong>3-tier confidence system</strong> — Auto-classifies high-confidence transactions, flags medium-confidence for review</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-accent font-bold mt-1">•</span>
+                    <span><strong>↓85% manual work</strong> — Reduces classification time from hours to minutes</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-accent font-bold mt-1">•</span>
+                    <span><strong>89% adoption rate</strong> — CPAs trust AI classifications immediately</span>
+                  </li>
+                </ul>
+
                 <FeatureCards
                   problem="Manual classification consumed 60%+ of CPA time"
                   solution="ML-driven auto-classification with 3-tier confidence (≥90%: auto, 60-89%: review, <60%: manual)"
