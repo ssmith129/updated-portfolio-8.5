@@ -157,6 +157,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="hero-metric-card hero-metric-card--success shadow-precision-sm">
+              <Zap className="w-6 h-6 text-precision-success mb-3" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 Manual Work
               </p>
