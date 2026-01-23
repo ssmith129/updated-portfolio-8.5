@@ -38,7 +38,8 @@ export default function ComputisCaseStudy() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   // Hero metrics animation
-  const { elementRef: metricsRef, isVisible: metricsVisible } = useIntersectionAnimation(0.5);
+  const { elementRef: metricsRef, isVisible: metricsVisible } =
+    useIntersectionAnimation(0.5);
   const aiTrustCount = useCountUp(89, 2000, metricsVisible, 0, 0);
   const manualWorkCount = useCountUp(85, 2000, metricsVisible, 200, 0);
   const reviewQueueCount = useCountUp(11, 2000, metricsVisible, 400, 0);
@@ -550,7 +551,9 @@ export default function ComputisCaseStudy() {
             {/* CPA Workflow Journey Map - Elevated */}
             <div className="mt-12 bg-gradient-to-br from-[#E0F9F4]/20 to-[#E8F4FA]/20 rounded-2xl p-8 border-2 border-precision-accent/20 relative overflow-hidden signature-accent">
               <div className="absolute top-0 right-0 w-1 h-32 bg-gradient-to-b from-precision-accent to-transparent opacity-50"></div>
-              <h3 className="text-sm font-semibold text-precision-accent uppercase tracking-wider mb-4">Research Synthesis</h3>
+              <h3 className="text-sm font-semibold text-precision-accent uppercase tracking-wider mb-4">
+                Research Synthesis
+              </h3>
               <div className="case-study-image">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400"
@@ -569,7 +572,8 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
               <p className="case-study-image__caption mt-4">
-                Figure 4: CPA workflow journey — mapping pain points and AI intervention opportunities
+                Figure 4: CPA workflow journey — mapping pain points and AI
+                intervention opportunities
               </p>
             </div>
 
@@ -1228,45 +1232,85 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Decision 1 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">Decision</p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3">Show confidence scores</h3>
-                <p className="text-sm text-precision-text-secondary mb-4">CPAs need to know "how sure" AI is</p>
+                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
+                  Decision
+                </p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3">
+                  Show confidence scores
+                </h3>
+                <p className="text-sm text-precision-text-secondary mb-4">
+                  CPAs need to know "how sure" AI is
+                </p>
                 <div className="pt-3 border-t border-[#E3E8EF]">
-                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">Result</p>
-                  <p className="text-base font-semibold text-precision-success">89% trust rate</p>
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
+                    Result
+                  </p>
+                  <p className="text-base font-semibold text-precision-success">
+                    89% trust rate
+                  </p>
                 </div>
               </div>
 
               {/* Decision 2 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">Decision</p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3">Review queue vs auto-apply all</h3>
-                <p className="text-sm text-precision-text-secondary mb-4">Medium confidence = human context needed</p>
+                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                  Decision
+                </p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3">
+                  Review queue vs auto-apply all
+                </h3>
+                <p className="text-sm text-precision-text-secondary mb-4">
+                  Medium confidence = human context needed
+                </p>
                 <div className="pt-3 border-t border-[#E3E8EF]">
-                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">Result</p>
-                  <p className="text-base font-semibold text-precision-success">11% meaningful overrides</p>
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
+                    Result
+                  </p>
+                  <p className="text-base font-semibold text-precision-success">
+                    11% meaningful overrides
+                  </p>
                 </div>
               </div>
 
               {/* Decision 3 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">Decision</p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3">Async rationale loading</h3>
-                <p className="text-sm text-precision-text-secondary mb-4">Balance speed with transparency</p>
+                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
+                  Decision
+                </p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3">
+                  Async rationale loading
+                </h3>
+                <p className="text-sm text-precision-text-secondary mb-4">
+                  Balance speed with transparency
+                </p>
                 <div className="pt-3 border-t border-[#E3E8EF]">
-                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">Result</p>
-                  <p className="text-base font-semibold text-precision-success">"Explainable AI" differentiator</p>
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
+                    Result
+                  </p>
+                  <p className="text-base font-semibold text-precision-success">
+                    "Explainable AI" differentiator
+                  </p>
                 </div>
               </div>
 
               {/* Decision 4 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">Decision</p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3">Override always allowed</h3>
-                <p className="text-sm text-precision-text-secondary mb-4">Professional liability protection</p>
+                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                  Decision
+                </p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-3">
+                  Override always allowed
+                </h3>
+                <p className="text-sm text-precision-text-secondary mb-4">
+                  Professional liability protection
+                </p>
                 <div className="pt-3 border-t border-[#E3E8EF]">
-                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">Result</p>
-                  <p className="text-base font-semibold text-precision-success">CPA control preserved</p>
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
+                    Result
+                  </p>
+                  <p className="text-base font-semibold text-precision-success">
+                    CPA control preserved
+                  </p>
                 </div>
               </div>
             </div>
@@ -1353,95 +1397,165 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {/* Impact 1 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">Metric</p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">Manual classification workload</h3>
+                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
+                  Metric
+                </p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                  Manual classification workload
+                </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">Before</span>
-                    <span className="font-semibold text-precision-text-primary">100% manual</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      100% manual
+                    </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">After</span>
-                    <span className="font-semibold text-precision-text-primary">15% manual</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      15% manual
+                    </span>
                   </div>
                   <div className="pt-2 border-t border-[#E3E8EF]">
-                    <p className="text-base font-bold text-precision-success">↓85%</p>
+                    <p className="text-base font-bold text-precision-success">
+                      ↓85%
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Impact 2 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">Metric</p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">CPA onboarding (new client)</h3>
+                <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                  Metric
+                </p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                  CPA onboarding (new client)
+                </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">Before</span>
-                    <span className="font-semibold text-precision-text-primary">2.5 hours</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      2.5 hours
+                    </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">After</span>
-                    <span className="font-semibold text-precision-text-primary">1.4 hours</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      1.4 hours
+                    </span>
                   </div>
                   <div className="pt-2 border-t border-[#E3E8EF]">
-                    <p className="text-base font-bold text-precision-success">↓45%</p>
+                    <p className="text-base font-bold text-precision-success">
+                      ↓45%
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Impact 3 */}
               <div className="bg-gradient-to-br from-[#FEF3E2] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-warning uppercase tracking-wider mb-2">Metric</p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">Demo-to-conversion rate</h3>
+                <p className="text-xs font-bold text-precision-warning uppercase tracking-wider mb-2">
+                  Metric
+                </p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                  Demo-to-conversion rate
+                </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">Before</span>
-                    <span className="font-semibold text-precision-text-primary">Baseline</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      Baseline
+                    </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">After</span>
-                    <span className="font-semibold text-precision-text-primary">+32%</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      +32%
+                    </span>
                   </div>
                   <div className="pt-2 border-t border-[#E3E8EF]">
-                    <p className="text-base font-bold text-precision-success">↑32%</p>
+                    <p className="text-base font-bold text-precision-success">
+                      ↑32%
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Impact 4 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">Metric</p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">Error detection accuracy</h3>
+                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
+                  Metric
+                </p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                  Error detection accuracy
+                </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">Before</span>
-                    <span className="font-semibold text-precision-text-primary">Baseline</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      Baseline
+                    </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">After</span>
-                    <span className="font-semibold text-precision-text-primary">+150%</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      +150%
+                    </span>
                   </div>
                   <div className="pt-2 border-t border-[#E3E8EF]">
-                    <p className="text-base font-bold text-precision-success">↑150%</p>
+                    <p className="text-base font-bold text-precision-success">
+                      ↑150%
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Impact 5 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">Metric</p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">Audit trail exports</h3>
+                <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                  Metric
+                </p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                  Audit trail exports
+                </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">Before</span>
-                    <span className="font-semibold text-precision-text-primary">Baseline</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      Baseline
+                    </span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">After</span>
-                    <span className="font-semibold text-precision-text-primary">+340%</span>
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      +340%
+                    </span>
                   </div>
                   <div className="pt-2 border-t border-[#E3E8EF]">
-                    <p className="text-base font-bold text-precision-success">↑340%</p>
+                    <p className="text-base font-bold text-precision-success">
+                      ↑340%
+                    </p>
                   </div>
                 </div>
               </div>

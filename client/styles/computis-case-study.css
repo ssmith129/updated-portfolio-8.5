@@ -305,13 +305,17 @@ p {
 }
 
 .signature-accent::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50px;
   right: -50px;
   width: 200px;
   height: 200px;
-  background: linear-gradient(135deg, rgba(0, 212, 170, 0.03) 0%, rgba(0, 128, 255, 0.03) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 170, 0.03) 0%,
+    rgba(0, 128, 255, 0.03) 100%
+  );
   border-radius: 50%;
   pointer-events: none;
 }
@@ -324,12 +328,24 @@ p {
   @apply animate-in fade-in-0 slide-in-from-bottom-6 duration-1000;
 }
 
-.section-animate:nth-child(1) { animation-delay: 100ms; }
-.section-animate:nth-child(2) { animation-delay: 200ms; }
-.section-animate:nth-child(3) { animation-delay: 300ms; }
-.section-animate:nth-child(4) { animation-delay: 400ms; }
-.section-animate:nth-child(5) { animation-delay: 500ms; }
-.section-animate:nth-child(6) { animation-delay: 600ms; }
+.section-animate:nth-child(1) {
+  animation-delay: 100ms;
+}
+.section-animate:nth-child(2) {
+  animation-delay: 200ms;
+}
+.section-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+.section-animate:nth-child(4) {
+  animation-delay: 400ms;
+}
+.section-animate:nth-child(5) {
+  animation-delay: 500ms;
+}
+.section-animate:nth-child(6) {
+  animation-delay: 600ms;
+}
 
 /* ============================================
    SCROLL PROGRESS INDICATOR
