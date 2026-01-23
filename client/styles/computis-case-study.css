@@ -184,16 +184,16 @@ p {
    ============================================ */
 
 .decisions-table {
-  @apply w-full text-sm;
+  @apply w-full text-base;
 }
 
 .decisions-table th {
-  @apply text-left py-3 px-4 font-semibold text-precision-text-secondary;
+  @apply text-left py-4 px-4 font-semibold text-precision-text-secondary;
   @apply bg-[#FAFBFC] border-b border-[#E3E8EF];
 }
 
 .decisions-table td {
-  @apply py-3 px-4;
+  @apply py-4 px-4;
 }
 
 .decisions-table tr {
