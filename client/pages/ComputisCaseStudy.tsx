@@ -30,6 +30,9 @@ export default function ComputisCaseStudy() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isNavSticky, setIsNavSticky] = useState(false);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+  const [isFeatureDeepDivesExpanded, setIsFeatureDeepDivesExpanded] = useState(false);
+  const [isAICapabilitiesExpanded, setIsAICapabilitiesExpanded] = useState(true);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
