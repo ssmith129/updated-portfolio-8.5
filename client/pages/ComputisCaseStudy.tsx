@@ -186,7 +186,7 @@ export default function ComputisCaseStudy() {
                 Review Queue
               </p>
               <p className="text-3xl font-bold text-precision-secondary mb-1">
-                11%
+                {reviewQueueCount}%
               </p>
               <p className="text-xs text-precision-text-secondary">
                 Medium confidence
