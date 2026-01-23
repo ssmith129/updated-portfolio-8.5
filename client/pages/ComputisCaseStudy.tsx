@@ -836,6 +836,21 @@ export default function ComputisCaseStudy() {
                   </h4>
                 </div>
 
+                <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-error font-bold mt-1">•</span>
+                    <span><strong>Severity-tiered alerts</strong> — Flags errors, warnings, and info with context (doesn't block)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-error font-bold mt-1">•</span>
+                    <span><strong>↑150% error detection</strong> — Catches mistakes before export or client delivery</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-error font-bold mt-1">•</span>
+                    <span><strong>Zero FMV disputes</strong> — No fair market value discrepancies with IRS</span>
+                  </li>
+                </ul>
+
                 <FeatureCards
                   problem="Errors discovered too late—after export or client delivery"
                   solution="ML-powered detection with severity-tiered flags (Error/Warning/Info) that warn but don't block"
