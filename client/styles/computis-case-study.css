@@ -351,12 +351,12 @@ p {
   }
 
   .decisions-table {
-    @apply text-xs;
+    @apply text-sm;
   }
 
   .decisions-table th,
   .decisions-table td {
-    @apply py-2 px-3;
+    @apply py-3 px-3;
   }
 }
 
