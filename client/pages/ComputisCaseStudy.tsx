@@ -364,20 +364,22 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <div className="insight-callout insight-callout--warning mt-6">
-              <div className="insight-callout__header">
-                <Lightbulb className="w-5 h-5 text-precision-error" />
-                <p className="text-sm font-bold uppercase tracking-wider text-precision-error">
-                  Key Insight
-                </p>
+            <div className="mt-6 pl-6 border-l-4 border-precision-error bg-[#FDEEEE]/40 rounded-r-lg p-4">
+              <div className="flex items-start gap-3">
+                <Lightbulb className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-sm font-bold uppercase tracking-wider text-precision-error mb-2">
+                    Core Insight
+                  </p>
+                  <p className="text-base text-precision-text-primary leading-relaxed">
+                    <strong>
+                      This wasn't a UX problem—it was a trust problem.
+                    </strong>{" "}
+                    CPAs are personally liable for classifications. They needed to
+                    explain decisions to the IRS, not accept black-box outputs.
+                  </p>
+                </div>
               </div>
-              <p className="insight-callout__text">
-                <strong>
-                  This wasn't a UX problem—it was a trust problem.
-                </strong>{" "}
-                CPAs are personally liable for classifications. They needed to
-                explain decisions to the IRS, not accept black-box outputs.
-              </p>
             </div>
           </div>
         </section>
