@@ -141,6 +141,7 @@ export default function ComputisCaseStudy() {
           {/* Hero Metrics Grid - Above the Fold */}
           <div className="hero-metrics-grid mb-6">
             <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
+              <Brain className="w-6 h-6 text-precision-accent mb-3" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 AI Trust
               </p>
