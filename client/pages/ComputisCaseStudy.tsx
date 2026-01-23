@@ -183,7 +183,16 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 mb-4">
+          <div className="mt-6 bg-gradient-to-r from-[#E0F9F4] to-[#E8F4FA] rounded-card p-6 border-l-4 border-precision-accent">
+            <blockquote className="text-base italic text-precision-text-primary leading-relaxed">
+              "This is the first crypto tax tool I'd stake my license on."
+            </blockquote>
+            <cite className="block text-sm text-precision-accent mt-2 not-italic font-semibold">
+              — Enterprise CPA, Big 4 Partner
+            </cite>
+          </div>
+
+          <div className="flex items-center gap-2 mb-4 mt-6">
             <div className="reading-time">
               <Clock className="reading-time__icon" />
               <span>~2 min scan</span>
