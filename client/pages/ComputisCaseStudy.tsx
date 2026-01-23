@@ -760,6 +760,21 @@ export default function ComputisCaseStudy() {
                   </h4>
                 </div>
 
+                <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-secondary font-bold mt-1">•</span>
+                    <span><strong>Complete decision history</strong> — Records every AI decision with rationale and timestamps</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-secondary font-bold mt-1">•</span>
+                    <span><strong>IRS-ready exports</strong> — Generate audit-defensible documentation in seconds</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-secondary font-bold mt-1">•</span>
+                    <span><strong>↓40% compliance prep</strong> — Eliminates manual audit trail documentation</span>
+                  </li>
+                </ul>
+
                 <FeatureCards
                   problem="No visibility into AI decisions—CPAs maintained separate documentation"
                   solution="AI-generated audit logs with classification changes, rationale, timestamps, and IRS-ready exports"
