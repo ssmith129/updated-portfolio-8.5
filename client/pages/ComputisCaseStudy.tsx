@@ -30,10 +30,8 @@ export default function ComputisCaseStudy() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isNavSticky, setIsNavSticky] = useState(false);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
-  const [isFeatureDeepDivesExpanded, setIsFeatureDeepDivesExpanded] =
-    useState(false);
-  const [isAICapabilitiesExpanded, setIsAICapabilitiesExpanded] =
-    useState(true);
+  const [isFeatureDeepDivesExpanded, setIsFeatureDeepDivesExpanded] = useState(false);
+  const [isAICapabilitiesExpanded, setIsAICapabilitiesExpanded] = useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -42,6 +40,12 @@ export default function ComputisCaseStudy() {
       const scrollThreshold = isMobile ? window.innerHeight * 1.5 : 400;
       setShowScrollTop(window.scrollY > scrollThreshold);
       setIsNavSticky(window.scrollY > 300);
+
+      // Calculate scroll progress
+      const winScroll = window.scrollY;
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+      setScrollProgress(scrolled);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -1367,6 +1371,7 @@ export default function ComputisCaseStudy() {
                 </tbody>
               </table>
             </div>
+
           </div>
         </section>
 
