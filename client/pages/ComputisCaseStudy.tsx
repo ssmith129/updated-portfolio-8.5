@@ -724,16 +724,32 @@ export default function ComputisCaseStudy() {
 
                 <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-accent font-bold mt-1">•</span>
-                    <span><strong>3-tier confidence system</strong> — Auto-classifies high-confidence transactions, flags medium-confidence for review</span>
+                    <span className="text-precision-accent font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>3-tier confidence system</strong> —
+                      Auto-classifies high-confidence transactions, flags
+                      medium-confidence for review
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-accent font-bold mt-1">•</span>
-                    <span><strong>↓85% manual work</strong> — Reduces classification time from hours to minutes</span>
+                    <span className="text-precision-accent font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>↓85% manual work</strong> — Reduces classification
+                      time from hours to minutes
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-accent font-bold mt-1">•</span>
-                    <span><strong>89% adoption rate</strong> — CPAs trust AI classifications immediately</span>
+                    <span className="text-precision-accent font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>89% adoption rate</strong> — CPAs trust AI
+                      classifications immediately
+                    </span>
                   </li>
                 </ul>
 
@@ -756,16 +772,31 @@ export default function ComputisCaseStudy() {
 
                 <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-secondary font-bold mt-1">•</span>
-                    <span><strong>Complete decision history</strong> — Records every AI decision with rationale and timestamps</span>
+                    <span className="text-precision-secondary font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>Complete decision history</strong> — Records every
+                      AI decision with rationale and timestamps
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-secondary font-bold mt-1">•</span>
-                    <span><strong>IRS-ready exports</strong> — Generate audit-defensible documentation in seconds</span>
+                    <span className="text-precision-secondary font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>IRS-ready exports</strong> — Generate
+                      audit-defensible documentation in seconds
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-secondary font-bold mt-1">•</span>
-                    <span><strong>↓40% compliance prep</strong> — Eliminates manual audit trail documentation</span>
+                    <span className="text-precision-secondary font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>↓40% compliance prep</strong> — Eliminates manual
+                      audit trail documentation
+                    </span>
                   </li>
                 </ul>
 
@@ -788,16 +819,31 @@ export default function ComputisCaseStudy() {
 
                 <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-success font-bold mt-1">•</span>
-                    <span><strong>No-code visual interface</strong> — Drag-and-drop rule creation without engineering tickets</span>
+                    <span className="text-precision-success font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>No-code visual interface</strong> — Drag-and-drop
+                      rule creation without engineering tickets
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-success font-bold mt-1">•</span>
-                    <span><strong>5.5x adoption increase</strong> — Adoption jumped from 12% to 67% with self-service rules</span>
+                    <span className="text-precision-success font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>5.5x adoption increase</strong> — Adoption jumped
+                      from 12% to 67% with self-service rules
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-success font-bold mt-1">•</span>
-                    <span><strong>90% faster creation</strong> — Rule setup reduced from 15 minutes to 90 seconds</span>
+                    <span className="text-precision-success font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>90% faster creation</strong> — Rule setup reduced
+                      from 15 minutes to 90 seconds
+                    </span>
                   </li>
                 </ul>
 
@@ -820,16 +866,31 @@ export default function ComputisCaseStudy() {
 
                 <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-error font-bold mt-1">•</span>
-                    <span><strong>Severity-tiered alerts</strong> — Flags errors, warnings, and info with context (doesn't block)</span>
+                    <span className="text-precision-error font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>Severity-tiered alerts</strong> — Flags errors,
+                      warnings, and info with context (doesn't block)
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-error font-bold mt-1">•</span>
-                    <span><strong>↑150% error detection</strong> — Catches mistakes before export or client delivery</span>
+                    <span className="text-precision-error font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>↑150% error detection</strong> — Catches mistakes
+                      before export or client delivery
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-precision-error font-bold mt-1">•</span>
-                    <span><strong>Zero FMV disputes</strong> — No fair market value discrepancies with IRS</span>
+                    <span className="text-precision-error font-bold mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong>Zero FMV disputes</strong> — No fair market value
+                      discrepancies with IRS
+                    </span>
                   </li>
                 </ul>
 
