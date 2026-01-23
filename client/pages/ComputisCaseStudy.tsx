@@ -170,7 +170,7 @@ export default function ComputisCaseStudy() {
                 Manual Work
               </p>
               <p className="text-3xl font-bold text-precision-success mb-1">
-                ↓85%
+                ↓{manualWorkCount}%
               </p>
               <p className="text-xs text-precision-text-secondary">
                 Classification time
