@@ -147,14 +147,14 @@ export default function ComputisCaseStudy() {
           </p>
 
           {/* Hero Metrics Grid - Above the Fold */}
-          <div className="hero-metrics-grid mb-6">
+          <div className="hero-metrics-grid mb-6" ref={metricsRef}>
             <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
               <Brain className="w-6 h-6 text-precision-accent mb-3" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 AI Trust
               </p>
               <p className="text-3xl font-bold text-precision-accent mb-1">
-                89%
+                {aiTrustCount}%
               </p>
               <p className="text-xs text-precision-text-secondary">
                 Acceptance rate
