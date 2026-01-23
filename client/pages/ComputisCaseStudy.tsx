@@ -337,7 +337,7 @@ export default function ComputisCaseStudy() {
 
       <main
         id="main-content"
-        className="max-w-[1200px] mx-auto px-6 pb-16 space-y-8 relative z-10"
+        className="max-w-[1200px] mx-auto px-6 pb-16 space-y-12 relative z-10"
       >
         {/* PROBLEM SECTION */}
         <section id="problem" className="section-animate scroll-mt-24 mt-6">
