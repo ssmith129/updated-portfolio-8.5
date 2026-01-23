@@ -73,7 +73,15 @@
 }
 
 .case-study-image__caption {
-  @apply mt-3 text-sm text-precision-text-secondary text-center italic;
+  @apply mt-3 text-xs text-precision-text-secondary/75 text-center font-normal;
+}
+
+/* ============================================
+   PROSE TEXT CONSTRAINTS
+   ============================================ */
+
+p {
+  @apply max-w-[680px] mx-auto;
 }
 
 /* ============================================
