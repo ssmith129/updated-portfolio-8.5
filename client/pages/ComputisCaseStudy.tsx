@@ -375,8 +375,9 @@ export default function ComputisCaseStudy() {
                     <strong>
                       This wasn't a UX problem—it was a trust problem.
                     </strong>{" "}
-                    CPAs are personally liable for classifications. They needed to
-                    explain decisions to the IRS, not accept black-box outputs.
+                    CPAs are personally liable for classifications. They needed
+                    to explain decisions to the IRS, not accept black-box
+                    outputs.
                   </p>
                 </div>
               </div>
