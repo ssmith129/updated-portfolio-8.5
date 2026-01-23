@@ -798,6 +798,21 @@ export default function ComputisCaseStudy() {
                   </h4>
                 </div>
 
+                <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-success font-bold mt-1">•</span>
+                    <span><strong>No-code visual interface</strong> — Drag-and-drop rule creation without engineering tickets</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-success font-bold mt-1">•</span>
+                    <span><strong>5.5x adoption increase</strong> — Adoption jumped from 12% to 67% with self-service rules</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-precision-success font-bold mt-1">•</span>
+                    <span><strong>90% faster creation</strong> — Rule setup reduced from 15 minutes to 90 seconds</span>
+                  </li>
+                </ul>
+
                 <FeatureCards
                   problem="Every rule change required engineering tickets (2-5 day wait)"
                   solution="No-code visual rule builder with drag-and-drop logic, live preview, and AI-suggested rules"
