@@ -173,6 +173,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="hero-metric-card hero-metric-card--secondary shadow-precision-sm">
+              <CheckCircle className="w-6 h-6 text-precision-secondary mb-3" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 Review Queue
               </p>
