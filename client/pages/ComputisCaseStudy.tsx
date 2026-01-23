@@ -737,12 +737,6 @@ export default function ComputisCaseStudy() {
                   </li>
                 </ul>
 
-                <FeatureCards
-                  problem="Manual classification consumed 60%+ of CPA time"
-                  solution="ML-driven auto-classification with 3-tier confidence (≥90%: auto, 60-89%: review, <60%: manual)"
-                  impact="↓85% manual work | ↑150% error detection"
-                />
-
                 <VideoOverlay
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="AI Classification confidence indicators demonstration"
