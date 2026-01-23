@@ -483,7 +483,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Research Quotes Gallery */}
-            <div className="case-study-image mt-6">
+            <div className="case-study-image mt-12">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc16ff6d62dda40b3bb78207aea59fa36?format=webp&width=2400"
                 alt="Gallery of CPA interview quotes highlighting trust concerns, control needs, and AI skepticism"
@@ -506,7 +506,7 @@ export default function ComputisCaseStudy() {
             </p>
 
             {/* CPA Workflow Journey Map */}
-            <div className="case-study-image mt-6">
+            <div className="case-study-image mt-12">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400"
                 alt="CPA workflow journey map showing 5 phases with emotion curve and pain points"
@@ -529,7 +529,7 @@ export default function ComputisCaseStudy() {
             </p>
 
             {/* Competitive Analysis */}
-            <div className="case-study-image mt-6">
+            <div className="case-study-image mt-12">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400"
                 alt="Competitive feature comparison matrix showing Computis advantages in AI transparency and professional control"
