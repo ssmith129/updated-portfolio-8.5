@@ -833,12 +833,6 @@ export default function ComputisCaseStudy() {
                   </li>
                 </ul>
 
-                <FeatureCards
-                  problem="Errors discovered too late—after export or client delivery"
-                  solution="ML-powered detection with severity-tiered flags (Error/Warning/Info) that warn but don't block"
-                  impact="↑150% error detection | Zero FMV disputes"
-                />
-
                 <VideoOverlay
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="Anomaly Detection Engine demonstration"
