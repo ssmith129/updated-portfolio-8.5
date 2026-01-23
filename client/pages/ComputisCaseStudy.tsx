@@ -37,6 +37,13 @@ export default function ComputisCaseStudy() {
     useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
 
+  // Hero metrics animation
+  const { elementRef: metricsRef, isVisible: metricsVisible } = useIntersectionAnimation(0.5);
+  const aiTrustCount = useCountUp(89, 2000, metricsVisible, 0, 0);
+  const manualWorkCount = useCountUp(85, 2000, metricsVisible, 200, 0);
+  const reviewQueueCount = useCountUp(11, 2000, metricsVisible, 400, 0);
+  const auditDefenseCount = useCountUp(340, 2000, metricsVisible, 600, 0);
+
   useEffect(() => {
     const handleScroll = () => {
       const isMobile = window.innerWidth < 768;
