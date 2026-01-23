@@ -73,7 +73,7 @@
 }
 
 .case-study-image__caption {
-  @apply mt-3 text-xs text-precision-text-secondary/75 text-center font-normal;
+  @apply mt-3 text-xs text-precision-text-secondary text-center font-normal opacity-70;
 }
 
 /* ============================================
