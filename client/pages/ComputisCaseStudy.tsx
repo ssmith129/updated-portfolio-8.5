@@ -1411,10 +1411,17 @@ export default function ComputisCaseStudy() {
               </h2>
               <div className="max-w-[900px] mx-auto">
                 <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium">
-                  In regulated domains, <span className="text-[#00D4AA] font-bold">AI transparency isn't a feature—it's the product.</span> Augmentation beats automation when professionals retain control, simplicity beats capability when users actually adopt it, and failed experiments teach the most.
+                  In regulated domains,{" "}
+                  <span className="text-[#00D4AA] font-bold">
+                    AI transparency isn't a feature—it's the product.
+                  </span>{" "}
+                  Augmentation beats automation when professionals retain
+                  control, simplicity beats capability when users actually adopt
+                  it, and failed experiments teach the most.
                 </p>
                 <p className="text-lg text-white/90 leading-relaxed font-medium">
-                  CPAs rejected full automation not for accuracy, but to preserve professional judgment.
+                  CPAs rejected full automation not for accuracy, but to
+                  preserve professional judgment.
                 </p>
                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-pill border border-white/20">
                   <Lightbulb className="w-4 h-4 text-[#00D4AA]" />
