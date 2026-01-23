@@ -730,13 +730,26 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            {/* AI Features */}
+            {/* AI Features - Collapsible Accordion */}
             <div className="mt-8 space-y-4">
-              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-3">
-                Four AI Capabilities
-              </h3>
+              <button
+                onClick={() => setIsAICapabilitiesExpanded(!isAICapabilitiesExpanded)}
+                className="w-full flex items-center justify-between p-4 bg-gradient-to-r from-[#E0F9F4]/30 to-[#E8F4FA]/30 rounded-card border border-[#E3E8EF] hover:border-precision-accent/30 transition-all duration-200 group"
+                aria-expanded={isAICapabilitiesExpanded}
+              >
+                <h3 className="text-lg font-bold font-heading text-precision-text-primary group-hover:text-precision-accent transition-colors">
+                  Four AI Capabilities
+                </h3>
+                {isAICapabilitiesExpanded ? (
+                  <ChevronUp className="w-5 h-5 text-precision-accent transition-transform" />
+                ) : (
+                  <ChevronDown className="w-5 h-5 text-precision-text-secondary group-hover:text-precision-accent transition-transform" />
+                )}
+              </button>
 
-              {/* Feature 1: Classification */}
+              {isAICapabilitiesExpanded && (
+                <div className="space-y-4 animate-in fade-in-0 slide-in-from-top-4 duration-300">
+                  {/* Feature 1: Classification */}
               <div className="bg-white rounded-card p-4 border border-[#E3E8EF] shadow-sm">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
@@ -924,6 +937,8 @@ export default function ComputisCaseStudy() {
                   ariaLabel="Anomaly Detection Engine demonstration"
                 />
               </div>
+                </div>
+              )}
             </div>
 
             {/* UI Evolution */}
