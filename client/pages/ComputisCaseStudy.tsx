@@ -801,12 +801,6 @@ export default function ComputisCaseStudy() {
                   </li>
                 </ul>
 
-                <FeatureCards
-                  problem="Every rule change required engineering tickets (2-5 day wait)"
-                  solution="No-code visual rule builder with drag-and-drop logic, live preview, and AI-suggested rules"
-                  impact="12% → 67% adoption (5.5x) | 15min → 90sec creation | ↑32% conversions"
-                />
-
                 <VideoOverlay
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="Smart Rule Builder demonstration"
