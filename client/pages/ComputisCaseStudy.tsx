@@ -769,12 +769,6 @@ export default function ComputisCaseStudy() {
                   </li>
                 </ul>
 
-                <FeatureCards
-                  problem="No visibility into AI decisions—CPAs maintained separate documentation"
-                  solution="AI-generated audit logs with classification changes, rationale, timestamps, and IRS-ready exports"
-                  impact="↓40% compliance prep | Self-service audit defense"
-                />
-
                 <VideoOverlay
                   videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
                   ariaLabel="Audit Trail System demonstration"
