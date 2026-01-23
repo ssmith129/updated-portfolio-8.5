@@ -1341,60 +1341,102 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Quantitative Results */}
-            <div className="bg-white rounded-card border border-[#E3E8EF] overflow-x-auto shadow-sm">
-              <table className="decisions-table">
-                <thead>
-                  <tr>
-                    <th>Metric</th>
-                    <th>Before</th>
-                    <th>After</th>
-                    <th>Change</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="decisions-table__why">
-                      Manual classification workload
-                    </td>
-                    <td>100% manual</td>
-                    <td>15% manual</td>
-                    <td className="decisions-table__result">↓85%</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__why">
-                      CPA onboarding (new client)
-                    </td>
-                    <td>2.5 hours</td>
-                    <td>1.4 hours</td>
-                    <td className="decisions-table__result">↓45%</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__why">
-                      Demo-to-conversion rate
-                    </td>
-                    <td>Baseline</td>
-                    <td>+32%</td>
-                    <td className="decisions-table__result">↑32%</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__why">
-                      Error detection accuracy
-                    </td>
-                    <td>Baseline</td>
-                    <td>+150%</td>
-                    <td className="decisions-table__result">↑150%</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__why">
-                      Audit trail exports
-                    </td>
-                    <td>Baseline</td>
-                    <td>+340%</td>
-                    <td className="decisions-table__result">↑340%</td>
-                  </tr>
-                </tbody>
-              </table>
+            {/* Quantitative Results - Card Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Impact 1 */}
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">Metric</p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">Manual classification workload</h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">Before</span>
+                    <span className="font-semibold text-precision-text-primary">100% manual</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">After</span>
+                    <span className="font-semibold text-precision-text-primary">15% manual</span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF]">
+                    <p className="text-base font-bold text-precision-success">↓85%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Impact 2 */}
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">Metric</p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">CPA onboarding (new client)</h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">Before</span>
+                    <span className="font-semibold text-precision-text-primary">2.5 hours</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">After</span>
+                    <span className="font-semibold text-precision-text-primary">1.4 hours</span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF]">
+                    <p className="text-base font-bold text-precision-success">↓45%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Impact 3 */}
+              <div className="bg-gradient-to-br from-[#FEF3E2] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <p className="text-xs font-bold text-precision-warning uppercase tracking-wider mb-2">Metric</p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">Demo-to-conversion rate</h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">Before</span>
+                    <span className="font-semibold text-precision-text-primary">Baseline</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">After</span>
+                    <span className="font-semibold text-precision-text-primary">+32%</span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF]">
+                    <p className="text-base font-bold text-precision-success">↑32%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Impact 4 */}
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">Metric</p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">Error detection accuracy</h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">Before</span>
+                    <span className="font-semibold text-precision-text-primary">Baseline</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">After</span>
+                    <span className="font-semibold text-precision-text-primary">+150%</span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF]">
+                    <p className="text-base font-bold text-precision-success">↑150%</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Impact 5 */}
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">Metric</p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">Audit trail exports</h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">Before</span>
+                    <span className="font-semibold text-precision-text-primary">Baseline</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">After</span>
+                    <span className="font-semibold text-precision-text-primary">+340%</span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF]">
+                    <p className="text-base font-bold text-precision-success">↑340%</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
