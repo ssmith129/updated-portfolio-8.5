@@ -189,6 +189,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="hero-metric-card hero-metric-card--warning shadow-precision-sm">
+              <Shield className="w-6 h-6 text-precision-warning mb-3" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 Audit Defense
               </p>
