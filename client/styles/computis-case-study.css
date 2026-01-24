@@ -293,7 +293,7 @@ p {
 }
 
 .insight-callout__text {
-  @apply text-base text-precision-text-primary leading-relaxed;
+  @apply text-base text-precision-text-primary leading-relaxed text-left;
 }
 
 /* ============================================
