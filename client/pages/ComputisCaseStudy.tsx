@@ -425,14 +425,6 @@ export default function ComputisCaseStudy() {
               15% review-only
             </p>
 
-            <div className="mt-6">
-              <p className="text-base text-precision-text-primary leading-relaxed mb-4">
-                Computis had a functional crypto tax platform—but CPAs spent{" "}
-                <strong>95% of time on manual classification</strong> instead of
-                high-value tax strategy and client consultation.
-              </p>
-            </div>
-
             <div className="mt-6 pl-6 border-l-4 border-precision-error bg-[#FDEEEE]/40 rounded-r-lg p-4 text-left">
               <div className="flex items-start gap-3">
                 <Lightbulb className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
