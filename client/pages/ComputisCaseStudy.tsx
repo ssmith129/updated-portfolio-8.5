@@ -1475,7 +1475,7 @@ export default function ComputisCaseStudy() {
                   CPAs rejected full automation not for accuracy, but to
                   preserve professional judgment.
                 </p>
-                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-pill border border-white/20">
+                <div className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-pill border border-white/20 w-fit mx-auto mt-4">
                   <Lightbulb className="w-4 h-4 text-[#00D4AA]" />
                   <span className="text-sm font-semibold text-white">
                     Human-in-the-loop isn't a weakness—it's how you earn trust
