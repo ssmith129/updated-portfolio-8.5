@@ -418,8 +418,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 1: CPA workflow transformation — from 95% manual work to
-              15% review-only
+              Figure 1: CPA workflow transformation
             </p>
 
             <div className="mt-6 pl-6 border-l-4 border-precision-error bg-[#FDEEEE]/40 rounded-r-lg p-4 text-left">
@@ -482,8 +481,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 2: 4-phase research approach — from discovery to validated
-              prototypes
+              Figure 2: 4-phase research methodology
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -562,8 +560,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 3: Key insights from CPA interviews — trust, control, and
-              professional liability
+              Figure 3: Key insights from CPA interviews
             </p>
 
             {/* CPA Workflow Journey Map - Elevated */}
@@ -590,8 +587,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
               <p className="case-study-image__caption mt-4">
-                Figure 4: CPA workflow journey — mapping pain points and AI
-                intervention opportunities
+                Figure 4: CPA workflow journey map
               </p>
             </div>
 
@@ -614,8 +610,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 5: Competitive analysis — Computis differentiation through
-              explainable AI
+              Figure 5: Competitive feature comparison
             </p>
           </div>
         </section>
@@ -723,8 +718,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
               <p className="case-study-image__caption">
-                Figure 6: Platform information architecture — AI touchpoints
-                throughout workflow
+                Figure 6: Platform information architecture
               </p>
             </div>
 
@@ -764,8 +758,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
               <p className="case-study-image__caption">
-                Figure 7: Computis design system — typography, colors,
-                components, and other important assets
+                Figure 7: Computis design system
               </p>
             </div>
 
@@ -901,8 +894,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 7: UI evolution — before/after AI integration with
-              confidence indicators
+              Figure 8: UI evolution with AI integration
             </p>
 
             {/* UI Screens Section - Hero Screens */}
@@ -1053,7 +1045,7 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Decision 1 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
-                <p className="text-sm font-medium text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Decision
                 </p>
                 <h3 className="text-base font-semibold text-precision-text-primary mb-4">
@@ -1074,7 +1066,7 @@ export default function ComputisCaseStudy() {
 
               {/* Decision 2 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
-                <p className="text-sm font-medium text-precision-secondary uppercase tracking-wider mb-2">
+                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
                   Decision
                 </p>
                 <h3 className="text-base font-semibold text-precision-text-primary mb-4">
@@ -1095,7 +1087,7 @@ export default function ComputisCaseStudy() {
 
               {/* Decision 3 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
-                <p className="text-sm font-medium text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Decision
                 </p>
                 <h3 className="text-base font-semibold text-precision-text-primary mb-4">
@@ -1116,7 +1108,7 @@ export default function ComputisCaseStudy() {
 
               {/* Decision 4 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
-                <p className="text-sm font-medium text-precision-secondary uppercase tracking-wider mb-2">
+                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
                   Decision
                 </p>
                 <h3 className="text-base font-semibold text-precision-text-primary mb-4">
@@ -1218,7 +1210,7 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {/* Impact 1 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Metric
                 </p>
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
@@ -1317,7 +1309,7 @@ export default function ComputisCaseStudy() {
 
               {/* Impact 4 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Metric
                 </p>
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
