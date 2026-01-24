@@ -90,7 +90,10 @@ export default function VideoOverlay({
 
   return (
     <>
-      <div className="video-container relative group cursor-pointer" onClick={handleVideoClick}>
+      <div
+        className="video-container relative group cursor-pointer"
+        onClick={handleVideoClick}
+      >
         <div className="rounded-[12px] sm:rounded-[16px] md:rounded-[20px] overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-xl">
           <video
             ref={videoRef}
@@ -108,7 +111,7 @@ export default function VideoOverlay({
             </p>
           </video>
         </div>
-        
+
         {/* Hover overlay with click hint */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-[12px] sm:rounded-[16px] md:rounded-[20px] flex items-center justify-center">
           <span className="text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
@@ -134,7 +137,7 @@ export default function VideoOverlay({
           </button>
 
           {/* Enlarged Video */}
-          <div 
+          <div
             className="max-w-[1920px] w-full animate-in zoom-in-90 duration-300"
             onClick={(e) => e.stopPropagation()}
             style={{ cursor: "default" }}
