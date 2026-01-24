@@ -1053,7 +1053,7 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Decision 1 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
-                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-sm font-medium text-precision-accent uppercase tracking-wider mb-2">
                   Decision
                 </p>
                 <h3 className="text-base font-semibold text-precision-text-primary mb-4">
@@ -1074,7 +1074,7 @@ export default function ComputisCaseStudy() {
 
               {/* Decision 2 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
-                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                <p className="text-sm font-medium text-precision-secondary uppercase tracking-wider mb-2">
                   Decision
                 </p>
                 <h3 className="text-base font-semibold text-precision-text-primary mb-4">
@@ -1095,7 +1095,7 @@ export default function ComputisCaseStudy() {
 
               {/* Decision 3 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
-                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-sm font-medium text-precision-accent uppercase tracking-wider mb-2">
                   Decision
                 </p>
                 <h3 className="text-base font-semibold text-precision-text-primary mb-4">
@@ -1116,7 +1116,7 @@ export default function ComputisCaseStudy() {
 
               {/* Decision 4 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
-                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                <p className="text-sm font-medium text-precision-secondary uppercase tracking-wider mb-2">
                   Decision
                 </p>
                 <h3 className="text-base font-semibold text-precision-text-primary mb-4">
@@ -1218,7 +1218,7 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {/* Impact 1 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mb-2">
                   Metric
                 </p>
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
@@ -1317,7 +1317,7 @@ export default function ComputisCaseStudy() {
 
               {/* Impact 4 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mb-2">
                   Metric
                 </p>
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
