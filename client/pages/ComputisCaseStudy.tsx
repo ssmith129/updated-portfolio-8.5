@@ -142,6 +142,14 @@ export default function ComputisCaseStudy() {
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-3">
             Computis — AI-Powered Crypto Tax Automation
           </h1>
+
+          <div className="flex items-center gap-2 mb-4">
+            <div className="reading-time">
+              <Clock className="reading-time__icon" />
+              <span>~2 min scan</span>
+            </div>
+          </div>
+
           <p className="text-base text-precision-text-secondary leading-[140%] mb-6 !max-w-full !text-left !mx-0">
             Designing AI features that <strong>augment CPA expertise</strong>{" "}
             while maintaining professional control and IRS audit defensibility
@@ -250,12 +258,6 @@ export default function ComputisCaseStudy() {
             </cite>
           </div>
 
-          <div className="flex items-center gap-2 mb-4 mt-6">
-            <div className="reading-time">
-              <Clock className="reading-time__icon" />
-              <span>~2 min scan</span>
-            </div>
-          </div>
         </div>
       </header>
 
