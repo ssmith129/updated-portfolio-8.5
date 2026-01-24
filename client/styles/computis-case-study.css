@@ -296,6 +296,10 @@ p {
   @apply text-base text-precision-text-primary leading-relaxed text-left;
 }
 
+.insight-callout {
+  @apply text-left;
+}
+
 /* ============================================
    SIGNATURE GEOMETRIC PATTERN
    ============================================ */
