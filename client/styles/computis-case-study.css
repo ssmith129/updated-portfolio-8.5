@@ -73,7 +73,7 @@
 }
 
 .case-study-image__caption {
-  @apply mt-3 text-xs text-precision-text-secondary text-left font-normal opacity-70;
+  @apply mt-3 text-xs text-precision-text-secondary text-center font-normal opacity-70;
 }
 
 /* ============================================
@@ -81,7 +81,7 @@
    ============================================ */
 
 p {
-  @apply max-w-[680px] text-left;
+  @apply max-w-[680px] mx-auto text-center;
 }
 
 /* ============================================
