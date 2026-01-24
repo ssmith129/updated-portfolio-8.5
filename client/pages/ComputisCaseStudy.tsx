@@ -147,6 +147,33 @@ export default function ComputisCaseStudy() {
             while maintaining professional control and IRS audit defensibility
           </p>
 
+          {/* Hero Image - Live Prototype */}
+          <div className="relative w-full max-w-[2880px] mx-auto mb-8 group">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-lg shadow-precision-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fd07dc7ebc8de47519381b1f967eacde1?format=webp&width=2880"
+                alt="Computis Crypto Tax Engine Dashboard - Live Prototype"
+                className="w-full h-full object-cover"
+                loading="eager"
+              />
+              {/* Darkening overlay on hover */}
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+
+              {/* View Live Prototype Link */}
+              <a
+                href="https://computis.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+              >
+                <div className="bg-precision-accent text-white px-6 py-3 rounded-lg font-semibold text-lg shadow-precision-lg hover:bg-precision-accent/90 transition-colors duration-200 flex items-center gap-2">
+                  <Eye className="w-5 h-5" />
+                  View Live Prototype
+                </div>
+              </a>
+            </div>
+          </div>
+
           {/* Hero Metrics Grid - Above the Fold */}
           <div className="hero-metrics-grid mb-6" ref={metricsRef}>
             <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
