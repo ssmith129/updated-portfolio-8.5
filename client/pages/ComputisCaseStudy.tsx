@@ -142,7 +142,7 @@ export default function ComputisCaseStudy() {
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-3">
             Computis — AI-Powered Crypto Tax Automation
           </h1>
-          <p className="text-base text-precision-text-secondary leading-[140%] mb-6">
+          <p className="text-base text-precision-text-secondary leading-[140%] mb-6 !max-w-full">
             Designing AI features that <strong>augment CPA expertise</strong>{" "}
             while maintaining professional control and IRS audit defensibility
           </p>
