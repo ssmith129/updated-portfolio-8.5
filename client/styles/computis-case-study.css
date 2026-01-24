@@ -143,7 +143,7 @@ p {
    ============================================ */
 
 .confidence-tier {
-  @apply border-2 rounded-xl p-4 text-center;
+  @apply border-2 rounded-xl p-6 text-center;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -222,7 +222,7 @@ p {
 }
 
 .impact-card {
-  @apply bg-gradient-to-br from-[#0A2540] to-[#1E3A5F] p-4 rounded-xl text-center;
+  @apply bg-gradient-to-br from-[#0A2540] to-[#1E3A5F] p-6 rounded-xl text-center;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -265,7 +265,7 @@ p {
    ============================================ */
 
 .insight-callout {
-  @apply rounded-xl p-5 border-l-4;
+  @apply rounded-xl p-6 border-l-4;
 }
 
 .insight-callout--key {
