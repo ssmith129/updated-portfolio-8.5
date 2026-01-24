@@ -306,15 +306,21 @@ p {
   margin-right: 0 !important;
 }
 
-/* Core Insight section left-align override */
+/* Core Insight section left-align override - matches TL;DR style */
 .core-insight-section p {
   text-align: left !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
+  max-width: 100% !important;
 }
 
 .core-insight-section h2 {
   text-align: left !important;
+}
+
+.core-insight-section .max-w-\[900px\] {
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 
 /* ============================================
