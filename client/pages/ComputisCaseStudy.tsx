@@ -717,7 +717,7 @@ export default function ComputisCaseStudy() {
               </h3>
 
               <div className="mb-6">
-                <p className="text-base text-precision-text-primary leading-relaxed text-left">
+                <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0">
                   We developed a comprehensive design system that unified
                   typography, color palettes, component libraries, and
                   interaction patterns across all touchpoints. This foundation
