@@ -134,7 +134,7 @@ export default function ComputisCaseStudy() {
 
       <header className="max-w-[1200px] mx-auto px-6 pt-8 pb-4 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="flex flex-col">
-          <span className="inline-block bg-precision-accent text-white px-3 py-1.5 rounded-pill text-xs font-semibold tracking-tight mb-4 w-fit">
+          <span className="badge badge--primary mb-4 w-fit">
             FinTech AI/UX Case Study
           </span>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-4">
