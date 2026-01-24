@@ -404,14 +404,14 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            <div className="mt-6 pl-6 border-l-4 border-precision-error bg-[#FDEEEE]/40 rounded-r-lg p-4">
+            <div className="mt-6 pl-6 border-l-4 border-precision-error bg-[#FDEEEE]/40 rounded-r-lg p-4 text-left">
               <div className="flex items-start gap-3">
                 <Lightbulb className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wider text-precision-error mb-2">
+                  <p className="text-sm font-bold uppercase tracking-wider text-precision-error mb-2 text-left">
                     Core Insight
                   </p>
-                  <p className="text-base text-precision-text-primary leading-relaxed">
+                  <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0">
                     <strong>
                       This wasn't a UX problem—it was a trust problem.
                     </strong>{" "}
