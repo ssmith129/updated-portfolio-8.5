@@ -310,7 +310,7 @@ export default function ComputisCaseStudy() {
               className="mt-4 animate-in fade-in-0 slide-in-from-top-4 duration-500"
             >
               <div className="space-y-3">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
                   <div>
                     <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
                       Role
@@ -349,7 +349,7 @@ export default function ComputisCaseStudy() {
                   <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2 block">
                     Tools & Team
                   </span>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                     <div>
                       <span className="font-medium text-precision-text-primary">
                         Tools:
@@ -423,7 +423,7 @@ export default function ComputisCaseStudy() {
             </p>
 
             <div className="mt-6 pl-6 border-l-4 border-precision-error bg-[#FDEEEE]/40 rounded-r-lg p-4 text-left">
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-4">
                 <Lightbulb className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-sm font-bold uppercase tracking-wider text-precision-error mb-2 text-left">
@@ -778,7 +778,7 @@ export default function ComputisCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Feature 1: Classification */}
                 <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                       <Sparkles className="w-6 h-6 text-precision-accent" />
                     </div>
@@ -804,7 +804,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Feature 2: Audit Trail */}
                 <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
                       <Eye className="w-6 h-6 text-precision-secondary" />
                     </div>
@@ -830,7 +830,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Feature 3: Rule Builder */}
                 <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                       <Settings className="w-6 h-6 text-precision-success" />
                     </div>
@@ -856,7 +856,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Feature 4: Anomaly Detection */}
                 <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
                       <AlertTriangle className="w-6 h-6 text-precision-error" />
                     </div>
