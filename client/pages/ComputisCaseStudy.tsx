@@ -1032,12 +1032,12 @@ export default function ComputisCaseStudy() {
                 <div>
                   <div className="case-study-image mb-3">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4a1ba9e3386245e985c515a080b75ca5?format=webp&width=800&height=1200"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5b57dab77840440fae175a5817e22984?format=webp&width=2400"
                       alt="Transactions Management"
                       loading="lazy"
                       onClick={() =>
                         setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4a1ba9e3386245e985c515a080b75ca5?format=webp&width=800&height=1200",
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5b57dab77840440fae175a5817e22984?format=webp&width=2400",
                         )
                       }
                     />
@@ -1059,12 +1059,12 @@ export default function ComputisCaseStudy() {
                 <div>
                   <div className="case-study-image mb-3">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa78cada6d10847a9b1dada5b29814f6e?format=webp&width=800&height=1200"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F07c913d3c39d4fdab94a3834e53b5715?format=webp&width=2400"
                       alt="Data Anomaly Detection"
                       loading="lazy"
                       onClick={() =>
                         setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa78cada6d10847a9b1dada5b29814f6e?format=webp&width=800&height=1200",
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F07c913d3c39d4fdab94a3834e53b5715?format=webp&width=2400",
                         )
                       }
                     />
@@ -1086,12 +1086,12 @@ export default function ComputisCaseStudy() {
                 <div>
                   <div className="case-study-image mb-3">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fb31ab678f12d41a39449cb4fb1e60a07?format=webp&width=800&height=1200"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcdefa1985ff7455fb25e1a135cd661f6?format=webp&width=2400"
                       alt="Smart Export System"
                       loading="lazy"
                       onClick={() =>
                         setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fb31ab678f12d41a39449cb4fb1e60a07?format=webp&width=800&height=1200",
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcdefa1985ff7455fb25e1a135cd661f6?format=webp&width=2400",
                         )
                       }
                     />
