@@ -231,15 +231,15 @@ p {
 }
 
 .impact-card__icon {
-  @apply w-6 h-6 text-[#00D4AA] mx-auto mb-2;
+  @apply w-8 h-8 text-[#00D4AA] mx-auto mb-4;
 }
 
 .impact-card__metric {
-  @apply text-xl font-bold text-white mb-1;
+  @apply text-3xl font-bold text-white mb-2;
 }
 
 .impact-card__label {
-  @apply text-xs text-white/80;
+  @apply text-sm text-white/90 font-medium;
 }
 
 /* ============================================
