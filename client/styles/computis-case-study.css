@@ -306,6 +306,13 @@ p {
   margin-right: 0 !important;
 }
 
+/* Core Insight section left-align override */
+.bg-gradient-to-r.from-\[#0A2540\] p {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 /* ============================================
    SIGNATURE GEOMETRIC PATTERN
    ============================================ */
