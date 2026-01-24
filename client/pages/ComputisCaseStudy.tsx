@@ -772,219 +772,109 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            {/* AI Features - Collapsible Accordion */}
-            <div className="mt-8 space-y-4">
-              <button
-                onClick={() =>
-                  setIsAICapabilitiesExpanded(!isAICapabilitiesExpanded)
-                }
-                className="w-full flex items-center justify-between p-4 bg-gradient-to-r from-[#E0F9F4]/30 to-[#E8F4FA]/30 rounded-card border border-[#E3E8EF] hover:border-precision-accent/30 transition-all duration-200 group"
-                aria-expanded={isAICapabilitiesExpanded}
-              >
-                <h3 className="text-lg font-bold font-heading text-precision-text-primary group-hover:text-precision-accent transition-colors">
-                  Four AI Capabilities
-                </h3>
-                {isAICapabilitiesExpanded ? (
-                  <ChevronUp className="w-5 h-5 text-precision-accent transition-transform" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 text-precision-text-secondary group-hover:text-precision-accent transition-transform" />
-                )}
-              </button>
+            {/* Four AI Capabilities - 2×2 Grid */}
+            <div className="mt-8">
+              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-6">
+                Four AI Capabilities
+              </h3>
 
-              {isAICapabilitiesExpanded && (
-                <div className="space-y-4 animate-in fade-in-0 slide-in-from-top-4 duration-300">
-                  {/* Feature 1: Classification */}
-                  <div className="bg-white rounded-card p-4 border border-[#E3E8EF] shadow-sm">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
-                        <Sparkles className="w-5 h-5 text-precision-accent" />
-                      </div>
-                      <h4 className="text-lg font-bold font-heading text-precision-text-primary">
-                        Intelligent Transaction Classification
-                      </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Feature 1: Classification */}
+                <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                      <Sparkles className="w-6 h-6 text-precision-accent" />
                     </div>
-
-                    <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-accent font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>3-tier confidence system</strong> —
-                          Auto-classifies high-confidence transactions, flags
-                          medium-confidence for review
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-accent font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>↓85% manual work</strong> — Reduces
-                          classification time from hours to minutes
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-accent font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>89% adoption rate</strong> — CPAs trust AI
-                          classifications immediately
-                        </span>
-                      </li>
-                    </ul>
-
-                    <VideoOverlay
-                      videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
-                      ariaLabel="AI Classification confidence indicators demonstration"
-                    />
+                    <h4 className="text-base font-bold font-heading text-precision-text-primary">
+                      Intelligent Transaction Classification
+                    </h4>
                   </div>
 
-                  {/* Feature 2: Audit Trail */}
-                  <div className="bg-white rounded-card p-4 border border-[#E3E8EF] shadow-sm">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
-                        <Eye className="w-5 h-5 text-precision-secondary" />
-                      </div>
-                      <h4 className="text-lg font-bold font-heading text-precision-text-primary">
-                        Explainable Audit Trail
-                      </h4>
-                    </div>
-
-                    <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-secondary font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>Complete decision history</strong> — Records
-                          every AI decision with rationale and timestamps
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-secondary font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>IRS-ready exports</strong> — Generate
-                          audit-defensible documentation in seconds
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-secondary font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>↓40% compliance prep</strong> — Eliminates
-                          manual audit trail documentation
-                        </span>
-                      </li>
-                    </ul>
-
-                    <VideoOverlay
-                      videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
-                      ariaLabel="Audit Trail System demonstration"
-                    />
+                  <div className="mb-4">
+                    <p className="text-3xl font-bold text-precision-accent mb-1">89%</p>
+                    <p className="text-sm text-precision-text-secondary">
+                      CPAs trust AI classifications immediately
+                    </p>
                   </div>
 
-                  {/* Feature 3: Rule Builder */}
-                  <div className="bg-white rounded-card p-4 border border-[#E3E8EF] shadow-sm">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
-                        <Settings className="w-5 h-5 text-precision-success" />
-                      </div>
-                      <h4 className="text-lg font-bold font-heading text-precision-text-primary">
-                        Smart Rule Builder
-                      </h4>
-                    </div>
-
-                    <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-success font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>No-code visual interface</strong> —
-                          Drag-and-drop rule creation without engineering
-                          tickets
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-success font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>5.5x adoption increase</strong> — Adoption
-                          jumped from 12% to 67% with self-service rules
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-success font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>90% faster creation</strong> — Rule setup
-                          reduced from 15 minutes to 90 seconds
-                        </span>
-                      </li>
-                    </ul>
-
-                    <VideoOverlay
-                      videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
-                      ariaLabel="Smart Rule Builder demonstration"
-                    />
-                  </div>
-
-                  {/* Feature 4: Anomaly Detection */}
-                  <div className="bg-white rounded-card p-4 border border-[#E3E8EF] shadow-sm">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
-                        <AlertTriangle className="w-5 h-5 text-precision-error" />
-                      </div>
-                      <h4 className="text-lg font-bold font-heading text-precision-text-primary">
-                        Real-Time Anomaly Detection
-                      </h4>
-                    </div>
-
-                    <ul className="space-y-2 mb-4 text-sm text-precision-text-primary">
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-error font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>Severity-tiered alerts</strong> — Flags
-                          errors, warnings, and info with context (doesn't
-                          block)
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-error font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>↑150% error detection</strong> — Catches
-                          mistakes before export or client delivery
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-precision-error font-bold mt-1">
-                          •
-                        </span>
-                        <span>
-                          <strong>Zero FMV disputes</strong> — No fair market
-                          value discrepancies with IRS
-                        </span>
-                      </li>
-                    </ul>
-
-                    <VideoOverlay
-                      videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
-                      ariaLabel="Anomaly Detection Engine demonstration"
-                    />
-                  </div>
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="AI Classification confidence indicators demonstration"
+                  />
                 </div>
-              )}
+
+                {/* Feature 2: Audit Trail */}
+                <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
+                      <Eye className="w-6 h-6 text-precision-secondary" />
+                    </div>
+                    <h4 className="text-base font-bold font-heading text-precision-text-primary">
+                      Explainable Audit Trail
+                    </h4>
+                  </div>
+
+                  <div className="mb-4">
+                    <p className="text-3xl font-bold text-precision-secondary mb-1">↓40%</p>
+                    <p className="text-sm text-precision-text-secondary">
+                      Eliminates manual audit trail documentation
+                    </p>
+                  </div>
+
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Audit Trail System demonstration"
+                  />
+                </div>
+
+                {/* Feature 3: Rule Builder */}
+                <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                      <Settings className="w-6 h-6 text-precision-success" />
+                    </div>
+                    <h4 className="text-base font-bold font-heading text-precision-text-primary">
+                      Smart Rule Builder
+                    </h4>
+                  </div>
+
+                  <div className="mb-4">
+                    <p className="text-3xl font-bold text-precision-success mb-1">5.5x</p>
+                    <p className="text-sm text-precision-text-secondary">
+                      Adoption jumped from 12% to 67% with self-service rules
+                    </p>
+                  </div>
+
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Smart Rule Builder demonstration"
+                  />
+                </div>
+
+                {/* Feature 4: Anomaly Detection */}
+                <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="w-6 h-6 text-precision-error" />
+                    </div>
+                    <h4 className="text-base font-bold font-heading text-precision-text-primary">
+                      Real-Time Anomaly Detection
+                    </h4>
+                  </div>
+
+                  <div className="mb-4">
+                    <p className="text-3xl font-bold text-precision-error mb-1">Zero</p>
+                    <p className="text-sm text-precision-text-secondary">
+                      No fair market value discrepancies with IRS
+                    </p>
+                  </div>
+
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Anomaly Detection Engine demonstration"
+                  />
+                </div>
+              </div>
             </div>
 
             {/* UI Evolution */}
