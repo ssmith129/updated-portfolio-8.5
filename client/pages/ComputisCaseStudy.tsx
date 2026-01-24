@@ -1197,7 +1197,7 @@ export default function ComputisCaseStudy() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {/* Impact 1 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mb-2">
                   Metric
                 </p>
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
@@ -1230,7 +1230,7 @@ export default function ComputisCaseStudy() {
 
               {/* Impact 2 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                <p className="text-xs font-medium text-precision-secondary uppercase tracking-wider mb-2">
                   Metric
                 </p>
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
@@ -1263,7 +1263,7 @@ export default function ComputisCaseStudy() {
 
               {/* Impact 3 */}
               <div className="bg-gradient-to-br from-[#FEF3E2] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-warning uppercase tracking-wider mb-2">
+                <p className="text-xs font-medium text-precision-warning uppercase tracking-wider mb-2">
                   Metric
                 </p>
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
@@ -1296,7 +1296,7 @@ export default function ComputisCaseStudy() {
 
               {/* Impact 4 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
+                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mb-2">
                   Metric
                 </p>
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
@@ -1329,7 +1329,7 @@ export default function ComputisCaseStudy() {
 
               {/* Impact 5 */}
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                <p className="text-xs font-medium text-precision-secondary uppercase tracking-wider mb-2">
                   Metric
                 </p>
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
