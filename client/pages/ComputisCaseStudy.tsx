@@ -663,7 +663,7 @@ export default function ComputisCaseStudy() {
                     CPAs trusted AI completely. No review needed. IRS-ready
                     documentation generated.
                   </p>
-                  <p className="text-2xl font-bold text-green-600 mt-3">89%</p>
+                  <p className="text-2xl font-bold text-green-600 mt-4">89%</p>
                   <p className="text-xs text-green-600">Acceptance rate</p>
                 </div>
 
@@ -681,7 +681,7 @@ export default function ComputisCaseStudy() {
                     Flagged for human review. AI provides hypothesis +
                     rationale. CPA makes final call.
                   </p>
-                  <p className="text-2xl font-bold text-yellow-600 mt-3">11%</p>
+                  <p className="text-2xl font-bold text-yellow-600 mt-4">11%</p>
                   <p className="text-xs text-yellow-600">Override rate</p>
                 </div>
 
@@ -699,7 +699,7 @@ export default function ComputisCaseStudy() {
                     AI admits uncertainty. Full CPA manual classification with
                     context preservation.
                   </p>
-                  <p className="text-2xl font-bold text-red-600 mt-3">15%</p>
+                  <p className="text-2xl font-bold text-red-600 mt-4">15%</p>
                   <p className="text-xs text-red-600">Manual work</p>
                 </div>
               </div>
