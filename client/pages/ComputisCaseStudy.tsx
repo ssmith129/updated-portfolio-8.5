@@ -929,7 +929,8 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Dashboard:</strong> Real-time portfolio metrics with AI confidence distribution and review queues.
+                    <strong>Dashboard:</strong> Real-time portfolio metrics with
+                    AI confidence distribution and review queues.
                   </p>
                 </div>
 
@@ -953,7 +954,8 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Transactions:</strong> AI classification with confidence indicators and bulk review actions.
+                    <strong>Transactions:</strong> AI classification with
+                    confidence indicators and bulk review actions.
                   </p>
                 </div>
 
@@ -977,7 +979,8 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Data Anomaly Detection:</strong> Real-time flagging of data errors before IRS export.
+                    <strong>Data Anomaly Detection:</strong> Real-time flagging
+                    of data errors before IRS export.
                   </p>
                 </div>
 
@@ -1001,7 +1004,8 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Smart Export:</strong> IRS-ready Form 8949 and audit trails with embedded metadata.
+                    <strong>Smart Export:</strong> IRS-ready Form 8949 and audit
+                    trails with embedded metadata.
                   </p>
                 </div>
               </div>
