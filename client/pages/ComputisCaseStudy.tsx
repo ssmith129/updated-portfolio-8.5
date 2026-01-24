@@ -653,7 +653,7 @@ export default function ComputisCaseStudy() {
                   <span className="confidence-tier__badge confidence-tier__badge--high">
                     ≥90% Confidence
                   </span>
-                  <h3 className="text-lg font-bold text-green-700 mb-2">
+                  <h3 className="text-lg font-medium text-green-700 mb-2">
                     High Confidence
                   </h3>
                   <p className="text-sm text-precision-text-primary mb-4">
@@ -671,7 +671,7 @@ export default function ComputisCaseStudy() {
                   <span className="confidence-tier__badge confidence-tier__badge--medium">
                     60-89% Confidence
                   </span>
-                  <h3 className="text-lg font-bold text-yellow-700 mb-2">
+                  <h3 className="text-lg font-medium text-yellow-700 mb-2">
                     Medium Confidence
                   </h3>
                   <p className="text-sm text-precision-text-primary mb-4">
@@ -689,7 +689,7 @@ export default function ComputisCaseStudy() {
                   <span className="confidence-tier__badge confidence-tier__badge--low">
                     &lt;60% Confidence
                   </span>
-                  <h3 className="text-lg font-bold text-red-700 mb-2">
+                  <h3 className="text-lg font-medium text-red-700 mb-2">
                     Low Confidence
                   </h3>
                   <p className="text-sm text-precision-text-primary mb-4">
