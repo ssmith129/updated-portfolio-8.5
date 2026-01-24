@@ -134,10 +134,10 @@ export default function ComputisCaseStudy() {
 
       <header className="max-w-[1200px] mx-auto px-6 pt-8 pb-4 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="flex flex-col">
-          <span className="inline-block bg-precision-accent text-white px-3 py-1.5 rounded-pill text-xs font-semibold tracking-tight mb-3 w-fit">
+          <span className="inline-block bg-precision-accent text-white px-3 py-1.5 rounded-pill text-xs font-semibold tracking-tight mb-4 w-fit">
             FinTech AI/UX Case Study
           </span>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-3">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-4">
             Computis — AI-Powered Crypto Tax Automation
           </h1>
 
@@ -183,7 +183,7 @@ export default function ComputisCaseStudy() {
           {/* Hero Metrics Grid - Above the Fold */}
           <div className="hero-metrics-grid mb-6" ref={metricsRef}>
             <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
-              <Brain className="w-6 h-6 text-precision-accent mb-3" />
+              <Brain className="w-6 h-6 text-precision-accent mb-4" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 AI Trust
               </p>
@@ -199,7 +199,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="hero-metric-card hero-metric-card--success shadow-precision-sm">
-              <Zap className="w-6 h-6 text-precision-success mb-3" />
+              <Zap className="w-6 h-6 text-precision-success mb-4" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 Manual Work
               </p>
@@ -215,7 +215,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="hero-metric-card hero-metric-card--secondary shadow-precision-sm">
-              <CheckCircle className="w-6 h-6 text-precision-secondary mb-3" />
+              <CheckCircle className="w-6 h-6 text-precision-secondary mb-4" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 Review Queue
               </p>
@@ -231,7 +231,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="hero-metric-card hero-metric-card--warning shadow-precision-sm">
-              <Shield className="w-6 h-6 text-precision-warning mb-3" />
+              <Shield className="w-6 h-6 text-precision-warning mb-4" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 Audit Defense
               </p>
@@ -488,7 +488,7 @@ export default function ComputisCaseStudy() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm">
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4 flex items-center gap-2">
                   <Users className="w-4 h-4 text-precision-accent" />
                   User Research
                 </h3>
@@ -516,7 +516,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm">
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4 flex items-center gap-2">
                   <TrendingUp className="w-4 h-4 text-precision-secondary" />
                   Data Analysis
                 </h3>
@@ -656,7 +656,7 @@ export default function ComputisCaseStudy() {
                   <h3 className="text-lg font-bold text-green-700 mb-2">
                     High Confidence
                   </h3>
-                  <p className="text-sm text-precision-text-primary mb-3">
+                  <p className="text-sm text-precision-text-primary mb-4">
                     Auto-classified
                   </p>
                   <p className="text-xs text-precision-text-secondary leading-relaxed">
@@ -674,7 +674,7 @@ export default function ComputisCaseStudy() {
                   <h3 className="text-lg font-bold text-yellow-700 mb-2">
                     Medium Confidence
                   </h3>
-                  <p className="text-sm text-precision-text-primary mb-3">
+                  <p className="text-sm text-precision-text-primary mb-4">
                     Review queue
                   </p>
                   <p className="text-xs text-precision-text-secondary leading-relaxed">
@@ -692,7 +692,7 @@ export default function ComputisCaseStudy() {
                   <h3 className="text-lg font-bold text-red-700 mb-2">
                     Low Confidence
                   </h3>
-                  <p className="text-sm text-precision-text-primary mb-3">
+                  <p className="text-sm text-precision-text-primary mb-4">
                     Manual required
                   </p>
                   <p className="text-xs text-precision-text-secondary leading-relaxed">
@@ -919,7 +919,7 @@ export default function ComputisCaseStudy() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Dashboard */}
                 <div>
-                  <div className="case-study-image mb-3">
+                  <div className="case-study-image mb-4">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
                       alt="Dashboard Overview"
@@ -946,7 +946,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Transactions */}
                 <div>
-                  <div className="case-study-image mb-3">
+                  <div className="case-study-image mb-4">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5b57dab77840440fae175a5817e22984?format=webp&width=2400"
                       alt="Transactions Management"
@@ -973,7 +973,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Data Anomaly Detection */}
                 <div>
-                  <div className="case-study-image mb-3">
+                  <div className="case-study-image mb-4">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F07c913d3c39d4fdab94a3834e53b5715?format=webp&width=2400"
                       alt="Data Anomaly Detection"
@@ -1000,7 +1000,7 @@ export default function ComputisCaseStudy() {
 
                 {/* Smart Export */}
                 <div>
-                  <div className="case-study-image mb-3">
+                  <div className="case-study-image mb-4">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcdefa1985ff7455fb25e1a135cd661f6?format=webp&width=2400"
                       alt="Smart Export System"
@@ -1056,7 +1056,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Decision
                 </p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
                   Show confidence scores
                 </h3>
                 <p className="text-sm text-precision-text-secondary mb-4">
@@ -1077,7 +1077,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
                   Decision
                 </p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
                   Review queue vs auto-apply all
                 </h3>
                 <p className="text-sm text-precision-text-secondary mb-4">
@@ -1098,7 +1098,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Decision
                 </p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
                   Async rationale loading
                 </h3>
                 <p className="text-sm text-precision-text-secondary mb-4">
@@ -1119,7 +1119,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
                   Decision
                 </p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
                   Override always allowed
                 </h3>
                 <p className="text-sm text-precision-text-secondary mb-4">
@@ -1138,10 +1138,10 @@ export default function ComputisCaseStudy() {
 
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-card p-6 border-l-4 border-precision-warning shadow-sm">
-                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
+                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-4">
                   Critical Trade-off: Speed vs. Transparency
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-relaxed mb-3">
+                <p className="text-sm text-precision-text-primary leading-relaxed mb-4">
                   Removing rationale would cut processing 60%—but competitor
                   "black box" complaints outnumbered speed complaints 3:1.
                 </p>
@@ -1152,10 +1152,10 @@ export default function ComputisCaseStudy() {
               </div>
 
               <div className="bg-white rounded-card p-6 border-l-4 border-precision-accent shadow-sm">
-                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
+                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-4">
                   Stakeholder Alignment
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-relaxed mb-3">
+                <p className="text-sm text-precision-text-primary leading-relaxed mb-4">
                   Engineering wanted max automation; CPAs required override
                   capabilities. Tiered system satisfied both.
                 </p>
