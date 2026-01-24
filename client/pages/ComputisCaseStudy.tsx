@@ -309,7 +309,7 @@ export default function ComputisCaseStudy() {
               id="summary-content"
               className="mt-4 animate-in fade-in-0 slide-in-from-top-4 duration-500"
             >
-              <div className="space-y-3">
+              <div className="space-y-4">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
                   <div>
                     <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
@@ -1224,7 +1224,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   Manual classification workload
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-xs text-precision-text-secondary">
                       Before
@@ -1257,7 +1257,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   CPA onboarding (new client)
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-xs text-precision-text-secondary">
                       Before
@@ -1290,7 +1290,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   Demo-to-conversion rate
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-xs text-precision-text-secondary">
                       Before
@@ -1323,7 +1323,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   Error detection accuracy
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-xs text-precision-text-secondary">
                       Before
@@ -1356,7 +1356,7 @@ export default function ComputisCaseStudy() {
                 <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   Audit trail exports
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-xs text-precision-text-secondary">
                       Before
