@@ -777,7 +777,7 @@ export default function ComputisCaseStudy() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Feature 1: Classification */}
-                <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                       <Sparkles className="w-6 h-6 text-precision-accent" />
@@ -803,7 +803,7 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 {/* Feature 2: Audit Trail */}
-                <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
                       <Eye className="w-6 h-6 text-precision-secondary" />
@@ -829,7 +829,7 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 {/* Feature 3: Rule Builder */}
-                <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                       <Settings className="w-6 h-6 text-precision-success" />
@@ -855,7 +855,7 @@ export default function ComputisCaseStudy() {
                 </div>
 
                 {/* Feature 4: Anomaly Detection */}
-                <div className="bg-white rounded-card p-5 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
                       <AlertTriangle className="w-6 h-6 text-precision-error" />
@@ -1446,7 +1446,7 @@ export default function ComputisCaseStudy() {
                 What I'd do differently next time
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[800px] mx-auto">
-                <div className="bg-white rounded-card p-5 border-l-4 border-precision-accent shadow-sm text-left">
+                <div className="bg-white rounded-card p-6 border-l-4 border-precision-accent shadow-sm text-left">
                   <h4 className="text-sm font-semibold text-precision-text-primary mb-2">
                     Ship minimal first
                   </h4>
@@ -1455,7 +1455,7 @@ export default function ComputisCaseStudy() {
                     complexity, add power features based on observed demand.
                   </p>
                 </div>
-                <div className="bg-white rounded-card p-5 border-l-4 border-precision-secondary shadow-sm text-left">
+                <div className="bg-white rounded-card p-6 border-l-4 border-precision-secondary shadow-sm text-left">
                   <h4 className="text-sm font-semibold text-precision-text-primary mb-2">
                     Document trade-offs explicitly
                   </h4>

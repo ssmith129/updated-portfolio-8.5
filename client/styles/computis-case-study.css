@@ -12,7 +12,7 @@
 }
 
 .hero-metric-card {
-  @apply p-4 rounded-xl transition-transform duration-200;
+  @apply p-6 rounded-xl transition-transform duration-200;
 }
 
 .hero-metric-card:hover {
