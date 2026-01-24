@@ -782,7 +782,7 @@ export default function ComputisCaseStudy() {
                     <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                       <Sparkles className="w-6 h-6 text-precision-accent" />
                     </div>
-                    <h4 className="text-base font-bold font-heading text-precision-text-primary">
+                    <h4 className="text-base font-semibold font-heading text-precision-text-primary">
                       Intelligent Transaction Classification
                     </h4>
                   </div>
@@ -808,7 +808,7 @@ export default function ComputisCaseStudy() {
                     <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
                       <Eye className="w-6 h-6 text-precision-secondary" />
                     </div>
-                    <h4 className="text-base font-bold font-heading text-precision-text-primary">
+                    <h4 className="text-base font-semibold font-heading text-precision-text-primary">
                       Explainable Audit Trail
                     </h4>
                   </div>
@@ -834,7 +834,7 @@ export default function ComputisCaseStudy() {
                     <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
                       <Settings className="w-6 h-6 text-precision-success" />
                     </div>
-                    <h4 className="text-base font-bold font-heading text-precision-text-primary">
+                    <h4 className="text-base font-semibold font-heading text-precision-text-primary">
                       Smart Rule Builder
                     </h4>
                   </div>
@@ -860,7 +860,7 @@ export default function ComputisCaseStudy() {
                     <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
                       <AlertTriangle className="w-6 h-6 text-precision-error" />
                     </div>
-                    <h4 className="text-base font-bold font-heading text-precision-text-primary">
+                    <h4 className="text-base font-semibold font-heading text-precision-text-primary">
                       Real-Time Anomaly Detection
                     </h4>
                   </div>
