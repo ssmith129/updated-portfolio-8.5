@@ -994,7 +994,7 @@ export default function ComputisCaseStudy() {
               <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
                 UI Screens
               </h3>
-              <p className="text-base text-precision-text-primary leading-relaxed mb-6">
+              <p className="text-base text-precision-text-primary leading-relaxed mb-6 !text-left !mx-0">
                 Four core screens demonstrating the AI-powered workflow that transformed CPA cryptocurrency tax operations.
               </p>
 
