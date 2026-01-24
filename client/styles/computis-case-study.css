@@ -307,10 +307,14 @@ p {
 }
 
 /* Core Insight section left-align override */
-.bg-gradient-to-r.from-\[#0A2540\] p {
+.core-insight-section p {
   text-align: left !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+.core-insight-section h2 {
+  text-align: left !important;
 }
 
 /* ============================================
