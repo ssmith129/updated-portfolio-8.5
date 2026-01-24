@@ -255,7 +255,6 @@ export default function ComputisCaseStudy() {
               — Enterprise CPA, Big 4 Partner
             </cite>
           </div>
-
         </div>
       </header>
 
@@ -789,7 +788,9 @@ export default function ComputisCaseStudy() {
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-3xl font-bold text-precision-accent mb-1">89%</p>
+                    <p className="text-3xl font-bold text-precision-accent mb-1">
+                      89%
+                    </p>
                     <p className="text-sm text-precision-text-secondary">
                       CPAs trust AI classifications immediately
                     </p>
@@ -813,7 +814,9 @@ export default function ComputisCaseStudy() {
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-3xl font-bold text-precision-secondary mb-1">↓40%</p>
+                    <p className="text-3xl font-bold text-precision-secondary mb-1">
+                      ↓40%
+                    </p>
                     <p className="text-sm text-precision-text-secondary">
                       Eliminates manual audit trail documentation
                     </p>
@@ -837,7 +840,9 @@ export default function ComputisCaseStudy() {
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-3xl font-bold text-precision-success mb-1">5.5x</p>
+                    <p className="text-3xl font-bold text-precision-success mb-1">
+                      5.5x
+                    </p>
                     <p className="text-sm text-precision-text-secondary">
                       Adoption jumped from 12% to 67% with self-service rules
                     </p>
@@ -861,7 +866,9 @@ export default function ComputisCaseStudy() {
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-3xl font-bold text-precision-error mb-1">Zero</p>
+                    <p className="text-3xl font-bold text-precision-error mb-1">
+                      Zero
+                    </p>
                     <p className="text-sm text-precision-text-secondary">
                       No fair market value discrepancies with IRS
                     </p>
