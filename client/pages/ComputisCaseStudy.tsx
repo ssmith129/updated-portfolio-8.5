@@ -1305,7 +1305,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Metric
                 </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   Manual classification workload
                 </h3>
                 <div className="space-y-3">
@@ -1338,7 +1338,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">
                   Metric
                 </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   CPA onboarding (new client)
                 </h3>
                 <div className="space-y-3">
@@ -1371,7 +1371,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-xs font-bold text-precision-warning uppercase tracking-wider mb-2">
                   Metric
                 </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   Demo-to-conversion rate
                 </h3>
                 <div className="space-y-3">
@@ -1404,7 +1404,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-xs font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Metric
                 </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   Error detection accuracy
                 </h3>
                 <div className="space-y-3">
@@ -1437,7 +1437,7 @@ export default function ComputisCaseStudy() {
                 <p className="text-xs font-bold text-precision-secondary uppercase tracking-wider mb-2">
                   Metric
                 </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4">
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
                   Audit trail exports
                 </h3>
                 <div className="space-y-3">
