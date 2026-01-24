@@ -1136,7 +1136,7 @@ export default function ComputisCaseStudy() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Decision 1 */}
-              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
                 <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Decision
                 </p>
@@ -1157,7 +1157,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Decision 2 */}
-              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
                 <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
                   Decision
                 </p>
@@ -1178,7 +1178,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Decision 3 */}
-              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
                 <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
                   Decision
                 </p>
@@ -1199,7 +1199,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Decision 4 */}
-              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center">
                 <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
                   Decision
                 </p>
