@@ -243,6 +243,39 @@ p {
 }
 
 /* ============================================
+   BADGE COMPONENT
+   ============================================ */
+
+.badge {
+  @apply inline-block px-4 py-2 rounded-full text-xs font-semibold tracking-tight;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.badge--primary {
+  @apply bg-precision-accent text-white;
+}
+
+.badge--secondary {
+  @apply bg-precision-secondary text-white;
+}
+
+.badge--success {
+  @apply bg-precision-success text-white;
+}
+
+.badge--warning {
+  @apply bg-precision-warning text-white;
+}
+
+.badge--light {
+  @apply bg-[#E0F9F4] text-precision-accent border border-[#00D4AA]/20;
+}
+
+.badge--light:hover {
+  @apply bg-precision-accent text-white;
+}
+
+/* ============================================
    SKILLS TAGS
    ============================================ */
 
@@ -251,7 +284,7 @@ p {
 }
 
 .skill-tag {
-  @apply px-3 py-1.5 bg-[#E0F9F4] text-precision-accent text-sm font-medium rounded-full;
+  @apply px-4 py-2 bg-[#E0F9F4] text-precision-accent text-sm font-medium rounded-full;
   @apply border border-[#00D4AA]/20;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
