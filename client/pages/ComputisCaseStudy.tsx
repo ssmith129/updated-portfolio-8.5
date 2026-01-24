@@ -995,7 +995,8 @@ export default function ComputisCaseStudy() {
                 UI Screens
               </h3>
               <p className="text-base text-precision-text-primary leading-relaxed mb-6 !text-left !mx-0">
-                Four core screens demonstrating the AI-powered workflow that transformed CPA cryptocurrency tax operations.
+                Four core screens demonstrating the AI-powered workflow that
+                transformed CPA cryptocurrency tax operations.
               </p>
 
               {/* 2x2 Hero Grid Layout */}
@@ -1020,7 +1021,10 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Dashboard:</strong> Central command center displaying real-time client portfolio metrics, AI confidence distribution, and prioritized review queues for efficient daily CPA workflow management.
+                    <strong>Dashboard:</strong> Central command center
+                    displaying real-time client portfolio metrics, AI confidence
+                    distribution, and prioritized review queues for efficient
+                    daily CPA workflow management.
                   </p>
                 </div>
 
@@ -1044,7 +1048,10 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Transactions:</strong> Comprehensive transaction management interface showing AI-powered classification with confidence indicators, bulk actions, and intelligent filtering for rapid review and approval workflows.
+                    <strong>Transactions:</strong> Comprehensive transaction
+                    management interface showing AI-powered classification with
+                    confidence indicators, bulk actions, and intelligent
+                    filtering for rapid review and approval workflows.
                   </p>
                 </div>
 
@@ -1068,7 +1075,10 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Data Anomaly Detection:</strong> Real-time issue flagging system that identifies data spikes, missing fair market values, classification conflicts, and potential duplicates—preventing errors before they reach IRS exports.
+                    <strong>Data Anomaly Detection:</strong> Real-time issue
+                    flagging system that identifies data spikes, missing fair
+                    market values, classification conflicts, and potential
+                    duplicates—preventing errors before they reach IRS exports.
                   </p>
                 </div>
 
@@ -1092,7 +1102,11 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Smart Export:</strong> IRS-ready export hub generating Form 8949, audit trails, and CSV files with embedded decision metadata—all pre-validated for compliance and immediately ready for client delivery or tax authority submission.
+                    <strong>Smart Export:</strong> IRS-ready export hub
+                    generating Form 8949, audit trails, and CSV files with
+                    embedded decision metadata—all pre-validated for compliance
+                    and immediately ready for client delivery or tax authority
+                    submission.
                   </p>
                 </div>
               </div>
