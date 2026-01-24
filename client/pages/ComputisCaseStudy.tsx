@@ -929,10 +929,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Dashboard:</strong> Central command center
-                    displaying real-time client portfolio metrics, AI confidence
-                    distribution, and prioritized review queues for efficient
-                    daily CPA workflow management.
+                    <strong>Dashboard:</strong> Real-time portfolio metrics with AI confidence distribution and review queues.
                   </p>
                 </div>
 
@@ -956,10 +953,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Transactions:</strong> Comprehensive transaction
-                    management interface showing AI-powered classification with
-                    confidence indicators, bulk actions, and intelligent
-                    filtering for rapid review and approval workflows.
+                    <strong>Transactions:</strong> AI classification with confidence indicators and bulk review actions.
                   </p>
                 </div>
 
@@ -983,10 +977,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Data Anomaly Detection:</strong> Real-time issue
-                    flagging system that identifies data spikes, missing fair
-                    market values, classification conflicts, and potential
-                    duplicates—preventing errors before they reach IRS exports.
+                    <strong>Data Anomaly Detection:</strong> Real-time flagging of data errors before IRS export.
                   </p>
                 </div>
 
@@ -1010,11 +1001,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Smart Export:</strong> IRS-ready export hub
-                    generating Form 8949, audit trails, and CSV files with
-                    embedded decision metadata—all pre-validated for compliance
-                    and immediately ready for client delivery or tax authority
-                    submission.
+                    <strong>Smart Export:</strong> IRS-ready Form 8949 and audit trails with embedded metadata.
                   </p>
                 </div>
               </div>
