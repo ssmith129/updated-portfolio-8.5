@@ -33,8 +33,6 @@ export default function ComputisCaseStudy() {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [isFeatureDeepDivesExpanded, setIsFeatureDeepDivesExpanded] =
     useState(false);
-  const [isAICapabilitiesExpanded, setIsAICapabilitiesExpanded] =
-    useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   // Hero metrics animation
