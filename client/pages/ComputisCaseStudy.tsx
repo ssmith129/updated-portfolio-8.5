@@ -989,20 +989,23 @@ export default function ComputisCaseStudy() {
               confidence indicators
             </p>
 
-            {/* UI Screens Section */}
+            {/* UI Screens Section - Hero Screens */}
             <div className="mt-12">
-              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-6">
+              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
                 UI Screens
               </h3>
+              <p className="text-base text-precision-text-primary leading-relaxed mb-6">
+                Four core screens demonstrating the AI-powered workflow that transformed CPA cryptocurrency tax operations.
+              </p>
 
-              {/* 2x4 Grid Layout */}
+              {/* 2x2 Hero Grid Layout */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Row 1, Col 1: Dashboard */}
+                {/* Dashboard */}
                 <div>
                   <div className="case-study-image mb-3">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
-                      alt="Dashboard"
+                      alt="Dashboard Overview"
                       loading="lazy"
                       onClick={() =>
                         setLightboxImage(
@@ -1017,22 +1020,20 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Dashboard View:</strong> Main overview displaying
-                    client portfolio metrics, AI confidence indicators, and
-                    transaction review queues for daily CPA workflow management.
+                    <strong>Dashboard:</strong> Central command center displaying real-time client portfolio metrics, AI confidence distribution, and prioritized review queues for efficient daily CPA workflow management.
                   </p>
                 </div>
 
-                {/* Row 1, Col 2: Rule Builder */}
+                {/* Transactions */}
                 <div>
                   <div className="case-study-image mb-3">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400"
-                      alt="Rule Builder"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4a1ba9e3386245e985c515a080b75ca5?format=webp&width=800&height=1200"
+                      alt="Transactions Management"
                       loading="lazy"
                       onClick={() =>
                         setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fad154afdb4454723b13c98b39c008c2f?format=webp&width=2400",
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4a1ba9e3386245e985c515a080b75ca5?format=webp&width=800&height=1200",
                         )
                       }
                     />
@@ -1043,22 +1044,20 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Rule Builder:</strong> Visual no-code interface
-                    enabling CPAs to create custom classification rules with
-                    drag-and-drop logic and real-time preview.
+                    <strong>Transactions:</strong> Comprehensive transaction management interface showing AI-powered classification with confidence indicators, bulk actions, and intelligent filtering for rapid review and approval workflows.
                   </p>
                 </div>
 
-                {/* Row 2, Col 1: Exports */}
+                {/* Data Anomaly Detection */}
                 <div>
                   <div className="case-study-image mb-3">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400"
-                      alt="Exports"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa78cada6d10847a9b1dada5b29814f6e?format=webp&width=800&height=1200"
+                      alt="Data Anomaly Detection"
                       loading="lazy"
                       onClick={() =>
                         setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9ffacf23e04648d098980ef3f7b64524?format=webp&width=2400",
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa78cada6d10847a9b1dada5b29814f6e?format=webp&width=800&height=1200",
                         )
                       }
                     />
@@ -1069,22 +1068,20 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Exports:</strong> Batch export management screen for
-                    generating IRS-ready tax forms, audit trails, and client
-                    reports in multiple formats.
+                    <strong>Data Anomaly Detection:</strong> Real-time issue flagging system that identifies data spikes, missing fair market values, classification conflicts, and potential duplicates—preventing errors before they reach IRS exports.
                   </p>
                 </div>
 
-                {/* Row 2, Col 2: Gain/Loss Report */}
+                {/* Smart Export */}
                 <div>
                   <div className="case-study-image mb-3">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400"
-                      alt="Gain/Loss Report"
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fb31ab678f12d41a39449cb4fb1e60a07?format=webp&width=800&height=1200"
+                      alt="Smart Export System"
                       loading="lazy"
                       onClick={() =>
                         setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F671cf75b76ae4d83b63b82cb624ff6c7?format=webp&width=2400",
+                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fb31ab678f12d41a39449cb4fb1e60a07?format=webp&width=800&height=1200",
                         )
                       }
                     />
@@ -1095,113 +1092,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                   <p className="text-sm text-precision-text-primary">
-                    <strong>Gain/Loss Report:</strong> Comprehensive capital
-                    gains summary showing realized profits, losses, and tax
-                    liability calculations per IRS requirements.
-                  </p>
-                </div>
-
-                {/* Row 3, Col 1: IRS Form 8949 */}
-                <div>
-                  <div className="case-study-image mb-3">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400"
-                      alt="IRS Form 8949"
-                      loading="lazy"
-                      onClick={() =>
-                        setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F171b9e328697475e8e38a03978b66b21?format=webp&width=2400",
-                        )
-                      }
-                    />
-                    <div className="case-study-image__overlay">
-                      <span className="case-study-image__zoom-hint">
-                        Click to enlarge
-                      </span>
-                    </div>
-                  </div>
-                  <p className="text-sm text-precision-text-primary">
-                    <strong>IRS Form 8949:</strong> Auto-populated federal tax
-                    form displaying cryptocurrency transactions with
-                    AI-classified cost basis and disposal information.
-                  </p>
-                </div>
-
-                {/* Row 3, Col 2: Client Management */}
-                <div>
-                  <div className="case-study-image mb-3">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400"
-                      alt="Client Management"
-                      loading="lazy"
-                      onClick={() =>
-                        setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F0c191fba0ce843f2814e25dd5dd871c7?format=webp&width=2400",
-                        )
-                      }
-                    />
-                    <div className="case-study-image__overlay">
-                      <span className="case-study-image__zoom-hint">
-                        Click to enlarge
-                      </span>
-                    </div>
-                  </div>
-                  <p className="text-sm text-precision-text-primary">
-                    <strong>Client Management:</strong> CPA firm dashboard for
-                    managing multiple client accounts, onboarding status, and
-                    delegated access permissions.
-                  </p>
-                </div>
-
-                {/* Row 4, Col 1: Wallets and Exchanges */}
-                <div>
-                  <div className="case-study-image mb-3">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400"
-                      alt="Wallets and Exchanges"
-                      loading="lazy"
-                      onClick={() =>
-                        setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F713dee498cdd4ecb978e77aeaa3e94cc?format=webp&width=2400",
-                        )
-                      }
-                    />
-                    <div className="case-study-image__overlay">
-                      <span className="case-study-image__zoom-hint">
-                        Click to enlarge
-                      </span>
-                    </div>
-                  </div>
-                  <p className="text-sm text-precision-text-primary">
-                    <strong>Wallets and Exchanges:</strong> Connection hub for
-                    linking cryptocurrency wallets and exchange accounts to
-                    import transaction data automatically.
-                  </p>
-                </div>
-
-                {/* Row 4, Col 2: Audit Trail (Expanded view) */}
-                <div>
-                  <div className="case-study-image mb-3">
-                    <img
-                      src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400"
-                      alt="Audit Trail (Expanded view)"
-                      loading="lazy"
-                      onClick={() =>
-                        setLightboxImage(
-                          "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F54f11c6946374f7ba8a3012cf0d5bb47?format=webp&width=2400",
-                        )
-                      }
-                    />
-                    <div className="case-study-image__overlay">
-                      <span className="case-study-image__zoom-hint">
-                        Click to enlarge
-                      </span>
-                    </div>
-                  </div>
-                  <p className="text-sm text-precision-text-primary">
-                    <strong>Audit Trail:</strong> Detailed classification
-                    history showing AI decisions, confidence scores, manual
-                    overrides, and timestamps for IRS audit defense.
+                    <strong>Smart Export:</strong> IRS-ready export hub generating Form 8949, audit trails, and CSV files with embedded decision metadata—all pre-validated for compliance and immediately ready for client delivery or tax authority submission.
                   </p>
                 </div>
               </div>
