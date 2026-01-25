@@ -498,7 +498,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 2: 4-phase research methodology
+              Figure 3: 4-phase research methodology
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -577,7 +577,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 3: Key insights from CPA interviews
+              Figure 4: Key insights from CPA interviews
             </p>
 
             {/* CPA Workflow Journey Map - Elevated */}
@@ -603,7 +603,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
               <p className="case-study-image__caption mt-4">
-                Figure 4: CPA workflow journey map
+                Figure 5: CPA workflow journey map
               </p>
             </div>
 
@@ -626,7 +626,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 5: Competitive feature comparison
+              Figure 6: Competitive feature comparison
             </p>
           </div>
         </section>
@@ -734,7 +734,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
               <p className="case-study-image__caption">
-                Figure 6: Platform information architecture
+                Figure 7: Platform information architecture
               </p>
             </div>
 
@@ -771,7 +771,7 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
               <p className="case-study-image__caption">
-                Figure 7: Computis design system
+                Figure 8: Computis design system
               </p>
             </div>
 
@@ -907,7 +907,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 8: UI evolution with AI integration
+              Figure 9: UI evolution with AI integration
             </p>
 
             {/* UI Screens Section - Hero Screens */}
