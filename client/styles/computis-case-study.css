@@ -326,7 +326,7 @@ p {
 }
 
 .insight-callout__text {
-  @apply text-base text-precision-text-primary leading-relaxed text-left;
+  @apply text-base text-precision-text-primary leading-relaxed text-left max-w-full;
 }
 
 .insight-callout {
