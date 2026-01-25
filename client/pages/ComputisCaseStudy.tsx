@@ -170,64 +170,64 @@ export default function ComputisCaseStudy() {
           <div className="hero-metrics-grid mb-6" ref={metricsRef}>
             <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
               <Brain className="w-6 h-6 text-precision-accent mb-4 mx-auto" />
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mx-auto mb-2">
                 AI Trust
               </p>
-              <p className="text-3xl font-bold text-precision-accent mb-1">
+              <p className="text-3xl font-bold text-precision-accent mx-auto mb-1">
                 {aiTrustCount}%
               </p>
-              <p className="text-xs text-precision-text-secondary">
+              <p className="text-xs text-precision-text-secondary mx-auto">
                 Acceptance rate
               </p>
-              <p className="text-xs font-semibold text-precision-success mt-2">
+              <p className="text-xs font-semibold text-precision-success mx-auto mt-2">
                 +287% increase
               </p>
             </div>
 
             <div className="hero-metric-card hero-metric-card--success shadow-precision-sm">
               <Zap className="w-6 h-6 text-precision-success mb-4 mx-auto" />
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mx-auto mb-2">
                 Manual Work
               </p>
-              <p className="text-3xl font-bold text-precision-success mb-1">
+              <p className="text-3xl font-bold text-precision-success mx-auto mb-1">
                 ↓{manualWorkCount}%
               </p>
-              <p className="text-xs text-precision-text-secondary">
+              <p className="text-xs text-precision-text-secondary mx-auto">
                 Classification time
               </p>
-              <p className="text-xs font-semibold text-precision-accent mt-2">
+              <p className="text-xs font-semibold text-precision-accent mx-auto mt-2">
                 15% review only
               </p>
             </div>
 
             <div className="hero-metric-card hero-metric-card--secondary shadow-precision-sm">
               <CheckCircle className="w-6 h-6 text-precision-secondary mb-4 mx-auto" />
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mx-auto mb-2">
                 Review Queue
               </p>
-              <p className="text-3xl font-bold text-precision-secondary mb-1">
+              <p className="text-3xl font-bold text-precision-secondary mx-auto mb-1">
                 {reviewQueueCount}%
               </p>
-              <p className="text-xs text-precision-text-secondary">
+              <p className="text-xs text-precision-text-secondary mx-auto">
                 Medium confidence
               </p>
-              <p className="text-xs font-semibold text-precision-accent mt-2">
+              <p className="text-xs font-semibold text-precision-accent mx-auto mt-2">
                 Human context
               </p>
             </div>
 
             <div className="hero-metric-card hero-metric-card--warning shadow-precision-sm">
               <Shield className="w-6 h-6 text-precision-warning mb-4 mx-auto" />
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mx-auto mb-2">
                 Audit Defense
               </p>
-              <p className="text-3xl font-bold text-precision-warning mb-1">
+              <p className="text-3xl font-bold text-precision-warning mx-auto mb-1">
                 {auditDefenseCount}%
               </p>
-              <p className="text-xs text-precision-text-secondary">
+              <p className="text-xs text-precision-text-secondary mx-auto">
                 Trail exports
               </p>
-              <p className="text-xs font-semibold text-precision-success mt-2">
+              <p className="text-xs font-semibold text-precision-success mx-auto mt-2">
                 IRS-ready
               </p>
             </div>
