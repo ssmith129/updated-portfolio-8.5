@@ -551,7 +551,6 @@ export default function ComputisCaseStudy() {
 
             {/* CPA Workflow Journey Map - Elevated */}
             <div className="mt-12 bg-gradient-to-br from-[#E0F9F4]/20 to-[#E8F4FA]/20 rounded-2xl p-8 border-2 border-precision-accent/20 relative overflow-hidden signature-accent">
-              <div className="absolute top-0 right-0 w-1 h-32 bg-gradient-to-b from-precision-accent to-transparent opacity-50"></div>
               <h3 className="text-sm font-semibold text-precision-accent uppercase tracking-wider mb-4">
                 Research Synthesis
               </h3>
