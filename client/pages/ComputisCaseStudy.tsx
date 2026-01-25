@@ -454,7 +454,7 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 1: 10-month project timeline with 5 key phases
+              Figure 2: 10-month project timeline with 5 key phases
             </p>
           </div>
         </section>
