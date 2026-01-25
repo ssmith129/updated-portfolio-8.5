@@ -183,7 +183,7 @@ export default function ComputisCaseStudy() {
           {/* Hero Metrics Grid - Above the Fold */}
           <div className="hero-metrics-grid mb-6" ref={metricsRef}>
             <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
-              <Brain className="w-6 h-6 text-precision-accent mb-4" />
+              <Brain className="w-6 h-6 text-precision-accent mb-4 mx-auto" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 AI Trust
               </p>
@@ -199,7 +199,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="hero-metric-card hero-metric-card--success shadow-precision-sm">
-              <Zap className="w-6 h-6 text-precision-success mb-4" />
+              <Zap className="w-6 h-6 text-precision-success mb-4 mx-auto" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 Manual Work
               </p>
@@ -215,7 +215,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="hero-metric-card hero-metric-card--secondary shadow-precision-sm">
-              <CheckCircle className="w-6 h-6 text-precision-secondary mb-4" />
+              <CheckCircle className="w-6 h-6 text-precision-secondary mb-4 mx-auto" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 Review Queue
               </p>
@@ -231,7 +231,7 @@ export default function ComputisCaseStudy() {
             </div>
 
             <div className="hero-metric-card hero-metric-card--warning shadow-precision-sm">
-              <Shield className="w-6 h-6 text-precision-warning mb-4" />
+              <Shield className="w-6 h-6 text-precision-warning mb-4 mx-auto" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">
                 Audit Defense
               </p>
