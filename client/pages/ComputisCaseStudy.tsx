@@ -428,6 +428,37 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* PROJECT TIMELINE SECTION */}
+        <section className="section-animate scroll-mt-24">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
+              Project Timeline
+            </h2>
+
+            {/* Project Timeline Visual */}
+            <div className="case-study-image mb-6">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4e765d94e6274773be00450fbc4ed410?format=webp&width=2400"
+                alt="Project timeline showing 5 phases over 10 months: Discovery & Scoping, Research Synthesis, Design Iteration, Build & Testing, Launch & Scale"
+                loading="lazy"
+                onClick={() =>
+                  setLightboxImage(
+                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4e765d94e6274773be00450fbc4ed410?format=webp&width=2400",
+                  )
+                }
+              />
+              <div className="case-study-image__overlay">
+                <span className="case-study-image__zoom-hint">
+                  Click to enlarge
+                </span>
+              </div>
+            </div>
+            <p className="case-study-image__caption">
+              Figure 1: 10-month project timeline with 5 key phases
+            </p>
+          </div>
+        </section>
+
         {/* RESEARCH SECTION */}
         <section id="research" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
