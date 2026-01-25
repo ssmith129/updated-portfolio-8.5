@@ -1549,12 +1549,25 @@ export default function ComputisCaseStudy() {
             </svg>
           </button>
           <div className="flex items-center justify-center w-full h-full">
-            <img
-              src={lightboxImage}
-              alt="Enlarged screenshot - Full resolution view"
-              className="image-lightbox__image"
-              onClick={(e) => e.stopPropagation()}
-            />
+            {lightboxImage.includes('.mov') || lightboxImage.includes('.mp4') || lightboxImage.includes('video') ? (
+              <video
+                src={lightboxImage}
+                className="image-lightbox__image"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                onClick={(e) => e.stopPropagation()}
+              />
+            ) : (
+              <img
+                src={lightboxImage}
+                alt="Enlarged screenshot - Full resolution view"
+                className="image-lightbox__image"
+                onClick={(e) => e.stopPropagation()}
+              />
+            )}
           </div>
         </div>
       )}
