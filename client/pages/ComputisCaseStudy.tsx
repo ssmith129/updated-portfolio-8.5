@@ -730,7 +730,9 @@ export default function ComputisCaseStudy() {
 
               <div className="mb-6">
                 <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0 !max-w-full">
-                  Unified design system covering typography, color, components, and interaction patterns—enabling rapid iteration with professional credibility.
+                  Unified design system covering typography, color, components,
+                  and interaction patterns—enabling rapid iteration with
+                  professional credibility.
                 </p>
               </div>
 
