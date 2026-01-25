@@ -143,7 +143,7 @@ p {
    ============================================ */
 
 .confidence-tier {
-  @apply border-2 rounded-xl p-6 text-center;
+  @apply border-2 rounded-xl p-6 text-center flex flex-col;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
