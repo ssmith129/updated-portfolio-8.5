@@ -716,11 +716,11 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Design Iteration Progression */}
-              <div className="mt-12 space-y-4">
-                <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+              <div className="mt-8 space-y-2">
+                <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-2">
                   Design Iteration Progression
                 </h3>
-                <div className="mb-4">
+                <div className="mb-2">
                   <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0 !max-w-full">
                     Evolution from initial sketch to final UI—showcasing the
                     iterative design process for the Transactions screen.
