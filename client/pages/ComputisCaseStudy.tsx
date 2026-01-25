@@ -727,16 +727,10 @@ export default function ComputisCaseStudy() {
                   </p>
                 </div>
 
-                <div className="relative">
-                  <video
-                    src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fe152b9add5744c77bf02ed487ab467f0?alt=media&token=9a0234f5-f076-43f7-a7fe-795ca4f5db6b&apiKey=ba69a23156414a589de97341511272c9"
-                    className="w-full max-w-[2400px] mx-auto rounded-lg shadow-precision-md"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    style={{ maxWidth: "2400px" }}
-                    aria-label="Design iteration progression video showing evolution from sketch to wireframe to final UI"
+                <div className="max-w-[2400px] mx-auto">
+                  <VideoOverlay
+                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fe152b9add5744c77bf02ed487ab467f0?alt=media&token=9a0234f5-f076-43f7-a7fe-795ca4f5db6b&apiKey=ba69a23156414a589de97341511272c9"
+                    ariaLabel="Design iteration progression video showing evolution from sketch to wireframe to final UI"
                   />
                 </div>
                 <p className="case-study-image__caption">
