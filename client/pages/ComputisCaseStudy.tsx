@@ -716,27 +716,29 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Design Iteration Progression */}
-              <div className="mt-8 space-y-2">
-                <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-2">
+              <div className="mt-8 space-y-6">
+                <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
                   Design Iteration Progression
                 </h3>
-                <div className="mb-2">
+
+                <div className="mb-6">
                   <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0 !max-w-full">
                     Evolution from initial sketch to final UI—showcasing the
                     iterative design process for the Transactions screen.
                   </p>
                 </div>
 
-                <div className="max-w-[2400px] mx-auto">
+                {/* Design Iteration Visual */}
+                <div className="max-w-[2400px] mx-auto mt-6">
                   <VideoOverlay
                     videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fe152b9add5744c77bf02ed487ab467f0?alt=media&token=9a0234f5-f076-43f7-a7fe-795ca4f5db6b&apiKey=ba69a23156414a589de97341511272c9"
                     ariaLabel="Design iteration progression video showing evolution from sketch to wireframe to final UI"
                   />
+                  <p className="case-study-image__caption">
+                    Figure 6.5: Design iteration progression — from sketch to
+                    wireframe to final UI
+                  </p>
                 </div>
-                <p className="case-study-image__caption">
-                  Figure 6.5: Design iteration progression — from sketch to
-                  wireframe to final UI
-                </p>
               </div>
 
               {/* Information Architecture */}
