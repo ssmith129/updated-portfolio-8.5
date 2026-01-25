@@ -729,7 +729,7 @@ export default function ComputisCaseStudy() {
 
                 <div className="case-study-image relative group cursor-pointer">
                   <video
-                    src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff56c8b914879454bb7237e23d401255b?alt=media&token=48cfe385-f52e-44d9-b5dd-fb3dc5476847&apiKey=ba69a23156414a589de97341511272c9"
+                    src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fe152b9add5744c77bf02ed487ab467f0?alt=media&token=9a0234f5-f076-43f7-a7fe-795ca4f5db6b&apiKey=ba69a23156414a589de97341511272c9"
                     className="w-full max-w-[2400px] mx-auto rounded-lg shadow-precision-md"
                     autoPlay
                     loop
@@ -738,7 +738,7 @@ export default function ComputisCaseStudy() {
                     style={{ maxWidth: "2400px" }}
                     onClick={() =>
                       setLightboxImage(
-                        "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff56c8b914879454bb7237e23d401255b?alt=media&token=48cfe385-f52e-44d9-b5dd-fb3dc5476847&apiKey=ba69a23156414a589de97341511272c9",
+                        "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fe152b9add5744c77bf02ed487ab467f0?alt=media&token=9a0234f5-f076-43f7-a7fe-795ca4f5db6b&apiKey=ba69a23156414a589de97341511272c9",
                       )
                     }
                     aria-label="Design iteration progression video showing evolution from sketch to wireframe to final UI"
