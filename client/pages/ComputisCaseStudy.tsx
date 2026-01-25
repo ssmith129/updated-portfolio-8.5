@@ -722,7 +722,8 @@ export default function ComputisCaseStudy() {
                 </h3>
                 <div className="mb-4">
                   <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0 !max-w-full">
-                    Evolution from initial sketch to final UI—showcasing the iterative design process for the Transactions screen.
+                    Evolution from initial sketch to final UI—showcasing the
+                    iterative design process for the Transactions screen.
                   </p>
                 </div>
 
@@ -734,7 +735,7 @@ export default function ComputisCaseStudy() {
                     loop
                     muted
                     playsInline
-                    style={{ maxWidth: '2400px' }}
+                    style={{ maxWidth: "2400px" }}
                     onClick={(e) => {
                       const video = e.currentTarget;
                       if (video.requestFullscreen) {
@@ -754,7 +755,8 @@ export default function ComputisCaseStudy() {
                   </div>
                 </div>
                 <p className="case-study-image__caption">
-                  Figure 6.5: Design iteration progression — from sketch to wireframe to final UI
+                  Figure 6.5: Design iteration progression — from sketch to
+                  wireframe to final UI
                 </p>
               </div>
 
