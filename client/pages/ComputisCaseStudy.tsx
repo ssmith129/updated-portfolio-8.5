@@ -1528,7 +1528,9 @@ export default function ComputisCaseStudy() {
             </svg>
           </button>
           <div className="flex items-center justify-center w-full h-full">
-            {lightboxImage.includes('.mov') || lightboxImage.includes('.mp4') || lightboxImage.includes('video') ? (
+            {lightboxImage.includes(".mov") ||
+            lightboxImage.includes(".mp4") ||
+            lightboxImage.includes("video") ? (
               <video
                 src={lightboxImage}
                 className="image-lightbox__image"
