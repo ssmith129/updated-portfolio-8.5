@@ -1351,7 +1351,7 @@ export default function ComputisCaseStudy() {
 
         {/* CORE INSIGHT */}
         <section className="section-animate scroll-mt-24 core-insight-section">
-          <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] rounded-card p-8 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
+          <div className="bg-gradient-to-r from-[#0A2540] to-[#1E3A5F] rounded-card p-8 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
             <div className="text-center">
               <h2 className="text-2xl lg:text-3xl font-bold font-heading text-white leading-tight mb-4">
                 The Core Insight
