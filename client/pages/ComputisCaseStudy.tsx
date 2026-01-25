@@ -736,21 +736,16 @@ export default function ComputisCaseStudy() {
                     muted
                     playsInline
                     style={{ maxWidth: "2400px" }}
-                    onClick={(e) => {
-                      const video = e.currentTarget;
-                      if (video.requestFullscreen) {
-                        video.requestFullscreen();
-                      } else if ((video as any).webkitRequestFullscreen) {
-                        (video as any).webkitRequestFullscreen();
-                      } else if ((video as any).msRequestFullscreen) {
-                        (video as any).msRequestFullscreen();
-                      }
-                    }}
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff56c8b914879454bb7237e23d401255b?alt=media&token=48cfe385-f52e-44d9-b5dd-fb3dc5476847&apiKey=ba69a23156414a589de97341511272c9",
+                      )
+                    }
                     aria-label="Design iteration progression video showing evolution from sketch to wireframe to final UI"
                   />
                   <div className="case-study-image__overlay">
                     <span className="case-study-image__zoom-hint">
-                      Click to view fullscreen
+                      Click to enlarge
                     </span>
                   </div>
                 </div>
