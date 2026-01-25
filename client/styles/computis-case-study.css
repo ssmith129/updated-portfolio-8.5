@@ -12,7 +12,7 @@
 }
 
 .hero-metric-card {
-  @apply p-6 rounded-xl transition-transform duration-200 text-center;
+  @apply p-6 rounded-xl transition-transform duration-200 text-center flex flex-col;
 }
 
 .hero-metric-card:hover {
