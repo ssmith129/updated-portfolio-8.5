@@ -730,18 +730,23 @@ export default function ComputisCaseStudy() {
                 <div className="case-study-image relative group cursor-pointer">
                   <video
                     src="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fe152b9add5744c77bf02ed487ab467f0?alt=media&token=9a0234f5-f076-43f7-a7fe-795ca4f5db6b&apiKey=ba69a23156414a589de97341511272c9"
-                    className="w-full max-w-[2400px] mx-auto rounded-lg shadow-precision-md"
+                    className="w-full max-w-[2400px] mx-auto rounded-lg shadow-precision-md cursor-pointer"
                     autoPlay
                     loop
                     muted
                     playsInline
                     style={{ maxWidth: "2400px" }}
-                    onClick={() =>
-                      setLightboxImage(
-                        "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fe152b9add5744c77bf02ed487ab467f0?alt=media&token=9a0234f5-f076-43f7-a7fe-795ca4f5db6b&apiKey=ba69a23156414a589de97341511272c9",
-                      )
-                    }
-                    aria-label="Design iteration progression video showing evolution from sketch to wireframe to final UI"
+                    onClick={(e) => {
+                      const video = e.currentTarget;
+                      if (video.requestFullscreen) {
+                        video.requestFullscreen();
+                      } else if ((video as any).webkitRequestFullscreen) {
+                        (video as any).webkitRequestFullscreen();
+                      } else if ((video as any).msRequestFullscreen) {
+                        (video as any).msRequestFullscreen();
+                      }
+                    }}
+                    aria-label="Design iteration progression video showing evolution from sketch to wireframe to final UI - Click to view fullscreen"
                   />
                   <div className="case-study-image__overlay">
                     <span className="case-study-image__zoom-hint">
