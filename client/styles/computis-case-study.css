@@ -235,11 +235,11 @@ p {
 }
 
 .impact-card__metric {
-  @apply text-3xl font-bold text-white mb-2;
+  @apply text-3xl font-bold text-white mb-2 text-center;
 }
 
 .impact-card__label {
-  @apply text-sm text-white/90 font-medium;
+  @apply text-sm text-white/90 font-medium text-center;
 }
 
 /* ============================================
