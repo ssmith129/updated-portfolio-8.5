@@ -660,58 +660,58 @@ export default function ComputisCaseStudy() {
 
               {/* Confidence Tier Visualization */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                <div className="confidence-tier confidence-tier--high shadow-precision-sm">
-                  <span className="confidence-tier__badge confidence-tier__badge--high">
+                <div className="confidence-tier confidence-tier--high shadow-precision-sm flex flex-col">
+                  <span className="confidence-tier__badge confidence-tier__badge--high mx-auto">
                     ≥90% Confidence
                   </span>
-                  <h3 className="text-lg font-medium text-green-700 mb-2">
+                  <h3 className="text-lg font-medium text-green-700 mx-auto mb-2">
                     High Confidence
                   </h3>
-                  <p className="text-sm text-precision-text-primary mb-4">
+                  <p className="text-sm text-precision-text-primary mx-auto mb-4">
                     Auto-classified
                   </p>
-                  <p className="text-xs text-precision-text-secondary leading-relaxed">
+                  <p className="text-xs text-precision-text-secondary leading-relaxed mx-auto">
                     CPAs trusted AI completely. No review needed. IRS-ready
                     documentation generated.
                   </p>
-                  <p className="text-2xl font-bold text-green-600 mt-4">89%</p>
-                  <p className="text-xs text-green-600">Acceptance rate</p>
+                  <p className="text-2xl font-bold text-green-600 mx-auto mt-4">89%</p>
+                  <p className="text-xs text-green-600 mx-auto">Acceptance rate</p>
                 </div>
 
-                <div className="confidence-tier confidence-tier--medium shadow-precision-sm">
-                  <span className="confidence-tier__badge confidence-tier__badge--medium">
+                <div className="confidence-tier confidence-tier--medium shadow-precision-sm flex flex-col">
+                  <span className="confidence-tier__badge confidence-tier__badge--medium mx-auto">
                     60-89% Confidence
                   </span>
-                  <h3 className="text-lg font-medium text-yellow-700 mb-2">
+                  <h3 className="text-lg font-medium text-yellow-700 mx-auto mb-2">
                     Medium Confidence
                   </h3>
-                  <p className="text-sm text-precision-text-primary mb-4">
+                  <p className="text-sm text-precision-text-primary mx-auto mb-4">
                     Review queue
                   </p>
-                  <p className="text-xs text-precision-text-secondary leading-relaxed">
+                  <p className="text-xs text-precision-text-secondary leading-relaxed mx-auto">
                     Flagged for human review. AI provides hypothesis +
                     rationale. CPA makes final call.
                   </p>
-                  <p className="text-2xl font-bold text-yellow-600 mt-4">11%</p>
-                  <p className="text-xs text-yellow-600">Override rate</p>
+                  <p className="text-2xl font-bold text-yellow-600 mx-auto mt-4">11%</p>
+                  <p className="text-xs text-yellow-600 mx-auto">Override rate</p>
                 </div>
 
-                <div className="confidence-tier confidence-tier--low shadow-precision-sm">
-                  <span className="confidence-tier__badge confidence-tier__badge--low">
+                <div className="confidence-tier confidence-tier--low shadow-precision-sm flex flex-col">
+                  <span className="confidence-tier__badge confidence-tier__badge--low mx-auto">
                     &lt;60% Confidence
                   </span>
-                  <h3 className="text-lg font-medium text-red-700 mb-2">
+                  <h3 className="text-lg font-medium text-red-700 mx-auto mb-2">
                     Low Confidence
                   </h3>
-                  <p className="text-sm text-precision-text-primary mb-4">
+                  <p className="text-sm text-precision-text-primary mx-auto mb-4">
                     Manual required
                   </p>
-                  <p className="text-xs text-precision-text-secondary leading-relaxed">
+                  <p className="text-xs text-precision-text-secondary leading-relaxed mx-auto">
                     AI admits uncertainty. Full CPA manual classification with
                     context preservation.
                   </p>
-                  <p className="text-2xl font-bold text-red-600 mt-4">15%</p>
-                  <p className="text-xs text-red-600">Manual work</p>
+                  <p className="text-2xl font-bold text-red-600 mx-auto mt-4">15%</p>
+                  <p className="text-xs text-red-600 mx-auto">Manual work</p>
                 </div>
               </div>
 
