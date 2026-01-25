@@ -104,20 +104,6 @@ export default function ComputisCaseStudy() {
         aria-hidden="true"
       ></div>
 
-      <div
-        className="absolute inset-0 opacity-[0.02]"
-        style={{
-          backgroundImage: `
-          radial-gradient(circle at 20% 50%, var(--precision-accent) 1px, transparent 1px),
-          radial-gradient(circle at 80% 80%, var(--precision-secondary) 1px, transparent 1px)
-        `,
-          backgroundSize: "64px 64px",
-        }}
-      ></div>
-
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#00D4AA]/3 rounded-full blur-[120px]"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#1E3A5F]/4 rounded-full blur-[140px]"></div>
-
       <SkipLink />
       <Navigation />
 
