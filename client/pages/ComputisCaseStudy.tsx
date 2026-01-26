@@ -735,7 +735,7 @@ export default function ComputisCaseStudy() {
               </div>
 
               {/* Information Architecture */}
-              <div className="case-study-image mt-6">
+              <div className="case-study-image mt-12">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F550d96e6817647739d3e9f0d237b8c5d?format=webp&width=2400"
                   alt="Information architecture diagram showing AI feature integration across platform"
