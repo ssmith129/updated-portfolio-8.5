@@ -1460,7 +1460,7 @@ export default function ComputisCaseStudy() {
                 The Core Insight
               </h2>
               <div className="max-w-[1200px]">
-                <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium mx-auto">
+                <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium max-w-[1200px] mx-auto">
                   In regulated domains,{" "}
                   <span className="text-[#00D4AA] font-bold">
                     AI transparency isn't a feature—it's the product.
