@@ -1473,11 +1473,11 @@ export default function ComputisCaseStudy() {
               <span className="skill-tag">Mixpanel</span>
             </div>
 
-            <div className="mt-8 text-center">
+            <div className="mt-8 flex flex-col items-center text-center">
               <p className="text-sm text-precision-text-secondary mb-4">
                 What I'd do differently next time
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[800px] mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[800px] w-full">
                 <div className="bg-white rounded-card p-6 border-l-4 border-precision-accent shadow-sm text-left">
                   <h4 className="text-sm font-semibold text-precision-text-primary mb-2">
                     Ship minimal first
