@@ -1459,7 +1459,7 @@ export default function ComputisCaseStudy() {
               <h2 className="text-2xl lg:text-3xl font-bold font-heading text-white leading-tight mb-4">
                 The Core Insight
               </h2>
-              <div className="max-w-[1100px] mx-auto">
+              <div className="max-w-[1200px] mx-auto">
                 <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium">
                   In regulated domains,{" "}
                   <span className="text-[#00D4AA] font-bold">
