@@ -94,7 +94,7 @@ export default function VideoOverlay({
         className="video-container relative group cursor-pointer"
         onClick={handleVideoClick}
       >
-        <div className="rounded-[12px] sm:rounded-[16px] md:rounded-[20px] overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-xl">
+        <div className="rounded-[5px] overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-xl">
           <video
             ref={videoRef}
             className="w-full h-auto"
