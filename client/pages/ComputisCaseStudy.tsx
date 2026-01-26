@@ -429,7 +429,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Section Divider */}
-        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+        <div
+          className="my-12 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
 
         {/* PROJECT TIMELINE SECTION */}
         <section className="section-animate scroll-mt-24">
@@ -463,7 +466,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Section Divider */}
-        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+        <div
+          className="my-12 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
 
         {/* RESEARCH SECTION */}
         <section id="research" className="section-animate scroll-mt-24">
@@ -638,7 +644,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Section Divider */}
-        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+        <div
+          className="my-12 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
 
         {/* SOLUTION SECTION */}
         <section id="solution" className="section-animate scroll-mt-24">
@@ -1072,7 +1081,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Section Divider */}
-        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+        <div
+          className="my-12 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
 
         {/* KEY DECISIONS SECTION */}
         <section id="decisions" className="section-animate scroll-mt-24">
@@ -1212,7 +1224,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Section Divider */}
-        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+        <div
+          className="my-12 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
 
         {/* BUSINESS IMPACT SECTION */}
         <section id="impact" className="section-animate scroll-mt-24">
@@ -1432,7 +1447,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Section Divider */}
-        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+        <div
+          className="my-12 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
 
         {/* CORE INSIGHT */}
         <section className="section-animate scroll-mt-24 core-insight-section">
@@ -1468,7 +1486,10 @@ export default function ComputisCaseStudy() {
         </section>
 
         {/* Section Divider */}
-        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+        <div
+          className="my-12 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
 
         {/* SKILLS SECTION */}
         <section id="skills" className="section-animate scroll-mt-24">
