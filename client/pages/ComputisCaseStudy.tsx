@@ -459,6 +459,9 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* Section Divider */}
+        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+
         {/* RESEARCH SECTION */}
         <section id="research" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
@@ -630,6 +633,9 @@ export default function ComputisCaseStudy() {
             </p>
           </div>
         </section>
+
+        {/* Section Divider */}
+        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
 
         {/* SOLUTION SECTION */}
         <section id="solution" className="section-animate scroll-mt-24">
@@ -1062,6 +1068,9 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* Section Divider */}
+        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+
         {/* KEY DECISIONS SECTION */}
         <section id="decisions" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
@@ -1198,6 +1207,9 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
+
+        {/* Section Divider */}
+        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
 
         {/* BUSINESS IMPACT SECTION */}
         <section id="impact" className="section-animate scroll-mt-24">
@@ -1448,6 +1460,9 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
+
+        {/* Section Divider */}
+        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
 
         {/* SKILLS SECTION */}
         <section id="skills" className="section-animate scroll-mt-24">
