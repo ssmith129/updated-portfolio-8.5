@@ -113,7 +113,7 @@ export default function VideoOverlay({
         </div>
 
         {/* Hover overlay with click hint */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-[12px] sm:rounded-[16px] md:rounded-[20px] flex items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-[5px] flex items-center justify-center">
           <span className="text-white text-sm font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
             Click to enlarge
           </span>
