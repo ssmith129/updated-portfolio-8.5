@@ -1477,7 +1477,7 @@ export default function ComputisCaseStudy() {
               <p className="text-sm text-precision-text-secondary mb-4">
                 What I'd do differently next time
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[800px] w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-[800px]">
                 <div className="bg-white rounded-card p-6 border-l-4 border-precision-accent shadow-sm text-left">
                   <h4 className="text-sm font-semibold text-precision-text-primary mb-2">
                     Ship minimal first
