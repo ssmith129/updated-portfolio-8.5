@@ -142,7 +142,7 @@ export default function VideoOverlay({
             onClick={(e) => e.stopPropagation()}
             style={{ cursor: "default" }}
           >
-            <div className="rounded-lg overflow-hidden shadow-2xl">
+            <div className="rounded-[5px] overflow-hidden shadow-2xl">
               <video
                 ref={enlargedVideoRef}
                 className="w-full h-auto"
