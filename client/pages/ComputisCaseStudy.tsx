@@ -428,6 +428,9 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* Section Divider */}
+        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
+
         {/* PROJECT TIMELINE SECTION */}
         <section className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
@@ -1427,6 +1430,9 @@ export default function ComputisCaseStudy() {
             </div>
           </div>
         </section>
+
+        {/* Section Divider */}
+        <div className="my-12 border-t border-[#E3E8EF]/50" aria-hidden="true"></div>
 
         {/* CORE INSIGHT */}
         <section className="section-animate scroll-mt-24 core-insight-section">
