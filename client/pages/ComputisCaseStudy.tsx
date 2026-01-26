@@ -1459,8 +1459,8 @@ export default function ComputisCaseStudy() {
               <h2 className="text-2xl lg:text-3xl font-bold font-heading text-white leading-tight mb-4">
                 The Core Insight
               </h2>
-              <div className="max-w-[1200px] mx-auto">
-                <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium">
+              <div className="max-w-[1200px]">
+                <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium mx-auto">
                   In regulated domains,{" "}
                   <span className="text-[#00D4AA] font-bold">
                     AI transparency isn't a feature—it's the product.
@@ -1469,7 +1469,7 @@ export default function ComputisCaseStudy() {
                   control, simplicity beats capability when users actually adopt
                   it, and failed experiments teach the most.
                 </p>
-                <p className="text-lg text-white/90 leading-relaxed font-medium">
+                <p className="text-lg text-white/90 leading-relaxed font-medium max-w-[1200px] mx-auto">
                   CPAs rejected full automation not for accuracy, but to
                   preserve professional judgment.
                 </p>
