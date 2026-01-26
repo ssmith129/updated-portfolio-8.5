@@ -122,7 +122,7 @@ p {
   width: auto;
   height: auto;
   object-fit: contain;
-  @apply rounded-lg shadow-2xl;
+  @apply rounded-[5px] shadow-2xl;
   cursor: default;
   animation: zoomIn 0.3s ease-out;
 }
