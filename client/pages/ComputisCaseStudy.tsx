@@ -167,7 +167,10 @@ export default function ComputisCaseStudy() {
           </div>
 
           {/* Hero Metrics Grid - Above the Fold */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-6" ref={metricsRef}>
+          <div
+            className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-6"
+            ref={metricsRef}
+          >
             <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
               <Brain className="w-6 h-6 text-precision-accent mb-4 mx-auto" />
               <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mx-auto mb-2">
