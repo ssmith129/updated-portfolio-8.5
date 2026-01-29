@@ -695,7 +695,7 @@ export default function ComputisCaseStudy() {
                     CPAs trusted AI completely. No review needed. IRS-ready
                     documentation generated.
                   </p>
-                  <p className="text-xl font-bold text-green-600 mx-auto mt-2">
+                  <p className="text-3xl font-bold text-green-600 mx-auto mt-2">
                     89%
                   </p>
                   <p className="text-xs text-green-600 mx-auto">
@@ -717,7 +717,7 @@ export default function ComputisCaseStudy() {
                     Flagged for human review. AI provides hypothesis +
                     rationale. CPA makes final call.
                   </p>
-                  <p className="text-xl font-bold text-yellow-600 mx-auto mt-2">
+                  <p className="text-3xl font-bold text-yellow-600 mx-auto mt-2">
                     11%
                   </p>
                   <p className="text-xs text-yellow-600 mx-auto">
@@ -739,7 +739,7 @@ export default function ComputisCaseStudy() {
                     AI admits uncertainty. Full CPA manual classification with
                     context preservation.
                   </p>
-                  <p className="text-xl font-bold text-red-600 mx-auto mt-2">
+                  <p className="text-3xl font-bold text-red-600 mx-auto mt-2">
                     15%
                   </p>
                   <p className="text-xs text-red-600 mx-auto">Manual work</p>
