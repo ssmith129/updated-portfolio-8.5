@@ -139,7 +139,7 @@ p {
    ============================================ */
 
 .confidence-tier {
-  @apply border-2 rounded-xl p-6 text-center flex flex-col;
+  @apply border-2 rounded-xl p-4 text-center flex flex-col;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -160,7 +160,7 @@ p {
 }
 
 .confidence-tier__badge {
-  @apply inline-flex items-center gap-2 text-white px-3 py-1 rounded-full text-sm font-bold mb-3;
+  @apply inline-flex items-center gap-1.5 text-white px-2.5 py-0.5 rounded-full text-xs font-bold mb-2;
 }
 
 .confidence-tier__badge--high {
