@@ -685,17 +685,17 @@ export default function ComputisCaseStudy() {
                   <span className="confidence-tier__badge confidence-tier__badge--high mx-auto">
                     ≥90% Confidence
                   </span>
-                  <h3 className="text-lg font-medium text-green-700 mx-auto mb-2">
+                  <h3 className="text-base font-medium text-green-700 mx-auto mb-1">
                     High Confidence
                   </h3>
-                  <p className="text-sm text-precision-text-primary mx-auto mb-4">
+                  <p className="text-xs text-precision-text-primary mx-auto mb-2">
                     Auto-classified
                   </p>
-                  <p className="text-xs text-precision-text-secondary leading-relaxed text-center">
+                  <p className="text-xs text-precision-text-secondary leading-snug text-center">
                     CPAs trusted AI completely. No review needed. IRS-ready
                     documentation generated.
                   </p>
-                  <p className="text-2xl font-bold text-green-600 mx-auto mt-4">
+                  <p className="text-xl font-bold text-green-600 mx-auto mt-2">
                     89%
                   </p>
                   <p className="text-xs text-green-600 mx-auto">
@@ -707,17 +707,17 @@ export default function ComputisCaseStudy() {
                   <span className="confidence-tier__badge confidence-tier__badge--medium mx-auto">
                     60-89% Confidence
                   </span>
-                  <h3 className="text-lg font-medium text-yellow-700 mx-auto mb-2">
+                  <h3 className="text-base font-medium text-yellow-700 mx-auto mb-1">
                     Medium Confidence
                   </h3>
-                  <p className="text-sm text-precision-text-primary mx-auto mb-4">
+                  <p className="text-xs text-precision-text-primary mx-auto mb-2">
                     Review queue
                   </p>
-                  <p className="text-xs text-precision-text-secondary leading-relaxed text-center">
+                  <p className="text-xs text-precision-text-secondary leading-snug text-center">
                     Flagged for human review. AI provides hypothesis +
                     rationale. CPA makes final call.
                   </p>
-                  <p className="text-2xl font-bold text-yellow-600 mx-auto mt-4">
+                  <p className="text-xl font-bold text-yellow-600 mx-auto mt-2">
                     11%
                   </p>
                   <p className="text-xs text-yellow-600 mx-auto">
@@ -729,17 +729,17 @@ export default function ComputisCaseStudy() {
                   <span className="confidence-tier__badge confidence-tier__badge--low mx-auto">
                     &lt;60% Confidence
                   </span>
-                  <h3 className="text-lg font-medium text-red-700 mx-auto mb-2">
+                  <h3 className="text-base font-medium text-red-700 mx-auto mb-1">
                     Low Confidence
                   </h3>
-                  <p className="text-sm text-precision-text-primary mx-auto mb-4">
+                  <p className="text-xs text-precision-text-primary mx-auto mb-2">
                     Manual required
                   </p>
-                  <p className="text-xs text-precision-text-secondary leading-relaxed text-center">
+                  <p className="text-xs text-precision-text-secondary leading-snug text-center">
                     AI admits uncertainty. Full CPA manual classification with
                     context preservation.
                   </p>
-                  <p className="text-2xl font-bold text-red-600 mx-auto mt-4">
+                  <p className="text-xl font-bold text-red-600 mx-auto mt-2">
                     15%
                   </p>
                   <p className="text-xs text-red-600 mx-auto">Manual work</p>
