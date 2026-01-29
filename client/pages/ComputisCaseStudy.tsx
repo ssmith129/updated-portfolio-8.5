@@ -698,7 +698,7 @@ export default function ComputisCaseStudy() {
                   <p className="text-3xl font-bold text-green-600 mx-auto mt-2">
                     89%
                   </p>
-                  <p className="text-xs text-green-600 mx-auto">
+                  <p className="text-sm font-medium text-green-600 mx-auto">
                     Acceptance rate
                   </p>
                 </div>
@@ -720,7 +720,7 @@ export default function ComputisCaseStudy() {
                   <p className="text-3xl font-bold text-yellow-600 mx-auto mt-2">
                     11%
                   </p>
-                  <p className="text-xs text-yellow-600 mx-auto">
+                  <p className="text-sm font-medium text-yellow-600 mx-auto">
                     Override rate
                   </p>
                 </div>
@@ -742,7 +742,7 @@ export default function ComputisCaseStudy() {
                   <p className="text-3xl font-bold text-red-600 mx-auto mt-2">
                     15%
                   </p>
-                  <p className="text-xs text-red-600 mx-auto">Manual work</p>
+                  <p className="text-sm font-medium text-red-600 mx-auto">Manual work</p>
                 </div>
               </div>
 
