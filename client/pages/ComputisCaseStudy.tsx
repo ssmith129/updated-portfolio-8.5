@@ -774,21 +774,31 @@ export default function ComputisCaseStudy() {
 
               <div className="mb-6">
                 <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0 !max-w-full">
-                  Evolution from initial sketch to final UI—showcasing the
-                  iterative design process for the Transactions screen.
+                  Evolution from initial sketch to LoFi Wireframe—showcasing
+                  the iterative design process for the Transactions screen.
                 </p>
               </div>
 
               {/* Design Iteration Visual */}
-              <div className="max-w-[2400px] mx-auto mt-6">
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fe152b9add5744c77bf02ed487ab467f0?alt=media&token=9a0234f5-f076-43f7-a7fe-795ca4f5db6b&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Design iteration progression video showing evolution from sketch to wireframe to final UI"
+              <div className="case-study-image mt-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7bd2c822f78b4722bedbf79d482d597b?format=webp&width=2880"
+                  alt="Design iteration progression showing evolution from initial sketch to LoFi wireframe for the Transactions screen"
+                  loading="lazy"
+                  onClick={() =>
+                    setLightboxImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7bd2c822f78b4722bedbf79d482d597b?format=webp&width=2880",
+                    )
+                  }
                 />
+                <div className="case-study-image__overlay">
+                  <span className="case-study-image__zoom-hint">
+                    Click to enlarge
+                  </span>
+                </div>
               </div>
               <p className="case-study-image__caption">
-                Figure 6.5: Design iteration progression — from sketch to
-                wireframe to final UI
+                Figure 6.5: Evolution from initial sketch to LoFi wireframe
               </p>
             </div>
 
