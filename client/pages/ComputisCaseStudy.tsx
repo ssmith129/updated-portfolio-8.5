@@ -742,7 +742,9 @@ export default function ComputisCaseStudy() {
                   <p className="text-3xl font-bold text-red-600 mx-auto mt-2">
                     15%
                   </p>
-                  <p className="text-sm font-medium text-red-600 mx-auto">Manual work</p>
+                  <p className="text-sm font-medium text-red-600 mx-auto">
+                    Manual work
+                  </p>
                 </div>
               </div>
 
