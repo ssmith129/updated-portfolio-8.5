@@ -774,8 +774,8 @@ export default function ComputisCaseStudy() {
 
               <div className="mb-6">
                 <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0 !max-w-full">
-                  Evolution from initial sketch to LoFi Wireframe—showcasing
-                  the iterative design process for the Transactions screen.
+                  Evolution from initial sketch to LoFi Wireframe—showcasing the
+                  iterative design process for the Transactions screen.
                 </p>
               </div>
 
