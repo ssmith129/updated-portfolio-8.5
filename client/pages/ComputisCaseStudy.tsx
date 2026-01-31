@@ -474,6 +474,134 @@ export default function ComputisCaseStudy() {
           aria-hidden="true"
         ></div>
 
+        {/* MY ROLE & RESPONSIBILITIES SECTION */}
+        <section id="role" className="section-animate scroll-mt-24">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
+              My Role & Responsibilities
+            </h2>
+
+            <div className="insight-callout insight-callout--key mb-6">
+              <div className="insight-callout__header">
+                <Users className="w-5 h-5 text-[#0A7A5E]" />
+                <p className="insight-callout__label insight-callout__label--key">
+                  TL;DR
+                </p>
+              </div>
+              <p className="insight-callout__text">
+                Lead Product Designer responsible for end-to-end AI feature design,
+                from research through implementation—balancing AI capabilities with
+                human trust requirements.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
+                  <Target className="w-5 h-5 text-precision-accent" />
+                  Core Responsibilities
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-[#E0F9F4] p-4 rounded-lg border-l-4 border-precision-accent">
+                    <h4 className="font-semibold text-precision-text-primary mb-2">
+                      Research & Discovery
+                    </h4>
+                    <ul className="text-sm text-precision-text-primary space-y-1">
+                      <li>• Led 12 CPA interviews & contextual inquiries</li>
+                      <li>• Analyzed 50,000+ transaction patterns</li>
+                      <li>• Identified AI augmentation opportunities</li>
+                    </ul>
+                  </div>
+                  <div className="bg-[#E8F4FA] p-4 rounded-lg border-l-4 border-precision-secondary">
+                    <h4 className="font-semibold text-precision-text-primary mb-2">
+                      AI Feature Design
+                    </h4>
+                    <ul className="text-sm text-precision-text-primary space-y-1">
+                      <li>• Designed 3-tier confidence system</li>
+                      <li>• Created explainability UI patterns</li>
+                      <li>• Built trust-first interaction flows</li>
+                    </ul>
+                  </div>
+                  <div className="bg-[#E8F4FA] p-4 rounded-lg border-l-4 border-precision-secondary">
+                    <h4 className="font-semibold text-precision-text-primary mb-2">
+                      Design System & Prototyping
+                    </h4>
+                    <ul className="text-sm text-precision-text-primary space-y-1">
+                      <li>• Established unified design system</li>
+                      <li>• Created high-fidelity prototypes</li>
+                      <li>• Maintained design-dev handoff quality</li>
+                    </ul>
+                  </div>
+                  <div className="bg-[#E0F9F4] p-4 rounded-lg border-l-4 border-precision-accent">
+                    <h4 className="font-semibold text-precision-text-primary mb-2">
+                      Validation & Iteration
+                    </h4>
+                    <ul className="text-sm text-precision-text-primary space-y-1">
+                      <li>• Conducted usability testing sessions</li>
+                      <li>• Measured 89% AI acceptance rate</li>
+                      <li>• Iterated based on CPA feedback</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
+                  <Sparkles className="w-5 h-5 text-precision-accent" />
+                  Key Contributions
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="text-base text-precision-text-primary font-medium">
+                        Trust-Centered AI Design
+                      </p>
+                      <p className="text-sm text-precision-text-secondary">
+                        Pioneered "explainability-first" approach that achieved 89%
+                        CPA acceptance of AI suggestions—addressing professional
+                        liability concerns through transparent reasoning.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="text-base text-precision-text-primary font-medium">
+                        Human-AI Collaboration Framework
+                      </p>
+                      <p className="text-sm text-precision-text-secondary">
+                        Designed 3-tier confidence system that preserved professional
+                        judgment while automating 85% of routine work—balancing
+                        efficiency with expertise.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="text-base text-precision-text-primary font-medium">
+                        Audit-Ready Documentation System
+                      </p>
+                      <p className="text-sm text-precision-text-secondary">
+                        Created IRS-compliant audit trail exports that provided 100%
+                        defensibility for AI-assisted classifications—critical for
+                        regulated industries.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section Divider */}
+        <div
+          className="my-12 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
         {/* RESEARCH SECTION */}
         <section id="research" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
