@@ -1657,45 +1657,6 @@ export default function ComputisCaseStudy() {
           aria-hidden="true"
         ></div>
 
-        {/* CORE INSIGHT */}
-        <section className="section-animate scroll-mt-24 core-insight-section">
-          <div className="bg-gradient-to-r from-[#0A2540] to-[#1E3A5F] rounded-card p-8 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
-            <div className="text-center">
-              <h2 className="text-2xl lg:text-3xl font-bold font-heading text-white leading-tight mb-4">
-                The Core Insight
-              </h2>
-              <div className="max-w-[1200px]">
-                <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium max-w-[1200px] mx-auto">
-                  In regulated domains,{" "}
-                  <span className="text-[#00A88A] font-bold">
-                    AI transparency isn't a feature—it's the product.
-                  </span>{" "}
-                  Augmentation beats automation when professionals retain
-                  control, simplicity beats capability when users actually adopt
-                  it, and failed experiments teach the most.
-                </p>
-                <p className="text-lg text-white/90 leading-relaxed font-medium max-w-[1200px] mx-auto">
-                  CPAs rejected full automation not for accuracy, but to
-                  preserve professional judgment.
-                </p>
-                <div className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-pill border border-white/20 w-fit mx-auto mt-4">
-                  <Lightbulb className="w-4 h-4 text-[#00A88A]" />
-                  <span className="text-sm font-semibold text-white">
-                    Human-in-the-loop isn't a weakness—it's how you earn trust
-                    in high-stakes AI.
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section Divider */}
-        <div
-          className="my-12 border-t border-[#E3E8EF]/50"
-          aria-hidden="true"
-        ></div>
-
         {/* SKILLS SECTION */}
         <section id="skills" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
