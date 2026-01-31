@@ -33,6 +33,7 @@ export default function ComputisCaseStudy() {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [isFeatureDeepDivesExpanded, setIsFeatureDeepDivesExpanded] =
     useState(false);
+  const [activeCapabilityTab, setActiveCapabilityTab] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   // Hero metrics animation
@@ -875,6 +876,36 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
+            {/* Feature Deep Dives - Collapsible Section */}
+            <div className="mt-12 border-t border-[#E3E8EF] pt-8">
+              <button
+                onClick={() => setIsFeatureDeepDivesExpanded(!isFeatureDeepDivesExpanded)}
+                className="w-full flex items-center justify-between group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-precision-accent focus-visible:ring-offset-2 rounded-sm p-2 -m-2 hover:bg-[#F7F8FA] transition-colors"
+                aria-expanded={isFeatureDeepDivesExpanded}
+                aria-controls="feature-deep-dives-content"
+              >
+                <div className="flex items-center gap-3">
+                  <h3 className="text-xl font-bold font-heading text-precision-text-primary group-hover:text-precision-accent transition-colors">
+                    Feature Deep Dives
+                  </h3>
+                  <span className="text-xs font-medium text-precision-text-secondary bg-[#F7F8FA] px-2 py-1 rounded-full">
+                    4 features
+                  </span>
+                </div>
+                {isFeatureDeepDivesExpanded ? (
+                  <ChevronUp className="w-5 h-5 text-precision-text-secondary group-hover:text-precision-accent transition-colors" />
+                ) : (
+                  <ChevronDown className="w-5 h-5 text-precision-text-secondary group-hover:text-precision-accent transition-colors" />
+                )}
+              </button>
+              <p className="text-sm text-precision-text-secondary mt-2">
+                Explore design iterations, system components, and AI capabilities in detail.
+              </p>
+            </div>
+
+            {isFeatureDeepDivesExpanded && (
+              <div id="feature-deep-dives-content" className="animate-in fade-in-0 slide-in-from-top-4 duration-500">
+
             {/* Design Iteration Progression Subsection */}
             <div className="mt-8 space-y-6">
               <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
@@ -1222,6 +1253,8 @@ export default function ComputisCaseStudy() {
                 </div>
               </div>
             </div>
+              </div>
+            )}
           </div>
         </section>
 
