@@ -227,7 +227,7 @@ p {
 }
 
 .impact-card__icon {
-  @apply w-8 h-8 text-[#00D4AA] mx-auto mb-4;
+  @apply w-8 h-8 text-[#00A88A] mx-auto mb-4;
 }
 
 .impact-card__metric {
@@ -264,7 +264,7 @@ p {
 }
 
 .badge--light {
-  @apply bg-[#E0F9F4] text-precision-accent border border-[#00D4AA]/20;
+  @apply bg-[#E0F9F4] text-precision-accent border border-[#00A88A]/20;
 }
 
 .badge--light:hover {
@@ -281,7 +281,7 @@ p {
 
 .skill-tag {
   @apply px-4 py-2 bg-[#E0F9F4] text-precision-accent text-sm font-medium rounded-full;
-  @apply border border-[#00D4AA]/20;
+  @apply border border-[#00A88A]/20;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
