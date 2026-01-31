@@ -478,118 +478,88 @@ export default function ComputisCaseStudy() {
         {/* MY ROLE & RESPONSIBILITIES SECTION */}
         <section id="role" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-6">
               My Role & Responsibilities
             </h2>
 
-            <div className="insight-callout insight-callout--key mb-6">
-              <div className="insight-callout__header">
-                <Users className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">
-                  TL;DR
-                </p>
-              </div>
-              <p className="insight-callout__text">
-                Lead Product Designer responsible for end-to-end AI feature design,
-                from research through implementation—balancing AI capabilities with
-                human trust requirements.
-              </p>
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Left Column */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Users className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      Position
+                    </h3>
+                    <p className="text-base text-precision-text-primary font-medium">
+                      Lead Product Designer
+                    </p>
+                    <p className="text-sm text-precision-text-secondary">
+                      End-to-end AI feature design, research through implementation
+                    </p>
+                  </div>
+                </div>
 
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
-                  <Target className="w-5 h-5 text-precision-accent" />
-                  Core Responsibilities
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-[#E0F9F4] p-4 rounded-lg border-l-4 border-precision-accent">
-                    <h4 className="font-semibold text-precision-text-primary mb-2">
+                <div className="flex items-start gap-3">
+                  <Target className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
                       Research & Discovery
-                    </h4>
-                    <ul className="text-sm text-precision-text-primary space-y-1">
-                      <li>• Led 12 CPA interviews & contextual inquiries</li>
-                      <li>• Analyzed 50,000+ transaction patterns</li>
-                      <li>• Identified AI augmentation opportunities</li>
-                    </ul>
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      Led 12 CPA interviews, analyzed 50K+ transactions, identified AI opportunities
+                    </p>
                   </div>
-                  <div className="bg-[#E8F4FA] p-4 rounded-lg border-l-4 border-precision-secondary">
-                    <h4 className="font-semibold text-precision-text-primary mb-2">
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Sparkles className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
                       AI Feature Design
-                    </h4>
-                    <ul className="text-sm text-precision-text-primary space-y-1">
-                      <li>• Designed 3-tier confidence system</li>
-                      <li>• Created explainability UI patterns</li>
-                      <li>• Built trust-first interaction flows</li>
-                    </ul>
-                  </div>
-                  <div className="bg-[#E8F4FA] p-4 rounded-lg border-l-4 border-precision-secondary">
-                    <h4 className="font-semibold text-precision-text-primary mb-2">
-                      Design System & Prototyping
-                    </h4>
-                    <ul className="text-sm text-precision-text-primary space-y-1">
-                      <li>• Established unified design system</li>
-                      <li>• Created high-fidelity prototypes</li>
-                      <li>• Maintained design-dev handoff quality</li>
-                    </ul>
-                  </div>
-                  <div className="bg-[#E0F9F4] p-4 rounded-lg border-l-4 border-precision-accent">
-                    <h4 className="font-semibold text-precision-text-primary mb-2">
-                      Validation & Iteration
-                    </h4>
-                    <ul className="text-sm text-precision-text-primary space-y-1">
-                      <li>• Conducted usability testing sessions</li>
-                      <li>• Measured 89% AI acceptance rate</li>
-                      <li>• Iterated based on CPA feedback</li>
-                    </ul>
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      3-tier confidence system, explainability UI, trust-first flows
+                    </p>
                   </div>
                 </div>
               </div>
 
-              <div>
-                <h3 className="text-lg font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
-                  <Sparkles className="w-5 h-5 text-precision-accent" />
-                  Key Contributions
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-base text-precision-text-primary font-medium">
-                        Trust-Centered AI Design
-                      </p>
-                      <p className="text-sm text-precision-text-secondary">
-                        Pioneered "explainability-first" approach that achieved 89%
-                        CPA acceptance of AI suggestions—addressing professional
-                        liability concerns through transparent reasoning.
-                      </p>
-                    </div>
+              {/* Right Column */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Eye className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      Design System
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      Unified system, high-fidelity prototypes, design-dev handoff
+                    </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-base text-precision-text-primary font-medium">
-                        Human-AI Collaboration Framework
-                      </p>
-                      <p className="text-sm text-precision-text-secondary">
-                        Designed 3-tier confidence system that preserved professional
-                        judgment while automating 85% of routine work—balancing
-                        efficiency with expertise.
-                      </p>
-                    </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      Validation & Testing
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      Usability sessions, measured 89% AI acceptance, CPA feedback loops
+                    </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-precision-success mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="text-base text-precision-text-primary font-medium">
-                        Audit-Ready Documentation System
-                      </p>
-                      <p className="text-sm text-precision-text-secondary">
-                        Created IRS-compliant audit trail exports that provided 100%
-                        defensibility for AI-assisted classifications—critical for
-                        regulated industries.
-                      </p>
-                    </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Shield className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      Key Achievement
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      89% CPA trust rate with IRS-compliant audit trail system
+                    </p>
                   </div>
                 </div>
               </div>
