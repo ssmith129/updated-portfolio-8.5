@@ -257,6 +257,7 @@ export default function ComputisCaseStudy() {
           >
             {[
               { href: "#problem", label: "Problem" },
+              { href: "#role", label: "My Role" },
               { href: "#research", label: "Research" },
               { href: "#solution", label: "Solution" },
               { href: "#decisions", label: "Decisions" },
