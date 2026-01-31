@@ -787,12 +787,12 @@ export default function ComputisCaseStudy() {
               {/* Design Iteration Visual */}
               <div className="case-study-image mt-6">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7bd2c822f78b4722bedbf79d482d597b?format=webp&width=2880"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1ba60a372b6c46c0af40c07d292bbb74?format=webp&width=2880"
                   alt="Design iteration progression showing evolution from initial sketch to LoFi wireframe for the Transactions screen"
                   loading="lazy"
                   onClick={() =>
                     setLightboxImage(
-                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7bd2c822f78b4722bedbf79d482d597b?format=webp&width=2880",
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1ba60a372b6c46c0af40c07d292bbb74?format=webp&width=2880",
                     )
                   }
                 />
