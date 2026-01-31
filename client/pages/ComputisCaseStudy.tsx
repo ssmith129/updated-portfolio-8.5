@@ -28,6 +28,7 @@ import "../styles/computis-case-study.css";
 
 export default function ComputisCaseStudy() {
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(true);
+  const [isRoleExpanded, setIsRoleExpanded] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isNavSticky, setIsNavSticky] = useState(false);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
@@ -302,13 +303,51 @@ export default function ComputisCaseStudy() {
             >
               <div className="space-y-4">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-                  <div>
-                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
-                      Role
-                    </span>
-                    <p className="text-precision-text-primary mt-1">
-                      Founding Lead Product Designer
-                    </p>
+                  <div className="col-span-2 lg:col-span-1">
+                    <button
+                      onClick={() => setIsRoleExpanded(!isRoleExpanded)}
+                      className="w-full text-left group/role cursor-pointer rounded-lg p-2 -m-2 transition-all duration-200 hover:bg-precision-accent/5 hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-precision-accent focus-visible:ring-offset-2"
+                      aria-expanded={isRoleExpanded}
+                      aria-controls="role-responsibilities"
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider group-hover/role:text-precision-accent transition-colors duration-200">
+                          Role
+                        </span>
+                        <ChevronDown
+                          className={`w-3.5 h-3.5 text-precision-text-secondary group-hover/role:text-precision-accent transition-all duration-300 ${isRoleExpanded ? 'rotate-180' : 'rotate-0'}`}
+                        />
+                      </div>
+                      <p className="text-precision-text-primary mt-1 group-hover/role:text-precision-accent transition-colors duration-200">
+                        Founding Lead Product Designer
+                      </p>
+                    </button>
+                    {isRoleExpanded && (
+                      <div
+                        id="role-responsibilities"
+                        className="mt-3 pl-2 border-l-2 border-precision-accent/30 animate-in fade-in-0 slide-in-from-top-2 duration-300"
+                      >
+                        <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Responsibilities</p>
+                        <ul className="space-y-1.5 text-sm text-precision-text-secondary">
+                          <li className="flex items-start gap-2">
+                            <span className="w-1 h-1 rounded-full bg-precision-accent mt-2 flex-shrink-0" />
+                            Led end-to-end product design strategy
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="w-1 h-1 rounded-full bg-precision-accent mt-2 flex-shrink-0" />
+                            Conducted user research & usability testing
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="w-1 h-1 rounded-full bg-precision-accent mt-2 flex-shrink-0" />
+                            Built and maintained design system
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="w-1 h-1 rounded-full bg-precision-accent mt-2 flex-shrink-0" />
+                            Collaborated with engineering on AI features
+                          </li>
+                        </ul>
+                      </div>
+                    )}
                   </div>
                   <div>
                     <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
