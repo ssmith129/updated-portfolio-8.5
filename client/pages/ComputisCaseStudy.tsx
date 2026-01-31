@@ -495,7 +495,8 @@ export default function ComputisCaseStudy() {
                       Lead Product Designer
                     </p>
                     <p className="text-sm text-precision-text-secondary">
-                      End-to-end AI feature design, research through implementation
+                      End-to-end AI feature design, research through
+                      implementation
                     </p>
                   </div>
                 </div>
@@ -507,7 +508,8 @@ export default function ComputisCaseStudy() {
                       Research & Discovery
                     </h3>
                     <p className="text-sm text-precision-text-primary">
-                      Led 12 CPA interviews, analyzed 50K+ transactions, identified AI opportunities
+                      Led 12 CPA interviews, analyzed 50K+ transactions,
+                      identified AI opportunities
                     </p>
                   </div>
                 </div>
@@ -519,7 +521,8 @@ export default function ComputisCaseStudy() {
                       AI Feature Design
                     </h3>
                     <p className="text-sm text-precision-text-primary">
-                      3-tier confidence system, explainability UI, trust-first flows
+                      3-tier confidence system, explainability UI, trust-first
+                      flows
                     </p>
                   </div>
                 </div>
@@ -534,7 +537,8 @@ export default function ComputisCaseStudy() {
                       Design System
                     </h3>
                     <p className="text-sm text-precision-text-primary">
-                      Unified system, high-fidelity prototypes, design-dev handoff
+                      Unified system, high-fidelity prototypes, design-dev
+                      handoff
                     </p>
                   </div>
                 </div>
@@ -546,7 +550,8 @@ export default function ComputisCaseStudy() {
                       Validation & Testing
                     </h3>
                     <p className="text-sm text-precision-text-primary">
-                      Usability sessions, measured 89% AI acceptance, CPA feedback loops
+                      Usability sessions, measured 89% AI acceptance, CPA
+                      feedback loops
                     </p>
                   </div>
                 </div>

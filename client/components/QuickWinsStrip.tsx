@@ -111,7 +111,9 @@ function MetricCard({
       <p className="text-[10px] md:text-xs font-semibold text-precision-text-secondary uppercase tracking-wider text-center mb-2 leading-tight">
         {metric.label}
       </p>
-      <p className={`text-2xl md:text-3xl lg:text-4xl font-bold ${colors.text} mb-1`}>
+      <p
+        className={`text-2xl md:text-3xl lg:text-4xl font-bold ${colors.text} mb-1`}
+      >
         {metric.prefix || ""}
         {count}
         {metric.suffix}
