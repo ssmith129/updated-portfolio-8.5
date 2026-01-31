@@ -433,6 +433,33 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* STRATEGIC INSIGHT CALLOUT - Moved here for early framing */}
+        <section className="section-animate scroll-mt-24 mt-8">
+          <div className="bg-gradient-to-r from-[#0A2540] to-[#1E3A5F] rounded-card p-6 shadow-precision-md border-2 border-[#00D4AA]">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-[#00D4AA]/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <Lightbulb className="w-5 h-5 text-[#00D4AA]" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
+                  Strategic Framing
+                </h3>
+                <p className="text-base text-white/90 leading-relaxed">
+                  In regulated domains,{" "}
+                  <span className="text-[#00D4AA] font-semibold">
+                    AI transparency isn't a feature—it's the product.
+                  </span>{" "}
+                  Augmentation beats automation when professionals retain control.
+                </p>
+                <p className="text-sm text-white/70 mt-2 flex items-center gap-2">
+                  <span className="inline-block w-1.5 h-1.5 bg-[#00D4AA] rounded-full"></span>
+                  Human-in-the-loop isn't a weakness—it's how you earn trust in high-stakes AI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Section Divider */}
         <div
           className="my-12 border-t border-[#E3E8EF]/50"
