@@ -13,12 +13,12 @@
     /* Precision Trust Theme Variables - Light Mode */
     --precision-primary: #0a2540;
     --precision-secondary: #1e3a5f;
-    --precision-accent: #00d4aa;
+    --precision-accent: #00a88a;
     --precision-neutral: #f7f9fc;
     --precision-text-primary: #1a1f36;
     --precision-text-secondary: #697386;
     --precision-error: #e74c3c;
-    --precision-success: #00d4aa;
+    --precision-success: #00a88a;
     --precision-warning: #f39c12;
 
     /* Precision Trust Shadows - Light Mode */
@@ -81,12 +81,12 @@
     /* Precision Trust Theme Variables - Dark Mode */
     --precision-primary: #1a1f36;
     --precision-secondary: #2a3144;
-    --precision-accent: #00d4aa;
+    --precision-accent: #00a88a;
     --precision-neutral: #0f1419;
     --precision-text-primary: #e8eaed;
     --precision-text-secondary: #9fa3ad;
     --precision-error: #ff6b6b;
-    --precision-success: #00d4aa;
+    --precision-success: #00a88a;
     --precision-warning: #ffa94d;
 
     /* Precision Trust Shadows - Dark Mode */
