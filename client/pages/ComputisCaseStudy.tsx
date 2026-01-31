@@ -1032,116 +1032,175 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            {/* Four AI Capabilities - 2×2 Grid */}
+            {/* Four AI Capabilities - Tabbed Interface */}
             <div className="mt-8">
-              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-6">
+              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
                 Four AI Capabilities
               </h3>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Feature 1: Classification */}
-                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
-                      <Sparkles className="w-6 h-6 text-precision-accent" />
-                    </div>
-                    <h4 className="text-base font-semibold font-heading text-precision-text-primary">
-                      Intelligent Transaction Classification
-                    </h4>
+              {/* Quick Summary Bullets */}
+              <div className="bg-[#F7F8FA] rounded-lg p-4 mb-6">
+                <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">Quick Overview</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <div className="flex items-center gap-2 text-sm text-precision-text-primary">
+                    <Sparkles className="w-4 h-4 text-precision-accent flex-shrink-0" />
+                    <span><strong>Classification:</strong> 89% trust rate, auto-categorization</span>
                   </div>
-
-                  <div className="mb-4">
-                    <p className="text-3xl font-bold text-precision-accent mb-1">
-                      89%
-                    </p>
-                    <p className="text-sm text-precision-text-secondary">
-                      CPAs trust AI classifications immediately
-                    </p>
+                  <div className="flex items-center gap-2 text-sm text-precision-text-primary">
+                    <Eye className="w-4 h-4 text-precision-secondary flex-shrink-0" />
+                    <span><strong>Audit Trail:</strong> 40% less manual documentation</span>
                   </div>
-
-                  <VideoOverlay
-                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
-                    ariaLabel="AI Classification confidence indicators demonstration"
-                  />
+                  <div className="flex items-center gap-2 text-sm text-precision-text-primary">
+                    <Settings className="w-4 h-4 text-precision-success flex-shrink-0" />
+                    <span><strong>Rule Builder:</strong> 5.5x adoption increase</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-precision-text-primary">
+                    <AlertTriangle className="w-4 h-4 text-precision-error flex-shrink-0" />
+                    <span><strong>Anomaly Detection:</strong> Zero IRS disputes</span>
+                  </div>
                 </div>
+              </div>
 
-                {/* Feature 2: Audit Trail */}
-                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
-                      <Eye className="w-6 h-6 text-precision-secondary" />
+              {/* Tab Navigation */}
+              <div className="flex flex-wrap gap-2 mb-4 border-b border-[#E3E8EF] pb-3">
+                {[
+                  { icon: Sparkles, label: "Classification", color: "precision-accent" },
+                  { icon: Eye, label: "Audit Trail", color: "precision-secondary" },
+                  { icon: Settings, label: "Rule Builder", color: "precision-success" },
+                  { icon: AlertTriangle, label: "Anomaly", color: "precision-error" },
+                ].map((tab, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveCapabilityTab(index)}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                      activeCapabilityTab === index
+                        ? "bg-precision-accent text-white shadow-sm"
+                        : "bg-white text-precision-text-secondary border border-[#E3E8EF] hover:border-precision-accent/30 hover:text-precision-accent"
+                    }`}
+                  >
+                    <tab.icon className="w-4 h-4" />
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+
+              {/* Tab Content Panels */}
+              <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
+                {activeCapabilityTab === 0 && (
+                  <div className="animate-in fade-in-0 duration-300">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                        <Sparkles className="w-6 h-6 text-precision-accent" />
+                      </div>
+                      <div>
+                        <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                          Intelligent Transaction Classification
+                        </h4>
+                        <p className="text-sm text-precision-text-secondary">Auto-categorize crypto transactions with confidence scores</p>
+                      </div>
                     </div>
-                    <h4 className="text-base font-semibold font-heading text-precision-text-primary">
-                      Explainable Audit Trail
-                    </h4>
-                  </div>
-
-                  <div className="mb-4">
-                    <p className="text-3xl font-bold text-precision-secondary mb-1">
-                      ↓40%
-                    </p>
-                    <p className="text-sm text-precision-text-secondary">
-                      Eliminates manual audit trail documentation
-                    </p>
-                  </div>
-
-                  <VideoOverlay
-                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
-                    ariaLabel="Audit Trail System demonstration"
-                  />
-                </div>
-
-                {/* Feature 3: Rule Builder */}
-                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
-                      <Settings className="w-6 h-6 text-precision-success" />
+                    <div className="flex items-baseline gap-2 mb-4">
+                      <p className="text-3xl font-bold text-precision-accent">89%</p>
+                      <p className="text-sm text-precision-text-secondary">CPAs trust AI classifications immediately</p>
                     </div>
-                    <h4 className="text-base font-semibold font-heading text-precision-text-primary">
-                      Smart Rule Builder
-                    </h4>
+                    <ul className="text-sm text-precision-text-primary space-y-1.5 mb-4 pl-4">
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-accent mt-0.5 flex-shrink-0" />Pattern matching across 50K+ historical transactions</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-accent mt-0.5 flex-shrink-0" />Confidence-tiered review queue (high/medium/low)</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-accent mt-0.5 flex-shrink-0" />One-click override with rationale capture</li>
+                    </ul>
+                    <VideoOverlay
+                      videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
+                      ariaLabel="AI Classification confidence indicators demonstration"
+                    />
                   </div>
+                )}
 
-                  <div className="mb-4">
-                    <p className="text-3xl font-bold text-precision-success mb-1">
-                      5.5x
-                    </p>
-                    <p className="text-sm text-precision-text-secondary">
-                      Adoption jumped from 12% to 67% with self-service rules
-                    </p>
-                  </div>
-
-                  <VideoOverlay
-                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
-                    ariaLabel="Smart Rule Builder demonstration"
-                  />
-                </div>
-
-                {/* Feature 4: Anomaly Detection */}
-                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
-                      <AlertTriangle className="w-6 h-6 text-precision-error" />
+                {activeCapabilityTab === 1 && (
+                  <div className="animate-in fade-in-0 duration-300">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
+                        <Eye className="w-6 h-6 text-precision-secondary" />
+                      </div>
+                      <div>
+                        <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                          Explainable Audit Trail
+                        </h4>
+                        <p className="text-sm text-precision-text-secondary">IRS-ready documentation with AI reasoning</p>
+                      </div>
                     </div>
-                    <h4 className="text-base font-semibold font-heading text-precision-text-primary">
-                      Real-Time Anomaly Detection
-                    </h4>
+                    <div className="flex items-baseline gap-2 mb-4">
+                      <p className="text-3xl font-bold text-precision-secondary">↓40%</p>
+                      <p className="text-sm text-precision-text-secondary">Eliminates manual audit trail documentation</p>
+                    </div>
+                    <ul className="text-sm text-precision-text-primary space-y-1.5 mb-4 pl-4">
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-secondary mt-0.5 flex-shrink-0" />AI explains "why" for every classification decision</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-secondary mt-0.5 flex-shrink-0" />Timestamped change log with user attribution</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-secondary mt-0.5 flex-shrink-0" />Export-ready for IRS Form 8949 with metadata</li>
+                    </ul>
+                    <VideoOverlay
+                      videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
+                      ariaLabel="Audit Trail System demonstration"
+                    />
                   </div>
+                )}
 
-                  <div className="mb-4">
-                    <p className="text-3xl font-bold text-precision-error mb-1">
-                      Zero
-                    </p>
-                    <p className="text-sm text-precision-text-secondary">
-                      No fair market value discrepancies with IRS
-                    </p>
+                {activeCapabilityTab === 2 && (
+                  <div className="animate-in fade-in-0 duration-300">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                        <Settings className="w-6 h-6 text-precision-success" />
+                      </div>
+                      <div>
+                        <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                          Smart Rule Builder
+                        </h4>
+                        <p className="text-sm text-precision-text-secondary">Self-service automation without coding</p>
+                      </div>
+                    </div>
+                    <div className="flex items-baseline gap-2 mb-4">
+                      <p className="text-3xl font-bold text-precision-success">5.5x</p>
+                      <p className="text-sm text-precision-text-secondary">Adoption jumped from 12% to 67%</p>
+                    </div>
+                    <ul className="text-sm text-precision-text-primary space-y-1.5 mb-4 pl-4">
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-success mt-0.5 flex-shrink-0" />Visual drag-and-drop rule creation</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-success mt-0.5 flex-shrink-0" />Pre-built templates for common patterns</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-success mt-0.5 flex-shrink-0" />Rules improve AI training over time</li>
+                    </ul>
+                    <VideoOverlay
+                      videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
+                      ariaLabel="Smart Rule Builder demonstration"
+                    />
                   </div>
+                )}
 
-                  <VideoOverlay
-                    videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
-                    ariaLabel="Anomaly Detection Engine demonstration"
-                  />
-                </div>
+                {activeCapabilityTab === 3 && (
+                  <div className="animate-in fade-in-0 duration-300">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
+                        <AlertTriangle className="w-6 h-6 text-precision-error" />
+                      </div>
+                      <div>
+                        <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                          Real-Time Anomaly Detection
+                        </h4>
+                        <p className="text-sm text-precision-text-secondary">Catch errors before IRS filing</p>
+                      </div>
+                    </div>
+                    <div className="flex items-baseline gap-2 mb-4">
+                      <p className="text-3xl font-bold text-precision-error">Zero</p>
+                      <p className="text-sm text-precision-text-secondary">Fair market value discrepancies with IRS</p>
+                    </div>
+                    <ul className="text-sm text-precision-text-primary space-y-1.5 mb-4 pl-4">
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-error mt-0.5 flex-shrink-0" />Price validation against 10+ data sources</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-error mt-0.5 flex-shrink-0" />Missing cost basis detection and alerts</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-precision-error mt-0.5 flex-shrink-0" />Wash sale rule violation flagging</li>
+                    </ul>
+                    <VideoOverlay
+                      videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
+                      ariaLabel="Anomaly Detection Engine demonstration"
+                    />
+                  </div>
+                )}
               </div>
             </div>
 
