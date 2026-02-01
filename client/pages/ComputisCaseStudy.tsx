@@ -895,21 +895,26 @@ export default function ComputisCaseStudy() {
                 Figure 7: Platform information architecture
               </p>
             </div>
+          </div>
+        </section>
 
-            {/* Feature Deep Dives Section */}
-            <div className="mt-12 border-t border-[#E3E8EF] pt-8">
-              <div className="flex items-center gap-3 mb-2">
-                <h3 className="text-xl font-bold font-heading text-precision-text-primary">
-                  Feature Deep Dives
-                </h3>
-                <span className="text-xs font-medium text-precision-text-secondary bg-[#F7F8FA] px-2 py-1 rounded-full">
-                  4 features
-                </span>
-              </div>
-              <p className="text-sm text-precision-text-secondary">
-                Explore design iterations, system components, and AI
-                capabilities in detail.
-              </p>
+        {/* Section Divider */}
+        <div
+          className="my-10 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
+        {/* FEATURE DEEP DIVES SECTION */}
+        <section id="feature-deep-dives" className="section-animate scroll-mt-24">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
+              Feature Deep Dives
+            </h2>
+
+            <div className="mt-8 space-y-6">
+              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+                Explore design iterations, system components, and AI capabilities in detail.
+              </h3>
             </div>
 
             <div id="feature-deep-dives-content">
