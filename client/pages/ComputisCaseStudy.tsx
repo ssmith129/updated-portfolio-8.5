@@ -907,15 +907,12 @@ export default function ComputisCaseStudy() {
         {/* FEATURE DEEP DIVES SECTION */}
         <section id="feature-deep-dives" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-2">
               Feature Deep Dives
             </h2>
-
-            <div className="mt-8 space-y-6">
-              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
-                Explore design iterations, system components, and AI capabilities in detail.
-              </h3>
-            </div>
+            <p className="text-base text-precision-text-secondary mb-6">
+              Explore design iterations, system components, and AI capabilities in detail.
+            </p>
 
             <div id="feature-deep-dives-content">
                 {/* Design Iteration Progression Subsection */}
