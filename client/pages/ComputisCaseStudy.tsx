@@ -921,7 +921,9 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <p className="insight-callout__text">
-                From sketch to production: design system, 4 AI capabilities, and UI screens that drove 89% CPA trust through explainable automation.
+                From sketch to production: design system, 4 AI capabilities, and
+                UI screens that drove 89% CPA trust through explainable
+                automation.
               </p>
             </div>
 
