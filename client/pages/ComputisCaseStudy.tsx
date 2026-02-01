@@ -1309,7 +1309,7 @@ export default function ComputisCaseStudy() {
                   Figure 9: UI evolution with AI integration
                 </p>
 
-                {/* UI Screens Section - Hero Screens */}
+                {/* UI Screens Section - Tabbed Interface */}
                 <div className="mt-12">
                   <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
                     UI Screens
@@ -1319,107 +1319,170 @@ export default function ComputisCaseStudy() {
                     transformed CPA cryptocurrency tax operations.
                   </p>
 
-                  {/* 2x2 Hero Grid Layout */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Dashboard */}
-                    <div>
-                      <div className="case-study-image mb-4">
-                        <img
-                          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
-                          alt="Dashboard Overview"
-                          loading="lazy"
-                          onClick={() =>
-                            setLightboxImage(
-                              "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400",
-                            )
-                          }
-                        />
-                        <div className="case-study-image__overlay">
-                          <span className="case-study-image__zoom-hint">
-                            Click to enlarge
-                          </span>
-                        </div>
-                      </div>
-                      <p className="text-sm text-precision-text-primary">
-                        <strong>Dashboard:</strong> Real-time portfolio metrics
-                        with AI confidence distribution and review queues.
-                      </p>
-                    </div>
+                  {/* Tab Navigation */}
+                  <div className="flex flex-wrap gap-2 mb-4 border-b border-[#E3E8EF] pb-3">
+                    {[
+                      { icon: TrendingUp, label: "Dashboard" },
+                      { icon: Sparkles, label: "Transactions" },
+                      { icon: AlertTriangle, label: "Anomaly Detection" },
+                      { icon: Shield, label: "Smart Export" },
+                    ].map((tab, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setActiveScreenTab(index)}
+                        className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                          activeScreenTab === index
+                            ? "bg-precision-accent text-white shadow-sm"
+                            : "bg-white text-precision-text-secondary border border-[#E3E8EF] hover:border-precision-accent/30 hover:text-precision-accent"
+                        }`}
+                      >
+                        <tab.icon className="w-4 h-4" />
+                        {tab.label}
+                      </button>
+                    ))}
+                  </div>
 
-                    {/* Transactions */}
-                    <div>
-                      <div className="case-study-image mb-4">
-                        <img
-                          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5b57dab77840440fae175a5817e22984?format=webp&width=2400"
-                          alt="Transactions Management"
-                          loading="lazy"
-                          onClick={() =>
-                            setLightboxImage(
-                              "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5b57dab77840440fae175a5817e22984?format=webp&width=2400",
-                            )
-                          }
-                        />
-                        <div className="case-study-image__overlay">
-                          <span className="case-study-image__zoom-hint">
-                            Click to enlarge
-                          </span>
+                  {/* Tab Content Panels */}
+                  <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
+                    {activeScreenTab === 0 && (
+                      <div className="animate-in fade-in-0 duration-300">
+                        <div className="flex items-center gap-4 mb-4">
+                          <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                            <TrendingUp className="w-6 h-6 text-precision-accent" />
+                          </div>
+                          <div>
+                            <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                              Dashboard Overview
+                            </h4>
+                            <p className="text-sm text-precision-text-secondary">
+                              Real-time portfolio metrics with AI confidence distribution
+                            </p>
+                          </div>
+                        </div>
+                        <div className="case-study-image mt-4">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
+                            alt="Dashboard Overview"
+                            loading="lazy"
+                            onClick={() =>
+                              setLightboxImage(
+                                "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400",
+                              )
+                            }
+                          />
+                          <div className="case-study-image__overlay">
+                            <span className="case-study-image__zoom-hint">
+                              Click to enlarge
+                            </span>
+                          </div>
                         </div>
                       </div>
-                      <p className="text-sm text-precision-text-primary">
-                        <strong>Transactions:</strong> AI classification with
-                        confidence indicators and bulk review actions.
-                      </p>
-                    </div>
+                    )}
 
-                    {/* Data Anomaly Detection */}
-                    <div>
-                      <div className="case-study-image mb-4">
-                        <img
-                          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F07c913d3c39d4fdab94a3834e53b5715?format=webp&width=2400"
-                          alt="Data Anomaly Detection"
-                          loading="lazy"
-                          onClick={() =>
-                            setLightboxImage(
-                              "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F07c913d3c39d4fdab94a3834e53b5715?format=webp&width=2400",
-                            )
-                          }
-                        />
-                        <div className="case-study-image__overlay">
-                          <span className="case-study-image__zoom-hint">
-                            Click to enlarge
-                          </span>
+                    {activeScreenTab === 1 && (
+                      <div className="animate-in fade-in-0 duration-300">
+                        <div className="flex items-center gap-4 mb-4">
+                          <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                            <Sparkles className="w-6 h-6 text-precision-accent" />
+                          </div>
+                          <div>
+                            <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                              Transactions Management
+                            </h4>
+                            <p className="text-sm text-precision-text-secondary">
+                              AI classification with confidence indicators and bulk review actions
+                            </p>
+                          </div>
+                        </div>
+                        <div className="case-study-image mt-4">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5b57dab77840440fae175a5817e22984?format=webp&width=2400"
+                            alt="Transactions Management"
+                            loading="lazy"
+                            onClick={() =>
+                              setLightboxImage(
+                                "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5b57dab77840440fae175a5817e22984?format=webp&width=2400",
+                              )
+                            }
+                          />
+                          <div className="case-study-image__overlay">
+                            <span className="case-study-image__zoom-hint">
+                              Click to enlarge
+                            </span>
+                          </div>
                         </div>
                       </div>
-                      <p className="text-sm text-precision-text-primary">
-                        <strong>Data Anomaly Detection:</strong> Real-time
-                        flagging of data errors before IRS export.
-                      </p>
-                    </div>
+                    )}
 
-                    {/* Smart Export */}
-                    <div>
-                      <div className="case-study-image mb-4">
-                        <img
-                          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcdefa1985ff7455fb25e1a135cd661f6?format=webp&width=2400"
-                          alt="Smart Export System"
-                          loading="lazy"
-                          onClick={() =>
-                            setLightboxImage(
-                              "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcdefa1985ff7455fb25e1a135cd661f6?format=webp&width=2400",
-                            )
-                          }
-                        />
-                        <div className="case-study-image__overlay">
-                          <span className="case-study-image__zoom-hint">
-                            Click to enlarge
-                          </span>
+                    {activeScreenTab === 2 && (
+                      <div className="animate-in fade-in-0 duration-300">
+                        <div className="flex items-center gap-4 mb-4">
+                          <div className="w-12 h-12 bg-[#FEF3C7] rounded-full flex items-center justify-center flex-shrink-0">
+                            <AlertTriangle className="w-6 h-6 text-precision-error" />
+                          </div>
+                          <div>
+                            <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                              Data Anomaly Detection
+                            </h4>
+                            <p className="text-sm text-precision-text-secondary">
+                              Real-time flagging of data errors before IRS export
+                            </p>
+                          </div>
+                        </div>
+                        <div className="case-study-image mt-4">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F07c913d3c39d4fdab94a3834e53b5715?format=webp&width=2400"
+                            alt="Data Anomaly Detection"
+                            loading="lazy"
+                            onClick={() =>
+                              setLightboxImage(
+                                "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F07c913d3c39d4fdab94a3834e53b5715?format=webp&width=2400",
+                              )
+                            }
+                          />
+                          <div className="case-study-image__overlay">
+                            <span className="case-study-image__zoom-hint">
+                              Click to enlarge
+                            </span>
+                          </div>
                         </div>
                       </div>
-                      <p className="text-sm text-precision-text-primary">
-                        <strong>Smart Export:</strong> IRS-ready Form 8949 and
-                        audit trails with embedded metadata.
-                      </p>
-                    </div>
+                    )}
+
+                    {activeScreenTab === 3 && (
+                      <div className="animate-in fade-in-0 duration-300">
+                        <div className="flex items-center gap-4 mb-4">
+                          <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
+                            <Shield className="w-6 h-6 text-precision-secondary" />
+                          </div>
+                          <div>
+                            <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                              Smart Export System
+                            </h4>
+                            <p className="text-sm text-precision-text-secondary">
+                              IRS-ready Form 8949 and audit trails with embedded metadata
+                            </p>
+                          </div>
+                        </div>
+                        <div className="case-study-image mt-4">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcdefa1985ff7455fb25e1a135cd661f6?format=webp&width=2400"
+                            alt="Smart Export System"
+                            loading="lazy"
+                            onClick={() =>
+                              setLightboxImage(
+                                "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcdefa1985ff7455fb25e1a135cd661f6?format=webp&width=2400",
+                              )
+                            }
+                          />
+                          <div className="case-study-image__overlay">
+                            <span className="case-study-image__zoom-hint">
+                              Click to enlarge
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
             </div>
