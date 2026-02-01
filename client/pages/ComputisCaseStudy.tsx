@@ -32,6 +32,7 @@ export default function ComputisCaseStudy() {
   const [isNavSticky, setIsNavSticky] = useState(false);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
     const [activeCapabilityTab, setActiveCapabilityTab] = useState(0);
+  const [activeScreenTab, setActiveScreenTab] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   // Hero metrics animation
