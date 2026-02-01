@@ -941,11 +941,7 @@ export default function ComputisCaseStudy() {
               </p>
             </div>
 
-            {isFeatureDeepDivesExpanded && (
-              <div
-                id="feature-deep-dives-content"
-                className="animate-in fade-in-0 slide-in-from-top-4 duration-500"
-              >
+            <div id="feature-deep-dives-content">
                 {/* Design Iteration Progression Subsection */}
                 <div className="mt-8 space-y-6">
                   <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
@@ -1441,8 +1437,7 @@ export default function ComputisCaseStudy() {
                     </div>
                   </div>
                 </div>
-              </div>
-            )}
+            </div>
           </div>
         </section>
 
