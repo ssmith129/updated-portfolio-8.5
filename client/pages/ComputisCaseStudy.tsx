@@ -310,7 +310,10 @@ export default function ComputisCaseStudy() {
                       Founding Lead Product Designer
                     </p>
                     <p className="text-precision-text-secondary mt-2 text-sm leading-relaxed">
-                      Led end-to-end product design strategy, conducted user research & usability testing, built and maintained the design system, and collaborated with engineering on AI features.
+                      Led end-to-end product design strategy, conducted user
+                      research & usability testing, built and maintained the
+                      design system, and collaborated with engineering on AI
+                      features.
                     </p>
                   </div>
                   <div>
