@@ -300,21 +300,7 @@ export default function ComputisCaseStudy() {
               className="mt-4 animate-in fade-in-0 slide-in-from-top-4 duration-500"
             >
               <div className="space-y-4">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-                  <div className="col-span-2">
-                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
-                      Role & Responsibilities
-                    </span>
-                    <p className="text-precision-text-primary mt-1 font-medium">
-                      Founding Lead Product Designer
-                    </p>
-                    <p className="text-precision-text-secondary mt-2 text-sm leading-relaxed">
-                      Led end-to-end product design strategy, conducted user
-                      research & usability testing, built and maintained the
-                      design system, and collaborated with engineering on AI
-                      features.
-                    </p>
-                  </div>
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
                   <div>
                     <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
                       Duration
