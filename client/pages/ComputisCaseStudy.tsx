@@ -921,9 +921,7 @@ export default function ComputisCaseStudy() {
                 </p>
               </div>
               <p className="insight-callout__text">
-                From sketch to production: design system, 4 AI capabilities, and
-                UI screens that drove 89% CPA trust through explainable
-                automation.
+                From sketch to production: design system, 4 AI capabilities, and UI screens that drove 89% CPA trust through explainable automation.
               </p>
             </div>
 
@@ -978,8 +976,30 @@ export default function ComputisCaseStudy() {
                   </p>
                 </div>
 
+                {/* Design System Visual */}
+                <div className="case-study-image mt-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880"
+                    alt="Computis design system showing typography, colors, components, and design tokens"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880",
+                      )
+                    }
+                  />
+                  <div className="case-study-image__overlay">
+                    <span className="case-study-image__zoom-hint">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+                <p className="case-study-image__caption">
+                  Figure 8: Computis design system
+                </p>
+
                 {/* View Full Design System Button */}
-                <div className="flex justify-center mb-6">
+                <div className="flex justify-center mt-6">
                   <a
                     href="/computis-design-system-showcase.html"
                     target="_blank"
@@ -1003,28 +1023,6 @@ export default function ComputisCaseStudy() {
                     View Full Design System
                   </a>
                 </div>
-
-                {/* Design System Visual */}
-                <div className="case-study-image mt-6">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880"
-                    alt="Computis design system showing typography, colors, components, and design tokens"
-                    loading="lazy"
-                    onClick={() =>
-                      setLightboxImage(
-                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880",
-                      )
-                    }
-                  />
-                  <div className="case-study-image__overlay">
-                    <span className="case-study-image__zoom-hint">
-                      Click to enlarge
-                    </span>
-                  </div>
-                </div>
-                <p className="case-study-image__caption">
-                  Figure 8: Computis design system
-                </p>
               </div>
 
               {/* Four AI Capabilities - Tabbed Interface */}
