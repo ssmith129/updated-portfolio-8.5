@@ -913,10 +913,17 @@ export default function ComputisCaseStudy() {
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-2">
               Feature Deep Dives
             </h2>
-            <p className="text-base text-precision-text-secondary mb-6">
-              Explore design iterations, system components, and AI capabilities
-              in detail.
-            </p>
+            <div className="insight-callout insight-callout--key mb-6">
+              <div className="insight-callout__header">
+                <Target className="w-5 h-5 text-[#0A7A5E]" />
+                <p className="insight-callout__label insight-callout__label--key">
+                  TL;DR
+                </p>
+              </div>
+              <p className="insight-callout__text">
+                From sketch to production: design system, 4 AI capabilities, and UI screens that drove 89% CPA trust through explainable automation.
+              </p>
+            </div>
 
             <div id="feature-deep-dives-content">
               {/* Design Iteration Progression Subsection */}
