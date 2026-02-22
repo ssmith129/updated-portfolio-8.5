@@ -1,17 +1,22 @@
 import { CheckCircle } from "lucide-react";
+import { useScrollReveal } from "../../hooks/use-scroll-reveal";
 
 export default function DesignDecisions() {
+  const headingRef = useScrollReveal();
+
   return (
     <section
       id="decisions"
       className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
     >
-      <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
-        Core Design Work
-      </p>
-      <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-14">
-        Design Decisions
-      </h2>
+      <div ref={headingRef} className="reveal">
+        <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
+          Core Design Work
+        </p>
+        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-14">
+          Design Decisions
+        </h2>
+      </div>
 
       <div className="space-y-20">
         <Decision1 />
@@ -410,7 +415,7 @@ function DecisionHeader({ number, title }: { number: string; title: string }) {
 
 function ResultCallout({ text }: { text: string }) {
   return (
-    <div className="flex items-start gap-3 bg-[#F0FDF4] border border-[#BBF7D0] rounded-xl px-5 py-4">
+    <div className="flex items-start gap-3 bg-[#F0FDF4] border border-[#BBF7D0] rounded-xl px-5 py-4 scale-in visible">
       <CheckCircle className="w-5 h-5 text-[#10B981] flex-shrink-0 mt-0.5" />
       <p className="text-sm font-medium text-[#166534] leading-relaxed">
         {text}

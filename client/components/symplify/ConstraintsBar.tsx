@@ -1,4 +1,5 @@
 import { Shield, Database, UserX, WifiOff } from "lucide-react";
+import { useStaggerReveal } from "../../hooks/use-scroll-reveal";
 
 const constraints = [
   {
@@ -24,16 +25,18 @@ const constraints = [
 ];
 
 export default function ConstraintsBar() {
+  const gridRef = useStaggerReveal();
+
   return (
     <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
       <p className="text-xs font-semibold text-[#64748B] uppercase tracking-widest mb-6">
         Load-Bearing Design Constraints
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {constraints.map((c) => (
           <div
             key={c.title}
-            className="bg-white rounded-xl border border-[#E2E8F0] px-5 py-5 shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="reveal bg-white rounded-xl border border-[#E2E8F0] px-5 py-5 shadow-sm card-lift group"
           >
             <div className="mb-3">{c.icon}</div>
             <p className="text-sm font-semibold text-[#0F172A] mb-1">{c.title}</p>

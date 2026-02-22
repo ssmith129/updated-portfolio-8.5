@@ -267,3 +267,115 @@
     border-left-width: 6px;
   }
 }
+
+/* ─── Symplify Case Study Microanimations ─── */
+
+/* Scroll-reveal base */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for grid children */
+.stagger-1 { transition-delay: 0.06s; }
+.stagger-2 { transition-delay: 0.12s; }
+.stagger-3 { transition-delay: 0.18s; }
+.stagger-4 { transition-delay: 0.24s; }
+.stagger-5 { transition-delay: 0.30s; }
+.stagger-6 { transition-delay: 0.36s; }
+
+/* Subtle card lift on hover */
+.card-lift {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+/* Gentle pulse for emphasis elements */
+@keyframes gentle-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.pulse-gentle {
+  animation: gentle-pulse 3s ease-in-out infinite;
+}
+
+/* Badge shimmer effect on hover */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.badge-shimmer:hover {
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(59, 130, 246, 0.08) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out;
+}
+
+/* Icon spin on card hover */
+.icon-hover-spin {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .icon-hover-spin {
+  transform: rotate(12deg) scale(1.1);
+}
+
+/* Underline reveal on hover */
+.underline-reveal {
+  position: relative;
+}
+.underline-reveal::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3B82F6, #10B981);
+  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border-radius: 1px;
+}
+.underline-reveal:hover::after {
+  width: 100%;
+}
+
+/* Scale-in for result callouts */
+.scale-in {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: 0.2s;
+}
+.scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Number highlight glow */
+@keyframes number-glow {
+  0%, 100% { text-shadow: none; }
+  50% { text-shadow: 0 0 20px currentColor; }
+}
+
+/* Journey lane hover highlight */
+.lane-hover {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.lane-hover:hover {
+  background-color: rgba(59, 130, 246, 0.03);
+  transform: translateX(4px);
+}

@@ -1,4 +1,5 @@
 import { Monitor, Tablet, Smartphone } from "lucide-react";
+import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
 
 const platforms = [
   {
@@ -43,6 +44,10 @@ const roleViews = [
 ];
 
 export default function SystemOverview() {
+  const archRef = useScrollReveal();
+  const dsRef = useScrollReveal();
+  const platformRef = useStaggerReveal();
+
   return (
     <section
       id="system"
@@ -50,12 +55,14 @@ export default function SystemOverview() {
     >
       {/* Architecture */}
       <div className="mb-20">
-        <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
-          Technical Foundation
-        </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-4 max-w-[720px]">
-          System Architecture
-        </h2>
+        <div ref={archRef} className="reveal">
+          <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
+            Technical Foundation
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-4 max-w-[720px]">
+            System Architecture
+          </h2>
+        </div>
         <p className="text-[15px] text-[#475569] leading-relaxed max-w-[680px] mb-8">
           Symplify acts as an integration layer — not replacing legacy systems,
           but making them work together through a read-only recommendation
@@ -173,12 +180,14 @@ export default function SystemOverview() {
 
       {/* Design System */}
       <div>
-        <p className="text-xs font-semibold text-[#10B981] uppercase tracking-widest mb-2">
-          Foundation
-        </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-6">
-          Design System
-        </h2>
+        <div ref={dsRef} className="reveal">
+          <p className="text-xs font-semibold text-[#10B981] uppercase tracking-widest mb-2">
+            Foundation
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-6">
+            Design System
+          </h2>
+        </div>
         <p className="text-[15px] text-[#475569] leading-relaxed max-w-[680px] mb-8">
           Built a modular system emphasizing trust, transparency, and
           accessibility.
@@ -197,11 +206,11 @@ export default function SystemOverview() {
         </ul>
 
         {/* Platform grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div ref={platformRef} className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {platforms.map((p) => (
             <div
               key={p.context}
-              className="bg-white rounded-xl border border-[#E2E8F0] p-5 shadow-sm"
+              className="reveal bg-white rounded-xl border border-[#E2E8F0] p-5 shadow-sm card-lift group"
             >
               <div className="flex items-center gap-2 mb-3">
                 {p.icon}

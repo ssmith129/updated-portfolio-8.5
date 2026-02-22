@@ -1,4 +1,5 @@
 import { Zap, RotateCcw, TrendingUp } from "lucide-react";
+import { useScrollReveal } from "../../hooks/use-scroll-reveal";
 
 const moments = [
   {
@@ -30,17 +31,21 @@ Initially, this felt like a burden. How do you show AI reasoning without overwhe
 ];
 
 export default function PivotalMoments() {
+  const headingRef = useScrollReveal();
+
   return (
     <section
       id="pivots"
       className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
     >
-      <p className="text-xs font-semibold text-[#F59E0B] uppercase tracking-widest mb-2">
-        Turning Points
-      </p>
-      <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-4 max-w-[720px]">
-        Pivotal Moments
-      </h2>
+      <div ref={headingRef} className="reveal">
+        <p className="text-xs font-semibold text-[#F59E0B] uppercase tracking-widest mb-2">
+          Turning Points
+        </p>
+        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-4 max-w-[720px]">
+          Pivotal Moments
+        </h2>
+      </div>
       <p className="text-[15px] text-[#475569] leading-relaxed max-w-[720px] mb-10">
         Two critical moments reshaped this project. In both cases, what
         initially felt like a setback became the catalyst for a better design.
@@ -50,7 +55,7 @@ export default function PivotalMoments() {
         {moments.map((m) => (
           <div
             key={m.title}
-            className="rounded-2xl border overflow-hidden"
+            className="rounded-2xl border overflow-hidden hover:shadow-lg transition-shadow duration-500"
             style={{
               borderColor: m.borderColor,
               backgroundColor: m.bgColor,

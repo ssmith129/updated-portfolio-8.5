@@ -63,7 +63,7 @@ export default function HeroSection({ onPreviewOpen }: HeroSectionProps) {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10 mb-6">
         <button
           onClick={onPreviewOpen}
-          className="w-full aspect-[1.85] rounded-2xl flex items-center justify-center border border-[#E2E8F0] transition-all duration-300 hover:shadow-xl hover:scale-[1.005] cursor-pointer group relative overflow-hidden"
+          className="w-full aspect-[1.85] rounded-2xl flex items-center justify-center border border-[#E2E8F0] transition-all duration-500 hover:shadow-2xl hover:scale-[1.008] cursor-pointer group relative overflow-hidden hover:border-[#3B82F6]/20"
           aria-label="Open Symplify platform preview"
           style={{
             backgroundImage:
@@ -85,7 +85,7 @@ export default function HeroSection({ onPreviewOpen }: HeroSectionProps) {
 
 function Badge({ icon, label }: { icon: React.ReactNode; label: string }) {
   return (
-    <span className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-[#E2E8F0] text-[13px] font-medium text-[#475569] shadow-sm">
+    <span className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-[#E2E8F0] text-[13px] font-medium text-[#475569] shadow-sm badge-shimmer hover:border-[#3B82F6]/30 hover:shadow-md transition-all duration-300 cursor-default">
       {icon}
       {label}
     </span>

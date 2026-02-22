@@ -1,4 +1,5 @@
 import { Eye, Search, MessageSquare, BarChart3 } from "lucide-react";
+import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
 
 const methods = [
   { icon: <Eye className="w-4 h-4" />, label: "Shadowed 18 staff", detail: "across 3 facilities" },
@@ -81,26 +82,32 @@ const competitiveRows = [
 ];
 
 export default function ResearchSection() {
+  const headingRef = useScrollReveal();
+  const methodsRef = useStaggerReveal();
+  const insightsRef = useScrollReveal(0.1, "0px 0px -40px 0px");
+
   return (
     <section
       id="research"
       className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
     >
-      <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
-        Discovery
-      </p>
-      <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
-        Research
-      </h2>
+      <div ref={headingRef} className="reveal">
+        <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
+          Discovery
+        </p>
+        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
+          Research
+        </h2>
+      </div>
 
       {/* Methods strip */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+      <div ref={methodsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
         {methods.map((m) => (
           <div
             key={m.label}
-            className="flex items-start gap-3 bg-white rounded-xl border border-[#E2E8F0] px-4 py-4 shadow-sm"
+            className="reveal flex items-start gap-3 bg-white rounded-xl border border-[#E2E8F0] px-4 py-4 shadow-sm card-lift group"
           >
-            <div className="w-8 h-8 rounded-lg bg-[#EFF6FF] flex items-center justify-center text-[#3B82F6] flex-shrink-0 mt-0.5">
+            <div className="w-8 h-8 rounded-lg bg-[#EFF6FF] flex items-center justify-center text-[#3B82F6] flex-shrink-0 mt-0.5 icon-hover-spin">
               {m.icon}
             </div>
             <div>
@@ -154,7 +161,7 @@ export default function ResearchSection() {
       </details>
 
       {/* Insight cards */}
-      <div className="space-y-6 mb-14">
+      <div ref={insightsRef} className="reveal space-y-6 mb-14">
         {insights.map((ins) => (
           <div
             key={ins.number}

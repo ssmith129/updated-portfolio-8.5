@@ -82,7 +82,7 @@ export default function ImpactMetrics() {
         {metrics.map((m) => (
           <div
             key={m.label}
-            className="bg-white rounded-2xl border border-[#E2E8F0] p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="bg-white rounded-2xl border border-[#E2E8F0] p-5 sm:p-6 shadow-sm card-lift hover:border-[#CBD5E1] group"
           >
             <p className="text-xs font-semibold text-[#94A3B8] uppercase tracking-widest mb-3">
               {m.label}
@@ -145,7 +145,7 @@ export default function ImpactMetrics() {
           ].map((v) => (
             <div
               key={v.metric}
-              className="bg-white/70 rounded-xl px-5 py-4 border border-[#DBEAFE]/50"
+              className="bg-white/70 rounded-xl px-5 py-4 border border-[#DBEAFE]/50 card-lift"
             >
               <p className="text-lg font-bold text-[#0F172A] mb-1">
                 {v.metric}

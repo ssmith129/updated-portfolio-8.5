@@ -1,4 +1,5 @@
 import { Target, Building2, TrendingUp, Users } from "lucide-react";
+import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
 
 const objectives = [
   {
@@ -28,17 +29,22 @@ const objectives = [
 ];
 
 export default function ProjectOverview() {
+  const headingRef = useScrollReveal();
+  const gridRef = useStaggerReveal();
+
   return (
     <section
       id="overview"
       className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
     >
-      <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
-        Context & Stakes
-      </p>
-      <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-4 max-w-[720px]">
-        Project Overview
-      </h2>
+      <div ref={headingRef} className="reveal">
+        <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
+          Context & Stakes
+        </p>
+        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-4 max-w-[720px]">
+          Project Overview
+        </h2>
+      </div>
 
       <div className="max-w-[720px] mb-10 space-y-4">
         <p className="text-[15px] text-[#475569] leading-relaxed">
@@ -71,11 +77,11 @@ export default function ProjectOverview() {
       <p className="text-xs font-semibold text-[#94A3B8] uppercase tracking-widest mb-4">
         Success Criteria Defined Upfront
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {objectives.map((obj) => (
           <div
             key={obj.title}
-            className="bg-white rounded-xl border border-[#E2E8F0] p-5 shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="reveal bg-white rounded-xl border border-[#E2E8F0] p-5 shadow-sm card-lift hover:border-[#CBD5E1] group"
           >
             <div className="flex items-center gap-2 mb-2">
               {obj.icon}

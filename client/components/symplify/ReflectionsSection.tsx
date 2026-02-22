@@ -1,4 +1,5 @@
 import { CheckCircle, AlertTriangle, Lightbulb, ArrowRight } from "lucide-react";
+import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
 
 const wins = [
   "Trust through transparency — the 11% override rate proved users felt safe disagreeing with AI.",
@@ -72,6 +73,11 @@ const nextSteps = [
 ];
 
 export default function ReflectionsSection() {
+  const outcomesRef = useScrollReveal();
+  const quotesRef = useStaggerReveal();
+  const reflectionRef = useScrollReveal();
+  const nextRef = useStaggerReveal();
+
   return (
     <>
       {/* What Worked & What Didn't */}
@@ -79,12 +85,14 @@ export default function ReflectionsSection() {
         id="outcomes"
         className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
       >
-        <p className="text-xs font-semibold text-[#64748B] uppercase tracking-widest mb-2">
-          Honest Assessment
-        </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
-          What Worked & What Didn't
-        </h2>
+        <div ref={outcomesRef} className="reveal">
+          <p className="text-xs font-semibold text-[#64748B] uppercase tracking-widest mb-2">
+            Honest Assessment
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
+            What Worked & What Didn't
+          </h2>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Wins */}
@@ -130,11 +138,11 @@ export default function ReflectionsSection() {
         <p className="text-xs font-semibold text-[#10B981] uppercase tracking-widest mb-6">
           In Their Words — Post-Pilot Feedback
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div ref={quotesRef} className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {pilotQuotes.map((q) => (
             <blockquote
               key={q.cite}
-              className="bg-white rounded-2xl border border-[#E2E8F0] p-6 shadow-sm flex flex-col justify-between"
+              className="reveal bg-white rounded-2xl border border-[#E2E8F0] p-6 shadow-sm flex flex-col justify-between card-lift"
             >
               <div>
                 <span
@@ -160,18 +168,20 @@ export default function ReflectionsSection() {
         id="reflection"
         className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
       >
-        <p className="text-xs font-semibold text-[#8B5CF6] uppercase tracking-widest mb-2">
-          Takeaways
-        </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
-          Reflection
-        </h2>
+        <div ref={reflectionRef} className="reveal">
+          <p className="text-xs font-semibold text-[#8B5CF6] uppercase tracking-widest mb-2">
+            Takeaways
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
+            Reflection
+          </h2>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-14">
           {reflections.map((r) => (
             <div
               key={r.title}
-              className="bg-white rounded-2xl border border-[#E2E8F0] p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-2xl border border-[#E2E8F0] p-6 shadow-sm card-lift hover:border-[#CBD5E1]"
             >
               <div className="flex items-start gap-3 mb-3">
                 <Lightbulb className="w-5 h-5 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
@@ -207,11 +217,11 @@ export default function ReflectionsSection() {
           Next Steps
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div ref={nextRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {nextSteps.map((ns, i) => (
             <div
               key={ns.title}
-              className="bg-white rounded-xl border border-[#E2E8F0] p-5 shadow-sm hover:shadow-md transition-shadow duration-300 group"
+              className="reveal bg-white rounded-xl border border-[#E2E8F0] p-5 shadow-sm card-lift group"
             >
               <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[#EFF6FF] text-[#3B82F6] text-sm font-bold mb-3">
                 {i + 1}
