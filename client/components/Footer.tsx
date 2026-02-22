@@ -19,7 +19,7 @@ const socialLinks = [
 export default function Footer({ className = "" }: FooterProps) {
   return (
     <footer
-      className={`bg-white border-t border-neutral-200 ${className}`}
+      className={`bg-white dark:bg-gray-900 border-t border-neutral-200 dark:border-gray-700 transition-colors duration-200 ${className}`}
       role="contentinfo"
       aria-label="Site footer"
     >
@@ -28,10 +28,10 @@ export default function Footer({ className = "" }: FooterProps) {
         <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8 md:gap-12 mb-8">
           {/* Brand */}
           <div className="flex-shrink-0">
-            <h3 className="text-base font-medium text-neutral-900 mb-2">
+            <h3 className="text-base font-medium text-neutral-900 dark:text-white mb-2 transition-colors duration-200">
               Sean Smith
             </h3>
-            <p className="text-sm text-neutral-600 max-w-[280px]">
+            <p className="text-sm text-neutral-600 dark:text-gray-400 max-w-[280px] transition-colors duration-200">
               UX/Product Designer
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function Footer({ className = "" }: FooterProps) {
                   <li key={link.href}>
                     <Link
                       to={link.href}
-                      className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors duration-200"
+                      className="text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200"
                     >
                       {link.label}
                     </Link>
@@ -63,7 +63,7 @@ export default function Footer({ className = "" }: FooterProps) {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors duration-200"
+                      className="text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200"
                     >
                       {link.label}
                     </a>
@@ -77,7 +77,7 @@ export default function Footer({ className = "" }: FooterProps) {
           <div className="flex-shrink-0">
             <a
               href="mailto:sean@smithdesign.live"
-              className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors duration-200"
+              className="text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200"
             >
               sean@smithdesign.live
             </a>
@@ -85,8 +85,8 @@ export default function Footer({ className = "" }: FooterProps) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-neutral-200">
-          <p className="text-xs text-neutral-500">
+        <div className="pt-8 border-t border-neutral-200 dark:border-gray-700 transition-colors duration-200">
+          <p className="text-xs text-neutral-500 dark:text-gray-400 transition-colors duration-200">
             © {new Date().getFullYear()} Sean Smith
           </p>
         </div>

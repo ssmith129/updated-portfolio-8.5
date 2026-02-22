@@ -23,6 +23,7 @@ import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 import VideoOverlay, { FeatureCards } from "../components/VideoOverlay";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
+import { useCountUp } from "../hooks/use-count-up";
 import "../styles/computis-case-study.css";
 
 export default function ComputisCaseStudy() {
@@ -30,6 +31,17 @@ export default function ComputisCaseStudy() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isNavSticky, setIsNavSticky] = useState(false);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+  const [activeCapabilityTab, setActiveCapabilityTab] = useState(0);
+  const [activeScreenTab, setActiveScreenTab] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  // Hero metrics animation
+  const { elementRef: metricsRef, isVisible: metricsVisible } =
+    useIntersectionAnimation(0.5);
+  const aiTrustCount = useCountUp(89, 2000, metricsVisible, 0, 0);
+  const manualWorkCount = useCountUp(85, 2000, metricsVisible, 200, 0);
+  const reviewQueueCount = useCountUp(11, 2000, metricsVisible, 400, 0);
+  const auditDefenseCount = useCountUp(340, 2000, metricsVisible, 600, 0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +49,12 @@ export default function ComputisCaseStudy() {
       const scrollThreshold = isMobile ? window.innerHeight * 1.5 : 400;
       setShowScrollTop(window.scrollY > scrollThreshold);
       setIsNavSticky(window.scrollY > 300);
+
+      // Calculate scroll progress
+      const winScroll = window.scrollY;
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+      setScrollProgress(scrolled);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -48,6 +66,28 @@ export default function ComputisCaseStudy() {
     setIsSummaryExpanded(!isMobile);
   }, []);
 
+  // Lightbox keyboard and scroll handling
+  useEffect(() => {
+    if (lightboxImage) {
+      // Prevent body scroll when lightbox is open
+      document.body.style.overflow = "hidden";
+
+      // Close on ESC key
+      const handleEscape = (e: KeyboardEvent) => {
+        if (e.key === "Escape") {
+          setLightboxImage(null);
+        }
+      };
+
+      document.addEventListener("keydown", handleEscape);
+
+      return () => {
+        document.body.style.overflow = "unset";
+        document.removeEventListener("keydown", handleEscape);
+      };
+    }
+  }, [lightboxImage]);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -57,19 +97,12 @@ export default function ComputisCaseStudy() {
 
   return (
     <div className="min-h-screen bg-precision-neutral scroll-smooth relative overflow-hidden font-sans">
+      {/* Scroll Progress Indicator */}
       <div
-        className="absolute inset-0 opacity-[0.02]"
-        style={{
-          backgroundImage: `
-          radial-gradient(circle at 20% 50%, var(--precision-accent) 1px, transparent 1px),
-          radial-gradient(circle at 80% 80%, var(--precision-secondary) 1px, transparent 1px)
-        `,
-          backgroundSize: "64px 64px",
-        }}
+        className="fixed top-0 left-0 h-1 bg-gradient-to-r from-precision-accent to-precision-secondary z-[9999] transition-all duration-300"
+        style={{ width: `${scrollProgress}%` }}
+        aria-hidden="true"
       ></div>
-
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#00D4AA]/3 rounded-full blur-[120px]"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#1E3A5F]/4 rounded-full blur-[140px]"></div>
 
       <SkipLink />
       <Navigation />
@@ -87,52 +120,129 @@ export default function ComputisCaseStudy() {
 
       <header className="max-w-[1200px] mx-auto px-6 pt-8 pb-4 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
         <div className="flex flex-col">
-          <span className="inline-block bg-precision-accent text-white px-3 py-1.5 rounded-pill text-xs font-semibold tracking-tight mb-3 w-fit">
+          <span className="badge badge--primary mb-4 w-fit">
             FinTech AI/UX Case Study
           </span>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-3">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-precision-text-primary leading-[110%] tracking-tight mb-4">
             Computis — AI-Powered Crypto Tax Automation
           </h1>
-          <p className="text-base text-precision-text-secondary leading-[140%] mb-6">
-            Designing AI features that <strong>augment CPA expertise</strong> while maintaining professional control and IRS audit defensibility
-          </p>
-
-          {/* Hero Metrics Grid - Above the Fold */}
-          <div className="hero-metrics-grid mb-6">
-            <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">AI Trust</p>
-              <p className="text-3xl font-bold text-precision-accent mb-1">89%</p>
-              <p className="text-xs text-precision-text-secondary">Acceptance rate</p>
-              <p className="text-xs font-semibold text-precision-success mt-2">+287% increase</p>
-            </div>
-
-            <div className="hero-metric-card hero-metric-card--success shadow-precision-sm">
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Manual Work</p>
-              <p className="text-3xl font-bold text-precision-success mb-1">↓85%</p>
-              <p className="text-xs text-precision-text-secondary">Classification time</p>
-              <p className="text-xs font-semibold text-precision-accent mt-2">15% review only</p>
-            </div>
-
-            <div className="hero-metric-card hero-metric-card--secondary shadow-precision-sm">
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Review Queue</p>
-              <p className="text-3xl font-bold text-precision-secondary mb-1">11%</p>
-              <p className="text-xs text-precision-text-secondary">Medium confidence</p>
-              <p className="text-xs font-semibold text-precision-accent mt-2">Human context</p>
-            </div>
-
-            <div className="hero-metric-card hero-metric-card--warning shadow-precision-sm">
-              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2">Audit Defense</p>
-              <p className="text-3xl font-bold text-precision-warning mb-1">340%</p>
-              <p className="text-xs text-precision-text-secondary">Trail exports</p>
-              <p className="text-xs font-semibold text-precision-success mt-2">IRS-ready</p>
-            </div>
-          </div>
 
           <div className="flex items-center gap-2 mb-4">
             <div className="reading-time">
               <Clock className="reading-time__icon" />
               <span>~2 min scan</span>
             </div>
+          </div>
+
+          <p className="text-base text-precision-text-secondary leading-[140%] mb-6 !max-w-full !text-left !mx-0">
+            Designing AI features that <strong>augment CPA expertise</strong>{" "}
+            while maintaining professional control and IRS audit defensibility
+          </p>
+
+          {/* Hero Image - Live Prototype */}
+          <div className="relative w-full max-w-[2880px] mx-auto mb-8 group">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-lg shadow-precision-lg">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fd07dc7ebc8de47519381b1f967eacde1?format=webp&width=2880"
+                alt="Computis Crypto Tax Engine Dashboard - Live Prototype"
+                className="w-full h-full object-cover"
+                loading="eager"
+              />
+              {/* Darkening overlay on hover */}
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+
+              {/* View Live Prototype Link */}
+              <a
+                href="https://computis.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+              >
+                <div className="bg-precision-accent text-white px-6 py-3 rounded-lg font-semibold text-lg shadow-precision-lg hover:bg-precision-accent/90 transition-colors duration-200 flex items-center gap-2">
+                  <Eye className="w-5 h-5" />
+                  View Live Prototype
+                </div>
+              </a>
+            </div>
+          </div>
+
+          {/* Hero Metrics Grid - Above the Fold */}
+          <div
+            className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 mb-6"
+            ref={metricsRef}
+          >
+            <div className="hero-metric-card hero-metric-card--accent shadow-precision-sm">
+              <Brain className="w-5 h-5 text-precision-accent mb-2 mx-auto" />
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mx-auto mb-1">
+                AI Trust
+              </p>
+              <p className="text-2xl font-bold text-precision-accent mx-auto mb-0.5">
+                {aiTrustCount}%
+              </p>
+              <p className="text-xs text-precision-text-secondary mx-auto">
+                Acceptance rate
+              </p>
+              <p className="text-xs font-semibold text-precision-success mx-auto mt-1.5">
+                +287% increase
+              </p>
+            </div>
+
+            <div className="hero-metric-card hero-metric-card--success shadow-precision-sm">
+              <Zap className="w-5 h-5 text-precision-success mb-2 mx-auto" />
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mx-auto mb-1">
+                Manual Work
+              </p>
+              <p className="text-2xl font-bold text-precision-success mx-auto mb-0.5">
+                ↓{manualWorkCount}%
+              </p>
+              <p className="text-xs text-precision-text-secondary mx-auto">
+                Classification time
+              </p>
+              <p className="text-xs font-semibold text-precision-accent mx-auto mt-1.5">
+                15% review only
+              </p>
+            </div>
+
+            <div className="hero-metric-card hero-metric-card--secondary shadow-precision-sm">
+              <CheckCircle className="w-5 h-5 text-precision-secondary mb-2 mx-auto" />
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mx-auto mb-1">
+                Review Queue
+              </p>
+              <p className="text-2xl font-bold text-precision-secondary mx-auto mb-0.5">
+                {reviewQueueCount}%
+              </p>
+              <p className="text-xs text-precision-text-secondary mx-auto">
+                Medium confidence
+              </p>
+              <p className="text-xs font-semibold text-precision-accent mx-auto mt-1.5">
+                Human context
+              </p>
+            </div>
+
+            <div className="hero-metric-card hero-metric-card--warning shadow-precision-sm">
+              <Shield className="w-5 h-5 text-precision-warning mb-2 mx-auto" />
+              <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mx-auto mb-1">
+                Audit Defense
+              </p>
+              <p className="text-2xl font-bold text-precision-warning mx-auto mb-0.5">
+                {auditDefenseCount}%
+              </p>
+              <p className="text-xs text-precision-text-secondary mx-auto">
+                Trail exports
+              </p>
+              <p className="text-xs font-semibold text-precision-success mx-auto mt-1.5">
+                IRS-ready
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 bg-gradient-to-r from-[#E0F9F4] to-[#E8F4FA] rounded-card p-6 border-l-4 border-precision-accent">
+            <blockquote className="text-base italic text-precision-text-primary leading-relaxed">
+              "This is the first crypto tax tool I'd stake my license on."
+            </blockquote>
+            <cite className="block text-sm text-precision-accent mt-2 not-italic font-semibold">
+              — Enterprise CPA, Big 4 Partner
+            </cite>
           </div>
         </div>
       </header>
@@ -147,6 +257,7 @@ export default function ComputisCaseStudy() {
           >
             {[
               { href: "#problem", label: "Problem" },
+              { href: "#role", label: "My Role" },
               { href: "#research", label: "Research" },
               { href: "#solution", label: "Solution" },
               { href: "#decisions", label: "Decisions" },
@@ -166,7 +277,7 @@ export default function ComputisCaseStudy() {
       </div>
 
       <div className="max-w-[1200px] mx-auto px-6 mt-4 relative z-10">
-        <div className="bg-white/80 backdrop-blur-sm rounded-card p-4 shadow-precision-sm transition-all duration-200 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E3E8EF]">
+        <div className="bg-white/80 backdrop-blur-sm rounded-card p-6 shadow-precision-sm transition-all duration-200 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-600 border border-[#E3E8EF]">
           <button
             onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
             className="w-full flex items-center justify-between group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-precision-accent focus-visible:ring-offset-2 rounded-sm p-1 -m-1"
@@ -188,16 +299,8 @@ export default function ComputisCaseStudy() {
               id="summary-content"
               className="mt-4 animate-in fade-in-0 slide-in-from-top-4 duration-500"
             >
-              <div className="space-y-3">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
-                  <div>
-                    <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
-                      Role
-                    </span>
-                    <p className="text-precision-text-primary mt-1">
-                      Founding Lead Product Designer
-                    </p>
-                  </div>
+              <div className="space-y-4">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
                   <div>
                     <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider">
                       Duration
@@ -228,7 +331,7 @@ export default function ComputisCaseStudy() {
                   <span className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-2 block">
                     Tools & Team
                   </span>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                     <div>
                       <span className="font-medium text-precision-text-primary">
                         Tools:
@@ -255,13 +358,10 @@ export default function ComputisCaseStudy() {
 
       <main
         id="main-content"
-        className="max-w-[1200px] mx-auto px-6 pb-16 space-y-8 relative z-10"
+        className="max-w-[1200px] mx-auto px-6 pb-16 space-y-10 relative z-10"
       >
         {/* PROBLEM SECTION */}
-        <section
-          id="problem"
-          className="section-animate scroll-mt-24 mt-6"
-        >
+        <section id="problem" className="section-animate scroll-mt-24 mt-6">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               The Problem
@@ -270,52 +370,237 @@ export default function ComputisCaseStudy() {
             <div className="insight-callout insight-callout--key mb-6">
               <div className="insight-callout__header">
                 <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
+                <p className="insight-callout__label insight-callout__label--key">
+                  TL;DR
+                </p>
               </div>
               <p className="insight-callout__text">
-                CPAs spent 95% of time on repetitive classification. They needed AI that automates routine work while preserving professional judgment for IRS liability.
+                CPAs spent 95% of time on repetitive classification. They needed
+                AI that automates routine work while preserving professional
+                judgment for IRS liability.
               </p>
             </div>
 
             {/* Pain Point Visual */}
             <div className="case-study-image mb-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8e12d536c9994664a66dc416aeaa9db6?format=webp&width=2000"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffb144b7c7d4d4a4383dab85bad19238c?format=webp&width=2400"
                 alt="CPA Time Allocation - Before: 95% manual classification vs After: 85% reduction with Computis AI"
                 loading="eager"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8e12d536c9994664a66dc416aeaa9db6?format=webp&width=2000')}
+                onClick={() =>
+                  setLightboxImage(
+                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ffb144b7c7d4d4a4383dab85bad19238c?format=webp&width=2400",
+                  )
+                }
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                <span className="case-study-image__zoom-hint">
+                  Click to enlarge
+                </span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 1: CPA workflow transformation — from 95% manual work to 15% review-only
+              Figure 1: CPA workflow transformation
             </p>
 
-            <div className="mt-6">
-              <p className="text-base text-precision-text-primary leading-relaxed mb-4">
-                Computis had a functional crypto tax platform—but CPAs spent <strong>95% of time on manual classification</strong> instead of high-value tax strategy and client consultation.
-              </p>
-            </div>
-
-            <div className="insight-callout insight-callout--warning mt-6">
-              <div className="insight-callout__header">
-                <Lightbulb className="w-5 h-5 text-precision-error" />
-                <p className="text-sm font-bold uppercase tracking-wider text-precision-error">Key Insight</p>
+            <div className="mt-6 pl-6 border-l-4 border-precision-error bg-[#FDEEEE]/40 rounded-r-lg p-4 text-left">
+              <div className="flex items-start gap-4">
+                <Lightbulb className="w-5 h-5 text-precision-error mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-sm font-bold uppercase tracking-wider text-precision-error mb-2 text-left">
+                    Core Insight
+                  </p>
+                  <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0">
+                    <strong>
+                      This wasn't a UX problem—it was a trust problem.
+                    </strong>{" "}
+                    CPAs are personally liable for classifications. They needed
+                    to explain decisions to the IRS, not accept black-box
+                    outputs.
+                  </p>
+                </div>
               </div>
-              <p className="insight-callout__text">
-                <strong>This wasn't a UX problem—it was a trust problem.</strong> CPAs are personally liable for classifications. They needed to explain decisions to the IRS, not accept black-box outputs.
-              </p>
             </div>
           </div>
         </section>
 
+        {/* STRATEGIC INSIGHT CALLOUT - Moved here for early framing */}
+        <section className="section-animate scroll-mt-24 mt-8">
+          <div className="bg-gradient-to-r from-[#0A2540] to-[#1E3A5F] rounded-card p-6 shadow-precision-md border-2 border-[#00D4AA]">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 bg-[#00D4AA]/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <Lightbulb className="w-5 h-5 text-[#00D4AA]" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold font-heading text-white mb-2">
+                  Strategic Framing
+                </h3>
+                <p className="text-base text-white/90 leading-relaxed">
+                  In regulated domains,{" "}
+                  <span className="text-[#00D4AA] font-semibold">
+                    AI transparency isn't a feature—it's the product.
+                  </span>{" "}
+                  Augmentation beats automation when professionals retain
+                  control.
+                </p>
+                <p className="text-sm text-white/70 mt-2 flex items-center gap-2">
+                  <span className="inline-block w-1.5 h-1.5 bg-[#00D4AA] rounded-full"></span>
+                  Human-in-the-loop isn't a weakness—it's how you earn trust in
+                  high-stakes AI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section Divider */}
+        <div
+          className="my-10 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
+        {/* PROJECT TIMELINE SECTION */}
+        <section className="section-animate scroll-mt-24">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
+              Project Timeline
+            </h2>
+
+            {/* Project Timeline Visual */}
+            <div className="case-study-image mb-6">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4e765d94e6274773be00450fbc4ed410?format=webp&width=2400"
+                alt="Project timeline showing 5 phases over 10 months: Discovery & Scoping, Research Synthesis, Design Iteration, Build & Testing, Launch & Scale"
+                loading="lazy"
+                onClick={() =>
+                  setLightboxImage(
+                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F4e765d94e6274773be00450fbc4ed410?format=webp&width=2400",
+                  )
+                }
+              />
+              <div className="case-study-image__overlay">
+                <span className="case-study-image__zoom-hint">
+                  Click to enlarge
+                </span>
+              </div>
+            </div>
+            <p className="case-study-image__caption">
+              Figure 2: 10-month project timeline with 5 key phases
+            </p>
+          </div>
+        </section>
+
+        {/* Section Divider */}
+        <div
+          className="my-10 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
+        {/* MY ROLE & RESPONSIBILITIES SECTION */}
+        <section id="role" className="section-animate scroll-mt-24">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-6">
+              My Role & Responsibilities
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Left Column */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Users className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      Position
+                    </h3>
+                    <p className="text-base text-precision-text-primary font-medium">
+                      Lead Product Designer
+                    </p>
+                    <p className="text-sm text-precision-text-secondary">
+                      End-to-end AI feature design, research through
+                      implementation
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Target className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      Research & Discovery
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      Led 12 CPA interviews, analyzed 50K+ transactions,
+                      identified AI opportunities
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Sparkles className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      AI Feature Design
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      3-tier confidence system, explainability UI, trust-first
+                      flows
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Eye className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      Design System
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      Unified system, high-fidelity prototypes, design-dev
+                      handoff
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      Validation & Testing
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      Usability sessions, measured 89% AI acceptance, CPA
+                      feedback loops
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Shield className="w-5 h-5 text-precision-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-sm font-semibold text-precision-text-secondary uppercase tracking-wider mb-1">
+                      Key Achievement
+                    </h3>
+                    <p className="text-sm text-precision-text-primary">
+                      89% CPA trust rate with IRS-compliant audit trail system
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section Divider */}
+        <div
+          className="my-10 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
         {/* RESEARCH SECTION */}
-        <section
-          id="research"
-          className="section-animate scroll-mt-24"
-        >
+        <section id="research" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Research Foundation
@@ -324,323 +609,898 @@ export default function ComputisCaseStudy() {
             <div className="insight-callout insight-callout--key mb-6">
               <div className="insight-callout__header">
                 <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
+                <p className="insight-callout__label insight-callout__label--key">
+                  TL;DR
+                </p>
               </div>
               <p className="insight-callout__text">
-                12 CPA interviews + 50,000 transaction analysis revealed 73% of work followed predictable patterns—perfect for AI augmentation.
+                12 CPA interviews + 50,000 transaction analysis revealed 73% of
+                work followed predictable patterns—perfect for AI augmentation.
               </p>
             </div>
 
             {/* Research Approach Visual */}
             <div className="case-study-image mb-6">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1de73014351b4dfab1ecb9254282b45c?format=webp&width=2000"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1716d0afb38b4317a6918302b42bafbc?format=webp&width=2400"
                 alt="4-phase research methodology: Discovery, Analysis, Ideation, Validation"
                 loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1de73014351b4dfab1ecb9254282b45c?format=webp&width=2000')}
+                onClick={() =>
+                  setLightboxImage(
+                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1716d0afb38b4317a6918302b42bafbc?format=webp&width=2400",
+                  )
+                }
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                <span className="case-study-image__zoom-hint">
+                  Click to enlarge
+                </span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 2: 4-phase research approach — from discovery to validated prototypes
+              Figure 3: 4-phase research methodology
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm">
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4 flex items-center gap-2">
                   <Users className="w-4 h-4 text-precision-accent" />
                   User Research
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span><strong>12 CPA interviews</strong> — trust requirements</span>
+                    <span>
+                      <strong>12 CPA interviews</strong> — trust requirements
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span><strong>6 full-day observations</strong> — workflow mapping</span>
+                    <span>
+                      <strong>6 full-day observations</strong> — workflow
+                      mapping
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-accent mt-1 flex-shrink-0" />
-                    <span><strong>4 usability test cycles</strong> — AI interactions</span>
+                    <span>
+                      <strong>4 usability test cycles</strong> — AI interactions
+                    </span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm">
-                <h3 className="text-base font-semibold text-precision-text-primary mb-3 flex items-center gap-2">
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4 flex items-center gap-2">
                   <TrendingUp className="w-4 h-4 text-precision-secondary" />
                   Data Analysis
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
-                    <span><strong>50,000+ transactions</strong> analyzed</span>
+                    <span>
+                      <strong>50,000+ transactions</strong> analyzed
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
-                    <span><strong>73% predictability</strong> rate discovered</span>
+                    <span>
+                      <strong>73% predictability</strong> rate discovered
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5 text-sm text-precision-text-primary">
                     <CheckCircle className="w-4 h-4 text-precision-secondary mt-1 flex-shrink-0" />
-                    <span><strong>300+ G2 reviews</strong> analyzed</span>
+                    <span>
+                      <strong>300+ G2 reviews</strong> analyzed
+                    </span>
                   </li>
                 </ul>
               </div>
             </div>
 
             {/* Research Quotes Gallery */}
-            <div className="case-study-image mt-6">
+            <div className="case-study-image mt-12">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F51e94f2283194dcf83568fb5e2f9e749?format=webp&width=2000"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc16ff6d62dda40b3bb78207aea59fa36?format=webp&width=2400"
                 alt="Gallery of CPA interview quotes highlighting trust concerns, control needs, and AI skepticism"
                 loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F51e94f2283194dcf83568fb5e2f9e749?format=webp&width=2000')}
+                onClick={() =>
+                  setLightboxImage(
+                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc16ff6d62dda40b3bb78207aea59fa36?format=webp&width=2400",
+                  )
+                }
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                <span className="case-study-image__zoom-hint">
+                  Click to enlarge
+                </span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 3: Key insights from CPA interviews — trust, control, and professional liability
+              Figure 4: Key insights from CPA interviews
             </p>
-          </div>
-        </section>
 
-        {/* SOLUTION SECTION */}
-        <section
-          id="solution"
-          className="section-animate scroll-mt-24"
-        >
-          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
-            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
-              The Solution: 3-Tier AI Confidence System
-            </h2>
-
-            <div className="insight-callout insight-callout--key mb-6">
-              <div className="insight-callout__header">
-                <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
+            {/* CPA Workflow Journey Map - Elevated */}
+            <div className="mt-12 bg-gradient-to-br from-[#E0F9F4]/20 to-[#E8F4FA]/20 rounded-2xl p-8 border-2 border-precision-accent/20 relative overflow-hidden signature-accent">
+              <h3 className="text-sm font-semibold text-precision-accent uppercase tracking-wider mb-4">
+                Research Synthesis
+              </h3>
+              <div className="case-study-image">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400"
+                  alt="CPA workflow journey map showing 5 phases with emotion curve and pain points"
+                  loading="lazy"
+                  onClick={() =>
+                    setLightboxImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F915ad7e586fb40fe89c067803a1c1932?format=webp&width=2400",
+                    )
+                  }
+                />
+                <div className="case-study-image__overlay">
+                  <span className="case-study-image__zoom-hint">
+                    Click to enlarge
+                  </span>
+                </div>
               </div>
-              <p className="insight-callout__text">
-                Designed tiered AI confidence system that reduced manual classification by 85% while maintaining CPA professional control through graduated autonomy.
+              <p className="case-study-image__caption mt-4">
+                Figure 5: CPA workflow journey map
               </p>
             </div>
 
-            {/* Confidence Tier Visualization */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="confidence-tier confidence-tier--high shadow-precision-sm">
-                <span className="confidence-tier__badge confidence-tier__badge--high">
-                  ≥90% Confidence
-                </span>
-                <h3 className="text-lg font-bold text-green-700 mb-2">High Confidence</h3>
-                <p className="text-sm text-precision-text-primary mb-3">Auto-classified</p>
-                <p className="text-xs text-precision-text-secondary leading-relaxed">
-                  CPAs trusted AI completely. No review needed. IRS-ready documentation generated.
-                </p>
-                <p className="text-2xl font-bold text-green-600 mt-3">89%</p>
-                <p className="text-xs text-green-600">Acceptance rate</p>
-              </div>
-
-              <div className="confidence-tier confidence-tier--medium shadow-precision-sm">
-                <span className="confidence-tier__badge confidence-tier__badge--medium">
-                  60-89% Confidence
-                </span>
-                <h3 className="text-lg font-bold text-yellow-700 mb-2">Medium Confidence</h3>
-                <p className="text-sm text-precision-text-primary mb-3">Review queue</p>
-                <p className="text-xs text-precision-text-secondary leading-relaxed">
-                  Flagged for human review. AI provides hypothesis + rationale. CPA makes final call.
-                </p>
-                <p className="text-2xl font-bold text-yellow-600 mt-3">11%</p>
-                <p className="text-xs text-yellow-600">Override rate</p>
-              </div>
-
-              <div className="confidence-tier confidence-tier--low shadow-precision-sm">
-                <span className="confidence-tier__badge confidence-tier__badge--low">
-                  &lt;60% Confidence
-                </span>
-                <h3 className="text-lg font-bold text-red-700 mb-2">Low Confidence</h3>
-                <p className="text-sm text-precision-text-primary mb-3">Manual required</p>
-                <p className="text-xs text-precision-text-secondary leading-relaxed">
-                  AI admits uncertainty. Full CPA manual classification with context preservation.
-                </p>
-                <p className="text-2xl font-bold text-red-600 mt-3">15%</p>
-                <p className="text-xs text-red-600">Manual work</p>
-              </div>
-            </div>
-
-            {/* CPA Workflow Journey Map */}
-            <div className="case-study-image mb-6">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F56aa33666a104a019f1f762a459eb924?format=webp&width=2000"
-                alt="CPA workflow journey map showing 5 phases with emotion curve and pain points"
-                loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F56aa33666a104a019f1f762a459eb924?format=webp&width=2000')}
-              />
-              <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">Click to enlarge</span>
-              </div>
-            </div>
-            <p className="case-study-image__caption">
-              Figure 4: CPA workflow journey — mapping pain points and AI intervention opportunities
-            </p>
-
             {/* Competitive Analysis */}
-            <div className="case-study-image mt-6">
+            <div className="case-study-image mt-12">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8ab57b107e964f45b4ed64272fe091e9?format=webp&width=2000"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400"
                 alt="Competitive feature comparison matrix showing Computis advantages in AI transparency and professional control"
                 loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8ab57b107e964f45b4ed64272fe091e9?format=webp&width=2000')}
+                onClick={() =>
+                  setLightboxImage(
+                    "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F22c7c8ff6aa74095bfd48ef4ab12886e?format=webp&width=2400",
+                  )
+                }
               />
               <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">Click to enlarge</span>
+                <span className="case-study-image__zoom-hint">
+                  Click to enlarge
+                </span>
               </div>
             </div>
             <p className="case-study-image__caption">
-              Figure 5: Competitive analysis — Computis differentiation through explainable AI
-            </p>
-
-            {/* Information Architecture */}
-            <div className="case-study-image mt-6">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa3f8e240afaa45b4ba527d25602e6f36?format=webp&width=2000"
-                alt="Information architecture diagram showing AI feature integration across platform"
-                loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa3f8e240afaa45b4ba527d25602e6f36?format=webp&width=2000')}
-              />
-              <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">Click to enlarge</span>
-              </div>
-            </div>
-            <p className="case-study-image__caption">
-              Figure 6: Platform information architecture — AI touchpoints throughout workflow
-            </p>
-
-            {/* AI Features */}
-            <div className="mt-8 space-y-6">
-              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
-                Four AI Capabilities
-              </h3>
-
-              {/* Feature 1: Classification */}
-              <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="w-5 h-5 text-precision-accent" />
-                  </div>
-                  <h4 className="text-lg font-bold font-heading text-precision-text-primary">
-                    Intelligent Transaction Classification
-                  </h4>
-                </div>
-
-                <FeatureCards
-                  problem="Manual classification consumed 60%+ of CPA time"
-                  solution="ML-driven auto-classification with 3-tier confidence (≥90%: auto, 60-89%: review, <60%: manual)"
-                  impact="↓85% manual work | ↑150% error detection"
-                />
-
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="AI Classification confidence indicators demonstration"
-                />
-              </div>
-
-              {/* Feature 2: Audit Trail */}
-              <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
-                    <Eye className="w-5 h-5 text-precision-secondary" />
-                  </div>
-                  <h4 className="text-lg font-bold font-heading text-precision-text-primary">
-                    Explainable Audit Trail
-                  </h4>
-                </div>
-
-                <FeatureCards
-                  problem="No visibility into AI decisions—CPAs maintained separate documentation"
-                  solution="AI-generated audit logs with classification changes, rationale, timestamps, and IRS-ready exports"
-                  impact="↓40% compliance prep | Self-service audit defense"
-                />
-
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Audit Trail System demonstration"
-                />
-              </div>
-
-              {/* Feature 3: Rule Builder */}
-              <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
-                    <Settings className="w-5 h-5 text-precision-success" />
-                  </div>
-                  <h4 className="text-lg font-bold font-heading text-precision-text-primary">
-                    Smart Rule Builder
-                  </h4>
-                </div>
-
-                <FeatureCards
-                  problem="Every rule change required engineering tickets (2-5 day wait)"
-                  solution="No-code visual rule builder with drag-and-drop logic, live preview, and AI-suggested rules"
-                  impact="12% → 67% adoption (5.5x) | 15min → 90sec creation | ↑32% conversions"
-                />
-
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Smart Rule Builder demonstration"
-                />
-              </div>
-
-              {/* Feature 4: Anomaly Detection */}
-              <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
-                    <AlertTriangle className="w-5 h-5 text-precision-error" />
-                  </div>
-                  <h4 className="text-lg font-bold font-heading text-precision-text-primary">
-                    Real-Time Anomaly Detection
-                  </h4>
-                </div>
-
-                <FeatureCards
-                  problem="Errors discovered too late—after export or client delivery"
-                  solution="ML-powered detection with severity-tiered flags (Error/Warning/Info) that warn but don't block"
-                  impact="↑150% error detection | Zero FMV disputes"
-                />
-
-                <VideoOverlay
-                  videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
-                  ariaLabel="Anomaly Detection Engine demonstration"
-                />
-              </div>
-            </div>
-
-            {/* UI Evolution */}
-            <div className="case-study-image mt-8">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa6260d073e4549a18738fa5e8680edde?format=webp&width=2000"
-                alt="Transaction classification UI evolution showing before and after AI integration"
-                loading="lazy"
-                onClick={() => setLightboxImage('https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa6260d073e4549a18738fa5e8680edde?format=webp&width=2000')}
-              />
-              <div className="case-study-image__overlay">
-                <span className="case-study-image__zoom-hint">Click to enlarge</span>
-              </div>
-            </div>
-            <p className="case-study-image__caption">
-              Figure 7: UI evolution — before/after AI integration with confidence indicators
+              Figure 6: Competitive feature comparison
             </p>
           </div>
         </section>
 
-        {/* KEY DECISIONS SECTION */}
+        {/* Section Divider */}
+        <div
+          className="my-10 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
+        {/* SOLUTION SECTION */}
+        <section id="solution" className="section-animate scroll-mt-24">
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
+              Design Solutions
+            </h2>
+
+            {/* 3-Tier AI Confidence System Subsection */}
+            <div className="mt-8 space-y-6">
+              <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+                The Solution: 3-Tier AI Confidence System
+              </h3>
+
+              <div className="insight-callout insight-callout--key mb-6">
+                <div className="insight-callout__header">
+                  <Target className="w-5 h-5 text-[#0A7A5E]" />
+                  <p className="insight-callout__label insight-callout__label--key">
+                    TL;DR
+                  </p>
+                </div>
+                <p className="insight-callout__text">
+                  Designed tiered AI confidence system that reduced manual
+                  classification by 85% while maintaining CPA professional
+                  control through graduated autonomy.
+                </p>
+              </div>
+
+              {/* Confidence Tier Visualization */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div className="confidence-tier confidence-tier--high shadow-precision-sm flex flex-col">
+                  <span className="confidence-tier__badge confidence-tier__badge--high mx-auto">
+                    ≥90% Confidence
+                  </span>
+                  <h3 className="text-base font-medium text-green-700 mx-auto mb-1">
+                    High Confidence
+                  </h3>
+                  <p className="text-xs text-precision-text-primary mx-auto mb-2">
+                    Auto-classified
+                  </p>
+                  <p className="text-xs text-precision-text-secondary leading-snug text-center">
+                    CPAs trusted AI completely. No review needed. IRS-ready
+                    documentation generated.
+                  </p>
+                  <p className="text-3xl font-bold text-green-600 mx-auto mt-2">
+                    89%
+                  </p>
+                  <p className="text-sm font-medium text-green-600 mx-auto">
+                    Acceptance rate
+                  </p>
+                </div>
+
+                <div className="confidence-tier confidence-tier--medium shadow-precision-sm flex flex-col">
+                  <span className="confidence-tier__badge confidence-tier__badge--medium mx-auto">
+                    60-89% Confidence
+                  </span>
+                  <h3 className="text-base font-medium text-yellow-700 mx-auto mb-1">
+                    Medium Confidence
+                  </h3>
+                  <p className="text-xs text-precision-text-primary mx-auto mb-2">
+                    Review queue
+                  </p>
+                  <p className="text-xs text-precision-text-secondary leading-snug text-center">
+                    Flagged for human review. AI provides hypothesis +
+                    rationale. CPA makes final call.
+                  </p>
+                  <p className="text-3xl font-bold text-yellow-600 mx-auto mt-2">
+                    11%
+                  </p>
+                  <p className="text-sm font-medium text-yellow-600 mx-auto">
+                    Override rate
+                  </p>
+                </div>
+
+                <div className="confidence-tier confidence-tier--low shadow-precision-sm flex flex-col">
+                  <span className="confidence-tier__badge confidence-tier__badge--low mx-auto">
+                    &lt;60% Confidence
+                  </span>
+                  <h3 className="text-base font-medium text-red-700 mx-auto mb-1">
+                    Low Confidence
+                  </h3>
+                  <p className="text-xs text-precision-text-primary mx-auto mb-2">
+                    Manual required
+                  </p>
+                  <p className="text-xs text-precision-text-secondary leading-snug text-center">
+                    AI admits uncertainty. Full CPA manual classification with
+                    context preservation.
+                  </p>
+                  <p className="text-3xl font-bold text-red-600 mx-auto mt-2">
+                    15%
+                  </p>
+                  <p className="text-sm font-medium text-red-600 mx-auto">
+                    Manual work
+                  </p>
+                </div>
+              </div>
+
+              {/* Information Architecture */}
+              <div className="case-study-image mt-12">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F550d96e6817647739d3e9f0d237b8c5d?format=webp&width=2400"
+                  alt="Information architecture diagram showing AI feature integration across platform"
+                  loading="lazy"
+                  onClick={() =>
+                    setLightboxImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F550d96e6817647739d3e9f0d237b8c5d?format=webp&width=2400",
+                    )
+                  }
+                />
+                <div className="case-study-image__overlay">
+                  <span className="case-study-image__zoom-hint">
+                    Click to enlarge
+                  </span>
+                </div>
+              </div>
+              <p className="case-study-image__caption">
+                Figure 7: Platform information architecture
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Section Divider */}
+        <div
+          className="my-10 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
+        {/* FEATURE DEEP DIVES SECTION */}
         <section
-          id="decisions"
+          id="feature-deep-dives"
           className="section-animate scroll-mt-24"
         >
+          <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
+            <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-2">
+              Feature Deep Dives
+            </h2>
+            <div className="insight-callout insight-callout--key mb-6">
+              <div className="insight-callout__header">
+                <Target className="w-5 h-5 text-[#0A7A5E]" />
+                <p className="insight-callout__label insight-callout__label--key">
+                  TL;DR
+                </p>
+              </div>
+              <p className="insight-callout__text">
+                From sketch to production: design system, 4 AI capabilities, and
+                UI screens that drove 89% CPA trust through explainable
+                automation.
+              </p>
+            </div>
+
+            <div id="feature-deep-dives-content">
+              {/* Design Iteration Progression Subsection */}
+              <div className="mt-8 space-y-6">
+                <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+                  Design Iteration Progression
+                </h3>
+
+                <div className="mb-6">
+                  <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0 !max-w-full">
+                    Evolution from initial sketch to LoFi Wireframe—showcasing
+                    the iterative design process for the Transactions screen.
+                  </p>
+                </div>
+
+                {/* Design Iteration Visual */}
+                <div className="case-study-image mt-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1ba60a372b6c46c0af40c07d292bbb74?format=webp&width=2880"
+                    alt="Design iteration progression showing evolution from initial sketch to LoFi wireframe for the Transactions screen"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1ba60a372b6c46c0af40c07d292bbb74?format=webp&width=2880",
+                      )
+                    }
+                  />
+                  <div className="case-study-image__overlay">
+                    <span className="case-study-image__zoom-hint">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+                <p className="case-study-image__caption">
+                  Figure 6.5: Evolution from initial sketch to LoFi wireframe
+                </p>
+              </div>
+
+              {/* Design System Showcase Subsection */}
+              <div className="mt-8 space-y-6">
+                <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+                  Design System Showcase
+                </h3>
+
+                <div className="mb-6">
+                  <p className="text-base text-precision-text-primary leading-relaxed !text-left !mx-0 !max-w-full">
+                    Unified design system covering typography, color,
+                    components, and interaction patterns—enabling rapid
+                    iteration with professional credibility.
+                  </p>
+                </div>
+
+                {/* Design System Visual */}
+                <div className="case-study-image mt-6">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880"
+                    alt="Computis design system showing typography, colors, components, and design tokens"
+                    loading="lazy"
+                    onClick={() =>
+                      setLightboxImage(
+                        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fff1f0f89c6e1415b9ce20100e66f7b63?format=webp&width=2880",
+                      )
+                    }
+                  />
+                  <div className="case-study-image__overlay">
+                    <span className="case-study-image__zoom-hint">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </div>
+                <p className="case-study-image__caption">
+                  Figure 8: Computis design system
+                </p>
+
+                {/* View Full Design System Button */}
+                <div className="flex justify-center mt-6">
+                  <a
+                    href="/computis-design-system-showcase.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#0A2540] text-white font-medium rounded-lg hover:bg-[#1E3A5F] transition-all duration-200 shadow-sm hover:shadow-md"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    View Full Design System
+                  </a>
+                </div>
+              </div>
+
+              {/* Four AI Capabilities - Tabbed Interface */}
+              <div className="mt-8">
+                <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+                  Four AI Capabilities
+                </h3>
+
+                {/* Quick Summary Bullets */}
+                <div className="bg-[#F7F8FA] rounded-lg p-4 mb-6">
+                  <p className="text-xs font-semibold text-precision-text-secondary uppercase tracking-wider mb-3">
+                    Quick Overview
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <div className="flex items-center gap-2 text-sm text-precision-text-primary">
+                      <Sparkles className="w-4 h-4 text-precision-accent flex-shrink-0" />
+                      <span>
+                        <strong>Classification:</strong> 89% trust rate,
+                        auto-categorization
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-precision-text-primary">
+                      <Eye className="w-4 h-4 text-precision-secondary flex-shrink-0" />
+                      <span>
+                        <strong>Audit Trail:</strong> 40% less manual
+                        documentation
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-precision-text-primary">
+                      <Settings className="w-4 h-4 text-precision-success flex-shrink-0" />
+                      <span>
+                        <strong>Rule Builder:</strong> 5.5x adoption increase
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-precision-text-primary">
+                      <AlertTriangle className="w-4 h-4 text-precision-error flex-shrink-0" />
+                      <span>
+                        <strong>Anomaly Detection:</strong> Zero IRS disputes
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tab Navigation */}
+                <div className="flex flex-wrap gap-2 mb-4 border-b border-[#E3E8EF] pb-3">
+                  {[
+                    {
+                      icon: Sparkles,
+                      label: "Classification",
+                      color: "precision-accent",
+                    },
+                    {
+                      icon: Eye,
+                      label: "Audit Trail",
+                      color: "precision-secondary",
+                    },
+                    {
+                      icon: Settings,
+                      label: "Rule Builder",
+                      color: "precision-success",
+                    },
+                    {
+                      icon: AlertTriangle,
+                      label: "Anomaly",
+                      color: "precision-error",
+                    },
+                  ].map((tab, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setActiveCapabilityTab(index)}
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                        activeCapabilityTab === index
+                          ? "bg-precision-accent text-white shadow-sm"
+                          : "bg-white text-precision-text-secondary border border-[#E3E8EF] hover:border-precision-accent/30 hover:text-precision-accent"
+                      }`}
+                    >
+                      <tab.icon className="w-4 h-4" />
+                      {tab.label}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Tab Content Panels */}
+                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
+                  {activeCapabilityTab === 0 && (
+                    <div className="animate-in fade-in-0 duration-300">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                          <Sparkles className="w-6 h-6 text-precision-accent" />
+                        </div>
+                        <div>
+                          <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                            Intelligent Transaction Classification
+                          </h4>
+                          <p className="text-sm text-precision-text-secondary">
+                            Auto-categorize crypto transactions with confidence
+                            scores
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-baseline gap-2 mb-4">
+                        <p className="text-3xl font-bold text-precision-accent">
+                          89%
+                        </p>
+                        <p className="text-sm text-precision-text-secondary">
+                          CPAs trust AI classifications immediately
+                        </p>
+                      </div>
+                      <ul className="text-sm text-precision-text-primary space-y-1.5 mb-4 pl-4">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-accent mt-0.5 flex-shrink-0" />
+                          Pattern matching across 50K+ historical transactions
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-accent mt-0.5 flex-shrink-0" />
+                          Confidence-tiered review queue (high/medium/low)
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-accent mt-0.5 flex-shrink-0" />
+                          One-click override with rationale capture
+                        </li>
+                      </ul>
+                      <VideoOverlay
+                        videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ff461feda4ee1490189116edd690bea23?alt=media&token=87afea48-1862-4a8e-86ea-389e8372b214&apiKey=ba69a23156414a589de97341511272c9"
+                        ariaLabel="AI Classification confidence indicators demonstration"
+                      />
+                    </div>
+                  )}
+
+                  {activeCapabilityTab === 1 && (
+                    <div className="animate-in fade-in-0 duration-300">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
+                          <Eye className="w-6 h-6 text-precision-secondary" />
+                        </div>
+                        <div>
+                          <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                            Explainable Audit Trail
+                          </h4>
+                          <p className="text-sm text-precision-text-secondary">
+                            IRS-ready documentation with AI reasoning
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-baseline gap-2 mb-4">
+                        <p className="text-3xl font-bold text-precision-secondary">
+                          ↓40%
+                        </p>
+                        <p className="text-sm text-precision-text-secondary">
+                          Eliminates manual audit trail documentation
+                        </p>
+                      </div>
+                      <ul className="text-sm text-precision-text-primary space-y-1.5 mb-4 pl-4">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-secondary mt-0.5 flex-shrink-0" />
+                          AI explains "why" for every classification decision
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-secondary mt-0.5 flex-shrink-0" />
+                          Timestamped change log with user attribution
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-secondary mt-0.5 flex-shrink-0" />
+                          Export-ready for IRS Form 8949 with metadata
+                        </li>
+                      </ul>
+                      <VideoOverlay
+                        videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F0aa25b94f0704523b38a099daf6ee976?alt=media&token=d60e1a15-62e9-450b-b0b6-31613f1e41ef&apiKey=ba69a23156414a589de97341511272c9"
+                        ariaLabel="Audit Trail System demonstration"
+                      />
+                    </div>
+                  )}
+
+                  {activeCapabilityTab === 2 && (
+                    <div className="animate-in fade-in-0 duration-300">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                          <Settings className="w-6 h-6 text-precision-success" />
+                        </div>
+                        <div>
+                          <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                            Smart Rule Builder
+                          </h4>
+                          <p className="text-sm text-precision-text-secondary">
+                            Self-service automation without coding
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-baseline gap-2 mb-4">
+                        <p className="text-3xl font-bold text-precision-success">
+                          5.5x
+                        </p>
+                        <p className="text-sm text-precision-text-secondary">
+                          Adoption jumped from 12% to 67%
+                        </p>
+                      </div>
+                      <ul className="text-sm text-precision-text-primary space-y-1.5 mb-4 pl-4">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-success mt-0.5 flex-shrink-0" />
+                          Visual drag-and-drop rule creation
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-success mt-0.5 flex-shrink-0" />
+                          Pre-built templates for common patterns
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-success mt-0.5 flex-shrink-0" />
+                          Rules improve AI training over time
+                        </li>
+                      </ul>
+                      <VideoOverlay
+                        videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa8614886261748bb94f6226028854554?alt=media&token=a09d99a7-4cc5-4004-a069-ae3e9088821e&apiKey=ba69a23156414a589de97341511272c9"
+                        ariaLabel="Smart Rule Builder demonstration"
+                      />
+                    </div>
+                  )}
+
+                  {activeCapabilityTab === 3 && (
+                    <div className="animate-in fade-in-0 duration-300">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 bg-[#FDEEEE] rounded-full flex items-center justify-center flex-shrink-0">
+                          <AlertTriangle className="w-6 h-6 text-precision-error" />
+                        </div>
+                        <div>
+                          <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                            Real-Time Anomaly Detection
+                          </h4>
+                          <p className="text-sm text-precision-text-secondary">
+                            Catch errors before IRS filing
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-baseline gap-2 mb-4">
+                        <p className="text-3xl font-bold text-precision-error">
+                          Zero
+                        </p>
+                        <p className="text-sm text-precision-text-secondary">
+                          Fair market value discrepancies with IRS
+                        </p>
+                      </div>
+                      <ul className="text-sm text-precision-text-primary space-y-1.5 mb-4 pl-4">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-error mt-0.5 flex-shrink-0" />
+                          Price validation against 10+ data sources
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-error mt-0.5 flex-shrink-0" />
+                          Missing cost basis detection and alerts
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-precision-error mt-0.5 flex-shrink-0" />
+                          Wash sale rule violation flagging
+                        </li>
+                      </ul>
+                      <VideoOverlay
+                        videoSrc="https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F3bbe062155dd44f39a551875b4c99ff9?alt=media&token=f768e0a7-6142-4898-9d89-b2f0c86f24e9&apiKey=ba69a23156414a589de97341511272c9"
+                        ariaLabel="Anomaly Detection Engine demonstration"
+                      />
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* UI Evolution */}
+              <div className="case-study-image mt-8">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa6260d073e4549a18738fa5e8680edde?format=webp&width=2000"
+                  alt="Transaction classification UI evolution showing before and after AI integration"
+                  loading="lazy"
+                  onClick={() =>
+                    setLightboxImage(
+                      "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa6260d073e4549a18738fa5e8680edde?format=webp&width=2000",
+                    )
+                  }
+                />
+                <div className="case-study-image__overlay">
+                  <span className="case-study-image__zoom-hint">
+                    Click to enlarge
+                  </span>
+                </div>
+              </div>
+              <p className="case-study-image__caption">
+                Figure 9: UI evolution with AI integration
+              </p>
+
+              {/* UI Screens Section - Tabbed Interface */}
+              <div className="mt-12">
+                <h3 className="text-xl font-bold font-heading text-precision-text-primary mb-4">
+                  UI Screens
+                </h3>
+                <p className="text-base text-precision-text-primary leading-relaxed mb-6 !text-left !mx-0 !max-w-full">
+                  Four core screens demonstrating the AI-powered workflow that
+                  transformed CPA cryptocurrency tax operations.
+                </p>
+
+                {/* Tab Navigation */}
+                <div className="flex flex-wrap gap-2 mb-4 border-b border-[#E3E8EF] pb-3">
+                  {[
+                    { icon: TrendingUp, label: "Dashboard" },
+                    { icon: Sparkles, label: "Transactions" },
+                    { icon: AlertTriangle, label: "Anomaly Detection" },
+                    { icon: Shield, label: "Smart Export" },
+                  ].map((tab, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setActiveScreenTab(index)}
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                        activeScreenTab === index
+                          ? "bg-precision-accent text-white shadow-sm"
+                          : "bg-white text-precision-text-secondary border border-[#E3E8EF] hover:border-precision-accent/30 hover:text-precision-accent"
+                      }`}
+                    >
+                      <tab.icon className="w-4 h-4" />
+                      {tab.label}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Tab Content Panels */}
+                <div className="bg-white rounded-card p-6 border border-[#E3E8EF] shadow-sm">
+                  {activeScreenTab === 0 && (
+                    <div className="animate-in fade-in-0 duration-300">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                          <TrendingUp className="w-6 h-6 text-precision-accent" />
+                        </div>
+                        <div>
+                          <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                            Dashboard Overview
+                          </h4>
+                          <p className="text-sm text-precision-text-secondary">
+                            Real-time portfolio metrics with AI confidence
+                            distribution
+                          </p>
+                        </div>
+                      </div>
+                      <div className="case-study-image mt-4">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400"
+                          alt="Dashboard Overview"
+                          loading="lazy"
+                          onClick={() =>
+                            setLightboxImage(
+                              "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F654640b5982b494784a83d94879b2ea7?format=webp&width=2400",
+                            )
+                          }
+                        />
+                        <div className="case-study-image__overlay">
+                          <span className="case-study-image__zoom-hint">
+                            Click to enlarge
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {activeScreenTab === 1 && (
+                    <div className="animate-in fade-in-0 duration-300">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 bg-[#E0F9F4] rounded-full flex items-center justify-center flex-shrink-0">
+                          <Sparkles className="w-6 h-6 text-precision-accent" />
+                        </div>
+                        <div>
+                          <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                            Transactions Management
+                          </h4>
+                          <p className="text-sm text-precision-text-secondary">
+                            AI classification with confidence indicators and
+                            bulk review actions
+                          </p>
+                        </div>
+                      </div>
+                      <div className="case-study-image mt-4">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5b57dab77840440fae175a5817e22984?format=webp&width=2400"
+                          alt="Transactions Management"
+                          loading="lazy"
+                          onClick={() =>
+                            setLightboxImage(
+                              "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5b57dab77840440fae175a5817e22984?format=webp&width=2400",
+                            )
+                          }
+                        />
+                        <div className="case-study-image__overlay">
+                          <span className="case-study-image__zoom-hint">
+                            Click to enlarge
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {activeScreenTab === 2 && (
+                    <div className="animate-in fade-in-0 duration-300">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 bg-[#FEF3C7] rounded-full flex items-center justify-center flex-shrink-0">
+                          <AlertTriangle className="w-6 h-6 text-precision-error" />
+                        </div>
+                        <div>
+                          <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                            Data Anomaly Detection
+                          </h4>
+                          <p className="text-sm text-precision-text-secondary">
+                            Real-time flagging of data errors before IRS export
+                          </p>
+                        </div>
+                      </div>
+                      <div className="case-study-image mt-4">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F07c913d3c39d4fdab94a3834e53b5715?format=webp&width=2400"
+                          alt="Data Anomaly Detection"
+                          loading="lazy"
+                          onClick={() =>
+                            setLightboxImage(
+                              "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F07c913d3c39d4fdab94a3834e53b5715?format=webp&width=2400",
+                            )
+                          }
+                        />
+                        <div className="case-study-image__overlay">
+                          <span className="case-study-image__zoom-hint">
+                            Click to enlarge
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {activeScreenTab === 3 && (
+                    <div className="animate-in fade-in-0 duration-300">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-12 bg-[#E8F4FA] rounded-full flex items-center justify-center flex-shrink-0">
+                          <Shield className="w-6 h-6 text-precision-secondary" />
+                        </div>
+                        <div>
+                          <h4 className="text-base font-semibold font-heading text-precision-text-primary">
+                            Smart Export System
+                          </h4>
+                          <p className="text-sm text-precision-text-secondary">
+                            IRS-ready Form 8949 and audit trails with embedded
+                            metadata
+                          </p>
+                        </div>
+                      </div>
+                      <div className="case-study-image mt-4">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcdefa1985ff7455fb25e1a135cd661f6?format=webp&width=2400"
+                          alt="Smart Export System"
+                          loading="lazy"
+                          onClick={() =>
+                            setLightboxImage(
+                              "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fcdefa1985ff7455fb25e1a135cd661f6?format=webp&width=2400",
+                            )
+                          }
+                        />
+                        <div className="case-study-image__overlay">
+                          <span className="case-study-image__zoom-hint">
+                            Click to enlarge
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section Divider */}
+        <div
+          className="my-10 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
+        {/* KEY DECISIONS SECTION */}
+        <section id="decisions" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Key Design Decisions
@@ -649,66 +1509,124 @@ export default function ComputisCaseStudy() {
             <div className="insight-callout insight-callout--key mb-6">
               <div className="insight-callout__header">
                 <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
+                <p className="insight-callout__label insight-callout__label--key">
+                  TL;DR
+                </p>
               </div>
               <p className="insight-callout__text">
-                Four critical trade-offs balanced automation with professional control. Transparency over speed won enterprise deals.
+                Four critical trade-offs balanced automation with professional
+                control. Transparency over speed won enterprise deals.
               </p>
             </div>
 
-            <div className="bg-white rounded-card border border-[#E3E8EF] overflow-x-auto shadow-sm">
-              <table className="decisions-table">
-                <thead>
-                  <tr>
-                    <th>Decision</th>
-                    <th>Why</th>
-                    <th>Result</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="decisions-table__decision">Show confidence scores</td>
-                    <td className="decisions-table__why">CPAs need to know "how sure" AI is</td>
-                    <td className="decisions-table__result">89% trust rate</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__decision">Review queue vs auto-apply all</td>
-                    <td className="decisions-table__why">Medium confidence = human context needed</td>
-                    <td className="decisions-table__result">11% meaningful overrides</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__decision">Async rationale loading</td>
-                    <td className="decisions-table__why">Balance speed with transparency</td>
-                    <td className="decisions-table__result">"Explainable AI" differentiator</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__decision">Override always allowed</td>
-                    <td className="decisions-table__why">Professional liability protection</td>
-                    <td className="decisions-table__result">CPA control preserved</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Decision 1 */}
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left">
+                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
+                  Decision
+                </p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
+                  Show confidence scores
+                </h3>
+                <p className="text-sm text-precision-text-secondary mb-4">
+                  CPAs need to know "how sure" AI is
+                </p>
+                <div className="pt-3 border-t border-[#E3E8EF]">
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
+                    Result
+                  </p>
+                  <p className="text-base font-semibold text-precision-success">
+                    89% trust rate
+                  </p>
+                </div>
+              </div>
+
+              {/* Decision 2 */}
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left">
+                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                  Decision
+                </p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
+                  Review queue vs auto-apply all
+                </h3>
+                <p className="text-sm text-precision-text-secondary mb-4">
+                  Medium confidence = human context needed
+                </p>
+                <div className="pt-3 border-t border-[#E3E8EF]">
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
+                    Result
+                  </p>
+                  <p className="text-base font-semibold text-precision-success">
+                    11% meaningful overrides
+                  </p>
+                </div>
+              </div>
+
+              {/* Decision 3 */}
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left">
+                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
+                  Decision
+                </p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
+                  Async rationale loading
+                </h3>
+                <p className="text-sm text-precision-text-secondary mb-4">
+                  Balance speed with transparency
+                </p>
+                <div className="pt-3 border-t border-[#E3E8EF]">
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
+                    Result
+                  </p>
+                  <p className="text-base font-semibold text-precision-success">
+                    "Explainable AI" differentiator
+                  </p>
+                </div>
+              </div>
+
+              {/* Decision 4 */}
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left">
+                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
+                  Decision
+                </p>
+                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
+                  Override always allowed
+                </h3>
+                <p className="text-sm text-precision-text-secondary mb-4">
+                  Professional liability protection
+                </p>
+                <div className="pt-3 border-t border-[#E3E8EF]">
+                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
+                    Result
+                  </p>
+                  <p className="text-base font-semibold text-precision-success">
+                    CPA control preserved
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-card p-6 border-l-4 border-precision-warning shadow-sm">
-                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
+                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-4">
                   Critical Trade-off: Speed vs. Transparency
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-relaxed mb-3">
-                  Removing rationale would cut processing 60%—but competitor "black box" complaints outnumbered speed complaints 3:1.
+                <p className="text-sm text-precision-text-primary leading-relaxed mb-4">
+                  Removing rationale would cut processing 60%—but competitor
+                  "black box" complaints outnumbered speed complaints 3:1.
                 </p>
                 <p className="text-xs font-semibold text-precision-success">
-                  ✓ Chose transparency. Won 3 enterprise deals citing audit defensibility.
+                  ✓ Chose transparency. Won 3 enterprise deals citing audit
+                  defensibility.
                 </p>
               </div>
 
               <div className="bg-white rounded-card p-6 border-l-4 border-precision-accent shadow-sm">
-                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-3">
+                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-4">
                   Stakeholder Alignment
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-relaxed mb-3">
-                  Engineering wanted max automation; CPAs required override capabilities. Tiered system satisfied both.
+                <p className="text-sm text-precision-text-primary leading-relaxed mb-4">
+                  Engineering wanted max automation; CPAs required override
+                  capabilities. Tiered system satisfied both.
                 </p>
                 <p className="text-xs font-semibold text-precision-success">
                   ✓ "Finally, AI that works *with* me" — CPA Beta User
@@ -718,11 +1636,14 @@ export default function ComputisCaseStudy() {
           </div>
         </section>
 
+        {/* Section Divider */}
+        <div
+          className="my-10 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
         {/* BUSINESS IMPACT SECTION */}
-        <section
-          id="impact"
-          className="section-animate scroll-mt-24"
-        >
+        <section id="impact" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Business Impact
@@ -731,10 +1652,13 @@ export default function ComputisCaseStudy() {
             <div className="insight-callout insight-callout--key mb-6">
               <div className="insight-callout__header">
                 <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">TL;DR</p>
+                <p className="insight-callout__label insight-callout__label--key">
+                  TL;DR
+                </p>
               </div>
               <p className="insight-callout__text">
-                85% reduction in manual work, 32% conversion increase, 3 enterprise deals closed. AI features cited in 78% of won deals.
+                85% reduction in manual work, 32% conversion increase, 3
+                enterprise deals closed. AI features cited in 78% of won deals.
               </p>
             </div>
 
@@ -765,94 +1689,184 @@ export default function ComputisCaseStudy() {
               </div>
             </div>
 
-            {/* Quantitative Results */}
-            <div className="bg-white rounded-card border border-[#E3E8EF] overflow-x-auto shadow-sm">
-              <table className="decisions-table">
-                <thead>
-                  <tr>
-                    <th>Metric</th>
-                    <th>Before</th>
-                    <th>After</th>
-                    <th>Change</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="decisions-table__why">Manual classification workload</td>
-                    <td>100% manual</td>
-                    <td>15% manual</td>
-                    <td className="decisions-table__result">↓85%</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__why">CPA onboarding (new client)</td>
-                    <td>2.5 hours</td>
-                    <td>1.4 hours</td>
-                    <td className="decisions-table__result">↓45%</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__why">Demo-to-conversion rate</td>
-                    <td>Baseline</td>
-                    <td>+32%</td>
-                    <td className="decisions-table__result">↑32%</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__why">Error detection accuracy</td>
-                    <td>Baseline</td>
-                    <td>+150%</td>
-                    <td className="decisions-table__result">↑150%</td>
-                  </tr>
-                  <tr>
-                    <td className="decisions-table__why">Audit trail exports</td>
-                    <td>Baseline</td>
-                    <td>+340%</td>
-                    <td className="decisions-table__result">↑340%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-6 bg-gradient-to-r from-[#E0F9F4] to-[#E8F4FA] rounded-card p-6 border-l-4 border-precision-accent">
-              <blockquote className="text-base italic text-precision-text-primary leading-relaxed">
-                "This is the first crypto tax tool I'd stake my license on."
-              </blockquote>
-              <cite className="block text-sm text-precision-accent mt-2 not-italic font-semibold">
-                — Enterprise CPA, Big 4 Partner
-              </cite>
-            </div>
-          </div>
-        </section>
-
-        {/* CORE INSIGHT */}
-        <section className="section-animate scroll-mt-24">
-          <div className="bg-gradient-to-r from-[#0A2540] via-[#1E3A5F] to-[#0A2540] rounded-card p-8 shadow-precision-md hover:shadow-xl transition-all duration-300 border-2 border-[#00D4AA]">
-            <div className="text-center">
-              <h2 className="text-2xl lg:text-3xl font-bold font-heading text-white leading-tight mb-4">
-                The Core Insight
-              </h2>
-              <div className="max-w-[900px] mx-auto">
-                <p className="text-lg text-white/90 leading-relaxed mb-4 font-medium">
-                  In regulated domains, AI transparency isn't a feature—it's the product.
-                  <span className="text-[#00D4AA] font-bold"> Augmentation beats automation</span> when professionals retain control,
-                  <span className="text-[#00D4AA] font-bold"> simplicity beats capability</span> when users actually adopt it,
-                  and <span className="text-[#00D4AA] font-bold">failed experiments teach the most</span>—
-                  CPAs rejected full automation not for accuracy, but to preserve professional judgment.
+            {/* Quantitative Results - Card Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Impact 1 */}
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
+                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mx-auto mb-2">
+                  Metric
                 </p>
-                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-pill border border-white/20">
-                  <Lightbulb className="w-4 h-4 text-[#00D4AA]" />
-                  <span className="text-sm font-semibold text-white">
-                    Human-in-the-loop isn't a weakness—it's how you earn trust in high-stakes AI.
-                  </span>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
+                  Manual classification workload
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      100% manual
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      15% manual
+                    </span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
+                    <p className="text-base font-bold text-precision-success mx-auto">
+                      ↓85%
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Impact 2 */}
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
+                <p className="text-xs font-medium text-precision-secondary uppercase tracking-wider mx-auto mb-2">
+                  Metric
+                </p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
+                  CPA onboarding (new client)
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      2.5 hours
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      1.4 hours
+                    </span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
+                    <p className="text-base font-bold text-precision-success mx-auto">
+                      ↓45%
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Impact 3 */}
+              <div className="bg-gradient-to-br from-[#FEF3E2] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
+                <p className="text-xs font-medium text-precision-warning uppercase tracking-wider mx-auto mb-2">
+                  Metric
+                </p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
+                  Demo-to-conversion rate
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      Baseline
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      +32%
+                    </span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
+                    <p className="text-base font-bold text-precision-success mx-auto">
+                      ↑32%
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Impact 4 */}
+              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
+                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mx-auto mb-2">
+                  Metric
+                </p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
+                  Error detection accuracy
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      Baseline
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      +150%
+                    </span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
+                    <p className="text-base font-bold text-precision-success mx-auto">
+                      ↑150%
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Impact 5 */}
+              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
+                <p className="text-xs font-medium text-precision-secondary uppercase tracking-wider mx-auto mb-2">
+                  Metric
+                </p>
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
+                  Audit trail exports
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      Before
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      Baseline
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs text-precision-text-secondary">
+                      After
+                    </span>
+                    <span className="font-semibold text-precision-text-primary">
+                      +340%
+                    </span>
+                  </div>
+                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
+                    <p className="text-base font-bold text-precision-success mx-auto">
+                      ↑340%
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        {/* Section Divider */}
+        <div
+          className="my-10 border-t border-[#E3E8EF]/50"
+          aria-hidden="true"
+        ></div>
+
         {/* SKILLS SECTION */}
-        <section
-          id="skills"
-          className="section-animate scroll-mt-24"
-        >
+        <section id="skills" className="section-animate scroll-mt-24">
           <div className="bg-white backdrop-blur-xl rounded-card p-6 sm:p-7 lg:p-8 shadow-precision-md hover:shadow-precision-md transition-all duration-200 border border-[#E3E8EF]">
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4 text-center">
               Skills Demonstrated
@@ -875,25 +1889,27 @@ export default function ComputisCaseStudy() {
               <span className="skill-tag">Mixpanel</span>
             </div>
 
-            <div className="mt-8 text-center">
+            <div className="mt-8 flex flex-col items-center text-center">
               <p className="text-sm text-precision-text-secondary mb-4">
                 What I'd do differently next time
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[800px] mx-auto">
-                <div className="bg-white rounded-card p-5 border-l-4 border-precision-accent shadow-sm text-left">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-[800px]">
+                <div className="bg-white rounded-card p-6 border-l-4 border-precision-accent shadow-sm text-left">
                   <h4 className="text-sm font-semibold text-precision-text-primary mb-2">
                     Ship minimal first
                   </h4>
                   <p className="text-xs text-precision-text-secondary leading-relaxed">
-                    Rule builder v1 was too complex. Launch at minimum viable complexity, add power features based on observed demand.
+                    Rule builder v1 was too complex. Launch at minimum viable
+                    complexity, add power features based on observed demand.
                   </p>
                 </div>
-                <div className="bg-white rounded-card p-5 border-l-4 border-precision-secondary shadow-sm text-left">
+                <div className="bg-white rounded-card p-6 border-l-4 border-precision-secondary shadow-sm text-left">
                   <h4 className="text-sm font-semibold text-precision-text-primary mb-2">
                     Document trade-offs explicitly
                   </h4>
                   <p className="text-xs text-precision-text-secondary leading-relaxed">
-                    Create "trade-off memos" for major architectural choices to reduce relitigated debates.
+                    Create "trade-off memos" for major architectural choices to
+                    reduce relitigated debates.
                   </p>
                 </div>
               </div>
@@ -908,22 +1924,60 @@ export default function ComputisCaseStudy() {
 
       {/* Image Lightbox */}
       {lightboxImage && (
-        <div className="image-lightbox" onClick={() => setLightboxImage(null)}>
+        <div
+          className="image-lightbox"
+          onClick={() => setLightboxImage(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Image lightbox - Click anywhere to close"
+        >
           <button
             className="image-lightbox__close"
-            onClick={() => setLightboxImage(null)}
-            aria-label="Close lightbox"
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightboxImage(null);
+            }}
+            aria-label="Close lightbox (ESC)"
+            title="Close (ESC)"
+            autoFocus
           >
-            <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <svg
+              className="w-6 h-6 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
-          <img
-            src={lightboxImage}
-            alt="Enlarged view"
-            className="image-lightbox__image"
-            onClick={(e) => e.stopPropagation()}
-          />
+          <div className="flex items-center justify-center w-full h-full">
+            {lightboxImage.includes(".mov") ||
+            lightboxImage.includes(".mp4") ||
+            lightboxImage.includes("video") ? (
+              <video
+                src={lightboxImage}
+                className="image-lightbox__image"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                onClick={(e) => e.stopPropagation()}
+              />
+            ) : (
+              <img
+                src={lightboxImage}
+                alt="Enlarged screenshot - Full resolution view"
+                className="image-lightbox__image"
+                onClick={(e) => e.stopPropagation()}
+              />
+            )}
+          </div>
         </div>
       )}
 
