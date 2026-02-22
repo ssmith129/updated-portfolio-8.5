@@ -119,6 +119,49 @@ export default function ImpactMetrics() {
           </span>
         </div>
       </div>
+
+      {/* Business Value Estimate */}
+      <div className="mt-6 bg-gradient-to-r from-[#EFF6FF] to-[#F0FDF4] rounded-2xl border border-[#DBEAFE] p-6 sm:p-8">
+        <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-4">
+          Estimated Business Value (Pilot Scale)
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          {[
+            {
+              metric: "~$47K/year saved",
+              detail:
+                "4.4 hrs/wk admin reduction × $41/hr avg × 52 weeks × 5 admin staff",
+            },
+            {
+              metric: "~$31K/year recovered",
+              detail:
+                "2.4% no-show reduction × ~3,200 annual appointments × $400 avg revenue",
+            },
+            {
+              metric: "~957 min/week freed",
+              detail:
+                "57 sec triage savings × ~1,000 weekly triage decisions across 3 facilities",
+            },
+          ].map((v) => (
+            <div
+              key={v.metric}
+              className="bg-white/70 rounded-xl px-5 py-4 border border-[#DBEAFE]/50"
+            >
+              <p className="text-lg font-bold text-[#0F172A] mb-1">
+                {v.metric}
+              </p>
+              <p className="text-xs text-[#64748B] leading-relaxed">
+                {v.detail}
+              </p>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs text-[#94A3B8] italic">
+          Estimates based on pilot data extrapolated to annual figures. Actual
+          values depend on facility size, staffing costs, and appointment
+          volume. Presented as directional indicators, not guarantees.
+        </p>
+      </div>
     </section>
   );
 }

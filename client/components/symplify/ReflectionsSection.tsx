@@ -12,6 +12,27 @@ const misses = [
   "15% of admins still exported to Excel — a change management gap we underestimated.",
 ];
 
+const pilotQuotes = [
+  {
+    text: "For the first time, I don't have to cross-reference three systems to decide what's urgent. The AI gets it right about 9 times out of 10.",
+    cite: "Internal Medicine MD",
+    role: "Doctor",
+    color: "#3B82F6",
+  },
+  {
+    text: "The shift handoff used to take me 20 minutes of phone calls. Now I can see exactly where things stand when I walk in.",
+    cite: "RN Supervisor",
+    role: "Nurse",
+    color: "#10B981",
+  },
+  {
+    text: "I still export to Excel for my monthly board reports — old habits — but I've stopped building them from scratch. The compliance dashboard gets me 80% there.",
+    cite: "Clinical Operations Manager",
+    role: "Admin",
+    color: "#F59E0B",
+  },
+];
+
 const reflections = [
   {
     title: "Trust is a design constraint, not a feature.",
@@ -32,17 +53,32 @@ const reflections = [
 ];
 
 const nextSteps = [
-  { title: "Predictive Staffing Models", detail: "Forecast demand spikes to cut overtime 15-20%" },
-  { title: "Broader EHR Integration", detail: "HL7 FHIR connectors for Epic, Cerner, Allscripts" },
-  { title: "Patient Sentiment Analysis", detail: "Real-time NLP to detect distress signals early" },
-  { title: "Mobile-First Redesign", detail: "Dedicated mobile interaction patterns beyond responsive" },
+  {
+    title: "Predictive Staffing Models",
+    detail: "Forecast demand spikes to cut overtime 15-20%",
+  },
+  {
+    title: "Broader EHR Integration",
+    detail: "HL7 FHIR connectors for Epic, Cerner, Allscripts",
+  },
+  {
+    title: "Patient Sentiment Analysis",
+    detail: "Real-time NLP to detect distress signals early",
+  },
+  {
+    title: "Mobile-First Redesign",
+    detail: "Dedicated mobile interaction patterns beyond responsive",
+  },
 ];
 
 export default function ReflectionsSection() {
   return (
     <>
       {/* What Worked & What Didn't */}
-      <section id="outcomes" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+      <section
+        id="outcomes"
+        className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      >
         <p className="text-xs font-semibold text-[#64748B] uppercase tracking-widest mb-2">
           Honest Assessment
         </p>
@@ -55,7 +91,9 @@ export default function ReflectionsSection() {
           <div className="bg-[#F0FDF4] rounded-2xl border border-[#BBF7D0] p-6">
             <div className="flex items-center gap-2 mb-5">
               <CheckCircle className="w-5 h-5 text-[#10B981]" />
-              <p className="text-sm font-semibold text-[#166534] uppercase tracking-widest">Wins</p>
+              <p className="text-sm font-semibold text-[#166534] uppercase tracking-widest">
+                Wins
+              </p>
             </div>
             <ul className="space-y-4">
               {wins.map((w) => (
@@ -71,7 +109,9 @@ export default function ReflectionsSection() {
           <div className="bg-[#FFFBEB] rounded-2xl border border-[#FDE68A] p-6">
             <div className="flex items-center gap-2 mb-5">
               <AlertTriangle className="w-5 h-5 text-[#F59E0B]" />
-              <p className="text-sm font-semibold text-[#92400E] uppercase tracking-widest">Misses</p>
+              <p className="text-sm font-semibold text-[#92400E] uppercase tracking-widest">
+                Misses
+              </p>
             </div>
             <ul className="space-y-4">
               {misses.map((m) => (
@@ -85,8 +125,41 @@ export default function ReflectionsSection() {
         </div>
       </section>
 
+      {/* Post-Pilot Feedback */}
+      <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
+        <p className="text-xs font-semibold text-[#10B981] uppercase tracking-widest mb-6">
+          In Their Words — Post-Pilot Feedback
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {pilotQuotes.map((q) => (
+            <blockquote
+              key={q.cite}
+              className="bg-white rounded-2xl border border-[#E2E8F0] p-6 shadow-sm flex flex-col justify-between"
+            >
+              <div>
+                <span
+                  className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider text-white mb-3"
+                  style={{ backgroundColor: q.color }}
+                >
+                  {q.role}
+                </span>
+                <p className="text-[15px] text-[#334155] leading-relaxed italic mb-4">
+                  "{q.text}"
+                </p>
+              </div>
+              <cite className="text-xs font-semibold text-[#94A3B8] not-italic uppercase tracking-wider">
+                — {q.cite}
+              </cite>
+            </blockquote>
+          ))}
+        </div>
+      </section>
+
       {/* Reflection */}
-      <section id="reflection" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+      <section
+        id="reflection"
+        className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      >
         <p className="text-xs font-semibold text-[#8B5CF6] uppercase tracking-widest mb-2">
           Takeaways
         </p>
@@ -102,9 +175,13 @@ export default function ReflectionsSection() {
             >
               <div className="flex items-start gap-3 mb-3">
                 <Lightbulb className="w-5 h-5 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                <h3 className="text-[15px] font-semibold text-[#0F172A] leading-snug">{r.title}</h3>
+                <h3 className="text-[15px] font-semibold text-[#0F172A] leading-snug">
+                  {r.title}
+                </h3>
               </div>
-              <p className="text-sm text-[#475569] leading-relaxed pl-8">{r.body}</p>
+              <p className="text-sm text-[#475569] leading-relaxed pl-8">
+                {r.body}
+              </p>
             </div>
           ))}
         </div>
@@ -119,7 +196,10 @@ export default function ReflectionsSection() {
       </section>
 
       {/* Next Steps */}
-      <section id="next-steps" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+      <section
+        id="next-steps"
+        className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      >
         <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
           Looking Ahead
         </p>
@@ -139,7 +219,9 @@ export default function ReflectionsSection() {
               <h3 className="text-sm font-semibold text-[#0F172A] mb-1 group-hover:text-[#3B82F6] transition-colors duration-200">
                 {ns.title}
               </h3>
-              <p className="text-xs text-[#64748B] leading-relaxed">{ns.detail}</p>
+              <p className="text-xs text-[#64748B] leading-relaxed">
+                {ns.detail}
+              </p>
               <ArrowRight className="w-4 h-4 text-[#CBD5E1] mt-3 group-hover:text-[#3B82F6] transition-colors duration-200" />
             </div>
           ))}
