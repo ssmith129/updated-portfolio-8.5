@@ -1,6 +1,3 @@
-// Case Study Component Exports
-export { default as QuickWinsStrip } from "./QuickWinsStrip";
-export { default as SectionTLDR } from "./SectionTLDR";
 export { default as AnnotatedDemo } from "./AnnotatedDemo";
 export { default as BeforeAfterComparison } from "./BeforeAfterComparison";
 export { default as CaseStudyFooterNav } from "./CaseStudyFooterNav";
@@ -9,3 +6,11 @@ export { default as CaseStudySummary } from "./CaseStudySummary";
 export { default as DesignEvolutionShowcase } from "./DesignEvolutionShowcase";
 export { default as DesignSystemSection } from "./DesignSystemSection";
 export { default as ExplorationSection } from "./ExplorationSection";
+export { default as InteractiveImage } from "./InteractiveImage";
+export { default as MyRoleSection } from "./MyRoleSection";
+export { default as ProblemEvidenceContainer } from "./ProblemEvidenceContainer";
+export { default as QuickWinsStrip } from "./QuickWinsStrip";
+export { default as ReadingProgress } from "./ReadingProgress";
+export { default as SectionNav } from "./SectionNav";
+export { default as SectionTLDR } from "./SectionTLDR";
+export { default as VideoWithFallback } from "./VideoWithFallback";

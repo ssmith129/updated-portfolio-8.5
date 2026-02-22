@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { useVideoAutoplayOnVisible } from "../../hooks/use-video-autoplay";
 
 export interface Annotation {
-  time: number; // seconds into the video
-  label?: string; // "Challenge", "Solution", "Impact"
+  time: number;
+  label?: string;
   heading?: string;
   text?: string;
   bullets?: string[];
@@ -18,7 +18,7 @@ interface AnnotatedDemoProps {
   containerClassName?: string;
 }
 
-export default function AnnotatedDemo({
+export function AnnotatedDemo({
   src,
   poster,
   annotations,
@@ -36,8 +36,6 @@ export default function AnnotatedDemo({
 
     const handleTimeUpdate = () => {
       const currentTime = video.currentTime;
-
-      // Find the most recent annotation that should be displayed
       let activeAnnotation: Annotation | null = null;
       for (let i = annotations.length - 1; i >= 0; i--) {
         if (currentTime >= annotations[i].time) {
@@ -45,7 +43,6 @@ export default function AnnotatedDemo({
           break;
         }
       }
-
       setCurrentAnnotation(activeAnnotation);
     };
 
@@ -74,7 +71,6 @@ export default function AnnotatedDemo({
         Your browser does not support the video tag.
       </video>
 
-      {/* Annotation Overlays */}
       {currentAnnotation && (
         <div
           className="absolute inset-0 pointer-events-none flex items-end p-6"
@@ -84,7 +80,6 @@ export default function AnnotatedDemo({
             className="bg-black/70 backdrop-blur-sm rounded-2xl px-5 py-4 max-w-2xl 
                        animate-in fade-in-0 slide-in-from-bottom-4 duration-500"
           >
-            {/* Label (Challenge/Solution/Impact) */}
             {currentAnnotation.label && (
               <div className="flex items-center gap-2 mb-2">
                 <span
@@ -98,25 +93,22 @@ export default function AnnotatedDemo({
                 >
                   {currentAnnotation.label}
                 </span>
-                <div className="flex-1 h-px bg-gradient-to-r from-white/20 to-transparent"></div>
+                <div className="flex-1 h-px bg-gradient-to-r from-white/20 to-transparent" />
               </div>
             )}
 
-            {/* Heading */}
             {currentAnnotation.heading && (
               <h4 className="text-base md:text-lg font-semibold text-white mb-2">
                 {currentAnnotation.heading}
               </h4>
             )}
 
-            {/* Text content */}
             {currentAnnotation.text && (
               <p className="text-sm text-gray-300 leading-relaxed">
                 {currentAnnotation.text}
               </p>
             )}
 
-            {/* Bullet points */}
             {currentAnnotation.bullets && (
               <ul className="space-y-1.5 text-sm text-gray-300">
                 {currentAnnotation.bullets.map((bullet, idx) => (
@@ -135,3 +127,5 @@ export default function AnnotatedDemo({
     </div>
   );
 }
+
+export default AnnotatedDemo;
