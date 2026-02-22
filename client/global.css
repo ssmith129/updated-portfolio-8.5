@@ -10,18 +10,18 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Precision Trust Theme Variables */
+    /* Precision Trust Theme Variables - Light Mode */
     --precision-primary: #0a2540;
     --precision-secondary: #1e3a5f;
-    --precision-accent: #00d4aa;
+    --precision-accent: #00a88a;
     --precision-neutral: #f7f9fc;
     --precision-text-primary: #1a1f36;
     --precision-text-secondary: #697386;
     --precision-error: #e74c3c;
-    --precision-success: #00d4aa;
+    --precision-success: #00a88a;
     --precision-warning: #f39c12;
 
-    /* Precision Trust Shadows */
+    /* Precision Trust Shadows - Light Mode */
     --shadow-sm: 0 1px 3px rgba(10, 37, 64, 0.08);
     --shadow-md: 0 4px 12px rgba(10, 37, 64, 0.12);
 
@@ -78,6 +78,22 @@
   }
 
   .dark {
+    /* Precision Trust Theme Variables - Dark Mode */
+    --precision-primary: #1a1f36;
+    --precision-secondary: #2a3144;
+    --precision-accent: #00a88a;
+    --precision-neutral: #0f1419;
+    --precision-text-primary: #e8eaed;
+    --precision-text-secondary: #9fa3ad;
+    --precision-error: #ff6b6b;
+    --precision-success: #00a88a;
+    --precision-warning: #ffa94d;
+
+    /* Precision Trust Shadows - Dark Mode */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+    /* Shadcn/UI Dark Mode Variables */
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
@@ -119,10 +135,13 @@
 @layer base {
   * {
     @apply border-border;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-precision-neutral text-precision-text-primary;
     font-family:
       "Manrope",
       -apple-system,
@@ -268,114 +287,95 @@
   }
 }
 
-/* ─── Symplify Case Study Microanimations ─── */
+/* ============================================
+   IPAD & TABLET UTILITIES
+   ============================================ */
 
-/* Scroll-reveal base */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+@layer utilities {
+  /* Touch target utilities */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
 
-/* Stagger delays for grid children */
-.stagger-1 { transition-delay: 0.06s; }
-.stagger-2 { transition-delay: 0.12s; }
-.stagger-3 { transition-delay: 0.18s; }
-.stagger-4 { transition-delay: 0.24s; }
-.stagger-5 { transition-delay: 0.30s; }
-.stagger-6 { transition-delay: 0.36s; }
+  .touch-target-lg {
+    @apply min-h-[48px] min-w-[48px];
+  }
 
-/* Subtle card lift on hover */
-.card-lift {
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.card-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
-}
+  /* iPad-specific containers */
+  .container-ipad {
+    @apply max-w-[90vw] mx-auto px-[5vw];
+  }
 
-/* Gentle pulse for emphasis elements */
-@keyframes gentle-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
-}
-.pulse-gentle {
-  animation: gentle-pulse 3s ease-in-out infinite;
-}
+  /* Responsive text for tablets */
+  .text-responsive {
+    font-size: clamp(16px, 1.5vw, 18px);
+  }
 
-/* Badge shimmer effect on hover */
-@keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
-}
-.badge-shimmer:hover {
-  background-image: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(59, 130, 246, 0.08) 50%,
-    transparent 100%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.5s ease-in-out;
+  /* Touch feedback */
+  .touch-feedback {
+    @apply active:scale-95 transition-transform duration-100;
+  }
+
+  /* iPad grid layouts */
+  .grid-ipad-2 {
+    @apply grid grid-cols-1 md:grid-cols-2;
+  }
+
+  .grid-ipad-3 {
+    @apply grid grid-cols-1 md:grid-cols-2 ipad-pro:grid-cols-3;
+  }
+
+  /* Spacing for touch */
+  .gap-touch {
+    @apply gap-4 md:gap-6;
+  }
 }
 
-/* Icon spin on card hover */
-.icon-hover-spin {
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.group:hover .icon-hover-spin {
-  transform: rotate(12deg) scale(1.1);
-}
+/* ============================================
+   DARK MODE UTILITIES
+   ============================================ */
 
-/* Underline reveal on hover */
-.underline-reveal {
-  position: relative;
-}
-.underline-reveal::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #3B82F6, #10B981);
-  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-  border-radius: 1px;
-}
-.underline-reveal:hover::after {
-  width: 100%;
-}
+@layer utilities {
+  /* Smooth dark mode transitions */
+  .dark-mode-transition {
+    @apply transition-colors duration-200 ease-in-out;
+  }
 
-/* Scale-in for result callouts */
-.scale-in {
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: 0.2s;
-}
-.scale-in.visible {
-  opacity: 1;
-  transform: scale(1);
-}
+  /* Dark mode card backgrounds */
+  .card-dark {
+    @apply bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700;
+  }
 
-/* Number highlight glow */
-@keyframes number-glow {
-  0%, 100% { text-shadow: none; }
-  50% { text-shadow: 0 0 20px currentColor; }
-}
+  /* Dark mode text variants */
+  .text-dark-primary {
+    @apply text-precision-text-primary dark:text-precision-text-primary;
+  }
 
-/* Journey lane hover highlight */
-.lane-hover {
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.lane-hover:hover {
-  background-color: rgba(59, 130, 246, 0.03);
-  transform: translateX(4px);
+  .text-dark-secondary {
+    @apply text-precision-text-secondary dark:text-precision-text-secondary;
+  }
+
+  /* Dark mode shadows */
+  .shadow-dark {
+    @apply shadow-precision-sm dark:shadow-precision-md;
+  }
+
+  /* Dark mode borders */
+  .border-dark {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+
+  /* Dark mode hover states */
+  .hover-dark {
+    @apply hover:bg-gray-50 dark:hover:bg-gray-700/50;
+  }
+
+  /* Dark mode backgrounds */
+  .bg-dark-surface {
+    @apply bg-white dark:bg-gray-900;
+  }
+
+  .bg-dark-elevated {
+    @apply bg-gray-50 dark:bg-gray-800;
+  }
 }

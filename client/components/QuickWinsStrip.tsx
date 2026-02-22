@@ -17,10 +17,10 @@ interface QuickWinsStripProps {
 
 const colorMap = {
   accent: {
-    border: "border-[#00D4AA]",
-    text: "text-[#00D4AA]",
-    bg: "bg-[#00D4AA]/5",
-    glow: "shadow-[0_0_20px_rgba(0,212,170,0.15)]",
+    border: "border-[#00A88A]",
+    text: "text-[#00A88A]",
+    bg: "bg-[#00A88A]/5",
+    glow: "shadow-[0_0_20px_rgba(0,168,138,0.15)]",
   },
   secondary: {
     border: "border-[#1E3A5F]",
@@ -111,7 +111,9 @@ function MetricCard({
       <p className="text-[10px] md:text-xs font-semibold text-precision-text-secondary uppercase tracking-wider text-center mb-2 leading-tight">
         {metric.label}
       </p>
-      <p className={`text-2xl md:text-3xl lg:text-4xl font-bold ${colors.text} mb-1`}>
+      <p
+        className={`text-2xl md:text-3xl lg:text-4xl font-bold ${colors.text} mb-1`}
+      >
         {metric.prefix || ""}
         {count}
         {metric.suffix}

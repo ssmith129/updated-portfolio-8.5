@@ -123,68 +123,7 @@ export default function RelatedCaseStudies({
         </p>
       </div>
 
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {relatedCases.map((cs) => (
-            <Link
-              key={cs.id}
-              to={cs.href}
-              className={`group rounded-2xl border overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 ${
-                isDarkTheme
-                  ? "border-[#2A2A2A] bg-[#1A1A1A] hover:border-[#00D4FF]/40"
-                  : isHealthcareTheme
-                    ? "border-[#E2E8F0] bg-white hover:border-[#3B82F6]/40"
-                    : "border-[#E5E5E5] bg-white hover:border-[#131417]/20"
-              }`}
-            >
-              <div className="aspect-[16/10] overflow-hidden">
-                <img
-                  src={cs.image}
-                  alt={`${cs.title} — ${cs.subtitle}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-5 sm:p-6">
-                <div className="flex items-center gap-2 mb-2">
-                  <span
-                    className={`text-xs font-semibold uppercase tracking-widest ${
-                      isDarkTheme
-                        ? "text-[#00D4FF]"
-                        : isHealthcareTheme
-                          ? "text-[#3B82F6]"
-                          : "text-[#9FA0A3]"
-                    }`}
-                  >
-                    {cs.category}
-                  </span>
-                  <span className={`text-xs ${isDarkTheme ? "text-[#555]" : "text-[#CBD5E1]"}`}>·</span>
-                  <span className={`text-xs ${isDarkTheme ? "text-[#888]" : "text-[#94A3B8]"}`}>
-                    {cs.duration}
-                  </span>
-                </div>
-                <h3
-                  className={`text-lg font-semibold mb-1 transition-colors duration-200 ${
-                    isDarkTheme
-                      ? "text-white group-hover:text-[#00D4FF]"
-                      : isHealthcareTheme
-                        ? "text-[#0F172A] group-hover:text-[#3B82F6]"
-                        : "text-[#131417] group-hover:text-[#2a2a2a]"
-                  }`}
-                >
-                  {cs.title}
-                  <span className={`text-sm font-normal ml-2 ${isDarkTheme ? "text-[#888]" : "text-[#94A3B8]"}`}>
-                    {cs.subtitle}
-                  </span>
-                </h3>
-                <p className={`text-sm leading-relaxed ${isDarkTheme ? "text-[#888]" : "text-[#64748B]"}`}>
-                  {cs.description}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" />
 
       {/* View All Link */}
       <div className="text-center">
