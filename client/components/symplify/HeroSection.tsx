@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Users, Briefcase, FlaskConical } from "lucide-react";
 
-interface HeroSectionProps {
-  onPreviewOpen: () => void;
-}
-
-export default function HeroSection({ onPreviewOpen }: HeroSectionProps) {
+export default function HeroSection() {
   return (
     <>
       {/* Back Button */}
@@ -61,10 +57,12 @@ export default function HeroSection({ onPreviewOpen }: HeroSectionProps) {
 
       {/* Hero Image */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10 mb-6">
-        <button
-          onClick={onPreviewOpen}
+        <a
+          href="https://symplify-v4-live.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-full aspect-[1.85] rounded-2xl flex items-center justify-center border border-[#E2E8F0] transition-all duration-500 hover:shadow-2xl hover:scale-[1.008] cursor-pointer group relative overflow-hidden hover:border-[#3B82F6]/20"
-          aria-label="Open Symplify platform preview"
+          aria-label="Open Symplify live platform in a new tab"
           style={{
             backgroundImage:
               "url(https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa365aabaf0c94e5ea46663d1d7bd4cb3)",
@@ -77,7 +75,7 @@ export default function HeroSection({ onPreviewOpen }: HeroSectionProps) {
           <span className="relative z-10 bg-white/90 backdrop-blur-sm text-[#1E293B] rounded-xl px-6 py-3 text-sm font-semibold shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-y-0 translate-y-2">
             View Live Platform
           </span>
-        </button>
+        </a>
       </div>
     </>
   );

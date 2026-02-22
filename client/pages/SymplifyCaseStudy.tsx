@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
@@ -27,10 +27,8 @@ const sectionNav = [
 ];
 
 export default function SymplifyCaseStudy() {
-  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [activeSection, setActiveSection] = useState("");
-  const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => setShowScrollTop(window.scrollY > 400);
@@ -106,46 +104,6 @@ export default function SymplifyCaseStudy() {
     return () => observers.forEach((obs) => obs.disconnect());
   }, []);
 
-  // Focus trap for preview modal
-  useEffect(() => {
-    if (!isPreviewOpen) return;
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setIsPreviewOpen(false);
-        return;
-      }
-
-      if (e.key === "Tab" && modalRef.current) {
-        const focusable = modalRef.current.querySelectorAll<HTMLElement>(
-          'button, [href], [tabindex]:not([tabindex="-1"])',
-        );
-        const first = focusable[0];
-        const last = focusable[focusable.length - 1];
-
-        if (e.shiftKey && document.activeElement === first) {
-          e.preventDefault();
-          last.focus();
-        } else if (!e.shiftKey && document.activeElement === last) {
-          e.preventDefault();
-          first.focus();
-        }
-      }
-    };
-
-    setTimeout(() => {
-      const closeBtn = modalRef.current?.querySelector<HTMLElement>("button");
-      closeBtn?.focus();
-    }, 50);
-
-    document.addEventListener("keydown", handleKeyDown);
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = "";
-    };
-  }, [isPreviewOpen]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F8FAFC] via-white to-[#EFF6FF] scroll-smooth relative overflow-hidden">
@@ -164,7 +122,7 @@ export default function SymplifyCaseStudy() {
       <SkipLink />
       <Navigation />
 
-      <HeroSection onPreviewOpen={() => setIsPreviewOpen(true)} />
+      <HeroSection />
 
       {/* Section Navigation */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10 mb-4">
@@ -234,42 +192,6 @@ export default function SymplifyCaseStudy() {
         </div>
       </div>
 
-      {/* Preview Modal */}
-      {isPreviewOpen && (
-        <div
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4"
-          onClick={() => setIsPreviewOpen(false)}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Symplify platform preview"
-        >
-          <div
-            ref={modalRef}
-            className="bg-white rounded-2xl shadow-2xl max-w-5xl w-full max-h-[85vh] overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between px-6 py-4 border-b border-[#E2E8F0]">
-              <h3 className="text-lg font-semibold text-[#0F172A]">
-                Symplify Platform Preview
-              </h3>
-              <button
-                onClick={() => setIsPreviewOpen(false)}
-                className="text-[#64748B] hover:text-[#0F172A] transition-colors text-2xl leading-none"
-                aria-label="Close preview"
-              >
-                &times;
-              </button>
-            </div>
-            <div className="p-4">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa365aabaf0c94e5ea46663d1d7bd4cb3"
-                alt="Symplify platform dashboard showing unified clinical workflows"
-                className="w-full rounded-xl"
-              />
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
