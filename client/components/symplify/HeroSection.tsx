@@ -67,7 +67,7 @@ export default function HeroSection({ onPreviewOpen }: HeroSectionProps) {
           aria-label="Open Symplify platform preview"
           style={{
             backgroundImage:
-              "url(https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fadf782ed456e4ee188c3992a86747eef)",
+              "url(https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa365aabaf0c94e5ea46663d1d7bd4cb3)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",
