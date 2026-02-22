@@ -25,7 +25,7 @@ export default function HeroSection({ onPreviewOpen }: HeroSectionProps) {
         <span className="inline-block bg-gradient-to-r from-[#3B82F6] to-[#10B981] text-white px-4 py-1.5 rounded-full text-[13px] font-semibold tracking-wide uppercase mb-6">
           Healthcare AI Platform
         </span>
-        <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] xl:text-[3.75rem] font-semibold text-[#0F172A] leading-[70px] tracking-[-0.03em] mb-[29px] max-w-[900px] h-auto grow-0">
+        <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] xl:text-[3.75rem] font-semibold text-[#0F172A] leading-tight lg:leading-[70px] tracking-[-0.03em] mb-[29px] max-w-[900px] h-auto grow-0">
           Turning Hospital Chaos into Clinical Clarity
         </h1>
         <p className="text-lg sm:text-xl text-[#475569] leading-[1.6] max-w-[720px] mb-10">
