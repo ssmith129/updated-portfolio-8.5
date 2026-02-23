@@ -1,5 +1,6 @@
-import { CheckCircle, AlertTriangle, Lightbulb, ArrowRight } from "lucide-react";
+import { CheckCircle, AlertTriangle, Lightbulb, ArrowRight, TrendingUp, Award, Users, Zap } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
+import { SymTLDR } from "./shared";
 
 const wins = [
   "Trust through transparency — the 11% override rate proved users felt safe disagreeing with AI.",
@@ -54,22 +55,24 @@ const reflections = [
 ];
 
 const nextSteps = [
-  {
-    title: "Predictive Staffing Models",
-    detail: "Forecast demand spikes to cut overtime 15-20%",
-  },
-  {
-    title: "Broader EHR Integration",
-    detail: "HL7 FHIR connectors for Epic, Cerner, Allscripts",
-  },
-  {
-    title: "Patient Sentiment Analysis",
-    detail: "Real-time NLP to detect distress signals early",
-  },
-  {
-    title: "Mobile-First Redesign",
-    detail: "Dedicated mobile interaction patterns beyond responsive",
-  },
+  { title: "Predictive Staffing Models", detail: "Forecast demand spikes to cut overtime 15-20%" },
+  { title: "Broader EHR Integration", detail: "HL7 FHIR connectors for Epic, Cerner, Allscripts" },
+  { title: "Patient Sentiment Analysis", detail: "Real-time NLP to detect distress signals early" },
+  { title: "Mobile-First Redesign", detail: "Dedicated mobile interaction patterns beyond responsive" },
+];
+
+const summaryMetrics = [
+  { value: "40%", label: "Faster Triage", Icon: TrendingUp },
+  { value: "89%", label: "Triage Accuracy", Icon: Award },
+  { value: "~$78K", label: "Annual Savings", Icon: Zap },
+  { value: "65", label: "Pilot Staff", Icon: Users },
+];
+
+const keyTakeaways = [
+  "Trust is a design constraint, not a feature — every AI pattern is really a trust pattern",
+  "Compliance constraints (HIPAA audit trails) can improve UX when embraced rather than resisted",
+  "Augmentation > Automation for clinical professionals who need to maintain professional judgment",
+  "Honest metrics with caveats build more credibility than polished presentations without context",
 ];
 
 export default function ReflectionsSection() {
@@ -81,32 +84,34 @@ export default function ReflectionsSection() {
   return (
     <>
       {/* What Worked & What Didn't */}
-      <section
-        id="outcomes"
-        className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
-      >
+      <section id="outcomes" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
         <div ref={outcomesRef} className="reveal">
-          <p className="text-xs font-semibold text-[#64748B] uppercase tracking-widest mb-2">
+          <p className="text-xs font-semibold text-sym-muted uppercase tracking-widest mb-2">
             Honest Assessment
           </p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
-            What Worked & What Didn't
+          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6">
+            What Worked &amp; What Didn't
           </h2>
         </div>
 
+        <SymTLDR>
+          Trust through transparency worked — 11% override rate proved users felt safe
+          disagreeing with AI. Modular rollout built credibility incrementally. But early
+          prototypes over-automated (67% rejection), mobile alert density remained too
+          high, and 15% of admins still exported to Excel.
+        </SymTLDR>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Wins */}
-          <div className="bg-[#F0FDF4] rounded-2xl border border-[#BBF7D0] p-6">
+          <div className="bg-sym-bg-green rounded-2xl border border-[#BBF7D0] p-6">
             <div className="flex items-center gap-2 mb-5">
-              <CheckCircle className="w-5 h-5 text-[#10B981]" />
-              <p className="text-sm font-semibold text-[#166534] uppercase tracking-widest">
-                Wins
-              </p>
+              <CheckCircle className="w-5 h-5 text-sym-green" />
+              <p className="text-sm font-semibold text-[#166534] uppercase tracking-widest">Wins</p>
             </div>
             <ul className="space-y-4">
               {wins.map((w) => (
                 <li key={w} className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] flex-shrink-0 mt-2" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-sym-green flex-shrink-0 mt-2" />
                   <p className="text-sm text-[#14532D] leading-relaxed">{w}</p>
                 </li>
               ))}
@@ -114,17 +119,15 @@ export default function ReflectionsSection() {
           </div>
 
           {/* Misses */}
-          <div className="bg-[#FFFBEB] rounded-2xl border border-[#FDE68A] p-6">
+          <div className="bg-sym-bg-amber rounded-2xl border border-[#FDE68A] p-6">
             <div className="flex items-center gap-2 mb-5">
-              <AlertTriangle className="w-5 h-5 text-[#F59E0B]" />
-              <p className="text-sm font-semibold text-[#92400E] uppercase tracking-widest">
-                Misses
-              </p>
+              <AlertTriangle className="w-5 h-5 text-sym-amber" />
+              <p className="text-sm font-semibold text-[#92400E] uppercase tracking-widest">Misses</p>
             </div>
             <ul className="space-y-4">
               {misses.map((m) => (
                 <li key={m} className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] flex-shrink-0 mt-2" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-sym-amber flex-shrink-0 mt-2" />
                   <p className="text-sm text-[#78350F] leading-relaxed">{m}</p>
                 </li>
               ))}
@@ -135,14 +138,14 @@ export default function ReflectionsSection() {
 
       {/* Post-Pilot Feedback */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
-        <p className="text-xs font-semibold text-[#10B981] uppercase tracking-widest mb-6">
+        <p className="text-xs font-semibold text-sym-green uppercase tracking-widest mb-6">
           In Their Words — Post-Pilot Feedback
         </p>
         <div ref={quotesRef} className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {pilotQuotes.map((q) => (
             <blockquote
               key={q.cite}
-              className="reveal bg-white rounded-2xl border border-[#E2E8F0] p-6 shadow-sm flex flex-col justify-between card-lift"
+              className="reveal bg-sym-card rounded-2xl border border-sym-card-border p-6 shadow-sm flex flex-col justify-between card-lift"
             >
               <div>
                 <span
@@ -151,11 +154,11 @@ export default function ReflectionsSection() {
                 >
                   {q.role}
                 </span>
-                <p className="text-[15px] text-[#334155] leading-relaxed italic mb-4">
+                <p className="text-[15px] text-sym-body leading-relaxed italic mb-4">
                   "{q.text}"
                 </p>
               </div>
-              <cite className="text-xs font-semibold text-[#94A3B8] not-italic uppercase tracking-wider">
+              <cite className="text-xs font-semibold text-sym-label not-italic uppercase tracking-wider">
                 — {q.cite}
               </cite>
             </blockquote>
@@ -164,15 +167,12 @@ export default function ReflectionsSection() {
       </section>
 
       {/* Reflection */}
-      <section
-        id="reflection"
-        className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
-      >
+      <section id="reflection" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
         <div ref={reflectionRef} className="reveal">
-          <p className="text-xs font-semibold text-[#8B5CF6] uppercase tracking-widest mb-2">
+          <p className="text-xs font-semibold text-sym-purple uppercase tracking-widest mb-2">
             Takeaways
           </p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-10">
             Reflection
           </h2>
         </div>
@@ -181,62 +181,102 @@ export default function ReflectionsSection() {
           {reflections.map((r) => (
             <div
               key={r.title}
-              className="bg-white rounded-2xl border border-[#E2E8F0] p-6 shadow-sm card-lift hover:border-[#CBD5E1]"
+              className="bg-sym-card rounded-2xl border border-sym-card-border p-6 shadow-sm card-lift hover:border-sym-card-border-hover"
             >
               <div className="flex items-start gap-3 mb-3">
-                <Lightbulb className="w-5 h-5 text-[#8B5CF6] flex-shrink-0 mt-0.5" />
-                <h3 className="text-[15px] font-semibold text-[#0F172A] leading-snug">
-                  {r.title}
-                </h3>
+                <Lightbulb className="w-5 h-5 text-sym-purple flex-shrink-0 mt-0.5" />
+                <h3 className="text-[15px] font-semibold text-sym-heading leading-snug">{r.title}</h3>
               </div>
-              <p className="text-sm text-[#475569] leading-relaxed pl-8">
-                {r.body}
-              </p>
+              <p className="text-sm text-sym-body leading-relaxed pl-8">{r.body}</p>
             </div>
           ))}
         </div>
-
-        {/* Closing quote */}
-        <blockquote className="bg-gradient-to-r from-[#EFF6FF] to-[#F0FDF4] rounded-2xl border border-[#DBEAFE] p-8 text-center">
-          <p className="text-lg sm:text-xl text-[#334155] italic leading-relaxed max-w-[680px] mx-auto">
-            "Build systems that explain themselves. An 11% override rate with
-            full transparency beats a 5% override rate with no explanation."
-          </p>
-        </blockquote>
       </section>
 
+      {/* Case Study Summary */}
+      <SymCaseStudySummary />
+
       {/* Next Steps */}
-      <section
-        id="next-steps"
-        className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
-      >
-        <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
+      <section id="next-steps" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+        <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Looking Ahead
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-10">
           Next Steps
         </h2>
-
         <div ref={nextRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {nextSteps.map((ns, i) => (
             <div
               key={ns.title}
-              className="reveal bg-white rounded-xl border border-[#E2E8F0] p-5 shadow-sm card-lift group"
+              className="reveal bg-sym-card rounded-xl border border-sym-card-border p-5 shadow-sm card-lift group"
             >
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[#EFF6FF] text-[#3B82F6] text-sm font-bold mb-3">
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-sym-bg-blue text-sym-blue text-sm font-bold mb-3">
                 {i + 1}
               </span>
-              <h3 className="text-sm font-semibold text-[#0F172A] mb-1 group-hover:text-[#3B82F6] transition-colors duration-200">
+              <h3 className="text-sm font-semibold text-sym-heading mb-1 group-hover:text-sym-blue transition-colors duration-200">
                 {ns.title}
               </h3>
-              <p className="text-xs text-[#64748B] leading-relaxed">
-                {ns.detail}
-              </p>
-              <ArrowRight className="w-4 h-4 text-[#CBD5E1] mt-3 group-hover:text-[#3B82F6] transition-colors duration-200" />
+              <p className="text-xs text-sym-muted leading-relaxed">{ns.detail}</p>
+              <ArrowRight className="w-4 h-4 text-sym-card-border-hover mt-3 group-hover:text-sym-blue transition-colors duration-200" />
             </div>
           ))}
         </div>
       </section>
     </>
+  );
+}
+
+/* ─── Light-themed Case Study Summary ─── */
+function SymCaseStudySummary() {
+  return (
+    <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10">
+      <div className="bg-gradient-to-r from-sym-bg-blue to-sym-bg-green rounded-2xl border border-sym-card-border p-8 sm:p-12">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading mb-3">
+            The Symplify Transformation
+          </h2>
+          <p className="text-base text-sym-muted leading-relaxed max-w-2xl mx-auto">
+            From fragmented EHR/Excel/email chaos to a unified, AI-augmented clinical coordination platform.
+          </p>
+        </div>
+
+        {/* Metrics Grid */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          {summaryMetrics.map(({ value, label, Icon }) => (
+            <div key={label} className="bg-sym-card rounded-xl p-5 text-center border border-sym-card-border shadow-sm">
+              <div className="flex justify-center mb-2 text-sym-blue">
+                <Icon className="w-5 h-5" />
+              </div>
+              <p className="text-2xl font-bold text-sym-heading mb-1">{value}</p>
+              <p className="text-xs text-sym-muted">{label}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Key Takeaways */}
+        <div className="mb-10">
+          <h3 className="text-lg font-semibold text-sym-heading mb-4">Key Takeaways</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {keyTakeaways.map((takeaway) => (
+              <div key={takeaway} className="bg-sym-blue/5 rounded-lg p-4 flex items-start gap-3">
+                <span className="text-sym-blue mt-0.5">→</span>
+                <p className="text-sm text-sym-body leading-relaxed">{takeaway}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Core Achievement */}
+        <div className="border-t border-sym-card-border pt-6">
+          <p className="text-center text-base text-sym-body leading-relaxed">
+            <span className="font-semibold text-sym-blue">Core Achievement:</span>{" "}
+            Transformed AI opacity into transparency — reframing{" "}
+            <span className="font-semibold text-sym-heading">trust as Symplify's competitive advantage</span>{" "}
+            and enabling clinical staff to serve patients faster with{" "}
+            <span className="font-semibold text-sym-heading">40% less triage time</span>.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }

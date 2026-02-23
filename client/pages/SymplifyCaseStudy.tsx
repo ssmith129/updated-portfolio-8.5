@@ -3,13 +3,17 @@ import { ArrowUp } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
+import { CaseStudyStructuredData } from "../components/case-study";
+import ReadingProgress from "../components/case-study/ReadingProgress";
 import HeroSection from "../components/symplify/HeroSection";
 import ImpactMetrics from "../components/symplify/ImpactMetrics";
 import ProjectOverview from "../components/symplify/ProjectOverview";
 import ProblemSection from "../components/symplify/ProblemSection";
 import ConstraintsBar from "../components/symplify/ConstraintsBar";
 import ResearchSection from "../components/symplify/ResearchSection";
+import DesignEvolution from "../components/symplify/DesignEvolution";
 import DesignDecisions from "../components/symplify/DesignDecisions";
+import ProductShowcase from "../components/symplify/ProductShowcase";
 import PivotalMoments from "../components/symplify/PivotalMoments";
 import SystemOverview from "../components/symplify/SystemOverview";
 import ReflectionsSection from "../components/symplify/ReflectionsSection";
@@ -19,7 +23,9 @@ const sectionNav = [
   { href: "#overview", label: "Overview" },
   { href: "#problem", label: "Problem" },
   { href: "#research", label: "Research" },
+  { href: "#evolution", label: "Evolution" },
   { href: "#decisions", label: "Design Decisions" },
+  { href: "#showcase", label: "Product" },
   { href: "#pivots", label: "Pivotal Moments" },
   { href: "#system", label: "Architecture" },
   { href: "#outcomes", label: "Outcomes" },
@@ -36,46 +42,44 @@ export default function SymplifyCaseStudy() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // SEO: page title and structured data
+  // SEO: page title, meta description, and Open Graph tags
   useEffect(() => {
     document.title =
       "Symplify — AI-Enhanced Hospital Management | Sean Smith Portfolio";
 
-    const metaDesc = document.querySelector('meta[name="description"]');
     const descContent =
       "Case study: Designing an AI-enhanced hospital management platform that reduced triage time 40% and improved accuracy to 89% across 3 facilities.";
-    if (metaDesc) {
-      metaDesc.setAttribute("content", descContent);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = descContent;
-      document.head.appendChild(meta);
-    }
 
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Article",
-      headline: "Symplify — Turning Hospital Chaos into Clinical Clarity",
-      description:
-        "End-to-end design of an AI-enhanced hospital management platform for 65 clinical staff across 3 facilities.",
-      author: {
-        "@type": "Person",
-        name: "Sean Smith",
-        jobTitle: "Senior UX/Product Designer",
-      },
-      datePublished: "2024-08-01",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fadf782ed456e4ee188c3992a86747eef",
-      url: "https://smithdesign.live/case-studies/symplify-hospital-management-system",
+    setOrCreateMeta("description", descContent);
+
+    const ogTags = [
+      { property: "og:title", content: "Symplify — Turning Hospital Chaos into Clinical Clarity" },
+      { property: "og:description", content: descContent },
+      { property: "og:image", content: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa365aabaf0c94e5ea46663d1d7bd4cb3" },
+      { property: "og:type", content: "article" },
+      { property: "og:url", content: "https://smithdesign.live/case-studies/symplify-hospital-management-system" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Symplify — Turning Hospital Chaos into Clinical Clarity" },
+      { name: "twitter:description", content: "Designing an AI-enhanced hospital management platform. 40% faster triage, 89% accuracy, 3 facilities." },
+    ];
+
+    const createdMetas: HTMLMetaElement[] = [];
+    ogTags.forEach((tag) => {
+      const attr = tag.property ? "property" : "name";
+      const val = tag.property || tag.name!;
+      let el = document.querySelector<HTMLMetaElement>(`meta[${attr}="${val}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, val);
+        document.head.appendChild(el);
+        createdMetas.push(el);
+      }
+      el.setAttribute("content", tag.content);
     });
-    document.head.appendChild(script);
 
     return () => {
       document.title = "Sean Smith — Portfolio";
-      script.remove();
+      createdMetas.forEach((el) => el.remove());
     };
   }, []);
 
@@ -87,16 +91,12 @@ export default function SymplifyCaseStudy() {
     sectionIds.forEach((id) => {
       const el = document.getElementById(id);
       if (!el) return;
-
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveSection(id);
-          }
+          if (entry.isIntersecting) setActiveSection(id);
         },
         { rootMargin: "-20% 0px -60% 0px", threshold: 0 },
       );
-
       observer.observe(el);
       observers.push(observer);
     });
@@ -104,9 +104,10 @@ export default function SymplifyCaseStudy() {
     return () => observers.forEach((obs) => obs.disconnect());
   }, []);
 
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F8FAFC] via-white to-[#EFF6FF] scroll-smooth relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-sym-bg-primary via-white to-sym-bg-blue scroll-smooth relative overflow-hidden">
+      <ReadingProgress />
+
       {/* Subtle background pattern */}
       <div
         className="absolute inset-0 opacity-[0.025] pointer-events-none"
@@ -116,42 +117,54 @@ export default function SymplifyCaseStudy() {
           backgroundSize: "50px 50px",
         }}
       />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#3B82F6]/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#10B981]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sym-blue/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-sym-green/5 rounded-full blur-[120px] pointer-events-none" />
 
       <SkipLink />
       <Navigation />
 
+      <CaseStudyStructuredData
+        title="Symplify — Turning Hospital Chaos into Clinical Clarity"
+        description="End-to-end design of an AI-enhanced hospital management platform for 65 clinical staff across 3 facilities."
+        authorName="Sean Smith"
+        authorJobTitle="Senior UX/Product Designer"
+        publishedDate="2024-08-01"
+        modifiedDate="2026-02-23"
+        imageUrl="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa365aabaf0c94e5ea46663d1d7bd4cb3"
+        url="https://smithdesign.live/case-studies/symplify-hospital-management-system"
+      />
+
       <HeroSection />
 
-      {/* Section Navigation */}
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10 mb-4">
-        <nav
-          aria-label="Case study sections"
-          className="flex items-center justify-center gap-2 overflow-x-auto py-2 scrollbar-hide"
-        >
-          {sectionNav.map((item) => {
-            const isActive = activeSection === item.href.replace("#", "");
-            return (
-              <a
-                key={item.href}
-                href={item.href}
-                className={`shrink-0 px-3.5 py-2 rounded-full backdrop-blur-sm text-[13px] font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3B82F6] transition-all duration-200 shadow-sm border ${
-                  isActive
-                    ? "bg-[#3B82F6]/10 text-[#3B82F6] border-[#3B82F6]/30"
-                    : "bg-white/80 text-[#475569] border-[#E2E8F0] hover:bg-[#3B82F6]/10 hover:text-[#3B82F6] hover:border-[#3B82F6]/30"
-                }`}
-                aria-current={isActive ? "true" : undefined}
-              >
-                {item.label}
-              </a>
-            );
-          })}
-        </nav>
+      {/* Sticky Section Navigation */}
+      <div className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-sym-divider shadow-sm">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
+          <nav
+            aria-label="Case study sections"
+            className="flex items-center gap-2 overflow-x-auto py-3 scrollbar-hide
+                       relative before:absolute before:left-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-white/80 before:to-transparent before:z-10 before:pointer-events-none
+                       after:absolute after:right-0 after:top-0 after:bottom-0 after:w-8 after:bg-gradient-to-l after:from-white/80 after:to-transparent after:z-10 after:pointer-events-none"
+          >
+            {sectionNav.map((item) => {
+              const isActive = activeSection === item.href.replace("#", "");
+              return (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`shrink-0 px-3.5 py-2 rounded-full text-[13px] font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sym-blue transition-all duration-200 shadow-sm border ${
+                    isActive
+                      ? "bg-sym-blue/10 text-sym-blue border-sym-blue/30"
+                      : "bg-white/80 text-sym-body border-sym-card-border hover:bg-sym-blue/10 hover:text-sym-blue hover:border-sym-blue/30"
+                  }`}
+                  aria-current={isActive ? "true" : undefined}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
+          </nav>
+        </div>
       </div>
-
-      {/* Divider */}
-      <SectionDivider />
 
       <main id="main-content">
         <ImpactMetrics />
@@ -163,7 +176,11 @@ export default function SymplifyCaseStudy() {
         <SectionDivider />
         <ResearchSection />
         <SectionDivider />
+        <DesignEvolution />
+        <SectionDivider />
         <DesignDecisions />
+        <SectionDivider />
+        <ProductShowcase />
         <SectionDivider />
         <PivotalMoments />
         <SectionDivider />
@@ -180,7 +197,7 @@ export default function SymplifyCaseStudy() {
         <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 relative">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className={`absolute right-4 sm:right-8 lg:right-12 p-3.5 rounded-full bg-gradient-to-r from-[#3B82F6] to-[#10B981] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:ring-offset-2 pointer-events-auto ${
+            className={`absolute right-4 sm:right-8 lg:right-12 p-3.5 rounded-full bg-gradient-to-r from-sym-blue to-sym-green text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-sym-blue focus:ring-offset-2 pointer-events-auto ${
               showScrollTop
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-16 pointer-events-none"
@@ -191,7 +208,6 @@ export default function SymplifyCaseStudy() {
           </button>
         </div>
       </div>
-
     </div>
   );
 }
@@ -199,7 +215,19 @@ export default function SymplifyCaseStudy() {
 function SectionDivider() {
   return (
     <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
-      <hr className="border-[#F1F5F9]" />
+      <hr className="border-sym-divider" />
     </div>
   );
+}
+
+function setOrCreateMeta(name: string, content: string) {
+  let el = document.querySelector<HTMLMetaElement>(`meta[name="${name}"]`);
+  if (el) {
+    el.setAttribute("content", content);
+  } else {
+    el = document.createElement("meta");
+    el.name = name;
+    el.content = content;
+    document.head.appendChild(el);
+  }
 }

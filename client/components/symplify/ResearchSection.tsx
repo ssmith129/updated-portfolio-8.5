@@ -1,5 +1,6 @@
 import { Eye, Search, MessageSquare, BarChart3 } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
+import { SymTLDR, AssetPlaceholder } from "./shared";
 
 const methods = [
   { icon: <Eye className="w-4 h-4" />, label: "Shadowed 18 staff", detail: "across 3 facilities" },
@@ -12,7 +13,7 @@ const insights = [
   {
     number: "01",
     title: "Augmentation, Not Automation",
-    body: '60% of clinical time was spent on coordination overhead. But when asked "Should we automate triage?", 67% said no. Staff wanted tools that made them faster — not black-box decisions.',
+    body: 'Clinical time was 60% coordination overhead. But when asked "Should we automate triage?", 67% said no. Staff wanted tools that made them faster — not black-box decisions.',
     principle: "AI transparency > AI autonomy",
     color: "#3B82F6",
     bgColor: "#EFF6FF",
@@ -36,41 +37,11 @@ const insights = [
 ];
 
 const detailedMethods = [
-  {
-    method: "Contextual Inquiry",
-    sample: "18 staff, 3 facilities",
-    duration: "2 weeks",
-    focus: "Task flows, workarounds, pain points",
-    bias: "Rotated observers, recorded sessions",
-  },
-  {
-    method: "Task Logging",
-    sample: "3,000+ tasks captured",
-    duration: "2 weeks continuous",
-    focus: "Frequency, urgency, time-to-complete",
-    bias: "Automated logging, no self-reporting",
-  },
-  {
-    method: "Semi-Structured Interviews",
-    sample: "14 participants (5 MDs, 5 RNs, 4 admins)",
-    duration: "45-60 min each",
-    focus: "Decision-making, trust, frustrations",
-    bias: "Standardized guide, independent coding",
-  },
-  {
-    method: "Message Analysis",
-    sample: "1,200 internal messages",
-    duration: "3-month archive",
-    focus: "Urgency patterns, miscommunication",
-    bias: "De-identified, dual-coded for severity",
-  },
-  {
-    method: "Competitive Benchmarking",
-    sample: "4 platforms (Epic, Cerner, Allscripts, ezEMRx)",
-    duration: "1 week",
-    focus: "AI transparency, cognitive load, cost",
-    bias: "Standardized evaluation criteria",
-  },
+  { method: "Contextual Inquiry", sample: "18 staff, 3 facilities", duration: "2 weeks", focus: "Task flows, workarounds, pain points", bias: "Rotated observers, recorded sessions" },
+  { method: "Task Logging", sample: "3,000+ tasks captured", duration: "2 weeks continuous", focus: "Frequency, urgency, time-to-complete", bias: "Automated logging, no self-reporting" },
+  { method: "Semi-Structured Interviews", sample: "14 participants (5 MDs, 5 RNs, 4 admins)", duration: "45-60 min each", focus: "Decision-making, trust, frustrations", bias: "Standardized guide, independent coding" },
+  { method: "Message Analysis", sample: "1,200 internal messages", duration: "3-month archive", focus: "Urgency patterns, miscommunication", bias: "De-identified, dual-coded for severity" },
+  { method: "Competitive Benchmarking", sample: "4 platforms (Epic, Cerner, Allscripts, ezEMRx)", duration: "1 week", focus: "AI transparency, cognitive load, cost", bias: "Standardized evaluation criteria" },
 ];
 
 const competitiveRows = [
@@ -92,62 +63,57 @@ export default function ResearchSection() {
       className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
     >
       <div ref={headingRef} className="reveal">
-        <p className="text-xs font-semibold text-[#3B82F6] uppercase tracking-widest mb-2">
+        <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Discovery
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-10">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6">
           Research
         </h2>
       </div>
+
+      <SymTLDR>
+        Shadowed 18 staff across 3 facilities, logged 3,000+ tasks, conducted
+        14 interviews, and analyzed 1,200 messages. Three insights reshaped the
+        project: staff wanted augmentation not automation, "urgent" had no shared
+        meaning, and compliance failures were visibility problems not discipline problems.
+      </SymTLDR>
 
       {/* Methods strip */}
       <div ref={methodsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
         {methods.map((m) => (
           <div
             key={m.label}
-            className="reveal flex items-start gap-3 bg-white rounded-xl border border-[#E2E8F0] px-4 py-4 shadow-sm card-lift group"
+            className="reveal flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border px-4 py-4 shadow-sm card-lift group"
           >
-            <div className="w-8 h-8 rounded-lg bg-[#EFF6FF] flex items-center justify-center text-[#3B82F6] flex-shrink-0 mt-0.5 icon-hover-spin">
+            <div className="w-8 h-8 rounded-lg bg-sym-bg-blue flex items-center justify-center text-sym-blue flex-shrink-0 mt-0.5 icon-hover-spin">
               {m.icon}
             </div>
             <div>
-              <p className="text-sm font-semibold text-[#0F172A] leading-snug">
-                {m.label}
-              </p>
-              <p className="text-xs text-[#94A3B8]">{m.detail}</p>
+              <p className="text-sm font-semibold text-sym-heading leading-snug">{m.label}</p>
+              <p className="text-xs text-sym-label">{m.detail}</p>
             </div>
           </div>
         ))}
       </div>
 
       {/* Detailed Research Methodology (collapsible) */}
-      <details className="mb-14 group">
-        <summary className="cursor-pointer text-sm font-semibold text-[#3B82F6] hover:text-[#2563EB] transition-colors flex items-center gap-2 mb-4">
+      <details className="mb-10 group">
+        <summary className="cursor-pointer text-sm font-semibold text-sym-blue hover:text-[#2563EB] transition-colors flex items-center gap-2 mb-4">
           <span className="transition-transform group-open:rotate-90">▶</span>
           View Full Research Methodology
         </summary>
         <div className="overflow-x-auto">
           <table className="w-full text-xs border-collapse min-w-[640px]">
             <thead>
-              <tr className="border-b-2 border-[#E2E8F0]">
-                {["Method", "Sample", "Duration", "Focus", "Bias Controls"].map(
-                  (h) => (
-                    <th
-                      key={h}
-                      className="text-left py-3 px-3 text-[#64748B] font-semibold uppercase tracking-wider"
-                    >
-                      {h}
-                    </th>
-                  ),
-                )}
+              <tr className="border-b-2 border-sym-card-border">
+                {["Method", "Sample", "Duration", "Focus", "Bias Controls"].map((h) => (
+                  <th key={h} className="text-left py-3 px-3 text-sym-muted font-semibold uppercase tracking-wider">{h}</th>
+                ))}
               </tr>
             </thead>
-            <tbody className="text-[#334155]">
+            <tbody className="text-sym-body">
               {detailedMethods.map((row) => (
-                <tr
-                  key={row.method}
-                  className="border-b border-[#F1F5F9] hover:bg-[#F8FAFC] transition-colors"
-                >
+                <tr key={row.method} className="border-b border-sym-divider hover:bg-sym-bg-primary transition-colors">
                   <td className="py-3 px-3 font-semibold">{row.method}</td>
                   <td className="py-3 px-3">{row.sample}</td>
                   <td className="py-3 px-3">{row.duration}</td>
@@ -160,38 +126,37 @@ export default function ResearchSection() {
         </div>
       </details>
 
+      {/* Research Process Photos */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
+        <AssetPlaceholder
+          id="contextual-inquiry-photo.jpg"
+          caption="Shadowing an RN supervisor during shift change — one of 18 contextual inquiry sessions across 3 facilities."
+        />
+        <AssetPlaceholder
+          id="task-logging-dashboard.png"
+          caption="Automated task logging captured 3,000+ clinical coordination tasks over 2 weeks — eliminating self-reporting bias."
+        />
+        <AssetPlaceholder
+          id="interview-synthesis-wall.jpg"
+          caption='Independent dual-coding of 14 semi-structured interviews. The 67% "no automation" finding emerged from this synthesis.'
+        />
+      </div>
+
       {/* Insight cards */}
       <div ref={insightsRef} className="reveal space-y-6 mb-14">
         {insights.map((ins) => (
           <div
             key={ins.number}
-            className="rounded-2xl border border-[#E2E8F0] overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+            className="rounded-2xl border border-sym-card-border overflow-hidden bg-sym-card shadow-sm hover:shadow-md transition-shadow duration-300"
           >
             <div className="flex flex-col md:flex-row">
-              <div
-                className="md:w-20 flex items-center justify-center py-4 md:py-0"
-                style={{ backgroundColor: ins.bgColor }}
-              >
-                <span
-                  className="text-2xl font-bold"
-                  style={{ color: ins.color }}
-                >
-                  {ins.number}
-                </span>
+              <div className="md:w-20 flex items-center justify-center py-4 md:py-0" style={{ backgroundColor: ins.bgColor }}>
+                <span className="text-2xl font-bold" style={{ color: ins.color }}>{ins.number}</span>
               </div>
               <div className="flex-1 p-6">
-                <h3 className="text-lg font-semibold text-[#0F172A] mb-2">
-                  {ins.title}
-                </h3>
-                <p className="text-[15px] text-[#475569] leading-relaxed mb-3">
-                  {ins.body}
-                </p>
-                <p
-                  className="text-sm font-semibold italic"
-                  style={{ color: ins.color }}
-                >
-                  {ins.principle}
-                </p>
+                <h3 className="text-lg font-semibold text-sym-heading mb-2">{ins.title}</h3>
+                <p className="text-[15px] text-sym-body leading-relaxed mb-3">{ins.body}</p>
+                <p className="text-sm font-semibold italic" style={{ color: ins.color }}>{ins.principle}</p>
               </div>
             </div>
           </div>
@@ -199,66 +164,59 @@ export default function ResearchSection() {
       </div>
 
       {/* Competitive Analysis Table */}
-      <div className="bg-[#F8FAFC] rounded-2xl border border-[#E2E8F0] p-6 sm:p-8">
-        <p className="text-xs font-semibold text-[#64748B] uppercase tracking-widest mb-3">
-          Competitive Landscape
-        </p>
-        <p className="text-[15px] text-[#334155] leading-relaxed max-w-[680px] mb-6">
-          Benchmarked market leaders to identify Symplify's strategic wedge:{" "}
-          <span className="font-semibold text-[#0F172A]">
-            cognitive load reduction through trustworthy AI
-          </span>
-          .
-        </p>
+      <CompetitiveAnalysis />
+    </section>
+  );
+}
 
-        <div className="overflow-x-auto -mx-2 px-2">
-          <table className="w-full text-xs border-collapse min-w-[640px]">
-            <thead>
-              <tr className="border-b-2 border-[#E2E8F0]">
-                <th className="text-left py-3 px-3 text-[#64748B] font-semibold uppercase tracking-wider">
-                  Dimension
+function CompetitiveAnalysis() {
+  return (
+    <div className="bg-sym-bg-primary rounded-2xl border border-sym-card-border p-6 sm:p-8">
+      <p className="text-xs font-semibold text-sym-muted uppercase tracking-widest mb-3">
+        Competitive Landscape
+      </p>
+      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
+        Benchmarked market leaders to identify Symplify's strategic wedge:{" "}
+        <span className="font-semibold text-sym-heading">
+          cognitive load reduction through trustworthy AI
+        </span>.
+      </p>
+      <div className="overflow-x-auto -mx-2 px-2">
+        <table className="w-full text-xs border-collapse min-w-[640px]">
+          <thead>
+            <tr className="border-b-2 border-sym-card-border">
+              <th className="text-left py-3 px-3 text-sym-muted font-semibold uppercase tracking-wider">Dimension</th>
+              {["Epic", "Cerner", "Allscripts", "Symplify"].map((name) => (
+                <th
+                  key={name}
+                  className={`text-center py-3 px-3 font-semibold uppercase tracking-wider ${
+                    name === "Symplify" ? "text-sym-blue bg-sym-bg-blue rounded-t-lg" : "text-sym-muted"
+                  }`}
+                >
+                  {name}
                 </th>
-                {["Epic", "Cerner", "Allscripts", "Symplify"].map((name) => (
-                  <th
-                    key={name}
-                    className={`text-center py-3 px-3 font-semibold uppercase tracking-wider ${
-                      name === "Symplify"
-                        ? "text-[#3B82F6] bg-[#EFF6FF] rounded-t-lg"
-                        : "text-[#64748B]"
+              ))}
+            </tr>
+          </thead>
+          <tbody className="text-sym-body">
+            {competitiveRows.map((row) => (
+              <tr key={row.dim} className="border-b border-sym-divider hover:bg-white/60 transition-colors">
+                <td className="py-3 px-3 font-semibold text-sym-heading">{row.dim}</td>
+                {row.values.map((val, i) => (
+                  <td
+                    key={`${row.dim}-${i}`}
+                    className={`text-center py-3 px-3 ${
+                      i === row.highlight ? "font-semibold text-sym-blue bg-sym-bg-blue/50" : ""
                     }`}
                   >
-                    {name}
-                  </th>
+                    {val}
+                  </td>
                 ))}
               </tr>
-            </thead>
-            <tbody className="text-[#334155]">
-              {competitiveRows.map((row) => (
-                <tr
-                  key={row.dim}
-                  className="border-b border-[#F1F5F9] hover:bg-white/60 transition-colors"
-                >
-                  <td className="py-3 px-3 font-semibold text-[#0F172A]">
-                    {row.dim}
-                  </td>
-                  {row.values.map((val, i) => (
-                    <td
-                      key={`${row.dim}-${i}`}
-                      className={`text-center py-3 px-3 ${
-                        i === row.highlight
-                          ? "font-semibold text-[#3B82F6] bg-[#EFF6FF]/50"
-                          : ""
-                      }`}
-                    >
-                      {val}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            ))}
+          </tbody>
+        </table>
       </div>
-    </section>
+    </div>
   );
 }

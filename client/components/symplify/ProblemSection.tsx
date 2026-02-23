@@ -1,4 +1,5 @@
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
+import { SymTLDR, AssetPlaceholder } from "./shared";
 
 const quotes = [
   {
@@ -72,22 +73,41 @@ export default function ProblemSection() {
       className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
     >
       <div ref={headingRef} className="reveal">
-        <p className="text-xs font-semibold text-[#EF4444] uppercase tracking-widest mb-2">
+        <p className="text-xs font-semibold text-sym-red uppercase tracking-widest mb-2">
           The Problem
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F172A] tracking-tight mb-4 max-w-[720px]">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 max-w-[720px]">
           Three Systems, Zero Shared Prioritization
         </h2>
       </div>
-      <p className="text-lg text-[#475569] leading-relaxed max-w-[720px] mb-10">
+
+      <SymTLDR>
+        Staff operated across 3 disconnected systems with no shared triage model.
+        18% of urgent handoffs were missed at shift change. Doctors spent 2 minutes
+        per message just deciding if it was urgent — 8 hours of cognitive overhead per month.
+      </SymTLDR>
+
+      <p className="text-lg text-sym-body leading-relaxed max-w-[720px] mb-10">
         Hospital and WIC clinic staff were operating across three disconnected
         systems — EHR, Excel, and email — with no shared prioritization model.
         The consequences were measurable and severe.
       </p>
 
+      {/* Research Artifact Photos */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <AssetPlaceholder
+          id="affinity-wall-photo.jpg"
+          caption="Affinity mapping from 18 contextual inquiry sessions — 4 primary pain clusters emerged."
+        />
+        <AssetPlaceholder
+          id="journey-map-whiteboard.jpg"
+          caption="Raw journey mapping workshop with clinical advisors. The swim lane visualization was refined from this working session."
+        />
+      </div>
+
       {/* Journey Map — Swim Lanes */}
-      <div className="bg-white rounded-2xl border border-[#E2E8F0] p-6 sm:p-8 mb-12 overflow-x-auto shadow-sm">
-        <p className="text-xs font-semibold text-[#94A3B8] uppercase tracking-widest mb-6">
+      <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 mb-12 overflow-x-auto shadow-sm">
+        <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-6">
           Current-State Journey — One Urgent Message
         </p>
         <div className="min-w-[640px] space-y-4">
@@ -102,12 +122,12 @@ export default function ProblemSection() {
         {quotes.map((q) => (
           <blockquote
             key={q.cite}
-            className="reveal bg-white rounded-2xl border border-[#E2E8F0] p-6 shadow-sm flex flex-col justify-between card-lift"
+            className="reveal bg-sym-card rounded-2xl border border-sym-card-border p-6 shadow-sm flex flex-col justify-between card-lift"
           >
-            <p className="text-[15px] text-[#334155] leading-relaxed italic mb-4">
+            <p className="text-[15px] text-sym-body leading-relaxed italic mb-4">
               "{q.text}"
             </p>
-            <cite className="text-xs font-semibold text-[#94A3B8] not-italic uppercase tracking-wider">
+            <cite className="text-xs font-semibold text-sym-label not-italic uppercase tracking-wider">
               — {q.cite}
             </cite>
           </blockquote>
@@ -119,7 +139,7 @@ export default function ProblemSection() {
         {stats.map((s) => (
           <div
             key={s.label}
-            className="reveal bg-[#FEF2F2] border border-[#FECACA] rounded-xl px-5 py-4 text-center card-lift"
+            className="reveal bg-sym-bg-red border border-[#FECACA] rounded-xl px-5 py-4 text-center card-lift"
           >
             <p className="text-2xl font-bold text-[#DC2626] mb-1">{s.value}</p>
             <p className="text-xs text-[#991B1B] leading-snug">{s.label}</p>
@@ -147,31 +167,25 @@ function JourneyLane({
         className="w-20 sm:w-24 flex-shrink-0 rounded-l-lg flex items-center justify-center px-2"
         style={{ backgroundColor: bgColor }}
       >
-        <span
-          className="text-xs font-bold uppercase tracking-wider"
-          style={{ color }}
-        >
+        <span className="text-xs font-bold uppercase tracking-wider" style={{ color }}>
           {role}
         </span>
       </div>
       <div className="flex-1 flex items-center gap-1 py-2">
         {steps.map((step, i) => (
-          <div
-            key={step.label}
-            className="flex items-center gap-1 flex-1 min-w-0"
-          >
+          <div key={step.label} className="flex items-center gap-1 flex-1 min-w-0">
             <div
               className={`flex-1 rounded-md px-2 py-2 text-center text-[11px] leading-tight font-medium border ${
                 step.pain
-                  ? "bg-[#FEF2F2] border-[#FECACA] text-[#991B1B]"
-                  : "border-[#E2E8F0] text-[#475569]"
+                  ? "bg-sym-bg-red border-[#FECACA] text-[#991B1B]"
+                  : "border-sym-card-border text-sym-body"
               }`}
               style={!step.pain ? { backgroundColor: bgColor } : undefined}
             >
               {step.label}
             </div>
             {i < steps.length - 1 && (
-              <span className="text-[#CBD5E1] text-xs flex-shrink-0">→</span>
+              <span className="text-sym-card-border-hover text-xs flex-shrink-0">→</span>
             )}
           </div>
         ))}
