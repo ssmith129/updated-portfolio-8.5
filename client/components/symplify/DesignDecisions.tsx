@@ -169,8 +169,9 @@ function Decision3() {
         provider schedule). Always include an override escape hatch, logged for audit.
       </p>
 
-      <AssetPlaceholder
-        id="scheduling-conflict-modal-production.png"
+      <ZoomableImage
+        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Feeb053a93df24c06a4962d85038df612"
+        alt="Production smart scheduling view with AI-powered conflict detection, inline suggestions, and schedule intelligence sidebar"
         caption="Production conflict detection modal. Context-rich suggestions (room, time, accessibility) reduced scheduling conflicts and contributed to the 2.4-point no-show reduction."
       />
 
