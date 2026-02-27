@@ -1,6 +1,6 @@
 import { Eye, Search, MessageSquare, BarChart3 } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder } from "./shared";
+import { SymTLDR, ZoomableImage } from "./shared";
 
 const methods = [
   { icon: <Eye className="w-4 h-4" />, label: "Shadowed 18 staff", detail: "across 3 facilities" },
@@ -128,16 +128,19 @@ export default function ResearchSection() {
 
       {/* Research Process Photos */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
-        <AssetPlaceholder
-          id="contextual-inquiry-photo.jpg"
+        <ZoomableImage
+          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8a68a9bfe226419786b54788d92c6dda"
+          alt="Contextual inquiry research summary showing 18 sessions across 3 roles — Doctors, Nurses, and Admin — with key findings, quotes, and research methods"
           caption="Shadowing an RN supervisor during shift change — one of 18 contextual inquiry sessions across 3 facilities."
         />
-        <AssetPlaceholder
-          id="task-logging-dashboard.png"
+        <ZoomableImage
+          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F20e7e48c060c4557b3bffe71920a3d88"
+          alt="Task logging data showing time-on-task analysis from contextual inquiry — horizontal bar chart of where clinical staff lose time, with message triage at 64 min/day being the largest overhead"
           caption="Automated task logging captured 3,000+ clinical coordination tasks over 2 weeks — eliminating self-reporting bias."
         />
-        <AssetPlaceholder
-          id="interview-synthesis-wall.jpg"
+        <ZoomableImage
+          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F113a7e66969048398cab8ff948191ae1"
+          alt="Interview synthesis wall showing theme extraction from 18 sessions to 4 design pillars, with raw data flowing through affinity clusters to core design principles"
           caption='Independent dual-coding of 14 semi-structured interviews. The 67% "no automation" finding emerged from this synthesis.'
         />
       </div>
