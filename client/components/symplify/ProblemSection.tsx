@@ -1,5 +1,5 @@
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder, ZoomableImage } from "./shared";
+import { SymTLDR, ZoomableImage } from "./shared";
 
 const quotes = [
   {
@@ -100,8 +100,9 @@ export default function ProblemSection() {
           alt="Affinity map from 18 contextual inquiry sessions showing 4 primary pain clusters: Triage Overhead, Handoff Failures, Compliance Blindness, and Tool Fragmentation"
           caption="Affinity mapping from 18 contextual inquiry sessions — 4 primary pain clusters emerged."
         />
-        <AssetPlaceholder
-          id="journey-map-whiteboard.jpg"
+        <ZoomableImage
+          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc8f67c4b8960458ca62576f18dc2350c"
+          alt="Journey mapping workshop output showing current-state swim lanes for Doctor, Nurse, and Admin roles processing one urgent message, with pain points highlighted in red"
           caption="Raw journey mapping workshop with clinical advisors. The swim lane visualization was refined from this working session."
         />
       </div>
