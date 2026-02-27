@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder } from "./shared";
+import { SymTLDR, AssetPlaceholder, ZoomableImage } from "./shared";
 
 export default function DesignDecisions() {
   const headingRef = useScrollReveal();
@@ -97,8 +97,9 @@ function Decision1() {
         ))}
       </div>
 
-      <AssetPlaceholder
-        id="confidence-badge-production-closeup.png"
+      <ZoomableImage
+        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F319eca85807e477aad8303083ba98d94"
+        alt="Production confidence badges showing High, Med, and Low tiers with hover-to-reveal AI reasoning panel"
         caption='Production confidence badges with hover-to-reveal reasoning. The "smart assistant" framing drove 89% acceptance.'
       />
 
@@ -125,8 +126,9 @@ function Decision2() {
         technical or too vague.
       </p>
 
-      <AssetPlaceholder
-        id="ai-reasoning-panel-expanded.png"
+      <ZoomableImage
+        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8731e54d88a6442f947ff34a5a07d4cf"
+        alt="AI reasoning panel expanded showing symptom severity, patient history, SLA requirement, and vitals context with accept/override actions"
         caption="The AI reasoning panel at the point of decision. Clinicians see 'why' on demand — satisfying both HIPAA audit requirements and clinical trust needs."
       />
 
