@@ -50,15 +50,6 @@ function AnimatedMetric({
   );
 }
 
-const tableRows = [
-  { metric: "Triage Time", before: "2m 15s per message", after: "1m 18s per message", change: "~40% faster", positive: true },
-  { metric: "Triage Accuracy", before: "60%", after: "89%", change: "+29 pts", positive: true },
-  { metric: "SLA Compliance", before: "72%", after: "85.3%", change: "+13 pts", positive: true },
-  { metric: "Admin Overhead", before: "12.5 hrs/wk", after: "8.1 hrs/wk", change: "-35%", positive: true },
-  { metric: "No-Show Rate", before: "9.8%", after: "7.4%", change: "-2.4 pts", positive: true },
-  { metric: "Alert Fatigue", before: "Baseline", after: "-38% from baseline", change: "-38%", positive: true },
-];
-
 const metrics = [
   { label: "Triage Time", value: 40, color: "#10B981", before: "2m 15s", after: "1m 18s" },
   { label: "Triage Accuracy", value: 29, suffix: " pts", color: "#3B82F6", before: "60%", after: "89%" },
@@ -90,9 +81,6 @@ export default function ImpactMetrics() {
           AI transparency maintained (11% override rate, &lt;10% false positives).
         </SymTLDR>
       </div>
-
-      {/* Unified Before → After Comparison Table */}
-      <BeforeAfterTable />
 
       {/* Animated Metric Cards */}
       <div
@@ -167,32 +155,5 @@ export default function ImpactMetrics() {
         </div>
       </details>
     </section>
-  );
-}
-
-function BeforeAfterTable() {
-  return (
-    <div className="bg-sym-card rounded-2xl border border-sym-card-border shadow-sm overflow-x-auto mb-8">
-      <table className="w-full text-sm min-w-[560px]">
-        <thead>
-          <tr className="border-b-2 border-sym-card-border">
-            <th className="text-left py-3 px-4 text-sym-muted text-xs font-semibold uppercase tracking-wider">Metric</th>
-            <th className="text-left py-3 px-4 text-sym-muted text-xs font-semibold uppercase tracking-wider">Before (Baseline)</th>
-            <th className="text-left py-3 px-4 text-sym-muted text-xs font-semibold uppercase tracking-wider">After (6-Week Pilot)</th>
-            <th className="text-left py-3 px-4 text-sym-muted text-xs font-semibold uppercase tracking-wider">Change</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tableRows.map((row) => (
-            <tr key={row.metric} className="border-b border-sym-divider hover:bg-sym-bg-primary transition-colors">
-              <td className="py-3 px-4 font-semibold text-sym-heading">{row.metric}</td>
-              <td className="py-3 px-4 text-sym-muted">{row.before}</td>
-              <td className="py-3 px-4 text-sym-body">{row.after}</td>
-              <td className="py-3 px-4 font-bold text-sym-green">{row.change}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
   );
 }
