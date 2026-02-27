@@ -1,9 +1,10 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder } from "./shared";
+import { SymTLDR, AssetPlaceholder, ZoomableImage } from "./shared";
 
 interface EvolutionStage {
   title: string;
   assetId: string;
+  imageSrc?: string;
   caption: string;
   learning: string;
 }
@@ -12,24 +13,28 @@ const triageEvolution: EvolutionStage[] = [
   {
     title: "Initial Sketches",
     assetId: "triage-inbox-sketch.jpg",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1aa7e709a2154ef3900db70013a868c9",
     caption: "Initial concept sketch exploring how to surface AI-assessed urgency alongside message content.",
     learning: "First question we needed to answer: how do you show AI confidence without creating false precision?",
   },
   {
     title: "Wireframe v1 — Percentage Scores",
     assetId: "triage-inbox-wireframe-v1.png",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9c427e2aabb34bb6a69db7193fdfa2a9",
     caption: 'Wireframe tested with 12 clinicians. Percentage scores felt like "fake precision" — only 33% acceptance.',
     learning: "Clinicians aren't statisticians. Exact percentages made them question the AI more, not trust it more.",
   },
   {
     title: "Wireframe v2 — 3-Tier Badges",
     assetId: "triage-inbox-wireframe-v2.png",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dff12a18bb94c638c174adde3700069",
     caption: "Redesigned with 3-tier badges after the percentage rejection. Tested at 89% acceptance.",
     learning: 'The breakthrough: badges communicate "suggested priority" rather than "calculated probability." Staff felt like it was an assistant, not a replacement.',
   },
   {
     title: "Production UI",
     assetId: "triage-inbox-production.png",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff98fec64c0cb49ff82fa9c6d0518e333",
     caption: "Shipped production UI. 11% override rate with full audit trail on every decision.",
     learning: "Result: override rate dropped from 18% (percentage version) to 11% (badge version). Trust through transparency.",
   },
@@ -118,11 +123,19 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
               {stage.title}
             </h4>
 
-            <AssetPlaceholder
-              id={stage.assetId}
-              caption={stage.caption}
-              aspectRatio="4/3"
-            />
+            {stage.imageSrc ? (
+              <ZoomableImage
+                src={stage.imageSrc}
+                alt={stage.caption}
+                caption={stage.caption}
+              />
+            ) : (
+              <AssetPlaceholder
+                id={stage.assetId}
+                caption={stage.caption}
+                aspectRatio="4/3"
+              />
+            )}
 
             <div className="bg-sym-bg-blue rounded-lg p-3 mt-3">
               <p className="text-xs text-sym-blue italic leading-relaxed">
