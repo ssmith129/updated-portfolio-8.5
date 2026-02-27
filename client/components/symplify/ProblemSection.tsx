@@ -1,5 +1,5 @@
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder } from "./shared";
+import { SymTLDR, AssetPlaceholder, ZoomableImage } from "./shared";
 
 const quotes = [
   {
@@ -95,8 +95,9 @@ export default function ProblemSection() {
 
       {/* Research Artifact Photos */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-        <AssetPlaceholder
-          id="affinity-wall-photo.jpg"
+        <ZoomableImage
+          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff67570c7a23f41f8ab09de08308901aa"
+          alt="Affinity map from 18 contextual inquiry sessions showing 4 primary pain clusters: Triage Overhead, Handoff Failures, Compliance Blindness, and Tool Fragmentation"
           caption="Affinity mapping from 18 contextual inquiry sessions — 4 primary pain clusters emerged."
         />
         <AssetPlaceholder
