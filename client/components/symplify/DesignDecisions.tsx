@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder, ZoomableImage } from "./shared";
+import { SymTLDR, ZoomableImage } from "./shared";
 
 export default function DesignDecisions() {
   const headingRef = useScrollReveal();
@@ -189,10 +189,10 @@ function Decision4() {
       {/* Before / After comparison */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <div>
-          <AssetPlaceholder
-            id="alerts-before-flat-list.png"
+          <ZoomableImage
+            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5f599eb71f4f49589b805bc698f2f8b1"
+            alt="Before: flat alert list with 47 daily interruptions, all marked with equal urgency and no priority differentiation"
             caption="Flat list of 47 alerts all marked with equal urgency, no prioritization or grouping."
-            aspectRatio="4/3"
           />
           <div className="space-y-2 mt-3">
             {[
@@ -209,10 +209,10 @@ function Decision4() {
           </div>
         </div>
         <div>
-          <AssetPlaceholder
-            id="alerts-after-tiered.png"
+          <ZoomableImage
+            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fadfb6c1e57684d289fe4d76b7b835b63"
+            alt="After: risk-tiered alert system with 2 critical actions, 3 review items, and 42 FYI items batched into a collapsible digest"
             caption="Risk-tiered alert system: 2 critical actions, 3 items for review, 42 FYI items batched into a single collapsible digest."
-            aspectRatio="4/3"
           />
           <div className="space-y-2 mt-3">
             {[
