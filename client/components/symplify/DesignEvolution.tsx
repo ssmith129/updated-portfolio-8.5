@@ -44,18 +44,21 @@ const schedulingEvolution: EvolutionStage[] = [
   {
     title: "Auto-Booking Concept",
     assetId: "scheduling-sketch-autobook.jpg",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F768632186c5e45bead1b94f70295f521",
     caption: "Original concept: system auto-books optimal slots. Seemed like an obvious efficiency win.",
     learning: '67% of clinicians rejected this outright. "It feels like the system is making clinical decisions without me."',
   },
   {
     title: "Suggestion-Based Wireframe",
     assetId: "scheduling-wireframe-suggestion.png",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc45fb6bd920c423ca064cd901cd260c9",
     caption: "Post-pivot wireframe: detect conflicts, suggest alternatives, always allow override.",
     learning: "Error prevention over error correction. Don't just say 'no' — offer a better option with context.",
   },
   {
     title: "Production Conflict Modal",
     assetId: "scheduling-conflict-production.png",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F72eb206382b9448ea5da738b15352d4a",
     caption: "Production conflict modal. 89% of suggestions accepted. No-show rate dropped 2.4 points.",
     learning: "The override escape hatch was key. Clinicians who know they CAN override feel safe accepting suggestions.",
   },
