@@ -31,6 +31,7 @@ const showcaseItems = [
   {
     title: "Admin Compliance Dashboard",
     assetId: "product-admin-compliance-annotated.png",
+    videoSrc: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ffa5af1690b39411cbe63a63dfe3bd5c6?alt=media&token=b7e5dcfd-3c5f-4385-a1c4-e470f1f839bd&apiKey=ba69a23156414a589de97341511272c9",
     caption:
       "Admin compliance dashboard: replaced 4.4 hrs/week of manual Excel work. 15% of admins still export to Excel for board reports — a change management gap we're addressing in v2.",
     callouts: [
