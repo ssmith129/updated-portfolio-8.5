@@ -1,10 +1,11 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder } from "./shared";
+import { SymTLDR, AssetPlaceholder, AutoplayVideo } from "./shared";
 
 const showcaseItems = [
   {
     title: "Doctor Dashboard",
     assetId: "product-doctor-dashboard-annotated.png",
+    videoSrc: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa5d23882d1ee4e14bace95c1808a2bbe?alt=media&token=bdbf1560-14c0-4c93-a0a6-526cfd6bfe2d&apiKey=ba69a23156414a589de97341511272c9",
     caption:
       "Doctor's primary view: AI-augmented triage with full transparency. Every recommendation is explainable, overridable, and audit-logged.",
     callouts: [
@@ -87,11 +88,13 @@ export default function ProductShowcase() {
 function ShowcaseCard({
   title,
   assetId,
+  videoSrc,
   caption,
   callouts,
 }: {
   title: string;
   assetId: string;
+  videoSrc?: string;
   caption: string;
   callouts: string[];
 }) {
@@ -99,7 +102,11 @@ function ShowcaseCard({
     <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
       <h3 className="text-lg font-semibold text-sym-heading mb-5">{title}</h3>
 
-      <AssetPlaceholder id={assetId} caption={caption} aspectRatio="16/9" />
+      {videoSrc ? (
+        <AutoplayVideo src={videoSrc} caption={caption} />
+      ) : (
+        <AssetPlaceholder id={assetId} caption={caption} aspectRatio="16/9" />
+      )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
         {callouts.map((callout, i) => {

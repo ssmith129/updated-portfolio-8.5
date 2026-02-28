@@ -1,6 +1,6 @@
 import { Monitor, Tablet, Smartphone } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder } from "./shared";
+import { SymTLDR, AssetPlaceholder, ZoomableImage } from "./shared";
 
 const platforms = [
   {
@@ -178,10 +178,10 @@ export default function SystemOverview() {
 
         {/* Component detail screenshots */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-          <AssetPlaceholder
-            id="ds-confidence-badges.png"
+          <ZoomableImage
+            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1d54fbd1ec6141b883b33697b1c4b107"
+            alt="Confidence badge variants showing High, Med, and Low tiers with color-blind safe pattern and label redundancy, plus clinician acceptance rates"
             caption="Confidence badge variants. Color-blind safe versions use pattern + label redundancy."
-            aspectRatio="3/2"
           />
           <AssetPlaceholder
             id="ds-alert-tier-cards.png"

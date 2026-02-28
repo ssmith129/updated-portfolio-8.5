@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { Zap, X, ZoomIn } from "lucide-react";
 
 export function SymTLDR({ children }: { children: React.ReactNode }) {
@@ -121,6 +121,54 @@ export function AssetPlaceholder({
       <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed">
         {caption}
       </figcaption>
+    </figure>
+  );
+}
+
+export function AutoplayVideo({
+  src,
+  caption,
+}: {
+  src: string;
+  caption?: string;
+}) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <figure className="mb-6">
+      <video
+        ref={videoRef}
+        src={src}
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        className="w-full h-auto rounded-xl border border-sym-card-border shadow-sm"
+      />
+      {caption && (
+        <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed">
+          {caption}
+        </figcaption>
+      )}
     </figure>
   );
 }
