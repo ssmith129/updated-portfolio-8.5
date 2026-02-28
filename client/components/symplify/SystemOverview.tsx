@@ -1,6 +1,6 @@
 import { Monitor, Tablet, Smartphone } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder, ZoomableImage } from "./shared";
+import { SymTLDR, ZoomableImage } from "./shared";
 
 const platforms = [
   {
@@ -184,10 +184,10 @@ export default function SystemOverview() {
             alt="Confidence badge variants showing High, Med, and Low tiers with color-blind safe pattern and label redundancy, plus clinician acceptance rates"
             caption="Confidence badge variants. Color-blind safe versions use pattern + label redundancy."
           />
-          <AssetPlaceholder
-            id="ds-alert-tier-cards.png"
+          <ZoomableImage
+            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F50eb5428c0334d5799e33a83f870af27"
+            alt="Alert tier hierarchy showing Critical, Review Needed, and FYI tiers with before/after comparison — 47 flat alerts reduced to 2+3+42 tiered and batched"
             caption="Alert tier hierarchy. Critical items demand action; FYI items collapse to reduce cognitive load."
-            aspectRatio="3/2"
           />
         </div>
 
