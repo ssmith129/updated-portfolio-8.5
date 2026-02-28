@@ -171,8 +171,9 @@ export default function SystemOverview() {
         </p>
 
         {/* Design System Specimen */}
-        <AssetPlaceholder
-          id="design-system-specimen.png"
+        <ZoomableImage
+          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F972ae0ec8c9a4b289e8854f7b13ce527"
+          alt="Symplify Design System specimen showing color palette, typography scale, AI confidence badges, alert tier system, role-based color coding, spacing grid, and WCAG 2.2 AA compliance details"
           caption="Design system specimen: WCAG 2.2 AA baked into tokens. Color-blind safe confidence badges, keyboard navigation, and screen reader support from day one."
         />
 
