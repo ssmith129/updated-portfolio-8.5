@@ -18,6 +18,7 @@ const showcaseItems = [
   {
     title: "Nurse Shift Handoff View",
     assetId: "product-nurse-handoff-annotated.png",
+    videoSrc: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F2598beb4dba04408982761d22d7d5189?alt=media&token=c0060f50-bc26-467a-bd3d-d2ebc1cb5fa4&apiKey=ba69a23156414a589de97341511272c9",
     caption:
       "Nurse shift handoff: structured visibility replaced 20-minute phone calls. Handoff-related missed items dropped from 18% baseline.",
     callouts: [
