@@ -154,7 +154,7 @@ export function AutoplayVideo({
   }, []);
 
   return (
-    <figure className="mb-6">
+    <figure className="mb-6 -mx-6 sm:-mx-8">
       <video
         ref={videoRef}
         src={src}
@@ -162,7 +162,7 @@ export function AutoplayVideo({
         loop
         playsInline
         preload="metadata"
-        className="w-full h-auto rounded-xl border border-sym-card-border shadow-sm"
+        className="w-full h-auto"
       />
       {caption && (
         <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed">
