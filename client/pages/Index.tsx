@@ -137,7 +137,7 @@ export default function Index() {
           >
             <div className="aspect-square overflow-hidden relative">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4?width=1900"
+                src="https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4"
                 alt="Computis - Crypto Tax Engine Dashboard"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
                 loading="lazy"
@@ -163,7 +163,7 @@ export default function Index() {
           >
             <div className="aspect-square overflow-hidden relative">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F36b7682859c14dd1b07433f39f2c1c11?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F36b7682859c14dd1b07433f39f2c1c11"
                 alt="Symplify - Hospital Management System"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
                 loading="lazy"
