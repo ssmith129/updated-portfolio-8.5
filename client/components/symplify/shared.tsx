@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-import { Zap, X, ZoomIn } from "lucide-react";
+import { Zap, X, ZoomIn, Maximize2 } from "lucide-react";
 
 export function SymTLDR({ children }: { children: React.ReactNode }) {
   return (
@@ -133,6 +133,10 @@ export function AutoplayVideo({
   caption?: string;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const modalVideoRef = useRef<HTMLVideoElement>(null);
+  const [open, setOpen] = useState(false);
+
+  const close = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -153,22 +157,85 @@ export function AutoplayVideo({
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (!open) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") close();
+    };
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", handleKey);
+
+    // Sync playback: start modal video
+    const modalVideo = modalVideoRef.current;
+    if (modalVideo) {
+      modalVideo.play().catch(() => {});
+    }
+    // Pause inline video while modal is open
+    const inlineVideo = videoRef.current;
+    if (inlineVideo) inlineVideo.pause();
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKey);
+      // Resume inline video when modal closes
+      if (inlineVideo) inlineVideo.play().catch(() => {});
+    };
+  }, [open, close]);
+
   return (
-    <figure className="mb-6 -mx-6 sm:-mx-8">
-      <video
-        ref={videoRef}
-        src={src}
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        className="w-full h-auto"
-      />
-      {caption && (
-        <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed">
-          {caption}
-        </figcaption>
+    <>
+      <figure className="mb-6 -mx-6 sm:-mx-8">
+        <div className="relative group">
+          <video
+            ref={videoRef}
+            src={src}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="w-full h-auto"
+          />
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            className="absolute bottom-3 right-3 w-9 h-9 rounded-lg bg-black/50 hover:bg-black/70 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-sym-blue"
+            aria-label="View fullscreen"
+          >
+            <Maximize2 className="w-4 h-4 text-white" />
+          </button>
+        </div>
+        {caption && (
+          <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed">
+            {caption}
+          </figcaption>
+        )}
+      </figure>
+
+      {open && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm animate-fade-in"
+          onClick={close}
+        >
+          <button
+            type="button"
+            onClick={close}
+            className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center transition-colors"
+            aria-label="Close"
+          >
+            <X className="w-5 h-5 text-white" />
+          </button>
+          <video
+            ref={modalVideoRef}
+            src={src}
+            muted
+            loop
+            playsInline
+            autoPlay
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-[94vw] max-h-[90vh] object-contain rounded-lg shadow-2xl animate-zoom-in"
+          />
+        </div>
       )}
-    </figure>
+    </>
   );
 }
