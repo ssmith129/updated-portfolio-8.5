@@ -88,12 +88,6 @@ export default function HeroSection() {
             loading="lazy"
             className="w-full h-auto rounded-2xl"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
-          <span className="absolute inset-0 flex items-center justify-center">
-            <span className="relative z-10 bg-white/90 backdrop-blur-sm text-sym-heading rounded-xl px-6 py-3 text-sm font-semibold shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-y-0 translate-y-2">
-              View Live Platform
-            </span>
-          </span>
         </a>
       </div>
     </>
