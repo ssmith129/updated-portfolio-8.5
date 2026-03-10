@@ -109,7 +109,7 @@ function ProjectTimeline() {
       <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-5">
         Project Timeline — Jan – Aug 2024
       </p>
-      <div className="flex gap-2 min-w-[700px]">
+      <div className="flex gap-2 min-w-[700px] items-start">
         {timelinePhases.map((phase, i) => (
           <div key={phase.label} className="flex-1 relative">
             {/* Connector line */}

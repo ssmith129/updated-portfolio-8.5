@@ -139,7 +139,7 @@ export default function SymplifyCaseStudy() {
         <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
           <nav
             aria-label="Case study sections"
-            className="flex items-center gap-2 overflow-x-auto py-3 scrollbar-hide
+            className="flex items-center justify-center gap-2 overflow-x-auto py-3 scrollbar-hide
                        relative before:absolute before:left-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-white/80 before:to-transparent before:z-10 before:pointer-events-none
                        after:absolute after:right-0 after:top-0 after:bottom-0 after:w-8 after:bg-gradient-to-l after:from-white/80 after:to-transparent after:z-10 after:pointer-events-none"
           >
