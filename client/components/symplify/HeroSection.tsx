@@ -65,7 +65,7 @@ export default function HeroSection() {
       {/* Hero Image */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10 mb-6">
         <a
-          href="https://symplify-v4-live.vercel.app/"
+          href="https://symplify-v4.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-full aspect-[1.85] rounded-2xl flex items-center justify-center border border-sym-card-border transition-all duration-500 hover:shadow-2xl hover:scale-[1.008] cursor-pointer group relative overflow-hidden hover:border-sym-blue/20"
