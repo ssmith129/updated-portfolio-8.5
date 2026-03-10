@@ -21,10 +21,10 @@ export default function HeroSection() {
         <span className="inline-block bg-gradient-to-r from-sym-blue to-sym-green text-white px-4 py-1.5 rounded-full text-[13px] font-semibold tracking-wide uppercase mb-6">
           Healthcare AI Platform
         </span>
-        <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] xl:text-[3.75rem] font-semibold text-sym-heading leading-tight lg:leading-[65px] tracking-[-0.03em] mb-6 max-w-[900px]">
+        <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] xl:text-[3.75rem] font-semibold text-sym-heading leading-tight lg:leading-[65px] tracking-[-0.03em] mb-6 max-w-none">
           Turning Hospital Chaos into Clinical Clarity
         </h1>
-        <p className="text-lg sm:text-xl text-sym-body leading-[1.6] max-w-[720px] mb-4">
+        <p className="text-lg sm:text-xl text-sym-body leading-[1.6] max-w-none mb-4">
           I led end-to-end design for a 0-to-1 AI-enhanced hospital management
           platform that unified fragmented EHR, Excel, and email workflows into
           a single, trustworthy system — reducing triage time by 40% across 3
