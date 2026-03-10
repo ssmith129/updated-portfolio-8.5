@@ -1,5 +1,5 @@
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, ZoomableImage } from "./shared";
+import { ZoomableImage } from "./shared";
 
 const quotes = [
   {
@@ -81,16 +81,10 @@ export default function ProblemSection() {
         </h2>
       </div>
 
-      <SymTLDR>
-        Staff operated across 3 disconnected systems with no shared triage model.
-        18% of urgent handoffs were missed at shift change. Doctors spent 2 minutes
-        per message just deciding if it was urgent — 8 hours of cognitive overhead per month.
-      </SymTLDR>
-
       <p className="text-lg text-sym-body leading-relaxed max-w-[720px] mb-10">
-        Hospital and WIC clinic staff were operating across three disconnected
+        Hospital and WIC clinic staff operated across three disconnected
         systems — EHR, Excel, and email — with no shared prioritization model.
-        The consequences were measurable and severe.
+        Doctors spent 2 minutes per message just deciding if it was urgent: 8 hours of cognitive overhead per month.
       </p>
 
       {/* Research Artifact Photos */}
@@ -177,7 +171,7 @@ function JourneyLane({
         {steps.map((step, i) => (
           <div key={step.label} className="flex items-center gap-1 flex-1 min-w-0">
             <div
-              className={`flex-1 rounded-md px-2 py-2 text-center text-[11px] leading-tight font-medium border ${
+              className={`flex-1 rounded-md px-2 py-2 text-center text-xs leading-tight font-medium border ${
                 step.pain
                   ? "bg-sym-bg-red border-[#FECACA] text-[#991B1B]"
                   : "border-sym-card-border text-sym-body"

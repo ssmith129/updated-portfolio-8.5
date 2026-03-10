@@ -87,7 +87,7 @@ export default {
           heading: '#0F172A',
           body: '#334155',
           muted: '#64748B',
-          label: '#94A3B8',
+          label: '#6B7280',
           card: '#FFFFFF',
           'card-border': '#E2E8F0',
           'card-border-hover': '#CBD5E1',

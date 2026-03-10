@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, Calendar, Users, Briefcase, FlaskConical, Clock } from "lucide-react";
+import { ArrowLeft, Calendar, Users, Briefcase, FlaskConical, Clock, ExternalLink } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -31,10 +31,21 @@ export default function HeroSection() {
           facilities and 65 clinical staff.
         </p>
 
-        {/* Reading time */}
-        <div className="flex items-center gap-1.5 text-sym-label text-sm mb-10">
-          <Clock className="w-3.5 h-3.5" />
-          <span>14 min read</span>
+        {/* Reading time + CTA */}
+        <div className="flex items-center gap-6 mb-10">
+          <div className="flex items-center gap-1.5 text-sym-label text-sm">
+            <Clock className="w-3.5 h-3.5" />
+            <span>7 min read</span>
+          </div>
+          <a
+            href="https://symplify-v4.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-sym-blue to-sym-green text-white text-sm font-semibold shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105"
+          >
+            View Live Platform
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
         </div>
 
         {/* Meta badges */}
@@ -68,19 +79,20 @@ export default function HeroSection() {
           href="https://symplify-v4.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full aspect-[1.85] rounded-2xl flex items-center justify-center border border-sym-card-border transition-all duration-500 hover:shadow-2xl hover:scale-[1.008] cursor-pointer group relative overflow-hidden hover:border-sym-blue/20"
+          className="block w-full rounded-2xl border border-sym-card-border transition-all duration-500 hover:shadow-2xl hover:scale-[1.008] cursor-pointer group relative overflow-hidden hover:border-sym-blue/20"
           aria-label="Open Symplify live platform in a new tab"
-          style={{
-            backgroundImage:
-              "url(https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa365aabaf0c94e5ea46663d1d7bd4cb3)",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          <span className="relative z-10 bg-white/90 backdrop-blur-sm text-sym-heading rounded-xl px-6 py-3 text-sm font-semibold shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-y-0 translate-y-2">
-            View Live Platform
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa365aabaf0c94e5ea46663d1d7bd4cb3"
+            alt="Symplify hospital management platform — unified dashboard showing AI-augmented triage, scheduling, and compliance views"
+            loading="lazy"
+            className="w-full h-auto rounded-2xl"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
+          <span className="absolute inset-0 flex items-center justify-center">
+            <span className="relative z-10 bg-white/90 backdrop-blur-sm text-sym-heading rounded-xl px-6 py-3 text-sm font-semibold shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-y-0 translate-y-2">
+              View Live Platform
+            </span>
           </span>
         </a>
       </div>

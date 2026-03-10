@@ -14,21 +14,19 @@ import ResearchSection from "../components/symplify/ResearchSection";
 import DesignEvolution from "../components/symplify/DesignEvolution";
 import DesignDecisions from "../components/symplify/DesignDecisions";
 import ProductShowcase from "../components/symplify/ProductShowcase";
-import PivotalMoments from "../components/symplify/PivotalMoments";
 import SystemOverview from "../components/symplify/SystemOverview";
 import ReflectionsSection from "../components/symplify/ReflectionsSection";
 
 const sectionNav = [
-  { href: "#impact", label: "At a Glance" },
   { href: "#overview", label: "Overview" },
   { href: "#problem", label: "Problem" },
   { href: "#research", label: "Research" },
   { href: "#evolution", label: "Evolution" },
   { href: "#decisions", label: "Design Decisions" },
   { href: "#showcase", label: "Product" },
-  { href: "#pivots", label: "Pivotal Moments" },
+  { href: "#impact", label: "Outcomes" },
   { href: "#system", label: "Architecture" },
-  { href: "#outcomes", label: "Outcomes" },
+  { href: "#outcomes", label: "Assessment" },
   { href: "#reflection", label: "Reflection" },
 ];
 
@@ -167,8 +165,6 @@ export default function SymplifyCaseStudy() {
       </div>
 
       <main id="main-content">
-        <ImpactMetrics />
-        <SectionDivider />
         <ProjectOverview />
         <SectionDivider />
         <ProblemSection />
@@ -182,7 +178,7 @@ export default function SymplifyCaseStudy() {
         <SectionDivider />
         <ProductShowcase />
         <SectionDivider />
-        <PivotalMoments />
+        <ImpactMetrics />
         <SectionDivider />
         <SystemOverview />
         <SectionDivider />

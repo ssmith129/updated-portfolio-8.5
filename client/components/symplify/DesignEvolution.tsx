@@ -1,10 +1,10 @@
+import { Zap, RotateCcw, TrendingUp } from "lucide-react";
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder, ZoomableImage } from "./shared";
+import { ZoomableImage } from "./shared";
 
 interface EvolutionStage {
   title: string;
-  assetId: string;
-  imageSrc?: string;
+  imageSrc: string;
   caption: string;
   learning: string;
 }
@@ -12,54 +12,47 @@ interface EvolutionStage {
 const triageEvolution: EvolutionStage[] = [
   {
     title: "Initial Sketches",
-    assetId: "triage-inbox-sketch.jpg",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1aa7e709a2154ef3900db70013a868c9",
     caption: "Initial concept sketch exploring how to surface AI-assessed urgency alongside message content.",
     learning: "First question we needed to answer: how do you show AI confidence without creating false precision?",
   },
   {
     title: "Wireframe v1 — Percentage Scores",
-    assetId: "triage-inbox-wireframe-v1.png",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9c427e2aabb34bb6a69db7193fdfa2a9",
     caption: 'Wireframe tested with 12 clinicians. Percentage scores felt like "fake precision" — only 33% acceptance.',
     learning: "Clinicians aren't statisticians. Exact percentages made them question the AI more, not trust it more.",
   },
   {
     title: "Wireframe v2 — 3-Tier Badges",
-    assetId: "triage-inbox-wireframe-v2.png",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dff12a18bb94c638c174adde3700069",
     caption: "Redesigned with 3-tier badges after the percentage rejection. Tested at 89% acceptance.",
     learning: 'The breakthrough: badges communicate "suggested priority" rather than "calculated probability." Staff felt like it was an assistant, not a replacement.',
   },
   {
     title: "Production UI",
-    assetId: "triage-inbox-production.png",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff98fec64c0cb49ff82fa9c6d0518e333",
     caption: "Shipped production UI. 11% override rate with full audit trail on every decision.",
-    learning: "Result: override rate dropped from 18% (percentage version) to 11% (badge version). Trust through transparency.",
+    learning: "Override rate dropped from 18% (percentage version) to 11% (badge version). Trust through transparency.",
   },
 ];
 
 const schedulingEvolution: EvolutionStage[] = [
   {
     title: "Auto-Booking Concept",
-    assetId: "scheduling-sketch-autobook.jpg",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F768632186c5e45bead1b94f70295f521",
     caption: "Original concept: system auto-books optimal slots. Seemed like an obvious efficiency win.",
-    learning: '67% of clinicians rejected this outright. "It feels like the system is making clinical decisions without me."',
+    learning: "67% of clinicians rejected this outright — they wanted faster decisions, not fewer decisions.",
   },
   {
     title: "Suggestion-Based Wireframe",
-    assetId: "scheduling-wireframe-suggestion.png",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc45fb6bd920c423ca064cd901cd260c9",
     caption: "Post-pivot wireframe: detect conflicts, suggest alternatives, always allow override.",
     learning: "Error prevention over error correction. Don't just say 'no' — offer a better option with context.",
   },
   {
     title: "Production Conflict Modal",
-    assetId: "scheduling-conflict-production.png",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F72eb206382b9448ea5da738b15352d4a",
-    caption: "Production conflict modal. 89% of suggestions accepted. No-show rate dropped 2.4 points.",
+    caption: "Production conflict modal. Suggestions accepted at high rates. No-show rate dropped 2.4 points.",
     learning: "The override escape hatch was key. Clinicians who know they CAN override feel safe accepting suggestions.",
   },
 ];
@@ -74,32 +67,80 @@ export default function DesignEvolution() {
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-purple uppercase tracking-widest mb-2">
-          Iteration Process
+          From Rejection to Trust
         </p>
         <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6">
           Design Evolution
         </h2>
       </div>
 
-      <SymTLDR>
-        Key features went through 3-4 rounds of iteration based on clinical
-        feedback. The AI confidence display pivoted from percentages to badges
-        after testing showed 67% of clinicians rejected numerical precision.
-        Scheduling went from auto-booking to suggestion-based after similar rejection.
-      </SymTLDR>
+      {/* Pivotal Moment 1 — merged from PivotalMoments.tsx */}
+      <PivotalNarrative
+        icon={<Zap className="w-5 h-5 text-sym-amber" />}
+        title="The 67% Rejection That Changed Everything"
+        bgColor="#FFFBEB"
+        borderColor="#FDE68A"
+        narrative="Three weeks into prototyping, we tested auto-assigned task routing with 12 clinicians. 67% rejected automated assignments outright. Staff didn't want fewer decisions — they wanted faster, better-informed decisions. This reframe — augmentation over automation — reshaped every subsequent design decision."
+        outcome="Auto-booking rejection dropped from 67% to 11% after the pivot to suggestion-based design."
+      />
 
-      {/* Evolution 1: AI Triage Inbox */}
       <EvolutionTrack
         title="AI Triage Inbox"
         stages={triageEvolution}
       />
 
-      {/* Evolution 2: Scheduling Conflict Flow */}
+      {/* Pivotal Moment 2 — merged from PivotalMoments.tsx */}
+      <PivotalNarrative
+        icon={<RotateCcw className="w-5 h-5 text-sym-purple" />}
+        title="The HIPAA Constraint That Improved UX"
+        bgColor="#F5F3FF"
+        borderColor="#DDD6FE"
+        narrative={`A HIPAA audit requirement forced every AI recommendation to include human-readable justification at the point of decision. Initially this felt like a burden. The breakthrough came from nurse feedback: "I don't need to see the reasoning every time — but I need to know I can." This led to the hover-to-reveal pattern: confidence badges always visible, reasoning on demand. The compliance requirement actually produced better UX than our original design.`}
+        outcome="89% user trust score in post-pilot survey — the highest-rated feature of the entire platform."
+      />
+
       <EvolutionTrack
         title="Scheduling Conflict Flow"
         stages={schedulingEvolution}
       />
     </section>
+  );
+}
+
+function PivotalNarrative({
+  icon,
+  title,
+  bgColor,
+  borderColor,
+  narrative,
+  outcome,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  bgColor: string;
+  borderColor: string;
+  narrative: string;
+  outcome: string;
+}) {
+  return (
+    <div
+      className="rounded-2xl border overflow-hidden mb-8"
+      style={{ borderColor, backgroundColor: bgColor }}
+    >
+      <div className="px-6 py-5 flex items-start gap-3">
+        <div className="w-10 h-10 rounded-xl bg-white/80 flex items-center justify-center flex-shrink-0 shadow-sm">
+          {icon}
+        </div>
+        <div className="flex-1">
+          <h3 className="text-lg font-semibold text-sym-heading mb-2">{title}</h3>
+          <p className="text-[15px] text-sym-body leading-relaxed">{narrative}</p>
+        </div>
+      </div>
+      <div className="mx-6 mb-6 flex items-start gap-2 bg-white/60 rounded-xl px-5 py-3">
+        <TrendingUp className="w-4 h-4 text-sym-green mt-0.5 flex-shrink-0" />
+        <p className="text-sm font-medium text-[#166534]">{outcome}</p>
+      </div>
+    </div>
   );
 }
 
@@ -117,7 +158,6 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
             key={stage.title}
             className="bg-sym-card rounded-xl border border-sym-card-border p-5 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300 relative"
           >
-            {/* Stage number */}
             <div className="w-8 h-8 rounded-full bg-gradient-to-r from-sym-blue to-sym-green text-white flex items-center justify-center text-sm font-bold mb-4">
               {i + 1}
             </div>
@@ -126,19 +166,11 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
               {stage.title}
             </h4>
 
-            {stage.imageSrc ? (
-              <ZoomableImage
-                src={stage.imageSrc}
-                alt={stage.caption}
-                caption={stage.caption}
-              />
-            ) : (
-              <AssetPlaceholder
-                id={stage.assetId}
-                caption={stage.caption}
-                aspectRatio="4/3"
-              />
-            )}
+            <ZoomableImage
+              src={stage.imageSrc}
+              alt={stage.caption}
+              caption={stage.caption}
+            />
 
             <div className="bg-sym-bg-blue rounded-lg p-3 mt-3">
               <p className="text-xs text-sym-blue italic leading-relaxed">

@@ -1,5 +1,5 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, AssetPlaceholder, AutoplayVideo } from "./shared";
+import { AutoplayVideo } from "./shared";
 
 const showcaseItems = [
   {
@@ -41,17 +41,6 @@ const showcaseItems = [
       "Audit Trail Browser — Searchable log of every AI recommendation, override, and outcome.",
     ],
   },
-  {
-    title: "Mobile Triage (On-Call)",
-    assetId: "product-mobile-triage-annotated.png",
-    caption:
-      "Mobile on-call view: critical alerts only, designed for 1-thumb operation in clinical corridors. Offline-first architecture caches pending actions for rural sites.",
-    callouts: [
-      "Critical Alerts Only — FYI and Review items are suppressed on mobile.",
-      "1-Thumb Operation — Accept/Override actions sized for one-handed use (44×44px touch targets).",
-      "Offline Indicator — Shows sync status for rural/intermittent connectivity sites.",
-    ],
-  },
 ];
 
 export default function ProductShowcase() {
@@ -71,12 +60,11 @@ export default function ProductShowcase() {
         </h2>
       </div>
 
-      <SymTLDR>
+      <p className="text-[15px] text-sym-body leading-relaxed max-w-[720px] mb-10">
         The production platform serves three distinct user roles through a shared
-        data layer. Each view surfaces only the information and actions relevant
-        to that role's workflow, reducing cognitive overhead while maintaining
-        cross-team visibility.
-      </SymTLDR>
+        data layer. A mobile on-call view (critical alerts only, offline-first, 1-thumb operation)
+        rounds out the platform for corridor use.
+      </p>
 
       <div className="space-y-16">
         {showcaseItems.map((item) => (
@@ -104,10 +92,8 @@ function ShowcaseCard({
     <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
       <h3 className="text-lg font-semibold text-sym-heading mb-5">{title}</h3>
 
-      {videoSrc ? (
+      {videoSrc && (
         <AutoplayVideo src={videoSrc} caption={caption} />
-      ) : (
-        <AssetPlaceholder id={assetId} caption={caption} aspectRatio="16/9" />
       )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">

@@ -31,6 +31,8 @@ export function ZoomableImage({
   caption?: string;
 }) {
   const [open, setOpen] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
 
   const close = useCallback(() => setOpen(false), []);
 
@@ -38,12 +40,39 @@ export function ZoomableImage({
     if (!open) return;
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") close();
+      // Focus trap: keep Tab within modal
+      if (e.key === "Tab") {
+        const modal = modalRef.current;
+        if (!modal) return;
+        const focusable = modal.querySelectorAll<HTMLElement>(
+          'button, [href], [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey) {
+          if (document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          }
+        } else {
+          if (document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      }
     };
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", handleKey);
+    // Auto-focus close button on open
+    const closeBtn = modalRef.current?.querySelector<HTMLElement>("button");
+    closeBtn?.focus();
     return () => {
       document.body.style.overflow = "";
       window.removeEventListener("keydown", handleKey);
+      // Return focus to trigger
+      triggerRef.current?.focus();
     };
   }, [open, close]);
 
@@ -51,6 +80,7 @@ export function ZoomableImage({
     <>
       <figure className="mb-6 group">
         <button
+          ref={triggerRef}
           type="button"
           onClick={() => setOpen(true)}
           className="relative w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-sym-blue"
@@ -58,6 +88,7 @@ export function ZoomableImage({
           <img
             src={src}
             alt={alt}
+            loading="lazy"
             className="w-full h-auto block"
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
@@ -75,6 +106,10 @@ export function ZoomableImage({
 
       {open && (
         <div
+          ref={modalRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Enlarged image view"
           className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm animate-fade-in"
           onClick={close}
         >

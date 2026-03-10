@@ -1,6 +1,5 @@
 import { Target, Building2, TrendingUp, Users } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR } from "./shared";
 
 const objectives = [
   {
@@ -62,13 +61,6 @@ export default function ProjectOverview() {
           Project Overview
         </h2>
       </div>
-
-      <SymTLDR>
-        Custom Data Processing Inc. needed a clinical coordination platform
-        that integrates with (not replaces) legacy EHR systems, complies with
-        HIPAA, and proves value in 6 weeks. As founding product designer,
-        I owned research through pilot validation.
-      </SymTLDR>
 
       {/* Visual Project Timeline */}
       <ProjectTimeline />

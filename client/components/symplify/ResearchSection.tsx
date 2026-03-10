@@ -1,6 +1,6 @@
 import { Eye, Search, MessageSquare, BarChart3 } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, ZoomableImage } from "./shared";
+import { ZoomableImage } from "./shared";
 
 const methods = [
   { icon: <Eye className="w-4 h-4" />, label: "Shadowed 18 staff", detail: "across 3 facilities" },
@@ -13,7 +13,7 @@ const insights = [
   {
     number: "01",
     title: "Augmentation, Not Automation",
-    body: 'Clinical time was 60% coordination overhead. But when asked "Should we automate triage?", 67% said no. Staff wanted tools that made them faster — not black-box decisions.',
+    body: 'Clinical time was 60% coordination overhead. Staff wanted tools that made them faster — not black-box decisions that removed their judgment.',
     principle: "AI transparency > AI autonomy",
     color: "#3B82F6",
     bgColor: "#EFF6FF",
@@ -70,13 +70,6 @@ export default function ResearchSection() {
           Research
         </h2>
       </div>
-
-      <SymTLDR>
-        Shadowed 18 staff across 3 facilities, logged 3,000+ tasks, conducted
-        14 interviews, and analyzed 1,200 messages. Three insights reshaped the
-        project: staff wanted augmentation not automation, "urgent" had no shared
-        meaning, and compliance failures were visibility problems not discipline problems.
-      </SymTLDR>
 
       {/* Methods strip */}
       <div ref={methodsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">

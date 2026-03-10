@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { AlertTriangle } from "lucide-react";
 import { useIntersectionAnimation } from "../../hooks/use-page-animations";
-import { SymTLDR } from "./shared";
 
 function useCountAnimation(end: number, duration = 2000, startAnimation = false) {
   const [count, setCount] = useState(0);
@@ -75,11 +74,6 @@ export default function ImpactMetrics() {
           Impact at a Glance
         </h2>
 
-        <SymTLDR>
-          6-week pilot across 3 facilities: 40% faster triage, 89% accuracy,
-          35% less admin overhead, and ~$78K/year estimated savings — with full
-          AI transparency maintained (11% override rate, &lt;10% false positives).
-        </SymTLDR>
       </div>
 
       {/* Animated Metric Cards */}
@@ -127,6 +121,10 @@ export default function ImpactMetrics() {
           </span>
         </div>
       </div>
+
+      <p className="text-xs text-sym-muted italic mb-6">
+        All metrics were system-logged by the platform's analytics module and compared against 4-week pre-pilot baselines.
+      </p>
 
       {/* Business Value Estimate — Collapsible */}
       <details className="group">

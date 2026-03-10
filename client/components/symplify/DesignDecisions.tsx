@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR, ZoomableImage } from "./shared";
+import { ZoomableImage } from "./shared";
 
 export default function DesignDecisions() {
   const headingRef = useScrollReveal();
@@ -18,13 +18,6 @@ export default function DesignDecisions() {
           Design Decisions
         </h2>
       </div>
-
-      <SymTLDR>
-        Four core design decisions shaped the platform: a 3-tier AI confidence
-        system (89% acceptance vs. 33% for percentages), auditable plain-language
-        AI reasoning, suggestion-based scheduling with override escape hatches,
-        and risk-tiered alert batching that cut alert fatigue 38%.
-      </SymTLDR>
 
       <div className="space-y-20">
         <Decision1 />

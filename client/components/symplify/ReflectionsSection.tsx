@@ -1,6 +1,5 @@
-import { CheckCircle, AlertTriangle, Lightbulb, ArrowRight, TrendingUp, Award, Users, Zap } from "lucide-react";
+import { CheckCircle, AlertTriangle, Lightbulb, ArrowRight } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR } from "./shared";
 
 const wins = [
   "Trust through transparency — the 11% override rate proved users felt safe disagreeing with AI.",
@@ -14,26 +13,6 @@ const misses = [
   "15% of admins still exported to Excel — a change management gap we underestimated.",
 ];
 
-const pilotQuotes = [
-  {
-    text: "For the first time, I don't have to cross-reference three systems to decide what's urgent. The AI gets it right about 9 times out of 10.",
-    cite: "Internal Medicine MD",
-    role: "Doctor",
-    color: "#3B82F6",
-  },
-  {
-    text: "The shift handoff used to take me 20 minutes of phone calls. Now I can see exactly where things stand when I walk in.",
-    cite: "RN Supervisor",
-    role: "Nurse",
-    color: "#10B981",
-  },
-  {
-    text: "I still export to Excel for my monthly board reports — old habits — but I've stopped building them from scratch. The compliance dashboard gets me 80% there.",
-    cite: "Clinical Operations Manager",
-    role: "Admin",
-    color: "#F59E0B",
-  },
-];
 
 const reflections = [
   {
@@ -61,19 +40,6 @@ const nextSteps = [
   { title: "Mobile-First Redesign", detail: "Dedicated mobile interaction patterns beyond responsive" },
 ];
 
-const summaryMetrics = [
-  { value: "40%", label: "Faster Triage", Icon: TrendingUp },
-  { value: "89%", label: "Triage Accuracy", Icon: Award },
-  { value: "~$78K", label: "Annual Savings", Icon: Zap },
-  { value: "65", label: "Pilot Staff", Icon: Users },
-];
-
-const keyTakeaways = [
-  "Trust is a design constraint, not a feature — every AI pattern is really a trust pattern",
-  "Compliance constraints (HIPAA audit trails) can improve UX when embraced rather than resisted",
-  "Augmentation > Automation for clinical professionals who need to maintain professional judgment",
-  "Honest metrics with caveats build more credibility than polished presentations without context",
-];
 
 export default function ReflectionsSection() {
   const outcomesRef = useScrollReveal();
@@ -93,13 +59,6 @@ export default function ReflectionsSection() {
             What Worked &amp; What Didn't
           </h2>
         </div>
-
-        <SymTLDR>
-          Trust through transparency worked — 11% override rate proved users felt safe
-          disagreeing with AI. Modular rollout built credibility incrementally. But early
-          prototypes over-automated (67% rejection), mobile alert density remained too
-          high, and 15% of admins still exported to Excel.
-        </SymTLDR>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Wins */}
@@ -136,34 +95,19 @@ export default function ReflectionsSection() {
         </div>
       </section>
 
-      {/* Post-Pilot Feedback */}
+      {/* Post-Pilot Feedback — single strongest quote */}
       <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
-        <p className="text-xs font-semibold text-sym-green uppercase tracking-widest mb-6">
-          In Their Words — Post-Pilot Feedback
-        </p>
-        <div ref={quotesRef} className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {pilotQuotes.map((q) => (
-            <blockquote
-              key={q.cite}
-              className="reveal bg-sym-card rounded-2xl border border-sym-card-border p-6 shadow-sm flex flex-col justify-between card-lift"
-            >
-              <div>
-                <span
-                  className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider text-white mb-3"
-                  style={{ backgroundColor: q.color }}
-                >
-                  {q.role}
-                </span>
-                <p className="text-[15px] text-sym-body leading-relaxed italic mb-4">
-                  "{q.text}"
-                </p>
-              </div>
-              <cite className="text-xs font-semibold text-sym-label not-italic uppercase tracking-wider">
-                — {q.cite}
-              </cite>
-            </blockquote>
-          ))}
-        </div>
+        <blockquote className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 shadow-sm max-w-[720px]">
+          <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider text-white mb-3 bg-sym-blue">
+            Doctor
+          </span>
+          <p className="text-[15px] text-sym-body leading-relaxed italic mb-4">
+            "For the first time, I don't have to cross-reference three systems to decide what's urgent. The AI gets it right about 9 times out of 10."
+          </p>
+          <cite className="text-xs font-semibold text-sym-label not-italic uppercase tracking-wider">
+            — Internal Medicine MD
+          </cite>
+        </blockquote>
       </section>
 
       {/* Reflection */}
@@ -193,9 +137,6 @@ export default function ReflectionsSection() {
         </div>
       </section>
 
-      {/* Case Study Summary */}
-      <SymCaseStudySummary />
-
       {/* Next Steps */}
       <section id="next-steps" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
@@ -223,60 +164,5 @@ export default function ReflectionsSection() {
         </div>
       </section>
     </>
-  );
-}
-
-/* ─── Light-themed Case Study Summary ─── */
-function SymCaseStudySummary() {
-  return (
-    <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10">
-      <div className="bg-gradient-to-r from-sym-bg-blue to-sym-bg-green rounded-2xl border border-sym-card-border p-8 sm:p-12">
-        <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading mb-3">
-            The Symplify Transformation
-          </h2>
-          <p className="text-base text-sym-muted leading-relaxed max-w-2xl mx-auto">
-            From fragmented EHR/Excel/email chaos to a unified, AI-augmented clinical coordination platform.
-          </p>
-        </div>
-
-        {/* Metrics Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
-          {summaryMetrics.map(({ value, label, Icon }) => (
-            <div key={label} className="bg-sym-card rounded-xl p-5 text-center border border-sym-card-border shadow-sm">
-              <div className="flex justify-center mb-2 text-sym-blue">
-                <Icon className="w-5 h-5" />
-              </div>
-              <p className="text-2xl font-bold text-sym-heading mb-1">{value}</p>
-              <p className="text-xs text-sym-muted">{label}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Key Takeaways */}
-        <div className="mb-10">
-          <h3 className="text-lg font-semibold text-sym-heading mb-4">Key Takeaways</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {keyTakeaways.map((takeaway) => (
-              <div key={takeaway} className="bg-sym-blue/5 rounded-lg p-4 flex items-start gap-3">
-                <span className="text-sym-blue mt-0.5">→</span>
-                <p className="text-sm text-sym-body leading-relaxed">{takeaway}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Core Achievement */}
-        <div className="border-t border-sym-card-border pt-6">
-          <p className="text-center text-base text-sym-body leading-relaxed">
-            <span className="font-semibold text-sym-blue">Core Achievement:</span>{" "}
-            Transformed AI opacity into transparency — reframing{" "}
-            <span className="font-semibold text-sym-heading">trust as Symplify's competitive advantage</span>{" "}
-            and enabling clinical staff to serve patients faster with{" "}
-            <span className="font-semibold text-sym-heading">40% less triage time</span>.
-          </p>
-        </div>
-      </div>
-    </section>
   );
 }
