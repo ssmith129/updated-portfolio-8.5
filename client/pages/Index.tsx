@@ -132,25 +132,25 @@ export default function Index() {
           {/* Computis Project */}
           <Link
             to="/case-studies/computis-crypto-tax-engine"
-            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-left-6 duration-1000 delay-900 touch-manipulation w-full"
-            aria-label="View Computis crypto tax engine case study - enterprise SaaS platform for CPAs"
+            className="group relative animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-900 w-full"
           >
-            <div className="aspect-square overflow-hidden relative">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4"
-                alt="Computis - Crypto Tax Engine Dashboard"
-                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
-              <div className="text-white">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-2 transition-all duration-300">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4"
+              alt="Computis - Crypto Tax Engine Dashboard"
+              className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
+              <div className="text-center text-white transform transition-all duration-500">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium mb-1 sm:mb-2 tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px]">
                   Computis
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg font-normal opacity-90 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px]">
+                <p className="text-xs sm:text-sm md:text-base font-normal opacity-90 tracking-[-0.15px] sm:tracking-[-0.2px]">
                   Crypto Tax Engine
                 </p>
+                <div className="mt-1 sm:mt-2 text-xs font-medium opacity-75">
+                  Click to view case study →
+                </div>
               </div>
             </div>
           </Link>
@@ -158,25 +158,25 @@ export default function Index() {
           {/* Symplify Project */}
           <Link
             to="/case-studies/symplify-hospital-management-system"
-            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-right-6 duration-1000 delay-1100 touch-manipulation w-full"
-            aria-label="View Symplify hospital management system case study - comprehensive healthcare platform"
+            className="group relative animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-1100 w-full"
           >
-            <div className="aspect-square overflow-hidden relative">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F36b7682859c14dd1b07433f39f2c1c11"
-                alt="Symplify - Hospital Management System"
-                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
-              <div className="text-white">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-2 transition-all duration-300">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F36b7682859c14dd1b07433f39f2c1c11"
+              alt="Symplify - Hospital Management System"
+              className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
+              <div className="text-center text-white transform transition-all duration-500">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium mb-1 sm:mb-2 tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px]">
                   Symplify
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg font-normal opacity-90 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px]">
+                <p className="text-xs sm:text-sm md:text-base font-normal opacity-90 tracking-[-0.15px] sm:tracking-[-0.2px]">
                   Hospital Management System
                 </p>
+                <div className="mt-1 sm:mt-2 text-xs font-medium opacity-75">
+                  Click to view case study →
+                </div>
               </div>
             </div>
           </Link>
