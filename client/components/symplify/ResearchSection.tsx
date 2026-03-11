@@ -13,7 +13,7 @@ const insights = [
   {
     number: "01",
     title: "Augmentation, Not Automation",
-    body: 'Clinical time was 60% coordination overhead. Staff wanted tools that made them faster — not black-box decisions that removed their judgment.',
+    body: 'Staff wanted tools that made them faster — not black-box decisions that removed their judgment.',
     principle: "AI transparency > AI autonomy",
     color: "#3B82F6",
     bgColor: "#EFF6FF",
@@ -21,7 +21,7 @@ const insights = [
   {
     number: "02",
     title: '"Urgent" Was Meaningless',
-    body: "40% of messages were marked urgent by senders, but only 23% actually required same-day action. No shared triage model existed across roles or sites.",
+    body: "40% of messages were marked urgent by senders, but only 23% required same-day action. No shared triage model existed.",
     principle: "Need a shared prioritization framework",
     color: "#F59E0B",
     bgColor: "#FFFBEB",
@@ -29,7 +29,7 @@ const insights = [
   {
     number: "03",
     title: "Compliance Was a Visibility Problem",
-    body: "Staff weren't ignoring deadlines — alerts were buried in unfiltered email, disconnected from patient records, and lacked contextual urgency.",
+    body: "Staff weren't ignoring deadlines — alerts were buried in unfiltered email, disconnected from patient records.",
     principle: "Surface the right info at the right time",
     color: "#8B5CF6",
     bgColor: "#F5F3FF",
@@ -173,9 +173,7 @@ function CompetitiveAnalysis() {
       </p>
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
         Benchmarked market leaders to identify Symplify's strategic wedge:{" "}
-        <span className="font-semibold text-sym-heading">
-          cognitive load reduction through trustworthy AI
-        </span>.
+        <span className="font-semibold text-sym-heading">cognitive load reduction through trustworthy AI</span>.
       </p>
       <div className="overflow-x-auto -mx-2 px-2">
         <table className="w-full text-xs border-collapse min-w-[640px]">

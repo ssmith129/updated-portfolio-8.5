@@ -27,8 +27,7 @@ export default function HeroSection() {
         <p className="text-lg sm:text-xl text-sym-body leading-[1.6] max-w-none mb-4">
           I led end-to-end design for a 0-to-1 AI-enhanced hospital management
           platform that unified fragmented EHR, Excel, and email workflows into
-          a single, trustworthy system — reducing triage time by 40% across 3
-          facilities and 65 clinical staff.
+          a single, trustworthy system — reducing triage time by 40% and improving accuracy to 89%.
         </p>
 
         {/* Reading time + CTA */}
@@ -56,20 +55,12 @@ export default function HeroSection() {
           <Badge icon={<FlaskConical className="w-3.5 h-3.5" />} label="3 Facilities · 65 Staff · 6-Week Pilot" />
         </div>
 
-        {/* Scope & Role */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[640px]">
-          <div>
-            <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-1">My Role</p>
-            <p className="text-[15px] text-sym-body leading-relaxed">
-              Research, interaction design, prototyping, design system, and validation
-            </p>
-          </div>
-          <div>
-            <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-1">Scope</p>
-            <p className="text-[15px] text-sym-body leading-relaxed">
-              3 pilot facilities, 65 clinical staff, 6-week evaluation period
-            </p>
-          </div>
+        {/* Role */}
+        <div className="max-w-[480px]">
+          <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-1">My Role</p>
+          <p className="text-[15px] text-sym-body leading-relaxed">
+            Research, interaction design, prototyping, design system, and validation
+          </p>
         </div>
       </header>
 

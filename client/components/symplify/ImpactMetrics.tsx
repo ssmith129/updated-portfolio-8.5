@@ -110,20 +110,18 @@ export default function ImpactMetrics() {
       <div className="flex flex-col sm:flex-row gap-4 mb-6">
         <div className="flex-1 bg-sym-bg-green border border-[#BBF7D0] rounded-xl px-5 py-4 text-sm text-[#166534] leading-relaxed">
           <span className="font-semibold">AI Guardrails maintained:</span>{" "}
-          &lt;15% override rate, &lt;10% false positive threshold, full audit
-          trail on every automated decision.
+          &lt;15% override rate, &lt;10% false positives, full audit trail.
         </div>
         <div className="flex-1 bg-sym-bg-amber border border-[#FDE68A] rounded-xl px-5 py-4 text-sm text-[#92400E] leading-relaxed flex items-start gap-2">
           <AlertTriangle className="w-4 h-4 mt-0.5 flex-shrink-0" />
           <span>
-            Pilot ran during non-flu months with n=65 staff over 6 weeks
-            — promising early results, not proven at scale.
+            Pilot ran during non-flu months — promising early results, not proven at scale.
           </span>
         </div>
       </div>
 
       <p className="text-xs text-sym-muted italic mb-6">
-        All metrics were system-logged by the platform's analytics module and compared against 4-week pre-pilot baselines.
+        All metrics system-logged and compared against 4-week pre-pilot baselines.
       </p>
 
       {/* Business Value Estimate — Collapsible */}

@@ -2,34 +2,34 @@ import { CheckCircle, AlertTriangle, Lightbulb, ArrowRight } from "lucide-react"
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
 
 const wins = [
-  "Trust through transparency — the 11% override rate proved users felt safe disagreeing with AI.",
+  "Trust through transparency — users felt safe disagreeing with AI recommendations.",
   "Modular rollout (triage → scheduling → compliance) built credibility incrementally.",
   'Role-based "front doors" into shared data resolved conflicting user needs.',
 ];
 
 const misses = [
-  "Early prototypes over-automated (67% rejection of auto-assigned tasks).",
+  "Early prototypes over-automated — initial rejection forced a full augmentation pivot.",
   "Mobile alert density remained too high for on-call nurses.",
-  "15% of admins still exported to Excel — a change management gap we underestimated.",
+  "Some admins still exported to Excel — a change management gap we underestimated.",
 ];
 
 
 const reflections = [
   {
     title: "Trust is a design constraint, not a feature.",
-    body: 'Every "explainability" pattern was really a trust pattern. Designing for AI adoption means designing for skepticism first.',
+    body: 'Designing for AI adoption means designing for skepticism first.',
   },
   {
     title: "Compliance shapes interaction design.",
-    body: "HIPAA and audit requirements forced 1-click overrides and plain-language reasoning — constraints that made the design better, not worse.",
+    body: "HIPAA constraints forced 1-click overrides and plain-language reasoning — making the design better, not worse.",
   },
   {
     title: "Show uncertainty honestly.",
-    body: "These are promising early results (n=65, 6 weeks), not proof at scale. Presenting metrics with humility builds more credibility than overselling.",
+    body: "Promising early results, not proof at scale. Humility builds more credibility than overselling.",
   },
   {
     title: "Collaboration > solo heroics.",
-    body: "I led design direction, but the best ideas came from synthesis across 2 engineers, 1 PM, 4 clinical advisors, and 65 pilot users.",
+    body: "I led design direction, but the best ideas came from cross-functional synthesis.",
   },
 ];
 
@@ -93,21 +93,6 @@ export default function ReflectionsSection() {
             </ul>
           </div>
         </div>
-      </section>
-
-      {/* Post-Pilot Feedback — single strongest quote */}
-      <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
-        <blockquote className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 shadow-sm max-w-[720px]">
-          <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider text-white mb-3 bg-sym-blue">
-            Doctor
-          </span>
-          <p className="text-[15px] text-sym-body leading-relaxed italic mb-4">
-            "For the first time, I don't have to cross-reference three systems to decide what's urgent. The AI gets it right about 9 times out of 10."
-          </p>
-          <cite className="text-xs font-semibold text-sym-label not-italic uppercase tracking-wider">
-            — Internal Medicine MD
-          </cite>
-        </blockquote>
       </section>
 
       {/* Reflection */}

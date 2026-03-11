@@ -24,10 +24,10 @@ const platforms = [
 ];
 
 const dsFeatures = [
-  "WCAG 2.2 AA baked into design tokens — color-blind safe badges, keyboard navigation, screen reader support",
-  "8pt spacing grid for dense clinical data layouts",
-  "Color tokens optimized for light mode and low-light clinical environments",
-  "Keyboard shortcuts for power users — nurses requested tab navigation through triage queues",
+  "WCAG 2.2 AA baked into tokens — color-blind safe badges, keyboard nav, screen reader support",
+  "8pt spacing grid for dense clinical data",
+  "Color tokens optimized for light mode and low-light environments",
+  "Keyboard shortcuts for power users (nurse-requested tab navigation)",
 ];
 
 const legacySystems = [
@@ -66,8 +66,7 @@ export default function SystemOverview() {
         </div>
 
         <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
-          Symplify acts as an integration layer — not replacing legacy systems,
-          but making them work together through a read-only recommendation layer.
+          Symplify acts as an integration layer — read-only recommendations over legacy systems.
         </p>
 
         {/* Coded Architecture Diagram */}
@@ -160,7 +159,7 @@ export default function SystemOverview() {
           </h2>
         </div>
         <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
-          Built a modular system emphasizing trust, transparency, and accessibility.
+          Modular system emphasizing trust, transparency, and accessibility.
         </p>
 
         {/* Design System Specimen */}

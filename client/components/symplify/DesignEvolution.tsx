@@ -13,26 +13,26 @@ const triageEvolution: EvolutionStage[] = [
   {
     title: "Initial Sketches",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1aa7e709a2154ef3900db70013a868c9",
-    caption: "Initial concept sketch exploring how to surface AI-assessed urgency alongside message content.",
-    learning: "First question we needed to answer: how do you show AI confidence without creating false precision?",
+    caption: "Initial concept sketch exploring AI-assessed urgency alongside message content.",
+    learning: "Core question: how do you show AI confidence without false precision?",
   },
   {
     title: "Wireframe v1 — Percentage Scores",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F9c427e2aabb34bb6a69db7193fdfa2a9",
-    caption: 'Wireframe tested with 12 clinicians. Percentage scores felt like "fake precision" — only 33% acceptance.',
-    learning: "Clinicians aren't statisticians. Exact percentages made them question the AI more, not trust it more.",
+    caption: 'Wireframe tested with 12 clinicians. Percentage scores felt like "fake precision."',
+    learning: "Exact percentages made clinicians question the AI more, not trust it more.",
   },
   {
     title: "Wireframe v2 — 3-Tier Badges",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7dff12a18bb94c638c174adde3700069",
-    caption: "Redesigned with 3-tier badges after the percentage rejection. Tested at 89% acceptance.",
-    learning: 'The breakthrough: badges communicate "suggested priority" rather than "calculated probability." Staff felt like it was an assistant, not a replacement.',
+    caption: "Redesigned with 3-tier badges after the percentage rejection.",
+    learning: 'Badges communicate "suggested priority" not "calculated probability" — assistant, not replacement.',
   },
   {
     title: "Production UI",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff98fec64c0cb49ff82fa9c6d0518e333",
-    caption: "Shipped production UI. 11% override rate with full audit trail on every decision.",
-    learning: "Override rate dropped from 18% (percentage version) to 11% (badge version). Trust through transparency.",
+    caption: "Shipped production UI with full audit trail on every decision.",
+    learning: "Trust through transparency — override rate dropped significantly after the badge redesign.",
   },
 ];
 
@@ -40,20 +40,20 @@ const schedulingEvolution: EvolutionStage[] = [
   {
     title: "Auto-Booking Concept",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F768632186c5e45bead1b94f70295f521",
-    caption: "Original concept: system auto-books optimal slots. Seemed like an obvious efficiency win.",
-    learning: "67% of clinicians rejected this outright — they wanted faster decisions, not fewer decisions.",
+    caption: "Original concept: system auto-books optimal slots.",
+    learning: "Clinicians wanted faster decisions, not fewer decisions.",
   },
   {
     title: "Suggestion-Based Wireframe",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fc45fb6bd920c423ca064cd901cd260c9",
-    caption: "Post-pivot wireframe: detect conflicts, suggest alternatives, always allow override.",
-    learning: "Error prevention over error correction. Don't just say 'no' — offer a better option with context.",
+    caption: "Post-pivot: detect conflicts, suggest alternatives, always allow override.",
+    learning: "Error prevention over correction — offer a better option with context.",
   },
   {
     title: "Production Conflict Modal",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F72eb206382b9448ea5da738b15352d4a",
-    caption: "Production conflict modal. Suggestions accepted at high rates. No-show rate dropped 2.4 points.",
-    learning: "The override escape hatch was key. Clinicians who know they CAN override feel safe accepting suggestions.",
+    caption: "Production conflict modal with high suggestion acceptance rates.",
+    learning: "Clinicians who know they CAN override feel safe accepting suggestions.",
   },
 ];
 
@@ -80,8 +80,8 @@ export default function DesignEvolution() {
         title="The 67% Rejection That Changed Everything"
         bgColor="#FFFBEB"
         borderColor="#FDE68A"
-        narrative="Three weeks into prototyping, we tested auto-assigned task routing with 12 clinicians. 67% rejected automated assignments outright. Staff didn't want fewer decisions — they wanted faster, better-informed decisions. This reframe — augmentation over automation — reshaped every subsequent design decision."
-        outcome="Auto-booking rejection dropped from 67% to 11% after the pivot to suggestion-based design."
+        narrative="We tested auto-assigned task routing with 12 clinicians. 67% rejected it outright — staff wanted faster decisions, not fewer decisions. This reframe reshaped every subsequent design choice."
+        outcome="Pivot to suggestion-based design resolved the rejection."
       />
 
       <EvolutionTrack
@@ -95,8 +95,8 @@ export default function DesignEvolution() {
         title="The HIPAA Constraint That Improved UX"
         bgColor="#F5F3FF"
         borderColor="#DDD6FE"
-        narrative={`A HIPAA audit requirement forced every AI recommendation to include human-readable justification at the point of decision. Initially this felt like a burden. The breakthrough came from nurse feedback: "I don't need to see the reasoning every time — but I need to know I can." This led to the hover-to-reveal pattern: confidence badges always visible, reasoning on demand. The compliance requirement actually produced better UX than our original design.`}
-        outcome="89% user trust score in post-pilot survey — the highest-rated feature of the entire platform."
+        narrative={`HIPAA required human-readable justification for every AI recommendation. Nurse feedback: "I don't need to see the reasoning every time — but I need to know I can." This led to hover-to-reveal: badges visible, reasoning on demand. The constraint produced better UX than our original design.`}
+        outcome="Highest-rated feature in post-pilot survey."
       />
 
       <EvolutionTrack

@@ -59,8 +59,7 @@ function Decision1() {
     <div>
       <DecisionHeader number="01" title="AI Confidence Display" />
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
-        <span className="font-semibold text-sym-heading">Challenge:</span> Show AI
-        confidence without overwhelming clinicians or creating false precision.
+        <span className="font-semibold text-sym-heading">Challenge:</span> Show AI confidence without false precision.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -96,7 +95,7 @@ function Decision1() {
         caption='Production confidence badges with hover-to-reveal reasoning. The "smart assistant" framing drove 89% acceptance.'
       />
 
-      <ResultCallout text="Switching from percentages to 3-tier badges dropped AI override rate from 18% to 11%, while maintaining full HIPAA audit compliance." />
+      <ResultCallout text="3-tier badges dropped AI override rate from 18% to 11% while maintaining HIPAA compliance." />
     </div>
   );
 }
@@ -114,9 +113,7 @@ function Decision2() {
     <div>
       <DecisionHeader number="02" title="Auditable AI Reasoning" />
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
-        <span className="font-semibold text-sym-heading">Challenge:</span> HIPAA
-        required full audit trails, but "explainable AI" is usually either too
-        technical or too vague.
+        <span className="font-semibold text-sym-heading">Challenge:</span> HIPAA required audit trails, but "explainable AI" is usually too technical or too vague.
       </p>
 
       <ZoomableImage
@@ -139,7 +136,7 @@ function Decision2() {
         ))}
       </div>
 
-      <ResultCallout text="11% override rate (below 15% guardrail) · 89% user trust in post-pilot survey." />
+      <ResultCallout text="Override rate stayed below the 15% guardrail throughout the pilot." />
     </div>
   );
 }
@@ -149,17 +146,9 @@ function Decision3() {
   return (
     <div>
       <DecisionHeader number="03" title="Smart Scheduling with Progressive Disclosure" />
-      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-4">
-        <span className="font-semibold text-sym-heading">Challenge:</span>{" "}
-        Auto-booking was rejected — "It feels like the system is making clinical
-        decisions without me." Scheduling needed to prevent conflicts while
-        preserving autonomy.
-      </p>
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
-        <span className="font-semibold text-sym-heading">Design rationale:</span>{" "}
-        Error prevention over error correction. Don't just say "no" — offer a
-        better option with context (room availability, patient preference,
-        provider schedule). Always include an override escape hatch, logged for audit.
+        <span className="font-semibold text-sym-heading">Challenge:</span>{" "}
+        Auto-booking was rejected. Scheduling needed to prevent conflicts while preserving clinician autonomy — suggest better options with context, always allow override.
       </p>
 
       <ZoomableImage
@@ -168,7 +157,7 @@ function Decision3() {
         caption="Production conflict detection modal. Context-rich suggestions (room, time, accessibility) reduced scheduling conflicts and contributed to the 2.4-point no-show reduction."
       />
 
-      <ResultCallout text="No-show rate dropped 2.4 points. Scheduling conflicts were the #2 cause of no-shows." />
+      <ResultCallout text="Scheduling conflicts — the #2 cause of no-shows — were significantly reduced." />
     </div>
   );
 }
@@ -224,13 +213,10 @@ function Decision4() {
       </div>
 
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
-        <span className="font-semibold text-sym-heading">How:</span> Clinical risk
-        score + SLA deadline determines tier. Similar alerts batch into digests
-        ("12 items due today" vs. 12 interruptions). FYI section collapses to
-        acknowledge without demanding attention.
+        <span className="font-semibold text-sym-heading">How:</span> Clinical risk score + SLA deadline determines tier. Similar alerts batch into digests. FYI items collapse to acknowledge without demanding attention.
       </p>
 
-      <ResultCallout text="Alert fatigue reduced 38%. On-time follow-ups increased 18%. Average daily interruptions per clinician dropped from 47 to 12." />
+      <ResultCallout text="Daily interruptions per clinician dropped from 47 to 12." />
     </div>
   );
 }

@@ -3,11 +3,11 @@ import { ZoomableImage } from "./shared";
 
 const quotes = [
   {
-    text: "I spend 2 minutes per message just deciding if it's urgent. That's 8 hours a month of cognitive overhead.",
+    text: "I spend 2 minutes per message just deciding if it's urgent.",
     cite: "Internal Medicine MD",
   },
   {
-    text: "At shift change, critical messages fall through the cracks. I've had to call the previous shift at home to verify handoffs.",
+    text: "At shift change, critical messages fall through the cracks.",
     cite: "RN Supervisor",
   },
   {
@@ -18,7 +18,6 @@ const quotes = [
 
 const stats = [
   { value: "18%", label: "of urgent handoffs missed at shift change" },
-  { value: "9.8%", label: "appointment no-show rate" },
   { value: "14.2%", label: "SLA breach risk" },
   { value: "60%", label: "of staff time lost to context-switching" },
 ];
@@ -82,9 +81,7 @@ export default function ProblemSection() {
       </div>
 
       <p className="text-lg text-sym-body leading-relaxed max-w-[720px] mb-10">
-        Hospital and WIC clinic staff operated across three disconnected
-        systems — EHR, Excel, and email — with no shared prioritization model.
-        Doctors spent 2 minutes per message just deciding if it was urgent: 8 hours of cognitive overhead per month.
+        Staff operated across three disconnected systems — EHR, Excel, and email — with no shared prioritization model.
       </p>
 
       {/* Research Artifact Photos */}

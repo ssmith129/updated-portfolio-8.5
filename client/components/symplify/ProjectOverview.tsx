@@ -5,22 +5,22 @@ const objectives = [
   {
     icon: <Target className="w-4 h-4 text-sym-blue" />,
     title: "Reduce cognitive overhead",
-    detail: "Cut time-to-triage by 40%+ through AI-assisted prioritization that clinicians actually trust.",
+    detail: "AI-assisted prioritization that clinicians actually trust.",
   },
   {
     icon: <TrendingUp className="w-4 h-4 text-sym-green" />,
     title: "Improve compliance visibility",
-    detail: "Surface SLA deadlines and regulatory requirements in context, not buried in email threads.",
+    detail: "Surface SLA deadlines and regulatory requirements in context.",
   },
   {
     icon: <Users className="w-4 h-4 text-sym-purple" />,
     title: "Unify fragmented workflows",
-    detail: "Replace the EHR + Excel + email patchwork with a single coordination layer — without replacing any legacy system.",
+    detail: "Single coordination layer over EHR + Excel + email — without replacing any legacy system.",
   },
   {
     icon: <Building2 className="w-4 h-4 text-sym-amber" />,
     title: "Prove viability at pilot scale",
-    detail: "Demonstrate measurable improvements across 3 facilities and 65 staff within a 6-week evaluation window.",
+    detail: "Measurable improvements within a constrained pilot window.",
   },
 ];
 
@@ -34,15 +34,6 @@ const timelinePhases = [
   { label: "Analysis", months: "Aug", detail: "Metrics & report", color: "#10B981" },
 ];
 
-const roleDetails = [
-  { label: "Client", value: "Custom Data Processing Inc. — mid-sized health IT services company" },
-  { label: "Users", value: "65 clinical staff (MDs, RNs, admins) across 3 public health facilities" },
-  { label: "Problem", value: "Fragmented EHR + Excel + email workflows causing measurable clinical and operational losses" },
-  { label: "My Role", value: "Founding Product Designer — research planning, interaction design, prototyping, design system, pilot validation" },
-  { label: "Team", value: "2 Engineers, 1 PM, 4 Clinical Advisors" },
-  { label: "Timeline", value: "Jan – Aug 2024 (8 months total, 6-week pilot)" },
-  { label: "Constraint", value: "Prove measurable improvement within 6-week pilot window or project doesn't get broader rollout" },
-];
 
 export default function ProjectOverview() {
   const headingRef = useScrollReveal();
@@ -64,23 +55,6 @@ export default function ProjectOverview() {
 
       {/* Visual Project Timeline */}
       <ProjectTimeline />
-
-      {/* Structured Role Card */}
-      <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 mb-10 shadow-sm">
-        <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-4">
-          Project Context
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
-          {roleDetails.map((item) => (
-            <div key={item.label} className="py-2 border-b border-sym-divider last:border-b-0">
-              <p className="text-xs font-semibold text-sym-blue uppercase tracking-wider mb-0.5">
-                {item.label}
-              </p>
-              <p className="text-sm text-sym-body leading-relaxed">{item.value}</p>
-            </div>
-          ))}
-        </div>
-      </div>
 
       <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-4">
         Success Criteria Defined Upfront

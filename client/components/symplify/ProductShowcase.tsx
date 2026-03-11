@@ -7,12 +7,12 @@ const showcaseItems = [
     assetId: "product-doctor-dashboard-annotated.png",
     videoSrc: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa5d23882d1ee4e14bace95c1808a2bbe?alt=media&token=bdbf1560-14c0-4c93-a0a6-526cfd6bfe2d&apiKey=ba69a23156414a589de97341511272c9",
     caption:
-      "Doctor's primary view: AI-augmented triage with full transparency. Every recommendation is explainable, overridable, and audit-logged.",
+      "AI-augmented triage with full transparency. Every recommendation is explainable, overridable, and audit-logged.",
     callouts: [
-      "AI Triage Queue — Messages pre-sorted by clinical risk. High/Medium/Low badges with hover reasoning.",
-      "SLA Countdown Timers — Compliance deadlines surfaced in context, not buried in email.",
-      "Patient Context Panel — 1-click access to relevant history without opening the EHR.",
-      "Quick Actions — Accept/Override/Escalate with keyboard shortcuts for power users.",
+      "AI Triage Queue — Messages pre-sorted by clinical risk with hover reasoning.",
+      "SLA Countdown Timers — Compliance deadlines surfaced in context.",
+      "Patient Context Panel — 1-click access to relevant history.",
+      "Quick Actions — Accept/Override/Escalate with keyboard shortcuts.",
     ],
   },
   {
@@ -20,12 +20,12 @@ const showcaseItems = [
     assetId: "product-nurse-handoff-annotated.png",
     videoSrc: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2F2598beb4dba04408982761d22d7d5189?alt=media&token=c0060f50-bc26-467a-bd3d-d2ebc1cb5fa4&apiKey=ba69a23156414a589de97341511272c9",
     caption:
-      "Nurse shift handoff: structured visibility replaced 20-minute phone calls. Handoff-related missed items dropped from 18% baseline.",
+      "Structured visibility replaced 20-minute phone calls at shift change.",
     callouts: [
-      "Handoff Status Board — Visual state of every in-progress item at shift change.",
-      "Unresolved Flags — Items that need immediate attention are surfaced at the top.",
-      "Handoff Notes — Structured format replaces the 'call the previous shift at home' workflow.",
-      "Alert Tier Summary — At-a-glance view of what's critical vs. informational.",
+      "Handoff Status Board — Visual state of every in-progress item.",
+      "Unresolved Flags — Items needing immediate attention surfaced first.",
+      "Handoff Notes — Structured format replaces phone-call handoffs.",
+      "Alert Tier Summary — Critical vs. informational at a glance.",
     ],
   },
   {
@@ -33,12 +33,12 @@ const showcaseItems = [
     assetId: "product-admin-compliance-annotated.png",
     videoSrc: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ffa5af1690b39411cbe63a63dfe3bd5c6?alt=media&token=b7e5dcfd-3c5f-4385-a1c4-e470f1f839bd&apiKey=ba69a23156414a589de97341511272c9",
     caption:
-      "Admin compliance dashboard: replaced 4.4 hrs/week of manual Excel work. 15% of admins still export to Excel for board reports — a change management gap we're addressing in v2.",
+      "Compliance dashboard replacing manual Excel reporting workflows.",
     callouts: [
-      "SLA Compliance Tracker — Real-time compliance rates by facility, department, and provider.",
-      "Auto-Generated Reports — Replaces the manual Excel export + monthly report build workflow.",
-      "Demand Forecasting — AI-assisted demand predictions replacing 'guesswork'.",
-      "Audit Trail Browser — Searchable log of every AI recommendation, override, and outcome.",
+      "SLA Compliance Tracker — Real-time rates by facility and provider.",
+      "Auto-Generated Reports — Replaces manual Excel export workflow.",
+      "Demand Forecasting — AI-assisted predictions replacing guesswork.",
+      "Audit Trail Browser — Searchable log of every AI decision.",
     ],
   },
 ];
@@ -61,9 +61,7 @@ export default function ProductShowcase() {
       </div>
 
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[720px] mb-10">
-        The production platform serves three distinct user roles through a shared
-        data layer. A mobile on-call view (critical alerts only, offline-first, 1-thumb operation)
-        rounds out the platform for corridor use.
+        Three role-specific views share a single data layer. A mobile on-call view rounds out the platform for corridor use.
       </p>
 
       <div className="space-y-16">
