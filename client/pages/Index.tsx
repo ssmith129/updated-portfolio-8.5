@@ -99,7 +99,7 @@ export default function Index() {
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] lg:tracking-[-0.6px] xl:tracking-[-0.8px] mb-4 sm:mb-6 transition-all duration-500 hover:tracking-[-0.5px]">
             Featured Projects
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[500px] sm:max-w-[600px] md:max-w-[700px] mx-auto transition-all duration-300 hover:text-[#131417]">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[500px] sm:max-w-[600px] md:max-w-[700px] mx-auto text-center transition-all duration-300 hover:text-[#131417]">
             Selected work from{" "}
             <Link
               to="/case-studies/computis-crypto-tax-engine"
@@ -203,7 +203,7 @@ export default function Index() {
       {/* Quick Stats Section */}
       <section className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-900">
+          <div className="text-center flex flex-col items-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-900">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
               8+
             </div>
@@ -212,7 +212,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1100">
+          <div className="text-center flex flex-col items-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1100">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
               50+
             </div>
@@ -221,7 +221,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1300">
+          <div className="text-center flex flex-col items-center justify-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1300">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
               18+
             </div>
@@ -230,7 +230,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1500">
+          <div className="text-center flex flex-col items-center justify-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1500">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
               $18M+
             </div>
@@ -247,7 +247,7 @@ export default function Index() {
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] lg:tracking-[-0.6px] xl:tracking-[-0.8px] mb-4 sm:mb-6 transition-all duration-500 hover:tracking-[-0.5px]">
             Design Expertise
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[500px] sm:max-w-[600px] md:max-w-[700px] mx-auto transition-all duration-300 hover:text-[#131417]">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[500px] sm:max-w-[600px] md:max-w-[700px] mx-auto text-center transition-all duration-300 hover:text-[#131417]">
             Specialized skills in creating intuitive experiences for complex
             systems.{" "}
             <Link
@@ -281,7 +281,7 @@ export default function Index() {
             <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] leading-[120%] tracking-[-0.2px] sm:tracking-[-0.3px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.15px]">
               AI-Powered Design
             </h3>
-            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] transition-all duration-300 hover:text-[#131417]">
+            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] text-center transition-all duration-300 hover:text-[#131417]">
               ML Integration, AI Workflows, Usability Enhancement
             </p>
           </div>
@@ -305,7 +305,7 @@ export default function Index() {
             <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] leading-[120%] tracking-[-0.2px] sm:tracking-[-0.3px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.15px]">
               Design Systems
             </h3>
-            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] transition-all duration-300 hover:text-[#131417]">
+            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] text-center transition-all duration-300 hover:text-[#131417]">
               Scalable component libraries and design tokens for consistency
             </p>
           </div>
@@ -329,7 +329,7 @@ export default function Index() {
             <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] leading-[120%] tracking-[-0.2px] sm:tracking-[-0.3px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.15px]">
               Rapid Prototyping
             </h3>
-            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] transition-all duration-300 hover:text-[#131417]">
+            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] text-center transition-all duration-300 hover:text-[#131417]">
               Interactive prototypes and production-ready designs in Figma and
               code
             </p>
