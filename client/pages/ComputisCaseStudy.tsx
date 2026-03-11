@@ -24,6 +24,7 @@ import Footer from "../components/Footer";
 import VideoOverlay, { FeatureCards } from "../components/VideoOverlay";
 import { useIntersectionAnimation } from "../hooks/use-page-animations";
 import { useCountUp } from "../hooks/use-count-up";
+import InsightCards from "../components/computis/InsightCards";
 import "../styles/computis-case-study.css";
 
 export default function ComputisCaseStudy() {
@@ -770,6 +771,9 @@ export default function ComputisCaseStudy() {
             </p>
           </div>
         </section>
+
+        {/* RESEARCH INSIGHT CARDS */}
+        <InsightCards />
 
         {/* Section Divider */}
         <div
