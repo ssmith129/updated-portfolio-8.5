@@ -26,17 +26,6 @@ const allCaseStudies: CaseStudy[] = [
       "Enterprise-grade crypto tax automation platform for CPAs and accountants",
   },
   {
-    id: "ezemrx",
-    title: "ezEMRx",
-    subtitle: "EHR for Public Health",
-    href: "/case-studies/ezemrx-redesigning-ehr",
-    image: "/ipad.png",
-    category: "Healthcare",
-    duration: "8 months",
-    description:
-      "Electronic health records system redesign for public health organizations",
-  },
-  {
     id: "symplify",
     title: "Symplify",
     subtitle: "Hospital Management System",
@@ -47,18 +36,6 @@ const allCaseStudies: CaseStudy[] = [
     duration: "6 months",
     description:
       "Comprehensive hospital management platform for healthcare providers",
-  },
-  {
-    id: "moneyfarm",
-    title: "MoneyFarm",
-    subtitle: "AI-Powered Personal Finance",
-    href: "/case-studies/moneyfarm-ai-powered-personal-finance",
-    image:
-      "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: "Fintech",
-    duration: "10 months",
-    description:
-      "AI-driven personal finance management platform for individual users",
   },
 ];
 

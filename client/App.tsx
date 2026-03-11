@@ -10,9 +10,7 @@ import CaseStudies from "./pages/CaseStudies";
 import About from "./pages/About";
 import ComputisCaseStudy from "./pages/ComputisCaseStudy";
 import ComputisCaseStudySandbox from "./pages/ComputisCaseStudySandbox";
-import EzEMRxCaseStudy from "./pages/EzEMRxCaseStudy";
 import SymplifyCaseStudy from "./pages/SymplifyCaseStudy";
-import MoneyFarmCaseStudy from "./pages/MoneyFarmCaseStudy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,16 +42,8 @@ const App = () => (
               }
             />
             <Route
-              path="/case-studies/ezemrx-redesigning-ehr"
-              element={<EzEMRxCaseStudy />}
-            />
-            <Route
               path="/case-studies/symplify-hospital-management-system"
               element={<SymplifyCaseStudy />}
-            />
-            <Route
-              path="/case-studies/moneyfarm-ai-powered-personal-finance"
-              element={<MoneyFarmCaseStudy />}
             />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

@@ -108,14 +108,6 @@ export default function Index() {
             >
               healthcare
             </Link>
-            ,{" "}
-            <Link
-              to="/case-studies/moneyfarm-ai-powered-personal-finance"
-              className="text-[#9FA0A3] hover:text-[#131417] underline underline-offset-2 decoration-1 transition-all duration-300"
-              aria-label="View fintech platform design case study"
-            >
-              fintech
-            </Link>
             , and{" "}
             <Link
               to="/case-studies"

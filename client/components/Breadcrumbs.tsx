@@ -99,11 +99,8 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
     const caseStudyTitles: Record<string, string> = {
       "/case-studies/computis-crypto-tax-engine":
         "Computis – Crypto Tax Engine",
-      "/case-studies/ezemrx-redesigning-ehr": "ezEMRx – EHR Redesign",
       "/case-studies/symplify-hospital-management-system":
         "Symplify – Hospital Management",
-      "/case-studies/moneyfarm-ai-powered-personal-finance":
-        "MoneyFarm – AI Finance",
     };
 
     const caseStudyTitle = caseStudyTitles[pathname];
