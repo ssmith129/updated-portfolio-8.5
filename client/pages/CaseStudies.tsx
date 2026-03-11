@@ -36,7 +36,7 @@ export default function CaseStudies() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[94px] font-medium text-[#131417] leading-[110%] sm:leading-[115%] md:leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.5px] xl:tracking-[-1.88px] mb-4 sm:mb-6 md:mb-8 transition-all duration-500 hover:tracking-[-1.5px]">
             Case Studies
           </h1>
-          <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[400px] sm:max-w-[500px] md:max-w-[600px] mx-auto transition-all duration-300 hover:text-[#131417] px-4">
+          <p className="text-base sm:text-lg md:text-[20px] font-normal text-[#9FA0A3] leading-[150%] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[400px] sm:max-w-[500px] md:max-w-[600px] mx-auto transition-all duration-300 hover:text-[#131417] px-4 text-center">
             Explore detailed breakdowns of my design process, challenges, and
             solutions across various projects.
           </p>
