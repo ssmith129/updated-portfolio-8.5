@@ -8,7 +8,7 @@
    ============================================ */
 
 .hero-metric-card {
-  @apply p-4 rounded-xl transition-transform duration-200 text-center flex flex-col;
+  @apply p-2.5 sm:p-3.5 lg:p-4 rounded-lg sm:rounded-xl transition-transform duration-200 text-center flex flex-col;
 }
 
 .hero-metric-card:hover {
