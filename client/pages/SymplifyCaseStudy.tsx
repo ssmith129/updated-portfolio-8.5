@@ -20,10 +20,10 @@ const sectionNav = [
   { href: "#overview", label: "Overview" },
   { href: "#problem", label: "Problem" },
   { href: "#research", label: "Research" },
+  { href: "#impact", label: "Outcomes" },
   { href: "#evolution", label: "Evolution" },
   { href: "#decisions", label: "Design Decisions" },
   { href: "#showcase", label: "Product" },
-  { href: "#impact", label: "Outcomes" },
   { href: "#system", label: "Architecture" },
   { href: "#outcomes", label: "Assessment" },
   { href: "#reflection", label: "Reflection" },
@@ -171,13 +171,13 @@ export default function SymplifyCaseStudy() {
         <SectionDivider />
         <ResearchSection />
         <SectionDivider />
+        <ImpactMetrics />
+        <SectionDivider />
         <DesignEvolution />
         <SectionDivider />
         <DesignDecisions />
         <SectionDivider />
         <ProductShowcase />
-        <SectionDivider />
-        <ImpactMetrics />
         <SectionDivider />
         <SystemOverview />
         <SectionDivider />
