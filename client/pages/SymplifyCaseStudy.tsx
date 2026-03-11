@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
-import RelatedCaseStudies from "../components/RelatedCaseStudies";
 import Footer from "../components/Footer";
 import { CaseStudyStructuredData } from "../components/case-study";
 import ReadingProgress from "../components/case-study/ReadingProgress";
@@ -185,7 +184,6 @@ export default function SymplifyCaseStudy() {
         <ReflectionsSection />
       </main>
 
-      <RelatedCaseStudies currentCaseStudyId="symplify" />
       <Footer />
 
       {/* Scroll to Top */}
