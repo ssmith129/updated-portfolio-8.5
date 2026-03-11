@@ -72,16 +72,16 @@ export default function ResearchSection() {
       </div>
 
       {/* Methods strip */}
-      <div ref={methodsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+      <div ref={methodsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6">
         {methods.map((m) => (
           <div
             key={m.label}
-            className="reveal flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border px-4 py-4 shadow-sm card-lift group"
+            className="reveal flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border px-3 sm:px-4 py-3 sm:py-4 shadow-sm card-lift group"
           >
-            <div className="w-8 h-8 rounded-lg bg-sym-bg-blue flex items-center justify-center text-sym-blue flex-shrink-0 mt-0.5 icon-hover-spin">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-sym-bg-blue flex items-center justify-center text-sym-blue flex-shrink-0 mt-0.5 icon-hover-spin">
               {m.icon}
             </div>
-            <div>
+            <div className="min-w-0">
               <p className="text-sm font-semibold text-sym-heading leading-snug">{m.label}</p>
               <p className="text-xs text-sym-label">{m.detail}</p>
             </div>
