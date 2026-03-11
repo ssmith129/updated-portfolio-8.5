@@ -14,7 +14,7 @@ export default function DesignDecisions() {
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Core Design Work
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
           Design Decisions
         </h2>
       </div>
@@ -79,7 +79,7 @@ function Decision1() {
                 {a.acceptance}
               </span>
               {a.winner && (
-                <span className="text-xs font-semibold text-sym-green bg-[#DCFCE7] px-2 py-1 rounded-full">
+                <span className="text-xs font-semibold text-sym-green winner-pulse px-2 py-1 rounded-full">
                   Winner
                 </span>
               )}
@@ -225,7 +225,7 @@ function Decision4() {
 function DecisionHeader({ number, title }: { number: string; title: string }) {
   return (
     <div className="flex items-center gap-4 mb-4">
-      <span className="w-10 h-10 rounded-xl bg-gradient-to-br from-sym-blue to-sym-green text-white flex items-center justify-center text-sm font-bold flex-shrink-0">
+      <span className="w-10 h-10 rounded-xl bg-gradient-to-br from-sym-blue to-sym-green text-white flex items-center justify-center text-sm font-bold flex-shrink-0 timeline-node">
         {number}
       </span>
       <h3 className="text-xl sm:text-2xl font-semibold text-sym-heading">{title}</h3>

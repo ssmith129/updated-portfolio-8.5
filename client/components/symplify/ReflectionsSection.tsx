@@ -55,7 +55,7 @@ export default function ReflectionsSection() {
           <p className="text-xs font-semibold text-sym-muted uppercase tracking-widest mb-2">
             Honest Assessment
           </p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
             What Worked &amp; What Didn't
           </h2>
         </div>

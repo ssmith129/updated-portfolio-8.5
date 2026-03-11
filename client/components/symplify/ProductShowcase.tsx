@@ -55,7 +55,7 @@ export default function ProductShowcase() {
         <p className="text-xs font-semibold text-sym-green uppercase tracking-widest mb-2">
           Final Product
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
           Product Showcase
         </h2>
       </div>

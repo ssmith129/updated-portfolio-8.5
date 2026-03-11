@@ -83,7 +83,7 @@ export function ZoomableImage({
           ref={triggerRef}
           type="button"
           onClick={() => setOpen(true)}
-          className="relative w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-sym-blue"
+          className="relative w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-sym-blue image-tilt"
         >
           <img
             src={src}

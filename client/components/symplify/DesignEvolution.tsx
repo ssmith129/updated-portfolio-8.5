@@ -69,7 +69,7 @@ export default function DesignEvolution() {
         <p className="text-xs font-semibold text-sym-purple uppercase tracking-widest mb-2">
           From Rejection to Trust
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
           Design Evolution
         </h2>
       </div>
@@ -148,7 +148,7 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
   return (
     <div className="mb-16 last:mb-0">
       <h3 className="text-lg font-semibold text-sym-heading mb-6 flex items-center gap-3">
-        <span className="w-2 h-2 rounded-full bg-gradient-to-r from-sym-blue to-sym-green" />
+        <span className="w-2 h-2 rounded-full bg-gradient-to-r from-sym-blue to-sym-green pulse-gentle" />
         {title}
       </h3>
 
@@ -156,9 +156,9 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
         {stages.map((stage, i) => (
           <div
             key={stage.title}
-            className="bg-sym-card rounded-xl border border-sym-card-border p-5 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300 relative"
+            className="bg-sym-card rounded-xl border border-sym-card-border p-5 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300 relative card-lift"
           >
-            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-sym-blue to-sym-green text-white flex items-center justify-center text-sm font-bold mb-4">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-sym-blue to-sym-green text-white flex items-center justify-center text-sm font-bold mb-4 timeline-node">
               {i + 1}
             </div>
 

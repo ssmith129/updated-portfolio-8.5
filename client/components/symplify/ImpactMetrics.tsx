@@ -70,7 +70,7 @@ export default function ImpactMetrics() {
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Measured Outcomes
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
           Impact at a Glance
         </h2>
 

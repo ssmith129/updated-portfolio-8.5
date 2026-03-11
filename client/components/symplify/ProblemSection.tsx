@@ -75,7 +75,7 @@ export default function ProblemSection() {
         <p className="text-xs font-semibold text-sym-red uppercase tracking-widest mb-2">
           The Problem
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 max-w-[720px]">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 max-w-[720px] heading-underline">
           Three Systems, Zero Shared Prioritization
         </h2>
       </div>
@@ -115,7 +115,7 @@ export default function ProblemSection() {
         {quotes.map((q) => (
           <blockquote
             key={q.cite}
-            className="reveal bg-sym-card rounded-2xl border border-sym-card-border p-6 shadow-sm flex flex-col justify-between card-lift"
+            className="reveal quote-border-grow bg-sym-card rounded-2xl border border-sym-card-border p-6 shadow-sm flex flex-col justify-between card-lift"
           >
             <p className="text-[15px] text-sym-body leading-relaxed italic mb-4">
               "{q.text}"
@@ -132,7 +132,7 @@ export default function ProblemSection() {
         {stats.map((s) => (
           <div
             key={s.label}
-            className="reveal bg-sym-bg-red border border-[#FECACA] rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-center card-lift"
+            className="reveal stat-pop bg-sym-bg-red border border-[#FECACA] rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-center card-lift"
           >
             <p className="text-xl sm:text-2xl font-bold text-[#DC2626] mb-1">{s.value}</p>
             <p className="text-xs text-[#991B1B] leading-snug">{s.label}</p>

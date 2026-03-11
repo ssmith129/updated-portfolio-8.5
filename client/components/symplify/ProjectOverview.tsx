@@ -48,7 +48,7 @@ export default function ProjectOverview() {
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Context &amp; Stakes
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 max-w-[720px]">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 max-w-[720px] heading-underline">
           Project Overview
         </h2>
       </div>
@@ -92,7 +92,7 @@ function ProjectTimeline() {
             {timelinePhases.map((phase, i) => (
               <div key={phase.label} className="flex-1 flex items-center">
                 <div
-                  className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 shadow-sm"
+                  className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 shadow-sm timeline-node cursor-default"
                   style={{ backgroundColor: phase.color }}
                 >
                   {i + 1}
@@ -128,7 +128,7 @@ function ProjectTimeline() {
             {/* Vertical track */}
             <div className="flex flex-col items-center">
               <div
-                className="w-7 h-7 rounded-full flex items-center justify-center text-white text-[10px] font-bold flex-shrink-0 shadow-sm"
+                className="w-7 h-7 rounded-full flex items-center justify-center text-white text-[10px] font-bold flex-shrink-0 shadow-sm timeline-node"
                 style={{ backgroundColor: phase.color }}
               >
                 {i + 1}

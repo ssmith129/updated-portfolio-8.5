@@ -114,8 +114,8 @@ export default function SymplifyCaseStudy() {
           backgroundSize: "50px 50px",
         }}
       />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sym-blue/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-sym-green/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sym-blue/5 rounded-full blur-[100px] pointer-events-none orb-float" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-sym-green/5 rounded-full blur-[120px] pointer-events-none orb-float-delayed" />
 
       <SkipLink />
       <Navigation />
