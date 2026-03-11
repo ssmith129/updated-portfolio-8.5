@@ -56,7 +56,7 @@ export default function HeroSection() {
         </div>
 
         {/* Role */}
-        <div className="max-w-[480px]">
+        <div className="max-w-[800px]">
           <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-1">My Role</p>
           <p className="text-[15px] text-sym-body leading-relaxed">
             Research, interaction design, prototyping, design system, and validation
