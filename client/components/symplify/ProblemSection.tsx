@@ -131,13 +131,13 @@ export default function ProblemSection() {
       </div>
 
       {/* Stats strip */}
-      <div ref={statsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div ref={statsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         {stats.map((s) => (
           <div
             key={s.label}
-            className="reveal bg-sym-bg-red border border-[#FECACA] rounded-xl px-5 py-4 text-center card-lift"
+            className="reveal bg-sym-bg-red border border-[#FECACA] rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-center card-lift"
           >
-            <p className="text-2xl font-bold text-[#DC2626] mb-1">{s.value}</p>
+            <p className="text-xl sm:text-2xl font-bold text-[#DC2626] mb-1">{s.value}</p>
             <p className="text-xs text-[#991B1B] leading-snug">{s.label}</p>
           </div>
         ))}
