@@ -105,28 +105,74 @@ export default function ProjectOverview() {
 
 function ProjectTimeline() {
   return (
-    <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 mb-10 shadow-sm overflow-x-auto">
-      <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-5">
+    <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 mb-10 shadow-sm">
+      <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-6">
         Project Timeline — Jan – Aug 2024
       </p>
-      <div className="flex gap-2 min-w-[700px] items-start">
+
+      {/* Desktop/Tablet: horizontal timeline */}
+      <div className="hidden sm:block overflow-x-auto">
+        <div className="min-w-[640px] px-4">
+          {/* Connector line */}
+          <div className="flex items-center mb-4">
+            {timelinePhases.map((phase, i) => (
+              <div key={phase.label} className="flex-1 flex items-center">
+                <div
+                  className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 shadow-sm"
+                  style={{ backgroundColor: phase.color }}
+                >
+                  {i + 1}
+                </div>
+                {i < timelinePhases.length - 1 && (
+                  <div className="flex-1 h-0.5 bg-sym-card-border mx-1" />
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Labels row */}
+          <div className="flex">
+            {timelinePhases.map((phase) => (
+              <div key={phase.label} className="flex-1 pr-2">
+                <p className="text-xs font-semibold text-sym-heading leading-tight">
+                  {phase.label}
+                </p>
+                <p className="text-[11px] text-sym-label mt-0.5">{phase.months}</p>
+                <p className="text-[11px] text-sym-muted leading-snug mt-0.5">
+                  {phase.detail}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile: vertical timeline */}
+      <div className="sm:hidden space-y-0">
         {timelinePhases.map((phase, i) => (
-          <div key={phase.label} className="flex-1 relative">
-            {/* Connector line */}
-            {i < timelinePhases.length - 1 && (
-              <div className="absolute top-4 left-1/2 right-0 h-0.5 bg-sym-card-border z-0" />
-            )}
-            {/* Node */}
-            <div className="relative z-10 flex flex-col items-center text-center">
+          <div key={phase.label} className="flex gap-3">
+            {/* Vertical track */}
+            <div className="flex flex-col items-center">
               <div
-                className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold mb-2"
+                className="w-7 h-7 rounded-full flex items-center justify-center text-white text-[10px] font-bold flex-shrink-0 shadow-sm"
                 style={{ backgroundColor: phase.color }}
               >
                 {i + 1}
               </div>
-              <p className="text-xs font-semibold text-sym-heading mb-0.5">{phase.label}</p>
-              <p className="text-[10px] text-sym-label mb-0.5">{phase.months}</p>
-              <p className="text-[10px] text-sym-muted leading-tight">{phase.detail}</p>
+              {i < timelinePhases.length - 1 && (
+                <div className="w-0.5 flex-1 bg-sym-card-border my-1" />
+              )}
+            </div>
+
+            {/* Content */}
+            <div className="pb-4 pt-0.5">
+              <p className="text-sm font-semibold text-sym-heading leading-tight">
+                {phase.label}
+              </p>
+              <p className="text-xs text-sym-label">{phase.months}</p>
+              <p className="text-xs text-sym-muted leading-snug mt-0.5">
+                {phase.detail}
+              </p>
             </div>
           </div>
         ))}
