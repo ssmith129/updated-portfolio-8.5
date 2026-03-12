@@ -84,21 +84,23 @@ export default function ImpactMetrics() {
         {metrics.map((m) => (
           <div
             key={m.label}
-            className="bg-sym-card rounded-2xl border border-sym-card-border p-5 sm:p-6 shadow-sm card-lift hover:border-sym-card-border-hover group"
+            className="bg-sym-card rounded-xl border border-sym-card-border px-4 py-3 sm:px-5 sm:py-4 shadow-sm card-lift hover:border-sym-card-border-hover group"
           >
-            <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-3">
-              {m.label}
-            </p>
-            <div className="text-2xl sm:text-3xl font-bold mb-3" style={{ color: m.color }}>
-              <AnimatedMetric
-                value={m.value}
-                suffix={m.suffix || "%"}
-                decimals={m.decimals || 0}
-                startAnimation={isVisible}
-              />
+            <div className="flex items-center justify-between mb-1.5">
+              <p className="text-[11px] font-semibold text-sym-label uppercase tracking-widest">
+                {m.label}
+              </p>
+              <div className="text-xl sm:text-2xl font-bold leading-none" style={{ color: m.color }}>
+                <AnimatedMetric
+                  value={m.value}
+                  suffix={m.suffix || "%"}
+                  decimals={m.decimals || 0}
+                  startAnimation={isVisible}
+                />
+              </div>
             </div>
-            <div className="flex items-center gap-2 text-xs text-sym-muted">
-              <span className="bg-sym-divider rounded px-2 py-0.5">{m.before}</span>
+            <div className="flex items-center gap-1.5 text-[11px] text-sym-muted">
+              <span className="bg-sym-divider rounded px-1.5 py-0.5">{m.before}</span>
               <span className="text-sym-label">&rarr;</span>
               <span className="font-semibold text-sym-body">{m.after}</span>
             </div>
