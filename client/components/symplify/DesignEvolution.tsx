@@ -145,6 +145,8 @@ function PivotalNarrative({
 }
 
 function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionStage[] }) {
+  const is2x2 = stages.length === 4;
+
   return (
     <div className="mb-16 last:mb-0">
       <h3 className="text-lg font-semibold text-sym-heading mb-6 flex items-center gap-3">
@@ -152,19 +154,26 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
         {title}
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div
+        className={
+          is2x2
+            ? "grid grid-cols-1 md:grid-cols-2 gap-6"
+            : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        }
+      >
         {stages.map((stage, i) => (
           <div
             key={stage.title}
-            className="bg-sym-card rounded-xl border border-sym-card-border p-5 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300 relative card-lift"
+            className="bg-sym-card rounded-xl border border-sym-card-border p-5 sm:p-6 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300 relative card-lift"
           >
-            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-sym-blue to-sym-green text-white flex items-center justify-center text-sm font-bold mb-4 timeline-node">
-              {i + 1}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-sym-blue to-sym-green text-white flex items-center justify-center text-sm font-bold flex-shrink-0 timeline-node">
+                {i + 1}
+              </div>
+              <h4 className="text-sm font-semibold text-sym-heading leading-snug">
+                {stage.title}
+              </h4>
             </div>
-
-            <h4 className="text-sm font-semibold text-sym-heading mb-3 leading-snug">
-              {stage.title}
-            </h4>
 
             <ZoomableImage
               src={stage.imageSrc}
