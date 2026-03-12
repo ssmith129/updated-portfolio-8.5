@@ -169,14 +169,15 @@ function Decision4() {
       <DecisionHeader number="04" title="Solving Alert Fatigue" />
 
       {/* Before / After comparison */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         <div>
+          <p className="text-xs font-semibold text-sym-red uppercase tracking-widest mb-3">Before</p>
           <ZoomableImage
             src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5f599eb71f4f49589b805bc698f2f8b1"
             alt="Before: flat alert list with 47 daily interruptions, all marked with equal urgency and no priority differentiation"
             caption="Flat list of 47 alerts all marked with equal urgency, no prioritization or grouping."
           />
-          <div className="space-y-2 mt-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1.5 mt-3">
             {[
               'All alerts marked "!" with no priority differentiation',
               "47+ daily interruptions per clinician",
@@ -191,12 +192,13 @@ function Decision4() {
           </div>
         </div>
         <div>
+          <p className="text-xs font-semibold text-sym-green uppercase tracking-widest mb-3">After</p>
           <ZoomableImage
             src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fadfb6c1e57684d289fe4d76b7b835b63"
             alt="After: risk-tiered alert system with 2 critical actions, 3 review items, and 42 FYI items batched into a collapsible digest"
             caption="Risk-tiered alert system: 2 critical actions, 3 items for review, 42 FYI items batched into a single collapsible digest."
           />
-          <div className="space-y-2 mt-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1.5 mt-3">
             {[
               "3-tier risk classification: Critical Action / Review Needed / FYI",
               "Similar alerts batched into daily digests",

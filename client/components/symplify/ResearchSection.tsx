@@ -120,7 +120,7 @@ export default function ResearchSection() {
       </details>
 
       {/* Research Process Photos */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
         <ZoomableImage
           src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8a68a9bfe226419786b54788d92c6dda"
           alt="Contextual inquiry research summary showing 18 sessions across 3 roles — Doctors, Nurses, and Admin — with key findings, quotes, and research methods"

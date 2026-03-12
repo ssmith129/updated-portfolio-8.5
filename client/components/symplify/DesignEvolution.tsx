@@ -145,8 +145,6 @@ function PivotalNarrative({
 }
 
 function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionStage[] }) {
-  const is2x2 = stages.length === 4;
-
   return (
     <div className="mb-16 last:mb-0">
       <h3 className="text-lg font-semibold text-sym-heading mb-6 flex items-center gap-3">
@@ -154,13 +152,7 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
         {title}
       </h3>
 
-      <div
-        className={
-          is2x2
-            ? "grid grid-cols-1 md:grid-cols-2 gap-6"
-            : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-        }
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {stages.map((stage, i) => (
           <div
             key={stage.title}
