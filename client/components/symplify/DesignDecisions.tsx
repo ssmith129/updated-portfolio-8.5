@@ -117,8 +117,8 @@ function Decision2() {
       </p>
 
       <ZoomableImage
-        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8731e54d88a6442f947ff34a5a07d4cf"
-        alt="AI reasoning panel expanded showing symptom severity, patient history, SLA requirement, and vitals context with accept/override actions"
+        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff71f584e4cc942468f434f0114848bd3"
+        alt="AI reasoning panel expanded showing symptom severity, patient context, SLA requirement, source context, and time urgency with escalate/acknowledge actions and HIPAA-compliant audit trail"
         caption="The AI reasoning panel at the point of decision. Clinicians see 'why' on demand — satisfying both HIPAA audit requirements and clinical trust needs."
       />
 
