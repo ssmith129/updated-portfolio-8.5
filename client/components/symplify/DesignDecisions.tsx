@@ -90,8 +90,8 @@ function Decision1() {
       </div>
 
       <ZoomableImage
-        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F319eca85807e477aad8303083ba98d94"
-        alt="Production confidence badges showing High, Med, and Low tiers with hover-to-reveal AI reasoning panel"
+        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Faccc81d916a04618a4a35f6f315ca73f"
+        alt="AI Confidence Badges priority classification showing High, Med, and Low tiers across three roles with hover-to-reveal reasoning, confidence scores, and accept/override actions"
         caption='Production confidence badges with hover-to-reveal reasoning. The "smart assistant" framing drove 89% acceptance.'
       />
 
