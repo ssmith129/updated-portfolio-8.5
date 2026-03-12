@@ -30,20 +30,6 @@ const dsFeatures = [
   "Keyboard shortcuts for power users (nurse-requested tab navigation)",
 ];
 
-const legacySystems = [
-  { label: "EHR System", sub: "Patient records", color: "#EF4444", bg: "#FEF2F2", border: "#FECACA" },
-  { label: "Email", sub: "Communication", color: "#F59E0B", bg: "#FFFBEB", border: "#FDE68A" },
-  { label: "Excel", sub: "Scheduling & logs", color: "#6366F1", bg: "#EEF2FF", border: "#C7D2FE" },
-];
-
-const modules = ["AI Triage Engine", "Conflict Detection", "Compliance Monitor", "Alert Prioritization"];
-
-const roleViews = [
-  { label: "Doctor View", sub: "Triage + scheduling", color: "#3B82F6", bg: "#EFF6FF", border: "#BFDBFE" },
-  { label: "Nurse View", sub: "Alerts + handoffs", color: "#10B981", bg: "#F0FDF4", border: "#BBF7D0" },
-  { label: "Admin View", sub: "Compliance + reporting", color: "#8B5CF6", bg: "#F5F3FF", border: "#DDD6FE" },
-];
-
 export default function SystemOverview() {
   const archRef = useScrollReveal();
   const dsRef = useScrollReveal();
@@ -69,69 +55,12 @@ export default function SystemOverview() {
           Symplify acts as an integration layer — read-only recommendations over legacy systems.
         </p>
 
-        {/* Coded Architecture Diagram */}
-        <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 mb-8 shadow-sm overflow-x-auto">
-          <div className="min-w-[600px]">
-            {/* Layer 1: Legacy Systems */}
-            <div className="flex justify-center gap-4 mb-4">
-              {legacySystems.map((sys) => (
-                <div
-                  key={sys.label}
-                  className="flex-1 rounded-lg border-2 border-dashed px-4 py-3 text-center"
-                  style={{ borderColor: sys.border, backgroundColor: sys.bg }}
-                >
-                  <p className="text-xs font-bold" style={{ color: sys.color }}>{sys.label}</p>
-                  <p className="text-[10px] text-sym-muted">{sys.sub}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Arrow */}
-            <div className="flex justify-center my-2">
-              <div className="flex flex-col items-center">
-                <div className="w-px h-4 bg-sym-card-border-hover" />
-                <span className="text-xs text-sym-label">↓ Read-only data flow ↓</span>
-                <div className="w-px h-4 bg-sym-card-border-hover" />
-              </div>
-            </div>
-
-            {/* Layer 2: Symplify Translation Layer */}
-            <div className="bg-gradient-to-r from-sym-bg-blue to-sym-bg-green rounded-xl border-2 border-sym-blue/30 px-6 py-5 mb-4">
-              <p className="text-center text-xs font-bold text-sym-blue uppercase tracking-widest mb-3">
-                Symplify Translation Layer
-              </p>
-              <div className="flex justify-center gap-3">
-                {modules.map((mod) => (
-                  <div key={mod} className="bg-sym-card rounded-lg border border-[#DBEAFE] px-3 py-2 text-center flex-1">
-                    <p className="text-[11px] font-semibold text-[#1E40AF]">{mod}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Arrow */}
-            <div className="flex justify-center my-2">
-              <div className="flex flex-col items-center">
-                <div className="w-px h-4 bg-sym-card-border-hover" />
-                <span className="text-xs text-sym-label">↓ Role-based views ↓</span>
-                <div className="w-px h-4 bg-sym-card-border-hover" />
-              </div>
-            </div>
-
-            {/* Layer 3: User Dashboards */}
-            <div className="flex justify-center gap-4">
-              {roleViews.map((view) => (
-                <div
-                  key={view.label}
-                  className="flex-1 rounded-lg border-2 px-4 py-3 text-center"
-                  style={{ borderColor: view.border, backgroundColor: view.bg }}
-                >
-                  <p className="text-xs font-bold" style={{ color: view.color }}>{view.label}</p>
-                  <p className="text-[10px] text-sym-muted">{view.sub}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="mb-8">
+          <ZoomableImage
+            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6aa256a43d2549c38d24c45c7e442b57"
+            alt="System architecture diagram showing how Symplify connects legacy systems (EHR, Email, Excel) through a translation layer (AI Triage Engine, Conflict Detection, Compliance Monitor, Alert Prioritization) to role-based dashboards (Doctor, Nurse, Admin views)"
+            caption="How Symplify connects legacy systems to role-based dashboards via a read-only translation layer."
+          />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
