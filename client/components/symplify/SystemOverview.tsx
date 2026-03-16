@@ -128,7 +128,7 @@ export default function SystemOverview() {
               key={p.context}
               className="reveal bg-sym-card rounded-xl border border-sym-card-border p-5 shadow-sm card-lift group"
             >
-              <div className="flex items-center gap-2 mb-3">
+              <div className="flex items-start gap-2 mb-3">
                 {p.icon}
                 <p className="text-sm font-semibold text-sym-heading">{p.context}</p>
               </div>

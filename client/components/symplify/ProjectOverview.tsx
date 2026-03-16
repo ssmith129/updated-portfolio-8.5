@@ -65,7 +65,7 @@ export default function ProjectOverview() {
             key={obj.title}
             className="reveal bg-sym-card rounded-xl border border-sym-card-border p-5 shadow-sm card-lift hover:border-sym-card-border-hover group"
           >
-            <div className="flex items-center gap-2 mb-2">
+            <div className="flex items-start gap-2 mb-2">
               {obj.icon}
               <p className="text-sm font-semibold text-sym-heading">{obj.title}</p>
             </div>

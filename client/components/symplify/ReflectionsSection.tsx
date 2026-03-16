@@ -63,7 +63,7 @@ export default function ReflectionsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Wins */}
           <div className="bg-sym-bg-green rounded-2xl border border-[#BBF7D0] p-6">
-            <div className="flex items-center gap-2 mb-5">
+            <div className="flex items-start gap-2 mb-5">
               <CheckCircle className="w-5 h-5 text-sym-green" />
               <p className="text-sm font-semibold text-[#166534] uppercase tracking-widest">Wins</p>
             </div>
@@ -79,7 +79,7 @@ export default function ReflectionsSection() {
 
           {/* Misses */}
           <div className="bg-sym-bg-amber rounded-2xl border border-[#FDE68A] p-6">
-            <div className="flex items-center gap-2 mb-5">
+            <div className="flex items-start gap-2 mb-5">
               <AlertTriangle className="w-5 h-5 text-sym-amber" />
               <p className="text-sm font-semibold text-[#92400E] uppercase tracking-widest">Misses</p>
             </div>

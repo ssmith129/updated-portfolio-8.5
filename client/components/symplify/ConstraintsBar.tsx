@@ -42,9 +42,9 @@ export default function ConstraintsBar() {
             key={c.title}
             className="reveal bg-sym-card rounded-xl border border-sym-card-border px-5 py-5 shadow-sm card-lift group"
           >
-            <div className="mb-3">{c.icon}</div>
-            <p className="text-sm font-semibold text-sym-heading mb-1">{c.title}</p>
-            <p className="text-xs text-sym-muted leading-relaxed">{c.description}</p>
+            <div className="flex flex-col justify-center items-center mb-3">{c.icon}</div>
+            <p className="text-sm font-semibold text-sym-heading mb-1 text-center">{c.title}</p>
+            <p className="text-xs text-sym-muted leading-relaxed text-center">{c.description}</p>
           </div>
         ))}
       </div>
