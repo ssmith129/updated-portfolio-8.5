@@ -1,5 +1,6 @@
 import { Target, Building2, TrendingUp, Users } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
+import { SymTLDR } from "./shared";
 
 const objectives = [
   {
@@ -51,6 +52,33 @@ export default function ProjectOverview() {
         <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 max-w-[720px] heading-underline">
           Project Overview
         </h2>
+      </div>
+
+      <SymTLDR>
+        Custom Data Processing Inc. needed a clinical coordination platform
+        that integrates with (not replaces) legacy EHR systems, complies with
+        HIPAA, and proves value in 6 weeks. As founding product designer,
+        I owned research through pilot validation.
+      </SymTLDR>
+
+      {/* Structured Role Card */}
+      <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 mb-10 shadow-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+          {[
+            { label: "Client", value: "Custom Data Processing Inc. — mid-sized health IT services" },
+            { label: "Users", value: "65 clinical staff (MDs, RNs, admins) across 3 public health facilities" },
+            { label: "Problem", value: "Fragmented EHR + Excel + email workflows causing measurable clinical and operational losses" },
+            { label: "My Role", value: "Founding Product Designer — research, interaction design, prototyping, design system, pilot validation" },
+            { label: "Team", value: "2 Engineers, 1 PM, 4 Clinical Advisors" },
+            { label: "Timeline", value: "Jan – Aug 2024 (8 months total, 6-week pilot)" },
+            { label: "Constraint", value: "Prove measurable improvement within 6-week pilot window or project doesn't get broader rollout" },
+          ].map((item) => (
+            <div key={item.label} className="flex gap-3">
+              <span className="text-xs font-semibold text-sym-label uppercase tracking-widest whitespace-nowrap mt-0.5 min-w-[72px]">{item.label}</span>
+              <span className="text-sym-body leading-relaxed">{item.value}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Visual Project Timeline */}

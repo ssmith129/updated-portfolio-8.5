@@ -1,5 +1,6 @@
 import { CheckCircle, AlertTriangle, Lightbulb, ArrowRight } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
+import { SymTLDR } from "./shared";
 
 const wins = [
   "Trust through transparency — users felt safe disagreeing with AI recommendations.",
@@ -59,6 +60,13 @@ export default function ReflectionsSection() {
             What Worked &amp; What Didn't
           </h2>
         </div>
+
+        <SymTLDR>
+          Trust through transparency worked — 11% override rate proved users felt safe
+          disagreeing with AI. Modular rollout built credibility incrementally. But early
+          prototypes over-automated (67% rejection), mobile alert density remained too
+          high, and 15% of admins still exported to Excel.
+        </SymTLDR>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Wins */}

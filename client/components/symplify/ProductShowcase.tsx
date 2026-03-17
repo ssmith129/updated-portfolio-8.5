@@ -1,5 +1,5 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { AutoplayVideo } from "./shared";
+import { AutoplayVideo, SymTLDR } from "./shared";
 
 const showcaseItems = [
   {
@@ -59,6 +59,13 @@ export default function ProductShowcase() {
           Product Showcase
         </h2>
       </div>
+
+      <SymTLDR>
+        The production platform serves three distinct user roles through a shared
+        data layer. Each view surfaces only the information and actions relevant
+        to that role's workflow, reducing cognitive overhead while maintaining
+        cross-team visibility.
+      </SymTLDR>
 
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[720px] mb-10">
         Three role-specific views share a single data layer. A mobile on-call view rounds out the platform for corridor use.

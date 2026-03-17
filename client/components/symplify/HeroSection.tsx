@@ -27,14 +27,14 @@ export default function HeroSection() {
         <p className="text-lg sm:text-xl text-sym-body leading-[1.6] max-w-none mb-4">
           I led end-to-end design for a 0-to-1 AI-enhanced hospital management
           platform that unified fragmented EHR, Excel, and email workflows into
-          a single, trustworthy system — reducing triage time by 40% and improving accuracy to 89%.
+          a single, trustworthy system — reducing triage time by 40% across 3 facilities and 65 clinical staff.
         </p>
 
         {/* Reading time + CTA */}
         <div className="flex items-center gap-6 mb-10">
           <div className="flex items-center gap-1.5 text-sym-label text-sm">
             <Clock className="w-3.5 h-3.5" />
-            <span>7 min read</span>
+            <span>14 min read</span>
           </div>
           <a
             href="https://symplify-v4.netlify.app/"

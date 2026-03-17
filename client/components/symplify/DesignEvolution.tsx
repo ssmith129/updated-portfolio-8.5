@@ -1,6 +1,6 @@
 import { Zap, RotateCcw, TrendingUp } from "lucide-react";
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { ZoomableImage } from "./shared";
+import { ZoomableImage, SymTLDR } from "./shared";
 
 interface EvolutionStage {
   title: string;
@@ -73,6 +73,13 @@ export default function DesignEvolution() {
           Design Evolution
         </h2>
       </div>
+
+      <SymTLDR>
+        Key features went through 3–4 rounds of iteration based on clinical
+        feedback. The AI confidence display pivoted from percentages to badges
+        after testing showed 67% of clinicians rejected numerical precision.
+        Scheduling went from auto-booking to suggestion-based after similar rejection.
+      </SymTLDR>
 
       {/* Pivotal Moment 1 — merged from PivotalMoments.tsx */}
       <PivotalNarrative

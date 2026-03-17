@@ -1,6 +1,6 @@
 import { Eye, Search, MessageSquare, BarChart3 } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { ZoomableImage } from "./shared";
+import { ZoomableImage, SymTLDR } from "./shared";
 
 const methods = [
   { icon: <Eye className="w-4 h-4" />, label: "Shadowed 18 staff", detail: "across 3 facilities" },
@@ -70,6 +70,13 @@ export default function ResearchSection() {
           Research
         </h2>
       </div>
+
+      <SymTLDR>
+        Shadowed 18 staff across 3 facilities, logged 3,000+ tasks, conducted
+        14 interviews, and analyzed 1,200 messages. Three insights reshaped the
+        project: staff wanted augmentation not automation, "urgent" had no shared
+        meaning, and compliance failures were visibility problems not discipline problems.
+      </SymTLDR>
 
       {/* Methods strip */}
       <div ref={methodsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6">

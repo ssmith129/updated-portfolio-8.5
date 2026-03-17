@@ -17,12 +17,12 @@ import SystemOverview from "../components/symplify/SystemOverview";
 import ReflectionsSection from "../components/symplify/ReflectionsSection";
 
 const sectionNav = [
-  { href: "#overview", label: "Overview" },
+  { href: "#impact", label: "At a Glance" },
+  { href: "#overview", label: "Context" },
   { href: "#problem", label: "Problem" },
   { href: "#research", label: "Research" },
-  { href: "#impact", label: "Outcomes" },
   { href: "#evolution", label: "Evolution" },
-  { href: "#decisions", label: "Design Decisions" },
+  { href: "#decisions", label: "Decisions" },
   { href: "#showcase", label: "Product" },
   { href: "#system", label: "Architecture" },
   { href: "#outcomes", label: "Assessment" },
@@ -164,14 +164,14 @@ export default function SymplifyCaseStudy() {
       </div>
 
       <main id="main-content">
+        <ImpactMetrics />
+        <SectionDivider />
         <ProjectOverview />
         <SectionDivider />
         <ProblemSection />
         <ConstraintsBar />
         <SectionDivider />
         <ResearchSection />
-        <SectionDivider />
-        <ImpactMetrics />
         <SectionDivider />
         <DesignEvolution />
         <SectionDivider />

@@ -1,5 +1,5 @@
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { ZoomableImage } from "./shared";
+import { ZoomableImage, SymTLDR } from "./shared";
 
 const quotes = [
   {
@@ -41,6 +41,12 @@ export default function ProblemSection() {
           Three Systems, Zero Shared Prioritization
         </h2>
       </div>
+
+      <SymTLDR>
+        Staff operated across 3 disconnected systems with no shared triage model.
+        18% of urgent handoffs were missed at shift change. Doctors spent 2 minutes
+        per message just deciding if it was urgent — 8 hours of cognitive overhead per month.
+      </SymTLDR>
 
       <p className="text-lg text-sym-body leading-relaxed max-w-[720px] mb-10">
         Staff operated across three disconnected systems — EHR, Excel, and email — with no shared prioritization model.
