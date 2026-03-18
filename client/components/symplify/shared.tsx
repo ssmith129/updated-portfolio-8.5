@@ -4,7 +4,7 @@ import { Zap, X, ZoomIn, Maximize2 } from "lucide-react";
 export function SymTLDR({ children }: { children: React.ReactNode }) {
   return (
     <div className="bg-gradient-to-r from-sym-blue/5 to-sym-green/5 rounded-xl p-4 border-l-4 border-sym-blue mb-8">
-      <div className="flex items-start gap-3">
+      <div className="flex items-center gap-3">
         <div className="w-6 h-6 bg-sym-blue/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
           <Zap className="w-3.5 h-3.5 text-sym-blue" />
         </div>

@@ -108,7 +108,7 @@ export default function ProjectOverview() {
 function ProjectTimeline() {
   return (
     <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 mb-10 shadow-sm">
-      <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-6 text-center">
+      <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-6 text-center mx-auto">
         Project Timeline — Jan – Aug 2024
       </p>
 
