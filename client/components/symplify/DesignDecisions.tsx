@@ -201,9 +201,9 @@ function Decision4() {
         <div>
           <p className="text-xs font-semibold text-sym-green uppercase tracking-widest mb-3">After</p>
           <ZoomableImage
-            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fadfb6c1e57684d289fe4d76b7b835b63"
-            alt="After: risk-tiered alert system with 2 critical actions, 3 review items, and 42 FYI items batched into a collapsible digest"
-            caption="Risk-tiered alert system: 2 critical actions, 3 items for review, 42 FYI items batched into a single collapsible digest."
+            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F094b0614454a44ee8a5f1d3924e10fe4"
+            alt="After: risk-tiered Clinical Emergency alert system with AI reasoning, confidence scores, escalate/acknowledge actions, and HIPAA-compliant audit trail"
+            caption="Risk-tiered alert system with AI reasoning, confidence badges, and escalate/acknowledge actions — daily interruptions dropped from 47 to 12."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1.5 mt-3">
             {[
