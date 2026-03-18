@@ -180,9 +180,9 @@ function Decision4() {
         <div>
           <p className="text-xs font-semibold text-sym-red uppercase tracking-widest mb-3">Before</p>
           <ZoomableImage
-            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F5f599eb71f4f49589b805bc698f2f8b1"
-            alt="Before: flat alert list with 47 daily interruptions, all marked with equal urgency and no priority differentiation"
-            caption="Flat list of 47 alerts all marked with equal urgency, no prioritization or grouping."
+            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fd447a9949f71436c9f48a84ce6c5cb22"
+            alt="Before: flat notification list showing all alerts with equal weight — no priority differentiation, accept/decline actions inline, and no batching or digest options"
+            caption="Flat notification list with no priority differentiation — every alert demands equal attention."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1.5 mt-3">
             {[
