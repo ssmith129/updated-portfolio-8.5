@@ -159,8 +159,8 @@ function Decision3() {
       </p>
 
       <ZoomableImage
-        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Feeb053a93df24c06a4962d85038df612"
-        alt="Production smart scheduling view with AI-powered conflict detection, inline suggestions, and schedule intelligence sidebar"
+        src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7a39ef4ac260457a82bda1aff8bf1081"
+        alt="Smart scheduling with progressive disclosure — New Appointment form with AI Scheduling Assistant showing provider insights, suggested time slots with fit scores, and Apply to Form action"
         caption="Production conflict detection modal. Context-rich suggestions (room, time, accessibility) reduced scheduling conflicts and contributed to the 2.4-point no-show reduction."
       />
 
