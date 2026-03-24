@@ -220,7 +220,7 @@ export function AutoplayVideo({
   return (
     <>
       <figure className="mb-6 -mx-6 sm:-mx-8">
-        <div className="relative group">
+        <div className="relative group overflow-hidden rounded-sm">
           <video
             ref={videoRef}
             src={src}
@@ -228,7 +228,7 @@ export function AutoplayVideo({
             loop
             playsInline
             preload="metadata"
-            className="w-full h-auto"
+            className="w-full h-auto -mt-[2%]"
           />
           <button
             type="button"
