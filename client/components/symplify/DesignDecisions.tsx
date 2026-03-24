@@ -244,7 +244,7 @@ function DecisionHeader({ number, title }: { number: string; title: string }) {
 
 function ResultCallout({ text }: { text: string }) {
   return (
-    <div className="flex items-center gap-3 bg-sym-bg-green border border-[#BBF7D0] rounded-xl px-5 py-3">
+    <div className="flex items-start justify-start gap-3 bg-sym-bg-green border border-[#BBF7D0] rounded-xl px-5 py-3">
       <CheckCircle className="w-5 h-5 text-sym-green flex-shrink-0" />
       <p className="text-sm font-medium text-[#166534] leading-relaxed">{text}</p>
     </div>
