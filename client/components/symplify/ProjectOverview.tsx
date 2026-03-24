@@ -71,13 +71,16 @@ export default function ProjectOverview() {
             { label: "My Role", value: "Founding Product Designer — research, interaction design, prototyping, design system, pilot validation" },
             { label: "Team", value: "2 Engineers, 1 PM, 4 Clinical Advisors" },
             { label: "Timeline", value: "Jan – Aug 2024 (8 months total, 6-week pilot)" },
-            { label: "Constraint", value: "Prove measurable improvement within 6-week pilot window or project doesn't get broader rollout" },
           ].map((item) => (
             <div key={item.label} className="flex gap-2.5">
-              <span className="text-xs font-semibold text-sym-label uppercase tracking-widest whitespace-nowrap mt-0.5 min-w-[68px]">{item.label}</span>
-              <span className="text-sym-body leading-snug">{item.value}</span>
+              <span className="text-xs font-semibold text-sym-label uppercase tracking-widest whitespace-nowrap mt-0.5 min-w-[80px]">{item.label}</span>
+              <span className="text-sm text-sym-body leading-snug">{item.value}</span>
             </div>
           ))}
+          <div className="sm:col-span-2 flex gap-2.5">
+            <span className="text-xs font-semibold text-sym-label uppercase tracking-widest whitespace-nowrap mt-0.5 min-w-[80px]">Constraint</span>
+            <span className="text-sm text-sym-body leading-snug">Prove measurable improvement within 6-week pilot window or project doesn't get broader rollout</span>
+          </div>
         </div>
       </div>
 
