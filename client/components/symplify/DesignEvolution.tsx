@@ -30,8 +30,8 @@ const triageEvolution: EvolutionStage[] = [
   },
   {
     title: "Production UI",
-    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff98fec64c0cb49ff82fa9c6d0518e333",
-    caption: "Shipped production UI with full audit trail on every decision.",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6c0f150f972149689366cf1c9d149fb3",
+    caption: "Shipped production UI — triage inbox with confidence badges, AI reasoning, and full audit trail.",
     learning: "Trust through transparency — override rate dropped significantly after the badge redesign.",
   },
 ];
