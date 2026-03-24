@@ -62,8 +62,8 @@ export default function ProjectOverview() {
       </SymTLDR>
 
       {/* Structured Role Card */}
-      <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 mb-10 shadow-sm">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+      <div className="bg-sym-card rounded-xl border border-sym-card-border p-4 sm:p-6 mb-8 shadow-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 text-sm">
           {[
             { label: "Client", value: "Custom Data Processing Inc. — mid-sized health IT services" },
             { label: "Users", value: "65 clinical staff (MDs, RNs, admins) across 3 public health facilities" },
@@ -73,9 +73,9 @@ export default function ProjectOverview() {
             { label: "Timeline", value: "Jan – Aug 2024 (8 months total, 6-week pilot)" },
             { label: "Constraint", value: "Prove measurable improvement within 6-week pilot window or project doesn't get broader rollout" },
           ].map((item) => (
-            <div key={item.label} className="flex gap-3">
-              <span className="text-xs font-semibold text-sym-label uppercase tracking-widest whitespace-nowrap mt-0.5 min-w-[72px]">{item.label}</span>
-              <span className="text-sym-body leading-relaxed">{item.value}</span>
+            <div key={item.label} className="flex gap-2.5">
+              <span className="text-xs font-semibold text-sym-label uppercase tracking-widest whitespace-nowrap mt-0.5 min-w-[68px]">{item.label}</span>
+              <span className="text-sym-body leading-snug">{item.value}</span>
             </div>
           ))}
         </div>
@@ -107,8 +107,8 @@ export default function ProjectOverview() {
 
 function ProjectTimeline() {
   return (
-    <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 mb-10 shadow-sm">
-      <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-6 text-center mx-auto">
+    <div className="bg-sym-card rounded-xl border border-sym-card-border p-4 sm:p-6 mb-8 shadow-sm">
+      <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-4 text-center mx-auto">
         Project Timeline — Jan – Aug 2024
       </p>
 

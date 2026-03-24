@@ -83,7 +83,7 @@ export default function ResearchSection() {
         {methods.map((m) => (
           <div
             key={m.label}
-            className="reveal flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border px-3 sm:px-4 py-3 sm:py-4 shadow-sm card-lift group"
+            className="reveal flex items-start gap-2.5 bg-sym-card rounded-lg border border-sym-card-border px-3 py-2.5 sm:py-3 shadow-sm card-lift group"
           >
             <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-sym-bg-blue flex items-center justify-center text-sym-blue flex-shrink-0 mt-0.5 icon-hover-spin">
               {m.icon}
@@ -97,7 +97,7 @@ export default function ResearchSection() {
       </div>
 
       {/* Detailed Research Methodology (collapsible) */}
-      <details className="mb-10 group">
+      <details className="mb-8 group">
         <summary className="cursor-pointer text-sm font-semibold text-sym-blue hover:text-[#2563EB] transition-colors flex items-center gap-2 mb-4">
           <span className="transition-transform group-open:rotate-90">▶</span>
           View Full Research Methodology
@@ -127,7 +127,7 @@ export default function ResearchSection() {
       </details>
 
       {/* Research Process Photos */}
-      <div className="space-y-6 mb-14">
+      <div className="space-y-5 mb-10">
         <ZoomableImage
           src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8a68a9bfe226419786b54788d92c6dda"
           alt="Contextual inquiry research summary showing 18 sessions across 3 roles — Doctors, Nurses, and Admin — with key findings, quotes, and research methods"
@@ -146,7 +146,7 @@ export default function ResearchSection() {
       </div>
 
       {/* Insight cards */}
-      <div ref={insightsRef} className="reveal space-y-6 mb-14">
+      <div ref={insightsRef} className="reveal space-y-5 mb-10">
         {insights.map((ins) => (
           <div
             key={ins.number}

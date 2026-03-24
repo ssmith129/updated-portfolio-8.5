@@ -67,11 +67,11 @@ export default function ImpactMetrics() {
       id="impact"
       className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
     >
-      <div className="mb-8">
+      <div className="mb-5">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Measured Outcomes
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-4 heading-underline">
           Impact at a Glance
         </h2>
       </div>
@@ -83,23 +83,23 @@ export default function ImpactMetrics() {
       </SymTLDR>
 
       {/* Unified Before → After Comparison Table */}
-      <div className="overflow-x-auto mb-10 rounded-xl border border-sym-card-border shadow-sm">
+      <div className="overflow-x-auto mb-6 rounded-xl border border-sym-card-border shadow-sm">
         <table className="w-full text-sm border-collapse min-w-[580px]">
           <thead>
             <tr className="bg-sym-bg-primary border-b border-sym-card-border">
-              <th className="text-left py-3 px-4 text-xs font-semibold text-sym-muted uppercase tracking-wider">Metric</th>
-              <th className="text-center py-3 px-4 text-xs font-semibold text-sym-muted uppercase tracking-wider">Before (Baseline)</th>
-              <th className="text-center py-3 px-4 text-xs font-semibold text-sym-muted uppercase tracking-wider">After (6-Week Pilot)</th>
-              <th className="text-center py-3 px-4 text-xs font-semibold text-sym-green uppercase tracking-wider">Change</th>
+              <th className="text-left py-2 px-3 text-xs font-semibold text-sym-muted uppercase tracking-wider">Metric</th>
+              <th className="text-center py-2 px-3 text-xs font-semibold text-sym-muted uppercase tracking-wider">Before (Baseline)</th>
+              <th className="text-center py-2 px-3 text-xs font-semibold text-sym-muted uppercase tracking-wider">After (6-Week Pilot)</th>
+              <th className="text-center py-2 px-3 text-xs font-semibold text-sym-green uppercase tracking-wider">Change</th>
             </tr>
           </thead>
           <tbody className="text-sym-body">
             {metrics.map((m) => (
               <tr key={m.label} className="border-b border-sym-divider hover:bg-sym-bg-primary/50 transition-colors">
-                <td className="py-3 px-4 font-semibold text-sym-heading">{m.label}</td>
-                <td className="py-3 px-4 text-center text-sym-muted">{m.before}</td>
-                <td className="py-3 px-4 text-center font-medium text-sym-heading">{m.after}</td>
-                <td className="py-3 px-4 text-center font-bold" style={{ color: m.color }}>
+                <td className="py-2 px-3 font-semibold text-sym-heading">{m.label}</td>
+                <td className="py-2 px-3 text-center text-sym-muted">{m.before}</td>
+                <td className="py-2 px-3 text-center font-medium text-sym-heading">{m.after}</td>
+                <td className="py-2 px-3 text-center font-bold" style={{ color: m.color }}>
                   {m.label === "Triage Time" ? "~40% faster" :
                    m.label === "Triage Accuracy" ? "+29 pts" :
                    m.label === "SLA Compliance" ? "+13 pts" :
@@ -115,12 +115,12 @@ export default function ImpactMetrics() {
       {/* Animated Metric Cards */}
       <div
         ref={elementRef as React.RefObject<HTMLDivElement>}
-        className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mb-8"
+        className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-6"
       >
         {metrics.map((m) => (
           <div
             key={m.label}
-            className="bg-sym-card rounded-xl border border-sym-card-border px-4 py-3 sm:px-5 sm:py-4 shadow-sm card-lift hover:border-sym-card-border-hover group"
+            className="bg-sym-card rounded-xl border border-sym-card-border px-3 py-2.5 sm:px-4 sm:py-3 shadow-sm card-lift hover:border-sym-card-border-hover group"
           >
             <div className="flex items-center justify-between mb-1.5">
               <p className="text-[11px] font-semibold text-sym-label uppercase tracking-widest">
@@ -145,12 +145,12 @@ export default function ImpactMetrics() {
       </div>
 
       {/* Guardrails + caveat */}
-      <div className="flex flex-col sm:flex-row gap-4 mb-6">
-        <div className="flex-1 bg-sym-bg-green border border-[#BBF7D0] rounded-xl px-5 py-4 text-sm text-[#166534] leading-relaxed">
+      <div className="flex flex-col sm:flex-row gap-3 mb-4">
+        <div className="flex-1 bg-sym-bg-green border border-[#BBF7D0] rounded-lg px-4 py-3 text-sm text-[#166534] leading-snug">
           <span className="font-semibold">AI Guardrails maintained:</span>{" "}
           &lt;15% override rate, &lt;10% false positives, full audit trail.
         </div>
-        <div className="flex-1 bg-sym-bg-amber border border-[#FDE68A] rounded-xl px-5 py-4 text-sm text-[#92400E] leading-relaxed flex items-start gap-2">
+        <div className="flex-1 bg-sym-bg-amber border border-[#FDE68A] rounded-lg px-4 py-3 text-sm text-[#92400E] leading-snug flex items-center gap-2">
           <AlertTriangle className="w-4 h-4 mt-0.5 flex-shrink-0" />
           <span>
             Pilot ran during non-flu months — promising early results, not proven at scale.
@@ -158,7 +158,7 @@ export default function ImpactMetrics() {
         </div>
       </div>
 
-      <p className="text-xs text-sym-muted italic mb-6">
+      <p className="text-xs text-sym-muted italic mb-4">
         All metrics system-logged and compared against 4-week pre-pilot baselines.
       </p>
 
@@ -168,14 +168,14 @@ export default function ImpactMetrics() {
           <span className="transition-transform group-open:rotate-90">▶</span>
           View estimated annual business value (pilot scale)
         </summary>
-        <div className="bg-gradient-to-r from-sym-bg-blue to-sym-bg-green rounded-2xl border border-[#DBEAFE] p-6 sm:p-8">
+        <div className="bg-gradient-to-r from-sym-bg-blue to-sym-bg-green rounded-xl border border-[#DBEAFE] p-5 sm:p-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
             {[
               { metric: "~$47K/year saved", detail: "4.4 hrs/wk admin reduction × $41/hr avg × 52 weeks × 5 admin staff" },
               { metric: "~$31K/year recovered", detail: "2.4% no-show reduction × ~3,200 annual appointments × $400 avg revenue" },
               { metric: "~957 min/week freed", detail: "57 sec triage savings × ~1,000 weekly triage decisions across 3 facilities" },
             ].map((v) => (
-              <div key={v.metric} className="bg-white/70 rounded-xl px-5 py-4 border border-[#DBEAFE]/50 card-lift">
+              <div key={v.metric} className="bg-white/70 rounded-lg px-4 py-3 border border-[#DBEAFE]/50 card-lift">
                 <p className="text-lg font-bold text-sym-heading mb-1">{v.metric}</p>
                 <p className="text-xs text-sym-muted leading-relaxed">{v.detail}</p>
               </div>

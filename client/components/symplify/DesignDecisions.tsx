@@ -14,7 +14,7 @@ export default function DesignDecisions() {
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Core Design Work
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-4 heading-underline">
           Design Decisions
         </h2>
       </div>
@@ -26,7 +26,7 @@ export default function DesignDecisions() {
         and risk-tiered alert batching that cut alert fatigue 38%.
       </SymTLDR>
 
-      <div className="space-y-20">
+      <div className="space-y-14">
         <Decision1 />
         <Decision2 />
         <Decision3 />

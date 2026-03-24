@@ -32,7 +32,7 @@ export default function ConstraintsBar() {
       <p className="text-xs font-semibold text-sym-muted uppercase tracking-widest mb-3">
         Load-Bearing Design Constraints
       </p>
-      <p className="text-sm text-sym-body leading-relaxed max-w-[680px] mb-6">
+      <p className="text-sm text-sym-body leading-snug max-w-[680px] mb-5">
         Every design decision operated within four non-negotiable constraints.
         Violating any one meant instant rejection by clinical staff or compliance teams.
       </p>
@@ -40,9 +40,9 @@ export default function ConstraintsBar() {
         {constraints.map((c) => (
           <div
             key={c.title}
-            className="reveal bg-sym-card rounded-xl border border-sym-card-border px-5 py-5 shadow-sm card-lift group"
+            className="reveal bg-sym-card rounded-xl border border-sym-card-border px-4 py-3.5 shadow-sm card-lift group"
           >
-            <div className="flex flex-col justify-center items-center mb-3">{c.icon}</div>
+            <div className="flex flex-col justify-center items-center mb-2">{c.icon}</div>
             <p className="text-sm font-semibold text-sym-heading mb-1 text-center">{c.title}</p>
             <p className="text-xs text-sym-muted leading-relaxed text-center">{c.description}</p>
           </div>

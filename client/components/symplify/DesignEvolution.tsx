@@ -131,11 +131,11 @@ function PivotalNarrative({
 }) {
   return (
     <div
-      className="rounded-2xl border overflow-hidden mb-8"
+      className="rounded-xl border overflow-hidden mb-6"
       style={{ borderColor, backgroundColor: bgColor }}
     >
-      <div className="px-6 py-5 flex items-start gap-3">
-        <div className="w-10 h-10 rounded-xl bg-white/80 flex items-center justify-center flex-shrink-0 shadow-sm">
+      <div className="px-5 py-4 flex items-start gap-3">
+        <div className="w-9 h-9 rounded-lg bg-white/80 flex items-center justify-center flex-shrink-0 shadow-sm">
           {icon}
         </div>
         <div className="flex-1">
@@ -143,7 +143,7 @@ function PivotalNarrative({
           <p className="text-[15px] text-sym-body leading-relaxed">{narrative}</p>
         </div>
       </div>
-      <div className="mx-6 mb-6 flex items-start gap-2 bg-white/60 rounded-xl px-5 py-3">
+      <div className="mx-5 mb-4 flex items-center gap-2 bg-white/60 rounded-lg px-4 py-2.5">
         <TrendingUp className="w-4 h-4 text-sym-green mt-0.5 flex-shrink-0" />
         <p className="text-sm font-medium text-[#166534]">{outcome}</p>
       </div>
@@ -153,19 +153,19 @@ function PivotalNarrative({
 
 function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionStage[] }) {
   return (
-    <div className="mb-16 last:mb-0">
-      <h3 className="text-lg font-semibold text-sym-heading mb-6 flex items-center gap-3">
+    <div className="mb-12 last:mb-0">
+      <h3 className="text-lg font-semibold text-sym-heading mb-5 flex items-center gap-3">
         <span className="w-2 h-2 rounded-full bg-gradient-to-r from-sym-blue to-sym-green pulse-gentle" />
         {title}
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {stages.map((stage, i) => (
           <div
             key={stage.title}
-            className="bg-sym-card rounded-xl border border-sym-card-border p-5 sm:p-6 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300 relative card-lift"
+            className="bg-sym-card rounded-xl border border-sym-card-border p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300 relative card-lift"
           >
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-3">
               <div className="w-8 h-8 rounded-full bg-gradient-to-r from-sym-blue to-sym-green text-white flex items-center justify-center text-sm font-bold flex-shrink-0 timeline-node">
                 {i + 1}
               </div>
@@ -180,7 +180,7 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
               caption={stage.caption}
             />
 
-            <div className="bg-sym-bg-blue rounded-lg p-3 mt-3">
+            <div className="bg-sym-bg-blue rounded-lg p-2.5 mt-2">
               <p className="text-xs text-sym-blue italic leading-relaxed">
                 {stage.learning}
               </p>

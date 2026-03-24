@@ -41,12 +41,12 @@ export default function SystemOverview() {
       className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
     >
       {/* Architecture */}
-      <div className="mb-20">
+      <div className="mb-14">
         <div ref={archRef} className="reveal">
           <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
             Technical Foundation
           </p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 max-w-[720px]">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-4 max-w-[720px]">
             System Architecture
           </h2>
         </div>
@@ -58,11 +58,11 @@ export default function SystemOverview() {
           role-based information density.
         </SymTLDR>
 
-        <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
+        <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
           Symplify acts as an integration layer — read-only recommendations over legacy systems.
         </p>
 
-        <div className="mb-8">
+        <div className="mb-6">
           <ZoomableImage
             src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6aa256a43d2549c38d24c45c7e442b57"
             alt="System architecture diagram showing how Symplify connects legacy systems (EHR, Email, Excel) through a translation layer (AI Triage Engine, Conflict Detection, Compliance Monitor, Alert Prioritization) to role-based dashboards (Doctor, Nurse, Admin views)"
@@ -76,7 +76,7 @@ export default function SystemOverview() {
             { label: "State-by-state compliance", detail: "Configurable logging depth" },
             { label: "Offline-first mobile", detail: "Intermittent rural connectivity" },
           ].map((c) => (
-            <div key={c.label} className="bg-sym-bg-primary rounded-xl border border-sym-card-border px-5 py-4">
+            <div key={c.label} className="bg-sym-bg-primary rounded-lg border border-sym-card-border px-4 py-3">
               <p className="text-sm font-semibold text-sym-heading mb-1">{c.label}</p>
               <p className="text-xs text-sym-muted">{c.detail}</p>
             </div>
@@ -90,11 +90,11 @@ export default function SystemOverview() {
           <p className="text-xs font-semibold text-sym-green uppercase tracking-widest mb-2">
             Foundation
           </p>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-4">
             Design System
           </h2>
         </div>
-        <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
+        <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
           Modular system emphasizing trust, transparency, and accessibility.
         </p>
 
@@ -106,7 +106,7 @@ export default function SystemOverview() {
         />
 
         {/* Component detail screenshots */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
           <ZoomableImage
             src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1d54fbd1ec6141b883b33697b1c4b107"
             alt="Confidence badge variants showing High, Med, and Low tiers with color-blind safe pattern and label redundancy, plus clinician acceptance rates"
@@ -119,7 +119,7 @@ export default function SystemOverview() {
           />
         </div>
 
-        <ul className="space-y-3 mb-10 max-w-[680px]">
+        <ul className="space-y-2.5 mb-8 max-w-[680px]">
           {dsFeatures.map((f) => (
             <li key={f} className="flex items-start gap-3 text-sm text-sym-body leading-relaxed">
               <span className="w-1.5 h-1.5 rounded-full bg-sym-green flex-shrink-0 mt-2" />
@@ -133,9 +133,9 @@ export default function SystemOverview() {
           {platforms.map((p) => (
             <div
               key={p.context}
-              className="reveal bg-sym-card rounded-xl border border-sym-card-border p-5 shadow-sm card-lift group"
+              className="reveal bg-sym-card rounded-xl border border-sym-card-border p-4 shadow-sm card-lift group"
             >
-              <div className="flex items-start gap-2 mb-3">
+              <div className="flex items-start gap-2 mb-2">
                 {p.icon}
                 <p className="text-sm font-semibold text-sym-heading">{p.context}</p>
               </div>

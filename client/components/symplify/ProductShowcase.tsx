@@ -55,7 +55,7 @@ export default function ProductShowcase() {
         <p className="text-xs font-semibold text-sym-green uppercase tracking-widest mb-2">
           Final Product
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-4 heading-underline">
           Product Showcase
         </h2>
       </div>
@@ -67,11 +67,11 @@ export default function ProductShowcase() {
         cross-team visibility.
       </SymTLDR>
 
-      <p className="text-[15px] text-sym-body leading-relaxed max-w-[720px] mb-10">
+      <p className="text-[15px] text-sym-body leading-relaxed max-w-[720px] mb-8">
         Three role-specific views share a single data layer. A mobile on-call view rounds out the platform for corridor use.
       </p>
 
-      <div className="space-y-16">
+      <div className="space-y-10">
         {showcaseItems.map((item) => (
           <ShowcaseCard key={item.title} {...item} />
         ))}
@@ -94,19 +94,19 @@ function ShowcaseCard({
   callouts: string[];
 }) {
   return (
-    <div className="bg-sym-card rounded-2xl border border-sym-card-border p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
-      <h3 className="text-lg font-semibold text-sym-heading mb-5">{title}</h3>
+    <div className="bg-sym-card rounded-xl border border-sym-card-border p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+      <h3 className="text-lg font-semibold text-sym-heading mb-4">{title}</h3>
 
       {videoSrc && (
         <AutoplayVideo src={videoSrc} caption={caption} />
       )}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-4">
         {callouts.map((callout, i) => {
           const [label, ...rest] = callout.split(" — ");
           const description = rest.join(" — ");
           return (
-            <div key={i} className="flex items-start gap-3 bg-sym-bg-primary rounded-lg p-3">
+            <div key={i} className="flex items-start gap-2.5 bg-sym-bg-primary rounded-lg p-2.5">
               <span className="w-6 h-6 rounded-full bg-sym-blue/10 text-sym-blue flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
                 {i + 1}
               </span>
