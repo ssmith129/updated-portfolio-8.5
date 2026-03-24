@@ -82,36 +82,6 @@ export default function ImpactMetrics() {
         AI transparency maintained (11% override rate, &lt;10% false positives).
       </SymTLDR>
 
-      {/* Unified Before → After Comparison Table */}
-      <div className="overflow-x-auto mb-6 rounded-xl border border-sym-card-border shadow-sm">
-        <table className="w-full text-sm border-collapse min-w-[580px]">
-          <thead>
-            <tr className="bg-sym-bg-primary border-b border-sym-card-border">
-              <th className="text-left py-2 px-3 text-xs font-semibold text-sym-muted uppercase tracking-wider">Metric</th>
-              <th className="text-center py-2 px-3 text-xs font-semibold text-sym-muted uppercase tracking-wider">Before (Baseline)</th>
-              <th className="text-center py-2 px-3 text-xs font-semibold text-sym-muted uppercase tracking-wider">After (6-Week Pilot)</th>
-              <th className="text-center py-2 px-3 text-xs font-semibold text-sym-green uppercase tracking-wider">Change</th>
-            </tr>
-          </thead>
-          <tbody className="text-sym-body">
-            {metrics.map((m) => (
-              <tr key={m.label} className="border-b border-sym-divider hover:bg-sym-bg-primary/50 transition-colors">
-                <td className="py-2 px-3 font-semibold text-sym-heading">{m.label}</td>
-                <td className="py-2 px-3 text-center text-sym-muted">{m.before}</td>
-                <td className="py-2 px-3 text-center font-medium text-sym-heading">{m.after}</td>
-                <td className="py-2 px-3 text-center font-bold" style={{ color: m.color }}>
-                  {m.label === "Triage Time" ? "~40% faster" :
-                   m.label === "Triage Accuracy" ? "+29 pts" :
-                   m.label === "SLA Compliance" ? "+13 pts" :
-                   m.label === "Admin Overhead" ? "-35%" :
-                   m.label === "No-Shows" ? "-2.4 pts" : "-38%"}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
       {/* Animated Metric Cards */}
       <div
         ref={elementRef as React.RefObject<HTMLDivElement>}
