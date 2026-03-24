@@ -4,7 +4,7 @@ import { Zap, X, ZoomIn, Maximize2 } from "lucide-react";
 export function SymTLDR({ children }: { children: React.ReactNode }) {
   return (
     <div className="bg-gradient-to-r from-sym-blue/5 to-sym-green/5 rounded-lg px-3.5 py-2.5 border-l-4 border-sym-blue mb-6">
-      <div className="flex items-center gap-2.5">
+      <div className="flex items-start gap-2.5">
         <div className="w-5 h-5 bg-sym-blue/10 rounded flex items-center justify-center flex-shrink-0">
           <Zap className="w-3 h-3 text-sym-blue" />
         </div>
@@ -98,7 +98,7 @@ export function ZoomableImage({
           </div>
         </button>
         {caption && (
-          <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed">
+          <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed text-center">
             {caption}
           </figcaption>
         )}
@@ -153,7 +153,7 @@ export function AssetPlaceholder({
         </div>
         <p className="text-xs font-mono text-sym-label break-all">{id}</p>
       </div>
-      <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed">
+      <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed text-center">
         {caption}
       </figcaption>
     </figure>
@@ -240,7 +240,7 @@ export function AutoplayVideo({
           </button>
         </div>
         {caption && (
-          <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed">
+          <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed text-center">
             {caption}
           </figcaption>
         )}
