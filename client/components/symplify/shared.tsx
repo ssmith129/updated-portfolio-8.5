@@ -163,13 +163,16 @@ export function AssetPlaceholder({
 export function AutoplayVideo({
   src,
   caption,
+  poster,
 }: {
   src: string;
   caption?: string;
+  poster?: string;
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const modalVideoRef = useRef<HTMLVideoElement>(null);
   const [open, setOpen] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   const close = useCallback(() => setOpen(false), []);
 
@@ -190,6 +193,18 @@ export function AutoplayVideo({
 
     observer.observe(video);
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const onLoaded = () => setLoaded(true);
+    if (video.readyState >= 2) {
+      setLoaded(true);
+      return;
+    }
+    video.addEventListener("loadeddata", onLoaded);
+    return () => video.removeEventListener("loadeddata", onLoaded);
   }, []);
 
   useEffect(() => {
@@ -221,14 +236,18 @@ export function AutoplayVideo({
     <>
       <figure className="mb-4 -mx-5 sm:-mx-6">
         <div className="relative group overflow-hidden rounded-sm">
+          {!loaded && (
+            <div className="absolute inset-0 bg-gradient-to-br from-sym-bg-primary to-sym-card animate-pulse rounded-sm" />
+          )}
           <video
             ref={videoRef}
             src={src}
+            poster={poster}
             muted
             loop
             playsInline
             preload="metadata"
-            className="w-full h-auto -mt-[2%]"
+            className={`w-full h-auto -mt-[2%] transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
           />
           <button
             type="button"
