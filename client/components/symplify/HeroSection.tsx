@@ -76,7 +76,7 @@ export default function HeroSection() {
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fa365aabaf0c94e5ea46663d1d7bd4cb3"
             alt="Symplify hospital management platform — unified dashboard showing AI-augmented triage, scheduling, and compliance views"
-            loading="lazy"
+            loading="eager"
             className="w-full aspect-video object-cover object-center rounded-2xl"
           />
         </a>

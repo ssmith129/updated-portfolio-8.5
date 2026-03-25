@@ -104,6 +104,19 @@ export default function ProblemSection() {
           </div>
         ))}
       </div>
+
+      {/* Cost of the problem estimate */}
+      <div className="mt-8 bg-sym-bg-amber border border-[#FDE68A] rounded-xl px-5 py-4">
+        <p className="text-sm font-semibold text-[#92400E] mb-1">
+          Estimated Cost of the Problem
+        </p>
+        <p className="text-xs text-[#78350F] leading-relaxed">
+          At 60% context-switching overhead across 65 clinical staff averaging $41/hr,
+          fragmented workflows cost an estimated $830K+ annually in lost
+          productivity — before accounting for missed handoffs, SLA penalties,
+          and patient impact.
+        </p>
+      </div>
     </section>
   );
 }
