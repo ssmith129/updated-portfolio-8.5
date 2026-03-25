@@ -34,7 +34,7 @@ export default function HeroSection() {
         <div className="flex items-center gap-6 mb-10">
           <div className="flex items-center gap-1.5 text-sym-label text-sm">
             <Clock className="w-3.5 h-3.5" />
-            <span>14 min read</span>
+            <span>7 min read</span>
           </div>
           <a
             href="https://symplify-v4.netlify.app/"
