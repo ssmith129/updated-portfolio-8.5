@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-import { Zap, X, ZoomIn, Maximize2 } from "lucide-react";
+import { Zap, X, Maximize2 } from "lucide-react";
 
 export function SymTLDR({ children }: { children: React.ReactNode }) {
   return (
@@ -30,106 +30,22 @@ export function ZoomableImage({
   alt: string;
   caption?: string;
 }) {
-  const [open, setOpen] = useState(false);
-  const modalRef = useRef<HTMLDivElement>(null);
-  const triggerRef = useRef<HTMLButtonElement>(null);
-
-  const close = useCallback(() => setOpen(false), []);
-
-  useEffect(() => {
-    if (!open) return;
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") close();
-      // Focus trap: keep Tab within modal
-      if (e.key === "Tab") {
-        const modal = modalRef.current;
-        if (!modal) return;
-        const focusable = modal.querySelectorAll<HTMLElement>(
-          'button, [href], [tabindex]:not([tabindex="-1"])'
-        );
-        if (focusable.length === 0) return;
-        const first = focusable[0];
-        const last = focusable[focusable.length - 1];
-        if (e.shiftKey) {
-          if (document.activeElement === first) {
-            e.preventDefault();
-            last.focus();
-          }
-        } else {
-          if (document.activeElement === last) {
-            e.preventDefault();
-            first.focus();
-          }
-        }
-      }
-    };
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", handleKey);
-    // Auto-focus close button on open
-    const closeBtn = modalRef.current?.querySelector<HTMLElement>("button");
-    closeBtn?.focus();
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", handleKey);
-      // Return focus to trigger
-      triggerRef.current?.focus();
-    };
-  }, [open, close]);
-
   return (
-    <>
-      <figure className="mb-4 group">
-        <button
-          ref={triggerRef}
-          type="button"
-          onClick={() => setOpen(true)}
-          className="relative w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-sym-blue image-tilt"
-        >
-          <img
-            src={src}
-            alt={alt}
-            loading="lazy"
-            className="w-full h-auto block"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-            <div className="w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
-              <ZoomIn className="w-5 h-5 text-sym-heading" />
-            </div>
-          </div>
-        </button>
-        {caption && (
-          <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed text-center">
-            {caption}
-          </figcaption>
-        )}
-      </figure>
-
-      {open && (
-        <div
-          ref={modalRef}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Enlarged image view"
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm animate-fade-in"
-          onClick={close}
-        >
-          <button
-            type="button"
-            onClick={close}
-            className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center transition-colors"
-            aria-label="Close"
-          >
-            <X className="w-5 h-5 text-white" />
-          </button>
-          <img
-            src={src}
-            alt={alt}
-            onClick={(e) => e.stopPropagation()}
-            className="max-w-[92vw] max-h-[90vh] object-contain rounded-lg shadow-2xl animate-zoom-in"
-          />
-        </div>
+    <figure className="mb-4">
+      <div className="relative w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300">
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          className="w-full h-auto block"
+        />
+      </div>
+      {caption && (
+        <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed text-center">
+          {caption}
+        </figcaption>
       )}
-    </>
+    </figure>
   );
 }
 
