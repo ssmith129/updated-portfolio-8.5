@@ -47,7 +47,7 @@ const showcaseItems = [
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F03ee29b764ae4546bce7c12b2d2398c6",
     prototypeUrl:
-      "https://symplify-v4.netlify.app/admin/admin-compliance-dashboard",
+      "https://symplify-v4.netlify.app/compliance-dashboard",
     caption:
       "Compliance dashboard replacing manual Excel reporting workflows.",
     callouts: [
