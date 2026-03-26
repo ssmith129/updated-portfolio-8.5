@@ -31,7 +31,7 @@ export default function ProblemSection() {
   return (
     <section
       id="problem"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10"
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-red uppercase tracking-widest mb-2">
@@ -48,12 +48,12 @@ export default function ProblemSection() {
         per message just deciding if it was urgent — 8 hours of cognitive overhead per month.
       </SymTLDR>
 
-      <p className="text-lg text-sym-body leading-relaxed max-w-[720px] mb-8">
+      <p className="text-lg text-sym-body leading-relaxed max-w-[720px] mb-6">
         Staff operated across three disconnected systems — EHR, Excel, and email — with no shared prioritization model.
       </p>
 
       {/* Research Artifact Photos */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
         <ZoomableImage
           src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff67570c7a23f41f8ab09de08308901aa"
           alt="Affinity map from 18 contextual inquiry sessions showing 4 primary pain clusters: Triage Overhead, Handoff Failures, Compliance Blindness, and Tool Fragmentation"
@@ -67,7 +67,7 @@ export default function ProblemSection() {
       </div>
 
       {/* Journey Map */}
-      <div className="mb-10">
+      <div className="mb-8">
         <ZoomableImage
           src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F614fdb78397f44679c448da5fd8ce315"
           alt="Current-state journey swim lane diagram showing how one urgent message flows across Doctor, Nurse, and Admin roles with 9 pain points identified"
@@ -76,7 +76,7 @@ export default function ProblemSection() {
       </div>
 
       {/* Quotes */}
-      <div ref={quotesRef} className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+      <div ref={quotesRef} className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {quotes.map((q) => (
           <blockquote
             key={q.cite}
@@ -97,12 +97,25 @@ export default function ProblemSection() {
         {stats.map((s) => (
           <div
             key={s.label}
-            className="reveal stat-pop bg-sym-bg-red border border-[#FECACA] rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-center card-lift max-w-[200px] grow flex flex-col justify-center items-center"
+            className="reveal stat-pop bg-sym-bg-red border border-[#FECACA] rounded-xl px-4 sm:px-5 py-2 sm:py-2.5 text-center card-lift max-w-[200px] grow flex flex-col justify-center items-center"
           >
             <p className="text-xl sm:text-2xl font-bold text-[#DC2626] mb-1">{s.value}</p>
             <p className="text-xs text-[#991B1B] leading-snug text-center">{s.label}</p>
           </div>
         ))}
+      </div>
+
+      {/* Cost of the problem estimate */}
+      <div className="mt-8 bg-sym-bg-amber border border-[#FDE68A] rounded-xl px-5 py-3">
+        <p className="text-sm font-semibold text-[#92400E] mb-1">
+          Estimated Cost of the Problem
+        </p>
+        <p className="text-xs text-[#78350F] leading-relaxed">
+          At 60% context-switching overhead across 65 clinical staff averaging $41/hr,
+          fragmented workflows cost an estimated $830K+ annually in lost
+          productivity — before accounting for missed handoffs, SLA penalties,
+          and patient impact.
+        </p>
       </div>
     </section>
   );

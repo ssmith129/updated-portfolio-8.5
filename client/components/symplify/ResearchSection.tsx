@@ -60,7 +60,7 @@ export default function ResearchSection() {
   return (
     <section
       id="research"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10"
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
@@ -83,7 +83,7 @@ export default function ResearchSection() {
         {methods.map((m) => (
           <div
             key={m.label}
-            className="reveal flex items-start gap-2.5 bg-sym-card rounded-lg border border-sym-card-border px-3 py-2.5 sm:py-3 shadow-sm card-lift group"
+            className="reveal flex items-start gap-2.5 bg-sym-card rounded-lg border border-sym-card-border px-3 py-1.5 sm:py-2 shadow-sm card-lift group"
           >
             <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-sym-bg-blue flex items-center justify-center text-sym-blue flex-shrink-0 mt-0.5 icon-hover-spin">
               {m.icon}
@@ -146,19 +146,19 @@ export default function ResearchSection() {
       </div>
 
       {/* Insight cards */}
-      <div ref={insightsRef} className="reveal space-y-5 mb-10">
+      <div ref={insightsRef} className="reveal space-y-4 mb-8">
         {insights.map((ins) => (
           <div
             key={ins.number}
             className="rounded-2xl border border-sym-card-border overflow-hidden bg-sym-card shadow-sm hover:shadow-md transition-shadow duration-300"
           >
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-20 flex items-center justify-center py-4 md:py-0" style={{ backgroundColor: ins.bgColor }}>
+              <div className="md:w-20 flex items-center justify-center py-3 md:py-0" style={{ backgroundColor: ins.bgColor }}>
                 <span className="text-2xl font-bold" style={{ color: ins.color }}>{ins.number}</span>
               </div>
-              <div className="flex-1 p-6">
-                <h3 className="text-lg font-semibold text-sym-heading mb-2">{ins.title}</h3>
-                <p className="text-[15px] text-sym-body leading-relaxed mb-3">{ins.body}</p>
+              <div className="flex-1 px-5 py-3.5">
+                <h3 className="text-lg font-semibold text-sym-heading mb-1.5">{ins.title}</h3>
+                <p className="text-[15px] text-sym-body leading-relaxed mb-2">{ins.body}</p>
                 <p className="text-sm font-semibold italic" style={{ color: ins.color }}>{ins.principle}</p>
               </div>
             </div>

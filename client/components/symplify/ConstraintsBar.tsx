@@ -28,7 +28,7 @@ export default function ConstraintsBar() {
   const gridRef = useStaggerReveal();
 
   return (
-    <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
+    <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10">
       <p className="text-xs font-semibold text-sym-muted uppercase tracking-widest mb-3">
         Load-Bearing Design Constraints
       </p>
@@ -40,7 +40,7 @@ export default function ConstraintsBar() {
         {constraints.map((c) => (
           <div
             key={c.title}
-            className="reveal bg-sym-card rounded-xl border border-sym-card-border px-4 py-3.5 shadow-sm card-lift group"
+            className="reveal bg-sym-card rounded-xl border border-sym-card-border px-4 py-2.5 shadow-sm card-lift group"
           >
             <div className="flex flex-col justify-center items-center mb-2">{c.icon}</div>
             <p className="text-sm font-semibold text-sym-heading mb-1 text-center">{c.title}</p>

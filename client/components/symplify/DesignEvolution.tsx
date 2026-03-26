@@ -63,13 +63,13 @@ export default function DesignEvolution() {
   return (
     <section
       id="evolution"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10"
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-purple uppercase tracking-widest mb-2">
           From Rejection to Trust
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-4 heading-underline">
           Design Evolution
         </h2>
       </div>
@@ -131,11 +131,11 @@ function PivotalNarrative({
 }) {
   return (
     <div
-      className="rounded-xl border overflow-hidden mb-6"
+      className="rounded-xl border overflow-hidden mb-5"
       style={{ borderColor, backgroundColor: bgColor }}
     >
-      <div className="px-5 py-4 flex items-start gap-3">
-        <div className="w-9 h-9 rounded-lg bg-white/80 flex items-center justify-center flex-shrink-0 shadow-sm">
+      <div className="px-5 py-3 flex items-start gap-3">
+        <div className="w-8 h-8 rounded-lg bg-white/80 flex items-center justify-center flex-shrink-0 shadow-sm">
           {icon}
         </div>
         <div className="flex-1">
@@ -143,9 +143,9 @@ function PivotalNarrative({
           <p className="text-[15px] text-sym-body leading-relaxed">{narrative}</p>
         </div>
       </div>
-      <div className="mx-5 mb-4 flex items-start gap-2 bg-white/60 rounded-lg px-4 py-2.5">
-        <TrendingUp className="w-4 h-4 text-sym-green mt-0.5 flex-shrink-0" />
-        <p className="text-sm font-medium text-[#166534]">{outcome}</p>
+      <div className="mx-4 mb-2 flex items-center gap-1.5 bg-white/60 rounded-md px-2.5 py-0.5">
+        <TrendingUp className="w-3.5 h-3.5 text-sym-green flex-shrink-0" />
+        <p className="text-xs font-medium text-[#166534]">{outcome}</p>
       </div>
     </div>
   );
@@ -180,8 +180,8 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
               caption={stage.caption}
             />
 
-            <div className="bg-sym-bg-blue rounded-lg p-2.5 mt-2">
-              <p className="text-xs text-sym-blue italic leading-relaxed">
+            <div className="bg-sym-bg-blue rounded-md px-2 py-0.5 mt-1">
+              <p className="text-xs text-sym-blue italic leading-snug">
                 {stage.learning}
               </p>
             </div>

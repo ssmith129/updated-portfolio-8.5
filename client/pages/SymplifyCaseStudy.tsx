@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
@@ -17,16 +17,16 @@ import SystemOverview from "../components/symplify/SystemOverview";
 import ReflectionsSection from "../components/symplify/ReflectionsSection";
 
 const sectionNav = [
-  { href: "#impact", label: "At a Glance" },
-  { href: "#overview", label: "Context" },
-  { href: "#problem", label: "Problem" },
-  { href: "#research", label: "Research" },
-  { href: "#evolution", label: "Evolution" },
-  { href: "#decisions", label: "Decisions" },
-  { href: "#showcase", label: "Product" },
-  { href: "#system", label: "Architecture" },
-  { href: "#outcomes", label: "Assessment" },
-  { href: "#reflection", label: "Reflection" },
+  { href: "#impact", label: "At a Glance", group: "context" },
+  { href: "#overview", label: "Context", group: "context" },
+  { href: "#problem", label: "Problem", group: "context" },
+  { href: "#research", label: "Research", group: "process" },
+  { href: "#evolution", label: "Evolution", group: "process" },
+  { href: "#decisions", label: "Decisions", group: "process" },
+  { href: "#showcase", label: "Product", group: "outcome" },
+  { href: "#system", label: "Architecture", group: "outcome" },
+  { href: "#outcomes", label: "Assessment", group: "reflection" },
+  { href: "#reflection", label: "Reflection", group: "reflection" },
 ];
 
 export default function SymplifyCaseStudy() {
@@ -142,21 +142,27 @@ export default function SymplifyCaseStudy() {
                        relative before:absolute before:left-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-white/80 before:to-transparent before:z-10 before:pointer-events-none
                        after:absolute after:right-0 after:top-0 after:bottom-0 after:w-8 after:bg-gradient-to-l after:from-white/80 after:to-transparent after:z-10 after:pointer-events-none"
           >
-            {sectionNav.map((item) => {
+            {sectionNav.map((item, i) => {
+              const prev = sectionNav[i - 1];
+              const showSeparator = prev && prev.group !== item.group;
               const isActive = activeSection === item.href.replace("#", "");
               return (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className={`shrink-0 px-3.5 py-2 rounded-full text-[13px] font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sym-blue transition-all duration-200 shadow-sm border ${
-                    isActive
-                      ? "bg-sym-blue/10 text-sym-blue border-sym-blue/30"
-                      : "bg-white/80 text-sym-body border-sym-card-border hover:bg-sym-blue/10 hover:text-sym-blue hover:border-sym-blue/30"
-                  }`}
-                  aria-current={isActive ? "true" : undefined}
-                >
-                  {item.label}
-                </a>
+                <React.Fragment key={item.href}>
+                  {showSeparator && (
+                    <div className="w-px h-4 bg-sym-card-border flex-shrink-0" />
+                  )}
+                  <a
+                    href={item.href}
+                    className={`shrink-0 px-3.5 py-2 rounded-full text-[13px] font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sym-blue transition-all duration-200 shadow-sm border ${
+                      isActive
+                        ? "bg-sym-blue/10 text-sym-blue border-sym-blue/30"
+                        : "bg-white/80 text-sym-body border-sym-card-border hover:bg-sym-blue/10 hover:text-sym-blue hover:border-sym-blue/30"
+                    }`}
+                    aria-current={isActive ? "true" : undefined}
+                  >
+                    {item.label}
+                  </a>
+                </React.Fragment>
               );
             })}
           </nav>

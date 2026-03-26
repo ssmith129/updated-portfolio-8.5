@@ -43,13 +43,13 @@ export default function ProjectOverview() {
   return (
     <section
       id="overview"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10"
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Context &amp; Stakes
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 max-w-[720px] heading-underline">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-4 max-w-[720px] heading-underline">
           Project Overview
         </h2>
       </div>
@@ -94,9 +94,9 @@ export default function ProjectOverview() {
         {objectives.map((obj) => (
           <div
             key={obj.title}
-            className="reveal bg-sym-card rounded-xl border border-sym-card-border p-5 shadow-sm card-lift hover:border-sym-card-border-hover group"
+            className="reveal bg-sym-card rounded-xl border border-sym-card-border px-4 py-2.5 shadow-sm card-lift hover:border-sym-card-border-hover group"
           >
-            <div className="flex items-start gap-2 mb-2">
+            <div className="flex items-start gap-2 mb-1.5">
               {obj.icon}
               <p className="text-sm font-semibold text-sym-heading">{obj.title}</p>
             </div>

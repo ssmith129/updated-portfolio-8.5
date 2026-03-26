@@ -51,7 +51,7 @@ export default function ReflectionsSection() {
   return (
     <>
       {/* What Worked & What Didn't */}
-      <section id="outcomes" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+      <section id="outcomes" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10">
         <div ref={outcomesRef} className="reveal">
           <p className="text-xs font-semibold text-sym-muted uppercase tracking-widest mb-2">
             Honest Assessment
@@ -70,12 +70,12 @@ export default function ReflectionsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {/* Wins */}
-          <div className="bg-sym-bg-green rounded-xl border border-[#BBF7D0] p-5">
-            <div className="flex items-start gap-2 mb-4">
+          <div className="bg-sym-bg-green rounded-xl border border-[#BBF7D0] px-4 py-3">
+            <div className="flex items-start gap-2 mb-2">
               <CheckCircle className="w-5 h-5 text-sym-green" />
               <p className="text-sm font-semibold text-[#166534] uppercase tracking-widest">Wins</p>
             </div>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {wins.map((w) => (
                 <li key={w} className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-sym-green flex-shrink-0 mt-2" />
@@ -86,12 +86,12 @@ export default function ReflectionsSection() {
           </div>
 
           {/* Misses */}
-          <div className="bg-sym-bg-amber rounded-xl border border-[#FDE68A] p-5">
-            <div className="flex items-start gap-2 mb-4">
+          <div className="bg-sym-bg-amber rounded-xl border border-[#FDE68A] px-4 py-3">
+            <div className="flex items-start gap-2 mb-2">
               <AlertTriangle className="w-5 h-5 text-sym-amber" />
               <p className="text-sm font-semibold text-[#92400E] uppercase tracking-widest">Misses</p>
             </div>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {misses.map((m) => (
                 <li key={m} className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-sym-amber flex-shrink-0 mt-2" />
@@ -104,7 +104,7 @@ export default function ReflectionsSection() {
       </section>
 
       {/* Reflection */}
-      <section id="reflection" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+      <section id="reflection" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10">
         <div ref={reflectionRef} className="reveal">
           <p className="text-xs font-semibold text-sym-purple uppercase tracking-widest mb-2">
             Takeaways
@@ -114,13 +114,13 @@ export default function ReflectionsSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
           {reflections.map((r) => (
             <div
               key={r.title}
-              className="bg-sym-card rounded-xl border border-sym-card-border p-4 sm:p-5 shadow-sm card-lift hover:border-sym-card-border-hover"
+              className="bg-sym-card rounded-xl border border-sym-card-border px-3.5 py-2.5 sm:px-4 sm:py-3 shadow-sm card-lift hover:border-sym-card-border-hover"
             >
-              <div className="flex items-start gap-3 mb-3">
+              <div className="flex items-start gap-3 mb-2">
                 <Lightbulb className="w-5 h-5 text-sym-purple flex-shrink-0 mt-0.5" />
                 <h3 className="text-[15px] font-semibold text-sym-heading leading-snug">{r.title}</h3>
               </div>
@@ -131,7 +131,7 @@ export default function ReflectionsSection() {
       </section>
 
       {/* Next Steps */}
-      <section id="next-steps" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+      <section id="next-steps" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Looking Ahead
         </p>
@@ -142,7 +142,7 @@ export default function ReflectionsSection() {
           {nextSteps.map((ns, i) => (
             <div
               key={ns.title}
-              className="reveal bg-sym-card rounded-xl border border-sym-card-border p-4 shadow-sm card-lift group"
+              className="reveal bg-sym-card rounded-xl border border-sym-card-border p-3.5 shadow-sm card-lift group"
             >
               <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-sym-bg-blue text-sym-blue text-sm font-bold mb-3">
                 {i + 1}

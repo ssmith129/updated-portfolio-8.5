@@ -65,9 +65,9 @@ export default function ImpactMetrics() {
   return (
     <section
       id="impact"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10"
     >
-      <div className="mb-5">
+      <div className="mb-4">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Measured Outcomes
         </p>
