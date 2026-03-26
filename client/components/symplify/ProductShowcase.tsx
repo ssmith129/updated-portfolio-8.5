@@ -39,10 +39,12 @@ const showcaseItems = [
     caption:
       "Compliance dashboard replacing manual Excel reporting workflows.",
     callouts: [
-      "SLA Compliance Tracker — Real-time rates by facility and provider.",
-      "Auto-Generated Reports — Replaces manual Excel export workflow.",
-      "Demand Forecasting — AI-assisted predictions replacing guesswork.",
-      "Audit Trail Browser — Searchable log of every AI decision.",
+      "Attention Needed Alert Bar — Surfaced compliance risks (HIPAA violations, expiring credentials, sentinel events, overdue trainings) replace buried email alerts. Addresses the 14.2% SLA breach risk from research.",
+      "Section Navigation — Jump-to tabs for Compliance & Reporting, Operations & Auditing, Credentials & HIPAA, Training, and Incidents — giving admins contextual navigation instead of one flat alert list.",
+      "SLA Compliance Tracker — Real-time compliance rates by facility with trend indicators and risk status. Live monitoring replaced monthly manual Excel exports, improving SLA compliance from 72% to 85.3%.",
+      "Auto-Generated Reports — Scheduled HIPAA summaries, SLA performance reports, and credential digests replace the manual export workflow. Addresses the 12.5 hrs/week admin overhead reduced to 8.1 hrs.",
+      "Demand Forecasting — AI-assisted patient volume predictions with confidence intervals replacing guesswork. Scenario modeling (daily/weekly/monthly) gives operations managers lead time to staff appropriately.",
+      "Audit Trail Browser — Searchable, filterable log of every AI recommendation, manual override, access event, and config change. Provides the SOC 2 and state-level auditability required by hospital buyers.",
     ],
   },
 ];
