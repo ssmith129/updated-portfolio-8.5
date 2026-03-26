@@ -1,4 +1,5 @@
-import { Eye, Search, MessageSquare, BarChart3 } from "lucide-react";
+import { useRef, useState, useEffect, useCallback } from "react";
+import { Eye, Search, MessageSquare, BarChart3, ChevronLeft, ChevronRight } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
 import { ZoomableImage, SymTLDR } from "./shared";
 
@@ -126,24 +127,8 @@ export default function ResearchSection() {
         </div>
       </details>
 
-      {/* Research Process Photos */}
-      <div className="space-y-5 mb-10">
-        <ZoomableImage
-          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8a68a9bfe226419786b54788d92c6dda"
-          alt="Contextual inquiry research summary showing 18 sessions across 3 roles — Doctors, Nurses, and Admin — with key findings, quotes, and research methods"
-          caption="Shadowing an RN supervisor during shift change — one of 18 contextual inquiry sessions across 3 facilities."
-        />
-        <ZoomableImage
-          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F20e7e48c060c4557b3bffe71920a3d88"
-          alt="Task logging data showing time-on-task analysis from contextual inquiry — horizontal bar chart of where clinical staff lose time, with message triage at 64 min/day being the largest overhead"
-          caption="Automated task logging captured 3,000+ clinical coordination tasks over 2 weeks — eliminating self-reporting bias."
-        />
-        <ZoomableImage
-          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F113a7e66969048398cab8ff948191ae1"
-          alt="Interview synthesis wall showing theme extraction from 18 sessions to 4 design pillars, with raw data flowing through affinity clusters to core design principles"
-          caption='Independent dual-coding of 14 semi-structured interviews. The 67% "no automation" finding emerged from this synthesis.'
-        />
-      </div>
+      {/* Research Process Photos — horizontal scroll gallery */}
+      <ResearchPhotoGallery />
 
       {/* Insight cards */}
       <div ref={insightsRef} className="reveal space-y-4 mb-8">
@@ -217,6 +202,133 @@ function CompetitiveAnalysis() {
             ))}
           </tbody>
         </table>
+      </div>
+    </div>
+  );
+}
+
+const researchPhotos = [
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F8a68a9bfe226419786b54788d92c6dda",
+    alt: "Contextual inquiry research summary showing 18 sessions across 3 roles — Doctors, Nurses, and Admin — with key findings, quotes, and research methods",
+    caption: "Shadowing an RN supervisor during shift change — one of 18 contextual inquiry sessions across 3 facilities.",
+  },
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F20e7e48c060c4557b3bffe71920a3d88",
+    alt: "Task logging data showing time-on-task analysis from contextual inquiry — horizontal bar chart of where clinical staff lose time, with message triage at 64 min/day being the largest overhead",
+    caption: "Automated task logging captured 3,000+ clinical coordination tasks over 2 weeks — eliminating self-reporting bias.",
+  },
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F113a7e66969048398cab8ff948191ae1",
+    alt: "Interview synthesis wall showing theme extraction from 18 sessions to 4 design pillars, with raw data flowing through affinity clusters to core design principles",
+    caption: 'Independent dual-coding of 14 semi-structured interviews. The 67% "no automation" finding emerged from this synthesis.',
+  },
+];
+
+function ResearchPhotoGallery() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const updateScrollState = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 8);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 8);
+    const cardWidth = el.scrollWidth / researchPhotos.length;
+    const idx = Math.round(el.scrollLeft / cardWidth);
+    setActiveIndex(Math.min(idx, researchPhotos.length - 1));
+  }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    updateScrollState();
+    el.addEventListener("scroll", updateScrollState, { passive: true });
+    return () => el.removeEventListener("scroll", updateScrollState);
+  }, [updateScrollState]);
+
+  const scrollTo = (direction: "left" | "right") => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const card = el.querySelector("[data-photo-card]") as HTMLElement;
+    const cardWidth = card?.clientWidth ?? 500;
+    const gap = 20;
+    el.scrollBy({
+      left: direction === "left" ? -(cardWidth + gap) : cardWidth + gap,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToIndex = (i: number) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const card = el.querySelectorAll("[data-photo-card]")[i] as HTMLElement;
+    if (card) card.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+  };
+
+  return (
+    <div className="mb-10">
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-sm font-semibold text-sym-heading flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-gradient-to-r from-sym-blue to-sym-green" />
+          Research Process
+        </h3>
+        <div className="flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={() => scrollTo("left")}
+            disabled={!canScrollLeft}
+            className="w-8 h-8 rounded-lg border border-sym-card-border bg-sym-card flex items-center justify-center transition-all duration-200 hover:border-sym-blue/40 hover:shadow-sm disabled:opacity-30 disabled:cursor-not-allowed"
+            aria-label="Scroll left"
+          >
+            <ChevronLeft className="w-4 h-4 text-sym-body" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollTo("right")}
+            disabled={!canScrollRight}
+            className="w-8 h-8 rounded-lg border border-sym-card-border bg-sym-card flex items-center justify-center transition-all duration-200 hover:border-sym-blue/40 hover:shadow-sm disabled:opacity-30 disabled:cursor-not-allowed"
+            aria-label="Scroll right"
+          >
+            <ChevronRight className="w-4 h-4 text-sym-body" />
+          </button>
+        </div>
+      </div>
+
+      <div
+        ref={scrollRef}
+        data-research-scroll
+        className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 -mb-3"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch" }}
+      >
+        <style>{`[data-research-scroll]::-webkit-scrollbar { display: none; }`}</style>
+        {researchPhotos.map((photo) => (
+          <div
+            key={photo.src}
+            data-photo-card
+            className="flex-shrink-0 w-[85vw] sm:w-[500px] lg:w-[560px] snap-start bg-sym-card rounded-xl border border-sym-card-border p-4 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300"
+          >
+            <ZoomableImage src={photo.src} alt={photo.alt} caption={photo.caption} />
+          </div>
+        ))}
+      </div>
+
+      <div className="flex items-center justify-center gap-1.5 mt-3">
+        {researchPhotos.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => scrollToIndex(i)}
+            className={`rounded-full transition-all duration-200 ${
+              activeIndex === i
+                ? "w-5 h-1.5 bg-gradient-to-r from-sym-blue to-sym-green"
+                : "w-1.5 h-1.5 bg-sym-card-border hover:bg-sym-blue/40"
+            }`}
+            aria-label={`Go to photo ${i + 1}`}
+          />
+        ))}
       </div>
     </div>
   );
