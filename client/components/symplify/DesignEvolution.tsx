@@ -180,7 +180,7 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
               caption={stage.caption}
             />
 
-            <div className="bg-sym-bg-blue rounded-lg p-2 mt-2">
+            <div className="bg-sym-bg-blue rounded-md px-2 py-1 mt-1.5">
               <p className="text-xs text-sym-blue italic leading-relaxed">
                 {stage.learning}
               </p>
