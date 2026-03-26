@@ -83,7 +83,7 @@ export default function ResearchSection() {
         {methods.map((m) => (
           <div
             key={m.label}
-            className="reveal flex items-start gap-2.5 bg-sym-card rounded-lg border border-sym-card-border px-3 py-2 sm:py-2.5 shadow-sm card-lift group"
+            className="reveal flex items-start gap-2.5 bg-sym-card rounded-lg border border-sym-card-border px-3 py-1.5 sm:py-2 shadow-sm card-lift group"
           >
             <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-sym-bg-blue flex items-center justify-center text-sym-blue flex-shrink-0 mt-0.5 icon-hover-spin">
               {m.icon}
