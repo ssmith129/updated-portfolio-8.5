@@ -97,7 +97,7 @@ export default function ProblemSection() {
         {stats.map((s) => (
           <div
             key={s.label}
-            className="reveal stat-pop bg-sym-bg-red border border-[#FECACA] rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center card-lift max-w-[200px] grow flex flex-col justify-center items-center"
+            className="reveal stat-pop bg-sym-bg-red border border-[#FECACA] rounded-xl px-4 sm:px-5 py-2 sm:py-2.5 text-center card-lift max-w-[200px] grow flex flex-col justify-center items-center"
           >
             <p className="text-xl sm:text-2xl font-bold text-[#DC2626] mb-1">{s.value}</p>
             <p className="text-xs text-[#991B1B] leading-snug text-center">{s.label}</p>
