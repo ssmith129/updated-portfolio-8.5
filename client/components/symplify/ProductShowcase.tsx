@@ -24,10 +24,12 @@ const showcaseItems = [
     caption:
       "Structured visibility replaced 20-minute phone calls at shift change.",
     callouts: [
-      "Handoff Status Board — Visual state of every in-progress item.",
-      "Unresolved Flags — Items needing immediate attention surfaced first.",
-      "Handoff Notes — Structured format replaces phone-call handoffs.",
-      "Alert Tier Summary — Critical vs. informational at a glance.",
+      "Shift Context Header — Clear temporal framing — shift time, unit, and outgoing/incoming nurse names eliminate ambiguity at handoff.",
+      "AI Audio Briefing — One-tap AI-generated voice summary for hands-free corridor use — designed for transitions between shifts.",
+      "AI-Generated Summary — Structured census of patients, key concerns, alerts, and pending tasks — replaces unstructured phone-call handoffs.",
+      "Priority Filter Tabs — Quick toggle between all patients and critical-only. Reduces alert fatigue by letting nurses focus on what matters first.",
+      "Patient Acuity Cards — Color-coded severity badges, vitals trends, pending tasks, and status notes — structured format prevents missed handoffs.",
+      "Acknowledge Handoff — Explicit acceptance creates HIPAA-compliant audit trail. Progress bar (0/7 reviewed) ensures no patient is skipped.",
     ],
   },
   {
