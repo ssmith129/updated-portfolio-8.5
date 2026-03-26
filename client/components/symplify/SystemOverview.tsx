@@ -78,15 +78,17 @@ export default function SystemOverview() {
             Design system specimen: WCAG 2.2 AA baked into tokens. Color-blind safe confidence badges, keyboard navigation, and screen reader support from day one.
           </figcaption>
         </figure>
-        <a
-          href="/Symplify-Design-System-Showcase.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-sym-blue to-sym-green rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:brightness-110 mb-4"
-        >
-          View Full Design System
-          <ExternalLink className="w-4 h-4" />
-        </a>
+        <div className="flex justify-center mb-4">
+          <a
+            href="/Symplify-Design-System-Showcase.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-sym-blue to-sym-green rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:brightness-110"
+          >
+            View Full Design System
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
 
         <ul className="space-y-2.5 max-w-[680px]">
           {dsFeatures.map((f) => (
