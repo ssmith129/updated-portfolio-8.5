@@ -70,12 +70,12 @@ export default function ReflectionsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {/* Wins */}
-          <div className="bg-sym-bg-green rounded-xl border border-[#BBF7D0] p-5">
-            <div className="flex items-start gap-2 mb-4">
+          <div className="bg-sym-bg-green rounded-xl border border-[#BBF7D0] p-4">
+            <div className="flex items-start gap-2 mb-3">
               <CheckCircle className="w-5 h-5 text-sym-green" />
               <p className="text-sm font-semibold text-[#166534] uppercase tracking-widest">Wins</p>
             </div>
-            <ul className="space-y-3">
+            <ul className="space-y-2.5">
               {wins.map((w) => (
                 <li key={w} className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-sym-green flex-shrink-0 mt-2" />
@@ -86,12 +86,12 @@ export default function ReflectionsSection() {
           </div>
 
           {/* Misses */}
-          <div className="bg-sym-bg-amber rounded-xl border border-[#FDE68A] p-5">
-            <div className="flex items-start gap-2 mb-4">
+          <div className="bg-sym-bg-amber rounded-xl border border-[#FDE68A] p-4">
+            <div className="flex items-start gap-2 mb-3">
               <AlertTriangle className="w-5 h-5 text-sym-amber" />
               <p className="text-sm font-semibold text-[#92400E] uppercase tracking-widest">Misses</p>
             </div>
-            <ul className="space-y-3">
+            <ul className="space-y-2.5">
               {misses.map((m) => (
                 <li key={m} className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-sym-amber flex-shrink-0 mt-2" />
