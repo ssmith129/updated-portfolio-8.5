@@ -60,7 +60,7 @@ export default function ResearchSection() {
   return (
     <section
       id="research"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10"
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">

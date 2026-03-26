@@ -15,7 +15,7 @@ export default function SystemOverview() {
   return (
     <section
       id="system"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-8 relative z-10"
     >
       {/* Architecture */}
       <div className="mb-10">
