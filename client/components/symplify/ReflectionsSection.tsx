@@ -75,7 +75,7 @@ export default function ReflectionsSection() {
               <CheckCircle className="w-5 h-5 text-sym-green" />
               <p className="text-sm font-semibold text-[#166534] uppercase tracking-widest">Wins</p>
             </div>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {wins.map((w) => (
                 <li key={w} className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-sym-green flex-shrink-0 mt-2" />
@@ -91,7 +91,7 @@ export default function ReflectionsSection() {
               <AlertTriangle className="w-5 h-5 text-sym-amber" />
               <p className="text-sm font-semibold text-[#92400E] uppercase tracking-widest">Misses</p>
             </div>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {misses.map((m) => (
                 <li key={m} className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-sym-amber flex-shrink-0 mt-2" />
