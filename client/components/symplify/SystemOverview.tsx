@@ -1,5 +1,6 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { ZoomableImage, SymTLDR } from "./shared";
+import { ExternalLink } from "lucide-react";
+import { SymTLDR } from "./shared";
 
 const dsFeatures = [
   "WCAG 2.2 AA baked into tokens — color-blind safe badges, keyboard nav, screen reader support",
@@ -64,11 +65,28 @@ export default function SystemOverview() {
         </p>
 
         {/* Design System Specimen */}
-        <ZoomableImage
-          src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F972ae0ec8c9a4b289e8854f7b13ce527"
-          alt="Symplify Design System specimen showing color palette, typography scale, AI confidence badges, alert tier system, role-based color coding, spacing grid, and WCAG 2.2 AA compliance details"
-          caption="Design system specimen: WCAG 2.2 AA baked into tokens. Color-blind safe confidence badges, keyboard navigation, and screen reader support from day one."
-        />
+        <figure className="mb-4">
+          <div className="relative w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F972ae0ec8c9a4b289e8854f7b13ce527"
+              alt="Symplify Design System specimen showing color palette, typography scale, AI confidence badges, alert tier system, role-based color coding, spacing grid, and WCAG 2.2 AA compliance details"
+              className="w-full h-auto block"
+              loading="lazy"
+            />
+          </div>
+          <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed text-center">
+            Design system specimen: WCAG 2.2 AA baked into tokens. Color-blind safe confidence badges, keyboard navigation, and screen reader support from day one.
+          </figcaption>
+        </figure>
+        <a
+          href="/Symplify-Design-System-Showcase.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-sym-blue to-sym-green rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:brightness-110 mb-4"
+        >
+          View Full Design System
+          <ExternalLink className="w-4 h-4" />
+        </a>
 
         <ul className="space-y-2.5 mb-8 max-w-[680px]">
           {dsFeatures.map((f) => (
