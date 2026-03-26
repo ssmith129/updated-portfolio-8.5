@@ -131,7 +131,7 @@ function Decision2() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         {steps.map((s, i) => (
-          <div key={s.title} className="flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border p-4">
+          <div key={s.title} className="flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border px-4 py-2.5">
             <span className="w-7 h-7 rounded-full bg-sym-bg-blue text-sym-blue flex items-center justify-center text-sm font-bold flex-shrink-0">
               {i + 1}
             </span>
