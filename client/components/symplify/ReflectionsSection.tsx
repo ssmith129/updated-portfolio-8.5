@@ -118,7 +118,7 @@ export default function ReflectionsSection() {
           {reflections.map((r) => (
             <div
               key={r.title}
-              className="bg-sym-card rounded-xl border border-sym-card-border p-4 sm:p-5 shadow-sm card-lift hover:border-sym-card-border-hover"
+              className="bg-sym-card rounded-xl border border-sym-card-border p-3.5 sm:p-4 shadow-sm card-lift hover:border-sym-card-border-hover"
             >
               <div className="flex items-start gap-3 mb-3">
                 <Lightbulb className="w-5 h-5 text-sym-purple flex-shrink-0 mt-0.5" />

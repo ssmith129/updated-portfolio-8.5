@@ -97,7 +97,7 @@ export default function ProblemSection() {
         {stats.map((s) => (
           <div
             key={s.label}
-            className="reveal stat-pop bg-sym-bg-red border border-[#FECACA] rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-center card-lift max-w-[200px] grow flex flex-col justify-center items-center"
+            className="reveal stat-pop bg-sym-bg-red border border-[#FECACA] rounded-xl px-4 sm:px-5 py-2.5 sm:py-3 text-center card-lift max-w-[200px] grow flex flex-col justify-center items-center"
           >
             <p className="text-xl sm:text-2xl font-bold text-[#DC2626] mb-1">{s.value}</p>
             <p className="text-xs text-[#991B1B] leading-snug text-center">{s.label}</p>
@@ -106,7 +106,7 @@ export default function ProblemSection() {
       </div>
 
       {/* Cost of the problem estimate */}
-      <div className="mt-8 bg-sym-bg-amber border border-[#FDE68A] rounded-xl px-5 py-4">
+      <div className="mt-8 bg-sym-bg-amber border border-[#FDE68A] rounded-xl px-5 py-3">
         <p className="text-sm font-semibold text-[#92400E] mb-1">
           Estimated Cost of the Problem
         </p>
