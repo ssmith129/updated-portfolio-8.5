@@ -142,7 +142,7 @@ export default function ReflectionsSection() {
           {nextSteps.map((ns, i) => (
             <div
               key={ns.title}
-              className="reveal bg-sym-card rounded-xl border border-sym-card-border p-4 shadow-sm card-lift group"
+              className="reveal bg-sym-card rounded-xl border border-sym-card-border p-3.5 shadow-sm card-lift group"
             >
               <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-sym-bg-blue text-sym-blue text-sm font-bold mb-3">
                 {i + 1}

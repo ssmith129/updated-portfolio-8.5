@@ -117,7 +117,7 @@ function ShowcaseCard({
           const [label, ...rest] = callout.split(" — ");
           const description = rest.join(" — ");
           return (
-            <div key={i} className="flex items-start justify-start gap-2.5 bg-sym-bg-primary rounded-lg p-2.5">
+            <div key={i} className="flex items-start justify-start gap-2.5 bg-sym-bg-primary rounded-lg p-2">
               <span className="w-6 h-6 rounded-full bg-sym-blue/10 text-sym-blue flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
                 {i + 1}
               </span>

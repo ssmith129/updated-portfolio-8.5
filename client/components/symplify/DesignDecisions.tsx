@@ -73,7 +73,7 @@ function Decision1() {
         {approaches.map((a) => (
           <div
             key={a.label}
-            className={`rounded-xl border-2 p-5 transition-shadow duration-300 ${
+            className={`rounded-xl border-2 p-4 transition-shadow duration-300 ${
               a.winner
                 ? "border-sym-green bg-sym-bg-green shadow-md"
                 : "border-sym-card-border bg-sym-card"
@@ -131,7 +131,7 @@ function Decision2() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         {steps.map((s, i) => (
-          <div key={s.title} className="flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border p-5">
+          <div key={s.title} className="flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border p-4">
             <span className="w-7 h-7 rounded-full bg-sym-bg-blue text-sym-blue flex items-center justify-center text-sm font-bold flex-shrink-0">
               {i + 1}
             </span>
@@ -231,7 +231,7 @@ function DecisionHeader({ number, title }: { number: string; title: string }) {
 
 function ResultCallout({ text }: { text: string }) {
   return (
-    <div className="flex items-start justify-start gap-3 bg-sym-bg-green border border-[#BBF7D0] rounded-xl px-5 py-3">
+    <div className="flex items-start justify-start gap-3 bg-sym-bg-green border border-[#BBF7D0] rounded-xl px-4 py-2.5">
       <CheckCircle className="w-5 h-5 text-sym-green flex-shrink-0" />
       <p className="text-sm font-medium text-[#166534] leading-relaxed">{text}</p>
     </div>
