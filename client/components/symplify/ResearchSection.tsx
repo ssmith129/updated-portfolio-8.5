@@ -315,19 +315,21 @@ function ResearchPhotoGallery() {
         ))}
       </div>
 
-      <div className="flex items-center justify-center gap-1.5 mt-3">
+      <div className="flex items-center justify-center gap-2 mt-3">
         {researchPhotos.map((_, i) => (
           <button
             key={i}
             type="button"
             onClick={() => scrollToIndex(i)}
-            className={`rounded-full transition-all duration-200 ${
+            className={`w-7 h-7 rounded-full text-xs font-bold flex items-center justify-center transition-all duration-200 ${
               activeIndex === i
-                ? "w-5 h-1.5 bg-gradient-to-r from-sym-blue to-sym-green"
-                : "w-1.5 h-1.5 bg-sym-card-border hover:bg-sym-blue/40"
+                ? "bg-gradient-to-r from-sym-blue to-sym-green text-white shadow-sm"
+                : "border border-sym-card-border bg-sym-card text-sym-muted hover:border-sym-blue/40 hover:text-sym-blue"
             }`}
             aria-label={`Go to photo ${i + 1}`}
-          />
+          >
+            {i + 1}
+          </button>
         ))}
       </div>
     </div>
