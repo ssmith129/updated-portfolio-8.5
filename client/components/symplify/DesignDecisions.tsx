@@ -205,19 +205,6 @@ function Decision4() {
             alt="After: risk-tiered Clinical Emergency alert system with AI reasoning, confidence scores, escalate/acknowledge actions, and HIPAA-compliant audit trail"
             caption="Risk-tiered alert system with AI reasoning, confidence badges, and escalate/acknowledge actions — daily interruptions dropped from 47 to 12."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1.5 mt-3">
-            {[
-              "3-tier risk classification: Critical Action / Review Needed / FYI",
-              "Similar alerts batched into daily digests",
-              "FYI tier collapses to acknowledge without demanding attention",
-              "Clinical risk score + SLA deadline determines tier automatically",
-            ].map((point) => (
-              <p key={point} className="text-xs text-sym-green flex items-start gap-2">
-                <span className="mt-0.5">✓</span>
-                <span>{point}</span>
-              </p>
-            ))}
-          </div>
         </div>
       </div>
 

@@ -1,27 +1,5 @@
-import { Monitor, Tablet, Smartphone } from "lucide-react";
-import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
+import { useScrollReveal } from "../../hooks/use-scroll-reveal";
 import { ZoomableImage, SymTLDR } from "./shared";
-
-const platforms = [
-  {
-    icon: <Monitor className="w-5 h-5 text-sym-blue" />,
-    context: "Desktop",
-    focus: "Multi-module dashboard",
-    details: "Keyboard shortcuts, dense tables, 3-column layout",
-  },
-  {
-    icon: <Tablet className="w-5 h-5 text-sym-purple" />,
-    context: "Tablet",
-    focus: "Bedside use",
-    details: "44x44px touch zones, offline caching, simplified triage",
-  },
-  {
-    icon: <Smartphone className="w-5 h-5 text-sym-green" />,
-    context: "Mobile",
-    focus: "On-call triage",
-    details: "Critical alerts only, haptic feedback, 1-thumb operation",
-  },
-];
 
 const dsFeatures = [
   "WCAG 2.2 AA baked into tokens — color-blind safe badges, keyboard nav, screen reader support",
@@ -33,7 +11,6 @@ const dsFeatures = [
 export default function SystemOverview() {
   const archRef = useScrollReveal();
   const dsRef = useScrollReveal();
-  const platformRef = useStaggerReveal();
 
   return (
     <section
@@ -114,22 +91,6 @@ export default function SystemOverview() {
           ))}
         </ul>
 
-        {/* Platform grid */}
-        <div ref={platformRef} className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {platforms.map((p) => (
-            <div
-              key={p.context}
-              className="reveal bg-sym-card rounded-xl border border-sym-card-border p-4 shadow-sm card-lift group"
-            >
-              <div className="flex items-start gap-2 mb-2">
-                {p.icon}
-                <p className="text-sm font-semibold text-sym-heading">{p.context}</p>
-              </div>
-              <p className="text-sm font-medium text-sym-body mb-1">{p.focus}</p>
-              <p className="text-xs text-sym-muted leading-relaxed">{p.details}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
