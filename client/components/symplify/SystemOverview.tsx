@@ -72,11 +72,11 @@ export default function SystemOverview() {
 
         {/* Design System Specimen */}
         <figure className="mb-4">
-          <div className="relative w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm">
+          <div className="relative w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F972ae0ec8c9a4b289e8854f7b13ce527"
               alt="Symplify Design System specimen showing color palette, typography scale, AI confidence badges, alert tier system, role-based color coding, spacing grid, and WCAG 2.2 AA compliance details"
-              className="w-full h-auto block"
+              className="w-full h-auto block transition-transform duration-300 hover:scale-[1.003]"
               loading="lazy"
             />
           </div>
