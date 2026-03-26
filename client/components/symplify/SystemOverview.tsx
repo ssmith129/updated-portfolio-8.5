@@ -105,20 +105,6 @@ export default function SystemOverview() {
           caption="Design system specimen: WCAG 2.2 AA baked into tokens. Color-blind safe confidence badges, keyboard navigation, and screen reader support from day one."
         />
 
-        {/* Component detail screenshots */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
-          <ZoomableImage
-            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F1d54fbd1ec6141b883b33697b1c4b107"
-            alt="Confidence badge variants showing High, Med, and Low tiers with color-blind safe pattern and label redundancy, plus clinician acceptance rates"
-            caption="Confidence badge variants. Color-blind safe versions use pattern + label redundancy."
-          />
-          <ZoomableImage
-            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F50eb5428c0334d5799e33a83f870af27"
-            alt="Alert tier hierarchy showing Critical, Review Needed, and FYI tiers with before/after comparison — 47 flat alerts reduced to 2+3+42 tiered and batched"
-            caption="Alert tier hierarchy. Critical items demand action; FYI items collapse to reduce cognitive load."
-          />
-        </div>
-
         <ul className="space-y-2.5 mb-8 max-w-[680px]">
           {dsFeatures.map((f) => (
             <li key={f} className="flex items-start gap-3 text-sm text-sym-body leading-relaxed">
