@@ -47,18 +47,6 @@ export default function SystemOverview() {
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {[
-            { label: "No direct EHR writes", detail: "Recommendation layer, not automation" },
-            { label: "State-by-state compliance", detail: "Configurable logging depth" },
-            { label: "Offline-first mobile", detail: "Intermittent rural connectivity" },
-          ].map((c) => (
-            <div key={c.label} className="bg-sym-bg-primary rounded-lg border border-sym-card-border px-4 py-3">
-              <p className="text-sm font-semibold text-sym-heading mb-1">{c.label}</p>
-              <p className="text-xs text-sym-muted">{c.detail}</p>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Design System */}
