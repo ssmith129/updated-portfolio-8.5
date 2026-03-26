@@ -1,4 +1,5 @@
-import { Zap, RotateCcw, TrendingUp } from "lucide-react";
+import { useRef, useState, useEffect, useCallback } from "react";
+import { Zap, RotateCcw, TrendingUp, ChevronLeft, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
 import { ZoomableImage, SymTLDR } from "./shared";
 
@@ -152,18 +153,93 @@ function PivotalNarrative({
 }
 
 function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionStage[] }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const updateScrollState = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 8);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 8);
+
+    // Determine active card based on scroll position
+    const cardWidth = el.scrollWidth / stages.length;
+    const idx = Math.round(el.scrollLeft / cardWidth);
+    setActiveIndex(Math.min(idx, stages.length - 1));
+  }, [stages.length]);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    updateScrollState();
+    el.addEventListener("scroll", updateScrollState, { passive: true });
+    return () => el.removeEventListener("scroll", updateScrollState);
+  }, [updateScrollState]);
+
+  const scrollTo = (direction: "left" | "right") => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const cardWidth = el.querySelector("[data-stage-card]")?.clientWidth ?? 340;
+    const gap = 20;
+    el.scrollBy({
+      left: direction === "left" ? -(cardWidth + gap) : cardWidth + gap,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToIndex = (i: number) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const card = el.querySelectorAll("[data-stage-card]")[i] as HTMLElement;
+    if (card) card.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+  };
+
   return (
     <div className="mb-12 last:mb-0">
-      <h3 className="text-lg font-semibold text-sym-heading mb-5 flex items-center gap-3">
-        <span className="w-2 h-2 rounded-full bg-gradient-to-r from-sym-blue to-sym-green pulse-gentle" />
-        {title}
-      </h3>
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-lg font-semibold text-sym-heading flex items-center gap-3">
+          <span className="w-2 h-2 rounded-full bg-gradient-to-r from-sym-blue to-sym-green pulse-gentle" />
+          {title}
+        </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {/* Navigation arrows */}
+        <div className="flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={() => scrollTo("left")}
+            disabled={!canScrollLeft}
+            className="w-8 h-8 rounded-lg border border-sym-card-border bg-sym-card flex items-center justify-center transition-all duration-200 hover:border-sym-blue/40 hover:shadow-sm disabled:opacity-30 disabled:cursor-not-allowed"
+            aria-label="Scroll left"
+          >
+            <ChevronLeft className="w-4 h-4 text-sym-body" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollTo("right")}
+            disabled={!canScrollRight}
+            className="w-8 h-8 rounded-lg border border-sym-card-border bg-sym-card flex items-center justify-center transition-all duration-200 hover:border-sym-blue/40 hover:shadow-sm disabled:opacity-30 disabled:cursor-not-allowed"
+            aria-label="Scroll right"
+          >
+            <ChevronRight className="w-4 h-4 text-sym-body" />
+          </button>
+        </div>
+      </div>
+
+      {/* Horizontal scroll container */}
+      <div
+        ref={scrollRef}
+        data-evolution-scroll
+        className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 -mb-3"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch" }}
+      >
+        <style>{`[data-evolution-scroll]::-webkit-scrollbar { display: none; }`}</style>
         {stages.map((stage, i) => (
           <div
             key={stage.title}
-            className="bg-sym-card rounded-xl border border-sym-card-border p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300 relative card-lift"
+            data-stage-card
+            className="flex-shrink-0 w-[85vw] sm:w-[400px] lg:w-[440px] snap-start bg-sym-card rounded-xl border border-sym-card-border p-4 sm:p-5 shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300 relative card-lift"
           >
             <div className="flex items-center gap-3 mb-3">
               <div className="w-8 h-8 rounded-full bg-gradient-to-r from-sym-blue to-sym-green text-white flex items-center justify-center text-sm font-bold flex-shrink-0 timeline-node">
@@ -186,6 +262,23 @@ function EvolutionTrack({ title, stages }: { title: string; stages: EvolutionSta
               </p>
             </div>
           </div>
+        ))}
+      </div>
+
+      {/* Dot indicators */}
+      <div className="flex items-center justify-center gap-1.5 mt-3">
+        {stages.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => scrollToIndex(i)}
+            className={`rounded-full transition-all duration-200 ${
+              activeIndex === i
+                ? "w-5 h-1.5 bg-gradient-to-r from-sym-blue to-sym-green"
+                : "w-1.5 h-1.5 bg-sym-card-border hover:bg-sym-blue/40"
+            }`}
+            aria-label={`Go to stage ${i + 1}`}
+          />
         ))}
       </div>
     </div>
