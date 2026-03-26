@@ -1,4 +1,5 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
+import { ExternalLink } from "lucide-react";
 import { AutoplayVideo, ZoomableImage, SymTLDR } from "./shared";
 
 const showcaseItems = [
@@ -6,6 +7,7 @@ const showcaseItems = [
     title: "Doctor Dashboard",
     assetId: "product-doctor-dashboard-annotated.png",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7f6ce8e30fe24e908ce2cf7ed40f57cf",
+    prototypeUrl: "https://symplify-v4.netlify.app/doctor/doctor-dashboard",
     caption:
       "AI-augmented triage with full transparency. Every recommendation is explainable, overridable, and audit-logged.",
     callouts: [
@@ -21,6 +23,7 @@ const showcaseItems = [
     title: "Nurse Shift Handoff View",
     assetId: "product-nurse-handoff-annotated.png",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Fef3007b397f24b469323c67afd2d990f",
+    prototypeUrl: "https://symplify-v4.netlify.app/nurse/nurse-shift-handoff",
     caption:
       "Structured visibility replaced 20-minute phone calls at shift change.",
     callouts: [
@@ -36,6 +39,7 @@ const showcaseItems = [
     title: "Admin Compliance Dashboard",
     assetId: "product-admin-compliance-annotated.png",
     imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F03ee29b764ae4546bce7c12b2d2398c6",
+    prototypeUrl: "https://symplify-v4.netlify.app/admin/admin-compliance-dashboard",
     caption:
       "Compliance dashboard replacing manual Excel reporting workflows.",
     callouts: [
@@ -91,6 +95,7 @@ function ShowcaseCard({
   assetId,
   videoSrc,
   imageSrc,
+  prototypeUrl,
   caption,
   callouts,
 }: {
@@ -98,6 +103,7 @@ function ShowcaseCard({
   assetId: string;
   videoSrc?: string;
   imageSrc?: string;
+  prototypeUrl?: string;
   caption: string;
   callouts: string[];
 }) {
@@ -105,9 +111,11 @@ function ShowcaseCard({
     <div className="bg-sym-card rounded-xl border border-sym-card-border p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
       <h3 className="text-lg font-semibold text-sym-heading mb-4">{title}</h3>
 
-      {imageSrc && (
+      {imageSrc && prototypeUrl ? (
+        <PrototypeImage src={imageSrc} alt={caption} caption={caption} prototypeUrl={prototypeUrl} />
+      ) : imageSrc ? (
         <ZoomableImage src={imageSrc} alt={caption} caption={caption} />
-      )}
+      ) : null}
       {videoSrc && !imageSrc && (
         <AutoplayVideo src={videoSrc} caption={caption} />
       )}
@@ -132,5 +140,46 @@ function ShowcaseCard({
         })}
       </div>
     </div>
+  );
+}
+
+function PrototypeImage({
+  src,
+  alt,
+  caption,
+  prototypeUrl,
+}: {
+  src: string;
+  alt: string;
+  caption?: string;
+  prototypeUrl: string;
+}) {
+  return (
+    <figure className="mb-4">
+      <a
+        href={prototypeUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative block w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm hover:shadow-md hover:border-sym-card-border-hover transition-all duration-300"
+      >
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          className="w-full h-auto block"
+        />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
+          <span className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-white/20 backdrop-blur-sm rounded-lg border border-white/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
+            View Prototype
+            <ExternalLink className="w-4 h-4" />
+          </span>
+        </div>
+      </a>
+      {caption && (
+        <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed text-center">
+          {caption}
+        </figcaption>
+      )}
+    </figure>
   );
 }
