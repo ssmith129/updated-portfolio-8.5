@@ -35,7 +35,7 @@ const showcaseItems = [
   {
     title: "Admin Compliance Dashboard",
     assetId: "product-admin-compliance-annotated.png",
-    videoSrc: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Ffa5af1690b39411cbe63a63dfe3bd5c6?alt=media&token=b7e5dcfd-3c5f-4385-a1c4-e470f1f839bd&apiKey=ba69a23156414a589de97341511272c9",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F03ee29b764ae4546bce7c12b2d2398c6",
     caption:
       "Compliance dashboard replacing manual Excel reporting workflows.",
     callouts: [
