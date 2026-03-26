@@ -134,7 +134,7 @@ function PivotalNarrative({
       className="rounded-xl border overflow-hidden mb-6"
       style={{ borderColor, backgroundColor: bgColor }}
     >
-      <div className="px-5 py-4 flex items-start gap-3">
+      <div className="px-5 py-3 flex items-start gap-3">
         <div className="w-9 h-9 rounded-lg bg-white/80 flex items-center justify-center flex-shrink-0 shadow-sm">
           {icon}
         </div>
@@ -143,7 +143,7 @@ function PivotalNarrative({
           <p className="text-[15px] text-sym-body leading-relaxed">{narrative}</p>
         </div>
       </div>
-      <div className="mx-5 mb-4 flex items-start gap-2 bg-white/60 rounded-lg px-3.5 py-2">
+      <div className="mx-5 mb-3 flex items-start gap-2 bg-white/60 rounded-lg px-3 py-1.5">
         <TrendingUp className="w-4 h-4 text-sym-green mt-0.5 flex-shrink-0" />
         <p className="text-sm font-medium text-[#166534]">{outcome}</p>
       </div>
