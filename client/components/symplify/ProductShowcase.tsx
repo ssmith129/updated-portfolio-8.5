@@ -1,11 +1,11 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { AutoplayVideo, SymTLDR } from "./shared";
+import { AutoplayVideo, ZoomableImage, SymTLDR } from "./shared";
 
 const showcaseItems = [
   {
     title: "Doctor Dashboard",
     assetId: "product-doctor-dashboard-annotated.png",
-    videoSrc: "https://cdn.builder.io/o/assets%2Fba69a23156414a589de97341511272c9%2Fa5d23882d1ee4e14bace95c1808a2bbe?alt=media&token=bdbf1560-14c0-4c93-a0a6-526cfd6bfe2d&apiKey=ba69a23156414a589de97341511272c9",
+    imageSrc: "https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F7f6ce8e30fe24e908ce2cf7ed40f57cf",
     caption:
       "AI-augmented triage with full transparency. Every recommendation is explainable, overridable, and audit-logged.",
     callouts: [
@@ -84,12 +84,14 @@ function ShowcaseCard({
   title,
   assetId,
   videoSrc,
+  imageSrc,
   caption,
   callouts,
 }: {
   title: string;
   assetId: string;
   videoSrc?: string;
+  imageSrc?: string;
   caption: string;
   callouts: string[];
 }) {
@@ -97,7 +99,10 @@ function ShowcaseCard({
     <div className="bg-sym-card rounded-xl border border-sym-card-border p-5 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
       <h3 className="text-lg font-semibold text-sym-heading mb-4">{title}</h3>
 
-      {videoSrc && (
+      {imageSrc && (
+        <ZoomableImage src={imageSrc} alt={caption} caption={caption} />
+      )}
+      {videoSrc && !imageSrc && (
         <AutoplayVideo src={videoSrc} caption={caption} />
       )}
 
