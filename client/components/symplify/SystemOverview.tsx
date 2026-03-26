@@ -1,6 +1,6 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
 import { ExternalLink } from "lucide-react";
-import { SymTLDR, ZoomableImage } from "./shared";
+import { SymTLDR } from "./shared";
 
 const dsFeatures = [
   "WCAG 2.2 AA baked into tokens — color-blind safe badges, keyboard nav, screen reader support",
@@ -40,13 +40,19 @@ export default function SystemOverview() {
           Symplify acts as an integration layer — read-only recommendations over legacy systems.
         </p>
 
-        <div className="mb-6">
-          <ZoomableImage
-            src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6aa256a43d2549c38d24c45c7e442b57"
-            alt="System architecture diagram showing how Symplify connects legacy systems (EHR, Email, Excel) through a translation layer (AI Triage Engine, Conflict Detection, Compliance Monitor, Alert Prioritization) to role-based dashboards (Doctor, Nurse, Admin views)"
-            caption="How Symplify connects legacy systems to role-based dashboards via a read-only translation layer."
-          />
-        </div>
+        <figure className="mb-6">
+          <div className="relative w-full rounded-xl overflow-hidden border border-sym-card-border shadow-sm group hover:shadow-md transition-shadow duration-300">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F6aa256a43d2549c38d24c45c7e442b57"
+              alt="System architecture diagram showing how Symplify connects legacy systems (EHR, Email, Excel) through a translation layer (AI Triage Engine, Conflict Detection, Compliance Monitor, Alert Prioritization) to role-based dashboards (Doctor, Nurse, Admin views)"
+              className="w-full h-auto block"
+              loading="lazy"
+            />
+          </div>
+          <figcaption className="text-xs text-sym-muted mt-2 italic leading-relaxed text-center">
+            How Symplify connects legacy systems to role-based dashboards via a read-only translation layer.
+          </figcaption>
+        </figure>
 
       </div>
 
