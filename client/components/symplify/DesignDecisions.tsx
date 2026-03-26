@@ -184,19 +184,6 @@ function Decision4() {
             alt="Before: flat notification list showing all alerts with equal weight — no priority differentiation, accept/decline actions inline, and no batching or digest options"
             caption="Flat notification list with no priority differentiation — every alert demands equal attention."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1.5 mt-3">
-            {[
-              'All alerts marked "!" with no priority differentiation',
-              "47+ daily interruptions per clinician",
-              "Critical SLA deadlines buried in noise",
-              "No batch/digest option — every alert demanded individual attention",
-            ].map((point) => (
-              <p key={point} className="text-xs text-sym-red flex items-start gap-2">
-                <span className="mt-0.5">✕</span>
-                <span>{point}</span>
-              </p>
-            ))}
-          </div>
         </div>
         <div>
           <p className="text-xs font-semibold text-sym-green uppercase tracking-widest mb-3">After</p>
