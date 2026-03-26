@@ -1,6 +1,6 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
 import { ExternalLink } from "lucide-react";
-import { SymTLDR } from "./shared";
+import { SymTLDR, ZoomableImage } from "./shared";
 
 const dsFeatures = [
   "WCAG 2.2 AA baked into tokens — color-blind safe badges, keyboard nav, screen reader support",
@@ -88,7 +88,7 @@ export default function SystemOverview() {
           <ExternalLink className="w-4 h-4" />
         </a>
 
-        <ul className="space-y-2.5 mb-8 max-w-[680px]">
+        <ul className="space-y-2.5 max-w-[680px]">
           {dsFeatures.map((f) => (
             <li key={f} className="flex items-start gap-3 text-sm text-sym-body leading-relaxed">
               <span className="w-1.5 h-1.5 rounded-full bg-sym-green flex-shrink-0 mt-2" />
