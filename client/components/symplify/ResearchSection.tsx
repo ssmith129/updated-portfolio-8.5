@@ -153,12 +153,12 @@ export default function ResearchSection() {
             className="rounded-2xl border border-sym-card-border overflow-hidden bg-sym-card shadow-sm hover:shadow-md transition-shadow duration-300"
           >
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-20 flex items-center justify-center py-4 md:py-0" style={{ backgroundColor: ins.bgColor }}>
+              <div className="md:w-20 flex items-center justify-center py-3 md:py-0" style={{ backgroundColor: ins.bgColor }}>
                 <span className="text-2xl font-bold" style={{ color: ins.color }}>{ins.number}</span>
               </div>
-              <div className="flex-1 p-5">
-                <h3 className="text-lg font-semibold text-sym-heading mb-2">{ins.title}</h3>
-                <p className="text-[15px] text-sym-body leading-relaxed mb-3">{ins.body}</p>
+              <div className="flex-1 px-5 py-3.5">
+                <h3 className="text-lg font-semibold text-sym-heading mb-1.5">{ins.title}</h3>
+                <p className="text-[15px] text-sym-body leading-relaxed mb-2">{ins.body}</p>
                 <p className="text-sm font-semibold italic" style={{ color: ins.color }}>{ins.principle}</p>
               </div>
             </div>
