@@ -94,7 +94,7 @@ export default function ProjectOverview() {
         {objectives.map((obj) => (
           <div
             key={obj.title}
-            className="reveal bg-sym-card rounded-xl border border-sym-card-border p-4 shadow-sm card-lift hover:border-sym-card-border-hover group"
+            className="reveal bg-sym-card rounded-xl border border-sym-card-border px-4 py-3 shadow-sm card-lift hover:border-sym-card-border-hover group"
           >
             <div className="flex items-start gap-2 mb-2">
               {obj.icon}
