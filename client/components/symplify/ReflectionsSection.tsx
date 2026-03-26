@@ -70,8 +70,8 @@ export default function ReflectionsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {/* Wins */}
-          <div className="bg-sym-bg-green rounded-xl border border-[#BBF7D0] p-4">
-            <div className="flex items-start gap-2 mb-3">
+          <div className="bg-sym-bg-green rounded-xl border border-[#BBF7D0] px-4 py-3">
+            <div className="flex items-start gap-2 mb-2">
               <CheckCircle className="w-5 h-5 text-sym-green" />
               <p className="text-sm font-semibold text-[#166534] uppercase tracking-widest">Wins</p>
             </div>
@@ -86,8 +86,8 @@ export default function ReflectionsSection() {
           </div>
 
           {/* Misses */}
-          <div className="bg-sym-bg-amber rounded-xl border border-[#FDE68A] p-4">
-            <div className="flex items-start gap-2 mb-3">
+          <div className="bg-sym-bg-amber rounded-xl border border-[#FDE68A] px-4 py-3">
+            <div className="flex items-start gap-2 mb-2">
               <AlertTriangle className="w-5 h-5 text-sym-amber" />
               <p className="text-sm font-semibold text-[#92400E] uppercase tracking-widest">Misses</p>
             </div>
