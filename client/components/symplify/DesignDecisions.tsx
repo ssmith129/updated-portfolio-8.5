@@ -73,14 +73,14 @@ function Decision1() {
         {approaches.map((a) => (
           <div
             key={a.label}
-            className={`rounded-xl border-2 p-4 transition-shadow duration-300 ${
+            className={`rounded-xl border-2 px-4 py-3 transition-shadow duration-300 ${
               a.winner
                 ? "border-sym-green bg-sym-bg-green shadow-md"
                 : "border-sym-card-border bg-sym-card"
             }`}
           >
             <p className="text-sm font-semibold text-sym-heading mb-1">{a.label}</p>
-            <p className="text-xs text-sym-muted mb-3">{a.desc}</p>
+            <p className="text-xs text-sym-muted mb-2">{a.desc}</p>
             <div className="flex items-center justify-between">
               <span className={`text-2xl font-bold ${a.winner ? "text-sym-green" : "text-sym-label"}`}>
                 {a.acceptance}
@@ -91,7 +91,7 @@ function Decision1() {
                 </span>
               )}
             </div>
-            <p className="text-xs text-sym-muted italic mt-2">"{a.note}"</p>
+            <p className="text-xs text-sym-muted italic mt-1.5">"{a.note}"</p>
           </div>
         ))}
       </div>
