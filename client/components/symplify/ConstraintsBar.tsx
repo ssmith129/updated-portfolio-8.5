@@ -28,7 +28,7 @@ export default function ConstraintsBar() {
   const gridRef = useStaggerReveal();
 
   return (
-    <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+    <section className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
       <p className="text-xs font-semibold text-sym-muted uppercase tracking-widest mb-3">
         Load-Bearing Design Constraints
       </p>

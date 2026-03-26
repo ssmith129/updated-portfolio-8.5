@@ -63,13 +63,13 @@ export default function DesignEvolution() {
   return (
     <section
       id="evolution"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10"
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-purple uppercase tracking-widest mb-2">
           From Rejection to Trust
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 heading-underline">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-4 heading-underline">
           Design Evolution
         </h2>
       </div>

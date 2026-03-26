@@ -55,7 +55,7 @@ export default function ProductShowcase() {
   return (
     <section
       id="showcase"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10"
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-green uppercase tracking-widest mb-2">
@@ -73,11 +73,11 @@ export default function ProductShowcase() {
         cross-team visibility.
       </SymTLDR>
 
-      <p className="text-[15px] text-sym-body leading-relaxed max-w-[720px] mb-8">
+      <p className="text-[15px] text-sym-body leading-relaxed max-w-[720px] mb-6">
         Three role-specific views share a single data layer. A mobile on-call view rounds out the platform for corridor use.
       </p>
 
-      <div className="space-y-10">
+      <div className="space-y-8">
         {showcaseItems.map((item) => (
           <ShowcaseCard key={item.title} {...item} />
         ))}

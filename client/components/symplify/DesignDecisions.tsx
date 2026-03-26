@@ -8,7 +8,7 @@ export default function DesignDecisions() {
   return (
     <section
       id="decisions"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10"
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
@@ -65,11 +65,11 @@ function Decision1() {
   return (
     <div>
       <DecisionHeader number="01" title="AI Confidence Display" />
-      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
+      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
         <span className="font-semibold text-sym-heading">Challenge:</span> Show AI confidence without false precision.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         {approaches.map((a) => (
           <div
             key={a.label}
@@ -119,7 +119,7 @@ function Decision2() {
   return (
     <div>
       <DecisionHeader number="02" title="Auditable AI Reasoning" />
-      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
+      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
         <span className="font-semibold text-sym-heading">Challenge:</span> HIPAA required audit trails, but "explainable AI" is usually too technical or too vague.
       </p>
 
@@ -129,7 +129,7 @@ function Decision2() {
         caption="The AI reasoning panel at the point of decision. Clinicians see 'why' on demand — satisfying both HIPAA audit requirements and clinical trust needs."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         {steps.map((s, i) => (
           <div key={s.title} className="flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border p-5">
             <span className="w-7 h-7 rounded-full bg-sym-bg-blue text-sym-blue flex items-center justify-center text-sm font-bold flex-shrink-0">
@@ -153,7 +153,7 @@ function Decision3() {
   return (
     <div>
       <DecisionHeader number="03" title="Smart Scheduling with Progressive Disclosure" />
-      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
+      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
         <span className="font-semibold text-sym-heading">Challenge:</span>{" "}
         Auto-booking was rejected. Scheduling needed to prevent conflicts while preserving clinician autonomy — suggest better options with context, always allow override.
       </p>
@@ -176,7 +176,7 @@ function Decision4() {
       <DecisionHeader number="04" title="Solving Alert Fatigue" />
 
       {/* Before / After comparison */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div>
           <p className="text-xs font-semibold text-sym-red uppercase tracking-widest mb-3">Before</p>
           <ZoomableImage
@@ -208,7 +208,7 @@ function Decision4() {
         </div>
       </div>
 
-      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-8">
+      <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
         <span className="font-semibold text-sym-heading">How:</span> Clinical risk score + SLA deadline determines tier. Similar alerts batch into digests. FYI items collapse to acknowledge without demanding attention.
       </p>
 

@@ -43,13 +43,13 @@ export default function ProjectOverview() {
   return (
     <section
       id="overview"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10"
     >
       <div ref={headingRef} className="reveal">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Context &amp; Stakes
         </p>
-        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-6 max-w-[720px] heading-underline">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-sym-heading tracking-tight mb-4 max-w-[720px] heading-underline">
           Project Overview
         </h2>
       </div>

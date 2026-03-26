@@ -17,21 +17,21 @@ export default function HeroSection() {
       </div>
 
       {/* Hero */}
-      <header className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-16 pb-12 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
-        <span className="inline-block bg-gradient-to-r from-sym-blue to-sym-green text-white px-4 py-1.5 rounded-full text-[13px] font-semibold tracking-wide uppercase mb-6">
+      <header className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 pt-12 pb-8 animate-in fade-in-0 slide-in-from-bottom-8 duration-1000 delay-500 relative z-10">
+        <span className="inline-block bg-gradient-to-r from-sym-blue to-sym-green text-white px-4 py-1.5 rounded-full text-[13px] font-semibold tracking-wide uppercase mb-4">
           Healthcare AI Platform
         </span>
-        <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] xl:text-[3.75rem] font-semibold text-sym-heading leading-tight lg:leading-[65px] tracking-[-0.03em] mb-6 max-w-none">
+        <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] xl:text-[3.75rem] font-semibold text-sym-heading leading-tight lg:leading-[65px] tracking-[-0.03em] mb-4 max-w-none">
           Turning Hospital Chaos into Clinical Clarity
         </h1>
-        <p className="text-lg sm:text-xl text-sym-body leading-[1.6] max-w-none mb-4">
+        <p className="text-lg sm:text-xl text-sym-body leading-[1.6] max-w-none mb-3">
           I led end-to-end design for a 0-to-1 AI-enhanced hospital management
           platform that unified fragmented EHR, Excel, and email workflows into
           a single, trustworthy system — reducing triage time by 40% across 3 facilities and 65 clinical staff.
         </p>
 
         {/* Reading time + CTA */}
-        <div className="flex items-center gap-6 mb-10">
+        <div className="flex items-center gap-6 mb-6">
           <div className="flex items-center gap-1.5 text-sym-label text-sm">
             <Clock className="w-3.5 h-3.5" />
             <span>7 min read</span>
@@ -48,7 +48,7 @@ export default function HeroSection() {
         </div>
 
         {/* Meta badges */}
-        <div className="flex flex-wrap gap-3 mb-12">
+        <div className="flex flex-wrap gap-3 mb-8">
           <Badge icon={<Briefcase className="w-3.5 h-3.5" />} label="Founding Product Designer" />
           <Badge icon={<Calendar className="w-3.5 h-3.5" />} label="Jan – Aug 2024" />
           <Badge icon={<Users className="w-3.5 h-3.5" />} label="2 Engineers, 1 PM, 4 Clinical Advisors" />

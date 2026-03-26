@@ -51,7 +51,7 @@ export default function ReflectionsSection() {
   return (
     <>
       {/* What Worked & What Didn't */}
-      <section id="outcomes" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+      <section id="outcomes" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
         <div ref={outcomesRef} className="reveal">
           <p className="text-xs font-semibold text-sym-muted uppercase tracking-widest mb-2">
             Honest Assessment
@@ -104,7 +104,7 @@ export default function ReflectionsSection() {
       </section>
 
       {/* Reflection */}
-      <section id="reflection" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+      <section id="reflection" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
         <div ref={reflectionRef} className="reveal">
           <p className="text-xs font-semibold text-sym-purple uppercase tracking-widest mb-2">
             Takeaways
@@ -114,7 +114,7 @@ export default function ReflectionsSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
           {reflections.map((r) => (
             <div
               key={r.title}
@@ -131,7 +131,7 @@ export default function ReflectionsSection() {
       </section>
 
       {/* Next Steps */}
-      <section id="next-steps" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10">
+      <section id="next-steps" className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10">
         <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
           Looking Ahead
         </p>

@@ -15,10 +15,10 @@ export default function SystemOverview() {
   return (
     <section
       id="system"
-      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-16 relative z-10"
+      className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12 py-12 relative z-10"
     >
       {/* Architecture */}
-      <div className="mb-14">
+      <div className="mb-10">
         <div ref={archRef} className="reveal">
           <p className="text-xs font-semibold text-sym-blue uppercase tracking-widest mb-2">
             Technical Foundation
