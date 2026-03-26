@@ -143,9 +143,9 @@ function PivotalNarrative({
           <p className="text-[15px] text-sym-body leading-relaxed">{narrative}</p>
         </div>
       </div>
-      <div className="mx-4 mb-2.5 flex items-center gap-2 bg-white/60 rounded-md px-3 py-1">
-        <TrendingUp className="w-4 h-4 text-sym-green mt-0.5 flex-shrink-0" />
-        <p className="text-sm font-medium text-[#166534]">{outcome}</p>
+      <div className="mx-4 mb-2 flex items-center gap-1.5 bg-white/60 rounded-md px-2.5 py-0.5">
+        <TrendingUp className="w-3.5 h-3.5 text-sym-green flex-shrink-0" />
+        <p className="text-xs font-medium text-[#166534]">{outcome}</p>
       </div>
     </div>
   );
