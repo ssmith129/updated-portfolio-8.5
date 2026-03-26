@@ -40,7 +40,7 @@ export default function ConstraintsBar() {
         {constraints.map((c) => (
           <div
             key={c.title}
-            className="reveal bg-sym-card rounded-xl border border-sym-card-border px-4 py-3.5 shadow-sm card-lift group"
+            className="reveal bg-sym-card rounded-xl border border-sym-card-border px-4 py-2.5 shadow-sm card-lift group"
           >
             <div className="flex flex-col justify-center items-center mb-2">{c.icon}</div>
             <p className="text-sm font-semibold text-sym-heading mb-1 text-center">{c.title}</p>
