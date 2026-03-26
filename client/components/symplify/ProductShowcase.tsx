@@ -9,10 +9,12 @@ const showcaseItems = [
     caption:
       "AI-augmented triage with full transparency. Every recommendation is explainable, overridable, and audit-logged.",
     callouts: [
-      "AI Triage Queue — Messages pre-sorted by clinical risk with hover reasoning.",
-      "SLA Countdown Timers — Compliance deadlines surfaced in context.",
-      "Patient Context Panel — 1-click access to relevant history.",
-      "Quick Actions — Accept/Override/Escalate with keyboard shortcuts.",
+      "Patient Acuity Overview — Risk-stratified patient list replacing manual triage. Critical/Urgent/Semi-Urgent tiers reduced cognitive overhead ~40%.",
+      "Predictive Clinical Alerts — AI-driven live monitoring with confidence scores. 89% triage accuracy with <15% override guardrail maintained.",
+      "Smart Insights Panel — Demand forecasting and scheduling optimization. Replaced manual Excel workflows for clinical operations.",
+      "AI Drug Interaction Checker — Real-time cross-referencing with 'always verify' disclaimer — trust through honesty, not black-box automation.",
+      "Shift Handoff Summary — AI-generated briefing replacing 20-min phone calls at shift change. Addresses the 18% missed handoff gap.",
+      "Unified Message Inbox — Single hub replacing 3 fragmented inboxes. Role-based filtering with unread prioritization cut handling time 35%.",
     ],
   },
   {
