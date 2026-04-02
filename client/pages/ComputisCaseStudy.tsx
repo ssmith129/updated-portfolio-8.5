@@ -36,13 +36,13 @@ const colorMap: Record<string, { bg: string; text: string }> = {
 function ImpactCard({ label, before, after, delta, color }: { label: string; before: string; after: string; delta: string; color: string }) {
   const c = colorMap[color] ?? colorMap.accent;
   return (
-    <div className={`bg-gradient-to-br ${c.bg} to-white px-3 py-2.5 rounded-lg border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all`}>
-      <p className={`text-[10px] font-semibold ${c.text} uppercase tracking-wider mb-1`}>{label}</p>
-      <p className="text-lg font-bold text-precision-success leading-tight">{delta}</p>
-      <div className="flex items-center gap-1.5 mt-1">
-        <span className="text-[10px] text-precision-text-secondary">{before}</span>
-        <span className="text-[10px] text-precision-text-secondary">→</span>
-        <span className="text-[10px] font-medium text-precision-text-primary">{after}</span>
+    <div className={`bg-gradient-to-br ${c.bg} to-white px-4 py-3 rounded-lg border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center`}>
+      <p className={`text-xs font-semibold ${c.text} uppercase tracking-wider mb-1`}>{label}</p>
+      <p className="text-xl font-bold text-precision-success leading-tight">{delta}</p>
+      <div className="flex items-center justify-center gap-1.5 mt-1.5">
+        <span className="text-xs text-precision-text-secondary">{before}</span>
+        <span className="text-xs text-precision-text-secondary">→</span>
+        <span className="text-xs font-medium text-precision-text-primary">{after}</span>
       </div>
     </div>
   );
@@ -1673,10 +1673,12 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Quantitative Results - Card Layout */}
-            <div className="grid grid-cols-1 sm:grid-cols-5 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
               <ImpactCard label="Manual work" before="100% manual" after="15% manual" delta="↓85%" color="accent" />
               <ImpactCard label="CPA onboarding" before="2.5 hrs" after="1.4 hrs" delta="↓45%" color="secondary" />
               <ImpactCard label="Demo conversion" before="Baseline" after="+32%" delta="↑32%" color="warning" />
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-[66%] mx-auto">
               <ImpactCard label="Error detection" before="Baseline" after="+150%" delta="↑150%" color="accent" />
               <ImpactCard label="Audit exports" before="Baseline" after="+340%" delta="↑340%" color="secondary" />
             </div>
