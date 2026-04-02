@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, FileText } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
 
@@ -60,6 +60,15 @@ export default function About() {
                 simplify data, and drive decisions.
               </div>
             </h1>
+            <a
+              href="https://drive.google.com/file/d/1fpI68TDJmiBf3HOhU_KyviKoVNSDwr7q/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 text-sm font-medium text-white bg-[#131417] rounded-lg shadow-sm hover:shadow-md hover:bg-[#2a2b2f] transition-all duration-200"
+            >
+              <FileText className="w-4 h-4" />
+              View Resume
+            </a>
           </div>
         </div>
       </div>
