@@ -48,6 +48,19 @@ function ImpactCard({ label, before, after, delta, color }: { label: string; bef
   );
 }
 
+function DecisionCard({ color, title, reason, result }: { color: string; title: string; reason: string; result: string }) {
+  const c = colorMap[color] ?? colorMap.accent;
+  return (
+    <div className={`bg-gradient-to-br ${c.bg} to-white px-3 py-2.5 rounded-lg border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left`}>
+      <h3 className="text-xs font-semibold text-precision-text-primary mb-1 leading-snug">{title}</h3>
+      <p className="text-[10px] text-precision-text-secondary leading-relaxed mb-2">{reason}</p>
+      <div className="pt-1.5 border-t border-[#E3E8EF]">
+        <p className="text-xs font-semibold text-precision-success">{result}</p>
+      </div>
+    </div>
+  );
+}
+
 export default function ComputisCaseStudy() {
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(true);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -1515,116 +1528,34 @@ export default function ComputisCaseStudy() {
               Key Design Decisions
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Decision 1 */}
-              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left">
-                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
-                  Decision
-                </p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
-                  Show confidence scores
-                </h3>
-                <p className="text-sm text-precision-text-secondary mb-4">
-                  CPAs need to know "how sure" AI is
-                </p>
-                <div className="pt-3 border-t border-[#E3E8EF]">
-                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
-                    Result
-                  </p>
-                  <p className="text-base font-semibold text-precision-success">
-                    89% trust rate
-                  </p>
-                </div>
-              </div>
-
-              {/* Decision 2 */}
-              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left">
-                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
-                  Decision
-                </p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
-                  Review queue vs auto-apply all
-                </h3>
-                <p className="text-sm text-precision-text-secondary mb-4">
-                  Medium confidence = human context needed
-                </p>
-                <div className="pt-3 border-t border-[#E3E8EF]">
-                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
-                    Result
-                  </p>
-                  <p className="text-base font-semibold text-precision-success">
-                    11% meaningful overrides
-                  </p>
-                </div>
-              </div>
-
-              {/* Decision 3 */}
-              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left">
-                <p className="text-sm font-bold text-precision-accent uppercase tracking-wider mb-2">
-                  Decision
-                </p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
-                  Async rationale loading
-                </h3>
-                <p className="text-sm text-precision-text-secondary mb-4">
-                  Balance speed with transparency
-                </p>
-                <div className="pt-3 border-t border-[#E3E8EF]">
-                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
-                    Result
-                  </p>
-                  <p className="text-base font-semibold text-precision-success">
-                    "Explainable AI" differentiator
-                  </p>
-                </div>
-              </div>
-
-              {/* Decision 4 */}
-              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left">
-                <p className="text-sm font-bold text-precision-secondary uppercase tracking-wider mb-2">
-                  Decision
-                </p>
-                <h3 className="text-base font-semibold text-precision-text-primary mb-4">
-                  Override always allowed
-                </h3>
-                <p className="text-sm text-precision-text-secondary mb-4">
-                  Professional liability protection
-                </p>
-                <div className="pt-3 border-t border-[#E3E8EF]">
-                  <p className="text-xs uppercase tracking-wider text-precision-accent font-semibold mb-1">
-                    Result
-                  </p>
-                  <p className="text-base font-semibold text-precision-success">
-                    CPA control preserved
-                  </p>
-                </div>
-              </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+              <DecisionCard color="accent" title="Show confidence scores" reason='CPAs need to know "how sure" AI is' result="89% trust rate" />
+              <DecisionCard color="secondary" title="Review queue vs auto-apply" reason="Medium confidence = human context needed" result="11% meaningful overrides" />
+              <DecisionCard color="accent" title="Async rationale loading" reason="Balance speed with transparency" result='"Explainable AI" differentiator' />
+              <DecisionCard color="secondary" title="Override always allowed" reason="Professional liability protection" result="CPA control preserved" />
             </div>
 
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-card p-6 border-l-4 border-precision-warning shadow-sm">
-                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-4">
-                  Critical Trade-off: Speed vs. Transparency
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <div className="bg-white rounded-lg px-4 py-3 border-l-2 border-precision-warning shadow-sm">
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-1">
+                  Speed vs. Transparency
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-relaxed mb-4">
-                  Removing rationale would cut processing 60%—but competitor
-                  "black box" complaints outnumbered speed complaints 3:1.
+                <p className="text-xs text-precision-text-secondary leading-relaxed mb-1.5">
+                  Removing rationale would cut processing 60% — but "black box" complaints outnumbered speed complaints 3:1.
                 </p>
-                <p className="text-xs font-semibold text-precision-success">
-                  ✓ Chose transparency. Won 3 enterprise deals citing audit
-                  defensibility.
+                <p className="text-[10px] font-semibold text-precision-success">
+                  ✓ Chose transparency. Won 3 enterprise deals.
                 </p>
               </div>
 
-              <div className="bg-white rounded-card p-6 border-l-4 border-precision-accent shadow-sm">
-                <h3 className="text-base font-semibold font-heading text-precision-text-primary mb-4">
+              <div className="bg-white rounded-lg px-4 py-3 border-l-2 border-precision-accent shadow-sm">
+                <h3 className="text-sm font-semibold text-precision-text-primary mb-1">
                   Stakeholder Alignment
                 </h3>
-                <p className="text-sm text-precision-text-primary leading-relaxed mb-4">
-                  Engineering wanted max automation; CPAs required override
-                  capabilities. Tiered system satisfied both.
+                <p className="text-xs text-precision-text-secondary leading-relaxed mb-1.5">
+                  Engineering wanted max automation; CPAs required override capabilities. Tiered system satisfied both.
                 </p>
-                <p className="text-xs font-semibold text-precision-success">
+                <p className="text-[10px] font-semibold text-precision-success">
                   ✓ "Finally, AI that works *with* me" — CPA Beta User
                 </p>
               </div>
