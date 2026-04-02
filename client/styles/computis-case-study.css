@@ -310,7 +310,7 @@ p {
 }
 
 .insight-callout__header {
-  @apply flex items-center gap-2 mb-2;
+  @apply flex items-start justify-start gap-2 mb-2;
 }
 
 .insight-callout__label {
