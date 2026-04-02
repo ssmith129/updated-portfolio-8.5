@@ -214,11 +214,11 @@ p {
    ============================================ */
 
 .impact-cards {
-  @apply grid grid-cols-2 lg:grid-cols-4 gap-4;
+  @apply grid grid-cols-2 lg:grid-cols-4 gap-2;
 }
 
 .impact-card {
-  @apply bg-gradient-to-br from-[#0A2540] to-[#1E3A5F] p-6 rounded-xl text-center;
+  @apply bg-gradient-to-br from-[#0A2540] to-[#1E3A5F] px-3 py-2.5 rounded-lg text-center;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -227,15 +227,15 @@ p {
 }
 
 .impact-card__icon {
-  @apply w-8 h-8 text-[#00A88A] mx-auto mb-4;
+  @apply w-4 h-4 text-[#00A88A] mx-auto mb-1;
 }
 
 .impact-card__metric {
-  @apply text-3xl font-bold text-white mb-2 text-center;
+  @apply text-xl font-bold text-white mb-0.5 text-center;
 }
 
 .impact-card__label {
-  @apply text-sm text-white/90 font-medium text-center;
+  @apply text-[10px] text-white/70 font-medium text-center;
 }
 
 /* ============================================
