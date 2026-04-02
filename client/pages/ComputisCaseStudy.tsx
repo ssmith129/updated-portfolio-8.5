@@ -27,6 +27,27 @@ import { useCountUp } from "../hooks/use-count-up";
 import InsightCards from "../components/computis/InsightCards";
 import "../styles/computis-case-study.css";
 
+const colorMap: Record<string, { bg: string; text: string }> = {
+  accent: { bg: "from-[#E0F9F4]", text: "text-precision-accent" },
+  secondary: { bg: "from-[#E8F4FA]", text: "text-precision-secondary" },
+  warning: { bg: "from-[#FEF3E2]", text: "text-precision-warning" },
+};
+
+function ImpactCard({ label, before, after, delta, color }: { label: string; before: string; after: string; delta: string; color: string }) {
+  const c = colorMap[color] ?? colorMap.accent;
+  return (
+    <div className={`bg-gradient-to-br ${c.bg} to-white px-3 py-2.5 rounded-lg border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all`}>
+      <p className={`text-[10px] font-semibold ${c.text} uppercase tracking-wider mb-1`}>{label}</p>
+      <p className="text-lg font-bold text-precision-success leading-tight">{delta}</p>
+      <div className="flex items-center gap-1.5 mt-1">
+        <span className="text-[10px] text-precision-text-secondary">{before}</span>
+        <span className="text-[10px] text-precision-text-secondary">→</span>
+        <span className="text-[10px] font-medium text-precision-text-primary">{after}</span>
+      </div>
+    </div>
+  );
+}
+
 export default function ComputisCaseStudy() {
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(true);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -1678,171 +1699,12 @@ export default function ComputisCaseStudy() {
             </div>
 
             {/* Quantitative Results - Card Layout */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {/* Impact 1 */}
-              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
-                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mx-auto mb-2">
-                  Metric
-                </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
-                  Manual classification workload
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      Before
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      100% manual
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      After
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      15% manual
-                    </span>
-                  </div>
-                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
-                    <p className="text-base font-bold text-precision-success mx-auto">
-                      ↓85%
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Impact 2 */}
-              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
-                <p className="text-xs font-medium text-precision-secondary uppercase tracking-wider mx-auto mb-2">
-                  Metric
-                </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
-                  CPA onboarding (new client)
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      Before
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      2.5 hours
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      After
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      1.4 hours
-                    </span>
-                  </div>
-                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
-                    <p className="text-base font-bold text-precision-success mx-auto">
-                      ↓45%
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Impact 3 */}
-              <div className="bg-gradient-to-br from-[#FEF3E2] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
-                <p className="text-xs font-medium text-precision-warning uppercase tracking-wider mx-auto mb-2">
-                  Metric
-                </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
-                  Demo-to-conversion rate
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      Before
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      Baseline
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      After
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      +32%
-                    </span>
-                  </div>
-                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
-                    <p className="text-base font-bold text-precision-success mx-auto">
-                      ↑32%
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Impact 4 */}
-              <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
-                <p className="text-xs font-medium text-precision-accent uppercase tracking-wider mx-auto mb-2">
-                  Metric
-                </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
-                  Error detection accuracy
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      Before
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      Baseline
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      After
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      +150%
-                    </span>
-                  </div>
-                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
-                    <p className="text-base font-bold text-precision-success mx-auto">
-                      ↑150%
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Impact 5 */}
-              <div className="bg-gradient-to-br from-[#E8F4FA] to-white p-5 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all flex flex-col">
-                <p className="text-xs font-medium text-precision-secondary uppercase tracking-wider mx-auto mb-2">
-                  Metric
-                </p>
-                <h3 className="text-sm font-semibold text-precision-text-primary mb-4 text-center">
-                  Audit trail exports
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      Before
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      Baseline
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs text-precision-text-secondary">
-                      After
-                    </span>
-                    <span className="font-semibold text-precision-text-primary">
-                      +340%
-                    </span>
-                  </div>
-                  <div className="pt-2 border-t border-[#E3E8EF] flex flex-col">
-                    <p className="text-base font-bold text-precision-success mx-auto">
-                      ↑340%
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-5 gap-2">
+              <ImpactCard label="Manual work" before="100% manual" after="15% manual" delta="↓85%" color="accent" />
+              <ImpactCard label="CPA onboarding" before="2.5 hrs" after="1.4 hrs" delta="↓45%" color="secondary" />
+              <ImpactCard label="Demo conversion" before="Baseline" after="+32%" delta="↑32%" color="warning" />
+              <ImpactCard label="Error detection" before="Baseline" after="+150%" delta="↑150%" color="accent" />
+              <ImpactCard label="Audit exports" before="Baseline" after="+340%" delta="↑340%" color="secondary" />
             </div>
           </div>
         </section>
