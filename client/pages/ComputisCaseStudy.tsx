@@ -36,7 +36,7 @@ const colorMap: Record<string, { bg: string; text: string }> = {
 function ImpactCard({ label, before, after, delta, color }: { label: string; before: string; after: string; delta: string; color: string }) {
   const c = colorMap[color] ?? colorMap.accent;
   return (
-    <div className={`bg-gradient-to-br ${c.bg} to-white px-4 py-3 rounded-lg border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center`}>
+    <div className={`bg-gradient-to-br ${c.bg} to-white px-4 py-3 rounded-lg border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-center flex flex-col justify-center items-center`}>
       <p className={`text-xs font-semibold ${c.text} uppercase tracking-wider mb-1`}>{label}</p>
       <p className="text-xl font-bold text-precision-success leading-tight">{delta}</p>
       <div className="flex items-center justify-center gap-1.5 mt-1.5">
