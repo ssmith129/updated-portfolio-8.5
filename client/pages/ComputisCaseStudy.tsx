@@ -1515,19 +1515,6 @@ export default function ComputisCaseStudy() {
               Key Design Decisions
             </h2>
 
-            <div className="insight-callout insight-callout--key mb-6">
-              <div className="insight-callout__header">
-                <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">
-                  TL;DR
-                </p>
-              </div>
-              <p className="insight-callout__text">
-                Four critical trade-offs balanced automation with professional
-                control. Transparency over speed won enterprise deals.
-              </p>
-            </div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Decision 1 */}
               <div className="bg-gradient-to-br from-[#E0F9F4] to-white p-6 rounded-card border border-[#E3E8EF] shadow-sm hover:shadow-md transition-all text-left">
@@ -1657,19 +1644,6 @@ export default function ComputisCaseStudy() {
             <h2 className="text-2xl lg:text-3xl font-bold font-heading text-precision-text-primary leading-tight mb-4">
               Business Impact
             </h2>
-
-            <div className="insight-callout insight-callout--key mb-6">
-              <div className="insight-callout__header">
-                <Target className="w-5 h-5 text-[#0A7A5E]" />
-                <p className="insight-callout__label insight-callout__label--key">
-                  TL;DR
-                </p>
-              </div>
-              <p className="insight-callout__text">
-                85% reduction in manual work, 32% conversion increase, 3
-                enterprise deals closed. AI features cited in 78% of won deals.
-              </p>
-            </div>
 
             {/* Impact Cards */}
             <div className="impact-cards mb-8">
