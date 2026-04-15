@@ -180,30 +180,6 @@ export default function Index() {
           </Link>
         </div>
 
-        {/* View All Projects Link */}
-        <div className="text-center mt-12 sm:mt-16 md:mt-20">
-          <Link
-            to="/case-studies"
-            className="inline-flex items-center gap-3 text-base sm:text-lg font-medium text-[#131417] hover:text-[#2a2a2a] border-2 border-[#131417] hover:border-[#2a2a2a] px-6 py-3 rounded-[25px] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-opacity-50"
-            aria-label="View all UX design case studies in Sean's portfolio"
-          >
-            <span>View All Projects</span>
-            <svg
-              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </Link>
-        </div>
       </section>
 
       {/* Quick Stats Section */}
