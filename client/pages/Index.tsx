@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
+import SocialIconRow from "../components/SocialIconRow";
 
 export default function Index() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -88,6 +89,10 @@ export default function Index() {
               >
                 Contact Me
               </a>
+            </div>
+
+            <div className="flex justify-center lg:justify-start mt-6 sm:mt-8 animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-[1300ms]">
+              <SocialIconRow />
             </div>
           </div>
         </div>

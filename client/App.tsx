@@ -12,6 +12,7 @@ import ComputisCaseStudySandbox from "./pages/ComputisCaseStudySandbox";
 import EzEMRxCaseStudy from "./pages/EzEMRxCaseStudy";
 import SymplifyCaseStudy from "./pages/SymplifyCaseStudy";
 import MoneyFarmCaseStudy from "./pages/MoneyFarmCaseStudy";
+import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -54,6 +55,7 @@ const App = () => (
               path="/case-studies/moneyfarm-ai-powered-personal-finance"
               element={<MoneyFarmCaseStudy />}
             />
+            <Route path="/resume" element={<Resume />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

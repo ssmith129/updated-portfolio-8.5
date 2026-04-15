@@ -1,5 +1,4 @@
-import React from "react";
-import Head from "next/head";
+import { useEffect } from "react";
 
 interface CaseStudyStructuredDataProps {
   title: string;
@@ -48,14 +47,17 @@ export const CaseStudyStructuredData: React.FC<
     },
   };
 
-  return (
-    <Head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-    </Head>
-  );
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, [structuredData]);
+
+  return null;
 };
 
 export default CaseStudyStructuredData;
