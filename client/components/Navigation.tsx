@@ -88,7 +88,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
       {/* Mobile Menu Button */}
       <button
         onClick={toggleMobileMenu}
-        className={`md:hidden p-3 rounded-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-opacity-50 touch-manipulation ${
+        className={`hidden p-3 rounded-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-opacity-50 touch-manipulation ${
           isDarkPage
             ? "text-[#CCCCCC] hover:bg-[#00D4FF]/10 hover:text-[#00D4FF] focus:ring-[#00D4FF]"
             : isHealthcarePage
@@ -162,7 +162,7 @@ export default function Navigation({ className = "" }: NavigationProps) {
       {/* Mobile Navigation Menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden absolute top-full left-0 right-0 shadow-lg rounded-b-[20px] transition-all duration-300 z-50 ${
+        className={`hidden absolute top-full left-0 right-0 shadow-lg rounded-b-[20px] transition-all duration-300 z-50 ${
           isMobileMenuOpen
             ? "opacity-100 visible translate-y-0"
             : "opacity-0 invisible -translate-y-4"
