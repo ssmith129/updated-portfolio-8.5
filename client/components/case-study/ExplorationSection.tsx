@@ -1,3 +1,3 @@
-export function ExplorationSection() {
+export default function ExplorationSection() {
   return null;
 }

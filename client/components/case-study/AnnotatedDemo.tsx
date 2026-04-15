@@ -18,7 +18,7 @@ interface AnnotatedDemoProps {
   containerClassName?: string;
 }
 
-export function AnnotatedDemo({
+export default function AnnotatedDemo({
   src,
   poster,
   annotations,

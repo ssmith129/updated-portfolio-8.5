@@ -15,8 +15,11 @@ export default {
     screens: {
       xs: "320px", // Small phones
       sm: "480px", // Large phones (updated from 640px)
-      md: "768px", // Tablets
+      md: "768px", // Tablets (iPad Portrait)
+      "md-land": "1024px", // iPad Landscape
       lg: "1024px", // Desktop
+      "ipad-air": "1180px", // iPad Air specific
+      "ipad-pro": "1366px", // iPad Pro 12.9" landscape
       xl: "1280px", // Large desktop
       "2xl": "1440px", // Extra large desktop (updated from 1536px)
     },
@@ -72,6 +75,29 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        sym: {
+          blue: '#3B82F6',
+          green: '#10B981',
+          purple: '#8B5CF6',
+          amber: '#F59E0B',
+          red: '#EF4444',
+          pink: '#EC4899',
+          indigo: '#6366F1',
+          heading: '#0F172A',
+          body: '#334155',
+          muted: '#64748B',
+          label: '#6B7280',
+          card: '#FFFFFF',
+          'card-border': '#E2E8F0',
+          'card-border-hover': '#CBD5E1',
+          divider: '#F1F5F9',
+          'bg-primary': '#F8FAFC',
+          'bg-blue': '#EFF6FF',
+          'bg-green': '#F0FDF4',
+          'bg-amber': '#FFFBEB',
+          'bg-purple': '#F5F3FF',
+          'bg-red': '#FEF2F2',
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

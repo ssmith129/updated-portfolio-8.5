@@ -26,7 +26,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F5F5]">
+    <div className="min-h-screen bg-[#F5F5F5] dark:bg-gray-900 transition-colors duration-200">
       <SkipLink />
       <Navigation />
 
@@ -50,16 +50,16 @@ export default function Index() {
 
           {/* Hero Text */}
           <div className="flex-1 text-center lg:text-left order-2 lg:order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] 2xl:text-[94px] font-medium text-[#131417] leading-[110%] sm:leading-[115%] md:leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.5px] xl:tracking-[-1.72px] 2xl:tracking-[-1.88px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-500 hover:tracking-[-1.3px] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-700">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] 2xl:text-[94px] font-medium text-[#131417] dark:text-white leading-[110%] sm:leading-[115%] md:leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] lg:tracking-[-1.5px] xl:tracking-[-1.72px] 2xl:tracking-[-1.88px] mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 transition-all duration-500 hover:tracking-[-1.3px] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-700">
               UX/Product Designer
             </h1>
 
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[28px] font-normal text-[#131417] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] xl:tracking-[-0.28px] mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] transition-all duration-300 hover:text-[#2a2a2a] animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-900">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[28px] font-normal text-[#131417] dark:text-gray-300 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] xl:tracking-[-0.28px] mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] transition-all duration-300 hover:text-[#2a2a2a] dark:hover:text-white animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-900">
               8+ years creating intuitive, scalable UX for complex SaaS
               platforms. I specialize in{" "}
               <Link
                 to="/about"
-                className="text-[#131417] hover:text-[#2a2a2a] underline underline-offset-4 decoration-2 hover:decoration-[#2a2a2a] transition-all duration-300"
+                className="text-[#131417] dark:text-precision-accent hover:text-[#2a2a2a] dark:hover:text-white underline underline-offset-4 decoration-2 hover:decoration-[#2a2a2a] dark:hover:decoration-precision-accent transition-all duration-300"
                 aria-label="Learn more about Sean's AI integration expertise"
               >
                 AI-integrated systems
@@ -97,7 +97,7 @@ export default function Index() {
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] lg:tracking-[-0.6px] xl:tracking-[-0.8px] mb-4 sm:mb-6 transition-all duration-500 hover:tracking-[-0.5px]">
             Featured Projects
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[500px] sm:max-w-[600px] md:max-w-[700px] mx-auto transition-all duration-300 hover:text-[#131417]">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[500px] sm:max-w-[600px] md:max-w-[700px] mx-auto text-center transition-all duration-300 hover:text-[#131417]">
             Selected work from{" "}
             <Link
               to="/case-studies/computis-crypto-tax-engine"
@@ -105,14 +105,6 @@ export default function Index() {
               aria-label="View crypto platform design case study"
             >
               healthcare
-            </Link>
-            ,{" "}
-            <Link
-              to="/case-studies/moneyfarm-ai-powered-personal-finance"
-              className="text-[#9FA0A3] hover:text-[#131417] underline underline-offset-2 decoration-1 transition-all duration-300"
-              aria-label="View fintech platform design case study"
-            >
-              fintech
             </Link>
             , and{" "}
             <Link
@@ -130,25 +122,25 @@ export default function Index() {
           {/* Computis Project */}
           <Link
             to="/case-studies/computis-crypto-tax-engine"
-            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-left-6 duration-1000 delay-900 touch-manipulation w-full max-w-[600px] mx-auto"
-            aria-label="View Computis crypto tax engine case study - enterprise SaaS platform for CPAs"
+            className="group relative animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-900 w-full"
           >
-            <div className="aspect-square overflow-hidden relative">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4?width=1900"
-                alt="Computis - Crypto Tax Engine Dashboard"
-                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
-              <div className="text-white">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-2 transition-all duration-300">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/437ebf05fba1fe900a48cf92b7c64f206c1d4dd4"
+              alt="Computis - Crypto Tax Engine Dashboard"
+              className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
+              <div className="text-center text-white transform transition-all duration-500">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium mb-1 sm:mb-2 tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px]">
                   Computis
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg font-normal opacity-90 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px]">
+                <p className="text-xs sm:text-sm md:text-base font-normal opacity-90 tracking-[-0.15px] sm:tracking-[-0.2px]">
                   Crypto Tax Engine
                 </p>
+                <div className="mt-1 sm:mt-2 text-xs font-medium opacity-75">
+                  Click to view case study →
+                </div>
               </div>
             </div>
           </Link>
@@ -156,25 +148,25 @@ export default function Index() {
           {/* Symplify Project */}
           <Link
             to="/case-studies/symplify-hospital-management-system"
-            className="group relative overflow-hidden rounded-[16px] sm:rounded-[20px] md:rounded-[25px] lg:rounded-[30px] xl:rounded-[35px] bg-white shadow-md hover:shadow-xl transition-all duration-500 hover:scale-[1.02] animate-in fade-in-0 slide-in-from-right-6 duration-1000 delay-1100 touch-manipulation w-full max-w-[600px] mx-auto"
-            aria-label="View Symplify hospital management system case study - comprehensive healthcare platform"
+            className="group relative animate-in fade-in-0 slide-in-from-right-8 duration-1000 delay-1100 w-full"
           >
-            <div className="aspect-square overflow-hidden relative">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F36b7682859c14dd1b07433f39f2c1c11?format=webp&width=800"
-                alt="Symplify - Hospital Management System"
-                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 absolute inset-0"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 sm:p-6 md:p-8">
-              <div className="text-white">
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] mb-2 transition-all duration-300">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Faa474afa892e42de9c42be7aebc44ab5"
+              alt="Symplify - Hospital Management System"
+              className="w-full aspect-square object-cover rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] transition-all duration-500 cursor-pointer group-hover:scale-105 group-hover:shadow-2xl group-hover:brightness-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-black/40 rounded-[8px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[20px] xl:rounded-[25px] flex items-center justify-center transition-all duration-500 cursor-pointer opacity-0 group-hover:opacity-100">
+              <div className="text-center text-white transform transition-all duration-500">
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium mb-1 sm:mb-2 tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px]">
                   Symplify
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg font-normal opacity-90 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px]">
+                <p className="text-xs sm:text-sm md:text-base font-normal opacity-90 tracking-[-0.15px] sm:tracking-[-0.2px]">
                   Hospital Management System
                 </p>
+                <div className="mt-1 sm:mt-2 text-xs font-medium opacity-75">
+                  Click to view case study →
+                </div>
               </div>
             </div>
           </Link>
@@ -185,7 +177,7 @@ export default function Index() {
       {/* Quick Stats Section */}
       <section className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-[100px] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16 animate-in fade-in-0 slide-in-from-bottom-6 duration-1000 delay-700">
-          <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-900">
+          <div className="text-center flex flex-col items-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-900">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
               8+
             </div>
@@ -194,7 +186,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1100">
+          <div className="text-center flex flex-col items-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1100">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
               50+
             </div>
@@ -203,7 +195,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1300">
+          <div className="text-center flex flex-col items-center justify-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1300">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
               18+
             </div>
@@ -212,7 +204,7 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="text-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1500">
+          <div className="text-center flex flex-col items-center justify-center group animate-in fade-in-0 zoom-in-95 duration-1000 delay-1500">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#131417] leading-[120%] tracking-[-0.5px] sm:tracking-[-0.8px] md:tracking-[-1.2px] mb-2 sm:mb-3 md:mb-4 transition-all duration-300 group-hover:scale-110">
               $18M+
             </div>
@@ -229,7 +221,7 @@ export default function Index() {
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-[#131417] leading-[120%] tracking-[-0.3px] sm:tracking-[-0.4px] md:tracking-[-0.5px] lg:tracking-[-0.6px] xl:tracking-[-0.8px] mb-4 sm:mb-6 transition-all duration-500 hover:tracking-[-0.5px]">
             Design Expertise
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[500px] sm:max-w-[600px] md:max-w-[700px] mx-auto transition-all duration-300 hover:text-[#131417]">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] max-w-[500px] sm:max-w-[600px] md:max-w-[700px] mx-auto text-center transition-all duration-300 hover:text-[#131417]">
             Specialized skills in creating intuitive experiences for complex
             systems.{" "}
             <Link
@@ -263,7 +255,7 @@ export default function Index() {
             <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] leading-[120%] tracking-[-0.2px] sm:tracking-[-0.3px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.15px]">
               AI-Powered Design
             </h3>
-            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] transition-all duration-300 hover:text-[#131417]">
+            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] text-center transition-all duration-300 hover:text-[#131417]">
               ML Integration, AI Workflows, Usability Enhancement
             </p>
           </div>
@@ -287,7 +279,7 @@ export default function Index() {
             <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] leading-[120%] tracking-[-0.2px] sm:tracking-[-0.3px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.15px]">
               Design Systems
             </h3>
-            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] transition-all duration-300 hover:text-[#131417]">
+            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] text-center transition-all duration-300 hover:text-[#131417]">
               Scalable component libraries and design tokens for consistency
             </p>
           </div>
@@ -311,7 +303,7 @@ export default function Index() {
             <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#131417] leading-[120%] tracking-[-0.2px] sm:tracking-[-0.3px] mb-3 sm:mb-4 transition-all duration-300 hover:tracking-[-0.15px]">
               Rapid Prototyping
             </h3>
-            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] transition-all duration-300 hover:text-[#131417]">
+            <p className="text-sm sm:text-base md:text-lg font-normal text-[#9FA0A3] leading-[1.5em] tracking-[-0.14px] sm:tracking-[-0.16px] text-center transition-all duration-300 hover:text-[#131417]">
               Interactive prototypes and production-ready designs in Figma and
               code
             </p>

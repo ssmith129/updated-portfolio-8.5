@@ -1,4 +1,5 @@
 import "./global.css";
+import "./styles/ipad-optimizations.css";
 
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -9,9 +10,7 @@ import CaseStudies from "./pages/CaseStudies";
 import About from "./pages/About";
 import ComputisCaseStudy from "./pages/ComputisCaseStudy";
 import ComputisCaseStudySandbox from "./pages/ComputisCaseStudySandbox";
-import EzEMRxCaseStudy from "./pages/EzEMRxCaseStudy";
 import SymplifyCaseStudy from "./pages/SymplifyCaseStudy";
-import MoneyFarmCaseStudy from "./pages/MoneyFarmCaseStudy";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 
@@ -44,16 +43,8 @@ const App = () => (
               }
             />
             <Route
-              path="/case-studies/ezemrx-redesigning-ehr"
-              element={<EzEMRxCaseStudy />}
-            />
-            <Route
               path="/case-studies/symplify-hospital-management-system"
               element={<SymplifyCaseStudy />}
-            />
-            <Route
-              path="/case-studies/moneyfarm-ai-powered-personal-finance"
-              element={<MoneyFarmCaseStudy />}
             />
             <Route path="/resume" element={<Resume />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

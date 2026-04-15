@@ -7,12 +7,8 @@
    HERO METRICS GRID
    ============================================ */
 
-.hero-metrics-grid {
-  @apply grid grid-cols-2 lg:grid-cols-4 gap-4;
-}
-
 .hero-metric-card {
-  @apply p-4 rounded-xl transition-transform duration-200;
+  @apply px-2.5 py-2 sm:px-3 sm:py-2.5 rounded-lg transition-transform duration-200 text-center flex flex-col;
 }
 
 .hero-metric-card:hover {
@@ -20,19 +16,19 @@
 }
 
 .hero-metric-card--accent {
-  @apply border-l-4 border-precision-accent bg-[#E0F9F4];
+  @apply border-l-2 border-precision-accent bg-[#E0F9F4];
 }
 
 .hero-metric-card--secondary {
-  @apply border-l-4 border-precision-secondary bg-[#E8F4FA];
+  @apply border-l-2 border-precision-secondary bg-[#E8F4FA];
 }
 
 .hero-metric-card--success {
-  @apply border-l-4 border-precision-success bg-[#E0F9F4];
+  @apply border-l-2 border-precision-success bg-[#E0F9F4];
 }
 
 .hero-metric-card--warning {
-  @apply border-l-4 border-precision-warning bg-[#FEF3E2];
+  @apply border-l-2 border-precision-warning bg-[#FEF3E2];
 }
 
 /* ============================================
@@ -40,7 +36,7 @@
    ============================================ */
 
 .case-study-image {
-  @apply relative overflow-hidden rounded-xl border border-[#E3E8EF] shadow-precision-sm;
+  @apply relative overflow-hidden rounded-[5px] border border-[#E3E8EF] shadow-precision-sm;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -73,7 +69,15 @@
 }
 
 .case-study-image__caption {
-  @apply mt-3 text-sm text-precision-text-secondary text-center italic;
+  @apply mt-3 text-xs text-precision-text-secondary text-left font-normal opacity-70;
+}
+
+/* ============================================
+   PROSE TEXT CONSTRAINTS
+   ============================================ */
+
+p {
+  @apply max-w-[680px] text-left;
 }
 
 /* ============================================
@@ -81,17 +85,53 @@
    ============================================ */
 
 .image-lightbox {
-  @apply fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm;
+  @apply fixed inset-0 bg-black/95 backdrop-blur-md;
   @apply flex items-center justify-center p-4;
+  z-index: 9999;
+  cursor: zoom-out;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .image-lightbox__close {
-  @apply absolute top-4 right-4 p-3 bg-white/10 rounded-full;
-  @apply hover:bg-white/20 transition-colors;
+  @apply absolute top-4 right-4 z-[10000] p-3 bg-white/10 rounded-full;
+  @apply hover:bg-white/20 transition-all duration-200;
+  @apply focus:outline-none focus:ring-2 focus:ring-white/50;
+  cursor: pointer;
+}
+
+.image-lightbox__close:hover {
+  transform: scale(1.1);
 }
 
 .image-lightbox__image {
-  @apply max-w-[95vw] max-h-[90vh] object-contain rounded-lg shadow-2xl;
+  max-width: 95vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  @apply rounded-[5px] shadow-2xl;
+  cursor: default;
+  animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* ============================================
@@ -99,7 +139,7 @@
    ============================================ */
 
 .confidence-tier {
-  @apply border-2 rounded-xl p-4 text-center;
+  @apply border-2 rounded-xl p-4 text-center flex flex-col;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -120,7 +160,7 @@
 }
 
 .confidence-tier__badge {
-  @apply inline-flex items-center gap-2 text-white px-3 py-1 rounded-full text-sm font-bold mb-3;
+  @apply inline-flex items-center gap-1.5 text-white px-2.5 py-0.5 rounded-full text-xs font-bold mb-2;
 }
 
 .confidence-tier__badge--high {
@@ -140,16 +180,16 @@
    ============================================ */
 
 .decisions-table {
-  @apply w-full text-sm;
+  @apply w-full text-base;
 }
 
 .decisions-table th {
-  @apply text-left py-3 px-4 font-semibold text-precision-text-secondary;
+  @apply text-left py-4 px-4 font-semibold text-precision-text-secondary;
   @apply bg-[#FAFBFC] border-b border-[#E3E8EF];
 }
 
 .decisions-table td {
-  @apply py-3 px-4;
+  @apply py-4 px-4;
 }
 
 .decisions-table tr {
@@ -174,11 +214,11 @@
    ============================================ */
 
 .impact-cards {
-  @apply grid grid-cols-2 lg:grid-cols-4 gap-4;
+  @apply grid grid-cols-2 lg:grid-cols-4 gap-2;
 }
 
 .impact-card {
-  @apply bg-gradient-to-br from-[#0A2540] to-[#1E3A5F] p-4 rounded-xl text-center;
+  @apply bg-gradient-to-br from-[#0A2540] to-[#1E3A5F] px-3 py-2.5 rounded-lg text-center;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -187,15 +227,48 @@
 }
 
 .impact-card__icon {
-  @apply w-6 h-6 text-[#00D4AA] mx-auto mb-2;
+  @apply w-4 h-4 text-[#00A88A] mx-auto mb-1;
 }
 
 .impact-card__metric {
-  @apply text-xl font-bold text-white mb-1;
+  @apply text-xl font-bold text-white mb-0.5 text-center;
 }
 
 .impact-card__label {
-  @apply text-xs text-white/80;
+  @apply text-[10px] text-white/70 font-medium text-center;
+}
+
+/* ============================================
+   BADGE COMPONENT
+   ============================================ */
+
+.badge {
+  @apply inline-block px-4 py-2 rounded-full text-xs font-semibold tracking-tight;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.badge--primary {
+  @apply bg-precision-accent text-white;
+}
+
+.badge--secondary {
+  @apply bg-precision-secondary text-white;
+}
+
+.badge--success {
+  @apply bg-precision-success text-white;
+}
+
+.badge--warning {
+  @apply bg-precision-warning text-white;
+}
+
+.badge--light {
+  @apply bg-[#E0F9F4] text-precision-accent border border-[#00A88A]/20;
+}
+
+.badge--light:hover {
+  @apply bg-precision-accent text-white;
 }
 
 /* ============================================
@@ -207,8 +280,8 @@
 }
 
 .skill-tag {
-  @apply px-3 py-1.5 bg-[#E0F9F4] text-precision-accent text-sm font-medium rounded-full;
-  @apply border border-[#00D4AA]/20;
+  @apply px-4 py-2 bg-[#E0F9F4] text-precision-accent text-sm font-medium rounded-full;
+  @apply border border-[#00A88A]/20;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -221,7 +294,7 @@
    ============================================ */
 
 .insight-callout {
-  @apply rounded-xl p-5 border-l-4;
+  @apply rounded-xl p-6 border-l-4;
 }
 
 .insight-callout--key {
@@ -237,7 +310,7 @@
 }
 
 .insight-callout__header {
-  @apply flex items-center gap-2 mb-2;
+  @apply flex items-start justify-start gap-2 mb-2;
 }
 
 .insight-callout__label {
@@ -249,7 +322,57 @@
 }
 
 .insight-callout__text {
-  @apply text-base text-precision-text-primary leading-relaxed;
+  @apply text-base text-precision-text-primary leading-relaxed text-left max-w-full;
+}
+
+.insight-callout {
+  @apply text-left;
+}
+
+.insight-callout p {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Core Insight section - center-aligned */
+.core-insight-section p {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.core-insight-section h2 {
+  text-align: center !important;
+}
+
+.core-insight-section .max-w-\[900px\] {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ============================================
+   SIGNATURE GEOMETRIC PATTERN
+   ============================================ */
+
+.signature-accent {
+  position: relative;
+}
+
+.signature-accent::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 170, 0.03) 0%,
+    rgba(0, 128, 255, 0.03) 100%
+  );
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 /* ============================================
@@ -260,12 +383,24 @@
   @apply animate-in fade-in-0 slide-in-from-bottom-6 duration-1000;
 }
 
-.section-animate:nth-child(1) { animation-delay: 100ms; }
-.section-animate:nth-child(2) { animation-delay: 200ms; }
-.section-animate:nth-child(3) { animation-delay: 300ms; }
-.section-animate:nth-child(4) { animation-delay: 400ms; }
-.section-animate:nth-child(5) { animation-delay: 500ms; }
-.section-animate:nth-child(6) { animation-delay: 600ms; }
+.section-animate:nth-child(1) {
+  animation-delay: 100ms;
+}
+.section-animate:nth-child(2) {
+  animation-delay: 200ms;
+}
+.section-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+.section-animate:nth-child(4) {
+  animation-delay: 400ms;
+}
+.section-animate:nth-child(5) {
+  animation-delay: 500ms;
+}
+.section-animate:nth-child(6) {
+  animation-delay: 600ms;
+}
 
 /* ============================================
    SCROLL PROGRESS INDICATOR
@@ -299,7 +434,7 @@
   }
 
   .hero-metric-card {
-    @apply p-3;
+    @apply p-3.5;
   }
 
   .impact-cards {
@@ -307,12 +442,12 @@
   }
 
   .decisions-table {
-    @apply text-xs;
+    @apply text-sm;
   }
 
   .decisions-table th,
   .decisions-table td {
-    @apply py-2 px-3;
+    @apply py-3 px-3;
   }
 }
 
@@ -323,6 +458,12 @@
 
   .confidence-tier__badge {
     @apply text-xs px-2 py-0.5;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .confidence-tier {
+    @apply p-3.5;
   }
 }
 

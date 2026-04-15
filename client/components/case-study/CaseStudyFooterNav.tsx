@@ -14,6 +14,6 @@ interface CaseStudyFooterNavProps {
   resumePath?: string;
 }
 
-export function CaseStudyFooterNav(_props: CaseStudyFooterNavProps) {
+export default function CaseStudyFooterNav(_props: CaseStudyFooterNavProps) {
   return null;
 }
