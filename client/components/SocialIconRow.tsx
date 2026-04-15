@@ -41,9 +41,9 @@ export default function SocialIconRow() {
             href={href}
             aria-label={label}
             {...linkProps}
-            className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full border-2 border-[#131417] text-[#131417] hover:bg-[#131417] hover:text-white transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-opacity-50"
+            className="inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-full border-[1.5px] border-[#131417] text-[#131417] hover:bg-[#131417] hover:text-white transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#131417] focus:ring-opacity-50"
           >
-            <Icon className="w-[18px] h-[18px] sm:w-5 sm:h-5" strokeWidth={2} />
+            <Icon className="w-4 h-4 sm:w-[18px] sm:h-[18px]" strokeWidth={2} />
           </a>
         );
       })}
