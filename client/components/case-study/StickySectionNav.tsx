@@ -60,7 +60,7 @@ export default function StickySectionNav({
               const isActive = activeSection === item.href.replace("#", "");
 
               const baseClasses =
-                "shrink-0 px-3 py-1 rounded-full text-[12px] leading-none font-medium focus-visible:outline-none focus-visible:ring-2 transition-all duration-200 shadow-sm border";
+                "shrink-0 inline-flex items-center justify-center h-7 px-3 rounded-[4px] text-[12px] leading-none font-medium focus-visible:outline-none focus-visible:ring-2 transition-all duration-200 shadow-sm border";
 
               const variantClasses =
                 variant === "computis"
