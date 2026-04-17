@@ -1,6 +1,5 @@
 import { CheckCircle, AlertTriangle, Lightbulb, ArrowRight } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR } from "./shared";
 
 const wins = [
   "Trust through transparency — users felt safe disagreeing with AI recommendations.",
@@ -18,19 +17,19 @@ const misses = [
 const reflections = [
   {
     title: "Trust is a design constraint, not a feature.",
-    body: 'Designing for AI adoption means designing for skepticism first.',
+    body: "Designing for AI means designing for skepticism first.",
   },
   {
     title: "Compliance shapes interaction design.",
-    body: "HIPAA constraints forced 1-click overrides and plain-language reasoning — making the design better, not worse.",
+    body: "HIPAA forced 1-click overrides and plain-language reasoning — better UX, not worse.",
   },
   {
     title: "Show uncertainty honestly.",
-    body: "Promising early results, not proof at scale. Humility builds more credibility than overselling.",
+    body: "Promising results, not proof at scale. Humility outperforms overselling.",
   },
   {
     title: "Collaboration > solo heroics.",
-    body: "I led design direction, but the best ideas came from cross-functional synthesis.",
+    body: "The best ideas came from cross-functional synthesis, not solo direction.",
   },
 ];
 
@@ -60,13 +59,6 @@ export default function ReflectionsSection() {
             What Worked &amp; What Didn't
           </h2>
         </div>
-
-        <SymTLDR>
-          Trust through transparency worked — 11% override rate proved users felt safe
-          disagreeing with AI. Modular rollout built credibility incrementally. But early
-          prototypes over-automated (67% rejection), mobile alert density remained too
-          high, and 15% of admins still exported to Excel.
-        </SymTLDR>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {/* Wins */}

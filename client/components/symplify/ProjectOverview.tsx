@@ -1,6 +1,5 @@
 import { Target, Building2, TrendingUp, Users } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { SymTLDR } from "./shared";
 
 const objectives = [
   {
@@ -54,33 +53,29 @@ export default function ProjectOverview() {
         </h2>
       </div>
 
-      <SymTLDR>
-        Custom Data Processing Inc. needed a clinical coordination platform
-        that integrates with (not replaces) legacy EHR systems, complies with
-        HIPAA, and proves value in 6 weeks. As founding product designer,
-        I owned research through pilot validation.
-      </SymTLDR>
+      {/* Pull quote */}
+      <blockquote className="border-l-4 border-sym-blue pl-5 my-6 max-w-[760px]">
+        <p className="text-lg sm:text-xl text-sym-heading font-medium leading-snug">
+          “Prove value in 6 weeks across 3 facilities — or it doesn't get rolled out.”
+        </p>
+        <cite className="text-xs font-semibold text-sym-label not-italic uppercase tracking-wider mt-2 block">
+          — Project Constraint
+        </cite>
+      </blockquote>
 
-      {/* Structured Role Card */}
-      <div className="bg-sym-card rounded-xl border border-sym-card-border p-4 sm:p-6 mb-8 shadow-sm">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 text-sm">
+      {/* Compact Role Card */}
+      <div className="bg-sym-card rounded-xl border border-sym-card-border p-4 sm:p-5 mb-8 shadow-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-2.5 text-sm">
           {[
-            { label: "Client", value: "Custom Data Processing Inc. — mid-sized health IT services" },
-            { label: "Users", value: "65 clinical staff (MDs, RNs, admins) across 3 public health facilities" },
-            { label: "Problem", value: "Fragmented EHR + Excel + email workflows causing measurable clinical and operational losses" },
-            { label: "My Role", value: "Founding Product Designer — research, interaction design, prototyping, design system, pilot validation" },
-            { label: "Team", value: "2 Engineers, 1 PM, 4 Clinical Advisors" },
-            { label: "Timeline", value: "Jan – Aug 2024 (8 months total, 6-week pilot)" },
+            { label: "Client", value: "Custom Data Processing Inc. — mid-sized health IT" },
+            { label: "Constraint", value: "6-week pilot must show measurable improvement" },
+            { label: "Stack", value: "2 Eng, 1 PM, 4 Clinical Advisors" },
           ].map((item) => (
-            <div key={item.label} className="flex gap-2.5">
-              <span className="text-xs font-semibold text-sym-label uppercase tracking-widest whitespace-nowrap mt-0.5 min-w-[80px]">{item.label}</span>
+            <div key={item.label} className="flex flex-col gap-1">
+              <span className="text-xs font-semibold text-sym-label uppercase tracking-widest">{item.label}</span>
               <span className="text-sm text-sym-body leading-snug">{item.value}</span>
             </div>
           ))}
-          <div className="sm:col-span-2 flex gap-2.5">
-            <span className="text-xs font-semibold text-sym-label uppercase tracking-widest whitespace-nowrap mt-0.5 min-w-[80px]">Constraint</span>
-            <span className="text-sm text-sym-body leading-snug">Prove measurable improvement within 6-week pilot window or project doesn't get broader rollout</span>
-          </div>
         </div>
       </div>
 

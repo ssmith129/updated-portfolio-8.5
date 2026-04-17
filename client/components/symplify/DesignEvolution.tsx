@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { Zap, RotateCcw, TrendingUp, ChevronLeft, ChevronRight } from "lucide-react";
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { ZoomableImage, SymTLDR } from "./shared";
+import { ZoomableImage } from "./shared";
 
 interface EvolutionStage {
   title: string;
@@ -75,20 +75,13 @@ export default function DesignEvolution() {
         </h2>
       </div>
 
-      <SymTLDR>
-        Key features went through 3–4 rounds of iteration based on clinical
-        feedback. The AI confidence display pivoted from percentages to badges
-        after testing showed 67% of clinicians rejected numerical precision.
-        Scheduling went from auto-booking to suggestion-based after similar rejection.
-      </SymTLDR>
-
       {/* Pivotal Moment 1 — merged from PivotalMoments.tsx */}
       <PivotalNarrative
         icon={<Zap className="w-5 h-5 text-sym-amber" />}
         title="The 67% Rejection That Changed Everything"
         bgColor="#FFFBEB"
         borderColor="#FDE68A"
-        narrative="We tested auto-assigned task routing with 12 clinicians. 67% rejected it outright — staff wanted faster decisions, not fewer decisions. This reframe reshaped every subsequent design choice."
+        narrative="Auto-routing was rejected by 67% of clinicians — they wanted faster decisions, not fewer. The reframe drove every subsequent design choice."
         outcome="Pivot to suggestion-based design resolved the rejection."
       />
 
@@ -103,7 +96,7 @@ export default function DesignEvolution() {
         title="The HIPAA Constraint That Improved UX"
         bgColor="#F5F3FF"
         borderColor="#DDD6FE"
-        narrative={`HIPAA required human-readable justification for every AI recommendation. Nurse feedback: "I don't need to see the reasoning every time — but I need to know I can." This led to hover-to-reveal: badges visible, reasoning on demand. The constraint produced better UX than our original design.`}
+        narrative="HIPAA required human-readable AI justification. Hover-to-reveal made it the highest-rated feature in the post-pilot survey."
         outcome="Highest-rated feature in post-pilot survey."
       />
 

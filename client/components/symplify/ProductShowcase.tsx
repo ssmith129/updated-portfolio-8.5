@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
 import { ExternalLink, Stethoscope, HeartPulse, ShieldCheck } from "lucide-react";
-import { SymTLDR } from "./shared";
 
 const showcaseItems = [
   {
@@ -14,12 +13,9 @@ const showcaseItems = [
     caption:
       "AI-augmented triage with full transparency. Every recommendation is explainable, overridable, and audit-logged.",
     callouts: [
-      "Patient Acuity Overview — Risk-stratified patient list replacing manual triage. Critical/Urgent/Semi-Urgent tiers reduced cognitive overhead ~40%.",
-      "Predictive Clinical Alerts — AI-driven live monitoring with confidence scores. 89% triage accuracy with <15% override guardrail maintained.",
-      "Smart Insights Panel — Demand forecasting and scheduling optimization. Replaced manual Excel workflows for clinical operations.",
-      "AI Drug Interaction Checker — Real-time cross-referencing with 'always verify' disclaimer — trust through honesty, not black-box automation.",
-      "Shift Handoff Summary — AI-generated briefing replacing 20-min phone calls at shift change. Addresses the 18% missed handoff gap.",
-      "Unified Message Inbox — Single hub replacing 3 fragmented inboxes. Role-based filtering with unread prioritization cut handling time 35%.",
+      "Patient Acuity Overview — Risk-stratified patient list replacing manual triage.",
+      "Predictive Clinical Alerts — AI live monitoring with confidence scores and override.",
+      "AI Drug Interaction Checker — Real-time cross-referencing with 'always verify' disclaimer.",
     ],
   },
   {
@@ -32,12 +28,9 @@ const showcaseItems = [
     caption:
       "Structured visibility replaced 20-minute phone calls at shift change.",
     callouts: [
-      "Shift Context Header — Clear temporal framing — shift time, unit, and outgoing/incoming nurse names eliminate ambiguity at handoff.",
-      "AI Audio Briefing — One-tap AI-generated voice summary for hands-free corridor use — designed for transitions between shifts.",
-      "AI-Generated Summary — Structured census of patients, key concerns, alerts, and pending tasks — replaces unstructured phone-call handoffs.",
-      "Priority Filter Tabs — Quick toggle between all patients and critical-only. Reduces alert fatigue by letting nurses focus on what matters first.",
-      "Patient Acuity Cards — Color-coded severity badges, vitals trends, pending tasks, and status notes — structured format prevents missed handoffs.",
-      "Acknowledge Handoff — Explicit acceptance creates HIPAA-compliant audit trail. Progress bar (0/7 reviewed) ensures no patient is skipped.",
+      "AI-Generated Summary — Structured census replacing unstructured phone-call handoffs.",
+      "Patient Acuity Cards — Color-coded severity, vitals trends, and pending tasks per patient.",
+      "Acknowledge Handoff — Explicit acceptance creates HIPAA-compliant audit trail.",
     ],
   },
   {
@@ -51,12 +44,9 @@ const showcaseItems = [
     caption:
       "Compliance dashboard replacing manual Excel reporting workflows.",
     callouts: [
-      "Attention Needed Alert Bar — Surfaced compliance risks (HIPAA violations, expiring credentials, sentinel events, overdue trainings) replace buried email alerts. Addresses the 14.2% SLA breach risk from research.",
-      "Section Navigation — Jump-to tabs for Compliance & Reporting, Operations & Auditing, Credentials & HIPAA, Training, and Incidents — giving admins contextual navigation instead of one flat alert list.",
-      "SLA Compliance Tracker — Real-time compliance rates by facility with trend indicators and risk status. Live monitoring replaced monthly manual Excel exports, improving SLA compliance from 72% to 85.3%.",
-      "Auto-Generated Reports — Scheduled HIPAA summaries, SLA performance reports, and credential digests replace the manual export workflow. Addresses the 12.5 hrs/week admin overhead reduced to 8.1 hrs.",
-      "Demand Forecasting — AI-assisted patient volume predictions with confidence intervals replacing guesswork. Scenario modeling (daily/weekly/monthly) gives operations managers lead time to staff appropriately.",
-      "Audit Trail Browser — Searchable, filterable log of every AI recommendation, manual override, access event, and config change. Provides the SOC 2 and state-level auditability required by hospital buyers.",
+      "SLA Compliance Tracker — Real-time facility compliance rates, replacing monthly Excel exports.",
+      "Auto-Generated Reports — Scheduled HIPAA, SLA, and credential digests replace the manual workflow.",
+      "Audit Trail Browser — Searchable log of AI recommendations, overrides, and access events for SOC 2.",
     ],
   },
 ];
@@ -80,16 +70,8 @@ export default function ProductShowcase() {
         </h2>
       </div>
 
-      <SymTLDR>
-        The production platform serves three distinct user roles through a shared
-        data layer. Each view surfaces only the information and actions relevant
-        to that role's workflow, reducing cognitive overhead while maintaining
-        cross-team visibility.
-      </SymTLDR>
-
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[720px] mb-6">
-        Three role-specific views share a single data layer. Click each tab to
-        explore the interface designed for that role.
+        Three role-specific views over one shared data layer.
       </p>
 
       {/* Tab bar */}
@@ -167,7 +149,7 @@ function ShowcasePanel({ item }: { item: (typeof showcaseItems)[number] }) {
       />
 
       {/* Annotation callouts */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-4">
         {item.callouts.map((callout, i) => {
           const [label, ...rest] = callout.split(" — ");
           const description = rest.join(" — ");

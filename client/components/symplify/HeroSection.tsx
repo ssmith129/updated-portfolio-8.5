@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, Calendar, Users, Briefcase, FlaskConical, Clock, ExternalLink } from "lucide-react";
+import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -24,18 +24,21 @@ export default function HeroSection() {
         <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] xl:text-[3.75rem] font-semibold text-sym-heading leading-tight lg:leading-[65px] tracking-[-0.03em] mb-4 max-w-none">
           Turning Hospital Chaos into Clinical Clarity
         </h1>
-        <p className="text-lg sm:text-xl text-sym-body leading-[1.6] max-w-none mb-3">
-          I led end-to-end design for a 0-to-1 AI-enhanced hospital management
-          platform that unified fragmented EHR, Excel, and email workflows into
-          a single, trustworthy system — reducing triage time by 40% across 3 facilities and 65 clinical staff.
+        <p className="text-lg sm:text-xl text-sym-body leading-[1.6] max-w-[820px] mb-5">
+          0-to-1 AI hospital coordination platform. Unified EHR, Excel, and email into one trusted system. 6-week pilot, 3 facilities, 65 staff.
         </p>
 
-        {/* Reading time + CTA */}
-        <div className="flex items-center gap-6 mb-6">
-          <div className="flex items-center gap-1.5 text-sym-label text-sm">
-            <Clock className="w-3.5 h-3.5" />
-            <span>4 min read</span>
-          </div>
+        {/* Headline stat strip */}
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-5">
+          <HeroStat value="40%" label="faster triage" />
+          <span className="text-sym-card-border-hover">·</span>
+          <HeroStat value="89%" label="triage accuracy" />
+          <span className="text-sym-card-border-hover">·</span>
+          <HeroStat value="35%" label="less admin overhead" />
+        </div>
+
+        {/* CTA + meta single row */}
+        <div className="flex flex-wrap items-center gap-4 mb-3">
           <a
             href="https://symplify-v4.netlify.app/"
             target="_blank"
@@ -45,23 +48,15 @@ export default function HeroSection() {
             View Live Platform
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
+          <div className="flex items-center gap-1.5 text-sym-label text-sm">
+            <Clock className="w-3.5 h-3.5" />
+            <span>4 min read</span>
+          </div>
         </div>
 
-        {/* Meta badges */}
-        <div className="flex flex-wrap gap-3 mb-8">
-          <Badge icon={<Briefcase className="w-3.5 h-3.5" />} label="Founding Product Designer" />
-          <Badge icon={<Calendar className="w-3.5 h-3.5" />} label="Jan – Aug 2024" />
-          <Badge icon={<Users className="w-3.5 h-3.5" />} label="2 Engineers, 1 PM, 4 Clinical Advisors" />
-          <Badge icon={<FlaskConical className="w-3.5 h-3.5" />} label="3 Facilities · 65 Staff · 6-Week Pilot" />
-        </div>
-
-        {/* Role */}
-        <div className="max-w-[800px]">
-          <p className="text-xs font-semibold text-sym-label uppercase tracking-widest mb-1">My Role</p>
-          <p className="text-[15px] text-sym-body leading-relaxed">
-            Research, interaction design, prototyping, design system, and validation
-          </p>
-        </div>
+        <p className="text-sm text-sym-muted leading-relaxed mb-8">
+          Founding Product Designer · Jan – Aug 2024 · Team of 7 (2 Eng, 1 PM, 4 Clinical Advisors)
+        </p>
       </header>
 
       {/* Hero Image */}
@@ -85,11 +80,13 @@ export default function HeroSection() {
   );
 }
 
-function Badge({ icon, label }: { icon: React.ReactNode; label: string }) {
+function HeroStat({ value, label }: { value: string; label: string }) {
   return (
-    <span className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-sym-card-border text-[13px] font-medium text-sym-body shadow-sm badge-shimmer hover:border-sym-blue/30 hover:shadow-md transition-all duration-300 cursor-default">
-      {icon}
-      {label}
+    <span className="inline-flex items-baseline gap-1.5">
+      <span className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-sym-blue to-sym-green bg-clip-text text-transparent leading-none">
+        {value}
+      </span>
+      <span className="text-sm text-sym-body">{label}</span>
     </span>
   );
 }

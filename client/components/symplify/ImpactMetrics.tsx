@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { AlertTriangle } from "lucide-react";
 import { useIntersectionAnimation } from "../../hooks/use-page-animations";
-import { SymTLDR } from "./shared";
 
 function useCountAnimation(end: number, duration = 2000, startAnimation = false) {
   const [count, setCount] = useState(0);
@@ -76,12 +75,6 @@ export default function ImpactMetrics() {
         </h2>
       </div>
 
-      <SymTLDR>
-        6-week pilot across 3 facilities: 40% faster triage, 89% accuracy,
-        35% less admin overhead, and ~$78K/year estimated savings — with full
-        AI transparency maintained (11% override rate, &lt;10% false positives).
-      </SymTLDR>
-
       {/* Animated Metric Cards */}
       <div
         ref={elementRef as React.RefObject<HTMLDivElement>}
@@ -114,22 +107,19 @@ export default function ImpactMetrics() {
         ))}
       </div>
 
-      {/* Guardrails + caveat */}
-      <div className="flex flex-col sm:flex-row gap-3 mb-4">
+      {/* Integrity row: guardrails + caveat */}
+      <div className="flex flex-col sm:flex-row gap-3 mb-3">
         <div className="flex-1 bg-sym-bg-green border border-[#BBF7D0] rounded-lg px-4 py-3 text-sm text-[#166534] leading-snug">
-          <span className="font-semibold">AI Guardrails maintained:</span>{" "}
-          &lt;15% override rate, &lt;10% false positives, full audit trail.
+          <span className="font-semibold">AI guardrails held:</span> &lt;15% override · &lt;10% false positives · full audit trail.
         </div>
-        <div className="flex-1 bg-sym-bg-amber border border-[#FDE68A] rounded-lg px-4 py-3 text-sm text-[#92400E] leading-snug flex items-center gap-2">
+        <div className="flex-1 bg-sym-bg-amber border border-[#FDE68A] rounded-lg px-4 py-3 text-sm text-[#92400E] leading-snug flex items-start gap-2">
           <AlertTriangle className="w-4 h-4 mt-0.5 flex-shrink-0" />
-          <span>
-            Pilot ran during non-flu months — promising early results, not proven at scale.
-          </span>
+          <span>Pilot ran in non-flu months — promising, not proven at scale.</span>
         </div>
       </div>
 
       <p className="text-xs text-sym-muted italic mb-4">
-        All metrics system-logged and compared against 4-week pre-pilot baselines.
+        System-logged against 4-week pre-pilot baselines.
       </p>
 
       {/* Business Value Estimate — Collapsible */}
@@ -152,9 +142,7 @@ export default function ImpactMetrics() {
             ))}
           </div>
           <p className="text-xs text-sym-label italic">
-            Estimates based on pilot data extrapolated to annual figures. Actual
-            values depend on facility size, staffing costs, and appointment
-            volume. Presented as directional indicators, not guarantees.
+            Pilot data extrapolated to annual figures — directional indicators, not guarantees.
           </p>
         </div>
       </details>
