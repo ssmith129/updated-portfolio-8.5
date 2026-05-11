@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
-import { ZoomableImage, SymTLDR } from "./shared";
+import { ZoomableImage } from "./shared";
 
 export default function DesignDecisions() {
   const headingRef = useScrollReveal();
@@ -18,13 +18,6 @@ export default function DesignDecisions() {
           Design Decisions
         </h2>
       </div>
-
-      <SymTLDR>
-        Four core design decisions shaped the platform: a 3-tier AI confidence
-        system (89% acceptance vs. 33% for percentages), auditable plain-language
-        AI reasoning, suggestion-based scheduling with override escape hatches,
-        and risk-tiered alert batching that cut alert fatigue 38%.
-      </SymTLDR>
 
       <div className="space-y-14">
         <Decision1 />
@@ -66,7 +59,7 @@ function Decision1() {
     <div>
       <DecisionHeader number="01" title="AI Confidence Display" />
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
-        <span className="font-semibold text-sym-heading">Challenge:</span> Show AI confidence without false precision.
+        Show AI confidence without false precision.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -109,39 +102,22 @@ function Decision1() {
 
 /* ─── Decision 2: Auditable AI Reasoning ─── */
 function Decision2() {
-  const steps = [
-    { title: "Confidence badges, not percentages", detail: "Clinicians aren't statisticians" },
-    { title: "Plain-language reasoning", detail: '"Symptom severity: High-risk keywords detected · Patient history: 2 prior cardiac events · SLA requires <15min response"' },
-    { title: "1-click override", detail: "Lower friction than explaining disagreement" },
-    { title: "Override → retraining loop", detail: "System learns from clinical judgment" },
-  ];
-
   return (
     <div>
       <DecisionHeader number="02" title="Auditable AI Reasoning" />
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
-        <span className="font-semibold text-sym-heading">Challenge:</span> HIPAA required audit trails, but "explainable AI" is usually too technical or too vague.
+        Make HIPAA-required justification useful, not technical or vague.
       </p>
 
       <ZoomableImage
         src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2Ff71f584e4cc942468f434f0114848bd3"
         alt="AI reasoning panel expanded showing symptom severity, patient context, SLA requirement, source context, and time urgency with escalate/acknowledge actions and HIPAA-compliant audit trail"
-        caption="The AI reasoning panel at the point of decision. Clinicians see 'why' on demand — satisfying both HIPAA audit requirements and clinical trust needs."
+        caption="AI reasoning at the point of decision — 'why' on demand."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-        {steps.map((s, i) => (
-          <div key={s.title} className="flex items-start gap-3 bg-sym-card rounded-xl border border-sym-card-border px-4 py-2.5">
-            <span className="w-7 h-7 rounded-full bg-sym-bg-blue text-sym-blue flex items-center justify-center text-sm font-bold flex-shrink-0">
-              {i + 1}
-            </span>
-            <div>
-              <p className="text-sm font-semibold text-sym-heading mb-1">{s.title}</p>
-              <p className="text-xs text-sym-muted leading-relaxed">{s.detail}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+      <p className="text-sm text-sym-body leading-relaxed max-w-[680px] mb-4">
+        Plain-language reasoning + 1-click override + audit trail — satisfying HIPAA without slowing clinicians down.
+      </p>
 
       <ResultCallout text="Override rate stayed below the 15% guardrail throughout the pilot." />
     </div>
@@ -154,8 +130,7 @@ function Decision3() {
     <div>
       <DecisionHeader number="03" title="Smart Scheduling with Progressive Disclosure" />
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
-        <span className="font-semibold text-sym-heading">Challenge:</span>{" "}
-        Auto-booking was rejected. Scheduling needed to prevent conflicts while preserving clinician autonomy — suggest better options with context, always allow override.
+        Prevent conflicts without removing clinician control — suggest, never auto-book.
       </p>
 
       <ZoomableImage
@@ -196,7 +171,7 @@ function Decision4() {
       </div>
 
       <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
-        <span className="font-semibold text-sym-heading">How:</span> Clinical risk score + SLA deadline determines tier. Similar alerts batch into digests. FYI items collapse to acknowledge without demanding attention.
+        Clinical risk + SLA deadline determine tier. Similar alerts batch into digests; FYI items collapse to acknowledge.
       </p>
 
       <ResultCallout text="Daily interruptions per clinician dropped from 47 to 12." />

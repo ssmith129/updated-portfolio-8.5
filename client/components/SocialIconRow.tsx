@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, FileText } from "lucide-react";
+import { Mail, Linkedin, FileText } from "lucide-react";
 
 const socialLinks = [
   {
@@ -11,12 +11,6 @@ const socialLinks = [
     label: "LinkedIn profile",
     href: "http://www.linkedin.com/in/sean-smith-sf",
     icon: Linkedin,
-    external: true,
-  },
-  {
-    label: "GitHub profile",
-    href: "https://github.com/ssmith129",
-    icon: Github,
     external: true,
   },
   {

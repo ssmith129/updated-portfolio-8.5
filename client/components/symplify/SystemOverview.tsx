@@ -1,6 +1,5 @@
 import { useScrollReveal } from "../../hooks/use-scroll-reveal";
 import { ExternalLink } from "lucide-react";
-import { SymTLDR } from "./shared";
 
 const dsFeatures = [
   "WCAG 2.2 AA baked into tokens — color-blind safe badges, keyboard nav, screen reader support",
@@ -29,15 +28,8 @@ export default function SystemOverview() {
           </h2>
         </div>
 
-        <SymTLDR>
-          Symplify acts as a read-only integration layer — extending legacy EHR, Excel,
-          and email systems through AI-powered recommendation rather than replacement.
-          The design system was built around WCAG 2.2 AA compliance, 8pt grid, and
-          role-based information density.
-        </SymTLDR>
-
         <p className="text-[15px] text-sym-body leading-relaxed max-w-[680px] mb-6">
-          Symplify acts as an integration layer — read-only recommendations over legacy systems.
+          Read-only translation layer over legacy systems — extend, don't replace.
         </p>
 
         <figure className="mb-6">

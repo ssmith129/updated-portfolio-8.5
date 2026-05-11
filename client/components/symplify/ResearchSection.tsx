@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { Eye, Search, MessageSquare, BarChart3, ChevronLeft, ChevronRight } from "lucide-react";
 import { useScrollReveal, useStaggerReveal } from "../../hooks/use-scroll-reveal";
-import { ZoomableImage, SymTLDR } from "./shared";
+import { ZoomableImage } from "./shared";
 
 const methods = [
   { icon: <Eye className="w-4 h-4" />, label: "Shadowed 18 staff", detail: "across 3 facilities" },
@@ -13,25 +13,25 @@ const methods = [
 const insights = [
   {
     number: "01",
-    title: "Augmentation, Not Automation",
-    body: 'Staff wanted tools that made them faster — not black-box decisions that removed their judgment.',
-    principle: "AI transparency > AI autonomy",
+    title: "AI transparency > AI autonomy",
+    body: "Staff wanted tools that made them faster — not black boxes that removed their judgment.",
+    stat: "67% rejected automation",
     color: "#3B82F6",
     bgColor: "#EFF6FF",
   },
   {
     number: "02",
-    title: '"Urgent" Was Meaningless',
-    body: "40% of messages were marked urgent by senders, but only 23% required same-day action. No shared triage model existed.",
-    principle: "Need a shared prioritization framework",
+    title: "\u201cUrgent\u201d had no shared meaning",
+    body: "Senders marked 40% of messages urgent; only 23% needed same-day action.",
+    stat: "40% urgent / 23% actionable",
     color: "#F59E0B",
     bgColor: "#FFFBEB",
   },
   {
     number: "03",
-    title: "Compliance Was a Visibility Problem",
-    body: "Staff weren't ignoring deadlines — alerts were buried in unfiltered email, disconnected from patient records.",
-    principle: "Surface the right info at the right time",
+    title: "Compliance was a visibility problem",
+    body: "Staff weren't ignoring deadlines — alerts were buried in unfiltered email.",
+    stat: "14.2% SLA breach risk",
     color: "#8B5CF6",
     bgColor: "#F5F3FF",
   },
@@ -71,13 +71,6 @@ export default function ResearchSection() {
           Research
         </h2>
       </div>
-
-      <SymTLDR>
-        Shadowed 18 staff across 3 facilities, logged 3,000+ tasks, conducted
-        14 interviews, and analyzed 1,200 messages. Three insights reshaped the
-        project: staff wanted augmentation not automation, "urgent" had no shared
-        meaning, and compliance failures were visibility problems not discipline problems.
-      </SymTLDR>
 
       {/* Methods strip */}
       <div ref={methodsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6">
@@ -130,7 +123,14 @@ export default function ResearchSection() {
       {/* Research Process Photos — horizontal scroll gallery */}
       <ResearchPhotoGallery />
 
-      {/* Insight cards */}
+      {/* Pull quote */}
+      <blockquote className="border-l-4 border-sym-amber pl-5 mb-8 max-w-[760px]">
+        <p className="text-lg sm:text-xl text-sym-heading font-medium leading-snug italic">
+          “67% of clinicians rejected automation — they wanted faster decisions, not fewer.”
+        </p>
+      </blockquote>
+
+      {/* Insight cards — principle-as-title */}
       <div ref={insightsRef} className="reveal space-y-4 mb-8">
         {insights.map((ins) => (
           <div
@@ -141,10 +141,17 @@ export default function ResearchSection() {
               <div className="md:w-20 flex items-center justify-center py-3 md:py-0" style={{ backgroundColor: ins.bgColor }}>
                 <span className="text-2xl font-bold" style={{ color: ins.color }}>{ins.number}</span>
               </div>
-              <div className="flex-1 px-5 py-3.5">
-                <h3 className="text-lg font-semibold text-sym-heading mb-1.5">{ins.title}</h3>
-                <p className="text-[15px] text-sym-body leading-relaxed mb-2">{ins.body}</p>
-                <p className="text-sm font-semibold italic" style={{ color: ins.color }}>{ins.principle}</p>
+              <div className="flex-1 px-5 py-3.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-sym-heading mb-1">{ins.title}</h3>
+                  <p className="text-sm text-sym-body leading-relaxed">{ins.body}</p>
+                </div>
+                <span
+                  className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide flex-shrink-0"
+                  style={{ backgroundColor: ins.bgColor, color: ins.color }}
+                >
+                  {ins.stat}
+                </span>
               </div>
             </div>
           </div>

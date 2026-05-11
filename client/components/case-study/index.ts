@@ -9,3 +9,5 @@ export { default as CaseStudySummary } from "./CaseStudySummary";
 export { default as DesignEvolutionShowcase } from "./DesignEvolutionShowcase";
 export { default as DesignSystemSection } from "./DesignSystemSection";
 export { default as ExplorationSection } from "./ExplorationSection";
+export { default as StickySectionNav } from "./StickySectionNav";
+export type { StickySectionNavItem } from "./StickySectionNav";

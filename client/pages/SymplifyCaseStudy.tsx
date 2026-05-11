@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
 import Navigation, { SkipLink } from "../components/Navigation";
 import Footer from "../components/Footer";
-import { CaseStudyStructuredData } from "../components/case-study";
+import { CaseStudyStructuredData, StickySectionNav } from "../components/case-study";
 import ReadingProgress from "../components/case-study/ReadingProgress";
 import HeroSection from "../components/symplify/HeroSection";
 import ImpactMetrics from "../components/symplify/ImpactMetrics";
@@ -133,41 +133,12 @@ export default function SymplifyCaseStudy() {
 
       <HeroSection />
 
-      {/* Sticky Section Navigation */}
-      <div className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-sym-divider shadow-sm">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-12">
-          <nav
-            aria-label="Case study sections"
-            className="flex items-center justify-center gap-2 overflow-x-auto py-3 scrollbar-hide
-                       relative before:absolute before:left-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-white/80 before:to-transparent before:z-10 before:pointer-events-none
-                       after:absolute after:right-0 after:top-0 after:bottom-0 after:w-8 after:bg-gradient-to-l after:from-white/80 after:to-transparent after:z-10 after:pointer-events-none"
-          >
-            {sectionNav.map((item, i) => {
-              const prev = sectionNav[i - 1];
-              const showSeparator = prev && prev.group !== item.group;
-              const isActive = activeSection === item.href.replace("#", "");
-              return (
-                <React.Fragment key={item.href}>
-                  {showSeparator && (
-                    <div className="w-px h-4 bg-sym-card-border flex-shrink-0" />
-                  )}
-                  <a
-                    href={item.href}
-                    className={`shrink-0 px-3.5 py-2 rounded-full text-[13px] font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sym-blue transition-all duration-200 shadow-sm border ${
-                      isActive
-                        ? "bg-sym-blue/10 text-sym-blue border-sym-blue/30"
-                        : "bg-white/80 text-sym-body border-sym-card-border hover:bg-sym-blue/10 hover:text-sym-blue hover:border-sym-blue/30"
-                    }`}
-                    aria-current={isActive ? "true" : undefined}
-                  >
-                    {item.label}
-                  </a>
-                </React.Fragment>
-              );
-            })}
-          </nav>
-        </div>
-      </div>
+      {/* Sticky Section Navigation (matches Computis behavior — fixed on scroll) */}
+      <StickySectionNav
+        items={sectionNav}
+        activeSection={activeSection}
+        variant="symplify"
+      />
 
       <main id="main-content">
         <ImpactMetrics />
