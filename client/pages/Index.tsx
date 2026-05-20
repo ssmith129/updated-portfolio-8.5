@@ -55,16 +55,11 @@ export default function Index() {
             </h1>
 
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[28px] font-normal text-[#131417] dark:text-gray-300 leading-[1.5em] tracking-[-0.16px] sm:tracking-[-0.18px] md:tracking-[-0.2px] lg:tracking-[-0.24px] xl:tracking-[-0.28px] mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20 max-w-[600px] lg:max-w-[700px] xl:max-w-[800px] transition-all duration-300 hover:text-[#2a2a2a] dark:hover:text-white animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-900">
-              8+ years creating intuitive, scalable UX for complex SaaS
-              platforms. I specialize in{" "}
-              <Link
+              8+ years creating intuitive, scalable UX for complex SaaS platforms. I specialize in <Link
                 to="/about"
                 className="text-[#131417] dark:text-precision-accent hover:text-[#2a2a2a] dark:hover:text-white underline underline-offset-4 decoration-2 hover:decoration-[#2a2a2a] dark:hover:decoration-precision-accent transition-all duration-300"
                 aria-label="Learn more about Sean's AI integration expertise"
-              >
-                AI-integrated systems
-              </Link>{" "}
-              that streamline workflows and drive decisions.
+              >AI-integrated systems</Link> that streamline workflows and drive decisions.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 sm:gap-6 animate-in fade-in-0 slide-in-from-left-8 duration-1000 delay-1100">
