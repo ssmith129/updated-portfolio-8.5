@@ -40,7 +40,7 @@ export default function Index() {
           <div className="flex-shrink-0 order-1 lg:order-2 animate-in fade-in-0 zoom-in-95 duration-1000 delay-500">
             <div className="relative group">
               <img
-                src="/6796fa1806617a432bd2b97b-HeadshotPro_Original.PNG"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fba69a23156414a589de97341511272c9%2F625b1e9401804ada989ab70409085509?format=webp&width=800"
                 alt="Sean Smith - Senior Product Designer headshot"
                 className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96 object-cover rounded-[20px] sm:rounded-[25px] md:rounded-[30px] shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 border-2 border-white/20"
               />
